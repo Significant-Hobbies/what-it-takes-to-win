@@ -157,7 +157,10 @@ def main() -> int:
 
             # Validate required fields for eligible rows
             status = obj.get("eligibility_status", "unverified_candidate")
-            if status == "age_26_eligible":
+            # Normalize creator-track statuses to the canonical forms
+            eligible_statuses = {"age_26_eligible", "eligible", "eligible_background_unverified"}
+            ineligible_statuses = {"age_26_ineligible", "ineligible"}
+            if status in eligible_statuses:
                 missing = REQUIRED_FIELDS - set(obj.keys())
                 if missing:
                     errors.append(f"{jf.name}:{lineno}: {obj.get('name','?')} missing fields: {missing}")
@@ -191,7 +194,7 @@ def main() -> int:
                     continue
 
                 eligible.append(obj)
-            elif status == "age_26_ineligible":
+            elif status in ineligible_statuses:
                 ineligible.append(obj)
             else:
                 errors.append(f"{jf.name}:{lineno}: unknown eligibility_status {status!r} for {obj.get('name','?')}")
