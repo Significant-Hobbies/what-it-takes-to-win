@@ -70,6 +70,35 @@ const related = peopleData
 
     <div class="summary">{p.early_history_summary}</div>
 
+    {p.starting_point && p.starting_point !== "Not documented in reviewed sources." && (
+      <div class="grid grid-2" style="margin-bottom:8px;">
+        <div class="card">
+          <h3>Starting point</h3>
+          <p style="font-size:14px;color:var(--text-dim);margin:0;">{p.starting_point}</p>
+        </div>
+        <div class="card">
+          <h3>Current position ({p.current_position_year ?? "—"}{p.is_living === false ? " · deceased" : ""})</h3>
+          <p style="font-size:14px;color:var(--text-dim);margin:0;">{p.current_position || "Not documented."}</p>
+        </div>
+      </div>
+    )}
+
+    {Array.isArray(p.trajectory) && p.trajectory.length > 0 && (
+      <>
+        <div class="section-title">Trajectory</div>
+        <div class="card">
+          <ol class="trajectory" style="margin:0;padding-left:20px;font-size:14px;">
+            {p.trajectory.map((t) => (
+              <li style="margin-bottom:10px;">
+                <span style="font-family:var(--mono);color:var(--accent);font-size:12px;">{t.year} · age {t.age}</span>
+                <div style="color:var(--text-dim);">{t.event}</div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </>
+    )}
+
     <div class="grid grid-3" style="margin-bottom:8px;">
       <div class="stat">
         <div class="label">Primary leverage engine</div>

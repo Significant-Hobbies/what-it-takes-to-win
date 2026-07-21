@@ -91,6 +91,7 @@ const numericFields = [
   "exceptional_inherited_access_count",
   "all_documented_early_condition_count",
   "source_count",
+  "current_position_year",
 ];
 
 const out = people.map((p) => {
@@ -106,6 +107,17 @@ const out = people.map((p) => {
     .split(",")
     .map((s) => s.trim())
     .filter(Boolean);
+  // Parse trajectory_json -> trajectory array
+  try {
+    o.trajectory = o.trajectory_json ? JSON.parse(o.trajectory_json) : [];
+  } catch {
+    o.trajectory = [];
+  }
+  delete o.trajectory_json;
+  // is_living string -> boolean
+  if (o.is_living === "true") o.is_living = true;
+  else if (o.is_living === "false") o.is_living = false;
+  else o.is_living = null;
   delete o.source_urls_pipe;
   delete o.primary_early_advantage_tags;
   return o;

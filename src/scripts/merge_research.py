@@ -49,6 +49,8 @@ EXISTING_CSV_FIELDS = [
     "evidence_summary", "early_advantage_evidence_confidence", "source_count",
     "primary_source_url", "source_urls_pipe", "annotation_status",
     "source_audit_status", "data_version",
+    "starting_point", "current_position", "current_position_year", "is_living",
+    "trajectory_json",
 ]
 
 NUMERIC_FIELDS = {
@@ -68,7 +70,7 @@ NUMERIC_FIELDS = {
     "direct_customer_domain_exposure_score", "prodigy_physical_edge_score",
     "adversity_constraint_catalyst_score", "inherited_access_stack_count",
     "exceptional_inherited_access_count", "all_documented_early_condition_count",
-    "source_count",
+    "source_count", "current_position_year",
 }
 
 REQUIRED_FIELDS = {
@@ -94,6 +96,17 @@ def to_csv_row(obj: dict) -> dict:
             tags = obj.get("primary_early_advantage_tags")
             if isinstance(tags, list):
                 v = ", ".join(tags)
+        elif f == "trajectory_json":
+            traj = obj.get("trajectory")
+            v = json.dumps(traj, ensure_ascii=False) if traj else ""
+        elif f == "is_living":
+            il = obj.get("is_living")
+            if il is True:
+                v = "true"
+            elif il is False:
+                v = "false"
+            else:
+                v = ""
         if v is None:
             v = ""
         row[f] = v
@@ -208,6 +221,23 @@ def main() -> int:
                     obj[k] = v
             obj["source_urls"] = [u.strip() for u in (row.get("source_urls_pipe") or "").split("|") if u.strip()]
             obj["primary_early_advantage_tags_list"] = [t.strip() for t in (row.get("primary_early_advantage_tags") or "").split(",") if t.strip()]
+            # trajectory_json -> trajectory
+            tj = row.get("trajectory_json") or ""
+            if tj:
+                try:
+                    obj["trajectory"] = json.loads(tj)
+                except json.JSONDecodeError:
+                    obj["trajectory"] = []
+            else:
+                obj["trajectory"] = []
+            # is_living
+            il = row.get("is_living") or ""
+            if il == "true":
+                obj["is_living"] = True
+            elif il == "false":
+                obj["is_living"] = False
+            else:
+                obj["is_living"] = None
             f.write(json.dumps(obj, ensure_ascii=False) + "\n")
         for obj in eligible:
             out = {k: v for k, v in obj.items() if k != "eligibility_status"}

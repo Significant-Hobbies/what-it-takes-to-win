@@ -84,10 +84,36 @@ by age 26**, and if so, code their early-advantage scores per the rubric below.
   "source_urls": ["URL1", "URL2", ...],
   "annotation_status": "subagent_researched_beta",
   "source_audit_status": "not_independently_audited",
-  "data_version": "0.2.0-subagent-beta",
-  "eligibility_status": "age_26_eligible | age_26_ineligible | unverified_candidate"
+  "data_version": "0.3.0-trajectory-beta",
+  "eligibility_status": "age_26_eligible | age_26_ineligible | unverified_candidate",
+  "starting_point": "One sentence: family/class/origin context at birth (e.g. 'Born to a middle-class family in X; father was an engineer, mother a teacher'). Use 'Not documented' if unknown.",
+  "current_position": "One sentence: latest known status/role/achievement as of research date (e.g. 'CEO of X; net worth ~$Y; resides in Z'). For deceased: 'Died in YEAR at age N; final role: X'.",
+  "current_position_year": integer year of current_position (e.g. 2025, or year of death),
+  "is_living": true or false,
+  "trajectory": [
+    {"year": 1998, "age": 19, "event": "One-sentence original milestone summary"},
+    {"year": 2004, "age": 25, "event": "One-sentence original milestone summary"},
+    {"year": 2012, "age": 33, "event": "One-sentence original milestone summary"}
+  ]
 }
 ```
+
+## Trajectory fields (new in v0.3)
+
+For **eligible** people only, also code:
+
+- **starting_point** — one sentence describing family/class/geographic origin at birth. Draw from family_context_summary if you already coded it; otherwise research it. If unknown, write "Not documented in reviewed sources."
+- **current_position** — one sentence describing their latest known status as of the research date. Include current role, notable achievement, and (if findable) approximate net worth or status marker. For deceased people, write their final role and year/age of death.
+- **current_position_year** — integer year that current_position reflects (e.g. 2025 for living people, or year of death).
+- **is_living** — true if living as of the research date, false if deceased.
+- **trajectory** — array of 3-8 objects, each `{year, age, event}`:
+  - Always include the age-26 milestone as one point.
+  - Include 2-7 additional career-defining milestones after age 26 (major awards, foundings, breakthroughs, role changes, deaths).
+  - Each `event` is one original sentence.
+  - Sort ascending by year.
+  - For deceased people, the final entry may be the death event.
+
+Ineligible people should have null/empty trajectory fields.
 
 ## Score rubric (0-2 scale for early-advantage fields)
 
