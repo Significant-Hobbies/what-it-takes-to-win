@@ -235,6 +235,22 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
     // People who succeeded at user's exact age
     const sameAge = comparePool.filter(p => p.age_at_milestone === age).slice(0, 8);
 
+    // Find "self-made" stories: low advantage (<=4), high success (tier 1-2)
+    const selfMade = peopleData.filter(p => {
+      let ta = 0;
+      for (const f of advantageFields) ta += (p[f.key] || 0);
+      const tier = p.success_tier || 4;
+      return ta <= 4 && tier <= 2;
+    }).sort((a, b) => (a.success_tier || 4) - (b.success_tier || 4)).slice(0, 6);
+
+    // Find "well-positioned" stories: high advantage (>=10), high success (tier 1-2)
+    const wellPositioned = peopleData.filter(p => {
+      let ta = 0;
+      for (const f of advantageFields) ta += (p[f.key] || 0);
+      const tier = p.success_tier || 4;
+      return ta >= 10 && tier <= 2;
+    }).sort((a, b) => (b.total_leverage_score || 0) - (a.total_leverage_score || 0)).slice(0, 6);
+
     // Build results HTML
     const leveragePct = percentile(userTotalLeverage, totalLeverageStats);
     const advantagePct = percentile(userTotalAdvantage, computePercentiles(peopleData.map(p => {
@@ -250,30 +266,51 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
       return { p25: pct(0.25), p50: pct(0.50), p75: pct(0.75), p90: pct(0.90), count: sorted.length };
     }
 
-    let html = `
-      <div class="card" style="padding:24px;margin-bottom:16px;">
-        <h2 style="margin-top:0;">Your results</h2>
-        <p style="color:var(--text-dim);">Comparing you against <strong>${comparePool.length}</strong> people${cohort ? ` in "${cohort}"` : ''} who achieved a material milestone by age 26. ${achievedBeforeUserAge.length} of them did it by age ${age}.</p>
+    // Determine the encouraging message based on advantage level
+    const isLowAdvantage = userTotalAdvantage <= 5;
+    const isHighAdvantage = userTotalAdvantage >= 10;
+    const isMediumAdvantage = !isLowAdvantage && !isHighAdvantage;
 
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0;">
-          <div style="text-align:center;padding:20px;background:var(--bg);border-radius:var(--radius-sm);">
-            <div style="font-size:12px;color:var(--text-faint);text-transform:uppercase;letter-spacing:0.05em;">Total leverage score</div>
-            <div style="font-size:36px;font-weight:700;color:var(--accent);margin:8px 0;">${userTotalLeverage}</div>
-            <div style="font-size:13px;color:var(--text-dim);">Percentile: <strong>${Math.round(leveragePct)}th</strong></div>
-            <div style="font-size:12px;color:var(--text-faint);">Dataset avg: ${totalLeverageStats.mean}</div>
-          </div>
-          <div style="text-align:center;padding:20px;background:var(--bg);border-radius:var(--radius-sm);">
-            <div style="font-size:12px;color:var(--text-faint);text-transform:uppercase;letter-spacing:0.05em;">Total advantage score</div>
-            <div style="font-size:36px;font-weight:700;color:var(--accent-2);margin:8px 0;">${userTotalAdvantage}</div>
-            <div style="font-size:13px;color:var(--text-dim);">Percentile: <strong>${Math.round(advantagePct)}th</strong></div>
-            <div style="font-size:12px;color:var(--text-faint);">Max possible: ${advantageFields.length * 2}</div>
-          </div>
+    let bannerMsg, bannerColor, bannerBg;
+    if (isLowAdvantage) {
+      bannerMsg = `You scored ${userTotalAdvantage} on early advantages — below the dataset average of 8.1. But that's not the whole story. <strong>${selfMade.length} people in our dataset reached tier-1 or tier-2 success with the same or fewer advantages.</strong> Ingvar Kamprad founded IKEA at 17 with pocket money. Will Smith won a Grammy at 20 from West Philadelphia. Srinivasa Ramanujan was publishing breakthrough math from poverty. Advantage helps — but it's not required. Your drive, timing, and reps matter more.`;
+      bannerColor = 'var(--accent-2)';
+      bannerBg = 'rgba(95, 211, 188, 0.08)';
+    } else if (isHighAdvantage) {
+      bannerMsg = `You scored ${userTotalAdvantage} on early advantages — above the dataset average of 8.1. <strong>You're well-positioned.</strong> People with similar advantage profiles in our dataset went on to become tier-1 legends. Your head start is real. The question now is whether you're putting in the reps and riding the right wave. High advantages compound — but only if you act on them.`;
+      bannerColor = 'var(--accent)';
+      bannerBg = 'rgba(124, 156, 255, 0.08)';
+    } else {
+      bannerMsg = `You scored ${userTotalAdvantage} on early advantages — right around the dataset average of 8.1. <strong>You have a solid foundation.</strong> Most people in our dataset had a moderate mix of advantages — a mentor here, some domain exposure there. What separated the tier-1 achievers wasn't more advantages, it was concentration: intense reps in one direction, often with a complementary partner. You have what you need to start.`;
+      bannerColor = 'var(--accent-3)';
+      bannerBg = 'rgba(240, 163, 107, 0.08)';
+    }
+
+    let html = `
+      <div class="card" style="padding:24px;margin-bottom:16px;border-left:3px solid ${bannerColor};background:${bannerBg};">
+        <h2 style="margin-top:0;">Your results</h2>
+        <p style="color:var(--text);font-size:15px;line-height:1.6;">${bannerMsg}</p>
+        <p style="color:var(--text-faint);font-size:13px;margin-top:12px;">Comparing you against <strong>${comparePool.length}</strong> people${cohort ? ` in "${cohort}"` : ''} who achieved a material milestone by age 26. ${achievedBeforeUserAge.length} of them did it by age ${age} — your age.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;">
+        <div class="card" style="text-align:center;padding:20px;">
+          <div style="font-size:12px;color:var(--text-faint);text-transform:uppercase;letter-spacing:0.05em;">Your leverage score</div>
+          <div style="font-size:36px;font-weight:700;color:var(--accent);margin:8px 0;">${userTotalLeverage}</div>
+          <div style="font-size:13px;color:var(--text-dim);">Top ${Math.round(100 - leveragePct)}% of dataset</div>
+          <div style="font-size:12px;color:var(--text-faint);">Dataset avg: ${totalLeverageStats.mean} · Max: 24</div>
+        </div>
+        <div class="card" style="text-align:center;padding:20px;">
+          <div style="font-size:12px;color:var(--text-faint);text-transform:uppercase;letter-spacing:0.05em;">Your advantage score</div>
+          <div style="font-size:36px;font-weight:700;color:var(--accent-2);margin:8px 0;">${userTotalAdvantage}</div>
+          <div style="font-size:13px;color:var(--text-dim);">Top ${Math.round(100 - advantagePct)}% of dataset</div>
+          <div style="font-size:12px;color:var(--text-faint);">Dataset avg: 8.1 · Max: 24</div>
         </div>
       </div>
 
       <div class="card" style="padding:24px;margin-bottom:16px;">
         <h3 style="margin-top:0;">Your advantage profile vs. dataset</h3>
-        <p style="color:var(--text-dim);font-size:13px;">Each bar shows your score (colored) vs. the dataset average (gray outline).</p>
+        <p style="color:var(--text-dim);font-size:13px;">Each bar shows your score (colored) vs. the dataset average (dashed outline). A score of 0 means "no clear evidence" — not "you're disadvantaged."</p>
         <div style="margin-top:16px;">
           ${advantageFields.map(f => {
             const uv = userAnswers[f.key] || 0;
@@ -317,12 +354,67 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
       </div>
     `;
 
+    // Self-made stories for low-advantage users
+    if (isLowAdvantage && selfMade.length > 0) {
+      html += `
+        <div class="card" style="padding:24px;margin-bottom:16px;border-left:3px solid var(--accent-2);">
+          <h3 style="margin-top:0;">They had fewer advantages too — and still made it</h3>
+          <p style="color:var(--text-dim);font-size:13px;">These tier-1 and tier-2 achievers scored ${userTotalAdvantage >= 4 ? 'similar to you' : 'at or below your level'} on early advantages. No inherited wealth, no family domain expertise, no elite pipeline — and they still reached the top of their fields.</p>
+          <div class="person-grid" style="margin-top:16px;">
+            ${selfMade.map(p => {
+              let ta = 0;
+              for (const f of advantageFields) ta += (p[f.key] || 0);
+              return `
+              <a class="person-card" href="/person/${p.person_id}/">
+                <div class="name">${p.name}</div>
+                <div class="cat">${p.category} · age ${p.age_at_milestone}</div>
+                <div class="milestone">${p.milestone_by_age_26}</div>
+                <div class="scores">
+                  <span class="score-pill">adv <strong>${ta}</strong></span>
+                  <span class="score-pill">T${p.success_tier}</span>
+                </div>
+              </a>
+              `;
+            }).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    // Well-positioned stories for high-advantage users
+    if (isHighAdvantage && wellPositioned.length > 0) {
+      html += `
+        <div class="card" style="padding:24px;margin-bottom:16px;border-left:3px solid var(--accent);">
+          <h3 style="margin-top:0;">People with your advantage profile — what they did with it</h3>
+          <p style="color:var(--text-dim);font-size:13px;">These tier-1 and tier-2 achievers had similar early advantages to yours. The question is: are you putting in the reps they did?</p>
+          <div class="person-grid" style="margin-top:16px;">
+            ${wellPositioned.map(p => {
+              let ta = 0;
+              for (const f of advantageFields) ta += (p[f.key] || 0);
+              return `
+              <a class="person-card" href="/person/${p.person_id}/">
+                <div class="name">${p.name}</div>
+                <div class="cat">${p.category} · age ${p.age_at_milestone}</div>
+                <div class="milestone">${p.milestone_by_age_26}</div>
+                <div class="scores">
+                  <span class="score-pill">adv <strong>${ta}</strong></span>
+                  <span class="score-pill">L <strong>${p.total_leverage_score}</strong></span>
+                  <span class="score-pill">T${p.success_tier}</span>
+                </div>
+              </a>
+              `;
+            }).join('')}
+          </div>
+        </div>
+      `;
+    }
+
     // Closest matches
     if (matches.length > 0) {
       html += `
         <div class="card" style="padding:24px;margin-bottom:16px;">
-          <h3 style="margin-top:0;">Closest matches in the dataset</h3>
-          <p style="color:var(--text-dim);font-size:13px;">People whose advantage + leverage profile most closely matches yours.</p>
+          <h3 style="margin-top:0;">Your closest matches</h3>
+          <p style="color:var(--text-dim);font-size:13px;">People whose full advantage + leverage profile most closely resembles yours. Click through to see their full journey, trajectory, and what they did next.</p>
           <div class="person-grid" style="margin-top:16px;">
             ${matches.map(m => `
               <a class="person-card" href="/person/${m.person.person_id}/">
@@ -345,7 +437,8 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
     if (sameAge.length > 0) {
       html += `
         <div class="card" style="padding:24px;margin-bottom:16px;">
-          <h3 style="margin-top:0;">People who succeeded at age ${age}</h3>
+          <h3 style="margin-top:0;">People who broke through at age ${age}</h3>
+          <p style="color:var(--text-dim);font-size:13px;">It's not too late. These people hit their milestone at exactly your age.</p>
           <div class="person-grid" style="margin-top:16px;">
             ${sameAge.map(p => `
               <a class="person-card" href="/person/${p.person_id}/">
@@ -363,11 +456,11 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
       `;
     }
 
-    // Gap analysis
+    // Opportunities (reframed gap analysis)
     html += `
       <div class="card" style="padding:24px;margin-bottom:16px;">
-        <h3 style="margin-top:0;">Gap analysis</h3>
-        <p style="color:var(--text-dim);font-size:13px;">Where you score below the dataset average — these are dimensions where successful people had advantages you don't.</p>
+        <h3 style="margin-top:0;">Where you can grow</h3>
+        <p style="color:var(--text-dim);font-size:13px;">These are dimensions where the dataset average is higher than your score. They're not deficits — they're <strong>opportunities to build</strong>. Many successful people didn't start with these either; they acquired them through effort and exposure.</p>
         <div style="margin-top:16px;">
     `;
 
@@ -381,14 +474,14 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
     gaps.sort((a, b) => b.gap - a.gap);
 
     if (gaps.length === 0) {
-      html += `<p style="color:var(--text-dim);">No significant gaps — you score at or above the dataset average on all dimensions.</p>`;
+      html += `<p style="color:var(--text-dim);">You score at or above the dataset average on every dimension. You're well-equipped — now it's about execution.</p>`;
     } else {
       for (const g of gaps.slice(0, 8)) {
         html += `
           <div style="margin-bottom:12px;">
             <div style="display:flex;justify-content:space-between;font-size:13px;">
               <span>${g.field.label}</span>
-              <span style="color:var(--warn);">gap: ${g.gap.toFixed(1)}</span>
+              <span style="color:var(--accent-3);">room to grow: ${g.gap.toFixed(1)}</span>
             </div>
             <div style="font-size:12px;color:var(--text-faint);">You: ${g.uv} · Dataset avg: ${g.avg}</div>
           </div>
