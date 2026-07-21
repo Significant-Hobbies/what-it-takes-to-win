@@ -1,9 +1,9 @@
 {
-  "existing_people": 2080,
-  "eligible_new": 12,
-  "ineligible": 1597,
-  "total_after_merge": 2092,
-  "duplicates_skipped": 2032,
+  "existing_people": 2092,
+  "eligible_new": 9,
+  "ineligible": 1600,
+  "total_after_merge": 2101,
+  "duplicates_skipped": 2044,
   "errors": 1,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -163,17 +163,14 @@
     "Svetlana Alexievich"
   ],
   "eligible_new_names": [
-    "Demon1 (Maximilian Mazanov)",
-    "Jojopyun (Joseph Joon Pyun)",
-    "Danny (Kyle Sakamaki)",
-    "Humanoid (Marek Brázda)",
-    "yay (Jaccob Whiteaker)",
-    "cNed (Mehmet Yağız İpek)",
-    "Derke (Nikita Sirmitev)",
-    "Less (Felipe de Loyola Basso)",
-    "pANcada (Bryan Luna)",
-    "Collapse (Magomed Khalilov)",
-    "TORONTOTOKYO (Alexander Khertek)",
-    "Ropz (Robin Kool)"
+    "Guido Messina",
+    "Sergei Novikov",
+    "Li Xiaoshuang",
+    "Naser Orić",
+    "Gabriele Veneziano",
+    "Alvaro Načinović",
+    "Kiril Lazarov",
+    "Lee Chong Wei",
+    "Eduard Gufeld"
   ]
 }
