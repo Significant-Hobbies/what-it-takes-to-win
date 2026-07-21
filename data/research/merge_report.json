@@ -1,9 +1,9 @@
 {
-  "existing_people": 1897,
-  "eligible_new": 12,
-  "ineligible": 1541,
-  "total_after_merge": 1909,
-  "duplicates_skipped": 1848,
+  "existing_people": 1909,
+  "eligible_new": 5,
+  "ineligible": 1548,
+  "total_after_merge": 1914,
+  "duplicates_skipped": 1860,
   "errors": 1,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -163,17 +163,10 @@
     "Svetlana Alexievich"
   ],
   "eligible_new_names": [
-    "Doublelift",
-    "Dyrus",
-    "Sneaky",
-    "WildTurtle",
-    "Meteos",
-    "xPeke",
-    "s1mple",
-    "ZywOo",
-    "NiKo",
-    "dev1ce",
-    "coldzera",
-    "FalleN"
+    "Jon Henricks",
+    "Hans van Manen",
+    "Józef Szmidt",
+    "Stellan Bengtsson",
+    "Xie Jun"
   ]
 }
