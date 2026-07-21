@@ -1,9 +1,9 @@
 {
-  "existing_people": 2233,
-  "eligible_new": 9,
-  "ineligible": 1639,
-  "total_after_merge": 2242,
-  "duplicates_skipped": 2185,
+  "existing_people": 2258,
+  "eligible_new": 0,
+  "ineligible": 1647,
+  "total_after_merge": 2258,
+  "duplicates_skipped": 2210,
   "errors": 1,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -126,6 +126,13 @@
     "Emmanuelle Charpentier",
     "Eckhart Tolle",
     "Richard Henderson",
+    "Zoia Ceaușescu",
+    "Norman Schwarzkopf Jr.",
+    "Milorad Mažić",
+    "Pavel Grachev",
+    "Samuel L. Jackson",
+    "Julian Assange",
+    "Diébédo Francis Kéré",
     "Robert Cailliau",
     "Ken Kutaragi",
     "Ahmed Zewail",
@@ -153,24 +160,7 @@
     "Elizabeth Blackburn",
     "Jean Nouvel",
     "Jacques Dubochet",
-    "Tim Berners-Lee",
-    "Michael Levitt",
-    "Jean Reno",
-    "Andrew Wiles",
-    "Salman Rushdie",
-    "Anton Zeilinger",
-    "Isabel Allende",
-    "Svetlana Alexievich"
+    "Tim Berners-Lee"
   ],
-  "eligible_new_names": [
-    "Elijah Renner",
-    "Philip Meng",
-    "Ishan Ramrakhiani",
-    "Shaurya Gupta",
-    "Nicolas Muntwyler",
-    "Sajal Khanna",
-    "Callum Ferguson",
-    "Nick Dobroshinsky",
-    "Yasser Elsaid"
-  ]
+  "eligible_new_names": []
 }
