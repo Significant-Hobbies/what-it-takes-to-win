@@ -1,8 +1,8 @@
 {
   "existing_people": 1897,
-  "eligible_new": 0,
+  "eligible_new": 12,
   "ineligible": 1541,
-  "total_after_merge": 1897,
+  "total_after_merge": 1909,
   "duplicates_skipped": 1848,
   "errors": 1,
   "duplicate_list": [
@@ -162,5 +162,18 @@
     "Isabel Allende",
     "Svetlana Alexievich"
   ],
-  "eligible_new_names": []
+  "eligible_new_names": [
+    "Doublelift",
+    "Dyrus",
+    "Sneaky",
+    "WildTurtle",
+    "Meteos",
+    "xPeke",
+    "s1mple",
+    "ZywOo",
+    "NiKo",
+    "dev1ce",
+    "coldzera",
+    "FalleN"
+  ]
 }
