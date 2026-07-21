@@ -149,7 +149,11 @@ def main() -> int:
                 if missing:
                     errors.append(f"{jf.name}:{lineno}: {obj.get('name','?')} missing fields: {missing}")
                     continue
-                pid = obj.get("person_id") or slug(obj.get("name", ""))
+                pid = obj.get("person_id") or ""
+                # If person_id is a candidate_id like "candidate-0279-rafael-nadal",
+                # replace with a clean slug from the name.
+                if pid.startswith("candidate-") or not pid:
+                    pid = slug(obj.get("name", ""))
                 obj["person_id"] = pid
                 if pid in existing_ids or pid in seen_ids:
                     duplicates.append(f"{pid} ({obj.get('name')})")
