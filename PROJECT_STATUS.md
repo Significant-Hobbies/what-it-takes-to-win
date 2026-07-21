@@ -40,6 +40,11 @@ by age 26, and what early conditions may have accelerated them.
 - 2026-07-21 — visualization site built (overview, explore, person detail, methodology, about)
 - 2026-07-21 — 400-person candidate queue generated from Pantheon 2025
 - 2026-07-21 — round 1 subagent research complete: 57 new eligible people (112 → 169)
+- 2026-07-21 — round 2 subagent research complete: 59 new eligible people (169 → 228)
+- 2026-07-21 — round 3 subagent research complete: 61 new eligible people (228 → 289)
+- 2026-07-21 — round 4 subagent research complete: 60 new eligible people (289 → 349)
+- 2026-07-21 — round 5 subagent research complete: 52 new eligible people (349 → 401)
+- 2026-07-21 — round 6 subagent research complete: 37 new eligible people (401 → 438)
 
 ## Products
 
@@ -55,17 +60,16 @@ by age 26, and what early conditions may have accelerated them.
 - Dark, dense, scannable visualization UI
 - 5 overview charts on homepage (ECharts)
 - Explore page with search + 5 filters (cohort, category, engine, archetype, sort)
-- 169 per-person detail pages (prerendered)
-- Dataset validation passes (169 unique IDs, all scores in range)
+- 438 per-person detail pages (prerendered)
+- Dataset validation passes (438 unique IDs, all scores in range)
 - Candidate queue builder (Pantheon 2025, corrected for new schema)
 - Subagent research pipeline (instructions, batch CSVs, JSONL output, merge script)
 - Merge report with eligibility stats and error tracking
 
 ## Todo / Planned / Deferred / Blocked
 
-1. **In progress** — Round 2 subagent research (batches 9-16, ~96 more candidates)
-2. **Planned** — Rounds 3+ to reach 500 people (need ~330 more eligible; at ~60% eligibility rate, ~550 more candidates)
-3. **Planned** — Cloudflare Pages deployment
-4. **Planned** — Double-code stratified sample for reliability (per methodology)
-5. **Deferred** — v1.0 with independently audited sources, retrieval dates, archived links
-6. **Deferred** — 3,000-person deeply coded dataset (per expansion protocol)
+1. **In progress** — Round 7 subagent research (batches 17-24, ~96 more candidates, target ~500)
+2. **Planned** — Cloudflare Pages deployment
+3. **Planned** — Double-code stratified sample for reliability (per methodology)
+4. **Deferred** — v1.0 with independently audited sources, retrieval dates, archived links
+5. **Deferred** — 3,000-person deeply coded dataset (per expansion protocol)
