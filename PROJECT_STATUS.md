@@ -48,6 +48,7 @@ by age 26, and what early conditions may have accelerated them.
 - 2026-07-21 — round 7 subagent research complete: 44 new eligible people (438 → 482)
 - 2026-07-21 — round 8 subagent research complete: 24 new eligible people (482 → 506) — 500-person target reached
 - 2026-07-21 — tech-focused expansion: 51 new eligible people (506 → 557) — added founders, programmers, engineers, mathematicians, physicists
+- 2026-07-21 — large-scale expansion: 287 new eligible people (557 → 844) — 50 batches, 600 candidates from Pantheon 2025
 
 ## Products
 
@@ -63,15 +64,15 @@ by age 26, and what early conditions may have accelerated them.
 - Dark, dense, scannable visualization UI
 - 5 overview charts on homepage (ECharts)
 - Explore page with search + 5 filters (cohort, category, engine, archetype, sort)
-- 557 per-person detail pages (prerendered)
-- Dataset validation passes (557 unique IDs, all scores in range)
+- 844 per-person detail pages (prerendered)
+- Dataset validation passes (844 unique IDs, all scores in range)
 - Candidate queue builder (Pantheon 2025, corrected for new schema)
 - Subagent research pipeline (instructions, batch CSVs, JSONL output, merge script)
 - Merge report with eligibility stats and error tracking
 
 ## Todo / Planned / Deferred / Blocked
 
-1. **Done** — 557 people across 8 research rounds + tech-focused expansion (500+ target exceeded)
+1. **Done** — 844 people across 8 research rounds + tech-focused + large-scale expansion (500+ target exceeded)
 2. **Planned** — Cloudflare Pages deployment
 3. **Planned** — Double-code stratified sample for reliability (per methodology)
 4. **Deferred** — v1.0 with independently audited sources, retrieval dates, archived links
