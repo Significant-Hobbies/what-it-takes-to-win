@@ -1,9 +1,9 @@
 {
-  "existing_people": 2101,
-  "eligible_new": 19,
+  "existing_people": 2120,
+  "eligible_new": 12,
   "ineligible": 1605,
-  "total_after_merge": 2120,
-  "duplicates_skipped": 2053,
+  "total_after_merge": 2132,
+  "duplicates_skipped": 2072,
   "errors": 1,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -163,24 +163,17 @@
     "Svetlana Alexievich"
   ],
   "eligible_new_names": [
-    "Helvijs Saukants (broky)",
-    "Sergey Rykhtorov (Ax1Le)",
-    "Dmitry Sokolov (sh1ro)",
-    "Valerii Vakhovskyi (b1t)",
-    "Choi Woo-je (Zeus)",
-    "Moon Hyeon-jun (Oner)",
-    "Park Jae-hyuk (Ruler)",
-    "Zhuo Ding (Knight)",
-    "Bai Jiahao (369)",
-    "Chen Zebin (Bin)",
-    "Yan Yangwei (Wei)",
-    "Chen Wei (GALA)",
-    "Martin St. Louis",
-    "George Eaton",
-    "Thae Su Nyein",
-    "Ian Thorpe",
-    "Malala Yousafzai",
-    "Gunnar Nilsson",
-    "Wang Liqin"
+    "Tian (Gao Tianliang)",
+    "Crisp (Liu Qingsong)",
+    "Lwx (Lin Weixiang)",
+    "Doinb (Kim Tae-sang)",
+    "Nuguri (Jang Ha-gwon)",
+    "Ghost (Jang Yong-jun)",
+    "Jynxzi (Nicholas Stewart)",
+    "iiTzTimmy (Timothy An)",
+    "MrBeast (Jimmy Donaldson)",
+    "Ryan Trahan",
+    "TheGrefg (David Cánovas Martínez)",
+    "Ludwig (Ludwig Ahgren)"
   ]
 }
