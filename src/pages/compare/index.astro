@@ -220,6 +220,18 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
     // Find people who succeeded at or before user's age
     const achievedBeforeUserAge = comparePool.filter(p => p.age_at_milestone != null && p.age_at_milestone <= age);
 
+    // Three age buckets — the primary lens
+    const alreadyMadeIt = comparePool.filter(p => p.age_at_milestone != null && p.age_at_milestone < age);
+    const breakingThroughNow = comparePool.filter(p => p.age_at_milestone === age);
+    const notYetButWill = comparePool.filter(p => p.age_at_milestone != null && p.age_at_milestone > age);
+
+    // For people with trajectory data, find what they were doing at the user's exact age
+    const doingAtYourAge = peopleData.filter(p => p.trajectory && p.trajectory.length > 0).map(p => {
+      const entry = p.trajectory.find(t => t.age === age);
+      if (!entry) return null;
+      return { person: p, entry };
+    }).filter(x => x !== null);
+
     // Find closest matches (smallest score difference)
     const allFields = [...advantageFields, ...leverageFields];
     const matches = comparePool.map(p => {
@@ -231,9 +243,6 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
       }
       return { person: p, diff };
     }).sort((a, b) => a.diff - b.diff).slice(0, 6);
-
-    // People who succeeded at user's exact age
-    const sameAge = comparePool.filter(p => p.age_at_milestone === age).slice(0, 8);
 
     // Find "self-made" stories: low advantage (<=4), high success (tier 1-2)
     const selfMade = peopleData.filter(p => {
@@ -270,14 +279,9 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
     const isLowAdvantage = userTotalAdvantage <= 5;
     const isHighAdvantage = userTotalAdvantage >= 10;
     const isMediumAdvantage = !isLowAdvantage && !isHighAdvantage;
-    const isPast26 = age > 26;
 
     let bannerMsg, bannerColor, bannerBg;
-    if (isPast26) {
-      bannerMsg = `You're ${age}. Our dataset tracks people who hit a material milestone by 26 — but that's just the starting line, not the finish. <strong>${achievedBeforeUserAge.length} of them had already broken through by your age.</strong> Many others we researched didn't make it by 26 and succeeded later — Stan Lee published his first comic at 38, Vera Wang designed her first dress at 40, Samuel L. Jackson broke through at 43. 26 is one milestone, not the milestone. Your trajectory is still being written.`;
-      bannerColor = 'var(--accent-3)';
-      bannerBg = 'rgba(240, 163, 107, 0.08)';
-    } else if (isLowAdvantage) {
+    if (isLowAdvantage) {
       bannerMsg = `You scored ${userTotalAdvantage} on early advantages — below the dataset average of 8.1. But that's not the whole story. <strong>${selfMade.length} people in our dataset reached tier-1 or tier-2 success with the same or fewer advantages.</strong> Ingvar Kamprad founded IKEA at 17 with pocket money. Will Smith won a Grammy at 20 from West Philadelphia. Srinivasa Ramanujan was publishing breakthrough math from poverty. Advantage helps — but it's not required. Your drive, timing, and reps matter more.`;
       bannerColor = 'var(--accent-2)';
       bannerBg = 'rgba(95, 211, 188, 0.08)';
@@ -291,12 +295,328 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
       bannerBg = 'rgba(240, 163, 107, 0.08)';
     }
 
+    // Age snapshot summary
+    const totalWithMilestoneAge = alreadyMadeIt.length + breakingThroughNow.length + notYetButWill.length;
+    const pctAlready = totalWithMilestoneAge > 0 ? Math.round(alreadyMadeIt.length / totalWithMilestoneAge * 100) : 0;
+    const pctNow = totalWithMilestoneAge > 0 ? Math.round(breakingThroughNow.length / totalWithMilestoneAge * 100) : 0;
+    const pctNotYet = totalWithMilestoneAge > 0 ? Math.round(notYetButWill.length / totalWithMilestoneAge * 100) : 0;
+
     let html = `
       <div class="card" style="padding:24px;margin-bottom:16px;border-left:3px solid ${bannerColor};background:${bannerBg};">
-        <h2 style="margin-top:0;">Your results</h2>
+        <h2 style="margin-top:0;">At age ${age}</h2>
         <p style="color:var(--text);font-size:15px;line-height:1.6;">${bannerMsg}</p>
-        <p style="color:var(--text-faint);font-size:13px;margin-top:12px;">Comparing you against <strong>${comparePool.length}</strong> people${cohort ? ` in "${cohort}"` : ''} who achieved a material milestone by age 26. ${achievedBeforeUserAge.length} of them did it by age ${age} — your age.</p>
       </div>
+
+      <div class="card" style="padding:24px;margin-bottom:16px;">
+        <h3 style="margin-top:0;">What was happening at age ${age}</h3>
+        <p style="color:var(--text-dim);font-size:13px;">Of the <strong>${totalWithMilestoneAge}</strong> people in our dataset${cohort ? ` (in "${cohort}")` : ''} with a known milestone age:</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:16px 0;">
+          <div style="text-align:center;padding:16px 8px;background:var(--bg);border-radius:var(--radius-sm);border-top:3px solid var(--accent-2);">
+            <div style="font-size:28px;font-weight:700;color:var(--accent-2);">${alreadyMadeIt.length}</div>
+            <div style="font-size:12px;color:var(--text-dim);margin-top:4px;">already broke through</div>
+            <div style="font-size:11px;color:var(--text-faint);">${pctAlready}%</div>
+          </div>
+          <div style="text-align:center;padding:16px 8px;background:var(--bg);border-radius:var(--radius-sm);border-top:3px solid var(--accent);">
+            <div style="font-size:28px;font-weight:700;color:var(--accent);">${breakingThroughNow.length}</div>
+            <div style="font-size:12px;color:var(--text-dim);margin-top:4px;">breaking through now</div>
+            <div style="font-size:11px;color:var(--text-faint);">${pctNow}%</div>
+          </div>
+          <div style="text-align:center;padding:16px 8px;background:var(--bg);border-radius:var(--radius-sm);border-top:3px solid var(--accent-3);">
+            <div style="font-size:28px;font-weight:700;color:var(--accent-3);">${notYetButWill.length}</div>
+            <div style="font-size:12px;color:var(--text-dim);margin-top:4px;">not yet — but will</div>
+            <div style="font-size:11px;color:var(--text-faint);">${pctNotYet}%</div>
+          </div>
+        </div>
+        <p style="color:var(--text-faint);font-size:12px;">This dataset is biased toward early bloomers — people who had a notable milestone by 26. The "not yet" bucket only includes people who did break through later (before 26). It does not include people who never broke through at all.</p>
+      </div>
+    `;
+
+    // "What they were doing at your age" — trajectory snapshots
+    if (doingAtYourAge.length > 0) {
+      const sorted = doingAtYourAge.sort((a, b) => (a.person.success_tier || 4) - (b.person.success_tier || 4)).slice(0, 12);
+      html += `
+        <div class="card" style="padding:24px;margin-bottom:16px;">
+          <h3 style="margin-top:0;">What they were doing at age ${age}</h3>
+          <p style="color:var(--text-dim);font-size:13px;">Specific snapshots from career trajectories where we have data at your exact age.</p>
+          <div style="margin-top:16px;">
+            ${sorted.map(({ person: p, entry }) => `
+              <a href="/person/${p.person_id}/" style="display:block;padding:12px;margin-bottom:8px;background:var(--bg);border-radius:var(--radius-sm);border-left:3px solid var(--accent);text-decoration:none;color:inherit;transition:border-color 0.15s;">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;">
+                  <strong style="color:var(--text);">${p.name}</strong>
+                  <span style="font-size:11px;color:var(--text-faint);">${p.category}${entry.year ? ` · ${entry.year}` : ''}</span>
+                </div>
+                <div style="font-size:13px;color:var(--text-dim);margin-top:4px;line-height:1.5;">${entry.event}</div>
+                ${p.age_at_milestone === age ? `<div style="font-size:11px;color:var(--accent);margin-top:6px;">↑ this was their breakthrough year</div>` : p.age_at_milestone < age ? `<div style="font-size:11px;color:var(--text-faint);margin-top:6px;">broke through at ${p.age_at_milestone}</div>` : `<div style="font-size:11px;color:var(--text-faint);margin-top:6px;">broke through at ${p.age_at_milestone} — ${p.age_at_milestone - age} years later</div>`}
+              </a>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    // Breaking through now — people who hit milestone at user's exact age
+    if (breakingThroughNow.length > 0) {
+      const sorted = breakingThroughNow.sort((a, b) => (a.success_tier || 4) - (b.success_tier || 4)).slice(0, 12);
+      html += `
+        <div class="card" style="padding:24px;margin-bottom:16px;border-left:3px solid var(--accent);">
+          <h3 style="margin-top:0;">Breaking through at ${age}</h3>
+          <p style="color:var(--text-dim);font-size:13px;">${breakingThroughNow.length} people in our dataset hit their milestone at exactly your age.</p>
+          <div class="person-grid" style="margin-top:16px;">
+            ${sorted.map(p => `
+              <a class="person-card" href="/person/${p.person_id}/">
+                <div class="name">${p.name}</div>
+                <div class="cat">${p.category}</div>
+                <div class="milestone">${p.milestone_by_age_26}</div>
+                <div class="scores">
+                  <span class="score-pill">L <strong>${p.total_leverage_score}</strong></span>
+                  <span class="score-pill">T${p.success_tier}</span>
+                </div>
+              </a>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    // Not yet but will — people who hadn't hit milestone by user's age but did later (before 26)
+    if (notYetButWill.length > 0 && age < 26) {
+      const sorted = notYetButWill.sort((a, b) => (a.age_at_milestone || 26) - (b.age_at_milestone || 26)).slice(0, 12);
+      html += `
+        <div class="card" style="padding:24px;margin-bottom:16px;border-left:3px solid var(--accent-3);">
+          <h3 style="margin-top:0;">Not yet — and that's normal</h3>
+          <p style="color:var(--text-dim);font-size:13px;">${notYetButWill.length} people in our dataset hadn't hit their milestone by ${age} either. They did later. If you haven't broken through yet, you're in good company.</p>
+          <div class="person-grid" style="margin-top:16px;">
+            ${sorted.map(p => `
+              <a class="person-card" href="/person/${p.person_id}/">
+                <div class="name">${p.name}</div>
+                <div class="cat">${p.category} · broke through at ${p.age_at_milestone}</div>
+                <div class="milestone">${p.milestone_by_age_26}</div>
+                <div class="scores">
+                  <span class="score-pill">L <strong>${p.total_leverage_score}</strong></span>
+                  <span class="score-pill">T${p.success_tier}</span>
+                </div>
+              </a>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    // Already made it — people who broke through before user's age
+    if (alreadyMadeIt.length > 0) {
+      const sorted = alreadyMadeIt.sort((a, b) => (a.success_tier || 4) - (b.success_tier || 4)).slice(0, 12);
+      html += `
+        <div class="card" style="padding:24px;margin-bottom:16px;border-left:3px solid var(--accent-2);">
+          <h3 style="margin-top:0;">Already broke through by ${age}</h3>
+          <p style="color:var(--text-dim);font-size:13px;">${alreadyMadeIt.length} people in our dataset had already hit their milestone before your age.</p>
+          <div class="person-grid" style="margin-top:16px;">
+            ${sorted.map(p => `
+              <a class="person-card" href="/person/${p.person_id}/">
+                <div class="name">${p.name}</div>
+                <div class="cat">${p.category} · age ${p.age_at_milestone}</div>
+                <div class="milestone">${p.milestone_by_age_26}</div>
+                <div class="scores">
+                  <span class="score-pill">L <strong>${p.total_leverage_score}</strong></span>
+                  <span class="score-pill">T${p.success_tier}</span>
+                </div>
+              </a>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    // Self-made stories for low-advantage users
+    if (isLowAdvantage && selfMade.length > 0) {
+      html += `
+        <div class="card" style="padding:24px;margin-bottom:16px;border-left:3px solid var(--accent-2);">
+          <h3 style="margin-top:0;">They had fewer advantages too — and still made it</h3>
+          <p style="color:var(--text-dim);font-size:13px;">These tier-1 and tier-2 achievers scored ${userTotalAdvantage >= 4 ? 'similar to you' : 'at or below your level'} on early advantages. No inherited wealth, no family domain expertise, no elite pipeline — and they still reached the top of their fields.</p>
+          <div class="person-grid" style="margin-top:16px;">
+            ${selfMade.map(p => {
+              let ta = 0;
+              for (const f of advantageFields) ta += (p[f.key] || 0);
+              return `
+              <a class="person-card" href="/person/${p.person_id}/">
+                <div class="name">${p.name}</div>
+                <div class="cat">${p.category} · age ${p.age_at_milestone}</div>
+                <div class="milestone">${p.milestone_by_age_26}</div>
+                <div class="scores">
+                  <span class="score-pill">adv <strong>${ta}</strong></span>
+                  <span class="score-pill">T${p.success_tier}</span>
+                </div>
+              </a>
+              `;
+            }).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    // Well-positioned stories for high-advantage users
+    if (isHighAdvantage && wellPositioned.length > 0) {
+      html += `
+        <div class="card" style="padding:24px;margin-bottom:16px;border-left:3px solid var(--accent);">
+          <h3 style="margin-top:0;">People with your advantage profile — what they did with it</h3>
+          <p style="color:var(--text-dim);font-size:13px;">These tier-1 and tier-2 achievers had similar early advantages to yours. The question is: are you putting in the reps they did?</p>
+          <div class="person-grid" style="margin-top:16px;">
+            ${wellPositioned.map(p => {
+              let ta = 0;
+              for (const f of advantageFields) ta += (p[f.key] || 0);
+              return `
+              <a class="person-card" href="/person/${p.person_id}/">
+                <div class="name">${p.name}</div>
+                <div class="cat">${p.category} · age ${p.age_at_milestone}</div>
+                <div class="milestone">${p.milestone_by_age_26}</div>
+                <div class="scores">
+                  <span class="score-pill">adv <strong>${ta}</strong></span>
+                  <span class="score-pill">L <strong>${p.total_leverage_score}</strong></span>
+                  <span class="score-pill">T${p.success_tier}</span>
+                </div>
+              </a>
+              `;
+            }).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    // Score summary
+    html += `
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;">
+        <div class="card" style="text-align:center;padding:20px;">
+          <div style="font-size:12px;color:var(--text-faint);text-transform:uppercase;letter-spacing:0.05em;">Your leverage score</div>
+          <div style="font-size:36px;font-weight:700;color:var(--accent);margin:8px 0;">${userTotalLeverage}</div>
+          <div style="font-size:13px;color:var(--text-dim);">Top ${Math.round(100 - leveragePct)}% of dataset</div>
+          <div style="font-size:12px;color:var(--text-faint);">Dataset avg: ${totalLeverageStats.mean} · Max: 24</div>
+        </div>
+        <div class="card" style="text-align:center;padding:20px;">
+          <div style="font-size:12px;color:var(--text-faint);text-transform:uppercase;letter-spacing:0.05em;">Your advantage score</div>
+          <div style="font-size:36px;font-weight:700;color:var(--accent-2);margin:8px 0;">${userTotalAdvantage}</div>
+          <div style="font-size:13px;color:var(--text-dim);">Top ${Math.round(100 - advantagePct)}% of dataset</div>
+          <div style="font-size:12px;color:var(--text-faint);">Dataset avg: 8.1 · Max: 24</div>
+        </div>
+      </div>
+
+      <div class="card" style="padding:24px;margin-bottom:16px;">
+        <h3 style="margin-top:0;">Your advantage profile vs. dataset</h3>
+        <p style="color:var(--text-dim);font-size:13px;">Each bar shows your score (colored) vs. the dataset average (dashed outline). A score of 0 means "no clear evidence" — not "you're disadvantaged."</p>
+        <div style="margin-top:16px;">
+          ${advantageFields.map(f => {
+            const uv = userAnswers[f.key] || 0;
+            const ds = stats[f.key];
+            const userPct = (uv / f.max) * 100;
+            const avgPct = (ds.mean / f.max) * 100;
+            return `
+              <div class="score-bar-row">
+                <div class="name" style="font-size:12px;">${f.label}</div>
+                <div class="bar" style="position:relative;">
+                  <div class="bar-fill" style="width:${userPct}%;background:var(--accent-2);"></div>
+                  <div style="position:absolute;left:0;top:0;height:100%;width:${avgPct}%;border:1px dashed var(--text-faint);border-radius:3px;pointer-events:none;"></div>
+                </div>
+                <div class="val" style="font-size:12px;">${uv}/${f.max} <span style="color:var(--text-faint);">(avg ${ds.mean})</span></div>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      </div>
+
+      <div class="card" style="padding:24px;margin-bottom:16px;">
+        <h3 style="margin-top:0;">Your leverage profile vs. dataset</h3>
+        <div style="margin-top:16px;">
+          ${leverageFields.map(f => {
+            const uv = userAnswers[f.key] || 0;
+            const ds = stats[f.key];
+            const userPct = (uv / f.max) * 100;
+            const avgPct = (ds.mean / f.max) * 100;
+            return `
+              <div class="score-bar-row">
+                <div class="name" style="font-size:12px;">${f.label}</div>
+                <div class="bar" style="position:relative;">
+                  <div class="bar-fill" style="width:${userPct}%;background:var(--accent);"></div>
+                  <div style="position:absolute;left:0;top:0;height:100%;width:${avgPct}%;border:1px dashed var(--text-faint);border-radius:3px;pointer-events:none;"></div>
+                </div>
+                <div class="val" style="font-size:12px;">${uv}/${f.max} <span style="color:var(--text-faint);">(avg ${ds.mean})</span></div>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      </div>
+    `;
+
+    // Closest matches
+    if (matches.length > 0) {
+      html += `
+        <div class="card" style="padding:24px;margin-bottom:16px;">
+          <h3 style="margin-top:0;">Your closest matches</h3>
+          <p style="color:var(--text-dim);font-size:13px;">People whose full advantage + leverage profile most closely resembles yours. Click through to see their full journey, trajectory, and what they did next.</p>
+          <div class="person-grid" style="margin-top:16px;">
+            ${matches.map(m => `
+              <a class="person-card" href="/person/${m.person.person_id}/">
+                <div class="name">${m.person.name}</div>
+                <div class="cat">${m.person.category} · age ${m.person.age_at_milestone}</div>
+                <div class="milestone">${m.person.milestone_by_age_26}</div>
+                <div class="scores">
+                  <span class="score-pill">L <strong>${m.person.total_leverage_score}</strong></span>
+                  <span class="score-pill">T${m.person.success_tier}</span>
+                  <span class="score-pill" style="border-color:var(--accent-2);color:var(--accent-2);">match ${m.diff}</span>
+                </div>
+              </a>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    // Opportunities (reframed gap analysis)
+    html += `
+      <div class="card" style="padding:24px;margin-bottom:16px;">
+        <h3 style="margin-top:0;">Where you can grow</h3>
+        <p style="color:var(--text-dim);font-size:13px;">These are dimensions where the dataset average is higher than your score. They're not deficits — they're <strong>opportunities to build</strong>. Many successful people didn't start with these either; they acquired them through effort and exposure.</p>
+        <div style="margin-top:16px;">
+    `;
+
+    const gaps = [];
+    for (const f of [...advantageFields, ...leverageFields]) {
+      const uv = userAnswers[f.key] || 0;
+      const avg = parseFloat(stats[f.key].mean);
+      const gap = avg - uv;
+      if (gap > 0.3) gaps.push({ field: f, gap, uv, avg });
+    }
+    gaps.sort((a, b) => b.gap - a.gap);
+
+    if (gaps.length === 0) {
+      html += `<p style="color:var(--text-dim);">You score at or above the dataset average on every dimension. You're well-equipped — now it's about execution.</p>`;
+    } else {
+      for (const g of gaps.slice(0, 8)) {
+        html += `
+          <div style="margin-bottom:12px;">
+            <div style="display:flex;justify-content:space-between;font-size:13px;">
+              <span>${g.field.label}</span>
+              <span style="color:var(--accent-3);">room to grow: ${g.gap.toFixed(1)}</span>
+            </div>
+            <div style="font-size:12px;color:var(--text-faint);">You: ${g.uv} · Dataset avg: ${g.avg}</div>
+          </div>
+        `;
+      }
+    }
+
+    html += `
+        </div>
+      </div>
+      <div class="card" style="padding:20px;margin-bottom:16px;border:1px dashed var(--border-soft);">
+        <p style="font-size:12px;color:var(--text-faint);margin:0;line-height:1.6;">
+          <strong style="color:var(--text-dim);">A note on what this is:</strong> This dataset includes only people who <em>did</em> achieve a notable milestone by 26 — it does not include the many people with similar advantages who didn't. Your percentile is among achievers, not among everyone with your background. The advantage scores are interpretive annotations based on publicly available sources, not measurements — treat them as approximate (±15%). This is a tool for exploration and inspiration, not a prediction of your future.
+        </p>
+      </div>
+      <div style="text-align:center;margin:24px 0;">
+        <button class="btn-secondary" onclick="goToStep('intro')" style="padding:10px 24px;font-size:14px;">← Retake questionnaire</button>
+      </div>
+    `;
+
+    document.getElementById('results-container').innerHTML = html;
+    goToStep('results');
+  }
 
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;">
         <div class="card" style="text-align:center;padding:20px;">

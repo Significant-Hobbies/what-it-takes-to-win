@@ -15,7 +15,7 @@ by age 26, and what early conditions may have accelerated them.
 - Per-person detail pages with full score breakdowns and sources
 - Explore page with filters/search/sort
 - Methodology and about pages
-- Dataset extension via subagent research (target 500 people)
+- Dataset extension via subagent research (target 5K people, ceiling)
 
 **OUT of scope:**
 - Causal claims about advantages producing success
@@ -49,6 +49,10 @@ by age 26, and what early conditions may have accelerated them.
 - 2026-07-21 — round 8 subagent research complete: 24 new eligible people (482 → 506) — 500-person target reached
 - 2026-07-21 — tech-focused expansion: 51 new eligible people (506 → 557) — added founders, programmers, engineers, mathematicians, physicists
 - 2026-07-21 — large-scale expansion: 287 new eligible people (557 → 844) — 50 batches, 600 candidates from Pantheon 2025
+- 2026-07-21 — trajectory schema v0.3 added (starting_point, current_position, trajectory array)
+- 2026-07-21 — compare page built (/compare) — 22-question questionnaire, percentile + matches + gap analysis
+- 2026-07-21 — compare results rewritten with feel-good framing (self-made stories, age >26 path, honesty disclaimer)
+- 2026-07-21 — ongoing Pantheon expansion: 1055 people, 3000-candidate queue (250 batches), batches 01-37 launched
 
 ## Products
 
@@ -69,11 +73,13 @@ by age 26, and what early conditions may have accelerated them.
 - Candidate queue builder (Pantheon 2025, corrected for new schema)
 - Subagent research pipeline (instructions, batch CSVs, JSONL output, merge script)
 - Merge report with eligibility stats and error tracking
+- Compare page (/compare) with 22-question questionnaire, feel-good results, age >26 path, honesty disclaimer
+- Trajectory data (v0.3) on 211+ people — starting point, current position, career milestones
 
 ## Todo / Planned / Deferred / Blocked
 
-1. **Done** — 844 people across 8 research rounds + tech-focused + large-scale expansion (500+ target exceeded)
+1. **In progress** — 1055 people coded; expanding toward 5K ceiling (3000-candidate queue active, batches 01-37 launched of 250)
 2. **Planned** — Cloudflare Pages deployment
 3. **Planned** — Double-code stratified sample for reliability (per methodology)
 4. **Deferred** — v1.0 with independently audited sources, retrieval dates, archived links
-5. **Deferred** — 3,000-person deeply coded dataset (per expansion protocol)
+5. **Dropped** — 500K bulk Wikipedia layer (scope corrected to 5K gold-standard max)
