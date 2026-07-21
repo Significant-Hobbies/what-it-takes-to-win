@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import peopleData from "../../data/people.json";
+import archetypesData from "../../data/archetypes.json";
 
 // Precompute distribution stats for percentile calculations
 const advantageFields = [
@@ -149,7 +150,7 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
   </div>
 </Base>
 
-<script is:inline define:vars={{ advantageFields, leverageFields, stats, totalLeverageStats, peopleData }}>
+<script is:inline define:vars={{ advantageFields, leverageFields, stats, totalLeverageStats, peopleData, archetypesData }}>
   const userAnswers = {};
 
   function goToStep(step) {
@@ -244,6 +245,19 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
       return { person: p, diff };
     }).sort((a, b) => a.diff - b.diff).slice(0, 6);
 
+    // Match user to archetypes (anonymous profiles) based on advantage scores
+    const userAdvVector = advantageFields.map(f => userAnswers[f.key] || 0);
+    const archetypeMatches = archetypesData.map(a => {
+      const archVector = advantageFields.map(f => a.avg_advantage_scores[f.key] || 0);
+      let diff = 0;
+      for (let i = 0; i < userAdvVector.length; i++) {
+        diff += Math.abs(userAdvVector[i] - archVector[i]);
+      }
+      return { archetype: a, diff };
+    }).sort((a, b) => a.diff - b.diff);
+    const bestArchetype = archetypeMatches[0];
+    const secondArchetype = archetypeMatches[1];
+
     // Find "self-made" stories: low advantage (<=4), high success (tier 1-2)
     const selfMade = peopleData.filter(p => {
       let ta = 0;
@@ -306,6 +320,57 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
         <h2 style="margin-top:0;">At age ${age}</h2>
         <p style="color:var(--text);font-size:15px;line-height:1.6;">${bannerMsg}</p>
       </div>
+
+      <!-- Archetype match: anonymous profile based on advantage pattern -->
+      ${bestArchetype ? `
+      <div class="card" style="padding:24px;margin-bottom:16px;border-left:3px solid var(--accent-3);">
+        <h3 style="margin-top:0;">Your closest archetype</h3>
+        <p style="color:var(--text-faint);font-size:12px;margin:0 0 12px;">An anonymous profile derived from clustering ${peopleData.length} people by their advantage patterns. No names, no faces — just the shape of the head start.</p>
+        <div style="background:var(--bg);border-radius:var(--radius);padding:20px;margin-bottom:12px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;">
+            <strong style="font-size:18px;color:var(--accent-3);">${bestArchetype.archetype.name}</strong>
+            <span style="font-size:12px;color:var(--text-faint);">${bestArchetype.archetype.member_count} people in this cluster</span>
+          </div>
+          <p style="color:var(--text-dim);font-size:14px;line-height:1.6;margin:0 0 16px;">${bestArchetype.archetype.description}</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:16px;">
+            <div style="text-align:center;padding:12px 8px;background:var(--bg-card);border-radius:var(--radius-sm);">
+              <div style="font-size:22px;font-weight:700;color:var(--text);">${bestArchetype.archetype.avg_total_advantage}</div>
+              <div style="font-size:11px;color:var(--text-faint);">avg advantage score</div>
+            </div>
+            <div style="text-align:center;padding:12px 8px;background:var(--bg-card);border-radius:var(--radius-sm);">
+              <div style="font-size:22px;font-weight:700;color:var(--text);">${bestArchetype.archetype.avg_milestone_age}</div>
+              <div style="font-size:11px;color:var(--text-faint);">avg milestone age</div>
+            </div>
+            <div style="text-align:center;padding:12px 8px;background:var(--bg-card);border-radius:var(--radius-sm);">
+              <div style="font-size:22px;font-weight:700;color:var(--text);">${bestArchetype.archetype.top_categories.slice(0,2).map(c => c.category.replace(/ \(.*/, '')).join(', ')}</div>
+              <div style="font-size:11px;color:var(--text-faint);">most common fields</div>
+            </div>
+          </div>
+          <details style="margin-top:8px;">
+            <summary style="cursor:pointer;color:var(--text-dim);font-size:13px;padding:8px 0;">How your scores compare to this archetype</summary>
+            <div style="margin-top:12px;">
+              ${advantageFields.map(f => {
+                const archVal = bestArchetype.archetype.avg_advantage_scores[f.key] || 0;
+                const userVal = userAnswers[f.key] || 0;
+                const max = f.max;
+                return `
+                <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;font-size:12px;">
+                  <span style="flex:1;color:var(--text-dim);">${f.label}</span>
+                  <div style="flex:2;display:flex;gap:2px;">
+                    <div style="flex:${archVal};height:8px;background:var(--accent-3);border-radius:2px;"></div>
+                    <div style="flex:${Math.max(0.01, max - archVal)};height:8px;background:var(--border-soft);border-radius:2px;"></div>
+                  </div>
+                  <span style="width:60px;text-align:right;color:var(--text-faint);">arch ${archVal.toFixed(1)} / you ${userVal}</span>
+                </div>`;
+              }).join('')}
+            </div>
+          </details>
+        </div>
+        ${secondArchetype && secondArchetype.diff - bestArchetype.diff < 4 ? `
+          <p style="color:var(--text-faint);font-size:12px;margin:0;">You're also close to <strong style="color:var(--text-dim);">${secondArchetype.archetype.name}</strong> (${secondArchetype.archetype.member_count} people, avg advantage ${secondArchetype.archetype.avg_total_advantage}).</p>
+        ` : ''}
+      </div>
+      ` : ''}
 
       <div class="card" style="padding:24px;margin-bottom:16px;">
         <h3 style="margin-top:0;">What was happening at age ${age}</h3>
