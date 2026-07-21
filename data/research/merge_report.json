@@ -1,9 +1,9 @@
 {
-  "existing_people": 1880,
-  "eligible_new": 17,
+  "existing_people": 1897,
+  "eligible_new": 0,
   "ineligible": 1541,
   "total_after_merge": 1897,
-  "duplicates_skipped": 1831,
+  "duplicates_skipped": 1848,
   "errors": 1,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -162,23 +162,5 @@
     "Isabel Allende",
     "Svetlana Alexievich"
   ],
-  "eligible_new_names": [
-    "N0tail (Johan Sundstein)",
-    "Ceb (Sébastien Debs)",
-    "KuroKy (Kuro Salehi Takhasomi)",
-    "Puppey (Clement Ivanov)",
-    "Dendi (Danil Ishutin)",
-    "Miracle- (Amer Al-Barkawi)",
-    "SumaiL (Syed Sumail Hassan)",
-    "Arteezy (Artour Babaev)",
-    "Jaedong (Lee Jae-dong)",
-    "Flash (Lee Young-ho)",
-    "SonicFox (Dominique McLean)",
-    "Hungrybox (Juan Manuel DeBiedma)",
-    "Nam Hyun-hee",
-    "Emilio Butragueño",
-    "Pau Gasol",
-    "Patrick Ewing",
-    "David Černý"
-  ]
+  "eligible_new_names": []
 }
