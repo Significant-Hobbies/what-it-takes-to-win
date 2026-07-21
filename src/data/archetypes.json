@@ -1,0 +1,1733 @@
+[
+  {
+    "archetype_id": "archetype-1",
+    "name": "The domain heir",
+    "description": "Parents had expertise in the same field, paired with elite coaching and institutional access. Domain knowledge transferred from childhood, then compounded through dedicated mentorship and pipeline programs.",
+    "member_count": 191,
+    "avg_advantage_scores": {
+      "early_family_financial_platform_support_score": 0.68,
+      "parent_family_domain_advantage_score": 1.61,
+      "inherited_audience_business_network_score": 0.26,
+      "elite_institution_performance_pipeline_score": 1.65,
+      "frontier_geography_ecosystem_score": 0.96,
+      "rare_early_tools_facilities_score": 0.86,
+      "dedicated_mentor_coach_tutor_score": 1.56,
+      "exceptional_peer_cofounder_sibling_score": 0.54,
+      "early_online_platform_community_score": 0.01,
+      "direct_customer_domain_exposure_score": 1.37,
+      "prodigy_physical_edge_score": 1.24,
+      "adversity_constraint_catalyst_score": 0.4
+    },
+    "avg_total_advantage": 11.14,
+    "avg_milestone_age": 20.7,
+    "success_tier_distribution": {
+      "1": 90,
+      "2": 72,
+      "3": 20,
+      "4": 9
+    },
+    "top_categories": [
+      {
+        "category": "Tennis player",
+        "count": 17
+      },
+      {
+        "category": "Chess player",
+        "count": 9
+      },
+      {
+        "category": "Mathematician",
+        "count": 7
+      },
+      {
+        "category": "Conductor",
+        "count": 6
+      },
+      {
+        "category": "Figure skater",
+        "count": 6
+      }
+    ],
+    "top_cohorts": [
+      {
+        "cohort": "Athletes",
+        "count": 99
+      },
+      {
+        "cohort": "Creators / artists",
+        "count": 61
+      },
+      {
+        "cohort": "Researchers / independent engineers",
+        "count": 30
+      },
+      {
+        "cohort": "Founders / operators",
+        "count": 1
+      }
+    ],
+    "sample_trajectories": [
+      [
+        {
+          "year": 1951,
+          "age": 24,
+          "event": "Built SNARC, the first artificial neural network learning machine, while a graduate student at Princeton with funding from the Office of Naval Research."
+        },
+        {
+          "year": 1954,
+          "age": 27,
+          "event": "Completed PhD in mathematics at Princeton with a dissertation on neural-analog reinforcement systems; became a Junior Fellow of the Harvard Society of Fellows."
+        },
+        {
+          "year": 1956,
+          "age": 29,
+          "event": "Invented the confocal scanning microscope, an optical instrument with unprecedented resolution, while a Junior Fellow at Harvard."
+        },
+        {
+          "year": 1958,
+          "age": 31,
+          "event": "Joined the MIT faculty in the Department of Electrical Engineering and Computer Science."
+        },
+        {
+          "year": 1959,
+          "age": 32,
+          "event": "Co-founded the MIT Artificial Intelligence Laboratory with John McCarthy."
+        },
+        {
+          "year": 1969,
+          "age": 42,
+          "event": "Received the ACM Turing Award and published Perceptrons with Seymour Papert, a influential and controversial book on neural network limitations."
+        },
+        {
+          "year": 1986,
+          "age": 59,
+          "event": "Published The Society of Mind, a seminal work proposing that intelligence emerges from many simple agents."
+        },
+        {
+          "year": 2016,
+          "age": 88,
+          "event": "Died on January 24, 2016, in Boston, Massachusetts."
+        }
+      ],
+      [
+        {
+          "year": 1913,
+          "age": 18,
+          "event": "Earned a PhD from Harvard in mathematical logic at age 18 and published his first mathematical paper in the Messenger of Mathematics."
+        },
+        {
+          "year": 1914,
+          "age": 19,
+          "event": "Studied under Bertrand Russell at Cambridge University and David Hilbert at the University of Göttingen, the two leading centers of mathematics in Europe."
+        },
+        {
+          "year": 1919,
+          "age": 25,
+          "event": "Appointed as an instructor in mathematics at MIT, beginning a 45-year association with the institution."
+        },
+        {
+          "year": 1933,
+          "age": 39,
+          "event": "Received the Bôcher Memorial Prize from the American Mathematical Society for his work in mathematical analysis."
+        },
+        {
+          "year": 1948,
+          "age": 54,
+          "event": "Published Cybernetics: Or Control and Communication in the Animal and the Machine, founding the field of cybernetics."
+        },
+        {
+          "year": 1963,
+          "age": 69,
+          "event": "Awarded the National Medal of Science for his contributions to mathematics, engineering, and biological sciences."
+        },
+        {
+          "year": 1964,
+          "age": 69,
+          "event": "Died on March 18, 1964, in Stockholm, Sweden, while on a lecture tour."
+        }
+      ],
+      [
+        {
+          "year": 1988,
+          "age": 22,
+          "event": "Released the Morris worm from MIT, the first Internet worm, infecting approximately 10% of internet-connected computers"
+        },
+        {
+          "year": 1990,
+          "age": 25,
+          "event": "First person convicted under the Computer Fraud and Abuse Act; sentenced to 3 years probation, 400 hours community service, and $10,050 fine"
+        },
+        {
+          "year": 1995,
+          "age": 30,
+          "event": "Co-founded Viaweb with Paul Graham, one of the first software-as-a-service companies"
+        },
+        {
+          "year": 1998,
+          "age": 33,
+          "event": "Viaweb acquired by Yahoo for approximately $49 million in stock, rebranded as Yahoo Store"
+        },
+        {
+          "year": 2005,
+          "age": 40,
+          "event": "Co-founded Y Combinator with Paul Graham, Jessica Livingston, and Trevor Blackwell"
+        },
+        {
+          "year": 2006,
+          "age": 41,
+          "event": "Received tenure at MIT in the Department of Electrical Engineering and Computer Science"
+        },
+        {
+          "year": 2019,
+          "age": 54,
+          "event": "Elected to the National Academy of Engineering"
+        }
+      ]
+    ]
+  },
+  {
+    "archetype_id": "archetype-2",
+    "name": "The well-connected inheritor",
+    "description": "Family wealth, parent domain expertise, and inherited professional networks. Multiple advantages stacking from birth — money, knowledge, and connections.",
+    "member_count": 104,
+    "avg_advantage_scores": {
+      "early_family_financial_platform_support_score": 1.2,
+      "parent_family_domain_advantage_score": 1.73,
+      "inherited_audience_business_network_score": 0.99,
+      "elite_institution_performance_pipeline_score": 0.8,
+      "frontier_geography_ecosystem_score": 1.12,
+      "rare_early_tools_facilities_score": 0.67,
+      "dedicated_mentor_coach_tutor_score": 0.91,
+      "exceptional_peer_cofounder_sibling_score": 0.63,
+      "early_online_platform_community_score": 0.03,
+      "direct_customer_domain_exposure_score": 1.67,
+      "prodigy_physical_edge_score": 0.35,
+      "adversity_constraint_catalyst_score": 0.34
+    },
+    "avg_total_advantage": 10.44,
+    "avg_milestone_age": 21.9,
+    "success_tier_distribution": {
+      "1": 29,
+      "2": 46,
+      "3": 20,
+      "4": 9
+    },
+    "top_categories": [
+      {
+        "category": "Actor",
+        "count": 5
+      },
+      {
+        "category": "Racing driver",
+        "count": 4
+      },
+      {
+        "category": "Tennis player",
+        "count": 4
+      },
+      {
+        "category": "Racing driver (Formula One)",
+        "count": 4
+      },
+      {
+        "category": "Film actress",
+        "count": 3
+      }
+    ],
+    "top_cohorts": [
+      {
+        "cohort": "Creators / artists",
+        "count": 49
+      },
+      {
+        "cohort": "Athletes",
+        "count": 32
+      },
+      {
+        "cohort": "Founders / operators",
+        "count": 22
+      },
+      {
+        "cohort": "Researchers / independent engineers",
+        "count": 1
+      }
+    ],
+    "sample_trajectories": [
+      [
+        {
+          "year": 2008,
+          "age": 22,
+          "event": "Founded Milo.com, a local product search engine indexing real-time store inventory, after dropping out of Wharton."
+        },
+        {
+          "year": 2010,
+          "age": 24,
+          "event": "Sold Milo.com to eBay for approximately $75 million; became Head of Local at eBay."
+        },
+        {
+          "year": 2012,
+          "age": 26,
+          "event": "Founded Atomic, a San Francisco-based startup studio and venture capital firm, with an initial $20 million fund."
+        },
+        {
+          "year": 2017,
+          "age": 31,
+          "event": "Co-founded Hims & Hers Health, which became the second-fastest U.S. company to reach $1 billion valuation."
+        },
+        {
+          "year": 2021,
+          "age": 35,
+          "event": "Atomic raised $260 million in additional funding; Hims & Hers went public via SPAC at a $1.6 billion valuation."
+        }
+      ],
+      [
+        {
+          "year": 2005,
+          "age": 18,
+          "event": "Obtained real estate license; interned for a local developer while attending University of Colorado Boulder."
+        },
+        {
+          "year": 2008,
+          "age": 21,
+          "event": "Moved to New York City and joined Douglas Elliman; sold first property, an $8.2M penthouse at the Park Imperial."
+        },
+        {
+          "year": 2011,
+          "age": 24,
+          "event": "Named to Forbes 30 Under 30 list for real estate."
+        },
+        {
+          "year": 2012,
+          "age": 25,
+          "event": "Sold the most expensive home in Miami, a $47M estate in Indian Creek, celebrating his 25th birthday."
+        },
+        {
+          "year": 2019,
+          "age": 32,
+          "event": "Co-brokered the biggest residential sale in US history: Ken Griffin's $238M penthouse at 220 Central Park South."
+        },
+        {
+          "year": 2022,
+          "age": 35,
+          "event": "Co-founded Official Partners, a luxury real estate brokerage, with brother Tal."
+        },
+        {
+          "year": 2024,
+          "age": 37,
+          "event": "Arrested in December 2024 on federal sex trafficking charges along with brothers Tal and Alon; held without bail."
+        }
+      ],
+      [
+        {
+          "year": 1948,
+          "age": 16,
+          "event": "Hired by Roland Petit's Ballet des Champs-Elysees and immediately given solo parts"
+        },
+        {
+          "year": 1951,
+          "age": 19,
+          "event": "Film debut opposite Gene Kelly in 'An American in Paris,' leading to a seven-year MGM contract"
+        },
+        {
+          "year": 1953,
+          "age": 21,
+          "event": "Received Academy Award nomination and BAFTA for 'Lili'"
+        },
+        {
+          "year": 1958,
+          "age": 26,
+          "event": "Starred in 'Gigi,' one of the most acclaimed musical films of the era"
+        },
+        {
+          "year": 1963,
+          "age": 31,
+          "event": "Received second Academy Award nomination for 'The L-Shaped Room' and won BAFTA"
+        },
+        {
+          "year": 2003,
+          "age": 71,
+          "event": "Appeared in 'Le Divorce,' her last major film role"
+        }
+      ]
+    ]
+  },
+  {
+    "archetype_id": "archetype-3",
+    "name": "The elite-ecosystem founder",
+    "description": "Elite schooling, grew up in a frontier hub, and found exceptional cofounders/peers. The classic tech-founder advantage stack — place, pipeline, and people.",
+    "member_count": 159,
+    "avg_advantage_scores": {
+      "early_family_financial_platform_support_score": 0.5,
+      "parent_family_domain_advantage_score": 0.45,
+      "inherited_audience_business_network_score": 0.09,
+      "elite_institution_performance_pipeline_score": 1.83,
+      "frontier_geography_ecosystem_score": 1.63,
+      "rare_early_tools_facilities_score": 0.92,
+      "dedicated_mentor_coach_tutor_score": 0.87,
+      "exceptional_peer_cofounder_sibling_score": 1.58,
+      "early_online_platform_community_score": 0.02,
+      "direct_customer_domain_exposure_score": 1.35,
+      "prodigy_physical_edge_score": 0.54,
+      "adversity_constraint_catalyst_score": 0.3
+    },
+    "avg_total_advantage": 10.08,
+    "avg_milestone_age": 22.1,
+    "success_tier_distribution": {
+      "1": 50,
+      "2": 59,
+      "3": 24,
+      "4": 26
+    },
+    "top_categories": [
+      {
+        "category": "Technology founder",
+        "count": 10
+      },
+      {
+        "category": "Soccer player",
+        "count": 7
+      },
+      {
+        "category": "Table tennis player",
+        "count": 5
+      },
+      {
+        "category": "Film director",
+        "count": 4
+      },
+      {
+        "category": "AI founder",
+        "count": 3
+      }
+    ],
+    "top_cohorts": [
+      {
+        "cohort": "Athletes",
+        "count": 65
+      },
+      {
+        "cohort": "Founders / operators",
+        "count": 40
+      },
+      {
+        "cohort": "Creators / artists",
+        "count": 29
+      },
+      {
+        "cohort": "Researchers / independent engineers",
+        "count": 25
+      }
+    ],
+    "sample_trajectories": [
+      [
+        {
+          "year": 1942,
+          "age": 21,
+          "event": "Graduated from Cambridge with First Class Honours in mathematics and joined the Telecommunications Research Establishment to work on radar under Freddie Williams."
+        },
+        {
+          "year": 1947,
+          "age": 26,
+          "event": "Co-developed the Williams-Kilburn tube for CRT storage at Manchester and published an influential internal report on binary digital storage in December 1947."
+        },
+        {
+          "year": 1948,
+          "age": 26,
+          "event": "Co-designed and built the Manchester Baby, the world's first stored-program electronic digital computer, which ran its first program on 21 June 1948."
+        },
+        {
+          "year": 1951,
+          "age": 29,
+          "event": "Led development of the Ferranti Mark 1, the world's first commercially available computer."
+        },
+        {
+          "year": 1962,
+          "age": 41,
+          "event": "Led the development of the Atlas computer, one of the first time-sharing multiprocessing computers with paging and pipelining."
+        },
+        {
+          "year": 1964,
+          "age": 43,
+          "event": "Became head of the Department of Computer Science at the University of Manchester."
+        },
+        {
+          "year": 2001,
+          "age": 79,
+          "event": "Died on 17 January 2001 in Manchester after twenty years of quiet retirement."
+        }
+      ],
+      [
+        {
+          "year": 1940,
+          "age": 21,
+          "event": "Applied for his first patent on light modulating methods while at the Moore School of Electrical Engineering at Penn."
+        },
+        {
+          "year": 1943,
+          "age": 24,
+          "event": "Appointed chief engineer of the ENIAC project at the Moore School, collaborating with John Mauchly on the first general-purpose electronic digital computer."
+        },
+        {
+          "year": 1946,
+          "age": 26,
+          "event": "ENIAC was completed and publicly dedicated on February 15, 1946 at the University of Pennsylvania, acclaimed as a major computing breakthrough."
+        },
+        {
+          "year": 1948,
+          "age": 29,
+          "event": "Co-founded the Eckert-Mauchly Computer Corporation to build the UNIVAC, the first commercial computer in the United States."
+        },
+        {
+          "year": 1951,
+          "age": 32,
+          "event": "UNIVAC I was delivered to the U.S. Census Bureau, becoming the first commercially produced computer in the United States."
+        },
+        {
+          "year": 1968,
+          "age": 49,
+          "event": "Received the National Medal of Science for his contributions to computing."
+        },
+        {
+          "year": 1995,
+          "age": 76,
+          "event": "Died on June 3, 1995 in Bryn Mawr, Pennsylvania."
+        }
+      ],
+      [
+        {
+          "year": 1973,
+          "age": 21,
+          "event": "Received BSc in mathematics from Tel Aviv University."
+        },
+        {
+          "year": 1975,
+          "age": 23,
+          "event": "Received MSc in computer science from the Weizmann Institute of Science."
+        },
+        {
+          "year": 1977,
+          "age": 25,
+          "event": "Completed PhD at Weizmann under Zohar Manna and co-invented the RSA public-key cryptosystem with Rivest and Adleman at MIT."
+        },
+        {
+          "year": 1978,
+          "age": 25,
+          "event": "RSA paper published in Communications of the ACM, becoming one of the most cited papers in computer science history."
+        },
+        {
+          "year": 1980,
+          "age": 28,
+          "event": "Returned to Israel to join the faculty of Mathematics and Computer Science at the Weizmann Institute."
+        },
+        {
+          "year": 2002,
+          "age": 50,
+          "event": "Co-recipient of the ACM Turing Award with Rivest and Adleman for contributions to public-key cryptography."
+        },
+        {
+          "year": 2008,
+          "age": 56,
+          "event": "Received the Israel Prize for computer science."
+        },
+        {
+          "year": 2024,
+          "age": 72,
+          "event": "Received the Wolf Prize in Mathematics for fundamental contributions to mathematical cryptography."
+        }
+      ]
+    ]
+  },
+  {
+    "archetype_id": "archetype-4",
+    "name": "The coached prodigy",
+    "description": "Identified early by an institutional pipeline, developed by dedicated coaches, and backed by a natural physical or talent edge. Common in sports and performance arts.",
+    "member_count": 271,
+    "avg_advantage_scores": {
+      "early_family_financial_platform_support_score": 0.14,
+      "parent_family_domain_advantage_score": 0.13,
+      "inherited_audience_business_network_score": 0.02,
+      "elite_institution_performance_pipeline_score": 1.9,
+      "frontier_geography_ecosystem_score": 1.17,
+      "rare_early_tools_facilities_score": 0.76,
+      "dedicated_mentor_coach_tutor_score": 1.47,
+      "exceptional_peer_cofounder_sibling_score": 0.65,
+      "early_online_platform_community_score": 0.0,
+      "direct_customer_domain_exposure_score": 1.25,
+      "prodigy_physical_edge_score": 1.13,
+      "adversity_constraint_catalyst_score": 0.72
+    },
+    "avg_total_advantage": 9.34,
+    "avg_milestone_age": 21.1,
+    "success_tier_distribution": {
+      "1": 103,
+      "2": 119,
+      "3": 45,
+      "4": 4
+    },
+    "top_categories": [
+      {
+        "category": "Soccer player",
+        "count": 14
+      },
+      {
+        "category": "Artistic gymnast",
+        "count": 14
+      },
+      {
+        "category": "Chess player",
+        "count": 9
+      },
+      {
+        "category": "Table tennis player",
+        "count": 9
+      },
+      {
+        "category": "Mathematician",
+        "count": 8
+      }
+    ],
+    "top_cohorts": [
+      {
+        "cohort": "Athletes",
+        "count": 175
+      },
+      {
+        "cohort": "Creators / artists",
+        "count": 53
+      },
+      {
+        "cohort": "Researchers / independent engineers",
+        "count": 40
+      },
+      {
+        "cohort": "Founders / operators",
+        "count": 3
+      }
+    ],
+    "sample_trajectories": [
+      [
+        {
+          "year": 1982,
+          "age": 24,
+          "event": "Co-authored the seminal Goldwasser-Micali paper on probabilistic encryption at STOC, introducing semantic security to cryptography."
+        },
+        {
+          "year": 1984,
+          "age": 26,
+          "event": "Completed PhD at UC Berkeley under Manuel Blum with thesis 'Probabilistic Encryption: Theory and Applications.'"
+        },
+        {
+          "year": 1985,
+          "age": 27,
+          "event": "Co-authored the foundational paper on zero-knowledge proofs with Micali and Rackoff."
+        },
+        {
+          "year": 1993,
+          "age": 35,
+          "event": "Awarded the Godel Prize for work on interactive proofs."
+        },
+        {
+          "year": 1996,
+          "age": 38,
+          "event": "Received the Grace Murray Hopper Award."
+        },
+        {
+          "year": 2012,
+          "age": 54,
+          "event": "Won the ACM Turing Award jointly with Silvio Micali for foundational contributions to cryptography."
+        },
+        {
+          "year": 2018,
+          "age": 60,
+          "event": "Became director of the Simons Institute for the Theory of Computing at UC Berkeley, serving until 2024."
+        }
+      ],
+      [
+        {
+          "year": 1966,
+          "age": 17,
+          "event": "Selected through math olympiads for special physics-mathematics high school in Kiev."
+        },
+        {
+          "year": 1970,
+          "age": 21,
+          "event": "Completed Master's degree at Moscow University under Andrey Kolmogorov."
+        },
+        {
+          "year": 1972,
+          "age": 23,
+          "event": "Independently discovered NP-completeness (Cook-Levin theorem); completed Candidate degree at Moscow University."
+        },
+        {
+          "year": 1978,
+          "age": 29,
+          "event": "Emigrated from Soviet Union to the United States and joined MIT as a researcher."
+        },
+        {
+          "year": 1979,
+          "age": 30,
+          "event": "Earned PhD from MIT under Albert Meyer."
+        },
+        {
+          "year": 1980,
+          "age": 31,
+          "event": "Joined Boston University as Professor of Computer Science."
+        },
+        {
+          "year": 2012,
+          "age": 63,
+          "event": "Awarded the Knuth Prize for discovery of NP-completeness and development of average-case complexity."
+        },
+        {
+          "year": 2019,
+          "age": 70,
+          "event": "Elected to the US National Academy of Sciences."
+        }
+      ],
+      [
+        {
+          "year": 1959,
+          "age": 21,
+          "event": "Received BS in Electrical Engineering from MIT."
+        },
+        {
+          "year": 1961,
+          "age": 23,
+          "event": "Received MS in Electrical Engineering from MIT."
+        },
+        {
+          "year": 1964,
+          "age": 26,
+          "event": "Earned PhD in Mathematics from MIT, introducing the Blum axioms for computational complexity in his thesis."
+        },
+        {
+          "year": 1968,
+          "age": 30,
+          "event": "Joined UC Berkeley as tenured associate professor of electrical engineering and computer science."
+        },
+        {
+          "year": 1995,
+          "age": 57,
+          "event": "Won the ACM Turing Award for contributions to computational complexity theory and its application to cryptography and program checking."
+        },
+        {
+          "year": 2001,
+          "age": 63,
+          "event": "Joined Carnegie Mellon University as Bruce Nelson Professor of Computer Science."
+        }
+      ]
+    ]
+  },
+  {
+    "archetype_id": "archetype-5",
+    "name": "The platform-native builder",
+    "description": "Grew up with online platforms and direct audience/customer exposure. Built things people used from an early age. Low traditional advantage, high digital-native leverage.",
+    "member_count": 92,
+    "avg_advantage_scores": {
+      "early_family_financial_platform_support_score": 0.24,
+      "parent_family_domain_advantage_score": 0.32,
+      "inherited_audience_business_network_score": 0.02,
+      "elite_institution_performance_pipeline_score": 0.38,
+      "frontier_geography_ecosystem_score": 0.62,
+      "rare_early_tools_facilities_score": 0.63,
+      "dedicated_mentor_coach_tutor_score": 0.12,
+      "exceptional_peer_cofounder_sibling_score": 0.99,
+      "early_online_platform_community_score": 1.91,
+      "direct_customer_domain_exposure_score": 1.46,
+      "prodigy_physical_edge_score": 0.17,
+      "adversity_constraint_catalyst_score": 0.55
+    },
+    "avg_total_advantage": 7.41,
+    "avg_milestone_age": 20.7,
+    "success_tier_distribution": {
+      "1": 0,
+      "2": 20,
+      "3": 40,
+      "4": 32
+    },
+    "top_categories": [
+      {
+        "category": "Creator-entrepreneur",
+        "count": 9
+      },
+      {
+        "category": "Technology founder",
+        "count": 4
+      },
+      {
+        "category": "Engineer-founder",
+        "count": 3
+      },
+      {
+        "category": "Beauty YouTuber and makeup artist",
+        "count": 2
+      },
+      {
+        "category": "TikTok/Musical.ly creator",
+        "count": 2
+      }
+    ],
+    "top_cohorts": [
+      {
+        "cohort": "Creators / artists",
+        "count": 62
+      },
+      {
+        "cohort": "Founders / operators",
+        "count": 25
+      },
+      {
+        "cohort": "Researchers / independent engineers",
+        "count": 5
+      }
+    ],
+    "sample_trajectories": [
+      [
+        {
+          "year": 1996,
+          "age": 24,
+          "event": "Moved to Sebastopol, California to work for O'Reilly Media; began blogging on EvHead.com and learning to code."
+        },
+        {
+          "year": 1999,
+          "age": 26,
+          "event": "Co-founded Pyra Labs with Meg Hourihan on January 1; launched Blogger, one of the first blog-publishing platforms."
+        },
+        {
+          "year": 2003,
+          "age": 30,
+          "event": "Pyra Labs and Blogger acquired by Google for an undisclosed sum."
+        },
+        {
+          "year": 2006,
+          "age": 34,
+          "event": "Co-founded Twitter via Obvious Corporation with Jack Dorsey and Biz Stone."
+        },
+        {
+          "year": 2008,
+          "age": 36,
+          "event": "Became CEO of Twitter, succeeding Jack Dorsey."
+        },
+        {
+          "year": 2012,
+          "age": 40,
+          "event": "Founded Medium, an online publishing platform."
+        },
+        {
+          "year": 2014,
+          "age": 42,
+          "event": "Co-founded Obvious Ventures, a venture capital firm focused on world-positive companies."
+        },
+        {
+          "year": 2019,
+          "age": 47,
+          "event": "Stepped down from Twitter board of directors."
+        }
+      ],
+      [
+        {
+          "year": 2002,
+          "age": 17,
+          "event": "Co-created Phoenix (later Firefox) with Dave Hyatt; first public release Phoenix 0.1 on September 23, 2002."
+        },
+        {
+          "year": 2004,
+          "age": 19,
+          "event": "Firefox 1.0 launched on November 9, 2004; downloaded 27 million+ times, challenging Internet Explorer's browser dominance."
+        },
+        {
+          "year": 2005,
+          "age": 20,
+          "event": "Nominated for Wired magazine's Renegade of the Year award and included in Rolling Stone's 2005 hot list."
+        },
+        {
+          "year": 2006,
+          "age": 21,
+          "event": "Co-founded Parakey, a web OS startup, with Joe Hewitt."
+        },
+        {
+          "year": 2007,
+          "age": 22,
+          "event": "Parakey acquired by Facebook as its first acquisition; Ross joined Facebook as an engineer."
+        },
+        {
+          "year": 2013,
+          "age": 28,
+          "event": "Left Facebook as Director of Product after six years to pursue new projects."
+        },
+        {
+          "year": 2024,
+          "age": 39,
+          "event": "Purchased an $8.25 million condominium in Soho, New York City."
+        }
+      ],
+      [
+        {
+          "year": 1999,
+          "age": 19,
+          "event": "Began contributing to the Mozilla open-source project as a computer engineering student at the University of Auckland."
+        },
+        {
+          "year": 2000,
+          "age": 20,
+          "event": "Hired as an intern at Netscape in Mountain View after his Mozilla contributions were noticed by engineer David Hyatt."
+        },
+        {
+          "year": 2004,
+          "age": 24,
+          "event": "Led engineering for Firefox 1.0, the open-source browser that challenged Microsoft's Internet Explorer dominance."
+        },
+        {
+          "year": 2008,
+          "age": 28,
+          "event": "Joined Google to lead user experience for the Chrome browser project."
+        },
+        {
+          "year": 2024,
+          "age": 44,
+          "event": "Joined OpenAI to lead development of the Atlas browser, aiming to challenge Chrome."
+        }
+      ]
+    ]
+  },
+  {
+    "archetype_id": "archetype-6",
+    "name": "The cofounder-paired builder",
+    "description": "Found exceptional cofounders or peers early, with direct customer exposure. Advantage came from people and partnerships, not family wealth or domain inheritance.",
+    "member_count": 144,
+    "avg_advantage_scores": {
+      "early_family_financial_platform_support_score": 0.14,
+      "parent_family_domain_advantage_score": 0.23,
+      "inherited_audience_business_network_score": 0.03,
+      "elite_institution_performance_pipeline_score": 0.8,
+      "frontier_geography_ecosystem_score": 1.19,
+      "rare_early_tools_facilities_score": 0.27,
+      "dedicated_mentor_coach_tutor_score": 0.19,
+      "exceptional_peer_cofounder_sibling_score": 1.98,
+      "early_online_platform_community_score": 0.08,
+      "direct_customer_domain_exposure_score": 1.39,
+      "prodigy_physical_edge_score": 0.23,
+      "adversity_constraint_catalyst_score": 0.6
+    },
+    "avg_total_advantage": 7.13,
+    "avg_milestone_age": 22.5,
+    "success_tier_distribution": {
+      "1": 33,
+      "2": 50,
+      "3": 25,
+      "4": 36
+    },
+    "top_categories": [
+      {
+        "category": "Technology founder",
+        "count": 15
+      },
+      {
+        "category": "AI founder",
+        "count": 7
+      },
+      {
+        "category": "Film director",
+        "count": 4
+      },
+      {
+        "category": "Singer-songwriter",
+        "count": 4
+      },
+      {
+        "category": "Mobility founder",
+        "count": 3
+      }
+    ],
+    "top_cohorts": [
+      {
+        "cohort": "Founders / operators",
+        "count": 62
+      },
+      {
+        "cohort": "Creators / artists",
+        "count": 56
+      },
+      {
+        "cohort": "Athletes",
+        "count": 20
+      },
+      {
+        "cohort": "Researchers / independent engineers",
+        "count": 6
+      }
+    ],
+    "sample_trajectories": [
+      [
+        {
+          "year": 2005,
+          "age": 24,
+          "event": "Co-founded Odeo, a podcasting company, with Evan Williams after his AudBlog startup merged with Williams' operation."
+        },
+        {
+          "year": 2006,
+          "age": 25,
+          "event": "Co-founded Twitter within Odeo; coined the name 'Twitter' and helped design core features."
+        },
+        {
+          "year": 2006,
+          "age": 25,
+          "event": "Ousted from Twitter by Evan Williams, who acquired Odeo's assets and renamed it Obvious Corporation."
+        }
+      ],
+      [
+        {
+          "year": 1969,
+          "age": 25,
+          "event": "Became the first RFC Editor on April 7, 1969, a role he would hold for nearly 30 years, editing over 2400 RFCs defining Internet standards."
+        },
+        {
+          "year": 1974,
+          "age": 31,
+          "event": "Completed PhD in Computer Science at UCLA under Dave Farber."
+        },
+        {
+          "year": 1977,
+          "age": 34,
+          "event": "Joined USC's Information Sciences Institute, where he would spend the rest of his career directing IANA and editing RFCs."
+        },
+        {
+          "year": 1984,
+          "age": 41,
+          "event": "Co-authored foundational RFCs for the Domain Name System (RFC 881, 882, 920), establishing the hierarchical naming system used by the Internet today."
+        },
+        {
+          "year": 1998,
+          "age": 55,
+          "event": "Brokered the plan to create ICANN, transitioning Internet governance from US government to a nonprofit; died October 16 from complications after heart surgery."
+        }
+      ],
+      [
+        {
+          "year": 1945,
+          "age": 20,
+          "event": "Graduated from Northwest Missouri State Teachers College with a B.S. in mathematics and was hired as a human computer at the Moore School, University of Pennsylvania."
+        },
+        {
+          "year": 1945,
+          "age": 21,
+          "event": "Selected as one of the six original programmers of ENIAC, the world's first general-purpose electronic digital computer."
+        },
+        {
+          "year": 1946,
+          "age": 21,
+          "event": "Co-led the ENIAC programming team for the public demonstration of the computer in February 1946, which made headlines nationwide."
+        },
+        {
+          "year": 1947,
+          "age": 22,
+          "event": "Led a group of programmers to convert ENIAC into a stored-program computer, a major milestone in computing history."
+        },
+        {
+          "year": 1948,
+          "age": 23,
+          "event": "Joined Eckert-Mauchly Computer Corporation and worked on the BINAC and later UNIVAC, the world's first commercial computer."
+        },
+        {
+          "year": 1967,
+          "age": 42,
+          "event": "Earned a master's degree in English from the University of Pennsylvania."
+        },
+        {
+          "year": 2008,
+          "age": 83,
+          "event": "Inducted as a Fellow of the Computer History Museum and received the IEEE Computer Society Computer Pioneer Award."
+        },
+        {
+          "year": 2011,
+          "age": 86,
+          "event": "Died on March 23, 2011, in Poughkeepsie, New York, from congestive heart failure complications."
+        }
+      ]
+    ]
+  },
+  {
+    "archetype_id": "archetype-7",
+    "name": "The hardship-forged athlete",
+    "description": "Physical talent plus early adversity that catalyzed drive, channeled through coaching. Common in combat sports and endurance events — hardship became fuel.",
+    "member_count": 229,
+    "avg_advantage_scores": {
+      "early_family_financial_platform_support_score": 0.07,
+      "parent_family_domain_advantage_score": 0.22,
+      "inherited_audience_business_network_score": 0.03,
+      "elite_institution_performance_pipeline_score": 0.89,
+      "frontier_geography_ecosystem_score": 0.74,
+      "rare_early_tools_facilities_score": 0.17,
+      "dedicated_mentor_coach_tutor_score": 0.86,
+      "exceptional_peer_cofounder_sibling_score": 0.28,
+      "early_online_platform_community_score": 0.01,
+      "direct_customer_domain_exposure_score": 1.22,
+      "prodigy_physical_edge_score": 1.3,
+      "adversity_constraint_catalyst_score": 1.33
+    },
+    "avg_total_advantage": 7.12,
+    "avg_milestone_age": 21.2,
+    "success_tier_distribution": {
+      "1": 85,
+      "2": 99,
+      "3": 38,
+      "4": 7
+    },
+    "top_categories": [
+      {
+        "category": "Tennis player",
+        "count": 10
+      },
+      {
+        "category": "Soccer player",
+        "count": 9
+      },
+      {
+        "category": "Boxer",
+        "count": 7
+      },
+      {
+        "category": "Singer",
+        "count": 5
+      },
+      {
+        "category": "Racing driver",
+        "count": 5
+      }
+    ],
+    "top_cohorts": [
+      {
+        "cohort": "Athletes",
+        "count": 139
+      },
+      {
+        "cohort": "Creators / artists",
+        "count": 77
+      },
+      {
+        "cohort": "Researchers / independent engineers",
+        "count": 10
+      },
+      {
+        "cohort": "Founders / operators",
+        "count": 3
+      }
+    ],
+    "sample_trajectories": [
+      [
+        {
+          "year": 2007,
+          "age": 18,
+          "event": "Won silver medal representing Poland at the International Mathematical Olympiad in Vietnam."
+        },
+        {
+          "year": 2013,
+          "age": 25,
+          "event": "Co-authored 'Intriguing properties of neural networks' while at Google Brain, a foundational paper on adversarial examples in neural networks."
+        },
+        {
+          "year": 2015,
+          "age": 27,
+          "event": "Co-founded OpenAI as one of its founding members alongside Sam Altman, Elon Musk, and Ilya Sutskever."
+        },
+        {
+          "year": 2020,
+          "age": 31,
+          "event": "Led OpenAI robotics team that created a robotic arm capable of solving a Rubik's Cube."
+        },
+        {
+          "year": 2025,
+          "age": 36,
+          "event": "Continues as co-founder of OpenAI, leading work on GPT models, GitHub Copilot, and Codex."
+        }
+      ],
+      [
+        {
+          "year": 1989,
+          "age": 13,
+          "event": "Reached chess master standard with Elo rating of 2300, captained England junior chess teams."
+        },
+        {
+          "year": 1994,
+          "age": 17,
+          "event": "Co-designed and lead-programmed Theme Park at Bullfrog Productions; game sold several million copies and won a Golden Joystick award."
+        },
+        {
+          "year": 1997,
+          "age": 21,
+          "event": "Graduated from Cambridge with double first in computer science; won pentamind at Mind Sports Olympiad."
+        },
+        {
+          "year": 2010,
+          "age": 34,
+          "event": "Co-founded DeepMind Technologies with Shane Legg and Mustafa Suleyman."
+        },
+        {
+          "year": 2014,
+          "age": 38,
+          "event": "DeepMind acquired by Google for £400 million, Google's largest European acquisition."
+        },
+        {
+          "year": 2016,
+          "age": 40,
+          "event": "AlphaGo defeated world Go champion Lee Sedol, a landmark in AI history."
+        },
+        {
+          "year": 2024,
+          "age": 48,
+          "event": "Awarded Nobel Prize in Chemistry for AlphaFold protein structure prediction."
+        }
+      ],
+      [
+        {
+          "year": 1935,
+          "age": 12,
+          "event": "Read Russell's Principia Mathematica in a Detroit library over three days and identified errors, leading to a correspondence with Bertrand Russell."
+        },
+        {
+          "year": 1938,
+          "age": 15,
+          "event": "Ran away from home to the University of Chicago, began studying under Rudolf Carnap."
+        },
+        {
+          "year": 1943,
+          "age": 20,
+          "event": "Co-authored 'A Logical Calculus of the Ideas Immanent in Nervous Activity' with Warren McCulloch, proposing the first mathematical model of a neural network."
+        },
+        {
+          "year": 1946,
+          "age": 23,
+          "event": "Moved to MIT with McCulloch; became a key figure in the cybernetics movement alongside Wiener and von Neumann."
+        },
+        {
+          "year": 1969,
+          "age": 46,
+          "event": "Died in Cambridge, Massachusetts, from complications related to alcoholism and isolation."
+        }
+      ]
+    ]
+  },
+  {
+    "archetype_id": "archetype-8",
+    "name": "The pipeline-routed talent",
+    "description": "Modest family background, but accessed an institutional pipeline (sports system, academy, scholarship) and grew up in a field hub. Place and pipeline opened doors that family wealth couldn't.",
+    "member_count": 211,
+    "avg_advantage_scores": {
+      "early_family_financial_platform_support_score": 0.23,
+      "parent_family_domain_advantage_score": 0.23,
+      "inherited_audience_business_network_score": 0.02,
+      "elite_institution_performance_pipeline_score": 1.16,
+      "frontier_geography_ecosystem_score": 1.15,
+      "rare_early_tools_facilities_score": 0.27,
+      "dedicated_mentor_coach_tutor_score": 0.7,
+      "exceptional_peer_cofounder_sibling_score": 0.54,
+      "early_online_platform_community_score": 0.01,
+      "direct_customer_domain_exposure_score": 1.27,
+      "prodigy_physical_edge_score": 0.8,
+      "adversity_constraint_catalyst_score": 0.0
+    },
+    "avg_total_advantage": 6.38,
+    "avg_milestone_age": 21.6,
+    "success_tier_distribution": {
+      "1": 36,
+      "2": 118,
+      "3": 53,
+      "4": 4
+    },
+    "top_categories": [
+      {
+        "category": "Soccer player",
+        "count": 12
+      },
+      {
+        "category": "Handball player",
+        "count": 9
+      },
+      {
+        "category": "Tennis player",
+        "count": 7
+      },
+      {
+        "category": "Chess player",
+        "count": 7
+      },
+      {
+        "category": "Manga artist",
+        "count": 6
+      }
+    ],
+    "top_cohorts": [
+      {
+        "cohort": "Athletes",
+        "count": 129
+      },
+      {
+        "cohort": "Creators / artists",
+        "count": 64
+      },
+      {
+        "cohort": "Researchers / independent engineers",
+        "count": 11
+      },
+      {
+        "cohort": "Founders / operators",
+        "count": 6
+      }
+    ],
+    "sample_trajectories": [
+      [
+        {
+          "year": 1988,
+          "age": 21,
+          "event": "Graduated from Tufts University with a degree in computer science; joined Claris, an Apple subsidiary, developing Macintosh software."
+        },
+        {
+          "year": 1991,
+          "age": 23,
+          "event": "Co-founded Ink Development Corp (later eShop Inc.) on May 10, an early online shopping software company."
+        },
+        {
+          "year": 1995,
+          "age": 28,
+          "event": "Launched AuctionWeb (later eBay) on Labor Day weekend as a side project on his personal website."
+        },
+        {
+          "year": 1996,
+          "age": 29,
+          "event": "eShop acquired by Microsoft on June 11; quit his day job at General Magic to focus on eBay full-time."
+        },
+        {
+          "year": 1998,
+          "age": 31,
+          "event": "eBay went public; Omidyar became a billionaire shortly after the IPO."
+        },
+        {
+          "year": 2004,
+          "age": 37,
+          "event": "Founded Omidyar Network, a philanthropic investment firm."
+        },
+        {
+          "year": 2013,
+          "age": 46,
+          "event": "Founded First Look Media, including The Intercept news organization."
+        }
+      ],
+      [
+        {
+          "year": 2001,
+          "age": 22,
+          "event": "Released Drupal 1.0.0 as open-source software on January 15, 2001, from his University of Antwerp dorm project."
+        },
+        {
+          "year": 2007,
+          "age": 28,
+          "event": "Co-founded Acquia with Jay Batson to provide commercial support and services for Drupal."
+        },
+        {
+          "year": 2008,
+          "age": 29,
+          "event": "Named to MIT Technology Review TR35 as one of the top 35 innovators under 35; also named Young Entrepreneurs of Tech by BusinessWeek."
+        },
+        {
+          "year": 2008,
+          "age": 29,
+          "event": "Defended PhD dissertation in computer science at Ghent University on profiling and instrumentation of the JVM."
+        },
+        {
+          "year": 2009,
+          "age": 30,
+          "event": "Acquia helped re-launch Whitehouse.gov on Drupal, cementing Drupal's enterprise credibility."
+        },
+        {
+          "year": 2019,
+          "age": 40,
+          "event": "Acquia acquired by Vista Equity Partners in a deal valuing the company at approximately $1 billion."
+        },
+        {
+          "year": 2025,
+          "age": 46,
+          "event": "Transitioned to Executive Chairman of Acquia as Chris Tranquill was appointed CEO."
+        }
+      ],
+      [
+        {
+          "year": 1980,
+          "age": 19,
+          "event": "Began writing a Pascal compiler for the Nascom microcomputer while studying at the Danish Technical University and co-founding PolyData, Copenhagen's first computer store."
+        },
+        {
+          "year": 1983,
+          "age": 22,
+          "event": "Turbo Pascal 1.0 released by Borland, based on Hejlsberg's PolyPascal compiler; became one of the most commercially successful Pascal compilers ever."
+        },
+        {
+          "year": 1989,
+          "age": 28,
+          "event": "Moved to California to become Chief Engineer at Borland as PolyData came under financial stress."
+        },
+        {
+          "year": 1995,
+          "age": 34,
+          "event": "Led development of Borland Delphi as chief architect, combining Turbo Pascal's compilation speed with visual RAD for Windows."
+        },
+        {
+          "year": 1996,
+          "age": 35,
+          "event": "Joined Microsoft as chief architect of Visual J++ and later designed C# for the .NET platform."
+        },
+        {
+          "year": 2012,
+          "age": 51,
+          "event": "Designed and launched TypeScript to address JavaScript's lack of static typing; it became the top language used by 2025."
+        },
+        {
+          "year": 2025,
+          "age": 64,
+          "event": "Leading the native port of TypeScript to Go (TypeScript 7) for a 10x performance improvement, with a release candidate available."
+        }
+      ]
+    ]
+  },
+  {
+    "archetype_id": "archetype-9",
+    "name": "The adversity-forged striver",
+    "description": "Early hardship acted as a catalyst. Low inherited advantage, but adversity created drive and resilience that compensated.",
+    "member_count": 195,
+    "avg_advantage_scores": {
+      "early_family_financial_platform_support_score": 0.17,
+      "parent_family_domain_advantage_score": 0.25,
+      "inherited_audience_business_network_score": 0.08,
+      "elite_institution_performance_pipeline_score": 0.67,
+      "frontier_geography_ecosystem_score": 1.05,
+      "rare_early_tools_facilities_score": 0.18,
+      "dedicated_mentor_coach_tutor_score": 0.37,
+      "exceptional_peer_cofounder_sibling_score": 0.5,
+      "early_online_platform_community_score": 0.05,
+      "direct_customer_domain_exposure_score": 1.29,
+      "prodigy_physical_edge_score": 0.19,
+      "adversity_constraint_catalyst_score": 1.32
+    },
+    "avg_total_advantage": 6.12,
+    "avg_milestone_age": 22.6,
+    "success_tier_distribution": {
+      "1": 52,
+      "2": 100,
+      "3": 35,
+      "4": 8
+    },
+    "top_categories": [
+      {
+        "category": "Singer-songwriter",
+        "count": 6
+      },
+      {
+        "category": "Actor",
+        "count": 5
+      },
+      {
+        "category": "Road cyclist",
+        "count": 4
+      },
+      {
+        "category": "Racing driver",
+        "count": 3
+      },
+      {
+        "category": "Film director",
+        "count": 3
+      }
+    ],
+    "top_cohorts": [
+      {
+        "cohort": "Creators / artists",
+        "count": 116
+      },
+      {
+        "cohort": "Athletes",
+        "count": 50
+      },
+      {
+        "cohort": "Founders / operators",
+        "count": 24
+      },
+      {
+        "cohort": "Researchers / independent engineers",
+        "count": 5
+      }
+    ],
+    "sample_trajectories": [
+      [
+        {
+          "year": 1974,
+          "age": 22,
+          "event": "Devised Merkle's Puzzles, an early public-key cryptographic key exchange scheme, as an undergraduate at UC Berkeley."
+        },
+        {
+          "year": 1975,
+          "age": 23,
+          "event": "Submitted the public-key cryptography paper to Communications of the ACM after encouragement from faculty member Bob Fabry."
+        },
+        {
+          "year": 1976,
+          "age": 24,
+          "event": "Joined Diffie and Hellman at Stanford for the summer, becoming part of the public-key cryptography research team."
+        },
+        {
+          "year": 1979,
+          "age": 27,
+          "event": "Completed PhD in Electrical Engineering at Stanford under Martin Hellman with thesis 'Secrecy, Authentication, and Public Key Systems.'"
+        },
+        {
+          "year": 1988,
+          "age": 36,
+          "event": "Joined Xerox PARC as a research scientist, where he designed the Khufu and Khafre block ciphers and the Snefru hash function."
+        },
+        {
+          "year": 2003,
+          "age": 51,
+          "event": "Became Distinguished Professor of Computer Science at Georgia Tech before returning to California in 2006."
+        },
+        {
+          "year": 2010,
+          "age": 58,
+          "event": "Received the IEEE Richard W. Hamming Medal jointly with Diffie and Hellman for work on public-key cryptography."
+        }
+      ],
+      [
+        {
+          "year": 1987,
+          "age": 23,
+          "event": "Became a VJ for MTV, hosting Headbangers Ball and MTV Top 20 Video Countdown."
+        },
+        {
+          "year": 1993,
+          "age": 29,
+          "event": "Registered mtv.com, one of the first celebrity-managed domain names, launching his internet career."
+        },
+        {
+          "year": 1996,
+          "age": 32,
+          "event": "Co-founded Think New Ideas Inc., which IPO'd on NASDAQ during the dot-com bubble."
+        },
+        {
+          "year": 2004,
+          "age": 40,
+          "event": "Co-founded PodShow (later Mevio), helping pioneer the podcasting medium."
+        },
+        {
+          "year": 2008,
+          "age": 44,
+          "event": "Launched the No Agenda podcast with John C. Dvorak, which became a long-running independent podcast."
+        },
+        {
+          "year": 2020,
+          "age": 56,
+          "event": "Co-founded Podcast Index, a decentralized podcast directory preserving open RSS-based podcasting."
+        }
+      ],
+      [
+        {
+          "year": 1999,
+          "age": 20,
+          "event": "Founded MemoryDealers.com, an online business selling networking equipment that became a market leader generating millions in revenue."
+        },
+        {
+          "year": 2002,
+          "age": 23,
+          "event": "Convicted and sentenced to 10 months in federal prison for selling explosives on eBay."
+        },
+        {
+          "year": 2011,
+          "age": 32,
+          "event": "Discovered Bitcoin and began investing in Bitcoin startups, earning the nickname 'Bitcoin Jesus'."
+        },
+        {
+          "year": 2014,
+          "age": 35,
+          "event": "Renounced US citizenship and acquired citizenship of St. Kitts and Nevis."
+        },
+        {
+          "year": 2024,
+          "age": 45,
+          "event": "Indicted by US federal grand jury for tax evasion related to Bitcoin holdings; arrested in Spain."
+        },
+        {
+          "year": 2025,
+          "age": 46,
+          "event": "Entered deferred prosecution agreement, paying nearly $50 million to settle tax evasion charges."
+        }
+      ]
+    ]
+  },
+  {
+    "archetype_id": "archetype-10",
+    "name": "The from-scratch builder",
+    "description": "Minimal documented early advantages. Got there through sheer drive and timing.",
+    "member_count": 178,
+    "avg_advantage_scores": {
+      "early_family_financial_platform_support_score": 0.11,
+      "parent_family_domain_advantage_score": 0.12,
+      "inherited_audience_business_network_score": 0.03,
+      "elite_institution_performance_pipeline_score": 0.76,
+      "frontier_geography_ecosystem_score": 0.42,
+      "rare_early_tools_facilities_score": 0.15,
+      "dedicated_mentor_coach_tutor_score": 0.15,
+      "exceptional_peer_cofounder_sibling_score": 0.22,
+      "early_online_platform_community_score": 0.04,
+      "direct_customer_domain_exposure_score": 0.92,
+      "prodigy_physical_edge_score": 0.41,
+      "adversity_constraint_catalyst_score": 0.25
+    },
+    "avg_total_advantage": 3.58,
+    "avg_milestone_age": 22.2,
+    "success_tier_distribution": {
+      "1": 19,
+      "2": 53,
+      "3": 65,
+      "4": 41
+    },
+    "top_categories": [
+      {
+        "category": "Tennis player",
+        "count": 8
+      },
+      {
+        "category": "Footballer",
+        "count": 5
+      },
+      {
+        "category": "Soccer player",
+        "count": 5
+      },
+      {
+        "category": "Speed skater",
+        "count": 5
+      },
+      {
+        "category": "Chess player",
+        "count": 5
+      }
+    ],
+    "top_cohorts": [
+      {
+        "cohort": "Athletes",
+        "count": 92
+      },
+      {
+        "cohort": "Creators / artists",
+        "count": 74
+      },
+      {
+        "cohort": "Founders / operators",
+        "count": 6
+      },
+      {
+        "cohort": "Researchers / independent engineers",
+        "count": 6
+      }
+    ],
+    "sample_trajectories": [
+      [
+        {
+          "year": 1995,
+          "age": 26,
+          "event": "Released PHP 1.0 (Personal Home Page Tools) on June 8, 1995, via a Usenet newsgroup announcement."
+        },
+        {
+          "year": 1998,
+          "age": 29,
+          "event": "Contributed to the Apache HTTP Server project and added the LIMIT clause to the mSQL DBMS."
+        },
+        {
+          "year": 2002,
+          "age": 33,
+          "event": "Joined Yahoo! Inc. as an Infrastructure Architecture Engineer, helping migrate Yahoo to PHP-based tools."
+        },
+        {
+          "year": 2009,
+          "age": 40,
+          "event": "Named to MIT Technology Review's list of top innovators for creating PHP, which by then powered over 12 million websites."
+        },
+        {
+          "year": 2012,
+          "age": 43,
+          "event": "Joined Etsy as Distinguished Engineer, working on architecture, internationalization, payments, fraud, and security."
+        }
+      ],
+      [
+        {
+          "year": 1981,
+          "age": 25,
+          "event": "Wrote Gosling Emacs, the first Emacs implementation for Unix in C, while a PhD student at Carnegie Mellon University; it was later commercially distributed by UniPress Software."
+        },
+        {
+          "year": 1983,
+          "age": 28,
+          "event": "Completed PhD in Computer Science at Carnegie Mellon University with thesis 'Algebraic Constraints' under Bob Sproull and Raj Reddy."
+        },
+        {
+          "year": 1990,
+          "age": 35,
+          "event": "Led the original design and implementation of the Java programming language at Sun Microsystems, including its compiler and virtual machine."
+        },
+        {
+          "year": 2004,
+          "age": 49,
+          "event": "Elected to the US National Academy of Engineering for the conception and development of Java and contributions to windowing systems."
+        },
+        {
+          "year": 2011,
+          "age": 56,
+          "event": "Briefly joined Google, then became Chief Software Architect at Liquid Robotics, writing software for autonomous ocean-going robots."
+        },
+        {
+          "year": 2017,
+          "age": 62,
+          "event": "Joined Amazon Web Services as Distinguished Engineer, working on IoT projects including AWS Greengrass."
+        },
+        {
+          "year": 2024,
+          "age": 69,
+          "event": "Retired from Amazon Web Services in July 2024 after a career spanning nearly 50 years as a software engineer."
+        }
+      ],
+      [
+        {
+          "year": 1990,
+          "age": 26,
+          "event": "Released groff 0.3.1, the first version of his GNU implementation of troff, which became a standard part of Linux."
+        },
+        {
+          "year": 1991,
+          "age": 27,
+          "event": "Released groff 1.04, the first stable version; began work on SGML with the sgmls parser."
+        },
+        {
+          "year": 1995,
+          "age": 31,
+          "event": "Moved to Bangkok, Thailand and established the Thai Open Source Software Center."
+        },
+        {
+          "year": 1998,
+          "age": 34,
+          "event": "Served as technical lead for the W3C XML working group that developed the XML 1.0 Recommendation."
+        },
+        {
+          "year": 2001,
+          "age": 37,
+          "event": "Awarded the first XML Cup for contributions to XML development."
+        },
+        {
+          "year": 2007,
+          "age": 43,
+          "event": "Co-authored the RELAX NG specification, a schema language for XML."
+        },
+        {
+          "year": 2017,
+          "age": 53,
+          "event": "Co-created the Ballerina programming language at WSO2."
+        }
+      ]
+    ]
+  }
+]
