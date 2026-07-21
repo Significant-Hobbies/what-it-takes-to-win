@@ -1,10 +1,10 @@
 {
-  "existing_people": 1974,
-  "eligible_new": 19,
-  "ineligible": 1564,
-  "total_after_merge": 1993,
-  "duplicates_skipped": 1925,
-  "errors": 2,
+  "existing_people": 1993,
+  "eligible_new": 12,
+  "ineligible": 1565,
+  "total_after_merge": 2005,
+  "duplicates_skipped": 1944,
+  "errors": 1,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
     "emerson-fittipaldi (Emerson Fittipaldi)",
@@ -58,7 +58,6 @@
     "mats-wilander (Mats Wilander)"
   ],
   "error_list": [
-    "batch_new5_127.jsonl:10: invalid JSON: Expecting ',' delimiter: line 1 column 5247 (char 5246)",
     "batch_tech2_14.jsonl:5: unknown eligibility_status 'unverified_candidate' for Joshua Bengio"
   ],
   "ineligible_names": [
@@ -164,24 +163,17 @@
     "Svetlana Alexievich"
   ],
   "eligible_new_names": [
-    "Jorja Smith",
-    "Ella Mai",
-    "Normani",
-    "Camila Cabello",
-    "Dua Lipa",
-    "Ava Max",
-    "Kim Petras",
-    "Troye Sivan",
-    "Joji",
-    "DDG",
-    "6ix9ine",
-    "Lil Pump",
-    "Kang Jae-won",
-    "Arturo Gatti",
-    "Raimonds Pauls",
-    "Dolph Lundgren",
-    "Jan Janssen",
-    "Daniel Day-Lewis",
-    "Shaquille O'Neal"
+    "21 Savage",
+    "Gunna",
+    "Lil Baby",
+    "Yung Lean",
+    "Bladee",
+    "Sheck Wes",
+    "Arlo Parks",
+    "Declan McKenna",
+    "Omar Apollo",
+    "SZA",
+    "Madison Beer",
+    "Olivia Newton-John"
   ]
 }
