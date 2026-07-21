@@ -247,7 +247,9 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
 
     // Match user to archetypes (anonymous profiles) based on advantage scores
     const userAdvVector = advantageFields.map(f => userAnswers[f.key] || 0);
-    const archetypeMatches = archetypesData.map(a => {
+    const advantageArchetypes = archetypesData.advantage_archetypes || archetypesData;
+    const leverageArchetypes = archetypesData.leverage_archetypes || [];
+    const archetypeMatches = advantageArchetypes.map(a => {
       const archVector = advantageFields.map(f => a.avg_advantage_scores[f.key] || 0);
       let diff = 0;
       for (let i = 0; i < userAdvVector.length; i++) {
@@ -257,6 +259,19 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
     }).sort((a, b) => a.diff - b.diff);
     const bestArchetype = archetypeMatches[0];
     const secondArchetype = archetypeMatches[1];
+
+    // Match user to leverage archetypes (built advantages: reps, timing, network, etc.)
+    const userLevVector = leverageFields.map(f => userAnswers[f.key] || 0);
+    const levArchetypeMatches = leverageArchetypes.map(a => {
+      const archVector = leverageFields.map(f => a.avg_leverage_scores[f.key] || 0);
+      let diff = 0;
+      for (let i = 0; i < userLevVector.length; i++) {
+        diff += Math.abs(userLevVector[i] - archVector[i]);
+      }
+      return { archetype: a, diff };
+    }).sort((a, b) => a.diff - b.diff);
+    const bestLevArchetype = levArchetypeMatches[0];
+    const secondLevArchetype = levArchetypeMatches[1];
 
     // Find "self-made" stories: low advantage (<=4), high success (tier 1-2)
     const selfMade = peopleData.filter(p => {
@@ -368,6 +383,53 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
         </div>
         ${secondArchetype && secondArchetype.diff - bestArchetype.diff < 4 ? `
           <p style="color:var(--text-faint);font-size:12px;margin:0;">You're also close to <strong style="color:var(--text-dim);">${secondArchetype.archetype.name}</strong> (${secondArchetype.archetype.member_count} people, avg advantage ${secondArchetype.archetype.avg_total_advantage}).</p>
+        ` : ''}
+      </div>
+      ` : ''}
+
+      <!-- Leverage archetype: built advantages (reps, timing, network, etc.) -->
+      ${bestLevArchetype ? `
+      <div class="card" style="padding:24px;margin-bottom:16px;border-left:3px solid var(--accent);">
+        <h3 style="margin-top:0;">Your built-advantage profile</h3>
+        <p style="color:var(--text-faint);font-size:12px;margin:0 0 12px;">Advantages you <em>built</em> — reps, timing, skill depth, network, concentration. These are the levers you control, unlike inherited advantages.</p>
+        <div style="background:var(--bg);border-radius:var(--radius);padding:20px;margin-bottom:12px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;">
+            <strong style="font-size:18px;color:var(--accent);">${bestLevArchetype.archetype.name}</strong>
+            <span style="font-size:12px;color:var(--text-faint);">${bestLevArchetype.archetype.member_count} people in this cluster</span>
+          </div>
+          <p style="color:var(--text-dim);font-size:14px;line-height:1.6;margin:0 0 16px;">${bestLevArchetype.archetype.description}</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">
+            <div style="text-align:center;padding:12px 8px;background:var(--bg-card);border-radius:var(--radius-sm);">
+              <div style="font-size:22px;font-weight:700;color:var(--text);">${bestLevArchetype.archetype.avg_total_leverage}</div>
+              <div style="font-size:11px;color:var(--text-faint);">avg leverage score</div>
+            </div>
+            <div style="text-align:center;padding:12px 8px;background:var(--bg-card);border-radius:var(--radius-sm);">
+              <div style="font-size:22px;font-weight:700;color:var(--text);">${bestLevArchetype.archetype.avg_milestone_age}</div>
+              <div style="font-size:11px;color:var(--text-faint);">avg milestone age</div>
+            </div>
+          </div>
+          <details style="margin-top:8px;">
+            <summary style="cursor:pointer;color:var(--text-dim);font-size:13px;padding:8px 0;">How your built advantages compare</summary>
+            <div style="margin-top:12px;">
+              ${leverageFields.map(f => {
+                const archVal = bestLevArchetype.archetype.avg_leverage_scores[f.key] || 0;
+                const userVal = userAnswers[f.key] || 0;
+                const max = f.max;
+                return `
+                <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;font-size:12px;">
+                  <span style="flex:1;color:var(--text-dim);">${f.label}</span>
+                  <div style="flex:2;display:flex;gap:2px;">
+                    <div style="flex:${archVal};height:8px;background:var(--accent);border-radius:2px;"></div>
+                    <div style="flex:${Math.max(0.01, max - archVal)};height:8px;background:var(--border-soft);border-radius:2px;"></div>
+                  </div>
+                  <span style="width:60px;text-align:right;color:var(--text-faint);">arch ${archVal.toFixed(1)} / you ${userVal}</span>
+                </div>`;
+              }).join('')}
+            </div>
+          </details>
+        </div>
+        ${secondLevArchetype && secondLevArchetype.diff - bestLevArchetype.diff < 4 ? `
+          <p style="color:var(--text-faint);font-size:12px;margin:0;">You're also close to <strong style="color:var(--text-dim);">${secondLevArchetype.archetype.name}</strong> (${secondLevArchetype.archetype.member_count} people, avg leverage ${secondLevArchetype.archetype.avg_total_leverage}).</p>
         ` : ''}
       </div>
       ` : ''}
