@@ -270,9 +270,14 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
     const isLowAdvantage = userTotalAdvantage <= 5;
     const isHighAdvantage = userTotalAdvantage >= 10;
     const isMediumAdvantage = !isLowAdvantage && !isHighAdvantage;
+    const isPast26 = age > 26;
 
     let bannerMsg, bannerColor, bannerBg;
-    if (isLowAdvantage) {
+    if (isPast26) {
+      bannerMsg = `You're ${age}. Our dataset tracks people who hit a material milestone by 26 — but that's just the starting line, not the finish. <strong>${achievedBeforeUserAge.length} of them had already broken through by your age.</strong> Many others we researched didn't make it by 26 and succeeded later — Stan Lee published his first comic at 38, Vera Wang designed her first dress at 40, Samuel L. Jackson broke through at 43. 26 is one milestone, not the milestone. Your trajectory is still being written.`;
+      bannerColor = 'var(--accent-3)';
+      bannerBg = 'rgba(240, 163, 107, 0.08)';
+    } else if (isLowAdvantage) {
       bannerMsg = `You scored ${userTotalAdvantage} on early advantages — below the dataset average of 8.1. But that's not the whole story. <strong>${selfMade.length} people in our dataset reached tier-1 or tier-2 success with the same or fewer advantages.</strong> Ingvar Kamprad founded IKEA at 17 with pocket money. Will Smith won a Grammy at 20 from West Philadelphia. Srinivasa Ramanujan was publishing breakthrough math from poverty. Advantage helps — but it's not required. Your drive, timing, and reps matter more.`;
       bannerColor = 'var(--accent-2)';
       bannerBg = 'rgba(95, 211, 188, 0.08)';
@@ -491,6 +496,11 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
 
     html += `
         </div>
+      </div>
+      <div class="card" style="padding:20px;margin-bottom:16px;border:1px dashed var(--border-soft);">
+        <p style="font-size:12px;color:var(--text-faint);margin:0;line-height:1.6;">
+          <strong style="color:var(--text-dim);">A note on what this is:</strong> This dataset includes only people who <em>did</em> achieve a notable milestone by 26 — it does not include the many people with similar advantages who didn't. Your percentile is among achievers, not among everyone with your background. The advantage scores are interpretive annotations based on publicly available sources, not measurements — treat them as approximate (±15%). This is a tool for exploration and inspiration, not a prediction of your future.
+        </p>
       </div>
       <div style="text-align:center;margin:24px 0;">
         <button class="btn-secondary" onclick="goToStep('intro')" style="padding:10px 24px;font-size:14px;">← Retake questionnaire</button>
