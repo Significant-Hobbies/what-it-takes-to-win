@@ -1,10 +1,10 @@
 {
-  "existing_people": 1962,
-  "eligible_new": 12,
-  "ineligible": 1560,
-  "total_after_merge": 1974,
-  "duplicates_skipped": 1913,
-  "errors": 1,
+  "existing_people": 1974,
+  "eligible_new": 19,
+  "ineligible": 1564,
+  "total_after_merge": 1993,
+  "duplicates_skipped": 1925,
+  "errors": 2,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
     "emerson-fittipaldi (Emerson Fittipaldi)",
@@ -58,6 +58,7 @@
     "mats-wilander (Mats Wilander)"
   ],
   "error_list": [
+    "batch_new5_127.jsonl:10: invalid JSON: Expecting ',' delimiter: line 1 column 5247 (char 5246)",
     "batch_tech2_14.jsonl:5: unknown eligibility_status 'unverified_candidate' for Joshua Bengio"
   ],
   "ineligible_names": [
@@ -163,17 +164,24 @@
     "Svetlana Alexievich"
   ],
   "eligible_new_names": [
-    "Smokepurpp",
-    "Ski Mask the Slump God",
-    "XXXTentacion",
-    "Juice WRLD",
-    "Lil Peep",
-    "Trippie Redd",
-    "Polo G",
-    "NLE Choppa",
-    "Baby Keem",
-    "Yeat",
-    "Playboi Carti",
-    "Lil Uzi Vert"
+    "Jorja Smith",
+    "Ella Mai",
+    "Normani",
+    "Camila Cabello",
+    "Dua Lipa",
+    "Ava Max",
+    "Kim Petras",
+    "Troye Sivan",
+    "Joji",
+    "DDG",
+    "6ix9ine",
+    "Lil Pump",
+    "Kang Jae-won",
+    "Arturo Gatti",
+    "Raimonds Pauls",
+    "Dolph Lundgren",
+    "Jan Janssen",
+    "Daniel Day-Lewis",
+    "Shaquille O'Neal"
   ]
 }
