@@ -1,0 +1,109 @@
+---
+import Base from "../../layouts/Base.astro";
+import peopleData from "../../data/people.json";
+
+const people = peopleData;
+const cohorts = [...new Set(people.map((p) => p.cohort_group).filter(Boolean))].sort();
+const categories = [...new Set(people.map((p) => p.category).filter(Boolean))].sort();
+const engines = [...new Set(people.map((p) => p.normalized_primary_engine).filter(Boolean))].sort();
+const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_archetype).filter(Boolean))].sort();
+---
+
+<Base title="Explore — Success by 26">
+  <section class="hero" style="padding-bottom:24px;">
+    <h1>Explore {people.length} people</h1>
+    <p class="lede">Filter, search, and sort. Click any person for the full annotation, sources, and early-advantage breakdown.</p>
+  </section>
+
+  <div class="filters" id="filters">
+    <input type="search" id="search" placeholder="Search name, milestone, summary…" />
+    <select id="f-cohort">
+      <option value="">All cohorts</option>
+      {cohorts.map((c) => <option value={c}>{c}</option>)}
+    </select>
+    <select id="f-category">
+      <option value="">All categories</option>
+      {categories.map((c) => <option value={c}>{c}</option>)}
+    </select>
+    <select id="f-engine">
+      <option value="">All engines</option>
+      {engines.map((c) => <option value={c}>{c}</option>)}
+    </select>
+    <select id="f-archetype">
+      <option value="">All archetypes</option>
+      {archetypes.map((c) => <option value={c}>{c}</option>)}
+    </select>
+    <select id="f-sort">
+      <option value="leverage">Sort: leverage (high→low)</option>
+      <option value="age-asc">Sort: milestone age (low→high)</option>
+      <option value="age-desc">Sort: milestone age (high→low)</option>
+      <option value="name">Sort: name (A→Z)</option>
+    </select>
+    <span id="count" style="font-family:var(--mono);font-size:12px;color:var(--text-faint);"></span>
+  </div>
+
+  <div class="person-grid" id="results"></div>
+
+  <script type="application/json" id="people-data" set:html={JSON.stringify(people)} />
+
+  <script type="module">
+    const people = JSON.parse(document.getElementById("people-data").textContent);
+    const results = document.getElementById("results");
+    const countEl = document.getElementById("count");
+    const search = document.getElementById("search");
+    const fCohort = document.getElementById("f-cohort");
+    const fCategory = document.getElementById("f-category");
+    const fEngine = document.getElementById("f-engine");
+    const fArchetype = document.getElementById("f-archetype");
+    const fSort = document.getElementById("f-sort");
+
+    function render() {
+      const q = search.value.trim().toLowerCase();
+      const cohort = fCohort.value;
+      const category = fCategory.value;
+      const engine = fEngine.value;
+      const archetype = fArchetype.value;
+      const sort = fSort.value;
+
+      let list = people.filter((p) => {
+        if (cohort && p.cohort_group !== cohort) return false;
+        if (category && p.category !== category) return false;
+        if (engine && p.normalized_primary_engine !== engine) return false;
+        if (archetype && p.primary_early_advantage_archetype !== archetype) return false;
+        if (q) {
+          const hay = `${p.name} ${p.milestone_by_age_26} ${p.early_history_summary} ${p.category} ${p.primary_early_advantage_archetype}`.toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      });
+
+      if (sort === "leverage") list.sort((a,b) => (b.total_leverage_score||0) - (a.total_leverage_score||0));
+      else if (sort === "age-asc") list.sort((a,b) => (a.age_at_milestone||0) - (b.age_at_milestone||0));
+      else if (sort === "age-desc") list.sort((a,b) => (b.age_at_milestone||0) - (a.age_at_milestone||0));
+      else if (sort === "name") list.sort((a,b) => a.name.localeCompare(b.name));
+
+      countEl.textContent = `${list.length} / ${people.length}`;
+      results.innerHTML = list.map((p) => `
+        <a class="person-card" href="/person/${p.person_id}/">
+          <div class="name">${escapeHtml(p.name)}</div>
+          <div class="cat">${escapeHtml(p.category || "")} · age ${p.age_at_milestone ?? "?"}</div>
+          <div class="milestone">${escapeHtml(p.milestone_by_age_26 || "")}</div>
+          <div class="scores">
+            <span class="score-pill">L <strong>${p.total_leverage_score ?? "—"}</strong></span>
+            <span class="score-pill">T${p.success_tier ?? "?"}</span>
+            ${p.primary_early_advantage_archetype ? `<span class="score-pill">${escapeHtml(p.primary_early_advantage_archetype)}</span>` : ""}
+          </div>
+        </a>
+      `).join("");
+    }
+
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, (c) => ({ "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;" }[c]));
+    }
+
+    [search, fCohort, fCategory, fEngine, fArchetype, fSort].forEach((el) =>
+      el.addEventListener("input", render)
+    );
+    render();
+  </script>
+</Base>

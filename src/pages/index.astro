@@ -1,0 +1,275 @@
+---
+import Base from "../layouts/Base.astro";
+import peopleData from "../data/people.json";
+
+const people = peopleData;
+const total = people.length;
+
+const cohorts = {};
+people.forEach((p) => { cohorts[p.cohort_group] = (cohorts[p.cohort_group] || 0) + 1; });
+
+const categories = {};
+people.forEach((p) => { categories[p.category] = (categories[p.category] || 0) + 1; });
+
+const engines = {};
+people.forEach((p) => {
+  const e = p.normalized_primary_engine || "Unknown";
+  engines[e] = (engines[e] || 0) + 1;
+});
+
+const archetypes = {};
+people.forEach((p) => {
+  const a = p.primary_early_advantage_archetype || "Uncoded";
+  archetypes[a] = (archetypes[a] || 0) + 1;
+});
+
+const ageBuckets = {};
+for (let a = 13; a <= 26; a++) ageBuckets[a] = 0;
+people.forEach((p) => {
+  const a = p.age_at_milestone;
+  if (a != null && ageBuckets[a] != null) ageBuckets[a]++;
+});
+
+const avgLeverage = (people.reduce((s, p) => s + (p.total_leverage_score || 0), 0) / total).toFixed(1);
+const avgAge = (people.reduce((s, p) => s + (p.age_at_milestone || 0), 0) / total).toFixed(1);
+
+const advantageFields = [
+  "early_family_financial_platform_support_score",
+  "parent_family_domain_advantage_score",
+  "inherited_audience_business_network_score",
+  "elite_institution_performance_pipeline_score",
+  "frontier_geography_ecosystem_score",
+  "rare_early_tools_facilities_score",
+  "dedicated_mentor_coach_tutor_score",
+  "exceptional_peer_cofounder_sibling_score",
+  "early_online_platform_community_score",
+  "direct_customer_domain_exposure_score",
+  "prodigy_physical_edge_score",
+  "adversity_constraint_catalyst_score",
+];
+const advantageLabels = {
+  early_family_financial_platform_support_score: "Family financial platform",
+  parent_family_domain_advantage_score: "Parent family domain",
+  inherited_audience_business_network_score: "Inherited audience/network",
+  elite_institution_performance_pipeline_score: "Elite institution pipeline",
+  frontier_geography_ecosystem_score: "Frontier geography",
+  rare_early_tools_facilities_score: "Rare early tools",
+  dedicated_mentor_coach_tutor_score: "Dedicated mentor/coach",
+  exceptional_peer_cofounder_sibling_score: "Exceptional peer/cofounder",
+  early_online_platform_community_score: "Early online platform",
+  direct_customer_domain_exposure_score: "Direct domain exposure",
+  prodigy_physical_edge_score: "Prodigy/physical edge",
+  adversity_constraint_catalyst_score: "Adversity catalyst",
+};
+const advantageAvg = advantageFields.map((f) => ({
+  field: f,
+  label: advantageLabels[f],
+  avg: (people.reduce((s, p) => s + (p[f] || 0), 0) / total).toFixed(2),
+  count2: people.filter((p) => (p[f] || 0) >= 2).length,
+}));
+
+const cohortData = Object.entries(cohorts).map(([name, value]) => ({ name, value })).sort((a, b) => b.value - a.value);
+const engineData = Object.entries(engines).map(([name, value]) => ({ name, value })).sort((a, b) => b.value - a.value);
+const archetypeData = Object.entries(archetypes).map(([name, value]) => ({ name, value })).sort((a, b) => b.value - a.value);
+const ageData = Object.entries(ageBuckets).map(([k, v]) => ({ age: k, count: v }));
+const advantageData = advantageAvg.map((d) => ({ label: d.label, avg: Number(d.avg), count2: d.count2 }));
+
+const topPeople = [...people]
+  .sort((a, b) => (b.total_leverage_score || 0) - (a.total_leverage_score || 0))
+  .slice(0, 12);
+---
+
+<Base title="Success by 26 — Early-Advantage Dataset">
+  <section class="hero">
+    <h1>Who reached a material milestone by age 26?</h1>
+    <p class="lede">
+      A research beta mapping {total} people who hit a verifiable professional, commercial,
+      creative, athletic, or research milestone by 26 — and the early conditions that may have
+      accelerated them. Interpretive annotations, not causal estimates.
+    </p>
+    <div class="meta-row">
+      <span><strong>{total}</strong> curated people</span>
+      <span>avg milestone age <strong>{avgAge}</strong></span>
+      <span>avg leverage score <strong>{avgLeverage}</strong></span>
+      <span>v<strong>0.1.0-beta</strong></span>
+    </div>
+  </section>
+
+  <div class="warning-box">
+    <strong>Read before interpreting.</strong> Scores are analyst interpretations applied through a
+    common rubric, not objective measurements. Zero usually means "no clear evidence in reviewed
+    sources," not "advantage was absent." This is a purposive outlier sample — it cannot estimate
+    causal effects or base rates of success. See <a href="/methodology/">methodology</a>.
+  </div>
+
+  <div class="grid grid-4" style="margin-bottom: 24px;">
+    <div class="stat">
+      <div class="label">Curated people</div>
+      <div class="value">{total}</div>
+      <div class="sub">Founders, creators, athletes, researchers</div>
+    </div>
+    <div class="stat">
+      <div class="label">Avg milestone age</div>
+      <div class="value">{avgAge}</div>
+      <div class="sub">Across all cohorts</div>
+    </div>
+    <div class="stat">
+      <div class="label">Avg leverage score</div>
+      <div class="value">{avgLeverage}</div>
+      <div class="sub">Sum of 10 capability dimensions</div>
+    </div>
+    <div class="stat">
+      <div class="label">Cohort groups</div>
+      <div class="value">{Object.keys(cohorts).length}</div>
+      <div class="sub">{Object.keys(cohorts).join(" · ")}</div>
+    </div>
+  </div>
+
+  <div class="grid grid-2" style="margin-bottom: 24px;">
+    <div class="card">
+      <h3>Milestone age distribution</h3>
+      <div id="chart-age" class="chart chart-short"></div>
+    </div>
+    <div class="card">
+      <h3>Cohort group</h3>
+      <div id="chart-cohort" class="chart chart-short"></div>
+    </div>
+  </div>
+
+  <div class="grid grid-2" style="margin-bottom: 24px;">
+    <div class="card">
+      <h3>Primary leverage engine</h3>
+      <div id="chart-engine" class="chart chart-short"></div>
+    </div>
+    <div class="card">
+      <h3>Early-advantage archetype</h3>
+      <div id="chart-archetype" class="chart chart-short"></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom: 24px;">
+    <h3>Average early-advantage score (0–2 scale) across all {total} people</h3>
+    <p style="font-size:13px;color:var(--text-dim);margin:0 0 12px;">
+      How often each early condition was documented as a meaningful (1) or unusually strong (2)
+      advantage. Zero is "no clear evidence," not "absent."
+    </p>
+    <div id="chart-advantage" class="chart"></div>
+  </div>
+
+  <div class="section-title">Top 12 by total leverage score</div>
+  <div class="person-grid">
+    {topPeople.map((p) => (
+      <a class="person-card" href={`/person/${p.person_id}/`}>
+        <div class="name">{p.name}</div>
+        <div class="cat">{p.category} · age {p.age_at_milestone}</div>
+        <div class="milestone">{p.milestone_by_age_26}</div>
+        <div class="scores">
+          <span class="score-pill">L <strong>{p.total_leverage_score}</strong></span>
+          <span class="score-pill">T{p.success_tier}</span>
+          {p.primary_early_advantage_archetype && (
+            <span class="score-pill">{p.primary_early_advantage_archetype}</span>
+          )}
+        </div>
+      </a>
+    ))}
+  </div>
+
+  <div style="margin-top:32px;text-align:center;">
+    <a href="/explore/" style="display:inline-block;padding:12px 24px;background:var(--accent);color:#0b0d12;border-radius:8px;font-weight:600;">
+      Explore all {total} people →
+    </a>
+  </div>
+
+  <script type="application/json" id="chart-data" set:html={JSON.stringify({ ageData, cohortData, engineData, archetypeData, advantageData })} />
+  <script type="module" src="/src/scripts/charts.js"></script>
+  <script type="module">
+    const data = JSON.parse(document.getElementById("chart-data").textContent);
+    const ageData = data.ageData;
+    const cohortData = data.cohortData;
+    const engineData = data.engineData;
+    const archetypeData = data.archetypeData;
+    const advantageData = data.advantageData;
+    const theme = window.chartTheme;
+    const baseAxis = {
+      axisLine: { lineStyle: { color: theme.axisLineColor } },
+      axisLabel: { color: theme.textColor, fontSize: 11 },
+      splitLine: { lineStyle: { color: theme.splitLineColor } },
+    };
+
+    // Age distribution
+    window.initChart("chart-age", {
+      color: theme.palette,
+      grid: { left: 40, right: 20, top: 20, bottom: 30 },
+      xAxis: { type: "category", data: ageData.map(d => d.age), ...baseAxis, axisTick: { show: false } },
+      yAxis: { type: "value", ...baseAxis },
+      series: [{
+        type: "bar",
+        data: ageData.map(d => d.count),
+        itemStyle: { color: theme.palette[0], borderRadius: [3,3,0,0] },
+      }],
+    });
+
+    // Cohort
+    window.initChart("chart-cohort", {
+      color: theme.palette,
+      tooltip: { trigger: "item" },
+      series: [{
+        type: "pie",
+        radius: ["45%","70%"],
+        center: ["50%","50%"],
+        data: cohortData,
+        label: { color: theme.textColor, fontSize: 11 },
+        labelLine: { lineStyle: { color: theme.splitLineColor } },
+      }],
+    });
+
+    // Engine
+    window.initChart("chart-engine", {
+      color: theme.palette,
+      grid: { left: 160, right: 20, top: 10, bottom: 20 },
+      xAxis: { type: "value", ...baseAxis },
+      yAxis: { type: "category", data: engineData.map(d => d.name), ...baseAxis, axisTick: { show: false } },
+      series: [{
+        type: "bar",
+        data: engineData.map(d => d.value),
+        itemStyle: { color: theme.palette[1], borderRadius: [0,3,3,0] },
+        label: { show: true, position: "right", color: theme.textColor, fontSize: 11 },
+      }],
+    });
+
+    // Archetype
+    window.initChart("chart-archetype", {
+      color: theme.palette,
+      grid: { left: 180, right: 20, top: 10, bottom: 20 },
+      xAxis: { type: "value", ...baseAxis },
+      yAxis: { type: "category", data: archetypeData.map(d => d.name), ...baseAxis, axisTick: { show: false } },
+      series: [{
+        type: "bar",
+        data: archetypeData.map(d => d.value),
+        itemStyle: { color: theme.palette[2], borderRadius: [0,3,3,0] },
+        label: { show: true, position: "right", color: theme.textColor, fontSize: 11 },
+      }],
+    });
+
+    // Advantage averages
+    window.initChart("chart-advantage", {
+      color: theme.palette,
+      grid: { left: 200, right: 60, top: 10, bottom: 30 },
+      xAxis: { type: "value", max: 2, ...baseAxis },
+      yAxis: { type: "category", data: advantageData.map(d => d.label), ...baseAxis, axisTick: { show: false } },
+      tooltip: {
+        trigger: "axis",
+        formatter: (params) => {
+          const d = advantageData[params[0].dataIndex];
+          return `${d.label}<br/>avg: ${d.avg}<br/>scored 2: ${d.count2} people`;
+        },
+      },
+      series: [{
+        type: "bar",
+        data: advantageData.map(d => d.avg),
+        itemStyle: { color: theme.palette[0], borderRadius: [0,3,3,0] },
+        label: { show: true, position: "right", color: theme.textColor, fontSize: 11, formatter: (p) => p.value.toFixed(2) },
+      }],
+    });
+  </script>
+</Base>

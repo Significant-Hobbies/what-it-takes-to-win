@@ -1,0 +1,54 @@
+---
+import Base from "../../layouts/Base.astro";
+---
+
+<Base title="About — Success by 26">
+  <section class="hero" style="padding-bottom:24px;">
+    <h1>About this project</h1>
+    <p class="lede">An open visualization of the Success by 26 early-advantage dataset.</p>
+  </section>
+
+  <article class="prose">
+    <h2>What this is</h2>
+    <p>
+      A research beta mapping people who reached a material professional, commercial, creative,
+      athletic, or research milestone by age 26 — and the early conditions that may have
+      accelerated their development: family resources, relevant parents, rare tools, elite
+      institutions, frontier ecosystems, mentors, peers, platforms, direct domain exposure,
+      unusual ability, and adversity.
+    </p>
+
+    <h2>What it is not</h2>
+    <ul>
+      <li>Not a census or representative sample of successful people.</li>
+      <li>Not a causal estimate of which advantages produce success.</li>
+      <li>Not a ranking of human worth or talent.</li>
+      <li>Not a predictor of individual outcomes.</li>
+    </ul>
+
+    <h2>Two evidence layers</h2>
+    <p>
+      <strong>Biographical layer</strong> — names, milestones, age assignments, early-history
+      summaries, family context, and source URLs — intended to summarize public biographical
+      evidence.
+    </p>
+    <p>
+      <strong>Annotation layer</strong> — leverage engines and numeric scores — are analyst
+      interpretations applied through a common rubric. They are hypotheses about acceleration
+      mechanisms, not measurements.
+    </p>
+
+    <h2>Source & licence</h2>
+    <p>
+      Dataset: <code>success_by_26_public_release_v0_1</code>, v0.1.0-beta, 2026-07-20.
+      Original annotations CC BY 4.0; scripts MIT; third-party sources retain their own terms.
+      See <a href="https://github.com/sarthakagrawal927/success-by-26">GitHub</a> for source.
+    </p>
+
+    <h2>Building the site locally</h2>
+    <p>
+      <code>npm install &amp;&amp; npm run dev</code> — Astro dev server on
+      <code>http://localhost:4321</code>. Build with <code>npm run build</code>.
+    </p>
+  </article>
+</Base>

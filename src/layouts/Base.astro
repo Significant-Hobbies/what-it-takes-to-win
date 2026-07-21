@@ -1,0 +1,45 @@
+---
+import "../styles/global.css";
+const { title = "Success by 26", description = "Who reached a material milestone by age 26, and what early conditions may have accelerated them?" } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="/" class="brand">
+          <span class="brand-mark">26</span>
+          <span class="brand-text">Success by 26</span>
+        </a>
+        <nav class="site-nav">
+          <a href="/">Overview</a>
+          <a href="/explore/">Explore</a>
+          <a href="/methodology/">Methodology</a>
+          <a href="/about/">About</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          Success by 26 — Early-Advantage Dataset v0.1.0-beta · 112 curated people ·
+          <a href="https://github.com/sarthakagrawal927/success-by-26">source</a> ·
+          interpretive annotations, not causal estimates
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

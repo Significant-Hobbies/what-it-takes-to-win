@@ -1,0 +1,51 @@
+field_name,layer,description
+person_id,metadata,Stable slug generated from the person's name within this release.
+name,biographical_summary_or_provenance,See methodology and taxonomy; field name is intentionally descriptive.
+cohort_group,biographical_summary_or_provenance,See methodology and taxonomy; field name is intentionally descriptive.
+category,biographical_summary_or_provenance,See methodology and taxonomy; field name is intentionally descriptive.
+age_at_milestone,biographical_summary_or_provenance,Age assigned to the selected material milestone; constrained to 26 or younger.
+milestone_by_age_26,biographical_summary_or_provenance,Short original summary of the selected milestone.
+early_history_summary,biographical_summary_or_provenance,See methodology and taxonomy; field name is intentionally descriptive.
+primary_leverage_engine,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+normalized_primary_engine,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+secondary_engine,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+started_serious_reps_before_20_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+prior_reps_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+scarce_skill_depth_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+native_distribution_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+elite_ecosystem_network_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+complementary_team_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+structural_wave_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+concentration_intensity_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+capital_safety_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+domain_proximity_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+total_leverage_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+success_tier,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+leverage_evidence_confidence,metadata,See methodology and taxonomy; field name is intentionally descriptive.
+family_context_summary,biographical_summary_or_provenance,See methodology and taxonomy; field name is intentionally descriptive.
+parent_family_domain_summary,biographical_summary_or_provenance,See methodology and taxonomy; field name is intentionally descriptive.
+early_family_financial_platform_support_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+parent_family_domain_advantage_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+inherited_audience_business_network_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+elite_institution_performance_pipeline_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+frontier_geography_ecosystem_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+rare_early_tools_facilities_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+dedicated_mentor_coach_tutor_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+exceptional_peer_cofounder_sibling_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+early_online_platform_community_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+direct_customer_domain_exposure_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+prodigy_physical_edge_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+adversity_constraint_catalyst_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+inherited_access_stack_count,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+exceptional_inherited_access_count,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+all_documented_early_condition_count,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+primary_early_advantage_archetype,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+primary_early_advantage_tags,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+evidence_summary,biographical_summary_or_provenance,See methodology and taxonomy; field name is intentionally descriptive.
+early_advantage_evidence_confidence,metadata,See methodology and taxonomy; field name is intentionally descriptive.
+source_count,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+primary_source_url,biographical_summary_or_provenance,See methodology and taxonomy; field name is intentionally descriptive.
+source_urls_pipe,biographical_summary_or_provenance,Deduplicated source URLs separated by a vertical bar.
+annotation_status,interpretive_annotation,Signals that scores are interpretive rather than measured facts.
+source_audit_status,metadata,Whether an independent source audit has been completed.
+data_version,metadata,See methodology and taxonomy; field name is intentionally descriptive.

@@ -1,0 +1,16 @@
+{
+  "name": "success-by-26",
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "node src/scripts/build_dataset.mjs && astro build",
+    "preview": "astro preview",
+    "check": "node src/scripts/build_dataset.mjs && astro check"
+  },
+  "dependencies": {
+    "astro": "^5.0.0",
+    "@astrojs/cloudflare": "^12.0.0",
+    "echarts": "^5.5.0"
+  }
+}

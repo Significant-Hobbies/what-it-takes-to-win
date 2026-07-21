@@ -1,0 +1,26 @@
+---
+import Base from "../../layouts/Base.astro";
+import methodology from "../../data/methodology.md?raw";
+const lines = methodology.split("\n");
+function inline(s) {
+  return s.replace(/`([^`]+)`/g, '<code>$1</code>');
+}
+---
+
+<Base title="Methodology — Success by 26">
+  <section class="hero" style="padding-bottom:24px;">
+    <h1>Methodology & limitations</h1>
+    <p class="lede">Read this before interpreting any score. The dataset is a research beta, not a measurement.</p>
+  </section>
+
+  <article class="prose">
+    {lines.map((line) => {
+      if (line.startsWith("# ")) return <h1 style="display:none;">{line.slice(2)}</h1>;
+      if (line.startsWith("## ")) return <h2>{line.slice(3)}</h2>;
+      if (line.startsWith("### ")) return <h3>{line.slice(4)}</h3>;
+      if (line.startsWith("- ")) return <li set:html={inline(line.slice(2))} />;
+      if (line.trim() === "") return <br />;
+      return <p set:html={inline(line)} />;
+    })}
+  </article>
+</Base>
