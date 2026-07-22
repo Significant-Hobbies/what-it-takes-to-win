@@ -1,9 +1,9 @@
 {
-  "existing_people": 2591,
-  "eligible_new": 31,
+  "existing_people": 2622,
+  "eligible_new": 0,
   "ineligible": 1882,
   "total_after_merge": 2622,
-  "duplicates_skipped": 2546,
+  "duplicates_skipped": 2577,
   "errors": 7,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -168,37 +168,5 @@
     "Jacques Dubochet",
     "Tim Berners-Lee"
   ],
-  "eligible_new_names": [
-    "Manuel Castells",
-    "Donna Strickland",
-    "Virginia Ruzici",
-    "Ulyana Lopatkina",
-    "Adri van der Poel",
-    "Denis Law",
-    "Chris O'Neil",
-    "Wong Kar-wai",
-    "Amélie Mauresmo",
-    "Viktor Gorbatko",
-    "Alina Kabaeva",
-    "Navi Pillay",
-    "Pavol Demitra",
-    "Vasily Alekseyev",
-    "Dan Halutz",
-    "Ghassan Kanafani",
-    "Ausra Fridrikas",
-    "Horacio Pagani",
-    "Jan Švankmajer",
-    "André Noyelle",
-    "José Manuel Fuente",
-    "Canelo Álvarez",
-    "Svetlana Boginskaya",
-    "Rafael Aghayev",
-    "Stefan Bellof",
-    "Ernst Hinterseer",
-    "Joe Simpson",
-    "Yoshitaka Amano",
-    "Egberto Gismonti",
-    "Yevgeny Kafelnikov",
-    "Chris Froome"
-  ]
+  "eligible_new_names": []
 }
