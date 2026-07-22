@@ -1,9 +1,9 @@
 {
-  "existing_people": 2962,
-  "eligible_new": 7,
-  "ineligible": 2132,
-  "total_after_merge": 2969,
-  "duplicates_skipped": 2920,
+  "existing_people": 2969,
+  "eligible_new": 20,
+  "ineligible": 2136,
+  "total_after_merge": 2989,
+  "duplicates_skipped": 2927,
   "errors": 7,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -169,12 +169,25 @@
     "Tim Berners-Lee"
   ],
   "eligible_new_names": [
-    "Francisco Varela",
-    "Nguyễn Ngọc Loan",
-    "Wolfgang Rihm",
-    "Masayoshi Son",
-    "Dejan Bodiroga",
-    "Siarhei Rutenka",
-    "Mikael Appelgren"
+    "Frank Shu",
+    "João Gilberto",
+    "Anderson Silva",
+    "Eduard Azaryan",
+    "Finn Tveter",
+    "Jerzy Skolimowski",
+    "Zoran Primorac",
+    "Careca",
+    "Tomohiko Ikoma",
+    "Gary Oldman",
+    "Ali Shariati",
+    "Otoya Yamaguchi",
+    "Gösta Pettersson",
+    "Pieter van den Hoogenband",
+    "Jee Yong-ju",
+    "Geraldine Chaplin",
+    "Yuri Manin",
+    "Ólafur Stefánsson",
+    "Goran Ivanišević",
+    "Mirza Džomba"
   ]
 }
