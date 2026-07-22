@@ -1,9 +1,9 @@
 {
-  "existing_people": 2879,
-  "eligible_new": 3,
-  "ineligible": 2076,
-  "total_after_merge": 2882,
-  "duplicates_skipped": 2836,
+  "existing_people": 2882,
+  "eligible_new": 5,
+  "ineligible": 2083,
+  "total_after_merge": 2887,
+  "duplicates_skipped": 2839,
   "errors": 7,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -169,8 +169,10 @@
     "Tim Berners-Lee"
   ],
   "eligible_new_names": [
-    "David Lynch",
-    "George Lusztig",
-    "Helena Christensen"
+    "Mike Bossy",
+    "Mario Lemieux",
+    "Jason Day",
+    "Robin Gibb",
+    "Zoltán Horváth"
   ]
 }
