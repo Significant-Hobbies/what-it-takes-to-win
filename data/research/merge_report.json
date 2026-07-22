@@ -1,9 +1,9 @@
 {
-  "existing_people": 3378,
-  "eligible_new": 5,
+  "existing_people": 3383,
+  "eligible_new": 0,
   "ineligible": 3312,
   "total_after_merge": 3383,
-  "duplicates_skipped": 3360,
+  "duplicates_skipped": 3365,
   "errors": 11,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -172,11 +172,5 @@
     "Jacques Dubochet",
     "Tim Berners-Lee"
   ],
-  "eligible_new_names": [
-    "Ninja",
-    "N0tail (Johan Sundstein)",
-    "Robert Morris",
-    "Unbox Therapy",
-    "PewDiePie"
-  ]
+  "eligible_new_names": []
 }

@@ -170,14 +170,15 @@ function estimateBirthYear(p) {
     return p.trajectory[0].year - (p.age_at_milestone || 26);
   }
   // Method 2: milestone text year - age_at_milestone
+  // Only match years up to current year to avoid matching game names like "2048"
   const m = p.milestone_by_age_26 || "";
-  const found = m.match(/\b(18\d{2}|19\d{2}|20\d{2})\b/);
+  const found = m.match(/\b(18\d{2}|19\d{2}|20[0-2]\d)\b/);
   if (found && p.age_at_milestone) {
     return parseInt(found[0]) - p.age_at_milestone;
   }
   // Method 3: starting_point year
   const sp = p.starting_point || "";
-  const spFound = sp.match(/\b(18\d{2}|19\d{2}|20\d{2})\b/);
+  const spFound = sp.match(/\b(18\d{2}|19\d{2}|20[0-2]\d)\b/);
   if (spFound && p.age_at_milestone) {
     return parseInt(spFound[0]) - p.age_at_milestone;
   }
