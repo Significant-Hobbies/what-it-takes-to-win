@@ -1,9 +1,9 @@
 {
-  "existing_people": 2622,
-  "eligible_new": 13,
-  "ineligible": 1893,
-  "total_after_merge": 2635,
-  "duplicates_skipped": 2577,
+  "existing_people": 2659,
+  "eligible_new": 0,
+  "ineligible": 1916,
+  "total_after_merge": 2659,
+  "duplicates_skipped": 2615,
   "errors": 7,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -168,19 +168,5 @@
     "Jacques Dubochet",
     "Tim Berners-Lee"
   ],
-  "eligible_new_names": [
-    "Prakash Padukone",
-    "Kiki Kogelnik",
-    "Travis Fimmel",
-    "Nana Alexandria",
-    "Toini Gustafsson",
-    "Carla Fracci",
-    "John Surtees",
-    "Jarkko Oikarinen",
-    "Ai Weiwei",
-    "Henrik Stenson",
-    "Viswanathan Anand",
-    "Bence Szabó",
-    "Vladimir Tkachenko"
-  ]
+  "eligible_new_names": []
 }
