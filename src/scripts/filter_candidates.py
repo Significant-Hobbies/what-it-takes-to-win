@@ -12,7 +12,7 @@ Heuristics:
   inventors, businesspeople, designers, photographers, directors, animators,
   models, magicians, chess players, racing drivers, gymnasts, swimmers, etc.
 - Cap per-occupation to avoid domination by any single field.
-- Remove names already in the existing 112-person dataset.
+- Remove names already in the existing 2,509-person dataset.
 - Output N batches of ~12 candidates each for subagent research.
 """
 from __future__ import annotations

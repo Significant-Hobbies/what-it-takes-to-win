@@ -10,7 +10,7 @@ One person and one selected milestone that occurred at or before age 26. The mil
 
 ## Selection
 
-The 112-person release is a purposive outlier sample assembled to cover founders, operators, creators, athletes, researchers, and independent engineers. It is not a census, representative sample, or estimate of the base rate of success.
+The 2,509-person dataset is a purposive outlier sample assembled to cover founders, operators, creators, athletes, researchers, and independent engineers. It is not a census, representative sample, or estimate of the base rate of success.
 
 ## Two evidence layers
 
@@ -32,7 +32,7 @@ Zero is not proof of absence. Biographies systematically under-report wealth, in
 
 ## Source standard
 
-Version 0.1 retains the sources used in the original exercise, including encyclopedia pages and stronger supporting sources where available. The release is therefore labelled `not_independently_audited`.
+Version 0.3 retains the sources used in the original exercise, including encyclopedia pages and stronger supporting sources where available. The release is therefore labelled `not_independently_audited`.
 
 For a stronger v1.0:
 

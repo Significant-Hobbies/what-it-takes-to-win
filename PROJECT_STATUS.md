@@ -54,6 +54,8 @@ early in their careers, and what early conditions may have accelerated them.
 - 2026-07-22 — fixed success_tier misassignments (90 original records at tier 4 → proper tiers)
 - 2026-07-22 — backfilled source URLs for 313 records missing them
 - 2026-07-22 — trajectory rendering fixed to support both event and title/description formats
+- 2026-07-22 — trajectory deepening batches 11-18: coverage 83% → 91.6% (2299/2509)
+- 2026-07-22 — researchers cohort expanded 197 → 214
 
 ## Products
 
@@ -74,22 +76,22 @@ early in their careers, and what early conditions may have accelerated them.
 - Lazy-loaded nav search (fetches slim search index on first focus)
 - Lazy-loaded explore and compare data (fetches people.json client-side)
 - Compare page with 22-question questionnaire, feel-good results, archetype matching
-- Trajectory data on 83% of people — starting point, current position, career milestones
+- Trajectory data on 91.6% of people — starting point, current position, career milestones
 - Dataset validation: unique IDs; scores in range; no missing key fields
 - Subagent research pipeline (instructions, batch CSVs, JSONL output, merge scripts)
 - Merge report with eligibility stats and error tracking
 
 ## Dataset Stats
 
-- **Total people:** 2499 (born 1950+)
-- **Trajectory coverage:** 83% (2080/2499)
-- **Cohort distribution:** Athletes 926, Creators/artists 815, Founders/operators 557, Researchers 197
-- **Tier distribution:** T1 510, T2 1070, T3 750, T4 165
+- **Total people:** 2509 (born 1950+)
+- **Trajectory coverage:** 91.6% (2299/2509)
+- **Cohort distribution:** Athletes 925, Creators/artists 813, Founders/operators 557, Researchers 214
+- **Tier distribution:** T1 513, T2 1072, T3 752, T4 172
 
 ## Todo / Planned / Deferred / Blocked
 
-1. **In progress** — Deepen trajectories for remaining 419 people (16.8% of dataset)
-2. **In progress** — Add more researchers to balance cohorts (currently 197, target ~300)
+1. **In progress** — Deepen trajectories for remaining 210 people (8.4% of dataset)
+2. **In progress** — Add more researchers to balance cohorts (currently 214, target ~300)
 3. **Planned** — Cloudflare Pages deployment
 4. **Planned** — Double-code stratified sample for reliability (per methodology)
 5. **Deferred** — v1.0 with independently audited sources, retrieval dates, archived links
