@@ -1,9 +1,9 @@
 {
-  "existing_people": 2336,
-  "eligible_new": 7,
-  "ineligible": 1696,
-  "total_after_merge": 2343,
-  "duplicates_skipped": 2288,
+  "existing_people": 2343,
+  "eligible_new": 17,
+  "ineligible": 1703,
+  "total_after_merge": 2360,
+  "duplicates_skipped": 2295,
   "errors": 7,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -169,12 +169,22 @@
     "Tim Berners-Lee"
   ],
   "eligible_new_names": [
-    "Giannis Antetokounmpo",
-    "Péter Bakonyi",
-    "Iván Trevejo",
-    "Franco Bitossi",
-    "Carlos Pace",
-    "Antonio Saura",
-    "Aleksandr Tuchkin"
+    "Ángel Di María",
+    "Apasra Hongsakula",
+    "Magnus Lindberg",
+    "Faker",
+    "Antti Hyvärinen",
+    "Marc Girardelli",
+    "Sadaharu Oh",
+    "Lorne Michaels",
+    "Eri Klas",
+    "Malick Sidibé",
+    "Richard Krajicek",
+    "İbrahim Tatlıses",
+    "Finn Bálor",
+    "Andreas Brehme",
+    "Satish Kumar",
+    "Zoran Slavnić",
+    "Dmitry Muserskiy"
   ]
 }
