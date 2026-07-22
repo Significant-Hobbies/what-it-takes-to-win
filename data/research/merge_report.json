@@ -1,8 +1,8 @@
 {
   "existing_people": 2258,
-  "eligible_new": 0,
-  "ineligible": 1647,
-  "total_after_merge": 2258,
+  "eligible_new": 15,
+  "ineligible": 1656,
+  "total_after_merge": 2273,
   "duplicates_skipped": 2210,
   "errors": 1,
   "duplicate_list": [
@@ -162,5 +162,21 @@
     "Jacques Dubochet",
     "Tim Berners-Lee"
   ],
-  "eligible_new_names": []
+  "eligible_new_names": [
+    "Melanie Capone",
+    "Josh Glodoveza",
+    "Tarik Celik (Arik Celik in CSV)",
+    "Xalavier Nelson Jr. (Strange Scaffold)",
+    "Sahil Lavingia",
+    "Laura Behrens Wu",
+    "Rohan Puri",
+    "Harrison Chase",
+    "Aravind Krishnan",
+    "Jschlatt",
+    "Slimecicle (Charlie Dalgleish)",
+    "Margit Korondi",
+    "Vasyl Lomachenko",
+    "András Adorján",
+    "Sofia Polgár"
+  ]
 }
