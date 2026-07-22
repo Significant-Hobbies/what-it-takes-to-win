@@ -77,6 +77,31 @@ const advantageData = advantageAvg.map((d) => ({ label: d.label, avg: Number(d.a
 const topPeople = [...people]
   .sort((a, b) => (b.total_leverage_score || 0) - (a.total_leverage_score || 0))
   .slice(0, 12);
+
+// Build grouped people data for chart click-through detail panels
+function buildGroupData(field) {
+  const groups = {};
+  people.forEach((p) => {
+    const key = p[field] || "Uncoded";
+    if (!groups[key]) groups[key] = [];
+    groups[key].push({
+      name: p.name,
+      person_id: p.person_id,
+      category: p.category,
+      age_at_milestone: p.age_at_milestone,
+      milestone: p.milestone_by_age_26,
+      total_leverage_score: p.total_leverage_score,
+      success_tier: p.success_tier,
+      cohort_group: p.cohort_group,
+    });
+  });
+  // Sort each group by leverage score descending
+  Object.values(groups).forEach((arr) => arr.sort((a, b) => (b.total_leverage_score || 0) - (a.total_leverage_score || 0)));
+  return groups;
+}
+
+const enginePeople = buildGroupData("normalized_primary_engine");
+const archetypePeople = buildGroupData("primary_early_advantage_archetype");
 ---
 
 <Base title="Trajectory — Early-Advantage Dataset">
@@ -138,11 +163,11 @@ const topPeople = [...people]
 
   <div class="grid grid-2" style="margin-bottom: 24px;">
     <div class="card">
-      <h3>Primary leverage engine</h3>
+      <h3>Primary leverage engine <span class="chart-hint">click a bar to explore</span></h3>
       <div id="chart-engine" class="chart chart-short"></div>
     </div>
     <div class="card">
-      <h3>Early-advantage archetype</h3>
+      <h3>Early-advantage archetype <span class="chart-hint">click a bar to explore</span></h3>
       <div id="chart-archetype" class="chart chart-short"></div>
     </div>
   </div>
@@ -180,7 +205,7 @@ const topPeople = [...people]
     </a>
   </div>
 
-  <script type="application/json" id="chart-data" set:html={JSON.stringify({ ageData, cohortData, engineData, archetypeData, advantageData })} />
+  <script type="application/json" id="chart-data" set:html={JSON.stringify({ ageData, cohortData, engineData, archetypeData, advantageData, enginePeople, archetypePeople })} />
   <script type="module" src="/src/scripts/charts.js"></script>
   <script type="module">
     const data = JSON.parse(document.getElementById("chart-data").textContent);
@@ -189,12 +214,66 @@ const topPeople = [...people]
     const engineData = data.engineData;
     const archetypeData = data.archetypeData;
     const advantageData = data.advantageData;
+    const enginePeople = data.enginePeople;
+    const archetypePeople = data.archetypePeople;
     const theme = window.chartTheme;
     const baseAxis = {
       axisLine: { lineStyle: { color: theme.axisLineColor } },
       axisLabel: { color: theme.textColor, fontSize: 11 },
       splitLine: { lineStyle: { color: theme.splitLineColor } },
     };
+
+    // --- Detail panel logic ---
+    function showDetail(title, peopleList) {
+      const overlay = document.getElementById("chart-detail-overlay");
+      const titleEl = document.getElementById("detail-title");
+      const statsEl = document.getElementById("detail-stats");
+      const peopleEl = document.getElementById("detail-people");
+      titleEl.textContent = `${title} (${peopleList.length} people)`;
+
+      // Stats
+      const avgLev = (peopleList.reduce((s, p) => s + (p.total_leverage_score || 0), 0) / peopleList.length).toFixed(1);
+      const avgAge = (peopleList.reduce((s, p) => s + (p.age_at_milestone || 0), 0) / peopleList.length).toFixed(1);
+      const tierCounts = {};
+      peopleList.forEach(p => { tierCounts[p.success_tier] = (tierCounts[p.success_tier] || 0) + 1; });
+      const cohortCounts = {};
+      peopleList.forEach(p => { cohortCounts[p.cohort_group] = (cohortCounts[p.cohort_group] || 0) + 1; });
+      const tierStr = Object.entries(tierCounts).sort((a,b) => a[0]-b[0]).map(([t,c]) => `T${t}: ${c}`).join(" · ");
+      const cohortStr = Object.entries(cohortCounts).sort((a,b) => b[1]-a[1]).map(([k,c]) => `${k} (${c})`).join(" · ");
+
+      statsEl.innerHTML = `
+        <div class="stat-row">
+          <span><strong>${peopleList.length}</strong> people</span>
+          <span>avg leverage <strong>${avgLev}</strong></span>
+          <span>avg milestone age <strong>${avgAge}</strong></span>
+        </div>
+        <div class="stat-row sub">${tierStr}</div>
+        <div class="stat-row sub">${cohortStr}</div>
+      `;
+
+      // People list (show top 50 by leverage, with "show more" for the rest)
+      const visibleCount = Math.min(50, peopleList.length);
+      const html = peopleList.slice(0, visibleCount).map(p => `
+        <a class="detail-person" href="/person/${p.person_id}/">
+          <span class="dp-name">${p.name}</span>
+          <span class="dp-cat">${p.category}</span>
+          <span class="dp-age">age ${p.age_at_milestone}</span>
+          <span class="dp-lev">L${p.total_leverage_score}</span>
+          <span class="dp-tier">T${p.success_tier}</span>
+        </a>
+      `).join("");
+      const moreNote = peopleList.length > visibleCount
+        ? `<div class="detail-more">Showing top ${visibleCount} of ${peopleList.length} — <a href="/explore/">explore all →</a></div>`
+        : "";
+      peopleEl.innerHTML = html + moreNote;
+
+      overlay.style.display = "flex";
+    }
+    window.closeDetail = function() {
+      document.getElementById("chart-detail-overlay").style.display = "none";
+    };
+    document.getElementById("chart-detail-overlay").addEventListener("click", closeDetail);
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeDetail(); });
 
     // Age distribution
     window.initChart("chart-age", {
@@ -224,31 +303,57 @@ const topPeople = [...people]
     });
 
     // Engine
-    window.initChart("chart-engine", {
+    const engineChart = window.initChart("chart-engine", {
       color: theme.palette,
       grid: { left: 160, right: 20, top: 10, bottom: 20 },
       xAxis: { type: "value", ...baseAxis },
       yAxis: { type: "category", data: engineData.map(d => d.name), ...baseAxis, axisTick: { show: false } },
+      tooltip: {
+        trigger: "axis",
+        formatter: (params) => {
+          const d = engineData[params[0].dataIndex];
+          return `${d.name}<br/>${d.value} people<br/><span style="color:#888">click to explore</span>`;
+        },
+      },
       series: [{
         type: "bar",
         data: engineData.map(d => d.value),
-        itemStyle: { color: theme.palette[1], borderRadius: [0,3,3,0] },
+        itemStyle: { color: theme.palette[1], borderRadius: [0,3,3,0], cursor: "pointer" },
         label: { show: true, position: "right", color: theme.textColor, fontSize: 11 },
       }],
     });
+    engineChart.on("click", (params) => {
+      if (params.componentType === "series") {
+        const d = engineData[params.dataIndex];
+        if (d && enginePeople[d.name]) showDetail(d.name, enginePeople[d.name]);
+      }
+    });
 
     // Archetype
-    window.initChart("chart-archetype", {
+    const archetypeChart = window.initChart("chart-archetype", {
       color: theme.palette,
       grid: { left: 180, right: 20, top: 10, bottom: 20 },
       xAxis: { type: "value", ...baseAxis },
       yAxis: { type: "category", data: archetypeData.map(d => d.name), ...baseAxis, axisTick: { show: false } },
+      tooltip: {
+        trigger: "axis",
+        formatter: (params) => {
+          const d = archetypeData[params[0].dataIndex];
+          return `${d.name}<br/>${d.value} people<br/><span style="color:#888">click to explore</span>`;
+        },
+      },
       series: [{
         type: "bar",
         data: archetypeData.map(d => d.value),
-        itemStyle: { color: theme.palette[2], borderRadius: [0,3,3,0] },
+        itemStyle: { color: theme.palette[2], borderRadius: [0,3,3,0], cursor: "pointer" },
         label: { show: true, position: "right", color: theme.textColor, fontSize: 11 },
       }],
+    });
+    archetypeChart.on("click", (params) => {
+      if (params.componentType === "series") {
+        const d = archetypeData[params.dataIndex];
+        if (d && archetypePeople[d.name]) showDetail(d.name, archetypePeople[d.name]);
+      }
     });
 
     // Advantage averages
@@ -272,4 +377,16 @@ const topPeople = [...people]
       }],
     });
   </script>
+
+  <!-- Detail panel modal for chart click-throughs -->
+  <div id="chart-detail-overlay" class="detail-overlay" style="display:none;">
+    <div class="detail-panel" onclick="event.stopPropagation()">
+      <div class="detail-header">
+        <h3 id="detail-title"></h3>
+        <button class="detail-close" onclick="closeDetail()">&times;</button>
+      </div>
+      <div id="detail-stats" class="detail-stats"></div>
+      <div id="detail-people" class="detail-people"></div>
+    </div>
+  </div>
 </Base>
