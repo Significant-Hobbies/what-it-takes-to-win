@@ -1,9 +1,9 @@
 {
-  "existing_people": 2873,
-  "eligible_new": 6,
-  "ineligible": 2067,
-  "total_after_merge": 2879,
-  "duplicates_skipped": 2830,
+  "existing_people": 2879,
+  "eligible_new": 3,
+  "ineligible": 2076,
+  "total_after_merge": 2882,
+  "duplicates_skipped": 2836,
   "errors": 7,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -169,11 +169,8 @@
     "Tim Berners-Lee"
   ],
   "eligible_new_names": [
-    "Erhard Loretan",
-    "David Coverdale",
-    "Tony Esposito",
-    "Jean Vuarnet",
-    "Jo Siffert",
-    "Grace Jones"
+    "David Lynch",
+    "George Lusztig",
+    "Helena Christensen"
   ]
 }
