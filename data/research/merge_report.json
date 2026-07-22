@@ -1,9 +1,9 @@
 {
-  "existing_people": 2668,
-  "eligible_new": 9,
-  "ineligible": 1922,
-  "total_after_merge": 2677,
-  "duplicates_skipped": 2624,
+  "existing_people": 2677,
+  "eligible_new": 16,
+  "ineligible": 1930,
+  "total_after_merge": 2693,
+  "duplicates_skipped": 2633,
   "errors": 7,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -169,14 +169,21 @@
     "Tim Berners-Lee"
   ],
   "eligible_new_names": [
-    "Robert Kubica",
-    "Junji Kawano",
-    "Empress Michiko",
-    "Roland Emmerich",
-    "Irene Khan",
-    "Lakshmi Mittal",
-    "Roberto Benigni",
-    "Péter Eötvös",
-    "Hugo Calderano"
+    "Anton Tkáč",
+    "Francesco Moser",
+    "Jan A. P. Kaczmarek",
+    "May-Louise Flodin",
+    "Herman Van Springel",
+    "Marie-Theres Nadig",
+    "Rodion Shchedrin",
+    "Alfred Brendel",
+    "Dianne Wiest",
+    "Tomas Jonsson",
+    "Domenico Dolce",
+    "Momir Rnić",
+    "Stan Wawrinka",
+    "Nicholas Tombazis",
+    "Claudio Barrientos",
+    "Alexander Beliavsky"
   ]
 }
