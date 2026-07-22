@@ -1,9 +1,9 @@
 {
-  "existing_people": 2701,
-  "eligible_new": 4,
-  "ineligible": 1942,
-  "total_after_merge": 2705,
-  "duplicates_skipped": 2657,
+  "existing_people": 2705,
+  "eligible_new": 8,
+  "ineligible": 1946,
+  "total_after_merge": 2713,
+  "duplicates_skipped": 2661,
   "errors": 7,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -169,9 +169,13 @@
     "Tim Berners-Lee"
   ],
   "eligible_new_names": [
-    "Tadej Pogačar",
-    "Vladimir Kramnik",
-    "Pak Se-ri",
-    "Trevor Berbick"
+    "Semyon Bychkov",
+    "Gastone Nencini",
+    "Wim Ruska",
+    "Eleftherios Petrounias",
+    "Jung Jin-sun",
+    "Ivano Balić",
+    "Cristina Bontaș",
+    "Sergi Bruguera"
   ]
 }
