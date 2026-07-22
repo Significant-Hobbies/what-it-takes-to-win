@@ -1,8 +1,8 @@
 {
   "existing_people": 2489,
-  "eligible_new": 0,
-  "ineligible": 1801,
-  "total_after_merge": 2489,
+  "eligible_new": 17,
+  "ineligible": 1808,
+  "total_after_merge": 2506,
   "duplicates_skipped": 2442,
   "errors": 7,
   "duplicate_list": [
@@ -168,5 +168,23 @@
     "Jacques Dubochet",
     "Tim Berners-Lee"
   ],
-  "eligible_new_names": []
+  "eligible_new_names": [
+    "Jana Novotná",
+    "Mika Salo",
+    "Kenny Dalglish",
+    "Elle Macpherson",
+    "Guido Crepax",
+    "Elvira Saadi",
+    "Mervyn Rose",
+    "Suzanne Morrow Francis",
+    "Gianluca Vialli",
+    "Karl Lagerfeld",
+    "Steve Harris",
+    "Bodil Joensen",
+    "Anna Ushenina",
+    "Antón Lamazares",
+    "Emese Hunyady",
+    "Wilfredo León",
+    "Rob Hall"
+  ]
 }
