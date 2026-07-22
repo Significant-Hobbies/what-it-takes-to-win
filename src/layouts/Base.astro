@@ -47,20 +47,39 @@ const { title = "What It Takes to Win", description = "What early conditions acc
         </p>
       </div>
     </footer>
-    <script is:inline define:vars={{ peopleData }}>
+    <script>
       (function() {
         const input = document.getElementById('nav-search-input');
         const results = document.getElementById('nav-search-results');
         if (!input || !results) return;
 
-        // Build search index
-        const index = peopleData.map(p => ({
-          id: p.person_id,
-          name: p.name,
-          category: p.category || '',
-          milestone: (p.milestone_by_age_26 || '').toLowerCase(),
-          searchText: (p.name + ' ' + (p.category || '') + ' ' + (p.milestone_by_age_26 || '')).toLowerCase(),
-        }));
+        let index = null;
+        let loadingPromise = null;
+
+        function loadIndex() {
+          if (index) return Promise.resolve(index);
+          if (loadingPromise) return loadingPromise;
+          loadingPromise = fetch('/data/search-index.json')
+            .then(r => r.json())
+            .then(data => {
+              index = data.map(p => ({
+                id: p.id,
+                name: p.name,
+                category: p.category || '',
+                searchText: (p.name + ' ' + (p.category || '') + ' ' + (p.milestone || '')).toLowerCase(),
+              }));
+              return index;
+            });
+          return loadingPromise;
+        }
+
+        // Lazy-load on first focus
+        input.addEventListener('focus', function() {
+          if (!index) loadIndex();
+          if (this.value.trim().length >= 2) {
+            results.style.display = 'block';
+          }
+        });
 
         input.addEventListener('input', function() {
           const q = this.value.trim().toLowerCase();
@@ -68,6 +87,14 @@ const { title = "What It Takes to Win", description = "What early conditions acc
             results.style.display = 'none';
             return;
           }
+          if (!index) {
+            loadIndex().then(() => doSearch(q));
+            return;
+          }
+          doSearch(q);
+        });
+
+        function doSearch(q) {
           const matches = index.filter(p => p.searchText.includes(q)).slice(0, 8);
           if (matches.length === 0) {
             results.innerHTML = '<div class="nsr-empty">No results</div>';
@@ -78,15 +105,10 @@ const { title = "What It Takes to Win", description = "What early conditions acc
             `<a href="/person/${p.id}/" class="nsr-item"><span class="nsr-name">${p.name}</span><span class="nsr-cat">${p.category}</span></a>`
           ).join('');
           results.style.display = 'block';
-        });
+        }
 
         input.addEventListener('blur', function() {
           setTimeout(() => { results.style.display = 'none'; }, 200);
-        });
-        input.addEventListener('focus', function() {
-          if (this.value.trim().length >= 2) {
-            results.style.display = 'block';
-          }
         });
       })();
     </script>

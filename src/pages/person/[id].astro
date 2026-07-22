@@ -91,7 +91,8 @@ const related = peopleData
             {p.trajectory.map((t) => (
               <li style="margin-bottom:10px;">
                 <span style="font-family:var(--mono);color:var(--accent);font-size:12px;">{t.year} · age {t.age}</span>
-                <div style="color:var(--text-dim);">{t.event}</div>
+                {t.title && <div style="color:var(--text);font-weight:500;font-size:13px;margin-top:2px;">{t.title}</div>}
+                <div style="color:var(--text-dim);">{t.description || t.event}</div>
               </li>
             ))}
           </ol>

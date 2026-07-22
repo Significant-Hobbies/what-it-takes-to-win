@@ -50,7 +50,7 @@ EXISTING_CSV_FIELDS = [
     "primary_source_url", "source_urls_pipe", "annotation_status",
     "source_audit_status", "data_version",
     "starting_point", "current_position", "current_position_year", "is_living",
-    "trajectory_json",
+    "trajectory_json", "birth_year",
 ]
 
 NUMERIC_FIELDS = {
@@ -70,7 +70,7 @@ NUMERIC_FIELDS = {
     "direct_customer_domain_exposure_score", "prodigy_physical_edge_score",
     "adversity_constraint_catalyst_score", "inherited_access_stack_count",
     "exceptional_inherited_access_count", "all_documented_early_condition_count",
-    "source_count", "current_position_year",
+    "source_count", "current_position_year", "birth_year",
 }
 
 REQUIRED_FIELDS = {

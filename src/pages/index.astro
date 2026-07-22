@@ -77,31 +77,6 @@ const advantageData = advantageAvg.map((d) => ({ label: d.label, avg: Number(d.a
 const topPeople = [...people]
   .sort((a, b) => (b.total_leverage_score || 0) - (a.total_leverage_score || 0))
   .slice(0, 12);
-
-// Build grouped people data for chart click-through detail panels
-function buildGroupData(field) {
-  const groups = {};
-  people.forEach((p) => {
-    const key = p[field] || "Uncoded";
-    if (!groups[key]) groups[key] = [];
-    groups[key].push({
-      name: p.name,
-      person_id: p.person_id,
-      category: p.category,
-      age_at_milestone: p.age_at_milestone,
-      milestone: p.milestone_by_age_26,
-      total_leverage_score: p.total_leverage_score,
-      success_tier: p.success_tier,
-      cohort_group: p.cohort_group,
-    });
-  });
-  // Sort each group by leverage score descending
-  Object.values(groups).forEach((arr) => arr.sort((a, b) => (b.total_leverage_score || 0) - (a.total_leverage_score || 0)));
-  return groups;
-}
-
-const enginePeople = buildGroupData("normalized_primary_engine");
-const archetypePeople = buildGroupData("primary_early_advantage_archetype");
 ---
 
 <Base title="What It Takes to Win — Early-Advantage Dataset">
@@ -205,7 +180,7 @@ const archetypePeople = buildGroupData("primary_early_advantage_archetype");
     </a>
   </div>
 
-  <script type="application/json" id="chart-data" set:html={JSON.stringify({ ageData, cohortData, engineData, archetypeData, advantageData, enginePeople, archetypePeople })} />
+  <script type="application/json" id="chart-data" set:html={JSON.stringify({ ageData, cohortData, engineData, archetypeData, advantageData })} />
   <script type="module" src="/src/scripts/charts.js"></script>
   <script type="module">
     const data = JSON.parse(document.getElementById("chart-data").textContent);
@@ -214,14 +189,35 @@ const archetypePeople = buildGroupData("primary_early_advantage_archetype");
     const engineData = data.engineData;
     const archetypeData = data.archetypeData;
     const advantageData = data.advantageData;
-    const enginePeople = data.enginePeople;
-    const archetypePeople = data.archetypePeople;
     const theme = window.chartTheme;
     const baseAxis = {
       axisLine: { lineStyle: { color: theme.axisLineColor } },
       axisLabel: { color: theme.textColor, fontSize: 11 },
       splitLine: { lineStyle: { color: theme.splitLineColor } },
     };
+
+    // Lazy-load full people data for chart click-through detail panels
+    let allPeople = null;
+    function loadPeople() {
+      if (allPeople) return Promise.resolve(allPeople);
+      return fetch("/data/people.json").then(r => r.json()).then(d => { allPeople = d; return d; });
+    }
+    function getGroup(field) {
+      if (!allPeople) return {};
+      const groups = {};
+      allPeople.forEach(p => {
+        const key = p[field] || "Uncoded";
+        if (!groups[key]) groups[key] = [];
+        groups[key].push({
+          name: p.name, person_id: p.person_id, category: p.category,
+          age_at_milestone: p.age_at_milestone, milestone: p.milestone_by_age_26,
+          total_leverage_score: p.total_leverage_score, success_tier: p.success_tier,
+          cohort_group: p.cohort_group,
+        });
+      });
+      Object.values(groups).forEach(arr => arr.sort((a,b) => (b.total_leverage_score||0) - (a.total_leverage_score||0)));
+      return groups;
+    }
 
     // --- Detail panel logic ---
     function showDetail(title, peopleList) {
@@ -325,7 +321,12 @@ const archetypePeople = buildGroupData("primary_early_advantage_archetype");
     engineChart.on("click", (params) => {
       if (params.componentType === "series") {
         const d = engineData[params.dataIndex];
-        if (d && enginePeople[d.name]) showDetail(d.name, enginePeople[d.name]);
+        if (d) {
+          loadPeople().then(() => {
+            const groups = getGroup("normalized_primary_engine");
+            if (groups[d.name]) showDetail(d.name, groups[d.name]);
+          });
+        }
       }
     });
 
@@ -352,7 +353,12 @@ const archetypePeople = buildGroupData("primary_early_advantage_archetype");
     archetypeChart.on("click", (params) => {
       if (params.componentType === "series") {
         const d = archetypeData[params.dataIndex];
-        if (d && archetypePeople[d.name]) showDetail(d.name, archetypePeople[d.name]);
+        if (d) {
+          loadPeople().then(() => {
+            const groups = getGroup("primary_early_advantage_archetype");
+            if (groups[d.name]) showDetail(d.name, groups[d.name]);
+          });
+        }
       }
     });
 

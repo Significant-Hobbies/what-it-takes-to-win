@@ -1,10 +1,10 @@
-# trajectory — PROJECT STATUS
+# What It Takes to Win — PROJECT STATUS
 
 Last updated: 2026-07-22
 
 ## Why / What
 
-Visualization site for the Trajectory early-advantage dataset — who reached
+Visualization site for the early-advantage dataset — who reached
 a material professional, commercial, creative, athletic, or research milestone
 early in their careers, and what early conditions may have accelerated them.
 
@@ -12,8 +12,9 @@ early in their careers, and what early conditions may have accelerated them.
 
 **IN scope:**
 - Static Astro + ECharts visualization site
-- Per-person detail pages with full score breakdowns and sources
+- Per-person detail pages with full score breakdowns, trajectories, and sources
 - Explore page with filters/search/sort
+- Compare-yourself questionnaire with percentile matching
 - Methodology and about pages
 - Dataset extension via subagent research (target 5K people, ceiling)
 
@@ -39,55 +40,57 @@ early in their careers, and what early conditions may have accelerated them.
 
 - 2026-07-21 — project scaffolded via fleet-init
 - 2026-07-21 — visualization site built (overview, explore, person detail, methodology, about)
-- 2026-07-21 — 400-person candidate queue generated from Pantheon 2025
-- 2026-07-21 — round 1 subagent research complete: 57 new eligible people (112 → 169)
-- 2026-07-21 — round 2 subagent research complete: 59 new eligible people (169 → 228)
-- 2026-07-21 — round 3 subagent research complete: 61 new eligible people (228 → 289)
-- 2026-07-21 — round 4 subagent research complete: 60 new eligible people (289 → 349)
-- 2026-07-21 — round 5 subagent research complete: 52 new eligible people (349 → 401)
-- 2026-07-21 — round 6 subagent research complete: 37 new eligible people (401 → 438)
-- 2026-07-21 — round 7 subagent research complete: 44 new eligible people (438 → 482)
-- 2026-07-21 — round 8 subagent research complete: 24 new eligible people (482 → 506) — 500-person target reached
-- 2026-07-21 — tech-focused expansion: 51 new eligible people (506 → 557) — added founders, programmers, engineers, mathematicians, physicists
-- 2026-07-21 — large-scale expansion: 287 new eligible people (557 → 844) — 50 batches, 600 candidates from Pantheon 2025
+- 2026-07-21 — rounds 1–8 subagent research: 506 people (112 → 506)
+- 2026-07-21 — tech-focused expansion: 557 people
+- 2026-07-21 — large-scale Pantheon expansion: 844 people
 - 2026-07-21 — trajectory schema v0.3 added (starting_point, current_position, trajectory array)
 - 2026-07-21 — compare page built (/compare) — 22-question questionnaire, percentile + matches + gap analysis
-- 2026-07-21 — compare results rewritten with feel-good framing (self-made stories, age >26 path, honesty disclaimer)
-- 2026-07-21 — Pantheon expansion reached 3000 people (250-batch queue)
-- 2026-07-22 — founder/engineer queue launched (1,072 candidates, 90 FE batches); goal rebalance founders from ~9% toward 25–35%
-- 2026-07-22 — FE research wave 1 complete: batches 001–020 (240 candidates, 58 eligible); merged → 3058 people
-- 2026-07-22 — FE full queue + high-yield 091–115 researched. Full coded set ~3318 people (~16% founders).
-- 2026-07-22 — Rebalance-to-40% experiment **reverted** (do not drop people). Restored full set.
-- 2026-07-22 — X high-follower engineer wave (batches 200–206): ~75 candidates; eligible merged (Chollet, Otwell, McKinney, Frazelle, Babel/React/Next earlys, etc.).
-- 2026-07-22 — X young-builder wave 2 (batches 210–216): ~81 candidates; eligible merged (Bellard, Metasploit/Moore, Adafruit/Fried, Ola/Bhati, Wispr/Kothari, Jason Wei, ProfitWell, etc.).
-- 2026-07-22 — Wave 3 (batches 220–224): ~54 candidates; +~17 unique eligibles (McKenzie/patio11, Isaacman/Shift4, JD/Liu, Bugha, N0tail, Fishkin/Moz, Dwarkesh, Product Hunt cofounder Baschez, etc.). Full set **3378**; founders **~16.4%**, founders+eng **~25.4%**. Addition only.
+- 2026-07-22 — founder/engineer queue expansion: 3378 people
+- 2026-07-22 — rebranded from "Trajectory" to "What It Takes to Win"
+- 2026-07-22 — categories consolidated from 1692 → 22 broad buckets
+- 2026-07-22 — global search added to nav bar
+- 2026-07-22 — dataset expanded to 2499 people (born 1950+); trajectory coverage 83%
+- 2026-07-22 — page size optimization: removed inline dataset embedding (25GB → 64MB total dist)
+- 2026-07-22 — fixed success_tier misassignments (90 original records at tier 4 → proper tiers)
+- 2026-07-22 — backfilled source URLs for 313 records missing them
+- 2026-07-22 — trajectory rendering fixed to support both event and title/description formats
 
 ## Products
 
 - **Website** (Astro static site, Cloudflare Pages)
   - `/` — overview with charts (age distribution, cohort, leverage engine, archetype, early-advantage averages)
-  - `/explore/` — filterable/searchable grid of all people
-  - `/person/[id]/` — per-person detail with score bars, family context, sources, related people
+  - `/explore/` — filterable/searchable grid of all people (lazy-loads data client-side)
+  - `/person/[id]/` — per-person detail with score bars, trajectory, family context, sources, related people
+  - `/compare/` — 22-question self-assessment with percentile matching, archetype matching, age snapshots
   - `/methodology/` — full methodology and limitations
   - `/about/` — project description
 
 ## Features (shipped)
 
 - Dark, dense, scannable visualization UI
-- 5 overview charts on homepage (ECharts)
+- 5 overview charts on homepage (ECharts) with click-through detail panels
 - Explore page with search + 5 filters (cohort, category, engine, archetype, sort)
 - Per-person detail pages prerendered on build for full published set
-- Dataset validation: unique IDs; scores in range
-- Candidate queue builder (Pantheon 2025 + founder/engineer queue)
-- Subagent research pipeline (instructions, batch CSVs, JSONL output, merge script)
+- Lazy-loaded nav search (fetches slim search index on first focus)
+- Lazy-loaded explore and compare data (fetches people.json client-side)
+- Compare page with 22-question questionnaire, feel-good results, archetype matching
+- Trajectory data on 83% of people — starting point, current position, career milestones
+- Dataset validation: unique IDs; scores in range; no missing key fields
+- Subagent research pipeline (instructions, batch CSVs, JSONL output, merge scripts)
 - Merge report with eligibility stats and error tracking
-- Compare page (/compare) with 22-question questionnaire, feel-good results, age >26 path, honesty disclaimer
-- Trajectory data (v0.3) on eligible researched people — starting point, current position, career milestones
+
+## Dataset Stats
+
+- **Total people:** 2499 (born 1950+)
+- **Trajectory coverage:** 83% (2080/2499)
+- **Cohort distribution:** Athletes 926, Creators/artists 815, Founders/operators 557, Researchers 197
+- **Tier distribution:** T1 510, T2 1070, T3 750, T4 165
 
 ## Todo / Planned / Deferred / Blocked
 
-1. **In progress** — Full set ~3378; founders ~16.4%, founders+eng ~25.4%. Continue addition-only founder/eng research. ~1.3k more pure founders still needed for 40% by growth alone.
-2. **Planned** — Cloudflare Pages deployment
-3. **Planned** — Double-code stratified sample for reliability (per methodology)
-4. **Deferred** — v1.0 with independently audited sources, retrieval dates, archived links
-5. **Dropped** — 500K bulk Wikipedia layer (scope corrected to 5K gold-standard max)
+1. **In progress** — Deepen trajectories for remaining 419 people (16.8% of dataset)
+2. **In progress** — Add more researchers to balance cohorts (currently 197, target ~300)
+3. **Planned** — Cloudflare Pages deployment
+4. **Planned** — Double-code stratified sample for reliability (per methodology)
+5. **Deferred** — v1.0 with independently audited sources, retrieval dates, archived links
+6. **Dropped** — 500K bulk Wikipedia layer (scope corrected to 5K gold-standard max)

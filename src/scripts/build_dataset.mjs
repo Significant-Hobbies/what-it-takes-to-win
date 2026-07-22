@@ -1,6 +1,6 @@
 // Build a compact JSON dataset from people.csv for the visualization site.
 // Outputs: src/data/people.json (array of normalized person objects)
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -227,3 +227,17 @@ const filtered = withBirthYear.filter((p) => p.birth_year && p.birth_year >= 195
 
 writeFileSync(join(root, "src", "data", "people.json"), JSON.stringify(filtered));
 console.log(`Wrote ${filtered.length} people to src/data/people.json (born >= 1950, from ${withBirthYear.length} total)`);
+
+// Generate slim search index for nav search (avoids embedding full dataset on every page)
+const searchIndex = filtered.map((p) => ({
+  id: p.person_id,
+  name: p.name,
+  category: p.category || "",
+  milestone: p.milestone_by_age_26 || "",
+}));
+const publicDir = join(root, "public", "data");
+mkdirSync(publicDir, { recursive: true });
+writeFileSync(join(publicDir, "search-index.json"), JSON.stringify(searchIndex));
+// Also copy full dataset for client-side fetch (explore page, chart detail panels)
+writeFileSync(join(publicDir, "people.json"), JSON.stringify(filtered));
+console.log(`Wrote search-index.json (${searchIndex.length} entries) and people.json to public/data/`);

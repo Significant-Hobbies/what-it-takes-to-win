@@ -150,7 +150,8 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
   </div>
 </Base>
 
-<script is:inline define:vars={{ advantageFields, leverageFields, stats, totalLeverageStats, peopleData, archetypesData }}>
+<script is:inline define:vars={{ advantageFields, leverageFields, stats, totalLeverageStats, archetypesData }}>
+  let peopleData = null;
   const userAnswers = {};
 
   function goToStep(step) {
@@ -201,6 +202,21 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
   function computeResults() {
     const age = parseInt(document.getElementById('user-age').value) || 25;
     const cohort = document.getElementById('user-cohort').value;
+
+    if (!peopleData) {
+      fetch("/data/people.json").then(r => r.json()).then(data => {
+        peopleData = data;
+        _doComputeResults(age, cohort);
+      }).catch(err => {
+        document.getElementById('results-container').innerHTML = '<div class="card" style="padding:24px;text-align:center;color:var(--text-faint);">Failed to load data. Please try again.</div>';
+        goToStep('results');
+      });
+      return;
+    }
+    _doComputeResults(age, cohort);
+  }
+
+  function _doComputeResults(age, cohort) {
 
     // Filter people by cohort if selected
     let comparePool = peopleData;
@@ -478,7 +494,7 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
                   <strong style="color:var(--text);">${p.name}</strong>
                   <span style="font-size:11px;color:var(--text-faint);">${p.category}${entry.year ? ` · ${entry.year}` : ''}</span>
                 </div>
-                <div style="font-size:13px;color:var(--text-dim);margin-top:4px;line-height:1.5;">${entry.event}</div>
+                <div style="font-size:13px;color:var(--text-dim);margin-top:4px;line-height:1.5;">${entry.title ? entry.title + ' — ' : ''}${entry.description || entry.event}</div>
                 ${p.age_at_milestone === age ? `<div style="font-size:11px;color:var(--accent);margin-top:6px;">↑ this was their breakthrough year</div>` : p.age_at_milestone < age ? `<div style="font-size:11px;color:var(--text-faint);margin-top:6px;">broke through at ${p.age_at_milestone}</div>` : `<div style="font-size:11px;color:var(--text-faint);margin-top:6px;">broke through at ${p.age_at_milestone} — ${p.age_at_milestone - age} years later</div>`}
               </a>
             `).join('')}
@@ -621,13 +637,13 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
           <div style="font-size:12px;color:var(--text-faint);text-transform:uppercase;letter-spacing:0.05em;">Your leverage score</div>
           <div style="font-size:36px;font-weight:700;color:var(--accent);margin:8px 0;">${userTotalLeverage}</div>
           <div style="font-size:13px;color:var(--text-dim);">Top ${Math.round(100 - leveragePct)}% of dataset</div>
-          <div style="font-size:12px;color:var(--text-faint);">Dataset avg: ${totalLeverageStats.mean} · Max: 24</div>
+          <div style="font-size:12px;color:var(--text-faint);">Dataset avg: ${totalLeverageStats.mean} · Max: 25</div>
         </div>
         <div class="card" style="text-align:center;padding:20px;">
           <div style="font-size:12px;color:var(--text-faint);text-transform:uppercase;letter-spacing:0.05em;">Your advantage score</div>
           <div style="font-size:36px;font-weight:700;color:var(--accent-2);margin:8px 0;">${userTotalAdvantage}</div>
           <div style="font-size:13px;color:var(--text-dim);">Top ${Math.round(100 - advantagePct)}% of dataset</div>
-          <div style="font-size:12px;color:var(--text-faint);">Dataset avg: 8.1 · Max: 24</div>
+          <div style="font-size:12px;color:var(--text-faint);">Dataset avg: ${avgAdvantage} · Max: 24</div>
         </div>
       </div>
 
