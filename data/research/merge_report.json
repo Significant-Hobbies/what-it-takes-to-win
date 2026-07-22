@@ -1,9 +1,9 @@
 {
-  "existing_people": 2506,
-  "eligible_new": 18,
-  "ineligible": 1814,
-  "total_after_merge": 2524,
-  "duplicates_skipped": 2459,
+  "existing_people": 2524,
+  "eligible_new": 10,
+  "ineligible": 1827,
+  "total_after_merge": 2534,
+  "duplicates_skipped": 2478,
   "errors": 7,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -169,23 +169,15 @@
     "Tim Berners-Lee"
   ],
   "eligible_new_names": [
-    "Calvin Klein",
-    "Anthony Hopkins",
-    "Elías Querejeta",
-    "Graham Taylor",
-    "Ádám Fischer",
-    "Vlado Goreski",
-    "The Korean Zombie",
-    "Carlos Reutemann",
-    "Russell Crowe",
-    "Heidi Schmid",
-    "Satoshi Tajiri",
-    "Valery Bykovsky",
-    "Paulina Porizkova",
-    "René Higuita",
-    "Kalevi Aho",
-    "Marja-Liisa Kirvesniemi",
-    "Dino Rađa",
-    "Salvatore Riina"
+    "Marina Doria",
+    "Torgeir Brandtzæg",
+    "Marcel Dionne",
+    "Anja Andersen",
+    "Sofia Rotaru",
+    "Oleg Protopopov",
+    "Simona Păucă",
+    "Fabrice Jeannet",
+    "Kentaro Miura",
+    "Branislav Pokrajac"
   ]
 }
