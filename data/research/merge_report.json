@@ -1,9 +1,9 @@
 {
-  "existing_people": 2835,
-  "eligible_new": 12,
+  "existing_people": 2847,
+  "eligible_new": 0,
   "ineligible": 2039,
   "total_after_merge": 2847,
-  "duplicates_skipped": 2792,
+  "duplicates_skipped": 2804,
   "errors": 7,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -168,18 +168,5 @@
     "Jacques Dubochet",
     "Tim Berners-Lee"
   ],
-  "eligible_new_names": [
-    "Brad Cooper",
-    "David Suzuki",
-    "Naomi Campbell",
-    "Veselin Vuković",
-    "Nikita Mikhalkov",
-    "Abbas",
-    "Heinz-Harald Frentzen",
-    "Dragan Kićanović",
-    "Héctor Lombard",
-    "Enith Brigitha",
-    "Enya",
-    "Peter O'Toole"
-  ]
+  "eligible_new_names": []
 }
