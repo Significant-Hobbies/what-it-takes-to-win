@@ -1,8 +1,8 @@
 {
   "existing_people": 2760,
-  "eligible_new": 0,
-  "ineligible": 1971,
-  "total_after_merge": 2760,
+  "eligible_new": 8,
+  "ineligible": 1975,
+  "total_after_merge": 2768,
   "duplicates_skipped": 2716,
   "errors": 7,
   "duplicate_list": [
@@ -168,5 +168,14 @@
     "Jacques Dubochet",
     "Tim Berners-Lee"
   ],
-  "eligible_new_names": []
+  "eligible_new_names": [
+    "Norma Cappagli",
+    "Pernilla Wiberg",
+    "Hana Mašková",
+    "Phil Esposito",
+    "Alena Šeredová",
+    "Sean Kelly",
+    "Helmuth Koinigg",
+    "Domagoj Duvnjak"
+  ]
 }
