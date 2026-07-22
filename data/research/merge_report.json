@@ -1,9 +1,9 @@
 {
-  "existing_people": 2388,
-  "eligible_new": 6,
-  "ineligible": 1728,
-  "total_after_merge": 2394,
-  "duplicates_skipped": 2341,
+  "existing_people": 2394,
+  "eligible_new": 11,
+  "ineligible": 1741,
+  "total_after_merge": 2405,
+  "duplicates_skipped": 2347,
   "errors": 7,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -169,11 +169,16 @@
     "Tim Berners-Lee"
   ],
   "eligible_new_names": [
-    "Yasuo Takamori",
-    "Krzysztof Wielicki",
-    "Gidon Kremer",
-    "Charly Gaul",
-    "Kaija Mustonen",
-    "Niko Kovač"
+    "Martin Karplus",
+    "Richard Dawkins",
+    "Yang Hak-seon",
+    "Boris Gelfand",
+    "Ludovico Scarfiotti",
+    "Leonid Kizim",
+    "Cristóbal Halffter",
+    "Gunnar Larsson",
+    "Charles Simonyi",
+    "Marina Abramović",
+    "Kevin Owens"
   ]
 }
