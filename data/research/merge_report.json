@@ -1,9 +1,9 @@
 {
-  "existing_people": 2291,
-  "eligible_new": 10,
-  "ineligible": 1666,
-  "total_after_merge": 2301,
-  "duplicates_skipped": 2243,
+  "existing_people": 2301,
+  "eligible_new": 4,
+  "ineligible": 1674,
+  "total_after_merge": 2305,
+  "duplicates_skipped": 2253,
   "errors": 7,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -169,15 +169,9 @@
     "Tim Berners-Lee"
   ],
   "eligible_new_names": [
-    "Wayne Gretzky",
-    "Esa-Pekka Salonen",
-    "Magnus Wislander",
-    "Roberto Clemente",
-    "Demetrios Christodoulou",
-    "Gilbert & George",
-    "Bruno Sammartino",
-    "Sérgio Santos",
-    "Boris Vallejo",
-    "Manny Ramirez"
+    "Leo Brouwer",
+    "Anna Bessonova",
+    "Rocky Johnson",
+    "Jacques Rogge"
   ]
 }
