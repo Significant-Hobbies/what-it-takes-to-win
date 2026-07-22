@@ -1,9 +1,9 @@
 {
-  "existing_people": 2322,
-  "eligible_new": 6,
-  "ineligible": 1687,
-  "total_after_merge": 2328,
-  "duplicates_skipped": 2274,
+  "existing_people": 2328,
+  "eligible_new": 8,
+  "ineligible": 1691,
+  "total_after_merge": 2336,
+  "duplicates_skipped": 2280,
   "errors": 7,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -169,11 +169,13 @@
     "Tim Berners-Lee"
   ],
   "eligible_new_names": [
-    "Anouk Aimée",
-    "Jörg Immendorff",
-    "Adam Scott",
-    "Viktor Kassai",
-    "Agata Buzek",
-    "Alexander Almetov"
+    "Andrei Konchalovsky",
+    "Albán Vermes",
+    "Teófilo Cubillas",
+    "Valentina Tereshkova",
+    "Endre Szemerédi",
+    "Tibor Pézsa",
+    "Kazuki Takahashi",
+    "Derek Walcott"
   ]
 }
