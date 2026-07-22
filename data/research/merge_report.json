@@ -1,8 +1,8 @@
 {
   "existing_people": 2847,
-  "eligible_new": 0,
-  "ineligible": 2039,
-  "total_after_merge": 2847,
+  "eligible_new": 9,
+  "ineligible": 2042,
+  "total_after_merge": 2856,
   "duplicates_skipped": 2804,
   "errors": 7,
   "duplicate_list": [
@@ -168,5 +168,15 @@
     "Jacques Dubochet",
     "Tim Berners-Lee"
   ],
-  "eligible_new_names": []
+  "eligible_new_names": [
+    "Wolfgang Schwarz",
+    "Joaquín Niemann",
+    "Jan Klapáč",
+    "Louis Oosthuizen",
+    "Petar Skansi",
+    "Jacques Demy",
+    "Janusz Gortat",
+    "Oleksandr Usyk",
+    "Saïd Aouita"
+  ]
 }
