@@ -1,10 +1,10 @@
 {
-  "existing_people": 3735,
-  "eligible_new": 4,
+  "existing_people": 3739,
+  "eligible_new": 13,
   "ineligible": 3317,
-  "total_after_merge": 3739,
-  "duplicates_skipped": 3929,
-  "errors": 186,
+  "total_after_merge": 3752,
+  "duplicates_skipped": 3940,
+  "errors": 207,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
     "emerson-fittipaldi (Emerson Fittipaldi)",
@@ -212,9 +212,18 @@
     "Tim Berners-Lee"
   ],
   "eligible_new_names": [
-    "Fionn Ferreira",
-    "Michał Zalewski",
-    "Cédric Villani",
-    "Nima Arkani-Hamed"
+    "Erik Demaine",
+    "Noam Elkies",
+    "Ruth Lawrence",
+    "Jacob Lurie",
+    "Ravi Vakil",
+    "Katie Bouman",
+    "Tom Wagg",
+    "Ngo Bao Chau",
+    "Tanishq Abraham",
+    "Kazumi Muraki",
+    "Valentyn Frechka",
+    "Karina Zadorozhny",
+    "Agnijo Banerjee"
   ]
 }
