@@ -1,9 +1,9 @@
 {
-  "existing_people": 2468,
-  "eligible_new": 4,
-  "ineligible": 1782,
-  "total_after_merge": 2472,
-  "duplicates_skipped": 2421,
+  "existing_people": 2489,
+  "eligible_new": 0,
+  "ineligible": 1801,
+  "total_after_merge": 2489,
+  "duplicates_skipped": 2442,
   "errors": 7,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -168,10 +168,5 @@
     "Jacques Dubochet",
     "Tim Berners-Lee"
   ],
-  "eligible_new_names": [
-    "René Pijnen",
-    "Kong Linghui",
-    "Bertrand Blier",
-    "Agnes Simon"
-  ]
+  "eligible_new_names": []
 }
