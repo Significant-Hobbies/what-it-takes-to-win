@@ -2,7 +2,7 @@
 
 ## Research question
 
-Which capability and early conditions repeatedly appear among people who reached a material milestone by age 26?
+Which capability and early conditions repeatedly appear among people who reached a material milestone early in their careers?
 
 ## Unit of analysis
 
@@ -49,10 +49,10 @@ The sample begins with successful people. It cannot estimate whether an advantag
 
 ## Early-bloomer bias
 
-The dataset is restricted to people who had a notable milestone **by age 26**. This is a deliberate design choice — the project is about early breakthroughs — but it creates a structural bias:
+The dataset is restricted to people who had a notable milestone **early in their careers** (the study uses age 26 as its cutoff). This is a deliberate design choice — the project is about early breakthroughs — but it creates a structural bias:
 
 - Late bloomers are underrepresented. Stan Lee published his first comic at 38, Vera Wang designed her first dress at 40, Samuel L. Jackson broke through at 43. None of them appear here.
-- The "not yet — but will" bucket on the compare page only includes people who did break through later *within the 0-26 window*. It does not include people who broke through after 26.
+- The "not yet — but will" bucket on the compare page only includes people who did break through later *within the study window*. It does not include people who broke through after the cutoff.
 - Percentiles and averages are computed against early bloomers, not against all successful people. A visitor at the 30th percentile of this dataset is not at the 30th percentile of all achievers — they may be above average among the broader population of successful people.
 
 This bias is acceptable for the project's purpose (exploring early breakthroughs) but should be kept in mind when interpreting any score or comparison.

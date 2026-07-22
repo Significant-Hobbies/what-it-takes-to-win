@@ -1,6 +1,8 @@
 ---
 import "../styles/global.css";
-const { title = "Success by 26", description = "Who reached a material milestone by age 26, and what early conditions may have accelerated them?" } = Astro.props;
+import peopleData from "../data/people.json";
+const peopleCount = peopleData.length;
+const { title = "Trajectory", description = "What early conditions accelerate breakthroughs? A data-driven look at 3,000 people and the advantages that shaped their paths." } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -18,8 +20,8 @@ const { title = "Success by 26", description = "Who reached a material milestone
     <header class="site-header">
       <div class="container header-inner">
         <a href="/" class="brand">
-          <span class="brand-mark">26</span>
-          <span class="brand-text">Success by 26</span>
+          <span class="brand-mark">↗</span>
+          <span class="brand-text">Trajectory</span>
         </a>
         <nav class="site-nav">
           <a href="/">Overview</a>
@@ -36,8 +38,8 @@ const { title = "Success by 26", description = "Who reached a material milestone
     <footer class="site-footer">
       <div class="container">
         <p>
-          Success by 26 — Early-Advantage Dataset v0.3.0-trajectory-beta · 1055 people ·
-          <a href="https://github.com/sarthakagrawal927/success-by-26">source</a> ·
+          Trajectory — Early-Advantage Dataset v0.3.0 · {peopleCount} people ·
+          <a href="https://github.com/sarthakagrawal927/trajectory">source</a> ·
           interpretive annotations, not causal estimates
         </p>
       </div>

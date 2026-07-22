@@ -1,12 +1,12 @@
-# success-by-26 — PROJECT STATUS
+# trajectory — PROJECT STATUS
 
-Last updated: 2026-07-21
+Last updated: 2026-07-22
 
 ## Why / What
 
-Visualization site for the Success by 26 early-advantage dataset — who reached
+Visualization site for the Trajectory early-advantage dataset — who reached
 a material professional, commercial, creative, athletic, or research milestone
-by age 26, and what early conditions may have accelerated them.
+early in their careers, and what early conditions may have accelerated them.
 
 **Users:** researchers, writers, curious general public
 
@@ -32,7 +32,7 @@ by age 26, and what early conditions may have accelerated them.
 - Cloudflare Pages (hosting)
 
 ### Internal
-- Source dataset: `success_by_26_public_release_v0_1` (v0.1.0-beta, 112 curated people)
+- Source dataset: `trajectory_public_release_v0_3` (v0.3.0, 3000 people)
 
 ## Timeline
 

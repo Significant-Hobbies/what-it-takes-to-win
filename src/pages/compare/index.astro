@@ -51,10 +51,10 @@ for (const f of [...advantageFields, ...leverageFields]) {
 const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_leverage_score));
 ---
 
-<Base title="Compare Yourself — Success by 26" description="Answer questions about your background and see how you compare to 900+ people who achieved notable success by age 26.">
+<Base title="Compare Yourself — Trajectory" description="Answer questions about your background and see how you compare to 3,000+ people who achieved notable early breakthroughs.">
   <section class="hero" style="padding-bottom:16px;">
     <h1>Compare yourself</h1>
-    <p class="lede">Answer {advantageFields.length + leverageFields.length} questions about your background. See how you stack up against {peopleData.length} people who hit a material milestone by age 26 — their advantages, leverage, and trajectories.</p>
+    <p class="lede">Answer {advantageFields.length + leverageFields.length} questions about your background. See how you stack up against {peopleData.length} people who hit a material milestone early — their advantages, leverage, and trajectories.</p>
   </section>
 
   <div id="compare-app">
@@ -454,7 +454,7 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
             <div style="font-size:11px;color:var(--text-faint);">${pctNotYet}%</div>
           </div>
         </div>
-        <p style="color:var(--text-faint);font-size:12px;">This dataset is biased toward early bloomers — people who had a notable milestone by 26. The "not yet" bucket only includes people who did break through later (before 26). It does not include people who never broke through at all.</p>
+        <p style="color:var(--text-faint);font-size:12px;">This dataset is biased toward early bloomers — people who had a notable milestone early. The "not yet" bucket only includes people who did break through later (within the study window). It does not include people who never broke through at all.</p>
       </div>
     `;
 
@@ -733,7 +733,7 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
       </div>
       <div class="card" style="padding:20px;margin-bottom:16px;border:1px dashed var(--border-soft);">
         <p style="font-size:12px;color:var(--text-faint);margin:0;line-height:1.6;">
-          <strong style="color:var(--text-dim);">A note on what this is:</strong> This dataset includes only people who <em>did</em> achieve a notable milestone by 26 — it does not include the many people with similar advantages who didn't, and it does not include late bloomers who succeeded after 26. Your percentile is among early bloomers, not among all achievers or all people with your background. The advantage scores are interpretive annotations based on publicly available sources, not measurements — treat them as approximate (±15%). This is a tool for exploration and inspiration, not a prediction of your future. <a href="/methodology/" style="color:var(--text-dim);text-decoration:underline;">Read the full methodology →</a>
+          <strong style="color:var(--text-dim);">A note on what this is:</strong> This dataset includes only people who <em>did</em> achieve a notable milestone early — it does not include the many people with similar advantages who didn't, and it does not include late bloomers who succeeded later. Your percentile is among early bloomers, not among all achievers or all people with your background. The advantage scores are interpretive annotations based on publicly available sources, not measurements — treat them as approximate (±15%). This is a tool for exploration and inspiration, not a prediction of your future. <a href="/methodology/" style="color:var(--text-dim);text-decoration:underline;">Read the full methodology →</a>
         </p>
       </div>
       <div style="text-align:center;margin:24px 0;">

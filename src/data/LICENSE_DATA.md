@@ -8,7 +8,7 @@ Suggested licence: Creative Commons Attribution 4.0 International (CC BY 4.0).
 
 Suggested attribution:
 
-> Success by 26: Early-Advantage Dataset, compiled by [AUTHOR], version [VERSION], [REPOSITORY URL].
+> Trajectory: Early-Advantage Dataset, compiled by [AUTHOR], version [VERSION], [REPOSITORY URL].
 
 ## Scripts
 

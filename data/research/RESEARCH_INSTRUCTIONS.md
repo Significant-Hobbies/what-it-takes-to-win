@@ -1,4 +1,4 @@
-# Subagent Research Instructions — Success by 26
+# Subagent Research Instructions — Trajectory
 
 ## Your task
 
