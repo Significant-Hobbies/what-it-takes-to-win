@@ -1,9 +1,9 @@
 {
-  "existing_people": 2720,
-  "eligible_new": 12,
+  "existing_people": 2732,
+  "eligible_new": 0,
   "ineligible": 1963,
   "total_after_merge": 2732,
-  "duplicates_skipped": 2676,
+  "duplicates_skipped": 2688,
   "errors": 7,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -168,18 +168,5 @@
     "Jacques Dubochet",
     "Tim Berners-Lee"
   ],
-  "eligible_new_names": [
-    "Yoo Nam-kyu",
-    "O. J. Simpson",
-    "Henryk Górecki",
-    "Lydia Ko",
-    "Wolfgang Overath",
-    "Stefka Kostadinova",
-    "Lidiya Skoblikova",
-    "Peter Bondra",
-    "Lech Koziejowski",
-    "Giancarlo Baghetti",
-    "Paul Watson",
-    "Oleg Romanishin"
-  ]
+  "eligible_new_names": []
 }
