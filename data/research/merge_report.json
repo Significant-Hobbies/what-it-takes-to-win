@@ -1,10 +1,10 @@
 {
-  "existing_people": 2258,
-  "eligible_new": 15,
-  "ineligible": 1656,
-  "total_after_merge": 2273,
-  "duplicates_skipped": 2210,
-  "errors": 1,
+  "existing_people": 2273,
+  "eligible_new": 18,
+  "ineligible": 1664,
+  "total_after_merge": 2291,
+  "duplicates_skipped": 2225,
+  "errors": 7,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
     "emerson-fittipaldi (Emerson Fittipaldi)",
@@ -58,6 +58,12 @@
     "mats-wilander (Mats Wilander)"
   ],
   "error_list": [
+    "batch_creator_040.jsonl:3: unknown eligibility_status 'duplicate' for Hassan El Mghari",
+    "batch_creator_040.jsonl:4: unknown eligibility_status 'duplicate' for Priyam Raj",
+    "batch_creator_040.jsonl:5: unknown eligibility_status 'duplicate' for Michael Truell",
+    "batch_creator_040.jsonl:6: unknown eligibility_status 'duplicate' for Aman Sanger",
+    "batch_creator_040.jsonl:7: unknown eligibility_status 'duplicate' for Sualeh Asif",
+    "batch_creator_040.jsonl:8: unknown eligibility_status 'duplicate' for Arvid Lunnemark",
     "batch_tech2_14.jsonl:5: unknown eligibility_status 'unverified_candidate' for Joshua Bengio"
   ],
   "ineligible_names": [
@@ -163,20 +169,23 @@
     "Tim Berners-Lee"
   ],
   "eligible_new_names": [
-    "Melanie Capone",
-    "Josh Glodoveza",
-    "Tarik Celik (Arik Celik in CSV)",
-    "Xalavier Nelson Jr. (Strange Scaffold)",
-    "Sahil Lavingia",
-    "Laura Behrens Wu",
-    "Rohan Puri",
-    "Harrison Chase",
-    "Aravind Krishnan",
-    "Jschlatt",
-    "Slimecicle (Charlie Dalgleish)",
-    "Margit Korondi",
-    "Vasyl Lomachenko",
-    "András Adorján",
-    "Sofia Polgár"
+    "Grunk (Jack Parker)",
+    "Ironmouse",
+    "Shgurr (Shannon Gurr)",
+    "SomethingElseYT (Adam Ortiz)",
+    "Zachary Hsieh (ZHC)",
+    "Jalaiah Harmon",
+    "Charu Thomas",
+    "Danya Sherman",
+    "Punk (Victor Woodley)",
+    "iDom (Derek Ruffin)",
+    "Kevin Liu",
+    "Teven Le Scao",
+    "Maryam Mirzakhani",
+    "Waldemar Cierpinski",
+    "Jean-Paul Gaultier",
+    "Zhang Yining",
+    "Jair da Costa",
+    "Tom Petty"
   ]
 }
