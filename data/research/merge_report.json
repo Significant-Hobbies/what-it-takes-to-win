@@ -1,9 +1,9 @@
 {
-  "existing_people": 2887,
-  "eligible_new": 5,
-  "ineligible": 2090,
-  "total_after_merge": 2892,
-  "duplicates_skipped": 2844,
+  "existing_people": 2892,
+  "eligible_new": 8,
+  "ineligible": 2093,
+  "total_after_merge": 2900,
+  "duplicates_skipped": 2850,
   "errors": 7,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -169,10 +169,13 @@
     "Tim Berners-Lee"
   ],
   "eligible_new_names": [
-    "Viktor Kupreichik",
-    "Andrés Iniesta",
-    "Helmut Lachenmann",
-    "Erik Lindh",
-    "Angéla Németh"
+    "Charles Oliveira",
+    "Carry Geijssen",
+    "Buzz Aldrin",
+    "Ding Liren",
+    "Tatiana Gutsu",
+    "Lars-Eric Lundvall",
+    "Douglas Adams",
+    "Maria Sharapova"
   ]
 }
