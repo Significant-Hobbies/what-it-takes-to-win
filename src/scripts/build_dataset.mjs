@@ -165,22 +165,54 @@ function normalizeCategory(cat) {
 }
 
 function estimateBirthYear(p) {
+  // Method 0: explicit birth_year field from CSV
+  if (p.birth_year && !isNaN(Number(p.birth_year))) {
+    const by = Number(p.birth_year);
+    if (by >= 1800 && by <= 2020) return by;
+  }
   // Method 1: trajectory first entry year - age_at_milestone
   if (p.trajectory && p.trajectory.length > 0 && p.trajectory[0].year) {
     return p.trajectory[0].year - (p.age_at_milestone || 26);
   }
   // Method 2: milestone text year - age_at_milestone
   // Only match years up to current year to avoid matching game names like "2048"
+  const yearRegex = /\b(18\d{2}|19\d{2}|20[0-2]\d)\b/g;
   const m = p.milestone_by_age_26 || "";
-  const found = m.match(/\b(18\d{2}|19\d{2}|20[0-2]\d)\b/);
+  let found = m.match(yearRegex);
   if (found && p.age_at_milestone) {
     return parseInt(found[0]) - p.age_at_milestone;
   }
   // Method 3: starting_point year
   const sp = p.starting_point || "";
-  const spFound = sp.match(/\b(18\d{2}|19\d{2}|20[0-2]\d)\b/);
-  if (spFound && p.age_at_milestone) {
-    return parseInt(spFound[0]) - p.age_at_milestone;
+  found = sp.match(yearRegex);
+  if (found && p.age_at_milestone) {
+    return parseInt(found[0]) - p.age_at_milestone;
+  }
+  // Method 4: early_history_summary year
+  const eh = p.early_history_summary || "";
+  found = eh.match(yearRegex);
+  if (found && p.age_at_milestone) {
+    // Use the earliest year found, subtract age at milestone
+    const years = found.map(y => parseInt(y)).sort((a, b) => a - b);
+    const by = years[0] - p.age_at_milestone;
+    // Sanity check
+    if (by >= 1800 && by <= 2020) return by;
+  }
+  // Method 5: family_context_summary year
+  const fc = p.family_context_summary || "";
+  found = fc.match(yearRegex);
+  if (found && p.age_at_milestone) {
+    const years = found.map(y => parseInt(y)).sort((a, b) => a - b);
+    const by = years[0] - p.age_at_milestone;
+    if (by >= 1800 && by <= 2020) return by;
+  }
+  // Method 6: evidence_summary year
+  const ev = p.evidence_summary || "";
+  found = ev.match(yearRegex);
+  if (found && p.age_at_milestone) {
+    const years = found.map(y => parseInt(y)).sort((a, b) => a - b);
+    const by = years[0] - p.age_at_milestone;
+    if (by >= 1800 && by <= 2020) return by;
   }
   return null;
 }
