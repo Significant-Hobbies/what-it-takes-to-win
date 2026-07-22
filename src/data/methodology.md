@@ -10,7 +10,7 @@ One person and one selected milestone that occurred at or before age 26. The mil
 
 ## Selection
 
-The 2,509-person dataset is a purposive outlier sample assembled to cover founders, operators, creators, athletes, researchers, and independent engineers. It is not a census, representative sample, or estimate of the base rate of success.
+The 2,542-person dataset is a purposive outlier sample assembled to cover founders, operators, creators, athletes, researchers, and independent engineers. It is not a census, representative sample, or estimate of the base rate of success.
 
 ## Two evidence layers
 
