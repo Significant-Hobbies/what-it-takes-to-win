@@ -1,9 +1,9 @@
 {
-  "existing_people": 2989,
-  "eligible_new": 7,
-  "ineligible": 2141,
-  "total_after_merge": 2996,
-  "duplicates_skipped": 2947,
+  "existing_people": 2996,
+  "eligible_new": 4,
+  "ineligible": 2149,
+  "total_after_merge": 3000,
+  "duplicates_skipped": 2954,
   "errors": 7,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -169,12 +169,9 @@
     "Tim Berners-Lee"
   ],
   "eligible_new_names": [
-    "Marek Kamiński",
-    "Gérard Larrousse",
-    "Thorbjørn Olesen",
-    "Daniela Peštová",
-    "Nicklas Lidström",
-    "Irina Press",
-    "Veselin Topalov"
+    "Satoru Iwata",
+    "Alexei Shirov",
+    "Ahmad Vahidi",
+    "Ard Schenk"
   ]
 }
