@@ -92,7 +92,7 @@ const related = peopleData
               <li style="margin-bottom:10px;">
                 <span style="font-family:var(--mono);color:var(--accent);font-size:12px;">{t.year} · age {t.age}</span>
                 {t.title && <div style="color:var(--text);font-weight:500;font-size:13px;margin-top:2px;">{t.title}</div>}
-                <div style="color:var(--text-dim);">{t.description || t.event}</div>
+                {t.description && <div style="color:var(--text-dim);">{t.description}</div>}
               </li>
             ))}
           </ol>

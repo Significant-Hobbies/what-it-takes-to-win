@@ -494,7 +494,7 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
                   <strong style="color:var(--text);">${p.name}</strong>
                   <span style="font-size:11px;color:var(--text-faint);">${p.category}${entry.year ? ` · ${entry.year}` : ''}</span>
                 </div>
-                <div style="font-size:13px;color:var(--text-dim);margin-top:4px;line-height:1.5;">${entry.title ? entry.title + ' — ' : ''}${entry.description || entry.event}</div>
+                <div style="font-size:13px;color:var(--text-dim);margin-top:4px;line-height:1.5;">${entry.title ? entry.title + (entry.description ? ' — ' + entry.description : '') : (entry.description || '')}</div>
                 ${p.age_at_milestone === age ? `<div style="font-size:11px;color:var(--accent);margin-top:6px;">↑ this was their breakthrough year</div>` : p.age_at_milestone < age ? `<div style="font-size:11px;color:var(--text-faint);margin-top:6px;">broke through at ${p.age_at_milestone}</div>` : `<div style="font-size:11px;color:var(--text-faint);margin-top:6px;">broke through at ${p.age_at_milestone} — ${p.age_at_milestone - age} years later</div>`}
               </a>
             `).join('')}
