@@ -1,9 +1,9 @@
 {
-  "existing_people": 2866,
-  "eligible_new": 2,
-  "ineligible": 2054,
-  "total_after_merge": 2868,
-  "duplicates_skipped": 2823,
+  "existing_people": 2868,
+  "eligible_new": 5,
+  "ineligible": 2061,
+  "total_after_merge": 2873,
+  "duplicates_skipped": 2825,
   "errors": 7,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
@@ -169,7 +169,10 @@
     "Tim Berners-Lee"
   ],
   "eligible_new_names": [
-    "Gherman Titov",
-    "Bobby Orr"
+    "Kisho Kurokawa",
+    "Svetlana Savitskaya",
+    "Alexis Texas",
+    "Ivo Daneu",
+    "Ian Murdock"
   ]
 }
