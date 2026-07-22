@@ -1,10 +1,10 @@
 {
-  "existing_people": 3739,
+  "existing_people": 3746,
   "eligible_new": 13,
   "ineligible": 3317,
-  "total_after_merge": 3752,
-  "duplicates_skipped": 3940,
-  "errors": 207,
+  "total_after_merge": 3759,
+  "duplicates_skipped": 3953,
+  "errors": 624,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
     "emerson-fittipaldi (Emerson Fittipaldi)",
@@ -212,18 +212,18 @@
     "Tim Berners-Lee"
   ],
   "eligible_new_names": [
-    "Erik Demaine",
-    "Noam Elkies",
-    "Ruth Lawrence",
-    "Jacob Lurie",
-    "Ravi Vakil",
-    "Katie Bouman",
-    "Tom Wagg",
-    "Ngo Bao Chau",
-    "Tanishq Abraham",
-    "Kazumi Muraki",
-    "Valentyn Frechka",
-    "Karina Zadorozhny",
-    "Agnijo Banerjee"
+    "Edward Witten",
+    "Pierre-Louis Lions",
+    "Jean Bourgain",
+    "Simon Donaldson",
+    "Richard Borcherds",
+    "Andrei Okounkov",
+    "Stanislav Smirnov",
+    "Wendelin Werner",
+    "Martin Hairer",
+    "Caucher Birkar",
+    "Alessio Figalli",
+    "Vladimir Voevodsky",
+    "Ingrid Daubechies"
   ]
 }
