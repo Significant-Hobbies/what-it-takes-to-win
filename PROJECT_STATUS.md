@@ -32,7 +32,8 @@ early in their careers, and what early conditions may have accelerated them.
 - Cloudflare Pages (hosting)
 
 ### Internal
-- Source dataset: `trajectory_public_release_v0_3` (v0.3.0, 3000 people)
+- Published dataset: full research set (no downsampling)
+- Archive of prior rebalance experiment: `data/archive/people_full_*.csv`
 
 ## Timeline
 
@@ -52,7 +53,14 @@ early in their careers, and what early conditions may have accelerated them.
 - 2026-07-21 — trajectory schema v0.3 added (starting_point, current_position, trajectory array)
 - 2026-07-21 — compare page built (/compare) — 22-question questionnaire, percentile + matches + gap analysis
 - 2026-07-21 — compare results rewritten with feel-good framing (self-made stories, age >26 path, honesty disclaimer)
-- 2026-07-21 — ongoing Pantheon expansion: 1055 people, 3000-candidate queue (250 batches), batches 01-37 launched
+- 2026-07-21 — Pantheon expansion reached 3000 people (250-batch queue)
+- 2026-07-22 — founder/engineer queue launched (1,072 candidates, 90 FE batches); goal rebalance founders from ~9% toward 25–35%
+- 2026-07-22 — FE research wave 1 complete: batches 001–020 (240 candidates, 58 eligible); merged → 3058 people
+- 2026-07-22 — FE full queue + high-yield 091–115 researched. Full coded set ~3318 people (~16% founders).
+- 2026-07-22 — Rebalance-to-40% experiment **reverted** (do not drop people). Restored full set.
+- 2026-07-22 — X high-follower engineer wave (batches 200–206): ~75 candidates; eligible merged (Chollet, Otwell, McKinney, Frazelle, Babel/React/Next earlys, etc.).
+- 2026-07-22 — X young-builder wave 2 (batches 210–216): ~81 candidates; eligible merged (Bellard, Metasploit/Moore, Adafruit/Fried, Ola/Bhati, Wispr/Kothari, Jason Wei, ProfitWell, etc.).
+- 2026-07-22 — Wave 3 (batches 220–224): ~54 candidates; +~17 unique eligibles (McKenzie/patio11, Isaacman/Shift4, JD/Liu, Bugha, N0tail, Fishkin/Moz, Dwarkesh, Product Hunt cofounder Baschez, etc.). Full set **3378**; founders **~16.4%**, founders+eng **~25.4%**. Addition only.
 
 ## Products
 
@@ -68,17 +76,17 @@ early in their careers, and what early conditions may have accelerated them.
 - Dark, dense, scannable visualization UI
 - 5 overview charts on homepage (ECharts)
 - Explore page with search + 5 filters (cohort, category, engine, archetype, sort)
-- 844 per-person detail pages (prerendered)
-- Dataset validation passes (844 unique IDs, all scores in range)
-- Candidate queue builder (Pantheon 2025, corrected for new schema)
+- Per-person detail pages prerendered on build for full published set
+- Dataset validation: unique IDs; scores in range
+- Candidate queue builder (Pantheon 2025 + founder/engineer queue)
 - Subagent research pipeline (instructions, batch CSVs, JSONL output, merge script)
 - Merge report with eligibility stats and error tracking
 - Compare page (/compare) with 22-question questionnaire, feel-good results, age >26 path, honesty disclaimer
-- Trajectory data (v0.3) on 211+ people — starting point, current position, career milestones
+- Trajectory data (v0.3) on eligible researched people — starting point, current position, career milestones
 
 ## Todo / Planned / Deferred / Blocked
 
-1. **In progress** — 1055 people coded; expanding toward 5K ceiling (3000-candidate queue active, batches 01-37 launched of 250)
+1. **In progress** — Full set ~3378; founders ~16.4%, founders+eng ~25.4%. Continue addition-only founder/eng research. ~1.3k more pure founders still needed for 40% by growth alone.
 2. **Planned** — Cloudflare Pages deployment
 3. **Planned** — Double-code stratified sample for reliability (per methodology)
 4. **Deferred** — v1.0 with independently audited sources, retrieval dates, archived links

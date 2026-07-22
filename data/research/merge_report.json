@@ -1,10 +1,10 @@
 {
-  "existing_people": 2996,
-  "eligible_new": 4,
-  "ineligible": 2149,
-  "total_after_merge": 3000,
-  "duplicates_skipped": 2954,
-  "errors": 7,
+  "existing_people": 3378,
+  "eligible_new": 5,
+  "ineligible": 3312,
+  "total_after_merge": 3383,
+  "duplicates_skipped": 3360,
+  "errors": 11,
   "duplicate_list": [
     "anatoly-karpov (Anatoly Karpov)",
     "emerson-fittipaldi (Emerson Fittipaldi)",
@@ -64,6 +64,10 @@
     "batch_creator_040.jsonl:6: unknown eligibility_status 'duplicate' for Aman Sanger",
     "batch_creator_040.jsonl:7: unknown eligibility_status 'duplicate' for Sualeh Asif",
     "batch_creator_040.jsonl:8: unknown eligibility_status 'duplicate' for Arvid Lunnemark",
+    "batch_fe_010.jsonl:2: unknown eligibility_status 'unverified_candidate' for Aman Anand",
+    "batch_fe_010.jsonl:5: unknown eligibility_status 'unverified_candidate' for Bethanye Blount",
+    "batch_fe_010.jsonl:6: unknown eligibility_status 'unverified_candidate' for Heather Miller",
+    "batch_fe_020.jsonl:7: unknown eligibility_status 'unverified_candidate' for Eileen Uchitelle",
     "batch_tech2_14.jsonl:5: unknown eligibility_status 'unverified_candidate' for Joshua Bengio"
   ],
   "ineligible_names": [
@@ -169,9 +173,10 @@
     "Tim Berners-Lee"
   ],
   "eligible_new_names": [
-    "Satoru Iwata",
-    "Alexei Shirov",
-    "Ahmad Vahidi",
-    "Ard Schenk"
+    "Ninja",
+    "N0tail (Johan Sundstein)",
+    "Robert Morris",
+    "Unbox Therapy",
+    "PewDiePie"
   ]
 }

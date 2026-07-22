@@ -2,7 +2,7 @@
 import "../styles/global.css";
 import peopleData from "../data/people.json";
 const peopleCount = peopleData.length;
-const { title = "Trajectory", description = "What early conditions accelerate breakthroughs? A data-driven look at 3,000 people and the advantages that shaped their paths." } = Astro.props;
+const { title = "What It Takes to Win", description = "What early conditions accelerate breakthroughs? A data-driven look at 2,000+ people and the advantages that shaped their paths." } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -21,15 +21,18 @@ const { title = "Trajectory", description = "What early conditions accelerate br
       <div class="container header-inner">
         <a href="/" class="brand">
           <span class="brand-mark">↗</span>
-          <span class="brand-text">Trajectory</span>
+          <span class="brand-text">What It Takes to Win</span>
         </a>
         <nav class="site-nav">
           <a href="/">Overview</a>
           <a href="/explore/">Explore</a>
           <a href="/compare/">Compare</a>
           <a href="/methodology/">Methodology</a>
-          <a href="/about/">About</a>
         </nav>
+        <div class="nav-search">
+          <input type="text" id="nav-search-input" placeholder="Search people..." autocomplete="off" />
+          <div id="nav-search-results" class="nav-search-results" style="display:none;"></div>
+        </div>
       </div>
     </header>
     <main class="container">
@@ -38,11 +41,54 @@ const { title = "Trajectory", description = "What early conditions accelerate br
     <footer class="site-footer">
       <div class="container">
         <p>
-          Trajectory — Early-Advantage Dataset v0.3.0 · {peopleCount} people ·
+          What It Takes to Win · {peopleCount} people (born 1950+) ·
           <a href="https://github.com/sarthakagrawal927/trajectory">source</a> ·
           interpretive annotations, not causal estimates
         </p>
       </div>
     </footer>
+    <script is:inline define:vars={{ peopleData }}>
+      (function() {
+        const input = document.getElementById('nav-search-input');
+        const results = document.getElementById('nav-search-results');
+        if (!input || !results) return;
+
+        // Build search index
+        const index = peopleData.map(p => ({
+          id: p.person_id,
+          name: p.name,
+          category: p.category || '',
+          milestone: (p.milestone_by_age_26 || '').toLowerCase(),
+          searchText: (p.name + ' ' + (p.category || '') + ' ' + (p.milestone_by_age_26 || '')).toLowerCase(),
+        }));
+
+        input.addEventListener('input', function() {
+          const q = this.value.trim().toLowerCase();
+          if (q.length < 2) {
+            results.style.display = 'none';
+            return;
+          }
+          const matches = index.filter(p => p.searchText.includes(q)).slice(0, 8);
+          if (matches.length === 0) {
+            results.innerHTML = '<div class="nsr-empty">No results</div>';
+            results.style.display = 'block';
+            return;
+          }
+          results.innerHTML = matches.map(p =>
+            `<a href="/person/${p.id}/" class="nsr-item"><span class="nsr-name">${p.name}</span><span class="nsr-cat">${p.category}</span></a>`
+          ).join('');
+          results.style.display = 'block';
+        });
+
+        input.addEventListener('blur', function() {
+          setTimeout(() => { results.style.display = 'none'; }, 200);
+        });
+        input.addEventListener('focus', function() {
+          if (this.value.trim().length >= 2) {
+            results.style.display = 'block';
+          }
+        });
+      })();
+    </script>
   </body>
 </html>

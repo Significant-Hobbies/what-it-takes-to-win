@@ -51,7 +51,7 @@ for (const f of [...advantageFields, ...leverageFields]) {
 const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_leverage_score));
 ---
 
-<Base title="Compare Yourself — Trajectory" description="Answer questions about your background and see how you compare to 3,000+ people who achieved notable early breakthroughs.">
+<Base title="Compare Yourself — What It Takes to Win" description="Answer questions about your background and see how you compare to 2,000+ people who achieved notable early breakthroughs.">
   <section class="hero" style="padding-bottom:16px;">
     <h1>Compare yourself</h1>
     <p class="lede">Answer {advantageFields.length + leverageFields.length} questions about your background. See how you stack up against {peopleData.length} people who hit a material milestone early — their advantages, leverage, and trajectories.</p>
@@ -191,7 +191,7 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
   function percentile(value, fieldStats) {
     if (!fieldStats || fieldStats.count === 0) return 50;
     const { p25, p50, p75, p90 } = fieldStats;
-    if (value >= p90) return 90 + ((value - p90) / Math.max(1, fieldStats.p90)) * 10;
+    if (value >= p90) return 90 + ((value - p90) / Math.max(1, p90)) * 10;
     if (value >= p75) return 75 + ((value - p75) / Math.max(1, p90 - p75)) * 15;
     if (value >= p50) return 50 + ((value - p50) / Math.max(1, p75 - p50)) * 25;
     if (value >= p25) return 25 + ((value - p25) / Math.max(1, p50 - p25)) * 25;
@@ -290,13 +290,6 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
     }).sort((a, b) => (b.total_leverage_score || 0) - (a.total_leverage_score || 0)).slice(0, 6);
 
     // Build results HTML
-    const leveragePct = percentile(userTotalLeverage, totalLeverageStats);
-    const advantagePct = percentile(userTotalAdvantage, computePercentiles(peopleData.map(p => {
-      let s = 0;
-      for (const f of advantageFields) s += (p[f.key] || 0);
-      return s;
-    })));
-
     function computePercentiles(values) {
       const sorted = values.filter(v => v != null).sort((a, b) => a - b);
       if (sorted.length === 0) return { p25: 0, p50: 0, p75: 0, p90: 0, count: 0 };
@@ -304,22 +297,35 @@ const totalLeverageStats = computePercentiles(peopleData.map(p => p.total_levera
       return { p25: pct(0.25), p50: pct(0.50), p75: pct(0.75), p90: pct(0.90), count: sorted.length };
     }
 
+    const leveragePct = percentile(userTotalLeverage, totalLeverageStats);
+    const advantagePct = percentile(userTotalAdvantage, computePercentiles(peopleData.map(p => {
+      let s = 0;
+      for (const f of advantageFields) s += (p[f.key] || 0);
+      return s;
+    })));
+
     // Determine the encouraging message based on advantage level
     const isLowAdvantage = userTotalAdvantage <= 5;
     const isHighAdvantage = userTotalAdvantage >= 10;
     const isMediumAdvantage = !isLowAdvantage && !isHighAdvantage;
 
+    const avgAdvantage = (peopleData.reduce((s, p) => {
+      let a = 0;
+      for (const f of advantageFields) a += (p[f.key] || 0);
+      return s + a;
+    }, 0) / peopleData.length).toFixed(1);
+
     let bannerMsg, bannerColor, bannerBg;
     if (isLowAdvantage) {
-      bannerMsg = `You scored ${userTotalAdvantage} on early advantages — below the dataset average of 8.1. But that's not the whole story. <strong>${selfMade.length} people in our dataset reached tier-1 or tier-2 success with the same or fewer advantages.</strong> Ingvar Kamprad founded IKEA at 17 with pocket money. Will Smith won a Grammy at 20 from West Philadelphia. Srinivasa Ramanujan was publishing breakthrough math from poverty. Advantage helps — but it's not required. Your drive, timing, and reps matter more.`;
+      bannerMsg = `You scored ${userTotalAdvantage} on early advantages — below the dataset average of ${avgAdvantage}. But that's not the whole story. <strong>${selfMade.length} people in our dataset reached tier-1 or tier-2 success with the same or fewer advantages.</strong> Advantage helps — but it's not required. Your drive, timing, and reps matter more.`;
       bannerColor = 'var(--accent-2)';
       bannerBg = 'rgba(95, 211, 188, 0.08)';
     } else if (isHighAdvantage) {
-      bannerMsg = `You scored ${userTotalAdvantage} on early advantages — above the dataset average of 8.1. <strong>You're well-positioned.</strong> People with similar advantage profiles in our dataset went on to become tier-1 legends. Your head start is real. The question now is whether you're putting in the reps and riding the right wave. High advantages compound — but only if you act on them.`;
+      bannerMsg = `You scored ${userTotalAdvantage} on early advantages — above the dataset average of ${avgAdvantage}. <strong>You're well-positioned.</strong> People with similar advantage profiles in our dataset went on to become tier-1 legends. Your head start is real. The question now is whether you're putting in the reps and riding the right wave. High advantages compound — but only if you act on them.`;
       bannerColor = 'var(--accent)';
       bannerBg = 'rgba(124, 156, 255, 0.08)';
     } else {
-      bannerMsg = `You scored ${userTotalAdvantage} on early advantages — right around the dataset average of 8.1. <strong>You have a solid foundation.</strong> Most people in our dataset had a moderate mix of advantages — a mentor here, some domain exposure there. What separated the tier-1 achievers wasn't more advantages, it was concentration: intense reps in one direction, often with a complementary partner. You have what you need to start.`;
+      bannerMsg = `You scored ${userTotalAdvantage} on early advantages — right around the dataset average of ${avgAdvantage}. <strong>You have a solid foundation.</strong> Most people in our dataset had a moderate mix of advantages — a mentor here, some domain exposure there. What separated the tier-1 achievers wasn't more advantages, it was concentration: intense reps in one direction, often with a complementary partner. You have what you need to start.`;
       bannerColor = 'var(--accent-3)';
       bannerBg = 'rgba(240, 163, 107, 0.08)';
     }

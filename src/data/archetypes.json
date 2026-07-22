@@ -2,226 +2,236 @@
   "advantage_archetypes": [
     {
       "archetype_id": "archetype-1",
-      "name": "The coached prodigy",
-      "description": "Identified early by an institutional pipeline, developed by dedicated coaches, and backed by a natural physical or talent edge. Common in sports and performance arts.",
-      "member_count": 119,
+      "name": "The well-connected inheritor",
+      "description": "Family wealth, parent domain expertise, and inherited professional networks. Multiple advantages stacking from birth — money, knowledge, and connections.",
+      "member_count": 69,
       "avg_advantage_scores": {
-        "early_family_financial_platform_support_score": 0.27,
-        "parent_family_domain_advantage_score": 0.92,
-        "inherited_audience_business_network_score": 0.09,
-        "elite_institution_performance_pipeline_score": 1.77,
-        "frontier_geography_ecosystem_score": 1.29,
-        "rare_early_tools_facilities_score": 0.63,
-        "dedicated_mentor_coach_tutor_score": 1.69,
-        "exceptional_peer_cofounder_sibling_score": 1.05,
-        "early_online_platform_community_score": 0.01,
-        "direct_customer_domain_exposure_score": 1.17,
-        "prodigy_physical_edge_score": 1.56,
-        "adversity_constraint_catalyst_score": 0.98
+        "early_family_financial_platform_support_score": 1.28,
+        "parent_family_domain_advantage_score": 1.77,
+        "inherited_audience_business_network_score": 1.29,
+        "elite_institution_performance_pipeline_score": 1.29,
+        "frontier_geography_ecosystem_score": 1.22,
+        "rare_early_tools_facilities_score": 0.81,
+        "dedicated_mentor_coach_tutor_score": 1.06,
+        "exceptional_peer_cofounder_sibling_score": 0.81,
+        "early_online_platform_community_score": 0.13,
+        "direct_customer_domain_exposure_score": 1.64,
+        "prodigy_physical_edge_score": 0.54,
+        "adversity_constraint_catalyst_score": 0.33
       },
-      "avg_total_advantage": 11.43,
-      "avg_milestone_age": 21.0,
+      "avg_total_advantage": 12.17,
+      "avg_milestone_age": 21.5,
       "success_tier_distribution": {
-        "1": 68,
-        "2": 36,
-        "3": 10,
-        "4": 5
+        "1": 23,
+        "2": 28,
+        "3": 15,
+        "4": 3
       },
       "top_categories": [
         {
-          "category": "Mathematician",
+          "category": "Founder/Entrepreneur",
           "count": 10
         },
         {
-          "category": "Theoretical physicist",
+          "category": "Motorsport",
+          "count": 10
+        },
+        {
+          "category": "Music",
           "count": 9
         },
         {
-          "category": "Tennis player",
-          "count": 8
+          "category": "Film/TV/Entertainment",
+          "count": 9
         },
         {
-          "category": "Soccer player",
-          "count": 7
-        },
-        {
-          "category": "Chess player",
+          "category": "Other Sports",
           "count": 6
         }
       ],
       "top_cohorts": [
         {
           "cohort": "Athletes",
-          "count": 62
-        },
-        {
-          "cohort": "Researchers / independent engineers",
-          "count": 32
+          "count": 30
         },
         {
           "cohort": "Creators / artists",
-          "count": 25
+          "count": 21
+        },
+        {
+          "cohort": "Founders / operators",
+          "count": 18
         }
       ],
       "sample_trajectories": [
         [
           {
-            "year": 1913,
-            "age": 18,
-            "event": "Earned a PhD from Harvard in mathematical logic at age 18 and published his first mathematical paper in the Messenger of Mathematics."
+            "year": 2008,
+            "age": 22,
+            "event": "Founded Milo.com, a local product search engine indexing real-time store inventory, after dropping out of Wharton."
           },
           {
-            "year": 1914,
-            "age": 19,
-            "event": "Studied under Bertrand Russell at Cambridge University and David Hilbert at the University of Göttingen, the two leading centers of mathematics in Europe."
+            "year": 2010,
+            "age": 24,
+            "event": "Sold Milo.com to eBay for approximately $75 million; became Head of Local at eBay."
           },
           {
-            "year": 1919,
-            "age": 25,
-            "event": "Appointed as an instructor in mathematics at MIT, beginning a 45-year association with the institution."
+            "year": 2012,
+            "age": 26,
+            "event": "Founded Atomic, a San Francisco-based startup studio and venture capital firm, with an initial $20 million fund."
           },
           {
-            "year": 1933,
-            "age": 39,
-            "event": "Received the Bôcher Memorial Prize from the American Mathematical Society for his work in mathematical analysis."
+            "year": 2017,
+            "age": 31,
+            "event": "Co-founded Hims & Hers Health, which became the second-fastest U.S. company to reach $1 billion valuation."
           },
           {
-            "year": 1948,
-            "age": 54,
-            "event": "Published Cybernetics: Or Control and Communication in the Animal and the Machine, founding the field of cybernetics."
-          },
-          {
-            "year": 1963,
-            "age": 69,
-            "event": "Awarded the National Medal of Science for his contributions to mathematics, engineering, and biological sciences."
-          },
-          {
-            "year": 1964,
-            "age": 69,
-            "event": "Died on March 18, 1964, in Stockholm, Sweden, while on a lecture tour."
+            "year": 2021,
+            "age": 35,
+            "event": "Atomic raised $260 million in additional funding; Hims & Hers went public via SPAC at a $1.6 billion valuation."
           }
         ],
         [
           {
-            "year": 1953,
+            "year": 2002,
             "age": 21,
-            "event": "Received MSc in Mathematics from Hebrew University of Jerusalem."
+            "event": "Co-founded HarvardConnection (later ConnectU), a social networking site at Harvard."
           },
           {
-            "year": 1957,
+            "year": 2004,
+            "age": 23,
+            "event": "Filed lawsuit against Mark Zuckerberg alleging he stole their ConnectU idea to create Facebook."
+          },
+          {
+            "year": 2007,
             "age": 25,
-            "event": "Discovered nondeterministic finite automata with Dana Scott during IBM Research summer program; completed PhD at Princeton."
+            "event": "Won gold medal in the eights and silver in the coxless four at the Pan American Games in Rio de Janeiro."
           },
           {
-            "year": 1959,
+            "year": 2008,
             "age": 27,
-            "event": "Published seminal paper 'Finite Automata and Their Decision Problem' with Dana Scott in IBM Journal of Research and Development."
+            "event": "Competed in the men's pair rowing event at the Beijing Olympics, finishing 6th; received $65 million settlement from Facebook lawsuit."
           },
           {
-            "year": 1976,
-            "age": 45,
-            "event": "Won the ACM Turing Award with Dana Scott for their joint work on automata theory and nondeterministic machines."
+            "year": 2013,
+            "age": 32,
+            "event": "Invested ~$11 million in Bitcoin, purchasing approximately 100,000 BTC."
           },
           {
-            "year": 2026,
-            "age": 94,
-            "event": "Died on April 14 in Jerusalem."
+            "year": 2014,
+            "age": 33,
+            "event": "Co-founded Gemini, a regulated US cryptocurrency exchange."
+          },
+          {
+            "year": 2025,
+            "age": 44,
+            "event": "Filed for Gemini IPO on Nasdaq under symbol 'GEMI', with an estimated valuation of ~$2.1 billion."
           }
         ],
         [
           {
-            "year": 1935,
-            "age": 12,
-            "event": "Read Russell's Principia Mathematica in a Detroit library over three days and identified errors, leading to a correspondence with Bertrand Russell."
+            "year": 2002,
+            "age": 21,
+            "event": "Co-founded HarvardConnection (later ConnectU), a social networking site at Harvard, with brother Cameron and Divya Narendra."
           },
           {
-            "year": 1938,
-            "age": 15,
-            "event": "Ran away from home to the University of Chicago, began studying under Rudolf Carnap."
-          },
-          {
-            "year": 1943,
-            "age": 20,
-            "event": "Co-authored 'A Logical Calculus of the Ideas Immanent in Nervous Activity' with Warren McCulloch, proposing the first mathematical model of a neural network."
-          },
-          {
-            "year": 1946,
+            "year": 2004,
             "age": 23,
-            "event": "Moved to MIT with McCulloch; became a key figure in the cybernetics movement alongside Wiener and von Neumann."
+            "event": "Filed lawsuit against Mark Zuckerberg alleging he stole their ConnectU idea to create Facebook."
           },
           {
-            "year": 1969,
-            "age": 46,
-            "event": "Died in Cambridge, Massachusetts, from complications related to alcoholism and isolation."
+            "year": 2007,
+            "age": 25,
+            "event": "Won gold medal in the eights and silver in the coxless four at the Pan American Games in Rio de Janeiro."
+          },
+          {
+            "year": 2008,
+            "age": 27,
+            "event": "Competed in the men's pair rowing event at the Beijing Olympics with Cameron, finishing 6th; received $65 million settlement from Facebook lawsuit."
+          },
+          {
+            "year": 2013,
+            "age": 32,
+            "event": "Invested ~$11 million with Cameron in Bitcoin, purchasing approximately 100,000 BTC."
+          },
+          {
+            "year": 2014,
+            "age": 33,
+            "event": "Co-founded Gemini, a regulated US cryptocurrency exchange, serving as CEO."
+          },
+          {
+            "year": 2025,
+            "age": 44,
+            "event": "Filed for Gemini IPO on Nasdaq under symbol 'GEMI', with an estimated valuation of ~$2.1 billion."
           }
         ]
       ]
     },
     {
       "archetype_id": "archetype-2",
-      "name": "The multiply-advantaged",
-      "description": "High advantage scores across several dimensions. Multiple compounding early advantages.",
-      "member_count": 183,
+      "name": "The domain heir",
+      "description": "Parents had expertise in the same field, paired with elite coaching and institutional access. Domain knowledge transferred from childhood, then compounded through dedicated mentorship and pipeline programs.",
+      "member_count": 141,
       "avg_advantage_scores": {
-        "early_family_financial_platform_support_score": 0.91,
-        "parent_family_domain_advantage_score": 1.96,
-        "inherited_audience_business_network_score": 0.7,
-        "elite_institution_performance_pipeline_score": 1.25,
-        "frontier_geography_ecosystem_score": 0.98,
-        "rare_early_tools_facilities_score": 0.78,
-        "dedicated_mentor_coach_tutor_score": 1.34,
-        "exceptional_peer_cofounder_sibling_score": 0.61,
-        "early_online_platform_community_score": 0.01,
-        "direct_customer_domain_exposure_score": 1.64,
-        "prodigy_physical_edge_score": 0.79,
-        "adversity_constraint_catalyst_score": 0.32
+        "early_family_financial_platform_support_score": 0.61,
+        "parent_family_domain_advantage_score": 1.46,
+        "inherited_audience_business_network_score": 0.09,
+        "elite_institution_performance_pipeline_score": 1.78,
+        "frontier_geography_ecosystem_score": 1.04,
+        "rare_early_tools_facilities_score": 0.99,
+        "dedicated_mentor_coach_tutor_score": 1.54,
+        "exceptional_peer_cofounder_sibling_score": 0.66,
+        "early_online_platform_community_score": 0.14,
+        "direct_customer_domain_exposure_score": 1.54,
+        "prodigy_physical_edge_score": 1.5,
+        "adversity_constraint_catalyst_score": 0.45
       },
-      "avg_total_advantage": 11.29,
-      "avg_milestone_age": 21.0,
+      "avg_total_advantage": 11.8,
+      "avg_milestone_age": 19.4,
       "success_tier_distribution": {
-        "1": 65,
-        "2": 76,
-        "3": 30,
-        "4": 12
+        "1": 60,
+        "2": 67,
+        "3": 14,
+        "4": 0
       },
       "top_categories": [
         {
-          "category": "Tennis player",
-          "count": 12
+          "category": "Other Sports",
+          "count": 23
         },
         {
-          "category": "Conductor",
-          "count": 7
+          "category": "Tennis",
+          "count": 22
         },
         {
-          "category": "Soccer player",
-          "count": 4
+          "category": "Music",
+          "count": 10
         },
         {
-          "category": "Chess player",
-          "count": 4
+          "category": "Soccer",
+          "count": 9
         },
         {
-          "category": "Film director",
-          "count": 4
+          "category": "Chess",
+          "count": 9
         }
       ],
       "top_cohorts": [
         {
           "cohort": "Athletes",
-          "count": 82
+          "count": 107
         },
         {
           "cohort": "Creators / artists",
-          "count": 74
-        },
-        {
-          "cohort": "Founders / operators",
-          "count": 19
+          "count": 20
         },
         {
           "cohort": "Researchers / independent engineers",
-          "count": 8
+          "count": 9
+        },
+        {
+          "cohort": "Founders / operators",
+          "count": 5
         }
       ],
       "sample_trajectories": [
@@ -264,527 +274,324 @@
         ],
         [
           {
-            "year": 2008,
-            "age": 22,
-            "event": "Founded Milo.com, a local product search engine indexing real-time store inventory, after dropping out of Wharton."
+            "year": 1987,
+            "age": 18,
+            "event": "Named WHL Most Valuable Player and Canadian Hockey League Player of the Year after scoring 160 points for Swift Current Broncos; drafted 15th overall by Quebec Nordiques."
           },
           {
-            "year": 2010,
-            "age": 24,
-            "event": "Sold Milo.com to eBay for approximately $75 million; became Head of Local at eBay."
+            "year": 1988,
+            "age": 19,
+            "event": "Made NHL debut on October 6, 1988, scoring 62 points in 70 games as a rookie with the Quebec Nordiques."
+          },
+          {
+            "year": 1990,
+            "age": 21,
+            "event": "Finished ninth in the NHL with 102 points in the 1989-90 season, establishing himself as an elite NHL center."
+          },
+          {
+            "year": 1992,
+            "age": 23,
+            "event": "Became sole captain of the Quebec Nordiques franchise."
+          },
+          {
+            "year": 1996,
+            "age": 27,
+            "event": "Led the Colorado Avalanche to their first Stanley Cup championship, winning the Conn Smythe Trophy as playoff MVP with 34 points in 22 games."
+          },
+          {
+            "year": 2001,
+            "age": 32,
+            "event": "Won the Hart Trophy as NHL MVP and led the Avalanche to a second Stanley Cup championship."
+          },
+          {
+            "year": 2009,
+            "age": 40,
+            "event": "Retired from the NHL after 20 seasons with 1,641 career points."
           },
           {
             "year": 2012,
-            "age": 26,
-            "event": "Founded Atomic, a San Francisco-based startup studio and venture capital firm, with an initial $20 million fund."
-          },
-          {
-            "year": 2017,
-            "age": 31,
-            "event": "Co-founded Hims & Hers Health, which became the second-fastest U.S. company to reach $1 billion valuation."
-          },
-          {
-            "year": 2021,
-            "age": 35,
-            "event": "Atomic raised $260 million in additional funding; Hims & Hers went public via SPAC at a $1.6 billion valuation."
+            "age": 43,
+            "event": "Inducted into the Hockey Hall of Fame."
           }
         ],
         [
           {
-            "year": 2005,
-            "age": 18,
-            "event": "Obtained real estate license; interned for a local developer while attending University of Colorado Boulder."
+            "year": 1999,
+            "age": 16,
+            "event": "Won her first WTA singles title at the Luxembourg Open and reached the Wimbledon fourth round, earning WTA Newcomer of the Year."
           },
           {
-            "year": 2008,
-            "age": 21,
-            "event": "Moved to New York City and joined Douglas Elliman; sold first property, an $8.2M penthouse at the Park Imperial."
+            "year": 2001,
+            "age": 18,
+            "event": "Reached her first Grand Slam final at the French Open, losing to Jennifer Capriati in a historic third set."
+          },
+          {
+            "year": 2003,
+            "age": 20,
+            "event": "Became world No. 1 in singles rankings on August 11, and later also attained No. 1 in doubles."
+          },
+          {
+            "year": 2005,
+            "age": 22,
+            "event": "Won her first Grand Slam singles title at the US Open."
+          },
+          {
+            "year": 2007,
+            "age": 24,
+            "event": "Retired from professional tennis at age 23 to start a family."
+          },
+          {
+            "year": 2009,
+            "age": 26,
+            "event": "Won the US Open as an unranked wild card in her comeback, the first mother to win a Grand Slam since 1980."
           },
           {
             "year": 2011,
-            "age": 24,
-            "event": "Named to Forbes 30 Under 30 list for real estate."
-          },
-          {
-            "year": 2012,
-            "age": 25,
-            "event": "Sold the most expensive home in Miami, a $47M estate in Indian Creek, celebrating his 25th birthday."
-          },
-          {
-            "year": 2019,
-            "age": 32,
-            "event": "Co-brokered the biggest residential sale in US history: Ken Griffin's $238M penthouse at 220 Central Park South."
-          },
-          {
-            "year": 2022,
-            "age": 35,
-            "event": "Co-founded Official Partners, a luxury real estate brokerage, with brother Tal."
-          },
-          {
-            "year": 2024,
-            "age": 37,
-            "event": "Arrested in December 2024 on federal sex trafficking charges along with brothers Tal and Alon; held without bail."
+            "age": 28,
+            "event": "Won the Australian Open, her fourth and final Grand Slam singles title, and reclaimed the world No. 1 ranking as a mother."
           }
         ]
       ]
     },
     {
       "archetype_id": "archetype-3",
-      "name": "The elite-ecosystem founder",
-      "description": "Elite schooling, grew up in a frontier hub, and found exceptional cofounders/peers. The classic tech-founder advantage stack — place, pipeline, and people.",
-      "member_count": 115,
+      "name": "The coached prodigy",
+      "description": "Identified early by an institutional pipeline, developed by dedicated coaches, and backed by a natural physical or talent edge. Common in sports and performance arts.",
+      "member_count": 296,
       "avg_advantage_scores": {
-        "early_family_financial_platform_support_score": 0.59,
-        "parent_family_domain_advantage_score": 0.54,
-        "inherited_audience_business_network_score": 0.14,
-        "elite_institution_performance_pipeline_score": 1.73,
-        "frontier_geography_ecosystem_score": 1.72,
-        "rare_early_tools_facilities_score": 1.12,
-        "dedicated_mentor_coach_tutor_score": 0.83,
-        "exceptional_peer_cofounder_sibling_score": 1.62,
-        "early_online_platform_community_score": 0.03,
-        "direct_customer_domain_exposure_score": 1.32,
-        "prodigy_physical_edge_score": 0.37,
-        "adversity_constraint_catalyst_score": 0.4
+        "early_family_financial_platform_support_score": 0.12,
+        "parent_family_domain_advantage_score": 0.08,
+        "inherited_audience_business_network_score": 0.01,
+        "elite_institution_performance_pipeline_score": 1.88,
+        "frontier_geography_ecosystem_score": 1.25,
+        "rare_early_tools_facilities_score": 0.88,
+        "dedicated_mentor_coach_tutor_score": 1.33,
+        "exceptional_peer_cofounder_sibling_score": 0.86,
+        "early_online_platform_community_score": 0.06,
+        "direct_customer_domain_exposure_score": 1.34,
+        "prodigy_physical_edge_score": 1.05,
+        "adversity_constraint_catalyst_score": 0.31
       },
-      "avg_total_advantage": 10.41,
-      "avg_milestone_age": 22.5,
+      "avg_total_advantage": 9.17,
+      "avg_milestone_age": 20.1,
       "success_tier_distribution": {
-        "1": 33,
-        "2": 45,
-        "3": 14,
-        "4": 23
+        "1": 73,
+        "2": 156,
+        "3": 65,
+        "4": 2
       },
       "top_categories": [
         {
-          "category": "Technology founder",
-          "count": 8
+          "category": "Other Sports",
+          "count": 44
         },
         {
-          "category": "Computer programmer (ENIAC)",
-          "count": 5
+          "category": "Soccer",
+          "count": 37
         },
         {
-          "category": "Film director",
-          "count": 4
+          "category": "Gymnastics",
+          "count": 35
         },
         {
-          "category": "Soccer player",
-          "count": 3
+          "category": "Tennis",
+          "count": 24
         },
         {
-          "category": "Consumer founder",
-          "count": 2
+          "category": "Founder/Entrepreneur",
+          "count": 21
         }
       ],
       "top_cohorts": [
         {
           "cohort": "Athletes",
-          "count": 33
-        },
-        {
-          "cohort": "Founders / operators",
-          "count": 31
+          "count": 224
         },
         {
           "cohort": "Creators / artists",
-          "count": 30
+          "count": 31
+        },
+        {
+          "cohort": "Founders / operators",
+          "count": 23
         },
         {
           "cohort": "Researchers / independent engineers",
-          "count": 21
+          "count": 18
         }
       ],
       "sample_trajectories": [
         [
           {
-            "year": 1969,
+            "year": 1975,
+            "age": 20,
+            "event": "Began graduate studies at UC Berkeley, joining Bob Fabry's Computer Systems Research Group to work on BSD UNIX"
+          },
+          {
+            "year": 1978,
+            "age": 23,
+            "event": "1BSD released including his vi text editor and C shell, establishing him as the principal author of BSD UNIX"
+          },
+          {
+            "year": 1979,
             "age": 25,
-            "event": "Became the first RFC Editor on April 7, 1969, a role he would hold for nearly 30 years, editing over 2400 RFCs defining Internet standards."
+            "event": "Completed MS in electrical engineering and computer science at Berkeley; 3BSD released with virtual memory support"
           },
           {
-            "year": 1974,
-            "age": 31,
-            "event": "Completed PhD in Computer Science at UCLA under Dave Farber."
+            "year": 1982,
+            "age": 28,
+            "event": "Co-founded Sun Microsystems with Scott McNealy, Vinod Khosla, and Andy Bechtolsheim"
           },
           {
-            "year": 1977,
-            "age": 34,
-            "event": "Joined USC's Information Sciences Institute, where he would spend the rest of his career directing IANA and editing RFCs."
-          },
-          {
-            "year": 1984,
-            "age": 41,
-            "event": "Co-authored foundational RFCs for the Domain Name System (RFC 881, 882, 920), establishing the hierarchical naming system used by the Internet today."
-          },
-          {
-            "year": 1998,
-            "age": 55,
-            "event": "Brokered the plan to create ICANN, transitioning Internet governance from US government to a nonprofit; died October 16 from complications after heart surgery."
-          }
-        ],
-        [
-          {
-            "year": 1942,
-            "age": 21,
-            "event": "Graduated from Cambridge with First Class Honours in mathematics and joined the Telecommunications Research Establishment to work on radar under Freddie Williams."
-          },
-          {
-            "year": 1947,
-            "age": 26,
-            "event": "Co-developed the Williams-Kilburn tube for CRT storage at Manchester and published an influential internal report on binary digital storage in December 1947."
-          },
-          {
-            "year": 1948,
-            "age": 26,
-            "event": "Co-designed and built the Manchester Baby, the world's first stored-program electronic digital computer, which ran its first program on 21 June 1948."
-          },
-          {
-            "year": 1951,
-            "age": 29,
-            "event": "Led development of the Ferranti Mark 1, the world's first commercially available computer."
-          },
-          {
-            "year": 1962,
-            "age": 41,
-            "event": "Led the development of the Atlas computer, one of the first time-sharing multiprocessing computers with paging and pipelining."
-          },
-          {
-            "year": 1964,
-            "age": 43,
-            "event": "Became head of the Department of Computer Science at the University of Manchester."
-          },
-          {
-            "year": 2001,
-            "age": 79,
-            "event": "Died on 17 January 2001 in Manchester after twenty years of quiet retirement."
-          }
-        ],
-        [
-          {
-            "year": 1940,
-            "age": 21,
-            "event": "Applied for his first patent on light modulating methods while at the Moore School of Electrical Engineering at Penn."
-          },
-          {
-            "year": 1943,
-            "age": 24,
-            "event": "Appointed chief engineer of the ENIAC project at the Moore School, collaborating with John Mauchly on the first general-purpose electronic digital computer."
-          },
-          {
-            "year": 1946,
-            "age": 26,
-            "event": "ENIAC was completed and publicly dedicated on February 15, 1946 at the University of Pennsylvania, acclaimed as a major computing breakthrough."
-          },
-          {
-            "year": 1948,
-            "age": 29,
-            "event": "Co-founded the Eckert-Mauchly Computer Corporation to build the UNIVAC, the first commercial computer in the United States."
-          },
-          {
-            "year": 1951,
+            "year": 1986,
             "age": 32,
-            "event": "UNIVAC I was delivered to the U.S. Census Bureau, becoming the first commercially produced computer in the United States."
-          },
-          {
-            "year": 1968,
-            "age": 49,
-            "event": "Received the National Medal of Science for his contributions to computing."
+            "event": "Received the ACM Grace Murray Hopper Award for his contributions to operating systems and networking"
           },
           {
             "year": 1995,
-            "age": 76,
-            "event": "Died on June 3, 1995 in Bryn Mawr, Pennsylvania."
+            "age": 41,
+            "event": "Inspired the development of Java programming language at Sun Microsystems"
+          },
+          {
+            "year": 2000,
+            "age": 46,
+            "event": "Published influential essay 'Why The Future Doesn't Need Us' in Wired magazine"
+          },
+          {
+            "year": 2003,
+            "age": 49,
+            "event": "Left Sun Microsystems; later joined Kleiner Perkins as partner in 2005"
+          }
+        ],
+        [
+          {
+            "year": 1975,
+            "age": 20,
+            "event": "Co-authored Lex with Mike Lesk at Bell Labs, creating the standard Unix lexical analyzer generator."
+          },
+          {
+            "year": 1983,
+            "age": 28,
+            "event": "Joined Sun Microsystems as its first software manager, later rising to CTO."
+          },
+          {
+            "year": 1997,
+            "age": 42,
+            "event": "Became CEO of Novell, a networking software company."
+          },
+          {
+            "year": 2001,
+            "age": 46,
+            "event": "Became CEO of Google, guiding its transformation from startup to global tech giant."
+          },
+          {
+            "year": 2011,
+            "age": 56,
+            "event": "Transitioned to Executive Chairman of Google (and later Alphabet), stepping down as CEO."
+          },
+          {
+            "year": 2020,
+            "age": 65,
+            "event": "Founded Schmidt Futures, a philanthropic initiative investing in AI and scientific talent."
+          }
+        ],
+        [
+          {
+            "year": 2006,
+            "age": 18,
+            "event": "Won silver medal at the International Chemistry Olympiad and became first North Dakota finalist in Intel Science Talent Search since 1973."
+          },
+          {
+            "year": 2010,
+            "age": 22,
+            "event": "Dropped out of MIT to join Stripe as a founding engineer (employee #4-5)."
+          },
+          {
+            "year": 2013,
+            "age": 25,
+            "event": "Became Stripe's first CTO, scaling the company from 5 to over 200 employees."
+          },
+          {
+            "year": 2015,
+            "age": 28,
+            "event": "Left Stripe and co-founded OpenAI with Sam Altman, Elon Musk, Ilya Sutskever, and others."
+          },
+          {
+            "year": 2025,
+            "age": 37,
+            "event": "Serves as President of OpenAI, one of the world's leading AI companies valued at over $150 billion."
           }
         ]
       ]
     },
     {
       "archetype_id": "archetype-4",
-      "name": "The mentored talent",
-      "description": "Strong mentorship and institutional pipeline, but modest family background. A mentor or coach opened doors that family wealth couldn't.",
-      "member_count": 253,
+      "name": "The family-trade inheritor",
+      "description": "Parents worked in the same domain. Knowledge and networks transferred early, without major wealth or elite schooling.",
+      "member_count": 115,
       "avg_advantage_scores": {
-        "early_family_financial_platform_support_score": 0.08,
-        "parent_family_domain_advantage_score": 0.06,
-        "inherited_audience_business_network_score": 0.01,
-        "elite_institution_performance_pipeline_score": 1.88,
-        "frontier_geography_ecosystem_score": 1.16,
-        "rare_early_tools_facilities_score": 0.85,
-        "dedicated_mentor_coach_tutor_score": 1.35,
-        "exceptional_peer_cofounder_sibling_score": 0.53,
-        "early_online_platform_community_score": 0.01,
-        "direct_customer_domain_exposure_score": 1.34,
-        "prodigy_physical_edge_score": 1.02,
-        "adversity_constraint_catalyst_score": 0.48
+        "early_family_financial_platform_support_score": 0.47,
+        "parent_family_domain_advantage_score": 1.39,
+        "inherited_audience_business_network_score": 0.1,
+        "elite_institution_performance_pipeline_score": 0.91,
+        "frontier_geography_ecosystem_score": 0.84,
+        "rare_early_tools_facilities_score": 0.61,
+        "dedicated_mentor_coach_tutor_score": 0.92,
+        "exceptional_peer_cofounder_sibling_score": 0.69,
+        "early_online_platform_community_score": 0.16,
+        "direct_customer_domain_exposure_score": 1.43,
+        "prodigy_physical_edge_score": 0.61,
+        "adversity_constraint_catalyst_score": 0.41
       },
-      "avg_total_advantage": 8.77,
-      "avg_milestone_age": 20.7,
+      "avg_total_advantage": 8.54,
+      "avg_milestone_age": 20.6,
       "success_tier_distribution": {
-        "1": 82,
-        "2": 117,
-        "3": 51,
-        "4": 3
-      },
-      "top_categories": [
-        {
-          "category": "Artistic gymnast",
-          "count": 14
-        },
-        {
-          "category": "Soccer player",
-          "count": 12
-        },
-        {
-          "category": "Chess player",
-          "count": 10
-        },
-        {
-          "category": "Table tennis player",
-          "count": 8
-        },
-        {
-          "category": "Footballer (soccer)",
-          "count": 7
-        }
-      ],
-      "top_cohorts": [
-        {
-          "cohort": "Athletes",
-          "count": 186
-        },
-        {
-          "cohort": "Creators / artists",
-          "count": 41
-        },
-        {
-          "cohort": "Researchers / independent engineers",
-          "count": 22
-        },
-        {
-          "cohort": "Founders / operators",
-          "count": 3
-        }
-      ],
-      "sample_trajectories": [
-        [
-          {
-            "year": 1966,
-            "age": 17,
-            "event": "Selected through math olympiads for special physics-mathematics high school in Kiev."
-          },
-          {
-            "year": 1970,
-            "age": 21,
-            "event": "Completed Master's degree at Moscow University under Andrey Kolmogorov."
-          },
-          {
-            "year": 1972,
-            "age": 23,
-            "event": "Independently discovered NP-completeness (Cook-Levin theorem); completed Candidate degree at Moscow University."
-          },
-          {
-            "year": 1978,
-            "age": 29,
-            "event": "Emigrated from Soviet Union to the United States and joined MIT as a researcher."
-          },
-          {
-            "year": 1979,
-            "age": 30,
-            "event": "Earned PhD from MIT under Albert Meyer."
-          },
-          {
-            "year": 1980,
-            "age": 31,
-            "event": "Joined Boston University as Professor of Computer Science."
-          },
-          {
-            "year": 2012,
-            "age": 63,
-            "event": "Awarded the Knuth Prize for discovery of NP-completeness and development of average-case complexity."
-          },
-          {
-            "year": 2019,
-            "age": 70,
-            "event": "Elected to the US National Academy of Sciences."
-          }
-        ],
-        [
-          {
-            "year": 1959,
-            "age": 21,
-            "event": "Received BS in Electrical Engineering from MIT."
-          },
-          {
-            "year": 1961,
-            "age": 23,
-            "event": "Received MS in Electrical Engineering from MIT."
-          },
-          {
-            "year": 1964,
-            "age": 26,
-            "event": "Earned PhD in Mathematics from MIT, introducing the Blum axioms for computational complexity in his thesis."
-          },
-          {
-            "year": 1968,
-            "age": 30,
-            "event": "Joined UC Berkeley as tenured associate professor of electrical engineering and computer science."
-          },
-          {
-            "year": 1995,
-            "age": 57,
-            "event": "Won the ACM Turing Award for contributions to computational complexity theory and its application to cryptography and program checking."
-          },
-          {
-            "year": 2001,
-            "age": 63,
-            "event": "Joined Carnegie Mellon University as Bruce Nelson Professor of Computer Science."
-          }
-        ],
-        [
-          {
-            "year": 1969,
-            "age": 20,
-            "event": "Received BS in Mathematics from Caltech."
-          },
-          {
-            "year": 1971,
-            "age": 22,
-            "event": "Co-authored first planarity testing tech report with Hopcroft at Stanford."
-          },
-          {
-            "year": 1972,
-            "age": 23,
-            "event": "Completed PhD at Stanford with thesis 'An Efficient Planarity Algorithm' under Robert Floyd."
-          },
-          {
-            "year": 1974,
-            "age": 25,
-            "event": "Published 'Efficient Planarity Testing' in Journal of the ACM, establishing the linear-time planarity algorithm."
-          },
-          {
-            "year": 1982,
-            "age": 34,
-            "event": "Won the first Rolf Nevanlinna Prize for outstanding contributions to mathematical aspects of information sciences."
-          },
-          {
-            "year": 1985,
-            "age": 37,
-            "event": "Joined Princeton University as James S. McDonnell Distinguished University Professor of Computer Science."
-          },
-          {
-            "year": 1986,
-            "age": 38,
-            "event": "Won the ACM Turing Award with John Hopcroft for fundamental achievements in algorithm design and analysis."
-          }
-        ]
-      ]
-    },
-    {
-      "archetype_id": "archetype-5",
-      "name": "The pipeline-routed talent",
-      "description": "Modest family background, but accessed an institutional pipeline (sports system, academy, scholarship) and grew up in a field hub. Place and pipeline opened doors that family wealth couldn't.",
-      "member_count": 129,
-      "avg_advantage_scores": {
-        "early_family_financial_platform_support_score": 1.01,
-        "parent_family_domain_advantage_score": 0.64,
-        "inherited_audience_business_network_score": 0.19,
-        "elite_institution_performance_pipeline_score": 1.29,
-        "frontier_geography_ecosystem_score": 1.05,
-        "rare_early_tools_facilities_score": 0.72,
-        "dedicated_mentor_coach_tutor_score": 0.84,
-        "exceptional_peer_cofounder_sibling_score": 0.17,
-        "early_online_platform_community_score": 0.02,
-        "direct_customer_domain_exposure_score": 1.24,
-        "prodigy_physical_edge_score": 0.81,
-        "adversity_constraint_catalyst_score": 0.26
-      },
-      "avg_total_advantage": 8.24,
-      "avg_milestone_age": 22.1,
-      "success_tier_distribution": {
-        "1": 45,
-        "2": 59,
-        "3": 21,
+        "1": 28,
+        "2": 60,
+        "3": 23,
         "4": 4
       },
       "top_categories": [
         {
-          "category": "Tennis player",
-          "count": 7
+          "category": "Music",
+          "count": 20
         },
         {
-          "category": "Racing driver (Formula One)",
-          "count": 6
+          "category": "Other Sports",
+          "count": 17
         },
         {
-          "category": "Racing driver",
-          "count": 5
+          "category": "Motorsport",
+          "count": 13
         },
         {
-          "category": "Golfer",
-          "count": 5
+          "category": "Tennis",
+          "count": 10
         },
         {
-          "category": "Actor",
-          "count": 4
+          "category": "Art/Design",
+          "count": 8
         }
       ],
       "top_cohorts": [
         {
-          "cohort": "Creators / artists",
-          "count": 54
+          "cohort": "Athletes",
+          "count": 66
         },
         {
-          "cohort": "Athletes",
-          "count": 51
+          "cohort": "Creators / artists",
+          "count": 35
         },
         {
           "cohort": "Researchers / independent engineers",
-          "count": 19
+          "count": 7
         },
         {
           "cohort": "Founders / operators",
-          "count": 5
+          "count": 7
         }
       ],
       "sample_trajectories": [
-        [
-          {
-            "year": 1988,
-            "age": 21,
-            "event": "Graduated from Tufts University with a degree in computer science; joined Claris, an Apple subsidiary, developing Macintosh software."
-          },
-          {
-            "year": 1991,
-            "age": 23,
-            "event": "Co-founded Ink Development Corp (later eShop Inc.) on May 10, an early online shopping software company."
-          },
-          {
-            "year": 1995,
-            "age": 28,
-            "event": "Launched AuctionWeb (later eBay) on Labor Day weekend as a side project on his personal website."
-          },
-          {
-            "year": 1996,
-            "age": 29,
-            "event": "eShop acquired by Microsoft on June 11; quit his day job at General Magic to focus on eBay full-time."
-          },
-          {
-            "year": 1998,
-            "age": 31,
-            "event": "eBay went public; Omidyar became a billionaire shortly after the IPO."
-          },
-          {
-            "year": 2004,
-            "age": 37,
-            "event": "Founded Omidyar Network, a philanthropic investment firm."
-          },
-          {
-            "year": 2013,
-            "age": 46,
-            "event": "Founded First Look Media, including The Intercept news organization."
-          }
-        ],
         [
           {
             "year": 2001,
@@ -858,6 +665,219 @@
             "age": 64,
             "event": "Leading the native port of TypeScript to Go (TypeScript 7) for a 10x performance improvement, with a release candidate available."
           }
+        ],
+        [
+          {
+            "year": 1985,
+            "age": 24,
+            "event": "Published an early version of the backpropagation algorithm at the COGNITIVA conference in Paris."
+          },
+          {
+            "year": 1987,
+            "age": 27,
+            "event": "Completed PhD in computer science at Universite Pierre et Marie Curie with a thesis on connectionist learning models."
+          },
+          {
+            "year": 1988,
+            "age": 28,
+            "event": "Joined AT&T Bell Labs as a research scientist, where he developed convolutional neural networks (LeNet) for handwriting recognition."
+          },
+          {
+            "year": 1996,
+            "age": 36,
+            "event": "Became head of the Image Processing Research Department at AT&T Labs-Research."
+          },
+          {
+            "year": 2003,
+            "age": 43,
+            "event": "Joined NYU as a professor of computer science at the Courant Institute."
+          },
+          {
+            "year": 2013,
+            "age": 53,
+            "event": "Named Director of AI Research at Facebook (later Meta)."
+          },
+          {
+            "year": 2018,
+            "age": 58,
+            "event": "Co-recipient of the ACM Turing Award with Geoffrey Hinton and Yoshua Bengio for work on deep learning."
+          },
+          {
+            "year": 2025,
+            "age": 65,
+            "event": "Co-founded Advanced Machine Intelligence Labs after leaving Meta."
+          }
+        ]
+      ]
+    },
+    {
+      "archetype_id": "archetype-5",
+      "name": "The hardship-forged athlete",
+      "description": "Physical talent plus early adversity that catalyzed drive, channeled through coaching. Common in combat sports and endurance events — hardship became fuel.",
+      "member_count": 188,
+      "avg_advantage_scores": {
+        "early_family_financial_platform_support_score": 0.1,
+        "parent_family_domain_advantage_score": 0.22,
+        "inherited_audience_business_network_score": 0.02,
+        "elite_institution_performance_pipeline_score": 1.18,
+        "frontier_geography_ecosystem_score": 0.78,
+        "rare_early_tools_facilities_score": 0.2,
+        "dedicated_mentor_coach_tutor_score": 1.08,
+        "exceptional_peer_cofounder_sibling_score": 0.31,
+        "early_online_platform_community_score": 0.04,
+        "direct_customer_domain_exposure_score": 1.21,
+        "prodigy_physical_edge_score": 1.22,
+        "adversity_constraint_catalyst_score": 1.28
+      },
+      "avg_total_advantage": 7.64,
+      "avg_milestone_age": 20.9,
+      "success_tier_distribution": {
+        "1": 71,
+        "2": 84,
+        "3": 27,
+        "4": 6
+      },
+      "top_categories": [
+        {
+          "category": "Other Sports",
+          "count": 31
+        },
+        {
+          "category": "Soccer",
+          "count": 24
+        },
+        {
+          "category": "Tennis",
+          "count": 16
+        },
+        {
+          "category": "Boxing",
+          "count": 15
+        },
+        {
+          "category": "Art/Design",
+          "count": 14
+        }
+      ],
+      "top_cohorts": [
+        {
+          "cohort": "Athletes",
+          "count": 137
+        },
+        {
+          "cohort": "Creators / artists",
+          "count": 38
+        },
+        {
+          "cohort": "Researchers / independent engineers",
+          "count": 7
+        },
+        {
+          "cohort": "Founders / operators",
+          "count": 6
+        }
+      ],
+      "sample_trajectories": [
+        [
+          {
+            "year": 2007,
+            "age": 18,
+            "event": "Won silver medal representing Poland at the International Mathematical Olympiad in Vietnam."
+          },
+          {
+            "year": 2013,
+            "age": 25,
+            "event": "Co-authored 'Intriguing properties of neural networks' while at Google Brain, a foundational paper on adversarial examples in neural networks."
+          },
+          {
+            "year": 2015,
+            "age": 27,
+            "event": "Co-founded OpenAI as one of its founding members alongside Sam Altman, Elon Musk, and Ilya Sutskever."
+          },
+          {
+            "year": 2020,
+            "age": 31,
+            "event": "Led OpenAI robotics team that created a robotic arm capable of solving a Rubik's Cube."
+          },
+          {
+            "year": 2025,
+            "age": 36,
+            "event": "Continues as co-founder of OpenAI, leading work on GPT models, GitHub Copilot, and Codex."
+          }
+        ],
+        [
+          {
+            "year": 1989,
+            "age": 13,
+            "event": "Reached chess master standard with Elo rating of 2300, captained England junior chess teams."
+          },
+          {
+            "year": 1994,
+            "age": 17,
+            "event": "Co-designed and lead-programmed Theme Park at Bullfrog Productions; game sold several million copies and won a Golden Joystick award."
+          },
+          {
+            "year": 1997,
+            "age": 21,
+            "event": "Graduated from Cambridge with double first in computer science; won pentamind at Mind Sports Olympiad."
+          },
+          {
+            "year": 2010,
+            "age": 34,
+            "event": "Co-founded DeepMind Technologies with Shane Legg and Mustafa Suleyman."
+          },
+          {
+            "year": 2014,
+            "age": 38,
+            "event": "DeepMind acquired by Google for £400 million, Google's largest European acquisition."
+          },
+          {
+            "year": 2016,
+            "age": 40,
+            "event": "AlphaGo defeated world Go champion Lee Sedol, a landmark in AI history."
+          },
+          {
+            "year": 2024,
+            "age": 48,
+            "event": "Awarded Nobel Prize in Chemistry for AlphaFold protein structure prediction."
+          }
+        ],
+        [
+          {
+            "year": 1994,
+            "age": 15,
+            "event": "Started Rude Boy Productions, a DJ company funded by bar mitzvah and babysitting savings, earning over $100K by high school graduation."
+          },
+          {
+            "year": 2000,
+            "age": 21,
+            "event": "Graduated from Columbia University in under two years; hired as youngest analyst at McKinsey & Company."
+          },
+          {
+            "year": 2003,
+            "age": 24,
+            "event": "Graduated from Columbia Business School with an MBA; joined Lazard in investment banking."
+          },
+          {
+            "year": 2005,
+            "age": 26,
+            "event": "Selected as a White House Fellow, working for Secretary of the Treasury John W. Snow."
+          },
+          {
+            "year": 2007,
+            "age": 28,
+            "event": "Became vice president at Goldman Sachs, serving as chief of staff for president and COO Gary Cohn."
+          },
+          {
+            "year": 2012,
+            "age": 33,
+            "event": "Co-founded Compass, a real estate technology company."
+          },
+          {
+            "year": 2021,
+            "age": 42,
+            "event": "Took Compass public on the New York Stock Exchange; company valued at approximately $6 billion."
+          }
         ]
       ]
     },
@@ -865,63 +885,67 @@
       "archetype_id": "archetype-6",
       "name": "The platform-native builder",
       "description": "Grew up with online platforms and direct audience/customer exposure. Built things people used from an early age. Low traditional advantage, high digital-native leverage.",
-      "member_count": 106,
+      "member_count": 362,
       "avg_advantage_scores": {
-        "early_family_financial_platform_support_score": 0.23,
-        "parent_family_domain_advantage_score": 0.3,
-        "inherited_audience_business_network_score": 0.05,
-        "elite_institution_performance_pipeline_score": 0.37,
-        "frontier_geography_ecosystem_score": 0.63,
-        "rare_early_tools_facilities_score": 0.58,
-        "dedicated_mentor_coach_tutor_score": 0.1,
-        "exceptional_peer_cofounder_sibling_score": 1.04,
-        "early_online_platform_community_score": 1.89,
-        "direct_customer_domain_exposure_score": 1.43,
-        "prodigy_physical_edge_score": 0.16,
-        "adversity_constraint_catalyst_score": 0.53
+        "early_family_financial_platform_support_score": 0.17,
+        "parent_family_domain_advantage_score": 0.19,
+        "inherited_audience_business_network_score": 0.03,
+        "elite_institution_performance_pipeline_score": 0.51,
+        "frontier_geography_ecosystem_score": 0.69,
+        "rare_early_tools_facilities_score": 0.43,
+        "dedicated_mentor_coach_tutor_score": 0.2,
+        "exceptional_peer_cofounder_sibling_score": 0.85,
+        "early_online_platform_community_score": 1.93,
+        "direct_customer_domain_exposure_score": 1.42,
+        "prodigy_physical_edge_score": 0.35,
+        "adversity_constraint_catalyst_score": 0.54
       },
       "avg_total_advantage": 7.31,
-      "avg_milestone_age": 20.7,
+      "avg_milestone_age": 21.0,
       "success_tier_distribution": {
-        "1": 0,
-        "2": 25,
-        "3": 46,
-        "4": 35
+        "1": 27,
+        "2": 137,
+        "3": 160,
+        "4": 38
       },
       "top_categories": [
         {
-          "category": "Creator-entrepreneur",
-          "count": 9
+          "category": "Content/Esports",
+          "count": 96
         },
         {
-          "category": "Technology founder",
-          "count": 5
+          "category": "Music",
+          "count": 77
         },
         {
-          "category": "Engineer-founder",
-          "count": 3
+          "category": "Software/Tech",
+          "count": 61
         },
         {
-          "category": "Consumer brand founder",
-          "count": 2
+          "category": "Founder/Entrepreneur",
+          "count": 55
         },
         {
-          "category": "Beauty YouTuber and makeup artist",
-          "count": 2
+          "category": "Film/TV/Entertainment",
+          "count": 36
         }
       ],
       "top_cohorts": [
         {
           "cohort": "Creators / artists",
-          "count": 73
+          "count": 232
         },
         {
           "cohort": "Founders / operators",
-          "count": 28
+          "count": 82
         },
         {
           "cohort": "Researchers / independent engineers",
-          "count": 5
+          "count": 44
+        },
+        {
+          "cohort": "Athletes",
+          "count": 4
         }
       ],
       "sample_trajectories": [
@@ -1035,243 +1059,89 @@
     },
     {
       "archetype_id": "archetype-7",
-      "name": "The hardship-forged athlete",
-      "description": "Physical talent plus early adversity that catalyzed drive, channeled through coaching. Common in combat sports and endurance events — hardship became fuel.",
-      "member_count": 241,
+      "name": "The cofounder-paired builder",
+      "description": "Found exceptional cofounders or peers early, with direct customer exposure. Advantage came from people and partnerships, not family wealth or domain inheritance.",
+      "member_count": 269,
       "avg_advantage_scores": {
-        "early_family_financial_platform_support_score": 0.08,
-        "parent_family_domain_advantage_score": 0.22,
-        "inherited_audience_business_network_score": 0.04,
-        "elite_institution_performance_pipeline_score": 0.82,
-        "frontier_geography_ecosystem_score": 0.72,
-        "rare_early_tools_facilities_score": 0.15,
-        "dedicated_mentor_coach_tutor_score": 0.86,
-        "exceptional_peer_cofounder_sibling_score": 0.31,
-        "early_online_platform_community_score": 0.02,
-        "direct_customer_domain_exposure_score": 1.2,
-        "prodigy_physical_edge_score": 1.07,
-        "adversity_constraint_catalyst_score": 1.5
+        "early_family_financial_platform_support_score": 0.23,
+        "parent_family_domain_advantage_score": 0.12,
+        "inherited_audience_business_network_score": 0.01,
+        "elite_institution_performance_pipeline_score": 1.46,
+        "frontier_geography_ecosystem_score": 1.16,
+        "rare_early_tools_facilities_score": 0.22,
+        "dedicated_mentor_coach_tutor_score": 0.3,
+        "exceptional_peer_cofounder_sibling_score": 1.7,
+        "early_online_platform_community_score": 0.38,
+        "direct_customer_domain_exposure_score": 1.13,
+        "prodigy_physical_edge_score": 0.24,
+        "adversity_constraint_catalyst_score": 0.23
       },
-      "avg_total_advantage": 6.99,
-      "avg_milestone_age": 21.5,
+      "avg_total_advantage": 7.18,
+      "avg_milestone_age": 22.5,
       "success_tier_distribution": {
-        "1": 96,
-        "2": 108,
-        "3": 33,
-        "4": 4
+        "1": 26,
+        "2": 125,
+        "3": 100,
+        "4": 18
       },
       "top_categories": [
         {
-          "category": "Tennis player",
-          "count": 10
+          "category": "Founder/Entrepreneur",
+          "count": 142
         },
         {
-          "category": "Soccer player",
-          "count": 7
+          "category": "Music",
+          "count": 25
         },
         {
-          "category": "Singer",
-          "count": 5
+          "category": "Content/Esports",
+          "count": 23
         },
         {
-          "category": "Boxer",
-          "count": 5
+          "category": "Software/Tech",
+          "count": 14
         },
         {
-          "category": "Fashion model",
-          "count": 5
+          "category": "Art/Design",
+          "count": 11
         }
       ],
       "top_cohorts": [
         {
-          "cohort": "Athletes",
-          "count": 126
+          "cohort": "Founders / operators",
+          "count": 161
         },
         {
           "cohort": "Creators / artists",
-          "count": 98
+          "count": 58
+        },
+        {
+          "cohort": "Athletes",
+          "count": 39
         },
         {
           "cohort": "Researchers / independent engineers",
-          "count": 9
-        },
-        {
-          "cohort": "Founders / operators",
-          "count": 8
+          "count": 11
         }
       ],
       "sample_trajectories": [
         [
           {
-            "year": 2007,
-            "age": 18,
-            "event": "Won silver medal representing Poland at the International Mathematical Olympiad in Vietnam."
-          },
-          {
-            "year": 2013,
-            "age": 25,
-            "event": "Co-authored 'Intriguing properties of neural networks' while at Google Brain, a foundational paper on adversarial examples in neural networks."
-          },
-          {
-            "year": 2015,
-            "age": 27,
-            "event": "Co-founded OpenAI as one of its founding members alongside Sam Altman, Elon Musk, and Ilya Sutskever."
-          },
-          {
-            "year": 2020,
-            "age": 31,
-            "event": "Led OpenAI robotics team that created a robotic arm capable of solving a Rubik's Cube."
-          },
-          {
-            "year": 2025,
-            "age": 36,
-            "event": "Continues as co-founder of OpenAI, leading work on GPT models, GitHub Copilot, and Codex."
-          }
-        ],
-        [
-          {
-            "year": 1994,
-            "age": 15,
-            "event": "Started Rude Boy Productions, a DJ company funded by bar mitzvah and babysitting savings, earning over $100K by high school graduation."
-          },
-          {
-            "year": 2000,
-            "age": 21,
-            "event": "Graduated from Columbia University in under two years; hired as youngest analyst at McKinsey & Company."
-          },
-          {
-            "year": 2003,
+            "year": 2005,
             "age": 24,
-            "event": "Graduated from Columbia Business School with an MBA; joined Lazard in investment banking."
-          },
-          {
-            "year": 2005,
-            "age": 26,
-            "event": "Selected as a White House Fellow, working for Secretary of the Treasury John W. Snow."
-          },
-          {
-            "year": 2007,
-            "age": 28,
-            "event": "Became vice president at Goldman Sachs, serving as chief of staff for president and COO Gary Cohn."
-          },
-          {
-            "year": 2012,
-            "age": 33,
-            "event": "Co-founded Compass, a real estate technology company."
-          },
-          {
-            "year": 2021,
-            "age": 42,
-            "event": "Took Compass public on the New York Stock Exchange; company valued at approximately $6 billion."
-          }
-        ],
-        [
-          {
-            "year": 1994,
-            "age": 12,
-            "event": "Won the World Youth Chess Championship (Under-12) in Szeged with 8/9, ahead of future top players including Ponomariov and Grischuk."
-          },
-          {
-            "year": 2000,
-            "age": 17,
-            "event": "Earned the title of chess grandmaster."
-          },
-          {
-            "year": 2002,
-            "age": 20,
-            "event": "Won the Armenian Chess Championship and the World Junior Chess Championship in India."
-          },
-          {
-            "year": 2005,
-            "age": 23,
-            "event": "Won the FIDE World Cup in Russia and entered the world's top 10 for the first time."
+            "event": "Co-founded Odeo, a podcasting company, with Evan Williams after his AudBlog startup merged with Williams' operation."
           },
           {
             "year": 2006,
-            "age": 24,
-            "event": "Led the Armenian team to Olympic gold medal, playing first board; also won the Chess960 World Championship."
+            "age": 25,
+            "event": "Co-founded Twitter within Odeo; coined the name 'Twitter' and helped design core features."
           },
           {
-            "year": 2012,
-            "age": 29,
-            "event": "Reached world No. 2 in the FIDE rankings with a rating of 2830, becoming the fourth-highest-rated player in history."
-          },
-          {
-            "year": 2021,
-            "age": 39,
-            "event": "Switched federations from Armenia to the United States."
+            "year": 2006,
+            "age": 25,
+            "event": "Ousted from Twitter by Evan Williams, who acquired Odeo's assets and renamed it Obvious Corporation."
           }
-        ]
-      ]
-    },
-    {
-      "archetype_id": "archetype-8",
-      "name": "The pipeline-routed talent",
-      "description": "Modest family background, but accessed an institutional pipeline (sports system, academy, scholarship) and grew up in a field hub. Place and pipeline opened doors that family wealth couldn't.",
-      "member_count": 197,
-      "avg_advantage_scores": {
-        "early_family_financial_platform_support_score": 0.16,
-        "parent_family_domain_advantage_score": 0.1,
-        "inherited_audience_business_network_score": 0.01,
-        "elite_institution_performance_pipeline_score": 1.42,
-        "frontier_geography_ecosystem_score": 1.2,
-        "rare_early_tools_facilities_score": 0.06,
-        "dedicated_mentor_coach_tutor_score": 0.46,
-        "exceptional_peer_cofounder_sibling_score": 1.37,
-        "early_online_platform_community_score": 0.03,
-        "direct_customer_domain_exposure_score": 1.23,
-        "prodigy_physical_edge_score": 0.48,
-        "adversity_constraint_catalyst_score": 0.16
-      },
-      "avg_total_advantage": 6.68,
-      "avg_milestone_age": 22.3,
-      "success_tier_distribution": {
-        "1": 29,
-        "2": 92,
-        "3": 52,
-        "4": 24
-      },
-      "top_categories": [
-        {
-          "category": "Soccer player",
-          "count": 11
-        },
-        {
-          "category": "Handball player",
-          "count": 9
-        },
-        {
-          "category": "Technology founder",
-          "count": 7
-        },
-        {
-          "category": "AI founder",
-          "count": 7
-        },
-        {
-          "category": "Basketball player",
-          "count": 5
-        }
-      ],
-      "top_cohorts": [
-        {
-          "cohort": "Athletes",
-          "count": 94
-        },
-        {
-          "cohort": "Creators / artists",
-          "count": 51
-        },
-        {
-          "cohort": "Founders / operators",
-          "count": 40
-        },
-        {
-          "cohort": "Researchers / independent engineers",
-          "count": 12
-        }
-      ],
-      "sample_trajectories": [
+        ],
         [
           {
             "year": 1980,
@@ -1307,48 +1177,6 @@
             "year": 2021,
             "age": 65,
             "event": "Retired from Google after nearly two decades, continuing personal projects such as the Ivy APL-like calculator."
-          }
-        ],
-        [
-          {
-            "year": 1973,
-            "age": 21,
-            "event": "Received BSc in mathematics from Tel Aviv University."
-          },
-          {
-            "year": 1975,
-            "age": 23,
-            "event": "Received MSc in computer science from the Weizmann Institute of Science."
-          },
-          {
-            "year": 1977,
-            "age": 25,
-            "event": "Completed PhD at Weizmann under Zohar Manna and co-invented the RSA public-key cryptosystem with Rivest and Adleman at MIT."
-          },
-          {
-            "year": 1978,
-            "age": 25,
-            "event": "RSA paper published in Communications of the ACM, becoming one of the most cited papers in computer science history."
-          },
-          {
-            "year": 1980,
-            "age": 28,
-            "event": "Returned to Israel to join the faculty of Mathematics and Computer Science at the Weizmann Institute."
-          },
-          {
-            "year": 2002,
-            "age": 50,
-            "event": "Co-recipient of the ACM Turing Award with Rivest and Adleman for contributions to public-key cryptography."
-          },
-          {
-            "year": 2008,
-            "age": 56,
-            "event": "Received the Israel Prize for computer science."
-          },
-          {
-            "year": 2024,
-            "age": 72,
-            "event": "Received the Wolf Prize in Mathematics for fundamental contributions to mathematical cryptography."
           }
         ],
         [
@@ -1391,66 +1219,66 @@
       ]
     },
     {
-      "archetype_id": "archetype-9",
+      "archetype_id": "archetype-8",
       "name": "The adversity-forged striver",
       "description": "Early hardship acted as a catalyst. Low inherited advantage, but adversity created drive and resilience that compensated.",
-      "member_count": 173,
+      "member_count": 147,
       "avg_advantage_scores": {
-        "early_family_financial_platform_support_score": 0.14,
-        "parent_family_domain_advantage_score": 0.35,
-        "inherited_audience_business_network_score": 0.06,
-        "elite_institution_performance_pipeline_score": 0.35,
-        "frontier_geography_ecosystem_score": 1.1,
-        "rare_early_tools_facilities_score": 0.35,
-        "dedicated_mentor_coach_tutor_score": 0.23,
-        "exceptional_peer_cofounder_sibling_score": 1.48,
-        "early_online_platform_community_score": 0.05,
-        "direct_customer_domain_exposure_score": 1.39,
-        "prodigy_physical_edge_score": 0.26,
-        "adversity_constraint_catalyst_score": 0.9
+        "early_family_financial_platform_support_score": 0.08,
+        "parent_family_domain_advantage_score": 0.2,
+        "inherited_audience_business_network_score": 0.07,
+        "elite_institution_performance_pipeline_score": 0.47,
+        "frontier_geography_ecosystem_score": 0.97,
+        "rare_early_tools_facilities_score": 0.2,
+        "dedicated_mentor_coach_tutor_score": 0.36,
+        "exceptional_peer_cofounder_sibling_score": 0.87,
+        "early_online_platform_community_score": 0.31,
+        "direct_customer_domain_exposure_score": 1.24,
+        "prodigy_physical_edge_score": 0.1,
+        "adversity_constraint_catalyst_score": 1.41
       },
-      "avg_total_advantage": 6.66,
-      "avg_milestone_age": 22.5,
+      "avg_total_advantage": 6.28,
+      "avg_milestone_age": 22.6,
       "success_tier_distribution": {
-        "1": 51,
-        "2": 66,
-        "3": 32,
-        "4": 24
+        "1": 40,
+        "2": 56,
+        "3": 44,
+        "4": 7
       },
       "top_categories": [
         {
-          "category": "Technology founder",
-          "count": 11
+          "category": "Music",
+          "count": 40
         },
         {
-          "category": "Film director",
-          "count": 6
+          "category": "Founder/Entrepreneur",
+          "count": 32
         },
         {
-          "category": "Racing driver",
-          "count": 5
+          "category": "Film/TV/Entertainment",
+          "count": 20
         },
         {
-          "category": "Singer-songwriter",
-          "count": 5
+          "category": "Art/Design",
+          "count": 9
         },
         {
-          "category": "Mobility founder",
-          "count": 2
+          "category": "Other",
+          "count": 8
         }
       ],
       "top_cohorts": [
         {
           "cohort": "Creators / artists",
-          "count": 100
+          "count": 82
         },
         {
           "cohort": "Founders / operators",
-          "count": 48
+          "count": 41
         },
         {
           "cohort": "Athletes",
-          "count": 24
+          "count": 23
         },
         {
           "cohort": "Researchers / independent engineers",
@@ -1458,23 +1286,6 @@
         }
       ],
       "sample_trajectories": [
-        [
-          {
-            "year": 2005,
-            "age": 24,
-            "event": "Co-founded Odeo, a podcasting company, with Evan Williams after his AudBlog startup merged with Williams' operation."
-          },
-          {
-            "year": 2006,
-            "age": 25,
-            "event": "Co-founded Twitter within Odeo; coined the name 'Twitter' and helped design core features."
-          },
-          {
-            "year": 2006,
-            "age": 25,
-            "event": "Ousted from Twitter by Evan Williams, who acquired Odeo's assets and renamed it Obvious Corporation."
-          }
-        ],
         [
           {
             "year": 2005,
@@ -1504,103 +1315,140 @@
         ],
         [
           {
-            "year": 2005,
-            "age": 22,
-            "event": "Moved to San Francisco after graduating from North Central College; worked as a senior software engineer at CNET Networks."
+            "year": 2001,
+            "age": 17,
+            "event": "Co-founded the Muslim Youth Helpline, a telephone counseling service that became one of the UK's largest mental health support platforms for young Muslims."
           },
           {
-            "year": 2008,
-            "age": 24,
-            "event": "Co-founded GitHub with Chris Wanstrath and Tom Preston-Werner; public launch in April 2008."
+            "year": 2003,
+            "age": 19,
+            "event": "Dropped out of Oxford and worked as a policy officer on human rights for London Mayor Ken Livingstone."
           },
           {
-            "year": 2012,
-            "age": 29,
-            "event": "GitHub raised Series A from Andreessen Horowitz; company valued at approximately $750 million."
+            "year": 2010,
+            "age": 26,
+            "event": "Co-founded DeepMind Technologies with Demis Hassabis and Shane Legg."
           },
           {
-            "year": 2018,
-            "age": 35,
-            "event": "Microsoft acquired GitHub for $7.5 billion; Hyett's stake was estimated at close to $1 billion."
+            "year": 2014,
+            "age": 30,
+            "event": "DeepMind acquired by Google for £400 million; Suleyman became head of applied AI."
           },
           {
             "year": 2022,
-            "age": 39,
-            "event": "Founded AO Racing, a motorsport team competing in IMSA WeatherTech SportsCar Championship."
+            "age": 38,
+            "event": "Co-founded Inflection AI, a generative AI company."
+          },
+          {
+            "year": 2024,
+            "age": 40,
+            "event": "Appointed CEO of Microsoft AI, leading consumer AI division."
+          }
+        ],
+        [
+          {
+            "year": 2005,
+            "age": 25,
+            "event": "Co-founded Etsy in a Brooklyn apartment with Chris Maguire and Haim Schoppik, launching the online crafts marketplace."
+          },
+          {
+            "year": 2008,
+            "age": 28,
+            "event": "Stepped down as Etsy CEO, replaced by Maria Thomas."
+          },
+          {
+            "year": 2009,
+            "age": 29,
+            "event": "Resumed role as Etsy CEO from December 2009."
+          },
+          {
+            "year": 2011,
+            "age": 31,
+            "event": "Forced out of Etsy; company had revenues over $40 million."
+          },
+          {
+            "year": 2013,
+            "age": 33,
+            "event": "Opened Catskill Mill, a community workshop for artisans in former downtown Catskill buildings."
+          },
+          {
+            "year": 2015,
+            "age": 35,
+            "event": "Etsy went public via IPO, raising $237 million at $1.8 billion valuation."
           },
           {
             "year": 2025,
-            "age": 42,
-            "event": "Won the 24 Hours of Le Mans LMP2 Pro-Am class and led the IMSA LMP2 championship standings."
+            "age": 45,
+            "event": "Working on Dopple Works, a stealth handheld AR/XR device company."
           }
         ]
       ]
     },
     {
-      "archetype_id": "archetype-10",
+      "archetype_id": "archetype-9",
       "name": "The ordinary-background achiever",
       "description": "Few documented early advantages. Achievement came from drive and timing rather than head start.",
-      "member_count": 276,
+      "member_count": 143,
       "avg_advantage_scores": {
-        "early_family_financial_platform_support_score": 0.08,
+        "early_family_financial_platform_support_score": 0.22,
         "parent_family_domain_advantage_score": 0.16,
-        "inherited_audience_business_network_score": 0.03,
-        "elite_institution_performance_pipeline_score": 0.83,
-        "frontier_geography_ecosystem_score": 0.67,
-        "rare_early_tools_facilities_score": 0.1,
-        "dedicated_mentor_coach_tutor_score": 0.27,
-        "exceptional_peer_cofounder_sibling_score": 0.06,
-        "early_online_platform_community_score": 0.03,
-        "direct_customer_domain_exposure_score": 1.08,
-        "prodigy_physical_edge_score": 0.52,
-        "adversity_constraint_catalyst_score": 0.45
+        "inherited_audience_business_network_score": 0.04,
+        "elite_institution_performance_pipeline_score": 1.21,
+        "frontier_geography_ecosystem_score": 0.84,
+        "rare_early_tools_facilities_score": 0.29,
+        "dedicated_mentor_coach_tutor_score": 0.37,
+        "exceptional_peer_cofounder_sibling_score": 0.03,
+        "early_online_platform_community_score": 0.21,
+        "direct_customer_domain_exposure_score": 1.3,
+        "prodigy_physical_edge_score": 0.05,
+        "adversity_constraint_catalyst_score": 0.49
       },
-      "avg_total_advantage": 4.28,
-      "avg_milestone_age": 22.1,
+      "avg_total_advantage": 5.21,
+      "avg_milestone_age": 22.7,
       "success_tier_distribution": {
-        "1": 31,
-        "2": 120,
-        "3": 83,
-        "4": 42
+        "1": 13,
+        "2": 61,
+        "3": 51,
+        "4": 18
       },
       "top_categories": [
         {
-          "category": "Soccer player",
-          "count": 9
+          "category": "Founder/Entrepreneur",
+          "count": 19
         },
         {
-          "category": "Chess player",
-          "count": 8
+          "category": "Art/Design",
+          "count": 19
         },
         {
-          "category": "Tennis player",
-          "count": 7
+          "category": "Film/TV/Entertainment",
+          "count": 15
         },
         {
-          "category": "Road cyclist",
-          "count": 7
+          "category": "Soccer",
+          "count": 13
         },
         {
-          "category": "Handball player",
-          "count": 7
+          "category": "Other Sports",
+          "count": 11
         }
       ],
       "top_cohorts": [
         {
           "cohort": "Athletes",
-          "count": 148
+          "count": 56
         },
         {
           "cohort": "Creators / artists",
-          "count": 108
+          "count": 38
         },
         {
           "cohort": "Founders / operators",
-          "count": 10
+          "count": 34
         },
         {
           "cohort": "Researchers / independent engineers",
-          "count": 10
+          "count": 15
         }
       ],
       "sample_trajectories": [
@@ -1629,6 +1477,187 @@
             "year": 2012,
             "age": 43,
             "event": "Joined Etsy as Distinguished Engineer, working on architecture, internationalization, payments, fraud, and security."
+          }
+        ],
+        [
+          {
+            "year": 1974,
+            "age": 22,
+            "event": "Devised Merkle's Puzzles, an early public-key cryptographic key exchange scheme, as an undergraduate at UC Berkeley."
+          },
+          {
+            "year": 1975,
+            "age": 23,
+            "event": "Submitted the public-key cryptography paper to Communications of the ACM after encouragement from faculty member Bob Fabry."
+          },
+          {
+            "year": 1976,
+            "age": 24,
+            "event": "Joined Diffie and Hellman at Stanford for the summer, becoming part of the public-key cryptography research team."
+          },
+          {
+            "year": 1979,
+            "age": 27,
+            "event": "Completed PhD in Electrical Engineering at Stanford under Martin Hellman with thesis 'Secrecy, Authentication, and Public Key Systems.'"
+          },
+          {
+            "year": 1988,
+            "age": 36,
+            "event": "Joined Xerox PARC as a research scientist, where he designed the Khufu and Khafre block ciphers and the Snefru hash function."
+          },
+          {
+            "year": 2003,
+            "age": 51,
+            "event": "Became Distinguished Professor of Computer Science at Georgia Tech before returning to California in 2006."
+          },
+          {
+            "year": 2010,
+            "age": 58,
+            "event": "Received the IEEE Richard W. Hamming Medal jointly with Diffie and Hellman for work on public-key cryptography."
+          }
+        ],
+        [
+          {
+            "year": 1990,
+            "age": 26,
+            "event": "Released groff 0.3.1, the first version of his GNU implementation of troff, which became a standard part of Linux."
+          },
+          {
+            "year": 1991,
+            "age": 27,
+            "event": "Released groff 1.04, the first stable version; began work on SGML with the sgmls parser."
+          },
+          {
+            "year": 1995,
+            "age": 31,
+            "event": "Moved to Bangkok, Thailand and established the Thai Open Source Software Center."
+          },
+          {
+            "year": 1998,
+            "age": 34,
+            "event": "Served as technical lead for the W3C XML working group that developed the XML 1.0 Recommendation."
+          },
+          {
+            "year": 2001,
+            "age": 37,
+            "event": "Awarded the first XML Cup for contributions to XML development."
+          },
+          {
+            "year": 2007,
+            "age": 43,
+            "event": "Co-authored the RELAX NG specification, a schema language for XML."
+          },
+          {
+            "year": 2017,
+            "age": 53,
+            "event": "Co-created the Ballerina programming language at WSO2."
+          }
+        ]
+      ]
+    },
+    {
+      "archetype_id": "archetype-10",
+      "name": "The ordinary-background achiever",
+      "description": "Few documented early advantages. Achievement came from drive and timing rather than head start.",
+      "member_count": 223,
+      "avg_advantage_scores": {
+        "early_family_financial_platform_support_score": 0.11,
+        "parent_family_domain_advantage_score": 0.12,
+        "inherited_audience_business_network_score": 0.01,
+        "elite_institution_performance_pipeline_score": 0.87,
+        "frontier_geography_ecosystem_score": 0.58,
+        "rare_early_tools_facilities_score": 0.17,
+        "dedicated_mentor_coach_tutor_score": 0.3,
+        "exceptional_peer_cofounder_sibling_score": 0.26,
+        "early_online_platform_community_score": 0.12,
+        "direct_customer_domain_exposure_score": 0.94,
+        "prodigy_physical_edge_score": 1.15,
+        "adversity_constraint_catalyst_score": 0.23
+      },
+      "avg_total_advantage": 4.86,
+      "avg_milestone_age": 20.7,
+      "success_tier_distribution": {
+        "1": 24,
+        "2": 102,
+        "3": 72,
+        "4": 25
+      },
+      "top_categories": [
+        {
+          "category": "Art/Design",
+          "count": 36
+        },
+        {
+          "category": "Film/TV/Entertainment",
+          "count": 27
+        },
+        {
+          "category": "Software/Tech",
+          "count": 15
+        },
+        {
+          "category": "Soccer",
+          "count": 14
+        },
+        {
+          "category": "Handball",
+          "count": 13
+        }
+      ],
+      "top_cohorts": [
+        {
+          "cohort": "Athletes",
+          "count": 103
+        },
+        {
+          "cohort": "Creators / artists",
+          "count": 86
+        },
+        {
+          "cohort": "Researchers / independent engineers",
+          "count": 17
+        },
+        {
+          "cohort": "Founders / operators",
+          "count": 17
+        }
+      ],
+      "sample_trajectories": [
+        [
+          {
+            "year": 1988,
+            "age": 21,
+            "event": "Graduated from Tufts University with a degree in computer science; joined Claris, an Apple subsidiary, developing Macintosh software."
+          },
+          {
+            "year": 1991,
+            "age": 23,
+            "event": "Co-founded Ink Development Corp (later eShop Inc.) on May 10, an early online shopping software company."
+          },
+          {
+            "year": 1995,
+            "age": 28,
+            "event": "Launched AuctionWeb (later eBay) on Labor Day weekend as a side project on his personal website."
+          },
+          {
+            "year": 1996,
+            "age": 29,
+            "event": "eShop acquired by Microsoft on June 11; quit his day job at General Magic to focus on eBay full-time."
+          },
+          {
+            "year": 1998,
+            "age": 31,
+            "event": "eBay went public; Omidyar became a billionaire shortly after the IPO."
+          },
+          {
+            "year": 2004,
+            "age": 37,
+            "event": "Founded Omidyar Network, a philanthropic investment firm."
+          },
+          {
+            "year": 2013,
+            "age": 46,
+            "event": "Founded First Look Media, including The Intercept news organization."
           }
         ],
         [
@@ -1670,39 +1699,39 @@
         ],
         [
           {
+            "year": 1971,
+            "age": 19,
+            "event": "Won first Italian outdoor title in 200m and was taken under coach Carlo Vittori's guidance"
+          },
+          {
+            "year": 1972,
+            "age": 20,
+            "event": "Won Olympic bronze medal in 200m at the Munich Olympics"
+          },
+          {
             "year": 1974,
             "age": 22,
-            "event": "Devised Merkle's Puzzles, an early public-key cryptographic key exchange scheme, as an undergraduate at UC Berkeley."
+            "event": "Won European Championship gold in the 200m"
           },
           {
-            "year": 1975,
-            "age": 23,
-            "event": "Submitted the public-key cryptography paper to Communications of the ACM after encouragement from faculty member Bob Fabry."
-          },
-          {
-            "year": 1976,
-            "age": 24,
-            "event": "Joined Diffie and Hellman at Stanford for the summer, becoming part of the public-key cryptography research team."
+            "year": 1978,
+            "age": 26,
+            "event": "Won European Championship gold in both 100m and 200m in Prague"
           },
           {
             "year": 1979,
             "age": 27,
-            "event": "Completed PhD in Electrical Engineering at Stanford under Martin Hellman with thesis 'Secrecy, Authentication, and Public Key Systems.'"
+            "event": "Set 200m world record of 19.72 seconds at the Universiade in Mexico City"
           },
           {
-            "year": 1988,
-            "age": 36,
-            "event": "Joined Xerox PARC as a research scientist, where he designed the Khufu and Khafre block ciphers and the Snefru hash function."
+            "year": 1980,
+            "age": 28,
+            "event": "Won Olympic gold medal in 200m at the Moscow Olympics"
           },
           {
-            "year": 2003,
-            "age": 51,
-            "event": "Became Distinguished Professor of Computer Science at Georgia Tech before returning to California in 2006."
-          },
-          {
-            "year": 2010,
-            "age": 58,
-            "event": "Received the IEEE Richard W. Hamming Medal jointly with Diffie and Hellman for work on public-key cryptography."
+            "year": 2013,
+            "age": 60,
+            "event": "Died in Rome on March 21, 2013"
           }
         ]
       ]
@@ -1711,393 +1740,393 @@
   "leverage_archetypes": [
     {
       "archetype_id": "lev-archetype-1",
-      "name": "The wave-riding specialist",
-      "description": "Rode a structural wave (tech platform, cultural shift) with deep, scarce expertise built through years of reps. Timing plus skill depth — the classic founder combo.",
-      "member_count": 111,
+      "name": "The timed rep-builder",
+      "description": "Rode a structural wave while putting in serious reps. Not the deepest specialist, but showed up at the right time with enough skill to catch it.",
+      "member_count": 221,
       "avg_leverage_scores": {
-        "started_serious_reps_before_20_score": 0.77,
-        "prior_reps_score": 2.46,
-        "scarce_skill_depth_score": 2.41,
-        "native_distribution_score": 2.13,
-        "elite_ecosystem_network_score": 2.6,
-        "complementary_team_score": 1.76,
-        "structural_wave_score": 2.89,
-        "concentration_intensity_score": 2.95,
-        "capital_safety_score": 1.41,
-        "domain_proximity_score": 1.97
+        "started_serious_reps_before_20_score": 0.84,
+        "prior_reps_score": 2.47,
+        "scarce_skill_depth_score": 2.74,
+        "native_distribution_score": 0.68,
+        "elite_ecosystem_network_score": 2.17,
+        "complementary_team_score": 1.2,
+        "structural_wave_score": 2.3,
+        "concentration_intensity_score": 2.42,
+        "capital_safety_score": 0.3,
+        "domain_proximity_score": 1.81
       },
-      "avg_total_leverage": 21.35,
-      "avg_milestone_age": 21.3,
+      "avg_total_leverage": 16.93,
+      "avg_milestone_age": 21.2,
       "success_tier_distribution": {
-        "1": 6,
-        "2": 1,
-        "3": 16,
-        "4": 88
+        "1": 70,
+        "2": 100,
+        "3": 49,
+        "4": 2
       },
       "top_categories": [
         {
-          "category": "Technology founder",
-          "count": 32
+          "category": "Founder/Entrepreneur",
+          "count": 49
         },
         {
-          "category": "AI founder",
-          "count": 11
+          "category": "Software/Tech",
+          "count": 49
         },
         {
-          "category": "Engineer-founder",
-          "count": 7
+          "category": "Content/Esports",
+          "count": 44
         },
         {
-          "category": "Creator-entrepreneur",
-          "count": 6
+          "category": "Soccer",
+          "count": 12
         },
         {
-          "category": "Fintech founder",
-          "count": 5
+          "category": "Music",
+          "count": 12
         }
       ],
       "top_cohorts": [
         {
           "cohort": "Founders / operators",
-          "count": 88
-        },
-        {
-          "cohort": "Creators / artists",
-          "count": 14
-        },
-        {
-          "cohort": "Athletes",
-          "count": 7
+          "count": 65
         },
         {
           "cohort": "Researchers / independent engineers",
-          "count": 2
+          "count": 56
+        },
+        {
+          "cohort": "Creators / artists",
+          "count": 52
+        },
+        {
+          "cohort": "Athletes",
+          "count": 48
         }
       ]
     },
     {
       "archetype_id": "lev-archetype-2",
-      "name": "The relentless practicer",
-      "description": "Thousands of hours of focused, concentrated practice. Got there through consistency and intensity — reps over timing.",
-      "member_count": 343,
+      "name": "The audience-first builder",
+      "description": "Rode a wave with owned distribution — an audience or platform that compounded. Distribution was the leverage, not skill depth.",
+      "member_count": 190,
       "avg_leverage_scores": {
-        "started_serious_reps_before_20_score": 1.0,
-        "prior_reps_score": 2.5,
-        "scarce_skill_depth_score": 2.24,
-        "native_distribution_score": 0.15,
-        "elite_ecosystem_network_score": 1.94,
-        "complementary_team_score": 1.11,
-        "structural_wave_score": 1.28,
-        "concentration_intensity_score": 2.08,
-        "capital_safety_score": 0.44,
-        "domain_proximity_score": 1.87
+        "started_serious_reps_before_20_score": 0.81,
+        "prior_reps_score": 1.85,
+        "scarce_skill_depth_score": 1.41,
+        "native_distribution_score": 2.56,
+        "elite_ecosystem_network_score": 1.34,
+        "complementary_team_score": 0.92,
+        "structural_wave_score": 2.71,
+        "concentration_intensity_score": 2.03,
+        "capital_safety_score": 0.2,
+        "domain_proximity_score": 1.61
       },
-      "avg_total_leverage": 14.61,
-      "avg_milestone_age": 21.2,
+      "avg_total_leverage": 15.44,
+      "avg_milestone_age": 20.6,
       "success_tier_distribution": {
-        "1": 161,
-        "2": 140,
-        "3": 40,
-        "4": 2
+        "1": 17,
+        "2": 71,
+        "3": 89,
+        "4": 13
       },
       "top_categories": [
         {
-          "category": "Tennis player",
-          "count": 19
+          "category": "Content/Esports",
+          "count": 63
         },
         {
-          "category": "Soccer player",
-          "count": 15
+          "category": "Music",
+          "count": 49
         },
         {
-          "category": "Artistic gymnast",
+          "category": "Film/TV/Entertainment",
+          "count": 31
+        },
+        {
+          "category": "Founder/Entrepreneur",
+          "count": 14
+        },
+        {
+          "category": "Software/Tech",
           "count": 13
-        },
-        {
-          "category": "Mathematician",
-          "count": 11
-        },
-        {
-          "category": "Racing driver (Formula One)",
-          "count": 10
         }
       ],
       "top_cohorts": [
         {
-          "cohort": "Athletes",
-          "count": 232
-        },
-        {
           "cohort": "Creators / artists",
-          "count": 61
-        },
-        {
-          "cohort": "Researchers / independent engineers",
-          "count": 42
+          "count": 166
         },
         {
           "cohort": "Founders / operators",
-          "count": 8
+          "count": 21
+        },
+        {
+          "cohort": "Researchers / independent engineers",
+          "count": 3
         }
       ]
     },
     {
       "archetype_id": "lev-archetype-3",
-      "name": "The opportunistic rider",
-      "description": "Caught a structural wave with enough reps to hang on. Timing was the primary lever — skill was adequate, not exceptional.",
-      "member_count": 120,
+      "name": "The early starter",
+      "description": "Started serious practice before 20 and accumulated significant reps. Consistency from an early age — the tortoise, not the hare.",
+      "member_count": 241,
       "avg_leverage_scores": {
-        "started_serious_reps_before_20_score": 0.84,
-        "prior_reps_score": 1.67,
-        "scarce_skill_depth_score": 1.18,
-        "native_distribution_score": 2.23,
-        "elite_ecosystem_network_score": 1.21,
-        "complementary_team_score": 0.81,
-        "structural_wave_score": 2.42,
-        "concentration_intensity_score": 1.77,
-        "capital_safety_score": 0.2,
-        "domain_proximity_score": 1.43
+        "started_serious_reps_before_20_score": 0.91,
+        "prior_reps_score": 2.05,
+        "scarce_skill_depth_score": 1.88,
+        "native_distribution_score": 0.29,
+        "elite_ecosystem_network_score": 1.55,
+        "complementary_team_score": 1.55,
+        "structural_wave_score": 2.07,
+        "concentration_intensity_score": 1.68,
+        "capital_safety_score": 0.21,
+        "domain_proximity_score": 1.55
       },
-      "avg_total_leverage": 13.76,
-      "avg_milestone_age": 20.5,
+      "avg_total_leverage": 13.74,
+      "avg_milestone_age": 22.3,
       "success_tier_distribution": {
-        "1": 22,
-        "2": 41,
-        "3": 44,
-        "4": 13
+        "1": 39,
+        "2": 119,
+        "3": 67,
+        "4": 16
       },
       "top_categories": [
         {
-          "category": "Singer-songwriter",
-          "count": 4
+          "category": "Founder/Entrepreneur",
+          "count": 100
         },
         {
-          "category": "Creator-entrepreneur",
-          "count": 3
+          "category": "Music",
+          "count": 32
         },
         {
-          "category": "Fashion model",
-          "count": 3
+          "category": "Content/Esports",
+          "count": 17
         },
         {
-          "category": "Singer",
-          "count": 3
+          "category": "Software/Tech",
+          "count": 16
         },
         {
-          "category": "Beauty YouTuber and makeup artist",
-          "count": 3
+          "category": "Art/Design",
+          "count": 15
         }
       ],
       "top_cohorts": [
         {
-          "cohort": "Creators / artists",
-          "count": 111
+          "cohort": "Founders / operators",
+          "count": 119
         },
         {
-          "cohort": "Founders / operators",
-          "count": 8
+          "cohort": "Creators / artists",
+          "count": 57
+        },
+        {
+          "cohort": "Athletes",
+          "count": 53
         },
         {
           "cohort": "Researchers / independent engineers",
-          "count": 1
+          "count": 12
         }
       ]
     },
     {
       "archetype_id": "lev-archetype-4",
-      "name": "The partnership lever",
-      "description": "A complementary team or partner was the primary leverage. Built something together that neither could alone.",
-      "member_count": 237,
+      "name": "The early starter",
+      "description": "Started serious practice before 20 and accumulated significant reps. Consistency from an early age — the tortoise, not the hare.",
+      "member_count": 467,
       "avg_leverage_scores": {
-        "started_serious_reps_before_20_score": 1.0,
-        "prior_reps_score": 1.96,
-        "scarce_skill_depth_score": 1.71,
-        "native_distribution_score": 0.23,
-        "elite_ecosystem_network_score": 1.61,
-        "complementary_team_score": 1.57,
-        "structural_wave_score": 1.79,
-        "concentration_intensity_score": 1.26,
-        "capital_safety_score": 0.2,
-        "domain_proximity_score": 1.58
+        "started_serious_reps_before_20_score": 0.98,
+        "prior_reps_score": 2.55,
+        "scarce_skill_depth_score": 2.15,
+        "native_distribution_score": 0.08,
+        "elite_ecosystem_network_score": 1.65,
+        "complementary_team_score": 0.67,
+        "structural_wave_score": 1.04,
+        "concentration_intensity_score": 2.06,
+        "capital_safety_score": 0.32,
+        "domain_proximity_score": 1.81
       },
-      "avg_total_leverage": 12.91,
-      "avg_milestone_age": 22.1,
+      "avg_total_leverage": 13.31,
+      "avg_milestone_age": 19.9,
       "success_tier_distribution": {
-        "1": 70,
-        "2": 115,
-        "3": 42,
-        "4": 10
+        "1": 137,
+        "2": 242,
+        "3": 82,
+        "4": 6
       },
       "top_categories": [
         {
-          "category": "Soccer player",
-          "count": 14
+          "category": "Other Sports",
+          "count": 83
         },
         {
-          "category": "Handball player",
-          "count": 9
+          "category": "Tennis",
+          "count": 63
         },
         {
-          "category": "Footballer (soccer)",
-          "count": 6
+          "category": "Chess",
+          "count": 41
         },
         {
-          "category": "Computer programmer (ENIAC)",
-          "count": 5
+          "category": "Gymnastics",
+          "count": 39
         },
         {
-          "category": "Film director",
-          "count": 4
+          "category": "Motorsport",
+          "count": 30
         }
       ],
       "top_cohorts": [
         {
           "cohort": "Athletes",
-          "count": 94
+          "count": 384
         },
         {
           "cohort": "Creators / artists",
-          "count": 87
-        },
-        {
-          "cohort": "Founders / operators",
           "count": 38
         },
         {
           "cohort": "Researchers / independent engineers",
-          "count": 18
+          "count": 35
+        },
+        {
+          "cohort": "Founders / operators",
+          "count": 10
         }
       ]
     },
     {
       "archetype_id": "lev-archetype-5",
-      "name": "The early starter",
-      "description": "Started serious practice before 20 and accumulated significant reps. Consistency from an early age — the tortoise, not the hare.",
-      "member_count": 277,
+      "name": "The opportunistic rider",
+      "description": "Caught a structural wave with enough reps to hang on. Timing was the primary lever — skill was adequate, not exceptional.",
+      "member_count": 179,
       "avg_leverage_scores": {
-        "started_serious_reps_before_20_score": 0.99,
-        "prior_reps_score": 2.33,
-        "scarce_skill_depth_score": 2.23,
-        "native_distribution_score": 0.11,
-        "elite_ecosystem_network_score": 1.61,
-        "complementary_team_score": 0.0,
-        "structural_wave_score": 1.1,
-        "concentration_intensity_score": 1.95,
-        "capital_safety_score": 0.36,
-        "domain_proximity_score": 1.68
+        "started_serious_reps_before_20_score": 0.82,
+        "prior_reps_score": 1.59,
+        "scarce_skill_depth_score": 1.11,
+        "native_distribution_score": 1.56,
+        "elite_ecosystem_network_score": 1.08,
+        "complementary_team_score": 0.47,
+        "structural_wave_score": 2.04,
+        "concentration_intensity_score": 1.41,
+        "capital_safety_score": 0.31,
+        "domain_proximity_score": 1.31
       },
-      "avg_total_leverage": 12.36,
-      "avg_milestone_age": 20.7,
+      "avg_total_leverage": 11.7,
+      "avg_milestone_age": 20.6,
       "success_tier_distribution": {
-        "1": 110,
-        "2": 118,
-        "3": 46,
-        "4": 3
+        "1": 29,
+        "2": 56,
+        "3": 75,
+        "4": 19
       },
       "top_categories": [
         {
-          "category": "Chess player",
-          "count": 29
+          "category": "Music",
+          "count": 61
         },
         {
-          "category": "Tennis player",
-          "count": 14
+          "category": "Film/TV/Entertainment",
+          "count": 27
         },
         {
-          "category": "Mathematician",
-          "count": 10
+          "category": "Art/Design",
+          "count": 25
         },
         {
-          "category": "Chess grandmaster",
-          "count": 7
+          "category": "Founder/Entrepreneur",
+          "count": 23
         },
         {
-          "category": "Conductor",
-          "count": 7
+          "category": "Content/Esports",
+          "count": 21
         }
       ],
       "top_cohorts": [
         {
-          "cohort": "Athletes",
-          "count": 134
-        },
-        {
           "cohort": "Creators / artists",
-          "count": 91
-        },
-        {
-          "cohort": "Researchers / independent engineers",
-          "count": 48
+          "count": 138
         },
         {
           "cohort": "Founders / operators",
+          "count": 34
+        },
+        {
+          "cohort": "Researchers / independent engineers",
           "count": 4
+        },
+        {
+          "cohort": "Athletes",
+          "count": 3
         }
       ]
     },
     {
       "archetype_id": "lev-archetype-6",
-      "name": "The network-native",
-      "description": "Embedded in a high-signal network that provided opportunities, feedback, and distribution. Network as the primary lever.",
-      "member_count": 158,
+      "name": "The partnership lever",
+      "description": "A complementary team or partner was the primary leverage. Built something together that neither could alone.",
+      "member_count": 145,
       "avg_leverage_scores": {
-        "started_serious_reps_before_20_score": 0.37,
-        "prior_reps_score": 1.01,
-        "scarce_skill_depth_score": 1.42,
-        "native_distribution_score": 0.22,
-        "elite_ecosystem_network_score": 1.66,
-        "complementary_team_score": 0.89,
-        "structural_wave_score": 1.44,
-        "concentration_intensity_score": 1.29,
-        "capital_safety_score": 0.59,
-        "domain_proximity_score": 1.39
+        "started_serious_reps_before_20_score": 0.24,
+        "prior_reps_score": 0.99,
+        "scarce_skill_depth_score": 1.32,
+        "native_distribution_score": 0.28,
+        "elite_ecosystem_network_score": 1.61,
+        "complementary_team_score": 1.39,
+        "structural_wave_score": 2.17,
+        "concentration_intensity_score": 1.47,
+        "capital_safety_score": 0.27,
+        "domain_proximity_score": 1.28
       },
-      "avg_total_leverage": 10.28,
-      "avg_milestone_age": 23.5,
+      "avg_total_leverage": 11.02,
+      "avg_milestone_age": 23.3,
       "success_tier_distribution": {
-        "1": 49,
-        "2": 75,
-        "3": 31,
-        "4": 3
+        "1": 18,
+        "2": 65,
+        "3": 52,
+        "4": 10
       },
       "top_categories": [
         {
-          "category": "Racing driver (Formula One)",
-          "count": 6
+          "category": "Founder/Entrepreneur",
+          "count": 81
         },
         {
-          "category": "Film director",
-          "count": 6
+          "category": "Music",
+          "count": 16
         },
         {
-          "category": "Racing driver",
-          "count": 5
+          "category": "Art/Design",
+          "count": 9
         },
         {
-          "category": "Actor",
-          "count": 4
+          "category": "Film/TV/Entertainment",
+          "count": 9
         },
         {
-          "category": "Manga artist",
-          "count": 4
+          "category": "Software/Tech",
+          "count": 9
         }
       ],
       "top_cohorts": [
         {
-          "cohort": "Creators / artists",
-          "count": 69
-        },
-        {
-          "cohort": "Athletes",
-          "count": 41
-        },
-        {
           "cohort": "Founders / operators",
-          "count": 27
+          "count": 93
+        },
+        {
+          "cohort": "Creators / artists",
+          "count": 37
         },
         {
           "cohort": "Researchers / independent engineers",
-          "count": 20
+          "count": 8
+        },
+        {
+          "cohort": "Athletes",
+          "count": 7
         }
       ]
     },
@@ -2105,131 +2134,131 @@
       "archetype_id": "lev-archetype-7",
       "name": "The moderate lever",
       "description": "Moderate leverage across several dimensions. Some reps, some timing, some network — but no dominant built advantage.",
-      "member_count": 359,
+      "member_count": 319,
       "avg_leverage_scores": {
-        "started_serious_reps_before_20_score": 1.0,
-        "prior_reps_score": 1.97,
-        "scarce_skill_depth_score": 1.3,
-        "native_distribution_score": 0.11,
-        "elite_ecosystem_network_score": 1.08,
-        "complementary_team_score": 0.67,
-        "structural_wave_score": 0.96,
-        "concentration_intensity_score": 1.28,
-        "capital_safety_score": 0.1,
-        "domain_proximity_score": 1.56
+        "started_serious_reps_before_20_score": 0.98,
+        "prior_reps_score": 1.91,
+        "scarce_skill_depth_score": 1.45,
+        "native_distribution_score": 0.07,
+        "elite_ecosystem_network_score": 1.41,
+        "complementary_team_score": 0.91,
+        "structural_wave_score": 0.94,
+        "concentration_intensity_score": 1.2,
+        "capital_safety_score": 0.13,
+        "domain_proximity_score": 1.62
       },
-      "avg_total_leverage": 10.03,
-      "avg_milestone_age": 21.9,
+      "avg_total_leverage": 10.62,
+      "avg_milestone_age": 21.7,
       "success_tier_distribution": {
-        "1": 62,
-        "2": 188,
-        "3": 92,
-        "4": 17
+        "1": 52,
+        "2": 161,
+        "3": 91,
+        "4": 15
       },
       "top_categories": [
         {
-          "category": "Soccer player",
-          "count": 19
+          "category": "Soccer",
+          "count": 60
         },
         {
-          "category": "Tennis player",
-          "count": 19
+          "category": "Other Sports",
+          "count": 45
         },
         {
-          "category": "Road cyclist",
-          "count": 11
+          "category": "Handball",
+          "count": 31
         },
         {
-          "category": "Racing driver",
-          "count": 10
+          "category": "Music",
+          "count": 22
         },
         {
-          "category": "Singer-songwriter",
-          "count": 7
+          "category": "Tennis",
+          "count": 21
         }
       ],
       "top_cohorts": [
         {
           "cohort": "Athletes",
-          "count": 243
+          "count": 240
         },
         {
           "cohort": "Creators / artists",
-          "count": 102
+          "count": 47
         },
         {
           "cohort": "Founders / operators",
-          "count": 9
+          "count": 23
         },
         {
           "cohort": "Researchers / independent engineers",
-          "count": 5
+          "count": 9
         }
       ]
     },
     {
       "archetype_id": "lev-archetype-8",
-      "name": "The early-stage builder",
-      "description": "Low leverage scores across the board. The built advantages — reps, skill depth, timing, network — haven't compounded yet.",
-      "member_count": 187,
+      "name": "The rep-accumulator",
+      "description": "Putting in reps but without a structural wave, deep skill, or strong network to amplify them. Consistency without compounding.",
+      "member_count": 191,
       "avg_leverage_scores": {
-        "started_serious_reps_before_20_score": 0.61,
-        "prior_reps_score": 0.89,
-        "scarce_skill_depth_score": 0.75,
-        "native_distribution_score": 0.32,
-        "elite_ecosystem_network_score": 0.9,
-        "complementary_team_score": 0.25,
-        "structural_wave_score": 1.04,
-        "concentration_intensity_score": 0.91,
-        "capital_safety_score": 0.17,
-        "domain_proximity_score": 1.09
+        "started_serious_reps_before_20_score": 0.66,
+        "prior_reps_score": 1.09,
+        "scarce_skill_depth_score": 0.76,
+        "native_distribution_score": 0.26,
+        "elite_ecosystem_network_score": 0.94,
+        "complementary_team_score": 0.19,
+        "structural_wave_score": 1.08,
+        "concentration_intensity_score": 1.02,
+        "capital_safety_score": 0.25,
+        "domain_proximity_score": 1.06
       },
-      "avg_total_leverage": 6.93,
-      "avg_milestone_age": 22.1,
+      "avg_total_leverage": 7.31,
+      "avg_milestone_age": 21.6,
       "success_tier_distribution": {
-        "1": 20,
-        "2": 66,
-        "3": 61,
+        "1": 23,
+        "2": 62,
+        "3": 66,
         "4": 40
       },
       "top_categories": [
         {
-          "category": "Fashion model",
-          "count": 8
+          "category": "Film/TV/Entertainment",
+          "count": 48
         },
         {
-          "category": "Actor",
-          "count": 8
+          "category": "Art/Design",
+          "count": 33
         },
         {
-          "category": "Footballer",
-          "count": 4
+          "category": "Other",
+          "count": 15
         },
         {
-          "category": "Speed skater",
-          "count": 4
+          "category": "Founder/Entrepreneur",
+          "count": 14
         },
         {
-          "category": "Boxer",
-          "count": 4
+          "category": "Other Sports",
+          "count": 13
         }
       ],
       "top_cohorts": [
         {
           "cohort": "Creators / artists",
-          "count": 119
+          "count": 106
         },
         {
           "cohort": "Athletes",
-          "count": 55
+          "count": 54
         },
         {
           "cohort": "Founders / operators",
-          "count": 10
+          "count": 29
         },
         {
           "cohort": "Researchers / independent engineers",
-          "count": 3
+          "count": 2
         }
       ]
     }
