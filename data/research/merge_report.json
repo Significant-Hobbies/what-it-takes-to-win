@@ -1,8 +1,8 @@
 {
   "existing_people": 2732,
-  "eligible_new": 0,
-  "ineligible": 1963,
-  "total_after_merge": 2732,
+  "eligible_new": 8,
+  "ineligible": 1967,
+  "total_after_merge": 2740,
   "duplicates_skipped": 2688,
   "errors": 7,
   "duplicate_list": [
@@ -168,5 +168,14 @@
     "Jacques Dubochet",
     "Tim Berners-Lee"
   ],
-  "eligible_new_names": []
+  "eligible_new_names": [
+    "István Kausz",
+    "Alberto Tomba",
+    "Julio Jiménez",
+    "Camilo Cienfuegos",
+    "Tim Cain",
+    "Ana Maria Popescu",
+    "Otto Leodolter",
+    "Shirin Ebadi"
+  ]
 }
