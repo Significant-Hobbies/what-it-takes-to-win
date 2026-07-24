@@ -1,7 +1,8 @@
 # clarity-release-gate Specification
 
 ## Purpose
-TBD - created by archiving change verify-outcome-clarity. Update Purpose after archive.
+Prevent the explanatory model, evidence boundaries, responsive presentation, or
+external-validation status from silently regressing between releases.
 ## Requirements
 ### Requirement: Explicit clarity scorecard
 The project SHALL maintain a release scorecard that independently reports comprehension-contract, tier-consistency, responsive visual, interaction, build, and real-user gates.
@@ -11,10 +12,18 @@ The project SHALL maintain a release scorecard that independently reports compre
 - **THEN** every gate has a pass, fail, or pending status with reproducible evidence
 
 ### Requirement: Automated comprehension contract
-The project SHALL provide a local check that verifies the required model, distinct score families, person-level provenance with uncertainty, comparison redundancy, person-specific questionnaire, luck and variance boundary, divergent-path counterexamples, tier meaning, dataset-relative outcome bands, missing population denominator, power-law limits, non-prediction, and person-path concepts remain present.
+
+The project SHALL provide a local check that verifies the required model,
+distinct score families, person-level provenance with uncertainty, comparison
+redundancy, person-specific questionnaire, luck and variance boundary,
+divergent-path counterexamples, tier meaning, dataset-relative outcome bands,
+missing population denominator, power-law limits, non-prediction, person-path
+concepts, and public evidence-coverage boundary remain present.
 
 #### Scenario: Essential explanation disappears
-- **WHEN** a required unanswered-question resolution or stable surface identifier is removed
+
+- **WHEN** a required unanswered-question resolution, coverage boundary, or
+  stable surface identifier is removed
 - **THEN** the clarity check exits unsuccessfully and names the missing contract
 
 ### Requirement: Stratified tier consistency audit
@@ -30,4 +39,3 @@ The release scorecard SHALL only mark visual and interaction gates passed after 
 #### Scenario: Browser verification is unavailable
 - **WHEN** responsive rendered-page inspection cannot run
 - **THEN** the visual gate remains pending rather than being inferred from static checks
-

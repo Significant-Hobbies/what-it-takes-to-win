@@ -1,6 +1,6 @@
 # What It Takes to Win — PROJECT STATUS
 
-Last updated: 2026-07-24
+Last updated: 2026-07-25
 
 ## Why / What
 
@@ -76,6 +76,7 @@ formula or a repeatable identity.
 - 2026-07-24 — added dataset-relative tier bands, lower-tier denominators, and an evidence-bounded power-law explanation across Insights and every person profile
 - 2026-07-24 — renamed the repository to `what-it-takes-to-win` and transferred it to the `Significant-Hobbies` GitHub organization
 - 2026-07-24 — added the survivor-path narrative: a bounded 64-to-1 thought experiment, repeated-luck explanation, comparison release, and agency-focused homepage close
+- 2026-07-25 — completed the research-exhibit finish: above-fold survivor-path preview, public build-derived Evidence ledger, source-integrity normalization, calmer editorial hierarchy, and desktop/mobile visual audit
 
 ## Products
 
@@ -86,6 +87,7 @@ formula or a repeatable identity.
   - `/person/[id]/` — connected path with per-lever origin, evidence signals, confidence, luck boundary, trajectory, and named-person comparison entry
   - `/compare/` — chooser for familiar person-specific comparisons; explicitly not a ranking or forecast
   - `/am-i-the-next/[id]/` — evidence-first questionnaire showing starting overlap, leverage overlap, provenance differences, sequence, luck, and why resemblance is not destiny
+  - `/coverage/` — live source depth, domain diversity, trajectory completeness, confidence, sample composition, indexability, and independent-audit boundaries
   - `/methodology/` — full methodology and limitations
   - `/about/` — project description
 
@@ -102,6 +104,9 @@ formula or a repeatable identity.
 - Defined T1–T4 editorial outcome ladder with observed averages, ranges, overlap, and correlation context
 - Dataset-relative outcome bands with cumulative rank ranges, lower-tier counts and ratios, selected-sample boundaries, and power-law limits
 - Signature survivor-path exhibit showing repeated consequential uncertainty, peak selection, and why a visible surviving streak is not a fair personal benchmark
+- Above-fold static branch preview that demonstrates survivor selection before the detailed explanation
+- Public Evidence ledger whose coverage values are derived from the published dataset at build time and explicitly separate completeness from verification
+- Source-integrity normalization that deduplicates URLs, derives source counts from published arrays, and blocks malformed or inconsistent source records
 - Explicitly separated the age-26 milestone used for inclusion from the career-recognition tier used for comparison
 - One-minute explanatory answer and five-question comprehension contract covering comparison, named-person queries, luck, provenance, and divergence
 - Repeatable clarity and internal-link audit plus deterministic cohort-tier review sample
@@ -125,6 +130,11 @@ formula or a repeatable identity.
 - **Trajectory coverage:** 100% (2585/2585)
 - **Cohort distribution:** Athletes 922, Creators/artists 809, Founders/operators 557, Researchers 297
 - **Tier distribution:** T1 574, T2 1087, T3 752, T4 172
+- **Three-event trajectory coverage:** 100%
+- **Two or more listed sources:** 95.8%
+- **Two or more source domains:** 95.0%
+- **Pass comparison/search evidence gate:** 92.8%
+- **Independently audited records:** 0 (external research gate remains pending)
 
 ## Todo / Planned / Deferred / Blocked
 
@@ -136,3 +146,4 @@ formula or a repeatable identity.
 6. **Deferred** — v1.0 with independently audited sources, retrieval dates, archived links
 7. **Dropped** — 500K bulk Wikipedia layer (scope corrected to 5K gold-standard max)
 8. **Pending external evidence** — Run the first-time-user protocol in `quality/CLARITY_SCORECARD.md`; product-controlled clarity gates already pass
+9. **Done** — Highest product-controlled finish: evidence coverage surface, above-fold demonstration, source-integrity guards, editorial polish, and responsive route audit

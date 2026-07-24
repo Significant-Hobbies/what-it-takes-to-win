@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import "../styles/exhibit-finish.css";
 import peopleData from "../data/people.json";
 const peopleCount = peopleData.length;
 const {
@@ -20,6 +21,7 @@ const navLinks = [
   { href: "/insights/", label: "Insights" },
   { href: "/explore/", label: "Explore" },
   { href: "/compare/", label: "Am I Next?", activePrefixes: ["/compare/", "/am-i-the-next/"] },
+  { href: "/coverage/", label: "Evidence" },
   { href: "/methodology/", label: "Methodology" },
 ];
 const isActive = (link: (typeof navLinks)[number]) =>
@@ -96,12 +98,27 @@ const isActive = (link: (typeof navLinks)[number]) =>
     </main>
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p class="footer-statement">The same ingredients do not make the same path.</p>
-        <p class="footer-meta">
-          Independent research by Sarthak Agrawal · {peopleCount} people born 1950+ ·
-          <a href="/methodology/">methodology</a> ·
-          <a href="https://github.com/Significant-Hobbies/what-it-takes-to-win">source</a>
-        </p>
+        <div class="footer-primary">
+          <p class="footer-kicker">What It Takes to Win</p>
+          <p class="footer-statement">The same ingredients do not make the same path.</p>
+          <p class="footer-summary">
+            An independent research exhibit about advantage, built leverage,
+            compounding, luck, and the limits of comparison.
+          </p>
+        </div>
+        <div class="footer-ledger">
+          <span>Published atlas</span>
+          <strong>{peopleCount.toLocaleString()} paths</strong>
+          <span>Independent audit</span>
+          <strong class="footer-pending">Pending</strong>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="/coverage/">Evidence coverage</a>
+          <a href="/methodology/">Methodology</a>
+          <a href="/about/">About</a>
+          <a href="https://github.com/Significant-Hobbies/what-it-takes-to-win">Source code</a>
+        </nav>
+        <p class="footer-meta">Independent research by Sarthak Agrawal · People born 1950+</p>
       </div>
     </footer>
     <script>

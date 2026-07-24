@@ -1,0 +1,259 @@
+---
+import Base from "../../layouts/Base.astro";
+import peopleData from "../../data/people.json";
+import { summarizeCoverage, type CoveragePerson } from "../../lib/coverage";
+
+const coverage = summarizeCoverage(peopleData as CoveragePerson[]);
+const formatShare = (share: number) =>
+  `${share.toFixed(share === Math.round(share) ? 0 : 1)}%`;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Evidence coverage — What It Takes to Win",
+  description:
+    "Live coverage metrics, evidence confidence, sample composition, and unresolved audit boundaries for 2,585 early-breakthrough paths.",
+  url: "https://paths.significanthobbies.com/coverage/",
+  isPartOf: { "@id": "https://paths.significanthobbies.com/#website" },
+};
+---
+
+<Base
+  title="Evidence Coverage — What It Takes to Win"
+  description="Inspect source depth, trajectory completeness, confidence, sample composition, and unresolved research boundaries across 2,585 paths."
+  structuredData={structuredData}
+>
+  <section class="hero coverage-hero" data-clarity-contract="public-evidence-coverage">
+    <div class="coverage-hero-grid">
+      <div>
+        <p class="eyebrow">Evidence coverage · live from the published dataset</p>
+        <h1>Complete enough to inspect.<br />Not complete enough to predict.</h1>
+        <p class="lede">
+          Every published path has a milestone, narrative context, present-day
+          position, and trajectory. That structural completeness is useful.
+          It is not the same as independent verification, representative sampling,
+          or causal evidence.
+        </p>
+      </div>
+      <aside class="coverage-verdict" aria-label="Current evidence verdict">
+        <span>Release assessment</span>
+        <strong>Structurally complete</strong>
+        <p>Independent factual and annotation audit remains pending.</p>
+        <div class="coverage-verdict-mark">
+          <b>{coverage.independentlyAudited.count}</b>
+          <span>of {coverage.total.toLocaleString()} independently audited</span>
+        </div>
+      </aside>
+    </div>
+    <div class="coverage-hero-metrics" aria-label="Headline coverage metrics">
+      <div>
+        <strong>{coverage.total.toLocaleString()}</strong>
+        <span>published paths</span>
+      </div>
+      <div>
+        <strong>{formatShare(coverage.trajectoriesComplete.share)}</strong>
+        <span>three-event trajectories</span>
+      </div>
+      <div>
+        <strong>{formatShare(coverage.sourcesTwoPlus.share)}</strong>
+        <span>two or more listed sources</span>
+      </div>
+      <div>
+        <strong>{formatShare(coverage.indexable.share)}</strong>
+        <span>pass the search evidence gate</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="coverage-section" aria-labelledby="coverage-ladder-heading">
+    <div class="coverage-section-heading">
+      <div>
+        <p class="eyebrow">Four different claims</p>
+        <h2 id="coverage-ladder-heading">Coverage is a ladder—not one percentage.</h2>
+      </div>
+      <p>
+        A filled field is not a verified fact. A listed source is not an
+        independent audit. The product keeps those levels separate.
+      </p>
+    </div>
+    <div class="coverage-ladder">
+      <article>
+        <span>01 · Record structure</span>
+        <strong>{formatShare(coverage.narrativeComplete.share)}</strong>
+        <h3>Narrative fields present</h3>
+        <p>Milestone, early history, family context, evidence summary, and current position.</p>
+      </article>
+      <article>
+        <span>02 · Source diversity</span>
+        <strong>{formatShare(coverage.twoDistinctSourceDomains.share)}</strong>
+        <h3>Two source domains</h3>
+        <p>{coverage.twoDistinctSourceDomains.count.toLocaleString()} profiles link evidence across at least two domains.</p>
+      </article>
+      <article>
+        <span>03 · Publication gate</span>
+        <strong>{formatShare(coverage.indexable.share)}</strong>
+        <h3>Indexable evidence</h3>
+        <p>Two sources, non-low leverage confidence, a milestone, and a trajectory.</p>
+      </article>
+      <article class="coverage-ladder-pending">
+        <span>04 · External verification</span>
+        <strong>{formatShare(coverage.independentlyAudited.share)}</strong>
+        <h3>Independently audited</h3>
+        <p>This gate remains pending. The product does not imply otherwise.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="coverage-section" aria-labelledby="confidence-heading">
+    <div class="coverage-section-heading">
+      <div>
+        <p class="eyebrow">Annotation confidence</p>
+        <h2 id="confidence-heading">The weaker layer is documented starting advantage.</h2>
+      </div>
+      <p>
+        Biographies reliably celebrate output. They are much less consistent about
+        money, introductions, family logistics, private coaching, permission, and
+        social capital.
+      </p>
+    </div>
+    <div class="confidence-comparison">
+      {[
+        {
+          label: "Starting-advantage evidence",
+          note: "What access or conditions were documented near the beginning?",
+          bands: coverage.advantageConfidence,
+          className: "advantage-confidence",
+        },
+        {
+          label: "Built-leverage evidence",
+          note: "What multiplying capacity was documented later in the path?",
+          bands: coverage.leverageConfidence,
+          className: "leverage-confidence",
+        },
+      ].map((group) => (
+        <article class={group.className}>
+          <h3>{group.label}</h3>
+          <p>{group.note}</p>
+          <div class="confidence-bars">
+            {group.bands.map((band) => (
+              <div class={`confidence-bar confidence-${band.label.toLowerCase()}`}>
+                <div>
+                  <span>{band.label}</span>
+                  <strong>{band.count.toLocaleString()} · {formatShare(band.share)}</strong>
+                </div>
+                <i aria-hidden="true"><b style={`width:${band.share}%`}></b></i>
+              </div>
+            ))}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="coverage-section" aria-labelledby="composition-heading">
+    <div class="coverage-section-heading">
+      <div>
+        <p class="eyebrow">Sample composition</p>
+        <h2 id="composition-heading">A selected atlas—not a miniature population.</h2>
+      </div>
+      <p>
+        Every person already cleared an early-breakthrough threshold. These shares
+        describe this atlas only; they do not estimate how common success is.
+      </p>
+    </div>
+    <div class="composition-grid">
+      <article>
+        <h3>Cohort share</h3>
+        <div class="composition-bars">
+          {coverage.cohorts.map((band) => (
+            <div class="composition-row">
+              <div>
+                <span>{band.label}</span>
+                <strong>{band.count.toLocaleString()} · {formatShare(band.share)}</strong>
+              </div>
+              <i aria-hidden="true"><b style={`width:${band.share}%`}></b></i>
+            </div>
+          ))}
+        </div>
+      </article>
+      <article>
+        <h3>Observed career tier</h3>
+        <div class="composition-bars tier-composition">
+          {coverage.tiers.map((band) => (
+            <div class="composition-row">
+              <div>
+                <span>{band.label}</span>
+                <strong>{band.count.toLocaleString()} · {formatShare(band.share)}</strong>
+              </div>
+              <i aria-hidden="true"><b style={`width:${band.share}%`}></b></i>
+            </div>
+          ))}
+        </div>
+        <p class="composition-note">
+          Tiers summarize documented career recognition. They do not measure
+          human worth, potential, or only the selected early milestone.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="coverage-boundary" aria-labelledby="boundary-heading">
+    <div>
+      <p class="eyebrow">The denominator that is missing</p>
+      <h2 id="boundary-heading">
+        This project cannot count every promising path that disappeared.
+      </h2>
+      <p>
+        There is no matched group of ordinary attempts, near-misses, or people
+        with similar backgrounds who never reached a documented milestone.
+        Therefore this dataset cannot estimate success probabilities, causal
+        effects, or “how many failed for every Bill Gates.”
+      </p>
+    </div>
+    <div class="boundary-ledger">
+      <article>
+        <span>Observed</span>
+        <strong>2,585 selected early breakthroughs</strong>
+      </article>
+      <article>
+        <span>Not observed</span>
+        <strong>Comparable attempts and near-misses</strong>
+      </article>
+      <article>
+        <span>Valid conclusion</span>
+        <strong>Descriptive patterns and path differences</strong>
+      </article>
+      <article>
+        <span>Invalid conclusion</span>
+        <strong>Personal odds or a causal success formula</strong>
+      </article>
+    </div>
+  </section>
+
+  <section class="coverage-roadmap" aria-labelledby="roadmap-heading">
+    <p class="eyebrow">What would earn an audited v1.0</p>
+    <h2 id="roadmap-heading">The remaining work is external validation—not more decoration.</h2>
+    <ol>
+      <li>
+        <span>01</span>
+        <div><strong>Double-code a stratified sample.</strong><p>Use an independent rater across every cohort-tier cell and publish disagreement.</p></div>
+      </li>
+      <li>
+        <span>02</span>
+        <div><strong>Audit sensitive and milestone claims.</strong><p>Require stronger sources, retrieval dates, and exact evidence spans.</p></div>
+      </li>
+      <li>
+        <span>03</span>
+        <div><strong>Observe first-time readers.</strong><p>Test comprehension and the intended emotional arc without coaching.</p></div>
+      </li>
+      <li>
+        <span>04</span>
+        <div><strong>Add a matched comparison study.</strong><p>Only then could population odds or counterfactual claims be investigated.</p></div>
+      </li>
+    </ol>
+    <div class="coverage-actions">
+      <a class="btn-link btn-link-primary" href="/explore/">Inspect the published paths</a>
+      <a class="hero-secondary-link" href="/methodology/">Read the full methodology →</a>
+    </div>
+  </section>
+</Base>

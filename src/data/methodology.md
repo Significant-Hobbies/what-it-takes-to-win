@@ -12,6 +12,10 @@ One person and one selected milestone that occurred at or before age 26. The mil
 
 The 2,585-person dataset is a purposive outlier sample assembled to cover founders, operators, creators, athletes, researchers, and independent engineers. It is not a census, representative sample, or estimate of the base rate of success.
 
+The public [evidence coverage ledger](/coverage/) reports the current source
+depth, trajectory completeness, annotation confidence, indexability, cohort
+composition, and independent-audit boundary directly from the published data.
+
 ## Explanatory model
 
 The product organizes each record as an observed four-stage path:

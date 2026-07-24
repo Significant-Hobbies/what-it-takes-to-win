@@ -1,14 +1,20 @@
 # survivor-path-narrative Specification
 
 ## Purpose
-TBD - created by archiving change add-survivor-path-narrative. Update Purpose after archive.
+Make survivor selection and repeated consequential uncertainty intuitive before
+redirecting comparison toward evidence, humility, and bounded agency.
 ## Requirements
 ### Requirement: Signature survivor-path visual
-The homepage SHALL show many plausible starts narrowing through repeated uncertain gates to one visible peak before detailed charts and profile grids.
+
+The homepage SHALL preview many plausible starts narrowing toward one visible
+outcome in the initial viewport and SHALL present the full repeated-gate
+explanation before detailed charts and profile grids.
 
 #### Scenario: First-time visitor scans the homepage
-- **WHEN** they move past the hero
-- **THEN** they can see that a famous outcome is framed as the end of a selected branching sequence rather than a normal benchmark
+
+- **WHEN** the initial viewport renders and they move into the first exhibit
+- **THEN** they can see that a famous outcome is framed as the end of a selected
+  branching sequence rather than a normal benchmark
 
 ### Requirement: Illustrative probability boundary
 Any coin-toss sequence MUST be labelled as a thought experiment and MUST NOT be presented as an observed dataset rate, a career probability, or a count of failures.
@@ -32,9 +38,13 @@ The homepage SHALL state that visitors are often comparing an unfinished branch 
 - **THEN** the emotional landing combines relief, humility, and bounded agency without promising an outcome
 
 ### Requirement: Accessible static rendering
-The survivor-path narrative SHALL remain understandable without animation, pointer interaction, color perception, or client-side JavaScript.
+
+The hero preview and full survivor-path narrative SHALL remain understandable
+without animation, pointer interaction, color perception, or client-side
+JavaScript.
 
 #### Scenario: Visitor uses assistive technology or reduced motion
-- **WHEN** the component is encountered
-- **THEN** its labels, counts, sequence, boundary, and conclusion remain available in semantic text
 
+- **WHEN** either survivor-path component is encountered
+- **THEN** its labels, sequence, uncertainty boundary, and conclusion remain
+  available in semantic text

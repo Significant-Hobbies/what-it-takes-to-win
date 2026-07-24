@@ -18,6 +18,9 @@ const contracts = [
     name: "Homepage survivor-path narrative",
     file: "index.html",
     markers: [
+      "Extraordinary outcomes are surviving paths",
+      "Visible outcome / unseen alternatives",
+      "Biography hides the branches",
       'data-clarity-contract="survivor-path-narrative"',
       "You are looking at the surviving branch",
       "Six hypothetical 50/50 gates",
@@ -29,6 +32,22 @@ const contracts = [
       "A streak is still a streak",
       "your unfinished branch with someone else’s surviving streak",
       "Do not inherit the comparison",
+    ],
+  },
+  {
+    name: "Public evidence coverage",
+    file: "coverage/index.html",
+    markers: [
+      'data-clarity-contract="public-evidence-coverage"',
+      "Complete enough to inspect",
+      "Not complete enough to predict",
+      "Coverage is a ladder—not one percentage",
+      "Two source domains",
+      "Independently audited",
+      "A selected atlas—not a miniature population",
+      "This project cannot count every promising path that disappeared",
+      "how many failed for every Bill Gates",
+      "The remaining work is external validation",
     ],
   },
   {

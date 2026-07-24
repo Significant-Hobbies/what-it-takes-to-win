@@ -1,0 +1,44 @@
+/* Final cascade corrections for the completed research-exhibit treatment. */
+.site-nav {
+  gap: 18px;
+}
+
+.brand {
+  min-height: 44px;
+}
+
+.site-nav a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+}
+
+.footer-inner {
+  gap: 36px;
+}
+
+@media (max-width: 1000px) {
+  .header-inner {
+    height: auto;
+    min-height: 64px;
+  }
+
+  .site-nav a {
+    padding: 7px 0 11px;
+    white-space: nowrap;
+  }
+
+  .site-nav a[aria-current="page"]::after {
+    bottom: 3px;
+  }
+
+  .footer-inner {
+    gap: 28px;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer-inner {
+    gap: 24px;
+  }
+}

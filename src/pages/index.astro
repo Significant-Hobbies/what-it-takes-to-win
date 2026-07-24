@@ -10,10 +10,12 @@ import {
   summarizeOutcomes,
   type OutcomePerson,
 } from "../lib/outcome-model";
+import { summarizeCoverage, type CoveragePerson } from "../lib/coverage";
 
 const people = peopleData;
 const total = people.length;
 const outcomeSummary = summarizeOutcomes(people as OutcomePerson[]);
+const coverage = summarizeCoverage(people as CoveragePerson[]);
 
 const cohorts: Record<string, number> = {};
 people.forEach((p) => { cohorts[p.cohort_group] = (cohorts[p.cohort_group] || 0) + 1; });
@@ -164,26 +166,48 @@ const structuredData = {
   description="Explore 2,585 documented paths to extraordinary outcomes—separating starting advantage, built leverage, trajectory, standing, and luck."
   structuredData={structuredData}
 >
-  <section class="hero insight-hero">
-    <p class="eyebrow">2,585 early breakthrough paths</p>
-    <h1>How do extraordinary outcomes happen?</h1>
-    <p class="lede">
-      Start with the advantages someone inherited or encountered. Then see the multiplying capacity
-      they built, converted, earned, or met through timing. Starting position and later capability
-      are different layers—and neither determines the finish.
-    </p>
-    <div class="hero-model-preview" aria-label="The four-stage explanatory model">
-      <span>Starting position</span>
-      <span aria-hidden="true">→</span>
-      <span>Built leverage</span>
-      <span aria-hidden="true">→</span>
-      <span>Trajectory</span>
-      <span aria-hidden="true">→</span>
-      <span>Observed standing</span>
-    </div>
-    <div class="hero-actions">
-      <a class="btn-link btn-link-primary" href="#survivor-path">See why comparison breaks</a>
-      <a class="hero-secondary-link" href="/am-i-the-next/bill-gates/">Inspect a famous path →</a>
+  <section class="hero insight-hero research-hero">
+    <div class="research-hero-grid">
+      <div class="research-hero-copy">
+        <p class="eyebrow">2,585 early breakthrough paths</p>
+        <h1>Extraordinary outcomes are surviving paths.</h1>
+        <p class="lede">
+          See what people started with, what they built, what compounded—and how
+          much of the visible finish still depended on sequence and luck.
+        </p>
+        <div class="hero-model-preview" aria-label="The four-stage explanatory model">
+          <span>Starting position</span>
+          <span aria-hidden="true">→</span>
+          <span>Built leverage</span>
+          <span aria-hidden="true">→</span>
+          <span>Trajectory</span>
+          <span aria-hidden="true">→</span>
+          <span>Observed standing</span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn-link btn-link-primary" href="#survivor-path">See why comparison breaks</a>
+          <a class="hero-secondary-link" href="/am-i-the-next/bill-gates/">Inspect Bill Gates’s path →</a>
+        </div>
+      </div>
+      <aside
+        class="hero-branch-preview"
+        aria-label="A static preview showing many plausible starts narrowing to one visible outcome"
+      >
+        <div class="hero-branch-header">
+          <span>Visible outcome / unseen alternatives</span>
+          <strong>Selected path · 01</strong>
+        </div>
+        <div class="hero-branch-field" aria-hidden="true">
+          <div><span>64</span><i>{Array.from({ length: 32 }).map(() => <b></b>)}</i></div>
+          <div><span>16</span><i>{Array.from({ length: 16 }).map(() => <b></b>)}</i></div>
+          <div><span>04</span><i>{Array.from({ length: 4 }).map(() => <b></b>)}</i></div>
+          <div class="hero-branch-peak"><span>01</span><i><b></b></i></div>
+        </div>
+        <blockquote>
+          <p>The public remembers the final dot. Biography hides the branches.</p>
+          <footer>Illustration—not a measured career probability.</footer>
+        </blockquote>
+      </aside>
     </div>
     <div class="meta-row">
       <span><strong>{total}</strong> curated people</span>
@@ -332,35 +356,35 @@ const structuredData = {
     </div>
   </section>
 
-  <div class="warning-box">
-    <strong>Read before interpreting.</strong> Scores are analyst interpretations applied through a
-    common rubric, not objective measurements. Zero usually means "no clear evidence in reviewed
-    sources," not "advantage was absent." This is a purposive outlier sample — it cannot estimate
-    causal effects or base rates of success. See <a href="/methodology/">methodology</a>.
-  </div>
+  <section class="coverage-bridge" aria-labelledby="coverage-bridge-heading">
+    <div>
+      <p class="eyebrow">Before the charts</p>
+      <h2 id="coverage-bridge-heading">Inspect the evidence—not just the pattern.</h2>
+      <p>
+        All {total.toLocaleString()} records contain a narrative path.{" "}
+        {coverage.sourcesTwoPlus.share.toFixed(1)}% list at least two sources and{" "}
+        {coverage.indexable.share.toFixed(1)}% pass the search evidence gate. None has yet completed
+        an independent factual and annotation audit.
+      </p>
+      <a href="/coverage/">Open the evidence coverage ledger →</a>
+    </div>
+    <dl>
+      <div><dt>Trajectories</dt><dd>{coverage.trajectoriesComplete.share.toFixed(0)}%</dd></div>
+      <div><dt>Two sources</dt><dd>{coverage.sourcesTwoPlus.share.toFixed(1)}%</dd></div>
+      <div><dt>Indexable</dt><dd>{coverage.indexable.share.toFixed(1)}%</dd></div>
+      <div class="coverage-pending"><dt>Independent audit</dt><dd>Pending</dd></div>
+    </dl>
+  </section>
 
-  <div class="grid grid-4" style="margin-bottom: 24px;">
-    <div class="stat">
-      <div class="label">Curated people</div>
-      <div class="value">{total}</div>
-      <div class="sub">Founders, creators, athletes, researchers</div>
+  <section class="data-atlas" aria-labelledby="data-atlas-heading">
+    <div class="section-heading">
+      <p class="eyebrow">The dataset at a glance</p>
+      <h2 id="data-atlas-heading">Where the observed paths cluster</h2>
+      <p>
+        These charts describe a selected atlas of early breakthroughs. They show
+        recurring patterns—not population odds, causal effects, or a recipe.
+      </p>
     </div>
-    <div class="stat">
-      <div class="label">Avg milestone age</div>
-      <div class="value">{avgAge}</div>
-      <div class="sub">Across all cohorts</div>
-    </div>
-    <div class="stat score-family-stat advantage-family">
-      <div class="label">Avg starting advantage</div>
-      <div class="value">{avgAdvantage} <span class="value-denominator">/ {SCORE_FAMILIES.advantage.max}</span></div>
-      <div class="sub">Documented access or conditions near the start</div>
-    </div>
-    <div class="stat score-family-stat leverage-family">
-      <div class="label">Avg built/converted leverage</div>
-      <div class="value">{avgLeverage} <span class="value-denominator">/ {maxLeverage}</span></div>
-      <div class="sub">Documented multiplying capacity later present</div>
-    </div>
-  </div>
 
   <div class="grid grid-2" style="margin-bottom: 24px;">
     <div class="card">
@@ -392,6 +416,7 @@ const structuredData = {
     </p>
     <div id="chart-advantage" class="chart" role="img" aria-label="Bar chart showing average starting-advantage scores across twelve dimensions"></div>
   </div>
+  </section>
 
   <section class="featured-paths" aria-labelledby="featured-paths-heading">
     <div class="featured-paths-heading">

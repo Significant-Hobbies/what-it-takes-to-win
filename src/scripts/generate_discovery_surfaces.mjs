@@ -57,6 +57,14 @@ const coreSurfaces = [
       "Choose a documented person and compare visible ingredients, then inspect why resemblance cannot reproduce origins, timing, sequence, luck, or outcomes.",
   },
   {
+    id: "coverage",
+    htmlPath: "/coverage/",
+    mdPath: "/coverage.md",
+    title: "Evidence coverage",
+    summary:
+      "Live source depth, trajectory completeness, confidence, sample composition, indexability, and unresolved independent-audit boundaries.",
+  },
+  {
     id: "methodology",
     htmlPath: "/methodology/",
     mdPath: "/methodology.md",
@@ -181,7 +189,65 @@ function personMarkdown(person, comparison = false) {
   return lines.join("\n");
 }
 
+function coverageMarkdown(surface) {
+  const total = people.length;
+  const share = (count) => `${((count / total) * 100).toFixed(1)}%`;
+  const trajectories = people.filter(
+    (person) => Array.isArray(person.trajectory) && person.trajectory.length >= 3,
+  ).length;
+  const twoSources = people.filter(
+    (person) => Array.isArray(person.source_urls) && person.source_urls.length >= 2,
+  ).length;
+  const twoSourceDomains = people.filter((person) => {
+    const domains = new Set(
+      (person.source_urls || []).map((source) => {
+        try {
+          return new URL(source).hostname.replace(/^www\./, "");
+        } catch {
+          return "";
+        }
+      }).filter(Boolean),
+    );
+    return domains.size >= 2;
+  }).length;
+  const indexable = people.filter(comparisonIsIndexable).length;
+  const audited = people.filter(
+    (person) => person.source_audit_status === "independently_audited",
+  ).length;
+
+  return [
+    `# ${surface.title}`,
+    "",
+    surface.summary,
+    "",
+    "## Current published coverage",
+    "",
+    `- Published paths: ${total.toLocaleString("en-US")}`,
+    `- Three-event trajectories: ${trajectories.toLocaleString("en-US")} (${share(trajectories)})`,
+    `- Two or more listed sources: ${twoSources.toLocaleString("en-US")} (${share(twoSources)})`,
+    `- Two or more source domains: ${twoSourceDomains.toLocaleString("en-US")} (${share(twoSourceDomains)})`,
+    `- Pass the search evidence gate: ${indexable.toLocaleString("en-US")} (${share(indexable)})`,
+    `- Independently audited: ${audited.toLocaleString("en-US")} (${share(audited)})`,
+    "",
+    "## Interpretation boundary",
+    "",
+    "Structural completeness is not independent verification. This is a selected early-breakthrough atlas with no matched unsuccessful control group. It cannot estimate success probabilities, causal effects, population prevalence, or how many similar-background people failed for each visible outlier.",
+    "",
+    "## External gates still pending",
+    "",
+    "- Independent double-coding across cohort-tier cells.",
+    "- Factual and annotation source auditing with retrieval dates and evidence spans.",
+    "- First-time-user comprehension and emotional-resonance observation.",
+    "- A matched comparison study before population or counterfactual claims.",
+    "",
+    `- [Open the evidence coverage page](${absolute("/coverage/")})`,
+    `- [Read the methodology](${absolute("/methodology/")})`,
+    "",
+  ].join("\n");
+}
+
 function staticMarkdown(surface) {
+  if (surface.id === "coverage") return coverageMarkdown(surface);
   return [
     `# ${surface.title}`,
     "",
@@ -264,6 +330,7 @@ await emit(
     "",
     `- [Overview](${absolute("/index.md")}): the four-stage model and interpretation boundary`,
     `- [Insights](${absolute("/insights.md")}): the one-minute answer, tiers, overlap, luck, and counterexamples`,
+    `- [Evidence coverage](${absolute("/coverage.md")}): source depth, confidence, composition, and unresolved audit boundaries`,
     `- [Methodology](${absolute("/methodology.md")}): inclusion, scoring, evidence gates, and limitations`,
     `- [Explore](${absolute("/explore/")}): ${people.length.toLocaleString("en-US")} person profiles`,
     `- [API catalog](${absolute("/api/ai")}): machine-readable discovery contract`,

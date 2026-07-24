@@ -26,6 +26,10 @@
 - Primary actions use the blue accent; secondary actions remain text or outline.
 - Cards use one-pixel borders and no decorative shadows.
 - Eyebrows are uppercase mono labels that orient, not decorate.
+- The homepage hero pairs one plain-language claim with a static narrowing-path
+  exhibit so the product demonstrates survivor selection before explaining it.
+- Evidence coverage uses ruled ledgers, confidence bars, and explicit pending
+  states; completeness and verification must never share one badge.
 - Charts always include a visible title and an accessible text label.
 - Focus rings use the primary accent and must never be removed.
 - Navigation marks the current page and remains horizontally scrollable on
@@ -35,6 +39,8 @@
 
 - Motion is limited to hover/focus feedback and must respect reduced-motion.
 - Four-column explanatory structures collapse to two columns, then one.
+- Signature branch fields retain labelled counts and conclusions when their
+  visual dots compress or wrap.
 - Mobile prioritizes the brand, primary navigation, single CTA, and readable
   cards; header search is intentionally deferred to the Explore page.
 

@@ -117,13 +117,17 @@ const out = people.map((p) => {
   for (const f of advantageScoreFields) {
     if (o[f] != null) o[f] = Math.max(0, Math.min(2, o[f]));
   }
-  o.source_urls = (o.source_urls_pipe || "")
-    .split("|")
-    .map((s) => s.trim())
-    .filter(Boolean);
+  o.source_urls = [...new Set(
+    (o.source_urls_pipe || "")
+      .split("|")
+      .map((s) => s.trim())
+      .filter(Boolean),
+  )];
   if (o.source_urls.length === 0 && o.primary_source_url) {
     o.source_urls = [o.primary_source_url];
   }
+  // The normalized source array is authoritative for publication gates.
+  o.source_count = o.source_urls.length;
   o.primary_early_advantage_tags_list = (o.primary_early_advantage_tags || "")
     .split(",")
     .map((s) => s.trim())
@@ -288,6 +292,22 @@ function validateDataset(records) {
     }
     if (!Array.isArray(person.source_urls) || person.source_urls.length === 0) {
       errors.push(`${person.person_id}: missing source URL`);
+    }
+    if (person.source_count !== person.source_urls.length) {
+      errors.push(`${person.person_id}: source_count does not match source_urls`);
+    }
+    if (new Set(person.source_urls).size !== person.source_urls.length) {
+      errors.push(`${person.person_id}: duplicate source URL`);
+    }
+    for (const sourceUrl of person.source_urls) {
+      try {
+        const parsed = new URL(sourceUrl);
+        if (!["http:", "https:"].includes(parsed.protocol)) {
+          errors.push(`${person.person_id}: unsupported source URL protocol`);
+        }
+      } catch {
+        errors.push(`${person.person_id}: invalid source URL`);
+      }
     }
   }
 
