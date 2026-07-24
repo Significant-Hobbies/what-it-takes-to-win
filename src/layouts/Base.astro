@@ -173,9 +173,10 @@ const isActive = (link: (typeof navLinks)[number]) =>
             setResultsOpen(true);
             return;
           }
-          results.innerHTML = matches.map(p =>
-            `<a href="/person/${encodeURIComponent(p.id)}/" class="nsr-item" role="option"><span class="nsr-name">${escapeHtml(p.name)}</span><span class="nsr-cat">${escapeHtml(p.category)}</span></a>`
-          ).join('');
+          results.innerHTML = matches.map(p => {
+            const href = "/person/" + encodeURIComponent(p.id) + "/";
+            return `<a href="` + href + `" class="nsr-item" role="option"><span class="nsr-name">${escapeHtml(p.name)}</span><span class="nsr-cat">${escapeHtml(p.category)}</span></a>`;
+          }).join('');
           setResultsOpen(true);
         }
 

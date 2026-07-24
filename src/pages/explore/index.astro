@@ -98,8 +98,10 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
       else if (sort === "name") list.sort((a,b) => a.name.localeCompare(b.name));
 
       countEl.textContent = `${list.length} / ${people.length}`;
-      results.innerHTML = list.map((p) => `
-        <a class="person-card" href="/person/${p.person_id}/">
+      results.innerHTML = list.map((p) => {
+        const href = "/person/" + encodeURIComponent(p.person_id) + "/";
+        return `
+        <a class="person-card" href="` + href + `">
           <div class="name">${escapeHtml(p.name)}</div>
           <div class="cat">${escapeHtml(p.category || "")} · age ${p.age_at_milestone ?? "?"}</div>
           <div class="milestone">${escapeHtml(p.milestone_by_age_26 || "")}</div>
@@ -109,7 +111,8 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
             ${p.primary_early_advantage_archetype ? `<span class="score-pill">${escapeHtml(p.primary_early_advantage_archetype)}</span>` : ""}
           </div>
         </a>
-      `).join("");
+      `;
+      }).join("");
     }
 
     [search, fCohort, fCategory, fEngine, fArchetype, fTier, fSort].forEach((el) =>

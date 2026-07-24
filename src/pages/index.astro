@@ -434,15 +434,18 @@ const structuredData = {
 
       // People list (show top 50 by leverage, with "show more" for the rest)
       const visibleCount = Math.min(50, peopleList.length);
-      const html = peopleList.slice(0, visibleCount).map(p => `
-        <a class="detail-person" href="/person/${p.person_id}/">
+      const html = peopleList.slice(0, visibleCount).map(p => {
+        const href = "/person/" + encodeURIComponent(p.person_id) + "/";
+        return `
+        <a class="detail-person" href="` + href + `">
           <span class="dp-name">${p.name}</span>
           <span class="dp-cat">${p.category}</span>
           <span class="dp-age">age ${p.age_at_milestone}</span>
           <span class="dp-lev">L${p.total_leverage_score}</span>
           <span class="dp-tier">T${p.success_tier}</span>
         </a>
-      `).join("");
+      `;
+      }).join("");
       const moreNote = peopleList.length > visibleCount
         ? `<div class="detail-more">Showing top ${visibleCount} of ${peopleList.length} — <a href="/explore/">explore all →</a></div>`
         : "";
