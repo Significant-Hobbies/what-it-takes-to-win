@@ -71,6 +71,8 @@ formula or a repeatable identity.
 - 2026-07-23 — replaced nearest-tier comparison with person-specific path questionnaires; added per-lever provenance inference, non-scored luck, divergent-path counterexamples, and evidence-gated SEO pages
 - 2026-07-24 — shipped the production site to Cloudflare Pages at `https://paths.significanthobbies.com`
 - 2026-07-24 — completed Fleet UI conformance pass: design context, clearer hero demonstration, accessible navigation/search/charts, social metadata, and custom share artwork
+- 2026-07-24 — completed search and agent-discovery hardening: real 404s, robots, 4,994-URL sitemap, matching Markdown mirrors, llms.txt, machine-readable catalog, and structured data
+- 2026-07-24 — removed render-blocking remote fonts and moved ECharts behind viewport activation; weighted lab LCP improved from 4.10s to 2.13s with zero CLS and zero TBT
 
 ## Products
 
@@ -89,6 +91,9 @@ formula or a repeatable identity.
 - Dark, dense, scannable visualization UI
 - Fleet-aligned design context, visible keyboard focus, skip navigation, active-page state, reduced-motion handling, accessible search/chart labels, and responsive CTA hierarchy
 - Custom Open Graph share surface and complete Open Graph/Twitter metadata
+- Search-ready discovery surfaces: real 404 responses, public robots.txt, 4,994 canonical sitemap URLs, and evidence-gated comparison indexing
+- Agent-ready discovery surfaces: llms.txt, `/api/ai`, and a noindex Markdown mirror for every canonical URL
+- Homepage Organization/WebSite/Dataset JSON-LD plus WebPage/Person JSON-LD on every person profile
 - Evidence-bounded explanatory model: starting advantages → built or converted leverage → compounding trajectory → observed career standing
 - Distinct starting-advantage and built-or-converted-leverage score families, including separate visual treatments, scales, and an explicit self-built / advantage-enabled / earned / external / mixed provenance boundary
 - Defined T1–T4 editorial outcome ladder with observed averages, ranges, overlap, and correlation context
@@ -97,6 +102,7 @@ formula or a repeatable identity.
 - Repeatable clarity and internal-link audit plus deterministic cohort-tier review sample
 - Responsive visual QA across the six primary routes and complete Compare/Explore interaction checks
 - 5 overview charts on homepage (ECharts) with click-through detail panels
+- Viewport-activated chart loading so ECharts does not block the initial page render
 - Explore page with search + cohort, category, engine, archetype, outcome-tier, and sort controls
 - Per-person detail pages with connected path synthesis, per-lever provenance, confidence, evidence signals, and cohort-relative context
 - Lazy-loaded nav search (fetches slim search index on first focus)

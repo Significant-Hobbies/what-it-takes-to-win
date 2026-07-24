@@ -15,11 +15,11 @@
 
 - [x] 3.1 Remove render-blocking remote font requests and use local system stacks
 - [x] 3.2 Inline Astro page styles and defer homepage chart loading until after initial render
-- [ ] 3.3 Verify chart behavior and repeat the distributional performance audit
+- [x] 3.3 Verify chart behavior and repeat the distributional performance audit
 
 ## 4. Release
 
-- [ ] 4.1 Run OpenSpec, build, clarity, tier, SEO, and agent-index checks
-- [ ] 4.2 Archive the completed OpenSpec change and update PROJECT_STATUS.md
-- [ ] 4.3 Commit, push, wait for exact-HEAD CI, and deploy through the Fleet guard
-- [ ] 4.4 Smoke-test production status codes, crawler files, metadata, and core routes
+- [x] 4.1 Run OpenSpec, build, clarity, tier, SEO, and agent-index checks
+- [x] 4.2 Archive the completed OpenSpec change and update PROJECT_STATUS.md
+- [x] 4.3 Commit, push, wait for exact-HEAD CI, and deploy through the Fleet guard
+- [x] 4.4 Smoke-test production status codes, crawler files, metadata, and core routes
