@@ -7,11 +7,25 @@ const {
   description = "What early conditions accelerate breakthroughs? A data-driven look at 2,500+ people and the advantages that shaped their paths.",
   robots = "index,follow",
   canonicalPath,
+  socialImage = "/og-image.png",
   structuredData,
 } = Astro.props;
 const canonicalUrl = Astro.site
   ? new URL(canonicalPath ?? Astro.url.pathname, Astro.site).toString()
   : null;
+const socialImageUrl = Astro.site ? new URL(socialImage, Astro.site).toString() : socialImage;
+const currentPath = Astro.url.pathname;
+const navLinks = [
+  { href: "/", label: "Overview" },
+  { href: "/insights/", label: "Insights" },
+  { href: "/explore/", label: "Explore" },
+  { href: "/compare/", label: "Am I Next?", activePrefixes: ["/compare/", "/am-i-the-next/"] },
+  { href: "/methodology/", label: "Methodology" },
+];
+const isActive = (link: (typeof navLinks)[number]) =>
+  link.href === "/"
+    ? currentPath === link.href
+    : (link.activePrefixes ?? [link.href]).some((prefix) => currentPath.startsWith(prefix));
 ---
 <!doctype html>
 <html lang="en">
@@ -21,7 +35,22 @@ const canonicalUrl = Astro.site
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="robots" content={robots} />
+    <meta name="theme-color" content="#0b0d12" />
+    <meta name="color-scheme" content="dark" />
     {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="What It Takes to Win" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
+    <meta property="og:image" content={socialImageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="What It Takes to Win: 2,585 paths, four layers, no success formula." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImageUrl} />
     {structuredData && <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,34 +58,52 @@ const canonicalUrl = Astro.site
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <div class="container header-inner">
-        <a href="/" class="brand">
+        <a href="/" class="brand" aria-label="What It Takes to Win home">
           <span class="brand-mark">↗</span>
           <span class="brand-text">What It Takes to Win</span>
         </a>
-        <nav class="site-nav">
-          <a href="/">Overview</a>
-          <a href="/insights/">Insights</a>
-          <a href="/explore/">Explore</a>
-          <a href="/compare/">Am I Next?</a>
-          <a href="/methodology/">Methodology</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          {navLinks.map((link) => (
+            <a href={link.href} aria-current={isActive(link) ? "page" : undefined}>
+              {link.label}
+            </a>
+          ))}
         </nav>
         <div class="nav-search">
-          <input type="text" id="nav-search-input" aria-label="Search people" placeholder="Search people..." autocomplete="off" />
-          <div id="nav-search-results" class="nav-search-results" style="display:none;"></div>
+          <input
+            type="search"
+            id="nav-search-input"
+            role="combobox"
+            aria-label="Search people"
+            aria-autocomplete="list"
+            aria-controls="nav-search-results"
+            aria-expanded="false"
+            placeholder="Search 2,585 people…"
+            autocomplete="off"
+          />
+          <div
+            id="nav-search-results"
+            class="nav-search-results"
+            role="listbox"
+            aria-label="People search results"
+            style="display:none;"
+          ></div>
         </div>
       </div>
     </header>
-    <main class="container">
+    <main id="main-content" class="container" tabindex="-1">
       <slot />
     </main>
     <footer class="site-footer">
-      <div class="container">
-        <p>
-          What It Takes to Win · {peopleCount} people (born 1950+) ·
-          <a href="https://github.com/sarthakagrawal927/success-by-26">source</a> ·
-          interpretive annotations, not causal estimates
+      <div class="container footer-inner">
+        <p class="footer-statement">The same ingredients do not make the same path.</p>
+        <p class="footer-meta">
+          Independent research by Sarthak Agrawal · {peopleCount} people born 1950+ ·
+          <a href="/methodology/">methodology</a> ·
+          <a href="https://github.com/sarthakagrawal927/success-by-26">source</a>
         </p>
       </div>
     </footer>
@@ -68,6 +115,21 @@ const canonicalUrl = Astro.site
 
         let index = null;
         let loadingPromise = null;
+
+        function setResultsOpen(open: boolean) {
+          results.style.display = open ? 'block' : 'none';
+          input.setAttribute('aria-expanded', String(open));
+        }
+
+        function escapeHtml(value: string) {
+          return value.replace(/[&<>"']/g, (character) => ({
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            '"': '&quot;',
+            "'": '&#039;',
+          })[character] || character);
+        }
 
         function loadIndex() {
           if (index) return Promise.resolve(index);
@@ -90,14 +152,14 @@ const canonicalUrl = Astro.site
         input.addEventListener('focus', function() {
           if (!index) loadIndex();
           if (this.value.trim().length >= 2) {
-            results.style.display = 'block';
+            setResultsOpen(true);
           }
         });
 
         input.addEventListener('input', function() {
           const q = this.value.trim().toLowerCase();
           if (q.length < 2) {
-            results.style.display = 'none';
+            setResultsOpen(false);
             return;
           }
           if (!index) {
@@ -111,17 +173,17 @@ const canonicalUrl = Astro.site
           const matches = index.filter(p => p.searchText.includes(q)).slice(0, 8);
           if (matches.length === 0) {
             results.innerHTML = '<div class="nsr-empty">No results</div>';
-            results.style.display = 'block';
+            setResultsOpen(true);
             return;
           }
           results.innerHTML = matches.map(p =>
-            `<a href="/person/${p.id}/" class="nsr-item"><span class="nsr-name">${p.name}</span><span class="nsr-cat">${p.category}</span></a>`
+            `<a href="/person/${encodeURIComponent(p.id)}/" class="nsr-item" role="option"><span class="nsr-name">${escapeHtml(p.name)}</span><span class="nsr-cat">${escapeHtml(p.category)}</span></a>`
           ).join('');
-          results.style.display = 'block';
+          setResultsOpen(true);
         }
 
         input.addEventListener('blur', function() {
-          setTimeout(() => { results.style.display = 'none'; }, 200);
+          setTimeout(() => { setResultsOpen(false); }, 200);
         });
       })();
     </script>

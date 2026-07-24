@@ -116,9 +116,18 @@ const topPeople = showcaseIds
       they built, converted, earned, or met through timing. Starting position and later capability
       are different layers—and neither determines the finish.
     </p>
+    <div class="hero-model-preview" aria-label="The four-stage explanatory model">
+      <span>Starting position</span>
+      <span aria-hidden="true">→</span>
+      <span>Built leverage</span>
+      <span aria-hidden="true">→</span>
+      <span>Trajectory</span>
+      <span aria-hidden="true">→</span>
+      <span>Observed standing</span>
+    </div>
     <div class="hero-actions">
-      <a class="btn-link btn-link-primary" href="/insights/">Understand the model</a>
-      <a class="btn-link" href="/am-i-the-next/bill-gates/">Am I the next Bill Gates?</a>
+      <a class="btn-link btn-link-primary" href="/insights/">See the four-stage model</a>
+      <a class="hero-secondary-link" href="/am-i-the-next/bill-gates/">Test a famous comparison →</a>
     </div>
     <div class="meta-row">
       <span><strong>{total}</strong> curated people</span>
@@ -217,22 +226,22 @@ const topPeople = showcaseIds
   <div class="grid grid-2" style="margin-bottom: 24px;">
     <div class="card">
       <h3>Milestone age distribution</h3>
-      <div id="chart-age" class="chart chart-short"></div>
+      <div id="chart-age" class="chart chart-short" role="img" aria-label="Bar chart showing milestone ages across the dataset"></div>
     </div>
     <div class="card">
       <h3>Cohort group</h3>
-      <div id="chart-cohort" class="chart chart-short"></div>
+      <div id="chart-cohort" class="chart chart-short" role="img" aria-label="Donut chart showing the dataset split across founders, creators, athletes, and researchers"></div>
     </div>
   </div>
 
   <div class="grid grid-2" style="margin-bottom: 24px;">
     <div class="card">
       <h3>Primary leverage engine <span class="chart-hint">click a bar to explore</span></h3>
-      <div id="chart-engine" class="chart chart-short"></div>
+      <div id="chart-engine" class="chart chart-short" role="img" aria-label="Interactive bar chart of the most common primary leverage engines"></div>
     </div>
     <div class="card">
       <h3>Early-advantage archetype <span class="chart-hint">click a bar to explore</span></h3>
-      <div id="chart-archetype" class="chart chart-short"></div>
+      <div id="chart-archetype" class="chart chart-short" role="img" aria-label="Interactive bar chart of early-advantage archetypes"></div>
     </div>
   </div>
 
@@ -242,7 +251,7 @@ const topPeople = showcaseIds
       How often each early condition was documented as a meaningful (1) or unusually strong (2)
       advantage. Zero is "no clear evidence," not "absent."
     </p>
-    <div id="chart-advantage" class="chart"></div>
+    <div id="chart-advantage" class="chart" role="img" aria-label="Bar chart showing average starting-advantage scores across twelve dimensions"></div>
   </div>
 
   <section class="featured-paths" aria-labelledby="featured-paths-heading">

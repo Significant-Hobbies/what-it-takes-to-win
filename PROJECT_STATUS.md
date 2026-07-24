@@ -70,6 +70,7 @@ formula or a repeatable identity.
 - 2026-07-23 — separated starting advantages from built or converted leverage across overview, Insights, person paths, Compare, methodology, and clarity audits; documented that leverage presence does not establish its origin
 - 2026-07-23 — replaced nearest-tier comparison with person-specific path questionnaires; added per-lever provenance inference, non-scored luck, divergent-path counterexamples, and evidence-gated SEO pages
 - 2026-07-24 — shipped the production site to Cloudflare Pages at `https://paths.significanthobbies.com`
+- 2026-07-24 — completed Fleet UI conformance pass: design context, clearer hero demonstration, accessible navigation/search/charts, social metadata, and custom share artwork
 
 ## Products
 
@@ -86,6 +87,8 @@ formula or a repeatable identity.
 ## Features (shipped)
 
 - Dark, dense, scannable visualization UI
+- Fleet-aligned design context, visible keyboard focus, skip navigation, active-page state, reduced-motion handling, accessible search/chart labels, and responsive CTA hierarchy
+- Custom Open Graph share surface and complete Open Graph/Twitter metadata
 - Evidence-bounded explanatory model: starting advantages → built or converted leverage → compounding trajectory → observed career standing
 - Distinct starting-advantage and built-or-converted-leverage score families, including separate visual treatments, scales, and an explicit self-built / advantage-enabled / earned / external / mixed provenance boundary
 - Defined T1–T4 editorial outcome ladder with observed averages, ranges, overlap, and correlation context
