@@ -46,7 +46,18 @@ const contracts = [
     ],
   },
   {
-    name: "Five-question comprehension check",
+    name: "Outcome distribution and denominator",
+    file: "insights/index.html",
+    markers: [
+      'data-clarity-contract="outcome-distribution-context"',
+      "How rare is a Bill Gates-level tier in this dataset?",
+      "lower-tier paths per T1 profile",
+      "This is the power-law lesson—not a fitted power law",
+      "The true population denominator is absent",
+    ],
+  },
+  {
+    name: "Six-question comprehension check",
     file: "insights/index.html",
     markers: [
       'data-clarity-contract="comprehension-check"',
@@ -55,6 +66,7 @@ const contracts = [
       "Where does luck fit?",
       "Was each capability inherited, enabled, earned, external, or built?",
       "Why do superficially similar profiles diverge?",
+      "What percentile is this person—and how many people were far from them?",
     ],
   },
   {
@@ -71,6 +83,9 @@ const contracts = [
       "best-supported origin",
       'data-clarity-contract="luck-and-variance"',
       "Am I the next Bill Gates?",
+      'data-clarity-contract="outcome-distribution-context"',
+      "lower-tier paths in this dataset",
+      "not Bill Gates",
     ],
   },
   {
@@ -119,6 +134,8 @@ const contracts = [
       "Person-specific comparison",
       "Luck and outcome variance",
       "Programmatic page evidence gate",
+      "Outcome distribution context",
+      "not a fitted power law",
     ],
   },
 ];

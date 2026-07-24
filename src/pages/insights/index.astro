@@ -185,6 +185,106 @@ const strongestObservedDifferences = [...ADVANTAGE_FIELDS, ...LEVERAGE_FIELDS]
     </div>
   </section>
 
+  <section
+    id="distribution"
+    class="distribution-context"
+    aria-labelledby="distribution-heading"
+    data-clarity-contract="outcome-distribution-context"
+  >
+    <div class="section-heading">
+      <p class="eyebrow">Percentiles need a denominator</p>
+      <h2 id="distribution-heading">How rare is a Bill Gates-level tier in this dataset?</h2>
+      <p>
+        Bill Gates is in T1: a band of {summary.tiers[0].count.toLocaleString()} global-icon
+        profiles, or the top {summary.tiers[0].topBandEnd.toFixed(1)}% of this selected dataset.
+        The tier does not rank people within that band.
+      </p>
+    </div>
+
+    <div class="distribution-headline">
+      <article>
+        <span>T1 profiles</span>
+        <strong>{summary.tiers[0].count.toLocaleString()}</strong>
+        <small>{summary.tiers[0].share.toFixed(1)}% of the curated sample</small>
+      </article>
+      <article>
+        <span>Lower-tier profiles</span>
+        <strong>{summary.tiers[0].lowerOutcomeCount.toLocaleString()}</strong>
+        <small>T2–T4 early-breakthrough paths</small>
+      </article>
+      <article>
+        <span>Observable ratio</span>
+        <strong>{summary.tiers[0].lowerPerMember.toFixed(1)}×</strong>
+        <small>lower-tier paths per T1 profile</small>
+      </article>
+    </div>
+
+    <div class="tier-distribution" aria-label="Outcome tier distribution in the curated dataset">
+      {summary.tiers.map((tier) => (
+        <div
+          class={`tier-distribution-segment tier-${tier.tier}`}
+          style={`flex-grow:${tier.count}`}
+          title={`T${tier.tier}: ${tier.count} people, ${tier.share.toFixed(1)}%`}
+        >
+          <strong>T{tier.tier}</strong>
+          <span>{tier.share.toFixed(1)}%</span>
+        </div>
+      ))}
+    </div>
+    <div class="tier-rank-table">
+      {summary.tiers.map((tier) => (
+        <div>
+          <span>T{tier.tier} · {tier.name}</span>
+          <strong>ranks {tier.rankStart.toLocaleString()}–{tier.rankEnd.toLocaleString()}</strong>
+          <small>
+            {tier.rankStart === 1
+              ? `top ${tier.topBandEnd.toFixed(1)}% tier`
+              : `${tier.topBandStart.toFixed(1)}–${tier.topBandEnd.toFixed(1)}% band from the top`}
+          </small>
+        </div>
+      ))}
+    </div>
+
+    <div class="power-law-grid">
+      <article>
+        <p class="eyebrow">Bell-curve intuition</p>
+        <h3>Most people cluster near the middle.</h3>
+        <p>
+          This mental model expects extremes to be rare and distances between adjacent people to
+          stay fairly modest.
+        </p>
+      </article>
+      <article>
+        <p class="eyebrow">Heavy-tail intuition</p>
+        <h3>A small minority can sit extremely far out.</h3>
+        <p>
+          In many outcome domains, recognition, reach, wealth, citations, or attention are highly
+          unequal. Repeated compounding can turn modest early differences into very large outcome gaps.
+        </p>
+      </article>
+    </div>
+
+    <div class="power-law-boundary">
+      <strong>This is the power-law lesson—not a fitted power law.</strong>
+      <p>
+        The four tiers compress continuous careers into editorial bands, and this dataset begins
+        after an early breakthrough has already happened. We do not fit a Pareto exponent or claim
+        these four tier counts form a power law. The useful idea is that extraordinary outcomes may
+        live in a long tail where “a little better” in inputs does not imply “a little better” in results.
+      </p>
+    </div>
+
+    <div class="denominator-wall">
+      <strong>What the 3.5× ratio cannot tell you</strong>
+      <p>
+        It counts lower-tier paths among 2,585 selected early breakthroughs. It cannot count the
+        much larger, unobserved population who attempted similar work, started later, never had a
+        qualifying milestone, or remained undocumented. So it is not “3.5 people failed for every
+        Bill Gates.” The true population denominator is absent.
+      </p>
+    </div>
+  </section>
+
   <section aria-labelledby="counterexamples-heading" data-clarity-contract="path-counterexamples">
     <div class="section-heading">
       <p class="eyebrow">Data-backed counterexamples</p>
@@ -379,7 +479,7 @@ const strongestObservedDifferences = [...ADVANTAGE_FIELDS, ...LEVERAGE_FIELDS]
   <section aria-labelledby="clarity-check-heading" data-clarity-contract="comprehension-check">
     <div class="section-heading">
       <p class="eyebrow">Check your interpretation</p>
-      <h2 id="clarity-check-heading">Five questions the project must answer clearly</h2>
+      <h2 id="clarity-check-heading">Six questions the project must answer clearly</h2>
       <p>If these answers are not obvious, the product has failed its clarity contract.</p>
     </div>
     <div class="clarity-questions">
@@ -402,6 +502,10 @@ const strongestObservedDifferences = [...ADVANTAGE_FIELDS, ...LEVERAGE_FIELDS]
       <details>
         <summary>Why do superficially similar profiles diverge?</summary>
         <p>They can share totals but differ in which ingredients compose them, how those ingredients arose, the order of events, and unobserved luck. The counterexample pairs above make that divergence concrete.</p>
+      </details>
+      <details>
+        <summary>What percentile is this person—and how many people were far from them?</summary>
+        <p>Each person page shows the rank band of their editorial tier, the lower-tier count, and the lower-tier-per-member ratio inside this 2,585-person early-breakthrough sample. It cannot estimate population odds or how many similar people failed because those people are not in the dataset.</p>
       </details>
     </div>
   </section>

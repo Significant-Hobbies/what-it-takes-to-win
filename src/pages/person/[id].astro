@@ -8,6 +8,7 @@ import {
   SCORE_FAMILIES,
   buildPersonPath,
   getPersonLeverageProvenance,
+  summarizeOutcomes,
   type OutcomePerson,
   type ScoreField,
 } from "../../lib/outcome-model";
@@ -19,6 +20,11 @@ export function getStaticPaths() {
 const people = peopleData as OutcomePerson[];
 const p = people.find((person) => person.person_id === Astro.params.id)!;
 const path = buildPersonPath(p, people);
+const outcomeSummary = summarizeOutcomes(people);
+const standing = outcomeSummary.tiers.find((tier) => tier.tier === p.success_tier)!;
+const standingBand = standing.rankStart === 1
+  ? `Top ${standing.topBandEnd.toFixed(1)}% tier`
+  : `${standing.topBandStart.toFixed(1)}–${standing.topBandEnd.toFixed(1)}% band from the top`;
 
 function barRows(fields: ScoreField[], person: OutcomePerson) {
   return fields.map((field) => {
@@ -84,6 +90,40 @@ const structuredData = {
     </div>
 
     <div class="summary">{p.early_history_summary}</div>
+    <section
+      class={`standing-context tier-${p.success_tier}`}
+      aria-labelledby="standing-context-heading"
+      data-clarity-contract="outcome-distribution-context"
+    >
+      <div class="standing-context-heading">
+        <div>
+          <p class="eyebrow">Standing in this curated dataset</p>
+          <h2 id="standing-context-heading">
+            {standingBand} · ranks {standing.rankStart.toLocaleString()}–{standing.rankEnd.toLocaleString()}
+          </h2>
+        </div>
+        <span class="tier-badge">T{p.success_tier} · {standing.name}</span>
+      </div>
+      <div class="standing-context-stats">
+        <div>
+          <strong>{standing.count.toLocaleString()}</strong>
+          <span>profiles in the same tier</span>
+        </div>
+        <div>
+          <strong>{standing.lowerOutcomeCount.toLocaleString()}</strong>
+          <span>lower-tier paths in this dataset</span>
+        </div>
+        <div>
+          <strong>{standing.lowerPerMember.toFixed(1)}×</strong>
+          <span>lower-tier paths per {standing.name.toLowerCase()} profile</span>
+        </div>
+      </div>
+      <p class="standing-context-boundary">
+        This is a tier band, not {p.name}'s exact percentile: people are not ranked within a tier.
+        It is also not a success probability. Every person here already had a documented early
+        breakthrough; ordinary attempts and near-misses are outside the dataset.
+      </p>
+    </section>
     <div class="person-next-cta">
       <div>
         <strong>Think your path resembles {p.name}'s?</strong>

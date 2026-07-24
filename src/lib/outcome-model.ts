@@ -349,14 +349,25 @@ export function getTierDefinition(tier: number) {
 }
 
 export function summarizeOutcomes(people: OutcomePerson[]) {
+  let higherOutcomeCount = 0;
   const tiers = TIER_DEFINITIONS.map((definition) => {
     const members = people.filter((person) => person.success_tier === definition.tier);
     const advantages = members.map(getAdvantageTotal);
     const leverage = members.map(getLeverageTotal);
-    return {
+    const count = members.length;
+    const rankStart = higherOutcomeCount + 1;
+    const rankEnd = higherOutcomeCount + count;
+    const lowerOutcomeCount = Math.max(people.length - rankEnd, 0);
+    const tierSummary = {
       ...definition,
-      count: members.length,
-      share: people.length ? (members.length / people.length) * 100 : 0,
+      count,
+      share: people.length ? (count / people.length) * 100 : 0,
+      rankStart,
+      rankEnd,
+      topBandStart: people.length ? (higherOutcomeCount / people.length) * 100 : 0,
+      topBandEnd: people.length ? (rankEnd / people.length) * 100 : 0,
+      lowerOutcomeCount,
+      lowerPerMember: count ? lowerOutcomeCount / count : 0,
       advantage: {
         mean: mean(advantages),
         p25: quantile(advantages, 0.25),
@@ -374,6 +385,8 @@ export function summarizeOutcomes(people: OutcomePerson[]) {
         max: leverage.length ? Math.max(...leverage) : 0,
       },
     };
+    higherOutcomeCount = rankEnd;
+    return tierSummary;
   });
 
   const advantageTotals = people.map(getAdvantageTotal);

@@ -11,7 +11,7 @@ The project SHALL maintain a release scorecard that independently reports compre
 - **THEN** every gate has a pass, fail, or pending status with reproducible evidence
 
 ### Requirement: Automated comprehension contract
-The project SHALL provide a local check that verifies the required model, distinct score families, person-level provenance with uncertainty, comparison redundancy, person-specific questionnaire, luck and variance boundary, divergent-path counterexamples, tier meaning, non-prediction, and person-path concepts remain present.
+The project SHALL provide a local check that verifies the required model, distinct score families, person-level provenance with uncertainty, comparison redundancy, person-specific questionnaire, luck and variance boundary, divergent-path counterexamples, tier meaning, dataset-relative outcome bands, missing population denominator, power-law limits, non-prediction, and person-path concepts remain present.
 
 #### Scenario: Essential explanation disappears
 - **WHEN** a required unanswered-question resolution or stable surface identifier is removed

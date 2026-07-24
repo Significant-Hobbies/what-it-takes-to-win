@@ -36,6 +36,29 @@ The selected milestone determines eligibility for this early-breakthrough datase
 
 The tier is not calculated from advantage or leverage scores, and it should not be read as the significance of only the selected early milestone. It does not measure human worth or predict future potential. The current assignments remain interpretive annotations pending an independent audit.
 
+## Outcome distribution context
+
+The product translates each tier into a count, share, and cumulative rank band
+inside this 2,585-person dataset. It also shows how many lower-tier profiles are
+present and the lower-tier-per-member ratio for the selected tier. These values
+are rebuilt from the current dataset rather than stored as annotations.
+
+The result is a **tier band**, not an exact individual percentile. For example,
+T1 occupies ranks 1 through 574 from the top, but the tier does not order Bill
+Gates against the other T1 profiles. The denominator is also highly selected:
+every record already cleared the early-breakthrough inclusion threshold.
+Population prevalence, ordinary attempts, near-misses, and people who never
+reached a documented milestone are absent. Tier shares and lower-tier ratios
+therefore are not success probabilities or estimates of how many people failed.
+
+Career outcomes in many fields can be heavy-tailed or power-law-like: a small
+minority can account for a disproportionate share of recognition, reach,
+wealth, citations, or attention, and repeated compounding can widen outcome
+gaps. This is an interpretive model, not a fitted power law from the tier counts.
+The four editorial tiers compress continuous careers into broad bands; the
+project does not estimate a Pareto exponent or claim the tier distribution is a
+statistical power law.
+
 In version 0.3, average starting advantage and built or converted leverage rise
 from T4 to T1, but the score ranges overlap heavily. The correlation between
 starting-advantage total and a better tier is approximately 0.32; leverage is
