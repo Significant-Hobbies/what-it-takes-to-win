@@ -174,9 +174,12 @@ const isActive = (link: (typeof navLinks)[number]) =>
             return;
           }
           results.innerHTML = matches.map(p => {
-            const href = "/person/" + encodeURIComponent(p.id) + "/";
-            return `<a href="` + href + `" class="nsr-item" role="option"><span class="nsr-name">${escapeHtml(p.name)}</span><span class="nsr-cat">${escapeHtml(p.category)}</span></a>`;
+            const personPath = encodeURIComponent(p.id);
+            return `<a data-person-path="${personPath}" class="nsr-item" role="option"><span class="nsr-name">${escapeHtml(p.name)}</span><span class="nsr-cat">${escapeHtml(p.category)}</span></a>`;
           }).join('');
+          results.querySelectorAll<HTMLAnchorElement>('[data-person-path]').forEach((anchor) => {
+            anchor.href = "/person/" + anchor.dataset.personPath + "/";
+          });
           setResultsOpen(true);
         }
 
