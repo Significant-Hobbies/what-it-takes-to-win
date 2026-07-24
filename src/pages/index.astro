@@ -575,18 +575,21 @@ const structuredData = {
     }
 
     function scheduleCharts() {
-      if ("requestIdleCallback" in window) {
-        window.requestIdleCallback(() => initialiseCharts(), { timeout: 1500 });
-      } else {
-        globalThis.setTimeout(() => initialiseCharts(), 1);
+      const firstChart = document.getElementById("chart-age");
+      if (!firstChart || !("IntersectionObserver" in window)) {
+        globalThis.setTimeout(() => initialiseCharts(), 1500);
+        return;
       }
+
+      const observer = new IntersectionObserver((entries) => {
+        if (!entries.some((entry) => entry.isIntersecting)) return;
+        observer.disconnect();
+        initialiseCharts();
+      }, { rootMargin: "600px 0px" });
+      observer.observe(firstChart);
     }
 
-    if (document.readyState === "complete") {
-      scheduleCharts();
-    } else {
-      window.addEventListener("load", scheduleCharts, { once: true });
-    }
+    scheduleCharts();
   </script>
 
   <!-- Detail panel modal for chart click-throughs -->
