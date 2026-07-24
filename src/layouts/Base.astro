@@ -9,8 +9,8 @@ const {
   canonicalPath,
   structuredData,
 } = Astro.props;
-const canonicalUrl = canonicalPath && Astro.site
-  ? new URL(canonicalPath, Astro.site).toString()
+const canonicalUrl = Astro.site
+  ? new URL(canonicalPath ?? Astro.url.pathname, Astro.site).toString()
   : null;
 ---
 <!doctype html>
