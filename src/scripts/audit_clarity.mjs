@@ -15,6 +15,23 @@ const contracts = [
     ],
   },
   {
+    name: "Homepage survivor-path narrative",
+    file: "index.html",
+    markers: [
+      'data-clarity-contract="survivor-path-narrative"',
+      "You are looking at the surviving branch",
+      "Six hypothetical 50/50 gates",
+      "Illustration only",
+      "Real careers are neither independent nor fair coins",
+      "Advantage changes the first tosses",
+      "Capability can improve the coin",
+      "Runway buys more tosses",
+      "A streak is still a streak",
+      "your unfinished branch with someone else’s surviving streak",
+      "Do not inherit the comparison",
+    ],
+  },
+  {
     name: "One-minute outcome answer",
     file: "insights/index.html",
     markers: [
@@ -136,6 +153,8 @@ const contracts = [
       "Programmatic page evidence gate",
       "Outcome distribution context",
       "not a fitted power law",
+      "Coin-toss thought experiment",
+      "not an observed attrition rate",
     ],
   },
 ];

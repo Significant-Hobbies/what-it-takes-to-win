@@ -106,6 +106,16 @@ const topPeople = showcaseIds
   .map((id) => people.find((person) => person.person_id === id))
   .filter(Boolean);
 
+const survivorStages = [
+  { count: 64, label: "Plausible starts", note: "Many paths can look promising here." },
+  { count: 32, label: "First opening", note: "Access, permission, or timing remains available." },
+  { count: 16, label: "Useful feedback", note: "The work meets a signal strong enough to continue." },
+  { count: 8, label: "Right people", note: "A collaborator, mentor, customer, or selector appears." },
+  { count: 4, label: "Runway holds", note: "Health, money, attention, and persistence survive another turn." },
+  { count: 2, label: "Recognition compounds", note: "Earlier proof makes the next opening more likely." },
+  { count: 1, label: "Visible peak", note: "This is the branch history remembers." },
+];
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -172,8 +182,8 @@ const structuredData = {
       <span>Observed standing</span>
     </div>
     <div class="hero-actions">
-      <a class="btn-link btn-link-primary" href="/insights/">See the four-stage model</a>
-      <a class="hero-secondary-link" href="/am-i-the-next/bill-gates/">Test a famous comparison →</a>
+      <a class="btn-link btn-link-primary" href="#survivor-path">See why comparison breaks</a>
+      <a class="hero-secondary-link" href="/am-i-the-next/bill-gates/">Inspect a famous path →</a>
     </div>
     <div class="meta-row">
       <span><strong>{total}</strong> curated people</span>
@@ -181,6 +191,89 @@ const structuredData = {
       <span>avg starting advantage <strong>{avgAdvantage} / {SCORE_FAMILIES.advantage.max}</strong></span>
       <span>avg built/converted leverage <strong>{avgLeverage} / {maxLeverage}</strong></span>
     </div>
+  </section>
+
+  <section
+    id="survivor-path"
+    class="survivor-story"
+    aria-labelledby="survivor-story-heading"
+    data-clarity-contract="survivor-path-narrative"
+  >
+    <div class="survivor-story-heading">
+      <p class="eyebrow">Before you compare yourself</p>
+      <h2 id="survivor-story-heading">You are looking at the surviving branch.</h2>
+      <p>
+        A famous outcome is the visible end of a long sequence. The public sees the peak. It rarely
+        sees the nearby paths that met different timing, lost runway, missed a collaborator, absorbed
+        a shock, or simply never became biography.
+      </p>
+    </div>
+
+    <figure class="survivor-figure">
+      <div class="survivor-figure-label">
+        <div>
+          <span>Thought experiment</span>
+          <strong>Six hypothetical 50/50 gates</strong>
+        </div>
+        <p>Illustration only · not a dataset rate or career probability</p>
+      </div>
+      <div
+        class="survivor-field"
+        role="img"
+        aria-label="Thought experiment showing 64 plausible starts narrowing through six hypothetical fifty-fifty gates to one visible peak. This is an illustration, not a measured career probability."
+      >
+        {survivorStages.map((stage, stageIndex) => (
+          <div class={`survivor-row ${stageIndex === survivorStages.length - 1 ? "survivor-row-peak" : ""}`}>
+            <div class="survivor-row-copy">
+              <span>{String(stageIndex).padStart(2, "0")}</span>
+              <div>
+                <strong>{stage.label}</strong>
+                <small>{stage.note}</small>
+              </div>
+            </div>
+            <div class="survivor-dots" aria-hidden="true">
+              {Array.from({ length: stage.count }).map(() => <i></i>)}
+            </div>
+            <strong class="survivor-count">{stage.count}</strong>
+          </div>
+        ))}
+      </div>
+      <figcaption>
+        If six genuinely independent 50/50 events all had to land one way, one path in 64 would
+        survive the entire sequence on average. Real careers are neither independent nor fair coins.
+      </figcaption>
+    </figure>
+
+    <div class="survivor-interpretation" aria-label="How to interpret the coin-toss metaphor">
+      <article>
+        <span>01</span>
+        <strong>Advantage changes the first tosses.</strong>
+        <p>Access, safety, geography, tools, and introductions can make some openings more available.</p>
+      </article>
+      <article>
+        <span>02</span>
+        <strong>Capability can improve the coin.</strong>
+        <p>Reps, skill, trust, teams, and distribution can make later favourable outcomes less accidental.</p>
+      </article>
+      <article>
+        <span>03</span>
+        <strong>Runway buys more tosses.</strong>
+        <p>Time, health, money, permission, and persistence affect how many serious attempts remain possible.</p>
+      </article>
+      <article>
+        <span>04</span>
+        <strong>A streak is still a streak.</strong>
+        <p>Markets, gatekeepers, encounters, shocks, and outcome variance can redirect even excellent work.</p>
+      </article>
+    </div>
+
+    <blockquote class="survivor-turn">
+      <p>You were comparing your unfinished branch with someone else’s surviving streak.</p>
+      <footer>
+        Study the conditions. Inspect what was built. Respect what cannot be replayed.
+        <strong>Do not inherit the comparison.</strong>
+      </footer>
+    </blockquote>
   </section>
 
   <div class="insight-callout" data-clarity-contract="central-finding">
@@ -357,11 +450,20 @@ const structuredData = {
     ))}
   </div>
 
-  <div style="margin-top:32px;text-align:center;">
-    <a href="/explore/" style="display:inline-block;padding:12px 24px;background:var(--accent);color:#0b0d12;border-radius:8px;font-weight:600;">
-      Explore all {total} people →
-    </a>
-  </div>
+  <section class="home-resolution" aria-labelledby="home-resolution-heading">
+    <p class="eyebrow">Where comparison should end</p>
+    <h2 id="home-resolution-heading">The useful question is not whether you are the next X.</h2>
+    <p>
+      It is which part of the next branch is visible and controllable: the capability to deepen,
+      the feedback loop to shorten, the relationship to build, the runway to protect, or the next
+      high-quality attempt to make possible.
+    </p>
+    <strong>Study the path. Do not inherit the comparison.</strong>
+    <div class="hero-actions">
+      <a class="btn-link btn-link-primary" href="/explore/">Inspect {total.toLocaleString()} paths</a>
+      <a class="hero-secondary-link" href="/compare/">Use comparison as a diagnostic →</a>
+    </div>
+  </section>
 
   <script is:inline type="application/json" id="chart-data" set:html={JSON.stringify({ ageData, cohortData, engineData, archetypeData, advantageData })} />
   <script>

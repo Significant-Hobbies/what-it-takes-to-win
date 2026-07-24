@@ -1855,6 +1855,431 @@ td.num { text-align: right; font-family: var(--mono); }
   }
 }
 
+/* Survivor-path narrative */
+.survivor-story {
+  position: relative;
+  scroll-margin-top: 84px;
+  margin: 0 0 72px;
+  padding: 42px;
+  overflow: hidden;
+  border: 1px solid rgba(128, 151, 255, 0.42);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 92% 8%, rgba(128, 151, 255, 0.14), transparent 30%),
+    linear-gradient(150deg, rgba(21, 27, 39, 0.98), rgba(13, 17, 25, 0.98));
+}
+
+.survivor-story::before {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(128, 151, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(128, 151, 255, 0.025) 1px, transparent 1px);
+  background-size: 32px 32px;
+  content: "";
+  mask-image: linear-gradient(to bottom, black, transparent 78%);
+}
+
+.survivor-story > * {
+  position: relative;
+}
+
+.survivor-story-heading {
+  max-width: 820px;
+}
+
+.survivor-story-heading h2 {
+  max-width: 720px;
+  margin: 0 0 16px;
+  font-size: clamp(32px, 4vw, 44px);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.survivor-story-heading > p:last-child {
+  max-width: 800px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.72;
+  color: var(--text-dim);
+}
+
+.survivor-figure {
+  margin: 36px 0 28px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: rgba(7, 10, 16, 0.72);
+}
+
+.survivor-figure-label {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.survivor-figure-label > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.survivor-figure-label span,
+.survivor-figure-label p {
+  font-family: var(--mono);
+  font-size: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+}
+
+.survivor-figure-label strong {
+  font-size: 16px;
+}
+
+.survivor-figure-label p {
+  max-width: 360px;
+  margin: 0;
+  text-align: right;
+  color: var(--text-faint);
+}
+
+.survivor-field {
+  display: grid;
+  gap: 4px;
+}
+
+.survivor-row {
+  display: grid;
+  min-height: 54px;
+  grid-template-columns: minmax(190px, 0.36fr) minmax(0, 1fr) 42px;
+  align-items: center;
+  gap: 18px;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.survivor-row:nth-child(even) {
+  background: rgba(128, 151, 255, 0.035);
+}
+
+.survivor-row-copy {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  align-items: start;
+  gap: 9px;
+}
+
+.survivor-row-copy > span {
+  padding-top: 2px;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-faint);
+}
+
+.survivor-row-copy > div {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.survivor-row-copy strong {
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.survivor-row-copy small {
+  font-size: 11px;
+  line-height: 1.45;
+  color: var(--text-faint);
+}
+
+.survivor-dots {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: clamp(1px, 0.22vw, 3px);
+}
+
+.survivor-dots i {
+  width: clamp(3px, 0.5vw, 7px);
+  height: clamp(3px, 0.5vw, 7px);
+  flex: 0 0 clamp(3px, 0.5vw, 7px);
+  border: 1px solid rgba(168, 176, 190, 0.42);
+  border-radius: 50%;
+  background: rgba(168, 176, 190, 0.28);
+}
+
+.survivor-row:nth-child(n + 3) .survivor-dots i {
+  border-color: rgba(124, 214, 192, 0.55);
+  background: rgba(124, 214, 192, 0.38);
+}
+
+.survivor-row:nth-child(n + 5) .survivor-dots i {
+  border-color: rgba(128, 151, 255, 0.72);
+  background: rgba(128, 151, 255, 0.56);
+}
+
+.survivor-count {
+  font-family: var(--mono);
+  font-size: 15px;
+  text-align: right;
+  color: var(--text-dim);
+}
+
+.survivor-row-peak {
+  min-height: 64px;
+  margin-top: 4px;
+  border: 1px solid rgba(128, 151, 255, 0.36);
+  background: rgba(128, 151, 255, 0.08);
+}
+
+.survivor-row-peak .survivor-dots i {
+  width: 16px;
+  height: 16px;
+  flex-basis: 16px;
+  border: 3px solid rgba(128, 151, 255, 0.24);
+  background: var(--accent);
+  box-shadow: 0 0 24px rgba(128, 151, 255, 0.72);
+}
+
+.survivor-row-peak .survivor-count,
+.survivor-row-peak .survivor-row-copy strong {
+  color: var(--accent);
+}
+
+.survivor-figure figcaption {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-soft);
+  font-size: 12px;
+  line-height: 1.65;
+  color: var(--text-faint);
+}
+
+.survivor-interpretation {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.survivor-interpretation article {
+  min-height: 196px;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: rgba(8, 11, 17, 0.38);
+}
+
+.survivor-interpretation article > span {
+  display: block;
+  margin-bottom: 26px;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--accent-2);
+}
+
+.survivor-interpretation strong {
+  display: block;
+  min-height: 44px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.survivor-interpretation p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.65;
+  color: var(--text-dim);
+}
+
+.survivor-turn {
+  margin: 34px 0 0;
+  padding: 32px 32px 30px;
+  border-top: 1px solid rgba(128, 151, 255, 0.5);
+  border-bottom: 1px solid rgba(128, 151, 255, 0.22);
+  text-align: center;
+}
+
+.survivor-turn > p {
+  max-width: 850px;
+  margin: 0 auto 13px;
+  font-size: clamp(24px, 3vw, 34px);
+  font-weight: 650;
+  line-height: 1.24;
+  letter-spacing: -0.025em;
+  color: var(--text);
+}
+
+.survivor-turn footer {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text-dim);
+}
+
+.survivor-turn footer strong {
+  color: var(--accent-2);
+}
+
+.home-resolution {
+  margin-top: 84px;
+  padding: 48px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background:
+    linear-gradient(130deg, rgba(128, 151, 255, 0.1), transparent 48%),
+    var(--bg-card);
+}
+
+.home-resolution h2 {
+  max-width: 820px;
+  margin: 0 0 16px;
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+}
+
+.home-resolution > p:not(.eyebrow) {
+  max-width: 800px;
+  margin: 0 0 20px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-dim);
+}
+
+.home-resolution > strong {
+  display: block;
+  font-size: 15px;
+  color: var(--accent-2);
+}
+
+.home-resolution .hero-actions {
+  margin-top: 28px;
+}
+
+@media (max-width: 900px) {
+  .survivor-story {
+    padding: 34px;
+  }
+
+  .survivor-row {
+    grid-template-columns: minmax(172px, 0.45fr) minmax(0, 1fr) 36px;
+    gap: 12px;
+  }
+
+  .survivor-row-copy small {
+    display: none;
+  }
+
+  .survivor-interpretation {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .survivor-interpretation article {
+    min-height: 164px;
+  }
+}
+
+@media (max-width: 560px) {
+  .survivor-story {
+    margin-bottom: 56px;
+    padding: 24px 18px;
+    border-radius: 12px;
+  }
+
+  .survivor-story-heading h2 {
+    font-size: 32px;
+  }
+
+  .survivor-story-heading > p:last-child {
+    font-size: 15px;
+  }
+
+  .survivor-figure {
+    margin-top: 28px;
+    padding: 16px 12px;
+  }
+
+  .survivor-figure-label {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .survivor-figure-label p {
+    text-align: left;
+  }
+
+  .survivor-row {
+    min-height: 62px;
+    grid-template-columns: minmax(0, 1fr) 34px;
+    gap: 8px;
+    padding: 9px 6px;
+  }
+
+  .survivor-row-copy {
+    grid-column: 1;
+  }
+
+  .survivor-dots {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-content: flex-end;
+  }
+
+  .survivor-count {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .survivor-row-peak {
+    min-height: 76px;
+  }
+
+  .survivor-interpretation {
+    grid-template-columns: 1fr;
+  }
+
+  .survivor-interpretation article {
+    min-height: 0;
+    padding: 20px;
+  }
+
+  .survivor-interpretation article > span {
+    margin-bottom: 16px;
+  }
+
+  .survivor-interpretation strong {
+    min-height: 0;
+  }
+
+  .survivor-turn {
+    padding: 28px 8px 26px;
+  }
+
+  .survivor-turn > p {
+    font-size: 25px;
+  }
+
+  .home-resolution {
+    margin-top: 62px;
+    padding: 30px 24px;
+  }
+
+  .home-resolution h2 {
+    font-size: 30px;
+  }
+}
+
 /* Outcome distribution context */
 .standing-context {
   margin: 34px 0 30px;

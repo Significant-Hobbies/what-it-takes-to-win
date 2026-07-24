@@ -75,6 +75,7 @@ formula or a repeatable identity.
 - 2026-07-24 — removed render-blocking remote fonts and moved ECharts behind viewport activation; weighted lab LCP improved from 4.10s to 2.13s with zero CLS and zero TBT
 - 2026-07-24 — added dataset-relative tier bands, lower-tier denominators, and an evidence-bounded power-law explanation across Insights and every person profile
 - 2026-07-24 — renamed the repository to `what-it-takes-to-win` and transferred it to the `Significant-Hobbies` GitHub organization
+- 2026-07-24 — added the survivor-path narrative: a bounded 64-to-1 thought experiment, repeated-luck explanation, comparison release, and agency-focused homepage close
 
 ## Products
 
@@ -100,6 +101,7 @@ formula or a repeatable identity.
 - Distinct starting-advantage and built-or-converted-leverage score families, including separate visual treatments, scales, and an explicit self-built / advantage-enabled / earned / external / mixed provenance boundary
 - Defined T1–T4 editorial outcome ladder with observed averages, ranges, overlap, and correlation context
 - Dataset-relative outcome bands with cumulative rank ranges, lower-tier counts and ratios, selected-sample boundaries, and power-law limits
+- Signature survivor-path exhibit showing repeated consequential uncertainty, peak selection, and why a visible surviving streak is not a fair personal benchmark
 - Explicitly separated the age-26 milestone used for inclusion from the career-recognition tier used for comparison
 - One-minute explanatory answer and five-question comprehension contract covering comparison, named-person queries, luck, provenance, and divergence
 - Repeatable clarity and internal-link audit plus deterministic cohort-tier review sample

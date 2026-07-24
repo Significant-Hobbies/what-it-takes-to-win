@@ -9,7 +9,9 @@ separates early-milestone eligibility from career-recognition tiers, explains th
 advantage-to-leverage-to-trajectory model, and shows why score resemblance is not
 a predicted outcome. Every profile also shows its dataset-relative outcome band
 and observable lower-tier denominator without turning the selected sample into
-population odds.
+population odds. The homepage now makes the emotional implication visible through
+an explicitly illustrative survivor-path sequence: comparison begins at the wrong
+end of a selected story.
 
 Two research gates remain deliberately pending: first-time-user comprehension and
 independent source/annotation auditing. Neither can be inferred from automated or
@@ -26,6 +28,7 @@ agent review.
 | Core interactions | PASS | Explore T4 filter returned 172/2,585 records with no non-T4 cards. The complete 22-question Compare flow produced four career-tier profiles, leverage gaps, archetypes, and age-relative results. |
 | Build and internal links | PASS | Astro built 2,591 static pages. The clarity audit checked 43,973 concrete internal links with no missing target. |
 | First-time-user comprehension | PENDING | Requires people who did not build or review the product. |
+| First-time emotional resonance | PENDING | The intended arc is awe → distance → relief → humility → bounded agency. Whether unprompted visitors actually feel that requires external observation rather than agent review. |
 | Independent factual and annotation audit | PENDING | Biographical sources and analyst annotations remain `not_independently_audited`. |
 
 ## Six-question external comprehension protocol

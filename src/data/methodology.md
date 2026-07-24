@@ -146,6 +146,21 @@ A numeric luck score would therefore imply false precision. Luck remains
 explicit in the explanatory model, comparison result, Insights page, and person
 profiles, but unscored.
 
+## Coin-toss thought experiment
+
+The homepage includes a 64-to-1 thought experiment: 64 plausible starts narrow
+to one visible peak after six hypothetical independent 50/50 gates. This is a
+teaching device, not an observed attrition rate, career probability, fitted
+model, or estimate of how many similar people failed.
+
+Real careers are not fair independent coins. Starting advantage can change
+which opportunities are available and their initial odds. Built or converted
+leverage can improve later odds. Runway can create more attempts. Timing,
+health, encounters, gatekeepers, shocks, and outcome variance can still redirect
+an individual path. The illustration exists to make repeated consequential
+uncertainty and survivor selection intuitive without converting luck into a
+score.
+
 ## Programmatic page evidence gate
 
 Person-specific pages are generated for all published records so internal
