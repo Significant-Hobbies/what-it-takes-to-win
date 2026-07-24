@@ -4,12 +4,13 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "node src/scripts/build_dataset.mjs && astro build",
+    "build": "node src/scripts/build_dataset.mjs && astro build && node src/scripts/generate_discovery_surfaces.mjs",
     "preview": "astro preview",
     "check": "node src/scripts/build_dataset.mjs && astro check",
+    "audit:discovery": "node src/scripts/audit_discovery.mjs",
     "audit:clarity": "node src/scripts/audit_clarity.mjs",
     "audit:tiers": "node src/scripts/audit_tiers.mjs",
-    "ready": "npm run check && npm run build && npm run audit:clarity && npm run audit:tiers",
+    "ready": "npm run check && npm run build && npm run audit:discovery && npm run audit:clarity && npm run audit:tiers",
     "deploy": "bash ../fleet-ops/scripts/fleet-deploy-guard.sh success-by-26 && npm run ready && wrangler pages deploy dist --project-name success-by-26 --branch main"
   },
   "dependencies": {

@@ -105,9 +105,55 @@ const showcaseIds = [
 const topPeople = showcaseIds
   .map((id) => people.find((person) => person.person_id === id))
   .filter(Boolean);
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://paths.significanthobbies.com/#publisher",
+      name: "What It Takes to Win",
+      url: "https://paths.significanthobbies.com/",
+      sameAs: ["https://github.com/sarthakagrawal927/success-by-26"],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://paths.significanthobbies.com/#website",
+      url: "https://paths.significanthobbies.com/",
+      name: "What It Takes to Win",
+      description:
+        "A research atlas of 2,585 early breakthrough paths, separating starting advantage, built leverage, trajectory, standing, and luck.",
+      publisher: { "@id": "https://paths.significanthobbies.com/#publisher" },
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://paths.significanthobbies.com/#dataset",
+      name: "What It Takes to Win: Early Breakthrough Paths",
+      description:
+        "A curated dataset of 2,585 people born from 1950 onward, documenting early milestones, starting advantages, leverage, trajectory, career standing, evidence confidence, and luck boundaries.",
+      url: "https://paths.significanthobbies.com/methodology/",
+      creator: { "@id": "https://paths.significanthobbies.com/#publisher" },
+      isAccessibleForFree: true,
+      temporalCoverage: "1950/..",
+      measurementTechnique: "Evidence-backed biographical coding under a published interpretive rubric",
+      variableMeasured: [
+        "Early breakthrough milestone",
+        "Starting advantage",
+        "Built or converted leverage",
+        "Compounding trajectory",
+        "Observed career standing",
+        "Evidence confidence",
+      ],
+    },
+  ],
+};
 ---
 
-<Base title="What It Takes to Win — How Extraordinary Outcomes Happen">
+<Base
+  title="What It Takes to Win — How Extraordinary Outcomes Happen"
+  description="Explore 2,585 documented paths to extraordinary outcomes—separating starting advantage, built leverage, trajectory, standing, and luck."
+  structuredData={structuredData}
+>
   <section class="hero insight-hero">
     <p class="eyebrow">2,585 early breakthrough paths</p>
     <h1>How do extraordinary outcomes happen?</h1>
@@ -319,7 +365,8 @@ const topPeople = showcaseIds
 
   <script is:inline type="application/json" id="chart-data" set:html={JSON.stringify({ ageData, cohortData, engineData, archetypeData, advantageData })} />
   <script>
-    import { chartTheme, initChart } from "../scripts/charts.js";
+    async function initialiseCharts() {
+    const { chartTheme, initChart } = await import("../scripts/charts.js");
 
     const data = JSON.parse(document.getElementById("chart-data").textContent);
     const ageData = data.ageData;
@@ -522,6 +569,21 @@ const topPeople = showcaseIds
         label: { show: true, position: "right", color: theme.textColor, fontSize: 11, formatter: (p) => p.value.toFixed(2) },
       }],
     });
+    }
+
+    function scheduleCharts() {
+      if ("requestIdleCallback" in window) {
+        window.requestIdleCallback(() => initialiseCharts(), { timeout: 1500 });
+      } else {
+        globalThis.setTimeout(() => initialiseCharts(), 1);
+      }
+    }
+
+    if (document.readyState === "complete") {
+      scheduleCharts();
+    } else {
+      window.addEventListener("load", scheduleCharts, { once: true });
+    }
   </script>
 
   <!-- Detail panel modal for chart click-throughs -->
