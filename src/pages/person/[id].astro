@@ -1,53 +1,39 @@
 ---
 import Base from "../../layouts/Base.astro";
 import peopleData from "../../data/people.json";
+import {
+  ADVANTAGE_FIELDS,
+  LEVERAGE_FIELDS,
+  LUCK_FORMS,
+  SCORE_FAMILIES,
+  buildPersonPath,
+  getPersonLeverageProvenance,
+  type OutcomePerson,
+  type ScoreField,
+} from "../../lib/outcome-model";
 
 export function getStaticPaths() {
   return peopleData.map((p) => ({ params: { id: p.person_id } }));
 }
 
-const p = peopleData.find((x) => x.person_id === Astro.params.id);
+const people = peopleData as OutcomePerson[];
+const p = people.find((person) => person.person_id === Astro.params.id)!;
+const path = buildPersonPath(p, people);
 
-const leverageFields = [
-  ["started_serious_reps_before_20_score", "Started serious reps before 20", 1],
-  ["prior_reps_score", "Prior reps", 3],
-  ["scarce_skill_depth_score", "Scarce skill depth", 3],
-  ["native_distribution_score", "Native distribution", 3],
-  ["elite_ecosystem_network_score", "Elite ecosystem network", 3],
-  ["complementary_team_score", "Complementary team", 2],
-  ["structural_wave_score", "Structural wave / timing", 3],
-  ["concentration_intensity_score", "Concentration intensity", 3],
-  ["capital_safety_score", "Capital safety", 2],
-  ["domain_proximity_score", "Domain proximity", 2],
-];
-
-const advantageFields = [
-  ["early_family_financial_platform_support_score", "Family financial platform", 2],
-  ["parent_family_domain_advantage_score", "Parent family domain", 2],
-  ["inherited_audience_business_network_score", "Inherited audience / network", 2],
-  ["elite_institution_performance_pipeline_score", "Elite institution pipeline", 2],
-  ["frontier_geography_ecosystem_score", "Frontier geography / ecosystem", 2],
-  ["rare_early_tools_facilities_score", "Rare early tools / facilities", 2],
-  ["dedicated_mentor_coach_tutor_score", "Dedicated mentor / coach / tutor", 2],
-  ["exceptional_peer_cofounder_sibling_score", "Exceptional peer / cofounder / sibling", 2],
-  ["early_online_platform_community_score", "Early online platform / community", 2],
-  ["direct_customer_domain_exposure_score", "Direct customer / domain exposure", 2],
-  ["prodigy_physical_edge_score", "Prodigy / innate ability", 2],
-  ["adversity_constraint_catalyst_score", "Adversity / constraint catalyst", 2],
-];
-
-function barRows(fields, p) {
-  return fields.map(([key, label, max]) => {
-    const v = p[key] ?? 0;
-    const pct = (v / max) * 100;
-    return { label, v, max, pct };
+function barRows(fields: ScoreField[], person: OutcomePerson) {
+  return fields.map((field) => {
+    const rawValue = person[field.key];
+    const value = typeof rawValue === "number" ? rawValue : 0;
+    const pct = (value / field.max) * 100;
+    return { label: field.label, value, max: field.max, pct };
   });
 }
 
-const leverageRows = barRows(leverageFields, p);
-const advantageRows = barRows(advantageFields, p);
+const leverageRows = barRows(LEVERAGE_FIELDS, p);
+const advantageRows = barRows(ADVANTAGE_FIELDS, p);
+const leverageProvenance = getPersonLeverageProvenance(p);
 
-const related = peopleData
+const related = people
   .filter((x) => x.person_id !== p.person_id && x.normalized_primary_engine === p.normalized_primary_engine)
   .sort((a,b) => (b.total_leverage_score||0) - (a.total_leverage_score||0))
   .slice(0, 6);
@@ -60,7 +46,8 @@ const related = peopleData
     </p>
     <h1>{p.name}</h1>
     <div class="cat">
-      {p.cohort_group} · {p.category} · milestone at age {p.age_at_milestone} · success tier {p.success_tier}
+      {p.cohort_group} · {p.category} · milestone at age {p.age_at_milestone} ·
+      <a href={`/insights/#tier-${p.success_tier}`}>T{p.success_tier} {path.tierDefinition.name}</a>
     </div>
 
     <div class="milestone-box">
@@ -69,6 +56,15 @@ const related = peopleData
     </div>
 
     <div class="summary">{p.early_history_summary}</div>
+    <div class="person-next-cta">
+      <div>
+        <strong>Think your path resembles {p.name}'s?</strong>
+        <span>Compare the visible ingredients, then see exactly where the comparison stops working.</span>
+      </div>
+      <a class="btn-link btn-link-primary" href={`/am-i-the-next/${p.person_id}/`}>
+        Am I the next {p.name}? →
+      </a>
+    </div>
 
     {p.starting_point && p.starting_point !== "Not documented in reviewed sources." && (
       <div class="grid grid-2" style="margin-bottom:8px;">
@@ -82,6 +78,100 @@ const related = peopleData
         </div>
       </div>
     )}
+
+    <div class="section-title">How this path compounded</div>
+    <div class="path-flow" data-clarity-contract="person-path">
+      <article class="path-step score-family-path advantage-family">
+        <div class="path-label"><span>01</span> {SCORE_FAMILIES.advantage.label}</div>
+        <h3>{path.advantageTotal}/{SCORE_FAMILIES.advantage.max} starting-position score</h3>
+        <p>
+          {path.strongestAdvantages.length > 0
+            ? `Strongest documented signals: ${path.strongestAdvantages.map((field) => field.label).join(", ")}.`
+            : "No early condition was strongly documented in the reviewed sources."}
+        </p>
+        <p class="score-family-boundary">{SCORE_FAMILIES.advantage.boundary}</p>
+        <div class="path-context">Cohort percentile: {path.cohortAdvantagePercentile}</div>
+      </article>
+      <article class="path-step score-family-path leverage-family">
+        <div class="path-label"><span>02</span> {SCORE_FAMILIES.leverage.label}</div>
+        <h3>{path.leverageTotal}/{SCORE_FAMILIES.leverage.max} multiplying-capacity score</h3>
+        <p>
+          Strongest observed levers:
+          {path.strongestLeverage.map((field) => field.label).join(", ") || "none clearly documented"}.
+        </p>
+        <p class="score-family-boundary">{SCORE_FAMILIES.leverage.boundary}</p>
+        <div class="path-context">Cohort percentile: {path.cohortLeveragePercentile}</div>
+      </article>
+      <article class="path-step">
+        <div class="path-label"><span>03</span> Compounding trajectory</div>
+        <h3>{Array.isArray(p.trajectory) ? p.trajectory.length : 0} documented steps</h3>
+        <p>
+          The timeline below shows the sequence of work and transitions around the selected early
+          milestone. It is evidence of a path, not proof that every step was necessary.
+        </p>
+        <div class="path-context">Milestone at age {p.age_at_milestone}</div>
+      </article>
+      <article class={`path-step outcome-step tier-${p.success_tier}`}>
+        <div class="path-label"><span>04</span> Observed career standing</div>
+        <h3>T{p.success_tier} · {path.tierDefinition.name}</h3>
+        <p>{path.tierDefinition.short}. The tier summarizes documented career recognition through the data cutoff—not {p.name}'s worth or future potential.</p>
+        <div class="path-context"><a href={`/insights/#tier-${p.success_tier}`}>How tiers work →</a></div>
+      </article>
+    </div>
+
+    <section class="person-provenance-section" data-clarity-contract="leverage-provenance">
+      <div class="section-heading">
+        <p class="eyebrow">Question four · where did the leverage come from?</p>
+        <h2>{p.name}'s leverage provenance</h2>
+        <p>
+          Each non-zero lever gets a best-supported origin, evidence signals, and confidence.
+          Unresolved is the honest default when the biography cannot distinguish self-built,
+          advantage-enabled, earned, external, or mixed.
+        </p>
+      </div>
+      <div class="provenance-table">
+        {leverageProvenance.map((item) => (
+          <article class={`provenance-row origin-${item.origin}`}>
+            <div>
+              <span class="provenance-field">{item.field.label}</span>
+              <strong>{item.value}/{item.field.max}</strong>
+            </div>
+            <div>
+              <span class="provenance-origin">{item.originLabel}</span>
+              <small>{item.confidence} confidence</small>
+            </div>
+            <p>{item.rationale}</p>
+            <div class="provenance-signals">
+              {item.signals.length > 0
+                ? item.signals.map((signal) => <span>{signal}</span>)
+                : <span>No decisive linked signal</span>}
+            </div>
+          </article>
+        ))}
+      </div>
+      <p class="provenance-caveat">
+        This is a bounded inference from the current annotations—not a claim about private effort,
+        merit, or the percentage of {p.name}'s outcome attributable to any origin.
+      </p>
+    </section>
+
+    <section class="luck-inline" data-clarity-contract="luck-and-variance">
+      <strong>Luck is not a leftover score.</strong>
+      <p>
+        {LUCK_FORMS.map((form) => form.label).join(", ")} can change every arrow in the path.
+        This successful-only dataset cannot observe the near-identical paths that did not break through,
+        so luck stays visible and unscored.
+      </p>
+    </section>
+
+    <div class="benchmark-note">
+      Within <strong>{p.cohort_group}</strong>, {p.name}'s starting-advantage total is at the
+      <strong> {path.cohortAdvantagePercentile}th percentile</strong>. Separately, their built or
+      converted leverage total is at the <strong>{path.cohortLeveragePercentile}th percentile</strong>.
+      Other T{p.success_tier} profiles average {path.tierAdvantageMean.toFixed(1)} / {SCORE_FAMILIES.advantage.max}
+      {" "}starting advantage and {path.tierLeverageMean.toFixed(1)} / {SCORE_FAMILIES.leverage.max}
+      {" "}leverage. Similar scores appear in other tiers, so these figures describe positioning—not a cause.
+    </div>
 
     {Array.isArray(p.trajectory) && p.trajectory.length > 0 && (
       <>
@@ -110,34 +200,36 @@ const related = peopleData
         <div class="label">Secondary engine</div>
         <div class="value" style="font-size:18px;">{p.secondary_engine || "—"}</div>
       </div>
-      <div class="stat">
-        <div class="label">Total leverage / confidence</div>
-        <div class="value">{p.total_leverage_score}</div>
+      <div class="stat score-family-stat leverage-family">
+        <div class="label">Built/converted leverage</div>
+        <div class="value">{p.total_leverage_score} <span class="value-denominator">/ {SCORE_FAMILIES.leverage.max}</span></div>
         <div class="sub">evidence: {p.leverage_evidence_confidence}</div>
       </div>
     </div>
 
-    <div class="section-title">Capability leverage scores</div>
-    <div class="card">
+    <div class="section-title">Built or converted leverage</div>
+    <p class="score-section-intro">{SCORE_FAMILIES.leverage.definition} {SCORE_FAMILIES.leverage.boundary}</p>
+    <div class="card score-family-detail leverage-family">
       {leverageRows.map((r) => (
         <div class="score-bar-row">
           <div class="name">{r.label}</div>
           <div class="bar"><div class="bar-fill" style={`width:${r.pct}%`}></div></div>
-          <div class="val">{r.v}/{r.max}</div>
+          <div class="val">{r.value}/{r.max}</div>
         </div>
       ))}
     </div>
 
-    <div class="section-title">Early-advantage scores (0–2)</div>
-    <p style="font-size:13px;color:var(--text-dim);margin-top:0;">
-      Zero means "no clear evidence in reviewed sources," not "advantage was absent."
+    <div class="section-title">Starting-advantage scores (0–2 each)</div>
+    <p class="score-section-intro">
+      {SCORE_FAMILIES.advantage.definition} Zero means "no clear evidence in reviewed sources," not
+      "advantage was absent."
     </p>
-    <div class="card">
+    <div class="card score-family-detail advantage-family">
       {advantageRows.map((r) => (
         <div class="score-bar-row">
           <div class="name">{r.label}</div>
           <div class="bar"><div class="bar-fill" style={`width:${r.pct}%`}></div></div>
-          <div class="val">{r.v}/{r.max}</div>
+          <div class="val">{r.value}/{r.max}</div>
         </div>
       ))}
     </div>
@@ -170,7 +262,7 @@ const related = peopleData
 
     <div class="section-title">Sources</div>
     <div class="card">
-      <ul style="margin:0;padding-left:20px;font-size:14px;">
+      <ul class="source-list" style="margin:0;padding-left:20px;font-size:14px;">
         {p.source_urls.map((u) => <li><a href={u} target="_blank" rel="noopener">{u}</a></li>)}
       </ul>
     </div>
@@ -185,7 +277,7 @@ const related = peopleData
               <div class="cat">{r.category} · age {r.age_at_milestone}</div>
               <div class="milestone">{r.milestone_by_age_26}</div>
               <div class="scores">
-                <span class="score-pill">L <strong>{r.total_leverage_score}</strong></span>
+                <span class="score-pill">Leverage <strong>{r.total_leverage_score}/{SCORE_FAMILIES.leverage.max}</strong></span>
                 <span class="score-pill">T{r.success_tier}</span>
               </div>
             </a>

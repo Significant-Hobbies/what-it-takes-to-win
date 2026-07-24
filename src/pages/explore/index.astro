@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import peopleData from "../../data/people.json";
+import { TIER_DEFINITIONS } from "../../lib/outcome-model";
 
 const people = peopleData;
 const cohorts = [...new Set(people.map((p) => p.cohort_group).filter(Boolean))].sort();
@@ -12,7 +13,7 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
 <Base title="Explore — What It Takes to Win">
   <section class="hero" style="padding-bottom:24px;">
     <h1>Explore {people.length} people</h1>
-    <p class="lede">Filter, search, and sort. Click any person for the full annotation, sources, and early-advantage breakdown.</p>
+    <p class="lede">Find a path to inspect—not a person to rank. Open any profile to see starting conditions, leverage provenance, luck boundaries, trajectory, and a person-specific “Am I the next…?” questionnaire.</p>
   </section>
 
   <div class="filters" id="filters">
@@ -33,11 +34,15 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
       <option value="">All archetypes</option>
       {archetypes.map((c) => <option value={c}>{c}</option>)}
     </select>
+    <select id="f-tier">
+      <option value="">All outcome tiers</option>
+      {TIER_DEFINITIONS.map((tier) => <option value={tier.tier}>T{tier.tier} · {tier.name}</option>)}
+    </select>
     <select id="f-sort">
-      <option value="leverage">Sort: leverage (high→low)</option>
+      <option value="name">Sort: name (A→Z)</option>
       <option value="age-asc">Sort: milestone age (low→high)</option>
       <option value="age-desc">Sort: milestone age (high→low)</option>
-      <option value="name">Sort: name (A→Z)</option>
+      <option value="leverage">Inspect: leverage (high→low, not a rank)</option>
     </select>
     <span id="count" style="font-family:var(--mono);font-size:12px;color:var(--text-faint);">Loading…</span>
   </div>
@@ -46,16 +51,19 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
     <div style="padding:40px;text-align:center;color:var(--text-faint);">Loading people…</div>
   </div>
 
-  <script type="module">
+  <script is:inline type="application/json" id="tier-definitions" set:html={JSON.stringify(TIER_DEFINITIONS)} />
+  <script>
     let people = null;
-    const results = document.getElementById("results");
-    const countEl = document.getElementById("count");
-    const search = document.getElementById("search");
-    const fCohort = document.getElementById("f-cohort");
-    const fCategory = document.getElementById("f-category");
-    const fEngine = document.getElementById("f-engine");
-    const fArchetype = document.getElementById("f-archetype");
-    const fSort = document.getElementById("f-sort");
+    const tierDefinitions = JSON.parse(document.getElementById("tier-definitions").textContent);
+    const results = document.getElementById("results") as HTMLElement;
+    const countEl = document.getElementById("count") as HTMLElement;
+    const search = document.getElementById("search") as HTMLInputElement;
+    const fCohort = document.getElementById("f-cohort") as HTMLSelectElement;
+    const fCategory = document.getElementById("f-category") as HTMLSelectElement;
+    const fEngine = document.getElementById("f-engine") as HTMLSelectElement;
+    const fArchetype = document.getElementById("f-archetype") as HTMLSelectElement;
+    const fTier = document.getElementById("f-tier") as HTMLSelectElement;
+    const fSort = document.getElementById("f-sort") as HTMLSelectElement;
 
     function escapeHtml(s) {
       return String(s).replace(/[&<>"']/g, (c) => ({ "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;" }[c]));
@@ -68,6 +76,7 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
       const category = fCategory.value;
       const engine = fEngine.value;
       const archetype = fArchetype.value;
+      const tier = fTier.value;
       const sort = fSort.value;
 
       let list = people.filter((p) => {
@@ -75,6 +84,7 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
         if (category && p.category !== category) return false;
         if (engine && p.normalized_primary_engine !== engine) return false;
         if (archetype && p.primary_early_advantage_archetype !== archetype) return false;
+        if (tier && String(p.success_tier) !== tier) return false;
         if (q) {
           const hay = `${p.name} ${p.milestone_by_age_26} ${p.early_history_summary} ${p.category} ${p.primary_early_advantage_archetype}`.toLowerCase();
           if (!hay.includes(q)) return false;
@@ -95,14 +105,14 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
           <div class="milestone">${escapeHtml(p.milestone_by_age_26 || "")}</div>
           <div class="scores">
             <span class="score-pill">L <strong>${p.total_leverage_score ?? "—"}</strong></span>
-            <span class="score-pill">T${p.success_tier ?? "?"}</span>
+            <span class="score-pill">T${p.success_tier ?? "?"} ${escapeHtml(tierDefinitions.find(tier => tier.tier === p.success_tier)?.name || "")}</span>
             ${p.primary_early_advantage_archetype ? `<span class="score-pill">${escapeHtml(p.primary_early_advantage_archetype)}</span>` : ""}
           </div>
         </a>
       `).join("");
     }
 
-    [search, fCohort, fCategory, fEngine, fArchetype, fSort].forEach((el) =>
+    [search, fCohort, fCategory, fEngine, fArchetype, fTier, fSort].forEach((el) =>
       el.addEventListener("input", render)
     );
 

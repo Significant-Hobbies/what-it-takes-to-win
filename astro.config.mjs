@@ -1,10 +1,8 @@
 import { defineConfig } from "astro/config";
-import cloudflare from "@astrojs/cloudflare";
 
 export default defineConfig({
   output: "static",
-  adapter: cloudflare(),
-  site: "https://trajectory.pages.dev",
+  site: "https://paths.significanthobbies.com",
   vite: {
     ssr: {
       noExternal: ["echarts"],

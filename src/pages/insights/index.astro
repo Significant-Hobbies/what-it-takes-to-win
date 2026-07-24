@@ -1,0 +1,417 @@
+---
+import Base from "../../layouts/Base.astro";
+import peopleData from "../../data/people.json";
+import {
+  ADVANTAGE_FIELDS,
+  LEVERAGE_FIELDS,
+  LEVERAGE_ORIGINS,
+  LUCK_FORMS,
+  OUTCOME_STAGES,
+  SCORE_FAMILIES,
+  getAdvantageTotal,
+  getPathCounterexamples,
+  summarizeOutcomes,
+  type OutcomePerson,
+  type ScoreField,
+} from "../../lib/outcome-model";
+
+const people = peopleData as OutcomePerson[];
+const summary = summarizeOutcomes(people);
+const counterexamples = getPathCounterexamples(people);
+const tierOne = people.filter((person) => person.success_tier === 1);
+const tierFour = people.filter((person) => person.success_tier === 4);
+
+function fieldMean(group: OutcomePerson[], field: ScoreField) {
+  return group.length
+    ? group.reduce((sum, person) => sum + Number(person[field.key] || 0), 0) / group.length
+    : 0;
+}
+
+const strongestObservedDifferences = [...ADVANTAGE_FIELDS, ...LEVERAGE_FIELDS]
+  .map((field) => ({
+    ...field,
+    tierOneMean: fieldMean(tierOne, field),
+    tierFourMean: fieldMean(tierFour, field),
+    difference: fieldMean(tierOne, field) - fieldMean(tierFour, field),
+    layer: ADVANTAGE_FIELDS.some((candidate) => candidate.key === field.key)
+      ? "Starting advantage"
+      : "Built / converted leverage",
+  }))
+  .sort((a, b) => (b.difference / b.max) - (a.difference / a.max))
+  .slice(0, 8);
+---
+
+<Base
+  title="How Extraordinary Outcomes Happen — What It Takes to Win"
+  description="A clear, evidence-bounded model of how starting advantages, built or converted leverage, and compounding trajectories relate to extraordinary early outcomes."
+>
+  <section class="hero insight-hero">
+    <p class="eyebrow">The model</p>
+    <h1>Extraordinary people are not made by one advantage.</h1>
+    <p class="lede">
+      Starting advantages change the first moves available. Built or converted leverage describes
+      the multiplying capacity later present. It may be self-built, advantage-enabled, earned,
+      external, or mixed. The early milestone puts someone in this dataset; the tier separately
+      summarizes documented career recognition.
+    </p>
+    <div class="hero-actions">
+      <a class="btn-link btn-link-primary" href="/compare/">Choose a person to inspect</a>
+      <a class="btn-link" href="/explore/">Study individual paths</a>
+    </div>
+  </section>
+
+  <div class="insight-callout" data-clarity-contract="central-finding">
+    <strong>The clearest finding:</strong>
+    {" "}higher tiers have higher average starting advantage and built or converted leverage, but
+    the ranges overlap heavily. Position and multiplying capacity are different layers. Neither
+    score determines the outcome.
+  </div>
+
+  <section class="minute-answer" aria-labelledby="minute-answer-heading" data-clarity-contract="one-minute-answer">
+    <p class="eyebrow">The answer in one minute</p>
+    <h2 id="minute-answer-heading">How extraordinary outcomes are made</h2>
+    <div class="minute-answer-grid">
+      <div>
+        <strong>Starting advantages shape the first available moves.</strong>
+        <p>They change access, feedback speed, runway, available attempts, and who notices the work.</p>
+      </div>
+      <div>
+        <strong>Leverage can be built, converted, earned, or encountered.</strong>
+        <p>Reps, scarce skill, distribution, teams, timing, concentration, and domain proximity make effort compound—but the score does not reveal each lever’s origin.</p>
+      </div>
+      <div>
+        <strong>Trajectory is the conversion record.</strong>
+        <p>It shows what someone repeatedly built, learned, joined, shipped, practiced, or changed before the milestone.</p>
+      </div>
+      <div>
+        <strong>Tier describes observed career recognition—not human worth.</strong>
+        <p>Higher tiers average more starting advantage and built or converted leverage, but the overlap is too large for either score to determine the outcome.</p>
+      </div>
+      <div>
+        <strong>Luck acts across every arrow.</strong>
+        <p>Era, encounters, shocks, gatekeepers, and outcome variance can redirect similar visible paths. They stay visible and unscored.</p>
+      </div>
+    </div>
+    <p class="minute-conclusion">
+      <strong>Therefore:</strong>{" "}a large head start can place someone nearer an observed high-tier
+      profile, but cannot manufacture the outcome. A small head start creates friction, not a ceiling.
+      The most useful question is which leverage can be deliberately strengthened next.
+    </p>
+  </section>
+
+  <section aria-labelledby="score-family-heading" data-clarity-contract="score-family-distinction">
+    <div class="section-heading">
+      <p class="eyebrow">Do not collapse these scores</p>
+      <h2 id="score-family-heading">A head start and a multiplying capability are not the same thing</h2>
+      <p>
+        The first score describes documented position near the beginning. The second describes
+        capacity later present in the path. One may help produce the other, but neither total tells
+        us exactly how that conversion happened.
+      </p>
+    </div>
+    <div class="score-family-grid">
+      <article class="score-family-card advantage-family">
+        <div class="score-family-kicker">Before substantial personal proof</div>
+        <h3>{SCORE_FAMILIES.advantage.label}</h3>
+        <div class="score-family-value">0–{SCORE_FAMILIES.advantage.max}<span>across 12 conditions</span></div>
+        <p>{SCORE_FAMILIES.advantage.definition}</p>
+        <strong>{SCORE_FAMILIES.advantage.boundary}</strong>
+      </article>
+      <article class="score-family-card leverage-family">
+        <div class="score-family-kicker">Capacity later present in the path</div>
+        <h3>{SCORE_FAMILIES.leverage.label}</h3>
+        <div class="score-family-value">0–{SCORE_FAMILIES.leverage.max}<span>across 10 levers</span></div>
+        <p>{SCORE_FAMILIES.leverage.definition}</p>
+        <strong>{SCORE_FAMILIES.leverage.boundary}</strong>
+      </article>
+    </div>
+    <div class="provenance-note">
+      <strong>Five possible origins of leverage</strong>
+      {LEVERAGE_ORIGINS.map((origin) => <span><b>{origin.label}</b> — {origin.summary}</span>)}
+      <p>Person pages now infer a best-supported origin for every non-zero lever, show the linked evidence, state confidence, and preserve “unresolved” when the biography cannot tell us.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="comparison-breaks-heading" data-clarity-contract="comparison-redundancy">
+    <div class="section-heading">
+      <p class="eyebrow">Why direct comparison becomes redundant</p>
+      <h2 id="comparison-breaks-heading">A matching profile is not a matching path</h2>
+      <p>
+        Comparison is useful for exposing ingredients. It stops being useful when resemblance is
+        mistaken for destiny. Four hidden differences prevent that leap.
+      </p>
+    </div>
+    <div class="redundancy-grid">
+      <article>
+        <strong>Composition</strong>
+        <p>The same total can be assembled from entirely different advantages and capabilities.</p>
+      </article>
+      <article>
+        <strong>Origin</strong>
+        <p>The same capability may be self-built, advantage-enabled, earned, external, mixed, or unresolved.</p>
+      </article>
+      <article>
+        <strong>Sequence</strong>
+        <p>Order matters: a collaborator before a product is not equivalent to one met after traction.</p>
+      </article>
+      <article>
+        <strong>Luck and variance</strong>
+        <p>Unrepeatable encounters and events can separate paths that look identical in the record.</p>
+      </article>
+    </div>
+    <p class="minute-conclusion">
+      <strong>The useful output is diagnostic, not predictive:</strong>{" "}what was present, where it
+      may have come from, what is missing, and what can still be built.
+    </p>
+  </section>
+
+  <section aria-labelledby="luck-heading" data-clarity-contract="luck-and-variance">
+    <div class="section-heading">
+      <p class="eyebrow">Luck is cross-cutting—not residual noise</p>
+      <h2 id="luck-heading">Luck changes the path without becoming a score</h2>
+      <p>
+        This dataset only contains notable outcomes. It cannot show how many people had similar
+        visible ingredients and did not break through, so assigning a “luck score” would create
+        false precision.
+      </p>
+    </div>
+    <div class="luck-grid">
+      {LUCK_FORMS.map((form) => (
+        <article>
+          <h3>{form.label}</h3>
+          <p>{form.summary}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section aria-labelledby="counterexamples-heading" data-clarity-contract="path-counterexamples">
+    <div class="section-heading">
+      <p class="eyebrow">Data-backed counterexamples</p>
+      <h2 id="counterexamples-heading">Similar numbers, visibly different lives</h2>
+      <p>These pairs are selected deterministically from profiles that pass the comparison evidence gate.</p>
+    </div>
+    <div class="counterexample-stack">
+      {counterexamples.map((pair) => (
+        <article class="counterexample-card">
+          <div class="counterexample-heading">
+            <div>
+              <span>{pair.sharedValue}</span>
+              <h3>{pair.title}</h3>
+            </div>
+            <p>{pair.explanation}</p>
+          </div>
+          <div class="counterexample-pair">
+            {[pair.first, pair.second].map((person) => (
+              <a href={`/person/${person.person_id}/`}>
+                <strong>{person.name}</strong>
+                <span>{person.cohort_group} · T{person.success_tier}</span>
+                <small>
+                  start {getAdvantageTotal(person)}/24 · leverage {person.total_leverage_score}/25 ·
+                  milestone age {person.age_at_milestone}
+                </small>
+                <p>{person.milestone_by_age_26}</p>
+              </a>
+            ))}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section aria-labelledby="path-heading" data-clarity-contract="four-stage-model">
+    <div class="section-heading">
+      <p class="eyebrow">A four-stage path</p>
+      <h2 id="path-heading">How to read every story in this project</h2>
+    </div>
+    <div class="outcome-model">
+      {OUTCOME_STAGES.map((stage) => (
+        <article class={`stage-card stage-${stage.number}`}>
+          <div class="stage-number">{stage.number}</div>
+          <h3>{stage.name}</h3>
+          <p>{stage.summary}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section aria-labelledby="tiers-heading" data-clarity-contract="tier-definitions">
+    <div class="section-heading">
+      <p class="eyebrow">The outcome ladder</p>
+      <h2 id="tiers-heading">What the tiers actually mean</h2>
+      <p>
+        The early milestone determines who enters this dataset; the tier separately summarizes
+        documented career recognition through the data cutoff. It is an editorial band, not a
+        calculation from advantage or leverage scores.
+      </p>
+    </div>
+    <div class="tier-grid">
+      {summary.tiers.map((tier) => (
+        <article id={`tier-${tier.tier}`} class={`tier-card tier-${tier.tier}`}>
+          <div class="tier-card-top">
+            <span class="tier-badge">T{tier.tier}</span>
+            <span class="tier-count">{tier.count.toLocaleString()} people · {tier.share.toFixed(1)}%</span>
+          </div>
+          <h3>{tier.name}</h3>
+          <strong>{tier.short}</strong>
+          <p>{tier.description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section aria-labelledby="gradient-heading" data-clarity-contract="gradient-and-overlap">
+    <div class="section-heading">
+      <p class="eyebrow">What the dataset observes</p>
+      <h2 id="gradient-heading">A real gradient—and no clean dividing line</h2>
+      <p>
+        Averages rise as outcome significance rises. The interquartile ranges show the middle half
+        of each tier, making the overlap visible rather than hiding it behind one number.
+      </p>
+    </div>
+
+    <div class="grid grid-2" style="margin-bottom:20px;">
+      <div class="stat">
+        <div class="label">Starting advantage ↔ better tier correlation</div>
+        <div class="value">{summary.advantageCorrelation.toFixed(2)}</div>
+        <div class="sub">Positive, but far from deterministic</div>
+      </div>
+      <div class="stat">
+        <div class="label">Built/converted leverage ↔ better tier correlation</div>
+        <div class="value">{summary.leverageCorrelation.toFixed(2)}</div>
+        <div class="sub">Positive, with substantial unexplained variation</div>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Outcome tier</th>
+            <th>People</th>
+            <th>Avg starting advantage</th>
+            <th>Middle 50%</th>
+            <th>Avg built/converted leverage</th>
+            <th>Middle 50%</th>
+          </tr>
+        </thead>
+        <tbody>
+          {summary.tiers.map((tier) => (
+            <tr>
+              <td><strong>T{tier.tier} · {tier.name}</strong></td>
+              <td class="mono">{tier.count.toLocaleString()}</td>
+              <td class="mono">{tier.advantage.mean.toFixed(1)} / 24</td>
+              <td class="mono">{tier.advantage.p25}–{tier.advantage.p75}</td>
+              <td class="mono">{tier.leverage.mean.toFixed(1)} / 25</td>
+              <td class="mono">{tier.leverage.p25}–{tier.leverage.p75}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="warning-box" style="margin-top:16px;">
+      <strong>Why the overlap matters.</strong>
+      T1 advantage totals span {summary.tiers[0].advantage.min}–{summary.tiers[0].advantage.max};
+      T4 spans {summary.tiers[3].advantage.min}–{summary.tiers[3].advantage.max}.
+      T1 leverage spans {summary.tiers[0].leverage.min}–{summary.tiers[0].leverage.max};
+      T3 spans {summary.tiers[2].leverage.min}–{summary.tiers[2].leverage.max}.
+      A high score is positioning, not proof. A low score is friction, not a verdict.
+    </div>
+  </section>
+
+  <section aria-labelledby="differences-heading">
+    <div class="section-heading">
+      <p class="eyebrow">Where the observed profiles differ most</p>
+      <h2 id="differences-heading">The largest T1–T4 score gaps</h2>
+      <p>
+        These are descriptive differences in this successful-only sample. They are useful places to
+        investigate—not estimates of what caused the outcome.
+      </p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Dimension</th>
+            <th>Layer</th>
+            <th>T1 average</th>
+            <th>T4 average</th>
+            <th>Observed gap</th>
+          </tr>
+        </thead>
+        <tbody>
+          {strongestObservedDifferences.map((field) => (
+            <tr>
+              <td><strong>{field.label}</strong></td>
+              <td>{field.layer}</td>
+              <td class="mono">{field.tierOneMean.toFixed(2)} / {field.max}</td>
+              <td class="mono">{field.tierFourMean.toFixed(2)} / {field.max}</td>
+              <td class="mono">+{field.difference.toFixed(2)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="grid grid-2 interpretation-grid" aria-label="Interpretation boundaries">
+    <article class="card">
+      <h3>What this supports</h3>
+      <ul class="clean-list">
+        <li>Seeing which conditions repeatedly accompany early breakthroughs.</li>
+        <li>Separating inherited or encountered access from multiplying capacity later present.</li>
+        <li>Finding profiles with similar starting positions but different outcomes.</li>
+        <li>Identifying practical dimensions a visitor can deliberately strengthen.</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h3>What this cannot establish</h3>
+      <ul class="clean-list">
+        <li>That a score caused a person’s success.</li>
+        <li>That someone with the same profile will reach the same outcome.</li>
+        <li>How often similarly advantaged people failed—the dataset has no control group.</li>
+        <li>Whether a person’s undocumented advantage was genuinely absent.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section aria-labelledby="clarity-check-heading" data-clarity-contract="comprehension-check">
+    <div class="section-heading">
+      <p class="eyebrow">Check your interpretation</p>
+      <h2 id="clarity-check-heading">Five questions the project must answer clearly</h2>
+      <p>If these answers are not obvious, the product has failed its clarity contract.</p>
+    </div>
+    <div class="clarity-questions">
+      <details>
+        <summary>Why is direct comparison incomplete?</summary>
+        <p>Totals hide composition, provenance, sequence, and luck. Even a close person-specific match is only surface resemblance—not the probability of reproducing someone’s outcome.</p>
+      </details>
+      <details>
+        <summary>Can I ask “Am I the next X?” for a specific person?</summary>
+        <p>Yes. Every published profile has a person-specific questionnaire using that individual’s strongest documented starting conditions and levers. The result shows overlap and then explains where comparison breaks.</p>
+      </details>
+      <details>
+        <summary>Where does luck fit?</summary>
+        <p>Across every stage. Structural luck, encounters, events, and outcome variance can redirect the path. Luck remains explicit but unscored because the dataset has no failed control group and cannot recover counterfactuals.</p>
+      </details>
+      <details>
+        <summary>Was each capability inherited, enabled, earned, external, or built?</summary>
+        <p>Person pages provide the best-supported origin for every non-zero lever, the evidence signals behind that inference, and a confidence label. When the record cannot distinguish origins, the answer is explicitly unresolved.</p>
+      </details>
+      <details>
+        <summary>Why do superficially similar profiles diverge?</summary>
+        <p>They can share totals but differ in which ingredients compose them, how those ingredients arose, the order of events, and unobserved luck. The counterexample pairs above make that divergence concrete.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="closing-cta">
+    <p class="eyebrow">Make the model personal</p>
+    <h2>See your position without turning it into a prediction.</h2>
+    <p>
+      Choose a specific person, inspect the overlap, and leave with buildable gaps rather than a predicted identity.
+    </p>
+    <a class="btn-link btn-link-primary" href="/compare/">Choose a person →</a>
+  </section>
+</Base>

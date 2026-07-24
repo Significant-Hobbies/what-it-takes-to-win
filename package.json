@@ -1,16 +1,24 @@
 {
-  "name": "trajectory",
+  "name": "success-by-26",
   "type": "module",
   "version": "0.1.0",
   "scripts": {
     "dev": "astro dev",
     "build": "node src/scripts/build_dataset.mjs && astro build",
     "preview": "astro preview",
-    "check": "node src/scripts/build_dataset.mjs && astro check"
+    "check": "node src/scripts/build_dataset.mjs && astro check",
+    "audit:clarity": "node src/scripts/audit_clarity.mjs",
+    "audit:tiers": "node src/scripts/audit_tiers.mjs",
+    "ready": "npm run check && npm run build && npm run audit:clarity && npm run audit:tiers",
+    "deploy": "bash ../fleet-ops/scripts/fleet-deploy-guard.sh success-by-26 && npm run ready && wrangler pages deploy dist --project-name success-by-26 --branch main"
   },
   "dependencies": {
-    "astro": "^5.0.0",
-    "@astrojs/cloudflare": "^12.0.0",
-    "echarts": "^5.5.0"
+    "astro": "^7.1.3",
+    "echarts": "^6.1.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.114.0"
   }
 }

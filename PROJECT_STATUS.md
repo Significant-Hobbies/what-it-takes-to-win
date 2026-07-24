@@ -1,12 +1,13 @@
 # What It Takes to Win — PROJECT STATUS
 
-Last updated: 2026-07-22
+Last updated: 2026-07-24
 
 ## Why / What
 
-Visualization site for the early-advantage dataset — who reached
-a material professional, commercial, creative, athletic, or research milestone
-early in their careers, and what early conditions may have accelerated them.
+Explanatory visualization of 2,585 early-breakthrough paths — how documented
+starting conditions, leverage provenance, luck, and compounding trajectories
+relate to the significance of an observed milestone without claiming a causal
+formula or a repeatable identity.
 
 **Users:** researchers, writers, curious general public
 
@@ -14,7 +15,7 @@ early in their careers, and what early conditions may have accelerated them.
 - Static Astro + ECharts visualization site
 - Per-person detail pages with full score breakdowns, trajectories, and sources
 - Explore page with filters/search/sort
-- Compare-yourself questionnaire with percentile matching
+- Person-specific “Am I the next…?” questionnaires with evidence gates
 - Methodology and about pages
 - Dataset extension via subagent research (target 5K people, ceiling)
 
@@ -29,8 +30,9 @@ early in their careers, and what early conditions may have accelerated them.
 - Pantheon 2025 dataset (candidate discovery, CC BY)
 - Wikipedia (primary biographical source)
 - ECharts (visualization, Apache 2.0)
-- Astro + @astrojs/cloudflare (site framework, MIT)
+- Astro (static site framework, MIT)
 - Cloudflare Pages (hosting)
+- `significanthobbies.com` Cloudflare zone (production hostname)
 
 ### Internal
 - Published dataset: full research set (no downsampling)
@@ -60,43 +62,63 @@ early in their careers, and what early conditions may have accelerated them.
 - 2026-07-22 — migrated 1,818 trajectories from event key to title/description format
 - 2026-07-22 — removed 6 duplicate IDs, capped 2,393 leverage scores at 0-2 range
 - 2026-07-22 — researchers cohort expanded 214 → 254 (batches 05-06)
+- 2026-07-22 — researchers cohort expanded 254 → 297 (batch 07)
+- 2026-07-22 — split 10,000+ trajectory entries into proper title + description (85.9% have both)
+- 2026-07-23 — local release pass fixed homepage charts and compare flow, restored static preview, and added build-time dataset validation
+- 2026-07-23 — added four-stage outcome model, defined editorial tiers, tier-gradient/overlap analysis, connected person paths, and cohort-aware tier-relative comparison
+- 2026-07-23 — completed clarity release gate: one-minute answer, five-question contract, corrected career-tier semantics, deterministic 64-record tier review, desktop/mobile QA, and automated link/clarity audits
+- 2026-07-23 — separated starting advantages from built or converted leverage across overview, Insights, person paths, Compare, methodology, and clarity audits; documented that leverage presence does not establish its origin
+- 2026-07-23 — replaced nearest-tier comparison with person-specific path questionnaires; added per-lever provenance inference, non-scored luck, divergent-path counterexamples, and evidence-gated SEO pages
+- 2026-07-24 — shipped the production site to Cloudflare Pages at `https://paths.significanthobbies.com`
 
 ## Products
 
-- **Website** (Astro static site, Cloudflare Pages)
+- **Website** — `https://paths.significanthobbies.com` (Astro static site, Cloudflare Pages project `success-by-26`)
   - `/` — overview with charts (age distribution, cohort, leverage engine, archetype, early-advantage averages)
-  - `/explore/` — filterable/searchable grid of all people (lazy-loads data client-side)
-  - `/person/[id]/` — per-person detail with score bars, trajectory, family context, sources, related people
-  - `/compare/` — 22-question self-assessment with percentile matching, archetype matching, age snapshots
+  - `/insights/` — one-minute answer, comparison-redundancy explanation, luck model, divergent-path counterexamples, tier definitions, overlap, and five-question clarity contract
+  - `/explore/` — filterable/searchable grid of all people, including outcome-tier filtering (lazy-loads data client-side)
+  - `/person/[id]/` — connected path with per-lever origin, evidence signals, confidence, luck boundary, trajectory, and named-person comparison entry
+  - `/compare/` — chooser for familiar person-specific comparisons; explicitly not a ranking or forecast
+  - `/am-i-the-next/[id]/` — evidence-first questionnaire showing starting overlap, leverage overlap, provenance differences, sequence, luck, and why resemblance is not destiny
   - `/methodology/` — full methodology and limitations
   - `/about/` — project description
 
 ## Features (shipped)
 
 - Dark, dense, scannable visualization UI
+- Evidence-bounded explanatory model: starting advantages → built or converted leverage → compounding trajectory → observed career standing
+- Distinct starting-advantage and built-or-converted-leverage score families, including separate visual treatments, scales, and an explicit self-built / advantage-enabled / earned / external / mixed provenance boundary
+- Defined T1–T4 editorial outcome ladder with observed averages, ranges, overlap, and correlation context
+- Explicitly separated the age-26 milestone used for inclusion from the career-recognition tier used for comparison
+- One-minute explanatory answer and five-question comprehension contract covering comparison, named-person queries, luck, provenance, and divergence
+- Repeatable clarity and internal-link audit plus deterministic cohort-tier review sample
+- Responsive visual QA across the six primary routes and complete Compare/Explore interaction checks
 - 5 overview charts on homepage (ECharts) with click-through detail panels
-- Explore page with search + 5 filters (cohort, category, engine, archetype, sort)
-- Per-person detail pages prerendered on build for full published set
+- Explore page with search + cohort, category, engine, archetype, outcome-tier, and sort controls
+- Per-person detail pages with connected path synthesis, per-lever provenance, confidence, evidence signals, and cohort-relative context
 - Lazy-loaded nav search (fetches slim search index on first focus)
-- Lazy-loaded explore and compare data (fetches people.json client-side)
-- Compare page with 22-question questionnaire, feel-good results, archetype matching
+- Lazy-loaded explore data (fetches people.json client-side)
+- Person-specific questionnaire pages with required answers, visible source evidence, search-index quality gates, and a non-predictive resemblance breakdown
 - Trajectory data on 100% of people — starting point, current position, career milestones
 - Dataset validation: unique IDs; scores in range; no missing key fields
+- Static build and preview suitable for Cloudflare Pages without a runtime adapter
 - Subagent research pipeline (instructions, batch CSVs, JSONL output, merge scripts)
 - Merge report with eligibility stats and error tracking
 
 ## Dataset Stats
 
-- **Total people:** 2542 (born 1950+)
-- **Trajectory coverage:** 100% (2542/2542)
-- **Cohort distribution:** Athletes 922, Creators/artists 809, Founders/operators 557, Researchers 254
-- **Tier distribution:** T1 540, T2 1079, T3 751, T4 172
+- **Total people:** 2585 (born 1950+)
+- **Trajectory coverage:** 100% (2585/2585)
+- **Cohort distribution:** Athletes 922, Creators/artists 809, Founders/operators 557, Researchers 297
+- **Tier distribution:** T1 574, T2 1087, T3 752, T4 172
 
 ## Todo / Planned / Deferred / Blocked
 
-1. **Done** — Trajectory coverage: 100% (all 2,542 people have trajectory data)
-2. **In progress** — Add more researchers to balance cohorts (currently 254, target ~300)
-3. **Planned** — Cloudflare Pages deployment
-4. **Planned** — Double-code stratified sample for reliability (per methodology)
-5. **Deferred** — v1.0 with independently audited sources, retrieval dates, archived links
-6. **Dropped** — 500K bulk Wikipedia layer (scope corrected to 5K gold-standard max)
+1. **Done** — Local release candidate: core routes, charts, explore search, compare flow, dataset validation, static preview, and production build
+2. **Done** — Researcher cohort balance target reached (297, target ~300)
+3. **Done** — Cloudflare Pages deployment and production URL: `https://paths.significanthobbies.com`
+4. **Blocked on owner decision** — Complete the annotation/script licence grants; current licence file is a non-binding template
+5. **Planned** — Double-code stratified sample for reliability (per methodology)
+6. **Deferred** — v1.0 with independently audited sources, retrieval dates, archived links
+7. **Dropped** — 500K bulk Wikipedia layer (scope corrected to 5K gold-standard max)
+8. **Pending external evidence** — Run the first-time-user protocol in `quality/CLARITY_SCORECARD.md`; product-controlled clarity gates already pass

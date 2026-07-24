@@ -94,15 +94,36 @@ const numericFields = [
   "current_position_year",
 ];
 
+const advantageScoreFields = [
+  "early_family_financial_platform_support_score",
+  "parent_family_domain_advantage_score",
+  "inherited_audience_business_network_score",
+  "elite_institution_performance_pipeline_score",
+  "frontier_geography_ecosystem_score",
+  "rare_early_tools_facilities_score",
+  "dedicated_mentor_coach_tutor_score",
+  "exceptional_peer_cofounder_sibling_score",
+  "early_online_platform_community_score",
+  "direct_customer_domain_exposure_score",
+  "prodigy_physical_edge_score",
+  "adversity_constraint_catalyst_score",
+];
+
 const out = people.map((p) => {
   const o = { ...p };
   for (const f of numericFields) {
     o[f] = o[f] === "" ? null : Number(o[f]);
   }
+  for (const f of advantageScoreFields) {
+    if (o[f] != null) o[f] = Math.max(0, Math.min(2, o[f]));
+  }
   o.source_urls = (o.source_urls_pipe || "")
     .split("|")
     .map((s) => s.trim())
     .filter(Boolean);
+  if (o.source_urls.length === 0 && o.primary_source_url) {
+    o.source_urls = [o.primary_source_url];
+  }
   o.primary_early_advantage_tags_list = (o.primary_early_advantage_tags || "")
     .split(",")
     .map((s) => s.trim())
@@ -224,6 +245,58 @@ const withBirthYear = out.map((p) => {
 
 // Filter to born >= 1950
 const filtered = withBirthYear.filter((p) => p.birth_year && p.birth_year >= 1950);
+
+function validateDataset(records) {
+  const errors = [];
+  const requiredFields = [
+    "person_id",
+    "name",
+    "cohort_group",
+    "category",
+    "age_at_milestone",
+    "milestone_by_age_26",
+    "normalized_primary_engine",
+    "success_tier",
+    "primary_early_advantage_archetype",
+  ];
+  const seenIds = new Set();
+
+  for (const person of records) {
+    if (seenIds.has(person.person_id)) {
+      errors.push(`duplicate person_id: ${person.person_id}`);
+    }
+    seenIds.add(person.person_id);
+
+    for (const field of requiredFields) {
+      if (person[field] == null || person[field] === "") {
+        errors.push(`${person.person_id || "unknown"}: missing ${field}`);
+      }
+    }
+    if (person.age_at_milestone < 0 || person.age_at_milestone > 26) {
+      errors.push(`${person.person_id}: age_at_milestone outside 0-26`);
+    }
+    if (person.success_tier < 1 || person.success_tier > 4) {
+      errors.push(`${person.person_id}: success_tier outside 1-4`);
+    }
+    for (const field of advantageScoreFields) {
+      if (person[field] != null && (person[field] < 0 || person[field] > 2)) {
+        errors.push(`${person.person_id}: ${field} outside 0-2`);
+      }
+    }
+    if (!Array.isArray(person.trajectory) || person.trajectory.length === 0) {
+      errors.push(`${person.person_id}: missing trajectory`);
+    }
+    if (!Array.isArray(person.source_urls) || person.source_urls.length === 0) {
+      errors.push(`${person.person_id}: missing source URL`);
+    }
+  }
+
+  if (errors.length > 0) {
+    throw new Error(`Dataset validation failed:\n${errors.slice(0, 25).join("\n")}`);
+  }
+}
+
+validateDataset(filtered);
 
 writeFileSync(join(root, "src", "data", "people.json"), JSON.stringify(filtered));
 console.log(`Wrote ${filtered.length} people to src/data/people.json (born >= 1950, from ${withBirthYear.length} total)`);

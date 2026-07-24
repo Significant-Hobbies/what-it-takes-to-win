@@ -1,29 +1,39 @@
 ---
 import Base from "../layouts/Base.astro";
 import peopleData from "../data/people.json";
+import {
+  LEVERAGE_ORIGINS,
+  OUTCOME_STAGES,
+  SCORE_FAMILIES,
+  getAdvantageTotal,
+  getTierDefinition,
+  summarizeOutcomes,
+  type OutcomePerson,
+} from "../lib/outcome-model";
 
 const people = peopleData;
 const total = people.length;
+const outcomeSummary = summarizeOutcomes(people as OutcomePerson[]);
 
-const cohorts = {};
+const cohorts: Record<string, number> = {};
 people.forEach((p) => { cohorts[p.cohort_group] = (cohorts[p.cohort_group] || 0) + 1; });
 
-const categories = {};
+const categories: Record<string, number> = {};
 people.forEach((p) => { categories[p.category] = (categories[p.category] || 0) + 1; });
 
-const engines = {};
+const engines: Record<string, number> = {};
 people.forEach((p) => {
   const e = p.normalized_primary_engine || "Unknown";
   engines[e] = (engines[e] || 0) + 1;
 });
 
-const archetypes = {};
+const archetypes: Record<string, number> = {};
 people.forEach((p) => {
   const a = p.primary_early_advantage_archetype || "Uncoded";
   archetypes[a] = (archetypes[a] || 0) + 1;
 });
 
-const ageBuckets = {};
+const ageBuckets: Record<number, number> = {};
 for (let a = 13; a <= 26; a++) ageBuckets[a] = 0;
 people.forEach((p) => {
   const a = p.age_at_milestone;
@@ -31,7 +41,11 @@ people.forEach((p) => {
 });
 
 const avgLeverage = (people.reduce((s, p) => s + (p.total_leverage_score || 0), 0) / total).toFixed(1);
+const avgAdvantage = (
+  people.reduce((sum, person) => sum + getAdvantageTotal(person as OutcomePerson), 0) / total
+).toFixed(1);
 const avgAge = (people.reduce((s, p) => s + (p.age_at_milestone || 0), 0) / total).toFixed(1);
+const maxLeverage = SCORE_FAMILIES.leverage.max;
 
 const advantageFields = [
   "early_family_financial_platform_support_score",
@@ -74,24 +88,99 @@ const archetypeData = Object.entries(archetypes).map(([name, value]) => ({ name,
 const ageData = Object.entries(ageBuckets).map(([k, v]) => ({ age: k, count: v }));
 const advantageData = advantageAvg.map((d) => ({ label: d.label, avg: Number(d.avg), count2: d.count2 }));
 
-const topPeople = [...people]
-  .sort((a, b) => (b.total_leverage_score || 0) - (a.total_leverage_score || 0))
-  .slice(0, 12);
+const showcaseIds = [
+  "bill-gates",
+  "mark-zuckerberg",
+  "vitalik-buterin",
+  "billie-eilish",
+  "cristiano-ronaldo",
+  "roger-federer",
+  "yo-yo-ma",
+  "madonna",
+  "grigori-perelman",
+  "nadia-comaneci",
+  "ayrton-senna",
+  "celine-dion",
+];
+const topPeople = showcaseIds
+  .map((id) => people.find((person) => person.person_id === id))
+  .filter(Boolean);
 ---
 
-<Base title="What It Takes to Win — Early-Advantage Dataset">
-  <section class="hero">
-    <h1>What does it take to win?</h1>
+<Base title="What It Takes to Win — How Extraordinary Outcomes Happen">
+  <section class="hero insight-hero">
+    <p class="eyebrow">2,585 early breakthrough paths</p>
+    <h1>How do extraordinary outcomes happen?</h1>
     <p class="lede">
-      {total} people who hit a verifiable milestone early — founders, athletes, creators, engineers.
-      The advantages, leverage, and conditions that may have accelerated them. Interpretive annotations,
-      not causal estimates.
+      Start with the advantages someone inherited or encountered. Then see the multiplying capacity
+      they built, converted, earned, or met through timing. Starting position and later capability
+      are different layers—and neither determines the finish.
     </p>
+    <div class="hero-actions">
+      <a class="btn-link btn-link-primary" href="/insights/">Understand the model</a>
+      <a class="btn-link" href="/am-i-the-next/bill-gates/">Am I the next Bill Gates?</a>
+    </div>
     <div class="meta-row">
       <span><strong>{total}</strong> curated people</span>
       <span>avg milestone age <strong>{avgAge}</strong></span>
-      <span>avg leverage score <strong>{avgLeverage}</strong></span>
-      <span>v<strong>0.1.0-beta</strong></span>
+      <span>avg starting advantage <strong>{avgAdvantage} / {SCORE_FAMILIES.advantage.max}</strong></span>
+      <span>avg built/converted leverage <strong>{avgLeverage} / {maxLeverage}</strong></span>
+    </div>
+  </section>
+
+  <div class="insight-callout" data-clarity-contract="central-finding">
+    <strong>The data shows a gradient, not a formula.</strong>
+    {" "}T1 profiles average {outcomeSummary.tiers[0].advantage.mean.toFixed(1)} in documented
+    starting advantage and {outcomeSummary.tiers[0].leverage.mean.toFixed(1)} in built or converted
+    leverage; T4 profiles average {outcomeSummary.tiers[3].advantage.mean.toFixed(1)} and{" "}
+    {outcomeSummary.tiers[3].leverage.mean.toFixed(1)}. But their ranges overlap. A head start
+    changes the available moves; it is not the same thing as later multiplying capacity. Luck,
+    sequence, and the origin of each lever explain why matching totals still do not make matching paths.
+  </div>
+
+  <section aria-labelledby="home-model-heading" data-clarity-contract="four-stage-model">
+    <div class="section-heading" style="margin-top:0;">
+      <p class="eyebrow">The explanatory model</p>
+      <h2 id="home-model-heading">Four layers—not one success score</h2>
+    </div>
+    <div class="outcome-model" style="margin-bottom:24px;">
+      {OUTCOME_STAGES.map((stage) => (
+        <article class={`stage-card stage-${stage.number}`}>
+          <div class="stage-number">{stage.number}</div>
+          <h3>{stage.name}</h3>
+          <p>{stage.summary}</p>
+        </article>
+      ))}
+    </div>
+    <p style="margin:0 0 36px;color:var(--text-dim);font-size:13px;">
+      <a href="/insights/">See the tier definitions, score ranges, and strongest observed differences →</a>
+    </p>
+  </section>
+
+  <section class="score-family-section" aria-labelledby="score-families-heading" data-clarity-contract="score-family-distinction">
+    <div class="section-heading">
+      <p class="eyebrow">Two different questions</p>
+      <h2 id="score-families-heading">What did they start with—and what later multiplied their work?</h2>
+    </div>
+    <div class="score-family-grid">
+      <article class="score-family-card advantage-family">
+        <div class="score-family-kicker">01 · Position at the start</div>
+        <h3>{SCORE_FAMILIES.advantage.label}</h3>
+        <div class="score-family-value">{avgAdvantage}<span> / {SCORE_FAMILIES.advantage.max} dataset average</span></div>
+        <p>{SCORE_FAMILIES.advantage.definition}</p>
+        <strong>{SCORE_FAMILIES.advantage.boundary}</strong>
+      </article>
+      <article class="score-family-card leverage-family">
+        <div class="score-family-kicker">02 · Multiplying capacity later present</div>
+        <h3>{SCORE_FAMILIES.leverage.label}</h3>
+        <div class="score-family-value">{avgLeverage}<span> / {SCORE_FAMILIES.leverage.max} dataset average</span></div>
+        <p>{SCORE_FAMILIES.leverage.definition}</p>
+        <strong>{SCORE_FAMILIES.leverage.boundary}</strong>
+      </article>
+    </div>
+    <div class="provenance-note">
+      <strong>Leverage has more than one origin.</strong>
+      {LEVERAGE_ORIGINS.map((origin) => <span><b>{origin.label}</b> — {origin.summary}</span>)}
     </div>
   </section>
 
@@ -113,15 +202,15 @@ const topPeople = [...people]
       <div class="value">{avgAge}</div>
       <div class="sub">Across all cohorts</div>
     </div>
-    <div class="stat">
-      <div class="label">Avg leverage score</div>
-      <div class="value">{avgLeverage}</div>
-      <div class="sub">Sum of 10 capability dimensions</div>
+    <div class="stat score-family-stat advantage-family">
+      <div class="label">Avg starting advantage</div>
+      <div class="value">{avgAdvantage} <span class="value-denominator">/ {SCORE_FAMILIES.advantage.max}</span></div>
+      <div class="sub">Documented access or conditions near the start</div>
     </div>
-    <div class="stat">
-      <div class="label">Cohort groups</div>
-      <div class="value">{Object.keys(cohorts).length}</div>
-      <div class="sub">{Object.keys(cohorts).join(" · ")}</div>
+    <div class="stat score-family-stat leverage-family">
+      <div class="label">Avg built/converted leverage</div>
+      <div class="value">{avgLeverage} <span class="value-denominator">/ {maxLeverage}</span></div>
+      <div class="sub">Documented multiplying capacity later present</div>
     </div>
   </div>
 
@@ -148,7 +237,7 @@ const topPeople = [...people]
   </div>
 
   <div class="card" style="margin-bottom: 24px;">
-    <h3>Average early-advantage score (0–2 scale) across all {total} people</h3>
+    <h3>Starting-advantage dimensions (0–2 each) across all {total} people</h3>
     <p style="font-size:13px;color:var(--text-dim);margin:0 0 12px;">
       How often each early condition was documented as a meaningful (1) or unusually strong (2)
       advantage. Zero is "no clear evidence," not "absent."
@@ -156,19 +245,58 @@ const topPeople = [...people]
     <div id="chart-advantage" class="chart"></div>
   </div>
 
-  <div class="section-title">Top 12 by total leverage score</div>
-  <div class="person-grid">
+  <section class="featured-paths" aria-labelledby="featured-paths-heading">
+    <div class="featured-paths-heading">
+      <div>
+        <p class="eyebrow">What non-copyable paths look like</p>
+        <h2 id="featured-paths-heading">Twelve paths that cannot be collapsed into one recipe</h2>
+        <p>
+          These people span fields, starting positions, leverage compositions, and sequences.
+          Their <strong>0–{maxLeverage}</strong> totals record capability presence—not where it came
+          from, whether it was repeatable, or how luck redirected the path.
+        </p>
+      </div>
+      <aside class="leverage-key" aria-label="Leverage score explanation">
+        <div class="leverage-key-value">{avgLeverage}<span> / {maxLeverage}</span></div>
+        <strong>built/converted leverage average</strong>
+        <p>
+          Higher means more documented capacity for effort to compound. It is not a talent score,
+          a pass mark, or a formula for someone’s tier.
+        </p>
+        <a href="/methodology/">Read the scoring boundary →</a>
+      </aside>
+    </div>
+    <p class="featured-selection-note">
+      This is a deliberately varied inspection set, not a leaderboard. Similar totals can conceal
+      different ingredients, origins, and outcomes.
+    </p>
+  </section>
+
+  <div class="person-grid featured-person-grid">
     {topPeople.map((p) => (
-      <a class="person-card" href={`/person/${p.person_id}/`}>
-        <div class="name">{p.name}</div>
-        <div class="cat">{p.category} · age {p.age_at_milestone}</div>
+      <a class="person-card featured-person-card" href={`/person/${p.person_id}/`}>
+        <div class="featured-card-head">
+          <div>
+            <div class="name">{p.name}</div>
+            <div class="cat">{p.category} · milestone at {p.age_at_milestone}</div>
+          </div>
+          <span class={`featured-tier tier-${p.success_tier}`} title={getTierDefinition(p.success_tier).short}>
+            T{p.success_tier} · {getTierDefinition(p.success_tier).name}
+          </span>
+        </div>
         <div class="milestone">{p.milestone_by_age_26}</div>
-        <div class="scores">
-          <span class="score-pill">L <strong>{p.total_leverage_score}</strong></span>
-          <span class="score-pill">T{p.success_tier}</span>
-          {p.primary_early_advantage_archetype && (
-            <span class="score-pill">{p.primary_early_advantage_archetype}</span>
-          )}
+        <div class="featured-leverage">
+          <div class="featured-leverage-label">
+            <span>Built or converted leverage</span>
+            <strong>{p.total_leverage_score}<small> / {maxLeverage}</small></strong>
+          </div>
+          <div class="featured-leverage-track" aria-hidden="true">
+            <span style={`width:${((p.total_leverage_score || 0) / maxLeverage) * 100}%`}></span>
+          </div>
+        </div>
+        <div class="featured-card-footer">
+          <span class="featured-archetype">Starting pattern: {p.primary_early_advantage_archetype || "No dominant archetype"}</span>
+          <span class="featured-inspect">Inspect path <span aria-hidden="true">→</span></span>
         </div>
       </a>
     ))}
@@ -180,16 +308,17 @@ const topPeople = [...people]
     </a>
   </div>
 
-  <script type="application/json" id="chart-data" set:html={JSON.stringify({ ageData, cohortData, engineData, archetypeData, advantageData })} />
-  <script type="module" src="/src/scripts/charts.js"></script>
-  <script type="module">
+  <script is:inline type="application/json" id="chart-data" set:html={JSON.stringify({ ageData, cohortData, engineData, archetypeData, advantageData })} />
+  <script>
+    import { chartTheme, initChart } from "../scripts/charts.js";
+
     const data = JSON.parse(document.getElementById("chart-data").textContent);
     const ageData = data.ageData;
     const cohortData = data.cohortData;
     const engineData = data.engineData;
     const archetypeData = data.archetypeData;
     const advantageData = data.advantageData;
-    const theme = window.chartTheme;
+    const theme = chartTheme;
     const baseAxis = {
       axisLine: { lineStyle: { color: theme.axisLineColor } },
       axisLabel: { color: theme.textColor, fontSize: 11 },
@@ -197,14 +326,14 @@ const topPeople = [...people]
     };
 
     // Lazy-load full people data for chart click-through detail panels
-    let allPeople = null;
+    let allPeople: any[] | null = null;
     function loadPeople() {
       if (allPeople) return Promise.resolve(allPeople);
       return fetch("/data/people.json").then(r => r.json()).then(d => { allPeople = d; return d; });
     }
-    function getGroup(field) {
+    function getGroup(field: string) {
       if (!allPeople) return {};
-      const groups = {};
+      const groups: Record<string, any[]> = {};
       allPeople.forEach(p => {
         const key = p[field] || "Uncoded";
         if (!groups[key]) groups[key] = [];
@@ -220,7 +349,7 @@ const topPeople = [...people]
     }
 
     // --- Detail panel logic ---
-    function showDetail(title, peopleList) {
+    function showDetail(title: string, peopleList: any[]) {
       const overlay = document.getElementById("chart-detail-overlay");
       const titleEl = document.getElementById("detail-title");
       const statsEl = document.getElementById("detail-stats");
@@ -230,17 +359,17 @@ const topPeople = [...people]
       // Stats
       const avgLev = (peopleList.reduce((s, p) => s + (p.total_leverage_score || 0), 0) / peopleList.length).toFixed(1);
       const avgAge = (peopleList.reduce((s, p) => s + (p.age_at_milestone || 0), 0) / peopleList.length).toFixed(1);
-      const tierCounts = {};
+      const tierCounts: Record<string, number> = {};
       peopleList.forEach(p => { tierCounts[p.success_tier] = (tierCounts[p.success_tier] || 0) + 1; });
-      const cohortCounts = {};
+      const cohortCounts: Record<string, number> = {};
       peopleList.forEach(p => { cohortCounts[p.cohort_group] = (cohortCounts[p.cohort_group] || 0) + 1; });
-      const tierStr = Object.entries(tierCounts).sort((a,b) => a[0]-b[0]).map(([t,c]) => `T${t}: ${c}`).join(" · ");
+      const tierStr = Object.entries(tierCounts).sort((a,b) => Number(a[0]) - Number(b[0])).map(([t,c]) => `T${t}: ${c}`).join(" · ");
       const cohortStr = Object.entries(cohortCounts).sort((a,b) => b[1]-a[1]).map(([k,c]) => `${k} (${c})`).join(" · ");
 
       statsEl.innerHTML = `
         <div class="stat-row">
           <span><strong>${peopleList.length}</strong> people</span>
-          <span>avg leverage <strong>${avgLev}</strong></span>
+          <span>avg built/converted leverage <strong>${avgLev} / 25</strong></span>
           <span>avg milestone age <strong>${avgAge}</strong></span>
         </div>
         <div class="stat-row sub">${tierStr}</div>
@@ -265,14 +394,16 @@ const topPeople = [...people]
 
       overlay.style.display = "flex";
     }
-    window.closeDetail = function() {
+    function closeDetail() {
       document.getElementById("chart-detail-overlay").style.display = "none";
-    };
+    }
     document.getElementById("chart-detail-overlay").addEventListener("click", closeDetail);
+    document.getElementById("chart-detail-panel").addEventListener("click", (event) => event.stopPropagation());
+    document.getElementById("detail-close").addEventListener("click", closeDetail);
     document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeDetail(); });
 
     // Age distribution
-    window.initChart("chart-age", {
+    initChart("chart-age", {
       color: theme.palette,
       grid: { left: 40, right: 20, top: 20, bottom: 30 },
       xAxis: { type: "category", data: ageData.map(d => d.age), ...baseAxis, axisTick: { show: false } },
@@ -285,7 +416,7 @@ const topPeople = [...people]
     });
 
     // Cohort
-    window.initChart("chart-cohort", {
+    initChart("chart-cohort", {
       color: theme.palette,
       tooltip: { trigger: "item" },
       series: [{
@@ -299,7 +430,7 @@ const topPeople = [...people]
     });
 
     // Engine
-    const engineChart = window.initChart("chart-engine", {
+    const engineChart = initChart("chart-engine", {
       color: theme.palette,
       grid: { left: 160, right: 20, top: 10, bottom: 20 },
       xAxis: { type: "value", ...baseAxis },
@@ -331,7 +462,7 @@ const topPeople = [...people]
     });
 
     // Archetype
-    const archetypeChart = window.initChart("chart-archetype", {
+    const archetypeChart = initChart("chart-archetype", {
       color: theme.palette,
       grid: { left: 180, right: 20, top: 10, bottom: 20 },
       xAxis: { type: "value", ...baseAxis },
@@ -363,7 +494,7 @@ const topPeople = [...people]
     });
 
     // Advantage averages
-    window.initChart("chart-advantage", {
+    initChart("chart-advantage", {
       color: theme.palette,
       grid: { left: 200, right: 60, top: 10, bottom: 30 },
       xAxis: { type: "value", max: 2, ...baseAxis },
@@ -386,10 +517,10 @@ const topPeople = [...people]
 
   <!-- Detail panel modal for chart click-throughs -->
   <div id="chart-detail-overlay" class="detail-overlay" style="display:none;">
-    <div class="detail-panel" onclick="event.stopPropagation()">
+    <div id="chart-detail-panel" class="detail-panel">
       <div class="detail-header">
         <h3 id="detail-title"></h3>
-        <button class="detail-close" onclick="closeDetail()">&times;</button>
+        <button id="detail-close" class="detail-close" aria-label="Close details">&times;</button>
       </div>
       <div id="detail-stats" class="detail-stats"></div>
       <div id="detail-people" class="detail-people"></div>

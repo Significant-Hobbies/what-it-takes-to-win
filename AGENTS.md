@@ -5,5 +5,6 @@ Also read and follow the shared fleet-level agent standard at `../AGENTS.md`. Tr
 ## Project
 
 - **Stack**: Astro + ECharts + Cloudflare Pages
-- **Local dev**: TBD
-- **Deploy**: TBD
+- **Local dev**: `npm run dev`
+- **Build/check**: `npm run check` then `npm run build`
+- **Deploy**: `npm run deploy` to Cloudflare Pages project `success-by-26`

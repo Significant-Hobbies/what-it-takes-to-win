@@ -2,10 +2,10 @@
 import Base from "../../layouts/Base.astro";
 ---
 
-<Base title="About — Trajectory">
+<Base title="About — What It Takes to Win">
   <section class="hero" style="padding-bottom:24px;">
     <h1>About this project</h1>
-    <p class="lede">An open visualization of the Trajectory early-advantage dataset.</p>
+    <p class="lede">An open visualization of an early-advantage dataset covering 2,585 people.</p>
   </section>
 
   <article class="prose">
@@ -16,6 +16,13 @@ import Base from "../../layouts/Base.astro";
       accelerated their development: family resources, relevant parents, rare tools, elite
       institutions, frontier ecosystems, mentors, peers, platforms, direct domain exposure,
       unusual ability, and adversity.
+    </p>
+    <p>
+      The product reads each record as a four-stage path: starting conditions, converted leverage,
+      compounding trajectory, and observed career standing. The early milestone determines inclusion;
+      the tier summarizes documented career recognition through the data cutoff. Its central finding is
+      a gradient rather than a formula: higher tiers have higher average advantage and leverage, but
+      their score ranges overlap substantially. See <a href="/insights/">how the model and tiers work</a>.
     </p>
 
     <h2>What it is not</h2>
@@ -38,11 +45,12 @@ import Base from "../../layouts/Base.astro";
       mechanisms, not measurements.
     </p>
 
-    <h2>Source & licence</h2>
+    <h2>Source & release terms</h2>
     <p>
-      Dataset: <code>trajectory_public_release_v0_3</code>, v0.3.0, 2026-07-22.
-      Original annotations CC BY 4.0; scripts MIT; third-party sources retain their own terms.
-      See <a href="https://github.com/sarthakagrawal927/trajectory">GitHub</a> for source.
+      This research build includes 2,585 people born in or after 1950. Release terms for the
+      original annotations and scripts are still under review; the repository does not yet grant
+      the suggested CC BY 4.0 or MIT licences. Third-party sources retain their own terms.
+      See <a href="https://github.com/sarthakagrawal927/success-by-26">GitHub</a> for source.
     </p>
 
     <h2>Building the site locally</h2>

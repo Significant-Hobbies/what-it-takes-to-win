@@ -20,7 +20,7 @@ concentration_intensity_score,interpretive_annotation,See methodology and taxono
 capital_safety_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
 domain_proximity_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
 total_leverage_score,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
-success_tier,interpretive_annotation,See methodology and taxonomy; field name is intentionally descriptive.
+success_tier,interpretive_annotation,"Editorial summary of documented career recognition through the data cutoff: 1 global icon, 2 field-leading, 3 domain-recognized, 4 specialist-known. Separate from the selected early milestone and not calculated from advantage or leverage scores; see tier_taxonomy.csv."
 leverage_evidence_confidence,metadata,See methodology and taxonomy; field name is intentionally descriptive.
 family_context_summary,biographical_summary_or_provenance,See methodology and taxonomy; field name is intentionally descriptive.
 parent_family_domain_summary,biographical_summary_or_provenance,See methodology and taxonomy; field name is intentionally descriptive.

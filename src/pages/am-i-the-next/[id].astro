@@ -1,0 +1,364 @@
+---
+import Base from "../../layouts/Base.astro";
+import peopleData from "../../data/people.json";
+import {
+  ADVANTAGE_FIELDS,
+  LEVERAGE_FIELDS,
+  LEVERAGE_ORIGINS,
+  LUCK_FORMS,
+  SCORE_FAMILIES,
+  getAdvantageTotal,
+  getLeverageTotal,
+  getPersonLeverageProvenance,
+  getStrongestFields,
+  getTierDefinition,
+  isComparisonPageIndexable,
+  type OutcomePerson,
+} from "../../lib/outcome-model";
+
+export function getStaticPaths() {
+  return peopleData.map((person) => ({ params: { id: person.person_id } }));
+}
+
+const people = peopleData as OutcomePerson[];
+const person = people.find((candidate) => candidate.person_id === Astro.params.id)!;
+const strongestAdvantages = getStrongestFields(person, ADVANTAGE_FIELDS, 4);
+const strongestLeverage = getStrongestFields(person, LEVERAGE_FIELDS, 4);
+const provenance = getPersonLeverageProvenance(person);
+const provenanceByKey = new Map(provenance.map((item) => [item.field.key, item]));
+const tier = getTierDefinition(person.success_tier);
+const isIndexable = isComparisonPageIndexable(person);
+const firstTrajectorySteps = Array.isArray(person.trajectory) ? person.trajectory.slice(0, 3) : [];
+const questionnaireData = {
+  person: {
+    id: person.person_id,
+    name: person.name,
+    advantageTotal: getAdvantageTotal(person),
+    leverageTotal: getLeverageTotal(person),
+    milestoneAge: person.age_at_milestone,
+    tier: person.success_tier,
+  },
+  advantages: strongestAdvantages.map((field) => ({
+    key: field.key,
+    label: field.label,
+    max: field.max,
+    target: field.value,
+  })),
+  leverage: strongestLeverage.map((field) => {
+    const origin = provenanceByKey.get(field.key);
+    return {
+      key: field.key,
+      label: field.label,
+      max: field.max,
+      target: field.value,
+      origin: origin?.origin || "unresolved",
+      originLabel: origin?.originLabel || "Unresolved",
+      confidence: origin?.confidence || "low",
+    };
+  }),
+};
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: `Am I the next ${person.name}?`,
+  description: `An evidence-based path comparison with ${person.name} that explains why visible resemblance is not a prediction.`,
+  mainEntity: {
+    "@type": "Person",
+    name: person.name,
+    description: person.milestone_by_age_26,
+    sameAs: person.source_urls,
+  },
+};
+---
+
+<Base
+  title={`Am I the Next ${person.name}? Evidence-Based Path Quiz`}
+  description={`Compare your visible starting conditions and leverage with ${person.name}, then see why the resemblance cannot predict your outcome.`}
+  robots={isIndexable ? "index,follow" : "noindex,follow"}
+  canonicalPath={`/am-i-the-next/${person.person_id}/`}
+  structuredData={structuredData}
+>
+  <section class="hero next-person-hero">
+    <p class="eyebrow">Interactive path comparison</p>
+    <h1>Am I the next {person.name}?</h1>
+    <p class="lede">
+      A questionnaire can compare visible ingredients. It cannot reproduce {person.name}'s timing,
+      leverage origins, encounters, trajectory, or luck. Take the short quiz—then see exactly where
+      the analogy stops working.
+    </p>
+    <div class="next-person-meta">
+      <span>Milestone at <strong>{person.age_at_milestone}</strong></span>
+      <span>Starting advantage <strong>{getAdvantageTotal(person)}/{SCORE_FAMILIES.advantage.max}</strong></span>
+      <span>Built/converted leverage <strong>{getLeverageTotal(person)}/{SCORE_FAMILIES.leverage.max}</strong></span>
+      <span>Observed standing <strong>T{person.success_tier} · {tier.name}</strong></span>
+    </div>
+    <p class="affiliation-note">
+      Independent educational analysis. Not affiliated with, endorsed by, or predictive of becoming {person.name}.
+    </p>
+  </section>
+
+  <div class="insight-callout" data-clarity-contract="comparison-redundancy">
+    <strong>The comparison is the doorway, not the answer.</strong>
+    {" "}A high match means some documented fields look similar. It does not mean the fields came
+    from the same origins, interacted in the same order, or will produce the same outcome.
+  </div>
+
+  <section aria-labelledby="named-evidence-heading">
+    <div class="section-heading">
+      <p class="eyebrow">What the record actually contains</p>
+      <h2 id="named-evidence-heading">{person.name}'s visible path ingredients</h2>
+      <p>{person.early_history_summary || person.evidence_summary}</p>
+    </div>
+    <div class="score-family-grid">
+      <article class="score-family-card advantage-family">
+        <div class="score-family-kicker">Starting position · {getAdvantageTotal(person)}/{SCORE_FAMILIES.advantage.max}</div>
+        <h3>{SCORE_FAMILIES.advantage.label}</h3>
+        <ul class="next-evidence-list">
+          {strongestAdvantages.map((field) => (
+            <li><span>{field.label}</span><strong>{field.value}/{field.max}</strong></li>
+          ))}
+        </ul>
+      </article>
+      <article class="score-family-card leverage-family">
+        <div class="score-family-kicker">Multiplying capacity · {getLeverageTotal(person)}/{SCORE_FAMILIES.leverage.max}</div>
+        <h3>{SCORE_FAMILIES.leverage.label}</h3>
+        <ul class="next-evidence-list">
+          {strongestLeverage.map((field) => {
+            const origin = provenanceByKey.get(field.key);
+            return (
+              <li>
+                <span>{field.label}<small>{origin?.originLabel || "Unresolved"} origin · {origin?.confidence || "low"} confidence</small></span>
+                <strong>{field.value}/{field.max}</strong>
+              </li>
+            );
+          })}
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="next-questionnaire" aria-labelledby="questionnaire-heading" data-clarity-contract="person-specific-questionnaire">
+    <div class="section-heading">
+      <p class="eyebrow">The surface comparison</p>
+      <h2 id="questionnaire-heading">Which visible ingredients do you share?</h2>
+      <p>
+        These questions are selected from {person.name}'s strongest documented fields. For leverage,
+        you will also identify where yours came from—the distinction a raw score hides.
+      </p>
+      <p>
+        The result is <strong>surface resemblance</strong>: descriptive overlap across the selected
+        fields, not the probability that you become {person.name}.
+      </p>
+    </div>
+
+    <form id="next-person-form">
+      <div class="question-family advantage-family">
+        <div class="question-family-heading">
+          <span>01</span>
+          <div>
+            <h3>Your starting advantages</h3>
+            <p>What access or conditions were present near the beginning?</p>
+          </div>
+        </div>
+        {strongestAdvantages.map((field, index) => (
+          <fieldset class="next-question" data-kind="advantage" data-key={field.key}>
+            <legend>{index + 1}. Did you have meaningful {field.label.toLowerCase()} near the start?</legend>
+            <div class="next-answer-options">
+              {Array.from({ length: field.max + 1 }, (_, value) => (
+                <label>
+                  <input type="radio" name={`adv-${field.key}`} value={value} required />
+                  <span>{value === 0 ? "No clear access" : value === field.max ? "Unusually strong" : "Meaningful"}</span>
+                </label>
+              ))}
+            </div>
+          </fieldset>
+        ))}
+      </div>
+
+      <div class="question-family leverage-family">
+        <div class="question-family-heading">
+          <span>02</span>
+          <div>
+            <h3>Your built or converted leverage</h3>
+            <p>How much multiplying capacity is present now—and where did it come from?</p>
+          </div>
+        </div>
+        {strongestLeverage.map((field, index) => (
+          <fieldset class="next-question" data-kind="leverage" data-key={field.key}>
+            <legend>{index + 1}. How strongly does {field.label.toLowerCase()} describe your current path?</legend>
+            <div class="next-answer-options numeric-options">
+              {Array.from({ length: field.max + 1 }, (_, value) => (
+                <label>
+                  <input type="radio" name={`lev-${field.key}`} value={value} required />
+                  <span>{value}/{field.max}</span>
+                </label>
+              ))}
+            </div>
+            <label class="origin-question">
+              <span>Where did most of yours come from?</span>
+              <select name={`origin-${field.key}`} required>
+                <option value="">Choose the best fit</option>
+                {LEVERAGE_ORIGINS.map((origin) => <option value={origin.key}>{origin.label}</option>)}
+              </select>
+            </label>
+          </fieldset>
+        ))}
+      </div>
+
+      <div id="next-form-error" class="warning-box" role="alert" hidden>
+        Answer every visible field and leverage-origin question before viewing the breakdown.
+      </div>
+      <button class="btn-primary next-submit" type="submit">Show where the comparison breaks →</button>
+    </form>
+    <div id="next-person-result" class="next-person-result" aria-live="polite" hidden></div>
+  </section>
+
+  <section aria-labelledby="luck-heading" data-clarity-contract="luck-and-variance">
+    <div class="section-heading">
+      <p class="eyebrow">What no quiz can recover</p>
+      <h2 id="luck-heading">Luck acts across the entire path</h2>
+      <p>
+        Luck is not a fifth score. It changes the transitions between starting position,
+        capability, trajectory, and outcome—and this successful-only dataset cannot estimate its size.
+      </p>
+    </div>
+    <div class="luck-grid">
+      {LUCK_FORMS.map((form) => (
+        <article>
+          <h3>{form.label}</h3>
+          <p>{form.summary}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  {firstTrajectorySteps.length > 0 && (
+    <section aria-labelledby="trajectory-snapshot-heading">
+      <div class="section-heading">
+        <p class="eyebrow">Sequence matters</p>
+        <h2 id="trajectory-snapshot-heading">A score cannot reproduce this ordering</h2>
+      </div>
+      <ol class="next-trajectory">
+        {firstTrajectorySteps.map((step) => (
+          <li>
+            <span>{step.year} · age {step.age}</span>
+            <strong>{step.title || "Documented transition"}</strong>
+            <p>{step.description}</p>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )}
+
+  <section class="closing-cta">
+    <p class="eyebrow">The useful conclusion</p>
+    <h2>You do not need to become the next {person.name}.</h2>
+    <p>
+      Use this profile to inspect mechanisms, not borrow an identity. Your relevant problem is which
+      moves fit your starting conditions, current leverage, constraints, timing, and acceptable risks.
+    </p>
+    <div class="hero-actions" style="justify-content:center;">
+      <a class="btn-link btn-link-primary" href={`/person/${person.person_id}/`}>Inspect {person.name}'s full path</a>
+      <a class="btn-link" href="/explore/">Choose another person</a>
+    </div>
+  </section>
+
+  <script is:inline type="application/json" id="next-person-data" set:html={JSON.stringify(questionnaireData)} />
+  <script>
+    const form = document.getElementById("next-person-form") as HTMLFormElement | null;
+    const result = document.getElementById("next-person-result") as HTMLElement | null;
+    const error = document.getElementById("next-form-error") as HTMLElement | null;
+    const dataElement = document.getElementById("next-person-data");
+
+    function escapeHtml(value: unknown) {
+      return String(value).replace(/[&<>"']/g, (character) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;",
+      }[character] || character));
+    }
+
+    function overlapScore(fields: any[], values: FormData, prefix: string) {
+      if (!fields.length) return 0;
+      const scores = fields.map((field) => {
+        const answer = Number(values.get(`${prefix}-${field.key}`));
+        return 1 - (Math.abs(answer - field.target) / field.max);
+      });
+      return Math.round(scores.reduce((sum, score) => sum + score, 0) / scores.length * 100);
+    }
+
+    if (form && result && error && dataElement) {
+      const comparison = JSON.parse(dataElement.textContent || "{}");
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        if (!form.reportValidity()) {
+          error.hidden = false;
+          return;
+        }
+        error.hidden = true;
+        const values = new FormData(form);
+        const advantageOverlap = overlapScore(comparison.advantages, values, "adv");
+        const leverageOverlap = overlapScore(comparison.leverage, values, "lev");
+        const surfaceOverlap = Math.round((advantageOverlap + leverageOverlap) / 2);
+        const provenanceRows = comparison.leverage.map((field: any) => {
+          const visitorOrigin = String(values.get(`origin-${field.key}`) || "unresolved");
+          const visitorLabel = visitorOrigin.replace(/(^|-)([a-z])/g, (_: string, separator: string, letter: string) => `${separator ? " " : ""}${letter.toUpperCase()}`);
+          const comparable = field.origin !== "unresolved" && visitorOrigin !== "unresolved";
+          const same = comparable && field.origin === visitorOrigin;
+          return `
+            <div class="origin-result-row">
+              <strong>${escapeHtml(field.label)}</strong>
+              <span>${escapeHtml(comparison.person.name)}: ${escapeHtml(field.originLabel)} <small>${escapeHtml(field.confidence)}-confidence inference</small></span>
+              <span>You: ${escapeHtml(visitorLabel)}</span>
+              <b class="${same ? "is-same" : "is-different"}">${comparable ? (same ? "same label" : "different origin") : "not comparable"}</b>
+            </div>
+          `;
+        }).join("");
+        const highSurface = surfaceOverlap >= 75;
+        result.innerHTML = `
+          <div class="result-hero">
+            <p class="eyebrow">Surface resemblance</p>
+            <div class="result-score">${surfaceOverlap}<span>%</span></div>
+            <h2>${highSurface ? "The visible ingredients overlap. The future still does not." : "The visible paths differ—and the score is still not destiny."}</h2>
+            <p>This is descriptive overlap across ${comparison.advantages.length + comparison.leverage.length} selected fields, not the probability that you become ${escapeHtml(comparison.person.name)}.</p>
+          </div>
+          <div class="compare-score-families">
+            <div class="card compare-family-result advantage-family">
+              <div class="compare-family-stage">Starting-position overlap</div>
+              <div class="compare-family-score">${advantageOverlap}<span>%</span></div>
+              <p>Even equal totals can contain different family, institutional, geographic, and mentor conditions.</p>
+            </div>
+            <div class="card compare-family-result leverage-family">
+              <div class="compare-family-stage">Capability overlap</div>
+              <div class="compare-family-score">${leverageOverlap}<span>%</span></div>
+              <p>The amount can look similar while its origin and interaction with the path remain different.</p>
+            </div>
+          </div>
+          <div class="result-breakdown">
+            <h3>Where the direct comparison breaks</h3>
+            <div class="redundancy-grid">
+              <article><strong>Composition</strong><p>Totals compress different ingredients into one number.</p></article>
+              <article><strong>Origin</strong><p>The same lever can be inherited, enabled, earned, self-built, external, mixed, or unresolved.</p></article>
+              <article><strong>Sequence</strong><p>Capabilities compound in a particular order; a questionnaire captures a snapshot.</p></article>
+              <article><strong>Luck and variance</strong><p>Encounters, shocks, timing, and unobserved events prevent resemblance from becoming a forecast.</p></article>
+            </div>
+          </div>
+          <div class="origin-result">
+            <h3>Origin is the comparison most scores omit</h3>
+            <p>${escapeHtml(comparison.person.name)}'s labels below are evidence-bounded inferences, not verified percentages.</p>
+            ${provenanceRows}
+          </div>
+          <div class="warning-box">
+            <strong>Answer:</strong> You may share visible mechanisms with ${escapeHtml(comparison.person.name)}.
+            No available score can establish that you are “the next” them. The useful output is the
+            set of mechanisms and uncertainties you now know to investigate in your own context.
+          </div>
+        `;
+        result.hidden = false;
+        result.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+  </script>
+</Base>

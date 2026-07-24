@@ -9,7 +9,7 @@ window.addEventListener("resize", () => {
   charts.forEach((c) => c.resize());
 });
 
-window.initChart = function (id, option) {
+export function initChart(id, option) {
   const el = document.getElementById(id);
   if (!el) return;
   let chart = charts.get(id);
@@ -19,7 +19,9 @@ window.initChart = function (id, option) {
   }
   chart.setOption(option);
   return chart;
-};
+}
+
+window.initChart = initChart;
 
 window.disposeCharts = function () {
   charts.forEach((c) => c.dispose());
@@ -27,9 +29,11 @@ window.disposeCharts = function () {
 };
 
 // Dark theme defaults
-window.chartTheme = {
+export const chartTheme = {
   textColor: "#9aa3b2",
   axisLineColor: "#232a3a",
   splitLineColor: "#1c2230",
   palette: ["#7c9cff", "#5fd3bc", "#f0a36b", "#e879a6", "#f0c36b", "#a78bfa", "#67e8f9", "#fb7185"],
 };
+
+window.chartTheme = chartTheme;
