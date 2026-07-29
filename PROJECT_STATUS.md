@@ -1,6 +1,6 @@
 # What It Takes to Win — PROJECT STATUS
 
-Last updated: 2026-07-25
+Last updated: 2026-07-29
 
 ## Why / What
 
@@ -136,14 +136,9 @@ formula or a repeatable identity.
 - **Pass comparison/search evidence gate:** 92.8%
 - **Independently audited records:** 0 (external research gate remains pending)
 
-## Todo / Planned / Deferred / Blocked
+## Work queue
 
-1. **Done** — Local release candidate: core routes, charts, explore search, compare flow, dataset validation, static preview, and production build
-2. **Done** — Researcher cohort balance target reached (297, target ~300)
-3. **Done** — Cloudflare Pages deployment and production URL: `https://paths.significanthobbies.com`
-4. **Blocked on owner decision** — Complete the annotation/script licence grants; current licence file is a non-binding template
-5. **Planned** — Double-code stratified sample for reliability (per methodology)
-6. **Deferred** — v1.0 with independently audited sources, retrieval dates, archived links
-7. **Dropped** — 500K bulk Wikipedia layer (scope corrected to 5K gold-standard max)
-8. **Pending external evidence** — Run the first-time-user protocol in `quality/CLARITY_SCORECARD.md`; product-controlled clarity gates already pass
-9. **Done** — Highest product-controlled finish: evidence coverage surface, above-fold demonstration, source-integrity guards, editorial polish, and responsive route audit
+Open work is tracked only in
+[GitHub Issues](https://github.com/Significant-Hobbies/what-it-takes-to-win/issues).
+An open issue is a to-do, a linked pull request is in progress, and merge plus
+issue closure makes the work done.
