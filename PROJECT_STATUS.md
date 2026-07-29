@@ -40,6 +40,8 @@ formula or a repeatable identity.
 
 ## Timeline
 
+- 2026-07-29 — added an owned `/changelog` with verified release outcomes and
+  direct GitHub Roadmap and Source links
 - 2026-07-21 — project scaffolded via fleet-init
 - 2026-07-21 — visualization site built (overview, explore, person detail, methodology, about)
 - 2026-07-21 — rounds 1–8 subagent research: 506 people (112 → 506)
@@ -93,6 +95,7 @@ formula or a repeatable identity.
 
 ## Features (shipped)
 
+- Owned editorial product changelog at `/changelog`
 - Dark, dense, scannable visualization UI
 - Fleet-aligned design context, visible keyboard focus, skip navigation, active-page state, reduced-motion handling, accessible search/chart labels, and responsive CTA hierarchy
 - Custom Open Graph share surface and complete Open Graph/Twitter metadata

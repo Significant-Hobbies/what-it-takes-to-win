@@ -1,0 +1,80 @@
+---
+import Base from "../../layouts/Base.astro";
+
+const repository = "https://github.com/Significant-Hobbies/what-it-takes-to-win";
+const releases = [
+  {
+    date: "2026-07-25",
+    title: "The research exhibit gained its evidence ledger",
+    outcomes: [
+      "Coverage now reports source depth, domain diversity, trajectory completeness, confidence, and the still-pending independent audit separately.",
+      "The homepage demonstrates survivor selection above the fold before asking readers to interpret the model.",
+    ],
+  },
+  {
+    date: "2026-07-24",
+    title: "What It Takes to Win launched",
+    outcomes: [
+      "The full 2,585-person research set became available at paths.significanthobbies.com without downsampling.",
+      "Overview, Insights, Explore, person paths, comparison questionnaires, Evidence, Methodology, and About became public.",
+    ],
+  },
+  {
+    date: "2026-07-24",
+    title: "Faster charts and stronger discovery",
+    outcomes: [
+      "Charts now load only when they approach the viewport, cutting weighted lab LCP from 4.10 seconds to 2.13 seconds with zero layout shift.",
+      "Real 404s, a 4,994-URL sitemap, Markdown mirrors, agent catalogs, and structured data made the research easier to discover.",
+    ],
+  },
+  {
+    date: "2026-07-23",
+    title: "Advantages and built leverage were separated",
+    outcomes: [
+      "Starting conditions now remain distinct from leverage a person built or converted across the exhibit and methodology.",
+      "Person-specific questionnaires show provenance differences, sequence, luck, and counterexamples instead of predicting outcomes.",
+    ],
+  },
+];
+---
+
+<Base
+  title="Changelog | What It Takes to Win"
+  description="Meaningful improvements to the What It Takes to Win research exhibit."
+  canonicalPath="/changelog/"
+>
+  <section class="changelog-intro">
+    <p class="section-label">Product history</p>
+    <h1>Changelog</h1>
+    <p>
+      Meaningful improvements to the public research exhibit, its evidence, and its explanatory
+      tools.
+    </p>
+    <nav aria-label="Project links">
+      <a href={`${repository}/issues`}>Roadmap</a>
+      <a href={repository}>Source</a>
+    </nav>
+  </section>
+
+  <ol class="changelog-list">
+    {
+      releases.map((release) => (
+        <li>
+          <article class="changelog-entry">
+            <time datetime={release.date}>
+              {new Date(`${release.date}T00:00:00`).toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </time>
+            <h2>{release.title}</h2>
+            <ul>
+              {release.outcomes.map((outcome) => <li>{outcome}</li>)}
+            </ul>
+          </article>
+        </li>
+      ))
+    }
+  </ol>
+</Base>
