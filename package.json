@@ -11,7 +11,7 @@
     "audit:clarity": "node src/scripts/audit_clarity.mjs",
     "audit:tiers": "node src/scripts/audit_tiers.mjs",
     "ready": "npm run check && npm run build && npm run audit:discovery && npm run audit:clarity && npm run audit:tiers",
-    "deploy": "bash ../foundry/ops/scripts/fleet-deploy-guard.sh what-it-takes-to-win && npm run ready && wrangler pages deploy dist --project-name success-by-26 --branch main"
+    "deploy": "npm run ready && wrangler pages deploy dist --project-name success-by-26 --branch main"
   },
   "dependencies": {
     "astro": "^7.1.3",

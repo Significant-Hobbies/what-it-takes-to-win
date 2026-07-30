@@ -1,6 +1,6 @@
 # What It Takes to Win — PROJECT STATUS
 
-Last updated: 2026-07-29
+Last updated: 2026-07-30
 
 ## Why / What
 
@@ -40,6 +40,9 @@ formula or a repeatable identity.
 
 ## Timeline
 
+- 2026-07-30 — made the repository independently operable by removing its
+  sibling Fleet release dependency while preserving the complete local
+  readiness gate and manual Cloudflare Pages deploy contract
 - 2026-07-29 — added an owned `/changelog` with verified release outcomes and
   direct GitHub Roadmap and Source links
 - 2026-07-21 — project scaffolded via fleet-init
