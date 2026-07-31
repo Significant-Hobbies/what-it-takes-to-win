@@ -38,7 +38,11 @@ The selected milestone determines eligibility for this early-breakthrough datase
 - **T3 — Domain-recognized:** notable and widely recognized among people who follow the domain.
 - **T4 — Specialist-known:** notable, but recognition remains primarily within a niche or among specialists.
 
-The tier is not calculated from advantage or leverage scores, and it should not be read as the significance of only the selected early milestone. It does not measure human worth or predict future potential. The current assignments remain interpretive annotations pending an independent audit.
+The tier is not calculated from advantage or leverage scores, and it should not be read as the significance of only the selected early milestone. It does not
+measure human worth, virtue, or future potential. The stored field remains
+`success_tier` for compatibility, but career-recognition tier is the
+interpretive name: recognition can describe a harmful or notorious career
+without endorsing it.
 
 ## Outcome distribution context
 
@@ -79,6 +83,27 @@ Names, milestones, age assignments, early-history summaries, family context, and
 
 Leverage engines and numeric scores are analyst interpretations applied through a common rubric. They are hypotheses about acceleration mechanisms.
 
+## Secondary annotation reliability
+
+On 31 July 2026, a secondary coder independently recoded a deterministic
+16-record sample stratified across four cohorts and four selected-milestone age
+bands. The coding packet withheld every published tier, dimension score, total,
+archetype, confidence label, and annotation status until the secondary artifact
+was complete.
+
+Tier agreement was 50.0% exact, 100.0% within one band, with
+quadratic-weighted Cohen's kappa of 0.723. Starting-advantage decisions were
+64.1% exact and 97.4% within one point across 192 comparisons. Leverage
+decisions were 33.8% exact and 91.9% within one point across 160 comparisons.
+The secondary leverage totals were 6.875 points higher on average.
+
+This is a diagnostic result, not a reliability certification. It shows that the
+recognition ladder preserves ordinal direction better than exact boundaries,
+the starting-advantage rubric needs narrower definitions, and the leverage
+rubric is not anchored tightly enough for precise numeric interpretation. No
+published scores were changed based on this pass. Independent verification of
+the source facts remains at zero records.
+
 ## Starting-advantage score (0–24)
 
 This score asks: **What access or conditions were documented near the beginning
@@ -90,12 +115,34 @@ of the path?** It sums twelve dimensions scored from 0 to 2:
 
 Zero is not proof of absence. Biographies systematically under-report wealth, informal tutoring, introductions, family logistics, permission, and social capital.
 
+For future coding, 1 requires explicit evidence of meaningful presence and 2
+requires explicit evidence that the condition was unusually scarce, sustained,
+or catalytic by the selected milestone. Later career evidence cannot backfill
+an early advantage. Achievement alone does not establish prodigy status,
+adversity as a catalyst, rare tools, or a strong peer. When one fact supports
+several dimensions, the overlap must be disclosed rather than interpreted as
+independent causal inputs.
+
 ## Built or converted leverage score (0–25)
 
 This score asks: **What multiplying capacity was documented later in the path?**
 It sums ten dimensions covering early serious reps, practice volume, scarce
 skill, distribution, network, team, structural timing, concentration, capital
 safety, and domain proximity.
+
+For the 0–3 dimensions, 1 means a documented presence, 2 means strong or
+repeated evidence, and 3 requires exceptional, path-dominant evidence by the
+selected milestone. The binary early-reps field remains 0 or 1, and the
+remaining 0–2 fields use the starting-advantage anchors above.
+
+Distribution requires repeatable access to an audience, users, customers, or
+selectors, not publicity after a win. Network requires documented relationships
+that moved information or opportunity, not membership in an elite organization
+alone. Concentration and capital safety require direct evidence rather than an
+inference from achievement or institution. Domain proximity means repeated
+contact with real problems, users, or operating constraints, not expertise
+alone. A structural wave requires a documented timing mechanism that amplified
+the path.
 
 The score records the presence of leverage, not its provenance. A lever may be:
 

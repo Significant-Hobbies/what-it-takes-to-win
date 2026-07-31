@@ -1,6 +1,6 @@
 # What It Takes to Win — PROJECT STATUS
 
-Last updated: 2026-07-30
+Last updated: 2026-07-31
 
 ## Why / What
 
@@ -40,6 +40,9 @@ formula or a repeatable identity.
 
 ## Timeline
 
+- 2026-07-31 — completed the first blinded secondary annotation pass across a
+  deterministic 16-cell cohort × milestone-age sample; published tier, score,
+  and rubric-agreement results without changing source-audit status
 - 2026-07-31 — completed the source-level agent discovery catalog with
   `llms-full.txt`, seven concrete surfaces, two templated collections, and
   4,990/4,990 canonical Markdown mirrors; production remains unchanged
@@ -121,6 +124,9 @@ formula or a repeatable identity.
 - Explicitly separated the age-26 milestone used for inclusion from the career-recognition tier used for comparison
 - One-minute explanatory answer and five-question comprehension contract covering comparison, named-person queries, luck, provenance, and divergence
 - Repeatable clarity and internal-link audit plus deterministic cohort-tier review sample
+- Reproducible secondary-coding reliability audit with a blinded 16-record
+  artifact, weighted tier agreement, dimension-level score agreement, and
+  published rubric corrections
 - Responsive visual QA across the six primary routes and complete Compare/Explore interaction checks
 - 5 overview charts on homepage (ECharts) with click-through detail panels
 - Viewport-activated chart loading so ECharts does not block the initial page render
@@ -145,6 +151,7 @@ formula or a repeatable identity.
 - **Two or more listed sources:** 95.8%
 - **Two or more source domains:** 95.0%
 - **Pass comparison/search evidence gate:** 92.8%
+- **Secondary double-coded records:** 16
 - **Independently audited records:** 0 (external research gate remains pending)
 
 ## Work queue

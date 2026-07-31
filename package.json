@@ -10,7 +10,8 @@
     "audit:discovery": "node src/scripts/audit_discovery.mjs",
     "audit:clarity": "node src/scripts/audit_clarity.mjs",
     "audit:tiers": "node src/scripts/audit_tiers.mjs",
-    "ready": "npm run check && npm run build && npm run audit:discovery && npm run audit:clarity && npm run audit:tiers",
+    "audit:reliability": "node src/scripts/audit_reliability.mjs",
+    "ready": "npm run check && npm run build && npm run audit:discovery && npm run audit:clarity && npm run audit:tiers && npm run audit:reliability",
     "deploy": "npm run ready && wrangler pages deploy dist --project-name success-by-26 --branch main"
   },
   "dependencies": {
