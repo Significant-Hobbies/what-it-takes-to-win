@@ -92,15 +92,32 @@ if (llms.startsWith("# What It Takes to Win") && !llms.includes("<!doctype")) {
   failures.push("llms.txt is missing or not plain text");
 }
 
+const llmsFull = await read("llms-full.txt");
+if (
+  llmsFull.startsWith("# What It Takes to Win — full agent index")
+  && llmsFull.includes("## Agent-readable collections")
+  && !llmsFull.includes("<!doctype")
+) {
+  passes.push("llms-full.txt");
+} else {
+  failures.push("llms-full.txt is missing or incomplete");
+}
+
 const apiText = await read("api/ai");
 try {
   const api = JSON.parse(apiText);
   if (
     api.name
     && api.llms === `${origin}/llms.txt`
+    && api.llmsFull === `${origin}/llms-full.txt`
     && api.sitemap === `${origin}/sitemap.xml`
     && Array.isArray(api.surfaces)
-    && api.surfaces.length >= 8
+    && api.surfaces.length === coreSurfaceCount
+    && Array.isArray(api.collections)
+    && api.collections.length === 2
+    && api.collections.every(
+      (collection) => collection.urlTemplate && collection.mdTemplate,
+    )
   ) {
     passes.push("/api/ai catalog");
   } else {
@@ -114,6 +131,7 @@ const headers = await read("_headers");
 if (
   headers.includes("Content-Type: application/json")
   && headers.includes("Content-Type: text/markdown")
+  && headers.match(/Content-Type: text\/plain; charset=utf-8/g)?.length >= 2
   && headers.includes("X-Robots-Tag: noindex")
 ) {
   passes.push("agent content types and noindex headers");

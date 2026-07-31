@@ -40,6 +40,9 @@ formula or a repeatable identity.
 
 ## Timeline
 
+- 2026-07-31 — completed the source-level agent discovery catalog with
+  `llms-full.txt`, seven concrete surfaces, two templated collections, and
+  4,990/4,990 canonical Markdown mirrors; production remains unchanged
 - 2026-07-30 — made the repository independently operable by removing its
   sibling Fleet release dependency while preserving the complete local
   readiness gate and manual Cloudflare Pages deploy contract
@@ -103,7 +106,9 @@ formula or a repeatable identity.
 - Fleet-aligned design context, visible keyboard focus, skip navigation, active-page state, reduced-motion handling, accessible search/chart labels, and responsive CTA hierarchy
 - Custom Open Graph share surface and complete Open Graph/Twitter metadata
 - Search-ready discovery surfaces: real 404 responses, public robots.txt, 4,994 canonical sitemap URLs, and evidence-gated comparison indexing
-- Agent-ready discovery surfaces: llms.txt, `/api/ai`, and a noindex Markdown mirror for every canonical URL
+- Agent-ready discovery surfaces: llms.txt, llms-full.txt, `/api/ai` with seven
+  concrete surfaces and two templated collections, and a noindex Markdown
+  mirror for every canonical URL
 - Homepage Organization/WebSite/Dataset JSON-LD plus WebPage/Person JSON-LD on every person profile
 - Evidence-bounded explanatory model: starting advantages → built or converted leverage → compounding trajectory → observed career standing
 - Distinct starting-advantage and built-or-converted-leverage score families, including separate visual treatments, scales, and an explicit self-built / advantage-enabled / earned / external / mixed provenance boundary
