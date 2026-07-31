@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "protocol": {
+    "name": "secondary-annotation-reliability-v1",
+    "coded_on": "2026-07-31",
+    "coder": "Codex agent, single secondary pass",
+    "sample_size": 16,
+    "selection": "For each cohort and milestone-age band, select the record whose person_id has the lexicographically smallest SHA-256 digest.",
+    "cohorts": [
+      "Athletes",
+      "Creators / artists",
+      "Founders / operators",
+      "Researchers / independent engineers"
+    ],
+    "milestone_age_bands": [
+      [0, 17],
+      [18, 20],
+      [21, 23],
+      [24, 26]
+    ],
+    "blinded_packet_fields": [
+      "person_id",
+      "name",
+      "cohort_group",
+      "category",
+      "age_at_milestone",
+      "milestone_by_age_26",
+      "early_history_summary",
+      "family_context_summary",
+      "parent_family_domain_summary",
+      "evidence_summary",
+      "current_position",
+      "current_position_year",
+      "trajectory",
+      "source_urls"
+    ],
+    "withheld_fields": "All original tier, score, total, archetype, confidence, and annotation-status fields.",
+    "scope": "Independent recoding of the published evidence packet, not independent verification of the underlying source facts."
+  },
+  "advantage_fields": [
+    "early_family_financial_platform_support_score",
+    "parent_family_domain_advantage_score",
+    "inherited_audience_business_network_score",
+    "elite_institution_performance_pipeline_score",
+    "frontier_geography_ecosystem_score",
+    "rare_early_tools_facilities_score",
+    "dedicated_mentor_coach_tutor_score",
+    "exceptional_peer_cofounder_sibling_score",
+    "early_online_platform_community_score",
+    "direct_customer_domain_exposure_score",
+    "prodigy_physical_edge_score",
+    "adversity_constraint_catalyst_score"
+  ],
+  "leverage_fields": [
+    "started_serious_reps_before_20_score",
+    "prior_reps_score",
+    "scarce_skill_depth_score",
+    "native_distribution_score",
+    "elite_ecosystem_network_score",
+    "complementary_team_score",
+    "structural_wave_score",
+    "concentration_intensity_score",
+    "capital_safety_score",
+    "domain_proximity_score"
+  ],
+  "records": [
+    {
+      "person_id": "sachin-tendulkar",
+      "success_tier": 1,
+      "advantage_scores": [1, 1, 0, 2, 2, 0, 2, 1, 0, 2, 2, 0],
+      "leverage_scores": [1, 3, 3, 0, 2, 2, 1, 3, 1, 2],
+      "uncertainty": ["Family support versus family-domain transfer overlaps at the one-point boundary."],
+      "note": "Coach, school, Mumbai cricket ecosystem, sibling support, and exceptional early ability are directly documented."
+    },
+    {
+      "person_id": "ueli-steck",
+      "success_tier": 2,
+      "advantage_scores": [0, 0, 0, 1, 2, 1, 2, 0, 0, 2, 2, 0],
+      "leverage_scores": [1, 3, 3, 0, 2, 1, 1, 3, 1, 2],
+      "uncertainty": ["The packet documents national-team access but not its exact timing relative to the selected milestone."],
+      "note": "Alpine proximity, sustained mentorship, early national pipeline access, and unusually rapid skill development dominate the packet."
+    },
+    {
+      "person_id": "ivica-kostelić",
+      "success_tier": 2,
+      "advantage_scores": [1, 2, 0, 1, 1, 2, 2, 2, 0, 2, 2, 1],
+      "leverage_scores": [1, 3, 3, 0, 2, 1, 1, 3, 1, 2],
+      "uncertainty": ["The family ski project implies material resources, but the packet does not establish wealth."],
+      "note": "The father-led training system and elite sibling environment are unusually strong and directly documented."
+    },
+    {
+      "person_id": "trevor-berbick",
+      "success_tier": 2,
+      "advantage_scores": [0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 2, 1],
+      "leverage_scores": [1, 2, 2, 0, 1, 1, 0, 2, 0, 2],
+      "uncertainty": ["The packet does not name the coaches or support system behind the Olympic and professional progression."],
+      "note": "A late start, exceptional physical edge, and rapid accumulation of competition reps are documented; most enabling context is missing."
+    },
+    {
+      "person_id": "danielle-cohn",
+      "success_tier": 3,
+      "advantage_scores": [1, 1, 0, 0, 1, 0, 0, 0, 2, 1, 0, 0],
+      "leverage_scores": [1, 2, 1, 3, 2, 1, 3, 2, 1, 2],
+      "uncertainty": ["The subject's birth year is disputed, so the exact milestone age is unresolved.", "The packet does not separate parental management from platform-native distribution cleanly."],
+      "note": "Maternal management, relocation to Los Angeles, and early Musical.ly distribution are documented; underlying age evidence is contested."
+    },
+    {
+      "person_id": "derke",
+      "success_tier": 3,
+      "advantage_scores": [0, 0, 0, 1, 0, 0, 0, 2, 2, 1, 2, 0],
+      "leverage_scores": [1, 3, 3, 2, 3, 2, 3, 3, 1, 2],
+      "uncertainty": ["Fnatic may be earned access rather than a starting advantage; it is scored primarily as later leverage."],
+      "note": "Cross-game reps, elite teammates, the online competition layer, and the Valorant structural wave are explicit."
+    },
+    {
+      "person_id": "salem-ilese",
+      "success_tier": 3,
+      "advantage_scores": [2, 1, 0, 2, 2, 1, 2, 0, 2, 2, 1, 0],
+      "leverage_scores": [1, 3, 3, 3, 3, 1, 3, 3, 2, 2],
+      "uncertainty": ["Affluent geography and family-funded training overlap and should not be treated as independent causal effects."],
+      "note": "Early professional instruction, Berklee, Los Angeles proximity, and TikTok distribution are all directly documented."
+    },
+    {
+      "person_id": "roland-emmerich",
+      "success_tier": 2,
+      "advantage_scores": [2, 1, 0, 2, 1, 2, 0, 0, 0, 2, 1, 0],
+      "leverage_scores": [0, 2, 2, 1, 2, 2, 1, 3, 2, 2],
+      "uncertainty": ["The packet implies family financing of unusually expensive student work but does not itemize the transfer."],
+      "note": "Family wealth, film school, production resources, festival exposure, and a complementary production team are documented."
+    },
+    {
+      "person_id": "velupillai-prabhakaran",
+      "success_tier": 2,
+      "advantage_scores": [2, 1, 2, 0, 1, 0, 0, 1, 0, 2, 0, 2],
+      "leverage_scores": [1, 2, 2, 0, 3, 2, 3, 3, 2, 2],
+      "uncertainty": ["Recognition breadth must not be read as merit or approval.", "The packet compresses political grievance, violence, and organizational capacity into fields designed for conventional careers."],
+      "note": "Family standing, community access, lived ethnic conflict, youth networks, and a structural political crisis are documented."
+    },
+    {
+      "person_id": "elena-konstantinova",
+      "success_tier": 4,
+      "advantage_scores": [0, 0, 0, 2, 1, 1, 0, 0, 1, 2, 1, 2],
+      "leverage_scores": [1, 2, 2, 1, 2, 2, 2, 3, 1, 2],
+      "uncertainty": ["The packet does not distinguish founder claims from independently verified company outcomes."],
+      "note": "Gifted-student and Rosatom pathways, rural agricultural exposure, a technical team, and war-related constraints are documented."
+    },
+    {
+      "person_id": "lucy-guo",
+      "success_tier": 2,
+      "advantage_scores": [1, 2, 0, 2, 2, 1, 1, 2, 1, 1, 1, 0],
+      "leverage_scores": [1, 3, 3, 1, 3, 2, 3, 3, 2, 2],
+      "uncertainty": ["Later wealth depends heavily on retained equity, while the tier rubric describes recognition rather than wealth."],
+      "note": "Technical family exposure, selective programs, Silicon Valley institutions, and a complementary cofounder are explicit."
+    },
+    {
+      "person_id": "evan-williams",
+      "success_tier": 1,
+      "advantage_scores": [0, 0, 0, 1, 2, 1, 0, 2, 2, 2, 0, 1],
+      "leverage_scores": [0, 2, 2, 3, 2, 2, 3, 3, 1, 2],
+      "uncertainty": ["The packet does not establish whether rural and dropout constraints were catalytic rather than merely present."],
+      "note": "O'Reilly, California proximity, blogging distribution, cofounder complementarity, and the dot-com wave are documented."
+    },
+    {
+      "person_id": "thiago-david-olson",
+      "success_tier": 4,
+      "advantage_scores": [1, 1, 0, 1, 0, 1, 1, 0, 1, 2, 2, 1],
+      "leverage_scores": [1, 3, 3, 1, 1, 1, 1, 3, 1, 2],
+      "uncertainty": ["Scrounged equipment reflects both a constraint and acquired access; the rubric does not cleanly separate those states."],
+      "note": "Sustained self-directed work, practical family help, rare equipment, and hands-on domain immersion are documented."
+    },
+    {
+      "person_id": "ed-boyden",
+      "success_tier": 2,
+      "advantage_scores": [1, 0, 0, 2, 1, 2, 2, 1, 0, 2, 2, 0],
+      "leverage_scores": [1, 3, 3, 0, 3, 1, 2, 3, 2, 2],
+      "uncertainty": ["Family financial support is not documented; one point reflects the unusually sustained early-college runway and should be revisited."],
+      "note": "TAMS, MIT, frontier tools, elite mentors, and extraordinary demonstrated ability are explicit."
+    },
+    {
+      "person_id": "ljubomir-ljubojevic",
+      "success_tier": 2,
+      "advantage_scores": [0, 1, 0, 2, 2, 0, 1, 1, 0, 2, 2, 1],
+      "leverage_scores": [1, 3, 3, 0, 3, 1, 3, 3, 0, 2],
+      "uncertainty": ["The packet does not name a sustained professional coach; paternal instruction is coded as meaningful but not exceptional."],
+      "note": "Family introduction, Yugoslavia's chess boom, national competition, self-funded elite exposure, and early mastery are documented."
+    },
+    {
+      "person_id": "kaiming-he",
+      "success_tier": 2,
+      "advantage_scores": [1, 0, 0, 2, 2, 2, 2, 1, 0, 2, 2, 0],
+      "leverage_scores": [0, 3, 3, 1, 3, 2, 3, 3, 2, 2],
+      "uncertainty": ["Research publication is only a partial analogue for native distribution."],
+      "note": "Elite educational selection, Microsoft Research Asia, Tang Xiao'ou's mentorship, and frontier computer-vision access are explicit."
+    }
+  ]
+}
