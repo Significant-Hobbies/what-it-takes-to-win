@@ -23,12 +23,12 @@ predicting individual outcomes.
 ## Development
 
 ```bash
-npm install
-npm run check
-npm run build
-npm run audit:discovery
-npm run audit:clarity
-npm run audit:tiers
+pnpm install
+pnpm run check
+pnpm run build
+pnpm run audit:discovery
+pnpm run audit:clarity
+pnpm run audit:tiers
 ```
 
 Created and maintained by [Sarthak Agrawal](https://sarthakagrawal.dev) under

@@ -8,9 +8,9 @@ and record durable follow-up in this repository's GitHub Issues.
 ## Project
 
 - **Stack**: Astro + ECharts + Cloudflare Pages
-- **Local dev**: `npm run dev`
-- **Build/check**: `npm run check` then `npm run build`
-- **Deploy**: `npm run deploy` to Cloudflare Pages project `success-by-26`
+- **Local dev**: `pnpm run dev`
+- **Build/check**: `pnpm run check` then `pnpm run build`
+- **Deploy**: `pnpm run deploy` to Cloudflare Pages project `success-by-26`
   (the internal infrastructure name; the product is **What It Takes to Win**)
 
 ## Work tracking

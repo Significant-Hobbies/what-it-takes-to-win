@@ -11,8 +11,14 @@
     "audit:clarity": "node src/scripts/audit_clarity.mjs",
     "audit:tiers": "node src/scripts/audit_tiers.mjs",
     "audit:reliability": "node src/scripts/audit_reliability.mjs",
-    "ready": "npm run check && npm run build && npm run audit:discovery && npm run audit:clarity && npm run audit:tiers && npm run audit:reliability",
-    "deploy": "npm run ready && wrangler pages deploy dist --project-name success-by-26 --branch main"
+    "ready": "pnpm run check && pnpm run build && pnpm run audit:discovery && pnpm run audit:clarity && pnpm run audit:tiers && pnpm run audit:reliability",
+    "deploy": "pnpm run ready && wrangler pages deploy dist --project-name success-by-26 --branch main"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "workerd"
+    ]
   },
   "dependencies": {
     "astro": "^7.1.3",

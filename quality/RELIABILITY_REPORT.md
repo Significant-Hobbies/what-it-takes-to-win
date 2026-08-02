@@ -42,7 +42,7 @@ complete.
 
 The immutable coding input is
 [`quality/reliability/secondary-coding-v1.json`](reliability/secondary-coding-v1.json).
-`npm run audit:reliability` reselects the sample, validates every score and
+`pnpm run audit:reliability` reselects the sample, validates every score and
 range, and compares the secondary pass with the published annotations.
 
 ## Where the rubric disagreed
