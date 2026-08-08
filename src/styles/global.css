@@ -1837,6 +1837,83 @@ td.num { text-align: right; font-family: var(--mono); }
   padding: 1px 5px;
   border-radius: 3px;
 }
+.prose blockquote {
+  margin: 20px 0;
+  padding: 14px 18px;
+  border-left: 3px solid var(--accent);
+  background: var(--bg-elev);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.6;
+}
+.prose blockquote p { margin: 0; }
+.prose blockquote p + p { margin-top: 10px; }
+.prose strong { color: var(--text); font-weight: 600; }
+.prose p { margin: 0 0 14px; }
+.prose hr {
+  border: none;
+  border-top: 1px solid var(--border-soft);
+  margin: 28px 0;
+}
+
+/* Essay pages */
+.essay-hero { padding-bottom: 28px; }
+.essay-subtitle {
+  font-size: 19px;
+  color: var(--text-dim);
+  font-style: italic;
+  max-width: 680px;
+}
+.essay-prose { max-width: 720px; font-size: 16px; }
+.essay-prose h2 {
+  font-size: 24px;
+  margin: 40px 0 14px;
+}
+.essay-back {
+  margin: 40px 0 64px;
+  font-family: var(--mono);
+  font-size: 13px;
+}
+.essay-back a { color: var(--text-dim); }
+.essay-back a:hover { color: var(--text); }
+
+.essay-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 20px;
+}
+.essay-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 26px;
+}
+.essay-card h2 { margin: 0 0 6px; font-size: 22px; letter-spacing: -0.01em; }
+.essay-card h2 a { color: var(--text); text-decoration: none; }
+.essay-card h2 a:hover { color: var(--accent); }
+.essay-card-subtitle { color: var(--text-dim); margin: 0 0 10px; font-style: italic; }
+.essay-card-meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0 0 12px;
+}
+.essay-card-desc { color: var(--text-dim); margin: 0 0 14px; line-height: 1.6; }
+.essay-card-link {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--accent);
+  text-decoration: none;
+}
+.essay-card-link:hover { text-decoration: underline; }
 
 .legend {
   display: flex;

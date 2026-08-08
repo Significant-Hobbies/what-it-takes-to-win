@@ -288,8 +288,20 @@ async function emit(relativePath, contents) {
 }
 
 const indexableComparisons = people.filter(comparisonIsIndexable);
+const essays = [
+  {
+    id: "who-filled-the-kings-jug",
+    htmlPath: "/essays/who-filled-the-kings-jug/",
+    mdPath: "/essays/who-filled-the-kings-jug.md",
+    title: "Who Filled the King's Jug?",
+    summary:
+      "Privilege is having more of life prepared for you in advance — a private, high-level interface to the world that lets some people begin near the final step.",
+  },
+];
 const canonicalRoutes = [
   ...coreSurfaces.map((surface) => surface.htmlPath),
+  "/essays/",
+  ...essays.map((essay) => essay.htmlPath),
   ...people.map((person) => `/person/${encodeURIComponent(safeId(person))}/`),
   ...indexableComparisons.map(
     (person) => `/am-i-the-next/${encodeURIComponent(safeId(person))}/`,
@@ -332,6 +344,7 @@ await emit(
     `- [Insights](${absolute("/insights.md")}): the one-minute answer, tiers, overlap, luck, and counterexamples`,
     `- [Evidence coverage](${absolute("/coverage.md")}): source depth, confidence, composition, and unresolved audit boundaries`,
     `- [Methodology](${absolute("/methodology.md")}): inclusion, scoring, evidence gates, and limitations`,
+    `- [Essays](${absolute("/essays/")}): long-form writing on advantage and abstraction`,
     `- [Explore](${absolute("/explore/")}): ${people.length.toLocaleString("en-US")} person profiles`,
     `- [API catalog](${absolute("/api/ai")}): machine-readable discovery contract`,
     `- [Sitemap](${absolute("/sitemap.xml")}): canonical indexable HTML`,
@@ -448,6 +461,24 @@ for (const person of indexableComparisons) {
     personMarkdown(person, true),
   );
 }
+for (const essay of essays) {
+  const sourcePath = path.join(root, "src", "pages", "essays", `${essay.id}.md`);
+  let body = await readFile(sourcePath, "utf8");
+  const fmEnd = body.indexOf("\n---\n", body.indexOf("---\n") + 4);
+  body = fmEnd >= 0 ? body.slice(fmEnd + 5) : body;
+  const essayMd = [
+    `# ${essay.title}`,
+    "",
+    essay.summary,
+    "",
+    `- [Read the HTML essay](${absolute(essay.htmlPath)})`,
+    `- [Read the methodology](${absolute("/methodology/")})`,
+    "",
+    body.trim(),
+    "",
+  ].join("\n");
+  await emit(essay.mdPath.replace(/^\//, ""), essayMd);
+}
 
 await emit(
   "_headers",
@@ -474,10 +505,13 @@ await emit(
     "/am-i-the-next/*.md",
     "  Content-Type: text/markdown; charset=utf-8",
     "  X-Robots-Tag: noindex",
+    "/essays/*.md",
+    "  Content-Type: text/markdown; charset=utf-8",
+    "  X-Robots-Tag: noindex",
     "",
   ].join("\n"),
 );
 
 console.log(
-  `Generated discovery surfaces: ${canonicalRoutes.length} canonical URLs, ${people.length + indexableComparisons.length + coreSurfaces.length} Markdown mirrors, ${indexableComparisons.length} indexable comparisons`,
+  `Generated discovery surfaces: ${canonicalRoutes.length} canonical URLs, ${people.length + indexableComparisons.length + coreSurfaces.length + essays.length} Markdown mirrors, ${indexableComparisons.length} indexable comparisons`,
 );

@@ -1,0 +1,60 @@
+---
+import Base from "../../layouts/Base.astro";
+
+const essays = [
+  {
+    href: "/essays/who-filled-the-kings-jug/",
+    title: "Who Filled the King's Jug?",
+    subtitle:
+      "Privilege, abstraction, and the invisible work behind accomplishment.",
+    date: "2026-08-08",
+    readingMinutes: 6,
+    description:
+      "Privilege is having more of life prepared for you in advance — a private, high-level interface to the world that lets some people begin near the final step.",
+  },
+];
+
+const formatDate = (iso) =>
+  new Date(`${iso}T00:00:00`).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+---
+
+<Base
+  title="Essays — What It Takes to Win"
+  description="Long-form essays on advantage, abstraction, and the invisible infrastructure of achievement."
+  canonicalPath="/essays/"
+>
+  <section class="hero" style="padding-bottom:24px;">
+    <p class="eyebrow">Writing</p>
+    <h1>Essays</h1>
+    <p class="lede">
+      Long-form pieces that sit alongside the dataset — on advantage, abstraction,
+      and the invisible infrastructure of achievement.
+    </p>
+  </section>
+
+  <ol class="essay-list">
+    {
+      essays.map((essay) => (
+        <li>
+          <article class="essay-card">
+            <h2>
+              <a href={essay.href}>{essay.title}</a>
+            </h2>
+            <p class="essay-card-subtitle">{essay.subtitle}</p>
+            <p class="essay-card-meta">
+              <time datetime={essay.date}>{formatDate(essay.date)}</time>
+              <span>·</span>
+              <span>{essay.readingMinutes} min read</span>
+            </p>
+            <p class="essay-card-desc">{essay.description}</p>
+            <a class="essay-card-link" href={essay.href}>Read the essay →</a>
+          </article>
+        </li>
+      ))
+    }
+  </ol>
+</Base>

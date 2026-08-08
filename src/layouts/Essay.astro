@@ -1,0 +1,64 @@
+---
+import Base from "./Base.astro";
+
+const { frontmatter } = Astro.props;
+const {
+  title,
+  subtitle,
+  description,
+  date,
+  author = "Sarthak Agrawal",
+  readingMinutes,
+  canonicalPath,
+} = frontmatter;
+
+const displayDate = date
+  ? new Date(`${date}T00:00:00`).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    })
+  : null;
+
+const meta = [
+  displayDate,
+  author ? `By ${author}` : null,
+  readingMinutes ? `${readingMinutes} min read` : null,
+].filter(Boolean);
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: title,
+  description,
+  datePublished: date,
+  author: { "@type": "Person", name: author },
+  publisher: { "@type": "Organization", name: "What It Takes to Win" },
+};
+---
+
+<Base
+  title={`${title} — What It Takes to Win`}
+  description={description}
+  canonicalPath={canonicalPath}
+  structuredData={structuredData}
+>
+  <section class="hero essay-hero">
+    <p class="eyebrow">Essay</p>
+    <h1>{title}</h1>
+    {subtitle && <p class="lede essay-subtitle">{subtitle}</p>}
+    {meta.length > 0 && (
+      <div class="meta-row">
+        {meta.map((item) => <span>{item}</span>)}
+      </div>
+    )}
+  </section>
+
+  <article class="prose essay-prose">
+    <slot />
+  </article>
+
+  <p class="essay-back">
+    <a href="/essays/">← All essays</a>
+  </p>
+</Base>
