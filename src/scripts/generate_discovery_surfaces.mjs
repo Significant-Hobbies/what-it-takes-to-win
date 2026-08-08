@@ -479,6 +479,20 @@ for (const essay of essays) {
   ].join("\n");
   await emit(essay.mdPath.replace(/^\//, ""), essayMd);
 }
+const essaysIndexMd = [
+  "# Essays — What It Takes to Win",
+  "",
+  "Long-form writing that sits alongside the dataset — on advantage, abstraction, and the invisible infrastructure of achievement.",
+  "",
+  ...essays.map(
+    (essay) =>
+      `- [${essay.title}](${absolute(essay.mdPath)}): ${essay.summary}`,
+  ),
+  "",
+  `- [Read all essays](${absolute("/essays/")})`,
+  "",
+].join("\n");
+await emit("essays.md", essaysIndexMd);
 
 await emit(
   "_headers",

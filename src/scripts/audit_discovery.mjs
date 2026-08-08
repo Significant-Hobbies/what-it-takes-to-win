@@ -52,7 +52,8 @@ const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
 );
 const indexableComparisons = people.filter(comparisonIsIndexable);
 const coreSurfaceCount = 7;
-const expectedSitemapCount = coreSurfaceCount + people.length + indexableComparisons.length;
+const essayCount = 2; // essays index + 1 published essay
+const expectedSitemapCount = coreSurfaceCount + essayCount + people.length + indexableComparisons.length;
 if (
   sitemap.startsWith('<?xml version="1.0" encoding="UTF-8"?>')
   && sitemapUrls.length === expectedSitemapCount
