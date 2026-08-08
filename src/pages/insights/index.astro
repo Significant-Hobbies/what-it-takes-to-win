@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import peopleData from "../../data/people.json";
+import "../../styles/insights.css";
 import {
   ADVANTAGE_FIELDS,
   LEVERAGE_FIELDS,
@@ -39,6 +40,111 @@ const strongestObservedDifferences = [...ADVANTAGE_FIELDS, ...LEVERAGE_FIELDS]
   }))
   .sort((a, b) => (b.difference / b.max) - (a.difference / a.max))
   .slice(0, 8);
+
+function summarizeFieldFrequency(field: ScoreField, layer: "advantage" | "leverage") {
+  const documentedCount = people.filter((person) => Number(person[field.key] || 0) > 0).length;
+  return {
+    ...field,
+    layer,
+    documentedCount,
+    share: people.length ? (documentedCount / people.length) * 100 : 0,
+  };
+}
+
+const advantageFrequencies = ADVANTAGE_FIELDS
+  .map((field) => summarizeFieldFrequency(field, "advantage"))
+  .sort((a, b) => a.share - b.share);
+const leverageFrequencies = LEVERAGE_FIELDS
+  .map((field) => summarizeFieldFrequency(field, "leverage"))
+  .sort((a, b) => a.share - b.share);
+const allFieldFrequencies = [...advantageFrequencies, ...leverageFrequencies]
+  .sort((a, b) => a.share - b.share);
+const rarestDocumentedField = allFieldFrequencies[0];
+const mostCommonDocumentedField = allFieldFrequencies.at(-1)!;
+const rarestFieldLayerLabel = rarestDocumentedField.layer === "advantage"
+  ? "Starting advantage"
+  : "Built or converted leverage";
+const rarityCells = Array.from({ length: 100 }, (_, index) =>
+  index < Math.round(rarestDocumentedField.share)
+);
+
+const TIER_OFFSETS: Record<number, [number, number]> = {
+  1: [-0.16, 0.16],
+  2: [0.16, 0.16],
+  3: [-0.16, -0.16],
+  4: [0.16, -0.16],
+};
+const TIER_COLORS: Record<number, string> = {
+  1: "#879cff",
+  2: "#77cdb8",
+  3: "#d5af68",
+  4: "#8f98aa",
+};
+const overlapBuckets = new Map<string, {
+  tier: number;
+  advantage: number;
+  leverage: number;
+  count: number;
+}>();
+const scoreCellTiers = new Map<string, Set<number>>();
+const scoreCellCounts = new Map<string, number>();
+
+for (const person of people) {
+  const advantage = getAdvantageTotal(person);
+  const leverage = Number(person.total_leverage_score || 0);
+  const tier = Number(person.success_tier);
+  const cellKey = `${advantage}|${leverage}`;
+  const bucketKey = `${tier}|${cellKey}`;
+  const cellTiers = scoreCellTiers.get(cellKey) ?? new Set<number>();
+  cellTiers.add(tier);
+  scoreCellTiers.set(cellKey, cellTiers);
+  scoreCellCounts.set(cellKey, (scoreCellCounts.get(cellKey) ?? 0) + 1);
+  const bucket = overlapBuckets.get(bucketKey);
+  if (bucket) {
+    bucket.count += 1;
+  } else {
+    overlapBuckets.set(bucketKey, { tier, advantage, leverage, count: 1 });
+  }
+}
+
+const occupiedScoreCellCount = scoreCellTiers.size;
+const multiTierScoreCellCount = [...scoreCellTiers.values()]
+  .filter((tiers) => tiers.size > 1).length;
+const allTierScoreCellCount = [...scoreCellTiers.values()]
+  .filter((tiers) => tiers.size === 4).length;
+const overlapChartData = {
+  cells: [...scoreCellTiers.entries()].map(([cellKey, tiers]) => {
+    const [advantage, leverage] = cellKey.split("|").map(Number);
+    return {
+      value: [advantage, leverage, tiers.size, scoreCellCounts.get(cellKey) ?? 0],
+      advantage,
+      leverage,
+      tierCount: tiers.size,
+      count: scoreCellCounts.get(cellKey) ?? 0,
+    };
+  }),
+  series: summary.tiers.map((tier) => {
+    const offset = TIER_OFFSETS[tier.tier] ?? [0, 0];
+    return {
+      tier: tier.tier,
+      name: `T${tier.tier}`,
+      label: tier.name,
+      color: TIER_COLORS[tier.tier],
+      data: [...overlapBuckets.values()]
+        .filter((bucket) => bucket.tier === tier.tier)
+        .map((bucket) => ({
+          value: [
+            bucket.advantage + offset[0],
+            bucket.leverage + offset[1],
+            bucket.count,
+          ],
+          advantage: bucket.advantage,
+          leverage: bucket.leverage,
+          count: bucket.count,
+        })),
+    };
+  }),
+};
 ---
 
 <Base
@@ -131,6 +237,140 @@ const strongestObservedDifferences = [...ADVANTAGE_FIELDS, ...LEVERAGE_FIELDS]
       <p>Person pages now infer a best-supported origin for every non-zero lever, show the linked evidence, state confidence, and preserve “unresolved” when the biography cannot tell us.</p>
     </div>
   </section>
+
+  <section class="trait-atlas" aria-labelledby="trait-atlas-heading">
+    <div class="section-heading trait-atlas-heading">
+      <p class="eyebrow">Evidence frequency atlas · {people.length.toLocaleString()} paths</p>
+      <h2 id="trait-atlas-heading">Which scored ingredients are least often documented?</h2>
+      <p>
+        This measures reviewed-source documentation in a curated notable-outcomes sample—not how
+        common a trait is among successful people or the wider population. Each bar uses the same denominator.
+      </p>
+    </div>
+
+    <figure class="rarity-feature" aria-labelledby="rarity-feature-title">
+      <div class="rarity-feature-copy">
+        <span
+          class:list={[
+            "trait-layer",
+            rarestDocumentedField.layer === "advantage"
+              ? "trait-layer-advantage"
+              : "trait-layer-leverage",
+          ]}
+        >
+          {rarestFieldLayerLabel}
+        </span>
+        <h3 id="rarity-feature-title">{rarestDocumentedField.label} is the least frequently documented scored ingredient.</h3>
+        <div class="rarity-measure">
+          <strong>{rarestDocumentedField.documentedCount.toLocaleString()}</strong>
+          <span>of {people.length.toLocaleString()} profiles</span>
+        </div>
+        <p>
+          {rarestDocumentedField.share.toFixed(1)}% of this curated sample has clear reviewed-source
+          documentation strong enough for a non-zero score.
+        </p>
+      </div>
+      <div class="rarity-matrix-wrap">
+        <div class="rarity-matrix" aria-hidden="true">
+          {rarityCells.map((isDocumented) => (
+            <span class:list={{ "is-documented": isDocumented }}></span>
+          ))}
+        </div>
+        <figcaption>Each square represents about 1% of the selected dataset.</figcaption>
+      </div>
+    </figure>
+
+    <div class="frequency-panels">
+      <figure class="frequency-panel frequency-panel-advantage">
+        <figcaption>
+          <span>12 documented starting conditions</span>
+          <strong>Starting advantage</strong>
+        </figcaption>
+        <ol class="frequency-list frequency-list-lead">
+          {advantageFrequencies.slice(0, 4).map((field) => (
+            <li>
+              <div class="frequency-row-label">
+                <span>{field.label}</span>
+                <strong>{field.documentedCount.toLocaleString()} <small>{field.share.toFixed(1)}%</small></strong>
+              </div>
+              <div class="frequency-track" aria-hidden="true">
+                <span style={`width:${field.share.toFixed(2)}%`}></span>
+              </div>
+            </li>
+          ))}
+        </ol>
+        <details class="frequency-more" open data-mobile-collapse>
+          <summary>{advantageFrequencies.length - 4} additional starting conditions</summary>
+          <ol class="frequency-list">
+            {advantageFrequencies.slice(4).map((field) => (
+              <li>
+                <div class="frequency-row-label">
+                  <span>{field.label}</span>
+                  <strong>{field.documentedCount.toLocaleString()} <small>{field.share.toFixed(1)}%</small></strong>
+                </div>
+                <div class="frequency-track" aria-hidden="true">
+                  <span style={`width:${field.share.toFixed(2)}%`}></span>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </details>
+      </figure>
+
+      <figure class="frequency-panel frequency-panel-leverage">
+        <figcaption>
+          <span>10 multiplying capabilities</span>
+          <strong>Built or converted leverage</strong>
+        </figcaption>
+        <ol class="frequency-list frequency-list-lead">
+          {leverageFrequencies.slice(0, 4).map((field) => (
+            <li>
+              <div class="frequency-row-label">
+                <span>{field.label}</span>
+                <strong>{field.documentedCount.toLocaleString()} <small>{field.share.toFixed(1)}%</small></strong>
+              </div>
+              <div class="frequency-track" aria-hidden="true">
+                <span style={`width:${field.share.toFixed(2)}%`}></span>
+              </div>
+            </li>
+          ))}
+        </ol>
+        <details class="frequency-more" open data-mobile-collapse>
+          <summary>{leverageFrequencies.length - 4} additional multiplying capabilities</summary>
+          <ol class="frequency-list">
+            {leverageFrequencies.slice(4).map((field) => (
+              <li>
+                <div class="frequency-row-label">
+                  <span>{field.label}</span>
+                  <strong>{field.documentedCount.toLocaleString()} <small>{field.share.toFixed(1)}%</small></strong>
+                </div>
+                <div class="frequency-track" aria-hidden="true">
+                  <span style={`width:${field.share.toFixed(2)}%`}></span>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </details>
+      </figure>
+    </div>
+
+    <div class="frequency-reading">
+      <strong>No ingredient is documented in every reviewed path.</strong>
+      <p>
+        Even {mostCommonDocumentedField.label.toLowerCase()}, the most frequently documented scored signal,
+        has no clear documentation in {(people.length - mostCommonDocumentedField.documentedCount).toLocaleString()}{" "}
+        profiles. Zero means “not clearly documented in reviewed sources,” not proof of absence.
+      </p>
+      <a href="/methodology/">Read the scoring and evidence boundary →</a>
+    </div>
+  </section>
+
+  <script>
+    if (window.matchMedia("(max-width: 820px)").matches) {
+      document.querySelectorAll<HTMLDetailsElement>("[data-mobile-collapse]")
+        .forEach((details) => details.removeAttribute("open"));
+    }
+  </script>
 
   <section aria-labelledby="comparison-breaks-heading" data-clarity-contract="comparison-redundancy">
     <div class="section-heading">
@@ -277,7 +517,7 @@ const strongestObservedDifferences = [...ADVANTAGE_FIELDS, ...LEVERAGE_FIELDS]
     <div class="denominator-wall">
       <strong>What the 3.5× ratio cannot tell you</strong>
       <p>
-        It counts lower-tier paths among 2,585 selected early breakthroughs. It cannot count the
+        It counts lower-tier paths among {people.length.toLocaleString()} selected early breakthroughs. It cannot count the
         much larger, unobserved population who attempted similar work, started later, never had a
         qualifying milestone, or remained undocumented. So it is not “3.5 people failed for every
         Bill Gates.” The true population denominator is absent.
@@ -369,6 +609,250 @@ const strongestObservedDifferences = [...ADVANTAGE_FIELDS, ...LEVERAGE_FIELDS]
         of each tier, making the overlap visible rather than hiding it behind one number.
       </p>
     </div>
+
+    <figure class="overlap-map" aria-labelledby="overlap-map-title" aria-describedby="overlap-map-caption">
+      <div class="overlap-map-topline">
+        <div>
+          <span class="overlap-map-kicker">
+            <span class="overlap-desktop-copy">Exact score cells · bubble area scales with people</span>
+            <span class="overlap-mobile-copy">Exact score cells · color = tiers present</span>
+          </span>
+          <h3 id="overlap-map-title">Different outcomes repeatedly occupy the same score coordinates.</h3>
+        </div>
+        <p class="overlap-verdict">
+          <strong>{multiTierScoreCellCount}<span> / {occupiedScoreCellCount}</span></strong>
+          occupied score cells contain profiles from at least two tiers.
+          <small>{allTierScoreCellCount} score cells contain all four tiers.</small>
+        </p>
+      </div>
+
+      <div class="overlap-encoding-keys">
+        <div class="overlap-tier-key" aria-label="Outcome tier color key">
+          {summary.tiers.map((tier) => (
+            <span class={`overlap-tier overlap-tier-${tier.tier}`}>
+              <i aria-hidden="true"></i>
+              <strong>T{tier.tier}</strong> {tier.name}
+            </span>
+          ))}
+        </div>
+        <div class="overlap-size-key" aria-label="Bubble area scale: 1, 10, and 40 people">
+          <span>Bubble area</span>
+          <i class="overlap-size-1" aria-hidden="true"></i><b>1</b>
+          <i class="overlap-size-10" aria-hidden="true"></i><b>10</b>
+          <i class="overlap-size-40" aria-hidden="true"></i><b>40</b>
+        </div>
+        <p class="overlap-mobile-reading">Each square is one occupied score cell. Brighter cells contain more outcome tiers.</p>
+      </div>
+
+      <div class="overlap-chart-shell">
+        <div
+          id="chart-overlap"
+          class="overlap-chart"
+          role="img"
+          aria-label={`${multiTierScoreCellCount} of ${occupiedScoreCellCount} occupied score cells contain profiles from multiple outcome tiers. The horizontal axis is starting advantage from 0 to 24. The vertical axis is built or converted leverage from 0 to 25. A tier-level statistical summary follows in the table below.`}
+        >
+          <span class="overlap-chart-status">Preparing the overlap map…</span>
+        </div>
+        <noscript>
+          <p class="overlap-chart-fallback">The interactive map needs JavaScript. A tier-level statistical summary remains available in the table below.</p>
+        </noscript>
+      </div>
+
+      <figcaption id="overlap-map-caption">
+        <span class="overlap-desktop-copy">Each bubble groups profiles with the same two integer totals and the same outcome tier;
+        bubble area scales with the number of profiles. Tier bubbles are offset slightly around their
+        exact cell so overlap stays visible. The offset is display-only, and tooltips report the true scores.</span>
+        <span class="overlap-mobile-copy">Each square is one occupied exact score cell; color shows how many
+        outcome tiers share it, and the tooltip reports the total profiles in that cell.</span>
+        Equal totals can still hide different ingredients, sequences, evidence quality, and luck. This curated
+        sample is descriptive, not population-representative.
+      </figcaption>
+    </figure>
+
+    <script is:inline type="application/json" id="overlap-chart-data" set:html={JSON.stringify(overlapChartData)} />
+    <script>
+      async function initialiseOverlapChart() {
+        const chartElement = document.getElementById("chart-overlap");
+        const dataElement = document.getElementById("overlap-chart-data");
+        if (!chartElement || !dataElement) return;
+
+        try {
+          const chartData = JSON.parse(dataElement.textContent || "{}");
+          const { initChart } = await import("../../scripts/charts.js");
+          const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+          const mobileQuery = window.matchMedia("(max-width: 560px)");
+          chartElement.textContent = "";
+          chartElement.dataset.state = "ready";
+          const sharedOption = {
+            animationDuration: reducedMotion ? 0 : 450,
+            animationEasing: "cubicOut",
+            aria: {
+              enabled: true,
+              description: chartElement.getAttribute("aria-label"),
+            },
+          };
+          const axisStyle = {
+            axisLine: { lineStyle: { color: "#323a4d" } },
+            axisTick: { show: false },
+            axisLabel: { color: "#9aa3b2", fontSize: 10 },
+            splitLine: { lineStyle: { color: "#1c2230" } },
+          };
+          const makeScatterOption = () => ({
+            ...sharedOption,
+            color: chartData.series.map((series) => series.color),
+            tooltip: {
+              trigger: "item",
+              backgroundColor: "#161b27",
+              borderColor: "#323a4d",
+              textStyle: { color: "#e6e9ef", fontSize: 12 },
+              formatter: (params) => {
+                const point = params.data;
+                const tier = chartData.series[params.seriesIndex];
+                return [
+                  `<strong>${tier.name} · ${tier.label}</strong>`,
+                  `${point.count.toLocaleString()} ${point.count === 1 ? "profile" : "profiles"}`,
+                  `Starting advantage: ${point.advantage} / 24`,
+                  `Built/converted leverage: ${point.leverage} / 25`,
+                ].join("<br>");
+              },
+            },
+            grid: { left: 54, right: 22, top: 22, bottom: 58 },
+            xAxis: {
+              type: "value",
+              min: 0,
+              max: 24,
+              interval: 4,
+              name: "Starting advantage →",
+              nameLocation: "middle",
+              nameGap: 38,
+              nameTextStyle: { color: "#9aa3b2", fontSize: 11, fontWeight: 600 },
+              ...axisStyle,
+            },
+            yAxis: {
+              type: "value",
+              min: 0,
+              max: 25,
+              interval: 5,
+              name: "Built / converted leverage →",
+              nameLocation: "middle",
+              nameGap: 42,
+              nameTextStyle: { color: "#9aa3b2", fontSize: 11, fontWeight: 600 },
+              ...axisStyle,
+            },
+            series: chartData.series.map((tier) => ({
+              name: tier.name,
+              type: "scatter",
+              data: tier.data,
+              symbolSize: (value) => Math.sqrt(value[2]) * 5,
+              itemStyle: {
+                color: tier.color,
+                opacity: 0.72,
+                borderColor: "#0b0d12",
+                borderWidth: 1,
+              },
+              emphasis: {
+                scale: 1.2,
+                itemStyle: { opacity: 1, borderColor: "#e6e9ef" },
+              },
+            })),
+          });
+          const makeHeatmapOption = () => ({
+            ...sharedOption,
+            tooltip: {
+              trigger: "item",
+              backgroundColor: "#161b27",
+              borderColor: "#323a4d",
+              textStyle: { color: "#e6e9ef", fontSize: 12 },
+              formatter: (params) => {
+                const point = params.data;
+                return [
+                  `<strong>${point.tierCount} ${point.tierCount === 1 ? "tier" : "tiers"} in this score cell</strong>`,
+                  `${point.count.toLocaleString()} ${point.count === 1 ? "profile" : "profiles"}`,
+                  `Starting advantage: ${point.advantage} / 24`,
+                  `Built/converted leverage: ${point.leverage} / 25`,
+                ].join("<br>");
+              },
+            },
+            grid: { left: 48, right: 14, top: 18, bottom: 76 },
+            xAxis: {
+              type: "category",
+              data: Array.from({ length: 25 }, (_, value) => value),
+              name: "Starting advantage →",
+              nameLocation: "middle",
+              nameGap: 34,
+              nameTextStyle: { color: "#9aa3b2", fontSize: 11, fontWeight: 600 },
+              ...axisStyle,
+              axisLabel: {
+                ...axisStyle.axisLabel,
+                interval: 0,
+                formatter: (value) => Number(value) % 4 === 0 ? value : "",
+              },
+            },
+            yAxis: {
+              type: "category",
+              data: Array.from({ length: 26 }, (_, value) => value),
+              name: "Built / converted leverage →",
+              nameLocation: "middle",
+              nameGap: 38,
+              nameTextStyle: { color: "#9aa3b2", fontSize: 11, fontWeight: 600 },
+              ...axisStyle,
+              axisLabel: {
+                ...axisStyle.axisLabel,
+                interval: 0,
+                formatter: (value) => Number(value) % 5 === 0 ? value : "",
+              },
+            },
+            visualMap: {
+              type: "piecewise",
+              dimension: 2,
+              orient: "horizontal",
+              left: "center",
+              bottom: 4,
+              itemWidth: 18,
+              itemHeight: 8,
+              itemGap: 8,
+              selectedMode: false,
+              textStyle: { color: "#9aa3b2", fontSize: 10 },
+              pieces: [
+                { value: 1, label: "1 tier", color: "#283449" },
+                { value: 2, label: "2", color: "#536ba0" },
+                { value: 3, label: "3", color: "#77a6c8" },
+                { value: 4, label: "4 tiers", color: "#9fd8c6" },
+              ],
+            },
+            series: [{
+              type: "heatmap",
+              data: chartData.cells,
+              itemStyle: { borderColor: "#0b0d12", borderWidth: 1 },
+              emphasis: { itemStyle: { borderColor: "#e6e9ef", borderWidth: 2 } },
+            }],
+          });
+          const chart = initChart("chart-overlap", mobileQuery.matches ? makeHeatmapOption() : makeScatterOption());
+          mobileQuery.addEventListener("change", (event) => {
+            chart?.setOption(event.matches ? makeHeatmapOption() : makeScatterOption(), { notMerge: true });
+          });
+        } catch (error) {
+          chartElement.dataset.state = "error";
+          chartElement.innerHTML = '<span class="overlap-chart-status">The overlap map could not load. A tier-level statistical summary remains available below.</span>';
+        }
+      }
+
+      function scheduleOverlapChart() {
+        const chartElement = document.getElementById("chart-overlap");
+        if (!chartElement || !("IntersectionObserver" in window)) {
+          initialiseOverlapChart();
+          return;
+        }
+        const observer = new IntersectionObserver((entries) => {
+          if (!entries.some((entry) => entry.isIntersecting)) return;
+          observer.disconnect();
+          initialiseOverlapChart();
+        }, { rootMargin: "500px 0px" });
+        observer.observe(chartElement);
+      }
+
+      scheduleOverlapChart();
+    </script>
 
     <div class="grid grid-2" style="margin-bottom:20px;">
       <div class="stat">
@@ -505,7 +989,7 @@ const strongestObservedDifferences = [...ADVANTAGE_FIELDS, ...LEVERAGE_FIELDS]
       </details>
       <details>
         <summary>What percentile is this person—and how many people were far from them?</summary>
-        <p>Each person page shows the rank band of their editorial tier, the lower-tier count, and the lower-tier-per-member ratio inside this 2,585-person early-breakthrough sample. It cannot estimate population odds or how many similar people failed because those people are not in the dataset.</p>
+        <p>Each person page shows the rank band of their editorial tier, the lower-tier count, and the lower-tier-per-member ratio inside this {people.length.toLocaleString()}-person early-breakthrough sample. It cannot estimate population odds or how many similar people failed because those people are not in the dataset.</p>
       </details>
     </div>
   </section>

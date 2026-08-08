@@ -2,9 +2,9 @@
   "$schema": "fleet.design-review.v1",
   "version": 1,
   "project": "what-it-takes-to-win",
-  "target": "Owned product changelog",
+  "target": "Insights evidence frequency and outcome overlap atlas",
   "mode": "preserve",
-  "register": "product",
+  "register": "brand",
   "context": {
     "product": "PRODUCT.md",
     "design": "DESIGN.md"
@@ -14,33 +14,33 @@
     "probes": [],
     "selected": "existing-design",
     "approval": "not-required",
-    "before": "artifacts/design/before.png"
+    "before": "artifacts/design/insights-before-overlap-1440.png"
   },
   "evidence": {
     "screenshots": [
       {
         "width": 390,
-        "path": "artifacts/design/after-390.png"
+        "path": "artifacts/design/insights-after-390.png"
       },
       {
         "width": 768,
-        "path": "artifacts/design/after-768.png"
+        "path": "artifacts/design/insights-after-768.png"
       },
       {
         "width": 1440,
-        "path": "artifacts/design/after-1440.png"
+        "path": "artifacts/design/insights-after-1440.png"
       }
     ],
     "projectCheck": {
-      "command": "npm run check && npm run build && git diff --check",
+      "command": "pnpm exec astro build && git diff --check -- src/pages/insights/index.astro src/styles/insights.css src/layouts/Base.astro .fleet/design-review.json",
       "status": "pass"
     },
     "critique": {
-      "score": 36,
+      "score": 35,
       "maximum": 40
     },
     "audit": {
-      "score": 18,
+      "score": 19,
       "maximum": 20
     },
     "unresolved": {
@@ -49,13 +49,11 @@
     },
     "detector": {
       "posture": "advisory",
-      "findings": [
-        "The detector reported eleven pre-existing treatments in the research exhibit CSS, outside the changelog surface: five side accents, four rounded-card top accents, one width transition, and one grid background."
-      ]
+      "findings": []
     }
   },
   "ownerFeedback": {
     "decision": "delegated",
-    "note": "The owner explicitly delegated changelog implementation across all projects on 2026-07-29."
+    "note": "The owner explicitly delegated final design judgment with 'Get to yourself happy' on 2026-08-09."
   }
 }
