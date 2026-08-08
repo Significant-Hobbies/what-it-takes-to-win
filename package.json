@@ -8,12 +8,13 @@
     "build": "node src/scripts/build_dataset.mjs && astro build && node src/scripts/generate_discovery_surfaces.mjs",
     "preview": "astro preview",
     "check": "node src/scripts/build_dataset.mjs && astro check",
+    "lint": "ultracite check .",
     "audit:discovery": "node src/scripts/audit_discovery.mjs",
     "audit:clarity": "node src/scripts/audit_clarity.mjs",
     "audit:tiers": "node src/scripts/audit_tiers.mjs",
     "audit:reliability": "node src/scripts/audit_reliability.mjs",
     "audit:sources": "node src/scripts/audit_sources.mjs",
-    "ready": "pnpm run check && pnpm run build && pnpm run audit:discovery && pnpm run audit:clarity && pnpm run audit:tiers && pnpm run audit:reliability",
+    "ready": "pnpm run lint && pnpm run check && pnpm run build && pnpm run audit:discovery && pnpm run audit:clarity && pnpm run audit:tiers && pnpm run audit:reliability",
     "deploy": "pnpm run ready && wrangler pages deploy dist --project-name success-by-26 --branch main"
   },
   "pnpm": {
@@ -28,7 +29,9 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.9",
+    "@biomejs/biome": "2.5.5",
     "typescript": "^5.9.3",
+    "ultracite": "7.10.2",
     "wrangler": "^4.114.0"
   }
 }
