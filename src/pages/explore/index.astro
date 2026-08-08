@@ -79,7 +79,7 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
       const tier = fTier.value;
       const sort = fSort.value;
 
-      let list = people.filter((p) => {
+      const list = people.filter((p) => {
         if (cohort && p.cohort_group !== cohort) return false;
         if (category && p.category !== category) return false;
         if (engine && p.normalized_primary_engine !== engine) return false;

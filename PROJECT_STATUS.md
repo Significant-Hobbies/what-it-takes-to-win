@@ -33,6 +33,7 @@ formula or a repeatable identity.
 - Astro (static site framework, MIT)
 - Cloudflare Pages (hosting)
 - `significanthobbies.com` Cloudflare zone (production hostname)
+- Ultracite/Biome (repository lint contract)
 
 ### Internal
 - Published dataset: full research set (no downsampling)
@@ -40,6 +41,9 @@ formula or a repeatable identity.
 
 ## Timeline
 
+- 2026-08-09 — adopted the Fleet Ultracite/Biome contract, enforced it through
+  the existing readiness gate, and reached zero findings across 35 applicable
+  files without reformatting the research corpus
 - 2026-08-09 — expanded the published dataset from 2,585 to 2,770 source-linked
   paths, audited all 553 new source URLs, and made user-facing denominators
   build-derived so future expansions cannot leave stale product claims
@@ -107,6 +111,8 @@ formula or a repeatable identity.
 
 ## Features (shipped)
 
+- Ultracite/Biome lint contract with zero findings across 35 applicable source
+  and configuration files, enforced by `pnpm run ready`
 - Owned editorial product changelog at `/changelog`
 - Dark, dense, scannable visualization UI
 - Fleet-aligned design context, visible keyboard focus, skip navigation, active-page state, reduced-motion handling, accessible search/chart labels, and responsive CTA hierarchy
