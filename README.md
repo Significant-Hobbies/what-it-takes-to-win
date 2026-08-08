@@ -1,6 +1,6 @@
 # What It Takes to Win
 
-An evidence-led visualization of 2,585 early-breakthrough paths: documented
+An evidence-led visualization of 2,770 early-breakthrough paths: documented
 starting conditions, leverage provenance, luck, compounding trajectories, and
 the significance of observed milestones.
 

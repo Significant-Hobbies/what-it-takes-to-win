@@ -2,14 +2,15 @@
 
 ## Result
 
-Audited 9,472 source URLs across 2,585 people.
-7,951 URLs (83.9%) were reachable.
-1,521 URLs (16.1%) were not reachable (dead links, timeouts, or access blocked).
+The audit covers 10,025 source URLs across 2,770 people.
+9,472 unchanged URL results were retained and 553 new URLs were fetched in this run.
+8,419 URLs (84.0%) were reachable.
+1,606 URLs (16.0%) were not reachable (dead links, timeouts, or access blocked).
 
 | Metric | Count | Share |
 |---|---:|---:|
-| All sources reachable | 1,410 | 54.5% |
-| Partial sources reachable | 1,166 | 45.1% |
+| All sources reachable | 1,520 | 54.9% |
+| Partial sources reachable | 1,241 | 44.8% |
 | No sources reachable | 9 | 0.3% |
 
 ## What this audit checks

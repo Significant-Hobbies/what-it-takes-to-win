@@ -1,11 +1,14 @@
 ---
 import Base from "../../layouts/Base.astro";
+import peopleData from "../../data/people.json";
+
+const peopleCount = peopleData.length.toLocaleString();
 ---
 
 <Base title="About — What It Takes to Win">
   <section class="hero" style="padding-bottom:24px;">
     <h1>About this project</h1>
-    <p class="lede">An open visualization of an early-advantage dataset covering 2,585 people.</p>
+    <p class="lede">An open visualization of an early-advantage dataset covering {peopleCount} people.</p>
   </section>
 
   <article class="prose">
@@ -47,7 +50,7 @@ import Base from "../../layouts/Base.astro";
 
     <h2>Source & release terms</h2>
     <p>
-      This research build includes 2,585 people born in or after 1950. Release terms for the
+      This research build includes {peopleCount} people born in or after 1950. Release terms for the
       original annotations and scripts are still under review; the repository does not yet grant
       the suggested CC BY 4.0 or MIT licences. Third-party sources retain their own terms.
       See <a href="https://github.com/Significant-Hobbies/what-it-takes-to-win">GitHub</a> for source.

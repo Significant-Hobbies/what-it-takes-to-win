@@ -1,5 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import peopleData from "../data/people.json";
+
+const peopleCount = peopleData.length.toLocaleString();
 ---
 
 <Base
@@ -12,7 +15,7 @@ import Base from "../layouts/Base.astro";
     <p class="eyebrow">404 · Path not found</p>
     <h1>That path does not exist.</h1>
     <p class="lede">
-      The dataset still has 2,585 documented paths to inspect—and none of them is a formula.
+      The dataset still has {peopleCount} documented paths to inspect—and none of them is a formula.
     </p>
     <div class="hero-actions">
       <a class="btn-link btn-link-primary" href="/">Return to the overview</a>

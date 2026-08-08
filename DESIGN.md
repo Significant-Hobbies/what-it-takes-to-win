@@ -47,4 +47,4 @@
 ## Share surface
 
 The Open Graph image uses the same dark editorial system and communicates the
-core claim at thumbnail size: 2,585 paths, four layers, no success formula.
+core claim at thumbnail size: thousands of paths, four layers, no success formula.

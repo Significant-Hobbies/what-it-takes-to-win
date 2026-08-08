@@ -93,4 +93,4 @@ But understanding privilege means remembering to ask:
 
 ---
 
-The rest of this project tries to answer that question with data — [2,585 documented paths](/explore/), each with its starting conditions, built leverage, and trajectory [made visible](/insights/).
+The rest of this project tries to answer that question with data — [thousands of documented paths](/explore/), each with its starting conditions, built leverage, and trajectory [made visible](/insights/).

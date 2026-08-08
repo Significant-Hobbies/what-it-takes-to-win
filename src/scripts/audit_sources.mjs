@@ -1,8 +1,9 @@
 // Source URL reachability audit.
-// Fetches every source URL in the published dataset, records HTTP status,
-// final URL after redirects, and retrieval date. Writes results to
-// quality/source-audit/audit-v1.json and updates source_audit_status
-// in src/data/people.json.
+// Reuses results for unchanged URLs and fetches only newly introduced URLs.
+// Pass --refresh to re-fetch the complete published set. Records HTTP status,
+// final URL after redirects, and retrieval date; writes results to
+// quality/source-audit/audit-v1.json and updates source_audit_status in
+// src/data/people.json.
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 
@@ -10,6 +11,19 @@ const root = process.cwd();
 const people = JSON.parse(
   await readFile(path.join(root, "src", "data", "people.json"), "utf8"),
 );
+const auditDir = path.join(root, "quality", "source-audit");
+const auditPath = path.join(auditDir, "audit-v1.json");
+const refreshAll = process.argv.includes("--refresh");
+
+let previousResults = {};
+if (!refreshAll) {
+  try {
+    const previousAudit = JSON.parse(await readFile(auditPath, "utf8"));
+    previousResults = previousAudit.results || {};
+  } catch {
+    // First audit: every URL will be fetched.
+  }
+}
 
 // Collect all unique (person_id, url) pairs
 const allPairs = [];
@@ -24,7 +38,19 @@ for (const person of people) {
   }
 }
 
+const previousByKey = new Map();
+for (const [personId, personResults] of Object.entries(previousResults)) {
+  for (const result of personResults) {
+    previousByKey.set(`${personId}\t${result.url}`, result);
+  }
+}
+const pairsToCheck = refreshAll
+  ? allPairs
+  : allPairs.filter((pair) => !previousByKey.has(`${pair.person_id}\t${pair.url}`));
+const reusedCount = allPairs.length - pairsToCheck.length;
+
 console.log(`Auditing ${allPairs.length} source URLs across ${people.length} people…`);
+console.log(`  Reusing ${reusedCount} existing URL results; fetching ${pairsToCheck.length} new URLs.`);
 
 const CONCURRENCY = 25;
 const TIMEOUT_MS = 8000;
@@ -72,11 +98,17 @@ async function checkUrl(url) {
 
 // Process in batches
 const results = {};
+for (const pair of allPairs) {
+  const previous = previousByKey.get(`${pair.person_id}\t${pair.url}`);
+  if (!previous || refreshAll) continue;
+  if (!results[pair.person_id]) results[pair.person_id] = [];
+  results[pair.person_id].push(previous);
+}
 let completed = 0;
 const startTime = Date.now();
 
-for (let i = 0; i < allPairs.length; i += CONCURRENCY) {
-  const batch = allPairs.slice(i, i + CONCURRENCY);
+for (let i = 0; i < pairsToCheck.length; i += CONCURRENCY) {
+  const batch = pairsToCheck.slice(i, i + CONCURRENCY);
   const batchResults = await Promise.all(
     batch.map(async (pair) => {
       const result = await checkUrl(pair.url);
@@ -97,9 +129,9 @@ for (let i = 0; i < allPairs.length; i += CONCURRENCY) {
   completed += batchResults.length;
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   const rate = (completed / (elapsed || 1)).toFixed(1);
-  process.stdout.write(`\r  ${completed}/${allPairs.length} (${rate}/s, ${elapsed}s)`);
+  process.stdout.write(`\r  ${completed}/${pairsToCheck.length} new URLs (${rate}/s, ${elapsed}s)`);
 }
-console.log("");
+if (pairsToCheck.length > 0) console.log("");
 
 // Summarize per person
 let allReachable = 0;
@@ -139,21 +171,27 @@ const updatedPeople = people.map((person) => {
     }
   }
 
+  const checkedDates = personResults
+    .map((result) => result.checked)
+    .filter(Boolean)
+    .sort();
+
   return {
     ...person,
     source_audit_status: auditStatus,
-    source_audit_date: retrievalDate,
+    source_audit_date: checkedDates.at(-1) || retrievalDate,
   };
 });
 
 // Write audit results
-const auditDir = path.join(root, "quality", "source-audit");
 await mkdir(auditDir, { recursive: true });
 
 const auditReport = {
   audit_date: retrievalDate,
   total_people: people.length,
   total_urls: totalUrls,
+  urls_reused: reusedCount,
+  urls_checked_this_run: pairsToCheck.length,
   urls_reachable: totalReachable,
   urls_unreachable: totalUrls - totalReachable,
   people_all_sources_reachable: allReachable,
@@ -175,7 +213,8 @@ const reportLines = [
   "",
   "## Result",
   "",
-  `Audited ${totalUrls.toLocaleString()} source URLs across ${people.length.toLocaleString()} people.`,
+  `The audit covers ${totalUrls.toLocaleString()} source URLs across ${people.length.toLocaleString()} people.`,
+  `${reusedCount.toLocaleString()} unchanged URL results were retained and ${pairsToCheck.length.toLocaleString()} new URLs were fetched in this run.`,
   `${totalReachable.toLocaleString()} URLs (${((totalReachable / totalUrls) * 100).toFixed(1)}%) were reachable.`,
   `${(totalUrls - totalReachable).toLocaleString()} URLs (${(((totalUrls - totalReachable) / totalUrls) * 100).toFixed(1)}%) were not reachable (dead links, timeouts, or access blocked).`,
   "",

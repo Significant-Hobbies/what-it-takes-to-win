@@ -12,7 +12,7 @@ const structuredData = {
   "@type": "WebPage",
   name: "Evidence coverage — What It Takes to Win",
   description:
-    "Live coverage metrics, evidence confidence, sample composition, and unresolved audit boundaries for 2,585 early-breakthrough paths.",
+    `Live coverage metrics, evidence confidence, sample composition, and unresolved audit boundaries for ${coverage.total.toLocaleString()} early-breakthrough paths.`,
   url: "https://paths.significanthobbies.com/coverage/",
   isPartOf: { "@id": "https://paths.significanthobbies.com/#website" },
 };
@@ -20,7 +20,7 @@ const structuredData = {
 
 <Base
   title="Evidence Coverage — What It Takes to Win"
-  description="Inspect source depth, trajectory completeness, confidence, sample composition, and unresolved research boundaries across 2,585 paths."
+  description={`Inspect source depth, trajectory completeness, confidence, sample composition, and unresolved research boundaries across ${coverage.total.toLocaleString()} paths.`}
   structuredData={structuredData}
 >
   <section class="hero coverage-hero" data-clarity-contract="public-evidence-coverage">
@@ -213,7 +213,7 @@ const structuredData = {
     <div class="boundary-ledger">
       <article>
         <span>Observed</span>
-        <strong>2,585 selected early breakthroughs</strong>
+        <strong>{coverage.total.toLocaleString()} selected early breakthroughs</strong>
       </article>
       <article>
         <span>Not observed</span>

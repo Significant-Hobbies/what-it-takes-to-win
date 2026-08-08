@@ -44,7 +44,7 @@ const coreSurfaces = [
     id: "explore",
     htmlPath: "/explore/",
     mdPath: "/explore.md",
-    title: "Explore 2,585 documented paths",
+    title: `Explore ${people.length.toLocaleString("en-US")} documented paths`,
     summary:
       "Search and filter founders, creators, athletes, and researchers by milestone age, cohort, engine, starting pattern, and observed career tier.",
   },

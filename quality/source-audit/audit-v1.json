@@ -1,14 +1,16 @@
 {
   "audit_date": "2026-08-08",
-  "total_people": 2585,
-  "total_urls": 9472,
-  "urls_reachable": 7951,
-  "urls_unreachable": 1521,
-  "people_all_sources_reachable": 1410,
-  "people_partial_sources_reachable": 1166,
+  "total_people": 2770,
+  "total_urls": 10025,
+  "urls_reused": 9472,
+  "urls_checked_this_run": 553,
+  "urls_reachable": 8419,
+  "urls_unreachable": 1606,
+  "people_all_sources_reachable": 1520,
+  "people_partial_sources_reachable": 1241,
   "people_no_sources_reachable": 9,
-  "url_reachability_rate": "83.9%",
-  "person_pass_rate": "54.5%",
+  "url_reachability_rate": "84.0%",
+  "person_pass_rate": "54.9%",
   "results": {
     "bill-gates": [
       {
@@ -62490,6 +62492,3721 @@
         "status": null,
         "reachable": false,
         "error": "fetch failed",
+        "checked": "2026-08-08"
+      }
+    ],
+    "ivanka-trump": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ivanka_Trump",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.nytimes.com/2006/12/31/arts/television/31itzk.html",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.theledger.com/story/news/2006/04/25/learning-the-ropes-trumps-silver-spoon/25831323007/",
+        "status": 404,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "ice-cube": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ice_Cube",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.biography.com/musicians/ice-cube",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.blackpast.org/african-american-history/ice-cube-jackson-o-shea-1969/",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "nicole-kidman": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nicole_Kidman",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.britannica.com/biography/Nicole-Kidman",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://simple.wikipedia.org/wiki/Nicole_Kidman",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "anne-hathaway": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Anne_Hathaway",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.independent.co.uk/arts-entertainment/films/features/anne-hathaway-the-reluctant-princess-543752.html",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.nj.com/insidejersey/2011/02/shes_still_annie_from_millburn.html",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "psy": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Psy",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.britannica.com/biography/PSY",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.koreatimes.co.kr/entertainment/shows-dramas/20130324/all-about-psy",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "lewis-hamilton": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Lewis_Carl_Davidson_Hamilton",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.britannica.com/biography/Lewis-Hamilton",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.bbc.com/sport/formula1/29784901",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "ruben-amorim": [
+      {
+        "url": "https://en.wikipedia.org/wiki/R%C3%BAben_Amorim",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.bbc.co.uk/sport/football/articles/cy8npw24w3vo",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.transfermarkt.us/r-ben-amorim/profil/trainer/65202",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "ricky-martin": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ricky_Martin",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.britannica.com/biography/Ricky-Martin",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.allmusic.com/artist/ricky-martin-mn0000359026",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "antoine-griezmann": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Antoine_Griezmann",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.britannica.com/biography/Ricky-Martin",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://bleacherreport.com/articles/2639043-how-a-scout-on-holiday-turned-atletico-madrids-antoine-griezmann-into-a-star",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "jan-koller": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jan_Koller",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.nemzetisport.hu/english/2022/09/from-tractor-repairman-to-top-scorer-jan-koller-the-czech-recorder-who-played-padel-in-szentendre",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.rsca.be/en/Koller50",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "gennaro-gattuso": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Gennaro_Gattuso",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.skysports.com/football/news/2377125/gennaro-gattuso-player-profile",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.11v11.com/players/gennaro-gattuso-6759/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "osvaldo-ardiles": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Osvaldo_Ardiles",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.latinolife.co.uk/articles/latin-londoner-10-ossie-ardiles-footballer-and-world-cup-winner",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://breakingthelines.com/historical/osvaldo-ardiles-english-footballs-first-cult-hero/",
+        "status": 200,
+        "reachable": true,
+        "finalUrl": "https://breakingthelines.com/@btl/osvaldo-ardiles-english-footballs-first-cult-hero",
+        "checked": "2026-08-08"
+      }
+    ],
+    "guti": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Guti",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.realmadrid.com/en-US/the-club/history/football-legends/jose-maria-gutierrez",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.foottheball.com/players-in-focus/guti-hernandez-player-profile-real-madrid-cult-hero-spain-attacking-midfielder-playmaker-career-history-assists-goals/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "patrick-vieira": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Patrick_Vieira",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.inter.it/en/news/2017-06-23-patrick-vieiras-career-in-leaps-and-bounds",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://blackpast.org/global-african-history/vieira-patrick-1976/",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "lars-ulrich": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Lars_Ulrich",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://ultimateclassicrock.com/lars-ulrich-childhood/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.allmusic.com/artist/lars-ulrich-mn0000134416",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "freddie-ljungberg": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Freddie_Ljungberg",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.arsenal.com/historic/players/freddie-ljungberg",
+        "status": 200,
+        "reachable": true,
+        "finalUrl": "https://www.arsenal.com/men/freddie-ljungberg-aDJr63N80Bwa",
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "http://news.bbc.co.uk/sport2/hi/football/euro_2004/sweden/players_to_watch/3608829.stm",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "thiago-silva": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Thiago_Silva_(footballer)",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.goal.com/en/news/six-months-hospital-remove-lung-porto-move-almost-ended-thiago-silva-career/fjey3s8u0cdw1hbg83brk44uw",
+        "status": null,
+        "reachable": false,
+        "error": "timeout",
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Thiago_Silva",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "wesley-sneijder": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Wesley_Sneijder",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.britannica.com/biography/Wesley-Sneijder",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.worldsoccer.com/world-soccer-latest/wesley-sneijder-profile-151779",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "toninho-cerezo": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Toninho_Cerezo",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://atletico.com.br/idolos/toninho-cerezo/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://atletico.com.br/ha-50-anos-toninho-cerezo-estreava-pelo-galo/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "deco": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Deco",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.uefa.com/uefachampionsleague/news/0252-0cdbdc124d78-96ad54dcbc65-1000--deco-s-decade-of-change/",
+        "status": 200,
+        "reachable": true,
+        "finalUrl": "https://www.uefa.com/errors/",
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://fcportomemoria.com/category/futebol-jogador/deco/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "santillana": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Santillana_(footballer)",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.realmadrid.com/en-US/the-club/history/football-legends/carlos-alonso-gonzalez",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.laliga.com/en-GB/news/what-became-of-santillana",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "arantxa-sanchez-vicario": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Arantxa_S%C3%A1nchez_Vicario",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.wtatennis.com/news/4496786/legend-bio-arantxa-sanchez-vicario",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.tennisfame.com/hall-of-famers/inductees/arantxa-sanchez-vicario",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "marat-safin": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Marat_Safin",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://russiapedia.rt.com/prominent-russians/sport/marat-safin/index.html",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.tennisplayer.net/article/facing-marat-safin/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "nick-heidfeld": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nick_Heidfeld",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.racefans.net/f1-information/drivers/nick-heidfeld/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.motorsportmagazine.com/database/drivers/nick-heidfeld/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "jurgen-schult": [
+      {
+        "url": "https://en.wikipedia.org/wiki/J%C3%BCrgen_Schult",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/jurgen-schult",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/70505",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "stephane-peterhansel": [
+      {
+        "url": "https://en.wikipedia.org/wiki/St%C3%A9phane_Peterhansel",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.audi-mediacenter.com/en/audi-at-the-dakar-rally-2024-15749/biography-stephane-peterhansel-15810",
+        "status": 200,
+        "reachable": true,
+        "finalUrl": "https://www.audi.com/en/audi-at-the-dakar-rally-2024-15749/biography-stephane-peterhansel-15810",
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.dakar.com/en/competitor/500",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "merlene-ottey": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Merlene_Ottey",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/72229",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/merlene-ottey-page",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "naomi-osaka": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Naomi_Osaka",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.wtatennis.com/players/319998/naomi-osaka",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.espn.com/tennis/player/_/id/2789/naomi-osaka",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "inessa-kravets": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Inessa_Kravets",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/inessa-kravets",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/77108",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "sergey-litvinov": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sergey_Litvinov_(athlete,_born_1958)",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/77543",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://athleticspodium.com/athlete/9807/sergey-litvinov",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "kornelia-ender": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kornelia_Ender",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/47465",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.britannica.com/biography/Kornelia-Ender-Victory-amid-Accusations-1936074",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "nawal-el-moutawakel": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nawal_El_Moutawakel",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/nawal-el-moutawakel",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://worldathletics.org/athletes/morocco/nawal-el-moutawakel-14358616",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "chico-serra": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Chico_Serra",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.formula1archive.com/drivers/serra",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.f1forgottendrivers.com/drivers/chico-serra/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "philippe-streiff": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Philippe_Streiff",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.motorsportmagazine.com/database/drivers/philippe-streiff/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.racefans.net/f1-information/drivers/philippe-streiff/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "lilli-carati": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Lilli_Carati",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.imdb.com/name/nm0135988/bio/",
+        "status": 202,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Lilli_Carati",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "mima-jausovec": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mima_Jau%C5%A1ovec",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://db4tennis.com/players/mima-jausovec",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Mima_Jausovec",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "natalya-neidhart": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Natalya_(wrestler)",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.wwe.com/superstars/nattie",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.ctvnews.ca/entertainment/canadian-wwe-star-natalya-neidhart-blazes-new-trails-for-women-in-wrestling-1.4544648",
+        "status": 404,
+        "reachable": false,
+        "finalUrl": "https://www.ctvnews.ca/entertainment/article/canadian-wwe-star-natalya-neidhart-blazes-new-trails-for-women-in-wrestling/",
+        "checked": "2026-08-08"
+      }
+    ],
+    "elina-svitolina": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Elina_Svitolina",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.wtatennis.com/players/316738/elina-svitolina",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.si.com/tennis/2014/04/01/elina-svitolina-interview-top-teenager-wta",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "emma-raducanu": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Emma_Raducanu",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.britannica.com/biography/Emma-Raducanu",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.wtatennis.com/players/328366/emma-raducanu/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "alberto-del-rio": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Alberto_Del_Rio",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.wwe.com/superstars/alberto-del-rio",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://ringhistory.com/wrestler/alberto-del-rio/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "becky-lynch": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Becky_Lynch",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.wwe.com/superstars/becky-lynch",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.espn.com/wwe/story/_/id/17173527/wwe-profile-page-becky-lynch",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "natasha-zvereva": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Natasha_Zvereva",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.wtatennis.com/legends/260013/natasha-zvereva",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.tennisfame.com/hall-of-famers/inductees/natasha-zvereva",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "marin-cilic": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Marin_%C4%8Cili%C4%87",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://marincilic.com/biography/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Marin_%C4%8Cili%C4%87_career_statistics",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "manu-ginobili": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Manu_Ginobili",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.nba.com/news/manu-ginobili-hall-of-fame-profile",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.fiba.basketball/en/news/manu-ginobili-looking-back-on-a-career-that-changed-the-game-of-basketball",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "lleyton-hewitt": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Lleyton_Hewitt",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.tennisfame.com/hall-of-famers/inductees/lleyton-hewitt",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://australianoftheyear.org.au/recipients/lleyton-hewitt-am",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "david-nalbandian": [
+      {
+        "url": "https://en.wikipedia.org/wiki/David_Nalbandian",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.nytimes.com/2002/07/07/sports/tennis-argentine-reaches-the-final-in-his-debut-at-wimbledon.html",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.tennis-prose.com/articles/biofile-with-david-nalbandian/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "lauren-jackson": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Lauren_Jackson",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.hoophall.com/hall-of-famers/lauren-jackson",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://sahof.org.au/hall-of-fame-member/lauren-jackson/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "tomas-berdych": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Berdych",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.theguardian.com/sport/2010/jul/04/wimbledon-tomas-berdych-rafael-nadal",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://news.bbc.co.uk/sport2/hi/tennis/8783640.stm",
+        "status": 200,
+        "reachable": true,
+        "finalUrl": "http://news.bbc.co.uk/sport2/hi/tennis/8783640.stm",
+        "checked": "2026-08-08"
+      }
+    ],
+    "jelena-jankovic": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jelena_Jankovic",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.wtatennis.com/legends/100153/jelena-jankovic",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://edition.cnn.com/2009/WORLD/asiapcf/01/22/ta.jelenajankovic/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "daniela-hantuchova": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Daniela_Hantuchov%C3%A1",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.wtatennis.com/legends/80394/daniela-hantuchova",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://news.bbc.co.uk/sport2/hi/tennis/1879110.stm",
+        "status": 200,
+        "reachable": true,
+        "finalUrl": "http://news.bbc.co.uk/sport2/hi/tennis/1879110.stm",
+        "checked": "2026-08-08"
+      }
+    ],
+    "howie-mandel": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Howie_Mandel",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://thecanadianencyclopedia.ca/en/article/howie-mandel",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.cbc.ca/comedy/how-howie-mandel-got-his-start-in-comedy-and-what-keeps-him-going-1.5724603",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "philippe-gilbert": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Philippe_Gilbert",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.procyclingstats.com/rider/philippe-gilbert",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.tour-magazin.de/en/professional-cycling/day-race/retirements-2022-a-look-back-at-the-career-of-philippe-gilbert/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "gianni-bugno": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Gianni_Bugno",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.giroditalia.it/en/hall-of-fame/2024-gianni-bugno/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.bikeraceinfo.com/oralhistory/Bugno.html",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "cadel-evans": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cadel_Evans",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.nma.gov.au/explore/collection/highlights/cadel-evans-cycling",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://flowmountainbike.com/features/flowback-cadel-evans-the-mountain-biker/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "erkki-sven-tuur": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Erkki-Sven_Tuur",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.emic.ee/erkki-sven-tuur",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.helilooja.ee/en/members/erkki-sven-tuur/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "erika-salumae": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Erika_Salum%C3%A4e",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://olympics.com/en/athletes/erika-salumae",
+        "status": 200,
+        "reachable": true,
+        "finalUrl": "https://www.olympics.com/en/athletes/erika-salumae",
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/13217",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "michael-rasmussen": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Michael_Rasmussen_(cyclist)",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/90349",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://cphpost.dk/2022-07-02/news/the-dane-who-became-king-of-the-mountains/",
+        "status": 202,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "richard-virenque": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Richard_Virenque",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/richard-virenque",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.liquisearch.com/richard_virenque/early_career",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "wout-van-aert": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Wout_van_Aert",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/news/wout-van-aert-profile-belgium-cycling-tour-de-france",
+        "status": 404,
+        "reachable": false,
+        "finalUrl": "https://www.olympics.com/courtesy/error/404.html",
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.cyclingnews.com/news/van-aert-fulfills-a-dream-with-u23-world-title/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "oscar-freire": [
+      {
+        "url": "https://en.wikipedia.org/wiki/%C3%93scar_Freire",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://velo.outsideonline.com/road/road-culture/36618oscarfriere/",
+        "status": 200,
+        "reachable": true,
+        "finalUrl": "https://velo.outsideonline.com/road/road-culture/36618oscarfriere/?scope=anon",
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.cyclingnews.com/news/oscar-freire-a-man-without-a-country-1/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "thor-hushovd": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Thor_Hushovd",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://velo.outsideonline.com/road/origin-stories-thor-hushovd-won-100-races-in-a-row-as-a-junior-on-a-20-bike/",
+        "status": 200,
+        "reachable": true,
+        "finalUrl": "https://velo.outsideonline.com/road/origin-stories-thor-hushovd-won-100-races-in-a-row-as-a-junior-on-a-20-bike/?scope=anon",
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.cyclingweekly.com/news/latest-news/thor-hushovd-rider-profile-70440",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "mark-cavendish": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mark_Cavendish",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.cyclingweekly.com/racing/a-brief-history-of-mark-cavendish-and-the-tour-de-france",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.cyclingnews.com/features/talent-confidence-and-raw-ambition-the-mark-of-a-champion/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "andy-schleck": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Andy_Schleck",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.cyclingweekly.com/news/latest-news/andy-schleck-rider-profile-71066",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.cyclingnews.com/features/giro-ditalia-the-rise-of-another-schleck/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "dariusz-michalczewski": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dariusz_Michalczewski",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://boxrec.com/en/box-pro/4141",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://boxerlist.com/en/boxer/dariusz-michalczewski/3633",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "hector-camacho": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hector_Camacho",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/camacho-hector-1962-boxer",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://boxrec.com/en/box-pro/607",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "sara-carbonero": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sara_Carbonero",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://es.wikipedia.org/wiki/Sara_Carbonero",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.buscabiografias.com/biografia/verDetalle/9710/Sara%20Carbonero%20Arevalo",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "roberto-balado": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Roberto_Balado",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://boxrec.com/wiki/index.php/Roberto_Balado",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/roberto-balado-mendez",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "edwin-valero": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Edwin_Valero",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://boxrec.com/wiki/index.php?title=Human:122183",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.si.com/boxing/2008/12/02/edwin-valero",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "marco-antonio-barrera": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Marco_Antonio_Barrera",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.ibhof.com/pages/about/inductees/modern/barrera.html",
+        "status": null,
+        "reachable": false,
+        "error": "fetch failed",
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://boxrec.com/en/box-pro/8010",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "ruslan-chagaev": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ruslan_Chagaev",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/8808",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://intersportstats.com/athletes/3000519882",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "anna-falchi": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Anna_Falchi",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.imdb.com/name/nm0001197/",
+        "status": 202,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.themoviedb.org/person/87679-anna-falchi",
+        "status": null,
+        "reachable": false,
+        "error": "timeout",
+        "checked": "2026-08-08"
+      }
+    ],
+    "katinka-hosszu": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Katinka_Hossz%C3%BA",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/103469",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://swimswam.com/bio/katinka-hosszu/",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "tamas-darnyi": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Tam%C3%A1s_Darnyi",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/48168",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://ishof.org/honoree/honoree-tamas-darnyi/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "erik-morales": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Erik_Morales",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "http://www.ibhof.com/pages/about/inductees/modern/morales.html",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://wbcboxing.com/en/erik-morales-30-years-of-greatness/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "vladimir-akopian": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Vladimir_Akopian",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.chess.com/players/vladimir-akopian",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://en.chessbase.com/post/interview-with-vladimir-akopian-1",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "shakhriyar-mamedyarov": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Shakhriyar_Mamedyarov",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.chess.com/players/shakhriyar-mamedyarov",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://ruchess.ru/en/persons_of_day/shakhriyar_mamedyarov/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "rie-rasmussen": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Rie_Rasmussen",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.interviewmagazine.com/film/rie-rasmussen",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://theplaylist.net/rie-rasmussen-talks-the-human-zoo-learning-from-brian-de-palma-luc-besson-20111115/",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "isabeli-fontana": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Isabeli_Fontana",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://wwd.com/business-news/human-resources/feature/viva-isabeli-3242229-1281561/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.hellomagazine.com/hfm/2019060473700/isabeli-fontana-interview-photos-hello-fashion-monthly/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "laszlo-cseh": [
+      {
+        "url": "https://en.wikipedia.org/wiki/L%C3%A1szl%C3%B3_Cseh",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/laszlo-cseh-1",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/103162",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "teimour-radjabov": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Teimour_Radjabov",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.chess.com/players/teimour-radjabov",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.thehindu.com/sport/other-sports/meet-teimour-radjabov-the-prodigious-legend-slayer-who-almost-walked-away-from-chess/article67667370.ece",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "pavel-eljanov": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Pavel_Eljanov",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.chess.com/players/pavel-eljanov",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://ratings.fide.com/profile/14102951",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "malgosia-bela": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ma%C5%82gosia_Bela",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.vogue.co.uk/gallery/malgosia-bela-winter-girl-supermodel",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.metromodels.com/en/news/9753-malgosia-bela-on-her-25-year-modeling-journey-creative-exchange-the-role-of-model-agencies/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "joel-lautier": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jo%C3%ABl_Lautier",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://liquipedia.net/chess/Joel_Lautier",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.newinchess.com/blog/post/nic-podcast-44-gm-joel-lautier",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "almira-skripchenko": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Almira_Skripchenko",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.chess.com/players/almira-skripchenko",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://ruchess.ru/en/persons_of_day/almira_skripchenko/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "xu-yuhua": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Xu_Yuhua",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://museum.fide.com/champions/xu-yuhua",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://thechesspedia.net/xu-yuhua/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "yana-klochkova": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Yana_Klochkova",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/93833",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://ishof.org/honoree/honoree-nana-klochkova/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "sarah-sjostrom": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sarah_Sj%C3%B6str%C3%B6m",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/sarah-sjoestroem",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://swimswam.com/sarah-sjostrom-over-a-decade-of-medals-and-world-records-videos/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "kateryna-lagno": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kateryna_Lagno",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.chess.com/players/kateryna-lagno",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.fide.com/womens-candidates-tournament-pool-b-introducing-the-players/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "cesar-cielo": [
+      {
+        "url": "https://en.wikipedia.org/wiki/C%C3%A9sar_Cielo",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/115648",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://ishof.org/honoree/cesar-cielo/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "park-tae-hwan": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Park_Tae-hwan",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/tae-hwan-park",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://swimswam.com/bio/park-tae-hwan/",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "zoltan-almasi": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Zolt%C3%A1n_Alm%C3%A1si",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.chess.com/players/zoltan-almasi",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://liquipedia.net/chess/Zoltan_Almasi",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "tawakkol-karman": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Tawakkol_Karman",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.nobelprize.org/prizes/peace/2011/karman/facts/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.bbc.com/news/world-middle-east-15216473",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "oksana-baiul": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Oksana_Baiul",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/oksana-baiul",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/80578",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "viktor-petrenko": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Viktor_Petrenko",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/96378",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/viktor-petrenko",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "jozef-sabovcik": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jozef_Sabov%C4%8D%C3%ADk",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/97064",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/josef-sabovcik",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "zhao-hongbo": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Zhao_Hongbo",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/100189",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/hongbo-zhao",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "uwe-jens-mey": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Uwe-Jens_Mey",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/95409",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/uwe-jens-mey",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "taufik-hidayat": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Taufik_Hidayat",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.yonex.com/athletes/taufik-hidayat",
+        "status": 200,
+        "reachable": true,
+        "finalUrl": "https://www.yonex.com/athletes/index/index/",
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.espn.com/oly/summer00/badminton/s/2000/0904/722595.html",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "oksana-grishuk": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Oksana_Grishuk",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/81200",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.ocregister.com/2012/12/11/smith-a-coach-with-passion/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "javier-fernandez": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Javier_Fern%C3%A1ndez_(figure_skater)",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/javier-fernandez",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://isu-skating.com/figure-skating/skaters/javier-fernandez/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "petr-barna": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Petr_Barna",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/83854",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/petr-barna",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "slavko-goluzа": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Slavko_Golu%C5%BEa",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/31963",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/slavko-goluza",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "alberto-contador": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Alberto_Contador",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.britannica.com/biography/Alberto-Contador",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.cyclingnews.com/features/discovering-a-talented-spaniard/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "sasha-vujacic": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sasha_Vuja%C4%8Di%C4%87",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.basketball-reference.com/players/v/vujacsa01.html",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.interbasket.net/players/vujacic.htm",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "victoria-azarenka": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Victoria_Azarenka",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.wtatennis.com/players/312001/victoria-azarenka",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.cnn.com/2012/04/27/sport/tennis/tennis-azarenka-belarus-monaco",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "mathieu-van-der-poel": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mathieu_van_der_Poel",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.uci.org/article/mathieu-van-der-poel-a-rider-for-all-seasons/4kULRU9lr4H35xeTJsLR4S",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/mathieu-van-der-poel",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "simona-halep": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Simona_Halep",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://simonahalep.com/en/about-simona/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.wtatennis.com/news/4487587/legend-bio-simona-halep",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "ivan-ljubicic": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ivan_Ljubi%C4%8Di%C4%87",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.tennis.com/news/articles/the-long-march-ivan-ljubicic-s-tennis-journey",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.unhcr.org/news/ivan-ljubicics-long-journey-refugee-tennis-stardom-you-simply-have-carry",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "viacheslav-fetisov": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Viacheslav_Fetisov",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://hhof.com/induction_archives/ind01fetisov.shtml",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/85697",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "khamzat-chimaev": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Khamzat_Chimaev",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.ufc.com/athlete/khamzat-chimaev",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.espn.in/mma/story/_/id/32440496/the-incredible-numbers-khamzat-chimaev-star-making-ufc-start",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "alexander-ovechkin": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Alexander_Ovechkin",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.washingtonpost.com/archive/sports/2006/06/23/ovechkin-named-rookie-of-year/1b1155df-df14-4213-ac59-63214ab3770e/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.nhl.com/news/alex-ovechkin-back-in-raleigh-where-washington-capitals-drafted-him",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "ferran-adria": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ferran_Adri%C3%A0",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://elbullifoundation.com/en/ferran-adria-biography/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.forbes.com/sites/hannahelliott/2014/03/06/elbulli-chef-ferran-adria-i-was-no-different-from-any-other-dishwasher/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "istvan-kovacs-referee": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Istv%C3%A1n_Kov%C3%A1cs_(referee)",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.uefa.com/news-media/news/0275-153851958c83-3a1b008ba484-1000--heady-times-for-tirana-final-referee-kovacs/",
+        "status": 200,
+        "reachable": true,
+        "finalUrl": "https://www.uefa.com/errors/",
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.transfermarkt.co.in/schiedsrichter/profil/schiedsrichter/1225",
+        "status": 503,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "alexis-amore": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Alexis_Amore",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://alexis-amore.com/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.bdfutbol.com/en/r/r611694.html",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "rebeca-linares": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Rebeca_Linares",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://es.wikipedia.org/wiki/Rebeca_Linares",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://facts.net/celebrity/25-captivating-facts-about-rebeca-linares/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "jimmy-jump": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jimmy_Jump",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://talksport.com/football/1030225/messi-ronaldo-federer-schumacher-pitch-invader-jimmy-jump/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.independent.co.uk/news/people/how-spanish-prankster-jimmy-jump-landed-in-hot-water-and-350-000-debt-9859817.html",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "dimitrij-ovtcharov": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dimitrij_Ovtcharov",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/117509",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://dimitrij-ovtcharov.com/en/career/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "deng-yaping": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Deng_Yaping",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.britannica.com/biography/Deng-Yaping",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/781",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "bruce-beutler": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bruce_Beutler",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.nobelprize.org/prizes/medicine/2011/beutler/biographical/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.the-scientist.com/immune-to-failure-39846",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "ireen-wust": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ireen_W%C3%BCst",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.britannica.com/biography/Ireen-Wust",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/109767",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "aljona-savchenko": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Aljona_Savchenko",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://isu-skating.com/figure-skating/skaters/pairs/aljona-savchenko-robin-szolkowy/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/news/aliona-savchenko",
+        "status": 404,
+        "reachable": false,
+        "finalUrl": "https://www.olympics.com/courtesy/error/404.html",
+        "checked": "2026-08-08"
+      }
+    ],
+    "artur-dmitriev": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Artur_Dmitriev",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/artur-dmitriyev",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/85233",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "catriona-le-may-doan": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Catriona_Le_May_Doan",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://thecanadianencyclopedia.ca/index.php/en/article/catriona-lemay-doan",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/catriona-le-may-doan",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "erling-kagge": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Erling_Kagge",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "http://www.explorapoles.org/explorers/profile/kagge_erling",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.independent.co.uk/news/uk/in-the-icy-shadow-of-scott-and-amundsen-1556765.html",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "anna-levandi": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Anna_Levandi",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://absoluteskating.com/index.php?cat=interviews&id=2010annalevandi",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://isu-skating.com/figure-skating/skaters/arlet-levandi/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "karlis-skrastins": [
+      {
+        "url": "https://en.wikipedia.org/wiki/K%C4%81rlis_Skrasti%C5%86%C5%A1",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.hockey-reference.com/players/s/skraska01.html",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://karlaskrastinafonds.lv/en/karlis-skrastins-eng/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "magaly-carvajal": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Magaly_Carvajal",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.volleyhall.org/magaly-carvajal.html",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "http://www.olympedia.org/athletes/52177",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "dragan-skrbic": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dragan_%C5%A0krbi%C4%87",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/91495",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://old.eurohandball.com/ec/cch/men/2004-05/player/500860/Skrbic+Dragan",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "joel-abati": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jo%C3%ABl_Abati",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://fr.wikipedia.org/wiki/Jo%C3%ABl_Abati",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "http://history.eurohandball.com/article/026288/Abati+and+Magdeburg+felt+untouchable+in+2002",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "pablo-pozo": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Pablo_Pozo",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://worldreferee.com/referee/pablo_pozo",
+        "status": 404,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.transfermarkt.co.uk/pablo-pozo/profil/schiedsrichter/1757",
+        "status": 503,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "connor-mcdavid": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Connor_McDavid",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.britannica.com/biography/Connor-McDavid",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://thecanadianencyclopedia.ca/index.php/en/article/connor-mcdavid",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "trevor-noah": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Trevor_Noah",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.independent.co.uk/news/people/profiles/trevor-noah-all-the-way-from-soweto-to-the-very-biggest-gig-in-comedy-a111251.html",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://erasmusprijs.org/en/laureates/trevor-noah/laudatio/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "eric-lindros": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Eric_Lindros",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.hhof.com/induction_archives/ind16Lindros.shtml",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://chl.ca/article/lindros-impact-short-but-mightily-significant-in-the-history-of-hockey/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "martina-sablikova": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Martina_S%C3%A1bl%C3%ADkov%C3%A1",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://isu-skating.com/speed-skating/skaters/martina-sablikova/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympijskytym.cz/en/athlete/martina-sablikova",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "mona-grudt": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mona_Grudt",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.upi.com/Archives/1990/04/16/Norwegian-wins-Miss-Universe-title/",
+        "status": 200,
+        "reachable": true,
+        "finalUrl": "https://www.upi.com/Archives/",
+        "checked": "2026-08-08"
+      }
+    ],
+    "evgenia-radanova": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Evgenia_Radanova",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/evgenia-radanova",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/82151",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "gabriela-isler": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Gabriela_Isler",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.missuniverse.com/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "alex-dujshebaev": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Alex_Dujshebaev",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://history.eurohandball.com/article/028720/Dujshebaev+dreams+of+lifting+trophy+before+leaving+Vardar",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.handball-planet.com/alex-dujshebaev-joins-rk-vardar-pro/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "frantisek-kaberle": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Franti%C5%A1ek_Kaberle",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.hockey-reference.com/players/k/kaberfr01.html",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/110578",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "dan-carter": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dan_Carter",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.nzherald.co.nz/sport/rugby/all-blacks/all-blacks-carter-cherishes-debut-above-all/TE7HDDM4IF7J7MGKW2OF5P373U/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.therugbyjournal.com/rugby-blog/dan-carter",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "cedric-sorhaindo": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cédric_Sorhaindo",
+        "status": 200,
+        "reachable": true,
+        "finalUrl": "https://en.wikipedia.org/wiki/C%C3%A9dric_Sorhaindo",
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://ehfcl.eurohandball.com/news/en/this-is-me-cedric-sorhaindo/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/cedric-sorhaindo",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "joanna-jedrzejczyk": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Joanna_Jędrzejczyk",
+        "status": 200,
+        "reachable": true,
+        "finalUrl": "https://en.wikipedia.org/wiki/Joanna_J%C4%99drzejczyk",
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.sherdog.com/news/articles/By-The-Numbers-Joanna-Jedrzejczyk-172281",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.ufc.com/athlete/joanna-jedrzejczyk",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "sergio-parisse": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sergio_Parisse",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.rugbyworld.com/rugby-positions/no-8s/sergio-parisse-67141",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.walesonline.co.uk/sport/rugby/rugby-news/passionate-parisse-rising-star-azzurri-2405941",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "maria-efrosinina": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Maria_Efrosinina",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://112.ua/en/tag/efrosinina-masa",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://lb.ua/file/person/3346_iefrosinina_mariya_oleksandrivna.html",
+        "status": 404,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "kristine-lunde-borgersen": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kristine_Lunde-Borgersen",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/112016",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.eurohandball.com/en/news/en/in-2008-years-of-hard-work-paid-off-for-kristine-lunde-borgersen/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "gustavo-endres": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Gustavo_Endres",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/94476",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/gustavo-endres",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "bang-soo-hyun": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bang_Soo-hyun",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/884",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "http://www.badzine.net/2019/03/koreas-singles-queen-to-be-named-to-hall-of-fame/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "luciano-de-cecco": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Luciano_De_Cecco",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://en.volleyballworld.com/news/luciano-de-cecco-leadership-longevity-and-legacy",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.infobae.com/inhouse/2023/11/08/del-sueno-de-la-nba-a-la-medalla-olimpica-en-voley-el-exito-de-luciano-de-cecco-en-un-deporte-que-lo-atrapo-de-grande/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "estavana-polman": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Estavana_Polman",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.eurohandball.com/en/news/en/this-is-me-estavana-polman/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.estavanapolman.nl/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "marit-malm-frafjord": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Marit_Malm_Frafjord",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.nrk.no/trondelag/marit-malm-frafjord-1.6164656",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/marit-malm-frafjord",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "ivan-rodriguez": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Iván_Rodríguez",
+        "status": 200,
+        "reachable": true,
+        "finalUrl": "https://en.wikipedia.org/wiki/Iv%C3%A1n_Rodr%C3%ADguez",
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://baseballhall.org/hall-of-famers/rodriguez-ivan",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://sabr.org/bioproj/person/Ivan-Rodriguez/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "hyun-jin-ryu": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hyun-jin_Ryu",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.baseball-reference.com/bullpen/Hyun-Jin_Ryu",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://en.yna.co.kr/view/AEN20240221004900315",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "laura-dekker": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Laura_Dekker",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://lauradekkerworldsailingfoundation.com/about-laura/biography/",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.yachtingmonthly.com/cruising/cruising-life/laura-dekker-10-years-on-after-becoming-the-youngest-person-to-sail-solo-around-the-world-90540",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "lim-yo-hwan": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Lim_Yo-hwan",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://liquipedia.net/starcraft/Boxer",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.esportsearnings.com/players/1047-boxer-lim-yo-hwan/history",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "thepchaiya-un-nooh": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Thepchaiya_Un-Nooh",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.prosnookerblog.com/players/u-z/thepchaiya-un-nooh/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.wst.tv/players/67203224-1d66-4c1e-b655-150f4f835aba/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "gyorgy-grozer": [
+      {
+        "url": "https://en.wikipedia.org/wiki/György_Grozer",
+        "status": 200,
+        "reachable": true,
+        "finalUrl": "https://en.wikipedia.org/wiki/Gy%C3%B6rgy_Grozer",
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://worldofvolley.com/interviews/31574/georg-grozer-the-man-with-hammer.html",
+        "status": null,
+        "reachable": false,
+        "error": "timeout",
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://en.volleyballworld.com/news/grozer-fight-for-your-dreams-and-be-patient",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "jovana-joksimovic": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jovana_Joksimović",
+        "status": 200,
+        "reachable": true,
+        "finalUrl": "https://en.wikipedia.org/wiki/Jovana_Joksimovi%C4%87",
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.danas.rs/vesti/drustvo/jovana-joksimovic-prva-novinarka-prve/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.blic.rs/zabava/evo-cime-se-jovana-joksimovic-bavila-pre-nego-sto-je-postala-voditeljka/92zs1kz",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "yang-young-ja": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Yang_Young-ja",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/910",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.upi.com/Archives/1988/09/30/Hometown-favorites-Hyun-Jun-Hwa-and-Yang-Young-Ja/9561591595200/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "liu-shiwen": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Liu_Shiwen",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/news/liu-shiwen-wins-women-s-singles-at-2019-table-tennis-world-championships",
+        "status": 404,
+        "reachable": false,
+        "finalUrl": "https://www.olympics.com/courtesy/error/404.html",
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "http://english.cctv.com/20090608/101354.shtml",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "mladen-bojinovic": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mladen_Bojinović",
+        "status": 200,
+        "reachable": true,
+        "finalUrl": "https://en.wikipedia.org/wiki/Mladen_Bojinovi%C4%87",
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.handball-planet.com/rk-borac-bl-mladen-bojinovic-talks-about-come-back-after-21-years/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "http://history.eurohandball.com/ec/ct/men/player/500826",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "irakli-tsirekidze": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Irakli_Tsirekidze",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.ijf.org/athlete/770/results?results_rank_group=og",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/irakli-tsirekidze",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "mitchell-johnson": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mitchell_Johnson_(cricketer)",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.cricket.com.au/players/CA:1663/mitchell-johnson",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.espncricinfo.com/cricketers/mitchell-johnson-6033",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "ma-yanhong": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ma_Yanhong",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.ighof.com/inductees/2008_Ma_Yanhong.php",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/28253",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "chen-meng": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Chen_Meng",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/news/table-tennis-world-number-one-chen-meng-continue-china-olympic-dominance",
+        "status": 404,
+        "reachable": false,
+        "finalUrl": "https://www.olympics.com/courtesy/error/404.html",
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/141782",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "lee-yong-dae": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Lee_Yong-dae",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://bwfbadminton.com/news-single/2020/04/15/genius-in-action-lee-yong-dae/",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.koreatimes.co.kr/lifestyle/people-events/20080818/badminton-prodigy-in-limelight",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "hendra-setiawan": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hendra_Setiawan",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://nocindonesia.id/athlete/view/hendra+setiawan",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://badmintonbites.com/hendra-setiawan-and-mohammad-ahsan-making-a-mark-beyond-30/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "hwang-hye-young": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hwang_Hye-young",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/891",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://bwfbadminton.com/player/214/hwang-hye-young",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "robertlandy-simon": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Robertlandy_Sim%C3%B3n",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.fivb.com/simon-a-man-of-the-world/",
+        "status": 202,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://oncubanews.com/en/styles-trends/technologies-of-communication-and-media/roberlandy-simon-im-still-cuban/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "gegard-mousasi": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Gegard_Mousasi",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.bbc.com/bbcthree/article/11500706-7f4f-44da-8569-d42a326d7521",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.sherdog.com/fighter/Gegard-Mousasi-7466",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "davor-dominikovic": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Davor_Dominikovi%C4%87",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/108639",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://archiv.thw-handball.de/thw/se_domin.htm",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "dragan-travica": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Dragan_Travica",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/123407",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.legavolley.it/2025/dragan-travica-landed-in-piacenza/?lang=en",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "bruno-gudelj": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Bruno_Gudelj",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/31964",
+        "status": 429,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/bruno-gudelj",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "monica-de-gennaro": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Monica_De_Gennaro",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://tokyo2020.coni.it/en/italia-team/scheda_atleta/1199-MONICA_DE_GENNARO_.html",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://volleyvicenza.it/tuttosport-volley-rosa-azzurro-e-non-solo-da-vicenza-il-viaggio-mondiale-di-moky-de-gennaro-e-daniele-santarelli/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "li-xiaoxia": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Li_Xiaoxia",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympics.com/en/athletes/xiaoxia-li",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "http://www.chinadaily.com.cn/olympics/2007-12/21/content_6339762.htm",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "ivan-cupic": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ivan_%C4%8Cupi%C4%87",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.eurohandball.com/en/what-we-do/hall-of-fame/ivan-cupic/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/123075",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "mirko-alilovic": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Mirko_Alilovi%C4%87",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/113775",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://archive.ihf.info/en-us/ihfcompetitions/worldchampionships/mensworldchampionships/menshandballworldchampionshipspain2013/teamportraits/croatia/mirkoalilovic.aspx",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "kari-mette-johansen": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kari_Mette_Johansen",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/112018",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://history.eurohandball.com/article/015528/203+matches%2c+496+goals%2c+7+major+titles",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "daouda-karaboue": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Daouda_Karabou%C3%A9",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/113769",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.equipedefrance.com/athlete/daouda-karaboue",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "jovanka-radičević": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Jovanka_Radi%C4%8Devi%C4%87",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.eurohandball.com/en/news/en/this-is-me-jovanka-radicevic/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://en.vijesti.me/sports-e/handball/416132/I-have-achieved-everything-in-my-life-through-work",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "richie-mccaw": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Richie_McCaw",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.allblacks.com/news/mccaw-reflects-on-his-test-debut-against-ireland",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.rugbyworld.com/rugby-positions/opensides/rugbys-greatest-richie-mccaw-67215",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "luca-brecel": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Luca_Brecel",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.wst.tv/players/cd124662-9d97-413c-9609-5051d002ab3b",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://metro.co.uk/2023/04/30/who-is-luca-brecel-meet-the-world-snooker-championship-2023-finalist-18697419/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "johan-santana": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Johan_Santana",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://sabr.org/bioproj/person/johan-santana/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.baseball-reference.com/players/s/santajo02.shtml",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      }
+    ],
+    "igor-karacic": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Igor_Kara%C4%8Di%C4%87",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.eurohandball.com/en/what-we-do/hall-of-fame/ivan-cupic/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.croatiaweek.com/brothers-to-face-each-other-at-world-handball-championship-in-qatar/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "camilla-martin": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Camilla_Martin",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://bwfbadminton.com/news-single/2020/08/05/genius-in-action-camilla-martin",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://sportingscroll.com/2024/camilla-martin-denmarks-queen-of-badminton/4351/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      }
+    ],
+    "anne-dorthe-tanderup": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Anne_Dorthe_Tanderup",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.olympedia.org/athletes/32003",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-08-08"
+      },
+      {
+        "url": "https://www.encyclopedia.com/women/dictionaries-thesauruses-pictures-and-press-releases/tanderup-anne-dorthe-1972",
+        "status": 200,
+        "reachable": true,
         "checked": "2026-08-08"
       }
     ]

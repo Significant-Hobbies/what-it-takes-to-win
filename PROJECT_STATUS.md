@@ -1,10 +1,10 @@
 # What It Takes to Win — PROJECT STATUS
 
-Last updated: 2026-07-31
+Last updated: 2026-08-09
 
 ## Why / What
 
-Explanatory visualization of 2,585 early-breakthrough paths — how documented
+Explanatory visualization of 2,770 early-breakthrough paths — how documented
 starting conditions, leverage provenance, luck, and compounding trajectories
 relate to the significance of an observed milestone without claiming a causal
 formula or a repeatable identity.
@@ -40,6 +40,9 @@ formula or a repeatable identity.
 
 ## Timeline
 
+- 2026-08-09 — expanded the published dataset from 2,585 to 2,770 source-linked
+  paths, audited all 553 new source URLs, and made user-facing denominators
+  build-derived so future expansions cannot leave stale product claims
 - 2026-07-31 — completed the first blinded secondary annotation pass across a
   deterministic 16-cell cohort × milestone-age sample; published tier, score,
   and rubric-agreement results without changing source-audit status
@@ -143,16 +146,17 @@ formula or a repeatable identity.
 
 ## Dataset Stats
 
-- **Total people:** 2585 (born 1950+)
-- **Trajectory coverage:** 100% (2585/2585)
-- **Cohort distribution:** Athletes 922, Creators/artists 809, Founders/operators 557, Researchers 297
-- **Tier distribution:** T1 574, T2 1087, T3 752, T4 172
+- **Total people:** 2770 (born 1950+)
+- **Trajectory coverage:** 100% (2770/2770)
+- **Cohort distribution:** Athletes 1079, Creators/artists 835, Founders/operators 558, Researchers 298
+- **Tier distribution:** T1 611, T2 1177, T3 801, T4 181
 - **Three-event trajectory coverage:** 100%
-- **Two or more listed sources:** 95.8%
-- **Two or more source domains:** 95.0%
-- **Pass comparison/search evidence gate:** 92.8%
+- **Two or more listed sources:** 96.1%
+- **Two or more source domains:** 95.4%
+- **Pass comparison/search evidence gate:** 93.2%
 - **Secondary double-coded records:** 16
-- **Independently audited records:** 0 (external research gate remains pending)
+- **Source reachability:** 10,025 URLs checked; 8,419 reachable; 1,520 profiles have all listed sources reachable, 1,241 have partial reachability, and 9 have no reachable source
+- **Independent content audit:** pending; URL reachability does not verify claim support
 
 ## Work queue
 

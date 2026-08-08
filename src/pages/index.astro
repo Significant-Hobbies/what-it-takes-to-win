@@ -134,7 +134,7 @@ const structuredData = {
       url: "https://paths.significanthobbies.com/",
       name: "What It Takes to Win",
       description:
-        "A research atlas of 2,585 early breakthrough paths, separating starting advantage, built leverage, trajectory, standing, and luck.",
+        `A research atlas of ${total.toLocaleString()} early breakthrough paths, separating starting advantage, built leverage, trajectory, standing, and luck.`,
       publisher: { "@id": "https://paths.significanthobbies.com/#publisher" },
     },
     {
@@ -142,7 +142,7 @@ const structuredData = {
       "@id": "https://paths.significanthobbies.com/#dataset",
       name: "What It Takes to Win: Early Breakthrough Paths",
       description:
-        "A curated dataset of 2,585 people born from 1950 onward, documenting early milestones, starting advantages, leverage, trajectory, career standing, evidence confidence, and luck boundaries.",
+        `A curated dataset of ${total.toLocaleString()} people born from 1950 onward, documenting early milestones, starting advantages, leverage, trajectory, career standing, evidence confidence, and luck boundaries.`,
       url: "https://paths.significanthobbies.com/methodology/",
       creator: { "@id": "https://paths.significanthobbies.com/#publisher" },
       isAccessibleForFree: true,
@@ -163,13 +163,13 @@ const structuredData = {
 
 <Base
   title="What It Takes to Win — How Extraordinary Outcomes Happen"
-  description="Explore 2,585 documented paths to extraordinary outcomes—separating starting advantage, built leverage, trajectory, standing, and luck."
+  description={`Explore ${total.toLocaleString()} documented paths to extraordinary outcomes—separating starting advantage, built leverage, trajectory, standing, and luck.`}
   structuredData={structuredData}
 >
   <section class="hero insight-hero research-hero">
     <div class="research-hero-grid">
       <div class="research-hero-copy">
-        <p class="eyebrow">2,585 early breakthrough paths</p>
+        <p class="eyebrow">{total.toLocaleString()} early breakthrough paths</p>
         <h1>Extraordinary outcomes are surviving paths.</h1>
         <p class="lede">
           See what people started with, what they built, what compounded—and how
