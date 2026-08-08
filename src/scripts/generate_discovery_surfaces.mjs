@@ -212,7 +212,7 @@ function coverageMarkdown(surface) {
   }).length;
   const indexable = people.filter(comparisonIsIndexable).length;
   const audited = people.filter(
-    (person) => person.source_audit_status === "independently_audited",
+    (person) => person.source_audit_status === "source_verified",
   ).length;
 
   return [
@@ -227,7 +227,7 @@ function coverageMarkdown(surface) {
     `- Two or more listed sources: ${twoSources.toLocaleString("en-US")} (${share(twoSources)})`,
     `- Two or more source domains: ${twoSourceDomains.toLocaleString("en-US")} (${share(twoSourceDomains)})`,
     `- Pass the search evidence gate: ${indexable.toLocaleString("en-US")} (${share(indexable)})`,
-    `- Independently audited: ${audited.toLocaleString("en-US")} (${share(audited)})`,
+    `- Source reachability verified: ${audited.toLocaleString("en-US")} (${share(audited)})`,
     "",
     "## Interpretation boundary",
     "",

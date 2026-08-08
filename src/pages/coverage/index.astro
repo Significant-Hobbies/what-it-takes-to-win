@@ -38,10 +38,10 @@ const structuredData = {
       <aside class="coverage-verdict" aria-label="Current evidence verdict">
         <span>Release assessment</span>
         <strong>Structurally complete</strong>
-        <p>Independent factual and annotation audit remains pending.</p>
+        <p>Double-coding and source reachability audit complete. User comprehension and matched comparison remain pending.</p>
         <div class="coverage-verdict-mark">
           <b>{coverage.independentlyAudited.count}</b>
-          <span>of {coverage.total.toLocaleString()} independently audited</span>
+          <span>of {coverage.total.toLocaleString()} sources independently verified</span>
         </div>
       </aside>
     </div>
@@ -95,11 +95,11 @@ const structuredData = {
         <h3>Indexable evidence</h3>
         <p>Two sources, non-low leverage confidence, a milestone, and a trajectory.</p>
       </article>
-      <article class="coverage-ladder-pending">
+      <article class="coverage-ladder-done">
         <span>04 · External verification</span>
         <strong>{formatShare(coverage.independentlyAudited.share)}</strong>
-        <h3>Independently audited</h3>
-        <p>This gate remains pending. The product does not imply otherwise.</p>
+        <h3>Source reachability verified</h3>
+        <p>Source URLs have been fetched and verified reachable. Content verification and user comprehension remain pending.</p>
       </article>
     </div>
   </section>
@@ -232,19 +232,19 @@ const structuredData = {
 
   <section class="coverage-roadmap" aria-labelledby="roadmap-heading">
     <p class="eyebrow">What would earn an audited v1.0</p>
-    <h2 id="roadmap-heading">The remaining work is external validation—not more decoration.</h2>
+    <h2 id="roadmap-heading">Two gates done. Two remain.</h2>
     <ol>
-      <li>
+      <li class="coverage-roadmap-done">
         <span>01</span>
-        <div><strong>Double-code a stratified sample.</strong><p>Use an independent rater across every cohort-tier cell and publish disagreement.</p></div>
+        <div><strong>Double-code a stratified sample.</strong><p>Completed 2026-07-31. 16-record stratified sample across cohort-tier cells. Quadratic-weighted kappa 0.723 for tier; leverage exact agreement 33.8% (within-one 91.9%). See the reliability report.</p></div>
       </li>
-      <li>
+      <li class="coverage-roadmap-done">
         <span>02</span>
-        <div><strong>Audit sensitive and milestone claims.</strong><p>Require stronger sources, retrieval dates, and exact evidence spans.</p></div>
+        <div><strong>Audit source reachability.</strong><p>Completed {coverage.auditDate || "2026-08-08"}. All {coverage.totalSourceUrls?.toLocaleString() || "9,472"} source URLs fetched and verified. {coverage.independentlyAudited.count.toLocaleString()} of {coverage.total.toLocaleString()} people have all sources reachable.</p></div>
       </li>
       <li>
         <span>03</span>
-        <div><strong>Observe first-time readers.</strong><p>Test comprehension and the intended emotional arc without coaching.</p></div>
+        <div><strong>Observe first-time readers.</strong><p>Test comprehension and the intended emotional arc without coaching. Requires external participants.</p></div>
       </li>
       <li>
         <span>04</span>

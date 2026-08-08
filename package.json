@@ -12,6 +12,7 @@
     "audit:clarity": "node src/scripts/audit_clarity.mjs",
     "audit:tiers": "node src/scripts/audit_tiers.mjs",
     "audit:reliability": "node src/scripts/audit_reliability.mjs",
+    "audit:sources": "node src/scripts/audit_sources.mjs",
     "ready": "pnpm run check && pnpm run build && pnpm run audit:discovery && pnpm run audit:clarity && pnpm run audit:tiers && pnpm run audit:reliability",
     "deploy": "pnpm run ready && wrangler pages deploy dist --project-name success-by-26 --branch main"
   },

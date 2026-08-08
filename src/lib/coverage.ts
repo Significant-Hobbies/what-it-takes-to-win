@@ -9,6 +9,7 @@ export interface CoveragePerson {
   leverage_evidence_confidence?: string;
   early_advantage_evidence_confidence?: string;
   source_audit_status?: string;
+  source_audit_date?: string;
   cohort_group?: string;
   success_tier?: number;
 }
@@ -77,11 +78,24 @@ export function summarizeCoverage(people: CoveragePerson[]) {
       person.trajectory.length > 0,
   ).length;
   const independentlyAudited = people.filter(
-    (person) => person.source_audit_status === "independently_audited",
+    (person) => person.source_audit_status === "source_verified",
+  ).length;
+  const partialVerified = people.filter(
+    (person) => person.source_audit_status === "partial_source_verification",
   ).length;
   const twoDistinctSourceDomains = people.filter(
     (person) => sourceDomainCount(person) >= 2,
   ).length;
+  const totalSourceUrls = people.reduce(
+    (sum, person) => sum + (Array.isArray(person.source_urls) ? person.source_urls.length : 0),
+    0,
+  );
+  const auditDates = people
+    .map((person) => person.source_audit_date)
+    .filter((date): date is string => typeof date === "string" && date.length > 0);
+  const auditDate = auditDates.length > 0
+    ? auditDates.sort().reverse()[0]
+    : undefined;
 
   const cohorts = [...new Set(people.map((person) => person.cohort_group).filter(Boolean))]
     .map((label) => {
@@ -117,6 +131,12 @@ export function summarizeCoverage(people: CoveragePerson[]) {
       count: independentlyAudited,
       share: percent(independentlyAudited, total),
     },
+    partialVerified: {
+      count: partialVerified,
+      share: percent(partialVerified, total),
+    },
+    totalSourceUrls,
+    auditDate,
     twoDistinctSourceDomains: {
       count: twoDistinctSourceDomains,
       share: percent(twoDistinctSourceDomains, total),

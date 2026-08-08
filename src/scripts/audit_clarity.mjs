@@ -43,11 +43,11 @@ const contracts = [
       "Not complete enough to predict",
       "Coverage is a ladder—not one percentage",
       "Two source domains",
-      "Independently audited",
+      "Source reachability verified",
       "A selected atlas—not a miniature population",
       "This project cannot count every promising path that disappeared",
       "how many failed for every Bill Gates",
-      "The remaining work is external validation",
+      "Two gates done. Two remain.",
     ],
   },
   {

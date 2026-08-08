@@ -3,6 +3,24 @@ import "../styles/global.css";
 import "../styles/exhibit-finish.css";
 import peopleData from "../data/people.json";
 const peopleCount = peopleData.length;
+const sourceVerifiedCount = peopleData.filter(
+  (p) => p.source_audit_status === "source_verified"
+).length;
+const partialVerifiedCount = peopleData.filter(
+  (p) => p.source_audit_status === "partial_source_verification"
+).length;
+const auditGates = [
+  { label: "Double-coding", status: "done", note: "16-record stratified sample" },
+  {
+    label: "Source audit",
+    status: sourceVerifiedCount > 0 ? "done" : "pending",
+    note: sourceVerifiedCount > 0
+      ? `${sourceVerifiedCount.toLocaleString()} verified`
+      : "Not started",
+  },
+  { label: "User comprehension", status: "pending", note: "External observation" },
+  { label: "Matched comparison", status: "pending", note: "No control group" },
+];
 const {
   title = "What It Takes to Win",
   description = "What early conditions accelerate breakthroughs? A data-driven look at 2,500+ people and the advantages that shaped their paths.",
@@ -106,11 +124,20 @@ const isActive = (link: (typeof navLinks)[number]) =>
             compounding, luck, and the limits of comparison.
           </p>
         </div>
-        <div class="footer-ledger">
-          <span>Published atlas</span>
-          <strong>{peopleCount.toLocaleString()} paths</strong>
-          <span>Independent audit</span>
-          <strong class="footer-pending">Pending</strong>
+        <div class="footer-audit" aria-label="Independent audit status">
+          <p class="footer-audit-heading">Independent audit</p>
+          <ul class="audit-gates">
+            {auditGates.map((gate) => (
+              <li class={`audit-gate audit-gate-${gate.status}`}>
+                <span class="audit-gate-mark" aria-hidden="true">
+                  {gate.status === "done" ? "✓" : "○"}
+                </span>
+                <span class="audit-gate-label">{gate.label}</span>
+                <span class="audit-gate-note">{gate.note}</span>
+              </li>
+            ))}
+          </ul>
+          <a href="/coverage/" class="footer-audit-link">See evidence coverage →</a>
         </div>
         <nav class="footer-nav" aria-label="Footer navigation">
           <a href="/coverage/">Evidence coverage</a>
@@ -121,7 +148,10 @@ const isActive = (link: (typeof navLinks)[number]) =>
           <a href="https://github.com/Significant-Hobbies/what-it-takes-to-win/issues">Roadmap</a>
           <a href="https://github.com/Significant-Hobbies/what-it-takes-to-win">Source code</a>
         </nav>
-        <p class="footer-meta">Independent research by Sarthak Agrawal · People born 1950+</p>
+        <div class="footer-meta-row">
+          <p class="footer-meta">{peopleCount.toLocaleString()} paths · People born 1950+</p>
+          <p class="footer-meta">Independent research by Sarthak Agrawal</p>
+        </div>
       </div>
     </footer>
     <script>

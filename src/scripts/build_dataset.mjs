@@ -318,6 +318,31 @@ function validateDataset(records) {
 
 validateDataset(filtered);
 
+// Merge source audit results if available
+let auditCount = 0;
+try {
+  const auditData = JSON.parse(readFileSync(join(root, "quality", "source-audit", "audit-v1.json"), "utf8"));
+  for (const person of filtered) {
+    const personResults = auditData.results[person.person_id] || [];
+    const reachableCount = personResults.filter((r) => r.reachable).length;
+    const personTotal = personResults.length;
+    if (personTotal > 0) {
+      if (reachableCount === personTotal) {
+        person.source_audit_status = "source_verified";
+      } else if (reachableCount > 0) {
+        person.source_audit_status = "partial_source_verification";
+      } else {
+        person.source_audit_status = "source_verification_failed";
+      }
+      person.source_audit_date = auditData.audit_date;
+      auditCount++;
+    }
+  }
+  console.log(`Merged source audit results for ${auditCount} people`);
+} catch {
+  console.log("No source audit results found (run pnpm run audit:sources to generate)");
+}
+
 writeFileSync(join(root, "src", "data", "people.json"), JSON.stringify(filtered));
 console.log(`Wrote ${filtered.length} people to src/data/people.json (born >= 1950, from ${withBirthYear.length} total)`);
 
