@@ -41,6 +41,9 @@ formula or a repeatable identity.
 
 ## Timeline
 
+- 2026-08-09 — split the chart runtime by visualization family and registered
+  only the ECharts modules each surface uses, removing the oversized production
+  chunk warning while preserving lazy chart loading
 - 2026-08-09 — adopted the Fleet Ultracite/Biome contract, enforced it through
   the existing readiness gate, and reached zero findings across 35 applicable
   files without reformatting the research corpus
