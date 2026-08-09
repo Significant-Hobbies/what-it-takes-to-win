@@ -678,7 +678,7 @@ const overlapChartData = {
 
         try {
           const chartData = JSON.parse(dataElement.textContent || "{}");
-          const { initChart } = await import("../../scripts/charts.js");
+          const { initChart } = await import("../../scripts/insight-charts.js");
           const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
           const mobileQuery = window.matchMedia("(max-width: 560px)");
           chartElement.textContent = "";

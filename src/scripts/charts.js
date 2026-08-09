@@ -1,32 +1,16 @@
 // Client-side chart helpers using ECharts. Loaded via <script> on pages that need charts.
 // Exposes window.initChart(elementId, option) and registers a global init queue.
 
-import * as echarts from "echarts";
+import { BarChart, PieChart } from "echarts/charts";
+import { initChart as initRuntimeChart, useChartModules } from "./chart-runtime.js";
 
-const charts = new Map();
+useChartModules([BarChart, PieChart]);
 
-window.addEventListener("resize", () => {
-  charts.forEach((c) => c.resize());
-});
-
-export function initChart(id, option) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  let chart = charts.get(id);
-  if (!chart) {
-    chart = echarts.init(el, null, { renderer: "canvas" });
-    charts.set(id, chart);
-  }
-  chart.setOption(option);
-  return chart;
+export function initChart(...args) {
+  return initRuntimeChart(...args);
 }
 
-window.initChart = initChart;
-
-window.disposeCharts = function () {
-  charts.forEach((c) => c.dispose());
-  charts.clear();
-};
+window.initChart = initRuntimeChart;
 
 // Dark theme defaults
 export const chartTheme = {
