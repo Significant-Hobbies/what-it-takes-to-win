@@ -1,0 +1,13 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  "entry": [
+    "astro.config.mjs",
+    "src/pages/**/*.{astro,md}",
+    "src/scripts/**/*.{js,mjs}"
+  ],
+  "project": ["src/**/*.{ts,js,mjs,astro}"],
+  "ignore": [
+    "src/layouts/Essay.astro"
+  ],
+  "ignoreDependencies": ["@astrojs/check", "@biomejs/biome", "jscpd"]
+}

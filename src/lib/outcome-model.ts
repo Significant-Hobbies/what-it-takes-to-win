@@ -164,7 +164,7 @@ export const LUCK_FORMS = [
   },
 ] as const;
 
-export type LeverageOriginKey = (typeof LEVERAGE_ORIGINS)[number]["key"];
+type LeverageOriginKey = (typeof LEVERAGE_ORIGINS)[number]["key"];
 
 export type LeverageProvenance = {
   field: ScoreField;
@@ -295,7 +295,7 @@ function numeric(person: OutcomePerson, key: string): number {
   return typeof value === "number" && Number.isFinite(value) ? value : 0;
 }
 
-export function sumScoreFields(person: OutcomePerson, fields: ScoreField[]): number {
+function sumScoreFields(person: OutcomePerson, fields: ScoreField[]): number {
   return fields.reduce((sum, field) => sum + numeric(person, field.key), 0);
 }
 
@@ -338,7 +338,7 @@ function pearson(valuesA: number[], valuesB: number[]): number {
     : 0;
 }
 
-export function percentileRank(values: number[], value: number): number {
+function percentileRank(values: number[], value: number): number {
   if (!values.length) return 0;
   const atOrBelow = values.filter((candidate) => candidate <= value).length;
   return Math.round((atOrBelow / values.length) * 100);
@@ -414,7 +414,7 @@ function originDefinition(origin: LeverageOriginKey) {
   return LEVERAGE_ORIGINS.find((candidate) => candidate.key === origin) ?? LEVERAGE_ORIGINS[5];
 }
 
-export function inferLeverageProvenance(
+function inferLeverageProvenance(
   person: OutcomePerson,
   field: ScoreField,
 ): LeverageProvenance {
