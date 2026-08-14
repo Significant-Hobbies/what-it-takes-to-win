@@ -13,6 +13,15 @@ export interface StoryWorldController {
 }
 
 type WorldAnimation = (time: number, progress: number) => void;
+type Materials = Record<string, THREE.Material>;
+
+interface StairFlightOptions {
+  rise: number;
+  rotationY?: number;
+  run: number;
+  steps: number;
+  width: number;
+}
 
 const COLORS = {
   blue: 0x3d72ff,
@@ -124,7 +133,8 @@ function stoneTexture() {
   }
   const texture = new THREE.DataTexture(data, size, size, THREE.RGBAFormat);
   texture.colorSpace = THREE.SRGBColorSpace;
-  texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+  texture.wrapS = THREE.RepeatWrapping;
+  texture.wrapT = THREE.RepeatWrapping;
   texture.repeat.set(4, 4);
   texture.needsUpdate = true;
   return texture;
@@ -149,12 +159,9 @@ function glowTexture() {
 }
 
 function roundedBox(
-  width: number,
-  height: number,
-  depth: number,
-  radius: number,
-  material: THREE.Material,
+  ...args: [number, number, number, number, THREE.Material]
 ) {
+  const [width, height, depth, radius, material] = args;
   return configureMesh(
     new THREE.Mesh(new RoundedBoxGeometry(width, height, depth, 3, radius), material),
   );
@@ -177,12 +184,9 @@ function tube(
 }
 
 function buildColumn(
-  parent: THREE.Object3D,
-  position: THREE.Vector3,
-  height: number,
-  material: THREE.Material,
-  scale = 1,
+  ...args: [THREE.Object3D, THREE.Vector3, number, THREE.Material, number?]
 ) {
+  const [parent, position, height, material, scale = 1] = args;
   const group = new THREE.Group();
   group.position.copy(position);
   const shaft = configureMesh(
@@ -201,13 +205,9 @@ function buildColumn(
 }
 
 function buildArch(
-  parent: THREE.Object3D,
-  position: THREE.Vector3,
-  width: number,
-  height: number,
-  material: THREE.Material,
-  rotationY = 0,
+  ...args: [THREE.Object3D, THREE.Vector3, number, number, THREE.Material, number?]
 ) {
+  const [parent, position, width, height, material, rotationY = 0] = args;
   const group = new THREE.Group();
   group.position.copy(position);
   group.rotation.y = rotationY;
@@ -229,13 +229,10 @@ function buildArch(
 function buildStairFlight(
   parent: THREE.Object3D,
   position: THREE.Vector3,
-  width: number,
-  rise: number,
-  run: number,
-  steps: number,
   material: THREE.Material,
-  rotationY = 0,
+  options: StairFlightOptions,
 ) {
+  const { width, rise, run, steps, rotationY = 0 } = options;
   const group = new THREE.Group();
   group.position.copy(position);
   group.rotation.y = rotationY;
@@ -256,13 +253,9 @@ function buildStairFlight(
 }
 
 function buildTruss(
-  parent: THREE.Object3D,
-  position: THREE.Vector3,
-  width: number,
-  height: number,
-  material: THREE.Material,
-  rotationY = 0,
+  ...args: [THREE.Object3D, THREE.Vector3, number, number, THREE.Material, number?]
 ) {
+  const [parent, position, width, height, material, rotationY = 0] = args;
   const group = new THREE.Group();
   group.position.copy(position);
   group.rotation.y = rotationY;
@@ -490,12 +483,9 @@ function buildSky(scene: THREE.Scene, lowQuality: boolean) {
 }
 
 function buildSite(
-  scene: THREE.Scene,
-  materials: Record<string, THREE.Material>,
-  animations: WorldAnimation[],
-  glow: THREE.Texture | null,
-  lowQuality: boolean,
+  ...args: [THREE.Scene, Materials, WorldAnimation[], THREE.Texture | null, boolean]
 ) {
+  const [scene, materials, animations, glow, lowQuality] = args;
   const world = new THREE.Group();
   world.position.x = 8;
   scene.add(world);
@@ -570,16 +560,7 @@ function buildSite(
   buildAmbientRecords(world, materials, animations, lowQuality);
 }
 
-function buildSurvivor(
-  world: THREE.Group,
-  materials: Record<string, THREE.Material>,
-  animations: WorldAnimation[],
-  lowQuality: boolean,
-) {
-  const group = new THREE.Group();
-  group.position.z = 4;
-  world.add(group);
-
+function buildSurvivorArchive(group: THREE.Group, materials: Materials) {
   for (let index = -3; index <= 3; index += 1) {
     buildColumn(group, new THREE.Vector3(index * 4.8, 0, -8), 8.5, materials.stone, 1.05);
   }
@@ -644,7 +625,10 @@ function buildSurvivor(
   }
   origins.instanceMatrix.needsUpdate = true;
   group.add(origins);
+  return survivorWindow;
+}
 
+function buildSurvivorOrrery(group: THREE.Group, materials: Materials, lowQuality: boolean) {
   const orrery = new THREE.Group();
   orrery.position.set(7.5, 4.1, -7.2);
   orrery.scale.setScalar(1.35);
@@ -717,6 +701,20 @@ function buildSurvivor(
   const pointLight = new THREE.PointLight(COLORS.blue, 18, 22, 2);
   pointLight.position.copy(orrery.position);
   group.add(pointLight);
+  return { core, orrery };
+}
+
+function buildSurvivor(
+  world: THREE.Group,
+  materials: Materials,
+  animations: WorldAnimation[],
+  lowQuality: boolean,
+) {
+  const group = new THREE.Group();
+  group.position.z = 4;
+  world.add(group);
+  const survivorWindow = buildSurvivorArchive(group, materials);
+  const { core, orrery } = buildSurvivorOrrery(group, materials, lowQuality);
   animations.push((time) => {
     orrery.rotation.y = time * 0.09;
     orrery.rotation.x = Math.sin(time * 0.21) * 0.08;
@@ -775,8 +773,20 @@ function buildTerraces(
   lintel.position.set(0, 6.4, 7);
   group.add(lintel);
 
-  buildStairFlight(group, new THREE.Vector3(-14, 0.12, 5.2), 3.1, 5.1, 10.5, lowQuality ? 10 : 18, materials.stone, -Math.PI / 2);
-  buildStairFlight(group, new THREE.Vector3(12.6, 0.12, 4.1), 2.6, 3.9, 7.5, lowQuality ? 8 : 14, materials.stone, Math.PI / 2);
+  buildStairFlight(group, new THREE.Vector3(-14, 0.12, 5.2), materials.stone, {
+    rise: 5.1,
+    rotationY: -Math.PI / 2,
+    run: 10.5,
+    steps: lowQuality ? 10 : 18,
+    width: 3.1,
+  });
+  buildStairFlight(group, new THREE.Vector3(12.6, 0.12, 4.1), materials.stone, {
+    rise: 3.9,
+    rotationY: Math.PI / 2,
+    run: 7.5,
+    steps: lowQuality ? 8 : 14,
+    width: 2.6,
+  });
 
   const accessTower = new THREE.Group();
   accessTower.position.set(13.7, 0, -4.4);
@@ -812,9 +822,35 @@ function buildTerraces(
   });
 }
 
+function buildLeverageOrigins(group: THREE.Group, materials: Materials) {
+  const originMaterials = [materials.cobalt, materials.mint, materials.brassLight, materials.light, materials.glassLine];
+  const originAccents = ["#82b7ff", "#69d5bf", "#f2c573", "#f7f4ec", "#9bb4c7"];
+  LEVERAGE_ORIGINS.slice(0, 5).forEach((origin, index) => {
+    const source = new THREE.Vector3(10.8 + index * 0.45, 1.4 + index * 1.5, -7.4 + index * 3.45);
+    group.add(tube([
+      source,
+      new THREE.Vector3(7.1, 3 + index * 0.58, source.z * 0.42),
+      new THREE.Vector3(2.8, 4.4, 0),
+    ], index === 0 ? 0.1 : 0.065, originMaterials[index], 56));
+    const label = conceptLabel(String(index + 1).padStart(2, "0"), origin.label, originAccents[index], 3.5);
+    if (label) {
+      label.position.copy(source).add(new THREE.Vector3(0, 0.9, 0));
+      group.add(label);
+    }
+  });
+  for (let index = 0; index < 9; index += 1) {
+    const angle = (index / 9) * Math.PI * 2;
+    group.add(tube([
+      new THREE.Vector3(3.2, 4.4, 0),
+      new THREE.Vector3(8.5, 4.4 + Math.sin(angle) * 2.2, Math.cos(angle) * 2.5),
+      new THREE.Vector3(15, 4.8 + Math.sin(angle) * 4.3, Math.cos(angle) * 5.5),
+    ], 0.045, index % 3 === 0 ? materials.light : materials.brassLight, 58));
+  }
+}
+
 function buildLeverage(
   world: THREE.Group,
-  materials: Record<string, THREE.Material>,
+  materials: Materials,
   animations: WorldAnimation[],
 ) {
   const group = new THREE.Group();
@@ -886,29 +922,7 @@ function buildLeverage(
     gauges.push(gauge);
   }
 
-  const originMaterials = [materials.cobalt, materials.mint, materials.brassLight, materials.light, materials.glassLine];
-  const originAccents = ["#82b7ff", "#69d5bf", "#f2c573", "#f7f4ec", "#9bb4c7"];
-  LEVERAGE_ORIGINS.slice(0, 5).forEach((origin, index) => {
-    const source = new THREE.Vector3(10.8 + index * 0.45, 1.4 + index * 1.5, -7.4 + index * 3.45);
-    group.add(tube([
-      source,
-      new THREE.Vector3(7.1, 3 + index * 0.58, source.z * 0.42),
-      new THREE.Vector3(2.8, 4.4, 0),
-    ], index === 0 ? 0.1 : 0.065, originMaterials[index], 56));
-    const label = conceptLabel(String(index + 1).padStart(2, "0"), origin.label, originAccents[index], 3.5);
-    if (label) {
-      label.position.copy(source).add(new THREE.Vector3(0, 0.9, 0));
-      group.add(label);
-    }
-  });
-  for (let index = 0; index < 9; index += 1) {
-    const angle = (index / 9) * Math.PI * 2;
-    group.add(tube([
-      new THREE.Vector3(3.2, 4.4, 0),
-      new THREE.Vector3(8.5, 4.4 + Math.sin(angle) * 2.2, Math.cos(angle) * 2.5),
-      new THREE.Vector3(15, 4.8 + Math.sin(angle) * 4.3, Math.cos(angle) * 5.5),
-    ], 0.045, index % 3 === 0 ? materials.light : materials.brassLight, 58));
-  }
+  buildLeverageOrigins(group, materials);
   const light = new THREE.PointLight(COLORS.brassLight, 20, 30, 2);
   light.position.set(3.6, 4.4, 1.5);
   group.add(light);
@@ -925,9 +939,43 @@ function buildLeverage(
   });
 }
 
+function buildSequenceCables(
+  group: THREE.Group,
+  materials: Materials,
+  pathPoints: THREE.Vector3[],
+) {
+  const cableAnchors = [
+    new THREE.Vector3(-15.5, 11.5, 8.5),
+    new THREE.Vector3(0, 15.2, -1.8),
+    new THREE.Vector3(14.8, 13.2, -10),
+  ];
+  cableAnchors.forEach((anchor, index) => {
+    const mast = roundedBox(0.48, anchor.y, 0.48, 0.08, materials.stone);
+    mast.position.set(anchor.x, anchor.y / 2 - 0.2, anchor.z);
+    group.add(mast);
+    if (index < cableAnchors.length - 1) {
+      const next = cableAnchors[index + 1];
+      [-0.8, 0.8].forEach((offset) => {
+        group.add(tube([
+          anchor.clone().add(new THREE.Vector3(0, 0, offset)),
+          anchor.clone().lerp(next, 0.5).add(new THREE.Vector3(0, -5.5, offset)),
+          next.clone().add(new THREE.Vector3(0, 0, offset)),
+        ], 0.07, materials.brassDark, 64));
+      });
+    }
+  });
+  pathPoints.forEach((point, index) => {
+    const nearestAnchor = cableAnchors[Math.min(cableAnchors.length - 1, Math.floor(index / 2))];
+    group.add(tube([
+      nearestAnchor,
+      point.clone().add(new THREE.Vector3(0, 0.8, 0)),
+    ], 0.022, materials.glassLine, 16));
+  });
+}
+
 function buildSequence(
   world: THREE.Group,
-  materials: Record<string, THREE.Material>,
+  materials: Materials,
   animations: WorldAnimation[],
 ) {
   const group = new THREE.Group();
@@ -995,33 +1043,7 @@ function buildSequence(
     120,
   ));
 
-  const cableAnchors = [
-    new THREE.Vector3(-15.5, 11.5, 8.5),
-    new THREE.Vector3(0, 15.2, -1.8),
-    new THREE.Vector3(14.8, 13.2, -10),
-  ];
-  cableAnchors.forEach((anchor, index) => {
-    const mast = roundedBox(0.48, anchor.y, 0.48, 0.08, materials.stone);
-    mast.position.set(anchor.x, anchor.y / 2 - 0.2, anchor.z);
-    group.add(mast);
-    if (index < cableAnchors.length - 1) {
-      const next = cableAnchors[index + 1];
-      [-0.8, 0.8].forEach((offset) => {
-        group.add(tube([
-          anchor.clone().add(new THREE.Vector3(0, 0, offset)),
-          anchor.clone().lerp(next, 0.5).add(new THREE.Vector3(0, -5.5, offset)),
-          next.clone().add(new THREE.Vector3(0, 0, offset)),
-        ], 0.07, materials.brassDark, 64));
-      });
-    }
-  });
-  pathPoints.forEach((point, index) => {
-    const nearestAnchor = cableAnchors[Math.min(cableAnchors.length - 1, Math.floor(index / 2))];
-    group.add(tube([
-      nearestAnchor,
-      point.clone().add(new THREE.Vector3(0, 0.8, 0)),
-    ], 0.022, materials.glassLine, 16));
-  });
+  buildSequenceCables(group, materials, pathPoints);
 
   const clock = new THREE.Group();
   clock.position.set(13.2, 10.4, -8.6);
@@ -1049,39 +1071,7 @@ function buildSequence(
   });
 }
 
-function buildBoundary(
-  world: THREE.Group,
-  materials: Record<string, THREE.Material>,
-  animations: WorldAnimation[],
-  glow: THREE.Texture | null,
-  lowQuality: boolean,
-) {
-  const group = new THREE.Group();
-  group.position.set(0, 5.2, -124);
-  world.add(group);
-  const observatory = new THREE.Group();
-  observatory.position.x = 3;
-  group.add(observatory);
-
-  const core = configureMesh(new THREE.Mesh(new THREE.SphereGeometry(2.8, 48, 32), materials.glass));
-  observatory.add(core);
-  const star = configureMesh(
-    new THREE.Mesh(new THREE.IcosahedronGeometry(1.15, 3), materials.light),
-    false,
-    false,
-  );
-  observatory.add(star);
-  [5.2, 6.8, 8.6, 10.4].forEach((radius, index) => {
-    const arc = configureMesh(
-      new THREE.Mesh(
-        new THREE.TorusGeometry(radius, 0.095 - index * 0.01, 10, lowQuality ? 72 : 128, Math.PI * (1.5 - index * 0.09)),
-        index === 3 ? materials.cobalt : materials.brass,
-      ),
-    );
-    arc.rotation.set(0.4 + index * 0.43, index * 0.66, index * 0.28);
-    observatory.add(arc);
-  });
-
+function buildBoundaryDome(group: THREE.Group, materials: Materials, lowQuality: boolean) {
   const rotundaRing = configureMesh(
     new THREE.Mesh(new THREE.TorusGeometry(1, 0.18, 12, 128), materials.brass),
   );
@@ -1144,9 +1134,10 @@ function buildBoundary(
   }
   constellation.instanceMatrix.needsUpdate = true;
   domeRibs.add(constellation);
+  return { constellation, domeRibs };
+}
 
-  buildStairFlight(group, new THREE.Vector3(3, -5.55, 14.8), 5.4, 2.4, 6.8, lowQuality ? 9 : 16, materials.stone, Math.PI);
-
+function buildLuckForces(group: THREE.Group, materials: Materials) {
   const luckForces = new THREE.Group();
   luckForces.position.set(3, -0.4, 3.1);
   group.add(luckForces);
@@ -1192,35 +1183,87 @@ function buildBoundary(
       0.78,
     );
   }
-  if (glow) {
-    const dustGeometry = new THREE.BufferGeometry();
-    const count = lowQuality ? 220 : 520;
-    const positions = new Float32Array(count * 3);
-    for (let index = 0; index < count; index += 1) {
-      const angle = random() * Math.PI * 2;
-      const radius = 3 + random() * 10;
-      positions[index * 3] = Math.cos(angle) * radius;
-      positions[index * 3 + 1] = (random() - 0.5) * 15;
-      positions[index * 3 + 2] = Math.sin(angle) * radius;
-    }
-    dustGeometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
-    const dust = new THREE.Points(
-      dustGeometry,
-      new THREE.PointsMaterial({
-        alphaMap: glow,
-        blending: THREE.AdditiveBlending,
-        color: COLORS.brassLight,
-        depthWrite: false,
-        opacity: 0.42,
-        size: 0.16,
-        transparent: true,
-      }),
-    );
-    observatory.add(dust);
-    animations.push((time) => {
-      dust.rotation.y = time * -0.018;
-    });
+  return { forceMarkers, forcePositions };
+}
+
+function buildBoundaryDust(
+  observatory: THREE.Group,
+  animations: WorldAnimation[],
+  glow: THREE.Texture | null,
+  lowQuality: boolean,
+) {
+  if (!glow) return;
+  const dustGeometry = new THREE.BufferGeometry();
+  const count = lowQuality ? 220 : 520;
+  const positions = new Float32Array(count * 3);
+  for (let index = 0; index < count; index += 1) {
+    const angle = random() * Math.PI * 2;
+    const radius = 3 + random() * 10;
+    positions[index * 3] = Math.cos(angle) * radius;
+    positions[index * 3 + 1] = (random() - 0.5) * 15;
+    positions[index * 3 + 2] = Math.sin(angle) * radius;
   }
+  dustGeometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+  const dust = new THREE.Points(
+    dustGeometry,
+    new THREE.PointsMaterial({
+      alphaMap: glow,
+      blending: THREE.AdditiveBlending,
+      color: COLORS.brassLight,
+      depthWrite: false,
+      opacity: 0.42,
+      size: 0.16,
+      transparent: true,
+    }),
+  );
+  observatory.add(dust);
+  animations.push((time) => {
+    dust.rotation.y = time * -0.018;
+  });
+}
+
+function buildBoundary(
+  ...args: [THREE.Group, Materials, WorldAnimation[], THREE.Texture | null, boolean]
+) {
+  const [world, materials, animations, glow, lowQuality] = args;
+  const group = new THREE.Group();
+  group.position.set(0, 5.2, -124);
+  world.add(group);
+  const observatory = new THREE.Group();
+  observatory.position.x = 3;
+  group.add(observatory);
+
+  const core = configureMesh(new THREE.Mesh(new THREE.SphereGeometry(2.8, 48, 32), materials.glass));
+  observatory.add(core);
+  const star = configureMesh(
+    new THREE.Mesh(new THREE.IcosahedronGeometry(1.15, 3), materials.light),
+    false,
+    false,
+  );
+  observatory.add(star);
+  [5.2, 6.8, 8.6, 10.4].forEach((radius, index) => {
+    const arc = configureMesh(
+      new THREE.Mesh(
+        new THREE.TorusGeometry(radius, 0.095 - index * 0.01, 10, lowQuality ? 72 : 128, Math.PI * (1.5 - index * 0.09)),
+        index === 3 ? materials.cobalt : materials.brass,
+      ),
+    );
+    arc.rotation.set(0.4 + index * 0.43, index * 0.66, index * 0.28);
+    observatory.add(arc);
+  });
+
+  const { constellation, domeRibs } = buildBoundaryDome(group, materials, lowQuality);
+
+  buildStairFlight(group, new THREE.Vector3(3, -5.55, 14.8), materials.stone, {
+    rise: 2.4,
+    rotationY: Math.PI,
+    run: 6.8,
+    steps: lowQuality ? 9 : 16,
+    width: 5.4,
+  });
+
+  const { forceMarkers, forcePositions } = buildLuckForces(group, materials);
+  buildBoundaryDust(observatory, animations, glow, lowQuality);
   const light = new THREE.PointLight(COLORS.brassLight, 22, 34, 2);
   light.position.set(3, 2, 2);
   group.add(light);
@@ -1271,48 +1314,8 @@ function buildAmbientRecords(
   });
 }
 
-function disposeScene(scene: THREE.Scene) {
-  const disposedMaterials = new Set<THREE.Material>();
-  scene.traverse((object) => {
-    if ("geometry" in object && object.geometry instanceof THREE.BufferGeometry) object.geometry.dispose();
-    if (!("material" in object)) return;
-    const source = object.material as THREE.Material | THREE.Material[];
-    const materials = Array.isArray(source) ? source : [source];
-    materials.forEach((material) => {
-      if (disposedMaterials.has(material)) return;
-      disposedMaterials.add(material);
-      material.dispose();
-    });
-  });
-}
-
-export function mountStoryWorld(canvas: HTMLCanvasElement): StoryWorldController | null {
-  const atmosphere = canvas.closest<HTMLElement>(".story-atmosphere");
-  if (!atmosphere) return null;
-  const lowQuality = canvas.clientWidth < 760;
-  const captureMode = new URLSearchParams(window.location.search).has("capture");
-
-  let renderer: THREE.WebGLRenderer;
-  try {
-    renderer = new THREE.WebGLRenderer({
-      alpha: false,
-      antialias: !lowQuality,
-      canvas,
-      powerPreference: "high-performance",
-      preserveDrawingBuffer: captureMode,
-    });
-  } catch {
-    return null;
-  }
-
-  const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x83acc5);
-  scene.fog = new THREE.FogExp2(0xa9c4d1, lowQuality ? 0.0092 : 0.0068);
-  const camera = new THREE.PerspectiveCamera(lowQuality ? 43 : 39, 1, 0.18, 230);
-  const animations: WorldAnimation[] = [];
-  const stoneMap = stoneTexture();
-  const glow = glowTexture();
-  const materials: Record<string, THREE.Material> = {
+function createMaterials(stoneMap: THREE.Texture): Materials {
+  return {
     stone: new THREE.MeshStandardMaterial({
       color: COLORS.stone,
       map: stoneMap,
@@ -1374,27 +1377,81 @@ export function mountStoryWorld(canvas: HTMLCanvasElement): StoryWorldController
       transparent: true,
     }),
   };
+}
 
+function disposeScene(scene: THREE.Scene) {
+  const disposedMaterials = new Set<THREE.Material>();
+  scene.traverse((object) => {
+    if ("geometry" in object && object.geometry instanceof THREE.BufferGeometry) object.geometry.dispose();
+    if (!("material" in object)) return;
+    const source = object.material as THREE.Material | THREE.Material[];
+    const materials = Array.isArray(source) ? source : [source];
+    materials.forEach((material) => {
+      if (disposedMaterials.has(material)) return;
+      disposedMaterials.add(material);
+      material.dispose();
+    });
+  });
+}
+
+interface WorldResources {
+  animations: WorldAnimation[];
+  camera: THREE.PerspectiveCamera;
+  cameraCurve: THREE.CatmullRomCurve3;
+  cinematicPass: ShaderPass;
+  composer: EffectComposer;
+  glow: THREE.Texture | null;
+  renderer: THREE.WebGLRenderer;
+  scene: THREE.Scene;
+  stoneMap: THREE.Texture;
+  targetCurve: THREE.CatmullRomCurve3;
+}
+
+function createWorldResources(
+  canvas: HTMLCanvasElement,
+  lowQuality: boolean,
+  captureMode: boolean,
+): WorldResources | null {
+  let renderer: THREE.WebGLRenderer;
+  try {
+    renderer = new THREE.WebGLRenderer({
+      alpha: false,
+      antialias: !lowQuality,
+      canvas,
+      powerPreference: "high-performance",
+      preserveDrawingBuffer: captureMode,
+    });
+  } catch {
+    return null;
+  }
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x83acc5);
+  scene.fog = new THREE.FogExp2(0xa9c4d1, lowQuality ? 0.0092 : 0.0068);
+  const camera = new THREE.PerspectiveCamera(lowQuality ? 43 : 39, 1, 0.18, 230);
+  const animations: WorldAnimation[] = [];
+  const stoneMap = stoneTexture();
+  const glow = glowTexture();
+  const materials = createMaterials(stoneMap);
   buildSky(scene, lowQuality);
   buildSite(scene, materials, animations, glow, lowQuality);
 
-  const hemisphere = new THREE.HemisphereLight(0xeef8ff, 0x667985, 2.25);
-  scene.add(hemisphere);
+  scene.add(new THREE.HemisphereLight(0xeef8ff, 0x667985, 2.25));
   const sun = new THREE.DirectionalLight(0xffe5b2, 3.35);
   sun.position.set(-38, 55, 24);
   sun.castShadow = !lowQuality;
   if (!lowQuality) {
     sun.shadow.mapSize.set(2048, 2048);
-    sun.shadow.camera.left = -48;
-    sun.shadow.camera.right = 48;
-    sun.shadow.camera.top = 48;
-    sun.shadow.camera.bottom = -48;
-    sun.shadow.camera.near = 1;
-    sun.shadow.camera.far = 170;
+    Object.assign(sun.shadow.camera, {
+      bottom: -48,
+      far: 170,
+      left: -48,
+      near: 1,
+      right: 48,
+      top: 48,
+    });
     sun.shadow.bias = -0.0002;
   }
   scene.add(sun);
-
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 0.94;
@@ -1403,12 +1460,10 @@ export function mountStoryWorld(canvas: HTMLCanvasElement): StoryWorldController
 
   const composer = new EffectComposer(renderer);
   composer.addPass(new RenderPass(scene, camera));
-  const bloom = new UnrealBloomPass(new THREE.Vector2(1, 1), lowQuality ? 0.1 : 0.19, 0.42, 1.08);
-  composer.addPass(bloom);
+  composer.addPass(new UnrealBloomPass(new THREE.Vector2(1, 1), lowQuality ? 0.1 : 0.19, 0.42, 1.08));
   const cinematicPass = new ShaderPass(cinematicShader);
   composer.addPass(cinematicPass);
   composer.addPass(new OutputPass());
-
   const cameraCurve = new THREE.CatmullRomCurve3([
     new THREE.Vector3(-10.5, 10.1, 25.5),
     new THREE.Vector3(27, 16.8, -13),
@@ -1423,8 +1478,85 @@ export function mountStoryWorld(canvas: HTMLCanvasElement): StoryWorldController
     new THREE.Vector3(5, 6.8, -93),
     new THREE.Vector3(3.5, 5.6, -124),
   ], false, "catmullrom", 0.42);
+  return { animations, camera, cameraCurve, cinematicPass, composer, glow, renderer, scene, stoneMap, targetCurve };
+}
+
+interface ResizeOptions {
+  camera: THREE.PerspectiveCamera;
+  canvas: HTMLCanvasElement;
+  cinematicPass: ShaderPass;
+  composer: EffectComposer;
+  lowQuality: boolean;
+  renderer: THREE.WebGLRenderer;
+}
+
+function createResizeHandler(options: ResizeOptions) {
+  const { camera, canvas, cinematicPass, composer, lowQuality, renderer } = options;
+  return () => {
+    const width = Math.max(1, document.documentElement.clientWidth || canvas.clientWidth);
+    const height = Math.max(1, document.documentElement.clientHeight || canvas.clientHeight);
+    const pixelRatio = Math.min(window.devicePixelRatio || 1, lowQuality ? 1.05 : 1.55);
+    renderer.setPixelRatio(pixelRatio);
+    renderer.setSize(width, height, false);
+    composer.setPixelRatio(pixelRatio);
+    composer.setSize(width, height);
+    camera.aspect = width / height;
+    camera.updateProjectionMatrix();
+    cinematicPass.uniforms.grainStrength.value = lowQuality ? 0.006 : 0.012;
+  };
+}
+
+interface FrameRendererOptions extends WorldResources {
+  canvas: HTMLCanvasElement;
+  captureMode: boolean;
+  getProgress: () => number;
+  lowQuality: boolean;
+  pointer: THREE.Vector2;
+}
+
+function createFrameRenderer(options: FrameRendererOptions) {
   const workingPosition = new THREE.Vector3();
   const workingTarget = new THREE.Vector3();
+  let renderedFrames = 0;
+  return (time: number) => {
+    const safeProgress = Number.isFinite(options.getProgress())
+      ? THREE.MathUtils.clamp(options.getProgress(), 0, 0.999_999)
+      : 0;
+    options.cameraCurve.getPoint(safeProgress, workingPosition);
+    options.targetCurve.getPoint(safeProgress, workingTarget);
+    options.camera.position.copy(workingPosition);
+    options.camera.position.x += options.pointer.x * (options.lowQuality ? 0.18 : 0.48);
+    options.camera.position.y += options.pointer.y * (options.lowQuality ? 0.12 : 0.28);
+    options.camera.rotation.z = Math.sin(safeProgress * Math.PI * 6) * 0.006;
+    options.camera.lookAt(workingTarget);
+    options.animations.forEach((animation) => animation(time, safeProgress));
+    options.cinematicPass.uniforms.time.value = time;
+    if (options.captureMode) options.renderer.render(options.scene, options.camera);
+    else options.composer.render();
+    renderedFrames += 1;
+    options.canvas.dataset.storyFrames = String(renderedFrames);
+    options.canvas.dataset.storyCamera = `${options.camera.position.x.toFixed(2)},${options.camera.position.y.toFixed(2)},${options.camera.position.z.toFixed(2)}`;
+  };
+}
+
+function mountCaptureStill(atmosphere: HTMLElement, canvas: HTMLCanvasElement) {
+  const still = document.createElement("img");
+  still.src = canvas.toDataURL("image/png");
+  still.alt = "";
+  still.style.cssText = "position:absolute;z-index:1;inset:0;width:100%;height:100%;object-fit:fill";
+  atmosphere.append(still);
+  canvas.style.visibility = "hidden";
+}
+
+export function mountStoryWorld(canvas: HTMLCanvasElement): StoryWorldController | null {
+  const atmosphere = canvas.closest<HTMLElement>(".story-atmosphere");
+  if (!atmosphere) return null;
+  const lowQuality = canvas.clientWidth < 760;
+  const captureMode = new URLSearchParams(window.location.search).has("capture");
+
+  const resources = createWorldResources(canvas, lowQuality, captureMode);
+  if (!resources) return null;
+  const { camera, cinematicPass, composer, glow, renderer, scene, stoneMap } = resources;
   const pointer = new THREE.Vector2();
   const requestedShotValue = new URLSearchParams(window.location.search).get("shot");
   const requestedShot = requestedShotValue === null ? Number.NaN : Number(requestedShotValue);
@@ -1437,45 +1569,17 @@ export function mountStoryWorld(canvas: HTMLCanvasElement): StoryWorldController
   let destroyed = false;
   let visible = !document.hidden;
   let elapsed = 0;
-  let renderedFrames = 0;
   let lastTime = performance.now();
 
-  const resize = () => {
-    const width = Math.max(1, document.documentElement.clientWidth || canvas.clientWidth);
-    const height = Math.max(1, document.documentElement.clientHeight || canvas.clientHeight);
-    const pixelRatio = Math.min(window.devicePixelRatio || 1, lowQuality ? 1.05 : 1.55);
-    renderer.setPixelRatio(pixelRatio);
-    renderer.setSize(width, height, false);
-    composer.setPixelRatio(pixelRatio);
-    composer.setSize(width, height);
-    camera.aspect = width / height;
-    camera.updateProjectionMatrix();
-    cinematicPass.uniforms.grainStrength.value = lowQuality ? 0.006 : 0.012;
-  };
-
-  const render = (time: number) => {
-    const safeProgress = Number.isFinite(currentProgress)
-      ? THREE.MathUtils.clamp(currentProgress, 0, 0.999_999)
-      : 0;
-    // Chapter progress already maps to the five authored camera control points.
-    // Easing the full 0–1 range here displaced the middle chapters into the
-    // neighbouring landmarks, so preserve the semantic chapter-to-place map.
-    const progress = safeProgress;
-    cameraCurve.getPoint(progress, workingPosition);
-    targetCurve.getPoint(progress, workingTarget);
-    camera.position.copy(workingPosition);
-    camera.position.x += pointer.x * (lowQuality ? 0.18 : 0.48);
-    camera.position.y += pointer.y * (lowQuality ? 0.12 : 0.28);
-    camera.rotation.z = Math.sin(progress * Math.PI * 6) * 0.006;
-    camera.lookAt(workingTarget);
-    animations.forEach((animation) => animation(time, safeProgress));
-    cinematicPass.uniforms.time.value = time;
-    if (captureMode) renderer.render(scene, camera);
-    else composer.render();
-    renderedFrames += 1;
-    canvas.dataset.storyFrames = String(renderedFrames);
-    canvas.dataset.storyCamera = `${camera.position.x.toFixed(2)},${camera.position.y.toFixed(2)},${camera.position.z.toFixed(2)}`;
-  };
+  const resize = createResizeHandler({ camera, canvas, cinematicPass, composer, lowQuality, renderer });
+  const render = createFrameRenderer({
+    ...resources,
+    canvas,
+    captureMode,
+    getProgress: () => currentProgress,
+    lowQuality,
+    pointer,
+  });
 
   const tick = (now: number) => {
     if (destroyed) return;
@@ -1510,14 +1614,7 @@ export function mountStoryWorld(canvas: HTMLCanvasElement): StoryWorldController
   canvas.style.opacity = "1";
   resize();
   render(0);
-  if (captureMode) {
-    const still = document.createElement("img");
-    still.src = canvas.toDataURL("image/png");
-    still.alt = "";
-    still.style.cssText = "position:absolute;z-index:1;inset:0;width:100%;height:100%;object-fit:fill";
-    atmosphere.append(still);
-    canvas.style.visibility = "hidden";
-  }
+  if (captureMode) mountCaptureStill(atmosphere, canvas);
   window.addEventListener("resize", resize, { passive: true });
   if (window.matchMedia("(pointer: fine)").matches) {
     window.addEventListener("pointermove", onPointerMove, { passive: true });
