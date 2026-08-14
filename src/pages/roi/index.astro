@@ -1,0 +1,320 @@
+---
+import Base from "../../layouts/Base.astro";
+import "../../styles/roi.css";
+---
+
+<Base
+  title="Expected Value & ROI Lab — What It Takes to Win"
+  description="Value an investment, enter possible outcomes and probabilities, and inspect expected ROI and where the investment lands. Local arithmetic only—no AI prediction."
+  canonicalPath="/roi/"
+  mainClass="roi-main"
+>
+  <div data-roi-root>
+    <header class="roi-intro">
+      <div class="roi-intro-copy">
+        <p class="roi-kicker">Decision lab · your assumptions · local only</p>
+        <h1>Make the assumptions do the talking.</h1>
+        <p>
+          Put time, money, and resources into one common value unit. Name every
+          plausible outcome. Assign the probabilities yourself. This worksheet
+          does the arithmetic—and nothing more.
+        </p>
+        <div class="roi-intro-actions">
+          <a href="#roi-ledger" class="roi-button roi-button-primary">Build your ledger</a>
+          <button type="button" class="roi-text-button" data-load-example>
+            Load a synthetic example
+          </button>
+        </div>
+      </div>
+      <div class="roi-definition" aria-label="Expected value and ROI formulas">
+        <div>
+          <span>Expected value</span>
+          <strong>Σ probability × outcome value</strong>
+        </div>
+        <div>
+          <span>Expected ROI</span>
+          <strong>(expected value − investment) ÷ investment</strong>
+        </div>
+        <p>No model chooses what success means. No data leaves this page.</p>
+      </div>
+    </header>
+
+    <div class="roi-workbench" id="roi-ledger">
+      <form class="roi-ledger" id="roi-form" novalidate>
+        <section class="roi-ledger-section roi-frame-section" aria-labelledby="roi-frame-heading">
+          <div class="roi-section-heading">
+            <span class="roi-step">Set the frame</span>
+            <div>
+              <h2 id="roi-frame-heading">What action are you evaluating?</h2>
+              <p>The return and every investment must use the same value unit.</p>
+            </div>
+          </div>
+          <div class="roi-frame-fields">
+            <label class="roi-field roi-action-field">
+              <span>Action or decision</span>
+              <input
+                id="roi-action"
+                type="text"
+                placeholder="e.g. Publish a research report"
+                autocomplete="off"
+              />
+            </label>
+            <label class="roi-field">
+              <span>Common value unit</span>
+              <select id="roi-unit">
+                <option value="USD">USD ($)</option>
+                <option value="INR">INR (₹)</option>
+                <option value="EUR">EUR (€)</option>
+                <option value="hours">Hours</option>
+                <option value="points">Value points</option>
+                <option value="custom">Custom unit</option>
+              </select>
+            </label>
+            <label class="roi-field roi-custom-unit" id="roi-custom-unit-field" hidden>
+              <span>Unit name</span>
+              <input id="roi-custom-unit" type="text" value="units" autocomplete="off" />
+            </label>
+          </div>
+        </section>
+
+        <section class="roi-ledger-section" aria-labelledby="roi-investment-heading">
+          <div class="roi-section-heading">
+            <span class="roi-step">Investment</span>
+            <div>
+              <h2 id="roi-investment-heading">Value what you put in</h2>
+              <p>
+                Convert unlike inputs first. For example: 40 hours × your value
+                per hour. Every row remains part of the ROI denominator.
+              </p>
+            </div>
+          </div>
+          <div class="roi-row-head roi-investment-grid" aria-hidden="true">
+            <span>Investment</span>
+            <span>Type</span>
+            <span>Where value lands</span>
+            <span>Quantity</span>
+            <span data-unit-label="Value each">Value each (USD)</span>
+            <span data-unit-label="Subtotal">Subtotal (USD)</span>
+            <span></span>
+          </div>
+          <div class="roi-stage-guide" id="roi-stage-guide">
+            <span><strong>Foundation</strong> Prerequisites, access, runway, tools, and getting into position.</span>
+            <span><strong>Capability-building</strong> Developing skills or turning access into usable leverage.</span>
+            <span><strong>Final mile</strong> Inputs applied directly to producing the evaluated outcome.</span>
+          </div>
+          <div id="roi-investment-rows" class="roi-rows"></div>
+          <button type="button" class="roi-add-button" data-add-investment>
+            <span aria-hidden="true">＋</span> Add investment
+          </button>
+        </section>
+
+        <section class="roi-ledger-section" aria-labelledby="roi-outcomes-heading">
+          <div class="roi-section-heading">
+            <span class="roi-step">Returns</span>
+            <div>
+              <h2 id="roi-outcomes-heading">Describe what could happen</h2>
+              <p>
+                Enter total value received—not profit. The probabilities must
+                reconcile to 100%; the worksheet will never normalize them for you.
+              </p>
+            </div>
+          </div>
+          <div class="roi-row-head roi-outcome-grid" aria-hidden="true">
+            <span>Outcome</span>
+            <span>Probability</span>
+            <span data-unit-label="Total value">Total value (USD)</span>
+            <span data-unit-label="EV contribution">EV contribution (USD)</span>
+            <span></span>
+          </div>
+          <div id="roi-outcome-rows" class="roi-rows"></div>
+          <div class="roi-outcome-actions">
+            <button type="button" class="roi-add-button" data-add-outcome>
+              <span aria-hidden="true">＋</span> Add outcome
+            </button>
+            <div id="roi-probability-check" class="roi-probability-check" data-state="incomplete">
+              <span>Probability assigned</span>
+              <strong id="roi-probability-total">0%</strong>
+              <small id="roi-probability-note">100% remaining</small>
+            </div>
+          </div>
+        </section>
+
+        <footer class="roi-ledger-footer">
+          <p>
+            Blank by default. The example is fictional and exists only to show
+            how the worksheet behaves.
+          </p>
+          <button type="button" class="roi-text-button roi-clear-button" data-clear-all>
+            Clear all
+          </button>
+        </footer>
+      </form>
+
+      <aside class="roi-proof" aria-labelledby="roi-proof-heading">
+        <div class="roi-proof-status" id="roi-proof-status" data-state="incomplete">
+          <span>Calculation proof</span>
+          <strong id="roi-proof-heading">Waiting for assumptions</strong>
+          <p id="roi-proof-note">Complete the ledger to calculate expected ROI.</p>
+        </div>
+
+        <div class="roi-primary-result">
+          <span>Expected ROI</span>
+          <output id="roi-expected-roi">—</output>
+          <small id="roi-action-summary">No action named yet</small>
+        </div>
+
+        <dl class="roi-result-grid">
+          <div>
+            <dt>Investment</dt>
+            <dd id="roi-total-investment">—</dd>
+          </div>
+          <div>
+            <dt>Expected value</dt>
+            <dd id="roi-expected-value">—</dd>
+          </div>
+          <div>
+            <dt>Expected net</dt>
+            <dd id="roi-expected-net">—</dd>
+          </div>
+          <div>
+            <dt>Expected multiple</dt>
+            <dd id="roi-expected-multiple">—</dd>
+          </div>
+          <div>
+            <dt>Downside chance</dt>
+            <dd id="roi-downside">—</dd>
+          </div>
+          <div>
+            <dt>Break-even or better</dt>
+            <dd id="roi-break-even">—</dd>
+          </div>
+        </dl>
+
+        <section class="roi-allocation" aria-labelledby="roi-allocation-heading">
+          <div class="roi-proof-section-heading">
+            <h3 id="roi-allocation-heading">Value allocated by stage</h3>
+            <span id="roi-allocation-total">0 valued</span>
+          </div>
+          <div class="roi-allocation-bar" id="roi-allocation-bar" aria-hidden="true">
+            <span data-stage-segment="foundation"></span>
+            <span data-stage-segment="capability"></span>
+            <span data-stage-segment="final-mile"></span>
+          </div>
+          <dl class="roi-allocation-list" id="roi-allocation-list"></dl>
+          <p>
+            This is where the valued inputs land—not an effort or work-ethic
+            score. Foundation work is real work; it simply happens farther from
+            the final outcome.
+          </p>
+        </section>
+
+        <section class="roi-formula-proof" aria-labelledby="roi-formula-heading">
+          <div class="roi-proof-section-heading">
+            <h3 id="roi-formula-heading">The arithmetic</h3>
+            <span>no hidden weights</span>
+          </div>
+          <ol>
+            <li>
+              <span>Weighted outcomes</span>
+              <strong id="roi-formula-ev">Σ p × value = —</strong>
+            </li>
+            <li>
+              <span>Subtract every investment</span>
+              <strong id="roi-formula-net">expected value − investment = —</strong>
+            </li>
+            <li>
+              <span>Divide by every investment</span>
+              <strong id="roi-formula-roi">expected net ÷ investment = —</strong>
+            </li>
+          </ol>
+        </section>
+
+        <section class="roi-contributions" aria-labelledby="roi-contributions-heading">
+          <div class="roi-proof-section-heading">
+            <h3 id="roi-contributions-heading">Outcome contributions</h3>
+            <span>probability × value</span>
+          </div>
+          <div id="roi-contribution-list" class="roi-contribution-list">
+            <p>Add outcomes to see their weight.</p>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <section class="roi-effort-exhibit" aria-labelledby="roi-effort-heading">
+      <div class="roi-effort-copy">
+        <p class="roi-kicker">Same effort · different distance</p>
+        <h2 id="roi-effort-heading">The advantage is often where effort can land.</h2>
+        <p>
+          A person with runway, tools, access, or a prepared starting position
+          may devote more of the same total effort to final-mile execution.
+          Someone else may spend much of that effort creating the conditions
+          required to reach the final mile.
+        </p>
+        <strong>Neither path implies less effort. The allocation is different.</strong>
+      </div>
+      <figure class="roi-path-comparison">
+        <figcaption>Conceptual illustration · 100 effort units each · not measured people</figcaption>
+        <div class="roi-path-row">
+          <div class="roi-path-label">
+            <strong>Building the starting position</strong>
+            <span>More effort before the outcome-producing frontier</span>
+          </div>
+          <div class="roi-path-bar" aria-label="55 foundation, 30 capability-building, 15 final-mile effort units">
+            <span class="foundation" style="--share:55%">55</span>
+            <span class="capability" style="--share:30%">30</span>
+            <span class="final-mile" style="--share:15%">15</span>
+          </div>
+        </div>
+        <div class="roi-path-row">
+          <div class="roi-path-label">
+            <strong>Beginning closer to the final mile</strong>
+            <span>More effort can land directly on execution</span>
+          </div>
+          <div class="roi-path-bar" aria-label="10 foundation, 30 capability-building, 60 final-mile effort units">
+            <span class="foundation" style="--share:10%">10</span>
+            <span class="capability" style="--share:30%">30</span>
+            <span class="final-mile" style="--share:60%">60</span>
+          </div>
+        </div>
+        <div class="roi-path-legend" aria-hidden="true">
+          <span class="foundation">Foundation</span>
+          <span class="capability">Capability-building</span>
+          <span class="final-mile">Final mile</span>
+        </div>
+      </figure>
+    </section>
+
+    <section class="roi-boundaries" aria-labelledby="roi-boundaries-heading">
+      <h2 id="roi-boundaries-heading">What this number cannot decide</h2>
+      <div>
+        <p>
+          <strong>It cannot estimate probability.</strong> Your percentages are
+          assumptions, not predictions derived from the successful people in this dataset.
+        </p>
+        <p>
+          <strong>It cannot define value.</strong> Money, time, learning,
+          reputation, autonomy, and harm only become comparable after you choose a common unit.
+        </p>
+        <p>
+          <strong>It cannot measure courage or merit.</strong> Two decisions can
+          have the same expected ROI and radically different downside, reversibility, and lived cost.
+        </p>
+      </div>
+    </section>
+
+    <noscript>
+      <div class="roi-noscript">
+        The interactive worksheet needs JavaScript, but the formulas do not:
+        expected value is the sum of probability × outcome value; expected ROI
+        is (expected value − total investment) ÷ total investment.
+      </div>
+    </noscript>
+
+    <div id="roi-live-status" class="roi-sr-only" aria-live="polite"></div>
+  </div>
+
+  <script>
+    import "../../scripts/roi-calculator";
+  </script>
+</Base>

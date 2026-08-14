@@ -1,6 +1,6 @@
 # What It Takes to Win — PROJECT STATUS
 
-Last updated: 2026-08-09
+Last updated: 2026-08-14
 
 ## Why / What
 
@@ -41,6 +41,9 @@ formula or a repeatable identity.
 
 ## Timeline
 
+- 2026-08-14 — launched the input-based Expected Value & ROI Lab with local-only
+  deterministic arithmetic, transparent probability reconciliation, staged
+  investment allocation, and an equal-effort/different-distance explanation
 - 2026-08-09 — split the chart runtime by visualization family and registered
   only the ECharts modules each surface uses, removing the oversized production
   chunk warning while preserving lazy chart loading
@@ -107,6 +110,8 @@ formula or a repeatable identity.
   - `/explore/` — filterable/searchable grid of all people, including outcome-tier filtering (lazy-loads data client-side)
   - `/person/[id]/` — connected path with per-lever origin, evidence signals, confidence, luck boundary, trajectory, and named-person comparison entry
   - `/compare/` — chooser for familiar person-specific comparisons; explicitly not a ranking or forecast
+  - `/roi/` — local expected-value and ROI worksheet using only user-supplied
+    investments, outcomes, probabilities, valuations, and stage classifications
   - `/am-i-the-next/[id]/` — evidence-first questionnaire showing starting overlap, leverage overlap, provenance differences, sequence, luck, and why resemblance is not destiny
   - `/coverage/` — live source depth, domain diversity, trajectory completeness, confidence, sample composition, indexability, and independent-audit boundaries
   - `/methodology/` — full methodology and limitations
@@ -114,6 +119,12 @@ formula or a repeatable identity.
 
 ## Features (shipped)
 
+- Input-based Expected Value & ROI Lab with no runtime AI or data transmission,
+  visible formulas, synthetic example, probability reconciliation, downside and
+  break-even context, and local stage allocation
+- Equal-effort/different-distance exhibit explaining how starting position can
+  change where effort lands without judging effort intensity, merit, or another
+  person's path
 - Ultracite/Biome lint contract with zero findings across 35 applicable source
   and configuration files, enforced by `pnpm run ready`
 - Owned editorial product changelog at `/changelog`

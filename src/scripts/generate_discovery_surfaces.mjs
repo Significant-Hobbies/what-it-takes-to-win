@@ -65,6 +65,14 @@ const coreSurfaces = [
       "Choose a documented person and compare visible ingredients, then inspect why resemblance cannot reproduce origins, timing, sequence, luck, or outcomes.",
   },
   {
+    id: "roi",
+    htmlPath: "/roi/",
+    mdPath: "/roi.md",
+    title: "Expected Value & ROI Lab",
+    summary:
+      "A local, input-based worksheet for valuing time, money, and resources; allocating effort across foundation, capability-building, and final-mile work; and calculating expected ROI from user-supplied outcomes and probabilities.",
+  },
+  {
     id: "coverage",
     htmlPath: "/coverage/",
     mdPath: "/coverage.md",
@@ -254,8 +262,47 @@ function coverageMarkdown(surface) {
   ].join("\n");
 }
 
+function roiMarkdown(surface) {
+  return [
+    `# ${surface.title}`,
+    "",
+    surface.summary,
+    "",
+    "## What the worksheet asks you to enter",
+    "",
+    "1. Name the action or decision.",
+    "2. Convert every time, money, and resource investment into one user-chosen common value unit.",
+    "3. Classify each investment as foundation, capability-building, or final-mile effort.",
+    "4. Name each possible outcome, assign its total value, and supply its probability.",
+    "5. Reconcile the probabilities to 100%.",
+    "",
+    "The worksheet starts blank. An optional fictional example demonstrates the interaction, but the product does not assign values or probabilities to real decisions.",
+    "",
+    "## Formulas",
+    "",
+    "- Expected gross value = sum of each outcome probability multiplied by its total outcome value.",
+    "- Expected net return = expected gross value minus total investment.",
+    "- Expected ROI = expected net return divided by total investment.",
+    "- Downside probability = the probabilities of outcomes worth less than total investment.",
+    "- Break-even-or-better probability = the probabilities of outcomes worth at least total investment.",
+    "",
+    "## Effort allocation boundary",
+    "",
+    "Foundation work is real work. A person who must build access, runway, tools, or prerequisites may spend more of the same total effort reaching the outcome-producing frontier. Someone who begins closer to that frontier may direct more effort to final-mile execution. The allocation view does not infer another person's effort, merit, or starting position.",
+    "",
+    "## Interpretation boundary",
+    "",
+    "The probabilities and valuations are user assumptions. Expected value describes an average across repeated comparable decisions, not the most likely single result. The worksheet uses local deterministic arithmetic, sends no entered data, calls no AI model, and does not recommend whether to proceed.",
+    "",
+    `- [Open the interactive worksheet](${absolute("/roi/")})`,
+    `- [Read the outcome-model limitations](${absolute("/methodology/")})`,
+    "",
+  ].join("\n");
+}
+
 function staticMarkdown(surface) {
   if (surface.id === "coverage") return coverageMarkdown(surface);
+  if (surface.id === "roi") return roiMarkdown(surface);
   return [
     `# ${surface.title}`,
     "",
@@ -351,6 +398,7 @@ await emit(
     `- [Story](${absolute("/index.md")}): a five-chapter journey from the visible survivor to the limits of comparison`,
     `- [Research overview](${absolute("/overview.md")}): the four-stage model and interpretation boundary`,
     `- [Insights](${absolute("/insights.md")}): the one-minute answer, tiers, overlap, luck, and counterexamples`,
+    `- [ROI lab](${absolute("/roi.md")}): user-valued investment, effort allocation, expected value, and ROI calculated locally`,
     `- [Evidence coverage](${absolute("/coverage.md")}): source depth, confidence, composition, and unresolved audit boundaries`,
     `- [Methodology](${absolute("/methodology.md")}): inclusion, scoring, evidence gates, and limitations`,
     `- [Essays](${absolute("/essays/")}): long-form writing on advantage and abstraction`,

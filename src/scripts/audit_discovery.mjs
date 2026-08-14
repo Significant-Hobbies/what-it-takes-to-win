@@ -51,7 +51,7 @@ const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
   (match) => match[1],
 );
 const indexableComparisons = people.filter(comparisonIsIndexable);
-const coreSurfaceCount = 8;
+const coreSurfaceCount = 9;
 const essayCount = 2; // essays index + 1 published essay
 const expectedSitemapCount = coreSurfaceCount + essayCount + people.length + indexableComparisons.length;
 if (
@@ -87,10 +87,25 @@ if (missingMarkdown === 0) {
 }
 
 const llms = await read("llms.txt");
-if (llms.startsWith("# What It Takes to Win") && !llms.includes("<!doctype")) {
+if (
+  llms.startsWith("# What It Takes to Win")
+  && llms.includes(`${origin}/roi.md`)
+  && !llms.includes("<!doctype")
+) {
   passes.push("llms.txt");
 } else {
   failures.push("llms.txt is missing or not plain text");
+}
+
+const roiMarkdown = await read("roi.md");
+if (
+  roiMarkdown.includes("## Formulas")
+  && roiMarkdown.includes("Foundation work is real work")
+  && roiMarkdown.includes("calls no AI model")
+) {
+  passes.push("ROI Markdown assumptions and effort boundary");
+} else {
+  failures.push("roi.md lacks formulas, local-computation, or effort-allocation boundaries");
 }
 
 const llmsFull = await read("llms-full.txt");
