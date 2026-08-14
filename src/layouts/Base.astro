@@ -28,6 +28,7 @@ const {
   canonicalPath,
   socialImage = "/og-image.png",
   structuredData,
+  mainClass = "",
 } = Astro.props;
 const canonicalUrl = Astro.site
   ? new URL(canonicalPath ?? Astro.url.pathname, Astro.site).toString()
@@ -35,7 +36,8 @@ const canonicalUrl = Astro.site
 const socialImageUrl = Astro.site ? new URL(socialImage, Astro.site).toString() : socialImage;
 const currentPath = Astro.url.pathname;
 const navLinks = [
-  { href: "/", label: "Overview" },
+  { href: "/", label: "Story" },
+  { href: "/essays/", label: "Essays" },
   { href: "/insights/", label: "Insights" },
   { href: "/explore/", label: "Explore" },
   { href: "/compare/", label: "Am I Next?", activePrefixes: ["/compare/", "/am-i-the-next/"] },
@@ -111,7 +113,7 @@ const isActive = (link: (typeof navLinks)[number]) =>
         </div>
       </div>
     </header>
-    <main id="main-content" class="container" tabindex="-1">
+    <main id="main-content" class:list={["container", mainClass]} tabindex="-1">
       <slot />
     </main>
     <footer class="site-footer">
@@ -140,6 +142,7 @@ const isActive = (link: (typeof navLinks)[number]) =>
           <a href="/coverage/" class="footer-audit-link">See evidence coverage →</a>
         </div>
         <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="/overview/">Overview</a>
           <a href="/coverage/">Evidence coverage</a>
           <a href="/methodology/">Methodology</a>
           <a href="/essays/">Essays</a>

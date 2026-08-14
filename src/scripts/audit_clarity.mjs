@@ -6,8 +6,8 @@ const dist = path.join(root, "dist");
 
 const contracts = [
   {
-    name: "Homepage central finding",
-    file: "index.html",
+    name: "Overview central finding",
+    file: "overview/index.html",
     markers: [
       'data-clarity-contract="central-finding"',
       'data-clarity-contract="four-stage-model"',
@@ -15,8 +15,8 @@ const contracts = [
     ],
   },
   {
-    name: "Homepage survivor-path narrative",
-    file: "index.html",
+    name: "Overview survivor-path narrative",
+    file: "overview/index.html",
     markers: [
       "Extraordinary outcomes are surviving paths",
       "Visible outcome / unseen alternatives",
@@ -32,6 +32,20 @@ const contracts = [
       "A streak is still a streak",
       "your unfinished branch with someone else’s surviving streak",
       "Do not inherit the comparison",
+    ],
+  },
+  {
+    name: "Canonical story landing",
+    file: "index.html",
+    markers: [
+      "The path you remember is one of many.",
+      "Thought experiment · not a measured probability",
+      "64 plausible starts → 1 remembered finish",
+      "Selected successful outliers. No control group. No forecast.",
+      "Starting advantage changes the available moves.",
+      "Study the conditions. Inspect what was built. Respect what cannot be replayed.",
+      "Then return to your own unfinished branch.",
+      "Who Filled the King's Jug?",
     ],
   },
   {

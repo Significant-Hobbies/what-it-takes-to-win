@@ -1,0 +1,33 @@
+{
+  "title": "Choose the landing-page world",
+  "question": "Which world should replace the current homepage and Story Mode art direction?",
+  "options": [
+    {
+      "id": "observatory",
+      "label": "The Impossible Observatory",
+      "kicker": "RECOMMENDED",
+      "lineage": "Monumental scientific instruments and celestial observatories",
+      "body": "A luminous stone-and-brass world where 64 glass paths converge through an enormous orrery. Most iconic, spatial, and premium; risk is becoming too fantastical unless evidence labels stay disciplined.",
+      "hero": "artifacts/design/landing-direction-observatory.png"
+    },
+    {
+      "id": "city",
+      "label": "The Branching City",
+      "kicker": "DATA MADE PHYSICAL",
+      "lineage": "Architectural models, transit maps, and illuminated urban systems",
+      "body": "A precise miniature city where unequal districts and branching routes make survivor selection immediately understandable. Clearest metaphor; risk is drifting toward generic futuristic visualization.",
+      "hero": "artifacts/design/landing-direction-city.png"
+    },
+    {
+      "id": "ledger",
+      "label": "The Living Ledger",
+      "kicker": "RESEARCH AS SPECTACLE",
+      "lineage": "Mechanical archives, indexing machines, and museum conservation labs",
+      "body": "A tactile kinetic archive where thousands of biography records move through branching rails and one becomes visible. Most credible and editorial; risk is less expansive than the other worlds.",
+      "hero": "artifacts/design/landing-direction-ledger.png"
+    }
+  ],
+  "reroll": true,
+  "canon": true,
+  "steer": true
+}

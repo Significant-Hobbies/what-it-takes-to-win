@@ -3,731 +3,537 @@ import Base from "../layouts/Base.astro";
 import peopleData from "../data/people.json";
 import {
   LEVERAGE_ORIGINS,
-  OUTCOME_STAGES,
   SCORE_FAMILIES,
   getAdvantageTotal,
-  getTierDefinition,
-  summarizeOutcomes,
   type OutcomePerson,
 } from "../lib/outcome-model";
-import { summarizeCoverage, type CoveragePerson } from "../lib/coverage";
+import "../styles/story.css";
 
-const people = peopleData;
+const people = peopleData as OutcomePerson[];
 const total = people.length;
-const outcomeSummary = summarizeOutcomes(people as OutcomePerson[]);
-const coverage = summarizeCoverage(people as CoveragePerson[]);
-
-const cohorts: Record<string, number> = {};
-people.forEach((p) => { cohorts[p.cohort_group] = (cohorts[p.cohort_group] || 0) + 1; });
-
-const categories: Record<string, number> = {};
-people.forEach((p) => { categories[p.category] = (categories[p.category] || 0) + 1; });
-
-const engines: Record<string, number> = {};
-people.forEach((p) => {
-  const e = p.normalized_primary_engine || "Unknown";
-  engines[e] = (engines[e] || 0) + 1;
-});
-
-const archetypes: Record<string, number> = {};
-people.forEach((p) => {
-  const a = p.primary_early_advantage_archetype || "Uncoded";
-  archetypes[a] = (archetypes[a] || 0) + 1;
-});
-
-const ageBuckets: Record<number, number> = {};
-for (let a = 13; a <= 26; a++) ageBuckets[a] = 0;
-people.forEach((p) => {
-  const a = p.age_at_milestone;
-  if (a != null && ageBuckets[a] != null) ageBuckets[a]++;
-});
-
-const avgLeverage = (people.reduce((s, p) => s + (p.total_leverage_score || 0), 0) / total).toFixed(1);
-const avgAdvantage = (
-  people.reduce((sum, person) => sum + getAdvantageTotal(person as OutcomePerson), 0) / total
+const averageAdvantage = (
+  people.reduce((sum, person) => sum + getAdvantageTotal(person), 0) / total
 ).toFixed(1);
-const avgAge = (people.reduce((s, p) => s + (p.age_at_milestone || 0), 0) / total).toFixed(1);
-const maxLeverage = SCORE_FAMILIES.leverage.max;
+const averageLeverage = (
+  people.reduce((sum, person) => sum + person.total_leverage_score, 0) / total
+).toFixed(1);
+const averageMilestoneAge = (
+  people.reduce((sum, person) => sum + person.age_at_milestone, 0) / total
+).toFixed(1);
+const highConfidence = people.filter(
+  (person) => String(person.leverage_evidence_confidence).toLowerCase() === "high",
+).length;
+const cohortCount = new Set(people.map((person) => person.cohort_group)).size;
 
-const advantageFields = [
-  "early_family_financial_platform_support_score",
-  "parent_family_domain_advantage_score",
-  "inherited_audience_business_network_score",
-  "elite_institution_performance_pipeline_score",
-  "frontier_geography_ecosystem_score",
-  "rare_early_tools_facilities_score",
-  "dedicated_mentor_coach_tutor_score",
-  "exceptional_peer_cofounder_sibling_score",
-  "early_online_platform_community_score",
-  "direct_customer_domain_exposure_score",
-  "prodigy_physical_edge_score",
-  "adversity_constraint_catalyst_score",
+const chapters = [
+  { id: "the-survivor", label: "The survivor", short: "Survivor" },
+  { id: "the-start", label: "The starting field", short: "Start" },
+  { id: "the-levers", label: "What multiplies", short: "Leverage" },
+  { id: "the-sequence", label: "What compounds", short: "Sequence" },
+  { id: "the-boundary", label: "What stays unknowable", short: "Boundary" },
 ];
-const advantageLabels = {
-  early_family_financial_platform_support_score: "Family financial platform",
-  parent_family_domain_advantage_score: "Parent family domain",
-  inherited_audience_business_network_score: "Inherited audience/network",
-  elite_institution_performance_pipeline_score: "Elite institution pipeline",
-  frontier_geography_ecosystem_score: "Frontier geography",
-  rare_early_tools_facilities_score: "Rare early tools",
-  dedicated_mentor_coach_tutor_score: "Dedicated mentor/coach",
-  exceptional_peer_cofounder_sibling_score: "Exceptional peer/cofounder",
-  early_online_platform_community_score: "Early online platform",
-  direct_customer_domain_exposure_score: "Direct domain exposure",
-  prodigy_physical_edge_score: "Prodigy/innate ability",
-  adversity_constraint_catalyst_score: "Adversity catalyst",
-};
-const advantageAvg = advantageFields.map((f) => ({
-  field: f,
-  label: advantageLabels[f],
-  avg: (people.reduce((s, p) => s + (p[f] || 0), 0) / total).toFixed(2),
-  count2: people.filter((p) => (p[f] || 0) >= 2).length,
-}));
 
-const cohortData = Object.entries(cohorts).map(([name, value]) => ({ name, value })).sort((a, b) => b.value - a.value);
-const engineData = Object.entries(engines).map(([name, value]) => ({ name, value })).sort((a, b) => b.value - a.value);
-const archetypeData = Object.entries(archetypes).map(([name, value]) => ({ name, value })).sort((a, b) => b.value - a.value);
-const ageData = Object.entries(ageBuckets).map(([k, v]) => ({ age: k, count: v }));
-const advantageData = advantageAvg.map((d) => ({ label: d.label, avg: Number(d.avg), count2: d.count2 }));
-
-const showcaseIds = [
-  "bill-gates",
-  "mark-zuckerberg",
-  "vitalik-buterin",
-  "billie-eilish",
-  "cristiano-ronaldo",
-  "roger-federer",
-  "yo-yo-ma",
-  "madonna",
-  "grigori-perelman",
-  "nadia-comaneci",
-  "ayrton-senna",
-  "celine-dion",
-];
-const topPeople = showcaseIds
-  .map((id) => people.find((person) => person.person_id === id))
-  .filter(Boolean);
-
-const survivorStages = [
-  { count: 64, label: "Plausible starts", note: "Many paths can look promising here." },
-  { count: 32, label: "First opening", note: "Access, permission, or timing remains available." },
-  { count: 16, label: "Useful feedback", note: "The work meets a signal strong enough to continue." },
-  { count: 8, label: "Right people", note: "A collaborator, mentor, customer, or selector appears." },
-  { count: 4, label: "Runway holds", note: "Health, money, attention, and persistence survive another turn." },
-  { count: 2, label: "Recognition compounds", note: "Earlier proof makes the next opening more likely." },
-  { count: 1, label: "Visible peak", note: "This is the branch history remembers." },
-];
+const wordSpans = (text: string) => text.split(" ");
 
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://paths.significanthobbies.com/#publisher",
-      name: "What It Takes to Win",
-      url: "https://paths.significanthobbies.com/",
-      sameAs: ["https://github.com/Significant-Hobbies/what-it-takes-to-win"],
-    },
-    {
       "@type": "WebSite",
       "@id": "https://paths.significanthobbies.com/#website",
-      url: "https://paths.significanthobbies.com/",
       name: "What It Takes to Win",
+      url: "https://paths.significanthobbies.com/",
       description:
-        `A research atlas of ${total.toLocaleString()} early breakthrough paths, separating starting advantage, built leverage, trajectory, standing, and luck.`,
-      publisher: { "@id": "https://paths.significanthobbies.com/#publisher" },
+        "An evidence-bounded research exhibit about starting advantage, leverage, trajectory, observed standing, and luck.",
     },
     {
       "@type": "Dataset",
       "@id": "https://paths.significanthobbies.com/#dataset",
-      name: "What It Takes to Win: Early Breakthrough Paths",
+      name: "What It Takes to Win documented paths",
+      description: `${total.toLocaleString()} documented early-breakthrough paths with explicit evidence and interpretation boundaries.`,
+      url: "https://paths.significanthobbies.com/explore/",
+      creator: { "@id": "https://paths.significanthobbies.com/#website" },
+    },
+    {
+      "@type": "Article",
+      headline: "The path you remember is one of many",
       description:
-        `A curated dataset of ${total.toLocaleString()} people born from 1950 onward, documenting early milestones, starting advantages, leverage, trajectory, career standing, evidence confidence, and luck boundaries.`,
-      url: "https://paths.significanthobbies.com/methodology/",
-      creator: { "@id": "https://paths.significanthobbies.com/#publisher" },
-      isAccessibleForFree: true,
-      temporalCoverage: "1950/..",
-      measurementTechnique: "Evidence-backed biographical coding under a published interpretive rubric",
-      variableMeasured: [
-        "Early breakthrough milestone",
-        "Starting advantage",
-        "Built or converted leverage",
-        "Compounding trajectory",
-        "Observed career standing",
-        "Evidence confidence",
-      ],
+        "A five-chapter guide to starting advantage, built leverage, compounding trajectory, observed standing, and luck.",
+      url: "https://paths.significanthobbies.com/",
+      isPartOf: { "@id": "https://paths.significanthobbies.com/#website" },
+      about: { "@id": "https://paths.significanthobbies.com/#dataset" },
     },
   ],
 };
 ---
 
 <Base
-  title="What It Takes to Win — How Extraordinary Outcomes Happen"
-  description={`Explore ${total.toLocaleString()} documented paths to extraordinary outcomes—separating starting advantage, built leverage, trajectory, standing, and luck.`}
+  title="What It Takes to Win — The Path You Remember Is One of Many"
+  description={`Walk through ${total.toLocaleString()} documented early-breakthrough paths in five chapters: survivor selection, starting position, leverage, trajectory, and luck.`}
+  canonicalPath="/"
   structuredData={structuredData}
+  mainClass="story-main"
 >
-  <section class="hero insight-hero research-hero">
-    <div class="research-hero-grid">
-      <div class="research-hero-copy">
-        <p class="eyebrow">{total.toLocaleString()} early breakthrough paths</p>
-        <h1>Extraordinary outcomes are surviving paths.</h1>
-        <p class="lede">
-          See what people started with, what they built, what compounded—and how
-          much of the visible finish still depended on sequence and luck.
-        </p>
-        <div class="hero-model-preview" aria-label="The four-stage explanatory model">
-          <span>Starting position</span>
-          <span aria-hidden="true">→</span>
-          <span>Built leverage</span>
-          <span aria-hidden="true">→</span>
-          <span>Trajectory</span>
-          <span aria-hidden="true">→</span>
-          <span>Observed standing</span>
-        </div>
-        <div class="hero-actions">
-          <a class="btn-link btn-link-primary" href="#survivor-path">See why comparison breaks</a>
-          <a class="hero-secondary-link" href="/am-i-the-next/bill-gates/">Inspect Bill Gates’s path →</a>
-        </div>
+  <!--
+    THESIS: A famous outcome is the last visible frame of a branching path, not a reproducible recipe.
+    OWN-WORLD: The Impossible Observatory—daylit limestone, brass instruments, transparent trajectories, and cobalt evidence light.
+    STORY: Move from the selected survivor through starting position and leverage to sequence, uncertainty, and grounded agency.
+    FIRST VIEWPORT: One decisive sentence occupies the left while 64 glass trajectories converge through a monumental orrery on the right.
+    FORM: The canonical landing journey in Persuade mode, staged as one continuous observatory rather than a stack of cards.
+  -->
+  <div class="story-shell" data-story data-active-chapter="0">
+    <div class="story-atmosphere" aria-hidden="true">
+      <canvas class="story-webgl" data-story-webgl></canvas>
+      <div class="story-plates">
+        <figure class="story-plate" data-story-plate="0">
+          <img
+            src="/assets/story/observatory-survivor.webp"
+            alt=""
+            width="1672"
+            height="941"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </figure>
+        <figure class="story-plate" data-story-plate="1">
+          <img
+            data-story-src="/assets/story/observatory-terraces.webp"
+            alt=""
+            width="1672"
+            height="941"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+        <figure class="story-plate" data-story-plate="2">
+          <img
+            data-story-src="/assets/story/observatory-leverage.webp"
+            alt=""
+            width="1672"
+            height="941"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+        <figure class="story-plate" data-story-plate="3">
+          <img
+            data-story-src="/assets/story/observatory-sequence.webp"
+            alt=""
+            width="1672"
+            height="941"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+        <figure class="story-plate" data-story-plate="4">
+          <img
+            data-story-src="/assets/story/observatory-boundary.webp"
+            alt=""
+            width="1672"
+            height="941"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
       </div>
-      <aside
-        class="hero-branch-preview"
-        aria-label="A static preview showing many plausible starts narrowing to one visible outcome"
-      >
-        <div class="hero-branch-header">
-          <span>Visible outcome / unseen alternatives</span>
-          <strong>Selected path · 01</strong>
-        </div>
-        <div class="hero-branch-field" aria-hidden="true">
-          <div><span>64</span><i>{Array.from({ length: 32 }).map(() => <b></b>)}</i></div>
-          <div><span>16</span><i>{Array.from({ length: 16 }).map(() => <b></b>)}</i></div>
-          <div><span>04</span><i>{Array.from({ length: 4 }).map(() => <b></b>)}</i></div>
-          <div class="hero-branch-peak"><span>01</span><i><b></b></i></div>
-        </div>
-        <blockquote>
-          <p>The public remembers the final dot. Biography hides the branches.</p>
-          <footer>Illustration—not a measured career probability.</footer>
-        </blockquote>
-      </aside>
-    </div>
-    <div class="meta-row">
-      <span><strong>{total}</strong> curated people</span>
-      <span>avg milestone age <strong>{avgAge}</strong></span>
-      <span>avg starting advantage <strong>{avgAdvantage} / {SCORE_FAMILIES.advantage.max}</strong></span>
-      <span>avg built/converted leverage <strong>{avgLeverage} / {maxLeverage}</strong></span>
-    </div>
-  </section>
+      <div class="story-wash"></div>
+      <div class="story-depth story-depth-far"></div>
+      <div class="story-depth story-depth-near"></div>
+      <div class="story-stage">
+        <div class="stage-coordinate stage-coordinate-x"></div>
+        <div class="stage-coordinate stage-coordinate-y"></div>
 
-  <section
-    id="survivor-path"
-    class="survivor-story"
-    aria-labelledby="survivor-story-heading"
-    data-clarity-contract="survivor-path-narrative"
-  >
-    <div class="survivor-story-heading">
-      <p class="eyebrow">Before you compare yourself</p>
-      <h2 id="survivor-story-heading">You are looking at the surviving branch.</h2>
-      <p>
-        A famous outcome is the visible end of a long sequence. The public sees the peak. It rarely
-        sees the nearby paths that met different timing, lost runway, missed a collaborator, absorbed
-        a shock, or simply never became biography.
-      </p>
-    </div>
-
-    <figure class="survivor-figure">
-      <div class="survivor-figure-label">
-        <div>
-          <span>Thought experiment</span>
-          <strong>Six hypothetical 50/50 gates</strong>
-        </div>
-        <p>Illustration only · not a dataset rate or career probability</p>
-      </div>
-      <div
-        class="survivor-field"
-        role="img"
-        aria-label="Thought experiment showing 64 plausible starts narrowing through six hypothetical fifty-fifty gates to one visible peak. This is an illustration, not a measured career probability."
-      >
-        {survivorStages.map((stage, stageIndex) => (
-          <div class={`survivor-row ${stageIndex === survivorStages.length - 1 ? "survivor-row-peak" : ""}`}>
-            <div class="survivor-row-copy">
-              <span>{String(stageIndex).padStart(2, "0")}</span>
-              <div>
-                <strong>{stage.label}</strong>
-                <small>{stage.note}</small>
-              </div>
-            </div>
-            <div class="survivor-dots" aria-hidden="true">
-              {Array.from({ length: stage.count }).map(() => <i></i>)}
-            </div>
-            <strong class="survivor-count">{stage.count}</strong>
+        <div class="stage-scene stage-scene-survivor" data-scene="0">
+          <div class="branch-origin-grid">
+            {Array.from({ length: 64 }).map((_, index) => (
+              <i class={index === 45 ? "is-selected" : undefined}></i>
+            ))}
           </div>
+          <svg class="branch-lines" viewBox="0 0 560 420" preserveAspectRatio="none">
+            <path d="M54 48 C180 48 172 210 282 210 S390 210 506 210" />
+            <path d="M54 104 C170 104 180 210 282 210" />
+            <path d="M54 160 C168 160 178 210 282 210" />
+            <path d="M54 216 C160 216 186 210 282 210" />
+            <path d="M54 272 C168 272 178 210 282 210" />
+            <path d="M54 328 C170 328 180 210 282 210" />
+            <path d="M54 384 C180 384 172 210 282 210" />
+          </svg>
+          <div class="stage-outcome"><span>01</span><small>visible outcome</small></div>
+          <p class="stage-method-note">Illustration · six hypothetical 50/50 gates</p>
+        </div>
+
+        <div class="stage-scene stage-scene-start" data-scene="1">
+          <div class="start-axis">
+            <span>less documented access</span>
+            <div class="start-axis-rule">
+              {Array.from({ length: 12 }).map((_, index) => <i style={`--mark:${index}`}></i>)}
+            </div>
+            <span>more documented access</span>
+          </div>
+          <div class="stage-measure">
+            <strong>{averageAdvantage}</strong>
+            <span>average documented starting advantage</span>
+            <small>/ {SCORE_FAMILIES.advantage.max}</small>
+          </div>
+        </div>
+
+        <div class="stage-scene stage-scene-leverage" data-scene="2">
+          <div class="leverage-rings">
+            <i></i><i></i><i></i><i></i>
+            <strong>×</strong>
+          </div>
+          <div class="stage-measure">
+            <strong>{averageLeverage}</strong>
+            <span>average built or converted leverage</span>
+            <small>/ {SCORE_FAMILIES.leverage.max}</small>
+          </div>
+        </div>
+
+        <div class="stage-scene stage-scene-sequence" data-scene="3">
+          <svg class="sequence-map" viewBox="0 0 560 420">
+            <path class="sequence-muted" d="M28 336 C140 292 142 350 228 266 S368 176 532 130" />
+            <path class="sequence-muted" d="M28 336 C132 324 166 242 238 264 S362 302 532 214" />
+            <path class="sequence-active" d="M28 336 C112 338 156 266 230 258 S348 166 532 82" />
+            <circle cx="28" cy="336" r="6" />
+            <circle cx="230" cy="258" r="6" />
+            <circle cx="532" cy="82" r="8" />
+          </svg>
+          <div class="sequence-label sequence-label-start">opening</div>
+          <div class="sequence-label sequence-label-middle">feedback</div>
+          <div class="sequence-label sequence-label-end">recognition</div>
+        </div>
+
+        <div class="stage-scene stage-scene-boundary" data-scene="4">
+          <div class="luck-orbit">
+            <span class="orbit-core">unscored</span>
+            <i style="--orbit-angle:18deg">era</i>
+            <i style="--orbit-angle:86deg">encounter</i>
+            <i style="--orbit-angle:158deg">timing</i>
+            <i style="--orbit-angle:226deg">shock</i>
+            <i style="--orbit-angle:302deg">variance</i>
+          </div>
+        </div>
+
+        <div class="stage-caption">
+          <span>Figure <b data-active-number>01</b> / 05</span>
+          <strong data-active-title>The survivor</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="story-progress" aria-hidden="true"><i></i></div>
+
+    <nav class="story-rail" aria-label="Story chapters">
+      <a class="story-rail-brand" href="#story-opening" aria-label="Back to story opening">WTW</a>
+      <ol>
+        {chapters.map((chapter, index) => (
+          <li>
+            <a
+              href={`#${chapter.id}`}
+              data-story-link={index}
+              aria-current={index === 0 ? "step" : undefined}
+            >
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <strong>{chapter.short}</strong>
+            </a>
+          </li>
         ))}
-      </div>
-      <figcaption>
-        If six genuinely independent 50/50 events all had to land one way, one path in 64 would
-        survive the entire sequence on average. Real careers are neither independent nor fair coins.
-      </figcaption>
-    </figure>
+      </ol>
+      <a class="story-rail-exit" href="/explore/">Explore <span>↗</span></a>
+    </nav>
 
-    <div class="survivor-interpretation" aria-label="How to interpret the coin-toss metaphor">
-      <article>
-        <span>01</span>
-        <strong>Advantage changes the first tosses.</strong>
-        <p>Access, safety, geography, tools, and introductions can make some openings more available.</p>
-      </article>
-      <article>
-        <span>02</span>
-        <strong>Capability can improve the coin.</strong>
-        <p>Reps, skill, trust, teams, and distribution can make later favourable outcomes less accidental.</p>
-      </article>
-      <article>
-        <span>03</span>
-        <strong>Runway buys more tosses.</strong>
-        <p>Time, health, money, permission, and persistence affect how many serious attempts remain possible.</p>
-      </article>
-      <article>
-        <span>04</span>
-        <strong>A streak is still a streak.</strong>
-        <p>Markets, gatekeepers, encounters, shocks, and outcome variance can redirect even excellent work.</p>
-      </article>
-    </div>
-
-    <blockquote class="survivor-turn">
-      <p>You were comparing your unfinished branch with someone else’s surviving streak.</p>
-      <footer>
-        Study the conditions. Inspect what was built. Respect what cannot be replayed.
-        <strong>Do not inherit the comparison.</strong>
-      </footer>
-    </blockquote>
-  </section>
-
-  <div class="insight-callout" data-clarity-contract="central-finding">
-    <strong>The data shows a gradient, not a formula.</strong>
-    {" "}T1 profiles average {outcomeSummary.tiers[0].advantage.mean.toFixed(1)} in documented
-    starting advantage and {outcomeSummary.tiers[0].leverage.mean.toFixed(1)} in built or converted
-    leverage; T4 profiles average {outcomeSummary.tiers[3].advantage.mean.toFixed(1)} and{" "}
-    {outcomeSummary.tiers[3].leverage.mean.toFixed(1)}. But their ranges overlap. A head start
-    changes the available moves; it is not the same thing as later multiplying capacity. Luck,
-    sequence, and the origin of each lever explain why matching totals still do not make matching paths.
-  </div>
-
-  <section aria-labelledby="home-model-heading" data-clarity-contract="four-stage-model">
-    <div class="section-heading" style="margin-top:0;">
-      <p class="eyebrow">The explanatory model</p>
-      <h2 id="home-model-heading">Four layers—not one success score</h2>
-    </div>
-    <div class="outcome-model" style="margin-bottom:24px;">
-      {OUTCOME_STAGES.map((stage) => (
-        <article class={`stage-card stage-${stage.number}`}>
-          <div class="stage-number">{stage.number}</div>
-          <h3>{stage.name}</h3>
-          <p>{stage.summary}</p>
-        </article>
-      ))}
-    </div>
-    <p style="margin:0 0 36px;color:var(--text-dim);font-size:13px;">
-      <a href="/insights/">See the tier definitions, score ranges, and strongest observed differences →</a>
-    </p>
-  </section>
-
-  <section class="score-family-section" aria-labelledby="score-families-heading" data-clarity-contract="score-family-distinction">
-    <div class="section-heading">
-      <p class="eyebrow">Two different questions</p>
-      <h2 id="score-families-heading">What did they start with—and what later multiplied their work?</h2>
-    </div>
-    <div class="score-family-grid">
-      <article class="score-family-card advantage-family">
-        <div class="score-family-kicker">01 · Position at the start</div>
-        <h3>{SCORE_FAMILIES.advantage.label}</h3>
-        <div class="score-family-value">{avgAdvantage}<span> / {SCORE_FAMILIES.advantage.max} dataset average</span></div>
-        <p>{SCORE_FAMILIES.advantage.definition}</p>
-        <strong>{SCORE_FAMILIES.advantage.boundary}</strong>
-      </article>
-      <article class="score-family-card leverage-family">
-        <div class="score-family-kicker">02 · Multiplying capacity later present</div>
-        <h3>{SCORE_FAMILIES.leverage.label}</h3>
-        <div class="score-family-value">{avgLeverage}<span> / {SCORE_FAMILIES.leverage.max} dataset average</span></div>
-        <p>{SCORE_FAMILIES.leverage.definition}</p>
-        <strong>{SCORE_FAMILIES.leverage.boundary}</strong>
-      </article>
-    </div>
-    <div class="provenance-note">
-      <strong>Leverage has more than one origin.</strong>
-      {LEVERAGE_ORIGINS.map((origin) => <span><b>{origin.label}</b> — {origin.summary}</span>)}
-    </div>
-  </section>
-
-  <section class="coverage-bridge" aria-labelledby="coverage-bridge-heading">
-    <div>
-      <p class="eyebrow">Before the charts</p>
-      <h2 id="coverage-bridge-heading">Inspect the evidence—not just the pattern.</h2>
-      <p>
-        All {total.toLocaleString()} records contain a narrative path.{" "}
-        {coverage.sourcesTwoPlus.share.toFixed(1)}% list at least two sources and{" "}
-        {coverage.indexable.share.toFixed(1)}% pass the search evidence gate. None has yet completed
-        an independent factual and annotation audit.
-      </p>
-      <a href="/coverage/">Open the evidence coverage ledger →</a>
-    </div>
-    <dl>
-      <div><dt>Trajectories</dt><dd>{coverage.trajectoriesComplete.share.toFixed(0)}%</dd></div>
-      <div><dt>Two sources</dt><dd>{coverage.sourcesTwoPlus.share.toFixed(1)}%</dd></div>
-      <div><dt>Indexable</dt><dd>{coverage.indexable.share.toFixed(1)}%</dd></div>
-      <div class="coverage-pending"><dt>Independent audit</dt><dd>Pending</dd></div>
-    </dl>
-  </section>
-
-  <section class="data-atlas" aria-labelledby="data-atlas-heading">
-    <div class="section-heading">
-      <p class="eyebrow">The dataset at a glance</p>
-      <h2 id="data-atlas-heading">Where the observed paths cluster</h2>
-      <p>
-        These charts describe a selected atlas of early breakthroughs. They show
-        recurring patterns—not population odds, causal effects, or a recipe.
-      </p>
-    </div>
-
-  <div class="grid grid-2" style="margin-bottom: 24px;">
-    <div class="card">
-      <h3>Milestone age distribution</h3>
-      <div id="chart-age" class="chart chart-short" role="img" aria-label="Bar chart showing milestone ages across the dataset"></div>
-    </div>
-    <div class="card">
-      <h3>Cohort group</h3>
-      <div id="chart-cohort" class="chart chart-short" role="img" aria-label="Donut chart showing the dataset split across founders, creators, athletes, and researchers"></div>
-    </div>
-  </div>
-
-  <div class="grid grid-2" style="margin-bottom: 24px;">
-    <div class="card">
-      <h3>Primary leverage engine <span class="chart-hint">click a bar to explore</span></h3>
-      <div id="chart-engine" class="chart chart-short" role="img" aria-label="Interactive bar chart of the most common primary leverage engines"></div>
-    </div>
-    <div class="card">
-      <h3>Early-advantage archetype <span class="chart-hint">click a bar to explore</span></h3>
-      <div id="chart-archetype" class="chart chart-short" role="img" aria-label="Interactive bar chart of early-advantage archetypes"></div>
-    </div>
-  </div>
-
-  <div class="card" style="margin-bottom: 24px;">
-    <h3>Starting-advantage dimensions (0–2 each) across all {total} people</h3>
-    <p style="font-size:13px;color:var(--text-dim);margin:0 0 12px;">
-      How often each early condition was documented as a meaningful (1) or unusually strong (2)
-      advantage. Zero is "no clear evidence," not "absent."
-    </p>
-    <div id="chart-advantage" class="chart" role="img" aria-label="Bar chart showing average starting-advantage scores across twelve dimensions"></div>
-  </div>
-  </section>
-
-  <section class="featured-paths" aria-labelledby="featured-paths-heading">
-    <div class="featured-paths-heading">
-      <div>
-        <p class="eyebrow">What non-copyable paths look like</p>
-        <h2 id="featured-paths-heading">Twelve paths that cannot be collapsed into one recipe</h2>
-        <p>
-          These people span fields, starting positions, leverage compositions, and sequences.
-          Their <strong>0–{maxLeverage}</strong> totals record capability presence—not where it came
-          from, whether it was repeatable, or how luck redirected the path.
+    <header class="story-opening" id="story-opening">
+      <div class="story-opening-copy">
+        <p class="story-kicker">{total.toLocaleString()} documented paths · 5 chapters · 7 minutes</p>
+        <h1>The path you remember is one of many.</h1>
+        <p class="story-deck">
+          We collected {total.toLocaleString()} early-breakthrough paths. They do
+          not reveal a formula for winning. They reveal what the finished story
+          leaves out.
         </p>
-      </div>
-      <aside class="leverage-key" aria-label="Leverage score explanation">
-        <div class="leverage-key-value">{avgLeverage}<span> / {maxLeverage}</span></div>
-        <strong>built/converted leverage average</strong>
-        <p>
-          Higher means more documented capacity for effort to compound. It is not a talent score,
-          a pass mark, or a formula for someone’s tier.
-        </p>
-        <a href="/methodology/">Read the scoring boundary →</a>
-      </aside>
-    </div>
-    <p class="featured-selection-note">
-      This is a deliberately varied inspection set, not a leaderboard. Similar totals can conceal
-      different ingredients, origins, and outcomes.
-    </p>
-  </section>
-
-  <div class="person-grid featured-person-grid">
-    {topPeople.map((p) => (
-      <a class="person-card featured-person-card" href={`/person/${p.person_id}/`}>
-        <div class="featured-card-head">
-          <div>
-            <div class="name">{p.name}</div>
-            <div class="cat">{p.category} · milestone at {p.age_at_milestone}</div>
-          </div>
-          <span class={`featured-tier tier-${p.success_tier}`} title={getTierDefinition(p.success_tier).short}>
-            T{p.success_tier} · {getTierDefinition(p.success_tier).name}
-          </span>
-        </div>
-        <div class="milestone">{p.milestone_by_age_26}</div>
-        <div class="featured-leverage">
-          <div class="featured-leverage-label">
-            <span>Built or converted leverage</span>
-            <strong>{p.total_leverage_score}<small> / {maxLeverage}</small></strong>
-          </div>
-          <div class="featured-leverage-track" aria-hidden="true">
-            <span style={`width:${((p.total_leverage_score || 0) / maxLeverage) * 100}%`}></span>
-          </div>
-        </div>
-        <div class="featured-card-footer">
-          <span class="featured-archetype">Starting pattern: {p.primary_early_advantage_archetype || "No dominant archetype"}</span>
-          <span class="featured-inspect">Inspect path <span aria-hidden="true">→</span></span>
-        </div>
-      </a>
-    ))}
-  </div>
-
-  <section class="home-resolution" aria-labelledby="home-resolution-heading">
-    <p class="eyebrow">Where comparison should end</p>
-    <h2 id="home-resolution-heading">The useful question is not whether you are the next X.</h2>
-    <p>
-      It is which part of the next branch is visible and controllable: the capability to deepen,
-      the feedback loop to shorten, the relationship to build, the runway to protect, or the next
-      high-quality attempt to make possible.
-    </p>
-    <strong>Study the path. Do not inherit the comparison.</strong>
-    <div class="hero-actions">
-      <a class="btn-link btn-link-primary" href="/explore/">Inspect {total.toLocaleString()} paths</a>
-      <a class="hero-secondary-link" href="/compare/">Use comparison as a diagnostic →</a>
-    </div>
-  </section>
-
-  <script is:inline type="application/json" id="chart-data" set:html={JSON.stringify({ ageData, cohortData, engineData, archetypeData, advantageData })} />
-  <script>
-    async function initialiseCharts() {
-    const { chartTheme, initChart } = await import("../scripts/charts.js");
-
-    const data = JSON.parse(document.getElementById("chart-data").textContent);
-    const ageData = data.ageData;
-    const cohortData = data.cohortData;
-    const engineData = data.engineData;
-    const archetypeData = data.archetypeData;
-    const advantageData = data.advantageData;
-    const theme = chartTheme;
-    const baseAxis = {
-      axisLine: { lineStyle: { color: theme.axisLineColor } },
-      axisLabel: { color: theme.textColor, fontSize: 11 },
-      splitLine: { lineStyle: { color: theme.splitLineColor } },
-    };
-
-    // Lazy-load full people data for chart click-through detail panels
-    let allPeople: any[] | null = null;
-    function loadPeople() {
-      if (allPeople) return Promise.resolve(allPeople);
-      return fetch("/data/people.json").then(r => r.json()).then(d => { allPeople = d; return d; });
-    }
-    function getGroup(field: string) {
-      if (!allPeople) return {};
-      const groups: Record<string, any[]> = {};
-      allPeople.forEach(p => {
-        const key = p[field] || "Uncoded";
-        if (!groups[key]) groups[key] = [];
-        groups[key].push({
-          name: p.name, person_id: p.person_id, category: p.category,
-          age_at_milestone: p.age_at_milestone, milestone: p.milestone_by_age_26,
-          total_leverage_score: p.total_leverage_score, success_tier: p.success_tier,
-          cohort_group: p.cohort_group,
-        });
-      });
-      Object.values(groups).forEach(arr => arr.sort((a,b) => (b.total_leverage_score||0) - (a.total_leverage_score||0)));
-      return groups;
-    }
-
-    // --- Detail panel logic ---
-    function showDetail(title: string, peopleList: any[]) {
-      const overlay = document.getElementById("chart-detail-overlay");
-      const titleEl = document.getElementById("detail-title");
-      const statsEl = document.getElementById("detail-stats");
-      const peopleEl = document.getElementById("detail-people");
-      titleEl.textContent = `${title} (${peopleList.length} people)`;
-
-      // Stats
-      const avgLev = (peopleList.reduce((s, p) => s + (p.total_leverage_score || 0), 0) / peopleList.length).toFixed(1);
-      const avgAge = (peopleList.reduce((s, p) => s + (p.age_at_milestone || 0), 0) / peopleList.length).toFixed(1);
-      const tierCounts: Record<string, number> = {};
-      peopleList.forEach(p => { tierCounts[p.success_tier] = (tierCounts[p.success_tier] || 0) + 1; });
-      const cohortCounts: Record<string, number> = {};
-      peopleList.forEach(p => { cohortCounts[p.cohort_group] = (cohortCounts[p.cohort_group] || 0) + 1; });
-      const tierStr = Object.entries(tierCounts).sort((a,b) => Number(a[0]) - Number(b[0])).map(([t,c]) => `T${t}: ${c}`).join(" · ");
-      const cohortStr = Object.entries(cohortCounts).sort((a,b) => b[1]-a[1]).map(([k,c]) => `${k} (${c})`).join(" · ");
-
-      statsEl.innerHTML = `
-        <div class="stat-row">
-          <span><strong>${peopleList.length}</strong> people</span>
-          <span>avg built/converted leverage <strong>${avgLev} / 25</strong></span>
-          <span>avg milestone age <strong>${avgAge}</strong></span>
-        </div>
-        <div class="stat-row sub">${tierStr}</div>
-        <div class="stat-row sub">${cohortStr}</div>
-      `;
-
-      // People list (show top 50 by leverage, with "show more" for the rest)
-      const visibleCount = Math.min(50, peopleList.length);
-      const html = peopleList.slice(0, visibleCount).map(p => {
-        const href = "/person/" + encodeURIComponent(p.person_id) + "/";
-        return `
-        <a class="detail-person" href="` + href + `">
-          <span class="dp-name">${p.name}</span>
-          <span class="dp-cat">${p.category}</span>
-          <span class="dp-age">age ${p.age_at_milestone}</span>
-          <span class="dp-lev">L${p.total_leverage_score}</span>
-          <span class="dp-tier">T${p.success_tier}</span>
+        <a class="story-begin" href="#the-survivor">
+          Begin with the visible outcome
+          <span aria-hidden="true">↓</span>
         </a>
-      `;
-      }).join("");
-      const moreNote = peopleList.length > visibleCount
-        ? `<div class="detail-more">Showing top ${visibleCount} of ${peopleList.length} — <a href="/explore/">explore all →</a></div>`
-        : "";
-      peopleEl.innerHTML = html + moreNote;
-
-      overlay.style.display = "flex";
-    }
-    function closeDetail() {
-      document.getElementById("chart-detail-overlay").style.display = "none";
-    }
-    document.getElementById("chart-detail-overlay").addEventListener("click", closeDetail);
-    document.getElementById("chart-detail-panel").addEventListener("click", (event) => event.stopPropagation());
-    document.getElementById("detail-close").addEventListener("click", closeDetail);
-    document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeDetail(); });
-
-    // Age distribution
-    initChart("chart-age", {
-      color: theme.palette,
-      grid: { left: 40, right: 20, top: 20, bottom: 30 },
-      xAxis: { type: "category", data: ageData.map(d => d.age), ...baseAxis, axisTick: { show: false } },
-      yAxis: { type: "value", ...baseAxis },
-      series: [{
-        type: "bar",
-        data: ageData.map(d => d.count),
-        itemStyle: { color: theme.palette[0], borderRadius: [3,3,0,0] },
-      }],
-    });
-
-    // Cohort
-    initChart("chart-cohort", {
-      color: theme.palette,
-      tooltip: { trigger: "item" },
-      series: [{
-        type: "pie",
-        radius: ["45%","70%"],
-        center: ["50%","50%"],
-        data: cohortData,
-        label: { color: theme.textColor, fontSize: 11 },
-        labelLine: { lineStyle: { color: theme.splitLineColor } },
-      }],
-    });
-
-    // Engine
-    const engineChart = initChart("chart-engine", {
-      color: theme.palette,
-      grid: { left: 160, right: 20, top: 10, bottom: 20 },
-      xAxis: { type: "value", ...baseAxis },
-      yAxis: { type: "category", data: engineData.map(d => d.name), ...baseAxis, axisTick: { show: false } },
-      tooltip: {
-        trigger: "axis",
-        formatter: (params) => {
-          const d = engineData[params[0].dataIndex];
-          return `${d.name}<br/>${d.value} people<br/><span style="color:#888">click to explore</span>`;
-        },
-      },
-      series: [{
-        type: "bar",
-        data: engineData.map(d => d.value),
-        itemStyle: { color: theme.palette[1], borderRadius: [0,3,3,0], cursor: "pointer" },
-        label: { show: true, position: "right", color: theme.textColor, fontSize: 11 },
-      }],
-    });
-    engineChart.on("click", (params) => {
-      if (params.componentType === "series") {
-        const d = engineData[params.dataIndex];
-        if (d) {
-          loadPeople().then(() => {
-            const groups = getGroup("normalized_primary_engine");
-            if (groups[d.name]) showDetail(d.name, groups[d.name]);
-          });
-        }
-      }
-    });
-
-    // Archetype
-    const archetypeChart = initChart("chart-archetype", {
-      color: theme.palette,
-      grid: { left: 180, right: 20, top: 10, bottom: 20 },
-      xAxis: { type: "value", ...baseAxis },
-      yAxis: { type: "category", data: archetypeData.map(d => d.name), ...baseAxis, axisTick: { show: false } },
-      tooltip: {
-        trigger: "axis",
-        formatter: (params) => {
-          const d = archetypeData[params[0].dataIndex];
-          return `${d.name}<br/>${d.value} people<br/><span style="color:#888">click to explore</span>`;
-        },
-      },
-      series: [{
-        type: "bar",
-        data: archetypeData.map(d => d.value),
-        itemStyle: { color: theme.palette[2], borderRadius: [0,3,3,0], cursor: "pointer" },
-        label: { show: true, position: "right", color: theme.textColor, fontSize: 11 },
-      }],
-    });
-    archetypeChart.on("click", (params) => {
-      if (params.componentType === "series") {
-        const d = archetypeData[params.dataIndex];
-        if (d) {
-          loadPeople().then(() => {
-            const groups = getGroup("primary_early_advantage_archetype");
-            if (groups[d.name]) showDetail(d.name, groups[d.name]);
-          });
-        }
-      }
-    });
-
-    // Advantage averages
-    initChart("chart-advantage", {
-      color: theme.palette,
-      grid: { left: 200, right: 60, top: 10, bottom: 30 },
-      xAxis: { type: "value", max: 2, ...baseAxis },
-      yAxis: { type: "category", data: advantageData.map(d => d.label), ...baseAxis, axisTick: { show: false } },
-      tooltip: {
-        trigger: "axis",
-        formatter: (params) => {
-          const d = advantageData[params[0].dataIndex];
-          return `${d.label}<br/>avg: ${d.avg}<br/>scored 2: ${d.count2} people`;
-        },
-      },
-      series: [{
-        type: "bar",
-        data: advantageData.map(d => d.avg),
-        itemStyle: { color: theme.palette[0], borderRadius: [0,3,3,0] },
-        label: { show: true, position: "right", color: theme.textColor, fontSize: 11, formatter: (p) => p.value.toFixed(2) },
-      }],
-    });
-    }
-
-    function scheduleCharts() {
-      const firstChart = document.getElementById("chart-age");
-      if (!firstChart || !("IntersectionObserver" in window)) {
-        globalThis.setTimeout(() => initialiseCharts(), 1500);
-        return;
-      }
-
-      const observer = new IntersectionObserver((entries) => {
-        if (!entries.some((entry) => entry.isIntersecting)) return;
-        observer.disconnect();
-        initialiseCharts();
-      }, { rootMargin: "600px 0px" });
-      observer.observe(firstChart);
-    }
-
-    scheduleCharts();
-  </script>
-
-  <!-- Detail panel modal for chart click-throughs -->
-  <div id="chart-detail-overlay" class="detail-overlay" style="display:none;">
-    <div id="chart-detail-panel" class="detail-panel">
-      <div class="detail-header">
-        <h3 id="detail-title"></h3>
-        <button id="detail-close" class="detail-close" aria-label="Close details">&times;</button>
       </div>
-      <div id="detail-stats" class="detail-stats"></div>
-      <div id="detail-people" class="detail-people"></div>
+      <div class="story-opening-note">
+        <span>Reading contract</span>
+        <p>Selected successful outliers. No control group. No forecast.</p>
+      </div>
+    </header>
+
+    <div class="story-chapters">
+      <section
+        class="story-chapter"
+        id="the-survivor"
+        data-story-chapter
+        data-chapter-index="0"
+        data-short-title="The survivor"
+        aria-labelledby="story-heading-1"
+      >
+        <div class="story-copy">
+          <p class="chapter-index"><span>01</span> Survivor selection</p>
+          <h2 id="story-heading-1">
+            {wordSpans("Biography starts at the end.").map((word, index) => (
+              <span class="story-heading-word" style={`--word-index:${index}`}>{word}</span>
+            ))}
+          </h2>
+          <p class="chapter-lede">
+            Every person in this atlas is here because a documented breakthrough
+            happened by 26. Selection begins after the outcome is already known.
+          </p>
+          <p>
+            The archive shows the branch that stayed visible. It cannot count
+            everyone with a similar start whose path met different timing,
+            gatekeepers, obligations, health, or luck.
+          </p>
+          <aside class="chapter-evidence">
+            <span>Thought experiment · not a measured probability</span>
+            <strong>64 plausible starts → 1 remembered finish</strong>
+            <p>Six hypothetical 50/50 gates are enough to make the final dot look inevitable in reverse.</p>
+          </aside>
+          <a class="chapter-link" href="/#survivor-path">Inspect the full survivor-path exhibit →</a>
+        </div>
+      </section>
+
+      <section
+        class="story-chapter"
+        id="the-start"
+        data-story-chapter
+        data-chapter-index="1"
+        data-short-title="The starting field"
+        aria-labelledby="story-heading-2"
+      >
+        <div class="story-copy">
+          <p class="chapter-index"><span>02</span> Starting position</p>
+          <h2 id="story-heading-2">
+            {wordSpans("Before talent had a résumé, the field was already uneven.").map((word, index) => (
+              <span class="story-heading-word" style={`--word-index:${index}`}>{word}</span>
+            ))}
+          </h2>
+          <p class="chapter-lede">
+            Family resources, domain exposure, geography, institutions, tools,
+            mentors, peers, and physical edge change which first moves are available.
+          </p>
+          <p>
+            Across {total.toLocaleString()} selected paths, the average documented
+            starting-advantage score is {averageAdvantage} out of {SCORE_FAMILIES.advantage.max}.
+            That is a description of evidence near the start—not a talent score
+            and not proof that undocumented support was absent.
+          </p>
+          <dl class="story-fact-line">
+            <div><dt>Dimensions</dt><dd>12</dd></div>
+            <div><dt>Cohorts</dt><dd>{cohortCount}</dd></div>
+            <div><dt>Avg milestone age</dt><dd>{averageMilestoneAge}</dd></div>
+          </dl>
+          <a class="chapter-link" href="/methodology/">See how starting conditions are coded →</a>
+        </div>
+      </section>
+
+      <section
+        class="story-chapter"
+        id="the-levers"
+        data-story-chapter
+        data-chapter-index="2"
+        data-short-title="What multiplies"
+        aria-labelledby="story-heading-3"
+      >
+        <div class="story-copy">
+          <p class="chapter-index"><span>03</span> Built or converted leverage</p>
+          <h2 id="story-heading-3">
+            {wordSpans("Then some work begins to multiply itself.").map((word, index) => (
+              <span class="story-heading-word" style={`--word-index:${index}`}>{word}</span>
+            ))}
+          </h2>
+          <p class="chapter-lede">
+            Reps produce skill. Skill earns trust. Trust attracts collaborators.
+            Distribution brings feedback. Earlier proof changes the next opening.
+          </p>
+          <p>
+            The average documented leverage score is {averageLeverage} out of {SCORE_FAMILIES.leverage.max}.
+            But presence is not provenance. The same visible lever may have been
+            built, enabled, earned, supplied from outside, or mixed.
+          </p>
+          <ul class="origin-line" aria-label="Possible origins of leverage">
+            {LEVERAGE_ORIGINS.slice(0, 5).map((origin) => <li>{origin.label}</li>)}
+          </ul>
+          <aside class="chapter-evidence chapter-evidence-compact">
+            <span>Evidence signal</span>
+            <strong>{highConfidence.toLocaleString()} paths have high-confidence leverage coding</strong>
+          </aside>
+          <a class="chapter-link" href="/insights/#comparison-breaks-heading">Inspect why origin changes the comparison →</a>
+        </div>
+      </section>
+
+      <section
+        class="story-chapter"
+        id="the-sequence"
+        data-story-chapter
+        data-chapter-index="3"
+        data-short-title="What compounds"
+        aria-labelledby="story-heading-4"
+      >
+        <div class="story-copy">
+          <p class="chapter-index"><span>04</span> Compounding trajectory</p>
+          <h2 id="story-heading-4">
+            {wordSpans("A path is a sequence, not a score.").map((word, index) => (
+              <span class="story-heading-word" style={`--word-index:${index}`}>{word}</span>
+            ))}
+          </h2>
+          <p class="chapter-lede">
+            Two people can have similar ingredients and still meet them in a
+            different order, under a different clock, with different conversion costs.
+          </p>
+          <p>
+            Starting advantage changes the available moves. Leverage changes how
+            effectively effort can compound. Trajectory records what happened
+            next. Observed standing describes the finish; it is not calculated
+            from the earlier scores.
+          </p>
+          <ol class="sequence-steps">
+            <li><span>01</span><strong>Starting position</strong></li>
+            <li><span>02</span><strong>Built leverage</strong></li>
+            <li><span>03</span><strong>Trajectory</strong></li>
+            <li><span>04</span><strong>Observed standing</strong></li>
+          </ol>
+          <a class="chapter-link" href="/person/bill-gates/">Read one connected path end to end →</a>
+        </div>
+      </section>
+
+      <section
+        class="story-chapter story-chapter-final"
+        id="the-boundary"
+        data-story-chapter
+        data-chapter-index="4"
+        data-short-title="What stays unknowable"
+        aria-labelledby="story-heading-5"
+      >
+        <div class="story-copy">
+          <p class="chapter-index"><span>05</span> Luck and the boundary</p>
+          <h2 id="story-heading-5">
+            {wordSpans("Keep the model. Lose the prophecy.").map((word, index) => (
+              <span class="story-heading-word" style={`--word-index:${index}`}>{word}</span>
+            ))}
+          </h2>
+          <p class="chapter-lede">
+            Era, geography, encounters, gatekeepers, shocks, timing, and outcome
+            variance act across every transition. They stay visible here—and unscored.
+          </p>
+          <p>
+            You can inspect conditions, build capability, choose better feedback,
+            extend runway, and move closer to the work. You cannot inherit another
+            person's sequence or turn a surviving biography into your forecast.
+          </p>
+          <blockquote class="story-close">
+            <p>Study the conditions. Inspect what was built. Respect what cannot be replayed.</p>
+            <footer>Then return to your own unfinished branch.</footer>
+          </blockquote>
+          <a class="story-essay-feature" href="/essays/who-filled-the-kings-jug/">
+            <span class="story-essay-meta">Featured essay · 6 min read</span>
+            <strong>Who Filled the King's Jug?</strong>
+            <span class="story-essay-summary">
+              Privilege, abstraction, and the invisible work behind accomplishment.
+              {" "}<b>Read the essay →</b>
+            </span>
+          </a>
+          <div class="story-actions">
+            <a class="story-action-primary" href="/explore/">Explore {total.toLocaleString()} paths</a>
+            <a href="/coverage/">Check the evidence</a>
+            <a href="/compare/">Test a comparison</a>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
+
+  <script>
+    import { mountStoryWorld } from "../scripts/story-world";
+
+    const story = document.querySelector<HTMLElement>("[data-story]");
+    const storyCanvas = document.querySelector<HTMLCanvasElement>("[data-story-webgl]");
+    const chapters = Array.from(document.querySelectorAll<HTMLElement>("[data-story-chapter]"));
+    const links = Array.from(document.querySelectorAll<HTMLAnchorElement>("[data-story-link]"));
+    const activeNumber = document.querySelector<HTMLElement>("[data-active-number]");
+    const activeTitle = document.querySelector<HTMLElement>("[data-active-title]");
+    const plateImages = Array.from(document.querySelectorAll<HTMLImageElement>("[data-story-src]"));
+
+    if (story && chapters.length) {
+      story.classList.add("story-ready");
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const device = navigator as Navigator & {
+        connection?: { saveData?: boolean };
+        deviceMemory?: number;
+      };
+      const lowCapability = Boolean(
+        device.connection?.saveData
+        || (device.deviceMemory && device.deviceMemory <= 4)
+      );
+      const storyWorld = storyCanvas && !reduceMotion && !lowCapability ? mountStoryWorld(storyCanvas) : null;
+      const requestedShotValue = new URLSearchParams(window.location.search).get("shot");
+      const requestedShot = requestedShotValue === null ? Number.NaN : Number(requestedShotValue);
+
+      const loadPlate = (index: number) => {
+        const image = plateImages[index - 1];
+        const source = image?.dataset.storySrc;
+        if (!image || !source || image.src) return;
+        image.src = source;
+      };
+      loadPlate(1);
+
+      const activate = (chapter: HTMLElement) => {
+        const index = Number(chapter.dataset.chapterIndex || 0);
+        story.dataset.activeChapter = String(index);
+        loadPlate(index);
+        loadPlate(index + 1);
+        links.forEach((link, linkIndex) => {
+          if (linkIndex === index) link.setAttribute("aria-current", "step");
+          else link.removeAttribute("aria-current");
+        });
+        if (activeNumber) activeNumber.textContent = String(index + 1).padStart(2, "0");
+        if (activeTitle) activeTitle.textContent = chapter.dataset.shortTitle || "";
+      };
+
+      let scheduled = false;
+      const updateStoryState = () => {
+        const start = chapters[0]?.offsetTop || 0;
+        const endChapter = chapters.at(-1);
+        const end = endChapter ? endChapter.offsetTop + endChapter.offsetHeight - window.innerHeight : start + 1;
+        const scrollProgress = Math.min(1, Math.max(0, (window.scrollY - start) / Math.max(1, end - start)));
+        const progress = Number.isFinite(requestedShot)
+          ? Math.min(1, Math.max(0, requestedShot))
+          : scrollProgress;
+        story.style.setProperty("--story-progress", String(progress));
+        storyWorld?.setProgress(progress);
+
+        const atDocumentEnd = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 4;
+        const focusLine = window.innerHeight * 0.48;
+        const activeChapter = Number.isFinite(requestedShot)
+          ? chapters[Math.min(chapters.length - 1, Math.round(requestedShot * (chapters.length - 1)))]
+          : atDocumentEnd
+          ? chapters.at(-1)
+          : chapters.reduce((closest, chapter) => {
+              const bounds = chapter.getBoundingClientRect();
+              const closestBounds = closest.getBoundingClientRect();
+              const distance = bounds.top <= focusLine && bounds.bottom >= focusLine
+                ? 0
+                : Math.min(Math.abs(bounds.top - focusLine), Math.abs(bounds.bottom - focusLine));
+              const closestDistance = closestBounds.top <= focusLine && closestBounds.bottom >= focusLine
+                ? 0
+                : Math.min(Math.abs(closestBounds.top - focusLine), Math.abs(closestBounds.bottom - focusLine));
+              return distance < closestDistance ? chapter : closest;
+            }, chapters[0]);
+        if (activeChapter) activate(activeChapter);
+        scheduled = false;
+      };
+      window.addEventListener("scroll", () => {
+        if (scheduled) return;
+        scheduled = true;
+        window.requestAnimationFrame(updateStoryState);
+      }, { passive: true });
+      window.addEventListener("resize", updateStoryState, { passive: true });
+      window.addEventListener("hashchange", updateStoryState);
+      document.addEventListener("astro:before-swap", () => storyWorld?.destroy(), { once: true });
+      window.requestAnimationFrame(updateStoryState);
+    }
+  </script>
 </Base>
