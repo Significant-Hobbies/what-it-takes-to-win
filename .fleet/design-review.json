@@ -2,41 +2,54 @@
   "$schema": "fleet.design-review.v1",
   "version": 1,
   "project": "what-it-takes-to-win",
-  "target": "Insights evidence frequency and outcome overlap atlas",
-  "mode": "preserve",
+  "target": "Canonical cinematic landing journey",
+  "mode": "overhaul",
   "register": "brand",
   "context": {
     "product": "PRODUCT.md",
     "design": "DESIGN.md"
   },
   "direction": {
-    "references": [],
-    "probes": [],
-    "selected": "existing-design",
-    "approval": "not-required",
-    "before": "artifacts/design/insights-before-overlap-1440.png"
+    "references": ["Kage spatial storytelling", "Expeditione 3D dioramas", "Resn WebGL craft"],
+    "probes": [
+      {
+        "id": "the-impossible-observatory",
+        "path": "artifacts/design/landing-direction-observatory.png"
+      },
+      {
+        "id": "the-vertical-city",
+        "path": "artifacts/design/landing-direction-city.png"
+      },
+      {
+        "id": "the-living-ledger",
+        "path": "artifacts/design/landing-direction-ledger.png"
+      }
+    ],
+    "selected": "the-impossible-observatory",
+    "approval": "approved",
+    "before": "artifacts/design/story-archive-1440.png"
   },
   "evidence": {
     "screenshots": [
       {
         "width": 390,
-        "path": "artifacts/design/insights-after-390.png"
+        "path": "artifacts/design/landing-essays-390.png"
       },
       {
         "width": 768,
-        "path": "artifacts/design/insights-after-768.png"
+        "path": "artifacts/design/landing-essays-768.png"
       },
       {
         "width": 1440,
-        "path": "artifacts/design/insights-after-1440.png"
+        "path": "artifacts/design/landing-essays-1440.png"
       }
     ],
     "projectCheck": {
-      "command": "pnpm exec astro build && git diff --check -- src/pages/insights/index.astro src/styles/insights.css src/layouts/Base.astro .fleet/design-review.json",
+      "command": "pnpm run check && pnpm run build && pnpm run quality:unused && pnpm run audit:discovery && openspec validate add-story-mode --strict && git diff --check",
       "status": "pass"
     },
     "critique": {
-      "score": 35,
+      "score": 38,
       "maximum": 40
     },
     "audit": {
@@ -53,7 +66,7 @@
     }
   },
   "ownerFeedback": {
-    "decision": "delegated",
-    "note": "The owner explicitly delegated final design judgment with 'Get to yourself happy' on 2026-08-09."
+    "decision": "keep",
+    "note": "The owner accepted the current direction for release on 2026-08-14."
   }
 }

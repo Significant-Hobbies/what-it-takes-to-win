@@ -28,9 +28,17 @@ const coreSurfaces = [
     id: "home",
     htmlPath: "/",
     mdPath: "/index.md",
-    title: "What It Takes to Win",
+    title: "The path you remember is one of many",
     summary:
-      "An evidence-bounded model of how starting advantages, built or converted leverage, compounding trajectories, observed standing, and luck relate without forming a success recipe.",
+      "A five-chapter cinematic guide through survivor selection, starting position, built or converted leverage, compounding trajectory, and luck.",
+  },
+  {
+    id: "overview",
+    htmlPath: "/overview/",
+    mdPath: "/overview.md",
+    title: "What It Takes to Win — research overview",
+    summary:
+      "An evidence-bounded overview of how starting advantages, built or converted leverage, compounding trajectories, observed standing, and luck relate without forming a success recipe.",
   },
   {
     id: "insights",
@@ -340,7 +348,8 @@ await emit(
     "",
     "## Start here",
     "",
-    `- [Overview](${absolute("/index.md")}): the four-stage model and interpretation boundary`,
+    `- [Story](${absolute("/index.md")}): a five-chapter journey from the visible survivor to the limits of comparison`,
+    `- [Research overview](${absolute("/overview.md")}): the four-stage model and interpretation boundary`,
     `- [Insights](${absolute("/insights.md")}): the one-minute answer, tiers, overlap, luck, and counterexamples`,
     `- [Evidence coverage](${absolute("/coverage.md")}): source depth, confidence, composition, and unresolved audit boundaries`,
     `- [Methodology](${absolute("/methodology.md")}): inclusion, scoring, evidence gates, and limitations`,
