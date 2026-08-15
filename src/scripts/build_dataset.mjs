@@ -213,31 +213,16 @@ function estimateBirthYear(p) {
   if (found && p.age_at_milestone) {
     return parseInt(found[0]) - p.age_at_milestone;
   }
-  // Method 4: early_history_summary year
-  const eh = p.early_history_summary || "";
-  found = eh.match(yearRegex);
-  if (found && p.age_at_milestone) {
-    // Use the earliest year found, subtract age at milestone
-    const years = found.map(y => parseInt(y)).sort((a, b) => a - b);
-    const by = years[0] - p.age_at_milestone;
-    // Sanity check
-    if (by >= 1800 && by <= 2020) return by;
-  }
-  // Method 5: family_context_summary year
-  const fc = p.family_context_summary || "";
-  found = fc.match(yearRegex);
-  if (found && p.age_at_milestone) {
-    const years = found.map(y => parseInt(y)).sort((a, b) => a - b);
-    const by = years[0] - p.age_at_milestone;
-    if (by >= 1800 && by <= 2020) return by;
-  }
-  // Method 6: evidence_summary year
-  const ev = p.evidence_summary || "";
-  found = ev.match(yearRegex);
-  if (found && p.age_at_milestone) {
-    const years = found.map(y => parseInt(y)).sort((a, b) => a - b);
-    const by = years[0] - p.age_at_milestone;
-    if (by >= 1800 && by <= 2020) return by;
+  // Methods 4–6: earliest year in text fields, sanity-checked
+  const earliestBirthYear = (text) => {
+    const matches = (text || "").match(yearRegex);
+    if (!matches || !p.age_at_milestone) return null;
+    const by = matches.map(y => parseInt(y)).sort((a, b) => a - b)[0] - p.age_at_milestone;
+    return by >= 1800 && by <= 2020 ? by : null;
+  };
+  for (const text of [p.early_history_summary, p.family_context_summary, p.evidence_summary]) {
+    const by = earliestBirthYear(text);
+    if (by != null) return by;
   }
   return null;
 }
