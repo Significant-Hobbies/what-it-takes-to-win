@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "austin-russell",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Rare prodigy who memorized the periodic table at age 2, worked as a software consultant by 10, filed his first patent at 13, and built a supercomputer and holographic keyboard in his teens — extraordinary cognitive and inventive abilities from early childhood.",
+    "inherited_summary": "Grew up in affluent Newport Beach with private schooling (St. Margaret's Episcopal); parents connected him at 15 to laser entrepreneur Jason Eichenholz, who became his mentor and co-founder, providing direct domain access.",
+    "ecosystem_summary": "Access to Beckman Laser Institute at UC Irvine while in high school, mentorship from Eichenholz, Thiel Fellowship ($100K), and brief Stanford attendance — strong institutional and mentor ecosystem but not once-in-a-generation.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "vitalik-buterin",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Math prodigy called a 'genius' by grade 5-6, placed in gifted classes, started programming at 10, won a bronze medal at the International Olympiad in Informatics — rare cognitive prodigy with demonstrated international competition achievement.",
+    "inherited_summary": "Highly educated immigrant family; father Dmitry was a computer scientist who introduced him to Bitcoin at 17; parents sent him to private school (Abelard) and supported his interests with programming books and classes.",
+    "ecosystem_summary": "University of Waterloo, Toronto Bitcoin meetup community, Bitcoin Magazine founding, and early crypto ecosystem immersion — strong peer and community network at the frontier of a new field.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "emma-chamberlain",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Developed a distinct editing voice and authentic persona that resonated with audiences, but no evidence of prodigy-level cognitive or creative abilities from early childhood.",
+    "inherited_summary": "Parents divorced at 5; family struggled financially with father's art commissions as primary income; lower-middle-class in San Francisco area with no media industry connections.",
+    "ecosystem_summary": "YouTube platform provided the structural opportunity, and Los Angeles creator networks offered later support, but her ecosystem at start was simply the platform itself — no elite institutions or mentors.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "serena-williams",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Exceptional physical talent and competitive temperament recognized early, trained intensely from age 4 under father's deliberate plan — significant athletic endowment but developed through coaching rather than pure prodigy emergence.",
+    "inherited_summary": "Working/middle-class family in Compton with no inherited tennis network; however, father Richard's deliberate 85-page coaching plan and domain study provided significant family-driven knowledge and structure.",
+    "ecosystem_summary": "Nick Bollettieri Tennis Academy in Florida, father's deliberate coaching from age 4, and strategic use of Compton's tough environment — elite coaching pipeline and intentional development system.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "neeraj-chopra",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Showed good physical aptitude for javelin after starting at age 13 to lose weight, but no evidence of childhood prodigy-level athletic ability; talent emerged through practice and institutional support.",
+    "inherited_summary": "Agricultural family of modest means in Khandra village, Haryana; father a farmer with limited resources, no sports background or inherited athletic platform.",
+    "ecosystem_summary": "Shivaji Stadium access for initial training, progression to Tau Devi Lal Stadium and national camp system — functional institutional pipeline but not elite from the start.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "celine-dion",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Prodigy-level voice recognized from age 5, performing at parents' piano bar to growing audiences; by 12 had written her first song — extraordinary vocal gift evident from earliest childhood despite poverty.",
+    "inherited_summary": "Born into deep poverty as youngest of 14 children in rural Quebec, but both parents were musicians (mother violinist, father accordionist) who ran a piano bar and formed a family singing group — musical domain immersion offsetting financial disadvantage.",
+    "ecosystem_summary": "Manager René Angélil mortgaged his home to fund her debut album at 13, providing extraordinary dedicated mentorship and capital commitment; family piano bar provided early performance immersion.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "eusébio",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Exceptional speed (100m in 11 seconds), technique, and kicking power evident from a young age in barefoot street football — significant physical talent recognized early despite total lack of resources.",
+    "inherited_summary": "Extreme poverty in colonial Mozambique's Mafalala neighborhood; father died of tetanus when he was 8; widowed mother raised him alone with no financial resources — active disadvantage.",
+    "ecosystem_summary": "Portuguese colonial scouting pipeline connected Mozambique to Benfica; coach Carlos Bauer spotted him and Béla Guttman signed him — but this came after his talent was self-developed on the streets.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "cristiano-ronaldo",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Recognized as a phenom by age 10 with exceptional dribbling and dedication; coaches immediately saw he was 'different' and 'something special' — significant physical and technical talent from early age.",
+    "inherited_summary": "Working-class family in one of Madeira's poorest neighborhoods; father was a municipal gardener and alcoholic kit man at local club (providing football exposure but no financial resources); family struggled financially.",
+    "ecosystem_summary": "Sporting CP's elite youth academy — one of Portugal's best development programs — at age 12, relocating alone to Lisbon; subsequent signing by Manchester United under Alex Ferguson at 18.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "mario-andretti",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Natural driving talent recognized quickly in dirt track racing, but not prodigy-level from childhood; started racing at 18 with a self-prepared Hudson Hornet shared with his twin brother.",
+    "inherited_summary": "Family lost their 2,100-acre farm in the Istrian-Dalmatian exodus, spent 7 years in a refugee camp in Lucca, and emigrated to Nazareth, PA with $125 — severe displacement and financial loss constituting active disadvantage.",
+    "ecosystem_summary": "Twin brother Aldo as complementary racing partner, discovery of a dirt track near their new home in Pennsylvania, and self-created progression through American open-wheel racing — limited institutional support.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "enrico-bombieri",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Rare mathematical prodigy who read algebra at 8, studied number theory at 13, published his first paper at 16, and won the Fields Medal — extraordinary cognitive endowment evident from early childhood.",
+    "inherited_summary": "Father was CEO of Banca Commerciale Italiana, one of Italy's largest banks; wealthy family with a vineyard in Montepulciano — extreme financial security and social position providing elite education access.",
+    "ecosystem_summary": "University of Milan under Giovanni Ricci, Trinity College Cambridge with Harold Davenport, full professor at 25 — elite institutional pipeline with notable mentors, though not once-in-a-generation.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ayrton-senna",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Natural driving talent evident from his first kart race (started on pole against older drivers), twice World Championship karting runner-up — significant innate talent recognized early.",
+    "inherited_summary": "Born into a wealthy São Paulo family; father Milton owned a metallurgical company supplying the automotive industry, built Ayrton's first go-kart at 4, and fully funded his early racing career — extreme wealth with direct domain proximity.",
+    "ecosystem_summary": "Father-funded karting from age 13, move to European racing with family support, progression through Formula Ford and F3 — strong funded pipeline but not a unique once-in-a-generation ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "kresimir-cosic",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Exceptional 6'11\" height was a decisive physical advantage for basketball, though he started relatively late at 16; his physical attributes were rare and trajectory-changing for the sport.",
+    "inherited_summary": "Family financial background not well documented; grew up in communist Yugoslavia where sports were state-supported, with no documented family basketball connections or wealth.",
+    "ecosystem_summary": "Yugoslav state sports system provided elite development through KK Zadar, national team exposure from age 19, and BYU scholarship — strong institutional pipeline within a state-supported system.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "mats-wilander",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Described as 'smart and cagey' rather than physically dominant; first coach noted he 'practiced just enough to get by' — tactical intelligence rather than prodigy-level talent.",
+    "inherited_summary": "Working-class family in Växjö; father was a factory foreman, mother an assembly line worker who continued factory work even after his success — no tennis pedigree or financial platform.",
+    "ecosystem_summary": "Father built a makeshift tennis court in a factory parking lot; Sweden's tennis culture in the Borg era provided junior development programs (Team SIAB) — good but not elite institutional support.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "sigmar-polke",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Artistic talent emerged through displacement and self-direction; produced mature work by 22 but no evidence of childhood prodigy-level ability — talent developed through obsessive practice and reaction to trauma.",
+    "inherited_summary": "Seventh of eight children, displaced by WWII from Silesia to East Germany then fled to West Germany in 1953 — wartime displacement and refugee status with no family artistic background or financial privilege.",
+    "ecosystem_summary": "Kunstakademie Düsseldorf under Joseph Beuys, with peer network including Gerhard Richter and Konrad Lueg — elite art academy and consequential peer group in post-war Germany's cultural moment.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "bob-marley",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Musical talent and distinctive voice emerged through immersion in Kingston's music scene, but no evidence of prodigy-level ability from early childhood — talent developed through practice and cultural immersion.",
+    "inherited_summary": "Born in poverty in rural Jamaica; mother was a domestic servant, father a white overseer who provided minimal support and died when Bob was 12; grew up in Trench Town's low-income government housing — active disadvantage.",
+    "ecosystem_summary": "Kingston's vibrant ska music scene, Joe Higgs' vocal harmony mentorship, Wailers peer team with Bunny and Tosh, and Studio One's distribution — rich cultural ecosystem but not elite institutional support.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "nelson-piquet",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Natural driving talent emerged through karting from 14, but not prodigy-level from childhood; talent developed through persistence and self-funding rather than early recognition.",
+    "inherited_summary": "Son of a physician who became Brazil's Minister for Health — wealthy, influential family; however, father actively disapproved of racing, forcing Piquet to hide his identity and self-fund — wealth present but domain support withheld.",
+    "ecosystem_summary": "Brazilian karting pipeline, Emerson Fittipaldi's advice to go to Europe, and engineer Greg Siddle's collaboration — good network but largely self-created path against family opposition.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "bob-dylan",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Extraordinary songwriting talent producing 'Blowin' in the Wind' and other anthems by 22, with distinctive creative vision — significant creative endowment though not prodigy-level in childhood.",
+    "inherited_summary": "Middle-class family in Hibbing, MN; father and uncles ran appliance and electronics stores, providing stability but no music industry connections — comfortable but not wealthy or domain-connected.",
+    "ecosystem_summary": "Greenwich Village folk scene of the early 1960s — the epicenter of the American folk revival — with mentors like Dave Van Ronk and discovery by Columbia Records producer John Hammond — elite cultural ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "roberto-durán",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Devastating punching power and aggressive style honed through street survival from age 5; natural physical talent for boxing evident in his 29-0 start and world title at 21 — significant innate fighting ability.",
+    "inherited_summary": "Extreme poverty in El Chorrillo slums; father abandoned the family, mother raised 9 children; Durán shined shoes and sold newspapers from age 5 — active disadvantage with no resources or domain connections.",
+    "ecosystem_summary": "Neco de La Guardia gym provided early sparring access from age 8, but no elite mentorship or institutional support is documented in his early career — largely self-driven from the streets.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "mirza-delibašić",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Multi-sport talent (Bosnian U-16 tennis champion before switching to basketball at 14), but not prodigy-level in either sport; talent developed through the Yugoslav sports system.",
+    "inherited_summary": "Family background not documented in reviewed sources; no evidence of family sports connections or financial advantage — grew up in communist Yugoslavia with state-supported sports.",
+    "ecosystem_summary": "Yugoslav basketball pipeline through KK Sloboda Tuzla and KK Bosna under coach Bogdan Tanjević, plus national team system — strong elite institutional development within the state sports system.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "mika-häkkinen",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Karting from age 5, five-time Finnish karting champion, described as 'devastatingly quick and aggressive' — significant early talent and extreme early specialization in motorsport.",
+    "inherited_summary": "Working-class family in Vantaa; father was a shortwave radio operator and part-time taxi driver, mother a secretary; parents sacrificed financially but had limited means, requiring Mika to work repairing bicycles.",
+    "ecosystem_summary": "Became protégé of 1982 World Champion Keke Rosberg as manager, joined Marlboro driver academy providing sponsorship, and raced with West Surrey Racing — strong mentor and institutional support.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "gérard-depardieu",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Raw instinctive talent and 'animalité' recognized by mentors, but left school at 13 practically illiterate — talent was naturalistic rather than prodigy-level, developed through acting training.",
+    "inherited_summary": "Deep poverty in Châteauroux; father a metal worker with severe alcohol addiction who could barely write, mother a homemaker in a two-room apartment for 6 children — active disadvantage with no resources.",
+    "ecosystem_summary": "Jean-Laurent Cochet's acting classes in Paris provided sustained training and therapy for his diction; Café de la Gare scene connected him with Patrick Dewaere and Miou-Miou — mentor and peer network but not elite institution.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jean-michel-jarre",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Musical creativity and early interest in electronic music, but not prodigy-level; his first Paris Opera commission came at 22, developed through study and experimentation rather than childhood genius.",
+    "inherited_summary": "Father was Maurice Jarre, one of the most celebrated film composers of the 20th century (Lawrence of Arabia, Doctor Zhivago); grandfather was a musician and inventor who gave him his first tape recorder — extraordinary family musical heritage.",
+    "ecosystem_summary": "Conservatoire de Paris lessons arranged by mother, joined Pierre Schaeffer's GRM (pioneer of musique concrète), Paris Opera commission — elite Parisian cultural ecosystem with frontier electronic music access.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jimi-hendrix",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Extraordinary natural guitar talent, entirely self-taught from age 15, developing revolutionary technique through obsessive practice and years on the Chitlin' Circuit — significant innate musical ability.",
+    "inherited_summary": "Grew up in poverty in Seattle; first guitar cost $5; parents divorced when he was 9; periods of foster care and difficult childhood — active disadvantage with no resources or music connections.",
+    "ecosystem_summary": "Years of grinding as backing guitarist on the Chitlin' Circuit provided deep experience; Chas Chandler (Animals bassist) became his manager and brought him to London's psychedelic rock scene — key catalyst but came after years of struggle.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "iman",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Distinctive Somali features and physical presence made her an instant fashion success, but modeling ability is not prodigy-level; her career was launched by chance discovery rather than developed talent.",
+    "inherited_summary": "Father was Somalia's ambassador to Saudi Arabia, mother a gynecologist — educated, upper-middle-class professional family with international exposure; boarding school in Egypt from age 4.",
+    "ecosystem_summary": "Discovery by renowned photographer Peter Beard provided immediate access to elite fashion networks and a Vogue assignment within a year — powerful catalyst mentor with industry connections.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "istvan-sandorfi",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Obsessive dedication to drawing and painting from age 12, producing work mature enough for a solo gallery exhibition by 17 — significant artistic prodigy through self-driven practice.",
+    "inherited_summary": "Father was director of IBM in Hungary (upper-middle-class), but was imprisoned for 5 years under Communist rule; family fled as refugees in 1956 — professional background provided cultural capital but displacement caused adversity.",
+    "ecosystem_summary": "Displacement to Paris placed him in a major art capital; father later enrolled him at École des Beaux-Arts, but Sándorfi considered himself self-taught and was largely self-driven — institutional access but self-created path.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ronaldo",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Extraordinary physical talent — pace, power, dribbling, and finishing — scoring a record 166 goals in his first futsal season at 12; FIFA World Player of the Year at 20 (youngest ever) — rare prodigy-level ability.",
+    "inherited_summary": "Born into a poor family in Bento Ribeiro, Rio; parents separated when he was 11; mother borrowed money for bus fare to a Flamengo trial — active disadvantage with no financial resources.",
+    "ecosystem_summary": "Brazilian football pipeline from São Cristóvão to Cruzeiro to PSV to Barcelona; Jairzinho (1970 World Cup star) discovered and mentored him — structured elite pathway with key mentor discovery.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "antonio-inoki",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Natural athleticism (Brazilian shot put and discus champion at 17) and physical conditioning from plantation labor, but not prodigy-level in wrestling from childhood — talent developed through mentorship.",
+    "inherited_summary": "Initially affluent family (father businessman/politician), but father died when he was 5, family coal business went bankrupt, and they emigrated to Brazil to work in poverty on a coffee plantation — active disadvantage despite early affluence.",
+    "ecosystem_summary": "Rikidozan, the father of Japanese pro wrestling, personally discovered and recruited him in Brazil, providing direct mentorship and entry into the JWA — extraordinary mentor catalyst and institutional pipeline.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "pelé",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Prodigy-level talent recognized from childhood; debuted professionally at 15, league top scorer at 16, World Cup winner at 17 with a hat-trick in the semifinal — rare, trajectory-changing football prodigy.",
+    "inherited_summary": "Deep poverty in Bauru; father Dondinho was a professional footballer whose career was cut short by injury, providing direct domain knowledge and training from childhood — domain knowledge offsetting extreme financial disadvantage.",
+    "ecosystem_summary": "Waldemar de Brito (former Brazil international) discovered him and arranged Santos FC trial; Santos FC elite club pipeline provided platform — strong mentor advocacy and elite institutional support.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "muhammad-ali",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Exceptional speed and footwork for a heavyweight, with a 100-8 amateur record and Olympic gold at 18 — significant physical prodigy, though discovered by chance at 12 rather than trained from early childhood.",
+    "inherited_summary": "Working-class Black family in segregated Louisville; father was a sign painter, mother a household worker — modest means with no boxing heritage, but stable family environment in Black middle-class context.",
+    "ecosystem_summary": "Joe Martin (police officer and boxing trainer) provided sustained training from age 12; Golden Gloves pipeline and local gym access — good mentor and amateur system but not elite from the start.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "niki-lauda",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Natural driving talent and intense concentration evident from F2 success, but not prodigy-level from childhood; started relatively late and progressed through self-financed persistence.",
+    "inherited_summary": "Born into wealthy Vienna paper manufacturing family; grandfather Hans Lauda was a prominent industrialist — significant family wealth, but family actively opposed racing and blocked sponsorship, forcing self-financing through bank loans.",
+    "ecosystem_summary": "F1 ecosystem provided elite pipeline; key move to Ferrari in 1974 was the network breakthrough, but his path was self-created through bank loans against family opposition rather than through inherited connections.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jochen-rindt",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Natural driving talent noted by press, but not prodigy-level; started racing at 19 in his grandmother's Simca and progressed through self-financed effort.",
+    "inherited_summary": "Orphaned at 15 months when parents were killed in WWII bombing; raised by grandparents in Graz — upper-middle-class household (grandfather was a lawyer), inherited a spice mill providing modest financial means, but lost both parents.",
+    "ecosystem_summary": "Austrian/Central European racing scene provided proximity to the sport; a local Alfa Romeo dealer provided a car at cost price, but his path was largely self-created with limited institutional support.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "diego-maradona",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Prodigy recognized at age 8 when coaches could not believe a child could play so well; 136-game unbeaten run with Los Cebollitas; debut at 15 as youngest in Argentine league history — rare, trajectory-changing football prodigy.",
+    "inherited_summary": "Born into poverty in Villa Fiorito shantytown with no running water or electricity; father worked in a chemicals factory — active disadvantage with no financial resources or football connections.",
+    "ecosystem_summary": "Argentinos Juniors youth system with dedicated coaching from Francis Cornejo, and the Argentine football development pipeline — strong institutional support that recognized and developed his prodigy talent.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jackie-chan",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Exceptional physical and performance skills developed through a decade of rigorous training from age 6, but these were trained abilities rather than natural prodigy — 'Double Boy' for enduring twice the training.",
+    "inherited_summary": "Parents were political refugees from the Chinese Civil War; father worked as a cook at the French consul's residence, then emigrated to Australia — working-class with no entertainment industry connections, but father enrolled him in opera school.",
+    "ecosystem_summary": "China Drama Academy (Peking Opera School) under Master Yu Jim-yuen provided a decade of rigorous training; Seven Little Fortunes peer network with Sammo Hung and Yuen Biao; Hong Kong kung fu film boom — elite training pipeline and peer network.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "irena-szewińska",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Olympic gold at 18 and world records across three sprint distances (100m, 200m, 400m) — a feat unmatched by any athlete male or female — extraordinary physical prodigy with rare versatility.",
+    "inherited_summary": "Born to Polish-Jewish displaced persons in Leningrad; family moved to Warsaw in 1947; financial background not documented, no athletic family background — modest origins without inherited advantage or active disadvantage.",
+    "ecosystem_summary": "Polish state athletics system provided institutional support; school PE teacher discovered her at 14; coach Janusz Szewiński (whom she married) provided sustained mentorship — functional institutional pipeline but not elite from the start.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "michael-schumacher",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Karting from age 4, club champion at 6, European kart champion at 18 — significant early talent and extreme early specialization with total immersion in the sport from childhood.",
+    "inherited_summary": "Working-class family in Hürth; father a bricklayer who ran the local kart track, mother operated the track canteen — total family immersion in karting environment, but no financial resources (couldn't afford new engines).",
+    "ecosystem_summary": "Kerpen karting track immersion, Mercedes-Benz junior sportscar program, Willi Weber as manager funding his F3 career — strong institutional and mentor support accelerating his progression to F1.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "gerd-müller",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Extraordinary goalscoring instinct — 500+ youth goals, 51 goals in 31 senior appearances at 18 — innate finishing ability and predatory instinct that was exceptional but emerged at 13 rather than early childhood.",
+    "inherited_summary": "Grew up in poor conditions in Nördlingen, Bavaria; no family football background documented; worked as an apprentice weaver then welder — modest origins without inherited advantage.",
+    "ecosystem_summary": "Joined Bayern Munich at 18 alongside Franz Beckenbauer and Sepp Maier — elite club and peer network at a rising institution; German football pipeline provided the structural context for his development.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "arnold-schwarzenegger",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Exceptional physical talent and fanatical dedication — youngest ever Mr. Universe at 20, training 2-3 hours daily from 15 — significant physical endowment, though not childhood prodigy as he started at 15.",
+    "inherited_summary": "Working-class family in Thal, Austria; father was police chief, alcoholic, and physically abusive who disapproved of bodybuilding — active disadvantage with no athletic family tradition or support.",
+    "ecosystem_summary": "Local weightlifters at Thalersee Restaurant, mentorship from Alfred Gerstl (half-Jewish opera singer and fitness enthusiast), and Graz bodybuilding scene — supportive local network but not elite institution.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "michael-douglas",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-described 'late bloomer' who was 'shy, introverted, cautious' and 'didn't have a lot of confidence' — acting talent developed through education and opportunity rather than prodigy-level ability.",
+    "inherited_summary": "Son of Kirk Douglas, one of Hollywood's biggest stars; actress mother Diana Dill; attended elite prep schools (Choate); inherited film industry access and later the rights to 'One Flew Over the Cuckoo's Nest' — extreme inherited industry leverage.",
+    "ecosystem_summary": "Elite prep schools, UCSB drama program, Eugene O'Neill Theater Center, American Place Theatre, and father's Hollywood network — comprehensive industry access and institutional pipeline from birth.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tom-cruise",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Intense drive and distinctive screen presence, but no formal training; entry into acting was through determination rather than demonstrated talent — 'star quality' emerged through opportunity.",
+    "inherited_summary": "Working-class, fractured family; father an electrical engineer who was absent and abusive; mother worked multiple jobs; family lived in near-poverty with frequent moves — no entertainment connections.",
+    "ecosystem_summary": "CAA signing and the 1980s Hollywood blockbuster wave provided structural opportunity, but his path was largely self-created through moving to New York at 18 with no connections — limited institutional support at the start.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "elio-de-angelis",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Genuine racing talent (Italian F3 champion, F1 race winner) and multilingual artistic abilities (classical pianist), but not prodigy-level — talent supplemented by extreme family funding.",
+    "inherited_summary": "Born into extreme wealth in Rome; father Giulio was a real estate developer and world champion powerboat racer who funded Elio's entire racing career including ~$25,000 per race as a pay driver — extreme wealth with direct domain immersion.",
+    "ecosystem_summary": "Father's motorsport passion provided early immersion, all three brothers won national karting titles, Italian motorsport pipeline from karting to F3 to F1 with Shadow and Lotus — fully funded elite pathway.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "zlatan-ibrahimovic",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Exceptional physical attributes (1.95m, athletic, acrobatic) combined with street-football technique giving a distinctive skill set, but not prodigy recognized from early childhood — talent forged through adversity.",
+    "inherited_summary": "Poverty in Rosengård, Malmö; parents divorced, mother arrested for handling stolen goods, sent to live with father at 9; hunger, shoplifting, and immigrant ghetto conditions — active disadvantage.",
+    "ecosystem_summary": "Malmö FF youth academy pipeline, immigrant community football network (FBK Balkan), and Ajax's development ecosystem at 19-20 — strong institutional development within European football pipeline.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "johnny-depp",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Distinctive looks and undefinable 'star quality' recognized by an agent, but no formal training and accidental entry into acting — talent was naturalistic rather than developed or prodigy-level.",
+    "inherited_summary": "Working-class family in Miramar, Florida; father director of public works, mother a waitress; turbulent household with frequent moves, drug use, and petty crime in teens — no entertainment connections.",
+    "ecosystem_summary": "Nicolas Cage (through wife's connection) introduced him to an agent and suggested acting; 1980s teen TV wave provided structural context — chance network break rather than elite institution or mentor pipeline.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "angel-nieto",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Natural riding talent and extraordinary determination — sleeping in a fruit shop for 6 months to be near motorcycles — but not prodigy-level from childhood; talent developed through direct factory immersion.",
+    "inherited_summary": "Grew up in poverty in a shack in Madrid's Vallecas neighborhood; post-war Spain; no running water — active disadvantage with no financial resources or family connections to motorcycle racing.",
+    "ecosystem_summary": "Direct immersion in motorcycle factories (Bultaco, Ducati, Derbi) through handyman work provided access to the sport; Derbi gave him his first GP ride — self-created domain access through factory floor immersion.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "rivaldo",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Skilful player with distinctive left foot, but described as 'too thin and gangly' with a 'feeble shot' from malnutrition; initially discarded by Santa Cruz youth academy — talent emerged through relentless dedication rather than prodigy ability.",
+    "inherited_summary": "Extreme poverty in a Recife favela; bow-legged from vitamin D deficiency, lost teeth from malnutrition; father killed in road accident when Rivaldo was 16 — severe active disadvantage.",
+    "ecosystem_summary": "Brazilian football pipeline from Santa Cruz to Palmeiras to Deportivo to Barcelona, but his path was exceptionally difficult — initially discarded from youth academy and traded as a 'contrapeso' in a player exchange.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "uli-hoeneß",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Good footballer and natural leader — captain of DFB school selection at 15 and 'the best player in the district' — but not prodigy-level; solid youth career built on dedication and daily training.",
+    "inherited_summary": "Son of a master butcher in Ulm; conservative, Catholic, middle-class family with strong work ethic; father was founding member of VfB Ulm — stable middle-class background with football involvement but no professional pedigree.",
+    "ecosystem_summary": "Recruited by Bayern Munich at 18 under Udo Lattek, immediately joining a legendary squad with Beckenbauer, Müller, and Maier — elite institutional environment and exceptional peer network at a historic club.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "mario-j-molina",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Fascinated by chemistry from early childhood, converting a bathroom into a home lab; aunt (a chemist) mentored him with college-level experiments — significant early domain aptitude, though not prodigy-level like a university-at-14 case.",
+    "inherited_summary": "Father was a lawyer and diplomat (ambassador to Ethiopia, Australia, Philippines); wealthy family that sent children abroad for education; aunt Esther Molina was a chemist providing direct domain mentorship — extreme family leverage with domain knowledge.",
+    "ecosystem_summary": "Swiss boarding school at 11, UNAM, University of Freiburg, UC Berkeley PhD — elite international education pipeline with domain mentorship from aunt and access to top institutions across multiple countries.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "chris-amon",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Natural driving talent recognized early, but not prodigy-level; his progression was significantly enabled by access to increasingly serious racing machinery funded by family wealth rather than pure talent alone.",
+    "inherited_summary": "Only child of wealthy sheep-owners with a 1,500-acre estate near Bulls, NZ; father bought him racing cars including an Austin A40, Cooper-Climax, and Maserati 250F — extreme wealth providing rare and expensive equipment access.",
+    "ecosystem_summary": "New Zealand motorsport ecosystem that produced Bruce McLaren and Denny Hulme; Reg Parnell spotted him at 19 and brought him to European F1; Le Mans victory with McLaren and Ferrari factory drive — strong ecosystem with notable mentors.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jacques-villeneuve",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Talent and fierce independence, but not prodigy-level; started racing at 17 and progressed through lower categories — his ability was developed through the family racing network rather than innate genius.",
+    "inherited_summary": "Son of Ferrari F1 driver Gilles Villeneuve; uncle also a racing driver; grew up in F1 paddocks from birth, moved to Monaco at 7 — extreme inherited domain immersion and the Villeneuve name opening doors throughout motorsport.",
+    "ecosystem_summary": "Elite motorsport pipeline through Italian F3, Japanese F3, Toyota Atlantic, CART, and Williams F1; family racing network provided entry points despite father's death when Jacques was 11 — comprehensive elite pathway.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "bobby-fischer",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Rare cognitive prodigy — youngest U.S. chess champion at 14, youngest grandmaster in history at 15, obsessive chess study from age 9 — extraordinary reasoning and domain aptitude recognized as exceptional.",
+    "inherited_summary": "Single mother, modest means, parents divorced when he was 2; no chess background in family; sister gave him a chess set at 6 — no inherited leverage, but mother was supportive of his obsession.",
+    "ecosystem_summary": "NYC chess ecosystem — Manhattan Chess Club (free membership as prodigy), mentors Carmine Nigro and Jack Collins, Hawthorne Chess Club with William Lombardy — elite chess infrastructure and dedicated mentors.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "nick-mason",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Competent drummer but not prodigy-level; himself acknowledged he 'wouldn't be here' without seeing Ginger Baker perform — talent developed through practice and peer collaboration rather than innate genius.",
+    "inherited_summary": "Father was a documentary filmmaker (Shell film unit) with notable civic lineage (great-grandfather was Lord Mayor of Birmingham); brought up in Hampstead, attended private schools (Hall School, Frensham Heights) — middle-class creative background with cultural capital.",
+    "ecosystem_summary": "Regent Street Polytechnic where he met Roger Waters and Richard Wright; 1960s London psychedelic rock scene at the UFO Club; EMI record deal — exceptional peer team and frontier cultural moment in a major music capital.",
+    "scoring_confidence": "High"
+  }
+]

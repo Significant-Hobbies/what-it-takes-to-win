@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "nimansh-jain",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Won 15+ individual awards at inter-school tech competitions and served as VP of school's Tech Syndicate club. Above-average technical ability for age with demonstrated leadership, but no prodigy-level evidence.",
+    "inherited_summary": "No information available on parents' professions or family wealth. Attended Amity International School in Gurgaon, suggesting middle-class background with no significant domain overlap.",
+    "ecosystem_summary": "Active tech club (Tech Syndicate) at school with 500+ participant symposiums and coding summer programs. Some peer network from tech competitions, but no elite institution or notable mentors.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "qaiser-mehdi",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "Self-taught developer building Aiventyx solo at 19. Demonstrated initiative and capability, but no evidence of exceptional early achievement or prodigy-level ability.",
+    "inherited_summary": "No information available on family background or parents' professions. No evidence of significant inherited advantage.",
+    "ecosystem_summary": "Building solo from India with no funding, no team, no elite institution, and no notable mentors. Product Hunt launch and building in public on LinkedIn are the main ecosystem touchpoints.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "bhargav-pesala",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "21-year-old BTech CSE student building Stardormic solo. Above-average initiative for building a real product while in college, but no evidence of exceptional early cognitive ability.",
+    "inherited_summary": "No information available on family background. Attending Parul University (non-elite private university in Vadodara), suggesting modest middle-class background with no domain overlap.",
+    "ecosystem_summary": "Non-elite university with no notable peers, mentors, or incubator support. Building solo with zero funding and no team. Direct domain exposure as a student building for students.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "okechukwu-nwaozor",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": -1,
+    "endowment_summary": "Self-taught developer who started building AI at 14 in Nigeria, created OkeyAI (homegrown ChatGPT rival) by 17. Fine-tuned open-source models, built knowledge distillation pipelines and custom reasoning layers. Exceptional achievement for age and context, though not traditional prodigy path.",
+    "inherited_summary": "No information on family wealth or professions. Based in Osogbo, Nigeria with extremely limited resources (~$2K total funding). Significant financial and infrastructure adversity.",
+    "ecosystem_summary": "Building from Osogbo, Nigeria with no elite institutions, no mentors, limited internet access, and virtually no startup ecosystem. Assembled a small team of undergraduates but lacked access to frontier tools and infrastructure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "david-makuku-nandwa",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-taught coder from age 9, fluent in Ruby, C, Python, and JavaScript by teens. Built and exited two startups before Honeycoin (one reached ~$1M revenue) as a teenager. Significant early achievement in coding and entrepreneurship.",
+    "inherited_summary": "Father was an engineer who guided early coding, telling him 'if you learn to code, you can build your own games.' Modest family advantage through father's technical background and mentorship.",
+    "ecosystem_summary": "Two years at Flutterwave (African fintech unicorn) provided deep payment infrastructure experience and domain exposure. Nairobi tech ecosystem provided some startup community, but no elite institution or notable mentors.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "frederick-abila",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": -1,
+    "endowment_summary": "Self-taught developer who started coding at ~14 during COVID lockdown, built BuzzChat reaching 13,000+ users and half a dozen AI platforms by age 21. Significant output for age and context, with 69 public GitHub repos.",
+    "inherited_summary": "Parents initially paid for website hosting but stopped when costs grew, forcing self-reliance. No domain overlap or significant professional connections from family.",
+    "ecosystem_summary": "Building from a dorm room at University of Mines and Technology (UMaT) in Tarkwa, Ghana. PayPal inaccessibility, limited startup ecosystem, and lack of institutional support represent active disadvantages. TEDxUMaT organizing shows some community building.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "charis-george",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "17-year-old Nigerian secondary school student who co-founded iCOVE reaching 15,000+ young Africans. Demonstrates above-average leadership and community building for age, but no evidence of exceptional cognitive or technical ability.",
+    "inherited_summary": "No information available on family background or parents' professions. No evidence of significant inherited advantage.",
+    "ecosystem_summary": "Building an innovation ecosystem for African teenagers where institutional infrastructure doesn't exist. Co-founder dynamic with Kome Omugbe provides peer support, but no elite institutions, mentors, or tools.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "renzo-costanzo",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started combining programming with entrepreneurship by age 11. Moved from Salto to Montevideo for university. Co-founded Viatik at 19, growing to 185,000+ users. Significant early start in coding and business.",
+    "inherited_summary": "Uncle (Germán Mazzarino) is a co-founder and ORT graduate, providing family domain exposure and a trusted business partner. Middle-class Uruguayan family with supportive connections.",
+    "ecosystem_summary": "Universidad ORT's Center for Innovation and Entrepreneurship incubated Viatik. Won US Embassy scholarship to study entrepreneurial culture. Co-founder team of three. Plug and Play investment. Good university incubator ecosystem in Montevideo.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sebastin-la-cava",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "17-year-old self-taught developer in Uruguay. Started coding to buy camera gear for wildlife photography, then built Lytics AI (data analysis platform) and Kynvo (intent-detection engine). Above-average initiative but no prodigy-level evidence.",
+    "inherited_summary": "No information on family background. Constraint of expensive camera gear in Uruguay suggests modest means. No evidence of significant inherited advantage.",
+    "ecosystem_summary": "Solo founder building in public on Peerlist and Launchpad. No elite institution, no mentors, no co-founders. Uruguay's small tech ecosystem provides limited peer environment.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "lucas-dias",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "19-year-old Software Engineering student at PUC Minas with 3+ years of practical experience building automations and production SaaS. Above-average early work experience but no prodigy-level evidence.",
+    "inherited_summary": "Attending PUC Minas, a selective private university in Belo Horizonte, suggesting middle-class family background. Previously worked at family transport company (Transportes Expresso Dias).",
+    "ecosystem_summary": "PUC Minas provides a good educational foundation. Early work experience at family transport company and building production SaaS solo provided practical reps. No notable peers or mentors.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "millena-xavier",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won 38 awards in science olympiads including 6 gold medals (technology, informatics, AI, science). Represented Brazil at International AI Olympiad in Bulgaria and ICYS. Developed Autinosis, an AI-powered autism diagnostic tool, as a teenager. Youngest Brazilian Forbes Under 30. Prodigy-level achievement.",
+    "inherited_summary": "Moved alone at 15 to attend Coluni, suggesting modest family background with supportive but not wealthy parents. No evidence of family domain overlap or significant professional connections.",
+    "ecosystem_summary": "Attended Coluni (#1 Federal National School in Brazil), providing an elite academic environment. RISE and Prudential Emerging Visionaries recognition. International olympiad exposure. Founded PrepOlimpiadas with 300+ volunteers, building her own ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "lautaro-pereyra",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "21-year-old self-taught fullstack developer with 100 public GitHub repos since 2019. Worked at multiple startups including VocalGYM, Choosy Chat, and Infinity AI (YC W24). Significant early output and professional experience for age.",
+    "inherited_summary": "No information available on family background or parents' professions. Self-taught developer from Buenos Aires with no evidence of significant inherited advantage.",
+    "ecosystem_summary": "Worked at Infinity AI (YC W24) providing exposure to YC ecosystem and strong professional peer network. Buenos Aires tech scene and multiple startup roles provided practical experience. Founded Duvanz (e-learning).",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "felipe-tiozo",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Programming since age 10, robotics competitor since childhood. World robotics champion representing Brazil. Selected from 16,000 candidates for University of Bradford internship. CS degree at Universidade Federal do ABC. Significant early technical achievement.",
+    "inherited_summary": "From outskirts of São Paulo with limited resources. Working-class background with no family domain overlap or professional connections. Adversity in upbringing.",
+    "ecosystem_summary": "Met all three BeConfident co-founders at robotics competitions since age 10, forming an exceptional peer team. Won HackBrazil at Harvard/MIT. Latitud Fellow (LF11). Universidade Federal do ABC provided good technical education. Co-founder team is the key ecosystem advantage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "robson-amorim",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught programmer from age 10. Robotics world champion in 2015 (South Africa) representing Brazil. Sold 8,000+ chocolate truffles via Food Bike to fund robotics and university applications. Minerva University (CS and Neuroscience). Exceptional drive and technical ability despite adversity.",
+    "inherited_summary": "Born in Suzano, outskirts of São Paulo. Had to sell food to fund robotics parts and university applications. Significant financial adversity with no family domain connections.",
+    "ecosystem_summary": "Met all three BeConfident co-founders at robotics competitions since age 10. Robotics world champion team. Minerva University in San Francisco. MIT entrepreneurship course. Latitud mentor (Gina Gotthilf). Brazil at Silicon Valley program. Strong co-founder dynamic is the key advantage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "luan-cavallaro",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught programmer from age 10. World robotics champion in 2015 representing Brazil. FIRST International Championship 1st place. Managed $200K+ in paid traffic campaigns. Significant early technical and marketing achievement.",
+    "inherited_summary": "From outskirts of São Paulo with limited resources. Working-class background with no family domain overlap or professional connections. Adversity in upbringing.",
+    "ecosystem_summary": "Met all three BeConfident co-founders at robotics competitions since age 10. Robotics world champion team. FIRST International Championship. Strong co-founder dynamic is the key ecosystem advantage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "felipe-oliveira-silva",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught programmer from age 10. World robotics champion in 2015. Founding engineer at Layers Education (edtech with 600+ schools, 300K users). Significant early technical achievement and professional experience.",
+    "inherited_summary": "From outskirts of São Paulo with limited resources. Working-class background with no family domain overlap or professional connections. Adversity in upbringing.",
+    "ecosystem_summary": "Met all three BeConfident co-founders at robotics competitions since age 10. Robotics world champion team. Early edtech experience at Layers Education as founding engineer. Strong co-founder dynamic and domain exposure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "mati-staniszewski",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Attended Copernicus Bilingual High School in Warsaw (selective) and Imperial College London for mathematics (elite). Worked at Palantir as deployment strategist. Strong academic and professional pipeline, though not a traditional prodigy.",
+    "inherited_summary": "Born in a town outside Warsaw, moved to the city for high school. Supportive family enabling the move to Warsaw and then London. Middle-class Polish family with no significant domain overlap.",
+    "ecosystem_summary": "Met co-founder Piotr Dąbkowski at Copernicus High School, forming a 15-year partnership. Imperial College London provided elite education. Palantir provided frontier tech deployment experience. Shared love of cinema drove their AI voice company thesis.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "piotr-dbkowski",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "BSc Engineering from University of Oxford and MPhil Advanced Computer Science from University of Cambridge. Published AI research at NeurIPS during MPhil, well before AI was mainstream. ML engineer at Google. Prodigy-level academic and research trajectory.",
+    "inherited_summary": "Attended Mikołaj Kopernik High School in Warsaw. Supportive family enabling education at Oxford and Cambridge. Middle-class Polish family with no significant domain overlap, but strong educational investment.",
+    "ecosystem_summary": "Oxford and Cambridge (both elite). NeurIPS publication during MPhil. Google ML engineer role. Met co-founder Mati in high school, forming a lifelong partnership. Access to frontier AI research well before it was mainstream. Once-in-a-generation peer and institutional environment.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "victor-riparbelli",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "BSc Computer Science from IT University of Copenhagen with transformative semester at Stanford. Grew up making electronic music on laptop and uploading to SoundCloud. Good technical ability but not prodigy-level; Stanford exposure was the key catalyst.",
+    "inherited_summary": "Grew up in Copenhagen, Denmark with family vacation home on a Danish island. Stable, middle-class Danish upbringing with access to technology and music production tools.",
+    "ecosystem_summary": "Semester at Stanford was transformative, exposing him to Silicon Valley ambition. Moved to London's tech ecosystem where he met co-founder Matthias Niessner, a pioneering AI video researcher. Right place (London), right time (2017, dawn of AI video). Founders startup studio in Nordic countries provided early experience.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "fabian-hedin",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started coding at age 10-11 by managing a global Minecraft server. Founded and sold a proptech startup (TenFast) during high school. Contributed to Stephen Hawking's personal computer. Studied Industrial Economics at KTH. Earned thousands of dollars from Minecraft at 11. Prodigy-level early achievement.",
+    "inherited_summary": "Swedish middle-class family with stable upbringing. Access to KTH Royal Institute of Technology education. No significant family domain overlap, but supportive environment for early technology exploration.",
+    "ecosystem_summary": "KTH Innovation Launch Batch 11 incubator. Worked with ex-SpaceX engineers on smart pillows. Met co-founder Anton Osika at Depict.ai. KTH Innovation ecosystem and Stockholm tech scene provided strong peer environment. Contributed to Stephen Hawking's computer through ABB Robotics internship.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "anton-osika",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "BSc Physics from HKUST and MSc Engineering Physics from KTH (top of class, 4.9/5.0 GPA). Programming since age 12. Worked at CERN on ATLAS experiment. First employee at Sana Labs. Created GPT Engineer (50k+ GitHub stars overnight). Completed studies at double speed. Prodigy-level ability.",
+    "inherited_summary": "Swedish middle-class family with stable upbringing. Access to elite education at KTH and HKUST. No significant family domain overlap, but supportive environment for academic excellence.",
+    "ecosystem_summary": "KTH Royal Institute of Technology (elite). CERN particle physics research. First employee at Sana Labs (AI education). Co-founded Depict.ai. KTH Innovation ecosystem. KTH alumni who shared entrepreneurial journeys inspired him. GPT Engineer going viral catalyzed Lovable's founding.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "alex-kendall",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Skipped first year of mechatronics engineering at University of Auckland, graduated first in class. Won Woolf Fisher Scholarship to Cambridge for PhD. Elected Fellow of Trinity College. Built technology on family farm as a kid. Significant early ability and drive.",
+    "inherited_summary": "Engineer dad who guided early building projects (solar heating roof, tree huts). Small business-owning mum. Family described as 'one to chase excellence.' Middle-class New Zealand family with strong supportive environment and domain exposure through father.",
+    "ecosystem_summary": "University of Auckland (good institution, graduated first in class). Cambridge/Trinity College (elite). Woolf Fisher Scholarship. Worked with Skydio and Scape startups in California. Cambridge PhD in computer vision and robotics provided frontier research access. New Zealand culture of innovation.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "valentina-agudelo",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "BBA from CESA and MBA from INSEAD (elite). Founded Salva Health at 21 after identifying breast cancer detection gaps. Good academic and professional trajectory, but no prodigy-level early evidence.",
+    "inherited_summary": "CESA is an elite private business school in Colombia. INSEAD MBA is one of the world's most prestigious programs. Professional magician, rock climber, and horse show jumper, suggesting upper-middle-class background with diverse opportunities. Colombian, American, Spanish citizenships.",
+    "ecosystem_summary": "INSEAD MBA (elite globally). TechCrunch Disrupt 2024 Startup Battlefield winner ($100K). Princesa de Girona award. Partnership with Grupo Sura (major Colombian insurance company). Co-founded with two best friends. INSEAD network and recognition provided significant ecosystem access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "gilberto-loureiro",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "First person in family to attend college. MSc Physics Engineering and MSc Finance from University of Porto. Grew up working in textile factories inspecting fabric. Good academic achievement despite adversity, but no prodigy evidence.",
+    "inherited_summary": "Son of textile factory workers in Barcelos, Portugal. Worked in factories as teenager for extra money. First in family to attend college. Significant financial and social adversity.",
+    "ecosystem_summary": "University of Porto (FCUP) provided good education and met co-founders there. HAX (SOSV) hardware accelerator accepted them. Moved to Shenzhen for hardware development. Co-founder team of three. Direct domain exposure from textile factory work inspired Smartex.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "antnio-rocha",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "MSc Engineering Physics from University of Porto (FCUP) and studied at Ghent University. Good technical education, but no prodigy-level early evidence. Specialized in physics of electronics.",
+    "inherited_summary": "Portuguese and Congolese background. Working-class family: mother born in DRC owned hairdressing business, father worked for government. Growing up with two different cultural backgrounds provided perspective but limited resources.",
+    "ecosystem_summary": "University of Porto (FCUP) met co-founders. HAX (SOSV) hardware accelerator. Moved to Shenzhen for hardware development. Co-founder team of three. Lived in Portugal, Belgium, and China, providing international exposure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "paulo-ribeiro",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "BSc Computer Science and MSc Network and Systems Engineering from University of Porto (FCUP). Researcher at Instituto de Telecomunicações. Good technical education, but no prodigy-level early evidence.",
+    "inherited_summary": "No information available on family background or parents' professions. No evidence of significant inherited advantage or disadvantage.",
+    "ecosystem_summary": "University of Porto (FCUP) met co-founders Gilberto and António. Researcher at Instituto de Telecomunicações. HAX accelerator. Moved to Shenzhen for hardware development. Co-founder team is the main ecosystem advantage.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "ana-robakidze",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started coding at 13 and built a popular movie/TV streaming website. Graduated valedictorian from NYIT in Computer Science. Google internship. Forbes 30 Under 30. Medal of Honor from President of Georgia. Significant achievement overcoming gender discrimination.",
+    "inherited_summary": "Discouraged at school in Georgia (told no women in tech, had a 'man's brain'). Moved alone to New York to study. Significant gender discrimination and financial/social adversity in home country.",
+    "ecosystem_summary": "Moved to New York alone for NYIT (not elite but provided CS education). Google internship. Stanford GSB executive education. YC W22 with Theneo. Web Summit PITCH champion. Had to overcome significant barriers to access these opportunities.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "henrique-prado-ferreira",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Law degree from PUC-SP (private university). The Lisbon MBA (Católica|Nova) with MIT Immersion program. 10 years of law practice experience. Good professional trajectory, but no prodigy-level early evidence.",
+    "inherited_summary": "PUC-SP is a private university in São Paulo, suggesting middle-class professional family. Lisbon MBA is selective and expensive, indicating some financial means or access to financing.",
+    "ecosystem_summary": "The Lisbon MBA with MIT Immersion was instrumental in validating Inspira. Met co-founders at law firm in São Paulo. Won Lisbon MBA Startup Contest 2023 and Web Summit PITCH 2023. Deep domain exposure from 10 years of legal practice.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "cau-rodrigues-amaral",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Law degree and accounting degree from Mackenzie (private), plus post-graduate specializations in tax law (IBDT) and finance (Insper). Deep dual domain expertise in law and accounting. Good professional trajectory, but no prodigy evidence.",
+    "inherited_summary": "Mackenzie is a private university in São Paulo and Insper is elite, suggesting middle-class professional background with access to quality education.",
+    "ecosystem_summary": "Met co-founders at Junqueira Ie Advogados law firm in São Paulo. Deep domain expertise from years of legal and accounting practice. Web Summit PITCH 2023 winner. Co-founder team from same law firm.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "rafael-grimaldi",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Law degree from USP (Brazil's most elite university). 5+ years at top São Paulo law firm (Mattos Filho). Endeavor provided business mentorship. Le Wagon gave coding skills. Strong professional trajectory, but no prodigy-level early evidence.",
+    "inherited_summary": "USP is Brazil's most elite public university (admission by competitive exam). Professional legal career path suggests educated middle-class family background.",
+    "ecosystem_summary": "USP (Brazil's most elite university). Endeavor provided business mentorship and networking with B2B software companies. Le Wagon coding bootcamp. Top law firm (Mattos Filho) where he met co-founders. Web Summit PITCH 2023 winner. Strong mentorship and professional network.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "evolna-de-wilde-destmael",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Master's degrees from UCLouvain and University of Groningen, plus MIT sustainability course. Started first company at 18. Worked at AirHelp and HelloBody for 5 years. Good academic and professional trajectory, but no prodigy evidence.",
+    "inherited_summary": "Parents were socially active and politically engaged, encouraging her to stand for her beliefs. Showed her 'An Inconvenient Truth' at age 12. Middle-class European family with strong values and civic engagement.",
+    "ecosystem_summary": "Berlin's startup ecosystem provided access. 5 years at AirHelp and HelloBody provided startup experience. Slush 100 2023 winner (€1M from Accel). Co-founder Ali Nezamolmaleki provided technical complement. EU Climate Pact Ambassador. World Fund backing.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "ali-nezamolmaleki",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Computer software engineering degree from Islamic Azad University (not elite). 14+ years of technical SEO and organic growth experience. Built ViralDeck SaaS. Good practical skills, but from non-elite institution with no prodigy evidence.",
+    "inherited_summary": "No information available on family background. Islamic Azad University is not elite, suggesting modest background. No evidence of significant inherited advantage.",
+    "ecosystem_summary": "Berlin's startup ecosystem provided access. Met co-founder Evoléna at AirHelp. Head of Global Search at AirHelp (24 markets). Faircado raised €3M from World Fund. Berlin tech community and 2Hearts network.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "anastasia-mirolyubova",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Philosophy degree from Moscow State University (elite in Russia). LLB from BPP Law School. MS in Entrepreneurship from UCL (elite globally). Worked at The World Bank and Simmons & Simmons. Good academic and professional trajectory, but no prodigy evidence.",
+    "inherited_summary": "MSU education suggests educated family background in Russia. Access to UK postgraduate education indicates some financial means. Professional network from World Bank and law firms.",
+    "ecosystem_summary": "Moscow State University (elite in Russia). UCL (elite globally) for MS in Entrepreneurship. The World Bank and Simmons & Simmons provided professional network. UCL Hatchery incubator. Met co-founder Mikhail at UCL. Slush 100 2022 winner. Personally experienced immigration providing direct domain exposure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "mikhail-sharonov",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Law degree from Saint Petersburg State University of Architecture and Civil Engineering. LLM from UCL (elite). Worked at Sterling Law in London advising on immigration. Good professional trajectory, but no prodigy evidence.",
+    "inherited_summary": "Family from Odessa, Ukraine. Immigrated to London in 2016 from St. Petersburg. Started as unpaid intern at law firm. No evidence of significant family wealth or domain connections.",
+    "ecosystem_summary": "UCL LLM (elite). Sterling Law in London provided immigration law experience. Met co-founder Anastasia at UCL. Forbes 30 Under 30 Russia. Personally experienced immigration providing direct domain exposure. London tech ecosystem and Russian-speaking entrepreneur community (DobryDom profile).",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "daniel-rogoz",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Bachelor of Engineering from University POLITEHNICA of Bucharest (selective in Romania). Built web development business for 13+ years before Kinderpedia. Tech-savvy entrepreneur with strong practical experience, but no prodigy evidence.",
+    "inherited_summary": "No information available on family background or parents' professions. No evidence of significant inherited advantage or disadvantage.",
+    "ecosystem_summary": "POLITEHNICA Bucharest (selective in Romania). Co-founded Kinderpedia with Evelina Necula and Valentin Ilea. Web Summit PITCH 2023 runner-up. 13+ years of prior business experience provided practical foundation. Romanian tech ecosystem.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "evelina-necula",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "12+ years in marketing and communication across education, corporate, and retail sectors. Open University Business School diploma (not selective). Standard career path with no evidence of exceptional early ability.",
+    "inherited_summary": "No information available on family background. Open University Business School is not selective, suggesting no significant educational or family advantage.",
+    "ecosystem_summary": "Deep domain exposure in education marketing directly informed Kinderpedia's go-to-market. Co-founded with Daniel Rogoz and Valentin Ilea. Web Summit PITCH 2023 runner-up. Romanian tech ecosystem.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "jaime-jorge",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "MSc and BSc in Computer Science and Engineering from Instituto Superior Técnico (top engineering school in Portugal). Thesis on static code analysis directly relevant to Codacy. Researcher at INESC-ID. Turned down Google job. Strong technical ability with direct domain application.",
+    "inherited_summary": "No information available on family background or parents' professions. No evidence of significant inherited advantage.",
+    "ecosystem_summary": "Instituto Superior Técnico (top engineering school in Portugal). INESC-ID research institute. Thesis on clone detection and bug tracking directly inspired Codacy. Turned down Google job in London. Seedcamp accelerator in London. Strong technical ecosystem and direct domain exposure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "joo-guimares",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Bachelor's from Católica do Porto and Master's from Nova SBE (selective business schools in Portugal). Co-founded Intuitivo with two engineering students. Good academic trajectory, but no prodigy evidence.",
+    "inherited_summary": "Católica do Porto and Nova SBE are selective private business schools in Portugal, suggesting middle-class background with access to quality education.",
+    "ecosystem_summary": "UPTEC incubated, U.Porto spin-off. Co-founded with two engineering students (Duarte and Diogo) who built the technical platform. Erasmus in Slovenia. Won Web Summit PITCH 2024. Good incubator and co-founder ecosystem.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "bernardo-seixas",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Studied International Management at Católica Lisbon (top business school in Portugal). Self-described as 'not a brilliant student' but valued relationships. Worked at Magnar and UberEats. Good professional trajectory, but no exceptional early ability.",
+    "inherited_summary": "Católica Lisbon is a top business school in Portugal, suggesting middle-class background. Erasmus in Japan and backpacking trips indicate some financial means and global outlook.",
+    "ecosystem_summary": "Demium incubator provided mentorship and matched him with co-founder Bernardo Tavares. UberEats first sales team experience. Techstars '25. Web Summit PITCH 2025 winner. Good incubator and accelerator access.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "bernardo-tavares",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Master's in Energy and Environmental Engineering from Universidade de Lisboa (good but not elite). 12+ years as full stack developer. Founded hackerspace 'Oficina das Energias.' Broad technical and startup ecosystem experience, but no prodigy evidence.",
+    "inherited_summary": "No information available on family background or parents' professions. No evidence of significant inherited advantage.",
+    "ecosystem_summary": "Coding instructor at SmartNinja. Head of Incubation at Demium (matched him with co-founder). CTO at GoParity. Founded hackerspace 'Oficina das Energias.' Techstars '25. Broad startup ecosystem experience through Demium network.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "karolina-lfqvist",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started first company at 18. Bachelor's in International Business Finance from Grenoble Ecole de Management. Worked as investment manager and management consultant. Good entrepreneurial trajectory, but no prodigy evidence.",
+    "inherited_summary": "Grew up in an entrepreneurial family that was 'very supportive of my various projects and businesses.' Family served as sounding board and encouraged entrepreneurship. Significant family domain exposure and mentorship in business.",
+    "ecosystem_summary": "Grenoble Ecole de Management education. London startup ecosystem for 10+ years. Techstars LA 2022 cohort. Slush 100 2021 winner. Best friends with co-founder Jasmine since age 5, creating a critical co-founder dynamic. Personal health journey provided direct domain exposure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jasmine-tagesson",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Bachelor's in International Business from Grenoble Ecole de Management. Creative Director at MADSON BLACK. Founded an e-commerce company. Good professional trajectory, but no prodigy evidence.",
+    "inherited_summary": "No information available on family background or parents' professions. No evidence of significant inherited advantage.",
+    "ecosystem_summary": "Grenoble Ecole de Management education. London startup ecosystem. Techstars LA 2022 cohort. Best friends with co-founder Karolina since age 5, creating a critical co-founder dynamic. Moved to UK together with Karolina.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "frederic-boesel",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Studied mathematics at University of Freiburg then data science at ETH Zurich (elite). Teaching Assistant at ETH. Junior Research Scientist at Stability AI. Strong academic and research trajectory, though no traditional prodigy evidence like olympiad medals.",
+    "inherited_summary": "German education system with access to elite universities (ETH Zurich). Middle-class background with stable educational pathway. No significant family domain overlap.",
+    "ecosystem_summary": "ETH Zurich (elite institution). Joined CompVis group and Stability AI team. Co-founded Black Forest Labs with the exceptional Stable Diffusion research team — pioneers of Latent Diffusion and Stable Diffusion. Once-in-a-generation peer environment at the frontier of generative image AI.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jonas-mller",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "BSc Mathematics and MSc Scientific Computing at Heidelberg University, both with perfect grades (1.0). Research at LMU Munich and Stability AI. Exceptional academic performance, though no traditional prodigy evidence like olympiad medals.",
+    "inherited_summary": "German education system with access to Heidelberg University (one of Europe's oldest and most prestigious). Middle-class background with stable educational pathway.",
+    "ecosystem_summary": "Heidelberg University and LMU Munich research group (Prof. Björn Ommer's computer vision group). Stability AI. Co-founded Black Forest Labs with the Stable Diffusion research team. Once-in-a-generation peer environment at the frontier of generative image AI. Five of ten co-founders came directly from Stability AI team.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "dominik-mate-kovacs",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "BSc General Engineering (Cyber Systems) at DTU (selective). Exchange at University of Hong Kong focusing on AI and computer vision. Won DTU Student Startup of the Year. Good academic trajectory, but no prodigy evidence.",
+    "inherited_summary": "Moved from Hungary to Denmark for education. No information on family background. No evidence of significant inherited advantage; moving countries for education suggests some adversity as a catalyst.",
+    "ecosystem_summary": "DTU (selective engineering university). Exchange at University of Hong Kong (AI and computer vision). DTU Student Startup of the Year award. London tech ecosystem for Colossyan. Forbes 30 Under 30 Europe. Good institutional access and recognition.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "soumyadeep-mukherjee",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Dual Degree (BTech + MTech) Chemical Engineering from IIT Kharagpur (elite). Led Aerial Robotics Kharagpur, won international competitions, secured significant research grants. Early access to robotics hardware and 3D printers. Strong technical and leadership ability.",
+    "inherited_summary": "Cambridge School Noida suggests middle-class professional family. IIT Kharagpur admission requires exceptional performance on competitive exams, indicating strong educational foundation.",
+    "ecosystem_summary": "IIT Kharagpur (elite institution). Led Aerial Robotics Kharagpur with 15L INR grant. Research proposal accepted by Imprint India 2016 (~$225K funding). Early access to robotics hardware, 3D printers, and advanced engineering tools. Morphle Labs (founding engineer) and Udaan.com (Associate Director) provided deep tech and scale experience.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sanidhya-narain",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "BTech Chemical Engineering from RGIPT (not elite). MBA from FMS Delhi (selective). President of MarkSoc. Good academic trajectory with MBA, but no prodigy evidence. Key advantage was deep domain exposure from Pocket FM.",
+    "inherited_summary": "Born in Jhansi, Uttar Pradesh (small-town origins). No evidence of significant family wealth or domain connections. Corporate career path before entrepreneurship.",
+    "ecosystem_summary": "FMS Delhi (selective MBA program). Founding member of Pocket FM, scaling content operations to $120M revenue. Head of Content and Operations role provided deep domain exposure. Worked at ITC, Shell, Indian Oil. Bengaluru tech ecosystem. Co-founders from Pocket FM (Lalith and Soumyadeep).",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "lalith-gudipati",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "BE Chemical Engineering from BITS Pilani (selective). President of Association of Chemical Engineers. Head of Growth at Pocket FM. Worked at Flipkart analytics. Good academic and professional trajectory, but no prodigy evidence.",
+    "inherited_summary": "BITS Pilani is a selective institution, suggesting middle-class background with strong educational foundation. No significant family domain overlap.",
+    "ecosystem_summary": "BITS Pilani (selective). Flipkart analytics team (India's leading e-commerce). Head of Growth at Pocket FM scaling to US market. Bengaluru tech hub. Co-founders from Pocket FM (Sanidhya and Soumyadeep). Strong professional network in Indian tech.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ankit-jaipuria",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "BTech Mechanical Engineering from IIT Delhi (elite), GPA 8.54. Exchange at INSA Lyon. Worked at Strategy& (Booz) and Fashinza. Strong academic and consulting pedigree with direct domain application.",
+    "inherited_summary": "Born into a textile family in Jaipur with two generations in the fashion and apparel industry. Inherited deep domain knowledge and business networks in the fashion supply chain. Family business provided direct exposure to textile trade from childhood.",
+    "ecosystem_summary": "IIT Delhi (elite institution). Exchange at INSA Lyon. Strategy& (Booz) consulting provided supply chain and operations expertise. Fashinza experience provided direct fashion tech exposure. Co-founded ZYOD leveraging family textile networks and IIT credentials.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "akash-agarwal",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "BTech Metallurgical and Materials Engineering from IIT Roorkee (elite). Worked at Playment (YC W17) on complex data projects. Y Combinator W21. Forbes 30 Under 30 Asia. Strong technical ability with direct domain application.",
+    "inherited_summary": "Father's background in the insurance industry directly inspired Pibit AI's mission to automate insurance underwriting. Father's domain experience provided deep industry knowledge and connections. Significant family domain inheritance.",
+    "ecosystem_summary": "IIT Roorkee (elite institution). Playment (YC W17) provided hands-on data automation experience. Y Combinator W21 provided strong peer network and mentorship. SaaSBoomi and SGx Wingmate networks. Bengaluru and San Francisco tech ecosystems. Father's insurance connections provided direct domain access.",
+    "scoring_confidence": "Medium"
+  }
+]

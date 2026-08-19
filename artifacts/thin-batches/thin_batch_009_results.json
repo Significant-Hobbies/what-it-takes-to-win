@@ -1,0 +1,282 @@
+[
+  {
+    "person_id": "colin-lu",
+    "name": "Colin Lu",
+    "verdict": "KEEP",
+    "reason": "IChO 2010 gold medalist (rank 21 globally), verified on official IChO results and ACS press coverage.",
+    "category_fix": "Academic competitor",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "International Chemistry Olympiad gold medalist representing the USA, indicating exceptional cognitive ability in chemistry at the world level.",
+    "inherited_summary": "From Vestal, NY, an ordinary small-town background with no evidence of family wealth or domain-specific connections.",
+    "ecosystem_summary": "Benefited from the US National Chemistry Olympiad program organized by ACS, including a two-week study camp at the US Air Force Academy.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "christopher-hillenbrand",
+    "name": "Christopher Hillenbrand",
+    "verdict": "KEEP",
+    "reason": "IChO 2012 gold medalist (rank 16), youngest US gold medalist at age 15; verified on official IChO results and Regis High School press.",
+    "category_fix": "Academic competitor",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Youngest US IChO gold medalist at age 15, demonstrating extraordinary precocity in chemistry against 283 students from 73 nations.",
+    "inherited_summary": "Attended Regis High School, a prestigious NYC private school; participated in Columbia Science Honors Program and NYU research, suggesting academic-family ecosystem access.",
+    "ecosystem_summary": "Leveraged Regis High School's science resources, Columbia University's Science Honors Program, NYU research opportunities, and the ACS chemistry olympiad pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "konstantin-borisov",
+    "name": "Konstantin Borisov",
+    "verdict": "KEEP",
+    "reason": "IChO 2011 gold medalist (rank 9 globally), verified on official IChO results and ACS press coverage.",
+    "category_fix": "Academic competitor",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "IChO gold medalist ranked 9th globally out of 273 students from 70+ countries, indicating exceptional chemistry aptitude.",
+    "inherited_summary": "Born in Russia, raised in the UK, moved to the US in 2009; attended North Allegheny High School in Wexford, PA, with no evidence of family wealth or connections.",
+    "ecosystem_summary": "Benefited from the US National Chemistry Olympiad program, ACS study camp, and North Allegheny High School's academic resources.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "dong-ryul-kim",
+    "name": "Dong Ryul Kim",
+    "verdict": "KEEP",
+    "reason": "IMO 2012 2nd place globally (40/42), 3 consecutive IMO gold medals (2012-2014), Putnam Fellow; verified on IMO official results.",
+    "category_fix": "Academic competitor",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "One of the most decorated IMO participants ever with 3 consecutive gold medals and 2nd place globally in 2012, plus Putnam Fellow status, indicating extraordinary mathematical talent.",
+    "inherited_summary": "From South Korea, attended Seoul Science High School; no evidence of family wealth or domain-specific connections.",
+    "ecosystem_summary": "Benefited from South Korea's intensive math olympiad training system and Seoul Science High School's specialized curriculum.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "nipun-pitimanaaree",
+    "name": "Nipun Pitimanaaree",
+    "verdict": "KEEP",
+    "reason": "4 consecutive IMO gold medals (2010-2013) plus silver in 2009, one of the most decorated IMO participants ever; verified on IMO official results.",
+    "category_fix": "Academic competitor",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Four consecutive IMO gold medals over five years of competition is an extremely rare feat, demonstrating sustained world-class mathematical ability.",
+    "inherited_summary": "From Thailand; no evidence of family wealth or domain-specific connections.",
+    "ecosystem_summary": "Benefited from Thailand's math olympiad training program and infrastructure for identifying and developing mathematical talent.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "samuel-zbarsky",
+    "name": "Samuel Zbarsky",
+    "verdict": "REMOVE",
+    "reason": "Intel STS 2013 7th place is a strong high school achievement, but no adult achievements (Wikipedia, Forbes, major funding, top-tier publications) were found.",
+    "category_fix": "Academic competitor"
+  },
+  {
+    "person_id": "hannah-larson",
+    "name": "Hannah Larson",
+    "verdict": "KEEP",
+    "reason": "Assistant Professor of Mathematics at UC Berkeley, Clay Research Fellow, Hertz Fellow, Maryam Mirzakhani New Frontiers Prize winner; far beyond high school achievements.",
+    "category_fix": "Academic researcher",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Exceptional mathematician who became a UC Berkeley professor and Clay Research Fellow, with awards including Hertz Fellowship and Mirzakhani Prize, demonstrating world-class research ability.",
+    "inherited_summary": "From Eugene, Oregon, an ordinary college town; no evidence of family wealth or academic-family connections.",
+    "ecosystem_summary": "Took math classes at University of Oregon while in high school, attended Harvard for undergrad, Stanford for PhD under Ravi Vakil, and held Harvard Society of Fellows junior fellowship.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sahana-vasudevan",
+    "name": "Sahana Vasudevan",
+    "verdict": "REMOVE",
+    "reason": "Intel STS 2013 10th place is a solid high school achievement, but no adult achievements meeting notability criteria were found.",
+    "category_fix": "Academic competitor"
+  },
+  {
+    "person_id": "jonah-kallenbach",
+    "name": "Jonah Kallenbach",
+    "verdict": "KEEP",
+    "reason": "Co-founder and CEO of Reverie Labs, raised $25M Series A ($32M+ total), partnered with Roche/Genentech, acquired by Ginkgo Bioworks in 2024.",
+    "category_fix": null,
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Intel STS 2nd place winner who built a successful biotech company, demonstrating strong intellectual and entrepreneurial ability though not at the prodigy level of Olympiad gold medalists.",
+    "inherited_summary": "Attended Germantown Academy, a private school in the Philadelphia area; gained access to Harvard biomedical research labs in high school, suggesting academic-family connections.",
+    "ecosystem_summary": "Harvard undergrad and master's, Y Combinator alum, D.E. Shaw Research experience, Roche/Genentech partnership, and access to top-tier VC funding networks.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kensen-shi",
+    "name": "Kensen Shi",
+    "verdict": "REMOVE",
+    "reason": "Intel STS 2013 6th place is a good high school achievement, but no adult achievements meeting notability criteria were found.",
+    "category_fix": "Academic competitor"
+  },
+  {
+    "person_id": "akhil-mathew",
+    "name": "Akhil Mathew",
+    "verdict": "KEEP",
+    "reason": "Associate Professor of Mathematics at University of Chicago, Clay Research Fellow, PhD under Jacob Lurie at Harvard; published in J. Algebra while in high school.",
+    "category_fix": "Academic researcher",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Exceptional mathematician who became a UChicago professor and Clay Research Fellow, with research in algebraic topology and arithmetic geometry at the highest level.",
+    "inherited_summary": "From Madison, NJ, an ordinary suburban background; no evidence of family wealth or academic-family connections.",
+    "ecosystem_summary": "Attended RSI at MIT in high school with mentorship from Pavel Etingof and Dustin Clausen, Harvard undergrad, Harvard PhD under Jacob Lurie, Clay Mathematics Institute fellowship.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "lynnelle-ye",
+    "name": "Lynnelle Ye",
+    "verdict": "REMOVE",
+    "reason": "Intel STS 4th place and China Girls Math Olympiad gold are strong high school achievements, but no adult achievements meeting notability criteria were found.",
+    "category_fix": "Academic competitor"
+  },
+  {
+    "person_id": "yale-fan",
+    "name": "Yale Fan",
+    "verdict": "REMOVE",
+    "reason": "Intel STS 2010 9th place is a good high school achievement, but no adult achievements meeting notability criteria were found.",
+    "category_fix": "Academic competitor"
+  },
+  {
+    "person_id": "michelle-hackman",
+    "name": "Michelle Hackman",
+    "verdict": "REMOVE",
+    "reason": "Intel STS 2011 2nd place and WSJ journalism career are notable, but no Wikipedia page, Forbes 30U30, major funding, or top-tier publications were found.",
+    "category_fix": "Journalist"
+  },
+  {
+    "person_id": "keenan-monks",
+    "name": "Keenan Monks",
+    "verdict": "REMOVE",
+    "reason": "Intel STS 2011 6th place is a good high school achievement, but no adult achievements meeting notability criteria were found.",
+    "category_fix": "Academic competitor"
+  },
+  {
+    "person_id": "benjamin-clark",
+    "name": "Benjamin Clark",
+    "verdict": "REMOVE",
+    "reason": "Siemens Competition $100K grand prize and Intel STS 7th place are exceptional high school achievements, but no adult achievements meeting notability criteria were found.",
+    "category_fix": "Academic competitor"
+  },
+  {
+    "person_id": "andrey-sushko",
+    "name": "Andrey Sushko",
+    "verdict": "REMOVE",
+    "reason": "Intel STS 2012 2nd place is a strong high school achievement, but no adult achievements meeting notability criteria were found.",
+    "category_fix": "Academic competitor"
+  },
+  {
+    "person_id": "mimi-yen",
+    "name": "Mimi Yen",
+    "verdict": "REMOVE",
+    "reason": "Intel STS 2012 3rd place is a strong high school achievement, but no adult achievements meeting notability criteria were found.",
+    "category_fix": "Academic competitor"
+  },
+  {
+    "person_id": "aaron-yeiser",
+    "name": "Aaron Yeiser",
+    "verdict": "REMOVE",
+    "reason": "Regeneron STS 2017 2nd place ($175K) is a strong high school achievement, but no adult achievements meeting notability criteria were found.",
+    "category_fix": "Academic competitor"
+  },
+  {
+    "person_id": "arjun-ramani",
+    "name": "Arjun Ramani",
+    "verdict": "KEEP",
+    "reason": "Published in PNAS and SIAM Review, Paul & Daisy Soros Fellow, The Economist global correspondent, Regeneron STS 3rd place; multiple prestigious fellowships and top-tier publication.",
+    "category_fix": "Academic researcher",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Strong researcher and communicator with PNAS publication, Soros Fellowship, and Stanford/MIT credentials, though not at the prodigy level of Olympiad gold medalists or top math professors.",
+    "inherited_summary": "Son of immigrants from Tamil Nadu, India; grew up in West Lafayette, Indiana, a college town with no evidence of family wealth or connections.",
+    "ecosystem_summary": "Purdue University research access in high school, Stanford undergrad and master's, MIT PhD, White House policy experience, and The Economist journalism platform.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "samuel-weissman",
+    "name": "Samuel Weissman",
+    "verdict": "KEEP",
+    "reason": "Published in Nature Communications on HIV reservoirs, Regeneron STS 2019 2nd place ($175K); top-tier publication validates research significance.",
+    "category_fix": "Science researcher",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Published in Nature Communications as a high schooler and won Regeneron STS 2nd place, demonstrating strong research ability in molecular biology.",
+    "inherited_summary": "From Merion Station/Rosemont, PA, an affluent Philadelphia Main Line suburb; parents Beth Rosenwasser and Richard Weissman; access to UPenn lab suggests academic-family connections.",
+    "ecosystem_summary": "Volunteered at UPenn's O'Doherty Lab for 3+ years during high school, Regeneron STS competition platform, and state-of-the-art lab equipment access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "noah-getz",
+    "name": "Noah Getz",
+    "verdict": "REMOVE",
+    "reason": "Regeneron STS 2021 2nd place ($175K) is a strong high school achievement, but no adult achievements meeting notability criteria were found.",
+    "category_fix": "Academic competitor"
+  },
+  {
+    "person_id": "jagdeep-bhatia",
+    "name": "Jagdeep Bhatia",
+    "verdict": "REMOVE",
+    "reason": "Regeneron STS 2020 2nd place ($175K) is a strong high school achievement, but no adult achievements meeting notability criteria were found.",
+    "category_fix": "Academic competitor"
+  },
+  {
+    "person_id": "rupert-michael-li",
+    "name": "Rupert Michael Li",
+    "verdict": "KEEP",
+    "reason": "Hertz Fellow, Marshall Scholar, Goldwater Scholar, PD Soros Fellow, Morgan Prize Honorable Mention, 10 math research articles as an undergraduate; extraordinary collection of prestigious fellowships.",
+    "category_fix": "Academic researcher",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Exceptional mathematician with 10 research articles as an undergraduate, Hertz Fellowship, Marshall Scholarship, and Morgan Prize Honorable Mention, indicating world-class research potential.",
+    "inherited_summary": "Son of Chinese immigrants in Portland, Oregon; no evidence of family wealth or domain-specific connections.",
+    "ecosystem_summary": "MIT PRIMES-USA program in high school, MIT double major plus master's, Duluth REU, Cambridge Part III Mathematics, Stanford PhD with Knight-Hennessy Scholarship.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "miranda-anna-christ",
+    "name": "Miranda Anna Christ",
+    "verdict": "KEEP",
+    "reason": "First-authored 2 NeurIPS Spotlight papers (top 10%), one while still in high school at the Renyi Institute Budapest; NeurIPS Spotlight qualifies as top-tier main track publication.",
+    "category_fix": "AI researcher",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "First-authored a NeurIPS Spotlight paper while in high school, an extraordinary feat indicating world-class research ability in machine learning interpretability.",
+    "inherited_summary": "No evidence of family wealth or connections; moved to Budapest as a teenager to pursue research at the Renyi Institute.",
+    "ecosystem_summary": "Three years at the Renyi Institute in Budapest with mentorship from senior researchers, UC Berkeley CS program, ML@Berkeley, and SPAR fellowship.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ann-makosinski",
+    "name": "Ann Makosinski",
+    "verdict": "KEEP",
+    "reason": "Forbes 30 Under 30, Wikipedia page, TIME 30 Under 30 World Changers, Google Science Fair winner, patented inventor (Hollow Flashlight and eDrink), 5 TEDx talks.",
+    "category_fix": "Inventor",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Creative inventor who patented two novel devices (Hollow Flashlight, eDrink) as a teenager, with strong public communication skills evidenced by 5 TEDx talks and national TV appearances.",
+    "inherited_summary": "From Victoria, BC, Canada; Filipino-Polish-Armenian heritage; no evidence of family wealth or domain-specific connections.",
+    "ecosystem_summary": "Google Science Fair platform provided global visibility, media exposure from TIME and Forbes, TEDx speaking opportunities, and university resources at University of Victoria.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "elif-bilgin",
+    "name": "Elif Bilgin",
+    "verdict": "REMOVE",
+    "reason": "Google Science Fair 2013 Science in Action special award ($50K) and Voter's Choice are notable, but no Wikipedia page, Forbes 30U30, or adult achievements meeting notability criteria were found.",
+    "category_fix": "Science researcher"
+  }
+]

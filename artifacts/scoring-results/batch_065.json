@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "ana",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Played Dota 2 10+ hours daily from a young age, demonstrating exceptional domain immersion and drive. Dropped out of high school at 16 to move to Shanghai, showing extraordinary commitment, though not prodigy-level cognitive ability in a traditional sense.",
+    "inherited_summary": "Grew up in Melbourne, Australia in a working/middle-class family. Mother was initially against gaming but became supportive; older brother helped convince her. No domain connections or significant family resources.",
+    "ecosystem_summary": "Joined CDEC's in-house league in China, providing access to top-tier Chinese players. Recruited by OG, a top team. Good team environment but not a once-in-a-generation peer group.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "menard",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": -1,
+    "endowment_summary": "Started gaming at age 4, competitive by 9, showing early dedication. Self-driven training despite minimal resources. Above-average domain commitment but not prodigy-level.",
+    "inherited_summary": "Mother was a cafeteria worker and father a police officer in one of Santo Domingo's worst neighborhoods. Family had limited financial means; could not afford a PlayStation. Father's job as a cop in the ghetto created constant fear.",
+    "ecosystem_summary": "Trained in a small game center with unreliable power and minimal esports infrastructure in the Dominican Republic. Had to borrow a console and rely on online play to improve. A rival helped him get a visa to compete abroad at 16.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "cheese-speedrunner",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started speedrunning around 2013, achieved first world record in 2015. Described as having a 'champion's mindset' — relentlessly competitive and driven. Self-taught through YouTube videos.",
+    "inherited_summary": "Born in Venezuela, moved to Trinidad at age 2. Parents divorced early; step-father initially unsupportive of gaming but later became a key father figure. Family not wealthy. Later moved to Spain. No domain connections.",
+    "ecosystem_summary": "Emerged through the online SM64 speedrunning community on Twitch, with a notable rivalry with Puncayshun that drove improvement. Twitch streaming platform provided distribution and income. Online community was the primary ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "pangaeapanga",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "ROM hacking and level design from a young age, created Guinness World Record-holding Super Mario Maker levels, completed Super Mario World blindfolded. Exceptional technical skill and memorization in a niche domain.",
+    "inherited_summary": "From Rocky Hill, Connecticut. Father allowed use of his YouTube account, fostering early online exploration. Attended Greater Hartford Academy of Math and Science (half-day program) and Rocky Hill High School. Middle-class, stable family.",
+    "ecosystem_summary": "Part of the online ROM hacking and speedrunning communities. Super Mario Maker platform provided a creative outlet. University of Connecticut for college. Online community was the primary peer group.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "shashvat-nakrani",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Cracked the highly competitive JEE exam to enter IIT Delhi, placing him in India's most elite engineering pipeline. Studious from a young age with strong academic ability. Co-founded BharatPe at 19 while still a student.",
+    "inherited_summary": "Father runs an education institute in Bhavnagar, Gujarat — a self-made entrepreneur. Grew up in a business-minded Gujarati family that valued entrepreneurship. Family supported his decision despite inhibitions about dropping out of IIT.",
+    "ecosystem_summary": "IIT Delhi provided elite institutional access and network. Co-founded with Bhavik Koladiya and later Ashneer Grover. Perfect timing with India's UPI/digital payments wave. IIT's startup ecosystem and India's fintech boom were catalytic.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "liu-jingkang",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started coding at 12, won national computer production competitions in elementary and high school. Hacked school grading system and cracked Zhou Hongyi's phone number from keystroke sounds. IQ of 140. Exceptional technical boldness and product intuition.",
+    "inherited_summary": "Father started a plush toy business around 2000 that failed and fell into debt; mother worked at a bank. Mother's family had wealthy uncles. Entrepreneurial family exposure with firsthand experience of both business failure and recovery.",
+    "ecosystem_summary": "Nanjing University for software engineering. IDG Capital's Tong Chen spotted him as a 'problem student' and invested before the company had revenue, team, or product — a transformative mentor-investor. Shenzhen's hardware ecosystem enabled manufacturing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kennedy-ekezie",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Enrolled at University of Calabar at 16, graduating as the youngest-ever student at 19 with a philosophy degree. Founded a women's rights organization at 16. Exceptional early academic trajectory and civic initiative.",
+    "inherited_summary": "Father is a professor of political science, mother progressed from school teacher to university professor of animal husbandry. Grew up on a university campus in Calabar in an academic household that emphasized education for social change. Father's small business failure provided domain exposure for Kippa.",
+    "ecosystem_summary": "Yenching Scholarship at Peking University (elite Chinese program), worked at TikTok/ByteDance leading Africa expansion, Cambridge diploma in Leading Change. Elite institutional pipeline across Nigeria, China, and the UK.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "shane-curran",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Installed Linux at 6, coding at 7, fluent in PHP, C, C++, Java, Python, Ruby, Perl, and Bash by 11. Founded first company (Libramatic) at 12. Won BT Young Scientist at 16 for quantum-secure encryption. Forbes 30 Under 30 at 17. Prodigious early technical ability.",
+    "inherited_summary": "Grew up in Dublin's Terenure neighborhood. Attended Terenure College. No documented family wealth, domain connections, or industry links. Family background not publicly detailed.",
+    "ecosystem_summary": "BT Young Scientist and Technology Exhibition (Ireland's most competitive science fair) provided national recognition. Connected with SF 'Irish mafia' investors during Easter breaks. Sequoia Capital and Kleiner Perkins backed Evervault. National competition + top-tier VC access were catalytic.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "hany-rashwan",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Grandfather bought him first computer at 11 and taught him programming. Built two gaming sites at 14, one attracting 600,000 annual visitors with advertising revenue. Early technical and entrepreneurial achievement.",
+    "inherited_summary": "Born in Cairo, grew up in Alexandria, Egypt. Grandfather was a career intelligence officer in the Egyptian army and expert in cryptography/programming — provided direct domain mentorship. Moved to US for high school.",
+    "ecosystem_summary": "Columbia University (transferred from Ohio State). San Francisco crypto/fintech ecosystem. AngelPad accelerator. Tim Draper led $4.75M investment. Elite university + SF ecosystem + top investor backing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ferry-unardi",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Developed interest in IT through programming competitions in high school. Earned BS in both computer science and mathematics from Purdue. Smart and capable but not prodigy-level.",
+    "inherited_summary": "Born in Padang, Indonesia to a Chinese-Indonesian family of relatively modest means. Grew up helping at his family's small grocery store. No domain connections or significant family resources.",
+    "ecosystem_summary": "Purdue University (CS + Math), Microsoft engineering experience, Harvard Business School (left after one semester). Co-founder team of former Microsoft/Purdue colleagues. Perfect timing for Southeast Asian travel gap. Elite institutions + strong cofounder team.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kid-laroi",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began rapping at 12, recording on his mother's phone and uploading to SoundCloud. Early start in music but not prodigy-level ability; drive and domain exposure were the key advantages.",
+    "inherited_summary": "Father is a music producer/sound engineer (worked with Bardot, Delta Goodrem). Mother is a talent manager/record executive (managed Popstars winner Scott Cain). However, parents separated when he was 4; family experienced poverty, housing instability, and his mother sold drugs. Significant industry connections offset by active financial disadvantage.",
+    "ecosystem_summary": "Sydney music scene, SoundCloud platform. Discovered by Lil Bibby/Grade A Productions, mentored through Juice WRLD's circle. Justin Bieber collaboration on 'Stay' was transformative. Mentorship + major collaboration + platform timing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "megan-moroney",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Learned piano as a child, guitar at 16. Sang in choir and musical theater in high school. Started songwriting in college freshman year. Capable and above-average but not exceptional early ability.",
+    "inherited_summary": "Grew up in a musical household in Douglasville, Georgia. Father in sales, mother an accountant. Father and brother both play guitar. Middle-class family with strong musical exposure but no industry connections.",
+    "ecosystem_summary": "University of Georgia with music business certificate. Interned with Kristian Bush (Sugarland). Discovered by Chase Rice at a UGA event. Nashville migration. Streaming virality with 'Tennessee Orange.' Good school + mentorship + Nashville pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ella-langley",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Sang in church at age 3, self-taught guitar at 14 after grandfather's death. Performed at local venues in high school. Early musical start in a family setting but not exceptional cognitive ability.",
+    "inherited_summary": "Grew up in rural Hope Hull, Alabama in a musically inclined family. Father is a business owner, grandfather played multiple instruments. Family lost their house to the bank when she was 14. Homeschooled for a period. No industry connections.",
+    "ecosystem_summary": "Church music and community jam sessions provided early performance exposure. Moved to Nashville in 2019. TikTok virality with 'If You Have To.' Riley Green duet was breakthrough. TikTok platform + Nashville migration.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "cris-mj",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-taught artist who wrote his own lyrics from a young age. Began releasing music at 18. Driven and self-directed but not exceptional early cognitive ability. Did not finish school.",
+    "inherited_summary": "Grew up in población 17 de Septiembre, a disadvantaged neighborhood in La Serena, Chile. Mother introduced reggaetón music. No family music industry connections. Was detained for theft as a teenager. Poverty and disadvantaged background.",
+    "ecosystem_summary": "Digital platforms (DistroKid, YouTube, social media) enabled self-release. Chilean reggaetón wave provided a rising-tide environment. Karol G collaboration on 'Una Noche en Medellín' remix was transformative. Digital platforms + Chilean wave timing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "floyymenor",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started making music at 15, self-taught. Expelled from multiple schools for behavioral issues. Early creative drive but not exceptional cognitive ability.",
+    "inherited_summary": "Middle of six siblings, raised in Vicuña, Chile (town of less than 30,000). Parents listened to reggaetón but had no music industry connections. No resources, no industry contacts. Moved to Santiago at 17 with just a backpack, surviving by performing in nightclubs.",
+    "ecosystem_summary": "YouTube self-release, UnitedMasters distribution platform. TikTok global virality. Cris MJ collaboration on 'Gata Only' was the breakthrough. Chilean reggaetón wave. Digital platforms + key collaboration.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ninajirachi",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Discovered electronic music production through YouTube tutorials at 12, started with GarageBand at 8, piano at 6-7. Triple J Unearthed High finalist while still in high school. Exceptional self-taught production ability from a young age.",
+    "inherited_summary": "Grew up in small town Kincumber on Australia's Central Coast. Father is a tradie, mother worked in homoeopathy and remedial massage. Parents were ex-ravers who exposed her to dance music. Working-class family with no artists or musicians. Supportive but no industry connections.",
+    "ecosystem_summary": "Triple J's Unearthed High competition provided national exposure. Nina Las Vegas (veteran Australian producer) became a mentor and signed her to NLV Records. Australian electronic music scene. National competition + key mentor + label signing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "mariah-angeliq",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began writing music at 16, relatively late. Ran away from home to pursue music. Average ability with strong drive but no exceptional early cognitive or creative indicators.",
+    "inherited_summary": "Born in Miami to Cuban father and Puerto Rican mother. Named after Mariah Carey. Ran away from home at 16 to pursue music — family conflict and lack of support. No family music industry connections. Financial instability.",
+    "ecosystem_summary": "Miami Latin music scene provided cultural proximity. Reggaetón producer Nely 'El Arma Secreta' mentored her and introduced her to producers and songwriters. Gold Star Music and Universal Music Latin signing. Miami scene + key mentor.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "em-beihold",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began piano at 6, songwriting at 7. Also a competitive fencer. UC San Diego graduate. Early musical start and creative output but not prodigy-level.",
+    "inherited_summary": "Mother is a filmmaker/producer (credits include Space Jam) who immigrated from Iran during the Iranian Revolution. Father is a storyboard artist and competitive fencer. Grew up in LA area with arts-oriented schooling. Entertainment industry parents in LA.",
+    "ecosystem_summary": "LA music ecosystem, arts-oriented private and public schools. Republic Records signing in 2021. TikTok virality with 'Numb Little Bug.' Stephen Sanchez collaboration. LA ecosystem + major label + platform timing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sombr",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Wrote first song at 10, built home studio in bedroom at 14, produced with Logic Pro. Attended LaGuardia High School as vocal major. Exceptional early creative output and self-production ability.",
+    "inherited_summary": "Son of Andy Boose (director of special events at amfAR) and Bennah Serfaty (PR at amfAR). Professional nonprofit-sector parents in NYC's culturally rich Lower East Side. No direct music industry connections but professional, supportive household.",
+    "ecosystem_summary": "LaGuardia High School (elite public arts school — alums include Timothée Chalamet, Nicki Minaj). Tony Berg (legendary A&R/producer who worked with Phoebe Bridgers) became a close collaborator. Warner Records signing. Elite arts school + legendary mentor.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "zach-top",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started guitar at 5, formed bluegrass band with siblings at 7, amassed over a decade of stage time by his teens. Won SPBGMA international band competition. Exceptional early performance reps and domain immersion.",
+    "inherited_summary": "Grew up on a 40-acre hobby farm in Sunnyside, Washington. Father worked in the livestock industry, mother homeschooled the children. No music industry connections. Working-class rural family.",
+    "ecosystem_summary": "Sibling bluegrass band (Top String) provided collaborative performance reps from age 7. Bluegrass festival circuit throughout the Pacific Northwest. Carson Chamberlain (producer/writer for Keith Whitley and Alan Jackson) became mentor. Sibling collaboration + festival circuit + key mentor.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "peter-scholze",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught college-level mathematics at 14. Won 3 IMO gold medals and 1 silver. Redid the 288-page Harris-Taylor proof in 37 pages at 22. Introduced perfectoid spaces in his PhD thesis. Prodigy-level mathematical ability.",
+    "inherited_summary": "Father is a physicist, mother is a computer scientist, sister studied chemistry. Grew up in Berlin in a STEM household with direct domain exposure. Upper-middle-class academic family.",
+    "ecosystem_summary": "Attended Heinrich-Hertz-Gymnasium, a specialized math/science school in Berlin. Individually mentored by Prof. Klaus Altmann at FU Berlin during grades 11-13. University of Bonn, PhD under Michael Rapoport. Specialized school + individual mentor + elite university.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "james-maynard",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Noted for exceptional intellectual ability at age 3. Obsessive, self-directed learner who taught himself number theory before it was formally taught. Self-taught from reading as a high schooler. Significant early ability but not a traditional prodigy.",
+    "inherited_summary": "Parents are language teachers, brother studied history. Humanities-oriented family with no mathematics domain overlap. Stable, supportive middle-class family in Chelmsford, Essex.",
+    "ecosystem_summary": "King Edward VI Grammar School in Chelmsford. Queens' College, Cambridge for undergraduate. Balliol College, Oxford for DPhil under Roger Heath-Brown, who described their meetings as 'more like collaborations than mentorship.' Elite Cambridge-Oxford pipeline.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "akshay-venkatesh",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won bronze at International Physics Olympiad at 11 and IMO at 12. Entered University of Western Australia at 13, graduated with first-class honours at 16. PhD from Princeton at 21. Clay Research Fellow at 22. Prodigy-level ability across math and physics.",
+    "inherited_summary": "Mother is a computer scientist who completed her PhD after moving to Australia. Family emigrated from Delhi to Perth when he was 2. Academic parent but no direct mathematics domain overlap. Supportive, flexible schooling environment.",
+    "ecosystem_summary": "Flexible Australian schooling allowed advanced courses from young age. University of Western Australia at 13. Princeton PhD under Peter Sarnak. Clay Research Fellowship. Early university access + Princeton + Clay fellowship.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "manjul-bhargava",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Mother taught him math from age 3. Completed all high school math by 14. Won Morgan Prize at 22 for four substantial undergraduate papers at Harvard. Corrected his mother's math students at age 8. Prodigy-level ability with direct family-domain training.",
+    "inherited_summary": "Mother is a mathematics professor at Hofstra University who served as his first math teacher. Grandfather was head of Sanskrit department at University of Rajasthan. Direct, daily access to a mathematics professor parent — a rare, trajectory-changing family-domain advantage.",
+    "ecosystem_summary": "Attended mother's Hofstra math classes as a child. Harvard undergraduate. Princeton PhD under Andrew Wiles. Grandfather provided Sanskrit and ancient mathematics exposure in India. Harvard + Princeton + Wiles advisor + grandfather's scholarly influence.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "artur-avila",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Father taught him to read and write at 3. Reading math books by 5. Won IMO gold at 16. Completed MS at 18 and PhD at 21 at IMPA. Prodigy-level mathematical ability, largely self-driven.",
+    "inherited_summary": "Parents divorced when he was 8. Father worked in civil service (possibly accounting), mother raised him. No mathematical background in family. Parents encouraged his pursuit but couldn't provide specific guidance. Stable but no domain advantage.",
+    "ecosystem_summary": "Colégio São Bento (elite Benedictine school in Rio). IMPA (Latin America's top math institute) — took master's courses while in high school. Welington de Melo was PhD advisor. Elon Lages Lima taught him topology. CNRS researcher in Paris. Elite school + IMPA + elite mentors.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "daniel-larsen",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Attended math circle from age 4. Asked philosophical questions about infinity at 3. Youngest NYT crossword publisher at 13. Proved Bertrand's postulate for Carmichael numbers at 17, resolving a 1994 conjecture. Regeneron STS 4th place. Prodigy-level ability.",
+    "inherited_summary": "Both parents are mathematics professors at Indiana University. Mother is the sister of Fields Medalist Elon Lindenstrauss. Father hosted a math circle that Daniel attended from age 4. Rare, trajectory-changing family-domain immersion.",
+    "ecosystem_summary": "Father's math circle from age 4. Indiana University academic environment. MIT for undergraduate. Grew up immersed in an academic mathematical household with direct access to elite mathematicians.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "hannah-cairo",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught mathematics via Khan Academy, completing calculus by 11. Reading graduate-level math textbooks by mid-teens. Disproved the 40-year-old Mizohata-Takeuchi conjecture at 17. Prodigy-level self-taught ability.",
+    "inherited_summary": "Father is a software developer who moved the family to the Bahamas for work. Parents homeschooled all three children. Found math professors to tutor her remotely. Supportive, professional family but no mathematics domain background.",
+    "ecosystem_summary": "Khan Academy for early self-learning. Berkeley Math Circle (remote, during COVID). Moved to California at 16 to attend UC Berkeley graduate courses. Ruixiang Zhang was her mentor and course instructor. Berkeley Math Circle + UC Berkeley + key mentor.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "cao-yuan",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Completed 7 years of schooling in 3 through gifted program. Entered USTC's Special Class for the Gifted Young at 14, graduated at 18. Exceptional early academic acceleration through China's gifted education pipeline.",
+    "inherited_summary": "Born in Chengdu, China. No detailed information available about parents' professions or family background. Insufficient evidence of family advantage.",
+    "ecosystem_summary": "Shenzhen Yaohua Experimental School gifted program (7 years in 3). USTC's Special Class for the Gifted Young at 14. MIT at 18, joining Pablo Jarillo-Herrero's lab — the global frontier of 2D materials. Perfect timing for magic-angle graphene discovery. Once-in-a-generation institutional pipeline + frontier lab + perfect timing.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "ewin-tang",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Skipped grades 4-6, enrolled at UT Austin at 14. Developed a quantum-inspired classical algorithm at 18 that matched the best known quantum algorithm. Forbes 30 Under 30. Maryam Mirzakhani New Fronters Prize. Prodigy-level ability.",
+    "inherited_summary": "Father is a bioengineering professor at UT Arlington. Mother worked in father's nanotechnology lab. First research experience was working with her mother in father's lab. Academic parents with direct lab access.",
+    "ecosystem_summary": "UT Austin at 14. Scott Aaronson (leading quantum computing expert) recognized her as 'unusually talented' and became her thesis advisor. Davidson Fellowship Honorable Mention. Elite university access early + legendary mentor.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ashwin-sah",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Mother taught him arithmetic from a young age. Won IMO gold at 16, Junior Balkan MO gold. Enrolled at MIT at 17. Produced 30+ papers as an undergraduate with Mehtaab Sawhney. Won Morgan Prize at 20-21. Prodigy-level mathematical ability with extraordinary research output.",
+    "inherited_summary": "Son of Indian immigrants who came to the US for higher education. Mother taught him arithmetic from a young age. Parents imparted deep respect for learning. Attended Jesuit High School (private) in Portland. Supportive immigrant family valuing education.",
+    "ecosystem_summary": "Jesuit High School with strong math competition culture. MIT at 17. Yufei Zhao as research mentor. Exceptional collaboration with Mehtaab Sawhney (high-trust peer team producing 30+ papers). MIT + mentor + extraordinary peer collaboration.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "mehtaab-sawhney",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "USAMO participant in high school, MIT PRIMES program. Intel STS semifinalist. Produced 30+ papers as undergraduate with Ashwin Sah. Won Morgan Prize at 22. Churchill Scholar. Exceptional early research output.",
+    "inherited_summary": "Grew up in Commack, New York. No detailed information available about parents' professions or family background. Insufficient evidence of family advantage.",
+    "ecosystem_summary": "MIT PRIMES program in high school (pairs students with graduate researchers). MIT for undergraduate. Yufei Zhao as research mentor. Exceptional collaboration with Ashwin Sah (high-trust peer team). Churchill Scholar at Cambridge. PRIMES + MIT + mentor + extraordinary peer collaboration.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "alex-krizhevsky",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Possessed vanishingly rare GPU/CUDA programming skills in an era when most ML researchers used MATLAB and Python. Built cuda-convnet library and CIFAR datasets. Created AlexNet on two GTX 580 GPUs in his bedroom. Exceptional technical depth in a scarce skill.",
+    "inherited_summary": "Born in the Soviet Union (Nizhny Novgorod), emigrated to Canada with family as a child. Grew up in Toronto. No detailed information about parents' professions or family resources. Immigrant family.",
+    "ecosystem_summary": "University of Toronto under Geoffrey Hinton — the global frontier of deep learning research. Ilya Sutskever as peer and collaborator. UofT's deep learning group was the once-in-a-generation ecosystem that produced the deep learning revolution. Hinton's lab + Sutskever peer.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "vanessa-nakate",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-initiated climate activism at 22, inspired by Greta Thunberg. Business degree from Makerere University. Average ability with strong initiative, but no exceptional early cognitive or creative indicators.",
+    "inherited_summary": "Father was involved in local politics (president of Rotary Club in Bugolobi, head of a political district). Parents emphasized education for their five children. Middle-class Ugandan family with civic engagement exposure.",
+    "ecosystem_summary": "Inspired by Greta Thunberg's Fridays for Future movement. Social media provided organizing platform. Davos photo controversy (being cropped from AP photo) amplified her global visibility. Global movement + social media + viral moment.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "william-kamkwamba",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "Self-taught engineering from a library book photo at 14, building a wind turbine from scrap materials. Exceptional self-directed learning and mechanical intuition under extreme adversity. Not a traditional prodigy but extraordinary problem-solving ability.",
+    "inherited_summary": "Born to a peasant farming family in rural Malawi. Second of seven children. Famine in 2001 forced him out of school because family could not afford fees. Extreme poverty with no access to education or resources.",
+    "ecosystem_summary": "Local library provided access to 'Using Energy' textbook. Village librarian offered some guidance. TEDGlobal platform at 19 spread his story globally. Minimal early ecosystem — library access was the key, though limited.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jaylen-smith",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "Student government association president in high school. Decided to run for mayor at 18. Average ability with civic interest; no exceptional early cognitive or leadership indicators documented.",
+    "inherited_summary": "Family has lived in Earle, Arkansas for generations. Mother is Sonya Perkins. Working-class family in a small, economically struggling town (population 1,785). No significant family, financial, or institutional advantages documented.",
+    "ecosystem_summary": "Small town of Earle, Arkansas with no notable ecosystem. Student government in high school provided basic civic experience. No elite institutions, mentors, or peer groups. Ran in a local election with 235-185 vote margin.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "brooke-huckaby",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Interested in politics from a young age. Ran for mayor at 20 to succeed her father. Average ability; no exceptional early cognitive or leadership indicators documented.",
+    "inherited_summary": "Father Craig Huckaby served as mayor of Arabi, Georgia for 12+ years. She ran to succeed him when he declined to run again, inheriting his name recognition, local political network, and mentorship. Social media explicitly cited nepotism. Rare, trajectory-changing political inheritance.",
+    "ecosystem_summary": "Tiny town of Arabi, Georgia (population under 500). Father served as ongoing mentor. Inherited local political network and name recognition. Small-town ecosystem where family name was the dominant political asset.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "nadya-okamoto",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Founded PERIOD at 16, grew it to 800 chapters in 50 states and 40 countries. Harvard College. Relentless organizational drive and public speaking ability. Exceptional early organizational achievement despite personal adversity.",
+    "inherited_summary": "Father was sexually and physically abusive; mother lost her job, rendering the family homeless and couch-surfing during high school. Attended a prestigious private school on scholarship. Japanese-Taiwanese American. Active disadvantage from domestic violence and homelessness.",
+    "ecosystem_summary": "Private school on scholarship in Portland. Harvard College. Co-founded with high school classmate Vincent Forand. Social media as distribution channel. Harvard + co-founder + social media platforms.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "marley-dias",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Read at 8th-grade level at 11, skipped a grade. Launched #1000BlackGirlBooks at 10, collecting 15,000+ books and generating 10 billion media impressions. Youngest Forbes 30 Under 30 honoree at 13. Exceptional early initiative and academic ability.",
+    "inherited_summary": "Mother Dr. Janice Johnson Dias is president and co-founder of GrassROOTS Community Foundation and a sociology professor at John Jay College. Father Scott Dias is a Real Estate Analytical Geographer. Middle-class family in well-resourced West Orange, NJ. Mother's nonprofit provided organizational infrastructure.",
+    "ecosystem_summary": "GrassROOTS Community Foundation (mother's org) provided platform, mentorship, and initial infrastructure. West Orange, NJ schools. Media virality across Ellen Show, BBC, CBS, NPR. Netflix deal. Mother's foundation infrastructure + media platform.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "autumn-peltier",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began advocating for clean water at 8, confronted PM Trudeau at 12, addressed UN General Assembly at 13. Named Chief Water Commissioner at 14. Exceptional early advocacy ability and public speaking.",
+    "inherited_summary": "Great-aunt Josephine Mandamin was the founding Chief Water Commissioner known as the 'water walker' who walked all five Great Lakes. Mother Stephanie taught her about water's sacredness. Directly inherited the Chief Water Commissioner role from her great-aunt. Rare, trajectory-changing family-domain lineage.",
+    "ecosystem_summary": "Anishinabek Nation provided institutional platform. UN General Assembly access at 13. Indigenous rights movement timing. Inherited great-aunt's platform, knowledge, and institutional role. Anishinabek Nation platform + UN access.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ziad-ahmed",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Founded Redefy at 14, JUV Consulting at 17, grew it to work with 30+ Fortune 500 companies. Forbes 30 Under 30 at 19. Yale student. Exceptional early entrepreneurial and platform-building ability.",
+    "inherited_summary": "Attended Princeton Day School (private school). Grew up in Princeton, NJ, providing access to political and media networks. Bangladeshi-American Muslim in a post-9/11 world. Private school + affluent university town location.",
+    "ecosystem_summary": "Princeton Day School provided network and resources. Social media platforms enabled community building. Yale University. White House Ramadan invitation from Obama. Private school + social media + some institutional access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jahkil-jackson",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Founded Project I Am at 8, growing it to distribute 300,000+ Blessing Bags and raise nearly $1M. Exceptional early initiative and organizational ability for his age, driven by empathy and persistence.",
+    "inherited_summary": "Parents and aunt provided sustained support and guidance. Grew up in Chicago. No family financial or industry advantages documented. Working-class family. Supportive but no significant resources.",
+    "ecosystem_summary": "Aunt's exposure to homelessness at age 5 was the catalyst. GoFundMe and social media enabled growth. Obama recognition and CNN Hero designation amplified reach. Social media + recognition platforms.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "delaney-reynolds",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Founded Sink or Swim Project at 15, wrote 3 children's books on ecology by 9, gave TEDx at 16, helped implement first solar mandate in Florida at 17, lead plaintiff in climate lawsuit at 19. Exceptional early achievement across activism and policy.",
+    "inherited_summary": "Father Robert Reynolds is a third-generation insurance agency owner in Miami (Morris & Reynolds Insurance, founded 1910). Family has lived in South Florida for four generations. Grew up in affluent Pinecrest. Attended Palmer Trinity School (private). Affluent business family.",
+    "ecosystem_summary": "South Florida is ground zero for sea level rise — direct geographic exposure. Palmer Trinity School (private). University of Miami. TEDx platform, Al Gore/MTV special, Hillary Clinton introduction. Frontier geography + private school + media platforms.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "mari-copeny",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "Wrote letter to President Obama at 8 that prompted his visit to Flint and $100M in federal funding. Built social media following larger than Flint's population. Early initiative and voice, but not exceptional cognitive ability.",
+    "inherited_summary": "Flint water crisis directly affected her family and community. Mother Loui Brezzell was supportive. Working-class family in Flint, Michigan — an economically distressed city. Active disadvantage from environmental racism and economic distress.",
+    "ecosystem_summary": "Flint water crisis was the catalyst (adversity-driven, not an advantage). Social media was self-leveraged as a distribution channel. Obama's response amplified her platform. Hydroviv partnership for water filter sales. Crisis was adversity; social media was self-created.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jon-jones",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "6'4\" with 84.5-inch reach — extraordinary physical attributes for MMA. NJCAA wrestling champion at Iowa Central. Won UFC title in just his 14th professional fight at 23. Exceptional natural athletic ability and physical edge.",
+    "inherited_summary": "Father is a pastor at Mount Sinai Church of God in Christ. Mother cared for mentally and physically disabled children. Two brothers (Arthur and Chandler) both reached the NFL. Athletic family with strong sibling competition. Working/middle-class family.",
+    "ecosystem_summary": "Iowa Central Community College (NJCAA wrestling champion). Jackson Wink MMA Academy in Albuquerque — one of the sport's elite camps. Greg Jackson as coach. Elite MMA camp + legendary coach.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ronda-rousey",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began judo at 11 under mother's coaching. Qualified for Olympics at 17, won bronze at 20. Overcame speech apraxia as a child (could barely speak at 4, corrected by 9). Exceptional athletic achievement with early adversity.",
+    "inherited_summary": "Mother AnnMaria De Mars was the first American World Judo Champion — provided direct elite-level coaching from age 11. Father committed suicide when she was 8. Rare, trajectory-changing family-domain apprenticeship with a world champion mother.",
+    "ecosystem_summary": "Mother's elite judo coaching from age 11. Olympic pipeline. Later trained with Gene LeBell, Gokor Chivichyan, and at Glendale Fighting Club. Mother's coaching + Olympic pipeline + elite trainers.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "max-holloway",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Won first amateur fight after just three days of training at 15. Natural fighting talent discovered late but developed quickly. Made UFC debut at 19, the youngest fighter on the roster. Exceptional natural athletic ability.",
+    "inherited_summary": "Both parents were heavy drug users. Father was abusive and left when Max was 11. Mother struggled with crystal meth addiction (later recovered). Raised by grandparents in Waianae, a rough area known for fighting and drugs. Active disadvantage from drug-addicted parents and abusive household.",
+    "ecosystem_summary": "Waianae's fighting culture provided a natural training ground. Team Ruthless for kickboxing. UFC debut at 19 (youngest at the time). Local gym + early UFC access. Grandparents provided stability.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "david-benavidez",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Boxing from childhood under father's training. Sparring with Gennady Golovkin and Peter Quillen at 14-15. Turned pro at 16 in Mexico. Won WBC super middleweight title at 20, youngest in history. Exceptional early boxing achievement.",
+    "inherited_summary": "Father Jose Benavidez Sr. was his dedicated trainer from childhood — a former gang member who learned boxing and became a trainer to keep his sons safe. Older brother Jose Jr. also a pro boxer. Father dedicated his life to training his sons. Significant family-domain apprenticeship.",
+    "ecosystem_summary": "Father's backyard gym in Phoenix. Wild Card Boxing Gym in LA (Freddie Roach's gym). Sparring with world champions from young age. Sampson Lewkowicz as promoter. Elite gym access + champion sparring partners.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jesse-rodriguez",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started boxing at 9, dropped out of 7th grade for homeschooling to focus on boxing. Won WBC super flyweight title at 22, first fighter born in the 2000s to win a world title. Exceptional early dedication and achievement.",
+    "inherited_summary": "Youngest of four brothers. Older brother Joshua Franco is also a world champion boxer. Parents sacrificed financially — father was fired for missing work to attend tournaments, mother picked up extra shifts. Working-class family with deep sibling boxing partnership.",
+    "ecosystem_summary": "San Fernando Boxing Club in San Antonio. Local coach Martin Barrios (father of WBC champion Mario Barrios). Robert Garcia (elite boxing trainer) became his trainer at 15. Brother collaboration. Elite trainer + sibling collaboration + boxing pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kosei-tanaka",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Karate from age 3, boxing from 11. Won four national high school tournaments. Won WBO world title in only his 5th professional fight. Suffered from Legg-Calvé-Perthes disease as a child but trained without breaks. Exceptional early specialization and achievement.",
+    "inherited_summary": "Father Hitoshi was a judo black belt and Japanese national arm wrestling champion who ran a udon shop, then worked in a factory. Father learned boxing alongside his son, became his sparring partner, then his dedicated trainer. Athletic father who became a trainer.",
+    "ecosystem_summary": "Chukyo High School — a recognized boxing pipeline in Japan. Trained under Hideyasu Ishihara (former OPBF champion). Manager Kiyoshi Hatanaka (former world champion). Elite boxing pipeline + champion mentors.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "marc-marquez",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Received first motorcycle at 4, competitive racing at 5. Won Catalan junior motocross championship at 7-8. 125cc World Champion at 17. Youngest MotoGP World Champion at 20 as a rookie. Exceptional early start and achievement in motorcycle racing.",
+    "inherited_summary": "Born to a working-class family in Cervera, Catalonia, Spain. Parents bought a motorized bike but had limited financial means to support competitive racing. Working-class family with no industry connections.",
+    "ecosystem_summary": "Emilio Alzamora, former 125cc world champion, spotted him at 8 at a local motocross track and became his manager and mentor, providing free equipment from age 9. RACC (Royal Automobile Club of Catalunya) provided top-level machinery. Spanish racing ecosystem. Repsol backing. Once-in-a-generation mentor relationship + free equipment + Spanish racing ecosystem.",
+    "scoring_confidence": "High"
+  }
+]

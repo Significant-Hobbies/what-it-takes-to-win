@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "erika-henningsen",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Showed passion for performing from age 7, recognized by parents. Cast in local production of Grey Gardens at 14. Above-average ability with strong drive, but not a traditional prodigy.",
+    "inherited_summary": "Youngest of three daughters born to Phil and Marybeth Henningsen in Moraga, California. Middle-class family with supportive parents who encouraged her theatre interests but no entertainment industry connections.",
+    "ecosystem_summary": "Attended University of Michigan's elite musical theatre BFA program, winning the Alan Eisenberg Award. Campolindo High School's strong performing arts community. UMich pipeline directly enabled her Broadway debut as youngest Fantine in Les Misérables.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "renee-rapp",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Exceptional vocal ability recognized at age 6 when a music camp teacher predicted stardom. Won 2018 Jimmy Awards (national high school musical theatre competition) and Blumey Awards. Vocal talent was evident early and trajectory-changing.",
+    "inherited_summary": "Born to Charles Rapp and Denise Olexa in Huntersville, NC. Middle-class family; mother chose an alliterative name in case she pursued music, showing early planning for entertainment career. Supportive but no industry connections.",
+    "ecosystem_summary": "Transferred to Northwest School of the Arts (magnet school) where theater teacher Corey Mitchell recognized her talent. Eva Noblezada from same school provided a precedent path via Jimmy Awards to Broadway. Jimmy Awards win provided direct pipeline to agents and Broadway casting.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "celia-rose-gooding",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began musical theatre in ninth grade at Rosetta LeNoire Musical Theatre Academy. Inspired by watching mother win Tony at age 6. Above-average talent but relatively late start for Broadway track.",
+    "inherited_summary": "Child of Tony Award-winning actress LaChanze and Calvin Gooding, who was killed in the September 11 attacks. Grew up in a Broadway household with direct industry exposure, networks, and an inspiring example from early childhood.",
+    "ecosystem_summary": "Rosetta LeNoire Musical Theatre Academy provided early training. Mother's Broadway career provided direct domain exposure and industry networks. Cast in Jagged Little Pill premiere at ART, which transferred to Broadway. Father's death created adversity but close bond with performing artist mother.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "hailey-kilgore",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Vocal talent recognized before she could talk. Began singing at 6 with children's choir, competed in pageants from 9, made professional debut at Portland Center Stage at 16. Tony-nominated at 19 for Broadway debut.",
+    "inherited_summary": "Born in Humble, Texas and adopted at birth by Rebecca and Eric Kilgore of Portland, Oregon. Supportive adoptive parents who facilitated choir and pageant opportunities, but no entertainment industry connections or domain background.",
+    "ecosystem_summary": "Portland Center Stage provided early professional experience at 16. Attended AMDA New York. Pageant competition circuit provided performance training. No elite institutional pipeline like UMich or Carnegie Mellon, but Tony nomination at 19 suggests exceptional raw talent overcame modest ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "guillaume-diop",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started classical dance at 8 against parents' concerns and racial discouragement. Entered Paris Opera Ballet School at 12, joined company at 18. Alvin Ailey workshop in New York gave him confidence to commit fully. Exceptional physical ability to reach étoile rank.",
+    "inherited_summary": "Born in Paris to Senegalese father (works for Aeroméxico) and French mother (works for local council in Gennevilliers). Working-class family with no dance background. Parents were initially concerned about his dance pursuits.",
+    "ecosystem_summary": "Paris Opera Ballet School — the elite French state-funded ballet pipeline — provided world-class training from age 12. Alvin Ailey workshop surrounded him with African-American dancers, building confidence. POB company pipeline led to historic promotion as first Black étoile. Racial barriers in ballet were a significant obstacle.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "hugo-marchand",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started dance at 9 after gymnastics, described as having 'precocious dispositions' by his teacher Marie-Elisabeth Demaille at age 10. Won first prize at Nantes Conservatory, entered Paris Opera Ballet School at 13. Exceptional physical and intellectual maturity noted early.",
+    "inherited_summary": "Born in Vertou near Nantes. Father is an engineer, mother is a CFDT union delegate in banking/insurance. Middle-class family with no dance background. Parents were supportive despite no domain knowledge.",
+    "ecosystem_summary": "Free government-funded training at Nantes Conservatory with mentor Marie-Elisabeth Demaille, then Paris Opera Ballet School from age 13. Benjamin Millepied was a key mentor. Lucky timing: age limit for POB School admission was raised the year he applied. Elite French ballet pipeline.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "hannah-oneill",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started dancing at 3, extreme early specialization. Won Prix de Lausanne 2009 (ballet's 'Olympics') and Youth America Grand Prix 2010. Silver medal at Varna International Ballet Competition 2014. Elite competition record from young age.",
+    "inherited_summary": "Born in Tokyo to Japanese mother Sumie and New Zealand father Chris, a professional rugby player. Father's professional athleticism contributed to her physical edge. Supportive family that moved across countries for her training. Middle-class.",
+    "ecosystem_summary": "Kishibe Ballet Studio in Tokyo, Mt Eden Ballet Academy in New Zealand, then Australian Ballet School on scholarship. Prix de Lausanne win opened doors. Benjamin Millepied was key mentor at Paris Opera Ballet, where she became première danseuse despite being a foreigner in a notoriously closed company.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "elizaveta-kokoreva",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Grew up surrounded by theatre atmosphere through her father. Entered Moscow State Academy of Choreography (Bolshoi School) at 11. Won gold at Moscow International Ballet Competition 2017. Became youngest ever prima ballerina at Bolshoi at 22.",
+    "inherited_summary": "Father Valery Kokorev is a former Bolshoi Ballet dancer and ballet master, now artistic director of Russian National Star Ballet Theatre. He provided backstage access and deep ballet world immersion from childhood. Mother is a psychologist. Direct family-domain apprenticeship.",
+    "ecosystem_summary": "Moscow State Academy of Choreography (Bolshoi School) — elite Russian ballet pipeline. Grishko Foundation scholarship. Father's connections at Bolshoi provided direct institutional access. Moscow International Ballet Competition gold medal. Bolshoi company pipeline from graduation.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "joy-womack",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started ballet at 4 under Yvonne Mounsey at Westside Ballet. First American woman to graduate from Bolshoi Ballet Academy's main program and sign with Bolshoi. Won European Youth American Grand Prix in Paris 2011. Exceptional dedication and physical ability.",
+    "inherited_summary": "Born in Beverly Hills, one of nine children. Mother Eleanor is Harvard-educated doctor. Father Clay Womack moved family to Texas for work. Middle-class family in fundamentalist religious household. Parents supported ballet training across multiple cities and countries.",
+    "ecosystem_summary": "Westside Ballet under Yvonne Mounsey (Balanchine technique) in LA, then Kirov Academy in Washington DC on scholarship, then Bolshoi Ballet Academy in Moscow. Elite mentorship pipeline across three countries. Scouted at 15 during NYC master class. Graduated with one of highest scores in Bolshoi Academy history.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "freddy-macdonald",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Father taught him stop-motion animation at 9. Made shorts in garage from childhood. Became youngest directing fellow ever at AFI. Won Student Academy Award at 21. Short film acquired by Searchlight Pictures and qualified for Oscar consideration.",
+    "inherited_summary": "Father Fred Macdonald was CEO of animation company Olive Jar Studios (worked with Disney/Dreamworks). Mother is a Swiss sculptor and photographer. Family moved to Switzerland for father's work. Deep filmmaking family — father co-writes scripts, mother designs puppets, sister acts in films.",
+    "ecosystem_summary": "AFI Conservatory — youngest directing fellow ever. Joel Coen personally reviewed his short and advised feature expansion. Peter Spears (Call Me By Your Name, Nomadland) as executive producer. UTA representation. Swiss film industry immersion during high school. Family relocated to Zurich, providing international perspective.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "kane-parsons",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught Blender (3D animation) and VFX from age 12. Created and uploaded first short film at 12. Backrooms series went viral at 16 with 78M+ views. A24's youngest-ever director. Composing soundtracks from age 4. Exceptional self-taught creative and technical ability.",
+    "inherited_summary": "Father Michael Parsons is a visual effects artist from UK. Mother is a therapist. Parents divorced when he was 7. Middle-class family in Petaluma, CA. Father's VFX background provided some domain exposure and tool access.",
+    "ecosystem_summary": "Marin School of the Arts at Novato High School (cinematic arts program). YouTube platform provided global distribution and viral reach. A24, Chernin Entertainment, Atomic Monster (James Wan), and 21 Laps Entertainment production deal. James Wan and Shawn Levy as producer-mentors. Internet-born creepypasta phenomenon provided perfect source material.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "joao-gonzalez",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Studied sciences in high school, fell into animation at ESMAD by accident after failing to enter computer engineering. Piano from age 4. Multi-talented (animation, music, drawing) but not a traditional prodigy — talent emerged in college.",
+    "inherited_summary": "Father is a pianist and teacher who influenced his musical development. Middle-class Portuguese family in Porto. Arts exposure through father's music but no film/animation industry connections.",
+    "ecosystem_summary": "ESMAD (multimedia arts BA) in Porto, then Royal College of Art in London on Calouste Gulbenkian Foundation scholarship — elite institutional pipeline. COLA animation collective in Porto. Cannes Critics' Week premiere and Leitz Cine Discovery Prize. Festival circuit built his reputation.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "gints-zilbalodis",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started animating at 15 with an old iMac and Toon Boom. Made seven short films before age 20. Self-taught animation, sound design, and musical composition. Created entire solo feature film (Away) — writing, directing, animating, scoring — starting at 20, finishing at 24.",
+    "inherited_summary": "Parents met in art school — mother is a painter, father is a sculptor. Arts-rich environment growing up in Riga, Latvia. Uncle owned a theater where early shorts were screened. No animation-specific background but strong artistic family environment.",
+    "ecosystem_summary": "Attended Janis Rozentals Riga Art Secondary School but chose not to continue to Art Academy of Latvia. No animation schools in Latvia — largely self-taught and isolated. Annecy International Animation Film Festival provided key platform (Contrechamp Award for Away). Limited institutional support; success driven by self-created domain repetition.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "avalon-fast",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began making short films independently at age 8. Won first place at BC student film festival at 18 with best director award. Made debut feature Honeycomb at 19 for $3,000-4,000. Self-taught filmmaker with exceptional early creative output.",
+    "inherited_summary": "Grew up in British Columbia with a family home on Cortes Island that served as a filming location. No documented industry connections or filmmaking family background. Parents supportive but not in the domain.",
+    "ecosystem_summary": "Peer group of close friends served as cast and crew. Cortes Island provided isolated, creative environment. Slamdance Film Festival provided breakout platform. Rejected formal film school (Vancouver Film School, Concordia) in favor of self-directed practice. Genre festival circuit (Fantastic Fest) for second feature. No notable mentors or elite institutions.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "shay-hatten",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Graduated LMU film school in 2016. Wrote spec scripts that made the Black List. Above-average writing ability but no documented early prodigy evidence or exceptional creative output before college.",
+    "inherited_summary": "Born in Oakland, California. Graduated from Moscow High School (Moscow, Idaho) in 2012. No documented family industry connections or wealth. Working/middle-class background with no entertainment domain overlap.",
+    "ecosystem_summary": "Loyola Marymount University School of Film and Television provided formal training and LA proximity. Internship at Team Downey (Robert Downey Jr.'s company) led to writer's assistant role. Black List placement earned CAA representation. LMU and Team Downey pipeline directly enabled his career breakthrough.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "danny-and-michael-philippou",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started filming backyard wrestling at 11. Built skills through years of self-directed YouTube content creation. Twin collaboration provided creative partnership. Persistent and driven but no documented exceptional early cognitive or creative ability.",
+    "inherited_summary": "Born in Adelaide to Greek Cypriot father and Greek mother. Working-class family in northern suburb of Pooraka. Father renovates kitchens and was initially skeptical of YouTube career, expecting them to get trade jobs. No industry connections or domain background.",
+    "ecosystem_summary": "YouTube platform provided global distribution and viral reach. Twin sibling collaboration was core creative partnership. Adelaide peer group and friend's older sister provided early guidance. No formal training, mentors, or elite institutions. Platform-native compounding through YouTube's algorithm.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "aneesh-chaganty",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began filmmaking at 8 inspired by M. Night Shyamalan. Directed 25+ short films at USC. Google Glass short 'Seeds' went viral with 1M+ views in 24 hours. Feature debut 'Searching' premiered at Sundance at 26. Exceptional early creative output and technical innovation.",
+    "inherited_summary": "Born in Redmond, WA to Telugu parents who emigrated from Andhra Pradesh in 1980s. Both parents worked in tech industry (software entrepreneurs) who encouraged passion over paycheck. Movie-loving family. Middle-class immigrant family with tech exposure.",
+    "ecosystem_summary": "USC School of Cinematic Arts — elite film school. Google Creative Lab two-year position after viral short. Met co-writer Sev Ohanian at USC. Sundance Film Festival premiere with Alfred P. Sloan Prize and Sony Pictures acquisition. Silicon Valley tech background informed his screenlife innovation.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "franz-bohm",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Discovered filmmaking as escape after father's death. Started sneaking onto film sets at 13 as runner/production assistant. Directed first short at 16. Feature documentary at 21. Driven and determined but not a traditional prodigy.",
+    "inherited_summary": "Born in Gerlingen, Germany. Father died in motorcycle accident when he was 11, creating significant adversity. Grandmother fled East Germany to escape communism. Films became a 'safe space' after loss. No family industry connections or wealth.",
+    "ecosystem_summary": "Learned by doing on professional film sets as teenager. National Film and Television School (NFTS) in UK for master's degree — elite institution. BAFTA Award winner. Festival circuit (Max Ophüls Prize, Hot Docs, CPH:DOX) built reputation. Crowdfunded his debut feature.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "harley-chamandy",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began making short films at 14. Worked as child actor briefly. Attended Werner Herzog's filmmaking workshop in Cuba at 17 as youngest participant. Made debut feature at 22. Above-average ability but not prodigy-level.",
+    "inherited_summary": "Mother Chantal Chamandy is a singer/performer who emigrated from Egypt to Canada and produced all his films through their company Mother and Son Films. Maternal grandfather was a pianist. Artistic family with entertainment industry connections and production infrastructure.",
+    "ecosystem_summary": "Werner Herzog filmmaking workshop in Cuba at 17 — legendary mentor. NYU Global Liberal Studies program with study in Florence, Italy. Mother as producer provided direct production support. Munich Film Festival premiere, Karlovy Vary TRT First Cut+ Award, Werner Herzog Film Award (youngest recipient).",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "anastasia-veber",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Studied directing and screenwriting at Saint Petersburg institutions. Short film 'Syndrome IO' won awards at Oberhausen. Graduation film 'Trap' won Golden Bear at Berlinale 2022. Above-average talent but limited early evidence of prodigy-level ability.",
+    "inherited_summary": "Born in Saint Petersburg, Russia in 1995. No documented family background or industry connections. Russian film education is state-accessible rather than elite-private.",
+    "ecosystem_summary": "Saint Petersburg School of New Cinema (directing) and State University of Film and Television (screenwriting) — accessible state institutions, not elite in the same way as Western film schools. Oberhausen festival built early reputation. Berlinale Golden Bear was career-defining. Locarno Filmmakers Academy and Torino ScriptLab for development.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ethan-eng",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Made debut feature film Therapy Dogs secretly during senior year of high school, financing it with McDonald's wages and college savings. Co-wrote with friend Justin Morrice. Exceptional initiative and creative ability for a teenager — Slamdance premiere at 21.",
+    "inherited_summary": "Grew up in Mississauga, Ontario. Lives in parents' basement. No documented industry connections or family domain background. Working/middle-class family. Financed film with fast-food wages.",
+    "ecosystem_summary": "Cawthra Park Secondary School provided setting and peer group. Matt Johnson and Matthew Miller as executive producers provided industry credibility. AGBO Fellowship ($25,000) and Russo brothers mentorship from Slamdance. Slamdance Film Festival as breakout platform. NYT Critics' Pick recognition.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "zelda-adams",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Making films since age 6 with parents. Co-directed seven feature films by age 17. Co-directed, co-wrote, co-shot, and co-edited Hellbender at 16-17. Exceptional early creative output through total immersion in family filmmaking from childhood.",
+    "inherited_summary": "Both parents John Adams and Toby Poser are independent filmmakers who founded Wonder Wheel Productions. Family writes, produces, shoots, edits, and acts in all films. Sister Lulu also collaborates. Complete family-domain apprenticeship with production company and decade of collaborative filmmaking.",
+    "ecosystem_summary": "Wonder Wheel Productions — family production company providing complete filmmaking infrastructure from childhood. Catskill Mountains DIY filmmaking environment. Fantasia International Film Festival as platform. Shudder distribution. Family road trips doubled as film shoots. No formal training but sustained family mentorship and collaboration.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "aidan-zamiri",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Studied graphic design at Central Saint Martins, transitioned to photography and film. No documented early prodigy evidence. Talent emerged during university and accelerated through music video work. Above-average creative ability.",
+    "inherited_summary": "Grew up in Glasgow suburb. Mother is Iranian, father is Scottish-Irish. No documented industry connections or family wealth. Chose professional name Zamiri (grandmother's maiden name) for searchability.",
+    "ecosystem_summary": "Central Saint Martins — elite London art school. Signed to Object & Animal production company. Nike green screen video was first significant break. FKA Twigs collaboration (directed 10 videos for Caprisons mixtape) established reputation. Music video boom timing and London creative scene. British Fashion Council New Wave Creative.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "brooke-monk",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Joined TikTok at 16 and gained 16M followers within two years through lip-sync and comedy content. Rapid viral growth shows content creation ability but no exceptional early cognitive or creative evidence before social media.",
+    "inherited_summary": "Born in Jacksonville, FL. Homeschooled in devout Christian family with five siblings. Not allowed a phone until 16. Mother Amy Monk. No industry connections or domain background. Middle-class family not engaged with social media.",
+    "ecosystem_summary": "TikTok early adoption during COVID provided platform. No notable mentors, institutions, or formal training. Sheltered homeschool background actually delayed her access to platforms. WME signing at 19 provided industry representation. Forbes Top Creators ranking at 20.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "avani-gregg",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Level 9 competitive gymnast before stress fracture ended career. Makeup artistry skills from young age. Viral 'clown check' video earned 48M views. Content creation ability but no exceptional early cognitive evidence.",
+    "inherited_summary": "Born in Brownsburg, Indiana. Of Indian, Mongolian, and African-American descent. Father African-American, mother of Indian and Mongolian descent. Middle-class family. Mother Anisha relocated to LA and found remote work to support career. No industry connections.",
+    "ecosystem_summary": "Hype House co-founder — iconic LA TikTok collective providing peer environment and collaboration. Early Musical.ly adoption from 2016. LA relocation with mother. Shorty Award for TikToker of the Year 2019. Forbes 30 Under 30 at 17. Manager guidance for brand deals and navigation.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "chase-hudson",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started on Musical.ly as young teen. Built following through lip-sync and e-boy aesthetic content. Early platform adoption and content creation ability but no exceptional early cognitive or creative evidence.",
+    "inherited_summary": "Born in Stockton, CA to two schoolteachers Cole and Tamora Hudson. Stockton took economic nosedive after 2008 recession. Working/middle-class family with no entertainment industry connections. Father attended UC Berkeley.",
+    "ecosystem_summary": "Hype House co-founder at 17 — most influential TikTok collective including Charli D'Amelio. LA move at 16. Musical.ly early adoption. Geffen/Interscope Records signing at 19. Billboard named him foundational TikTok creator. TikTok wave timing was critical.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "dixie-damelio",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Downloaded TikTok in October 2019 following sister Charli's lead. Content creation ability but career largely accelerated by sister's explosive fame rather than exceptional individual talent.",
+    "inherited_summary": "Father Marc D'Amelio ran for Connecticut State Senate, worked in apparel industry (Mitchell & Ness, D'Amelio Brands). Mother Heidi was model and personal trainer. Sister Charli D'Amelio became most-followed TikTok user. Family actively managed entertainment careers and were represented by UTA. Upper-middle-class family with business acumen.",
+    "ecosystem_summary": "Sister Charli's TikTok fame provided ready-made audience and industry connections. UTA signing for entire family. Hype House ecosystem. Hulu series (The D'Amelio Show). HitCo record deal with L.A. Reid. Family management apparatus actively built career. TikTok wave timing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jaden-hossler",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Joined TikTok in 2019 and gained millions of followers within months. Self-released single 'Comatose' caught Travis Barker's attention. Music ability but no exceptional early evidence; depression and suicide attempts during senior year.",
+    "inherited_summary": "Born in Dallas, TX, grew up in Chattanooga, TN. Parents were pastors. Grew up with relatively little money, moved 15 times. Sheltered Christian household. Father studied music in college. Active adversity from financial instability and restrictive upbringing.",
+    "ecosystem_summary": "Sway House collective — LA TikTok collective providing peer environment. Travis Barker signing to DTA Records (joint with Elektra) was career-defining. TikTok viral growth in 2019. Pop-punk crossover timing. Depression during senior year was catalyst for finding solace in music.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "riyaz-aly",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started on Instagram in 2017, transitioned to TikTok. Fastest TikToker to reach 10M and 20M follower milestones. Content creation ability with fashion-forward style but no exceptional early cognitive evidence.",
+    "inherited_summary": "Born in Jaigaon, West Bengal/Bhutan border to Muslim family. Father Liton Aly/Afroz Afreen, mother Shabnam Afreen. Modest background. Sister Riza Afreen is also TikTok star and collaborator. No industry connections.",
+    "ecosystem_summary": "TikTok early adoption in India provided massive first-mover advantage in a market with limited competition. Sister collaboration. Relocated to Mumbai. Indian TikTok ban in 2020 was a setback. No notable mentors or formal institutions. Platform-native compounding.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sophia-begg",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Planned to become pediatric oncologist, studied intensively. Debilitating glandular fever prevented ATAR exams, leading to TikTok during bed rest. Content creation and fashion brand building ability but no exceptional early cognitive evidence.",
+    "inherited_summary": "Born in Sydney, Australia. Mother Suzy Cotter is a lawyer (Macquarie University LL.B.) who co-founded All For Mimi brand. Great-great-grandmother Ruby 'Mimi' Musgrave had her own bridal couture boutique in 1920s. Professional family with fashion entrepreneurship heritage.",
+    "ecosystem_summary": "TikTok early adoption in Australia during COVID provided first-mover advantage. Mother as business co-founder provided direct operational support. Forbes Australia 30 Under 30. Brand deals with Dolce & Gabbana, Maybelline, Princess Polly, YSL Beauty. No notable mentors or institutions beyond family partnership.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "avneet-kaur",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began performing career at 8 on Dance India Dance Li'l Masters in 2010. Transitioned to acting with TV debut at 11. Lead role as Princess Yasmine in Aladdin at 16. Early performing talent across dance and acting from young age.",
+    "inherited_summary": "Born in Jalandhar, Punjab to Sikh family. Father Amandeep Nandra is a doctor, mother Sonia Nandra is a teacher. No entertainment industry connections. Grandfather convinced parents to relocate to Mumbai for her career. Family moved with no contacts in Mumbai.",
+    "ecosystem_summary": "Dance India Dance Li'l Masters provided national platform at 8. Mumbai relocation gave geographic proximity to television and film industry. TV industry pipeline (Meri Maa, Aladdin, Chandra Nandini). TikTok 22M followers and Instagram 31M extended reach. Khatron Ke Khiladi reality show.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jannat-zubair",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started acting at 7 in 2008. Became household name through 'Phulwa' at 10. Built 15+ year career in Indian entertainment. Early performing talent with sustained output from childhood.",
+    "inherited_summary": "Father Zubair Ahmad Rahmani is an actor who taught her acting and guided her career from age 6. Mother Nazneen Rahmani. Younger brother Ayan Zubair is also a child actor. Mumbai-based family with direct entertainment industry connections through father.",
+    "ecosystem_summary": "Mumbai entertainment ecosystem provided geographic proximity to TV and film industry. Father's acting career and industry knowledge provided direct guidance. TV industry pipeline (Phulwa, Tu Aashiqui, Maharana Pratap). Khatron Ke Khiladi 12. Forbes 30 Under 30 Asia at 19. Social media leverage (49M Instagram).",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "sienna-mae-gomez",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Competitive dancer for 6-7 years providing performance skills. Viral body-positive dance content on TikTok. Content creation ability but no exceptional early cognitive evidence.",
+    "inherited_summary": "Born in Laguna Niguel, CA to parents Ramón and Dina Gomez. Mother works in communications and helped with branding strategy. Father is businessman. Middle-class family. Brother Jacub is photographer/videographer. Family moved to LA to support career.",
+    "ecosystem_summary": "Hype House ecosystem providing peer collaboration. ICM Partners signing. Brand deals with Maybelline and Levi's. Competitive dance training provided performance skills for content. TikTok viral timing (August 2020). Netflix reality show. Family actively supported with communications and management.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jude-bellingham",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Joined Birmingham City academy at 7. Made first-team debut at 16 years and 38 days (club's youngest ever). Most expensive 17-year-old ever (£25m to Dortmund). Exceptional early football talent recognized from childhood.",
+    "inherited_summary": "Father Mark Bellingham was prolific non-league footballer (700+ goals) and police sergeant. Deep football immersion from birth through watching father play. Privately educated at Priory School in Edgbaston. Middle-class family with football domain knowledge but not professional/elite level.",
+    "ecosystem_summary": "Birmingham City academy from age 7 — decade of development. Private school education (Priory School). Borussia Dortmund transfer at 17 provided elite development platform. Real Madrid at 20. Father's non-league football provided early immersion. Academy coaches designed his development around multiple midfield positions.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jamal-musiala",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Joined Southampton academy at 7, Chelsea Cobham at 8. Debuted in Bundesliga at 17 years and 115 days, becoming Bayern's youngest player and goalscorer. Exceptional early talent recognized by two of Europe's elite academies.",
+    "inherited_summary": "Born in Stuttgart to Nigerian-British father Daniel Richard and German mother Carolin (with Polish roots). Mother's Erasmus studies at Southampton moved family to England, giving access to English youth development. International, middle-class family. Mother later got job in Surrey near Chelsea's Cobham.",
+    "ecosystem_summary": "Progressed through Southampton academy, Chelsea's Cobham (one of Europe's elite), and Bayern Munich — three top-tier academies. Met Michael Olise at Chelsea. Bayern targeted him through Hudson-Odoi's agency connection. Perfect timing: returned to Germany at 16 due to impending Brexit. Joachim Löw key in Germany allegiance.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "lamine-yamal",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Spotted by Barcelona at 7 playing in concrete parks of Rocafonda. Debuted for Barcelona first team at 15 years and 290 days. Youngest player to score in Euro history at 17. Kopa Trophy as world's best young player. Prodigy-level ability recognized from childhood.",
+    "inherited_summary": "Born in Esplugues del Llobregat to Moroccan father Mounir Nasraoui and Equatorial Guinean mother Sheila Ebana. Parents were 21 and 16 when he was born. Grew up in Rocafonda, one of most deprived areas in Catalonia. Parents separated. Father worked at local bar. Humble immigrant background with significant economic hardship.",
+    "ecosystem_summary": "Barcelona's La Masia academy from age 7 — one of world's most elite youth development systems. Ivan de la Pena as agent. Father walked him to training. La Masia provided education, housing, and world-class coaching. Perfect Barcelona pipeline from childhood to first team. Euro 2024 triumph at 17.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "gavi",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Started football at 6 at La Liara Balompié. Scored 95 goals in a season at Real Betis youth. Joined Barcelona's La Masia at 11. Debuted for Barcelona at 17, became Spain's youngest-ever player. Golden Boy and Kopa Trophy at 18. Exceptional early talent.",
+    "inherited_summary": "Born in Los Palacios y Villafranca, agricultural town near Seville. Father Pablo ran a bar, was hired as handyman at Betis when Gavi was recruited. Working-class family with no professional football background. Family moved to Barcelona for La Masia, father later returned south for sister.",
+    "ecosystem_summary": "Elite Spanish football pipeline: La Liara Balompié to Real Betis academy to Barcelona's La Masia at 11. La Masia is one of world's most elite youth academies. Barcelona first team debut at 17. Spain national team at 17 years and 63 days (youngest ever). Golden Boy and Kopa Trophy at 18. Perfect institutional pipeline.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "pedri",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Played above age groups from young age. Rejected by Real Madrid after trial. Debuted professionally for Las Palmas in Segunda División at 16. Played 73 games in one season across club and international. Golden Boy and Kopa Trophy at 18. Exceptional technical ability and durability.",
+    "inherited_summary": "Born in Bajamar, Tenerife, Canary Islands. Family runs a restaurant/bar in Tegueste. Grandfather founded Barcelona supporters club. Father Fernando played goalkeeper in youth, then ran family restaurant. Humble, unassuming family from remote island. No professional football connections.",
+    "ecosystem_summary": "Local clubs Tegueste and Laguna, then Las Palmas youth setup at 16. Barcelona transfer in 2020. La Masia ecosystem. Euro 2020 Best Young Player. Golden Boy and Kopa Trophy 2021. Geographic isolation of Tenerife (2,200km from Barcelona) limited early access to elite academies. Rejected by Real Madrid, unconventional path through second division.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "florian-wirtz",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started playing football at 4. Joined 1. FC Köln academy at 7. Won U17 Bundesliga championship. Debuted in Bundesliga at 17 years and 15 days (youngest ever). Youngest goalscorer in Bundesliga history. Bundesliga Player of the Season at 21. Exceptional early talent.",
+    "inherited_summary": "Father Hans-Joachim Wirtz is chairman of SV Grün-Weiß Brauweiler (his childhood club) and serves as Florian's agent. Mother Karin is a handball coach. Sister Juliane plays professionally for Werder Bremen. Youngest of 10 siblings. Deep football-dedicated family with parents managing his career.",
+    "ecosystem_summary": "1. FC Köln academy from age 7, controversially moved to Bayer Leverkusen at 16. Xabi Alonso as mentor coach at Leverkusen. Bundesliga unbeaten season 2023-24. Father as agent provided career management. Family football environment (sister pro, mother coach) created total immersion.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "bukayo-saka",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Joined Arsenal's Hale End academy at 7. Exceptional decision-making ability noted by coaches from childhood. Strong academic results (A* student). Debuted at 17, became England international at 19. Arsenal Player of the Year in consecutive seasons.",
+    "inherited_summary": "Born in Ealing, London to Nigerian immigrant parents (Yoruba heritage). Father Yomi is a businessman, mother Adenike is a qualified accountant. Devout Christian family. Working/middle-class. Parents moved from Nigeria in 1990s. No football domain advantage but strong family values and academic emphasis.",
+    "ecosystem_summary": "Arsenal's Hale End academy from age 7 — decade of elite development. London football hub. Father and brother provided early garden training. Multiple club trials (Chelsea, Watford, Tottenham) before choosing Arsenal. England national team at 19. Euro 2020 runner-up. Academy coaches recognized exceptional decision-making from young age.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "phil-foden",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Joined Manchester City academy at 8. Won FIFA U-17 World Cup Golden Ball in 2017. Debuted for City at 17 in Champions League. BBC Young Sports Personality of the Year. Premier League winner at 18. Exceptional early talent recognized and nurtured by elite system.",
+    "inherited_summary": "Born in Stockport to mother Claire Foden (lifelong Manchester City supporter) and father Phil Foden Sr. (semi-professional footballer at Stockport Town, lifelong Manchester United supporter). Working-class family with football domain exposure through father's semi-pro career.",
+    "ecosystem_summary": "Manchester City academy from age 8 with club paying for private education at St Bede's College. Pep Guardiola personally mentored him from age 17, calling him a special talent. Elite academy with world-class facilities and coaching. U17 World Cup Golden Ball. Premier League-winning squad at 18. Once-in-a-generation mentorship from Guardiola.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "anthony-edwards",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "One of best Pop Warner running backs in country by age 10. Switched to basketball in 9th grade (relatively late). Exceptional athleticism — 1st overall pick in 2020 NBA Draft, 4x All-Star by 24, Olympic gold. Elite physical ability but late basketball specialization.",
+    "inherited_summary": "Mother Yvette and grandmother Shirley both died of cancer in 2015 when he was 14. Father absent from day-to-day life. Raised by older siblings Antoine and Antoinette who shared legal custody. Devastating personal loss and family instability in Oakland City, a rough Atlanta neighborhood.",
+    "ecosystem_summary": "Trained with Justin Holland (former Liberty University player) from 9th grade. Attended Holy Spirit Preparatory School (private school on north side of Atlanta). McDonald's All-American. One year at University of Georgia. Not part of elite AAU ecosystem until later. Oakland City neighborhood was rough. Siblings provided stability after loss.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "lamelo-ball",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Trained by father from toddlerhood. Won state championship at Chino Hills as freshman (35-0). Scored 92 points in a game as sophomore. NBA Rookie of the Year at 19, All-Star at 20. Exceptional basketball ability but largely father-orchestrated development.",
+    "inherited_summary": "Father LaVar Ball — former college basketball player (Cal State LA) — orchestrated entire development with explicit goal of producing NBA players. Both parents played college basketball (mother Tina at Cal State LA). Big Baller Brand apparel company. Reality show/media platform. Older brothers Lonzo (NBA) and LiAngelo provided training partners. Total family-domain immersion.",
+    "ecosystem_summary": "Father built backyard basketball court and trained sons seven days a week. Chino Hills High School with all three brothers. Unconventional path through Lithuania (Prienai), SPIRE Academy, and Illawarra Hawks (Australia). Father's media presence created unprecedented visibility. JBA league founded by father. Big Baller Brand platform.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tyrese-haliburton",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Under-recruited out of high school (3-star, no Power 5 offers until senior year). Exceptional basketball IQ and playmaking ability. Overcame low expectations to become 2x NBA All-Star and 2x All-NBA selection. Father had him watching hours of Magic Johnson footage.",
+    "inherited_summary": "Father John Haliburton is basketball referee and former women's basketball coach who introduced him to the game from infancy. Cousin Eddie Jones is 3x NBA All-Star (14-year career). Cousin Jalen Suggs is current NBA player. Basketball family connections through extended family.",
+    "ecosystem_summary": "Oshkosh, Wisconsin — not a basketball hub. Iowa State — not an elite basketball program. Under-recruited with no Power 5 offers until summer before senior year. Drafted 12th overall in 2020. Father's coaching provided early foundation but limited elite institutional access. Traded to Indiana Pacers where he developed into star.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "zion-williamson",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Stepfather began training him at 4. 5am training from age 9. Viral high school sensation with jaw-dropping athleticism. National Player of the Year at Duke. 1st overall pick in 2019. 4th-youngest All-Star in NBA history. Prodigy-level physical ability and basketball talent.",
+    "inherited_summary": "Biological father Lateef Williamson was college football player (NC State/Livingstone). Mother Sharonda Sampson was collegiate sprinter (Livingstone College) who coached his youth teams. Stepfather Lee Anderson — former Clemson basketball player — began training him at 4 and became primary development coach. Deeply athletic family across multiple sports.",
+    "ecosystem_summary": "Mother and stepfather coached his AAU team (South Carolina Supreme). Family relocated from Florence to Spartanburg specifically for basketball advancement at Spartanburg Day School. Adidas funded AAU team $60,000 for travel. Duke University for one year with Coach K. Viral high school highlights created unprecedented visibility. Drake wore his jersey, amplifying fame.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "cade-cunningham",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Star at Bowie High School from freshman year. Brother Cannen held him back to develop as point guard on U16 level, transforming his trajectory. Montverde Academy superteam. 1st overall pick in 2021. All-Star and All-NBA in 2025. Exceptional basketball IQ and facilitation ability.",
+    "inherited_summary": "Father Keith Cunningham was former Texas Tech football quarterback (top recruit, career altered by injury). Older brother Cannen Cunningham played at SMU and became his dedicated development coach, later hired as Oklahoma State assistant to facilitate Cade's college career. Father and brother provided deep athletic domain immersion.",
+    "ecosystem_summary": "Montverde Academy in Florida — elite prep school superteam under Kevin Boyle (produced Ben Simmons, D'Angelo Russell, R.J. Barrett). Oklahoma State hired brother Cannen as assistant coach to recruit him. Texas Titans on Nike EYBL circuit. Cousin Ashton Bennings part of inner circle. Brother as on-court mentor at Oklahoma State.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "evan-mobley",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Ranked top of his class from sophomore season. 7-foot-5 wingspan with ball-handling skills and high basketball IQ. McDonald's All-American, two-time California Gatorade Player of the Year, Morgan Wooten National Player of the Year. USA Basketball gold medals at U-17 and U-19. NBA All-Star, All-NBA, and Defensive Player of the Year at 23.",
+    "inherited_summary": "Father Eric Mobley played college and professional basketball, coached Compton Magic AAU for 11 years, became USC assistant coach — creating direct pipeline for both sons. Mother Nicol was 6-foot high school basketball state champion. Brother Isaiah played at USC and was 5-star recruit. Total basketball family immersion with father as coach, mother as player, brother as teammate.",
+    "ecosystem_summary": "Father coached AAU (Compton Magic, Triple Threat) for 11 years before becoming USC assistant. Played at USC with brother Isaiah as teammate and father Eric as assistant coach. Rancho Christian High School in Temecula. USA Basketball U-17 and U-19 gold medals. Father's USC position created direct institutional pipeline. 3rd overall pick in 2021.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "calix-huang",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught coder using online resources. Founded Hours at 16 during pandemic, scaling to 2M+ users. Sold to Fiveable for six figures. Youngest founder in YC W23 batch. Atlas Fellow and Emergent Ventures Fellow. Exceptional early entrepreneurial and technical achievement.",
+    "inherited_summary": "Son of engineers in the East Bay/Tri-Valley area of California. Homeschooled through Connections Academy, providing flexibility to build products. Bay Area geography gave proximity to Silicon Valley. Engineer parents provided tech exposure but no documented startup connections.",
+    "ecosystem_summary": "Bay Area/Silicon Valley geography. Homeschool flexibility enabled product building during school hours. Pandemic edtech wave provided perfect market timing. YC W23 acceptance — elite accelerator. Fiveable acquisition provided exit. On Deck fellowship for networking. USC Iovine & Young Academy (dropped out twice). Atlas Fellow and Emergent Ventures Fellow.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "phoebe-gates",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Graduated Stanford in three years with BS in human biology and minor in African studies. Co-founded Phia with Stanford roommate. No documented exceptional early cognitive or creative evidence beyond being Bill Gates' daughter with access to elite education.",
+    "inherited_summary": "Youngest child of Bill Gates and Melinda French Gates. Extraordinary inherited capital, networks, and media visibility. Family name opens doors globally. Attended Lakeside School (same school as father). Stanford University education. Podcast 'The Burnouts' with 34M listeners. Mother delivered commencement speech at her graduation.",
+    "ecosystem_summary": "Stanford University — elite institution where she met co-founder Sophia Kianni. $35.5M Series A with celebrity investors including Kris Jenner, Sara Blakely, Sheryl Sandberg. Soma Capital and Stanford social entrepreneurship grant ($250K) for initial funding. Podcast platform with 34M listeners provided massive distribution. Family connections to tech and investment world.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "akshay-akash",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Born and raised in Saharsa, Bihar — one of India's less developed regions. Cleared competitive IIT JEE exam after Kota preparation, gaining admission to IIT (BHU) Varanasi. Co-founded Stimuler in 3rd year of college. Debated at World Championships. Exceptional cognitive ability evidenced by IIT admission and competitive debating.",
+    "inherited_summary": "Born and raised in Saharsa, Bihar, India. Schooling at BPS Saharsa. Modest background from one of India's least developed regions. No startup, tech, or entrepreneurial family background. Had to move to Kota (IIT coaching hub) at significant cost for exam preparation.",
+    "ecosystem_summary": "IIT (BHU) Varanasi — elite institutional pipeline through competitive JEE system. Co-founded Stimuler with three close friends from IIT (Akshat Baranwal, Ankit Kumar Pandey, Anesh Srivastav) forming strong complementary team. AI wave timing. Google Play Best AI App 2023. Forbes 30 Under 30. Lightspeed, SWC Global, and other VC funding. Bengaluru startup ecosystem for scaling.",
+    "scoring_confidence": "High"
+  }
+]

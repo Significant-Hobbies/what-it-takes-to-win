@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "gilberto-gil",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Showed precocious musical interest from age 2-3, playing drums and trumpet by age 7. Mother bought him an accordion at 10 and sent him to music school for four years. Switched to guitar after discovering bossa nova, showing strong musical adaptability and curiosity from a young age.",
+    "inherited_summary": "Father was a doctor and mother an elementary school teacher in Bahia, placing the family in the middle class. Mother was his 'chief supporter' in music, buying his accordion and funding music school. Family was 'tenuously middle class' but stable and education-oriented.",
+    "ecosystem_summary": "Grew up immersed in Bahia's rich Afro-Brazilian musical heritage. At the University of Bahia, met Caetano Veloso, Maria Bethânia, Tom Zé and Gal Costa, forming the creative circle that drove the tropicália movement. Producer Roberto Santana introduced him to this peer group and facilitated his first recording.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "filip-jícha",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Fell in love with handball at age 6 after discovering an outdoor court near his home. Described as hyperactive and ambitious, hating to lose even training matches. No prodigy-level early achievement documented, but showed exceptional drive and dedication from a young age.",
+    "inherited_summary": "No handball tradition in the family. Father was a hockey aficionado but pragmatic about not wanting early morning practices. Grew up in a small village (Starý Plzenec) with modest resources and no domain-specific family advantages.",
+    "ecosystem_summary": "Coach Miroslav Moulis at Slavia Plzeň was a pivotal mentor who instilled professional fundamentals and pushed Jícha to work harder. Progressed through Dukla Prague's system, but the early ecosystem was modest — a village court and a local club with limited resources.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "alv-gjestvang",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Won Olympic bronze at 18 in the 500m, preventing an all-Soviet podium. Held the Norwegian record on 500m from 1956-1968. Showed strong sprint specialization, though no evidence of prodigy-level ability before his Olympic debut.",
+    "inherited_summary": "No family background or wealth information is documented in available sources. Grew up in rural Østre Toten Municipality, Norway, taking his first skating steps on frozen ponds and local natural ice.",
+    "ecosystem_summary": "Benefited from Norway's deep speed skating tradition and the Skreia IL club system, which had a dedicated skating group since 1922 and a skating rink built in 1929. The Norwegian club system provided access to competitive skating, though details about specific mentors are not documented.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "yannick-nézet-séguin",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began piano at age 5 and decided to become a conductor at 10 after seeing Charles Dutoit lead the Montreal Symphony. At 13, became the youngest student ever to enter the Conservatoire de musique du Québec à Montréal. Earned premier prix diplomas in piano, solfège, harmony and counterpoint. Prodigy-level early achievement.",
+    "inherited_summary": "Both parents were university educators — father a professor, mother a professor of education. Academically supportive family that encouraged his musical ambitions from a young age, though not a wealthy or musically elite family.",
+    "ecosystem_summary": "Montreal's rich classical music scene provided early exposure. Studied at the Quebec Conservatory and later under legendary conductor Carlo Maria Giulini, spending a year studying his methods. Westminster Choir College for choral conducting. Montreal's institutional ecosystem supported his rapid rise to music director of the Orchestre Métropolitain at 25.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "neale-fraser",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Won his first tournament at 12 (a 13-and-under event) and the Australian National Junior Championships at 17. Self-taught innovative left-hand spin technique inspired by cricket. Showed exceptional natural athletic ability and competitive drive from a young age.",
+    "inherited_summary": "Son of Archibald Fraser, a barrister, politician, and later judge — a prominent public figure in Melbourne. Grew up in a large, tight-knit Catholic family in South Yarra with tennis courts next door to the childhood home. Upper-middle class with strong values of education and public service.",
+    "ecosystem_summary": "Grew up next to tennis courts in Melbourne's tennis heartland. Entered Australia's elite tennis pipeline under legendary coach Harry Hopman, training alongside Hoad, Rosewall, and Laver. The Australian Davis Cup system was a once-in-a-generation peer environment that produced multiple world #1 players in the 1950s-60s.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "badboyhalo",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Launched YouTube channel at 17, built early expertise as a Minecraft server admin on McPVP and created his own server MunchyMC. Above-average technical and gaming ability, though no evidence of prodigy-level achievement before his platform success.",
+    "inherited_summary": "Limited family information available. Has siblings but no notable family wealth, domain connections, or professional advantages documented. Previously worked with children with special needs before pursuing gaming full-time.",
+    "ecosystem_summary": "Career was transformed by joining the Dream SMP in 2020, which leveraged Dream's explosive Minecraft content popularity. The Dream Team collaboration and Minecraft Championship ecosystem provided a once-in-a-generation platform wave. Earlier, the McPVP server community provided foundational experience.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "drew-afualo",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Described herself as 'strong-willed,' 'bossy,' and a 'know-it-all' from a young age. Played 10 years of soccer and was a sports fanatic. No exceptional cognitive or creative prodigy evidence, but strong confidence and communication skills developed early through Samoan family culture.",
+    "inherited_summary": "Father Tait played in the NFL (Arizona Cardinals), and mother Noelle worked in PR. Extended family had multiple NFL players. Samoan matriarchal culture instilled confidence and humor. Parents had her young (mother at 20) and faced financial challenges during father's football career, but family was supportive and media-adjacent.",
+    "ecosystem_summary": "Attended University of Hawaii for sports journalism, was sports editor of student newspaper. Worked as digital media coordinator for the NFL before being laid off. TikTok platform timing in early 2021 was key. No elite institutional mentors or peer groups documented beyond family support.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "bobbi-althoff",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "No exceptional early cognitive, creative, or domain-specific ability documented. Worked as a nanny after high school and had two daughters by her early twenties. Her deadpan comedy persona was developed as a defense mechanism for lifelong insecurities, not from early training.",
+    "inherited_summary": "Grew up working-class in Perris, California, the second-youngest of six children. Father was a contractor who dropped her off at school in a rusted work trailer. Parents divorced in high school. Financial security was elusive throughout childhood. Active financial disadvantage.",
+    "ecosystem_summary": "No notable mentors, elite institutions, or peer groups in her early life. TikTok platform timing in 2021 and the pandemic created the opening for her content. Her Drake interview going viral was a breakthrough moment, but no institutional ecosystem supported her early development.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jake-shane",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Did acting as a child, performing in school productions, and took improv lessons at Gotham Comedy Club. Quit acting due to insecurities after switching schools. No exceptional early achievement, but showed creative inclination and performance interest from a young age.",
+    "inherited_summary": "Mother Helaine Olen is an author and Washington Post columnist. Father is a screenwriter. Grew up in NYC's Washington Heights with two writer parents who took his ideas seriously. Media-family background provided early exposure to storytelling and creative professions.",
+    "ecosystem_summary": "Grew up in NYC with access to Gotham Comedy Club for improv training. Attended The Calhoun School on the Upper West Side. USC for public relations. NYC creative ecosystem and media-connected family provided some early exposure, though no elite mentor or peer group in comedy specifically.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "alan-chikin-chow",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started making videos as a child to make his family laugh. Modeled for JC Penney and booked TV acting roles (Grey's Anatomy, 13 Reasons Why). Above-average creative and performance ability, though no prodigy-level early achievement documented.",
+    "inherited_summary": "Father is an engineer at NASA, mother owns a preschool, and brother Alvan Chow is an investor featured in Netflix's 'Eat the Rich.' Upper-middle class family in Plano, Texas with strong professional and technical backgrounds.",
+    "ecosystem_summary": "Studied screenwriting and business at USC, joined a content creator club that introduced him to TikTok. USC's entertainment industry connections and LA location supported his acting career. YouTube Shorts early adoption was key timing, though no legendary mentor or peer group documented.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "enola-bedard",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started dancing at 13, training in hip-hop, ballet, contemporary, jazz, and acro. Won a scholarship to train in LA at 16. Committed to intensive training (5 classes/day). Strong dedication and work ethic, though started relatively late for dance and no prodigy-level achievement.",
+    "inherited_summary": "Mother lost $100,000 to fraud when Enola was 11, causing the family to lose their house. Enola worked from age 13 — selling chocolate and mowing lawns — to help her mother financially and pay for dance lessons. Active financial disadvantage during formative years.",
+    "ecosystem_summary": "Dance school Danse Attitudes in Quebec City provided early training. Won scholarship to LA through Be Discovered. Trained at immaBEAST and KreativMndz Dance Academy in LA. TikTok pandemic timing in 2020 was pivotal. Supportive parents (mother as videographer), but no elite institutional pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "joe-ando-hirsh",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Initially wanted a stable career in finance but failed a statistics class, which prompted a pivot to FIT. No exceptional early creative or cognitive ability documented. Was 'pretty much mute up until the ninth grade' due to feeling different as the only Asian family in a predominantly white town.",
+    "inherited_summary": "Born in India to a French father and Japanese mother, both creative professionals. Grew up on Long Island watching parents struggle with the ups and downs of life in the arts. Multicultural heritage and creative family, but parents' instability made him crave financial security initially.",
+    "ecosystem_summary": "Attended FIT in NYC, one of the foremost fashion institutions. NYC fashion ecosystem and TikTok platform timing during COVID were key. No notable mentors or elite peer groups documented in early development. COVID pandemic derailed his acting plans, catalyzing his pivot to fashion content.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ian-boggs",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Creative from a young age, with interest in photography beginning at 7. Trained in drawing, dance, and singing. Developed photography skills from his mother. Above-average creative ability, though no prodigy-level early achievement documented.",
+    "inherited_summary": "Japanese mother and American father who grew up in Kenya. Father served in U.S. Navy, causing the family to move every three years. Mother's love of photography provided early camera access. Internationally mobile, multicultural family with creative exposure but no notable wealth or domain connections.",
+    "ecosystem_summary": "Lived in Japan, Italy, Hawaii, and Africa, visiting 15 countries by age 18 — providing diverse cultural exposure. Graduated from UC Irvine with a film degree. TikTok early adoption and VFX-enhanced content were key. No elite mentors or institutional peer groups documented.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "joel-bervell",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Achieved among the highest GPAs and SAT scores in his class at Kamiak High School, was president of seven clubs, and founded Hugs for Ghana nonprofit in high school. Yale for undergraduate, Boston University for master's. Exceptional academic and leadership achievement from a young age.",
+    "inherited_summary": "Born to Ghanaian immigrant parents in Canada, raised in Mukilteo, Washington from age 2. Grandmother helped raise him and siblings while parents worked and went to school. Not a wealthy family — grandmother's death from malaria in Ghana inspired his nonprofit work. Immigrant family with strong work ethic but limited resources.",
+    "ecosystem_summary": "Elite institutional pipeline: Yale for undergraduate, Boston University for master's, WSU medical school. Founded Hugs for Ghana in high school, which grew significantly. Named to TikTok's top ten changemakers. White House roundtable participation. Strong institutional access through Yale, though not a legendary peer environment.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "meredith-duxbury",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Creative from a young age, doing makeup since middle school and starting a YouTube channel then (which she later deleted after being bullied). Practiced makeup three times daily during COVID. Above-average creative interest and persistence, though no prodigy-level achievement.",
+    "inherited_summary": "Born in England, moved to Hadlyme, Connecticut at age 5 with parents and two older siblings. Described as coming from a 'very creative family' that supported her artistic interests. Middle-class upbringing with creative family environment.",
+    "ecosystem_summary": "Grew up on beauty YouTube, which shaped her skills. TikTok platform timing in December 2021 was pivotal — her 10-pump foundation challenge went viral, gaining 6 million followers in one month. No notable mentors, elite institutions, or peer groups documented in early development.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "nigel-mansell",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started kart racing as a teenager, winning several titles. Won the 1977 British FF1600 championship with 33 wins from 42 races despite breaking his neck in a qualifying crash. Exceptional determination and physical courage, racing through severe injuries. Self-financed through selling belongings and his house.",
+    "inherited_summary": "Son of tea shop owners Eric and Joyce in Hall Green, Birmingham. Father was an engineer who disapproved of racing and reneged on a promise to support Nigel's career after he passed his engineering exams. Working-class background with active parental opposition to his racing ambitions.",
+    "ecosystem_summary": "UK motorsport ecosystem provided the competitive structure (Formula Ford, Formula 3), but Mansell had no financial backing or elite pipeline access. He and his wife sold their house and belongings to fund his career. Worked as an office cleaner and aerospace engineer to finance racing. The UK racing scene was the key ecosystem advantage.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "sylvie-vartan",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "No exceptional early musical ability documented. Her entry into music came through her brother Eddie's connections rather than demonstrated prodigy-level talent. She was a 'solitary and dreamy child' who saw her future in theatre, not music specifically.",
+    "inherited_summary": "Father was a musician who worked at the French embassy in Sofia. Brother Eddie Vartan became a music producer and A&R man for Decca Records — he directly arranged her first recording and signed her to RCA. Family fled communist Bulgaria in 1952, living in a small hotel room in Paris for years. Brother's industry position was the key family advantage.",
+    "ecosystem_summary": "Brother Eddie's connections in the Paris jazz and yé-yé scene provided direct access to Decca/RCA and Daniel Filipacchi's Salut les copains radio show and magazine — the epicenter of the yé-yé wave. Paris in the early 1960s was the right place at the right time for this music movement.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "pál-szekeres",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began fencing at 12 after difficulty fitting in at school. Selected for the Hungarian senior men's team in 1984 at age 16. Won Olympic bronze in team foil at the 1988 Seoul Olympics at 24. Ranked world #1 in men's foil by 1989. Strong early achievement in a competitive sport.",
+    "inherited_summary": "Father was supportive — gave him a pivotal pep talk after a junior team rejection, offering two choices: train harder or quit. No notable family wealth, domain connections, or professional advantages documented. Father's motivational intervention was important but not a structural advantage.",
+    "ecosystem_summary": "Progressed through the Hungarian national fencing pipeline, one of the world's strongest fencing traditions. Began at Újpesti Dózsa in Budapest under coach Horváth Mária, then Beliczay Sándor. The Hungarian national team system provided elite training, international competition access, and a deep fencing culture.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "son-heung-min",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Trained intensively from a young age under his father's unconventional methods, including 1,000 shooting reps per leg daily and thousands of jump rope exercises. Moved to Germany at 16 to join Hamburger SV's academy. Made Bundesliga debut at 18. Exceptional dedication and physical/technical development from childhood.",
+    "inherited_summary": "Father Son Woong-jung was a professional footballer who retired due to injury at 28 and became a coach. Father trained Son intensively using his own experience, emphasizing fundamentals for six hours a day. Father even moved to a motel near the Hamburg training center to do weight training alongside his son. Direct family-domain apprenticeship.",
+    "ecosystem_summary": "Joined Hamburger SV's youth academy at 16 through a Korean-German football association partnership. The Bundesliga youth system provided elite development. Father's constant presence and additional training supplemented the academy. The Korean-German football exchange program was the key institutional bridge.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "lew-hoad",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Started playing tennis at 5, hitting balls against a garage door at 5 a.m. Won the Australian junior singles title at 16 and three Grand Slam doubles titles at 18. Described as having 'uncanny instincts' and 'great physical strength' from boxing at Police Boys Club. Natural athletic prodigy.",
+    "inherited_summary": "Born in working-class Glebe, Sydney. Father was a tramway electrician. Family rented a terrace house 'without frills or luxury.' Tennis courts happened to be behind their home, but no family wealth, tennis connections, or professional advantages.",
+    "ecosystem_summary": "Harry Hopman's tutelage was transformative — Hopman coached and captained the Australian Davis Cup team that dominated world tennis. Hoad's rivalry and doubles partnership with Ken Rosewall from age 12 created a legendary peer dynamic. The Australian tennis pipeline of the 1950s was a once-in-a-generation system producing Hoad, Rosewall, Laver, and Emerson.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ilona-staller",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Studied piano, violin, and dance (classical and modern) as a child. Began modeling at 12 for the Hungarian news agency. No exceptional cognitive, creative, or domain-specific prodigy ability documented. Her fame came from media persona and mentorship rather than early demonstrated talent.",
+    "inherited_summary": "Father left the family when she was 3. Raised by mother (a midwife) and stepfather (an official in the Hungarian Ministry of Interior). Middle-class but fatherless household in communist Hungary. Family had institutional connections through stepfather's government position but no wealth or media industry connections.",
+    "ecosystem_summary": "Met pornographer Riccardo Schicchi in the early 1970s in Italy, who became her mentor and manager. Their radio show 'Voulez-vous coucher avec moi?' on Radio Luna (1973) launched her fame. The Italian media scene of the 1970s provided the right cultural moment, though the ecosystem was not elite or institutional.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "toni-bravo",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Gifted a video camera at 9, began shooting and editing short videos on Windows Movie Maker. 'A theater kid, always recording myself and filming things.' Above-average early creative interest and self-taught editing skills, though no prodigy-level achievement.",
+    "inherited_summary": "Born and raised in Long Beach, California with fraternal twin sister and younger sister. Grew up 'around an abundance of creativity, love, and passion.' No notable family wealth, professional connections, or domain-specific advantages documented.",
+    "ecosystem_summary": "Attended UC Irvine for Film & Media Studies and International Studies. Worked at BuzzFeed (Cocoa Butter team) and Rare Beauty (Selena Gomez's brand), gaining direct beauty industry experience. TikTok platform timing during COVID was key. UC Irvine and BuzzFeed provided institutional stepping stones.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "demi-guo",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started coding in elementary school. Won silver medal at the 2015 IOI at age 16. Won first place at USA Computing Olympiad. Selected for International Math Olympiad team. Harvard BA in math, MA in CS. Youngest research engineer at Meta AI Research. Prodigy-level competitive programming and academic achievement.",
+    "inherited_summary": "Father Guo Huaqiang was chairman of Sunyard Technology Group, a publicly-listed IT services company in Hangzhou. Mother graduated from MIT. Exceptional family wealth and technical fluency — household 'ran on ambition and technical fluency.' Family background provided both resources and domain expertise at the highest level.",
+    "ecosystem_summary": "Harvard for undergraduate (math + CS), Stanford for PhD. Interned at Microsoft, Google, and Meta AI Research (youngest research engineer). Harvard-Stanford pipeline provided elite institutional access and peer networks. Co-founded Pika with Stanford PhD colleague Chenlin Meng, leveraging Stanford AI Lab connections.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "chenlin-meng",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Published 5 generative AI papers as an undergraduate at Stanford and 30+ papers during her PhD. Co-authored the foundational DDIM paper used in DALL-E 2, Imagen, and Stable Diffusion. Exceptional early research output, though no Olympiad or prodigy-level achievement documented before university.",
+    "inherited_summary": "Came from China to study at Stanford as an undergraduate. Family background is not well documented in available sources. No evidence of significant family wealth, domain connections, or professional networks.",
+    "ecosystem_summary": "Stanford AI Lab under Stefano Ermon was the key ecosystem — began graduate-level research as an undergraduate. Published foundational diffusion model papers. Worked at Google Brain and Stability AI. Stanford's AI research ecosystem and Ermon's mentorship provided the institutional platform for her exceptional research output.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "aidan-gomez",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Started a web development business at 15 in rural Ontario without high-speed internet, learning to maximize efficiency. Studied CS at University of Toronto under Roger Grosse. Co-authored the landmark 'Attention Is All You Need' Transformer paper at 20 as a Google Brain intern. Exceptional early achievement.",
+    "inherited_summary": "Grew up in rural Brighton, Ontario. Father was a math teacher, mother a librarian — intellectually nurturing but modest environment. No family wealth, tech industry connections, or domain-specific advantages. Self-described 'shy nerd from rural Ontario.'",
+    "ecosystem_summary": "University of Toronto pipeline led to Google Brain internship under Geoffrey Hinton and Łukasz Kaiser in 2017, where he co-authored the Transformer paper — one of the most influential AI papers ever. Pursued PhD at Oxford. Hinton and the Google Brain environment in 2017 was a once-in-a-generation research ecosystem at the dawn of the Transformer era.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "molly-cantillon",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Studied CS and math at Stanford (Cum Laude). Became immersed in AI and hacker house community. Worked at LangChain and Replicate as an AI engineer. Above-average ability, though no prodigy-level early achievement or competitive programming credentials documented.",
+    "inherited_summary": "Attended Newark Academy, a private day school in Livingston, New Jersey (founded 1774, offers IB and AP). TC Abbey Orator. Middle-to-upper class New Jersey background with private school education, though no significant family wealth or domain-specific connections documented.",
+    "ecosystem_summary": "Stanford CS/AI program provided elite institutional access. Hacker house community in SF became her identity. Worked at LangChain and Replicate — frontier AI startups. OpenAI Startup Fund backed her company NOX. Stanford + SF AI ecosystem was the key catalytic environment.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "vignesh-karthik",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Conducted research at the U.S. Naval Research Laboratory during high school, publishing a first-author poster and abstract presented at the AGU Conference. Recruited as a freshman to Columbia's Lamont-Doherty Earth Observatory. Studied applied mathematics at Columbia Engineering. Strong early research achievement.",
+    "inherited_summary": "No family background, wealth, or domain-specific connections documented in available sources. Information about parents' professions and family resources is not available.",
+    "ecosystem_summary": "Columbia Engineering provided the institutional platform. Naval Research Laboratory in high school and Lamont-Doherty Earth Observatory as a freshman gave early research access. YC S24 acceptance and Paul Graham's investment in Anthrogen provided startup ecosystem access. Columbia's entrepreneurship fellowship program supported his development.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "connor-lee",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Over a decade of robotics experience. Placed 3rd internationally in FIRST Robotics Competition and top 5 globally in MATE ROV. Became the youngest-ever president of Columbia Robotics. Researcher at Columbia's ROAM Lab. Exceptional competitive achievement in robotics from a young age.",
+    "inherited_summary": "No family background, wealth, or domain-specific connections documented in available sources. Information about parents' professions and family resources is not available.",
+    "ecosystem_summary": "Columbia Robotics club and ROAM Lab provided institutional research access. FRC and MATE ROV competition ecosystems were the formative competitive environments. YC S24 acceptance provided startup ecosystem access. Columbia's engineering ecosystem supported his development as a robotics researcher and founder.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ankit-singhal",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Published first-author papers as early as high school. Named a Science Research Fellow and Named Scholar at Columbia (reserved for top ~10 STEM students per class). Won and led national teams at international science competitions. Worked in both wet and computational labs. Exceptional early research achievement.",
+    "inherited_summary": "High school intern at Roche (pharmaceutical company), suggesting early access to research environments. No significant family wealth or domain connections documented, but the Roche internship indicates some institutional access or academic tracking from a young age.",
+    "ecosystem_summary": "Columbia's Science Research Fellow program and Named Scholar designation provided elite institutional access. Worked in Mancia Lab (protein structure) and Quraishi Lab. YC S24 acceptance and Paul Graham's direct investment. Columbia's research ecosystem and the YC startup pipeline were the key catalytic environments.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "emily-cho",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Founded Juvie for STEM (JSTEM) at age 13, growing it to 36 chapters across 17 states with 6,700 volunteers. Now studies CS at Cornell with experience at Google and JP Morgan. Exceptional organizational and leadership achievement from a very young age, though not a traditional cognitive prodigy.",
+    "inherited_summary": "Grew up in a 'very well-resourced area' of New Jersey. Attended Bergen County Technical High School (a specialized public school). Family was supportive of her STEM interests. Well-resourced educational environment, though no significant family wealth or domain-specific connections documented.",
+    "ecosystem_summary": "Bergen County Technical High School provided a strong STEM-focused education. Well-resourced New Jersey area gave access to volunteering and internship opportunities. Cornell CS program, Google AI engineer experience, and JP Morgan. No legendary mentors or peer groups documented, but solid institutional pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "matt-shumer",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started his first business at 12 selling shoes online, expanding to his own website and a marketplace for independent shoe vendors. Self-taught marketing and software development. Entrepreneurial drive and business acumen from a very young age, though not a traditional academic prodigy.",
+    "inherited_summary": "No notable family wealth, domain connections, or professional advantages documented. Chose Syracuse University's Whitman School for its entrepreneurial program, suggesting a middle-class background without elite private school access.",
+    "ecosystem_summary": "Syracuse University's Blackstone LaunchPad powered by Techstars was the key institutional ecosystem. Founded Visos (VR healthcare) through the LaunchPad. Cold-emailed OpenAI's CTO for GPT-3 access — demonstrating initiative rather than connections. LaunchPad provided mentorship and accelerator support.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jason-kuperberg",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Graduated from Syracuse in 2018 with a biotechnology major and entrepreneurship minor. Spent two years as a Springboard Innovation Fellow at Stanford. Above-average ability, though no exceptional early achievement, prodigy-level ability, or competitive credentials documented.",
+    "inherited_summary": "From Rochester, New York. No notable family wealth, domain connections, or professional advantages documented. Middle-class background with no significant inherited leverage.",
+    "ecosystem_summary": "Syracuse University's LaunchPad and Hillel communities were formative. Stanford Springboard Innovation Fellowship (2018-2020) provided a two-year bridge to Silicon Valley. Social Entrepreneurship Lab at Stanford School of Medicine. The Syracuse-to-Stanford pipeline was the key ecosystem transition.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "vladimir-danila",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started coding at 10 to build his own design tool because existing software couldn't handle his illustrations. Self-taught through YouTube tutorials and forum posts. Won German ISEF competition and 3rd at Intel ISEF. Microsoft Student Partner. Launched Vectornator at 17, making $40K immediately. Prodigy-level self-taught coding and product building.",
+    "inherited_summary": "Born in Romania, moved to Germany at 4. Father gave him a programming book that sparked his interest. Modest immigrant family background with no notable wealth, tech industry connections, or domain-specific advantages. Father's programming book was the key catalyst, not family resources.",
+    "ecosystem_summary": "Met startup advisor Marc Zacherl at a 2016 conference, who became his co-founder and provided business expertise. German ISEF competition and Jugend forscht (Europe's biggest student science competition) provided validation and prize money. Berlin tech scene was the geographic context, though the early ecosystem was largely self-created.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "abel-laudonio",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started boxing at 14 after imitating boxer José 'Cucusa' Bruno. Competed at the 1956 Olympics at 17. Won Pan Am gold at 21 and Olympic bronze at 22. Strong physical talent and early specialization, though started relatively late and no prodigy-level achievement before 17.",
+    "inherited_summary": "Born in Villa Urquiza, Buenos Aires, to a 'working-class and humble' family. Worked in various trades from a young age to support the family. Active financial disadvantage with no family wealth, boxing connections, or professional advantages.",
+    "ecosystem_summary": "Argentina had a strong boxing culture and Olympic pipeline. First trainer was Vicente Gullo, who taught him fundamentals. Manager Prudencio Melero guided his amateur career. The Argentine boxing tradition provided the competitive structure, though no elite institutional pipeline or legendary mentor documented.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kurt-hamrin",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Joined AIK's youth system at 15, made his senior debut at 17, and became the Swedish league's top scorer at 20 with 22 goals. Father took him to matches from age 3-4. Showed exceptional early goal-scoring ability, scoring 5 goals in a youth tournament that earned him a spot at AIK.",
+    "inherited_summary": "Fifth son of a house painter in Stockholm. Working-class background. Father played in lower divisions and took him to matches by bicycle, providing early exposure but no financial resources or professional connections. Worked at a newspaper print room as a teenager while playing.",
+    "ecosystem_summary": "Grew up near Råsunda Stadium in Solna, with AIK as his local club. Swedish football culture and AIK's platform provided the competitive structure. Father's lower-division playing experience gave early exposure. The Swedish football system produced several elite players of this era, though AIK was not a legendary peer environment.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "wang-tao",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Started playing table tennis at age 3 under his father's guidance. Recruited into the elite PLA August 1st team at 12. Won men's singles at the 6th National Games at 19. Selected for the Chinese national team in 1988. Exceptional early specialization and achievement in China's most competitive sport.",
+    "inherited_summary": "Born into a family of musicians — father Wang Shijun is a composer, mother is a national first-class singer, elder brother is a violinist. Initially learned violin but switched to table tennis due to short fingers. Musical family provided a disciplined, artistic environment but no direct table tennis connections.",
+    "ecosystem_summary": "Recruited into the PLA August 1st table tennis team at 12, providing access to China's top military sports training infrastructure. The PLA team and Chinese national team pipeline concentrated the world's best table tennis training. China's table tennis system was the ultimate elite performance pipeline — a once-in-a-generation system in the sport's dominant nation.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tomasz-wojtowicz",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Father was his first coach and 'instead of a rattle, they gave me a ball.' Described as a natural talent who was guided by his father. Joined the Polish junior team at 18, winning European Junior Vice-Champion. Strong early development in a family volleyball environment, though not a prodigy-level outlier.",
+    "inherited_summary": "Father Kazimierz was a volleyball player and became his coach at Motor and Avia Świdnik. Mother Bogumiła also played volleyball. Brother Wojciech also played. Full family volleyball environment — both parents and sibling in the sport. Father coached him at club level, providing direct domain apprenticeship.",
+    "ecosystem_summary": "Father as first coach provided direct domain training from childhood. Played for MKS/AZS Lublin, then Avia Świdnik under his father's coaching, then Legia Warszawa. The Polish national team under Hubert Wagner was the elite ecosystem — Poland's golden era of volleyball in the 1970s produced World Championship and Olympic gold.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sunny-leone",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-described tomboy who was 'very athletic' and played street hockey with boys. No exceptional cognitive, creative, or domain-specific ability documented. Her career was launched by an agent's initiative rather than demonstrated early talent.",
+    "inherited_summary": "Born to Sikh Indian Punjabi immigrant parents in Sarnia, Ontario. Family moved to Michigan then California. Conservative Sikh household with financial hardship — Leone did odd jobs as a child to earn money. Parents enrolled her in Catholic school for safety. Active financial disadvantage and immigrant family background.",
+    "ecosystem_summary": "Move to California as a teenager placed her near the center of the adult entertainment industry. An agent contacted her and sent her photos to Penthouse, leading to Pet of the Month and Pet of the Year. California location was the key geographic advantage, though no elite institutional or mentor ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ecaterina-stahl-iencic",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began fencing at 14 under coach Alexandru Csipler at Unio Satu Mare. Won the Romanian national championship at 18. Won the Junior World Championships at 19 in Rotterdam. Individual bronze at the 1966 World Championships. Strong rapid progression from late start to elite international achievement.",
+    "inherited_summary": "Born Katalin Jencsik in Satu Mare, belonging to the Hungarian minority in Transylvania. No notable family wealth, fencing connections, or professional advantages documented. Hungarian minority status may have created some social disadvantage in communist Romania.",
+    "ecosystem_summary": "Coach Alexandru Csipler at Unio Satu Mare was the formative mentor. Transferred to CSA Steaua Bucharest, an elite military sports club that served as Romania's major fencing pipeline. The Romanian fencing system under coaches Andrei Valce and Iosif Zilaghi provided sustained elite training. Steaua was the key institutional advantage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jaromir-jagr",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Began skating at 3 and immediately showed exceptional abilities. Did 1,000 squats daily from age 7, building legendary leg strength. Played with older children from 10. Turned professional at 15 for Poldi SONP Kladno. Youngest member of Czechoslovakia national team at 17. Drafted 5th overall by Pittsburgh. Prodigy-level physical and hockey development.",
+    "inherited_summary": "Father Jaromir Sr. was a coal mine administrator and farmer who provided intensive physical conditioning from childhood, including daily squats and running alongside tractors. Family farm environment built extraordinary physical foundation. Both grandfathers were jailed under communist regime. Modest but stable family with strong athletic training discipline.",
+    "ecosystem_summary": "Kladno was a Czech hockey powerhouse with a specialized hockey school. The Czechoslovak hockey system produced many NHL players. Mario Lemieux as teammate and mentor in Pittsburgh was transformative — Jagr idolized Lemieux and learned by watching him. The Kladno-to-Penguins pipeline at the fall of the Iron Curtain (1990) was perfect timing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ljubomir-ljubojevic",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Taught chess by his father. U-20 vice-world champion at 19 in 1969/70. Awarded International Master title in 1970 and Grandmaster title in 1971 at age 21. Paid his own way to the 1970 Siegen Olympiad to play blitz against masters, impressing even Fischer. Strong early competitive achievement.",
+    "inherited_summary": "Father was a merchant navy officer who taught him chess. Father and son both idolized Mikhail Tal, which influenced Ljubojević's daring playing style. Middle-class family with an intellectually engaged father, though no significant wealth or chess industry connections.",
+    "ecosystem_summary": "Yugoslavia experienced an incredible chess boom in the late 1950s, triggered by the Interzonal Tournament in Portorož (1958) and Candidates Tournament in Bled (1959). Tal's performances captivated the nation. Yugoslav chess culture provided strong competitive environment and national team access. The chess boom was the key catalytic timing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "slobodan-kovac",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began volleyball career at 15 in the Yugoslav club system. 197cm height provided a significant physical advantage. Won the Yugoslavian Championship at 21. Debuted for the Yugoslav national team in 1991. Strong physical attributes and competitive development, though no prodigy-level early achievement.",
+    "inherited_summary": "Born in Veliko Gradište, Serbia. No family volleyball background, wealth, or domain-specific connections documented. Information about parents' professions and family resources is not available.",
+    "ecosystem_summary": "The Yugoslav and later Serbian volleyball pipeline was a strong tradition of producing elite players. Played for Vojvodina Novi Sad (1988-1992), winning the Yugoslavian Championship. The national team system provided international competition access. Yugoslav volleyball was a significant but not legendary ecosystem.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "ed-beccle",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Built his first app (a tutor-hiring app) at ~15 after being diagnosed with Type 1 diabetes at 13, which caused him to miss school. Licensed the tutoring app to a Chinese company at 17 for a multimillion-dollar exit. Dropped out of school at 16. Co-founded Glorify at 21. Exceptional early entrepreneurial achievement.",
+    "inherited_summary": "Mother was a fund manager, father worked in advertising. Born in Hong Kong, moved to Oxford at 8, attended St Edward's School (private school). Co-founder Henry Costa is the son of former Lazard chairman Ken Costa, providing direct access to elite financial and celebrity networks. Michael Ovitz (former Disney boss) as investor. Trajectory-changing family and co-founder connections.",
+    "ecosystem_summary": "Private school education at St Edward's in Oxford. Co-founder's father Ken Costa (former Lazard chairman) opened doors to elite investors. Celebrity investor network including Michael Ovitz, James Corden, Michael Bublé. a16z $40M Series A. The co-founder's family network was the key ecosystem advantage, providing access to Hollywood and Silicon Valley elite.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "fabian-kamberi",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Took college classes while in high school and wrote the bestseller 'What You Don't Learn in School.' Was already building consumer social apps before co-founding SLAY. Co-founded SLAY at 23. Strong early entrepreneurial and creative achievement, though not a traditional academic prodigy.",
+    "inherited_summary": "Self-described 'small town kid from the south of Germany from a working class family.' No notable family wealth, tech industry connections, or domain-specific advantages. Working-class background with no inherited leverage.",
+    "ecosystem_summary": "CODE University of Applied Sciences in Berlin was the key ecosystem — a private, state-recognized university known for curiosity-driven learning and entrepreneurial spirit. Met co-founder Stefan Quernhorst at CODE. Accel backing and angel investors like Riccardo Zacconi (former King CEO) and Scooter Braun. CODE's startup-focused ecosystem was the catalytic environment.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "risa-feng",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Graduated from Cornell in 2017 with CS and Math. Immersed in art from childhood (watercolors to digital art to 3D modeling). Built indie games during university, winning 'Most Polished Game' at GDIAC showcase. Above-average creative and technical ability, though no prodigy-level achievement documented.",
+    "inherited_summary": "China-born, came to the US for university. No notable family wealth, tech industry connections, or domain-specific advantages documented. Family background information is limited in available sources.",
+    "ecosystem_summary": "Cornell CS provided the technical foundation. Snapchat's AR Division (2017) provided frontier AR experience — worked on popular filters including gender-swapping lens. Met co-founder Shawn Lin at Snap. Sequoia Capital India led Series B. The Snap AR experience and co-founder relationship were the key ecosystem advantages, combined with metaverse wave timing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "daniel-hanover",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Studied Statistics, Finance, and CS at the Wharton School, UPenn. Held internships at Facebook (software engineering), Yelp (product management), and Google (APM program). Above-average ability with strong Big Tech experience, though no prodigy-level or exceptional early achievement documented.",
+    "inherited_summary": "No notable family wealth, domain connections, or professional advantages documented. Information about parents' professions and family background is not available in sources.",
+    "ecosystem_summary": "Wharton School at UPenn provided elite business/tech education. Google APM program is one of the most selective product management pipelines. Facebook engineering and Yelp PM internships provided broad Big Tech experience. Co-founded Dandy with Wharton classmate Toni Oloko. Wharton + Google APM was the key institutional ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "toni-oloko",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Nationally ranked tennis player by age 15, going from state to national level in one year. Founded PracticeGigs at 17, inspired by his inability to afford private tennis lessons. Thiel Fellow. Deferred Wharton to build his startup. Exceptional athletic and entrepreneurial achievement from a young age despite financial constraints.",
+    "inherited_summary": "Family could not afford $100 private tennis lessons, which catalyzed his first startup. Attended Boston Trinity Academy in Hyde Park (not an elite private school). Financial constraint was the driving force behind his entrepreneurial journey. Active financial disadvantage.",
+    "ecosystem_summary": "Boston startup ecosystem provided early support — Smarter in the City accelerator in Roxbury. Served as EIR at Accomplice VC and Special Projects at Gopuff, gaining startup ecosystem experience. Wharton education and co-founder relationship with Daniel Hanover. Thiel Fellowship provided validation and network. Boston-to-Wharton pipeline was the key ecosystem transition.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jeremy-zhang",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Studied Electrical Engineering and Economics at Duke. True Ventures Fellow (1 of 14 undergraduates selected). Built a trading algorithm (AntiCor) with 293% average historic annual return. Interned at Amazon Robotics. Above-average technical and entrepreneurial ability with early achievement.",
+    "inherited_summary": "No notable family wealth, domain connections, or professional advantages documented. Information about parents' professions and family background is not available in sources.",
+    "ecosystem_summary": "Duke University provided the educational foundation. True Ventures Fellowship (2015) was a selective entrepreneurship/VC program. Amazon Robotics R&D internship (2016) and Smartcar (2017-2019) provided direct API-building experience. Met co-founder Ansel Parikh through On Deck Fellowship. YC Summer 2020. The Duke-to-Smartcar-to-YC pipeline was the key ecosystem path.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "akshaya-dinesh",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught coder at 13. Attended 45+ hackathons, building something new nearly every weekend. Won Apple's WWDC Scholarship in high school. NJ Governor's School of Engineering. Stanford CS. Thiel Fellow. Founded two startups (Ladder/Nova and Spellbound) before 22. Exceptional early builder and entrepreneurial achievement.",
+    "inherited_summary": "Grew up in New Jersey suburbs. Parents were not developers but saw programming opportunities at their workplaces and encouraged her to learn Java at 13. Middle-class family with supportive, education-oriented parents who recognized tech opportunities, though no significant wealth or domain connections.",
+    "ecosystem_summary": "She++ community and hackathon ecosystem were formative. Stanford CS provided elite institutional access. Interned at Microsoft and Bloomberg. Thiel Fellowship provided validation and network. Silicon Valley access through Stanford and hackathon community. The hackathon-to-Stanford-to-Thiel pipeline was the key ecosystem path.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "zara-perumal",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Valedictorian of Plumwood Academy. Chemistry Olympiad national finalist. MIT for Bachelor's in CS and Molecular Biology, Master's in AI. Researched at MIT LIDS and CSAIL. Started coding with HTML at 11, later developing iOS apps. Strong early academic and technical achievement across multiple domains.",
+    "inherited_summary": "Father was a software developer who influenced her early interest in coding. Family provided a tech-adjacent environment that sparked her coding journey at age 11. No significant family wealth documented, but father's profession provided domain exposure and early mentorship.",
+    "ecosystem_summary": "MIT provided elite institutional access across CS, molecular biology, and AI. Researched at MIT LIDS and CSAIL labs. Worked at Google's Threat Analysis Group (2018-2022) countering state-sponsored hacking — a rare and elite position. YC S22 acceptance. MIT + Google TAG was the key institutional ecosystem combination.",
+    "scoring_confidence": "Medium"
+  }
+]

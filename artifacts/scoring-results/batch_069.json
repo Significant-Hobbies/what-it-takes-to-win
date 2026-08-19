@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "blake-anderson",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Studied finance at Tulane with no formal coding training; taught himself to code using AI tools after graduating. Above-average ability and drive but no evidence of prodigy-level talent or early exceptional achievement.",
+    "inherited_summary": "Financial adversity during early startup phase — older brother was lending him money for groceries when he built RizzGPT. No family wealth or domain connections evident.",
+    "ecosystem_summary": "Leveraged X.com (Twitter) for networking and distribution, complementary co-founders, and the AI/LLM consumer app wave. Tulane University provided a baseline education but no elite tech ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "eric-zhu",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started building internet businesses at 13 during the pandemic, raised $1M VC at 15, founded Aviato and Bachmanity Capital. Exceptional early entrepreneurial achievement and drive, though not a traditional cognitive prodigy.",
+    "inherited_summary": "First-generation immigrant parents in Carmel, Indiana. Supportive but initially confused by his path; mother wanted him to be a doctor. Middle-class stable family, no domain-specific advantages.",
+    "ecosystem_summary": "Immersed in Discord startup communities and Hack Club at 13, cold-emailing investors, moved to San Francisco as a teenager. YC ecosystem and VC networking provided significant acceleration.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "pranjali-awasthi",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began coding at age 7 guided by her engineer father, became a research intern at Florida International University at 13 working on machine learning, and founded Delv.AI at 16. Exceptional early achievement in both coding and research.",
+    "inherited_summary": "Father is a computer engineer who introduced her to coding at 7 and instilled academic priorities. Immigrant family from India to Florida; parents supportive of technology pursuits despite initial resistance to skipping college.",
+    "ecosystem_summary": "FIU research lab internship at 13 provided direct ML research exposure. Accepted into Miami Hack Week accelerator, HF0 residency, and launched on Product Hunt. AI/LLM wave timing was a major tailwind.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "daniel-bitton",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started posting YouTube videos at 9, taught himself video editing by 12, and earned six figures per month from Snapchat Shows with 10M followers by 15. Exceptional early achievement in content creation and distribution, self-taught.",
+    "inherited_summary": "Grew up in Nicosia, Cyprus. No notable family wealth or domain connections evident. Bought his mother a Rolex at 16, suggesting family was not affluent prior to his success.",
+    "ecosystem_summary": "Platform ecosystems (YouTube, Snapchat, TikTok) provided the infrastructure for his success. No elite institutions or notable mentors; entirely self-created through online platform communities.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "artem-middleton",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started building viral consumer products on Roblox at 12, with Math Olympiad background. Dropped out of high school to join YC S22 at 17 as the 3rd youngest YC founder in history. Exceptional early achievement in game development and viral marketing.",
+    "inherited_summary": "No family background information found in research. No evidence of inherited wealth or domain-specific family advantages.",
+    "ecosystem_summary": "Roblox platform provided 5+ years of domain reps. YC S22 acceptance with Paul Graham backing, co-founder duo (Brain), and San Francisco relocation provided significant ecosystem acceleration.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "aryan-sharma",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Relentless networker who cold-emailed Sam Altman and offered to work as his secretary. Prior experience as founding engineer at Layer3. Above-average ability and exceptional hustle, but no evidence of prodigy-level cognitive talent.",
+    "inherited_summary": "Indian-origin entrepreneur based in Silicon Valley. No family background information found in research; no evidence of inherited wealth or domain connections.",
+    "ecosystem_summary": "Physical proximity to Silicon Valley, Sam Altman connection through cold outreach, and the AI automation wave were key ecosystem advantages. Complementary co-founder in Ayush Pathak.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "ayush-pathak",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started in tech at 12, got first job at 16, founded first company at 17, and became founding engineer at Thirdweb (a prominent web3 platform). Exceptional early and sustained technical practice.",
+    "inherited_summary": "Indian-origin entrepreneur. No family background information found in research; no evidence of inherited wealth or domain connections.",
+    "ecosystem_summary": "Thirdweb founding engineer role provided technical depth and credibility. Silicon Valley proximity, complementary co-founder Aryan Sharma, and the AI automation wave were key ecosystem advantages.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "henry-langmack",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Met co-founder Zach Yadegari at a coding camp and led technical development of Cal AI at 17. Above-average coding ability with strong A/B testing and technical management skills, but no evidence of prodigy-level talent.",
+    "inherited_summary": "No family background information found in research. No evidence of inherited wealth or domain-specific family advantages.",
+    "ecosystem_summary": "Coding camp provided the co-founder connection with Zach Yadegari. The AI/LLM wave for consumer apps and San Francisco summer residency were significant tailwinds. Complementary co-founder relationship was the primary ecosystem advantage.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "hunter-rice",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Built a campus communication tool at SMU and worked as a product designer before founding Iconic Hearts. Above-average ability and product instincts, but no evidence of exceptional early achievement or prodigy-level talent.",
+    "inherited_summary": "Grew up in Beverly Hills, California, an affluent area. Attended Beverly Hills High School. Upper-middle class upbringing with stability, though no specific family domain connections found.",
+    "ecosystem_summary": "SMU business degree, fraternity leadership, and Snapchat platform integration provided the foundation. Normal peer group without notable tech mentors or elite institutional access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "brendan-rius",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started coding at 12, launched a file-sharing platform at 14, found a security flaw in a major financial institution at 16, and was selected for Xavier Niel's No MBA Program. Exceptional early technical achievement in coding and security.",
+    "inherited_summary": "Born in France, November 1996. No family background information found in research; no evidence of inherited wealth or domain-specific family advantages.",
+    "ecosystem_summary": "Selected for Xavier Niel's No MBA Program (elite business education), invited to Le Web conference. Co-founder synergy with Anis Belkacem and the Discord platform wave were key ecosystem advantages.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "frederik-riedel",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Built his first iOS app at 15, received five Apple WWDC scholarships, shipped 50-100 apps, and interned at Apple. Exceptional early achievement in iOS development with sustained output.",
+    "inherited_summary": "Born around 1995 in Stuttgart, Germany. No family background information found in research; no evidence of inherited wealth or domain-specific family advantages.",
+    "ecosystem_summary": "Five Apple WWDC scholarships provided direct access to Apple engineers and ecosystem. Apple internship in Cupertino (Safari team, 2017). University of Stuttgart software engineering program. Early access to Apple platform and tools.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tony-dinh",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Built first software product with Visual Basic 6 in high school and competed in programming contests. Seven years as a software engineer before indie career. Above-average ability but no prodigy-level early achievement.",
+    "inherited_summary": "Parents were poor in post-war Vietnam; father was a construction worker and mother sold goods from home. Family situation improved when he was around 10, and parents bought him a computer. Active financial disadvantage in early life.",
+    "ecosystem_summary": "FPT University for CS education, discovered Indie Hackers community during pandemic. Programming contests in Vietnam where he was often the only participant from his city. No elite institutional access or notable mentors.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "anthony-fu",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Became a prolific open source contributor creating VueUse, Vitest, and Slidev, and a core team member of Vue, Nuxt, and Vite. Exceptional productivity and domain mastery, though no evidence of early prodigy-level achievement.",
+    "inherited_summary": "Studied CS at Tamkang University in New Taipei (2015-2019). No family background information found in research; no evidence of inherited wealth or domain-specific advantages.",
+    "ecosystem_summary": "GitHub-native from 2015, deeply embedded in the Vue.js ecosystem. University CS education provided baseline. No elite institutional access or notable mentors; ecosystem advantage came from the Vue/Vite platform wave.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "jared-palmer",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Attended The Dalton School (elite NYC private) and Cornell (Economics, Summa Cum Laude). Created Formik, the most popular React form library. Goldman Sachs summer analyst. Exceptional academic and early technical achievement.",
+    "inherited_summary": "Mother was VP of Design at Estee Lauder and father was a music producer. Family ran The Palmer Group consulting business. Elite NYC private school (Dalton) and upper-middle class family with significant professional connections.",
+    "ecosystem_summary": "The Dalton School (elite NYC private), Cornell University, Goldman Sachs, and NYC tech ecosystem provided significant institutional acceleration. Family consulting business provided early software engineering experience.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "segun-adebayo",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "Transitioned from UI design to front-end development in Nigeria, motivated by the gap between design and development workflows. Created Chakra UI as a side project. Above-average ability but no evidence of prodigy-level early achievement.",
+    "inherited_summary": "Born around 1993 in Nigeria. Limited resources and infrastructure in a developing country context. No evidence of family wealth or domain-specific advantages.",
+    "ecosystem_summary": "Worked as UX-UI Designer at Tuteria in Lagos (2017-2019). No elite institutional access or notable mentors. The React wave and open source community provided the platform, but the local ecosystem offered limited acceleration.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "ritwick-dey",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "Created VS Code Live Server in June 2017 while still a student in India, addressing a common web development pain point. Above-average ability with good product instincts, but no evidence of exceptional early achievement.",
+    "inherited_summary": "Born around 1997 in India. No family background information found in research. Completed BTech in Computer Science, graduating around 2019.",
+    "ecosystem_summary": "Normal university education in India. VS Code ecosystem provided the platform for his extension. No elite institutional access, notable peers, or mentors identified.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "liyas-thomas",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "Self-taught web developer who worked as a construction worker, mason, and chef before becoming a developer. Created Hoppscotch in a single night to solve his own API testing problem. Above-average ability and creativity, but no prodigy-level evidence.",
+    "inherited_summary": "Came from a low financial background in Kerala, India. Worked as construction worker, mason, and chef. Took out a loan to complete engineering degree and repaid it four months after first job. Active financial disadvantage.",
+    "ecosystem_summary": "Graduated BTech CS in August 2019 from a basic college in Kerala. No elite institutional access, notable peers, or mentors. Self-learned from Google, Stack Overflow, and CodePen. Open source community provided distribution.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jesse-duffield",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Studied CS at Monash University and created lazygit in 2018 as a personal productivity tool. Above-average ability with strong product instincts, but no evidence of exceptional early achievement or prodigy-level talent.",
+    "inherited_summary": "Born around 1996 in Melbourne, Australia. No family background information found in research; no evidence of inherited wealth or domain-specific advantages.",
+    "ecosystem_summary": "Monash University CS program, Hacker News launch for lazygit. Normal peer group without notable mentors or elite institutional access beyond a good Australian university.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "anis-belkacem",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started programming at 12 and launched over 20 websites during teenage years. Dropped out of college and committed to launching one new product every two weeks. Exceptional early output and rapid iteration discipline.",
+    "inherited_summary": "Born around 1997 in France. No family background information found in research; no evidence of inherited wealth or domain-specific family advantages.",
+    "ecosystem_summary": "Co-founder synergy with Brendan Rius, Discord platform wave timing, and rapid product iteration culture. No elite institutional access; ecosystem advantage came from the co-founder relationship and platform timing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ansu-fati",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Prodigy-level football talent — debuted for Barcelona's first team at 16, became the youngest goalscorer in Champions League history at 17. Exceptional physical and technical ability from a very young age, recognized by Spain's biggest clubs at 9.",
+    "inherited_summary": "Born in Guinea-Bissau in poverty. Father Bori was a former semi-pro footballer who emigrated and worked as driver, bricklayer, waiter, and dustman to support six children. Family lived in a small Andalusian town with hand-me-down clothes. Active financial disadvantage.",
+    "ecosystem_summary": "Joined Barcelona's La Masia at 10, one of the world's elite football academies. Albert Puig personally recruited him. Elite coaching, facilities, and peer group at La Masia. Perfect timing at the peak of Barcelona's academy system.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "scottie-barnes",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Exceptional athletic ability recognized early — five-star recruit, consensus top player in 2020 class. Started organized basketball in 3rd grade and stood out immediately playing against older opponents. Not prodigy-level but significant natural physical advantage.",
+    "inherited_summary": "Raised by single mother Kathalyn Wilkins alongside three siblings in West Palm Beach with unstable housing and troublesome neighborhoods. Active financial disadvantage and family instability.",
+    "ecosystem_summary": "AAU coach John Simpson discovered him in 5th grade and took him into his family home in Wellington. Transferred to Montverde Academy (elite basketball program) for senior year. Cade Cunningham as peer. Significant mentorship and institutional acceleration.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "alperen-sengun",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started basketball at 8, left family at 12 to pursue the sport in Bandirma, named Turkish Super League MVP at 18. Exceptional early achievement in basketball with notable dedication from a young age.",
+    "inherited_summary": "Father Kemal was a former professional point guard in Turkey's first division who became a fisherman in Giresun. Domain knowledge in the family (father's basketball background), but modest financial circumstances in a small Black Sea coast town.",
+    "ecosystem_summary": "Trainer Salim Tasli (father's childhood friend) coached him for four years in Giresun. Spotted by Banvit club infrastructure coordinator and moved to Bandirma at 12. Besiktas and Turkish professional basketball pipeline provided elite development.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "scott-aaronson",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Taught himself calculus at 11, learned programming at 11, entered Cornell University at 16 (skipped three grades), published quantum lower bound for collision problem at STOC 2002 at age 21. Prodigy-level cognitive ability from a young age.",
+    "inherited_summary": "Parents were not scientists — mother was a remedial reading teacher, father was a science writer turned PR executive. Middle-class family in Philadelphia area. Parents fought for advanced classes and supported his acceleration, but no domain-specific expertise.",
+    "ecosystem_summary": "Clarkson University gifted program, Cornell at 16, Berkeley PhD under Umesh Vazirani (leading quantum computing researcher). Bart Selman mentorship at Cornell. Met lifelong friend and collaborator J. Alex Halderman in junior high.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "kaiming-he",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Scored first place in 2003 Guangdong provincial college entrance exam, entered Tsinghua University's elite basic science class, won CVPR Best Paper at 24-25 as first Chinese researcher. Prodigy-level quantitative ability with national exam ranking confirming exceptional talent.",
+    "inherited_summary": "Born in Guangzhou, only child. Parents both in enterprise management, providing a good educational environment. Middle-class family with stability, but no domain-specific tech or academic connections.",
+    "ecosystem_summary": "Tsinghua University elite basic science class (interdisciplinary top-tier program), MSRA internship as undergraduate, PhD at CUHK under Tang Xiao'ou (founder of SenseTime). Frontier computer vision research environment at MSRA and FAIR.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "june-huh",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Late bloomer who dropped out of high school to write poetry, struggled with math ('notably mediocre'), and took six years to graduate college. No early evidence of exceptional cognitive ability; talent emerged late through mentorship.",
+    "inherited_summary": "Father is professor emeritus of statistics at Korea University, mother is professor emerita of Russian literature at Seoul National University. Both were completing PhDs in the US when Huh was born. Academic family with significant intellectual environment.",
+    "ecosystem_summary": "Chance encounter with Fields Medalist Heisuke Hironaka at Seoul National University in his sixth year was transformative. Hironaka became his mentor, invited him to Japan as personal assistant. Elite academic pipeline from SNU to Hironaka's network.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "maryna-viazovska",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Entered a specialized math-physics school at 12, competed in domestic math olympiads, and co-authored a paper on spherical designs accepted at Annals of Mathematics at 26. Strong early quantitative ability, though not a traditional prodigy.",
+    "inherited_summary": "Parents are chemists/engineers (father chemist at Antonov aircraft factory, mother engineer). No mathematicians in the family. Modest Soviet-era upbringing in Kyiv with limited resources, but stable and supportive family.",
+    "ecosystem_summary": "Kyiv Natural Science Lyceum No. 145 (selective math-physics school) with teacher Andrii Knyazyuk (former research mathematician). Collaborated with Andriy Bondarenko as undergraduate. PhD under Don Zagier at Bonn. Elite Ukrainian math community and European academic pipeline.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "taylor-wilson",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Built a working nuclear fusion reactor at 14, becoming the youngest person to achieve controlled fusion. Obsessive focus from age 10, self-driven exploration of nuclear science. Prodigy-level ability and drive.",
+    "inherited_summary": "Father owns a Coca-Cola bottling plant (significant wealth). Mother was a yoga instructor. Family relocated from Arkansas to Reno, Nevada so Taylor and his brother could attend Davidson Academy for profoundly gifted children. Wealthy, supportive family.",
+    "ecosystem_summary": "Access to University of Nevada physics lab at a young age, Davidson Academy (school for profoundly gifted children), supportive professors and mentors. Family went to extraordinary lengths to support his nuclear experiments.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "sabrina-gonzalez-pasterski",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Built and flew a kit aircraft solo at 14, entered MIT at 17, graduated in 3 years with perfect 5.0 GPA (first woman in decades to top MIT physics), co-discovered spin memory effect cited by Hawking at 22-23. Prodigy-level ability across multiple domains.",
+    "inherited_summary": "Parents are both lawyers (Mark Pasterski and Maria Gonzalez), of Polish and Cuban descent. First-generation Cuban-American. Middle-class family in Chicago. Supportive but not domain-specific (law, not physics).",
+    "ecosystem_summary": "Edison Regional Gifted Center (elementary), MIT physics program, Harvard PhD under Andrew Strominger, NASA Kennedy Space Center internship, CERN-CMS collaboration. Elite institutional pipeline from gifted education through top research labs.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "brittany-wenger",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-taught programming from a book in seventh grade with no prior experience. Built an artificial neural network for breast cancer diagnosis at 17, winning Google Science Fair. Exceptional early achievement in self-directed learning and application.",
+    "inherited_summary": "Grew up in Lakewood Ranch/Bradenton, Florida. Tight-knit family. Attended Out-of-Door Academy (private school). Middle-class supportive family, though no specific domain connections found.",
+    "ecosystem_summary": "Google Science Fair competition, Google App Engine for cloud deployment, and meeting Vint Cerf provided some ecosystem support. Normal school environment without elite institutional access or notable research mentors.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jack-andraka",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won the Gordon E. Moore Award at Intel ISEF at 15 for a pancreatic cancer detection sensor. Self-directed research using open-access journals. Exceptional early achievement, though later scrutiny tempered some claims.",
+    "inherited_summary": "Both parents in scientific fields (father civil engineer, mother in medical field). Brother was a two-time ISEF competitor. Science-studded family with aunts, uncles, and grandfather in science. Supportive, science-oriented household.",
+    "ecosystem_summary": "Johns Hopkins lab access through Dr. Anirban Maitra after emailing ~200 professors. Intel ISEF competition pipeline. Family fostered curiosity from age 3 with experiments. Science fair culture at school provided the framework.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "prafulla-dhariwal",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Gold medals at International Mathematical Olympiad (2012), International Physics Olympiad (2013), and International Astronomy Olympiad. Perfect 5.0 GPA at MIT. Triple Olympiad gold medalist — rare, trajectory-changing prodigy-level ability.",
+    "inherited_summary": "Mother Alka was an engineering college professor (fluid mechanics) at MITWPU Pune. Father Sushil holds a B.Tech and owns a ceramics company. Technical household with both parents in engineering/technical fields.",
+    "ecosystem_summary": "MIT on full scholarship (tuition and housing), OpenAI research intern from 2016, Olympiad training in India. Early access to frontier AI research at OpenAI during the GPT revolution. Elite institutional pipeline from Indian Olympiad system to MIT to OpenAI.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "hugo-duminil-copin",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Good at school but not exceptional — described himself as 'not very stimulated' and making 'small mistakes.' Preferred sports to math initially. Found math passion late at Lycee Louis-le-Grand. No early prodigy evidence; talent emerged through elite education.",
+    "inherited_summary": "Son of a middle school sports teacher and a former dancer who became a primary school teacher. Middle-class family in Paris suburbs. Parents deliberately did not push him academically, exposing him to variety instead.",
+    "ecosystem_summary": "Lycee Louis-le-Grand (elite Paris preparatory school), ENS Paris (one of France's most elite institutions), PhD at University of Geneva under Fields Medalist Stanislav Smirnov. Elite French academic pipeline with legendary mentor.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "saining-xie",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Admitted to SJTU's ACM Honors Class (highly selective program for top CS students in China). Received Marr Prize Honorable Mention at ICCV 2015 at 24-25. Exceptional ability confirmed by competitive admission, though not a traditional prodigy.",
+    "inherited_summary": "Father studied psychology, did education work and media at TV stations. Mother was in business and traveled extensively. Middle-class family with books at home (father was a homebody who read constantly), but no domain-specific tech or academic connections.",
+    "ecosystem_summary": "SJTU ACM Honors Class (elite CS program), NUS internship with Shuicheng Yan, UCSD PhD under Zhuowen Tu, FAIR research environment. Elite institutional pipeline through China's top CS program to top US PhD to FAIR.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "chelsea-finn",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "MIT EECS, National Merit finalist, Sandia Excellence in Mathematics Award. Published MAML at ICML 2017 at 24. Exceptional academic trajectory, though no evidence of early prodigy-level achievement before college.",
+    "inherited_summary": "Both parents are engineers (Leslie Garrison and Jeff Finn), providing a technical household and engineering role models. Middle-class supportive family that encouraged problem-solving from a young age.",
+    "ecosystem_summary": "MIT EECS with CSAIL research, Berkeley BAIR lab under Pieter Abbeel and Sergey Levine (leading deep RL researchers). FIRST LEGO League in middle school. Elite institutional pipeline from MIT to Berkeley BAIR at the peak of deep RL wave.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "william-peebles",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "MIT EECS with CSAIL research under Torralba, NSF Graduate Fellowship, co-created Diffusion Transformers (DiT) at 25. Exceptional academic trajectory, though no evidence of early prodigy-level achievement before college.",
+    "inherited_summary": "Parents mentioned in dissertation dedication but no specific professions found. MIT undergraduate education suggests at minimum a middle-class supportive family background.",
+    "ecosystem_summary": "MIT CSAIL under Antonio Torralba, Berkeley AI Research under Alyosha Efros, internships at FAIR, Adobe Research, and NVIDIA. Elite institutional pipeline from MIT to Berkeley BAIR with multiple frontier lab experiences. Leads Sora at OpenAI.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sarah-flannery",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Developed the Cayley-Purser cryptographic algorithm at 16, winning both Irish and EU Young Scientist competitions. Father described her as having 'mathematics competence' but 'no genius or prodigy.' Strong early quantitative ability nurtured by family.",
+    "inherited_summary": "Father David Flannery is a mathematics lecturer at Cork Institute of Technology who taught her math from childhood and ran evening math enrichment classes. Math-rich household with siblings solving problems on a kitchen chalkboard. Direct domain mentorship from father.",
+    "ecosystem_summary": "Father's evening math enrichment class connected her to Baltimore Technologies (cryptography firm) for internship. Michael Purser (Baltimore Technologies founder) and William Whyte as mentors. Irish Young Scientist competition pipeline.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "sabrina-pasterski",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Built a Zenith CH 601 XL kit aircraft starting at 12, flew it solo at 14. Attended IMSA (elite gifted school), interned at NASA Kennedy Space Center. Graduated MIT in 3 years with perfect 5.0 GPA, first woman in decades to top physics program. Prodigy-level ability.",
+    "inherited_summary": "Parents are both lawyers (Mark Pasterski and Maria Gonzalez), of Polish and Cuban descent. First-generation Cuban-American, Chicago Public Schools alumna. Middle-class supportive family, but not domain-specific.",
+    "ecosystem_summary": "Illinois Mathematics and Science Academy (elite public residential gifted school), Edison Regional Gifted Center, MIT physics, NASA Kennedy Space Center internship, CERN-CMS collaboration. Elite institutional pipeline from gifted education through top research labs.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "mariangela-lisanti",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won first place in BOTH the Siemens Competition (2000) and Intel Science Talent Search (2001) — the first person to win both. Built a nanowire measurement device with $35 in materials. First in class of 264, captain of math team, concertmaster of orchestras. Prodigy-level ability.",
+    "inherited_summary": "Parents are Italian immigrants who arrived in America in high school speaking no English and could not afford college. Grandparents were farmers, carpenters, and seamstresses. Grew up in Bronx then Westport, CT. No inherited wealth or domain connections, but Westport is an affluent area.",
+    "ecosystem_summary": "Staples High School in Westport, CT (affluent area with good schools). Yale University internship with Mark Reed for nanowire research. Intel STS and Siemens Competition pipeline. Supportive high school teachers despite no formal research program.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "nadim-kobeissi",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "Mother got him a computer at 4 in 1994 Lebanon (rare and expensive). Self-taught cryptography while studying philosophy at Concordia. Built Cryptocat at 21. Exceptional self-directed technical ability despite non-technical academic path.",
+    "inherited_summary": "Born in Beirut, Lebanon. Father was a philosophy professor (killed in 2006). Mother was a journalist. Lived through four wars and was interrogated multiple times by cyber-intelligence authorities as a teenager. Active disadvantage from war zone and personal loss.",
+    "ecosystem_summary": "Concordia University (philosophy, not CS), no elite CS institutional access. Cypherpunks community and online networks provided his ecosystem. Emigrated to Canada as a teenager. No notable mentors or institutional acceleration in cryptography.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ryan-lackey",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Scored 1580 on SATs, skipped last year of high school, entered MIT at 16 for mathematics. Implemented Chaumian digital cash with Ian Goldberg. Exceptional early technical ability, though dropped out of MIT due to financial constraints.",
+    "inherited_summary": "Born in West Chester, Pennsylvania. Dropped out of MIT due to financial constraints (lack of tuition money), indicating lack of family wealth. No evidence of domain-specific family advantages or connections.",
+    "ecosystem_summary": "MIT mathematics program, cypherpunks movement and mailing lists, Financial Cryptography conferences. Collaboration with Ian Goldberg on Chaumian digital cash. Cypherpunks community was a frontier ecosystem for crypto/anarchy ideas.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "natalia-toro",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Skipped 5th, 7th, and 8th grades. Took college-level mathematics in 6th grade. Won Intel STS at 14 — the youngest winner in the program's 58-year history — for independent neutrino oscillation analysis. Prodigy-level cognitive ability from a very young age.",
+    "inherited_summary": "Parents are Colombian immigrants in Boulder, Colorado. Parents could not keep up with her when she discussed her project. No evidence of inherited wealth or domain-specific family advantages, but stable immigrant family.",
+    "ecosystem_summary": "MIT Research Science Institute (RSI) under Edmund Bertschinger provided the research environment for her winning project. Fairview High School in Boulder. Intel STS competition pipeline. RSI is a prestigious summer research program for high school students.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "thiago-david-olson",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Spent over two years and 1,000 hours building a working nuclear fusion reactor in his parents' basement at 17, becoming the 18th amateur worldwide to achieve fusion. Exceptional self-directed project ability, though not prodigy-level in the traditional sense.",
+    "inherited_summary": "Father Mark Olson helped with construction and electrical work. Middle-class family in Oakland Township, Michigan (suburban Rochester Hills). Parents supportive of the project despite initial reservations. Stable family with resources for a basement lab.",
+    "ecosystem_summary": "Normal public high school (Stoney Creek). Self-driven project using eBay parts and manufacturer discounts. No elite institutional access or notable mentors; achieved fusion through self-directed research and scrounging. Intel ISEF participation provided some competition framework.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "keith-winstein",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Invented lexical steganography at 17, winning 3rd place in Intel STS. Created Mosh (widely used mobile shell) and MIT's LAMP system. Co-founded IMSA Advanced Computing Association. Exceptional early achievement in computer science.",
+    "inherited_summary": "Son of the late experimental physicist Bruce Winstein (UChicago professor). Academic/scientific family with father bringing graduate students home for dinner. Mother Joan Winstein supportive. Significant domain-adjacent family background in physics/science.",
+    "ecosystem_summary": "Illinois Mathematics and Science Academy (elite public residential gifted school), MIT AI Lab with Gerald Sussman mentorship from freshman year, CSAIL. Worked with Marc Horowitz on DVD encryption. Elite institutional pipeline from IMSA to MIT CSAIL.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "dan-kaminsky",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Father bought him a RadioShack computer at 4; taught himself to code by 5. Hacked into military computers at 11, attracting government attention. Prodigy-level early ability in computing and security from an exceptionally young age.",
+    "inherited_summary": "Born in San Francisco to Marshall Kaminsky and Trudy Maurer. Father bought him a computer at 4, showing early support for technology. Middle-class family; mother fiercely defended him when government threatened to cut internet access. Supportive but not domain-specific.",
+    "ecosystem_summary": "Early computer access at 4 (1983, rare), San Francisco tech-adjacent geography. Black Hat and DEF CON community as professional network. Santa Clara University (business computing, not elite CS). Cypherpunks/security community provided peer environment, but no elite institutional pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "chetan-nayak",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Won top prize at 1988 Science Talent Search at 16 as a Stuyvesant student, with a mathematical analysis of unified field theory. Harvard BA, Princeton PhD under Frank Wilczek. Exceptional early achievement, though no evidence of pre-high-school prodigy status.",
+    "inherited_summary": "Born in New York City in 1971. Indian-American family. Attended Stuyvesant High School (elite NYC public school). No specific family wealth or domain information found, but NYC/Stuyvesant suggests educated immigrant family.",
+    "ecosystem_summary": "Stuyvesant High School (elite NYC specialized school, produced multiple STS winners same year), Harvard University, Princeton PhD under Nobel laureate Frank Wilczek. Elite institutional pipeline from Stuyvesant through Harvard to Princeton with a Nobel laureate advisor.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "nitin-saxena",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Represented India at the 1997 International Mathematical Olympiad. Co-discovered the AKS primality test as an undergraduate at IIT Kanpur at 21, published in Annals of Mathematics. Exceptional early mathematical ability, though IMO participant (not medalist).",
+    "inherited_summary": "Born in Prayagraj (Allahabad), India. Attended Boys' High School and College. No family background information found in research; no evidence of inherited wealth or domain-specific family advantages.",
+    "ecosystem_summary": "IIT Kanpur (elite Indian engineering institution), mentorship from professor Manindra Agrawal, collaboration with batchmate Neeraj Kayal. The AKS result emerged from their joint B.Tech. thesis. Elite Indian CS education pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "neeraj-kayal",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Represented India at the 1997 International Mathematical Olympiad. Co-discovered the AKS primality test as an undergraduate at IIT Kanpur at 22, published in Annals of Mathematics. Exceptional early mathematical ability, though IMO participant (not medalist).",
+    "inherited_summary": "Born and raised in Guwahati, India. No family background information found in research; no evidence of inherited wealth or domain-specific family advantages.",
+    "ecosystem_summary": "IIT Kanpur (elite Indian engineering institution), mentorship from professor Manindra Agrawal, collaboration with batchmate Nitin Saxena. The AKS result emerged from their joint B.Tech. thesis. Elite Indian CS education pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "subhash-khot",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Completed B.Tech at IIT Bombay, breezed through Princeton PhD prerequisites in three months (normally takes good students a year). Formulated the Unique Games Conjecture at 23. Exceptional ability confirmed by rapid academic progress, though no early prodigy evidence.",
+    "inherited_summary": "Born in Ichalkaranji, Maharashtra, India (small town). Both parents were doctors. Father died within a month of Khot joining IIT Bombay. Middle-class professional family with stability, though personal tragedy early.",
+    "ecosystem_summary": "IIT Bombay (elite Indian engineering institution), Princeton PhD under Sanjeev Arora (pioneer of PCP Theorem). Had never seen a computer before IIT but had strong math competition background. Elite institutional pipeline from IIT to Princeton with a leading TCS advisor.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "yuan-cao",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Completed middle school and high school in three years, entered USTC's Special Class for the Gifted Young at 14, graduated with physics BSc at 18. Published two landmark Nature papers on magic-angle graphene at 22. Prodigy-level ability with extreme academic acceleration.",
+    "inherited_summary": "Born in Chengdu, Sichuan, China in 1996. Attended Shenzhen Yaohua Experimental School. No specific family background information found in research; no evidence of inherited wealth or domain-specific family advantages.",
+    "ecosystem_summary": "USTC Special Class for the Gifted Young (elite accelerated program for prodigies), University of Michigan exchange, MIT PhD under Pablo Jarillo-Herrero. Elite institutional pipeline from China's gifted program through US exchange to MIT frontier research.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "mingzhen-liu",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Graduated from University of Bristol with first-class honors at 21, master's at Cambridge, published landmark Nature paper on perovskite solar cells at 23 as first author. Exceptional academic trajectory, though no evidence of early prodigy-level achievement before university.",
+    "inherited_summary": "Born in 1990 in Chengdu/Chongqing, China into an intellectual family. Grandfather was a CAS (Chinese Academy of Sciences) academician in infrared and terahertz research. Significant domain-adjacent academic lineage and intellectual family environment.",
+    "ecosystem_summary": "University of Bristol (first-class honors), Cambridge University (master's), Oxford University photovoltaic research center (PhD, Nature paper). Elite UK university pipeline across three top institutions with frontier perovskite solar cell research environment.",
+    "scoring_confidence": "Medium"
+  }
+]

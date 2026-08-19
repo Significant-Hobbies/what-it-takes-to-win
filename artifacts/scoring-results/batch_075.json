@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "jorgen-marcussen",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Danish amateur cyclist who became national team time trial champion at 20 and competed at the 1972 Olympics at 22. Above-average ability with consistent development through the Danish cycling pipeline.",
+    "inherited_summary": "No documented family cycling connections or wealth. Grew up in Nødebo, a small town near Hillerød, Denmark. Likely working-class background with no domain-specific advantages.",
+    "ecosystem_summary": "Trained at Hillerød CK, a local cycling club. Benefited from Denmark's amateur cycling tradition and club structure, which provided opportunities for national and international competition.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "bernt-johansson",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started winning cycling races at 16 and was selected for national team camp at 17. Won Olympic gold in road race at 23. Above-average athletic ability with strong dedication.",
+    "inherited_summary": "Grew up on a farm in Tråvad, Sweden. Father bought him a racing bike from a local shop. Working-class agricultural family with no cycling domain background, but supportive of his interest.",
+    "ecosystem_summary": "Trained at Tidaholms CA, one of Sweden's largest cycling clubs in the early 1970s, under coach Roland Strand. Swedish national cycling program provided competitive infrastructure and path to Olympics.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "robert-dill-bundi",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Junior world individual pursuit champion at 17 and 18, Swiss road champion at 17, Olympic gold at 22. Documented prodigy who competed at Olympics at 17. Exceptional early physical talent in cycling.",
+    "inherited_summary": "Abandoned by his father as a young child and raised by his mother in precarious circumstances in Chippis, Valais. Added his mother's name (Bundi) to his father's (Dill) to honor her. Active family disadvantage.",
+    "ecosystem_summary": "Trained at Vélo Club Éclair in Chippis. Discovered at 15 by Oscar Plattner, a former professional cyclist who brought him into the Swiss cycling pipeline. Swiss cycling infrastructure provided competitive opportunities.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "mark-cavendish",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Rode BMX from early age, got mountain bike at 13 and immediately beat everyone. Madison world champion at 20, turned professional and won 11 races in debut season. Exceptional determination and sprinting talent from young age.",
+    "inherited_summary": "Father was an IT consultant, mother ran a dancewear shop in Douglas. Middle-class family on Isle of Man. Parents divorced when he was 11. No cycling history in the family, but parents were supportive of his sporting interests.",
+    "ecosystem_summary": "Coached by Dot Tilbury at National Sports Centre in Douglas. Selected for British Cycling's first academy programme, living in a shared house next to Manchester velodrome. Isle of Man cycling tradition and British Cycling's track-to-road pipeline during a golden era.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "dariusz-michalczewski",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started boxing at 12, won Polish junior championship at 17, European Amateur champion at 23. Above-average boxing ability with successful amateur record of 139-11-2, but not a prodigy.",
+    "inherited_summary": "Father was a radio technician for Polish State Railways, mother was an accountant. Father died of cancer when Dariusz was 12. Grew up in working-class housing estate on Przymorze, Gdańsk. Father was reportedly strict and abusive. Active disadvantage from poverty and early father loss.",
+    "ecosystem_summary": "Uncle Józef Baranowski, a boxing coach, took him to first training at Stoczniowiec Gdańsk. Came through Poland's state-run sports program. Defected to Germany at 20, gaining access to professional boxing through Universum promotion.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "fan-chung",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Knew she would be a mathematician as a high school student. Had highest qualifying exam score at Penn by a wide margin. Produced a major Ramsey theory result in one week that became core of her dissertation. Exceptional mathematical ability.",
+    "inherited_summary": "Father was an engineer who encouraged her mathematical pursuits, telling her 'mathematics gives you power.' Middle-class family in Kaohsiung, Taiwan. Father's engineering background provided domain-adjacent guidance.",
+    "ecosystem_summary": "Attended National Taiwan University, a top institution, with strong peer group of women mathematicians. Mentored by Herbert Wilf at University of Pennsylvania. Joined Bell Laboratories in 1974, providing elite research environment.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "bela-bollobas",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Won two IMO gold medals while in high school (1959, 1961). Published first mathematical paper co-authored with Paul Erdős at age 19 while still in high school. Prodigy-level mathematical ability with early publication record.",
+    "inherited_summary": "Father was a physician in Budapest. Had elite private tutors including a former general, a count, a baroness, and a former judge — aristocrats displaced after Communist takeover. Upper-middle-class family with exceptional educational resources.",
+    "ecosystem_summary": "Paul Erdős mentorship from age 14 after winning national competition — one of the most prolific mathematicians of the 20th century. Hungarian mathematical competition tradition. Attended Botvinnik-Kasparov school. Budapest University with László Fejes Tóth. Once-in-a-generation mathematical ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ion-alexe",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started boxing at 16, won first national title at 20, European champion at 23, Olympic silver at 26. Above-average boxing ability with steady development through Romanian system.",
+    "inherited_summary": "Born in rural Cornu, Prahova, Romania. No documented family boxing connections or wealth. Working-class rural background with no domain-specific advantages.",
+    "ecosystem_summary": "Started at Clubul Energia in Câmpina under coach Traian Marinescu. Joined CS Dinamo București at 20, coached by Constantin Nour and Titi Dumitrescu. Romanian state sports system provided structured pipeline from local clubs to national team.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sara-carbonero",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Hired at Radio Marca before completing her journalism degree, demonstrating early career momentum and domain aptitude. Rapid rise to national TV sports presenter by 25.",
+    "inherited_summary": "Born in small town Corral de Almaguer, Toledo. Parents were Goyi Arévalo and Carlos Javier García Carbonero. No documented media family connections. Working-to-middle-class background from rural Spain.",
+    "ecosystem_summary": "Studied journalism at Complutense University of Madrid. Internship at Radio Marca provided early domain exposure. Madrid's Spanish sports media ecosystem and Telecinco platform enabled rapid career advancement.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "roberto-balado",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "World Junior Boxing champion at 18, won three World Amateur Championships and Olympic gold at 23. Exceptional speed and agility for a super-heavyweight. Significant early achievement in elite amateur boxing.",
+    "inherited_summary": "Born in Jovellanos, Matanzas, Cuba. Family moved to Havana as infant. No documented family boxing connections. Working-class background in El Palenque neighborhood of Havana.",
+    "ecosystem_summary": "Cuban amateur boxing pipeline, one of the world's most elite national team development systems. Started at Rolando Rey's Gymnasium at 14, recruited into Provincial Academy at Cacahual. Coach Raúl Fernández and mentor Alcides Sagarra. State-sponsored training from age 14.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "mike-mccallum",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Natural boxing talent recognized immediately at neighborhood club at 15. Defeated a 10-year veteran in national championships at 15. Compiled 240-10 amateur record. Exceptional natural ability in the sport.",
+    "inherited_summary": "Only child born in Kingston, Jamaica. Working-class family with no boxing background. Parents were supportive but had no domain connections. No inherited athletic advantages.",
+    "ecosystem_summary": "Trained at Dragon Gym in Kingston under coach Austin 'Tealy' Taffe, a Cuban expatriate. Presence of Bunny Grant and Percy Hayles, two of Jamaica's greatest fighters, in the gym provided peer mentorship. Jamaica lacked an elite state-sponsored boxing pipeline, so achievements were largely self-driven.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kiril-georgiev",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Dedicated to chess at 14, moved to larger city at 15 for daily intensive practice. World Junior Chess Champion at 17 with record score of 11.5/13. GM at 19. Exceptional early achievement in chess.",
+    "inherited_summary": "Born in Petrich, Bulgaria. No documented family chess connections. Small-town background with no inherited chess advantages.",
+    "ecosystem_summary": "Bulgarian chess system provided competitive infrastructure. Moved to Pernik at 15 for more intensive training and tournament access. Bulgarian chess federation, while not as famous as Soviet pipeline, supported his development.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ruslan-chagaev",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Asian Boxing champion at 17. Defeated legendary Félix Savón at 19 at World Amateur Championships — one of the most remarkable upsets in amateur boxing history. Two-time world amateur champion. Exceptional early boxing achievement.",
+    "inherited_summary": "Born in Andijon, Uzbekistan. No documented family boxing connections. Started boxing at 13 because he 'needed a sport besides school.' No inherited athletic domain advantages.",
+    "ecosystem_summary": "Trained at the Sidney Jackson School in Tashkent, founded by an American boxer stranded during the Russian Revolution. Soviet/Central Asian boxing pipeline provided elite training and competition structures. Moved to Las Vegas to train with former Olympic coach Kenny Adams.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "payao-poontarat",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "Gifted Muay Thai fighter as a child who transitioned to international boxing. Won Olympic bronze at 18-19, becoming Thailand's first-ever Olympic medalist. Exceptional natural talent despite complete lack of resources.",
+    "inherited_summary": "Born to a poor family in Bang Sapan, Thailand. Sold flowers in Pattaya as a child to help support younger siblings. Active poverty disadvantage with no family resources or domain connections.",
+    "ecosystem_summary": "Muay Thai tradition in Thailand provided basic boxing access for poor boys. No elite international boxing pipeline or state-sponsored sports program. Limited coaching and training infrastructure compared to Cuban or Soviet systems.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "clemente-rojas",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "Won Olympic bronze at 20 in featherweight. Modest professional career (9-13-3) suggests amateur success was driven by natural talent and timing rather than sustained elite training. Above-average ability.",
+    "inherited_summary": "Born in Cartagena, Colombia. No documented family boxing connections or wealth. Limited information on family background suggests working-class origins.",
+    "ecosystem_summary": "Colombian boxing had limited infrastructure and Olympic success at the time. No documented elite coaching or training pipeline. Achievements appear largely self-driven with minimal institutional support.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "alfonso-perez",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "Won Pan American Games silver at 22 and Olympic bronze at 23. Defeated future Hall of Famer Eusebio Pedroza. Served as Colombia's Olympic flagbearer. Above-average boxing ability.",
+    "inherited_summary": "Born in Malagana, Bolívar. Father was a security guard (celador del Sena). 8th of 11 children. Working-class family with significant financial constraints. Active disadvantage from large family and limited resources.",
+    "ecosystem_summary": "Learned boxing at school 'tirando trompadas a la salida' (throwing punches on the way out). Trained at El Bombero gym in Bocagrande, Cartagena, under first coach Víctor Prieto. Limited Colombian boxing infrastructure with no elite national pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "anna-falchi",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Won Miss Cinema at Miss Italia 1989 at age 17. Striking appearance (1.78m, blonde) that launched her career. Above-average physical attributes for entertainment career.",
+    "inherited_summary": "Daughter of an Italian father (Benito/Tito Falchi) and Finnish mother (Kaarina). Bicultural background provided distinctive appearance. Family moved to Italy when she was 6, giving her access to Italian entertainment industry.",
+    "ecosystem_summary": "Italian entertainment ecosystem provided platform. Miss Italia pageant served as career launchpad. Fellini-directed commercial at 20 was a significant catalyst, as Fellini was one of cinema's most celebrated directors.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "katinka-hosszu",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Olympic debut at 15, but described as 'not very talented' and 'chubby' as a child. Coaches initially didn't believe she belonged. World champion at 20. Strong drive and determination rather than prodigy-level talent.",
+    "inherited_summary": "Father István Hosszú won 200 caps for Hungarian national basketball team. Grandfather László Bakos was her first swim coach. Athletic family with direct domain knowledge in competitive sport.",
+    "ecosystem_summary": "Coached by grandfather László Bakos until age 13 in Hungarian swimming system. Attended University of Southern California, a top NCAA swimming program, under coach Dave Salo. Later coached by husband Shane Tusup. Hungarian swimming tradition and USC collegiate pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tamas-darnyi",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won four gold at European Junior Championships at 15. Double Olympic gold at 21. Undefeated in individual medley from 1985 to 1993. Exceptional early achievement despite losing vision in left eye as a teenager.",
+    "inherited_summary": "Father was a steel factory worker in Budapest. Working-class family with no swimming domain background. Father enrolled him in swimming lessons after seeing a newspaper ad. No inherited athletic advantages.",
+    "ecosystem_summary": "Enrolled at age 6 in competitive program at Central Sports Club under Tamás Szechy, Hungary's most successful swimming coach. Trained alongside world-record-setting protégés András Hargitay and Zoltán Verrasztó. Hungarian state sports system provided structured pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "erik-morales",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started boxing at age 5, amassed 114 amateur fights (108-6) winning 11 major national titles. Turned professional at 16, won 26 consecutive fights, first world title at 21. Exceptional early boxing development.",
+    "inherited_summary": "Father José Morales was a former professional boxer (flyweight) who became a trainer and manager. Grew up above a boxing gym in Zona Norte, Tijuana. Two brothers also became professional boxers. Strong family domain inheritance in boxing.",
+    "ecosystem_summary": "Tijuana boxing culture provided rich environment. Father served as both trainer and manager. Trained with figures like Lupe Pintor and Mauro Gutiérrez. Signed with Bob Arum and Top Rank promotion. Mexican boxing tradition and Tijuana as a boxing-rich city.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "vladimir-akopian",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Won World Under-16 Championship at 14, Under-18 at 16, and World Junior Championship at 19. Three world youth chess titles. GM at 19. Prodigy-level achievement in chess.",
+    "inherited_summary": "Father was a physicist at a famous institute in Baku who taught him chess at age 5. Mother was a music teacher. Educated professional family with father providing early chess instruction.",
+    "ecosystem_summary": "Born in Baku, same city as Garry Kasparov, one of the world's chess epicenters. Enrolled in one of Baku's most famous chess schools with coach Alexander Aslanov. Admitted to Botvinnik-Kasparov school alongside Kramnik and other future stars. Soviet chess pipeline at its most elite level.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "shakhriyar-mamedyarov",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "GM at 17. Won World Junior Chess Championship twice (at 18 and 20), the only two-time champion in history. Reached 2700 rating by 20. Significant early chess achievement.",
+    "inherited_summary": "Father Hamid Mamedjarov was a master of sports in boxing and chess enthusiast who taught him chess at 8. Two sisters, Zeinab and Turkan, both became Woman Grandmasters. Exceptional chess family with all three children achieving high-level titles.",
+    "ecosystem_summary": "Attended chess school in Sumgait under coach Valida Bairamova. Azerbaijani chess school system provided institutional support. Family's chess culture was the primary ecosystem driver rather than elite institutional access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "rie-rasmussen",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Discovered by modeling scout at 15. Creative drive led to writing, directing, and photography. Above-average physical attributes and creative ability, but not a traditional prodigy.",
+    "inherited_summary": "Grew up in Copenhagen in an extended Danish family with eight brothers and sisters. No entertainment industry connections. Large family with no domain-specific advantages.",
+    "ecosystem_summary": "Discovered at 15 on family holiday in New York. Moved to New York for modeling. Attended Hollywood Film Institute in California. New York fashion world and Hollywood film ecosystem provided career platforms.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "isabeli-fontana",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Knew she wanted to be a model at 12. Reached Elite Model Look finals at 13. Walked Milan Fashion Week at 15. Above-average physical attributes and early career drive.",
+    "inherited_summary": "Born to Maribel Bergossi and Antonio Carlos Fontana in Curitiba, Brazil. Italian descent. Mother supported modeling career and relocated with her to Milan at 14. Family financial sacrifice for career development.",
+    "ecosystem_summary": "Elite Model Look contest provided industry entry platform. Milan as a global fashion capital provided frontier geography. Victoria's Secret catalogue appearance at 16 (controversially youngest model) amplified career. Major fashion houses Versace and Givenchy provided runway opportunities.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "laszlo-cseh",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "World championship silver at 17, Olympic bronze at 18. Started swimming at 4.5. Self-described as 'not extremely talented' early, with much better swimmers in his age group. Strong determination and family support drove development.",
+    "inherited_summary": "Father László Cseh Sr. was an Olympic swimmer who represented Hungary. Strong family domain inheritance in swimming. Father's Olympic background provided direct mentorship and genetic predisposition.",
+    "ecosystem_summary": "Hungarian swimming system with coaches György Turi and Zoltán Nemes. Trained at Budapesti Spartacus SC. Olympic Solidarity scholarship provided support. Father's elite swimming background and Hungarian swimming tradition.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "andrea-gyarmati",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Olympic debut at 14, won two gold and two silver at European Championships at 16, set world record in 100m butterfly at 18. Exceptional early swimming achievement in an Olympic dynasty family.",
+    "inherited_summary": "Mother Éva Székely was 1952 Olympic swimming champion (breaststroke). Father Dezső Gyarmati was three-time Olympic water polo champion. Both parents Olympic champions — the highest possible family domain inheritance in aquatics. Mother served as her direct coach.",
+    "ecosystem_summary": "Taught to swim at age 3 by Imre Sarosi, a Hall of Fame coach and her mother's coach. Mother Éva Székely was her primary coach, teaching her butterfly. Hungarian swimming dynasty with BVSC and Ferencvárosi TC clubs. Only mother-father-daughter family in International Swimming Hall of Fame.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "shane-gould",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Set world records in all five freestyle distances (100m to 1500m) by age 15. Won three Olympic gold medals at 15, all in world record time. Prodigious natural swimming ability — one of the most natural swimmers the world has known.",
+    "inherited_summary": "Father worked for Pan American Airlines. Middle-class family that moved frequently (nine different schools). Supportive family environment. Fiji upbringing provided water-rich environment from age 18 months.",
+    "ecosystem_summary": "Trained by Forbes and Ursula Carlile, leading Australian coaches, at their swim school from age 13. St. Peters Lutheran College, a top-rated swim school. Later coached by Hall of Fame coach Nort Thornton. Australian swimming tradition during a golden era.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "claudia-poll",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Not initially a good swimmer — described as 'slow, very slow' by her coach. Did not get serious until 13-14. Won Olympic gold at 24. Late developer with strong determination rather than early prodigy talent.",
+    "inherited_summary": "Parents were both German who moved to Nicaragua before starting a family. Sister Silvia Poll was Olympic silver medalist swimmer. Family fled Nicaragua for Costa Rica due to political tensions and earthquake. Sister's Olympic success provided direct family domain reference.",
+    "ecosystem_summary": "Coached by Francisco Rivas from age 7 at a country club in Costa Rica — a 20-year coach-athlete relationship. Country club provided institutional access. Costa Rica's limited but supportive swimming infrastructure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jana-bellin",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Learned chess at 11 (relatively late) but rose to Czech Women's Champion at 17 — only six years from learning to national title. WIM at 21. Rapid rise demonstrates significant natural talent.",
+    "inherited_summary": "Born in Prague, Czechoslovakia. No documented family chess connections. Learned chess at 11, suggesting no early family domain exposure.",
+    "ecosystem_summary": "Czechoslovak chess system provided competitive infrastructure. Prague chess culture. Represented Czechoslovakia at Women's Chess Olympiad at 18. Married into chess community (William Hartston, Tony Miles, Robert Bellin — all chess players).",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "sergey-koplyakov",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won Belarusian school championships at 10. Became USSR Honored Master of Sports at 15. Olympic silver at 17. First man to swim under 1:50 in 200m freestyle at 20. Exceptional early swimming achievement.",
+    "inherited_summary": "Parents were recreational athletes (father volleyball, mother skiing) but not competitive swimmers. Working-class family in Orsha, Belarus. No inherited swimming domain advantages.",
+    "ecosystem_summary": "Discovered by coach Eduard Chaus at local pool. Moved to Leningrad's elite training center under coach Genrikh Yarotsky. Soviet state sports system provided full support and structured pipeline from local to national level.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "pavel-eljanov",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "GM at 18. Won World U-18 Championship. Member of Ukrainian national youth team that won U-16 Chess Olympiad. Top-50 player by 26. Significant early chess achievement.",
+    "inherited_summary": "Father was International Master Vladimir Eljanov, a Merited Coach of Ukraine and FIDE Senior Trainer. Father was his first chess teacher and primary inspiration. Strong family domain inheritance in chess.",
+    "ecosystem_summary": "Ukrainian/Soviet chess pipeline provided structured training. Kharkiv chess school. Ukrainian national youth team. Father's IM-level expertise and coaching credentials provided dedicated mentorship.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "malgosia-bela",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Classically trained pianist with distinctive androgynous look. Scouted at 21 (relatively late for a model). Intellectual and creative aptitude, but not a traditional prodigy in any domain.",
+    "inherited_summary": "Grew up in an intellectual, Catholic household in communist Poland. Attended University of Warsaw studying literature. Academic family that was initially sceptical of modeling. Culturally rich but not wealthy background.",
+    "ecosystem_summary": "Scouted at a Kraków theatre at 21. Fashion industry provided career opportunity. Late entry meant she entered with maturity and education. No significant early institutional fashion access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "joel-lautier",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Won World Junior Chess Championship at 15 — youngest ever winner, ahead of Ivanchuk and Gelfand. Won U-14 World Championship at 13. GM at 17. Prodigy-level chess ability with record-breaking early achievement.",
+    "inherited_summary": "Father was French, rated around 2200 in chess, who introduced him to the game at 3.5 years old. Father provided structured training with puzzles and quizzes. Japanese mother. Father's strong chess ability provided direct domain mentorship.",
+    "ecosystem_summary": "Father was primary trainer until first world title in 1986. Then trained with International Master Didier Sellos. French chess system provided competitive access. Dropped out of school at 16 to focus on chess full-time.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "evgenij-ermenkov",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Won Bulgarian Championship at 24, IM at 25, GM at 28. Solid chess ability with multiple national titles, but relatively late development compared to prodigy-level peers.",
+    "inherited_summary": "Born in Sofia, Bulgaria. No documented family chess connections. Limited information on family background suggests no inherited chess advantages.",
+    "ecosystem_summary": "Bulgarian chess system provided competitive infrastructure. Represented Bulgaria at World Student Olympiad in 1972. Soviet-bloc chess pipeline offered structured training and competition access.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "petra-van-staveren",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Won Olympic gold in 100m breaststroke at 18. European silver at 17. Above-average swimming ability with early international success, but limited documented evidence of prodigy-level talent.",
+    "inherited_summary": "Born in Kampen, Netherlands. No documented family swimming connections or wealth. Limited information on family background. Trained at local De Steur swimming club.",
+    "ecosystem_summary": "Dutch swimming tradition provided competitive opportunities. De Steur swimming club in Kampen. Dutch national swimming infrastructure supported development and Olympic qualification.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "almira-skripchenko",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won World Under-16 Girls Chess Championship at 16. WGM at 19, IM at 22. European Women's champion at 25. Significant early chess achievement with rapid title progression.",
+    "inherited_summary": "Both parents were chess coaches and pedagogues. Mother Naira Agababyan was seven-time Moldovan women's chess champion. Father Fedor Skripchenko was celebrated chess administrator and General Secretary of Moldova Chess Federation. Overwhelming family domain inheritance in chess.",
+    "ecosystem_summary": "Taught chess at 6 by her mother, a national champion and recognized trainer. Soviet/Moldovan chess pipeline offered structured training. Moved to Paris to study at Sorbonne, expanding competitive opportunities. Married into chess elite (Joël Lautier, then Laurent Fressinet).",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "xu-yuhua",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Qualified for Interzonal tournament at 16 without even having a FIDE rating — remarkable raw talent. Won Asian Junior Championship and World Cup. Women's World Champion. Exceptional natural chess ability.",
+    "inherited_summary": "Born in Jinhua, Zhejiang, China. No documented family chess connections. Provincial background with no inherited chess advantages. Started with Chinese chess before switching to European chess.",
+    "ecosystem_summary": "Chinese women's chess program, building on Xie Jun's success, provided a structured elite pipeline. National team system supported development. Multiple Olympiad gold medals as team member. Chinese chess federation investment in women's chess.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "yana-klochkova",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Training four hours daily from age 8 with additional dry-land training. World championship silver at 16, double Olympic gold at 18. Extreme early specialization and concentration intensity.",
+    "inherited_summary": "Father was a construction worker, mother had children young and stopped sporting. Parents were not athletic. Working-class family in Simferopol with no swimming domain background.",
+    "ecosystem_summary": "Coached by Nina and Oleksandr Kozhukh at Dynamo club in Simferopol. Soviet/Ukrainian sports infrastructure at Dynamo provided elite-level coaching and facilities. Family relocated to Kharkiv to follow coaches, demonstrating institutional commitment.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "zoltan-verraszto",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "World champion in 200m backstroke at 17. Competed at three Olympic Games, winning silver and bronze. Exceptional early achievement in backstroke and individual medley.",
+    "inherited_summary": "Born in Budapest, Hungary. No documented family swimming connections. Recruited through KSI school scouting program at age 9. No inherited athletic domain advantages.",
+    "ecosystem_summary": "Recruited at 9 by KSI (Központi Sportiskola/Central Sports School) scout. Trained under legendary coach Tamás Széchy from the beginning at the old Császár pool in Budapest. Hungarian swimming tradition and Budapest swimming infrastructure at elite level.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sarah-sjostrom",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Won European Championship gold at 14, set world record and won world championship gold at 15. Self-taught to swim at 7. Prodigious natural talent — one of the most decorated swimmers of all time with early prodigy-level achievement.",
+    "inherited_summary": "Parents Jenny and Göran. Middle-class family in Salem, Sweden. Three siblings. No swimming background in family. Parents initially had difficulty getting her into sports. No inherited athletic domain advantages.",
+    "ecosystem_summary": "Started swimming at 10 via a classmate at Södertörns SS club. Swedish swimming system provided competitive access. Coach Johan Wallberg. Limited documented evidence of elite institutional pipeline beyond normal Swedish club swimming.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kateryna-lagno",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Learned chess at age 2. Ukrainian champion among girls under 10 at age 7. Youngest Woman Grandmaster in history at 12 (broke Judit Polgár's record). European Women's champion at 15. Prodigy-level chess ability.",
+    "inherited_summary": "Family moved from Lviv to Kramatorsk for chess school access. Half Russian, half Ukrainian. Family supported chess development and relocated for training opportunities. Moderate family investment in chess career.",
+    "ecosystem_summary": "Enrolled in famous chess school of Kramatorsk in 2000, studying alongside future grandmasters Ruslan Ponomariov and Sergey Karjakin. Ukrainian chess pipeline. Won girls' U-10 world championship at 9. Elite peer group in Kramatorsk chess school.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "cesar-cielo",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Fastest swimmer in Brazil's 15-16 age group. NCAA Swimmer of the Year at Auburn. Olympic gold in 50m freestyle at 21. World records. Exceptional sprint swimming ability with early national dominance.",
+    "inherited_summary": "Father was a pediatrician, mother was a physical education teacher and swimming instructor. Mother taught him swimming at the club where she worked. Family domain advantage in athletics and body movement knowledge.",
+    "ecosystem_summary": "Trained at multiple clubs in Brazil before moving to Auburn University, an elite NCAA swimming program. Coached by David Marsh, Richard Quick, and Brett Hawke at Auburn. Trained alongside Brazilian swimming legend Gustavo Borges at Esporte Clube Pinheiros.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "park-tae-hwan",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started swimming at 5, competitive at 7. Asian Games MVP at 17 with three golds. World champion at 18. Olympic gold at 19. First Korean swimming medalist. Exceptional early achievement in a non-traditional swimming country.",
+    "inherited_summary": "Middle-class family in Seoul. Father is a saxophone player, mother is a dancer. Arts background family with no direct swimming domain. Parents supported swimming for medical reasons (asthma). Supportive but no domain-specific inheritance.",
+    "ecosystem_summary": "Korean swimming infrastructure, while less established than in traditional swimming powers, supported his development. National team selection at 14. Korean Swimming Federation. Limited elite coaching infrastructure compared to US or Australian systems.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "karen-moe",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Set world record in 200m butterfly at 17 despite wearing a Milwaukee back brace 23 hours/day for scoliosis and spondylolisthesis. Won Olympic gold at 19 in world record time. Four world records. Exceptional determination overcoming physical adversity.",
+    "inherited_summary": "Born in Del Monte, Philippines. Family settled in Orinda, California. Middle-class American family. No documented swimming domain background. No inherited athletic advantages.",
+    "ecosystem_summary": "Started at Orinda Aqua Bears Swim Team under coaches Laurabelle Bookstaver and Ron Richison. Moved to Santa Clara Swim Club under George Haines, one of the most elite US swimming programs. Technical coaching excellence from two renowned coaches.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "viktor-gavrikov",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Learned chess at 10-12 (relatively late). Strong first-category player at 9 per some sources. Won U-26 Soviet Championship at 26. GM at 27. Solid chess ability but relatively late development compared to prodigy peers.",
+    "inherited_summary": "Born in Criuleni, Moldavian SSR. No documented family chess connections. Small town background with no inherited chess advantages.",
+    "ecosystem_summary": "Trained under Vyacheslav Chebanenko, a renowned Moldavian trainer and theoretician whose pupils included multiple strong grandmasters (Bologan, Komliakov, Rogozenco). Soviet chess pipeline provided competitive structure. Moldavian chess school as part of Soviet system.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "zoltan-almasi",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "GM at 17, one of youngest grandmasters at the time. Won World U-18 Championship. Hungarian champion at 19 (won it 9 times total). Top 20 player. Significant early chess achievement.",
+    "inherited_summary": "Born in Hungary. No documented family chess connections. Limited information on family background suggests no inherited chess advantages.",
+    "ecosystem_summary": "Hungarian chess tradition, producing players like Judit Polgár in the same era. Joined Hungarian national team with Polgár and Peter Leko. Strong national chess ecosystem but limited documented evidence of elite individual mentorship.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "kathrine-switzer",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Ran a mile daily from age 12 on father's encouragement. First woman to officially run Boston Marathon at 20. Strong determination and pioneering spirit, but not an exceptional athletic prodigy in the traditional sense.",
+    "inherited_summary": "Father was a U.S. Army major (later lieutenant colonel), WWII and Korean War veteran. Middle-class military family. Father encouraged sports participation with the motto 'Life is to participate, not spectate.' Supportive but no running domain background.",
+    "ecosystem_summary": "Attended Syracuse University, studying journalism. Trained with men's cross-country team under mentor Arnie Briggs, a 15-time Boston Marathon veteran who coached and encouraged her. Women's rights movement timing provided cultural context for her pioneering achievement.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tawakkol-karman",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Co-founded Women Journalists Without Chains at 26, demonstrating early organizational leadership and strategic vision. Not a traditional prodigy, but showed early political awareness and activism capabilities.",
+    "inherited_summary": "Father was a lawyer who served as Legal Affairs Minister in the Yemeni government. Upper-middle-class, politically connected family. Father's political position provided social capital and connections. Large family with political engagement.",
+    "ecosystem_summary": "Grew up in Taiz, known as a city of culture and education in Yemen. Studied at Sana'a University. Al-Islah party provided political platform. Taiz's cultural environment and father's political network provided context for activism. Authoritarian regime created both adversity and purpose.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "alain-ducasse",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Decided to become a chef at 12, inspired by grandmother's cooking on family farm. Apprenticeship at 16. Head chef at La Terrasse by 25. Strong early drive and culinary aptitude, though not a prodigy in the traditional sense.",
+    "inherited_summary": "Grew up on a family farm in Castel-Sarrazin in the Chalosse region. Grandfather was a joiner and carpenter. Grandmother's cooking inspired his culinary passion. Farm provided early exposure to quality ingredients. Modest rural family with agricultural domain knowledge.",
+    "ecosystem_summary": "Apprenticed under three of France's most legendary chefs: Michel Guérard, Gaston Lenôtre, and Roger Vergé. Also trained under Alain Chapel. French haute cuisine tradition at its pinnacle. Access to multiple Michelin-starred mentors represents once-in-a-generation culinary mentorship ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "christian-louboutin",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Fascinated by footwear from seeing a museum sign as a teenager. Expelled from school three to four times. Ran away from home at 12. Creative obsession with shoes from young age, but not a traditional prodigy. Self-taught through apprenticeships.",
+    "inherited_summary": "Father was a cabinet-maker, mother was a homemaker from Brittany. Working-class family in Paris's 12th arrondissement. Expelled from school multiple times and ran away from home at 12. Discovered Egyptian heritage from biological father later in life. Active disadvantage from unstable upbringing.",
+    "ecosystem_summary": "Growing up in Paris, the epicenter of global fashion, provided direct access to Folies-Bergère, major couture houses, and master designers. Apprenticeship at Charles Jourdan at 18. Roger Vivier mentorship. Freelanced for Chanel, Yves Saint Laurent, and Maud Frizon. Paris fashion ecosystem was a trajectory-changing advantage.",
+    "scoring_confidence": "Medium"
+  }
+]

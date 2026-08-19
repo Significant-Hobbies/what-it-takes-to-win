@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "f-sherwood-rowland",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Entered high school at 12 and graduated at 16, breezing through academics effortlessly. Completed a triple major in chemistry, physics, and mathematics at Ohio Wesleyan by 19. Operated a volunteer weather station as a young teen, showing early systematic experimentation aptitude.",
+    "inherited_summary": "Father was Professor of Mathematics and Chairman of the Department at Ohio Wesleyan University. Both parents were University of Chicago alumni who expected graduate education. Solidly middle-class academic household in a university town.",
+    "ecosystem_summary": "Ohio Wesleyan provided an accelerated academic platform, then PhD at the University of Chicago under Willard Libby (future Nobel laureate), followed by a Princeton post. Elite mentorship chain at frontier institutions of mid-century chemistry.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "omar-sivori",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Signed by River Plate as a teenager and made first-team debut at 18, quickly becoming an immovable starter. Natural football talent recognized early, playing with and replacing stars like Labruna. Nicknamed 'El Cabezón' for his distinctive playing style and confidence.",
+    "inherited_summary": "Born into a humble Italian-descendant family in San Nicolás, Argentina. Father died when Omar was four, leaving the family of eight in difficult circumstances. No football or professional connections in the family.",
+    "ecosystem_summary": "River Plate, one of Argentina's biggest clubs, signed him as a teenager and provided an elite academy pipeline. Argentine football culture and playing alongside established stars like Labruna and Loustau accelerated his development. Spotted by Renato Cesarini, an ex-Juventus player.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "diane-keaton",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Studied acting at Santa Ana College and the Neighborhood Playhouse under Sanford Meisner. Earned a Tony nomination at 23 and was cast in The Godfather by 26. Capable actress with strong training but no prodigy-level early indicators.",
+    "inherited_summary": "Father was a real estate broker and civil engineer; mother was a homemaker and amateur photographer who won the 'Mrs. Los Angeles' pageant. Middle-class family in Los Angeles; mother's theatricality inspired Keaton's acting impulse.",
+    "ecosystem_summary": "Trained at the Neighborhood Playhouse under Sanford Meisner (Meisner technique). Joined Broadway's Hair (1968), then cast by Woody Allen in Play It Again, Sam. NYC theater ecosystem provided direct access to elite Broadway and film opportunities.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "juan-alberto-schiaffino",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Joined Peñarol's youth team at 17 and was a first-teamer by 18. Debuted for Uruguay's national team at 20 and became a central figure in Peñarol's dominant team. Exceptional football intelligence and creativity from a young age.",
+    "inherited_summary": "Father was a modest municipal worker, mother was a Paraguayan housewife. Working-class family in Montevideo with Italian roots. No professional football connections beyond his older brother Raúl who was already at Peñarol.",
+    "ecosystem_summary": "Brother Raúl, already a Peñarol player, brought him to the club's youth system. Montevideo's football culture and Peñarol's elite pipeline provided the platform. Peñarol was one of Uruguay's dominant clubs, providing top-level competition and exposure.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "herbert-kroemer",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Breezed through 12 years of school almost effortlessly, never requiring homework help. Excelled in physics, completed PhD at 24 from the University of Göttingen on transistor physics. Strong natural aptitude for physics and mathematics.",
+    "inherited_summary": "Father was a civil servant for the city of Weimar; mother was a housewife. Neither parent had a high-school education, coming from skilled-craftsmen families. Mother pushed relentlessly for academic excellence but no domain expertise or connections.",
+    "ecosystem_summary": "Studied at the University of Göttingen, one of the world's leading physics centers, under Richard Becker. Fled East Germany during the Berlin airlift to reach Göttingen. The post-war transistor frontier and elite physics environment defined his trajectory.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "josef-masopust",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Rose from informal football during Nazi occupation to first-division debut at 19. Good natural football ability but no exceptional early indicators beyond normal talent for the sport. His career was built more on the army club system than on prodigy-level ability.",
+    "inherited_summary": "Born into a poor miner's family in northern Czechoslovakia, one of six children. Grew up under Nazi occupation when football was banned. Family lost their home to expanding coal mines. Active economic and social disadvantage.",
+    "ecosystem_summary": "Joined local club ZSJ Uhlomost Most as a youth, then Teplice in the first division. The Czechoslovak army club system (ATK/Dukla Prague) cherry-picked the best talent, providing a structured pipeline to elite domestic football.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "james-last",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began piano at 10, entered the Bückeburg Military Music School at 14 studying bass, piano, and tuba. Voted Germany's top jazz bassist for three consecutive years from age 21. Early multi-instrument proficiency and professional musicianship by his teens.",
+    "inherited_summary": "Father worked for Bremen public utilities but was a passionate amateur musician who performed solo on weekends. All three brothers (James, Werner/Kai Warner, Robert) became professional musicians. Musical family but working-middle class.",
+    "ecosystem_summary": "Bückeburg Military Music School provided formal multi-instrument training at 14. Radio Bremen Dance Orchestra at 17 provided professional entry. Post-war German radio orchestra opportunities and the Last-Becker Ensemble created a strong performing ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "anna-netrebko",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Moved to Leningrad at 16 hoping to act, then pivoted to opera. Studied at the St. Petersburg Conservatory and worked as a janitor at the Mariinsky Theatre. Won the Glinka competition at 22. Good natural voice but not a traditional prodigy; discovered relatively late.",
+    "inherited_summary": "Father was a geologist and mother a communications engineer. Middle-class Soviet family in Krasnodar with a happy childhood. Parents loved music but their taste didn't extend beyond operetta. No musical or theatrical family background.",
+    "ecosystem_summary": "The Mariinsky Theatre and St. Petersburg Conservatory provided an elite institutional pipeline. Conductor Valery Gergiev recognized her talent from her janitor work and became her mentor, casting her in her debut at 22. Once-in-a-generation mentor at one of the world's great opera houses.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "stanley-kubrick",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Father taught him chess at 12 and gave him a Graflex camera at 13, triggering a fascination with photography. Sold a photo to Look magazine at 16 and became a staff photographer at 17. Self-taught filmmaker who visited professionals to learn the craft. Exceptional visual intelligence and self-direction.",
+    "inherited_summary": "Father was a homeopathic doctor; by West Bronx standards the family was fairly wealthy. Father's interests in chess and photography directly catalyzed Kubrick's development. Upper-middle class Jewish family in the Bronx.",
+    "ecosystem_summary": "Look magazine staff position at 17 provided professional visual storytelling experience. NYC proximity to the film industry and professionals he visited to learn filmmaking. Self-directed immersion in photography and chess from young age, enabled by father's gifts and the city's resources.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "evan-williams",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught programmer who took a mandatory high school programming class and found he was good at it. Avid reader of business books from age 16. Capable and self-directed but not a prodigy; learned to code professionally only at O'Reilly Media in his mid-20s.",
+    "inherited_summary": "Grew up on a soybean, corn, and cattle farm near Clarks, Nebraska (population ~379). No technology background in the family. Father and brother loved farming and hunting while Evan was a vegetarian who preferred reading. Rural isolation with no tech connections.",
+    "ecosystem_summary": "Moved to Sebastopol, California in 1996 to work for O'Reilly Media, where he learned to code and began blogging. Silicon Valley proximity and the dot-com wave provided the timing. The O'Reilly network connected him to the tech community.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "noah-glass",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Attended Yale University (political science), worked at Industrial Light & Magic, and developed AudBlog before co-founding Twitter. Capable technologist and entrepreneur but no exceptional early ability indicators documented.",
+    "inherited_summary": "Attended Newton North High School in Massachusetts and Yale University, suggesting a stable, educated family background. Early life and family details are not well documented in available sources.",
+    "ecosystem_summary": "Worked at Industrial Light & Magic and with Marc Canter (Macromedia founder) before developing AudBlog. Partnership with Evan Williams created Odeo, within which Twitter was born. Silicon Valley network and the Williams collaboration were key ecosystem factors.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "pierre-omidyar",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Sneaked into the computer lab in 7th grade to use a TRS-80. Wrote his first program at 14 to catalog books for the school library. CS degree from Tufts in 1988. Early, self-directed fascination with computers and programming.",
+    "inherited_summary": "Father was a physician who did a residency at Johns Hopkins; mother earned a doctorate in linguistics at the Sorbonne. Grandfather was an Imperial Iranian Army general. Family emigrated from Paris to Maryland for father's medical training. Educated, professional immigrant family.",
+    "ecosystem_summary": "Moved to the US as a child with access to good schools and early computers. Tufts CS degree, then worked at Claris (Apple subsidiary) and General Magic in Silicon Valley. The early e-commerce and Silicon Valley ecosystem provided the right timing and tools.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "dries-buytaert",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Learned programming at age six on his father's Commodore 64, typing BASIC code from children's books before he could read. Built a patient management system for his father as a teenager. Early, deep programming aptitude with practical domain application.",
+    "inherited_summary": "Father was a medical doctor who provided the Commodore 64 and programming books, then commissioned a patient management system. Parents paid for university tuition and basics. Professional family with early computer access in the home.",
+    "ecosystem_summary": "University of Antwerp for CS, where he discovered Linux and open-source. A dorm mate had one of the first DSL connections in Antwerp, enabling the message board project that became Drupal. Early internet access and the open-source community were catalytic.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "rasmus-lerdorf",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Fiddled with school computers (Commodore PET, Unisys ICON) and wrote software for them with a friend. Taught evening adult education computer classes while still in high school. Capable and practical but not a prodigy; developed PHP as a tool to solve his own web problems.",
+    "inherited_summary": "Born on Disko Island, Greenland, moved to Denmark, then to Canada in 1980. No notable family technology or academic background. Immigrant family with no tech connections.",
+    "ecosystem_summary": "University of Waterloo (elite engineering school with co-op program) for Systems Design Engineering. Early exposure to Unix-like QNX operating system in high school. Silicon Valley relocation in 1993 coincided with the emergence of the Web, providing perfect timing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "anders-hejlsberg",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Attended one of Denmark's first computer-equipped high schools, where he taught himself machine code and ALGOL on an HP 2100. Wrote a Pascal compiler by age 20 that became Turbo Pascal. Exceptional early programming and compiler design ability.",
+    "inherited_summary": "Father was an engineer at Motorola, providing early exposure to electronics and engineering habits. Middle-class safe upbringing in a suburb of Copenhagen. Engineering family with direct domain overlap.",
+    "ecosystem_summary": "Holte Gymnasium was one of the first schools in Denmark to offer student computer access. Co-founded Copenhagen's first computer store while at university, giving direct commercial exposure to the microcomputer market. Borland licensed his compiler, providing a major commercial platform.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "rob-pike",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Studied physics at the University of Toronto, where he worked in the Dynamic Graphics Project and wrote Fortran programs for sunspot analysis. Capable student with early graphics experience but no prodigy-level indicators before Bell Labs.",
+    "inherited_summary": "Grew up in Toronto, Canada. No notable family background or domain connections documented in available sources.",
+    "ecosystem_summary": "Joined Bell Labs' Computing Sciences Research Center in 1980 — the premier computing research environment in the world, home to Unix, C, and much of modern computing. Worked alongside Ken Thompson, Dennis Ritchie, and Brian Kernighan. Once-in-a-generation peer environment.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jon-postel",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Described as an average student at Van Nuys High School. Attended Valley Junior College before transferring to UCLA. No exceptional early ability indicators; his impact came from being at the right place at the right time and his dedication to the RFC Editor role.",
+    "inherited_summary": "Grew up in Glendale and Sherman Oaks, Los Angeles suburbs. No notable family academic or technical background documented. Working-to-middle class upbringing with no domain connections.",
+    "ecosystem_summary": "Attended Van Nuys High School with Steve Crocker and Vint Cerf, forming lifelong friendships. UCLA was selected as the first node of the ARPANET, and as a graduate student under Kleinrock, Postel was embedded in the team building the network. Founding member of the Network Working Group. Once-in-a-generation timing and peer group at the birth of the Internet.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "marvin-minsky",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Read Freud as a child, was a precocious pianist, and had access to his father's science library. Attended elite schools (Fieldston, Bronx Science, Phillips Academy) before Harvard and Princeton. Built SNARC, the first neural network learning machine, as a graduate student. Broad intellectual curiosity from a young age.",
+    "inherited_summary": "Father was chief of ophthalmology at Mount Sinai Hospital. Mother was a Zionist activist and social activist. Intellectually rich household with access to father's science library. Upper-middle class Jewish family in New York City.",
+    "ecosystem_summary": "Attended the Ethical Culture Fieldston School, Bronx High School of Science (most Nobel laureates of any secondary school), and Phillips Academy Andover. Harvard for BA, Princeton for PhD. Elite educational pipeline at each stage.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "norbert-wiener",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Legendary child prodigy. Homeschooled intensively by his father, a Harvard professor, in mathematics, Greek, Latin, physics, and chemistry. Graduated high school at 11, BA from Tufts at 14, PhD from Harvard at 18 in mathematical logic. Trajectory-changing prodigy-level ability.",
+    "inherited_summary": "Father Leo Wiener was a Harvard professor of Slavic languages — the first Jewish professor at Harvard. Mother was daughter of a department store owner. Father personally directed his intensive mathematical education using demanding, sometimes harsh methods. Rare, trajectory-changing family intellectual capital.",
+    "ecosystem_summary": "Studied under Bertrand Russell at Cambridge and David Hilbert at Göttingen after his PhD. Harvard and Tufts provided the local institutional base. The combination of a Harvard professor father's personal tutoring and access to the world's greatest mathematicians as post-PhD mentors is once-in-a-generation.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tom-kilburn",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Mathematical specialist at Wheelwright Grammar School, where the headmaster nurtured his math talent. Won multiple scholarships to Cambridge, graduating with First Class Honours. Strong mathematical ability but not prodigy-level; his impact came from the ecosystem.",
+    "inherited_summary": "Father was a statistical clerk who rose to company secretary at a woollen mill. Middle-class family in Yorkshire. Stable upbringing but no academic or technical domain connections.",
+    "ecosystem_summary": "Grammar school that nurtured math talent, scholarships to Cambridge, and wartime radar work at TRE under Freddie Williams. Williams' sustained mentorship at TRE and then Manchester placed Kilburn at the absolute frontier of stored-program computing. Once-in-a-generation positioning at the birth of the digital computer.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "j-presper-eckert",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Placed second in the country on the math College Board exam. Tinkered with radios and phonographs from an early age. Spent afternoons at Philo Farnsworth's electronics lab in high school. Applied for his first patent at 21. Exceptional math and electronics ability.",
+    "inherited_summary": "Father was a wealthy real estate developer of Swiss German and Alsatian descent. Mother from an old Philadelphia Quaker family. Raised in a large house in Germantown, driven by chauffeur to private school. Rare, trajectory-changing family wealth and access.",
+    "ecosystem_summary": "William Penn Charter School (elite private school), Engineer's Club of Philadelphia, and Philo Farnsworth's electronics lab as a teenager. Transferred to the Moore School at Penn, a frontier of early computing. Mauchly partnership provided the complementary skills for ENIAC.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "adi-shamir",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Participated in Weizmann Institute youth academic programs and science summer camps from a young age. BSc in mathematics with high honors from Tel Aviv University. PhD at 25 from the Weizmann Institute. Strong early science aptitude with elite academic trajectory.",
+    "inherited_summary": "Born in Tel Aviv, Israel. Attended local schools. No notable family academic, professional, or financial background documented in available sources.",
+    "ecosystem_summary": "Weizmann Institute youth programs provided early science exposure. Elite institutional pipeline: Tel Aviv University (BSc), Weizmann Institute (MSc, PhD under Zohar Manna), then MIT where the complementary team of Rivest, Shamir, and Adleman created RSA. The public-key cryptography wave provided perfect timing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ralph-merkle",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Devised the concept of public-key cryptography as an undergraduate at UC Berkeley in 1974, when his project proposal was rejected by his professor. Persisted independently and developed Merkle's Puzzles. Exceptional independent thinking and technical depth at a young age.",
+    "inherited_summary": "Born in Berkeley, California. Attended Livermore High School. No notable family academic, professional, or financial background documented. Father not described in available sources.",
+    "ecosystem_summary": "UC Berkeley provided the academic environment where he encountered the problem. Bob Fabry on the Berkeley faculty encouraged him to publish. Stanford under Martin Hellman and collaboration with Whitfield Diffie provided the complementary team. The emerging cryptography field provided perfect timing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "shafi-goldwasser",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Interested in physics, mathematics, and literature in high school in Tel Aviv. BS in mathematics from Carnegie Mellon, where she discovered programming. Capable student but no prodigy-level early indicators; her breakthroughs came during graduate work at Berkeley.",
+    "inherited_summary": "Born in New York to Israeli parents. Father was a law student in Poland before the war, later represented Israeli health services in the US. Mother was a homemaker from a farming community in Israel. Professional, supportive family that encouraged science.",
+    "ecosystem_summary": "Carnegie Mellon (Jon Bentley's algorithms course, CM* multiprocessor project), then UC Berkeley under Manuel Blum. Collaboration with Silvio Micali at Berkeley produced the landmark probabilistic encryption paper. The emerging cryptography field and first Crypto conference provided the right timing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "leonid-levin",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Selected through Soviet math olympiads for elite physics-mathematics high schools in Kiev and Moscow. Published his first mathematical result at 16. Independently discovered NP-completeness around 1971-72. Exceptional early mathematical ability recognized by the Soviet elite pipeline.",
+    "inherited_summary": "Born in Dnipropetrovsk, Ukrainian SSR. No notable family academic or professional background documented. The Soviet system selected him purely on demonstrated ability.",
+    "ecosystem_summary": "Selected through math olympiads for special physics-mathematics boarding high schools run by Moscow University, where he met Andrey Kolmogorov who became his advisor. Kolmogorov's personal supervision at age 18 had an 'overwhelming effect.' Once-in-a-generation mentorship within the Soviet math elite.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "manuel-blum",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-described as 'the opposite of a prodigy.' Struggled with language as a child, losing German then Spanish. Interested in how brains work from a young age. MIT electrical engineering, then PhD under Marvin Minsky. Capable but not exceptional early; grew into his field through persistence.",
+    "inherited_summary": "Born in Caracas to Jewish parents who fled Romania. Parents had little money; Sephardic Jews in Venezuela funded their entry. Moved to the Bronx at age 4, struggled with language transitions. Active disadvantage as refugees with financial hardship.",
+    "ecosystem_summary": "MIT provided the institutional platform. Worked in Warren McCulloch's neurophysiology lab as an undergraduate, then pursued PhD under Marvin Minsky. The MIT ecosystem connecting brains, computation, and logic was the catalytic environment for his complexity theory work.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "michael-rabin",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Solved a geometry problem at age 10-11 that stumped older students, inspiring his mathematical career. Excelled at the Hebrew Reali School, reading advanced math books (Hardy & Wright, Landau) from age 15. Admitted directly to second year at Hebrew University. Strong early mathematical talent.",
+    "inherited_summary": "Father was a rabbi and head of a Jewish theological seminary who sent him to the best school in Haifa and hired private math tutors. Mother was a public activist and children's author. Educated, invested family with strong emphasis on academic excellence.",
+    "ecosystem_summary": "Hebrew Reali School (best in Haifa) under mathematician Elisha Netanyahu, who ran a weekly advanced math seminar. Hebrew University under Abraham Fraenkel. Princeton PhD under Alonzo Church. 1957 summer at IBM Research with Dana Scott. Once-in-a-generation chain of elite mentors and institutions.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "dana-scott",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught calculus from library books found as a teenager, inspired by a book on the science of musical sounds. Westinghouse Talent Search honorable mention. Studied logic at Berkeley as an undergraduate, attending graduate-level seminars. Strong intellectual independence and self-directed learning.",
+    "inherited_summary": "Parents divorced when he was 5. Father sold logging equipment; mother was a housewife, salesperson, and later practical nurse. Neither parent nor their siblings had college degrees. Working-class family with no academic tradition.",
+    "ecosystem_summary": "UC Berkeley for undergraduate (philosophy and logic), then Princeton PhD under Alonzo Church. 1957 summer at IBM Research with Michael Rabin produced the foundational concept of nondeterministic finite automata. Elite academic pipeline from Berkeley to Princeton to IBM Research.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "robert-tarjan",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Read science fiction and Martin Gardner's mathematical games columns, creating his own board games. Had an exceptional junior high math teacher (Mr. Wall) who taught Peano's axioms. Worked with IBM punch card machines in high school. Co-authored a math research paper as a teen. Strong early mathematical development.",
+    "inherited_summary": "Father was a child psychiatrist who ran a state hospital and collaborated with Linus Pauling at Caltech. Brother James became a chess grandmaster. Intellectual household with scientific connections; father left a Caltech catalogue that influenced Robert's college choice.",
+    "ecosystem_summary": "Caltech for undergraduate mathematics, then Stanford for PhD under Don Knuth and Robert Floyd — two of the most influential computer scientists. Summer science program provided early programming experience. Once-in-a-generation advisor combination at the frontier of algorithm design.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tony-hoare",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Studied classics and philosophy (Greats) at Oxford, providing a strong logic background. Learned programming from Leslie Fox. Invented Quicksort as a graduate student at Moscow State University. Capable thinker with strong logical training but no early computing prodigy indicators.",
+    "inherited_summary": "Father was a colonial civil servant in Ceylon; mother was the daughter of a tea planter. Upper-class British Empire family. Parents sent him to elite private schools in England after returning from Ceylon in 1945.",
+    "ecosystem_summary": "Dragon School Oxford and King's School Canterbury (elite private schools), then Merton College Oxford. Graduate study at Moscow State University under Andrey Kolmogorov, where he invented Quicksort. Elite schooling and the Moscow exposure provided the catalytic environment.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jean-bartik",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Math major who graduated at 20 from Northwest Missouri State Teachers College. Good at math but not notable in her math-heavy family. Salutatorian of her high school class. Capable but not exceptional; her opportunity came from wartime mobilization.",
+    "inherited_summary": "Sixth of seven children in a rural Missouri farming family. Father was a schoolteacher and farmer. Family too poor to buy a daily newspaper. Great-grandmother, grandmother, uncles, and aunts were teachers, but the family was economically disadvantaged. Active economic disadvantage.",
+    "ecosystem_summary": "Hired by the Moore School at UPenn immediately after graduation — the epicenter of early electronic computing. Selected as one of six original ENIAC programmers at 21, working on the world's first general-purpose electronic digital computer. Once-in-a-generation positioning at the birth of computing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "frances-spence",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Math major with physics minor at Chestnut Hill College, graduating in 1942. Capable mathematics student but no exceptional early indicators. Her opportunity came from being hired at the Moore School during wartime.",
+    "inherited_summary": "Father was a district engineer for the Philadelphia Public School System; mother was a teacher. Education-oriented, middle-class family in Philadelphia. Second of five sisters, all raised in an education-valuing household.",
+    "ecosystem_summary": "Chestnut Hill College (where she met Kathleen McNulty), then hired by the Moore School at UPenn to compute ballistics trajectories. Selected as one of six original ENIAC programmers at 23. Once-in-a-generation positioning at the birth of electronic computing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "kathleen-antonelli",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Math major at Chestnut Hill College, graduating in 1942 as one of three math majors in a class of 92. Brilliant student who won a scholarship. Capable but not exceptional; her opportunity came from wartime mobilization and the Moore School.",
+    "inherited_summary": "Born in Ireland during the War of Independence; father was an IRA training officer arrested on the night of her birth. Family emigrated to Philadelphia in 1924 where father worked as a stonemason. Arrived speaking only Irish. Active disadvantage as an immigrant with an imprisoned father.",
+    "ecosystem_summary": "Chestnut Hill College on scholarship, then hired by the Moore School at UPenn. Selected as one of six original ENIAC programmers at 24. Once-in-a-generation positioning at the birth of electronic computing, accessed through wartime mobilization.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ruth-lichterman",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "B.Sc. in Mathematics from Hunter College. Capable mathematics student but no exceptional early indicators documented. Her opportunity came from being hired at the Moore School during wartime.",
+    "inherited_summary": "Born in the Bronx to Jewish immigrant parents from Russia. Father Simon Lichterman was a teacher. Immigrant working-class family with no computing or academic connections.",
+    "ecosystem_summary": "Hunter College for mathematics, then hired by the Moore School at UPenn to compute ballistics trajectories. Selected as one of six original ENIAC programmers at 21. Once-in-a-generation positioning at the birth of electronic computing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "frances-bilas",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Math major with physics minor at Chestnut Hill College, graduating in 1942. Capable mathematics student but no exceptional early indicators. Same person as Frances Spence (née Bilas); her opportunity came from the Moore School.",
+    "inherited_summary": "Father was a district engineer for the Philadelphia Public School System; mother was a teacher. Education-oriented, middle-class family in Philadelphia. Second of five sisters in an education-valuing household.",
+    "ecosystem_summary": "Chestnut Hill College (where she met Kathleen McNulty), then hired by the Moore School at UPenn. Selected as one of six original ENIAC programmers at 23. Once-in-a-generation positioning at the birth of electronic computing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "marlyn-wescoff",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Graduated from Temple University in 1942 with a degree in mathematics and a minor in business machines. Capable student whose practical skills (operating adding machines) got her hired. No exceptional early ability indicators.",
+    "inherited_summary": "Born in Philadelphia. Graduated from West Philadelphia High School and Temple University. No notable family academic, professional, or financial background documented in available sources.",
+    "ecosystem_summary": "Hired by the Moore School at UPenn to perform weather calculations, then ballistics trajectories. Selected as one of six original ENIAC programmers at 23. Once-in-a-generation positioning at the birth of electronic computing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "adele-goldstine",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Master's in mathematics from the University of Michigan at age 22. The highest mathematical credential of any woman working with ENIAC. Capable mathematician and programmer but no exceptional early ability indicators.",
+    "inherited_summary": "Father was a successful retail businessman who emigrated from Lithuania. Jewish family in New York City. Access to the ENIAC project came through her husband Herman Goldstine, the military liaison and administrator for ENIAC construction. Significant family and spousal access.",
+    "ecosystem_summary": "Hunter College, University of Michigan (MA), then the Moore School at UPenn through her husband's position. Trained the six original ENIAC programmers and wrote the first operating manual for an electronic digital computer. The Moore School and ENIAC project provided the frontier environment.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "andy-bechtolsheim",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Taking apart radios at age four, building electronics in his parents' basement throughout childhood. Designed a commercial industrial controller based on the Intel 8008 at age 16, earning royalties. Won the Jugend forscht physics prize. Exceptional early electronics and engineering ability.",
+    "inherited_summary": "Father was an elementary school teacher; mother was a housewife. Grew up on an isolated farm in Bavaria with no television and no close neighbors. Despite minor nobility (Freiherr/Baron) title, the family was not wealthy. No technology or business connections.",
+    "ecosystem_summary": "Local electronics company internship as a teenager provided commercial exposure and Intel microprocessor access. University of Technology Munich, Fulbright Scholarship, Carnegie Mellon, then Stanford PhD. Xerox PARC exposure and Silicon Valley provided the ecosystem for Sun Microsystems.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "vinod-khosla",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Inspired by reading about Intel's founding at age 16, decided to start a technology company. Started IIT Delhi's first computer club, wrote a paper on parallel processing as a teenager, operated the school computer center during a staff strike. Exceptional early entrepreneurial drive and self-direction.",
+    "inherited_summary": "Father was an officer in the Indian Army posted to New Delhi. No business or technology connections in the family. Father wanted him to join the army. Middle-class military household with no entrepreneurial or tech ecosystem.",
+    "ecosystem_summary": "IIT Delhi (one of the world's most selective engineering schools), Carnegie Mellon (MS), Stanford GSB (MBA). The elite institutional pipeline brought him to Silicon Valley, where he met Andy Bechtolsheim at Stanford and co-founded Sun Microsystems.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "bill-joy",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "BS in electrical engineering from University of Michigan, then Berkeley graduate student. Created the vi editor and C shell, became principal author of BSD UNIX by age 23. Legendary programming ability and output at a young age, though not a traditional prodigy.",
+    "inherited_summary": "Father was a school vice-principal and counselor; mother was a schoolteacher. Both parents were educators. Middle-class family in Farmington Hills, Michigan. Education-oriented but no technology domain expertise.",
+    "ecosystem_summary": "UC Berkeley's Computer Systems Research Group under Bob Fabry placed him at the epicenter of Unix development in the mid-1970s. Ken Thompson came to Berkeley. DARPA funding supported the work. Once-in-a-generation positioning at the frontier of Unix, with the resources and peer group to make foundational contributions.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "robert-morris",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Grew up immersed in computers. Known at Harvard for his technological prowess, especially in Unix. Described as 'brilliant' by friends and professors. Exceptional early computing ability, though more applied than theoretical prodigy.",
+    "inherited_summary": "Father was Robert Morris Sr., a Bell Labs researcher who helped design Unix and later became chief scientist at the NSA's National Computer Security Center. Rare, trajectory-changing family computing environment — direct access to Unix internals and security expertise from childhood.",
+    "ecosystem_summary": "Harvard for BA, then Cornell for graduate studies. Grew up in a Unix household with direct access to Bell Labs culture through his father. The combination of a Unix-developer father and Harvard/Cornell education provided exceptional early computing immersion and institutional access.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "chris-wanstrath",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught programmer from a young age, making video games and websites as a teenager. Completely self-taught until his CNET job. Capable and passionate but not a prodigy; his strength was in developer tooling and community engagement.",
+    "inherited_summary": "Born and raised in Cincinnati, Ohio. No family technology background or financial safety net documented. Attended St. Xavier High School and briefly studied English at University of Cincinnati before dropping out.",
+    "ecosystem_summary": "Moved to San Francisco in 2005 to work at CNET on GameSpot. Ruby on Rails consulting with PJ Hyett before co-founding GitHub in 2008. The SF tech ecosystem, the Git/open-source wave, and complementary co-founders (Hyett, Tom Preston-Werner) provided the right timing and team.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "pj-hyett",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "BS in Computer Science from North Central College. Senior software engineer at CNET. Capable programmer with formal CS training but no exceptional early ability indicators documented.",
+    "inherited_summary": "Grew up in Naperville, Illinois. No family technology background or financial safety net documented. Attended North Central College, a small liberal arts college, for CS.",
+    "ecosystem_summary": "Moved to San Francisco to work at CNET as a senior software engineer. Ruby on Rails consulting with Chris Wanstrath before co-founding GitHub in 2008. The SF tech ecosystem, the Git/open-source wave, and complementary co-founders provided the right timing and team.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "blake-ross",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Created his first website at age 10, started fixing bugs for the Mozilla project at 14, and co-created Firefox at 17. Self-taught programmer who bought programming books to learn C++. Exceptional early coding ability and domain contribution as a teenager.",
+    "inherited_summary": "Mother was a psychologist and father was a lawyer. Professional parents in Key Biscayne, Florida, who supported his interest and facilitated his Netscape internship — his mother moved to Silicon Valley and drove him to work at 14.",
+    "ecosystem_summary": "Mozilla open-source community served as both a learning platform and distribution channel. Netscape internship at 14-16 provided professional experience. Collaboration with Dave Hyatt on Firefox. The browser wars wave and open-source movement provided perfect timing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "james-clark",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Mathematics and Philosophy Class I Honours at Merton College, Oxford. Taught himself typesetting and C++ programming. Wrote groff from scratch before C++ was standardized. Strong academic ability but not a prodigy; his impact came from self-directed technical work.",
+    "inherited_summary": "Maternal grandfather was Robert Sainsbury (of the Sainsbury supermarket dynasty); maternal uncle is David Sainsbury (Lord Sainsbury). Elite education at Charterhouse and Oxford was funded by connection to the wealthy Sainsbury family. Rare, trajectory-changing family wealth and social position.",
+    "ecosystem_summary": "Charterhouse School (elite public school) and Merton College, Oxford provided the academic foundation. The GNU Project provided a community and distribution channel for his open-source work. Elite education combined with the open-source movement created the opportunity.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "adam-curry",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Built his first transistor radio at 15, worked in pirate radio as a teenager, and progressed to hosting Dutch national TV by his early 20s. Early hands-on broadcasting repetition rather than exceptional innate ability; built skills through practice and exposure.",
+    "inherited_summary": "Born in Arlington, Virginia; family described as being in 'communications/government.' Moved to the Netherlands at age 8. Middle-class family with some connection to communications, though details are limited.",
+    "ecosystem_summary": "Dutch pirate radio provided early broadcasting access as a teenager. Dutch national TV and radio (Veronica, Countdown) provided a professional platform. MTV recruitment in 1987 at age 23 provided the breakout opportunity during cable TV's expansion wave.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ben-goodger",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught web developer who started building websites at 17 using his mother's workplace computer. Contributed to Mozilla as a university student. Lead engineer for Firefox 1.0 at 24. Capable and self-directed but not a prodigy; built skills through open-source contribution.",
+    "inherited_summary": "Born in London, raised in Auckland, New Zealand by his mother (an accountant). No home internet access due to cost — family had limited finances. Had to use his mother's workplace computer for internet access. Active financial disadvantage.",
+    "ecosystem_summary": "University of Auckland (computer engineering), where he discovered the Mozilla Project. Netscape noticed his volunteer contributions and offered him a job at 19, flying him to San Francisco. The Mozilla open-source community and the Firefox team provided the platform for his lead engineer role.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "yann-lecun",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Built synthesizers for his high school band, bought a primitive computer and taught himself programming, independently researched AI academic papers as a student. Proposed an early form of backpropagation at 24. Strong self-directed technical ability and early tinkering.",
+    "inherited_summary": "Father was a mechanical engineer and inventor who fostered early tinkering with electronics and mechanics. Engineering family in the suburbs of Paris. Technical household with direct domain overlap.",
+    "ecosystem_summary": "ESIEE Paris (selective engineering school) provided the academic platform, where a professor created the first AI research lab. PhD at Université Pierre et Marie Curie. Postdoc with Geoffrey Hinton at University of Toronto. AT&T Bell Labs provided the frontier research environment.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "wojciech-zaremba",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won local competitions in mathematics, computer science, chemistry, and physics from a young age. Received individual math instruction due to exceptional ability. Won IMO silver medal at 18 representing Poland. National Children's Fund scholar supporting gifted youth. Strong multi-domain talent.",
+    "inherited_summary": "Grew up in Kluczbork, a small town in Poland. No notable family academic, professional, or financial background documented. Attended the local Comprehensive School Complex.",
+    "ecosystem_summary": "University of Warsaw and École Polytechnique for undergraduate and master's degrees. PhD at NYU under Yann LeCun and Rob Fergus. Internships at Google Brain and FAIR. Elite institutional pipeline with top deep learning mentors at the right time for the AI wave.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "greg-brockman",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won silver medal at the 2006 International Chemistry Olympiad. First North Dakota Intel STS finalist since 1973. Attended Canada/USA Mathcamp three times. Co-authored a mathematics research paper in high school. Strong multi-domain academic talent with international competition success.",
+    "inherited_summary": "Parents Ron Brockman and Ellen Feldman raised him on a hobby farm in rural Thompson, North Dakota. Mother actively found math camps and competitions outside the state. Supportive family that invested in finding opportunities despite rural isolation.",
+    "ecosystem_summary": "Canada/USA Mathcamp provided elite peer environment. Harvard then MIT (though he dropped out from both). Joined Stripe as a founding engineer through his MIT classmate Patrick Collison, becoming CTO at 26. The Collison brothers and Stripe provided the catalytic startup environment.",
+    "scoring_confidence": "High"
+  }
+]

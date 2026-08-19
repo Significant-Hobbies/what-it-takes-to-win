@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "yeat",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Developed early interest in music as a child, influenced by his father's instruments around the house, but showed no prodigy-level indicators; began making music around age 16 with a self-driven, unconventional creative sensibility.",
+    "inherited_summary": "Father was a musician (rock band member) who kept guitars and pianos around the house, providing domain exposure, but also worked as a used-car salesman; mother was a cleaning lady of Romanian descent. Working-class family in California and Oregon.",
+    "ecosystem_summary": "Leveraged online rap communities (Slayworld collective) and TikTok/SoundCloud distribution for viral breakthrough in 2021. Internet-native ecosystem with no notable institutional or geographic advantages beyond platform access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "playboi-carti",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began rapping in high school with no exceptional early cognitive or creative indicators; developed interest in fashion and music through choir participation and local scene immersion.",
+    "inherited_summary": "Grew up in Riverdale, a suburb of Atlanta, with an older brother who introduced him to Gucci Mane and Atlanta rap. Working-class family with no music-industry connections or notable professional advantages.",
+    "ecosystem_summary": "Immersed in Atlanta's underground rap scene, one of the most productive hip-hop ecosystems of the 2010s. Connection to ASAP Mob via Awful Records collective and SoundCloud ecosystem provided key industry pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "lil-uzi-vert",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began rapping in 10th grade with no exceptional early indicators; dropped out of school and worked briefly at a Bottom Dollar store before committing to rap full-time.",
+    "inherited_summary": "Grew up in the Francisville neighborhood of North Philadelphia in a working-class household. Was kicked out of their home by their mother after quitting a job, creating significant early adversity and instability.",
+    "ecosystem_summary": "Philadelphia music scene and SoundCloud ecosystem provided initial platform. Key catalyst was signing to Don Cannon and DJ Drama's Generation Now imprint at Atlantic Records, providing a major industry pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jorja-smith",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began performing at age 8 and writing songs at 11, with classical and piano training from a young age. Won a music scholarship to Aldridge School, showing significant early musical ability and drive.",
+    "inherited_summary": "Raised in Walsall by a father who had been a neo-soul singer (former musician) and a jewellery designer mother. Musical household with direct domain knowledge from father, providing both training encouragement and industry understanding.",
+    "ecosystem_summary": "Music scholarship to Aldridge School, YouTube covers discovered by a manager at 15, signing with Sony/ATV at 18. Drake co-sign on 'More Life' and BBC Sound of 2017 list provided major industry catalysts.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ella-mai",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Attended BIMM London (a music institute) and auditioned for X Factor in 2014, showing above-average musical commitment but no prodigy-level early indicators.",
+    "inherited_summary": "Grew up in London with a Jamaican mother and Irish father, then moved to Queens, NY at age 12 where she struggled with cultural adjustment. Working-class family with no music-industry connections.",
+    "ecosystem_summary": "BIMM London provided formal music training. Uploaded 15-second Instagram covers that were discovered by producer DJ Mustard, who signed her to his 10 Summers label in 2015, providing the key industry catalyst.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "normani",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Auditioned for The X Factor at 15 and was placed into Fifth Harmony, showing above-average performance ability and dance skills but no prodigy-level indicators prior to the show.",
+    "inherited_summary": "Born in Atlanta and raised in Houston. Mother encouraged her reluctant X Factor audition. No notable family wealth, industry connections, or domain-specific advantages.",
+    "ecosystem_summary": "The X Factor pipeline placed her into Fifth Harmony (Syco/Epic Records), which became one of the best-selling girl groups of all time, providing a massive built-in audience and industry platform for her solo career.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "camila-cabello",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Auditioned for The X Factor at 15 with no prior exceptional indicators; was placed into Fifth Harmony, leveraging the group platform rather than individual prodigy-level ability.",
+    "inherited_summary": "Emigrated from Havana, Cuba to Miami at age 6 with her architect mother, who sacrificed her career for her daughter's opportunities. Immigrant working-class family with no music-industry connections.",
+    "ecosystem_summary": "The X Factor pipeline and Fifth Harmony (Syco/Epic Records) provided a massive global platform. The group's multiplatinum success and built-in audience catalyzed her solo career, including the #1 hit 'Havana.'",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "dua-lipa",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Posted YouTube covers at 14 and returned to London alone at 15 to pursue music, showing above-average drive and commitment but no prodigy-level early indicators.",
+    "inherited_summary": "Father Dukagjin was the lead singer of Kosovan rock band Oda and later became her manager, providing direct domain knowledge and music-industry guidance. Musical household steeped in her father's rock music heritage.",
+    "ecosystem_summary": "Attended Sylvia Young Theatre School on weekends. London music scene and YouTube/SoundCloud platforms provided initial distribution. Father's management and industry knowledge guided early career decisions.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ava-max",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Competed in singing competitions from age 10 and showed above-average vocal ability and drive, moving to LA at 14 to pursue music, but no prodigy-level indicators.",
+    "inherited_summary": "Mother was a trained opera singer who inspired her vocally. Albanian immigrant parents who relocated the family to LA when she was 14 to support her music career, showing significant family sacrifice and domain exposure.",
+    "ecosystem_summary": "LA music scene access after family relocation. Key catalyst was meeting producer Cirkut at a birthday party, leading to SoundCloud release and Atlantic Records signing in 2017. Years of rejection preceded breakthrough.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kim-petras",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began songwriting at 12-13 on GarageBand and posted YouTube covers as a teen, showing above-average early creative output but no prodigy-level indicators.",
+    "inherited_summary": "Born in Cologne, Germany to supportive parents who enabled her to become one of the youngest people to receive gender affirmation surgery at 16. Middle-class family with parental support but no music-industry connections.",
+    "ecosystem_summary": "International media coverage from gender affirmation surgery provided an early public platform. Secured a BMG publishing deal after moving to LA. Max Martin's influence in Swedish pop production tradition informed her sound.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "troye-sivan",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Posted first YouTube video at 12 and built a following of over 3 million subscribers through six years of singing and vlogging, demonstrating exceptional early platform-building ability and a boy soprano voice.",
+    "inherited_summary": "Family emigrated from South Africa to Perth, Australia when he was 2. Middle-class family with no music-industry connections or notable professional advantages.",
+    "ecosystem_summary": "YouTube platform in its early vlogging era (2007) provided a rare direct distribution channel for a teenager. Built 3M+ subscribers creating a built-in audience. EMI Australia signing on his 18th birthday leveraged this base.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "joji",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started his YouTube channel at 14 in 2008, building 5.5M+ subscribers and creating the viral Harlem Shake meme in 2013. Exceptional early creative output and internet culture fluency from a young age.",
+    "inherited_summary": "Grew up in Osaka, Japan and attended an international school, giving him access to Western internet culture and bilingual exposure. Middle-class family with no direct music-industry connections.",
+    "ecosystem_summary": "YouTube platform in its early era provided massive reach. International school gave Western internet access from Japan. 88Rising collective provided Asian-American music industry infrastructure for his Joji transition.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ddg",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Valedictorian in high school and started YouTube at 17, going viral with a reaction video. Above-average intelligence and drive but no prodigy-level indicators.",
+    "inherited_summary": "Father was a music engineer in Pontiac, Michigan, providing early studio exposure and domain familiarity. Working-class family; DDG worked at TJ Maxx before YouTube success.",
+    "ecosystem_summary": "YouTube platform provided viral growth from 500 to 15K subscribers overnight. Dropped out of Central Michigan University to focus on YouTube. Epic Records signing in 2018 provided music industry pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "6ix9ine",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "Started rapping at 16 after being encouraged by a label CEO at a bodega where he worked. No exceptional early cognitive or creative indicators.",
+    "inherited_summary": "Grew up in Bushwick, Brooklyn in poverty. Father was absent due to heroin addiction and imprisonment. Stepfather was murdered when he was 13, leading to depression and expulsion from school. Significant early adversity.",
+    "ecosystem_summary": "Released tracks on YouTube and SoundCloud via a Slovakian label (FCK THEM). Minimal early ecosystem support; Righteous P provided early mentorship at a bodega. Viral persona and provocative visuals drove internet following.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "lil-pump",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started making music at 13 with Smokepurpp after being expelled from school in 9th grade. No exceptional early cognitive or creative indicators.",
+    "inherited_summary": "Born in Miami to Colombian immigrant parents who divorced when he was 6, leading to a troubled youth with multiple school expulsions. Working-class family with no music-industry connections.",
+    "ecosystem_summary": "SoundCloud rap ecosystem and Miami scene provided distribution. Cousin introduced him to producer Smokepurpp at 13, forming a key collaborative duo. Tha Lights Global and Warner Bros. signing provided industry pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kang-jae-won",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Joined the South Korean national handball team by age 17, winning Asian Games bronze in 1982. Was the top scorer at the 1986 World Championship with 67 goals, demonstrating exceptional early athletic achievement.",
+    "inherited_summary": "Born in Bucheon, South Korea. No notable family wealth, domain connections, or professional advantages mentioned in available sources.",
+    "ecosystem_summary": "South Korean national team pipeline provided early international competition access from age 17. Played for Bucheon THS domestically. The Korean national handball system was a strong competitive ecosystem in the 1980s.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "arturo-gatti",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started boxing at age 7 following his older brother, compiling an 86-14 amateur record with three Canadian Golden Gloves and two national junior championships. Significant early athletic achievement through domain repetition.",
+    "inherited_summary": "Born in Cassino, Italy and raised in Montreal, Canada. Older brother Joe boxed, providing early domain exposure. Father died when he was 15, creating financial pressure. Working-class family.",
+    "ecosystem_summary": "Montreal boxing gyms provided early training access. Gleason's Gym in New York provided professional-level training environment. Amateur competition circuit in Canada provided reps, but no elite institutional pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "raimonds-pauls",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began piano studies at age 4, entered the Emīls Dārziņš College of Music at 10, and the Latvian State Conservatory at 17. Exceptional early musical training and aptitude, with a concert pianist diploma by his early twenties.",
+    "inherited_summary": "Working-class family in Riga: father was a glass factory worker who played drums, grandfather played violin. Family musical tradition prompted father to direct Raimonds toward music, but no wealth or industry connections.",
+    "ecosystem_summary": "Conservatory training pipeline (Emīls Dārziņš College, Latvian State Conservatory) provided elite formal music education. Co-founded the Latvian Radio Light Music Sextet at 20, gaining a radio platform. Soviet-era institutional music system.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "dolph-lundgren",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Excelled academically from a young age, earning chemical engineering degrees from KTH Royal Institute of Technology and University of Sydney, plus a Fulbright scholarship to MIT. Simultaneously won European Kyokushin karate championships at 23-24. Exceptional dual academic and athletic ability.",
+    "inherited_summary": "Father was an engineer (M.Sc.) and economist (MBA) for the Swedish government, providing a middle-class intellectual household. However, father was physically abusive, creating significant early adversity that motivated Lundgren's ambition.",
+    "ecosystem_summary": "Trained under Sensei Brian Fitkin in Kyokushin karate, providing sustained mentorship. Academic scholarships took him to Washington State, Clemson, KTH, University of Sydney, and nearly MIT. Elite academic and martial arts institutional access.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jan-janssen",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Joined the cycling club at Delft at age 16 and won 25 races as a novice in two years, demonstrating exceptional early talent. Won approximately 40 races as a teenager before turning professional.",
+    "inherited_summary": "Born in Nootdorp, Netherlands just after the Nazi occupation. Worked with his parents in the family construction/excavation firm as a youth. Working-class family with no cycling connections or notable advantages.",
+    "ecosystem_summary": "Dutch cycling culture, one of the strongest in the world, provided deep ecosystem support. Local cycling club 'De Mol' and the Delft club provided training infrastructure. Tour de l'Avenir for the Netherlands provided international competition pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "daniel-day-lewis",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Made film debut at 14 in Sunday Bloody Sunday (1971) and trained at Bristol Old Vic Theatre School for three years. Above-average early ability but not prodigy-level; his exceptional reputation developed later.",
+    "inherited_summary": "Born into one of Britain's most distinguished artistic families: father was Poet Laureate Cecil Day-Lewis, mother was actress Jill Balcon, and grandfather Sir Michael Balcon headed Ealing Studios. Family name and connections opened doors throughout British arts.",
+    "ecosystem_summary": "Bristol Old Vic Theatre School provided elite formal training. London theatre ecosystem and Royal Shakespeare Company provided prestigious platforms. Family connections to British arts elite provided institutional access rare for a young actor.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "shaquille-o-neal",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Extraordinary physical size (6'9\" as a high school junior, eventually 7'1\") was a trajectory-changing physical advantage. Dominated at every level from high school through college, named AP Player of the Year as a sophomore at LSU.",
+    "inherited_summary": "Biological father was an All-State high school basketball guard, suggesting genetic athletic inheritance. Stepfather Phillip Harrison, a career Army sergeant, provided military discipline and structure. Middle-class military family.",
+    "ecosystem_summary": "LSU coach Dale Brown discovered him and provided elite collegiate coaching. Boys & Girls Clubs provided early basketball access. Military base structure provided discipline. The #1 overall NBA draft pick selection confirmed the institutional pipeline.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "21-savage",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "No exceptional early cognitive or creative indicators. Started rapping after being shot six times in 2013, which catalyzed his turn to music. Expelled from all DeKalb County schools in 7th grade and dropped out in 9th grade.",
+    "inherited_summary": "Born in Plaistow, London to Caribbean-descent parents who separated early. Moved to Atlanta at age 7. Grew up in poverty with significant instability, culminating in being shot six times and losing his best friend in 2013.",
+    "ecosystem_summary": "Atlanta's trap music epicenter provided the key geographic advantage, with access to the city's producer ecosystem (Metro Boomin, Zaytoven, Sonny Digital) that powered the 2010s rap wave. Street credibility from real-life violence provided authentic material.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "gunna",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started making music at age 15, recording in a friend's garage studio. No exceptional early cognitive or creative indicators; career catalyzed by mentorship rather than individual prodigy-level ability.",
+    "inherited_summary": "Born Sergio Kitchens in College Park, Georgia, raised by his mother with four older brothers. No notable family wealth, music-industry connections, or domain-specific advantages.",
+    "ecosystem_summary": "College Park Atlanta at the epicenter of the 2010s trap music wave. Key catalyst was mutual friend Keith 'King' Troup connecting him to Young Thug, who signed him to YSL Records in 2016. Lil Baby collaboration on 'Drip Harder' amplified his reach.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "lil-baby",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "No exceptional early cognitive or creative indicators. Dropped out of high school in 9th grade for drug dealing. Started rapping only after being convinced by label founders at Quality Control Records.",
+    "inherited_summary": "Father left when he was 2; mother raised him and two sisters in Oakland City, Southwest Atlanta. Grew up in poverty with no family advantages or domain connections. Was a drug dealer before entering music.",
+    "ecosystem_summary": "Proximity to Quality Control Records' studio as a drug dealer gave him access to label founders Coach K and Pee, who convinced him to rap. Young Thug and Gunna mentored him. Atlanta rap ecosystem provided the critical infrastructure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "yung-lean",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started rapping at 15 and formed the Sad Boys collective with producers Yung Sherman and Yung Gud. 'Ginseng Strip 2002' went viral at 16, showing above-average early creative output and internet culture fluency.",
+    "inherited_summary": "Born in Belarus, moved to Sweden between ages 3-5, raised in Stockholm's Södermalm area. Attended UNIS Hanoi (an international school in Vietnam) from 6th-10th grade, suggesting a middle-class to upper-middle-class family with international mobility.",
+    "ecosystem_summary": "SoundCloud and Tumblr distribution provided global reach from Stockholm. Sad Boys collective (Yung Sherman, Yung Gud) formed a complementary creative team. Pioneered cloud rap as one of the first SoundCloud-era artists to break through internationally.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "bladee",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Met Ecco2k as a classmate at age 10 and formed a punk band called Krossad, showing early creative collaboration. Later met Whitearmor and Thaiboy Digital, forming Drain Gang. Above-average early creative output but no prodigy indicators.",
+    "inherited_summary": "Born Benjamin Reichwald in Stockholm, Sweden. Mother was a teacher, father worked in restaurants. Middle-class family with no music-industry connections or notable professional advantages.",
+    "ecosystem_summary": "Drain Gang collective, formed in 2013, provided a complementary creative team. Yung Lean association (via younger brother's classmate connection) provided cross-promotion. Stockholm scene and SoundCloud/internet distribution provided platform access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sheck-wes",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started making music at 11 to relieve stress. Also a basketball player and fashion model (Yeezy Season 3 at age 16). Above-average early multi-domain engagement but no prodigy-level indicators.",
+    "inherited_summary": "Born in Harlem to Senegalese immigrant parents with no music-industry connections. Moved to Milwaukee at 5, returned to NYC at 14. Mother sent him to Senegal at 17 for 100 days. Working-class immigrant family.",
+    "ecosystem_summary": "Geographic immersion in NYC's hip-hop culture. Key catalyst was connecting with Travis Scott, who became a mentor and signed him to Cactus Jack. Kanye West's GOOD Music co-sign provided additional industry leverage. SoundCloud virality for 'Mo Bamba.'",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "arlo-parks",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Developed a creative writing practice from age 7 that became the foundation of her songwriting. Taught herself to make beats on GarageBand using YouTube tutorials. Above-average early creative ability but no prodigy indicators.",
+    "inherited_summary": "Grew up in a multicultural household in West London (half Nigerian, quarter Chadian, quarter French). Educated at Latymer Upper School, an independent/private school, suggesting a middle-class to upper-middle-class family.",
+    "ecosystem_summary": "BBC Music Introducing platform provided key discovery when she uploaded demos at 18. London indie scene provided cultural context. GarageBand and YouTube tutorials enabled self-taught music production from a young age.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "declan-mckenna",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Wrote his breakout single 'Brazil' at age 15 as GCSE music coursework, showing above-average early songwriting ability with politically engaged content. Self-released on YouTube and Bandcamp.",
+    "inherited_summary": "Born in Enfield, grew up in Cheshunt, Hertfordshire. Youngest of six children. Attended St Mary's Church of England High School. No notable family wealth, music-industry connections, or domain-specific advantages.",
+    "ecosystem_summary": "Winning the Glastonbury Festival Emerging Talent Competition at 16 was the key catalyst, leading to management with Q Prime and a Columbia Records deal. YouTube virality for 'Brazil' provided initial distribution.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "omar-apollo",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "Got a guitar at 12, traded it for an acoustic at a pawn shop, and taught himself to sing and play via YouTube cover videos. Self-driven but no prodigy-level indicators. Worked at McDonald's at 17 to buy recording equipment.",
+    "inherited_summary": "Born in Hobart, Indiana to Mexican immigrant parents from Guadalajara. Parents worked multiple jobs and ran a taco shop. No music-industry connections or financial resources; working-class immigrant family.",
+    "ecosystem_summary": "SoundCloud and Spotify self-release provided distribution. YouTube self-teaching for guitar and singing. No notable institutional access, mentors, or geographic advantages beyond streaming-era platform access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sza",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "No exceptional early cognitive or creative indicators. Transferred colleges four times before dropping out. Self-released EPs from a friend's closet using stolen software, showing drive but no prodigy-level ability.",
+    "inherited_summary": "Father was an executive producer at CNN, mother was an executive at AT&T. Middle-class professional parents in suburban New Jersey. However, strict Orthodox Muslim upbringing restricted media access, creating an outsider perspective.",
+    "ecosystem_summary": "Signing to Top Dawg Entertainment (TDE) in 2013 as the label's first female artist was the key catalyst. Kendrick Lamar network and TDE's reputation in the industry provided major leverage. Songwriting for Beyoncé and Rihanna expanded her reach.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "olivia-newton-john",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Formed a folk group at 14 and won a TV talent contest at 17, showing above-average early performing ability but no prodigy-level indicators.",
+    "inherited_summary": "Grandfather Max Born won the Nobel Prize in Physics, placing her in an distinguished academic/intellectual family. Father was a professor. Family emigrated from England to Australia when she was 6, providing geographic mobility.",
+    "ecosystem_summary": "Australian TV exposure from winning a talent contest provided initial platform. Moving to England in 1966 gave access to the UK music industry. BBC TV's 'It's Cliff Richard' provided massive UK exposure. Pat Carroll duo and the manufactured group Toomorrow provided collaborative infrastructure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "bob-hewitt",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began playing tennis as an amateur from 1958 at age 18 and reached the Australian Open singles semifinals in 1960 at 20. Above-average early tennis ability but not prodigy-level.",
+    "inherited_summary": "Born in Dubbo, New South Wales, regional Australia. No notable family wealth, tennis connections, or domain-specific advantages mentioned in available sources.",
+    "ecosystem_summary": "Emerged from the strong Australian tennis ecosystem of the late 1950s and 1960s, one of the dominant tennis cultures of the era. Doubles partnership with Fred Stolle provided a dominant team dynamic that won multiple Grand Slam titles.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "yvonne-ruegg",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won the Swiss national downhill championship in 1959 at age 20 and Olympic gold in giant slalom at 21. Above-average early athletic achievement but described as a 'surprise victor,' suggesting she was not a dominant prodigy.",
+    "inherited_summary": "Aunt Anny Rüegg attended the 1936 Winter Olympics as an alpine skier for Switzerland, providing a family precedent and likely early exposure to the sport. Born in Chur, Switzerland.",
+    "ecosystem_summary": "Grew up in Switzerland's Alpine skiing culture, one of the world's strongest. Ski Club Arosa provided her training base, as it did for compatriot Roger Staub who won the men's giant slalom at the same Olympics. Swiss skiing infrastructure was elite.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "stoya",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Homeschooled and received her high school diploma before turning 16, suggesting above-average intelligence. Early computer literacy from father's IT work. Above-average but no prodigy-level indicators.",
+    "inherited_summary": "Father worked in IT, providing early access to computers and electronics. Homeschooling environment fostered independence. Middle-class family in Wilmington, NC.",
+    "ecosystem_summary": "Philadelphia DIY scene provided early creative community. Alt-erotic websites provided a niche platform for building a following before being discovered by Digital Playground, which signed her to an exclusive contract.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "tori-black",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "Danced from age 7 and was a belly dance instructor. Played football and boxed growing up. Above-average physical performance ability but no exceptional early cognitive or creative indicators.",
+    "inherited_summary": "Born in Seattle, WA. Attended Western Washington University studying journalism. No notable family wealth, industry connections, or domain-specific advantages mentioned in available sources.",
+    "ecosystem_summary": "Entered the adult film industry at 18 in 2007 via a talent agency ad while on summer vacation in Fort Lauderdale. No notable early institutional access, mentors, or ecosystem advantages beyond the industry itself.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "asa-akira",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "No exceptional early cognitive or creative indicators. Began working as a dominatrix at 19 and entered adult entertainment through self-driven industry entry.",
+    "inherited_summary": "Born in New York City to an upper-middle-class family. Attended private schools including the United Nations International School in Manhattan. Lived in Tokyo for four years as a child, providing significant international exposure.",
+    "ecosystem_summary": "NYC's sex industry provided direct domain exposure. Bubba the Love Sponge radio show provided a media platform. Upper-middle-class NYC upbringing with private school education provided general cultural capital.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "bree-olson",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "Pre-med student at Purdue University working 40 hours a week, showing above-average drive and academic ability. Entered the adult industry partly for income, demonstrating self-driven resourcefulness.",
+    "inherited_summary": "Born in Houston, TX, moved with her mother to Fort Wayne, Indiana at age two. Financial hardship as a working student without parental support. Stepfather and mother in a small-town Indiana setting. Active financial disadvantage.",
+    "ecosystem_summary": "No notable early institutional access, mentors, or ecosystem advantages. Entered the adult industry in 2006 and quickly rose through an Adam & Eve contract and Penthouse Pet status, but these were outcomes rather than starting advantages.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "dani-daniels",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Showed a strong interest in art and creativity from a young age, spending much of her youth sketching and painting. Entrepreneurial instinct evident in launching her own website early in her career. Above-average but no prodigy indicators.",
+    "inherited_summary": "Born in Orange County, CA. No notable family wealth, industry connections, or domain-specific advantages mentioned in available sources.",
+    "ecosystem_summary": "Orange County/SoCal proximity to the adult entertainment industry provided geographic access. Early launch of a personal website demonstrated platform-native entrepreneurial strategy. No notable institutional or mentor advantages.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "christy-mack",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "Cheerleader growing up with a distinctive tattoo aesthetic. No exceptional early cognitive, creative, or physical indicators. Married at 18 and left husband to pursue career.",
+    "inherited_summary": "Born in Illinois or Indiana, grew up in Edinburgh, Indiana, a small town. No notable family wealth, industry connections, or domain-specific advantages.",
+    "ecosystem_summary": "Miami relocation provided access to the adult industry. Car show modeling and tattoo niche provided a distinctive positioning. No notable early institutional access, mentors, or ecosystem advantages.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "bonnie-rotten",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "No exceptional early cognitive or creative indicators. First job was at a shoe store. Began working as an exotic dancer at 18 in Dayton, Ohio. Career driven by constraint and niche positioning rather than early ability.",
+    "inherited_summary": "Raised by grandparents in Cincinnati/Hamilton, Ohio in a Jewish household after early family disruption. Early adversity including early sexual exposure. Active disadvantage from unstable family structure.",
+    "ecosystem_summary": "Midwest car and motorcycle show circuit provided early modeling platform. Fetish modeling and alt-porn niche provided distinctive positioning. No notable early institutional access, mentors, or elite ecosystem advantages.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "cody-ko",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Duke University computer science graduate on an athletic swimming/diving scholarship, became team captain. Created the I'd Cap That app which went viral with 4M+ users and hit #1 on the App Store. Exceptional early technical and creative ability.",
+    "inherited_summary": "Son of professional cyclist Greg Kolodziejzyk, who modeled unconventional career pursuit. Middle-class to upper-middle-class Canadian family in Calgary with a professional athlete father.",
+    "ecosystem_summary": "Duke University provided elite CS education and athletic team structure. Silicon Valley engineering experience at Fullscreen provided technical skills and the Cody Ko partnership. Vine platform provided viral distribution. Noel Miller partnership formed a high-trust creative duo.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "noel-miller",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Built 100K+ followers on Vine through comedy skits with one viral video garnering 2.6 million loops. Above-average early creative output but no prodigy-level indicators.",
+    "inherited_summary": "Father was a classically trained musician skilled at piano and violin, providing early artistic exposure. Family moved to LA, then briefly returned to Toronto after the 1994 Northridge earthquake. Middle-class family.",
+    "ecosystem_summary": "Fullscreen workplace was the key ecosystem catalyst, where he met Cody Ko and formed a high-trust creative partnership. LA media ecosystem provided industry access. Software engineering day job provided technical skills for content creation.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "danny-gonzalez",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started making comedy sketches on YouTube as a child in the mid-2000s, giving early platform familiarity. Georgia Tech computational media degree provided technical/editing skills. Above-average but no prodigy indicators.",
+    "inherited_summary": "Born in Chicago, grew up in Wheaton, IL. Has an older brother and younger sister. No notable family wealth, industry connections, or domain-specific advantages.",
+    "ecosystem_summary": "Early YouTube access as a child provided platform fluency. Vine comedy starting at 19 provided viral distribution. Georgia Tech computational media program provided technical skills. Bo Burnham served as early creative inspiration.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "drew-gooden",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Posted his first Vine in May 2013 and developed comedy voice through improv classes. 'Road Work Ahead' Vine became one of the most viral Vines of all time. Above-average but no prodigy-level early indicators.",
+    "inherited_summary": "Born in North Carolina, moved to Orlando, FL at age two. Played little league baseball growing up. Dropped out of community college twice. No notable family wealth, industry connections, or domain-specific advantages.",
+    "ecosystem_summary": "Vine platform provided low-barrier content creation access at a moment of personal uncertainty. Improv classes provided comedy training. YouTube commentary format provided transition path. Partner Amanda Murphy provided collaborative support.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "miquel-barcelo",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began formal art training in his teens at the Arts and Crafts School of Palma, joined the conceptual avant-garde group Taller Llunàtic by 18, and had his first solo museum show by 19. Significant early artistic achievement and output.",
+    "inherited_summary": "Born in Felanitx, Mallorca. No notable family wealth, art-world connections, or domain-specific advantages mentioned in available sources.",
+    "ecosystem_summary": "Taller Llunàtic avant-garde collective provided a peer group and creative platform. First solo show at Palma Museum provided institutional validation. Participation in Documenta 7 at 25 as the only Spanish artist provided international breakthrough, riding the neo-expressionist wave.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "peter-cosgrove",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "No exceptional early cognitive indicators documented. Military performance and leadership ability evident through his career, but no prodigy-level early achievement before entering Duntroon.",
+    "inherited_summary": "Son of a soldier (warrant officer), providing a military family background and domain familiarity. Grew up in Sydney's Paddington. Middle-class military family with direct career path influence.",
+    "ecosystem_summary": "Royal Military College, Duntroon is Australia's elite military academy, providing rigorous institutional training. Waverley College provided secondary education. Vietnam combat deployment at 22 provided real-world command experience leading to the Military Cross at 23-24.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "piero-manzoni",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught as an artist, debuting publicly at 23 in 1956. Took private painting lessons from 1950 and briefly attended Brera Fine Arts Academy. Above-average early creative output but not prodigy-level given his self-taught path.",
+    "inherited_summary": "Born into Italian aristocracy as Count Meroni Manzoni di Chiosca e Poggiolo. Father Count Egisto was a business partner in a foodstuffs company and founded an antiquarian bookshop. Mother's family owned the historic Filanda Meroni silk spinning firm. Wealthy aristocratic family with significant cultural capital.",
+    "ecosystem_summary": "Milan art scene provided access to avant-garde circles. Yves Klein's Epoca Blu exhibition in 1957 was a formative influence. Co-founded the Azimut Gallery with Enrico Castellani, creating his own institutional platform. Encountering Lucio Fontana and the Ligurian art scene provided creative network.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "fedor-emelianenko",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began sambo and judo at age 11, earned Master of Sport certification at 21, and won European sambo gold at 23. Exceptional early athletic achievement in combat sports, transitioning to MMA at 24 and winning the PRIDE Heavyweight Championship at 26.",
+    "inherited_summary": "Born in Rubizhne, Ukrainian SSR, moved to Stary Oskol, Russia at age two. Working-class/poor family. Served in the Russian Army from 1995-1997. Financial hardship catalyzed his transition from sambo to MMA for income.",
+    "ecosystem_summary": "Coach Vladimir Voronov provided sustained individualized training for over a decade from age 11. Russian national judo/sambo team and combat sambo pipeline provided elite competitive infrastructure. The Russian combat sports system was among the world's strongest.",
+    "scoring_confidence": "Medium"
+  }
+]

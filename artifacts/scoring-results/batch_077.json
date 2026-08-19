@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "heini-hemmi",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Late bloomer who joined the Swiss national team at 20 and didn't achieve his first World Cup podium until 26. Above-average ability and persistence, but no prodigy-level markers in early career.",
+    "inherited_summary": "Middle-class Swiss family in Churwalden, Graubünden. Older brother Christian also skied at World Cup level, suggesting a family skiing culture. Trained as a mason before his skiing career.",
+    "ecosystem_summary": "Benefited from Switzerland's elite alpine skiing pipeline and the Graubünden alpine region, an epicenter of the sport. Swiss national team provided world-class coaching and training facilities.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "genco-gulan",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Studied political science at Bogazici University while taking painting classes, winning the BP art prize at 24. Above-average intellectual and creative ability with early conceptual art output.",
+    "inherited_summary": "Mother Tezer Gulan and grandmother Saime Izmiroglu were both artists whose works were exhibited alongside his. Family artistic lineage provided direct domain inheritance and creative environment.",
+    "ecosystem_summary": "Attended Bogazici University, a top Turkish institution, providing intellectual foundation and access to computer engineering labs that informed his new media work. Istanbul art scene and early net art adoption provided frontier positioning.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "alexis-amore",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "inherited_summary": "Immigrant family from Peru settling in Redondo Beach, California. No family connections in entertainment or media. Working-class background with no domain overlap.",
+    "endowment_summary": "Teenage model for Nordstrom and appeared on MTV's The Grind before entering the adult industry at 20. Above-average ability to navigate entertainment industry, but no exceptional cognitive or creative markers.",
+    "ecosystem_summary": "Growing up in the Los Angeles area placed her at the epicenter of the adult entertainment industry. Early modeling and MTV exposure provided some entertainment industry access.",
+    "scoring_confidence": "Medium",
+    "catalytic_ecosystem_score": 1
+  },
+  {
+    "person_id": "rebeca-linares",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Entered adult industry at 22 and quickly moved to LA to work full-time, demonstrating drive and adaptability. Above-average ability but no exceptional early markers.",
+    "inherited_summary": "Born in San Sebastián, moved to Barcelona with mother at age 4. No family connections in entertainment. Modest background with no domain overlap.",
+    "ecosystem_summary": "Connection to Spanish adult star Nacho Vidal through a friend provided entry into the Spanish industry. Decisive move to Los Angeles in 2006 placed her at the epicenter of the global adult entertainment industry.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jimmy-jump",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Rebellious temperament and boldness from childhood, sneaking into Vatican areas and museums as a boy. Above-average audacity but no traditional cognitive or creative prodigy markers.",
+    "inherited_summary": "Father was a sales technician for a lubricants brand, involved in ERC (Esquerra Republicana de Catalunya) politics. Working-class family in Sabadell/Sant Quirze del Vallès. No domain connections to entertainment or sports.",
+    "ecosystem_summary": "Proximity to Camp Nou, one of football's most iconic venues, and Catalan identity provided cultural motivation. Mass media sports era enabled his stunts to gain global attention.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "radu-voina",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Debuted in the national handball league at age 13, multi-sport talent as a child. Exceptional early achievement indicating above-average athletic ability and determination.",
+    "inherited_summary": "Father was a lawyer who died when Radu was 3.5 years old; mother was a kindergarten teacher. Raised largely by grandmother. Earned first money cleaning railways. Modest upbringing despite educated parents.",
+    "ecosystem_summary": "Romanian state sports system identified and developed talent early. Progressed from Voința Sighișoara to Universitatea București to Steaua Bucharest, one of Romania's premier clubs. Coach Lucian Albu provided early training.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "dimitrij-ovtcharov",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Olympic team silver at 20 and singles bronze at 24, rapid rise through German and international table tennis. Exceptional early achievement in the sport from a young age.",
+    "inherited_summary": "Father Mikhail was Soviet table tennis champion in 1982 with 80 national team appearances. Mother Tatjana held an A-license coaching certificate. Both parents deeply involved in the sport — rare, trajectory-changing family domain inheritance.",
+    "ecosystem_summary": "Family moved to Germany due to Chernobyl, giving him access to the Bundesliga, one of the world's strongest table tennis leagues. Joined Borussia Düsseldorf at 19, an elite club environment.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jim-lee",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Graduated cum laude from Princeton in psychology, then drew comics 10-12 hours daily for a year to break in. Rapid rise at Marvel from Alpha Flight to Uncanny X-Men in three years, demonstrating exceptional artistic talent and drive.",
+    "inherited_summary": "Father was a doctor; family immigrated from South Korea to the US. Princeton education and private school (St Louis Country Day) indicate upper-middle-class background. No comics industry connections, but strong academic platform.",
+    "ecosystem_summary": "Marvel Comics pipeline provided rapid career advancement. Princeton education gave a strong academic foundation. No specific legendary mentor or peer group noted, but the Marvel system itself was an elite platform.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "deng-yaping",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Started playing at 5, provincial junior champion at 9, national champion at 13, world champion by 18, and world #1 for 8 consecutive years despite being rejected for her short stature. Prodigy-level ability — rare, trajectory-changing.",
+    "inherited_summary": "Father was a table tennis player who coached her from age 5, providing direct family domain advantage and early specialized training.",
+    "ecosystem_summary": "Chinese national table tennis pipeline is the world's most elite system. Entered through provincial and national championships as a child. Once accepted to the national team, had access to the best coaching, training, and competitive environment in the sport.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "kosuke-fujishima",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Created two successful manga series (You're Under Arrest! and Oh My Goddess!) by age 26. Boldly asked Tatsuya Egawa for an apprenticeship, showing initiative and confidence. Exceptional early creative output.",
+    "inherited_summary": "No family domain connections in manga or art mentioned. Intended to be a draftsman but failed to get an apprenticeship. Working-class/middle-class background with no industry connections.",
+    "ecosystem_summary": "Editorial role at Puff magazine provided industry proximity and access to established creators. Apprenticeship under Tatsuya Egawa, an established manga artist, gave dedicated mentorship and hands-on training in the Japanese manga ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kay-stenshjemmet",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "European Allround Champion at 23, world record in 5000m at 24 (first under 7 minutes). Bronze at World Junior Championships at 20. Exceptional early achievement in speed skating.",
+    "inherited_summary": "No family background in skating mentioned. From Lillestrøm, Norway — likely working or middle class with no domain-specific advantages.",
+    "ecosystem_summary": "Part of Norway's legendary 'Four S-es' speed skating group, reflecting exceptional peer group depth. Norwegian speed skating pipeline was the world's best. Trained at Sportsklubben Ceres with elite coaching.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "bruce-beutler",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Published first scientific paper at 16, graduated UCSD at 18, MD from University of Chicago at 24. Fascinated by biology from age 7, worked in father's lab from 14. Prodigy-level early scientific productivity.",
+    "inherited_summary": "Father Ernest Beutler was a renowned hematologist and National Academy member. Both paternal grandparents were physicians. Rare, trajectory-changing family domain inheritance with direct lab access and world-class mentorship from a parent.",
+    "ecosystem_summary": "City of Hope National Medical Center lab access from age 14, UCSD, University of Chicago, and later Scripps Research Institute. Elite institutional access throughout early career.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "christina-onassis",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Took operational control of the Onassis shipping empire at 24 after her father's death. Capable business manager, but no evidence of exceptional personal ability beyond managing an inherited empire.",
+    "inherited_summary": "Father Aristotle Onassis was one of the world's richest men and shipping magnates. Maternal grandfather Stavros Livanos was also a shipping empire founder. Inherited 55% of a $500M fortune. Rare, trajectory-changing inherited wealth and domain position.",
+    "ecosystem_summary": "Educated at Headington School in Oxford and Queen's College London. Greek shipping fraternity and global business networks provided extraordinary access. Family name opened doors throughout the shipping world.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "adrian-newey",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Knew he wanted to be a motor racing engineer from age 6. First class honours in aeronautical engineering. Designed the March 83G that won IMSA GT Championship by 26. Singular focus and exceptional engineering aptitude.",
+    "inherited_summary": "Father was a veterinarian with an amateur engineering workshop (lathe, welding equipment) who built Lotus Elans from kits. Modest domain overlap through father's hobby, middle-class background.",
+    "ecosystem_summary": "Chose University of Southampton specifically for its F1 connections and wind tunnel used by March, Brabham, and McLaren. Final-year project on ground-effect aerodynamics gave him specialized knowledge rare in F1 at the time.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "raul-julia",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Acting from first grade, performed in every school play at Colegio San Ignacio, organized Shakespeare productions including Julius Caesar, Hamlet, and King Lear. Bilingual from childhood. Exceptional early theatrical ability.",
+    "inherited_summary": "Father was an electrical engineer and prosperous restaurateur (La Cueva del Chicken Inn). Mother was a mezzo-soprano who sang in church choir. Great-aunt María González was a musical inspiration. Comfortable middle-class family with artistic exposure.",
+    "ecosystem_summary": "Jesuit education at Colegio San Ignacio provided deep Shakespeare familiarity and theatrical training. Joseph Papp discovered him in NYC and offered work with the New York Shakespeare Festival — a legendary mentor and institution.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ireen-wust",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started skating at 11, junior world champion at 19, Olympic gold at 19 (youngest Dutch Olympic gold medalist ever). Rapid rise demonstrating exceptional natural talent despite relatively late start.",
+    "inherited_summary": "Father Wim Wüst completed the 1997 Elfstedentocht and taught her to skate, taking her to the rink every Sunday morning. Middle-class Dutch family with recreational skating tradition.",
+    "ecosystem_summary": "Netherlands is the undisputed epicenter of global speed skating. Trained at Heerenveen with TVM Schaatsploeg, one of the top professional skating teams. Deep domain proximity and elite coaching environment.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "aljona-savchenko",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "World Junior Pairs champion at 16, convinced parents to let her train at a rink 50km away requiring 4am bus rides. Exceptional dedication and rapid rise despite significant resource limitations.",
+    "inherited_summary": "Father Valentyn was a former weightlifter who took her skating on a frozen lake. Sports background in family but not figure skating-specific. Limited financial resources — parents couldn't afford apartment in Kyiv.",
+    "ecosystem_summary": "Significant adversity: limited resources in Ukraine, 50km commute to rink, had to emigrate to Germany in 2003 to find suitable partner. Coach Ingo Steuer in Chemnitz provided elite coaching after relocation, but early environment was disadvantaged.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "artur-dmitriev",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Olympic gold at 24, World and European champion at 23. Only male pair skater to win Olympic gold with two different partners. Exceptional early achievement in figure skating.",
+    "inherited_summary": "Born in Bila Tserkva, raised in Norilsk, a remote Siberian city. No family background in figure skating mentioned. Working-class background in the Soviet system.",
+    "ecosystem_summary": "Soviet figure skating pipeline provided state support and world-class facilities. Trained under Tamara Moskvina, one of the greatest pair skating coaches in history, at Yubileyny Sports Palace in Leningrad.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "catriona-le-may-doan",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "First female speed skater to break the 38-second barrier in 500m at 26. National team at 17. Won Canadian championships at bantam, midget, and juvenile levels. Exceptional athletic ability and persistence despite early Olympic disappointments.",
+    "inherited_summary": "Parents immigrated from Scotland and were not sports people. One of three daughters in a working/middle-class family in Saskatoon. No domain-specific family advantages.",
+    "ecosystem_summary": "Canadian speed skating pipeline with Saskatoon Lions Speed Skating Club, national team at 17, and training at the Calgary oval — a world-class facility. Elite coaching and infrastructure through the national team system.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "erling-kagge",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Struggled at school with dyslexia, was a 'bottom-three pupil' for 10 years. Yet earned a law degree from University of Oslo and sailed across the Atlantic twice by 26. Above-average determination and resilience despite learning difficulty.",
+    "inherited_summary": "Father was a journalist, mother was a book publisher. Educated middle-class family, though not domain-specific to exploration. Father was skeptical of his ambitions.",
+    "ecosystem_summary": "Norway's unique polar exploration culture, inspired by national heroes Roald Amundsen and Thor Heyerdahl. Partnership with Børge Ousland, another elite Norwegian explorer, provided complementary team dynamic.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "anna-levandi",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "At her audition for the sport school, performed triple jumps immediately upon being shown them — prodigy-level natural ability. World Championship silver at 18, five-time Soviet national champion. Rare, trajectory-changing talent.",
+    "inherited_summary": "Father persisted in getting her accepted to the sport school despite being told she was too old at 7. No specific skating background in family mentioned, but father's determination was a factor.",
+    "ecosystem_summary": "Trained at CSKA Moscow, an elite Soviet sports school, under coaches Stanislav Zuk and Eduard Pliner. The Soviet figure skating system provided world-class coaching, facilities, and competitive infrastructure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "karlis-skrastins",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started hockey at 5, played professionally at 17. Drafted 230th overall (late round), not a highly-touted prospect. Above-average ability and exceptional durability (495 consecutive NHL games), but not prodigy-level.",
+    "inherited_summary": "No family background in hockey mentioned. From Riga, Latvia — a small hockey nation. No domain-specific family advantages.",
+    "ecosystem_summary": "Trained at Dinamo Riga hockey school from age 5. Played for Pārdaugava Riga in Russian league, then TPS Turku in Finland's SM-liiga — one of Finland's elite clubs. European hockey pipeline provided development path to NHL.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "magaly-carvajal",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "6'3\" with an 11-foot vertical jump touch — exceptional physical attributes rare even among elite volleyball players. National team starter at 17, World Championship silver at 17, Olympic gold at 23. Prodigy-level physical endowment.",
+    "inherited_summary": "No family background in volleyball mentioned. From Havana, Cuba — developed through the Cuban state sports system with no family domain connections.",
+    "ecosystem_summary": "Cuban national volleyball team was the epicenter of women's volleyball in the 1990s, providing an elite performance pipeline and exceptional peer group including Mireya Luis.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "dragan-skrbic",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "World Junior Championship bronze at 20, Yugoslav champion with Crvena zvezda at 22. Later named IHF World Player of the Year in 2000. Exceptional early achievement in handball.",
+    "inherited_summary": "From Kula, a small town in Serbia. No family background in handball mentioned. No domain-specific family advantages.",
+    "ecosystem_summary": "Yugoslav handball pipeline was one of the strongest in the world during his era. Move to Crvena zvezda (Red Star) at 20 placed him in an elite club environment with strong peer group including Igor Butulija and Dejan Perić.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "joel-abati",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "National team debut at 25, relatively late. Above-average ability and persistence, but not a prodigy. Built career through determination and curiosity rather than exceptional early talent.",
+    "inherited_summary": "Father was a docker who opposed his handball career, telling him to get 'a real trade.' From Martinique, a peripheral region with limited handball infrastructure. Active disadvantage of working-class background and parental opposition.",
+    "ecosystem_summary": "Discovered by Jean-Pierre Lepointe during the 1990 Nationale 3 championship final, providing a mentor connection. French handball pipeline eventually provided elite development, but came from a peripheral region with limited infrastructure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "pablo-pozo",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Became FIFA-listed referee at 25, reaching the highest level of international officiating. Above-average ability, but refereeing relies more on experience and judgment than prodigy-level talent.",
+    "inherited_summary": "Father Juan was a professional referee, brother Nicolás also became a referee, and brother Mauricio was a Chilean international footballer. Clear family domain inheritance in football officiating.",
+    "ecosystem_summary": "CONMEBOL refereeing pipeline and Chilean domestic leagues provided progression path. Family refereeing clan provided guidance and support. Later reached World Cup and Olympic levels.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "aneta-kreglicka",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Gold medal high school graduation, university economics degree, contemporary dance background. Above-average intellect and poise, but pageant success is more about appearance and presentation than exceptional cognitive ability.",
+    "inherited_summary": "Father was a civil engineer, mother was an economist. Middle-class, educated family in Szczecin/Gdańsk. Stable upbringing with academic expectations.",
+    "ecosystem_summary": "Miss Polonia pageant system provided competition pipeline. University contemporary dance group provided poise and stage presence. Spent months in London learning English before Miss World. No elite pageant training infrastructure specifically.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "debbi-wilkes",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "On ice by age 5, pairs at 10, Canadian junior pairs champion at 12, senior national champion at 15, Olympic silver at 17. Exceptional early achievement in figure skating.",
+    "inherited_summary": "Grew up on a small farm outside Unionville. Mother encouraged skating but no family domain background. Working/middle-class rural family with no skating connections.",
+    "ecosystem_summary": "Unionville Skating Club, coach Bruce Hyland at Crosby Arena. Partnership with Guy Revell, six years her elder, provided experienced complementary partner. Canadian skating pipeline supported her development.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "connor-mcdavid",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Skating at 3, dominating 9-year-olds at 6, granted exceptional player status at 15 (only third player ever). First overall OHL draft pick, GTHL Player of the Year. Widely labeled a generational talent — rare, trajectory-changing prodigy.",
+    "inherited_summary": "Father Brian was a high school ice hockey player who coached him. Mother Kelly played recreational hockey. Supportive middle-class family with some domain overlap, but not professional-level hockey background.",
+    "ecosystem_summary": "GTHL and OHL represent elite Canadian hockey development pipelines. York Simcoe Express and Toronto Marlboros provided high-level minor hockey. Greater Toronto hockey ecosystem is one of the world's best development environments.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "trevor-noah",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "Speaks six languages, exceptional verbal ability and observational humor. Self-taught comedian who built career from a dare at 21. Above-average cognitive and linguistic ability despite no formal training.",
+    "inherited_summary": "Born illegal under apartheid to a Black Xhosa mother and white Swiss-German father. Raised in poverty in Soweto. No family connections in entertainment or media. Active disadvantage of racial discrimination and poverty.",
+    "ecosystem_summary": "South African media ecosystem provided some opportunity through SABC and M-Net, but no elite peers, mentors, or institutions early on. Post-apartheid media expansion created openings, but no significant ecosystem advantage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "bryan-trottier",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Rookie record 95 points (smashing previous record of 77), Calder Trophy at 19, Art Ross and Hart Trophy at 22, Conn Smythe at 23. Exceptional achievement despite not starting organized hockey until 10 and being drafted 22nd overall.",
+    "inherited_summary": "Grew up on a cattle ranch in Val Marie, Saskatchewan, a tiny farming community. Mother of Irish ancestry, father of Cree-Metis and Chippewa ancestry. Working-class rural family with no hockey connections. Played in family country-western band.",
+    "ecosystem_summary": "WCHL junior hockey pipeline via Swift Current/Lethbridge Broncos. Islanders dynasty with legendary coach Al Arbour. Played on a line with future NHL player Tiger Williams in juniors. Rural Saskatchewan work ethic contributed to development.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "eric-lindros",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Nicknamed 'The Next One' as a teenager — a reference to Gretzky's 'The Great One.' Nationally famous for scoring and physical dominance over older players. Memorial Cup at 17, CHL Player of the Year, first overall draft pick. Rare, trajectory-changing prodigy.",
+    "inherited_summary": "Father Carl was an accountant who played minor league hockey in the Chicago Blackhawks system and college football at Western Ontario. Mother Bonnie was a nurse and track athlete. Parents actively stage-managed his career. Athletic family with domain overlap.",
+    "ecosystem_summary": "OHL pipeline through Oshawa Generals. St. Michael's Buzzers in Metro Junior B. Greater Toronto hockey ecosystem. Parents' aggressive career management (refusing Sault Ste. Marie, forcing trade from Quebec) shaped his path.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "martina-sablikova",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Youngest European women's speed skating champion in history at 19, Olympic gold at 23. Rapid rise from basketball convert to world champion. Exceptional talent despite relatively late start at 11.",
+    "inherited_summary": "No family background in speed skating mentioned. Brother Milan Sáblík also became a speed skater, sharing world records. No domain-specific family advantages.",
+    "ecosystem_summary": "Coach Petr Novák has been her lifelong coach from age 11, providing dedicated world-class mentorship. However, Czech Republic is a non-traditional skating nation with no speed skating rinks — trained on frozen ponds. Adversity of limited infrastructure offset by dedicated coach.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "gheorghe-dogarescu",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Junior national team at 17, Olympic bronze at 24. Above-average ability and solid career, but not prodigy-level achievement in early years.",
+    "inherited_summary": "From Viziru, a small village in Brăila County, Romania. No family background in handball mentioned. No domain-specific family advantages.",
+    "ecosystem_summary": "Romanian state sports school system identified and developed talent early. Coach Moise Grigoraș at Sports School No. 1 in Galați provided early training. Dinamo București, one of Romania's top clubs, provided elite team environment.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "mona-grudt",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Won all segments of Miss Universe 1990, demonstrating exceptional presentation and communication skills. Media savvy with 'beauty queen from Hell' publicity stunt. Above-average poise and intelligence, but pageant success is not a traditional ability marker.",
+    "inherited_summary": "Ordinary Norwegian family from Stjørdal. Father Svein Arne, mother Margit Elise. No domain connections in pageants or entertainment. Small-town background.",
+    "ecosystem_summary": "Miss Norway and Miss Universe pageant system provided competition pipeline. Norwegian welfare state provided stable background. No specific elite training infrastructure for pageants.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "evgenia-radanova",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Competed at 1994 Olympics at 16, World champion at 22, five consecutive European Allround titles (2000-2004), world record holder in 500m. Exceptional early achievement and sustained dominance in short track.",
+    "inherited_summary": "Parents took her to skating rink in 1987 because they enjoyed figure skating. Supportive family but no domain-specific background in skating. Modest Bulgarian background.",
+    "ecosystem_summary": "Bulgarian sports system and Slavia Sofia club provided basic development. Non-traditional skating nation with limited resources compared to powerhouses like Korea or China. Dual Summer/Winter Olympian showing versatility despite limited infrastructure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "gabriela-isler",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started modeling at 14, won Miss Venezuela at 24 and Miss Universe at 25. Above-average presentation and communication skills, but pageant success is not a traditional cognitive ability marker.",
+    "inherited_summary": "Father Juan Guillermo was son of Swiss immigrants to Venezuela. Mother Emperatriz had a marketing degree from university. Middle-class family with educated parents and Swiss-German heritage.",
+    "ecosystem_summary": "Venezuela's extraordinary Miss Venezuela pageant pipeline under Osmel Sousa has produced seven Miss Universe winners — one of the most successful pageant systems in the world. Pageant training infrastructure is elite in Venezuela.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "frantisek-kaberle",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started skating at 4, played professionally at 17 in Czech Extraliga. Drafted 76th overall, made NHL debut at 26. Above-average ability and long career, but not a prodigy — late NHL entry.",
+    "inherited_summary": "Father František Kaberle Sr. played for the Czechoslovak national team. Brother Tomáš Kaberle also became an NHL player and Stanley Cup champion. Clear family domain inheritance in hockey with father as professional player.",
+    "ecosystem_summary": "Kladno is a historic Czech hockey town that produced NHL stars including Jaromír Jágr. Czech Extraliga and Sweden's Elitserien (Modo Hockey) provided elite European development. Strong hockey ecosystem in Kladno with PZ Kladno club.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "dan-carter",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "All Blacks debut at 21, IRB Player of the Year at 23. Played rugby from age 5 with Southbridge Rugby Club. Exceptional early achievement and natural rugby ability.",
+    "inherited_summary": "Great uncle Bill Dalley was an All Black (1924-25 Invincibles) and Canterbury rugby administrator. Father Neville was a builder, mother Bev a schoolteacher. Family domain connection through great uncle, but working/middle-class background.",
+    "ecosystem_summary": "New Zealand is the epicenter of world rugby. Christchurch Boys' High School is famed for producing All Blacks. Crusaders system and Canterbury rugby provided elite development pathway. Southbridge Rugby Club (founded 1876) provided early foundation.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "cedric-sorhaindo",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "World champion at 25, but started handball at 14 — relatively late. Above-average ability and exceptional determination, but not prodigy-level early achievement. Career built on overcoming adversity.",
+    "inherited_summary": "Born with valgus knees (tibias twisted), underwent surgery at 3 and corrective osteotomy at 17 with doctors unsure if he would walk again. Did not know his father, raised by mother. Active disadvantage of childhood disability and absent father.",
+    "ecosystem_summary": "PE teacher Denis Petter discovered him at Collège Rose-Saint-Just at 14, opening doors to handball. Pôle Espoirs and French handball pipeline provided development. Came from peripheral Martinique with limited infrastructure, requiring move to mainland France at 17.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "joanna-jedrzejczyk",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Five IFMA World Muay Thai Championship gold medals between ages 22-26. Started Muay Thai at 16 and quickly became world-class. Exceptional skill depth and early specialization in striking arts.",
+    "inherited_summary": "Parents owned a small grocery store in Olsztyn, Poland, working 20-hour days. Working-class family with no combat sports background. No domain-specific advantages.",
+    "ecosystem_summary": "Trained at Berkut Arrachion Olsztyn, a local gym in a former military stable block. Polish combat sports provided some infrastructure, but Olsztyn was not an elite global hub for Muay Thai. Self-trained in parents' garage after leaving first gym.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sergio-parisse",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Youngest number eight in test rugby history at 18, 50 caps by 24, Italian captain. Started rugby at 5. Exceptional early achievement and rapid rise to international level.",
+    "inherited_summary": "Father Sergio Sr. played for L'Aquila Rugby, winning the Italian club championship in 1967. Italian parents who spoke Italian at home in Argentina. Clear family domain inheritance in rugby with direct coaching from father.",
+    "ecosystem_summary": "Italian heritage gave access to the Italian national team pipeline. Discovered through Italian U19 system during a training visit to L'Aquila. Fast-tracked to senior team at 18 by coach John Kirwan. Italy was not a top-tier rugby nation, limiting ecosystem strength.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "maria-efrosinina",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Gold medal high school graduation, university degree in foreign languages (English and Spanish interpreter). TV debut at 19, Teletriumph award at 23, Eurovision co-host at 26. Above-average cognitive and verbal ability with rapid career rise.",
+    "inherited_summary": "Father was a civil engineer, mother was an economist. Middle-class, educated family. Spent early years in Magadan (remote) before returning to Kerch. Stable upbringing with academic expectations.",
+    "ecosystem_summary": "Post-Soviet TV expansion in Ukraine created opportunities for rapid career growth. Kyiv University provided educational foundation. Early TV debut at 19 on First National channel. No elite media training infrastructure, but timing of post-Soviet media growth was favorable.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kristine-lunde-borgersen",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "National team debut at 21, World Championship silver same year, Olympic champion. Above-average ability and solid international career, but not prodigy-level early achievement.",
+    "inherited_summary": "Twin sister Katrine Lunde became one of the greatest goalkeepers in handball history, providing an exceptional peer and training partner from childhood. Parents were not sporting — father 'almost hated sports.' Twin relationship was the key family advantage.",
+    "ecosystem_summary": "Norway's women's handball program is one of the most dominant in any sport. Coached by Marit Breivik through the national team. Grew up in Kristiansand with access to Norwegian handball clubs. Elite performance pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "gustavo-endres",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "National team at 22, World League titles by 26, 2.03m height with exceptional blocking ability. Named Best Blocker at World Championship and Olympics. Exceptional physical attributes and early achievement.",
+    "inherited_summary": "Family practiced volleyball together during vacations. Younger brother Murilo also became a professional volleyball player. Brother-in-law Jaqueline Carvalho also a volleyball player. Some family domain exposure through volleyball-playing family.",
+    "ecosystem_summary": "Brazil's volleyball program is one of the world's elite, providing a frontier geography advantage. EC Banespa in São Paulo was a top club. National team system under coach Bernardinho provided elite development and competitive environment.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "bang-soo-hyun",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Olympic silver at 20, five major finals including All England Open, Asian Games gold at 22, Olympic gold at 24. BWF Hall of Fame inductee. Exceptional early achievement in badminton.",
+    "inherited_summary": "No family background in badminton mentioned. From Seoul, South Korea. No domain-specific family advantages.",
+    "ecosystem_summary": "South Korean badminton system with corporate team sponsorship and elite athlete dormitories provided world-class training. Scientific coaching methods and intense daily training. Korean team was among the world's best during her era.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "luciano-de-cecco",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "National team debut at 18, named Best Setter at multiple international tournaments. Exceptional multi-sport ability, transitioning from basketball to volleyball and rapidly reaching elite level.",
+    "inherited_summary": "Father Ricardo was a professional basketball player who won the William Jones Cup with Obras Sanitarias in 1983. Mother played volleyball. Strong family domain advantage in sports with both parents as athletes.",
+    "ecosystem_summary": "Started at Gimnasia y Esgrima Santa Fe, moved to Ben Hur Rafaela at 14. Argentine volleyball provided development path but was not a traditional global powerhouse at the time. Switch from basketball to volleyball due to bureaucratic issues was an adversity catalyst.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "estavana-polman",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started handball at 5, Eredivisie debut at 13 (youngest ever), World Championship silver at 22. Exceptional early talent and rapid rise in handball from a very young age.",
+    "inherited_summary": "Grandparents ran a cafeteria at a local sports arena, introducing her to handball at 5. Twin brother Dario also became a professional handball player. Mother played for the Dutch national football team. Strong sporting family with multiple domain connections.",
+    "ecosystem_summary": "Dutch handball system is not dominant domestically, requiring a move to Denmark at 18 for elite development. Early exposure through grandparents' sports arena was valuable, but Netherlands lacked elite handball infrastructure compared to Denmark or Norway.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "marit-malm-frafjord",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "National team debut at 19, Olympic gold at 22, World Championship gold at 25. Successfully retrained from back player to pivot at Byåsen. Exceptional early achievement and adaptability.",
+    "inherited_summary": "No family background in handball mentioned. Born in Tromsø, moved to Trondheim at 5. No domain-specific family advantages.",
+    "ecosystem_summary": "Norway's elite women's handball pipeline is among the most dominant in any sport. Part of the famous 1985 vintage at Byåsen HE that was fast-tracked to the senior team. Access to world-class coaching through the Norwegian national team under Marit Breivik.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ivan-rodriguez",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "93mph throw from home to second at 16, MLB debut at 19, Gold Glove at 20. Father switched him to catcher at 8, recognizing his exceptional arm. Prodigy-level physical ability — rare, trajectory-changing.",
+    "inherited_summary": "Father José was an electrician and amateur catcher who taught him the position and was his first coach. Mother Eva was an elementary school teacher. Father's direct domain knowledge of catching provided family domain inheritance.",
+    "ecosystem_summary": "Puerto Rico's baseball culture provided deep domain proximity. Rangers scout Luis Rosa signed him at 16. American Legion baseball in Puerto Rico was a rich scouting ground. Fast-tracked past rookie ball due to exceptional ability.",
+    "scoring_confidence": "High"
+  }
+]

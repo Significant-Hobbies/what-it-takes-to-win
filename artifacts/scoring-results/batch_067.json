@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "florence-pugh",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Performed in nativity play at age 6 showing early stage presence; sang covers on YouTube as teenager. Above-average creative ability and initiative, though not a traditional prodigy.",
+    "inherited_summary": "Mother was a dancer/aerobics instructor, father a restaurateur in Oxford's creative scene. Three siblings all became actors. Attended private schools (Wychwood, St Edward's). Creative, supportive middle-class family.",
+    "ecosystem_summary": "Grew up in loud, theatrical household in Oxford with all siblings in the arts. Family relocated to Spain for her health. No elite institutional access or notable mentors documented in early career.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "hailee-steinfeld",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began acting at 10, beat thousands of hopefuls for True Grit lead at 13 earning Oscar nomination. Exceptional early acting ability recognized by Coen brothers.",
+    "inherited_summary": "Uncle Jake Steinfeld is a fitness celebrity/entrepreneur, great-uncle Larry Domasin was a child actor, cousin True O'Brien is an actress who inspired her. Mother became her manager. LA-area upper-middle-class family with entertainment-adjacent connections.",
+    "ecosystem_summary": "Raised in LA area with proximity to entertainment industry. Mother required a year of acting training before auditions. Cousin's commercial appearance inspired her pursuit. No elite institution or notable mentor documented.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "lucas-hedges",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Acted in school plays with notable intensity (Smike in Nicholas Nickleby). Made feature debut as extra in father's film at 11. Strong early ability but not prodigy-level; benefited from lifelong domain immersion.",
+    "inherited_summary": "Father Peter Hedges is Oscar-nominated screenwriter/director (What's Eating Gilbert Grape, About a Boy). Mother Susan Bruce is actress/poet. Maternal grandfather was VP at HBO, grandmother a theatre director. Grew up in affluent Brooklyn Heights, attended private arts school. Family friend Kenneth Lonergan cast him in breakout role.",
+    "ecosystem_summary": "Grew up on father's film sets, immersed in artistic milieu with famous parents (Maggie Gyllenhaal, Peter Sarsgaard, Jennifer Connelly) attending his school plays. Kenneth Lonergan, a family friend, cast him in Manchester by the Sea. Brooklyn Heights cultural environment.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jharrel-jerome",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Discovered acting relatively late through high school. No early prodigy indicators; natural dramatic talent recognized by family. Strong emotional performance ability emerged at LaGuardia.",
+    "inherited_summary": "First-generation Dominican American raised in the Bronx by single mother who had him at 18. Stepfather is Haitian. No entertainment connections. Working-class immigrant household with limited resources.",
+    "ecosystem_summary": "Attended Fiorello H. LaGuardia High School (elite performing arts school). Barry Jenkins cast him in Moonlight for film debut. Ava DuVernay expanded his role in When They See Us, providing a career-defining dual role.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "kodi-smit-mcphee",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started acting at 9, feature debut at 11 in Romulus My Father winning AFI Best Young Actor. Booked emotionally demanding adult roles (The Road at 12, Let Me In at 13) with no formal training, relying on father's coaching.",
+    "inherited_summary": "Father Andy McPhee is an actor and former professional wrestler who coached Kodi on set and introduced him to acting. Sister Sianoa is an actress (Neighbours, Hung). Family-domain apprenticeship with father as direct mentor.",
+    "ecosystem_summary": "Father was on-set coach and mentor, introduced children to agent. Family moved from Adelaide to Melbourne to LA for Kodi's career. Australian film industry provided early platform. Father taught acting to sustain family in LA.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "quvenzhane-wallis",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "At age 5, beat 4,000 children for lead role in Beasts of the Southern Wild despite minimum age being 6. Youngest Best Actress Oscar nominee in history. Director changed script to accommodate her personality. Extraordinary natural talent.",
+    "inherited_summary": "Mother is a teacher, father a truck driver. Youngest of four children in Houma, Louisiana, a small bayou town. No entertainment connections whatsoever. Modest working-class family far from the industry.",
+    "ecosystem_summary": "Discovered by director Benh Zeitlin through open audition in Louisiana. Court 13 Productions provided the platform. No elite institutional access or industry ecosystem; success driven entirely by raw talent and a fortuitous casting.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "joey-king",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began acting professionally at age 4 (Life Cereal commercial). Built years of reps through commercials, TV, and films before breakout. Above-average early ability but not prodigy-level.",
+    "inherited_summary": "Two older sisters are actresses (Hunter King, Kelli King). Grandmother performed in live theater. Parents not in entertainment but supportive. Raised in Simi Valley/LA area. Middle-class family with sibling peer environment in acting.",
+    "ecosystem_summary": "LA proximity provided access to auditions and commercials from young age. Sister Hunter King's acting career created sibling peer environment. Netflix streaming platform amplified Kissing Booth franchise. No elite mentors or institutions documented.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "marsai-martin",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Performing and mimicking movies from age 2. Pitched film concept to Kenya Barris at age 10, becoming youngest Hollywood executive producer at 14 (Guinness World Record). Exceptional creative initiative and business acumen for her age.",
+    "inherited_summary": "Parents Joshua and Carol Martin supportive, moved from Texas to LA for her career. Founded production company alongside parents. Middle-class family with no prior entertainment connections. Career discovered by accident at a mall glamour photo session.",
+    "ecosystem_summary": "Black-ish TV platform provided national visibility from age 10. Kenya Barris (Black-ish creator) served as key mentor, supporting her film pitch. Universal Pictures deal. Family moved to Southern California, positioning her in the industry.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "thomasin-mckenzie",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began acting at 13 in NZ TV film. Natural talent recognized early but initially didn't want to act (wanted to work with animals). Strong early performance in Leave No Trace at 18 showed exceptional ability.",
+    "inherited_summary": "Multi-generational NZ performing arts dynasty: mother Dame Miranda Harcourt (actress and globally renowned acting coach), father Stuart McKenzie (director), grandmother Dame Kate Harcourt (legendary actress), grandfather's family founded Harcourts International real estate. Three generations living together.",
+    "ecosystem_summary": "Mother Miranda Harcourt provided direct, sustained acting coaching from childhood. NZ film dynasty provided deep industry connections. Debra Granik cast her in Leave No Trace (breakout role). Attended Samuel Marsden Collegiate School. Grandmother Dame Kate was a daily presence and mentor.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "akshay-ruparelia",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Sold sweets at school at 12-13, launched Doorsteps at 17 with £7,000 borrowed from relatives. Entrepreneurial drive from young age, building business while studying A-Levels. Above-average business acumen but not prodigy-level.",
+    "inherited_summary": "Both parents are hearing impaired (father care worker, mother teaching assistant). Grew up as young carer alongside sister. Free school meal pupil. Borrowed startup capital from relatives. Active disadvantage of caregiving responsibility from young age.",
+    "ecosystem_summary": "Attended Queen Elizabeth's School, Barnet, a selective grammar school providing strong academic environment. No notable mentors or elite institutional ecosystem. Built business independently using call centers while at school.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "markus-villig",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Wanted to start a tech company at 12. Top in math and physics. Built first app prototype at 19, personally recruited taxi drivers. Attended Garage48 at 16 with Skype founders. Strong early technical and entrepreneurial aptitude.",
+    "inherited_summary": "Father had computing degree from University of Moscow, mother was a professor. Older brother Martin worked at Skype and co-conceived Bolt. Family loaned €5,000 (meant for university tuition). Professional, educated family with direct tech industry connections through brother.",
+    "ecosystem_summary": "Estonia's post-Soviet tech ecosystem produced Skype, creating a 'hungry generation.' Brother Martin co-founded Bolt and organized Garage48 events. At 16, Markus worked alongside Skype founders Jaan Tallinn and Ahti Heinla. Perfect timing for ride-hailing wave in Eastern Europe.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "vadym-melnyk",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Robotics enthusiast from young age. Won competitive US State Department FLEX scholarship at 15. Won special award at FIRST World Robotics Championship. Started Ukraine's first FIRST robotics team. Strong technical aptitude and initiative.",
+    "inherited_summary": "Grew up in Ivano-Frankivsk, western Ukraine, with limited resources. Immigrated to Poland at 18 with minimal Polish language skills. No family wealth or domain connections. Active constraint of geographic and economic limitations.",
+    "ecosystem_summary": "FLEX scholarship provided transformative access to US education and FIRST robotics. Aviation Valley in Rzeszów, Poland provided aerospace ecosystem. ESA contract validated the business. UITM Rzeszów provided computer engineering foundation.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "liu-yu",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Developed drone flight control system using 3D CNNs as a junior in 2014, before DJI Phantom 4 existed. Won only Microsoft Scholarship at his school. Contributed to SenseTime's ImageNet World Championship. Exceptional early research ability.",
+    "inherited_summary": "Family background not documented in available sources. Studied at Chinese University of Hong Kong. No evidence of significant family advantage or disadvantage.",
+    "ecosystem_summary": "Studied at CUHK Multimedia Laboratory under Professor Tang Xiao'ou (SenseTime founder), a world-leading computer vision research group. Joined SenseTime as early employee (second year). Access to thousands of GPUs. Perfect timing at the dawn of the AI/deep learning wave.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jules-simiand-brocherie",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Launched first educational platform at 17 during COVID pandemic. Showed entrepreneurial initiative but no exceptional early cognitive or creative indicators. Built platform through persistence and timing rather than prodigy-level ability.",
+    "inherited_summary": "Attended Lycée Notre-Dame-de-Sainte-Croix (private Catholic school in Neuilly-sur-Seine, affluent area). Briefly enrolled at IE University in Spain. Upper-middle-class French background with access to good education, but no documented industry connections.",
+    "ecosystem_summary": "COVID pandemic created perfect timing for peer-to-peer education platform. Secured funding from notable investors including Benjamin Griveaux, Michael Benabou (Veepee co-founder), and Groupe M6. French EdTech ecosystem provided context. No elite institutional mentorship documented.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "oliver-kent-braham",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Selling golf balls from water hazards at 12 with twin brother. Played tennis at Great Britain under-16 level. Above-average entrepreneurial instincts and athletic discipline but not prodigy-level.",
+    "inherited_summary": "Identical twin brother Alexander is co-founder (high-trust peer team). Tennis skills earned scholarships to Reed's School (prestigious fee-paying school). British-Jamaican family. Oliver gained finance experience at Investec. Upper-middle-class with athletic scholarship access.",
+    "ecosystem_summary": "Twin brother as co-founder provides exceptional trust dynamic. Reed's School provided educational advantage. Yoti founding team experience provided startup exposure. Insurtech wave timing and immigrant insurance gap created market opportunity.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "arnaud-delubac",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Created major Twitter communities in France as a teenager. Co-founded first startup Planshot during studies. Above-average digital marketing and entrepreneurial ability but not prodigy-level.",
+    "inherited_summary": "Studied at ESSEC Business School and CentraleSupélec, two of France's most elite institutions. Worked in digital communication at the French Prime Minister's office (Matignon). Upper-middle-class Parisian background with access to elite education.",
+    "ecosystem_summary": "ESSEC and CentraleSupélec provided elite professional network. Co-founded Greenly with Alexis Normand (ex-Withings) and brother-in-law, leveraging family connection. Climate tech wave timing. Forbes 30 Under 30 Europe recognition.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "nikola-mrksic",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Math prodigy in fiercely competitive Serbian maths high school (designed by Tito to rival Soviet Union). Participated in worldwide math olympiads. One of seven to receive full Cambridge scholarship. Left school doing undergrad-level maths.",
+    "inherited_summary": "Born in Serbia two months before Yugoslavia began to fall apart. Parents' generation watched institutions crumble, creating a 'jaded' but 'hungry' generation. No family wealth or connections. Grew up in post-war Eastern European context with limited resources.",
+    "ecosystem_summary": "Serbian maths high school provided exceptional training. Full scholarship to Cambridge University. Studied under ML legend Zoubin Ghahramani. Joined VocalIQ (acquired by Apple) as first engineer. PhD under Professor Steve Young. Cambridge ML Lab and Apple Siri team. Co-founders from Cambridge.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "dimitri-semenikhin",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught developer who coded first Yacht Harbour prototype at 18. Above-average technical ability but not prodigy-level. Founded company in a domain he was immersed in from childhood.",
+    "inherited_summary": "Father Vladimir Semenikhin is chairman of Stroyteks Group (real estate development) and Honorary Consul of Kazakhstan in Monaco. Mother Ekaterina Semenikhin. Family moved to Monaco in 1999, providing direct immersion in ultra-high-net-worth yachting ecosystem. Wealthy family with powerful networks.",
+    "ecosystem_summary": "Growing up in Monaco provided direct access to the UHNWI yachting market from childhood. King's College London education. Family wealth and Monaco residence provided distribution and credibility in the luxury yachting domain.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "rong-ruotian",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "USC dual degrees in Film Production and Business Administration. Founded 'Born Extraordinary Elite Club' at university. Above-average ability but not prodigy-level; benefited significantly from family resources.",
+    "inherited_summary": "Parents are major shareholders of Bianfeng Games, a leading Chinese electronic gaming company. Described in Chinese media as '富二代' (second-generation rich). Took $100,000 from parents' account to start first company. Wealthy family with direct gaming industry dominance.",
+    "ecosystem_summary": "USC provided dual-degree education in film and business. ICT Research Institute's Light Field Project provided VR experience. VR wave of 2016-2018 provided timing. China tech ecosystem. Family gaming connections (Bianfeng Games) provided domain expertise.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "elena-konstantinova",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Won regional ecology research competition at 14, entered registry of gifted children. Self-taught satellite imagery analysis in high school for ecology research. Founded startup at 19 combining satellite imagery and AI. Exceptional early scientific ability given limited resources.",
+    "inherited_summary": "Grew up in Tarbagatay, a small town in Buryatia, 40 km from Ulan-Ude. Older brother participated in scientific projects, providing a role model. Limited resources in rural Siberia. No family wealth or domain connections.",
+    "ecosystem_summary": "Older brother's scientific example inspired her. Registry of gifted children provided presidential scholarship. MAI (Moscow Aviation Institute) and ITMO provided education. Agritech wave provided timing. No elite mentors or frontier ecosystem access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "song-yachen",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Studied international relations and economics at Johns Hopkins (non-technical). Played chess and video games extensively in high school. Above-average strategic thinking but not prodigy-level technical ability. Succeeded through positioning and timing.",
+    "inherited_summary": "Father is also an entrepreneur, providing a role model for resilience. Johns Hopkins education suggests upper-middle-class Chinese family background. No evidence of extraordinary family wealth or industry-specific connections.",
+    "ecosystem_summary": "Joined SenseTime CEO's office in 2019, gaining strategic AI industry exposure. Co-founded MiniMax as Employee No. 001 in 2021 at the peak of China's AI wave. Founded VAST in 2023 with perfect timing for 3D AI. First Chinese person to keynote SIGGRAPH in 50 years, sharing stage with Jensen Huang.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "neymar-jr",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Spotted by talent scout at age 6 playing beach football, faster than anyone his age. Playing against older kids from age 9 at Gremetal. Prodigy-level dribbling, speed, and technique recognized from childhood. Professional debut at 17.",
+    "inherited_summary": "Father Neymar Sr. is a former professional footballer who managed his career from childhood, providing direct domain expertise and contract negotiation. Family was initially working-class (single room in grandmother's house) but father's management and Neymar's earnings quickly elevated them. Father secured private school scholarship.",
+    "ecosystem_summary": "Santos FC youth academy, which produced Pelé and Robinho, provided elite development from age 11. Scout Betinho (who also discovered Robinho) spotted him at 6. Futsal culture in Brazil developed his technique. Real Madrid trial at 14. Santos secured his development with increased payments.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "karol-g",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Performing with father from age 5, appeared on El Factor X at 14. Above-average vocal ability and early performing experience but not prodigy-level. Built career through years of persistence and independent touring.",
+    "inherited_summary": "Father Juan Guillermo is a musician who managed her career, toured with her independently, and believed in her when industry rejected her. Middle-class family in Medellin. Parents divorced when she was 5. Father's musical background provided domain exposure.",
+    "ecosystem_summary": "Medellin music scene provided context. Father as manager/coach was key ecosystem element. Independent touring of Colombia built grassroots following. Universal Music Latino signing in 2016. No elite institutional access or notable mentors beyond father.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "bad-bunny",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Sang in church choir until 13, developed vocal foundation. Prolific SoundCloud uploads while working as supermarket bagger. Above-average musical ability and exceptional work ethic but not prodigy-level.",
+    "inherited_summary": "Father was a truck driver, mother a schoolteacher. Lower-middle-class family in Vega Baja, Puerto Rico. No music industry connections. Devoutly Catholic working-class household. Had to work day jobs while making music.",
+    "ecosystem_summary": "Puerto Rico reggaeton wave provided the cultural context. Church choir provided early vocal training. SoundCloud platform enabled self-publishing and discovery by DJ Luian. No elite institutional access or mentors in early career.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "maluma",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Performed for family from young age, sang mariachi songs. Competitive soccer player for 8+ years (Atlético Nacional youth). Above-average performing ability and athletic discipline but not prodigy-level.",
+    "inherited_summary": "Working-class family in Envigado, Colombia. Father worked at logistics company, mother homemaker. Parents divorced when he was 10, causing financial struggles. Sold sandwiches and sweets at school to help family. Aunt paid for first studio recording.",
+    "ecosystem_summary": "Medellin music scene provided context. YouTube and social media enabled audience building. Uncle Juan Parra provided first studio recording opportunity. Sony Music signing. No elite institutional access or notable mentors in early career.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ozuna",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Decided to become singer at 12. Sang in youth groups and church. Won school singing contest with 'Color Esperanza.' Above-average vocal ability but not prodigy-level. Built career through YouTube persistence.",
+    "inherited_summary": "Father (backup dancer for Vico C) was fatally shot when Ozuna was 3. Mother was not financially stable enough to raise him. Raised by paternal grandmother in modest San Juan apartment above a bodega. Grew up poor with strong Christian values from grandmother.",
+    "ecosystem_summary": "Puerto Rico reggaeton wave provided cultural context. Grandmother and uncle Felix supported his music. Producer Fernando 'Damian' Acevedo discovered him at Element Music. YouTube self-publishing built audience. No elite institutional access.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "julio-rodriguez",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Swinging bat at 2, hit home run over 300-foot fence at 12, starring on father's softball team at 13. Natural athletic talent with exceptional power recognized from childhood. Five-tool player potential.",
+    "inherited_summary": "Father Julio Sr. is an agricultural engineer who trained him 6 days/week from age 13 (6 AM workouts before school). Mother is a dentist. Middle-class by Dominican standards. Parents prioritized education, delaying signing until high school graduation.",
+    "ecosystem_summary": "Dominican baseball pipeline provided structure. Trained at Quico Peña's MB Academy in Santiago. Mariners scout Eddy Toledo discovered him at 14. Mariners' state-of-the-art Dominican academy. $1.75M signing bonus. Father's daily training was the key ecosystem element.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ronald-acuna-jr",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Obsessed with baseball from age 5. Natural five-tool athlete with explosive swing and extraordinary speed. Signed by Braves at 16. Exceptional athletic endowment recognized from childhood within baseball family.",
+    "inherited_summary": "Father Ronald Sr. played 8 seasons in Mets minor league system. 50-60 relatives from La Sabana signed professional contracts, including 8 MLB players. Cousins Kelvim Escobar and Alcides Escobar reached majors. Grandfather was a pitcher. One of baseball's largest family networks.",
+    "ecosystem_summary": "La Sabana is a tiny baseball-obsessed town that produced an extraordinary number of pro players. Braves scout Rolando Petit had known the family for decades and tried to sign the father. Cousin Kelvim took him to Yankee Stadium. Venezuelan Winter League exposure. Deep family mentorship network.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "yordan-alvarez",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Child star on the diamond in Cuba, playing two seasons in Cuban National Series for Las Tunas. Natural power hitter with exceptional slugging ability. Highest slugging percentage by a qualified rookie in MLB history.",
+    "inherited_summary": "Parents Agustín and Mailyn remained in Cuba while Yordan defected alone at 19. Father was supportive but family could not accompany him. Established residency in Haiti to sign with MLB. Active disadvantage of defection, family separation, and geographic isolation.",
+    "ecosystem_summary": "Cuban National Series provided early professional experience. Father took him to Dominican Republic for training with Aldo Marrero (former White Sox coach). Signed with Dodgers for $2M, traded to Astros. Astros development pipeline. Met Yuli Gurriel in Haiti. No elite ecosystem until Astros.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "camila-loures",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started posting Vine videos as a teenager. Built massive following through consistent content creation. Above-average content creation ability and work ethic but not prodigy-level.",
+    "inherited_summary": "Father Geraldo Loures worked in luxury used car sales. Family lived comfortably in Belo Horizonte with a mansion near Pampulha Lagoon. Family owns ten farms in Minas Gerais. Comfortable upper-middle-class background before YouTube fame. Brother and family appeared in videos.",
+    "ecosystem_summary": "Brazilian digital content boom provided the platform wave. Vine-to-YouTube migration was key timing. Family collaboration (brother Phelippe, mother Lillian) built content operation. Universal Music signing. No elite institutional access or notable mentors.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "gabriela-alaniz",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Fought in streets and schools from childhood, natural fighting instinct. 75 amateur fights before turning professional at 21. Above-average natural boxing ability but relatively late professional start.",
+    "inherited_summary": "Parents Leonardo and Maria, working class in Merlo, Buenos Aires. Became teen mother at 14. Parents enrolled her in boxing to channel fighting energy. Active disadvantages of working-class background and teen pregnancy.",
+    "ecosystem_summary": "Argentine boxing pipeline provided competitive structure. Parents' decision to channel her fighting into boxing was pivotal. Club Ferro Carril Oeste and Club Atletico Lanus provided venues. No elite mentors or institutional access documented.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "evelyn-bermudez",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Boxing from young age in a boxing family. Natural talent developed through family training. Won first world title at 23. Above-average boxing ability but developed through family apprenticeship rather than prodigy-level talent.",
+    "inherited_summary": "Father Nindolfo 'Tito' Bermudez was a provincial boxing champion in Chaco, Argentina, who taught all his children boxing. Older sister Daniela Romina Bermudez is a three-division world champion. Four of six siblings became boxers. Deep family-domain apprenticeship.",
+    "ecosystem_summary": "Father as boxing trainer from childhood. Sister Daniela as training partner and world champion role model. Both sisters won world titles on the same fight card in December 2019. Argentine boxing pipeline. Family boxing gym culture in Villa Gobernador Gálvez/Rosario.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sech",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Sang in church choir as drummer, pianist, and singer. Self-taught FL Studio production as teenager, spending sleepless nights making beats. Above-average musical ability and exceptional work ethic but not prodigy-level.",
+    "inherited_summary": "Both parents are pastors (father also chef, mother teacher). Three older brothers are also musicians. Working-class family in Río Abajo, Panama. Church provided musical training but no industry connections or wealth.",
+    "ecosystem_summary": "Panama's reggae en español tradition provided cultural foundation. Church choir provided early musical training. SoundCloud enabled self-publishing. Dimelo Flow discovery. No elite institutional access or notable mentors beyond church and local scene.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "vinicius-junior",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Joined Flamengo at age 6, drew attention from first training sessions. Playing against 9-year-olds at age 7 with exceptional skill. Prodigy-level dribbling and speed recognized from childhood. Senior debut at 16, Real Madrid signed for £38M at 18.",
+    "inherited_summary": "Poor Catholic family from São Gonçalo. Father worked in São Paulo, separated from family. Mother made 70km journey to Flamengo training. Family lived close to poverty and crime. Active disadvantage of poverty, though family sacrificed enormously for his career.",
+    "ecosystem_summary": "Flamengo youth academy from age 6, one of Brazil's elite development programs. Director Carlos 'Cacau' Abrantes discovered and mentored him. Carlos Noval, director of youth football, recognized his extraordinary talent at 10. Nike contract early. Over a decade of elite development before senior debut.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "enaldinho",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Created YouTube channel at 14 to share gaming videos. Pivoted to on-camera content at 16. Above-average content creation ability and early platform adoption but not prodigy-level.",
+    "inherited_summary": "Both parents are physicians (Maria Luiza Cavalieri and Enaldo Sr.), providing stable middle-class background. Brother Guilherme is also a YouTuber. Family allowed gap year to pursue YouTube instead of university. Physician parents provided financial stability and negotiation leverage.",
+    "ecosystem_summary": "Brazilian digital content boom provided platform wave. Early YouTube adoption (2012) provided first-mover advantage. Family support allowed full-time pursuit. Brother as content collaborator. No elite institutional access or notable mentors.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "pete-davidson",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started stand-up at 16 as coping mechanism after father's death. Natural comedic talent recognized early. Above-average ability but not prodigy-level; comedy was therapeutic outlet that became career.",
+    "inherited_summary": "Father Scott Davidson, NYC firefighter, died in 9/11 attacks when Pete was 7. Traumatic childhood with acting out and hair-pulling. Working-class Staten Island family. Mother raised him and younger sister. Active disadvantage of father's death and childhood trauma.",
+    "ecosystem_summary": "Staten Island proximity to NYC comedy scene. Nick Cannon discovered him on Wild 'N Out. Bill Hader recommended him to Lorne Michaels for SNL after small role in Judd Apatow film. SNL at 20, youngest cast member born in the 1990s.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "taylor-tomlinson",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started stand-up at 16 on Christian comedy circuit. Teacher immediately recognized her talent ('this young lady has a career'). Exceptional early comedic ability with mature perspective unusual for her age. Decade of stage reps by 26.",
+    "inherited_summary": "Mother died of cancer when Taylor was 8. Intensely Christian conservative family in Temecula, California. Father signed her up for stand-up comedy class as bonding activity. Active disadvantage of mother's death and restrictive religious upbringing.",
+    "ecosystem_summary": "Christian comedy circuit provided early performing platform and mentorship from church comedian Nazareth. San Diego open mic scene. No elite institutional access. Built career through relentless touring on church and college circuits before transitioning to mainstream.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "druski",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Entertaining family from age 5, mother recorded his character performances. Natural comedic talent recognized early. Above-average ability but not prodigy-level; built following through consistent Instagram content.",
+    "inherited_summary": "Father David McLain Desbordes is a commercial pilot and US Air Force captain (Howard University, Air Force Academy, Smithsonian Wall of Honor). Mother Cheryl has Master of Science in Public Health, worked at CDC and Department of State. Academically minded, middle-class family in Gwinnett County, GA.",
+    "ecosystem_summary": "Atlanta's hip-hop culture provided cultural context and celebrity proximity. Instagram platform enabled viral sketch comedy. Celebrity co-signs from Drake, Jack Harlow, and Lil Baby accelerated growth. No elite institutional comedy training.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "trevor-wallace",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Wrote 'comedian' as dream job in 3rd grade. Started stand-up at 17 at mother's suggestion. Natural comedic instinct but not prodigy-level. Built career through Vine and YouTube viral content.",
+    "inherited_summary": "Born in Naperville, IL, grew up in Camarillo, CA. Jewish family. Father in bicycle sales. Mother encouraged comedy class. Middle-class suburban upbringing. No entertainment industry connections.",
+    "ecosystem_summary": "Ventura Harbor Comedy Club provided early stage. San Jose State University comedy club (founding member). Groundlings improv internship in LA. LA comedy scene proximity. Vine and YouTube platforms enabled viral content. No elite mentors documented.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jaboukie-young-white",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Won IHSA state champion in Original Comedy in high school senior year. Started stand-up at 19. Above-average comedic ability with sharp observational skills but not prodigy-level.",
+    "inherited_summary": "Born to Jamaican immigrants, raised in Harvey, Illinois (working-class). Estranged from 'violently homophobic' father. Queer person of color. Active disadvantages of immigrant working-class background and family estrangement.",
+    "ecosystem_summary": "Marian Catholic High School and DePaul University (Titanic Players improv). Twitter and Instagram viral content built following. Tonight Show debut at 23. Daily Show correspondent at 24. No elite mentors; career built through social media virality.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "patti-harrison",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Didn't see herself as particularly funny growing up. Discovered improv accidentally at Ohio University. No early prodigy indicators. Average early ability that developed through practice and perseverance.",
+    "inherited_summary": "Father (US Army mechanic from Detroit) died of heart attack when she was 6. Vietnamese immigrant mother worked as translator. Youngest of seven children in rural Orient, Ohio. Working-class family. Active disadvantages of father's death, rural isolation, and immigrant background.",
+    "ecosystem_summary": "Ohio University improv team provided entry point. Moved to NYC in 2015 then LA for comedy. Tonight Show viral moment in 2017 about Trump's transgender military ban launched her. Alt-comedy scene in NYC/LA. No elite institutional access or mentors documented.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jak-knight",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started stand-up as teenager in Seattle. First writing job on Lucas Bros. Moving Co. at ~20. Natural comedic talent with ability to riff premises in writers' rooms. Above-average ability but not prodigy-level.",
+    "inherited_summary": "Born Jakim Maulana in Seattle, Washington. Family background not documented in available sources. No evidence of significant family advantage or disadvantage.",
+    "ecosystem_summary": "Seattle comedy scene provided early stage. Lucas Brothers brought him into writers' room, hiring him on the spot. Big Mouth on Netflix from 2017 provided major platform. Opened for Dave Chappelle on tour. Netflix half-hour special at 24. LA comedy scene.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "matt-rife",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started stand-up at 15 at Columbus Funny Bone after talent show at 14. Natural comedic ability recognized early. Youngest Wild 'N Out cast member at 19. Above-average ability but not prodigy-level.",
+    "inherited_summary": "Father died by suicide when Matt was a baby. Raised by mother April and grandfather Steve Rife (father figure). Working-class Ohio (North Lewisburg). Grandfather drove him to open mics and bought tickets. Stepfather had no connection with him. Active disadvantage of father's death and working-class background.",
+    "ecosystem_summary": "Columbus Funny Bone open mics provided early stage. Grandfather as chauffeur and first audience. Wild 'N Out at 19 (youngest cast member). Dane Cook mentorship. TikTok viral crowd work videos built massive following. Self-produced YouTube specials. LA comedy scene.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ben-marshall",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Making YouTube videos from age 12. Attended Savannah Arts Academy (arts magnet school). Natural comedic and filmmaking ability but not prodigy-level. Found his strength in collaborative trio dynamic.",
+    "inherited_summary": "Born and raised in Savannah, Georgia. Parents divorced when 10. Father was college basketball star. No entertainment industry connections. Middle-class family. Chose NYU specifically to potentially intern at SNL.",
+    "ecosystem_summary": "NYU Hammerkatz sketch comedy group connected him with Higgins and Herlihy. Please Don't Destroy trio formed at NYU in 2017. Performed weekly at East Village bar Von's. SNL writer Heidi Gardner noticed them, then Lorne Michaels hired all three. TikTok viral during pandemic. NYU comedy scene with Rachel Sennott and Ayo Edebiri as peers.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "john-higgins",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "NYU Hammerkatz and Astor Place Riots. Natural comedic ability developed through college improv and sketch. Above-average ability but not prodigy-level; career significantly accelerated by family connections.",
+    "inherited_summary": "Father Steve Higgins is SNL producer/writer since 1995 and Tonight Show announcer. Uncle Chris Elliott (SNL cast member, comedian), uncle David Anthony Higgins (actor), uncle Alan J. Higgins (comedy writer). Cousin Abby Elliott (SNL cast member). One of comedy's most connected families. Attended Montclair Kimberley Academy (private school).",
+    "ecosystem_summary": "Born into SNL dynasty with father, uncles, and cousin all in the show. NYU Hammerkatz connected him with Marshall and Herlihy (whose father Tim Herlihy was also SNL head writer). Please Don't Destroy trio hired at SNL in 2021. Father actively dissuaded him but deep family connections inevitably opened doors.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "joseph-sissens",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Discovered dance at 7 by following sister to ballet class. Natural talent spotted immediately by teacher. Offered scholarship to Tring Park at 8, Royal Ballet School at 13. Exceptional early dance ability recognized by elite institutions.",
+    "inherited_summary": "Grew up in council house in Hertfordshire as one of six siblings to British mother and Jamaican father. Family situation described as 'not healthy or safe.' Mother sent him to boarding school for safety. Active disadvantages of poverty, council housing, and unsafe home environment.",
+    "ecosystem_summary": "Elite British ballet pipeline: scholarship to Tring Park School for Performing Arts at 8, Royal Ballet School (White Lodge) at 13, graduated into Royal Ballet company at 17. Faced significant racism growing up, which mother saw dance as escape from. Three-stage elite institutional pipeline rarely accessed from council house background.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "chloe-misseldine",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Ballet from age 3-4 at Orlando Ballet School but didn't take it seriously until 14. Not a prodigy; described as 'more interested in snacks and friendship' as child. Above-average talent that blossomed in mid-teens through competition training.",
+    "inherited_summary": "Mother Yan Chen is former ABT soloist and ballet mistress at Orlando Ballet School (trained at Shanghai Dance School, former principal at Washington Ballet). Father is entrepreneur. Second-generation ballerina with direct maternal domain expertise, coaching, and institutional connections.",
+    "ecosystem_summary": "Orlando Ballet School training from age 3 with mother as teacher. ABT Summer Intensives as National Training Scholar (2016-2018). Prix de Lausanne finalist in 2018. ABT Studio Company pipeline to main company. Mother's ABT connections provided direct institutional access. Principal at ABT at 22.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "philip-kim-breakdancer",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Discovered breaking at 11 seeing N.O.N. crew perform. Self-taught via YouTube with obsessive practice (practicing moves in school hallways). Above-average dedication and athletic ability but not prodigy-level.",
+    "inherited_summary": "Born to Korean immigrant parents in Toronto, raised in Vancouver. Parents sacrificed to give children opportunities. Traditional family worried about non-traditional career. Middle-class immigrant family. No domain connections.",
+    "ecosystem_summary": "Vancouver breaking scene and N.O.N. crew provided community mentorship. YouTube provided self-learning platform. Robson Square public practice space. Dropped out of university to pursue breaking. Parents gave three-year ultimatum. No elite institutional access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "slavik-pustovoytov",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Discovered dance at 11 in Ukraine. Self-taught dancer who moved to US at 12. Above-average natural dance ability but not prodigy-level. Built career through SYTYCD platform and social media.",
+    "inherited_summary": "Born in Poltava, Ukraine. Moved to US at 12, settling in Stillwater, Oklahoma while family remained in Ukraine. Immigrant experience with family separation. Active disadvantage of immigration, family separation, and geographic isolation.",
+    "ecosystem_summary": "Moved to Las Vegas after high school to train as dancer. SYTYCD Season 15 finalist (4th place) at 19 provided national platform. TikTok content creation built following. No elite institutional access or notable mentors documented.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kida-burns",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started dancing at 4, taught by deaf older brother Shaheem. Best Kid Dancer at Sacramento Music Festival at 7. Won SYTYCD: The Next Generation at 14. Child prodigy with exceptional natural dance ability and viral videos from young age.",
+    "inherited_summary": "Sixth of seven children. Father Leon Burns Sr. (professional dancer) died from H1N1 complications in 2014. Mother Tanisha cleaned dance studios to pay for classes. Working-class Sacramento family. Active disadvantages of poverty and father's death.",
+    "ecosystem_summary": "Older brother Shaheem (deaf) as first mentor, teaching him to feel music rather than hear it. Studio T Urban Dance Academy from age 5. Chapkis Dance Studio from age 11 under Greg Chapkis (SYTYCD Season 1 contestant). Father instilled love of dance through movies. SYTYCD platform at 14.",
+    "scoring_confidence": "High"
+  }
+]

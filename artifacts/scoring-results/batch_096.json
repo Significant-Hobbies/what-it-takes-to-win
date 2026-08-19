@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "fern-morrison",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Stanford MS in chemical engineering, worked on Apple's Battery team and was employee #9 at Mitra Chem. Strong technical trajectory with investment banking background merged with battery modeling, but no prodigy-level early evidence.",
+    "inherited_summary": "Grew up on a Maine dairy farm; family livelihood threatened by climate change. No particular wealth, domain connections, or professional networks mentioned.",
+    "ecosystem_summary": "Stanford Climate Ventures course and Innovation Transfer grant; Stanford ecosystem provided the institutional launchpad. Co-founded IronGrid with a Stanford postdoc. YC and Stanford network access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "veer-juneja",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Top-ranked debater nationally — #1 in Congressional Debate (Senate) at 2021 NSDA Nationals, 2nd at 2022 TOC. Founded and exited an education consulting company (~$100k ARR) during freshman year at USC. Strong drive and communication ability from young age.",
+    "inherited_summary": "Attended Bellarmine College Preparatory, an elite private Jesuit school in San Jose. Supportive environment with debate infrastructure, but no clear family wealth or industry connections.",
+    "ecosystem_summary": "Bellarmine College Preparatory (top-ranked debate team nationally), USC full debate scholarship and Trojan Debate Society presidency. Lifelong friends and co-founder relationship with Saurav Kumar since age 14. YC S25 batch.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sid-rajaram",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Built BunchOfAdvice.com to 100k users independently. Worked on mission-critical AI systems for self-driving trucks and robotic tractors at Blue River Technology and John Deere. Strong engineering ability and self-driven product building.",
+    "inherited_summary": "Bay Area native; parents' workflow inspired initial product (DiscloDocs), suggesting professional parents. No specific wealth or industry connections documented.",
+    "ecosystem_summary": "Born and raised in the Bay Area. Blue River Technology/John Deere ecosystem for frontier AI/robotics. Amazon and MinIO infrastructure experience. YC S25 acceptance (on second attempt).",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "rithvik-chuppala",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "UC Berkeley EECS BS/MS. Head Teaching Assistant and uGSI for CS 186 (Database Systems). Worked at Nvidia, Google, Citadel, and Databricks before co-founding CLODO. Strong technical trajectory through elite internships.",
+    "inherited_summary": "Grew up in Silicon Valley — high school sits directly across from an Apple campus. Bay Area upbringing provided exposure but no specific family wealth or connections documented.",
+    "ecosystem_summary": "Silicon Valley upbringing with Apple campus proximity. UC Berkeley EECS (one of top CS programs). Traders at Berkeley quant finance club. Databricks, Google, Nvidia, Citadel experience. YC S25.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jash-mota",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Robotics enthusiast since age 8, largely self-taught. Built robotic dev kits used by ISRO, published research in Springer, chaired IEEE at university. Built remote teleop tool used by Accenture. Strong self-driven engineering ability from young age.",
+    "inherited_summary": "From India. Self-taught robotics background with no particular family wealth, domain connections, or professional networks mentioned. BTech from NMIMS Mumbai.",
+    "ecosystem_summary": "NMIMS Mumbai for mechatronics engineering. IEEE leadership at university. Limited frontier ecosystem access in India initially; later moved to San Francisco and joined YC S25. Co-founder with Motional (autonomous vehicle) background.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "john-ferrara",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started doing startups at age 14. Northwestern data science + journalism student. Built GPS alternative technology with 7-person team of elite engineers. Strong entrepreneurial drive and technical ability from young age.",
+    "inherited_summary": "Both parents are US Navy doctors — mother is a pediatrician, father is a radiologist who served as chief medical officer of the Navy. Upper-middle class military medical family with deep healthcare domain exposure that directly inspired Juxta.",
+    "ecosystem_summary": "Northwestern University where he met co-founder Hasan Aybaz. Grew up in hospitals providing domain expertise. YC S25 with Tyler Bosmeny as primary partner. Based in San Francisco.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "saurav-mitra",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Co-founded SigmaOS (YC S21) at ~23-24, grew to 100,000+ users with 75,000 LLM requests/day. Built Okibi (YC S25) after. Capable builder but no exceptional early cognitive or prodigy-level evidence found.",
+    "inherited_summary": "Indian nationality, living in UK. Born October 1997. No specific family wealth, domain connections, or professional networks documented.",
+    "ecosystem_summary": "London tech scene. Long-term co-founder relationship with Mahyad Ghassemi (7+ years). YC S21 and YC S25 (two-time YC founder). SigmaOS grew to significant user base with AI agent integration.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "cole-robertson",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Built a SaaS consulting business generating $300K in just over a year. Engineer #3 at Tropic helping scale from seed to Series B. Developed aviation products at Garmin for 3 years. Strong engineering and entrepreneurial ability.",
+    "inherited_summary": "Based in Olathe/Kansas City area. No particular family wealth, domain connections, or professional networks mentioned. Garmin headquarters also in Olathe provided local opportunity.",
+    "ecosystem_summary": "Kansas City startup community. Met co-founder Warren Wang at hometown Startup Crawl event. Garmin (3 years) for aviation engineering experience. KCRise Fund, Flyover Capital backing. YC S25. Not a frontier hub initially.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "catherine-jue",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "2x junior Taekwondo world champion (2007, 2009) and 1x world champion (2014). UCLA Linguistics & CS. Co-founded Sway Finance (YC S16) at ~23. Engineering leadership at Nova Credit and Cash App. Multi-domain excellence at elite levels.",
+    "inherited_summary": "Father Gordon Jue is an ITF 8th degree international Taekwondo instructor who trained Catherine from white belt. Direct family domain expertise and training access in Taekwondo from young age. Father's small business accounting inspired Sway Finance.",
+    "ecosystem_summary": "UCLA for Linguistics & CS. YC S16 with Sway Finance. San Francisco tech ecosystem. Taekwondo Hall of Fame Youth Excellence Award (2007). Trained 6 days/week, 2 hours/day for Jr. World Championships.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "rafael-garcia",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Harvard graduate (2005-2009). Co-founded Clever (YC S12) which grew to serve half of US K-12 schools and exited for $500M. Strong technical and entrepreneurial ability, now co-founding Kernel (YC S25).",
+    "inherited_summary": "From Cincinnati, OH. Harvard education suggests solid academic background but no specific family wealth or industry connections documented.",
+    "ecosystem_summary": "Harvard University where he met co-founders Tyler Bosmeny and Dan Carroll. YC S12 batch. Clever served half of US K-12 schools. Now at Kernel (YC S25) with Tyler Bosmeny as primary partner.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jerry-qian",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Bay Area born and raised. Studied at UC Santa Cruz, UC San Diego, and UC Berkeley (MS). Worked at NASA and Meta. Spent years building failed startups before Reacher succeeded. Capable but not prodigy-level; persistence over early brilliance.",
+    "inherited_summary": "Bay Area born and raised — Cupertino native. Geographic advantage but no specific family wealth or industry connections documented.",
+    "ecosystem_summary": "Bay Area upbringing. UC Berkeley for MS. NASA Glenn Research Center and Meta experience. Palo Alto Networks. YC S25. Deeply embedded in Bay Area startup ecosystem with multiple attempts before success.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "bora-mutluoglu",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Cupertino native. BS in Cognitive Science from UC San Diego (focus on ML/Neural Computation), MS in Data Science from UC Berkeley. Worked at Palo Alto Networks. Co-founded Reacher (YC S25). Capable but no exceptional early achievement evidence.",
+    "inherited_summary": "Bay Area born and raised, Cupertino native. Geographic advantage of growing up in tech hub but no specific family wealth or connections documented.",
+    "ecosystem_summary": "Cupertino High School. UC Santa Cruz (2 years) then UC San Diego (BS) then UC Berkeley (MS). Bay Area startup ecosystem. YC S25. TikTok Shop ecosystem timing was key — first-mover in social commerce tooling.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "gurveer-singh",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started answering phones at family restaurant at age 9. Grew family restaurant business from 1 to 11 locations. Won Restaurant Tech Innovation Award. Co-founded Certus AI (YC S25) at 19 — youngest founder in batch. Strong operational and entrepreneurial drive from young age.",
+    "inherited_summary": "Born in Durban, South Africa. Moved to Cape Town at 6 with Indian-born parents who ran Punjab Restaurants. Family restaurant business provided deep domain expertise and operational experience. Immigrant family, not wealthy but entrepreneurial.",
+    "ecosystem_summary": "South Africa and UK for education (A Levels). Limited tech ecosystem access initially. Met co-founders Adam (former classmate) and Isaac (at the gym). Applied to YC twice, accepted on second attempt. Now in San Francisco.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "adam-gamieldien",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "High school dropout at 18. Built marketing agency serving UK restaurants. Co-founded Certus AI (YC S25) at 20. Entrepreneurial drive and sales ability but no exceptional early cognitive or academic evidence.",
+    "inherited_summary": "South African. High school dropout — no family wealth, domain connections, or professional networks documented. Bet on himself without institutional support.",
+    "ecosystem_summary": "Former classmate of Gurveer Singh in South Africa. Marketing agency work in UK with creative agencies. Met Isaac Nichols at the gym. YC S25 acceptance. Limited early ecosystem access; built network through hustle.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "isaac-nichols",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started professional career at 16 with full-time internship at Falcon Eye Drones. Founding engineer at Hive AI (biggest no-code agency in South Africa). Co-founded 2 prior startups. Self-taught developer across crypto, AI, and business growth. Strong self-driven technical ability.",
+    "inherited_summary": "Originally from England, moved to South Africa at age 13. No specific family wealth, domain connections, or professional networks documented. Diverse schools and living situations taught adaptability.",
+    "ecosystem_summary": "South Africa tech ecosystem. Falcon Eye Drones internship at 16. Hive AI founding engineer role. Met co-founders Gurveer and Adam at the gym. YC S25. Limited frontier ecosystem access initially; now in San Francisco.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "peter-tribelhorn",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "WHU (top German business school, BSc 2020). Co-organized IdeaLab! WHU Founders' Conference. Built YouTube channels with 30M+ subscribers at Lunar X. Produced 240+ videos. Hera became most visited startup in YC S25 batch. Strong entrepreneurial and content ability.",
+    "inherited_summary": "From Goslar, Germany (small town). WHU education suggests solid middle-class background. No specific family wealth or industry connections documented. Small town upbringing may have fueled ambition.",
+    "ecosystem_summary": "WHU – Otto Beisheim School of Management (elite German business school with strong entrepreneurial network). Berlin tech scene. Met co-founder Chia-Lun Wu at a Berlin party. Applied to YC four times, accepted on fourth attempt. WHU alumni network (Lucas Kollmann at Lunar X).",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "chialun-wu",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "MS in Computer Science from National Taiwan University (NTU). Built Vyond Studio (online video editor used by 20,000 businesses). First engineer/employee at Flagright (YC W22). 13+ years of software engineering experience. Strong technical builder with early startup experience.",
+    "inherited_summary": "From Taiwan. No specific family wealth, domain connections, or professional networks documented. MS from NTU (top Taiwan university) on merit.",
+    "ecosystem_summary": "NTU for MS in CS. Vyond (early engineer, built core product). Flagright (YC W22, first engineer). Berlin tech scene. Met co-founder Peter Tribelhorn at a Berlin party. YC S25 with Hera.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "andrea-pinto",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "BS from EPFL and MS from ETH Zurich — two of Europe's top technical universities. Fulbright Scholar. AI/ML researcher at MIT's Poggio Lab, IBM Research, and Amazon. Published ML research at top venues (NeurIPS, ICML). Exceptional research trajectory across elite institutions.",
+    "inherited_summary": "European educational background (EPFL, ETH Zurich) before coming to MIT as Fulbright Scholar. Fulbright is merit-based but suggests solid academic foundation. No specific family wealth documented.",
+    "ecosystem_summary": "EPFL and ETH Zurich (two of Europe's top technical universities). MIT Poggio Lab (Tomaso Poggio is a legendary AI researcher). IBM Research Zurich. Amazon. Co-founded Notte (YC S25). Elite research institution pipeline across three countries.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "lucas-giordano",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "BE from TU Eindhoven with 9.16/10 GPA. MS from EPFL. ML researcher at Oracle Labs and EPFL. Strong academic and research trajectory through top European technical institutions.",
+    "inherited_summary": "European educational background (TU Eindhoven, EPFL). No specific family wealth or connections documented. High GPA suggests strong academic foundation.",
+    "ecosystem_summary": "TU Eindhoven (top Dutch technical university) and EPFL (top Swiss technical university). ML research at Oracle Labs Zurich and EPFL ML lab. Co-founded Notte (YC S25) with Andrea Pinto. Based in San Francisco.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "haz-hubble",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "High school dropout. Building businesses since 12. Sold houses at 14, started design agency at 15. Youngest Chartered Management Accountant in the world at 20. CFO of 200-person company at 22. Self-taught in finance, design, engineering, and accounting. Exceptional self-driven multi-domain achievement.",
+    "inherited_summary": "High school dropout from London. No family wealth, domain connections, or professional networks documented. Self-taught through night classes. Built everything from scratch.",
+    "ecosystem_summary": "Founded London Founder House with 15,000+ community members — manufactured his own ecosystem density. Met co-founder Wyatt Lansford. YC S25. Now based in Bay Area. Created the very density Silicon Valley manufactures naturally.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "wyatt-lansford",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won DARPA AlphaDogfight Trials at 22 with a 3-person team, beating teams with far more resources. Built autonomous F-16 fighter jets. Research lab acquired by Shield AI. AI flew on real aircraft. Exceptional ML/robotics ability with real-world impact.",
+    "inherited_summary": "No family background information found. Based in Bay Area. No specific family wealth or connections documented.",
+    "ecosystem_summary": "DARPA AlphaDogfight Trials (elite government AI competition). Research lab acquired by Shield AI (major defense AI company). Met co-founder Haz Hubble. YC S25. Bay Area based. DARPA program provided frontier research access.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "alejandro-salinas",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Summa Cum Laude graduate from Loyola High School. Stanford CS (2017-2021). AI research at Stanford Medicine. Senior Software Engineer at Meta Reality Labs with patent submission. Built Android app at Facebook internship presented to CTO. Strong technical trajectory.",
+    "inherited_summary": "From Los Angeles area. Loyola High School (private Jesuit school) with Christian Service Award from LA Archdiocese. Pre-med exposure through shadowing doctors domestically and internationally. Solid upper-middle class background.",
+    "ecosystem_summary": "Loyola High School (elite private school). Stanford University for CS. Meta Reality Labs for AI products. Stanford Medicine for AI research. Met co-founder Josh at Stanford — known each other almost 10 years. YC S25.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "evan-odorney",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won 2007 Scripps National Spelling Bee at 13. Won 2011 Intel STS ($100K) at 17. Two IMO gold medals (2010, 2011) and two silver (2008, 2009). Three Putnam Fellowships. Churchill Scholar. Assessed as 'profoundly gifted.' Solved a previously unsolved Stanford math problem as a teen. Prodigy-level across multiple domains.",
+    "inherited_summary": "Grew up in Danville, California. Homeschooled with supportive parents who facilitated UC Berkeley classes. Middle-class area. Father's name is Erik (mentor listed for Intel STS project). No significant wealth or industry connections.",
+    "ecosystem_summary": "Homeschooled but attended UC Berkeley classes while in high school. Berkeley Mathematics Circle. Harvard (BA), Cambridge (Part III), Princeton (PhD). National Research Council called him 'as famous for academic excellence as any student can be.'",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "zhuo-qun-alex-song",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Most decorated IMO contestant ever with 5 gold medals and 1 bronze. Perfect score at IMO 2015 (only contestant). Ranked #1 on IMO Hall of Fame. First competed at IMO in seventh grade. Prodigy-level mathematical ability, trajectory-changing.",
+    "inherited_summary": "Born in Tianjin, China. Moved to the United States to attend Phillips Exeter Academy (elite boarding school, ~$60k/year). Family invested significantly in elite education. Princeton University for BA in Mathematics.",
+    "ecosystem_summary": "Phillips Exeter Academy (elite boarding school with legendary math program). Princeton University. USA IMO team training. PEA Math Instructor Zuming Feng (led USA IMO team). #1 on IMO Hall of Fame — once-in-a-generation peer environment.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "teodor-von-burg",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Four consecutive IMO gold medals (2009-2012), one silver (2008), one bronze (2007). Youngest competitor in JBMO, BMO, and IMO history. Most successful IMO competitor at the time. Also won BMO and RMM golds. Prodigy-level mathematical ability.",
+    "inherited_summary": "Serbian-Swiss roots. Attended Mathematical Gymnasium Belgrade (specialized school for gifted students). Private tutor Prof. Dr. Vladimir Janković for 4.5 years. Family invested in specialized education and private tutoring.",
+    "ecosystem_summary": "Mathematical Gymnasium Belgrade (specialized school for mathematically gifted students, experimental department). University of Oxford (Exeter College) for undergraduate. Private tutoring from university professor. Returned to teach at Mathematical Gymnasium.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "erika-debenedictis",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won 1st place Intel STS 2010 ($100K) at 18. Developed autonomous spacecraft navigation system using low-energy trajectories. ISEF Grand Award in Physics. Published in AIAA Journal of Propulsion and Power as a high schooler. Caltech BS, MIT PhD. Exceptional research ability from young age.",
+    "inherited_summary": "Attended Albuquerque Academy (private college prep school). Mentor for Intel STS project was her father, Erik DeBenedictis. Mother Beverly provided editorial guidance. Family supported and mentored her research directly.",
+    "ecosystem_summary": "Albuquerque Academy (private college prep school). Mentorship from father (Erik DeBenedictis). Caltech for BS in CS. NASA JPL for research. MIT for PhD in Biological Engineering. Francis Crick Institute postdoc. Elite research institution pipeline.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "nithin-tumma",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won 1st place Intel STS 2012 ($100K) at 17. Researched molecular mechanisms in breast cancer. ISEF 1st prize. Published multiple papers. Presented at international immunology conference. First in class of 332. Exceptional research ability from a young age.",
+    "inherited_summary": "From Fort Gratiot, Michigan (working-class area). Port Huron Northern High School (public school). No family wealth or domain connections documented. Accepted to MIT, Caltech, and Stanford on merit.",
+    "ecosystem_summary": "Simons Summer Research Program at Stony Brook University — mentored by Dr. Berhane Ghebrehiwet. Research fellowship funded by Simons Foundation. Published in immunology journals and contributed to textbook. Harvard University.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "sara-volz",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Won 1st place Intel STS 2013 ($100K) at 17. Researched algae biofuel production for 4 years. Built home lab under loft bed using kitchen renovation parts. Adapted sleep patterns to algae light cycle. Increased algae oil production by 300%. Mentioned by Obama at White House Science Fair. Self-driven from kindergarten science fair.",
+    "inherited_summary": "From Colorado Springs. Cheyenne Mountain High School (public school). Home lab using leftover parts — no family wealth. Supportive parents (mother Pattye Volz) but not wealthy. Self-driven research with minimal resources.",
+    "ecosystem_summary": "Cheyenne Mountain High School. Air Force Academy Life Sciences Research Center (via CRADA with high school). Colorado State University lab (Dr. Stephen Chisholm). MIT for biochemistry. Mostly self-driven research from home with limited institutional support.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "indrani-das",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won 1st place Regeneron STS 2017 ($250K) at 17. Researched neuron death from brain injury using exosomal microRNA. Interested in science since age 3 (dinosaurs). Parents told her about STS as a toddler. Harvard student. MCAT taken as freshman. Exceptional research ability from very young age.",
+    "inherited_summary": "From Oradell, New Jersey. Parents encouraged science from age 3 — told her about STS as a toddler. Supportive family that nurtured scientific curiosity. Bergen County Academies (specialized magnet school).",
+    "ecosystem_summary": "Bergen County Academies — Academy for Medical Science Technology (elite specialized magnet school). Harvard University (Chemical and Physical Biology). Stevens Lab at Boston Children's Hospital. Regeneron internship. Mentors younger researchers.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ana-humphrey",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won 1st place Regeneron STS 2019 ($250K) at 18. First Hispanic 1st-place winner in 20 years. Developed mathematical model for finding missing exoplanets using NASA Kepler data. Identified 96 search targets and up to 560 potential hidden planets. Harvard astrophysics. Exceptional mathematical and research ability.",
+    "inherited_summary": "From Alexandria, Virginia. T.C. Williams High School (public school). Cuban-American — first Hispanic winner in 20 years. No family wealth or domain connections documented. Public school background.",
+    "ecosystem_summary": "T.C. Williams High School. Worked with NASA Kepler team and mentor Elisa Quintana. Harvard-Smithsonian Center for Astrophysics. Harvard University (Astrophysics and Physics). Designed model applicable to any exoplanet database including TESS data.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "lillian-kay-petersen",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Won 1st place Regeneron STS 2020 ($250K) at 17. Developed satellite imagery tool to predict crop harvests in Africa. Published in peer-reviewed journal (Remote Sensing) as high schooler. Started research sophomore year, published within two years. Self-taught satellite analysis from home. Exceptional self-driven research ability.",
+    "inherited_summary": "From Los Alamos, New Mexico (national lab town, educated community). Three adopted siblings experienced food insecurity — personal motivation for crop prediction research. Los Alamos High School. Supportive family environment in educated community.",
+    "ecosystem_summary": "Los Alamos High School. Used Descartes Labs satellite data. Met with International Food Policy Research Institute. Harvard University. Mostly self-driven research from her own desk using open-source tools and datasets. Limited formal mentorship.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "yunseo-choi",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Won 1st place Regeneron STS 2021 ($250K) at 18. Research on two-sided matching in infinite markets using compactness theorem of propositional logic. RSI alumna. Gold Medalist at Yau Science Award. Phillips Exeter Academy. Harvard Mathematics. Exceptional mathematical research ability.",
+    "inherited_summary": "From Seoul, Korea. Four-year student at Phillips Exeter Academy (elite boarding school, ~$60k/year). Family invested significantly in elite US education from Korea.",
+    "ecosystem_summary": "Phillips Exeter Academy (elite boarding school). RSI (Research Science Institute at MIT — highly competitive summer program). Harvard University (Mathematics). Mentor Scott Duke Kominers at Harvard. RSI and Exeter provide once-in-a-generation peer environment.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "christine-ye",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won 1st place Regeneron STS 2022 ($250K) at 17. Analyzed gravitational waves from neutron star-black hole collisions. Published in Physical Review D as high schooler. First-author paper in Astrophysical Journal. Stanford Physics with Astrophysics. Interest in astronomy from middle school. Exceptional research ability.",
+    "inherited_summary": "From Sammamish, Washington (affluent Seattle suburb). Eastlake High School (public school in affluent area). No specific family wealth or domain connections documented, but affluent suburban background.",
+    "ecosystem_summary": "Mentor Maya Fishbach (NASA Einstein Postdoctoral Fellow at CIERA/Northwestern). LIGO collaboration (Nobel Prize-winning team). NANOGrav at University of Washington. Stanford University. Reached out to mentor directly after attending virtual conference talk.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "luke-robitaille",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Three consecutive IMO gold medals (2019-2022). MATHCOUNTS National Champion twice (2017, 2018) — only person ever to win twice. 10th place Regeneron STS 2022. Davidson Fellow 2022. Won Harvard-MIT Math Tournament 3 times. Homeschooled. Prodigy-level mathematical ability.",
+    "inherited_summary": "From Euless, Texas. Homeschooled throughout pre-college years by mother who facilitated educational opportunities. Parents found Math Circle at nearby university. Only child. Middle-class family. Supportive homeschooling environment.",
+    "ecosystem_summary": "Homeschooled with Math Circle at nearby university. Professor ran Math Circle and helped him unofficially audit advanced math classes. Art of Problem Solving (AoPS) community and courses. MIT (Mathematics and Physics). AoPS WOOT training.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "allen-liu",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Three IMO gold medals (2014, 2015, 2016). Perfect score at IMO 2016 (42/42). USA team won 1st place in 2015 and 2016. Top 12 scorer in USA Mathematical Olympiad. Prodigy-level mathematical ability with perfect IMO score.",
+    "inherited_summary": "From Penfield, New York (Rochester area). Penfield High School (public school). No family wealth or domain connections documented.",
+    "ecosystem_summary": "Penfield High School (public school). US math olympiad training program (MOP). USA IMO team with Po-Shen Loh as coach. Limited elite institutional access beyond the national olympiad program.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "david-yang",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Two IMO gold medals (2011, 2012). Morgan Prize for Outstanding Research in Mathematics by Undergraduate (2017). 3x Putnam Fellow. 5 published papers in algebraic geometry by senior year at MIT. Research guided by Joe Harris (Harvard) and Roman Bezrukavnikov (MIT). Prodigy-level mathematical ability with exceptional research output.",
+    "inherited_summary": "Born in California. Moved to New Hampshire to attend Phillips Exeter Academy (elite boarding school, ~$60k/year). Family invested significantly in elite education. First exposed to algebraic geometry at Exeter.",
+    "ecosystem_summary": "Phillips Exeter Academy (elite boarding school with legendary math program). MIT for BA. Research at Harvard and MIT with top algebraic geometers (Joe Harris, Roman Bezrukavnikov). Princeton for PhD. Elite math research pipeline across multiple institutions.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "bobby-shen",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Two IMO gold medals (2012, 2013). 3rd place individual at IMO 2012 (39/42). UIL Academic State Meet perfect score — first ever. Also US Physics Team, USA Biology Olympiad Semifinals, Romanian Masters of Mathematics. Multi-subject olympiad talent at prodigy level.",
+    "inherited_summary": "From Sugar Land, Texas. Dulles High School (public school). No family wealth or domain connections documented.",
+    "ecosystem_summary": "Dulles High School (public school in Sugar Land, TX). US math olympiad training program (MOP). Zuming Feng from Phillips Exeter served as Team USA leader. Multi-subject olympiad participation (math, physics, biology). Houston area, not a frontier hub.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tanishq-mathew-abraham",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started college at 7. Graduated high school at 10 with 4.0 GPA. 3 associate degrees at 11. BS from UC Davis summa cum laude at 14. PhD in biomedical engineering at 19. Founded MedARC at Stability AI. DALL-E mini founding team member. Prodigy-level across multiple domains from extremely young age.",
+    "inherited_summary": "Mother Dr. Taji Abraham is a veterinarian researcher. Father Bijou Abraham is a software engineer. Grandmother Thankam Mathew holds PhD in veterinary medicine. Academic family with direct domain expertise in science and engineering. Homeschooled by parents.",
+    "ecosystem_summary": "American River College (age 7). UC Davis for BS and PhD. Stability AI as Research Director (founded MedARC). fast.ai community (instructor and contributor). DALL-E mini founding team. TEDx talks and international media recognition.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "elliott-tanner",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started reading and doing math by age 3. Started full-time college at 9. Associate's degree at 11. BS in Physics at 13. MS in Physics at 15. PhD candidate at 13. NSF DSMMA program member. SuperCDMS researcher. Prodigy-level cognitive ability from extremely young age.",
+    "inherited_summary": "From St. Louis Park, Minnesota. Homeschooled by parents who were 'not overbearing pushing types' — Elliott dragged them along. Parents struggled to pay for PhD program. Supportive but not wealthy family.",
+    "ecosystem_summary": "Hamline University professor tutored him at age 6. Normandale Community College at 9. University of Minnesota for BS, MS, and PhD. NSF DSMMA program. SuperCDMS at SNOLAB. Limited elite institutional access — local state university pipeline.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ethan-novek",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "First patent at 16. 8th place Intel STS 2017. ISEF 1st place. Founded Innovator Energy. 12 patents for CO2 technologies. Carbon XPRIZE semifinalist. Published in Environmental Science. Started winning science fairs in middle school. Self-studied while full-time at Yale lab. Exceptional inventive ability from young age.",
+    "inherited_summary": "Father is a partner at EY (global consultancy firm). Grew up in Greenwich, Connecticut (famously wealthy town in one of richest US counties). Family moved 7 times before settling in Greenwich. Upper-middle class professional family with father as 'ideas guy' influence.",
+    "ecosystem_summary": "Greenwich High School (science research program with teacher Andrew Bramante). Yale University's Elimelech Lab (research fellow while in high school). Founded Innovator Energy. Yale for Chemical Engineering. Mentor Menachem Elimelech (Yale professor).",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "victor-cai",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "2nd place Regeneron STS 2022 ($175K). Designed narrowband radar using software-defined radio with 12cm accuracy. Published two first-authored papers in GNU Radio Conference Proceedings. Heads math league and science fair club. Built radar to help visually impaired karate teacher. Exceptional engineering and research ability.",
+    "inherited_summary": "Son of Qian Huang and Yi Cai. Parkland High School in Allentown, PA (public school in middle-class area). No significant family wealth or domain connections documented.",
+    "ecosystem_summary": "Parkland High School (public school in Allentown, PA). GNU Radio platform (open-source). Self-driven research using software-defined radio. Founded Personal Musicians, Live! for community service. Limited elite institutional mentorship — largely self-driven.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "amber-luo",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "3rd place Regeneron STS 2022 ($150K). Developed RiboBayes software for ribosome pause site identification. ISEF 3rd Place Grand Prize. RSI alumna 2021. Heads math team and Science Olympiad. Founded nonprofit offering free STEM courses. MIT (CS and Applied Math). Exceptional research ability.",
+    "inherited_summary": "From Stony Brook, New York (university town). Parents are Weiqin Lu and Yongde Luo. Ward Melville High School (strong public school in affluent Long Island area). Solid academic family background.",
+    "ecosystem_summary": "Ward Melville High School (strong STEM public school near Stony Brook University). RSI (Research Science Institute at MIT — highly competitive summer program, 2021 alumna). MIT (CS and Applied Math). Met scientific idol Feng Zhang at RSI. Founded nonprofit for STEM education.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "neil-chowdhury",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "5th place Regeneron STS 2022 ($90K). Computational biology project on histone methylation in colon cancer using polymer simulations. MIT PRIMES participant. Worked at OpenAI on GPT-4o and o1 safety. MIT (CS and Physics). Head of physics, chemistry, and science clubs at Exeter. Exceptional research and technical ability.",
+    "inherited_summary": "From Bellevue, Washington (affluent Seattle suburb). Phillips Exeter Academy (elite boarding school, ~$60k/year). Family invested significantly in elite education.",
+    "ecosystem_summary": "Phillips Exeter Academy (elite boarding school). MIT PRIMES (elite high school research program at MIT). MIT (CS and Physics). Mirny Lab at MIT for biophysics research. OpenAI (GPT-4o, o1 safety). MIT AI Alignment. Elite research pipeline across multiple institutions.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "eshani-jha",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "3rd place Regeneron STS 2021 ($150K). Developed biochar water filtration system removing 94% microplastics, heavy metals, pesticides. US patent issued. National Junior Science & Humanities Symposium 1st place. 5 years of research since 7th grade. UC Berkeley (EECS). Exceptional self-driven research ability.",
+    "inherited_summary": "From San Jose, California. Lynbrook High School (top public school in Silicon Valley). No specific family wealth or domain connections documented, but Silicon Valley location provides general advantage.",
+    "ecosystem_summary": "Lynbrook High School (top public STEM school in San Jose). Presented at American Chemical Society Fall 2020 meeting and international conferences. UC Berkeley (EECS). Largely self-driven research from school science fair. Limited formal elite mentorship.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "mikaela-fudolig",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Earned bachelor's in physics at 16 as valedictorian of University of the Philippines Diliman (summa cum laude, GWA 1.099). Entered college at 11 under experimental program for gifted children. Published research. Fulbright scholar. Prodigy-level cognitive ability from young age.",
+    "inherited_summary": "Filipino. No family wealth or domain connections documented. Entered college at 11 through UP's Early College Placement Program (experimental program for gifted children). Family shielded from media scrutiny as program condition.",
+    "ecosystem_summary": "Quezon City Science High School (specialized science school). University of the Philippines Diliman (Early College Placement Program for gifted children). UP National Institute of Physics faculty after graduation. Fulbright scholar at UC Irvine. Academic career across Philippines, South Korea, USA, and Australia.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "austin-howard",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started college at 13. ACT top 1% at 12. BS from Midwestern State University at 15 (summa cum laude, 4.0 GPA). Began PhD in physics at 16. Youngest PhD recipient at UT Dallas at 22. Researched superconductors at Alan G. MacDiarmid NanoTech Institute. Prodigy-level cognitive ability.",
+    "inherited_summary": "Son of an elementary school teacher and a construction contractor. Grew up in Wichita Falls, Texas (not affluent). No family wealth or domain connections. Parents supported but not pushing types.",
+    "ecosystem_summary": "Midwestern State University (local university in Wichita Falls, TX). UT Dallas (Alan G. MacDiarmid NanoTech Institute). Learned about UT Dallas from Science Channel feature. Limited elite institutional access — local state university pipeline. Public school through 7th grade.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "dinh-thi-huong-thao",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Two consecutive IPhO gold medals (2015, 2016). Best Female Asian Pacific Participant at IPhO 2016. Only girl on Vietnam's team. One of two youngest competitors. Nicknamed 'Thảo còi' (thin/small) — weighed only 40kg. MIT full scholarship. Prodigy-level physics ability.",
+    "inherited_summary": "From Nam Dinh province in Vietnam. Le Hong Phong High School (specialized school). Family described as living in 'ngôi nhà nhỏ' (small house). No family wealth or domain connections documented. Limited resources.",
+    "ecosystem_summary": "Le Hong Phong High School (specialized school in Nam Dinh). Training at Hanoi Pedagogical High School. Vietnam IPhO team training. MIT full scholarship (VND6.3 billion). Limited early ecosystem access in provincial Vietnam; national olympiad program was key pathway.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "aakanksha-sarda",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "First Indian girl to win gold at IPhO 2010. Stood 12th among 376 participants, first among girls. Ranked 18th nationally in IIT JEE (all-India female topper). Topped Jamnabai Narsee School with 97%. Admitted to MIT. Prodigy-level physics and mathematical ability.",
+    "inherited_summary": "From Mumbai. Attended Jamnabai Narsee School (elite private school in Mumbai) and IITians PACE (expensive private coaching academy). Mother Zarana Sarda supportive. Family invested in elite coaching and education.",
+    "ecosystem_summary": "Jamnabai Narsee School (elite private school). IITians PACE (elite IIT coaching academy in Mumbai). Homi Bhabha Centre at TIFR (one-month special training). Sathaye College labs (opened for her experiments). MIT admission. Elite coaching ecosystem in Mumbai.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "wang-shibo-zibo-wang",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won three gold medals in three different International Science Olympiads (IMO, IOI, IPhO) over three consecutive years. Also won IJSO gold. Youngest IPhO gold medalist from Taiwan at 14. Setting an unprecedented record — perhaps first in the world to achieve such multi-domain olympiad success. Prodigy-level across math, physics, and informatics.",
+    "inherited_summary": "From Taiwan. Taipei Municipal Jianguo High School (elite public school in Taiwan, highly competitive admission). No specific family wealth documented but attended elite school.",
+    "ecosystem_summary": "Taipei Municipal Jianguo High School (elite public high school in Taiwan). Taiwan science olympiad training program with NTU professors. Four-stage team selection process (nearly 2,900 students, only 5 chosen). National Taiwan Normal University professors trained the team.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jeck-lim",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Perfect score at IMO 2012 (42/42, 1st place — only perfect scorer). IMO gold medal 2011 (2nd place, 40/42) and 2013 (3rd place, 40/42). Also Singapore Physics Olympiad Gold and Australian Informatics Olympiad Gold (perfect score). Four IMO medals total (bronze, silver, 3 golds). Prodigy-level across math, physics, and informatics.",
+    "inherited_summary": "From Singapore. No specific family wealth or domain connections documented. Singapore's strong public education system provided the foundation.",
+    "ecosystem_summary": "Singapore education system (strong STEM focus). Singapore math olympiad training program. Multiple international olympiad participations (IMO, Physics, Informatics). Singapore's national olympiad team selection and training infrastructure.",
+    "scoring_confidence": "High"
+  }
+]

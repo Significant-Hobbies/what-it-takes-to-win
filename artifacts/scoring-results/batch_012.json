@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "thomas-bernhard",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Raised by his grandfather, novelist Johannes Freumbichler, who introduced him to literature and philosophy. Began writing poetry in a TB sanatorium; showed literary aptitude but was not a traditional prodigy.",
+    "inherited_summary": "Illegitimate son of a maid; father abandoned him and committed suicide. However, his grandfather was a published novelist who mentored him, and at 19 he met wealthy heiress Hedwig Stavianicek, who became his lifelong patron and cultural connector.",
+    "ecosystem_summary": "Grandfather's intellectual mentorship provided early literary immersion. The sanatorium became a writing environment, and Stavianicek's wealth and connections to patrons of art and culture gave him access to the Austrian cultural elite.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "didi",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Known as the most skillful player in his area from a young age, playing street football. Invented a new free-kick technique after his injury, showing creativity and adaptability, though no formal early training.",
+    "inherited_summary": "Born into extreme poverty in Campos dos Goytacazes; sold peanuts as a child to help his family. Nearly had his leg amputated at 14 due to infection, creating severe early adversity.",
+    "ecosystem_summary": "Brazilian street football culture and the Rio club pipeline (Fluminense at 20) provided the pathway. No formal academy or mentors documented in early years; rose through local clubs before reaching a major club.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "milan-kundera",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Learned piano and composition from his father from a young age, studied musicology before shifting to film. Showed broad intellectual curiosity across music, literature, and film, though not a prodigy in any single domain.",
+    "inherited_summary": "Father was Ludvík Kundera, an important Czech musicologist and pianist who headed the Janáček Music Academy. Middle-class family with significant cultural capital; cousin was also a noted writer.",
+    "ecosystem_summary": "Father's position at the Janáček Academy provided immersion in Czech musical culture. Later attended FAMU (Film Academy) and secured a lecturer position there by 26, leveraging the Communist-era Czech academic system.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "gordon-banks",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Played for Sheffield Schoolboys and was spotted among spectators to fill in as goalkeeper. No exceptional early indicators; his physical strength came from manual labor rather than athletic training.",
+    "inherited_summary": "Working-class Sheffield family; father was a steelworker who ran an illegal betting shop. Left school at 15 to work as a coal bagger and bricklayer. Stable but modest upbringing with no domain connections.",
+    "ecosystem_summary": "English football pipeline: Chesterfield youth at 15, FA Youth Cup final at 18, transfer to Leicester City at 21. Standard lower-division-to-First-Division pathway without elite academy access.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "rudolf-schenker",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-taught guitar from a book ordered from Holland at 16; initially wanted to be a soccer player. Not a prodigy — his younger brother Michael was the guitar virtuoso. Rudolf's strength was persistence and band-building.",
+    "inherited_summary": "Working-class family in Hildesheim/Sarstedt; father bought his first guitar but was not a musician. No music industry connections or wealth. Brother Michael was a guitar prodigy who joined the Scorpions.",
+    "ecosystem_summary": "Local Hanover club scene provided early performance opportunities. Key partnership with Klaus Meine (vocalist) formed the songwriting core. Brother Michael's guitar talent was an early asset before he departed for UFO.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "pierre-boulez",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Studied advanced mathematics in Lyon before switching to music at 17. Admitted to Paris Conservatoire, composed significant early works by his early twenties. Exceptional analytical and creative capacity bridging mathematics and music.",
+    "inherited_summary": "Son of an engineer and technical director of a steel factory; comfortable middle-class upbringing in Montbrison. Father wanted him to pursue engineering, but the family was prosperous enough to support his musical ambitions.",
+    "ecosystem_summary": "Elite institutional pipeline: Paris Conservatoire under Olivier Messiaen, private twelve-tone instruction from René Leibowitz (Schoenberg's student). Appointed stage music director of Renaud-Barrault company at 21. Legendary mentors at the frontier of 20th-century music.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "hiroaki-sato",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "No exceptional early ability indicators documented. Progressed through the Japanese university football system to national team selection by age 22.",
+    "inherited_summary": "No family background information available in sources. Attended Kwansei Gakuin University, suggesting a middle-class family able to support university education.",
+    "ecosystem_summary": "Japanese university football pipeline: Kwansei Gakuin University and the associated Kwangaku Club provided the pathway to national team selection. Standard institutional route without elite mentors or exceptional peers.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "morrissey",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-educated in literature and pop music; wrote music journalism and books before forming the Smiths. Deep encyclopedic knowledge of pop culture and a distinctive literary sensibility, though not a traditional musical prodigy.",
+    "inherited_summary": "Working-class Irish immigrant family in Manchester; father a hospital porter, mother a librarian. Grew up in council housing in Hulme, later Stretford. No music industry connections; parents separated during his teens.",
+    "ecosystem_summary": "Manchester indie music scene provided the cultural context. The complementary songwriting partnership with Johnny Marr was the key catalytic relationship. No elite institutional access or notable mentors before the Smiths.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "marvin-gaye",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Sang in church at age 3-4, learned piano and drums as a child, became a multi-instrumentalist. Exceptional early musical ability recognized within the church context despite an abusive household.",
+    "inherited_summary": "Father was a storefront church minister (House of God sect) who physically abused Marvin. Mother was a domestic worker. Grew up in public housing in segregated southwest D.C. Extreme adversity: poverty, abuse, and discrimination.",
+    "ecosystem_summary": "Church choir from age 3 provided intense early vocal training. Joined doo-wop groups (Rainbows, Marquees) as a teen, recruited into Harvey Fuqua's Moonglows, which connected him to Berry Gordy and Motown. Detroit music scene at its peak.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "boris-vian",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Could read at 5, had consumed all French literature by 8, passed baccalauréat at 15. Multi-domain talent: engineering (École Centrale), jazz trumpet, writing, and pataphysics. Exceptional intellectual range from a very young age.",
+    "inherited_summary": "Upper-middle-class Parisian family; father was a rentier living on investment income, mother an amateur pianist/harpist. Grandfather left a fortune from bronze art and paper mills. Villa in wealthy suburb of Ville-d'Avray.",
+    "ecosystem_summary": "Immersed in Parisian jazz and intellectual scene from his teens; member of Hot Club de France from 1937, organized Duke Ellington's second French tour. École Centrale provided engineering training. Parisian avant-garde milieu at the right time.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "michael-levitt",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Entered Pretoria University at 15 after compressing two years of school into months. Showed early aptitude for mechanics (built fiberglass model car before 13). Published first scientific paper at 20. Exceptional precocity.",
+    "inherited_summary": "Scientist aunt Tikvah Alper (prion discoverer) and uncle Max Sterne (anthrax vaccine creator) in London provided both housing and scientific immersion. Parents separated at 9; mother arranged his accelerated education. Middle-class South African family.",
+    "ecosystem_summary": "Aunt and uncle's London home became his scientific gateway. John Kendrew's BBC series inspired his molecular biology career. Kendrew mentored him and arranged Weizmann Institute placement with Shneior Lifson. Met Arieh Warshel at Weizmann. Perfect frontier positioning in computational biology.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tony-adams",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Spotted by Arsenal's chief scout at 11, signed as schoolboy at 14, debuted at 17. Showed strong physical presence and leadership from early on, though not a technical prodigy. Captain of London Schoolboys.",
+    "inherited_summary": "Working-class family in Dagenham, East London. Father formed a local football club (Dagenham United FC). No wealth or football industry connections, but a supportive family environment for the sport.",
+    "ecosystem_summary": "Arsenal's elite academy pipeline: signed as schoolboy in 1980, received sustained coaching and facilities. London football ecosystem. Broke into first team at 17 under George Graham, becoming youngest-ever captain at 21.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "aga-khan-iv",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Harvard student who made the dean's list, studying Islamic history. Above-average academic ability but not exceptional; his milestone was almost entirely inherited rather than earned through personal endowment.",
+    "inherited_summary": "Born Prince Karim al-Husseini; father was Prince Aly Khan, mother was daughter of British peer (3rd Baron Churston). Inherited the Imamate of millions of Nizari Ismaili Muslims at 20, along with vast wealth and a global religious network. Godson of King Alfonso XIII.",
+    "ecosystem_summary": "Educated at Institut Le Rosey (elite Swiss boarding school) for nine years, then Harvard. Inherited a ready-made global institutional network of millions of followers and enormous financial resources upon becoming Imam at 20.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "elizabeth-taylor",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began dancing at 3, gave a recital for Princesses Elizabeth and Margaret. Natural beauty and screen presence recognized early, but her career was heavily managed by her mother rather than driven by prodigy-level talent alone.",
+    "inherited_summary": "Father was an art dealer with Hollywood elite connections (Bond Street gallery in London). Mother was a former stage actress who actively managed Elizabeth's career, arranging screen tests. Socially prominent American expatriate family.",
+    "ecosystem_summary": "Family friend's introduction to the chairman of Universal Pictures led to a screen test. Signed by MGM, the most powerful studio. The MGM star system provided sustained exposure and career management. Los Angeles at the height of the studio era.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "alejandro-jodorowsky",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started reading at 4 and described himself as a 'brilliant child.' Founded his own 50-member theater troupe at 18. Showed early creative drive and self-direction, though not in a traditional academic framework.",
+    "inherited_summary": "Son of Ukrainian Jewish immigrant parents in Chile; father was a merchant (shopkeeper) who was abusive and Stalinist. Modest commercial family with no artistic or cultural connections. Jodorowsky severed ties with his family early.",
+    "ecosystem_summary": "Self-created theater troupe in Santiago at 18. Moved to Paris at 24 to study mime under Étienne Decroux and joined Marcel Marceau's company, writing notable routines. Parisian avant-garde environment provided the catalytic ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jean-luc-godard",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Published first film criticism at 20 and first Cahiers article at 21. Intellectual and cinephilic but not a prodigy in the traditional sense; his ability was expressed through criticism before filmmaking.",
+    "inherited_summary": "Wealthy Franco-Swiss Protestant family. Mother was granddaughter of a founder of Banque Paribas and great-granddaughter of theologian Adolphe Monod. Father was a physician. Significant financial and social capital, including connections to banking and cultural elites.",
+    "ecosystem_summary": "Cinémathèque Française and Ciné-Club du Quartier Latin provided once-in-a-generation peer environment: met Truffaut, Chabrol, Rohmer, and Rivette. André Bazin was mentor. Cahiers du cinéma platform. Paris film culture at the dawn of the New Wave — perfect timing and place.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "helmut-newton",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Interested in photography from age 12, purchased his first camera then. Apprenticed with Yva from 16 to 18, gaining strong technical foundation. Early start but not prodigy-level; excelled at swimming and photography in school.",
+    "inherited_summary": "Born to Jewish family in Berlin; father owned a button factory (bourgeois background). Family lost everything under Nazi persecution — father interned on Kristallnacht. Parents fled to Argentina; Newton became a refugee at 18, severing family support.",
+    "ecosystem_summary": "Yva apprenticeship (1936-38) provided early technical and artistic foundation with a leading Berlin portrait/fashion photographer. Refugee experience in Singapore and Australia disrupted early career. Established Melbourne studio in 1946 with no network, rebuilding from scratch.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "claude-chabrol",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Ran a film club in a barn between ages 12 and 14, showing early passion for cinema. Studied pharmacology and literature at the Sorbonne. No exceptional early creative output; his ability emerged through criticism rather than precocious filmmaking.",
+    "inherited_summary": "Bourgeois Parisian family; father and grandfather were pharmacists, and Chabrol was expected to join the family business. Comfortable middle-class background that allowed him to pursue film criticism without financial pressure.",
+    "ecosystem_summary": "Cinémathèque Française and Ciné-Club du Quartier Latin: met Godard, Truffaut, Rohmer, and Rivette. Joined Cahiers du cinéma as staff writer at 23, co-developing the politique des auteurs. Founded AJYM productions at 26. Once-in-a-generation peer group and institutional platform.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "steve-mcqueen",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Struggled with dyslexia and partial deafness from an ear infection. No early academic or artistic indicators. His charisma and physical presence emerged later; early life was marked by delinquency and street gangs.",
+    "inherited_summary": "Abandoned by father at 6 months; mother was an alcoholic. Abused by stepfather. Sent to California Junior Boys Republic reform school at 14. Extreme adversity: instability, abuse, and institutionalization.",
+    "ecosystem_summary": "GI Bill funded acting studies at Sanford Meisner's Neighborhood Playhouse starting in 1952. Accepted into the Actors Studio from 2,000 applicants (one of five). Broadway debut in 'A Hatful of Rain' at 25. Elite New York theater training despite disadvantaged start.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "bruce-mclaren",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Showed early engineering aptitude, excelled at Seddon Memorial Technical College. Began racing at 15, won first hillclimb. Technical understanding of vehicle dynamics from growing up in his father's garage. Diagnosed with Perthes disease at 9, leaving him with a limp.",
+    "inherited_summary": "Father Les McLaren was a garage proprietor and car club president who actively rebuilt racing cars. Bruce grew up in an apartment above the family garage, immersed in motorsport from birth. Direct family-domain apprenticeship.",
+    "ecosystem_summary": "Father's garage and car club provided early immersion. Won the 'Driver to Europe' scholarship in 1957, funded by businessmen passionate about motorsport. Moved to Cooper F1 team, working with Jochen Rindt and Jack Brabham. New Zealand-to-Europe racing pipeline at the right time.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ivica-osim",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "One of the best mathematics students in Sarajevo, excelling academically. Joined Željezničar youth at 13. Showed good technique and dribbling but no exceptional early indicators of world-class talent.",
+    "inherited_summary": "Working-class family in Sarajevo; father Mihail was a railway mechanic, mother Karolina a homemaker who sewed late into the night to support the family. Modest background with no football connections.",
+    "ecosystem_summary": "Željezničar youth system provided the development pathway. Yugoslavia national team selection at 23 for the 1964 Olympics. Standard Yugoslav football pipeline without elite mentors or exceptional peer group documented.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "alcides-ghiggia",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "No exceptional early ability indicators documented. Began senior career at 19 with Sud América. His talent emerged through professional play rather than youth prodigy status.",
+    "inherited_summary": "Middle-class upbringing in Montevideo (per SI), though modest. Family were passionate Peñarol supporters, providing cultural immersion in football. Not poverty, but no significant wealth or connections.",
+    "ecosystem_summary": "Uruguayan football pipeline: Sud América (lower division) to Peñarol (one of Uruguay's biggest clubs) at 21. Uruguay national team and 1950 World Cup. The Uruguayan football system was elite at the time, but no exceptional mentors or peers documented.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "mario-vargas-llosa",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began working as a journalist at 16, started writing short stories as a teenager. Won literary prizes at 21-22. Strong early literary output and drive, though not a child prodigy. Devoured Dumas and Victor Hugo as a youth.",
+    "inherited_summary": "Middle-class family; father was a radio operator, mother from an old criollo family. Parents separated before his birth; father reappeared at 10 and was authoritarian and abusive. Sent to Leoncio Prado Military Academy at 14. Mixed: supportive maternal family but hostile father.",
+    "ecosystem_summary": "National University of San Marcos provided literary and political circles. Worked as a journalist at local newspapers from 16. No elite mentors or exceptional peers documented in early years; largely self-driven literary development.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ray-charles",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Musical curiosity sparked at 3 by Wylie Pitman's boogie-woogie piano. Learned piano, saxophone, clarinet, trumpet, and organ at the Florida School for the Deaf and Blind. Exceptional multi-instrumental ability and musical memory despite blindness from age 7.",
+    "inherited_summary": "Born into extreme poverty in rural Georgia; mother was a laundress, father was mostly absent (a laborer). Lost sight by age 7, likely from glaucoma. Brother drowned at age 4. Mother died when he was 15. Severe adversity across every dimension.",
+    "ecosystem_summary": "Florida School for the Deaf and the Blind (1937-1945) provided formal musical education and Braille music training — a critical institutional resource. Wylie Pitman was an early mentor at the Red Wing Cafe. Otherwise, no elite network; rose through performing in Florida and Seattle.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "mercedes-sosa",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Won a singing competition at 15 under a pseudonym, showing natural vocal talent. No formal musical training documented; her ability was raw and innate, emerging from folk tradition rather than formal study.",
+    "inherited_summary": "Born into poverty in Tucumán; father was a day laborer/sugar factory worker, mother a washerwoman of mestizo (French, Spanish, Diaguita) descent. Father disapproved of her singing. Extreme material deprivation.",
+    "ecosystem_summary": "Local radio station LV12 competition launched her career at 15. The Argentine folk music movement (nueva canción) and her first husband Manuel Oscar Matus provided collaborative context. No elite institutional access; rose through radio and folk circuits.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ron-dennis",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Left school at 16 to become an apprentice mechanic. Showed technical aptitude and ambition but no exceptional early indicators. His ability was expressed through organizational and managerial skill rather than creative or cognitive precocity.",
+    "inherited_summary": "Working-class family in Woking, Surrey. No motorsport connections or wealth. Father's occupation not documented as notable. Entered motorsport through apprenticeship at Thomson & Taylor garage near Brooklands.",
+    "ecosystem_summary": "Cooper F1 team at 18 as mechanic, working with lead driver Jochen Rindt. Moved to Brabham with Rindt in 1968, becoming Jack Brabham's chief mechanic. British motorsport ecosystem at its peak. Direct exposure to top-tier F1 operations and legendary drivers provided rare hands-on education.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "dario-fo",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Learned storytelling from his grandfather and performance from his amateur-actor father. Improvised stories and sketches from age 14. Showed early creative drive in oral performance traditions, though not in formal academic settings.",
+    "inherited_summary": "Father was a railway station master and amateur actor in a local theater company; mother was from a peasant background with great imagination. Working-class family but rich in oral storytelling tradition. Grandfather was a local storyteller (fabulatori).",
+    "ecosystem_summary": "Family oral storytelling tradition (grandfather, local fabulatori) provided the foundational performance education. Father's amateur theater company gave early stage exposure. Milan art/architecture studies before theater. RAI radio series at 25 provided national platform.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "francoise-sagan",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Voracious reader from infancy who adored Proust, Stendhal, and Camus. Wrote 'Bonjour Tristesse' in three weeks at 18, becoming an international literary sensation. Precocious literary talent, though expelled from multiple schools for rebellious behavior.",
+    "inherited_summary": "Bourgeois family; father was a company director (electrical engineer), mother daughter of landowners. Family home in the prosperous 17th arrondissement of Paris. Private and convent schools. Financial security and cultural capital.",
+    "ecosystem_summary": "Admitted to the Sorbonne but was an indifferent student. Paris literary scene provided the context, and publisher René Julliard signed her immediately. However, no notable mentors or exceptional peer group; her breakthrough was largely self-created.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "cafu",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Rejected from nine youth squad trials before finally breaking through at São Paulo FC at 18. Showed persistence and physical attributes (speed, stamina) but was not recognized as exceptional early. His talent emerged through relentless effort.",
+    "inherited_summary": "Raised in the Jardim Irene favela of São Paulo; lived in a single-bedroom house with parents and five siblings. Extreme poverty. Father was supportive emotionally but had no financial resources or football connections.",
+    "ecosystem_summary": "São Paulo FC youth academy and coach Telê Santana were critical — Santana converted Cafu to right-back and mentored him. Brazilian football pipeline at a top club. Back-to-back Copa Libertadores (1992-93) provided the platform for international recognition.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "sandro-mazzola",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Father Valentino taught him football basics before dying in the Superga disaster when Sandro was 6. Showed 'extraordinary talent' in Inter's youth academy. Debuted at 18 and scored in his first Serie A match. Strong but not prodigy-level early.",
+    "inherited_summary": "Son of Valentino Mazzola, one of Italy's greatest footballers (Grande Torino captain). Father died when Sandro was 6, but father's Inter friends (Benito Lorenzi, Giuseppe Meazza) brought Sandro to Inter's youth academy. Family name and connections opened doors.",
+    "ecosystem_summary": "Inter youth academy under Giuseppe Meazza's guidance. Helenio Herrera as manager developed him through the Grande Inter system. Father's football friends provided the introduction. Elite Italian club pipeline with legendary coaching.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jacques-anquetil",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Received first bicycle at 4, showed exceptional natural athletic build and time-trial specialization from his first races at 17. Natural physical endowment for cycling, though not a prodigy in the traditional cognitive sense.",
+    "inherited_summary": "Modest Norman family; father was a builder who became a strawberry farmer. Mother was orphaned at 2 and raised by nuns. Father became violent after drinking. Anquetil earned money for his second bike by working the strawberry fields. No cycling background.",
+    "ecosystem_summary": "Key friendship with Maurice Dieulois at technical college — Dieulois's father was president of the local cycling club AC Sottevillais, providing entry to competitive cycling. Manager André Boucher spotted and guided him to professional racing at 19. Normandy cycling culture.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "lev-yashin",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Dual-sport athlete (football and hockey), natural goalkeeper build. Showed athletic versatility from childhood, playing football, hockey, and ski jumping. Not a prodigy but a natural athlete whose ability was recognized in the army.",
+    "inherited_summary": "Working-class Moscow family; parents were factory workers. At 12, worked in a munitions factory making bullets during WWII. Suffered a nervous breakdown at 18. Extreme wartime hardship and poverty.",
+    "ecosystem_summary": "Dynamo Moscow youth system under coach Arkady Chernyshev, who spotted him playing in the army. The Dynamo sports club was one of the Soviet Union's top institutions. Dual-sport development (also won USSR Hockey Cup). Soviet sports pipeline provided structured elite training.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "a-r-rahman",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began studying piano at 4 under his father. At 4, impressed a music director by playing a tune on a harmonium blind (with cloth covering keys). Played keyboards professionally from age 12 to support family. Keyboard prodigy with exceptional early musical ability.",
+    "inherited_summary": "Father R.K. Shekhar was a film score composer for Malayalam cinema, providing direct domain exposure and studio access from age 4. Home had six keyboards and a synthesizer. However, father died when Rahman was 9, plunging the family into financial hardship.",
+    "ecosystem_summary": "Father's studio access provided early immersion in film music production. Mother leveraged father's industry connections to get Rahman session work from age 12. Later mentored under Ilayaraja (legendary Tamil composer). Mani Ratnam spotted him for his debut film Roja. Indian film industry ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "gylmar-dos-santos-neves",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "No exceptional early ability indicators documented. Was tall and thin (nicknamed 'Girafa'), originally played as a left winger before being converted to goalkeeper. Talent emerged through club development rather than youth prodigy status.",
+    "inherited_summary": "Born in Santos, a major footballing city. Family background not well documented. Named after parents Gilberto and Maria. No evidence of significant wealth or poverty; appears to be a working-class family in a football-rich city.",
+    "ecosystem_summary": "Jabaquara youth system at 15 under coach Arnaldo de Oliveira ('Papa'), who discovered and developed talents. Moved to Corinthians at 21. Brazilian football pipeline in São Paulo state. Standard club pathway without elite mentors documented.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "nicolaas-bloembergen",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Published first physics paper at 20. Entered Utrecht University at 18 and was permitted to skip routine lab work to assist in PhD research. Strong but not prodigy-level; his preference for physics emerged only in the last years of secondary school.",
+    "inherited_summary": "Father was a chemical engineer and executive in a chemical fertilizer company. Mother held an advanced teaching degree. Maternal grandfather had a Ph.D. in mathematical physics. Educated family that encouraged intellectual pursuits. Protestant work ethic in Dutch academic culture.",
+    "ecosystem_summary": "Utrecht University under Professor L.S. Ornstein, who gave him early research opportunities. Municipal gymnasium in Utrecht (founded 1474) with rigorous curriculum. Harvard under Edward Mills Purcell in the NMR group — arrived six weeks after NMR was discovered. Dutch academic system plus Harvard frontier positioning.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "james-watson",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Entered University of Chicago at 15 through the gifted youngster program. Won $100 as a 'Quiz Kid' on radio. B.Sc. at 19, Ph.D. at 22. Precocious intellectual ability with early curiosity ('why?' was his favorite word). Read Schrödinger's 'What is Life?' as an undergraduate.",
+    "inherited_summary": "Middle-class Chicago family; father was a businessman, mother's father was a Scottish-born tailor. Received a tuition scholarship to University of Chicago. No scientific family background, but stable, supportive family that encouraged his bird-watching and intellectual interests.",
+    "ecosystem_summary": "University of Chicago gifted program at 15. Indiana University under Salvador Luria (phage research pioneer) and H.J. Muller (Nobel laureate). Cavendish Laboratory at Cambridge with Francis Crick. The phage group and Cold Spring Harbor. Once-in-a-generation scientific ecosystem at the frontier of molecular biology.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tony-scott",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "No early academic brilliance; 'barely got through' school. Interests lay in sports, painting, and drawing. Visual talent emerged through art school rather than precocious filmmaking. Not a prodigy in any domain.",
+    "inherited_summary": "Younger brother of Ridley Scott, who had already established a path into filmmaking. Father was a military colonel (Royal Engineers). Grand-uncle Dixon Scott pioneered cinema chains in Tyneside. Working-class northern family with a creative elder brother as template.",
+    "ecosystem_summary": "Followed Ridley's path through West Hartlepool College of Art, Sunderland Art School, and Royal College of Art. BFI Production Board funded his directorial debut. Albert Finney helped finance his second film. Ridley Scott Associates provided commercial production infrastructure and mentorship.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "kenzaburo-oe",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Grew up immersed in oral storytelling tradition from his grandmother. Excelled as a student in high school. Won the Akutagawa Prize at 23 while still a university student. Strong literary ability that emerged in late teens rather than childhood prodigy.",
+    "inherited_summary": "Remote village on Shikoku island; father had a bark-stripping business (for paper currency), died during WWII when Ōe was 9. Mother took over education, buying him Huckleberry Finn and Nils Holgersson. Modest rural family with deep cultural tradition but no wealth or literary connections.",
+    "ecosystem_summary": "Grandmother's oral storytelling tradition (myths, folklore, regional uprisings) provided rich narrative foundation. University of Tokyo to study French literature under Kazuo Watanabe (Rabelais specialist). Postwar Japanese literary establishment and the Akutagawa Prize platform. Elite university access despite rural origins.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "charles-aznavour",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began performing at age 9 in plays and films. Danced professionally in nightclubs from his teens. Showed early performing drive and stage comfort, though his distinctive singing voice was initially considered a limitation. Not a prodigy; 15+ years of performing before breakthrough.",
+    "inherited_summary": "Armenian immigrant parents in Paris; father was a singer/restaurant owner, mother an actress. Family ran a small Armenian restaurant that served as a hangout for artists. Poor but immersed in performance culture from birth. Parents fled the Armenian Genocide.",
+    "ecosystem_summary": "Paris cabaret scene provided early performing opportunities. Pierre Roche partnership formed a songwriting-performing duo. Edith Piaf discovered them and took them on tour to France and the USA, serving as mentor and career accelerator. Parisian music ecosystem at mid-century.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "angus-young",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began playing guitar as a young teenager, joined local bands (Kantuckee, Tantrum). Not a guitar prodigy — his older brother George was the family's first music star. Angus's ability was in performance energy and rhythm guitar, developed through relentless practice and stagecraft.",
+    "inherited_summary": "Working-class Glasgow family (father unemployed for years); emigrated to Sydney in 1963. However, three older brothers (George, Alex, Malcolm) all became professional musicians. George Young was a star with the Easybeats and provided direct industry connections through Albert Productions and the Vanda & Young production partnership.",
+    "ecosystem_summary": "Brother George's Easybeats stardom provided a direct template and industry connections. Albert Productions (via George's relationship) gave AC/DC their record deal. Co-founded AC/DC with brother Malcolm. Sydney rock scene in the 1970s. Sibling collaboration was the core catalytic relationship.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "helen-mirren",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Inspired by theater at 13 during an amateur Hamlet production. Had never acted before auditioning for the National Youth Theatre at 18, but her audition blew judges away. Natural talent that emerged in late teens rather than childhood.",
+    "inherited_summary": "Father was the GP for York Theatre Royal; mother was its wardrobe mistress. Actors regularly stayed at the family home. Russian aristocratic heritage on father's side (grandfather was a Russian count and diplomat). Deeply embedded in theater culture from childhood through family.",
+    "ecosystem_summary": "English teacher at her Catholic school encouraged her to audition for the National Youth Theatre. NYT provided the platform — her Cleopatra at the Old Vic at 20 earned her an agent and RSC invitation. Royal Shakespeare Company provided elite classical training and roles through her early twenties.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "andriy-shevchenko",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Top scorer at the Ian Rush Cup in Wales at 14, scored twice in a televised youth match at 15. Recognized early for exceptional speed and finishing. Strong youth talent but not a global prodigy; failed a dribbling test for a specialist sports school.",
+    "inherited_summary": "Born in a small village in the Ukrainian SSR; father was a military officer (Praporshchik), mother a kindergarten teacher. Modest family. Displaced temporarily after the Chernobyl disaster at age 9. No football connections or wealth.",
+    "ecosystem_summary": "Dynamo Kyiv academy from age 9-10 under coach Oleksandr Shpakov, who spotted him at a youth tournament. Legendary coach Valeriy Lobanovskyi developed him at the senior level. The Dynamo Kyiv academy was one of the Soviet/post-Soviet world's elite pipelines. Rebrov partnership at senior level.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "djalma-santos",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Dreamed of being a pilot, not a footballer. Worked as a shoemaker and sold popcorn. No early pretension toward football as a career; played in várzea (amateur) teams for fun. Talent emerged late, after a hand injury ended his aviation dream.",
+    "inherited_summary": "Poor family in São Paulo; mother was a cleaning lady, father was a soldier who abandoned the family. Mother died when Djalma was young; he lived with an aunt. Worked in a shoe factory where he lost part of his finger in a machine accident. Extreme poverty and family instability.",
+    "ecosystem_summary": "Small club Internacional in São Paulo's várzea provided entry. Portuguesa at 19 (the club allowed him to continue working as a shoemaker). Brazilian football pipeline. No elite academy or notable mentors documented; rose through lower-division clubs.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "fritz-walter",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Joined Kaiserslautern youth academy at 8, made first-team debut at 17. Scored a hat-trick on his national team debut at 19. Showed 'unnachahmliche Technik und Ballbeherrschung' (unimitable technique and ball control) from childhood. Exceptional early football ability.",
+    "inherited_summary": "Parents ran the club restaurant at 1. FC Kaiserslautern's stadium, placing Fritz literally inside the football club from birth. Modest family — the restaurant struggled economically — but the unique positioning gave him direct access to the club's youth system.",
+    "ecosystem_summary": "Grew up inside 1. FC Kaiserslautern (parents' restaurant at the stadium). Youth academy from age 8. National team coach Sepp Herberger called him up at 19 and became a lifelong mentor ('Chef'). The FCK club environment and Herberger's patronage were the key ecosystem advantages.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "zoltan-czibor",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Played youth football from 13 at Komárom AC. Was working as a train engine driver when spotted by Hungary youth coach Sándor Mezei. No exceptional early indicators; his talent was recognized relatively late through the Hungarian football system.",
+    "inherited_summary": "Working-class family; born in Kaposvár, moved to Komárom at 3 months with parents and six siblings. No football connections or wealth. Father's occupation not documented as notable.",
+    "ecosystem_summary": "Hungarian football pipeline at its golden era: Ferencváros at 19, then Honvéd (the army team) alongside Puskás, Kocsis, and Bozsik. The Golden Team (Magical Magyars) was one of the greatest national teams ever. Elite peer environment at Honvéd and the national team.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "judi-dench",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Participated in York Mystery Plays as a teenager. Initially trained as a set designer before following her brother to the Central School of Speech and Drama, where she won the Gold Medal. Natural acting talent that emerged through family immersion rather than childhood prodigy.",
+    "inherited_summary": "Father was the GP (doctor) for York Theatre Royal; mother was its wardrobe mistress. Actors frequently stayed at the Dench household. Both parents had walked amateur boards. Deeply embedded in theater culture from birth, with regular contact with working actors.",
+    "ecosystem_summary": "York Theatre Royal immersion from childhood (father as GP, mother as wardrobe mistress, actors at home). York Mystery Plays provided early stage experience. Central School of Speech and Drama provided elite training. Old Vic Company debut at 23 as Ophelia in Hamlet. Elite British theater pipeline.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "giorgetto-giugiaro",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Artistic from childhood in a family of painters. Moved to Turin at 14 to study technical drawing. His car sketches were noticed at 17 by Fiat's technical director Dante Giacosa, who recruited him. Became head of Bertone Style Center at 21. Exceptional early design talent.",
+    "inherited_summary": "Artistic family: grandfather Luigi painted church frescoes, father Mario was a painter who steered Giorgetto toward industrial design. Modest family in Garessio, Piedmont. Father had prescient vision of the automotive future but never drove a car.",
+    "ecosystem_summary": "Turin was the world capital of car design in the 1950s. Dante Giacosa (Fiat's technical director) spotted him at 17. Nuccio Bertone made him head of the Bertone Style Center at 21. The combination of Turin's design ecosystem, Fiat's recruitment, and Bertone's platform was trajectory-changing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "claude-lelouch",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started making amateur films at 7-8. Made over 100 films in the French Army film unit. Showed early and persistent creative drive in filmmaking, though not a prodigy in the traditional sense. Self-taught through obsessive cinema attendance.",
+    "inherited_summary": "Algerian Jewish father (shopkeeper) and Catholic-born mother who converted to Judaism. Family fled Paris for southern France during WWII. Mother hid him in cinemas to escape the Gestapo. Modest family; father bought him a camera after the war. Wartime refugee experience.",
+    "ecosystem_summary": "Mother's wartime strategy of hiding him in cinemas created his lifelong bond with film. Father gave him a camera. French Army film unit provided intensive production training (100+ films). However, no elite mentors or exceptional peer group; largely self-taught and self-driven.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "alfonso-de-portago",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Multi-sport natural athlete: leading amateur steeplechase rider in Europe, Olympic bobsledder (4th at 1956 Winter Olympics), pilot, polo player. Exceptional physical abilities across multiple sports, though not a cognitive prodigy. Fearless temperament.",
+    "inherited_summary": "Spanish aristocracy: 11th Marquess of Portago, godson of King Alfonso XIII. Grandfather was Minister of Public Instruction and Mayor of Madrid. Enormous inherited wealth. Mother was an Irish-American nurse; stepfather's family fortune estimated at $500 million. Wealth and status opened every door.",
+    "ecosystem_summary": "Aristocratic wealth provided access to expensive sports (steeplechase horses, bobsleigh, airplanes, Ferraris) without financial constraints. Ferrari team connection through Luigi Chinetti. High society networks across Madrid, Biarritz, and London. No formal training pipeline — access was purely financial and social.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "audrey-hepburn",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Studied ballet at the Arnhem Conservatory during WWII, performed to raise money for the Dutch resistance. Continued training under Sonia Gaskell and Marie Rambert. Natural grace and presence, though not a ballet prodigy — her acting talent was discovered by Colette.",
+    "inherited_summary": "Mother was Baroness Ella van Heemstra (Dutch nobility); father was a British-Austrian businessman who abandoned the family when Audrey was 6. Aristocratic connections but wartime devastation: starvation, family displacement, father's fascist sympathies and imprisonment. Mixed: noble lineage but severe wartime adversity.",
+    "ecosystem_summary": "Arnhem Conservatory ballet training during the war. Post-war training under Sonia Gaskell (Amsterdam) and Marie Rambert (London). West End chorus girl work. French novelist Colette spotted her and cast her in 'Gigi' on Broadway. Rambert and Colette were significant mentors; London and Paris theater ecosystems.",
+    "scoring_confidence": "High"
+  }
+]

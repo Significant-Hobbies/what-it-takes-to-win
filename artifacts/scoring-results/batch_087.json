@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "shantanu-bala",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Took online community college classes from age 10 via mother's employment access, skipped a grade, attended IB program. Cold-emailed CUbiC lab director in high school to begin research. Flinn Scholar at ASU. Above-average curiosity and drive from young age.",
+    "inherited_summary": "Indian immigrant family in Phoenix. Father is an engineer (Emerson/Honeywell). Mother worked for Maricopa Community College system, enabling early online class access. Sister was also a Flinn Scholar. Stable middle-class immigrant family with educational access.",
+    "ecosystem_summary": "ASU's CUbiC research lab access from high school, Flinn Scholarship network with study abroad. Thiel Fellowship providing SF ecosystem access. Phoenix is not a frontier hub but CUbiC was a strong lab environment.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "benjamin-englard",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Completed one year of CS at University of Michigan, self-taught in neural networks and built ML libraries. Above-average ability with interest in NLP and computer vision, but limited evidence of prodigy-level early achievement.",
+    "inherited_summary": "From Miami, FL. Limited public information about family background or parental professions. No evidence of significant inherited wealth or domain connections.",
+    "ecosystem_summary": "University of Michigan CS program, Thiel Fellowship with SF ecosystem access, YC support. Moved to SF as part of Thiel Fellowship, providing mentorship and peer network.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "adithya-ganesh",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "USA Mathematical Olympiad (USAMO) qualifier. Co-authored a book on algebra for math competitions with Dr. Titu Andreescu. Co-invented IntentSense bionic glove at 17. Stanford CS and Math student. Significant early achievement in math and engineering.",
+    "inherited_summary": "From Plano, Texas. Attended Stanford Online High School, suggesting family had means for private online education. Limited evidence of direct domain inheritance or significant wealth.",
+    "ecosystem_summary": "Stanford University, mentorship from renowned math olympiad coach Dr. Titu Andreescu. Thiel Fellowship with Bay Area ecosystem. Co-founded GlucoIQ with Kaushik Tiwari during fellowship.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "grace-gee",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Harvard applied math graduate pursuing joint bachelors and masters in CS. Published research in Harvard journal Technology Science. Applied for Intel STS. Above-average academic ability but limited evidence of prodigy-level early achievement.",
+    "inherited_summary": "From Port Lavaca, TX, a small town. Limited evidence of family wealth, domain connections, or professional networks. No notable family advantages identified.",
+    "ecosystem_summary": "Harvard University ecosystem, YC Fellowship, Thiel Fellowship network. Published research through Harvard. Connected with mentors through Thiel application process.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ishaan-gulrajani",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Built Cramberry.net (online flashcard app) in high school in 2009. Won Apple Design Award at WWDC 2013 for Mosaic.io, built at PennApps hackathon. Admitted to MIT. YC-backed. Early builder with significant hackathon and product achievements as a teenager.",
+    "inherited_summary": "From Downingtown, PA (Philadelphia suburb). Limited evidence of family wealth, domain connections, or professional networks. No notable family advantages identified.",
+    "ecosystem_summary": "MIT (briefly), active hackathon circuit (PennApps, MHacks), YC backing, Thiel Fellowship with SF ecosystem. Co-founded Watchsend with partner. Strong peer environment in hackathon community.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "thomas-hunt",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started cancer research at SENS Research Foundation at age 13 (youngest volunteer). Homeschooled and designed own curriculum. Youngest 20Under20 Thiel finalist at 15. Aubrey de Grey called him 'a great prodigy.' Conducted real cancer research on ALT pathway.",
+    "inherited_summary": "From Saratoga, CA (affluent Silicon Valley suburb). Mother was initially skeptical but supportive of his unconventional path. Stable middle-class family in tech-adjacent geography. No evidence of significant wealth or domain inheritance.",
+    "ecosystem_summary": "SENS Research Foundation in Mountain View as lab access from age 13. BioCurious DIY bio community. Aubrey de Grey as dedicated mentor. Silicon Valley location. Thiel Fellowship network.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "rebecca-jolitz",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Earned UC Berkeley degrees in physics and math by age 19. Had dedicated astrophysicist mentor (Dr. Yvonne Pendleton) from 4th grade. Presented at Mars Society Conference in high school. Exceptional early academic achievement in STEM.",
+    "inherited_summary": "Both parents (William and Lynne Jolitz) are OS pioneers who created 386BSD. Father worked at NASA-Ames. Family deeply embedded in tech and aerospace — space exploration described as 'a family tradition.' Direct access to NASA-Ames and Berkeley SSL research labs through family.",
+    "ecosystem_summary": "NASA-Ames Research Center access from young age. Berkeley SSL. Mentor Dr. Yvonne Pendleton from 4th grade. Met Elon Musk at Mars Society Conference. Family connections to SpaceX and aerospace industry. Thiel Fellowship. Once-in-a-generation family ecosystem in OS and aerospace.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "alex-koren",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Attended Johns Hopkins, won hackathon at Intel as intern, class president. Co-founded Hyv with Sheldon Trotman. Above-average ability but limited evidence of exceptional early achievement or prodigy-level talent.",
+    "inherited_summary": "From Englewood Cliffs, NJ. Father is a former Israeli soldier. Limited evidence of family wealth, domain connections, or professional networks in technology.",
+    "ecosystem_summary": "Johns Hopkins University, Intel internship with hackathon win, Thiel Fellowship with SF ecosystem. Co-founder Sheldon Trotman at MIT. Catalyst program at JHU for entrepreneurship.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "conrad-kramer",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started iOS development at age 13, publishing first app in 2009. Was Airbnb's youngest employee. Admitted to MIT (deferred). Co-founded Workflow, which won Apple's Most Innovative App of 2015 and was acquired by Apple. Founded Kramer Software Productions at a young age.",
+    "inherited_summary": "From Cherry Hill, NJ. Graduated from Cherry Hill High School East (public school). Limited evidence of family wealth, domain connections, or professional networks.",
+    "ecosystem_summary": "Active hackathon circuit (PennApps, MHacks, hackNY). Airbnb employment. MIT admission (deferred for Thiel). Thiel Fellowship with SF ecosystem. Exceptional co-founder dynamic with Ari Weinstein.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "eliana-lorch",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Thiel Fellow pursuing deep learning research and software engineering. Later Research Scholar at Oxford's Future of Humanity Institute working on AI safety and applied category theory. Co-authored research at ICLR, NeurIPS, ICML. Above-average but limited evidence of early prodigy-level achievement.",
+    "inherited_summary": "Briefly part of Minerva's founding class. Limited public information about family background, parental professions, or inherited wealth. No notable family advantages identified.",
+    "ecosystem_summary": "Minerva (briefly), Thiel Fellowship, Oxford's Future of Humanity Institute. Early-stage startup experience. Access to AI safety research community and frontier ML conferences.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "fouad-matin",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Studied sophomore and junior-level CS at George Mason University while in high school. Co-founded StrongIntro (YC W16), VotePlz, and Indent. Worked at Segment and ClassDojo. Above-average ability with early university coursework.",
+    "inherited_summary": "Parents immigrated from Morocco. Limited evidence of family wealth, domain connections, or professional networks. Immigrant family with high expectations but no significant inherited leverage.",
+    "ecosystem_summary": "George Mason University (early access), Thiel Fellowship, YC W16, SF ecosystem. Worked at Segment and ClassDojo. Co-founded VotePlz with Ari Weinstein and Sam Altman. Active GitHub presence from 2011.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "mc-mcgrath",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Studied civic technology at Boston University, did research at MIT Media Lab. Founded Transparency Toolkit for investigative journalism. Echoing Green Fellow. Above-average ability with domain expertise in transparency/FOIA, but limited evidence of prodigy-level achievement.",
+    "inherited_summary": "From Danvers, MA. Limited public information about family background or parental professions. No evidence of significant inherited wealth or domain connections.",
+    "ecosystem_summary": "Boston University, MIT Media Lab research, Thiel Fellowship, Echoing Green Fellowship. Open-source and transparency community. Presented at Chaos Communication Congress.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "adam-munich",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Built a portable, battery-powered 75,000-volt X-ray machine from scratch in high school at 18, recognized by Popular Science. Founded The Construct hackerspace at RIT. Self-taught in high-voltage electronics and X-ray technology. Exceptional hands-on building ability.",
+    "inherited_summary": "Limited public information about family background or parental professions. No evidence of significant inherited wealth or domain connections. Appears largely self-driven.",
+    "ecosystem_summary": "RIT with The Construct hackerspace (co-founded). Hackaday community. Thiel Fellowship. Moved to Berkeley for Aperture Systems. Largely self-taught with online community support rather than elite institutional access.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "catherine-ray",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started attending university at 13. Graduated from George Mason University at 16 with BS in Computational Physics. Thiel Fellow studying mathematics under Edward Frenkel. Master's from UChicago with Peter May and Kazuya Kato, PhD from Northwestern with Paul Goerss. Prodigy-level early academic achievement.",
+    "inherited_summary": "Limited public information about family background or parental professions. Started university at 13, suggesting early academic acceleration but no evidence of family wealth or domain connections.",
+    "ecosystem_summary": "George Mason University (early university access), Thiel Fellowship, mentor Edward Frenkel (UC Berkeley mathematician). UChicago and Northwestern for graduate work. Max Planck Institute and Santa Fe Institute research. Strong mentorship chain.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jarred-sumner",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught developer who spent nearly all time on computers growing up. Learned Ruby on Rails as teenager. Joined Lockitron at 16 as first employee. Created Selfstarter (2,800+ GitHub stars). Later built Bun (85,000+ GitHub stars). Exceptional early coding drive and output.",
+    "inherited_summary": "Grew up in San Francisco Bay Area. Parents were supportive but concerned about dropping out of high school. Not wealthy — parents asked about college for years afterward. Bay Area geography provided early exposure to tech culture.",
+    "ecosystem_summary": "Bay Area (frontier geography), Lockitron startup as first employee at 16, Thiel Fellowship, later Stripe. Selfstarter open-source project used by startups to raise $10M+. Direct immersion in Silicon Valley startup ecosystem from teenage years.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "martin-stoyanov",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started coding at 11, building websites and apps in Bulgaria. Two apps reached 100k users. Co-founded Emailio at 16. Youngest YC founder at the time (W14). Significant early coding and product achievement despite limited resources.",
+    "inherited_summary": "From Bulgaria (developing country with limited tech infrastructure and resources). Attended a vocational construction high school in Shumen. Active disadvantage of growing up in a challenging economic environment with limited access to technology ecosystem.",
+    "ecosystem_summary": "YC W14 (youngest founder at the time), Thiel Fellowship, SF ecosystem. Dan Ariely as founding member. Paul Graham and Sam Altman mentorship at YC. Moved from Bulgaria to SF, a significant geographic leap.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kaushik-tiwari",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Full scholarship to Columbia University for Operations Research and CS. Co-founded GlucoIQ with Adithya Ganesh. YC W22 founder. Above-average ability but limited evidence of prodigy-level early achievement.",
+    "inherited_summary": "Immigrated from India with financial constraints. Full scholarship to Columbia suggests financial need. Immigrant adversity and financial constraint catalyzed his drive. No evidence of family wealth or domain connections.",
+    "ecosystem_summary": "Columbia University (full scholarship), Thiel Fellowship, YC W22. Co-founded with Adithya Ganesh during fellowship. Columbia and Thiel network provided mentorship and ecosystem access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ari-weinstein",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Disassembled computer at 6. Taught himself programming at 11. Jailbroke iPhones at 14, creating iJailbreak. Member of Chronic Dev Team. Built DeskConnect (Mac App Store #1) and Workflow (Apple's Most Innovative App 2015, acquired by Apple). Coding prodigy with deep iOS expertise from young age.",
+    "inherited_summary": "Father Ken Weinstein is a real estate developer (Philly Office Retail). Mother Judy is a social worker. Upper-middle class family in Mount Airy, Philadelphia. Attended Germantown Friends School (private). Stable, supportive family with means.",
+    "ecosystem_summary": "Germantown Friends School (private). Hackathon community (LinkedIn hackathon). MIT (briefly). Thiel Fellowship with SF ecosystem. Exceptional co-founder dynamic with Conrad Kramer. Working at WiFi startup in California before MIT.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "caroline-beckman",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Founding member and VP of Special Projects at Suja Juice, gaining deep domain exposure in health food/beverage. Co-founded Nomva. Above-average business acumen and domain expertise but not prodigy-level technical ability.",
+    "inherited_summary": "Co-founded Nomva with Nina Church, daughter of Suja CEO Jeff Church. Leveraged inherited network of Suja investors and industry connections. Seed investors included Suja CEO Jeff Church and Zico founders Mark and Maura Rampolla. Significant inherited industry network.",
+    "ecosystem_summary": "Suja Juice (fast-growing company providing deep domain experience). Thiel Fellowship. Health food industry connections through Suja network. Taylor Farms partnership for distribution and logistics.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "cathy-tie",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Published first research paper at 16. Cold-emailed university professors to gain lab access starting at 14. Worked in research labs since 14. Co-founded Ranomics at 18. Youngest partner at Cervin Ventures. Significant early research achievement and initiative.",
+    "inherited_summary": "Family moved from China to Canada at age 4. Father has master's in chemical engineering. Parents are entrepreneurs in grocery supply business. Immigrant family with entrepreneurial background but not wealthy. Father's chemistry background provided some domain exposure.",
+    "ecosystem_summary": "University of Toronto lab access (cold-emailed professors). IndieBio accelerator ($100K funding and lab space). Thiel Fellowship with SF ecosystem. Mount Sinai Hospital (Roth Lab). Cold Spring Harbor Laboratory association board.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "george-matus",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Flew first drone at 11, became test pilot at 12 (selected from 2,000 applicants). Built and tested drones every weekend. Won global drone competition at 16 out of 270 pilots. Founded Teal Drones at 17, raised $2.8M seed. Exceptional early domain expertise and hands-on achievement.",
+    "inherited_summary": "Family from humble Slovakia. Mother was a flight attendant. 'More money than my family and I had.' Dad drove him to investor meetings because he didn't have a license. Humble background with no significant inherited wealth or domain connections.",
+    "ecosystem_summary": "Attended The Waterford School (private school in Utah). Selected as test pilot from 2,000 applicants. Thiel Fellowship. Stanford competition connection led to Thiel discovery. VC Mark Harris on board helped with fundraising. Utah (not a frontier hub but strong drone racing community).",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "harry-gandhi",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "University of Waterloo student studying biotechnology and economics. Co-founded Medella Health with two university friends. Above-average ability with personal experience with diabetes, but limited evidence of prodigy-level early achievement.",
+    "inherited_summary": "Limited public information about family background or parental professions. No evidence of significant inherited wealth or domain connections.",
+    "ecosystem_summary": "University of Waterloo (strong Canadian STEM school with co-op program and Velocity startup program). Thiel Fellowship with mentorship network. Co-founders with complementary skills (nanotechnology engineering, science). Kitchener-Waterloo tech hub.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "jason-marmon",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Dropped out of high school at 17 to build HomeSwipe. Met co-founders through Facebook group for young coders. Above-average entrepreneurial drive but limited evidence of prodigy-level technical ability.",
+    "inherited_summary": "From Armonk, NY (affluent NYC suburb). Parents were initially reluctant but supportive of dropping out. Middle-class to upper-middle-class family background with access to technology.",
+    "ecosystem_summary": "NYC ecosystem. Co-founders Michael Lisovetsky (tech career from middle school, Draper University) and Dean Soukeras (experienced real estate entrepreneur). Tim Draper and Marc Benioff as initial investors. Thiel Fellowship with SF ecosystem access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jeremy-cai",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Thiel Fellow and youngest founder in YC S15. Founded Fountain (HR tech) and later Italic (luxury goods marketplace). Above-average entrepreneurial ability but not prodigy-level technical achievement.",
+    "inherited_summary": "Parents are both Chinese immigrants who started a manufacturing business decades ago, supplying industrial parts to Nissan, BMW, and Tesla. Direct family domain inheritance in manufacturing — Italic's business model is built on family manufacturing connections. Visited 200+ factories in Italy and China through family connections.",
+    "ecosystem_summary": "Thiel Fellowship, YC S15 (youngest founder), SF ecosystem. Family manufacturing network provided direct access to factories and supply chain knowledge. Split time between LA and Shenzhen. Immigrant family drive.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jihad-kawas",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught coding starting at 13-14. TEDx speaker at 14. Built websites for small businesses. Co-founded Saily (second-hand marketplace). First Thiel Fellow from MENA region. Significant early self-taught achievement and public speaking.",
+    "inherited_summary": "From Lebanon (challenging economic and political environment). Parents were exceptionally supportive — 'my best investors.' Father taught leadership by insisting on decisions. Humble background with no significant inherited wealth but strong parental support.",
+    "ecosystem_summary": "Lebanon (challenging environment, adversity). Attended Apple WWDC as teenager. Thiel Fellowship with SF ecosystem. Co-founder Dani Arnaout ('best coder he ever met'). First Thiel Fellow from MENA region. Moved to SF.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "john-backus",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Stanford CS student. Founded Stanford Bitcoin Group. Built BlockScore (identity verification for Bitcoin companies). Later founded Cognito (sold to Plaid for ~$250M) and Bloom. Above-average ability but limited evidence of prodigy-level early achievement.",
+    "inherited_summary": "From Great Falls, VA. Father appears accomplished (described as 'a titan' in family memorial post). Limited evidence of direct domain inheritance but stable upper-middle-class background.",
+    "ecosystem_summary": "Stanford University (met co-founder Alan Meier through Stanford Bitcoin Group). Thiel Fellowship. YC access. Stanford robotics club. Silicon Valley ecosystem at the dawn of crypto.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "john-meyer",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Taught himself Objective C in 2008 as high school freshman via YouTube. Built ~40 apps through TapMedia including world's first iPhone flashlight app. Self-sufficient since high school through app earnings. Turned down Apple internship. Forbes 30 Under 30. Early App Store prodigy.",
+    "inherited_summary": "Mother was a professor at NYU. Father helped him sneak into Apple's WWDC at 16 by registering himself and handing the pass to his son. Middle-class family with academic parent. Supportive but initially unhappy about dropping out.",
+    "ecosystem_summary": "Early App Store ecosystem (one of first 1,000 mobile app developers). NYU Polytechnic (briefly, mother was professor there). Thiel Fellowship. NYC ecosystem. Attended Apple WWDC from age 16. Forbes 30 Under 30.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kieran-oreilly",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Harvard admission. Co-founded gifs.com with brother Rory (17M monthly users, 4M+ GIFs created, 1B+ views). Above-average ability but limited evidence of prodigy-level early technical achievement.",
+    "inherited_summary": "Parents marked both sons' Harvard acceptance with custom license plates ('2 N HRVD' and 'HARVRD 2'). Middle-class family. Bank account was 'always negative $6' when they moved to SF. Supportive parents who sent food.",
+    "ecosystem_summary": "Harvard University. Sibling co-founder dynamic with brother Rory (did everything together from lemonade stands to FBLA to Harvard to startup). Thiel Fellowship with SF ecosystem. Rough Draft Ventures ($25K). Moved to SF together.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "rory-oreilly",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Harvard admission. Co-founded gifs.com with brother Kieran (17M monthly users). Competed together in FBLA and Model UN. Above-average ability but limited evidence of prodigy-level early technical achievement.",
+    "inherited_summary": "Parents marked both sons' Harvard acceptance with custom license plates. Middle-class family. Bank account was 'always negative $6' when they moved to SF. Supportive parents who sent food.",
+    "ecosystem_summary": "Harvard University. Sibling co-founder dynamic with brother Kieran. Thiel Fellowship with SF ecosystem. Rough Draft Ventures ($25K). Moved to SF together. Strong co-founder partnership.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "liam-horne",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "University of Waterloo CS, named Co-op Student of the Year for Mathematics. Organized Hack the North (Canada's largest hackathon). Co-founded PiinPoint (YC W14). Later co-founded Optimism (Ethereum Layer 2). Above-average ability with strong leadership.",
+    "inherited_summary": "English-born, Canadian-raised. Limited public information about family background or parental professions. No evidence of significant inherited wealth or domain connections.",
+    "ecosystem_summary": "University of Waterloo (strong CS/co-op program, named Co-op Student of the Year). YC W14 with PiinPoint. Thiel Fellowship. Organized Hack the North (Canada's largest hackathon). Later deep Ethereum expertise leading to Optimism.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "max-lock",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Serial entrepreneur from age 14. Built Schoolboy Ice Cream (sold at 39 Whole Foods stores). Founded Intergreen Distributors importing containers from China. Founded Fleet (logistics). Self-taught with exceptional entrepreneurial drive and domain expertise from direct experience.",
+    "inherited_summary": "Parents thought he was crazy but signed off on his working papers at 14. Limited evidence of family wealth or domain connections. Appears largely self-made from a young age.",
+    "ecosystem_summary": "TechCrunch Disrupt (runner-up). Thiel Fellowship. Portland (not a frontier tech hub). Hired former computer programming teachers. Largely self-built ecosystem through direct business experience rather than elite institutions.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ocean-pleasant",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Founded REAL Magazine at 17, reaching millions. Forbes 30 Under 30. Documented children's voices in slums at 14. Above-average creative and social impact ability but not technical prodigy.",
+    "inherited_summary": "Raised by a single mother who was a conflict journalist. Lived in roughly 8 different countries. Lived in a slum outside New Delhi. Active disadvantage of unstable, single-parent upbringing with financial challenges.",
+    "ecosystem_summary": "Extraordinary early global exposure across multiple countries and cultures. Thiel Fellowship. Forbes 30 Under 30. Origin Magazine as Creative Director. However, lacked stable institutional or mentorship ecosystem during formative years.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "olenka-polak",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Harvard economics student. Won Harvard Innovation Challenge ($10K). Co-founded myLingo. Above-average ability with personal domain experience (language barrier) but limited evidence of prodigy-level achievement.",
+    "inherited_summary": "Grew up in Greenwich/Riverside, CT (affluent area). Parents were Polish immigrants who spoke little English. First in family born in the US. Sibling co-founder Adam (Johns Hopkins grad). Immigrant family in affluent area.",
+    "ecosystem_summary": "Harvard University with Harvard Innovation Lab incubation. Won Harvard Innovation Challenge. Thiel Fellowship. Sibling co-founder dynamic with brother Adam. Direct personal domain experience (family language barrier) drove startup idea.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "patrick-coughran",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Tufts University CS. Won MIT $100K Pitch Contest. Co-founded Foxtrot Systems (acquired by Descartes). Managing Director of Tufts Venture Fund. Above-average ability but limited evidence of prodigy-level early achievement.",
+    "inherited_summary": "From Monterrey, Mexico. Limited public information about family background or parental professions. No evidence of significant inherited wealth or domain connections.",
+    "ecosystem_summary": "Tufts University (selective). MIT $100K Pitch Contest winner. Sibling co-founder dynamic with brother Douglas (MIT engineering, CEO). Thiel Fellowship with SF ecosystem. Foxtrot grew from dorm room to Fortune 500 customers in 19 countries.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "stacey-ferreira",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Co-founded MySocialCloud in high school with brother Scott. Sold to Reputation.com. Co-authored '2 Billion Under 20.' Co-founded Forge (acquired by WorkJam). Forbes 30 Under 30. Above-average entrepreneurial ability with remarkable investor outreach skills.",
+    "inherited_summary": "Both parents worked at IBM (father VP of Sales, mother in accounting). Upper-middle-class family in Scottsdale, AZ. Attended private selective high school. Corporate exposure and stability from IBM parents. Borrowed $4,000 from parents for Branson event.",
+    "ecosystem_summary": "Sibling co-founder dynamic with brother Scott. Remarkably leveraged Twitter to get Richard Branson and Jerry Murdock to invest ~$1M. Thiel Fellowship with SF ecosystem. Co-founded Forge with Talulah Riley. Cover of Seventeen Magazine.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "zach-latta",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Took apart computer at 7. Self-taught coding. Built online video game with 10K users at 12. Designed #1 App Store app at 15 with 1M+ downloads. Tested out of high school at 15. Joined Yo as first engineer at 16. Founded Hack Club at 17. Coding prodigy with exceptional early output.",
+    "inherited_summary": "Both parents were social workers (mother in foster care, father in homelessness). Public schools with no coding classes. No domain overlap or family wealth. Working-class background with no inherited advantages.",
+    "ecosystem_summary": "Moved alone to SF at 15 with $10K savings from coding competition. Lived in hacker house with 12 others. Joined Yo as first engineer at 16. Thiel Fellowship. Founded Hack Club (global network of student coding clubs, 1% of US high schools). Frontier geography at perfect time.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "zoli-kahan",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Into computers by 10, installed Ubuntu at 11, built computers at 14, found XSS exploits for Google at 15 (Google Security Hall of Fame). Internships at Indeed and Balderdash by 16. Co-founded Clay.io as CTO. Self-taught security researcher and developer from young age.",
+    "inherited_summary": "From Austin, TX. Parents let him drop out of high school once he got a job offer matching top CS graduate salaries. Limited evidence of family wealth or domain connections. Supportive but pragmatic parents.",
+    "ecosystem_summary": "Dropped out of high school and moved to SF. Stayed at The Negev hacker house (60+ people). Thiel Fellowship. Internships at Indeed and Balderdash (Sails.js). Co-founded Clay.io after meeting founder at lunch. SF startup ecosystem immersion.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "aditya-agarwalla",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Princeton CS student. Co-founded Kisan Network with father. Above-average academic ability but limited evidence of prodigy-level early achievement. Startup idea emerged from dinner conversations with father.",
+    "inherited_summary": "Father Sanjay Agarwalla is a three-decade entrepreneur who founded Integrated Digital Systems (IDS) in 1992, specializing in geo-spatial analytics. Co-founded Kisan Network directly with father, leveraging Sanjay's decades of entrepreneurship and agricultural technology expertise. Trajectory-changing family domain inheritance.",
+    "ecosystem_summary": "Princeton University (dropped out junior year). YC backing. Thiel Fellowship. Father's entrepreneurial network in India. Kisan Network grew from 10 to 30+ staff with $3M funding. Direct access to Indian agricultural market through father's connections.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "alex-rodrigues",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started building robots at 11. Won world robotics championship in middle school (2009). Founded own FIRST robotics team. Built Canada's first self-driving vehicle (golf cart) at University of Waterloo. Co-founded Embark Trucks (went public via SPAC). Exceptional early robotics achievement.",
+    "inherited_summary": "Parents provided ~$10K financial assistance and garage workspace. Godfather arranged $30K GPS system loan. Humble background in Calgary. Parents' garage served as workshop. No significant inherited wealth or domain connections.",
+    "ecosystem_summary": "University of Waterloo (strong mechatronics program, Velocity startup program). YC acceptance. Thiel Fellowship. Co-founders Brandon Moak and Michael Skupien. Youth robotics community (FIRST). SF ecosystem. Perfect timing for autonomous vehicles.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "anthony-zhang",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Founded EnvoyNow at 18 as USC freshman, directly solving a problem he experienced. Built to 22 markets with 1,500+ employees. Above-average entrepreneurial ability but limited evidence of prodigy-level early achievement.",
+    "inherited_summary": "From Irvine, CA (Calgary, Alberta per Thiel listing). Limited public information about family background or parental professions. No evidence of significant inherited wealth or domain connections.",
+    "ecosystem_summary": "USC (entrepreneurship classes with Mike Lee). Mark Burnett's $100K offer on stage. 500 Startups accelerator in Mountain View. Thiel Fellowship. Raised $500K. Later suffered spinal cord injury leaving him quadriplegic — significant adversity.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "brian-truong",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Harvard graduate in Human Evolutionary Biology and Computer Science. Co-founded HelloToken (ad-tech, 25M distribution) and Yada (consumer social, acquired). Now Partner at Graph Ventures. Above-average ability with broad interests.",
+    "inherited_summary": "Vietnamese-American. Limited public information about family background or parental professions. No evidence of significant inherited wealth or domain connections.",
+    "ecosystem_summary": "Harvard University with Harvard Innovation Lab. Thiel Fellowship. Additional graduate coursework at Harvard Business School, Kennedy School, and GSE. President of Harvard Biotechnology Association. Co-founder with complementary skills.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "christian-owens",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-taught coder at 13 via YouTube and 800-page book. Built Mac Bundle Box at 14, earning ~$1M by 16. Founded Branchr (pay-per-click advertising, 300M+ ads/month). Co-founded Paddle at 18 (unicorn valued at $1.4B). No formal education beyond GCSEs. Exceptional early entrepreneurial and coding achievement.",
+    "inherited_summary": "From Corby, Northamptonshire (working-class Midlands town). Dad worked at British American Tobacco factory. Mum was a secretary. 'Didn't do great in school.' Parents 'begrudgingly' let him drop out at 16. Active disadvantage of working-class background with no domain connections.",
+    "ecosystem_summary": "Thiel Fellowship (provided much-needed community). Moved from Corby to London to build Paddle. First investor was Mark Pearson (Myvouchercodes.co.uk founder). Met co-founder Harrison Rose online, worked from parents' homes for two years before meeting. Limited early ecosystem access.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "cosmo-scharf",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Obsessed with technology and video games from childhood. Discovered YouTube in 2007, pursued filmmaking. Studied film production and entrepreneurship at USC. Co-founded VRLA (world's largest VR expo, 7,000+ attendees) and Mindshow. Above-average creative ability but not technical prodigy.",
+    "inherited_summary": "Grew up in New York City. Parents Susan Kramer and Bernard Scharf — thanked them for 'giving me space to be creative and not disowning me for dropping out of USC.' Middle-class family with supportive parents.",
+    "ecosystem_summary": "USC (film production and entrepreneurship). VRLA community (scaled from 150 to 7,000+ attendees). Thiel Fellowship (later left over Peter Thiel's Trump support). LA VR ecosystem. Co-founder dynamic. Right timing for VR wave (2014-2016).",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "eva-shang",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Harvard student. Former criminal investigator at Public Defender Service in DC. Co-founded Legalist at 20 with Christian Haigh. Built to $1.5B in AUM. Founded Harvard Organization for Prison Education and Reform. Above-average ability with strong social mission.",
+    "inherited_summary": "Emigrated from China to US at age 3. Mother supported family as actuary. Single-parent household. Grew up in Philadelphia suburb. Co-authored middle-grade novel with disabled younger sister Melissa. No significant inherited wealth or domain connections.",
+    "ecosystem_summary": "Harvard University. YC (S16). Thiel Fellowship. Co-founder Christian Haigh. YC partner Jon Levy tipped them off to litigation finance. SF ecosystem. Public Defender Service experience provided domain expertise.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "grace-xiao",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Harvard student in neurobiology and economics. Co-founded Kynplex with Raul Jordan. Governor General's Academic Medal in high school. Above-average academic ability but limited evidence of prodigy-level early achievement.",
+    "inherited_summary": "Born to Chinese immigrants in Vancouver, Canada. Graduated from Burnaby North Secondary. Won Governor General's Academic Medal. Limited evidence of family wealth or domain connections. Immigrant family with academic expectations.",
+    "ecosystem_summary": "Harvard University with Harvard Innovation Lab. .406 Ventures Student Fellows program. Paul Bottino's entrepreneurship course. Thiel Fellowship with SF ecosystem. Co-founder Raul Jordan. Co-executives in Harvard biotechnology association.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "raul-jordan",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Harvard student in biomedical engineering and CS. Only third person from Honduras to attend Harvard. Co-founded Kynplex. Later Ethereum core developer and co-founded Prysmatic Labs (acquired by Offchain Labs). Above-average ability with remarkable trajectory.",
+    "inherited_summary": "Born and raised in San Pedro Sula, Honduras. Came to US for university. Didn't initially have a programmer's laptop. Active disadvantage of growing up in one of the world's most violent cities with limited resources.",
+    "ecosystem_summary": "Harvard University (only third person from Honduras to attend). Thiel Fellowship. Co-founder Grace Xiao. Later discovered Ethereum ('like taking a time machine to the year 3000'). Assembled team of engineers online for Prysmatic Labs. Harvard to Ethereum core development pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "henry-hu",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Studied technology, entrepreneurship, and design at Babson College. Built Cafe X (robotic coffee bars) after getting idea at Singapore Airport. Above-average entrepreneurial ability but not prodigy-level technical achievement — self-described as neither coffee connoisseur nor experienced roboticist.",
+    "inherited_summary": "Grew up in Hong Kong. Sold his car and got funding from a friend's family to start Cafe X. Found Hong Kong-based programmers online. Middle-class background with some family/friend financial support.",
+    "ecosystem_summary": "Babson College (top entrepreneurship school). Thiel Fellowship with SF ecosystem. Built prototype in San Mateo garage. Raised $12M+ from Khosla Ventures, Social Capital, Felicis Ventures, Jason Calacanis. Ammunition design firm partnership.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "hunter-rosenblume",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Georgia Tech CS student who paid way through college with hacking competition prize money. Co-directed Georgia Tech's pre-accelerator Startup Semester. Obsessed with cell phones from early age. Co-founded Lunar Wireless. Above-average ability.",
+    "inherited_summary": "From New York. Phone-themed bar mitzvah suggests middle-class family. Limited evidence of significant family wealth or domain connections. Paid own way through college via hacking competitions.",
+    "ecosystem_summary": "Georgia Tech (CS program). Brookhaven National Lab (supercomputer queuing systems). Detroit Venture Partners. Georgia Tech Startup Exchange (director). HackGT organizer ($300K+ raised, 600+ hackers). Thiel Fellowship. Detroit (unconventional location choice).",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "rohith-varanasi",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Built voice-over software during free time in high school. Met Hunter Rosenblume through hacking competitions and started beating him. Dropped out of high school to co-found Lunar Wireless. Above-average self-taught ability.",
+    "inherited_summary": "Born in India. Immigrant background. Dropped out of high school in New Jersey. Limited evidence of family wealth or domain connections. Immigrant family with limited resources.",
+    "ecosystem_summary": "Met co-founder Hunter Rosenblume through mutual friends and hacking competitions. Moved into Hunter's dorm room at Georgia Tech. Thiel Fellowship. Detroit (unconventional location). Co-founder dynamic with complementary skills.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "ivonna-dumanyan",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Duke University mechanical engineering student and NCAA Division I crew athlete. Co-founded Fathom AI with Gabrielle Levac after both experienced sports injuries. Above-average ability but not prodigy-level early achievement.",
+    "inherited_summary": "Born in Ukraine, immigrated to US at age 5. Grew up in Vineland, NJ (academically challenged school district). Envisioned starting at community college or pursuing athletic scholarship. Active disadvantage of immigrant family in under-resourced school district.",
+    "ecosystem_summary": "Duke University (mechanical engineering, NCAA crew). Duke Innovation Co-Lab. Duke Smart Home Program fellowship. Google for Startups Blackbox accelerator. Thiel Fellowship. ACC Inventure Prize winner. Co-founder Gabrielle Levac (statistics, track athlete).",
+    "scoring_confidence": "Medium"
+  }
+]

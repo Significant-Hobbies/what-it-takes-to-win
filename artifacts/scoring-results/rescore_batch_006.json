@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "vasily-alekseyev",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Extraordinary physical strength developed from childhood labor — already 1.8m and 90kg at 18, felling trees at 12 and wrestling woodsmen at 14. His exceptional concentration intensity (training three hours without leaving the barbell) was noted as unusual even among elite lifters.",
+    "inherited_summary": "Son of a lumberjack in rural Ryazan Oblast; no family financial platform, athletic lineage, or inherited networks documented. Working-class rural background with no material advantages.",
+    "ecosystem_summary": "Progressed through the Soviet state sports system, training under Rudolf Plyukfelder from 1966 at Shakhty — an elite institutional pipeline that concentrated world-class coaching and competition access in the world's dominant weightlifting nation.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "joe-simpson",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "No evidence of unusual innate aptitude beyond above-average athletic ability; began climbing at 14 and progressed through sustained practice rather than prodigy-level talent. His endurance and mental resilience were notable but developed rather than innate.",
+    "inherited_summary": "Born to a Scottish British Army officer father and Irish mother; attended Ampleforth College, a prestigious boarding school in Yorkshire. Upper-middle-class family with international postings providing a cosmopolitan upbringing and access to elite education.",
+    "ecosystem_summary": "A teacher at Ampleforth College introduced him to climbing at 14, and he was inspired by The White Spider. The British mountaineering tradition and his high-trust climbing partnership with Simon Yates were key enablers, though no elite institutional pipeline or notable mentor beyond the school introduction.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ai-weiwei",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "No evidence of childhood prodigy or unusual innate aptitude; his artistic sensibility was shaped by constraint and political consciousness rather than demonstrated early talent. Co-founded the Stars group at 21-22 through self-creation rather than trained skill.",
+    "inherited_summary": "Son of renowned poet Ai Qing, but the family was exiled to labor camps and remote Xinjiang for 16 years during the Cultural Revolution, living in harsh conditions with no material advantage. The father's literary legacy provided intellectual capital but came with active political persecution that constituted a severe disadvantage.",
+    "ecosystem_summary": "Enrolled at Beijing Film Academy after the Cultural Revolution ended, and co-founded the Stars art group whose 1979 exhibition was shut down by police. The post-Cultural Revolution cultural opening was a structural wave, but the ecosystem was nascent and adversarial rather than supportive.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "alexis-argüello",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Unusual height and reach for a featherweight gave him natural physical advantages, and he compiled a 58-2 amateur record before turning professional at 16. His physical gifts combined with early competitive success suggest significant natural athletic endowment.",
+    "inherited_summary": "Born into abject poverty in Managua; father was a shoemaker who attempted suicide when Alexis was 5, one of eight children. Left school at 12 and worked on a dairy farm at 9 to support the family. Active financial and social disadvantage.",
+    "ecosystem_summary": "Trained by Miguel Angel Rivas and took up boxing through his sister's marriage to a boxer. The Nicaraguan boxing scene provided a basic competitive outlet, but no elite institutional pipeline or notable mentor network beyond the local gym.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "alfonso-zamora",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Won an Olympic silver medal at 18 and compiled an exceptional amateur record, demonstrating significant natural boxing talent. His rapid rise from juvenile delinquency to Olympic medalist in a few years suggests above-average physical aptitude.",
+    "inherited_summary": "Grew up in a tough Tlaltelolco neighborhood in Mexico City with a taxi-driver father and 10 siblings; fell into drugs and juvenile delinquency. Parents could not devote attention to him. Active poverty and social disadvantage.",
+    "ecosystem_summary": "His father directed him to a local boxing gym to keep him out of trouble, and the Mexican boxing tradition provided a competitive pipeline to the Olympics. The local gym and national team were functional but not elite or uniquely resourced.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "alfred-brendel",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Largely self-taught after age 16, won the Busoni Competition prize at 18 and made landmark recordings by 21. He explicitly stated he was not a child prodigy, but his rapid rise through self-directed study and early competition success demonstrate significant musical intelligence and drive.",
+    "inherited_summary": "Born to a non-musical family; father was an architectural engineer/businessman with various professions. No musical lineage or inherited cultural capital. WWII disrupted his childhood (digging trenches at 14), and the family moved frequently between Yugoslavia and Austria.",
+    "ecosystem_summary": "Studied at the Graz Conservatory with Ludovica von Kaan and later attended master classes with Edwin Fischer, which provided crucial mentorship. However, his training was largely self-directed and the wartime environment limited institutional support.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "gastone-nencini",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Gifted descender and powerful all-rounder with natural climbing ability, but no evidence of prodigy-level talent. Began cycling at 18 relatively late and progressed through the Italian amateur system.",
+    "inherited_summary": "Born to a wealthy family of cattle merchants in Barberino di Mugello, Tuscany. Family wealth provided material stability, though his father disapproved of his cycling ambitions, limiting direct support for his athletic career.",
+    "ecosystem_summary": "Growing up in Tuscany, the heartland of Italian cycling, provided deep geographic immersion in the sport's culture. He joined S.S. Oltrarno, the strongest amateur team in Tuscany, and turned professional with Legnano-Pirelli — a strong development pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "rafael-osuna",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won Mexico's national table tennis championship before age 10 in the open category, an extraordinary feat of hand-eye coordination and competitive instinct. His transition to tennis and rapid rise to world No. 1 confirms significant natural athletic endowment across racquet sports.",
+    "inherited_summary": "Family background is not well documented in available sources. He grew up in Mexico City and earned a full scholarship to USC, suggesting a middle-class background with enough resources for table tennis but not wealth or industry connections.",
+    "ecosystem_summary": "USC coach George Toley awarded him a full scholarship and retaught him proper technique, and his doubles partnership with Dennis Ralston proved catalytic — winning Wimbledon in 1960 before either had played a college match. The USC tennis pipeline under Toley was an elite collegiate program.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kipchoge-keino",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Broke both the 3000m and 5000m world records at age 25, demonstrating exceptional natural endurance and running ability. His high-altitude upbringing and goat-herding built innate stamina, and his father was noted as a long-distance runner, suggesting genetic predisposition.",
+    "inherited_summary": "Orphaned at a young age and raised by an aunt in Kenya's Rift Valley, herding goats with no financial resources. Father was a long-distance runner but died when Keino was young. Active poverty and orphanhood constituted significant disadvantage.",
+    "ecosystem_summary": "The Rift Valley's high-altitude terrain provided natural endurance conditioning, and the Kenya Police gave him a structured athletic platform. He rode the rising wave of Kenyan distance running, though the institutional infrastructure was still developing in the 1960s.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "henryk-górecki",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began violin at 10 and persisted despite family discouragement, teaching school to support himself. No evidence of prodigy-level talent; his avant-garde compositions emerged through sustained study and personal compulsion rather than early demonstrated genius.",
+    "inherited_summary": "Born to a railway worker father and a pianist mother who died when he was two. Father and stepmother actively discouraged his musical interests. The family lived modestly in rural Silesia, with the mother's early death preventing any domain transfer and creating financial hardship.",
+    "ecosystem_summary": "Studied at the State Higher School of Music in Katowice under Bolesław Szabelski, a notable mentor. The post-Stalin cultural thaw of 1956 opened opportunities for avant-garde exploration, and the Warsaw Autumn Festival provided an international platform — a strong institutional ecosystem for a Polish composer.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "alberto-tomba",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Natural physical talent and power (182cm, 90kg) suited the new spring-loaded ski gates, and he showed early talent from age 7. Won two Olympic golds at 21, demonstrating significant athletic endowment, though not a rare prodigy in the sport's history.",
+    "inherited_summary": "Son of Franco Tomba, a wealthy Bolognese textile industry businessman who was a keen skier and arranged for special coaching from age 7. The family's wealth enabled access to training in Cortina d'Ampezzo and dedicated coaching — upper-middle-class with direct parental involvement in the sport.",
+    "ecosystem_summary": "Trained under Roberto Siorpaes, a former national team skier, from age 7 in Cortina d'Ampezzo. The Italian alpine skiing pipeline provided elite competition access. The combination of dedicated early coaching, elite training location, and national team infrastructure was strong but not once-in-a-generation.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "bernhard-russi",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Parents said he could ski before he could walk, suggesting early natural aptitude, but no evidence of prodigy-level talent beyond geographic immersion. His World Championship gold at 21 and Olympic gold at 23 demonstrate strong athletic ability developed through environment.",
+    "inherited_summary": "Family financial background is not documented in available sources. Born in Andermatt, a Swiss alpine village, with parents who introduced him to skiing very early. No evidence of wealth or industry connections, but no active disadvantage either.",
+    "ecosystem_summary": "Born in Andermatt, a mountain village with a strong skiing tradition, and joined the SC Gotthard Andermatt club. The Swiss alpine skiing pipeline provided elite national team access. Growing up in a ski resort town provided rare early domain immersion that compensated for lack of documented family resources.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jarno-saarinen",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Developed unique ice-racing techniques in Finland and graduated with top marks in mechanical engineering, giving him a technical edge in bike setup. His natural riding talent combined with engineering intelligence was significant, though he was self-funded and not a factory-backed prodigy.",
+    "inherited_summary": "Family operated a funeral home business since 1902 in Turku, Finland — middle class with entrepreneurial background. Not wealthy enough to fund his racing, which required borrowing from four banks. Brothers also raced motorcycles, suggesting a family motorcycling culture.",
+    "ecosystem_summary": "The Tunturi-Puch motorcycle factory apprenticeship at 15 provided early technical immersion, and Finnish ice racing culture offered a distinctive training ground. However, he was largely self-funded and self-directed, without factory team backing or elite mentorship in his early career.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "khaby-lame",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Natural comedic presence and expressive face enabled a distinctive silent comedy format, but no evidence of unusual cognitive or creative endowment beyond good instinctive timing. His success was driven by platform timing and relatability rather than demonstrated prodigy talent.",
+    "inherited_summary": "Born in Dakar, Senegal to a working-class family that moved to Italy at age one. Grew up in a public housing complex in Chivasso; father on layoffs, mother a housewife. Worked as a CNC machine operator before being laid off. Active poverty and immigrant disadvantage.",
+    "ecosystem_summary": "The TikTok platform provided massive native distribution, and the COVID pandemic created a structural wave of platform growth. However, no peers, mentors, institutions, or networks were involved — his ecosystem was entirely the platform itself without human intermediaries.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "buvaisar-saitiev",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Achieved master of sport qualification at 14, won World Championship gold at 20 and Olympic gold at 21. His younger brother Adam also became an Olympic champion, suggesting exceptional genetic wrestling talent. Significant but not rare prodigy-level in the context of Dagestan's deep talent pool.",
+    "inherited_summary": "Father was a bricklayer who died in a car accident when Saitiev was 13, leaving his mother to raise six children alone. The family was not wealthy. Active poverty and loss of father constituted significant disadvantage, partially offset by the regional wrestling culture.",
+    "ecosystem_summary": "Immersed in Dagestan's wrestling culture from age 6, entered the elite Krasnoyarsk wrestling center at 17 under legendary coach Dmitri Mindiashvili — one of the world's most concentrated wrestling ecosystems. The combination of deep regional wrestling culture, elite sports boarding school, and world-class coaching was once-in-a-generation.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "assar-rönnlund",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Physical endurance developed from timber work at 15 and rural Nordic life, but no evidence of unusual innate athletic talent beyond the environmental conditioning of his upbringing. His success came from geographic immersion and hard work rather than prodigy-level gifts.",
+    "inherited_summary": "Son of a lumberjack in the small village of Ytterträsk in northern Sweden. Working-class rural background with no documented financial resources or family connections to skiing. No active disadvantage, but no material advantages either.",
+    "ecosystem_summary": "Growing up in rural northern Sweden provided natural proximity to cross-country skiing culture and terrain. The IFK Umeå club provided a competitive platform. The Nordic skiing tradition was strong but widely accessible — a solid but not elite or unique ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "bernard-thévenet",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Became Burgundy champion at 17 and French junior champion at 20, showing strong physical climbing talent. However, no evidence of prodigy-level ability; his talent was recognized through competition results rather than early exceptional demonstrations.",
+    "inherited_summary": "Born to a farming family in rural Burgundy; parents needed him on the farm and were initially unsupportive of his racing ambitions. Working-class agricultural background with no cycling lineage or financial resources to support the sport.",
+    "ecosystem_summary": "The ACBB club in Paris served as a recognized development pipeline into the Peugeot professional team — one of cycling's strongest structures. Joining ACBB and turning professional with Peugeot provided an elite institutional pathway that was trajectory-changing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "pedro-rodriguez",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won national motorcycle championships at 12 and 14, raced internationally in cars from 17, and won the Paris 1000km at 21. Early multi-discipline racing success from childhood demonstrates significant natural driving talent, though his brother Ricardo was considered the greater prodigy.",
+    "inherited_summary": "Born into a wealthy and powerful Mexican family; father Pedro Natalio Rodríguez was a successful railroad broker and racing enthusiast who funded motorcycles, cars, and international competition, with connections providing access to Ferrari vehicles through NART. The family's capital directly enabled his racing career from childhood.",
+    "ecosystem_summary": "The sibling partnership with brother Ricardo was formidable, and the family's NART connection provided Ferrari access. International competition from age 17 and Le Mans at 18 gave early elite exposure. The combination of family-funded equipment access and the Rodríguez brothers partnership was strong but not once-in-a-generation.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "egon-zimmermann",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won a clean sweep of the 1958 Junior Championships and rose to the Austrian national team, showing solid natural skiing talent. However, his development was interrupted by a forced chef apprenticeship in Paris, and no evidence of prodigy-level ability is documented.",
+    "inherited_summary": "Raised on a farm near Lech, Vorarlberg, during post-WWII poverty, with fourth-hand skis and no formal training. His father forced him into a chef apprenticeship in Paris at 15, interrupting his skiing development. Active post-war poverty and paternal obstruction of his sport.",
+    "ecosystem_summary": "Growing up in Lech am Arlberg as it transformed into a world-class ski resort provided daily access to the mountains and an emerging alpine skiing culture. Promotion to the Austrian national team at 18 gave access to elite coaching. The geographic immersion was a significant compensating advantage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "mustafa-dağıstanlı",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Credited with 389 wins and 4 draws in 393 matches, and never had his back pinned at the Olympics. His undefeated Olympic record and dominance across two weight classes demonstrate exceptional natural wrestling talent and competitive temperament.",
+    "inherited_summary": "Born in a village in Çarşamba, Turkey; father died when he was 7 after a hunting accident, leaving six siblings. Village origins with no documented financial resources or family wrestling lineage beyond the broader Turkish wrestling culture. Active poverty and early loss of father.",
+    "ecosystem_summary": "Immersed in Turkish oil wrestling culture from childhood, practicing at village weddings from age 7. The Turkish Naval Forces provided a structured institutional pipeline to the national team. Turkey's deep wrestling tradition and the naval forces system were strong but not uniquely elite globally.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ivo-daneu",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Recognized early for exceptional motor skills and shooting ability at 184cm, but no evidence of prodigy-level talent. Started basketball at 14 relatively late and progressed through the Yugoslav club system. His talent was identified by others rather than self-evident from childhood.",
+    "inherited_summary": "Father was an economist and law graduate who played violin and piano, but died of tuberculosis when Ivo was 12. Family was deported by Nazis during WWII. Mother raised four children alone and could not afford tennis, his first sport choice. Middle-class intellectual background disrupted by war and father's death.",
+    "ecosystem_summary": "Spotted by Aleksandar Gec, who recommended him to national coach Aca Nikolić, providing sustained mentorship. Joined Olimpija Ljubljana at 19 and the Yugoslav national team at 20, riding the rising Yugoslav basketball pipeline. The combination of mentor identification and the emerging national team system was strong.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jean-vuarnet",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Vuarnet himself believed he was not a natural skier and compensated through technique study and innovation. His success came from analytical approach and the aerodynamic tuck position rather than innate athletic genius. Above-average but not exceptional natural talent.",
+    "inherited_summary": "Father was a doctor; family moved to Morzone when he was one. Parents divorced in 1943, after which he was sent to boarding schools in Paris and Lyon. Middle-class professional background with family disruption from divorce, but not active disadvantage.",
+    "ecosystem_summary": "Growing up in Morzine in the French Alps provided direct immersion in ski culture. His coaching relationship with Georges Joubert at the University of Grenoble was catalytic, producing technical innovation and co-authored books. The French ski team provided elite competition access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jason-day",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won the Junior World Championship at 16, practiced up to 30 hours per week, and became the youngest Nationwide Tour winner at 19. His early competitive success and intense practice drive demonstrate significant golf talent, though not rare prodigy-level in golf history.",
+    "inherited_summary": "Father died of stomach cancer when Jason was 12, leaving the family in poverty. Mother was a Filipino immigrant who sold the family home to fund his golf education. Active poverty compounded by loss of father and immigrant disadvantage.",
+    "ecosystem_summary": "Sent to a golf boarding school where coach Col Swatton became his mentor and father figure, providing sustained individualized coaching. The golf academy environment and Swatton's mentorship were trajectory-changing, though the institution was not globally elite like a national team program.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "nikolai-andrianov",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Possessed exceptional upper body strength combined with phenomenal suppleness, enabling rapid progress despite starting gymnastics relatively late at 11. Won European Championship golds at 19 and Olympic gold at 20, demonstrating significant natural gymnastic endowment.",
+    "inherited_summary": "Raised by his mother in Vladimir; family financial background not documented. Coach Tolkachev served as a surrogate father, suggesting family instability or limited resources, but no active disadvantage is clearly documented.",
+    "ecosystem_summary": "Entered the Burevestnik sports school at 11 and was spotted by renowned coach Nikolai Tolkachev, who provided sustained individualized training as a surrogate father. The Soviet gymnastics pipeline concentrated elite training and competition access, providing a world-class institutional ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "andy-hug",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Won the Swiss Oyama Cup at 15 with a special age exemption and became European champion at 21. His rapid rise in Kyokushin from starting at 10 to international success by 20 demonstrates significant natural fighting talent and physical endowment.",
+    "inherited_summary": "Given up for adoption; father died before seeing him, mother unable to care for him. Placed in an orphanage then raised by grandparents from age 3 in Wohlen, Switzerland. Financially constrained upbringing with active disadvantage from orphaning and parental abandonment.",
+    "ecosystem_summary": "Started Kyokushin karate at 10 under Werner Schenker and joined the Swiss national team at 17. The Swiss Kyokushin scene provided a functional training environment, but Switzerland was not a global karate center. The ecosystem was adequate but not elite or uniquely resourced.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "lisa-gerrard",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began playing piano accordion at 12 and developed a unique vocal style, but no evidence of prodigy-level musical talent. Her distinctive contralto voice was a natural gift, but her artistic development was gradual and scene-driven rather than demonstrating early exceptional ability.",
+    "inherited_summary": "Born to Irish immigrant parents in Melbourne who played Mediterranean music at home. Working-class immigrant family with no music industry connections. The multicultural Prahran neighborhood provided cultural exposure but no material advantages.",
+    "ecosystem_summary": "Melbourne's experimental post-punk Little Band scene provided a creative peer network where she met Brendan Perry. The Perry-Gerrard partnership in Dead Can Dance and signing with the influential 4AD label were key enablers, providing both a complementary creative partner and a prestigious indie label ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jean-jacques-sempé",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began drawing at 12 and was entirely self-taught, with natural drawing talent combined with intense daily practice. His early sale of drawings to newspapers at 19 and first award at 19-20 demonstrate significant innate artistic ability developed without any training.",
+    "inherited_summary": "Born to a single teenage mother and raised in an abusive, impoverished household near Bordeaux with an alcoholic stepfather. Dropped out of school at 14 and worked odd jobs. Active poverty, family dysfunction, and social disadvantage.",
+    "ecosystem_summary": "The army provided an escape where he began selling drawings to newspapers, and the Paris press ecosystem eventually provided a market for his cartoons. His meeting with René Goscinny in the mid-1950s was catalytic, but the ecosystem was largely self-navigated without mentors or institutions.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "gottfried-helnwein",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began provocative self-performance art as a teenager and developed a hyperrealistic style, winning multiple prestigious student prizes by 25. His artistic drive was evident early, but no evidence of prodigy-level talent; his trajectory was driven by personal compulsion and institutional training.",
+    "inherited_summary": "Father worked for the Austrian Post and Telegraphy administration; mother was a housewife. Strict Roman Catholic upbringing in bleak postwar Vienna. Working-class family with no arts connections or financial advantages, though no active disadvantage beyond the postwar environment.",
+    "ecosystem_summary": "Enrolled at the Higher Federal Institution for Graphic Education at 17 and progressed to the Academy of Fine Arts Vienna, an elite institution. The postwar Vienna environment shaped his provocative vision. The Academy provided solid institutional training but no uniquely catalytic mentor or peer network is documented.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "masayoshi-son",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Made his first $1 million at 20 by inventing an electronic translator and selling the patent to Sharp, demonstrating exceptional entrepreneurial instinct and technological foresight. His intense focus and ability to identify the microchip revolution show significant cognitive and business endowment.",
+    "inherited_summary": "Born to Zainichi Korean parents in extreme poverty in Tosu, Japan, living in a tin shack with pigs and facing ethnic discrimination. Father raised pigs and chickens and ran an illegal sake business. Active poverty, ethnic discrimination, and social marginalization.",
+    "ecosystem_summary": "Moved to the US at 16 to attend high school and enrolled at UC Berkeley, where he was inspired by the microchip revolution. The PC revolution provided a structural wave, and UC Berkeley gave access to Silicon Valley's emerging tech ecosystem. Strong timing and institutional access despite disadvantaged origins.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "gary-oldman",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Earned a scholarship to Rose Bruford College and was the first in his year to receive professional work, showing above-average acting talent. However, no evidence of prodigy-level ability; he discovered acting through a community theater and developed through training rather than innate genius.",
+    "inherited_summary": "Born to a working-class family in New Cross, London; father was an alcoholic welder and former sailor who left when Oldman was 7. Raised by a single mother in a working-class neighborhood. Active financial and social disadvantage compounded by father's abandonment.",
+    "ecosystem_summary": "Discovered acting through the Greenwich Young People's Theatre, earned a scholarship to Rose Bruford College, and progressed to the Royal Court Theatre and Royal Shakespeare Company. The British theater institutional pipeline — from community theater to drama school to RSC — was a strong meritocratic ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "geraldine-chaplin",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Trained at the Royal Ballet School and danced professionally in Paris, showing solid performing arts ability. However, she herself acknowledged she was not trained from early enough age to sustain as a professional ballerina. No evidence of prodigy-level talent; her career was catalyzed by family name rather than exceptional innate ability.",
+    "inherited_summary": "Daughter of Charlie Chaplin, one of cinema's most iconic figures, and Oona O'Neill, daughter of Nobel Prize-winning playwright Eugene O'Neill. Grew up wealthy in Switzerland in a culturally elite household. She acknowledged that her family name directly opened casting doors — one of the strongest inherited industry advantages imaginable.",
+    "ecosystem_summary": "The Chaplin/O'Neill family network provided direct access to the film industry's highest levels. David Lean discovered her while she was dancing in Paris and cast her in Doctor Zhivago — a connection facilitated by her family name. The Royal Ballet School training and direct access to elite directors constituted a once-in-a-generation ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "fe-001-02-cristina-cordova",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Became VP of Business Development at 22 as Pulse's first employee, showing strong execution and self-driven work ethic. However, no evidence of prodigy-level cognitive or technical ability; her success was driven by hustle, independence, and ecosystem access rather than exceptional innate talent.",
+    "inherited_summary": "Raised by a single mother in Los Angeles; first-generation college student who attended Stanford. Working-class immigrant background with no family resources or tech industry connections. A latchkey kid who learned independence from early age.",
+    "ecosystem_summary": "Stanford University provided access to Silicon Valley's startup ecosystem, where she interned at Tapulous and joined Pulse as its first employee. The Stanford-to-startup pipeline and early immersion in companies like Stripe (employee #28) provided elite ecosystem access that was trajectory-changing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "charles-hearn",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Earned a CS degree from UVA and worked at Microsoft and Knox Payments before co-founding Alloy. Solid technical ability but no evidence of prodigy-level talent or exceptional early achievement. His path was conventional professional development rather than extraordinary aptitude.",
+    "inherited_summary": "Attended the Maggie L. Walker Governor's School, a selective magnet school, suggesting a supportive educational environment. Family financial background not documented, but access to a selective public magnet school indicates at minimum a middle-class background with educational emphasis.",
+    "ecosystem_summary": "The Maggie L. Walker Governor's School and UVA CS provided solid educational foundations, and Microsoft Bing provided professional experience. His co-founding team with Laura Spiekerman and Tommy Nicholas was complementary. Good but not elite institutions; the fintech wave was building but not at peak when Alloy was founded.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "paul-buchheit",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught programmer who built a web-based email system as a college class project at Case Western, anticipating Gmail by years. Created Gmail, prototyped AdSense, and coined 'Don't be evil' at Google. His early independent technical vision and ability to ship demonstrate significant engineering endowment.",
+    "inherited_summary": "Father was an engineer at Xerox who loved building things and encouraged Paul's tinkering from childhood. Fourth of five children in Webster, New York, a Rochester suburb. Middle-class family with an engineer father providing a technical household environment, though not wealthy or industry-connected.",
+    "ecosystem_summary": "Case Western Reserve provided CS training, and joining Google as employee #23 placed him in one of the most talent-dense early tech environments. Early Google's infrastructure, autonomy, and culture of shipping were catalytic. The Silicon Valley location and early Google timing were strong but not once-in-a-generation.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "anthony-james-barr",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Designed the SAS statistical analysis system at 25-26, creating a foundational algorithm and architecture that became a global analytics platform. His ability to build statistical programming systems as a graduate student demonstrates significant technical and analytical endowment.",
+    "inherited_summary": "Born in New York City and raised in Summit, New Jersey; inspired by inventor biographies and museum visits. Specific parental occupations and wealth not documented. No evidence of inherited financial platform or industry connections.",
+    "ecosystem_summary": "NCSU's computing center provided access to early computing infrastructure, and IBM Federal Systems at the Pentagon gave operational experience with the Formatted File System. The southern experiment stations network provided the demand for statistical software. Strong institutional access at the computing frontier of the early 1960s.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "edward-coristine",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught coder who built businesses and domains as a teenager, AP Scholar With Distinction. Shows above-average technical aptitude and entrepreneurial drive, but no evidence of prodigy-level achievement or rare technical brilliance — his early work was web infrastructure tinkering rather than breakthrough products.",
+    "inherited_summary": "Father Charles Coristine is CEO of LesserEvil snacks (>$100M annual sales), a Wall Street veteran who left Morgan Stanley. Family is affluent, living in wealthy Larchmont, NY. The father's business platform provided financial stability and entrepreneurial modeling, though not directly in tech.",
+    "ecosystem_summary": "Attended Rye Country Day School, an elite private prep school, and interned at Neuralink, providing direct access to Musk's ecosystem. The Musk/DOGE network connection was the decisive catalytic factor in his government appointment. Elite prep school and Musk network access were strong but not once-in-a-generation.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "parisa-tabriz",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Was not exposed to coding until college and taught herself programming, eventually leading Google Chrome security. No evidence of prodigy-level talent; her trajectory was driven by curiosity (joining a club after her site was hacked) and sustained professional development rather than exceptional early aptitude.",
+    "inherited_summary": "Father is an Iranian immigrant doctor; mother is a Polish-American nurse. Professional-class family in the Chicago suburbs providing educational stability and resources. Middle to upper-middle class with no tech industry connections but solid professional background.",
+    "ecosystem_summary": "UIUC's well-regarded CS program provided training, and research with Nikita Borisov led to a USENIX Security paper. Google's security team provided an elite institutional platform during the rise of large-scale web security. The UIUC-to-Google pipeline was strong but conventional for elite CS graduates.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "vlad-tenev",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Attended TJHSST (selective science high school), earned a BS in mathematics from Stanford and MS from UCLA. Demonstrated early talent for math and computers, and his quantitative training enabled the technical insight for commission-free trading. Significant analytical endowment, though not rare prodigy-level.",
+    "inherited_summary": "Parents both worked at the World Bank after emigrating from Bulgaria; father was an economics professor. Professional immigrant family with finance-adjacent context and educational stability in suburban Virginia, though frugal. Upper-middle-class with indirect finance exposure.",
+    "ecosystem_summary": "TJHSST, Stanford mathematics, and the Baiju Bhatt cofounder partnership provided a strong stack. Prior HFT startup experience (Celeris, Chronos) gave domain insight. The combination of elite quantitative training, a durable cofounder, and fintech structural timing was strong but not once-in-a-generation.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "mitchell-hashimoto",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started programming at 12, built a profitable cheat business at 14 making $400/month, and created Vagrant at ~22. His deep self-directed systems work and prolific open-source output (75+ projects by 25) demonstrate significant engineering talent and intense drive from an early age.",
+    "inherited_summary": "Father is described as a 'very nice but very strict' Japanese father who didn't support his computer interests and limited him to two hours of computer time weekly. Family couldn't afford programming books. Working to middle-class background with parental constraints rather than support for his technical development.",
+    "ecosystem_summary": "Met cofounder Armon Dadgar at the University of Washington on a cloud research project, and the open-source community provided distribution. The DevOps wave provided structural timing. However, his ecosystem was largely self-created through open-source participation rather than elite institutional or mentor support.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jack-elton-bresenham",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Earned a BSEE from UNM and MS/PhD from Stanford, and invented Bresenham's line algorithm at 24 — a foundational algorithm still used in modern graphics hardware. His ability to derive efficient integer-arithmetic solutions from geometric principles demonstrates significant analytical and engineering endowment.",
+    "inherited_summary": "Born in Clovis, New Mexico; family background not documented in available sources. No evidence of inherited financial platform, industry connections, or educational lineage. The move from Clovis to UNM to Stanford suggests self-driven academic advancement.",
+    "ecosystem_summary": "UNM's electrical engineering faculty and Stanford's industrial engineering faculty provided analytical tools. IBM San Jose's computation lab provided access to scarce plotter/1401 hardware at the early 1960s computing frontier. The combination of elite graduate training and frontier hardware access was strong institutional positioning.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "michael-baum",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Switched to CS after Steve Jobs visited Drexel and co-founded his first startup at ~23. Shows good entrepreneurial instinct and execution ability, but no evidence of prodigy-level technical talent. His path was driven by timing (Macintosh wave) and co-op experience rather than exceptional innate ability.",
+    "inherited_summary": "First-generation college student from Philadelphia; parents named Mardell A. Baum and Richard L. Baum, Sr. Older brother was a Wharton student and co-founder. No documented parental tech-domain transfer or financial platform. Working-class to middle-class background as a first-generation student.",
+    "ecosystem_summary": "Drexel's co-op program gave him experience at IBM and other companies, and the Steve Jobs/Macintosh campus visit was a catalytic moment. His sibling cofounder and Venrock funding for Reality Online provided early startup infrastructure. Good university ecosystem but Philadelphia was a venture-capital desert at the time.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "guillaume-lample",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Admitted to École Polytechnique (X2011) on second attempt after intensive prépa, and first-authored a NAACL 2016 NER paper with 6000+ citations at 25. His mathematical abstraction ability and enormous work capacity were noted by peers. Significant analytical endowment through France's most elite quantitative pipeline.",
+    "inherited_summary": "Father Guy-Dominique Lample is a maxillofacial surgeon; sister Judith is an anesthesiologist. Professional medical household in Brest providing educational stability and intellectual environment, though not a tech dynasty. Upper-middle-class with strong professional family background.",
+    "ecosystem_summary": "Lycée Kerichen prépa and École Polytechnique provided France's most elite mathematical training. CMU NLP work with Chris Dyer and subsequent FAIR/Meta position placed him at the frontier of AI research. The French prépa-to-Polytechnique-to-top-US-lab pipeline is elite but well-trodden for French AI researchers.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ben-gordon",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Starred at Mount Vernon High School with state championships, led UConn to the 2004 NCAA title, and was selected #3 overall in the NBA draft. His scoring talent and competitive drive were evident from high school, demonstrating significant athletic endowment, though not rare prodigy-level in basketball.",
+    "inherited_summary": "Born in London to a Jamaican father and African-American mother; family moved to Mount Vernon, New York when he was an infant. Detailed family financial status not documented, but Mount Vernon provided a strong basketball culture. No documented family basketball lineage.",
+    "ecosystem_summary": "Mount Vernon High School's basketball program, UConn's Big East program under Jim Calhoun, and the NBA draft pipeline constituted a classic elite American basketball development path. The UConn national championship run provided a high-visibility platform. Strong institutional pipeline but not uniquely elite.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "keith-schacht",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Built and sold a company in college, co-founded Inventables at 22, and spoke at TED by 25. Shows strong entrepreneurial execution and product instinct, but no evidence of prodigy-level technical or cognitive ability. His repeated founding and exiting suggests good hustle rather than exceptional talent.",
+    "inherited_summary": "Family background not documented in available sources. No evidence of inherited financial platform, industry connections, or parental domain expertise. Attended UIUC for computer science, suggesting a standard middle-class educational path.",
+    "ecosystem_summary": "UIUC's Technology Entrepreneur Center provided initial exposure to startup culture, and cofounder partnerships (Brian Witlin, Zach Kaplan) were key. The UIUC entrepreneurship ecosystem and college cofounder teams were functional but not elite or uniquely catalytic.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "henrique-dubugras",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started coding at 12, built a game clone at 14 that generated legal notices, co-founded Pagar.me at 17-18 and scaled it to ~100 employees and $1.5B GMV before selling at 21. His early self-taught coding and entrepreneurial execution demonstrate significant technical and business endowment.",
+    "inherited_summary": "Grew up in São Paulo, Brazil; parents not documented in detail beyond references to 'strict mothers' who didn't understand their tech ambitions. Middle-class Brazilian background with enough resources for computer access but no industry connections or wealth.",
+    "ecosystem_summary": "The Pedro Franceschi cofounder partnership was catalytic — two self-taught Brazilian coding prodigies who complemented each other. Y Combinator and brief Stanford enrollment provided Silicon Valley access. The Brazilian payments gap created a structural opportunity for Pagar.me. Strong cofounder and structural timing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "aubrey-edwards",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Graduated from DigiPen's RTIS program and rose from tools programmer to lead producer at 5th Cell, shipping Scribblenauts Unlimited at 25. Shows solid technical and production ability, but no evidence of prodigy-level talent or exceptional early achievement beyond competent professional development.",
+    "inherited_summary": "Born in Bethesda, Maryland; family background not documented in available sources. No evidence of inherited financial platform, industry connections, or parental domain expertise in gaming or tech.",
+    "ecosystem_summary": "DigiPen Institute of Technology provided specialized game development training, and 5th Cell in the Seattle area provided early professional immersion in console game production. The DigiPen-to-industry pipeline was functional and specialized but not elite or uniquely catalytic in the game industry.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "adrian-carmack",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Self-taught artist who copied arcade cabinet art and album covers in notebooks, with a natural dark aesthetic that defined id Software's visual style. Shows above-average artistic talent, but was not a classically trained prodigy — his unique value was in the specific dark, gory aesthetic that matched the FPS genre.",
+    "inherited_summary": "Father sold sausages for a food company and died suddenly of a heart attack when Adrian was 13. Mother was a loan officer. Working-class family in Shreveport, Louisiana. Father's death created emotional adversity but no active financial disadvantage is documented beyond working-class status.",
+    "ecosystem_summary": "The id Software cofounder team — John Carmack, John Romero, Tom Hall, and Adrian Carmack — met at Softdisk and founded id in 1991, riding the PC shareware and FPS technology wave. This was a once-in-a-generation team that created Wolfenstein 3D, Doom, and Quake, defining an entire genre. The Softdisk-to-id pipeline and the shareware wave were uniquely catalytic.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "leila-janah",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Created her own degree at Harvard in African Development Studies, won a Coca-Cola Scholarship, and taught in Ghana at 17. Shows strong intellectual curiosity and drive, but no evidence of prodigy-level cognitive ability. Her path was driven by exposure and conviction rather than exceptional innate talent.",
+    "inherited_summary": "Daughter of Indian immigrants; father was a structural engineer, mother had an English literature degree but worked at Wendy's. Family experienced financial insecurity and social marginalization as immigrants, but had educational values. Working-class immigrant background with educated but financially struggling parents.",
+    "ecosystem_summary": "Attended the California Academy of Mathematics and Science (a magnet school), Harvard University, and had exposure to the World Bank's Development Research Group. The Harvard-to-development-work pipeline and the social enterprise wave provided strong institutional positioning for founding Samasource.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "armin-ronacher",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started programming as a teenager, won a prize at Prix Ars Electronica at ~14, and created Flask at 20 along with Jinja, Werkzeug, Pygments, and Sphinx. His prolific output of foundational Python libraries by his early twenties demonstrates significant engineering talent and deep language mastery from a young age.",
+    "inherited_summary": "Family background not documented in available sources. Studied Business Administration and Software Engineering at Graz University of Technology. No evidence of inherited financial platform, tech industry connections, or parental domain expertise.",
+    "ecosystem_summary": "The German Ubuntu community and the Pocoo peer group (including Python core developer Georg Brandl) provided a collaborative open-source environment. Graz University provided formal training. The peer community was strong for learning, but no elite institution or notable mentor beyond the online OSS community is documented.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tsutomu-shimomura",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Studied under Nobel laureate Richard Feynman at Caltech, became a staff physicist at Los Alamos, and joined UCSD/SDSC as a research scientist at 25. His ability to work at the intersection of physics and computational security demonstrates significant analytical endowment, though his fame came later from the Mitnick case.",
+    "inherited_summary": "Son of Osamu Shimomura, 2008 Nobel Prize winner in Chemistry, and Akemi Shimomura, also an organic chemist. Grew up in Princeton, New Jersey in an elite scientific household with a Nobel laureate father providing direct access to world-class research culture. One of the strongest inherited scientific platforms possible.",
+    "ecosystem_summary": "Caltech under Feynman, Los Alamos National Laboratory as staff physicist, and UCSD/San Diego Supercomputer Center provided a once-in-a-generation institutional stack. The combination of Nobel laureate father, Feynman mentorship, Los Alamos, and supercomputing access is exceptionally rare in scientific training.",
+    "scoring_confidence": "High"
+  }
+]

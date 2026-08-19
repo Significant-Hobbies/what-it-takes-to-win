@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "jenő-kamuti",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Joined BVSC at 13 and reached the Hungarian national foil team by 19, winning World Team gold at 20. Above-average ability with strong competitive drive, but started relatively late for elite fencing and showed no prodigy-level indicators.",
+    "inherited_summary": "Father was a MÁV (Hungarian State Railways) deputy director general, placing the family in the upper-middle professional class. Mother directed both Jenő and his brother László toward fencing after seeing a demonstration, creating a family sporting culture.",
+    "ecosystem_summary": "Trained at BVSC, Budapest's elite railway sports club, under coaches Nagy Árpád and then Bay Béla, a legendary Hungarian fencing coach. The Hungarian national fencing pipeline was one of the world's strongest, and his brother László also fenced at the highest level.",
+    "scoring_confidence": "Medium-High"
+  },
+  {
+    "person_id": "albin-planinc",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "Self-taught chess talent who learned at 7 and won the Vidmar Memorial at 25 ahead of grandmasters Gligoric and Unzicker while working in a bicycle factory. Exceptional creative and imaginative playing style, though not a traditional prodigy in terms of early titles.",
+    "inherited_summary": "Born into a working-class family in Briše, German-occupied Slovenia. Mother was uneducated and worked odd jobs; father's identity is uncertain (possibly a German soldier). Childhood marked by poverty, stigma, and mother's evolving mental illness.",
+    "ecosystem_summary": "No notable mentors or elite training infrastructure documented. Largely self-taught and isolated from the Yugoslav chess establishment until his surprise tournament win. The Slovenian chess scene provided minimal institutional support.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "andy-bathgate",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began organized hockey at 9 and played on eight teams in one winter as a youth, coaching 12-year-olds at 13. Above-average hockey ability with strong drive, but not a prodigy-level talent.",
+    "inherited_summary": "Grew up poor in Winnipeg; father died of throat cancer when Andy was 13, and mother had serious surgery around the same time. Older brother Frank was signed by the Rangers first, creating a family connection to the organization, but the family had no wealth or hockey pedigree.",
+    "ecosystem_summary": "Winnipeg was a Rangers pipeline city, and the Guelph Biltmores junior system produced six-plus future NHL players. Brother Frank's prior signing created a direct path to the Rangers organization. Strong junior hockey development ecosystem in 1950s Canada.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "karrie-webb",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started golf at 4 with plastic clubs, received real clubs at 8, and was competing against top local male players by her early teens. Represented Australia from age 17-18 and won the Women's British Open at 20. Exceptional early talent and competitive drive.",
+    "inherited_summary": "Both parents and maternal grandparents played golf, providing deep domain immersion from age 4. Middle-class family in Ayr, Queensland, with grandparents gifting her first clubs and supporting her competitive ambitions despite local skepticism.",
+    "ecosystem_summary": "Coach Kelvin Haller, a local greenkeeper and accomplished amateur, provided sustained individualized coaching from a young age, even remotely after a paralyzing accident. Ayr Golf Club provided early access, and the Australian amateur system supported her development. Greg Norman served as inspiration.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "lia-manoliu",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Competed nationally in tennis, table tennis, volleyball, and basketball as a teenager, reaching national champion level in multiple sports before specializing in discus at 16. Set Romanian national record as first woman over 40m at 18. Exceptional multi-sport physical talent and polyglot (5+ languages).",
+    "inherited_summary": "Both parents were university professors (philosophy) who moved from Basarabia to Bucharest for academic positions. Intellectual, educated middle-class family that valued education and culture, providing a stable upbringing.",
+    "ecosystem_summary": "Romanian national sports system and Metalul București club provided standard training and competition access. No specific elite mentors or extraordinary institutional advantages documented beyond the national team pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "robert-paul",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began skating after recovering from childhood polio, joining the Toronto Skating Club and barely leaving the ice. Above-average skating ability with strong dedication, but not a prodigy-level talent prior to being paired with Wagner.",
+    "inherited_summary": "Parents bought him skates after his polio recovery, providing supportive middle-class family environment in Toronto. No particular skating family background or wealth, but stable enough to afford club skating.",
+    "ecosystem_summary": "Trained at the elite Toronto Skating Club under Sheldon Galbraith, who had coached Olympic champion Barbara Ann Scott. Galbraith deliberately paired Paul with Barbara Wagner at 15, creating a complementary partnership. They trained five hours daily, six days a week with intensive summer sessions.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "alexander-gustafsson",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started boxing at 10 and won the Swedish national youth championship at 16, showing above-average striking ability and a 6'5\" frame. However, not a prodigy-level talent, and his trajectory was disrupted by legal troubles and a prison sentence at 18.",
+    "inherited_summary": "Father was a lumberjack who abandoned the family, borrowing money and leaving for Thailand. Mother raised Alexander and his sister on a farm in difficult circumstances. Troubled youth with multiple criminal convictions, poverty, and family instability.",
+    "ecosystem_summary": "Boxing from age 10 provided a striking foundation, and the rising MMA wave in Europe gave him a platform. Joined Allstars Training Center in Stockholm, a well-regarded gym, but started in the small town of Arboga with limited training infrastructure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "domingo-perurena",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began cycling at 14 with friends and didn't own his own bike until joining a juvenile team. Won amateur races including Vuelta a Bidasoa and Tour d'Anjou before turning professional at 21. Above-average ability but not exceptional early indicators.",
+    "inherited_summary": "Parents owned a bar in Oiartzun (Bar Perurena) in the Basque Country. Working-class family with no cycling background. No particular financial or professional advantages.",
+    "ecosystem_summary": "The Basque Country is one of cycling's deepest talent regions, with a deep-rooted cycling culture and strong professional team structure (Fagor, Kas-Kaskol). Friend Fermín Niño lent him his first bike and introduced him to racing. The Basque team pipeline provided a clear professional pathway.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "peter-post",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Built cycling fitness making deliveries on a heavy transport bike for his father's butcher shop, winning the Amsterdam Championship for Butcher Boys at 16. Above-average natural ability but no prodigy indicators, and he initially planned to become a butcher.",
+    "inherited_summary": "Eighth of 13 children in a butcher's family in Amsterdam, growing up during the Nazi occupation of the Netherlands. Father opposed cycling, considering it a sport for 'spoiled good-for-nothings.' Large working-class family with no cycling background.",
+    "ecosystem_summary": "Amsterdam's cycling culture was strong, and neighbor Piet Schulte (brother of pro cyclist Gerrit Schulte) spotted his talent and nudged him into racing. He secretly joined Klein Ulysses youth program against his father's wishes, assembling his own racing bike from parts.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "christian-boltanski",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Dropped out of school at 12 and began painting at 13, producing hundreds of works in isolation through his early twenties. Self-taught with exceptional creative drive and obsessive early output, though not a traditional prodigy in any academic sense.",
+    "inherited_summary": "Father was a Jewish physician of Russian origin who hid under floorboards for 18 months during the Nazi occupation. Mother was a Corsican Catholic writer. Intellectual and bohemian family that accepted his unconventional path, but childhood was deeply marked by wartime trauma and constant fear.",
+    "ecosystem_summary": "Paris art scene provided cultural context, and his mother's friend opened a gallery where he met artists. However, he lived in considerable isolation until his first exhibition at 23, with no formal art training or notable mentors during his formative years.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "rimas-kurtinaitis",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started basketball training in the third grade at the Kaunas basketball school and progressed through the Soviet club system. Above-average ability with a 1.96m frame, but not considered a prodigy and initially followed his older brother into the sport.",
+    "inherited_summary": "Father was a metalworker who played amateur football; mother was basketball-passionate but not a player. Modest working-class family in Kaunas, sharing a single winter jacket between brothers and living in an apartment without amenities.",
+    "ecosystem_summary": "Kaunas has one of the world's deepest basketball cultures, and the Kaunas basketball school under coach Edvardas Nekrašas provided structured training from the third grade. The Soviet elite club pipeline (CSKA Moscow, Žalgiris Kaunas) offered a high-performance development pathway.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "antonio-roldán",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Originally dreamed of being a footballer and entered boxing at 15 by lying to a promoter about having 14 prior fights. Above-average physical talent and street-fighting background, but not a prodigy and had a late, self-initiated entry into the sport.",
+    "inherited_summary": "Grew up in the working-class San Simón neighborhood of Mexico City where street fighting was common. No family advantages, financial resources, or sporting background documented. Self-initiated entry into boxing out of poverty and neighborhood culture.",
+    "ecosystem_summary": "The 1968 Mexico City Olympics provided a unique home-soil advantage that amplified his talent. No elite training infrastructure or notable mentors documented prior to the Olympics. His trajectory was driven by self-initiative and the fortuitous timing of a home Olympics.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "hillel-furstenberg",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Published papers in the American Mathematical Monthly as an undergraduate, including his famous topological proof of the infinitude of primes at 20. Older sister kept him ahead in math throughout childhood. Exceptional early mathematical ability with trajectory-changing achievement.",
+    "inherited_summary": "Born to a Jewish family in Nazi Germany, escaped after Kristallnacht in 1938. Father died during the journey to England. Raised by his mother (a sewing machine operator) in financial hardship in New York. No material advantages whatsoever.",
+    "ecosystem_summary": "Older sister tutored him in mathematics, keeping him ahead of peers. Attended Yeshiva University where Professor Jekuthiel Ginsburg (editor of Scripta Mathematica) was accessible in the same building and published his early work. Went on to Princeton for PhD under Salomon Bochner.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "danijel-šarić",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started at hometown club Sloga Doboj and progressed to elite clubs, with a 1.94m frame well-suited for goalkeeping. Above-average ability but no prodigy-level indicators documented, and family background is not documented in available sources.",
+    "inherited_summary": "No family background information available in reviewed sources. From Doboj, Bosnia, a modest background within the Yugoslav sports system.",
+    "ecosystem_summary": "Progressed through the Yugoslav handball tradition: Sloga Doboj, then Borac Banja Luka (a famous handball school that produced many great goalkeepers), then Crvena zvezda (Red Star Belgrade), an elite club. Recommended to Crvena zvezda by Olympic goalkeeper Zlatan Arnautović.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "phạm-tuân",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Failed initial pilot selection tests due to small stature (1.65m, 60kg) but was selected from radar mechanics for pilot training. Developed rare night interception skills through combat experience. Above-average ability and determination but not prodigy-level.",
+    "inherited_summary": "Born to a farming family in rural Kiến Xương, Thái Bình province, North Vietnam, with no documented advantages. Grew up in a purely agricultural village during wartime conditions, with no family resources or connections.",
+    "ecosystem_summary": "Soviet pilot training at Krasnodar Flight School provided professional military education. The Vietnam War provided intense combat experience that developed his skills. Military selection pipeline was the primary institutional pathway, though not elite in a traditional sense.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "grzegorz-lato",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began senior career at Stal Mielec at 16 but was initially criticized as a 'one-footed' and 'clumsy sprinter' by press. Not considered among Poland's top junior talents. Above-average speed and goal-scoring ability, but not a prodigy.",
+    "inherited_summary": "Father was an aircraft mechanic who died tragically when Lato was 9. Working-class family that moved from Malbork to Mielec for housing. No football family background or financial advantages.",
+    "ecosystem_summary": "Stal Mielec and the Polish football system provided a talent pipeline, and coach Kazimierz Górski (legendary Polish national team coach) discovered and developed him. Part of Poland's golden generation of the 1970s with a strong national team infrastructure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "henrique-mecking",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Taught chess by his mother at 5-6, won state championship at 11, Brazilian national champion at 13 (youngest ever), and International Master at 15. Drew comparisons to Bobby Fischer. Clear chess prodigy with trajectory-changing early ability.",
+    "inherited_summary": "Father was a bank clerk (middle class) and mother taught him chess at age 5-6. Modest family in Santa Cruz do Sul, Brazil. Mother's introduction was the key early catalyst, but no elite chess infrastructure or family chess tradition.",
+    "ecosystem_summary": "Met Dirk van Riemsdijk in Pelotas, who brought Dutch chess books and studied with him. Limited chess infrastructure in Brazil with no elite training system or strong chess culture. Largely self-developed with minimal institutional support.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ewa-kłobukowska",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won Olympic gold in the 4x100m relay (with world record) and bronze in the 100m at 18, then set individual world record in the 100m at 19. Exceptional sprinting talent that emerged quickly after starting serious training at 16.",
+    "inherited_summary": "Born into a family of intellectuals in Warsaw. Parents did not support her involvement in sports, but the family provided an educated, middle-class upbringing. Father Stefan and mother Halina were professional/intellectual class.",
+    "ecosystem_summary": "Skra Warszawa club and the Polish athletics system provided structured training under coaches Józef Iwaniuk and Andrzej Piotrowski. Trained alongside established champion sprinters including Teresa Ciepły, Barbara Sobotta, and Halina Górecka in a strong training group.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kim-duk-koo",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "Started amateur boxing at 17, compiling a 29-4 record. Turned professional at 23 and won the OPBF lightweight title at 26. Above-average boxing ability and determination, but a late start with no prodigy indicators.",
+    "inherited_summary": "Born into extreme poverty in Gangwon Province, South Korea. Youngest of five children. Father died when he was 2, mother married three more times. Worked as a shoe shiner and was homeless at times, living under a bridge in Seoul.",
+    "ecosystem_summary": "Seoul's boxing scene provided basic gym access and amateur competition. No elite training infrastructure, notable mentors, or developmental pipeline documented. His trajectory was driven by adversity and self-determination rather than ecosystem advantages.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sandra",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started ballet at 5, guitar at 10, and recorded her first single at 12 after being discovered at a talent competition. Above-average performing talent with early start, but not a prodigy-level vocalist or musician.",
+    "inherited_summary": "Parents Robert and Karin Lauer were a middle-class German family in Saarbrücken who supported her music education with ballet and guitar lessons. No particular music industry connections or family domain overlap.",
+    "ecosystem_summary": "Discovered by producer George Roman at 12, joined Arabesque at 17 providing years of performing experience in Japan and Europe. Met producer Michael Cretu through Arabesque, who became her creative and romantic partner. The 1980s synth-pop wave provided perfect timing for her solo breakthrough.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "áron-szilágyi",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Began fencing at 9 and dominated his Hungarian peers from a young age. Called up to the senior national team as a cadet at 17 for the World Championships, where the team won gold. Exceptional early talent with clear competitive dominance.",
+    "inherited_summary": "Mother introduced him to fencing at age 9 after Gerevich promoted the sport at his primary school. Middle-class Budapest family with no particular wealth or fencing background, but supportive of his sporting career.",
+    "ecosystem_summary": "Trained at Vasas SC, Budapest's elite fencing club, under György Gerevich, son of seven-time Olympic champion Aladár Gerevich. Gerevich became a 'father figure' and formative mentor. The Hungarian sabre fencing tradition is one of the world's strongest, winning 11 of 12 Olympic golds between 1908 and 1964.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "irina-shayk",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Exceptional physical appearance suited for modeling, plus seven years of music education (piano, choir). Above average in her domain but not a cognitive or creative prodigy. Career was launched by physical attributes rather than developed skills.",
+    "inherited_summary": "Father was a coal miner of Volga Tatar origin who died of pneumonia when she was 14, leaving the family impoverished. Mother worked multiple jobs as a kindergarten music teacher. Grewup in grinding poverty in a polluted coal mining town during the Soviet collapse.",
+    "ecosystem_summary": "Sister worked at a beauty school next to a modeling school, leading to discovery by a local scout. Won Miss Chelyabinsk 2004 at 18, then moved to Paris at 20. Limited modeling infrastructure in rural Russia, but right timing for international scouting of Russian models.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "regla-bell",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Recruited to a specialized sports school at 9 for her height, became a left-handed outside hitter of tremendous power. Won FIVB World Cup gold at 19 and three consecutive Olympic golds. Multiple MVP and Best Spiker awards at international level. Exceptional volleyball talent.",
+    "inherited_summary": "Mother and sisters also played volleyball, providing family domain exposure. Cuban family in Havana with sporting tradition, though modest circumstances within Cuba's state system.",
+    "ecosystem_summary": "Product of Cuba's dominant women's volleyball pipeline, one of the most successful national team programs in any sport. Played alongside Hall of Famers Mireya Luis and Regla Torres under legendary coach Eugenio George. 'Las Morenas del Caribe' was a once-in-a-generation team environment.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "rudi-carrell",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Grew up in a show business family, learning performance skills from childhood. Replaced his father on stage at 17 and became a weekly radio presence at 21. Above-average entertainer ability with early exposure, but not a prodigy.",
+    "inherited_summary": "Father André Carrell was a conferencier (MC/comedian) and grandfather was also in show business, creating a multi-generational family-domain apprenticeship. However, the family was relatively poor in Alkmaar, with father growing up in a large poor family.",
+    "ecosystem_summary": "Father's existing show business career provided direct access to performance venues, radio, and television. The rise of television in the Netherlands in the late 1950s created perfect timing for his own show on VARA at 25. Family connections opened doors that would otherwise have been closed.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "eminem",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began rapping at 14 and developed exceptional verbal and rhyming talent with 14-syllable rhyme schemes and freestyle battle skills. Clearly above-average linguistic ability in his domain, though not a traditional cognitive prodigy. Dropped out of high school at 17.",
+    "inherited_summary": "Father abandoned the family when Eminem was 18 months old. Raised by a single teenage mother in poverty on welfare, constantly moving between Missouri and Michigan. Bullied severely in school. No financial, educational, or family stability advantages.",
+    "ecosystem_summary": "Detroit's underground hip-hop scene provided deep immersion and competitive battle experience. The Bass Brothers (FBT Productions) discovered him and provided studio access and production mentorship. Dr. Dre then signed him, providing legendary production mentorship and a major platform at the peak of hip-hop's commercial explosion.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "berit-aunli",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started serious training at 18 and won 15 Norwegian national championships between 1977-1982. Above-average skiing ability with strong competitive drive, but a relatively late start for elite cross-country skiing.",
+    "inherited_summary": "Father Kristen Kvello was the 1957 Norwegian champion in 50km cross-country, national team coach from 1958-64, and FIS committee member. Deep family domain expertise with direct coaching knowledge and extensive network in Norwegian skiing.",
+    "ecosystem_summary": "Norwegian cross-country skiing ecosystem is the world's strongest, with deep cultural infrastructure. Father's dual role as national champion and national coach provided both mentorship and institutional access. Represented Strindheim IL in Trondheim, a strong skiing region.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "belle-delphine",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Dropped out of school at 14 due to bullying and began posting cosplay content around 15-16. Showed good instinct for viral marketing and internet culture, building an audience through distinctive e-girl persona. Above-average creative/marketing instinct but not a traditional cognitive or artistic prodigy.",
+    "inherited_summary": "Born in South Africa to a devout Christian family, parents divorced, moved to UK with mother. Difficult home life and bullying at school, but no extreme poverty or active family disadvantage beyond instability. No particular domain advantages.",
+    "ecosystem_summary": "Instagram platform and the e-girl culture wave of 2018-2019 provided the right timing and cultural context. The internet served as her support network after dropping out of school. No notable mentors or institutional support; self-taught content creation.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "maia-chiburdanidze",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Learned chess at 8 from her brother and could read at 3. Won her debut international tournament at 13, became USSR girls' champion at 15, WGM at 16, and Women's World Champion at 17 (youngest ever at the time). Clear chess prodigy with trajectory-changing ability.",
+    "inherited_summary": "Chess was popular in her family; older brother Reziko taught her at 8. Family moved from Kutaisi to Tbilisi to give her access to better chess training, showing significant family support and sacrifice. Modest but supportive family.",
+    "ecosystem_summary": "Soviet chess pipeline and Georgian chess tradition provided strong institutional support. Tbilisi chess schools offered better training after the family relocated. The Soviet system's structured development pathway for female chess players was among the world's best.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "djamila-bouhired",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Developed anti-colonial consciousness in French school, standing up to teachers by declaring 'Algeria is our mother.' Above-average courage and political conviction, but not a cognitive or creative prodigy. Her significance came from revolutionary activism, not early intellectual achievement.",
+    "inherited_summary": "Born to a middle-class Muslim family in Algiers' Casbah, the only daughter among seven sons. Father was Algerian, mother Tunisian. French education was a privilege in colonial Algeria, and brothers were involved in nationalist resistance, providing family network access to the FLN.",
+    "ecosystem_summary": "FLN network provided the organizational structure for her activism. Uncle Mustapha Bouhired recruited her, and she worked as liaison for FLN commander Yacef Saadi. The Algerian revolution's timing and the anti-colonial wave of the 1950s created the context for her prominence.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "hermann-maier",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started skiing at 3 and was winning races at 6, showing superior technique from a young age. Despite being dismissed from the Austrian national ski academy at 15 for being too small (50kg), he developed exceptional physical ability and came back to win two Olympic golds at 25.",
+    "inherited_summary": "Father owned and managed a ski school in Flachau, Austria, providing direct domain expertise and unlimited early access to skiing. Born into an alpine skiing family business in a skiing town, with deep cultural immersion in the sport.",
+    "ecosystem_summary": "Austrian skiing culture is the world's strongest, with the most promising skiers identified at 10-12 and given elite coaching. Father's ski school provided early training ground. Though initially rejected from the formal pipeline, the Austrian system ultimately recognized and developed his talent.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "durdjica-bjedov",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started swimming at 12 and was selected for the Olympics primarily because Yugoslavia needed a breaststroker for their medley relay. Her best international result before the Olympics was third in her heat at the European Championships. Above-average ability but an unexpected Olympic champion.",
+    "inherited_summary": "Father Đuro was a swimmer and then swimming coach, providing family domain exposure and early coaching. Started swimming because of her father's involvement in the sport. Modest family in Split, Yugoslavia.",
+    "ecosystem_summary": "Club PK Mornar in Split and the Yugoslav national team provided standard training and competition access. Father served as her first coach. No elite training infrastructure or notable mentors beyond the standard national team pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "andoni-zubizarreta",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Entered the youth system at Aretxabaleta at 14-15 and progressed steadily through Alavés to Athletic Bilbao, making his La Liga debut at 20. Above-average goalkeeping ability with a 1.87m frame, but not a prodigy-level talent.",
+    "inherited_summary": "Born in Vitoria-Gasteiz and raised in Aretxabaleta in the Basque Country. No particular family wealth or football background documented. Modest Basque family background.",
+    "ecosystem_summary": "Athletic Bilbao's youth system and the Basque football pipeline provided strong professional development. The Basque Country has one of Spain's deepest football cultures, and Athletic Bilbao's unique Basque-only policy created a clear pathway for local talent.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "yasser-seirawan",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Learned chess at 12 and won the Washington junior championship at 13, then the World Junior Championship at 19 and GM title at 20. A teacher described him as 'like encountering a Mozart.' Clearly exceptional chess talent with rapid ascent.",
+    "inherited_summary": "Father was a Syrian engineer who worked at Boeing in Seattle (middle-class professional). Mother was an English nurse. Family emigrated from Syria to England to the US, providing international exposure. Parents separated, creating some instability.",
+    "ecosystem_summary": "Seattle's Last Exit on Brooklyn coffeehouse provided a strong local chess scene where he played daily against masters Viktors Pupols and six-time Washington champion James McCormick. Founded and coached his high school chess team. Good local ecosystem but not an elite international training environment.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "igors-vihrovs",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started gymnastics at 7 and was competing internationally by 19 at the World Championships. Won Olympic gold in floor exercise at 22. Above-average gymnastics ability, but no prodigy-level indicators or exceptional early achievements documented.",
+    "inherited_summary": "No family background information available in reviewed sources. Born in Riga, Latvia, during the Soviet era. No documented family advantages or disadvantages.",
+    "ecosystem_summary": "Trained at the Riga School of Gymnastics within the Latvian/Soviet sports system. The Soviet gymnastics tradition was among the world's strongest, providing structured training. Standard institutional pipeline without notable mentors or extraordinary peer environment documented.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "ray-bourque",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started hockey at 5 and dropped out of school at 15 to devote himself to junior hockey. Named best defenseman in the QMJHL twice and recorded 65 points as an NHL rookie defenseman (a record at the time), winning the Calder Trophy. Exceptional early hockey ability.",
+    "inherited_summary": "Parents were from New Brunswick, moved to Montreal in the 1950s. Working-class family in Saint-Laurent, Quebec. Mother died of cancer when he was 12. No particular hockey family connections or financial advantages.",
+    "ecosystem_summary": "QMJHL pipeline (Trois-Rivières, Sorel, Verdun) provided strong junior hockey development in the Montreal hockey ecosystem. The league's high-scoring environment developed his offensive skills. Drafted 8th overall by Boston in 1979, immediately stepping into an NHL role.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "caterina-valente",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began performing on stage at 5, spoke six languages, sang in thirteen, and developed skills in guitar, tap dance, and singing with sure pitch. Exceptional multilingual performing ability from a very young age, clearly above average.",
+    "inherited_summary": "Born into a seven-generation show business family. Father played accordion (classical pieces by Bach and Chopin), mother was a clown and singer who reportedly played 33 instruments. Both parents were professional performers, providing direct domain immersion from birth.",
+    "ecosystem_summary": "Toured with the family act across Europe from the 1930s, gaining professional stage experience from age 5. Survived WWII hardship (deportation, bombing, Russian imprisonment) but the European entertainment circuit provided sustained performing experience. Rise of television in the 1950s created new opportunities.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "vladimir-arnold",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Developed interest in mathematics from age 5, entered Moscow State University at 17, and solved Hilbert's 13th problem at 19 as a third-year undergraduate. One of the most extraordinary mathematical achievements by a teenager. Trajectory-changing prodigy-level ability.",
+    "inherited_summary": "Father was a mathematician who studied algebra under Emmy Noether. Mother was an art historian. Several generations of the family were scientists. Deep academic lineage with direct mathematical mentorship from his father and uncle.",
+    "ecosystem_summary": "Moscow State University's Faculty of Mechanics and Mathematics in the 1950s was a once-in-a-generation peer environment with Kolmogorov, Gelfand, Petrovsky, Pontryagin, and others teaching. Mentored by Andrey Kolmogorov, one of the greatest mathematicians of the 20th century, who guided him to solve Hilbert's 13th problem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "wei-qingguang",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Entered a city amateur sports school at 8 and began professional training at 10, joining the Guangxi provincial team. Won three national championships at 22. Above-average table tennis ability but not a prodigy-level talent within China's deep talent pool.",
+    "inherited_summary": "No family background information available in reviewed sources. Born in Nanning, Guangxi, a modest background within the Chinese sports system. No documented family advantages.",
+    "ecosystem_summary": "China's elite table tennis pipeline is the world's strongest, with a structured system from city sports schools to provincial teams to the national team. Entered the system at 8, providing early specialized training. The provincial-to-national team pipeline provided sustained development.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kofi-kingston",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started wrestling training relatively late at 24, after graduating from Boston College. Above-average athletic ability with a 6'0\", 212-pound frame, but no exceptional early athletic indicators or prodigy-level talent in wrestling.",
+    "inherited_summary": "Born in Kumasi, Ghana, to a family of intellectuals. Father was a librarian at Boston College, and grandfather was a revered teacher. Middle-class academic family that immigrated to the US. Good education but no wrestling domain overlap.",
+    "ecosystem_summary": "Winchester High School wrestling under coach Larry Tremblay provided amateur foundation. Trained at Chaotic Wrestling in New England and then the WWE developmental system (Ohio Valley Wrestling). Standard professional wrestling pipeline without notable mentors or extraordinary peer environment.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "rory-gallagher",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Received his first guitar at 9, bought his trademark Stratocaster at 15, and played in showbands as a teenager. Self-taught with relentless practice, winning a talent competition at ~12. Exceptional guitar ability and musical drive from a young age.",
+    "inherited_summary": "Father was an accordionist who led a céilí dance orchestra and served in the Irish Army. Parents loved music, providing a musical household. Middle-class Irish family with musical exposure but no professional music industry connections.",
+    "ecosystem_summary": "American Forces Network radio in Derry exposed him to blues music. The Irish showband circuit provided extensive performing experience as a teenager. Cork's music scene and brother Dónal as manager provided support. Good ecosystem but not elite or frontier-level.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "cliff-richard",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Became interested in skiffle as a teenager, received a guitar from his father at 16, and formed vocal groups. 'Move It' released at 17 reached #2 on the UK charts. Above-average singing ability with quick rise, but not a prodigy-level talent.",
+    "inherited_summary": "Father was a catering contractor for Indian Railways in British India. Family moved to England in 1948 with just £5 after Indian independence. Working-class family; father fell ill, and Cliff became breadwinner at 16. No financial or industry advantages.",
+    "ecosystem_summary": "The skiffle movement and rock and roll wave in 1950s Britain provided perfect timing. The Oh Boy! TV show gave him early national exposure. London's 21's coffee bar circuit provided performing venues. Right place, right time for the birth of British rock and roll.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "rebecca-horn",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Taught to draw by her Romanian governess, contracted tuberculosis as a teenager and spent a year in a sanatorium after severe lung damage from fiberglass at 20. Transformed illness and isolation into a pioneering artistic vocabulary of body extensions. Exceptional creative vision and drive.",
+    "inherited_summary": "Grandfather owned a textile factory in Bad König, providing a middle-class/industrialist background. Had a Romanian governess who taught her to draw, indicating a privileged upbringing. However, parents died during her sanatorium period, leaving her isolated.",
+    "ecosystem_summary": "Attended the Hochschule für bildende Künste Hamburg (Hamburg Academy of Fine Arts). Post-war Germany's art scene and later exposure to Franco Evangelisti's electronic music course in Rome provided some artistic context. But her signature work was largely shaped by isolation and adversity rather than ecosystem advantages.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "julie-andrews",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Vocal prodigy whose vocal cords had developed to adult level by age 8. Professional singing lessons from Madame Stiles-Allen. Began performing professionally at 12, became the youngest solo performer at a Royal Command Performance at 13. Dubbed 'the pig-tailed prodigy.' Trajectory-changing vocal ability.",
+    "inherited_summary": "Mother was a pianist who performed in variety shows, and stepfather was a Canadian-born tenor who gave Julie singing lessons and legally adopted her. Performing family that provided direct domain immersion. However, the family was 'very poor' and lived in a 'bad slum area of London,' and stepfather was an alcoholic who was violent and made inappropriate advances.",
+    "ecosystem_summary": "West End and music hall ecosystem in London provided professional performing venues from age 12. Stepfather's performing family act gave her stage experience. Singing lessons from Madame Stiles-Allen developed her prodigy-level voice. BBC radio provided early broadcast exposure. Strong performing ecosystem despite family dysfunction.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jean-tabary",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Loved to draw as a child and entertained his eight siblings with improvised stories. Above-average artistic ability but had no particular interest in comics initially and worked as a plasterer before teaching himself comics art and pitching to magazines. Late professional debut at 26.",
+    "inherited_summary": "Father was a plasterer who also toured as a violinist with Théâtre Mogador. Mother was a homemaker raising nine children. Artistic family environment with two brothers (Jacques and Pierre) also becoming illustrators. Modest working-class family with artistic leanings.",
+    "ecosystem_summary": "Franco-Belgian comics tradition provided a strong publishing ecosystem, and Vaillant magazine gave him his first professional break. No notable mentors or formal artistic training documented. Self-taught in comics art with support from the Franco-Belgian publishing infrastructure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "bjørn-wirkola",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won junior championships in Nordic combined at 18-19, then switched to pure ski jumping and became double World Champion at 22. Won three consecutive Four Hills Tournaments. Exceptional ski jumping talent with rapid ascent after switching disciplines.",
+    "inherited_summary": "Father was a construction worker and active sportsman who competed in Nordic combined and played football as a goalkeeper. Family sports culture provided early exposure. However, family was evacuated and their home burned by Germans during WWII, and the family was working-class.",
+    "ecosystem_summary": "Alta, Norway had a deep ski jumping culture with jumping hills throughout the district and annual competitions drawing Scandinavian participants. Father's Nordic combined background provided early domain exposure. Moved to Trondheim at 18 for better training opportunities, joining the same sports shop as Olympic champion Toralf Engan.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "igor-vori",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started handball late at 14-16, inspired by Croatia's 1996 Olympic gold. Initially struggled with basics and nearly quit. 2.03m height provided physical advantage. Above-average ability but not a prodigy, with a late start and initial difficulties.",
+    "inherited_summary": "No family background information available in reviewed sources. From Sesvete/Zagreb, Croatia. Parents were supportive but not described as having handball domain expertise. Modest background.",
+    "ecosystem_summary": "RK Zagreb, one of Europe's elite handball clubs, provided a high-performance development pathway. Coaches Boris Dvoršek and Lino Červar were instrumental in developing him from a struggling third-team player to a world-class pivot. Croatian handball tradition and the 1996 Olympic gold provided inspiration and cultural context.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "salvatore-sciarrino",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began composing at 12 as a self-taught musician, held his first public concert at 15, and was published by major publisher Ricordi from 22. Developed a highly personal compositional style by 19. Exceptional creative talent with early self-directed output.",
+    "inherited_summary": "No particular family advantages documented. Born in Palermo, Sicily. No musical family background mentioned in available sources. Self-taught approach suggests limited formal musical family infrastructure.",
+    "ecosystem_summary": "Palermo's Settimane Internazionali Nuova Musica festival provided cultural context for new music. Some private lessons with Antonino Titone and Turi Belfiore. Later attended Franco Evangelisti's electronic music course at Accademia di Santa Cecilia in Rome. Good but not elite institutional support.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "annemarie-moser-proll",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Skied from age 4, entered her first World Cup race at 14, won her first World Cup race at 16, and became the youngest ever overall World Cup winner at 17. Won five consecutive overall titles. Exceptional skiing talent with early dominance.",
+    "inherited_summary": "Born as the sixth of eight children on a mountain farm in Kleinarl, Austria. Father made her first skis from bent roof shingles. Modest farming family but deeply immersed in alpine skiing lifestyle and geography.",
+    "ecosystem_summary": "Austrian skiing culture is the world's strongest, with deep infrastructure for talent development. Discovered by local ski teachers Christoph and Stefan Dertnig. Joined the Austrian national ski team at 15. Kleinarl's alpine geography provided daily skiing access (skiing downhill to school).",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "alberto-juantorena",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Multi-sport athlete as a child (soccer, volleyball, basketball, swimming). At 14, was 1.88m and sent to a state basketball school. Won 800m and 1500m at regional school games without training. Exceptional physical talent (1.90m, powerful 2.75m stride) that translated rapidly to track after late switch at 20.",
+    "inherited_summary": "Born in a poor two-room house in Santiago de Cuba. Parents had no jobs before the revolution. After the revolution, father became construction worker and mother a Spanish teacher. Grew up in poverty with no material advantages.",
+    "ecosystem_summary": "Cuban state sports system provided free access to sports and education after the revolution, which Juantorena credits as life-changing. Polish coach Zygmunt Zabierzowski discovered his running talent and convinced him to switch from basketball to track at 20. State sports school provided structured development.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "erik-de-vlaeminck",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started cycling as a teenager and made his cyclo-cross debut at 17. Won his first world championship at 20, the first of seven world titles between 1966-1973 (a record for male riders). Exceptional cyclo-cross talent with sustained dominance.",
+    "inherited_summary": "Grew up in a trailer camp in Eeklo, East Flanders, in a family of travelling clothiers. Father raced bicycles, providing early domain exposure. Brother Roger became one of Belgium's top road racers. Poor family but deep cycling culture.",
+    "ecosystem_summary": "Belgian cycling culture is the world's strongest for cyclo-cross, with deep grassroots infrastructure. East Flanders provided a particularly intense cycling environment. Brother Roger as training partner and competitor. Rode for Flandria, one of Belgium's top professional teams. Strong cycling ecosystem despite modest family background.",
+    "scoring_confidence": "Medium"
+  }
+]

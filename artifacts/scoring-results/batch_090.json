@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "nikolay-storonsky",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began reading economics books at age 6. Two-time International Economics Olympiad winner. Completed two master's degrees (MIPT physics, NES economics) by 2007. State champion swimmer. Prodigy-level intellectual ability across multiple domains.",
+    "inherited_summary": "Father was deputy general director for science at Gazprom Promgaz, a senior position at Russia's state gas company. Upper-middle-class family with significant professional standing, though not wealthy by global standards.",
+    "ecosystem_summary": "Elite Russian institutions (MIPT and NES) provided rigorous training. Trading career at Lehman Brothers and Credit Suisse gave direct financial domain exposure. Met cofounder Vlad Yatsenko at Credit Suisse, providing the critical cofounder connection.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "vlad-yatsenko",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started programming at age 15, initially coding on paper due to limited computer access. Graduated with honours from Petro Mohyla University. Capable self-taught programmer but no prodigy-level evidence.",
+    "inherited_summary": "Born in East Germany to Soviet military officer. Family displaced after Soviet dissolution, moved to Ukraine. Limited resources and no domain connections. Active disadvantage from displacement and resource constraints.",
+    "ecosystem_summary": "Met cofounder Storonsky at Credit Suisse in London. Built financial software at UBS, Deutsche Bank, and Credit Suisse, providing direct domain exposure. London fintech ecosystem was a significant advantage for later founding Revolut.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "cameron-adams",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Grew up tinkering with computers at father's computer store. Built significant web design reputation as 'The Man in Blue' blogger. Wrote two books on JavaScript. Strong early coding and design ability with public recognition in the web community.",
+    "inherited_summary": "Father owned a computer store, providing early and rare access to computers and technology. Chinese-Australian family with pressure toward professional careers. Upper-middle-class Melbourne family with direct domain tool access.",
+    "ecosystem_summary": "University of Melbourne (BSc, LLB) provided solid education. Joined Google Australia and worked with Lars Rasmussen (Google Maps creator) on Google Wave, providing elite mentorship. Canva cofounding team with Melanie Perkins and Cliff Obrecht.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "eric-glyman",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Valedictorian of his high school. Harvard AB in Economics and East Asian Studies with year at Peking University. Smart and curious about business scaling but no prodigy-level evidence.",
+    "inherited_summary": "Grew up in Las Vegas in a middle-class family. No notable family wealth, domain connections, or industry networks. Father's profession not publicly documented.",
+    "ecosystem_summary": "Harvard provided elite education and connection to cofounder Karim Atiyeh. Y Combinator acceptance for Paribus. Early domain exposure from working at Express clothing store in high school, observing pricing dynamics that inspired Paribus.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "karim-atiyeh",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Earned AB in Electrical Engineering and SM in Computer Science from Harvard through joint degree program. Coding for years before cofounding. Elite academic trajectory with strong technical ability.",
+    "inherited_summary": "Born and raised in Beirut, Lebanon. Attended Collège Notre-Dame de Jamhour, an elite French-language school. Immigrant to the US provided some adversity-driven motivation. Middle to upper-middle-class Lebanese background.",
+    "ecosystem_summary": "Harvard provided elite education and connection to cofounder Eric Glyman. Y Combinator for Paribus. Worked at Oliver Wyman consulting before cofounding, providing commercial experience.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ali-ghodsi",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Received a broken Commodore 64 around age 7-8 and started programming in second or third grade. Completed PhD in distributed computing from KTH in three years. Exceptional early coding ability and academic trajectory.",
+    "inherited_summary": "Born to physician parents in Iran (upper-middle class), but family fled as refugees to Sweden when he was 5, leaving savings behind. Parents rebuilt careers in Sweden with financial struggles. Refugee experience offset professional family background.",
+    "ecosystem_summary": "UC Berkeley AMPLab was a once-in-a-generation peer environment for distributed systems research. Co-created Apache Spark with six Berkeley academics including Ion Stoica and Matei Zaharia. Frontier ecosystem at Berkeley during the big data revolution.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ion-stoica",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Elite academic trajectory: Politehnica University of Bucharest (MS), Carnegie Mellon (PhD under Hui Zhang). ACM Fellow, SIGOPS Mark Weiser Award. Built a Berkeley lab that produced multiple billion-dollar startups.",
+    "inherited_summary": "Born and grew up in communist Romania in the 1960s-80s. Limited resources and restricted opportunities under communist regime. Immigrated to the US in 1994. Active disadvantage from growing up in an isolated communist economy.",
+    "ecosystem_summary": "UC Berkeley professorship provided the platform to build AMPLab, which produced Apache Spark, Mesos, and multiple startups (Databricks, Conviva, Anyscale). Co-founded Databricks with six Berkeley academics including his own PhD student Matei Zaharia. Once-in-a-generation academic ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "matei-zaharia",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "ICPC gold medalist (team placed 4th in world, 1st in North America). Graduated University of Waterloo with near-perfect GPA ('100 - epsilon'). Won ACM Doctoral Dissertation Award. Created Apache Spark as PhD student. Prodigy-level competitive programming and academic achievement.",
+    "inherited_summary": "Romanian-Canadian family. Immigrated from Romania to Canada. Middle-class background with stable family. No notable family wealth or domain connections, but solid educational foundation.",
+    "ecosystem_summary": "University of Waterloo (elite CS/math program) then UC Berkeley AMPLab under Ion Stoica and Scott Shenker. Co-founded Databricks with the Berkeley Spark team. Once-in-a-generation peer environment at Berkeley's AMPLab during the big data revolution.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "paul-davison",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Stanford BS in Industrial Engineering and MBA (Arjay Miller Scholar). Smart and capable with strong academic credentials, but no prodigy-level evidence or exceptional early achievement.",
+    "inherited_summary": "San Diego native. Attended a high school known for high achievers, member of a club for 'emerging leaders and entrepreneurs.' Middle to upper-middle-class background with supportive environment.",
+    "ecosystem_summary": "Stanford undergrad and MBA provided direct Silicon Valley access. EIR at Benchmark Capital gave investor connections. Worked at Metaweb (acquired by Google) and Bain. Met cofounder Rohan Seth through mutual friend.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "rohan-seth",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Got first computer at 13, started building websites as a teenager. Stanford BS in CS and MS in Management Science. Capable engineer with early coding interest but no prodigy-level evidence.",
+    "inherited_summary": "Born in Patna, India, grew up in Delhi. Moved to US at 18 for Stanford. Middle-class Indian family with no notable domain connections or wealth. Immigrant drive was a factor.",
+    "ecosystem_summary": "Stanford BS and MS provided direct Silicon Valley access. Worked at Google for 6 years on Android, Maps, and Location platforms. Met cofounder Paul Davison through mutual friend. Stanford/Google alumni network was key.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "prasanna-sankar",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Ranked #1 in India at TopCoder during college. 2x Google Code Jam world finalist. 2x ACM ICPC world finalist. Prodigy-level competitive programming achievement with international recognition.",
+    "inherited_summary": "From Chennai, India. Attended NIT Tiruchirappalli (good but not IIT). Middle-class family with no notable wealth or domain connections. No inherited advantages in technology or business.",
+    "ecosystem_summary": "Competitive programming community (TopCoder, Code Jam, ICPC) was critical to his early reputation. Interned at Google (2006), worked at Microsoft Canada. YC acceptance for LikeALittle. Online platform community provided global visibility despite non-elite institution.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "baiju-bhatt",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Stanford BS in Physics and MS in Mathematics. Smart and capable with elite education, but no prodigy-level evidence or exceptional early achievement documented.",
+    "inherited_summary": "Son of Gujarati immigrants from India. Father worked at NASA Langley Research Center but family faced severe financial hardship during father's kidney illness. Family could not afford trips to India. Working-class to lower-middle-class with significant financial struggles.",
+    "ecosystem_summary": "Stanford was the critical advantage, where he met cofounder Vlad Tenev. Silicon Valley ecosystem access. Started two finance companies in NYC before Robinhood. Father's NASA work sparked early interest in science.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "max-mullen",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "USC BS in Entrepreneurship and Cinematic Arts. Worked at Schematic for 7 years. No exceptional early achievement or prodigy-level evidence. Average ability with entrepreneurial interest.",
+    "inherited_summary": "Originally from Los Angeles. Middle-class family. No notable family wealth, domain connections, or industry networks. Stable upbringing.",
+    "ecosystem_summary": "Y Combinator provided the critical accelerator access. SF Bay Area ecosystem. Schematic (acquired by WPP) provided 7 years of product management training. Met cofounders Apoorva Mehta and Brandon Leonardo through YC.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ivan-zhao",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Competed in International Olympiad in Informatics as a child. Self-taught coding from a young age. Studied cognitive science at UBC, skipping CS because he already knew enough. Significant early coding ability with competitive programming background.",
+    "inherited_summary": "Born in Urumqi, China. Mother moved family to Vancouver when he was 17. Borrowed $150,000 from his mother to keep Notion alive. Financial struggles forced move from SF to Kyoto. Immigrant family with limited resources.",
+    "ecosystem_summary": "UBC (solid but not elite globally). Vancouver hacking scene provided some community. Worked at Inkling in SF before founding Notion. No elite institution or notable mentors. Open-source and online community were primary ecosystem advantages.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "dmytro-zaporozhets",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-taught programmer (C, PHP, HTML, Ruby) who attended a non-selective automotive engineering university. Wrote a Mario copy and learned web programming. Capable but no prodigy-level evidence.",
+    "inherited_summary": "From a simple family in Ukraine. Built GitLab from a house that lacked running water. No networking or investor connections initially. Active disadvantage from poverty and limited resources.",
+    "ecosystem_summary": "GitHub open-source community was the primary ecosystem advantage, attracting contributors including Sid Sijbrandij. No elite institution, mentor, or frontier geography. Online platform community was critical to GitLab's early growth.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sid-sijbrandij",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "University of Twente (Applied Physics, then Management Science). Good at school but switched from physics because the math was too hard. Self-taught Ruby programming in 2007. Capable but no prodigy-level evidence.",
+    "inherited_summary": "Born and raised in the Netherlands. Oldest of four siblings. Stable family with both parents together. Middle-class Dutch upbringing with access to good education.",
+    "ecosystem_summary": "University of Twente provided decent education. IBM Extreme Blue internship was notable. Discovered GitLab on Hacker News as an open-source contributor, then partnered with Dmytro Zaporozhets. YC Winter 2015 batch. Open-source community was the key ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tony-xu",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "UC Berkeley BS (IEOR) and Stanford MBA. Smart and capable with elite education, but no prodigy-level evidence. Strong work ethic from immigrant background.",
+    "inherited_summary": "Immigrated from China at age 5 with $200. Family relied on federal assistance. Mother worked 3 jobs for 12 years including restaurant work. Father was PhD student working at campus restaurant. McDonald's was considered a luxury. Active disadvantage from poverty and immigrant struggle.",
+    "ecosystem_summary": "Stanford MBA was the critical advantage, where he met DoorDash cofounders at Startup Garage. UC Berkeley for undergrad. YC acceptance. Deep domain exposure from working in mother's restaurant ages 9-18. Silicon Valley ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "evan-sharp",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught coding on father's Macintosh. UChicago BA in History, Columbia architecture studies. Created icons and UI designs in high school. Capable with design and coding interest but no prodigy-level evidence.",
+    "inherited_summary": "Both parents were park rangers in York, Pennsylvania. Father was a computer hobbyist with a Macintosh. Middle-class family with stable upbringing. Early computer access through father was a modest advantage.",
+    "ecosystem_summary": "UChicago and Columbia provided elite education. Met cofounder Ben Silbermann through a mutual acquaintance in New York. Worked at Facebook as product designer. Pinterest cofounding team with Silbermann and Sciarra was the key peer environment.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "paul-sciarra",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Yale BA. Worked at Radius Ventures (VC) and Kirkland & Ellis (top law firm). Capable with elite education and professional experience, but no prodigy-level evidence.",
+    "inherited_summary": "Yale education and early VC/law firm experience suggest upper-middle-class background. Family details not publicly documented. Stable professional family background.",
+    "ecosystem_summary": "Yale connected him to cofounder Ben Silbermann. Early VC experience at Radius Ventures provided industry exposure. EIR at Andreessen Horowitz after leaving Pinterest. Pinterest cofounding team was the key peer environment.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "tim-glaser",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started coding at 11, first paid coding job at 13, formally employed as developer at 16. Quit school at 16 because he was earning more than his teacher. Significant early coding achievement with professional experience from a young age.",
+    "inherited_summary": "Originally from the Netherlands. Quit school at 16. No notable family wealth, domain connections, or industry networks documented. Working-class to middle-class background.",
+    "ecosystem_summary": "Moved to London and joined Arachnys, where he met cofounder James Hawkins. YC W20 batch. London tech scene provided some ecosystem. No elite institution or notable mentors. Complementary cofounder relationship with Hawkins was key.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "james-hawkins",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "University of Cambridge (BA Economics). Spent first 10 years of career as professional cyclist. Bootstrapped c2o Media to several million dollars/year. Capable with commercial drive but no prodigy-level evidence.",
+    "inherited_summary": "Cambridge education suggests middle to upper-middle-class background. Stable family upbringing. No notable family wealth or domain connections documented.",
+    "ecosystem_summary": "Cambridge provided elite education. Arachnys (VC-backed startup) provided enterprise sales experience as VP. Met cofounder Tim Glaser at Arachnys. YC W20 batch. Complementary cofounder relationship with Glaser was key.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "austen-allred",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started hacking eBay search results at 13. Co-authored 'Secret Sauce' growth hacking bestseller. BYU dropout. Capable with entrepreneurial drive and growth expertise, but no prodigy-level evidence.",
+    "inherited_summary": "Grew up in Springville, Utah in a Mormon family. Trailer park upbringing. Father was an accountant. Lived in his two-door Honda Civic during YC. Missionary work in Ukraine. Active disadvantage from poverty and financial hardship.",
+    "ecosystem_summary": "Y Combinator S17 batch was critical. Silicon Valley ecosystem access. Early PC access through father. Met cofounder Ben Nelson. Growth hacking expertise and online platform presence (blog) provided some reputation building.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kunal-shah",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Ran over a dozen businesses from age 16. Exceptional entrepreneurial drive and pattern recognition for consumer behavior. Wilson College BA in Philosophy. No traditional prodigy evidence but relentless business builder from a young age.",
+    "inherited_summary": "Family bankruptcy at age 14-15 when father's pharma distribution business failed. Moved to 100 sq ft home in Mumbai. Worked as delivery boy and data entry operator. Could not afford BTech, studied philosophy for flexible schedule. Active disadvantage from poverty and social mockery.",
+    "ecosystem_summary": "Indian internet ecosystem was a significant unlock. No elite institution, notable mentors, or frontier geography. Built significant online following through social media and podcasts. Self-taught through the internet rather than institutional access.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "anthony-tan",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started first business at 11 (retail trading). UChicago BA and Harvard MBA. Worked on assembly line at father's company. Capable with early entrepreneurial interest but no prodigy-level evidence.",
+    "inherited_summary": "Scion of one of Malaysia's wealthiest families. Father was president of Tan Chong Motor (Nissan distributor, publicly listed). Great-grandfather was taxi driver, grandfather introduced Japanese auto industry to Malaysia. Mother was Grab's first investor. Multi-generational automotive/transportation domain expertise directly relevant to Grab.",
+    "ecosystem_summary": "UChicago and Harvard MBA provided elite education. Met cofounder Tan Hooi Ling at HBS. Won $25K prize in HBS business plan competition. Deep domain expertise from family automotive business. Family network provided initial capital and industry connections.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "trae-stephens",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Georgetown School of Foreign Service (Arabic and Security Studies). Computational linguist in US Intelligence Community. Capable with deep domain expertise in defense/intelligence but no prodigy-level evidence.",
+    "inherited_summary": "From Lebanon, Ohio, described as a 'hardscrabble Ohio town.' No notable family wealth or domain connections. Talked his way into Georgetown after being rejected. Working-class background.",
+    "ecosystem_summary": "Palantir Technologies early employee (~25th employee) provided deep defense/intelligence domain expertise and network. Founders Fund partner gave investor connections and Peter Thiel network. Co-founded Anduril with Palmer Luckey. Once-in-a-generation defense tech ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "matt-grimm",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Cornell BS in Mechanical and Aerospace Engineering and MEng in Systems Engineering. Capable engineer with elite education but no prodigy-level evidence.",
+    "inherited_summary": "Cornell education suggests stable, middle to upper-middle-class background. Family details not publicly documented. No notable family wealth or domain connections.",
+    "ecosystem_summary": "Cornell DARPA Grand Challenge team with Brian Schimpf was a formative peer environment. Booz Allen Hamilton (DIA advisor) and Palantir (deployed to Iraq/Afghanistan) provided deep defense domain expertise. Anduril cofounding team with Palmer Luckey, Schimpf, Stephens, and Chen.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "brian-schimpf",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Started coding at age 12. Wrote code at Eastman Kodak in 9th grade. Worked on solar cars and stage lighting in high school. Cornell engineering. Significant early engineering achievement with direct domain exposure from a young age.",
+    "inherited_summary": "Mother and stepfather both worked as engineers at Eastman Kodak. Father was also an engineer. Grewup in Rochester, NY (Kodak's hometown). Direct family domain inheritance in engineering with early coding access at Kodak.",
+    "ecosystem_summary": "Cornell DARPA Grand Challenge team with Matt Grimm was a formative peer environment. Palantir early employee (decade of defense domain experience). Anduril cofounding team with Palmer Luckey, Grimm, Stephens, and Chen. Once-in-a-generation defense tech ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "joe-chen",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Rice University BA in Electrical Engineering. USC MBA. Early Oculus VR employee (hardware product lead). US Army National Guard paratrooper. Capable with hardware expertise but no prodigy-level evidence.",
+    "inherited_summary": "Rice and USC education suggest stable, middle to upper-middle-class background. Family details not publicly documented. No notable family wealth or domain connections.",
+    "ecosystem_summary": "One of the first employees at Oculus VR under Palmer Luckey provided direct VR hardware and frontier tech experience. US Army paratrooper service provided defense domain credibility. Anduril cofounding team with Luckey, Schimpf, Grimm, and Stephens.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jack-clark",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "University of East Anglia (BA English Literature with Creative Writing). Journalist at The Register and Bloomberg. Built Import AI newsletter to 70,000 weekly readers. Capable writer and communicator but no prodigy-level evidence.",
+    "inherited_summary": "From Brighton, England. English degree from UEA (not elite). No notable family wealth or domain connections. Working-class to middle-class background.",
+    "ecosystem_summary": "OpenAI early employee as Policy Director connected him to the Amodei siblings and other future Anthropic cofounders. Import AI newsletter (70K readers) established his AI expertise and audience. AI Index at Stanford. Anthropic cofounding team. Once-in-a-generation AI ecosystem at OpenAI.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jared-kaplan",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Attended IMSA (Illinois Mathematics and Science Academy) for high school. Stanford BS in Physics and Math. Harvard PhD in Physics under Nima Arkani-Hamed. Hertz Fellowship. Prodigy-level academic trajectory with elite mentorship.",
+    "inherited_summary": "IMSA attendance suggests strong educational background and supportive family. Middle to upper-middle-class. No notable family wealth or direct industry connections, but strong academic pipeline.",
+    "ecosystem_summary": "IMSA, Stanford, and Harvard provided elite institutional pipeline. PhD under Nima Arkani-Hamed, one of the world's top theoretical physicists. OpenAI researcher. Co-founded Anthropic with Dario and Daniela Amodei, Sam McCandlish, and Jack Clark. Once-in-a-generation AI research ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "sam-mccandlish",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Brandeis BS/MS in Math and Physics. Stanford PhD in Theoretical Physics under Eva Silverstein. NSF Graduate Research Fellowship. Significant academic achievement with elite graduate training.",
+    "inherited_summary": "Brandeis education suggests stable, middle to upper-middle-class background. Family details not publicly documented. No notable family wealth or domain connections.",
+    "ecosystem_summary": "Stanford PhD under Eva Silverstein provided elite mentorship in theoretical physics. OpenAI researcher where he worked with Kaplan and the Amodei siblings. Co-founded Anthropic. Once-in-a-generation AI research ecosystem at OpenAI and then Anthropic.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "daniel-levy",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Lycée Louis-Le-Grand preparatory program. Ranked #13 nationwide on École Polytechnique entrance exam (one of France's most selective). Stanford MS and PhD in CS under John Duchi and Stefano Ermon. Prodigy-level academic achievement.",
+    "inherited_summary": "Lycée Louis-Le-Grand and École Polytechnique trajectory suggests strong educational background and supportive family. French middle to upper-middle-class. No notable family wealth but elite educational pipeline.",
+    "ecosystem_summary": "École Polytechnique (France's top science/engineering school) and Stanford provided elite institutional pipeline. Internships at Facebook, Google Brain, Google Research. OpenAI optimization team lead. Co-founded SSI with Ilya Sutskever. Once-in-a-generation AI research ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "gene-lee",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "University of Chicago BA in Psychology. Research assistant at UChicago Booth. Software engineer at BTCjam, Paribus, and Capital One. Capable with domain experience but no prodigy-level evidence.",
+    "inherited_summary": "University of Chicago education suggests stable, middle to upper-middle-class background. Family details not publicly documented. No notable family wealth or domain connections.",
+    "ecosystem_summary": "UChicago provided solid education. Domain experience at Paribus (YC S15) and Capital One was directly relevant. Ramp cofounding team with Eric Glyman and Karim Atiyeh. YC network and fintech domain exposure were key advantages.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "reynold-xin",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "University of Toronto BASc in Engineering Science (elite program). UC Berkeley PhD in CS under Michael J. Franklin and Ion Stoica. Top cited scholar in databases. Significant academic achievement with elite training.",
+    "inherited_summary": "University of Toronto Engineering Science suggests strong educational background. Spent about five years in Canada before Berkeley. Family details not publicly documented. Middle-class with solid educational foundation.",
+    "ecosystem_summary": "UC Berkeley AMPLab was a once-in-a-generation peer environment for big data research. Co-created Apache Spark with Matei Zaharia and others. Co-founded Databricks with the Berkeley team. Ion Stoica and Michael J. Franklin as advisors. Frontier ecosystem at Berkeley.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "andy-konwinski",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Self-taught from Apple IIe as a child. Tinkered with cars, soldered circuit boards, reverse-engineered electronics. University of Wisconsin-Madison BS CS. UC Berkeley PhD under Randy H. Katz. Co-created Apache Mesos and Spark. Significant early technical ability.",
+    "inherited_summary": "Born in rural Wisconsin to Jehovah's Witness family. Father was machinist, mother was homemaker and school bus driver. Disfellowshipped at 18, estranged from family and community. Active disadvantage from religious community expulsion and working-class background.",
+    "ecosystem_summary": "UC Berkeley AMPLab was a once-in-a-generation peer environment. Co-created Apache Mesos and Spark. Co-founded Databricks and Perplexity. Randy H. Katz as PhD advisor. Frontier ecosystem at Berkeley during the big data revolution.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "brandon-leonardo",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "San Jose State University BS in CS. First engineer at AngelList. Held senior engineering roles at Webs and StartupBus. Capable engineer with early startup experience but no prodigy-level evidence.",
+    "inherited_summary": "SJSU education (not elite). Bay Area proximity but no notable family wealth or domain connections. Family details not publicly documented. Working-class to middle-class background.",
+    "ecosystem_summary": "SF Bay Area ecosystem was the primary advantage. First engineer at AngelList provided startup ecosystem exposure. YC acceptance for Instacart. Instacart cofounding team with Apoorva Mehta and Max Mullen. Early involvement in the startup ecosystem.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "evan-moore",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "NYU BFA in Music and Audio Engineering. Stanford MBA. Co-founded DoorDash at Stanford's Startup Garage. Capable with diverse background but no prodigy-level evidence.",
+    "inherited_summary": "Attended University of Chicago Laboratory Schools, an elite private school, suggesting significant family wealth and educational investment. Upper-middle-class to wealthy background with strong educational pedigree.",
+    "ecosystem_summary": "Stanford MBA and Startup Garage provided the critical cofounder connection to Tony Xu. UChicago Lab Schools for K-12. DoorDash cofounding team with Xu, Andy Fang, and Stanley Tang. Later partner at Khosla Ventures and VP Product at Opendoor.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "eric-yuan",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Shandong University BS in Applied Mathematics. China University of Mining and Technology MS in Geology Engineering. Inspired by video conferencing idea as university student. Capable engineer but no prodigy-level evidence.",
+    "inherited_summary": "Son of geological engineers in China. Middle-class Chinese family. No notable family wealth or domain connections. Collected construction scraps to recycle copper for cash in fourth grade.",
+    "ecosystem_summary": "WebEx was the critical ecosystem advantage — joined as one of the first employees and rose to VP of Engineering over 14 years. Silicon Valley access after 9 visa rejections. Stanford Executive Program in 2006. No elite institution for formal education but deep domain expertise from WebEx.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jack-altman",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Princeton BA in Economics. Played water polo and participated in rocketry club in high school. Capable with elite education but no prodigy-level evidence.",
+    "inherited_summary": "Brother of Sam Altman (OpenAI founder, one of the most connected figures in tech). Co-founded Hydrazine Capital with Sam. Direct access to investors like Thrive Capital and Khosla Ventures. Family network in tech is trajectory-changing. Mother was dermatologist, father was real-estate broker.",
+    "ecosystem_summary": "Princeton education. Worked at Teespring (fastest-growing YC company at the time). Co-founded Lattice through YC. Silicon Valley ecosystem with direct access through Sam Altman's network. Early angel investments in Opendoor, Instacart, Gusto, Patreon.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ben-nelson",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "BYU BS in Computer Science. Full-stack software engineer at iFit. Lead instructor at DevMountain coding bootcamp. Mandarin instructor at BYU. Capable engineer with teaching experience but no prodigy-level evidence.",
+    "inherited_summary": "BYU education and Mormon community background suggest stable, middle-class family. No notable family wealth or domain connections. Dropped out of BYU almost ten years before Lambda School.",
+    "ecosystem_summary": "DevMountain coding bootcamp provided direct domain experience in coding education. YC S17 batch with cofounder Austen Allred. No elite institution or notable mentors. Direct domain exposure in coding education was the primary advantage.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "laks-srini",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "PSG College of Technology MSc in Software Engineering with 9.92 GPA. Best outgoing student of his batch. All-rounder (basketball, music, academics). Strong academic achievement with elite performance.",
+    "inherited_summary": "From Coimbatore, India. PSG College (good regional institution but not IIT). Middle-class Indian family with no notable wealth or domain connections. Immigrant to the US provided some adversity-driven motivation.",
+    "ecosystem_summary": "D.E. Shaw (elite quantitative hedge fund) for 7 years in India and New York provided exceptional peer environment and financial domain expertise. SigFig in San Francisco. Met cofounder Parker Conrad at SigFig. SF Bay Area ecosystem was critical.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "vik-bajaj",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "University of Pennsylvania combined BA/MS in Biochemistry. MIT PhD in Physical Chemistry. UC Berkeley postdoc. Elite academic trajectory across multiple top institutions with significant scientific achievement.",
+    "inherited_summary": "Born in Canada to Indian immigrant parents. Mother was a physician, father held leadership roles in public and private education. Professional immigrant family with upper-middle-class background and strong educational values.",
+    "ecosystem_summary": "UPenn, MIT, and UC Berkeley provided elite institutional pipeline across the full academic journey. Lawrence Berkeley National Lab as research scientist. Co-founded Google Life Sciences (Verily) working with Sergey Brin. Co-founded Prometheus with Jeff Bezos. Once-in-a-generation ecosystem access.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "alex-bouaziz",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Completed high school at 16. Technion BSc in Civil/Environmental Engineering. MIT MS in Environmental Engineering. Admitted to Imperial College London PhD (dropped out). Founded multiple startups before 25. Significant early achievement across elite institutions.",
+    "inherited_summary": "Father Philippe Bouaziz founded Prodware, a publicly traded IT firm, in 1989. Father is now Deel's chairman and CFO. Grew up watching father build a company from garage to IPO. Direct family domain inheritance in tech entrepreneurship with trajectory-changing family wealth and network.",
+    "ecosystem_summary": "Technion (Israel's top engineering school) and MIT provided elite education. Met cofounder Shuo Wang at MIT. Israel's startup culture was an intense incubator. YC acceptance for Deel. Father's network and resources provided additional ecosystem support.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "shuo-wang",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "MIT mechanical engineering with focus on robotics. DARPA-funded senior thesis. Co-founded Aeris (air purifier company) as CTO, sold to iRobot for ~$100M. Significant early technical and entrepreneurial achievement.",
+    "inherited_summary": "Born in Shenyang, China. Moved to US at 16 with mother. Sold scooters at flea market on weekends to support mother's small business. Immigrant family with limited resources and no notable wealth or domain connections.",
+    "ecosystem_summary": "MIT provided elite education and connection to cofounder Alex Bouaziz. DARPA-funded research provided frontier tech exposure. Aeris exit to iRobot provided entrepreneurial experience and capital. YC acceptance for Deel. MIT ecosystem was the key advantage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "christophe-mancini",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "No verifiable public information found linking Christophe Mancini to Deel as a co-founder. May be an incorrect person_id or reference a very minor early team member with no public profile.",
+    "inherited_summary": "No verifiable public information found about family background, parents' professions, or inherited advantages.",
+    "ecosystem_summary": "No verifiable public information found about education, peers, mentors, or ecosystem connections related to Deel.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "arjun-sethi",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Learned to code at a young age. Built websites as a freelancer. Built and scaled multiple companies (Lolapps, MessageMe). Prolific angel investor in 100+ companies. Significant early technical and entrepreneurial achievement.",
+    "inherited_summary": "Grew up in Santa Clara, CA. Parents were involved in Silicon Valley startup ecosystem. Father was an investor and operator. Met Steve Jobs and Bill Gates as a child through father's network. Trajectory-changing family network in Silicon Valley tech industry.",
+    "ecosystem_summary": "Grew up in Silicon Valley surrounded by startup founders and tech leaders. Father's network provided direct exposure to industry figures. Social Capital as partner. Co-founded Tribe Capital. Native Silicon Valley ecosystem with deep industry connections from childhood.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "robert-vis",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Built an online video platform as a teenager with friends, had actual employees. Co-founded ZayPay (mobile payments). Capable entrepreneur with early start but no prodigy-level evidence.",
+    "inherited_summary": "Born in Amsterdam, 1984. Attended international school (left at 16). Middle-class Dutch family. International school provided global perspective but no notable family wealth or domain connections.",
+    "ecosystem_summary": "Amsterdam tech ecosystem alongside Adyen, Booking.com. Cofounder Adriaan Mol (complementary skills - programmer vs. commercial). ZayPay provided direct domain exposure to messaging/payments. YC accelerator. Early entrepreneurial experience as teenager.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "max-tagher",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Western Kentucky University (attended, forensics team champion). Open-source Haskell contributor (Yesod/Persistent ecosystem). Capable engineer with niche expertise but no prodigy-level evidence.",
+    "inherited_summary": "Western Kentucky University (not elite). Family details not publicly documented. No notable family wealth or domain connections. Working-class to middle-class background.",
+    "ecosystem_summary": "Heyzap was the critical ecosystem — spent ~6 years with cofounders Immad Akhund and Jason Zhang, developing a strong cofounder relationship. SF Bay Area. Haskell open-source community provided recruiting edge for Mercury. No elite institution but strong peer team.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "ryan-petersen",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started import-export business at 17 with brother David. UC Berkeley BS in Economics. Columbia MBA. Deep domain expertise from years of importing goods from China, including living in China. Significant early entrepreneurial achievement.",
+    "inherited_summary": "Both parents were entrepreneurs in Bethesda, Maryland. Father was government economist who helped him write invoice software at age 9. Mother was biochemist who ran her own business and had him sell sodas at her office. Brother David became key co-founder and advisor. Upper-middle-class entrepreneurial family.",
+    "ecosystem_summary": "UC Berkeley and Columbia MBA provided solid education. Brother David as co-founder (ImportGenius) and key advisor was a significant peer advantage. YC acceptance for Flexport. SF Bay Area ecosystem. Deep domain exposure from living in China and running import business.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "peter-reinhardt",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Took calculus as high school freshman. University of Washington honors calculus. Met cofounder Calvin French-Owen at math camp in 7th grade. MIT (Aerospace Engineering, dropped out). Significant early math ability and academic achievement.",
+    "inherited_summary": "Grew up in Pullman, Washington (small town). Parents went back to school at Washington State University. Middle-class academic family. No notable family wealth but stable, supportive environment.",
+    "ecosystem_summary": "MIT was the critical advantage — connected him to cofounders Calvin French-Owen (met in 7th grade at math camp) and Ilya Volodarsky (MIT dorm roommate). 'Founder's Journey' class at MIT with Adam Smith as guest speaker inspired entrepreneurship. YC acceptance. Once-in-a-generation MIT peer environment.",
+    "scoring_confidence": "High"
+  }
+]

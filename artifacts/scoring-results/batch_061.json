@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "phil-libin",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Attended elite Bronx High School of Science; showed natural aptitude for computers, begging for an Atari 800XL at 11 and freelance programming by age 16. Self-taught coder who became a 'computer whiz' and earned good money freelancing before college.",
+    "inherited_summary": "Born in Leningrad to classical-musician parents; emigrated to the Bronx at age 8 with no money, living on food stamps in a dangerous neighborhood. Parents lost their musical careers and worked factory and security guard jobs — active economic disadvantage as refugees.",
+    "ecosystem_summary": "Bronx High School of Science provided an elite peer environment; ATG in Cambridge employed brilliant coders inventing e-commerce tech. Cofounded Engine 5 with ATG colleagues in Boston's late-1990s tech scene, riding the early e-commerce software wave.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "eric-ries",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Published 'Black Art of Java Game Programming' as a teenager, convincing a publisher he was an adult Java expert. Programming since childhood via MUDs. Yale CS graduate who co-founded a dot-com startup as an undergraduate — exceptional early technical and entrepreneurial output.",
+    "inherited_summary": "Middle-class background; attended Yale University for CS. Parents endorsed his publishing contract as a minor, suggesting a stable, supportive family, though no specific domain overlap or wealth is documented.",
+    "ecosystem_summary": "Yale CS provided a strong foundation; Silicon Valley placement at There.com connected him to Will Harvey (cofounder) and Steve Blank (mentor). Blank's customer development methodology at UC Berkeley shaped the lean startup approach applied at IMVU.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "nick-swinmurn",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Showed entrepreneurial drive from a young age — launched a bicycle club, tennis club, and tried to convince parents to open a surf shop as a teen. No exceptional cognitive or technical indicators, but strong product instincts and hustle.",
+    "inherited_summary": "Father was an engineer, mother a teacher; grew up in the Bay Area after moving from England at age 7. Middle-class professional family with stability but no notable wealth or domain connections.",
+    "ecosystem_summary": "Bay Area geography provided immersion in the early internet wave; Autoweb.com job exposed him to startup culture and the 'anything is possible' ethos. Tony Hsieh/Venture Frogs partnership provided critical early capital and operational support for Zappos.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jason-citron",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Learned QBasic at 13 at a sleepover, self-taught coder who found internet programming jobs as a teen. Specialized in game design at Full Sail University, demonstrating early domain focus and self-directed learning.",
+    "inherited_summary": "Born in San Francisco to a family with business and technology background. Grandfather was an entrepreneur (early electrician consultancy); father tinkered with personal computers in the early 1980s and introduced Jason to technology. Family supported his gaming and coding interests.",
+    "ecosystem_summary": "Full Sail University game design program provided formal training; rode the iPhone App Store wave with OpenFeint at the perfect moment. San Francisco Bay Area location provided access to investors and the mobile gaming ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "stanislav-vishnevskiy",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-taught programmer who learned coding through online games and community tooling. Built tools for his Final Fantasy XI guild (top-ranked team globally), waking at 5 a.m. to play and code. Deep domain immersion and self-directed engineering from a young age.",
+    "inherited_summary": "Born in Ukraine, immigrated to the U.S. at age 5. Family wealth and professional background not documented; immigrant path with no documented domain connections or capital. Likely modest economic circumstances.",
+    "ecosystem_summary": "Online gaming communities provided his primary learning environment and peer network. Later connected with Jason Citron at Hammer & Chisel/GREE, forming the complementary cofounder pairing behind Discord. No elite institutions or mentors in early years.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "anthony-levandowski",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Built websites as a teenager, founded profitable company La Raison at 16-17 ($50K/year), won a Lego robotics contest as a Berkeley sophomore, and led the Ghostrider autonomous motorcycle for the DARPA Grand Challenge at 24. Combined engineering brains with business acumen from a young age.",
+    "inherited_summary": "Born in Brussels to a French diplomat mother (European Union) and American businessman father. International upbringing; parents helped him buy his first house near UC Berkeley as an undergraduate. Upper-middle-class with global exposure and parental support.",
+    "ecosystem_summary": "UC Berkeley engineering provided the institutional base; Bay Area robotics and autonomous vehicle frontier in the early 2000s. DARPA Grand Challenge timing was perfect for his interests. Blue Team of Berkeley classmates formed his peer group.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "luis-von-ahn",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Received a Commodore 64 at age 8 and taught himself programming. Summa cum laude in mathematics from Duke. Invented CAPTCHA at ~21-22 while a CMU PhD student. MacArthur Fellowship at 28. Prodigy-level cognitive ability and research output from a young age.",
+    "inherited_summary": "Mother was one of Guatemala's first women physicians — upper-middle-class in Guatemala context. Attended the private American School of Guatemala. Single mother who sacrificed to provide education and bought him his first computer. Privileged educational platform despite single-parent household.",
+    "ecosystem_summary": "Duke (summa cum laude math) then CMU PhD under Manuel Blum, a Turing Award recipient — one of the most elite CS mentor pairings possible. CMU's computer science environment and Blum's mentorship were trajectory-changing for his CAPTCHA and human computation work.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "severin-hacker",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Self-taught programming at age 12 (~1996), driven by obsession with video games. Earned BS from ETH Zurich, one of Europe's top CS programs, then CMU PhD. Strong technical aptitude demonstrated through elite institutional pipeline.",
+    "inherited_summary": "Grew up in Zug, Switzerland; father is an entrepreneur. Family was among the first in the neighborhood to have internet. Swiss middle-class with entrepreneurial father and early technology access, but no significant inherited wealth or domain-specific networks.",
+    "ecosystem_summary": "ETH Zurich (elite European CS) to CMU PhD under Luis von Ahn — a rare mentor-cofounder pipeline. Von Ahn's advisor relationship became a cofounder partnership at Duolingo, combining elite institutional access with a high-trust team formation.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "daniel-weinand",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Multi-disciplinary creative — studied computer science and music at University of Dortmund, self-taught designer and photographer. No exceptional early cognitive indicators documented, but strong complementary design and technical skills.",
+    "inherited_summary": "Born in Andernach, Germany; middle-class family. Parents convinced him to study CS instead of pursuing music composition. Stable upbringing with creative interests supported, but no notable wealth or domain connections.",
+    "ecosystem_summary": "Childhood friendship with Tobias Lütke from the German demo scene became the Shopify cofounding partnership. Ottawa startup cluster provided the ecosystem; e-commerce software wave and complementary Lütke-Weinand design/engineering duo drove early success.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "tracy-young",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "No exceptional cognitive or early-ability indicators documented. Domain expertise came from hands-on construction engineering field work at Rudolph and Sletten, where she experienced the paper blueprint problem firsthand. Strong practical intelligence and execution drive.",
+    "inherited_summary": "Daughter of Vietnamese refugees who came to the U.S. on a repurposed fishing boat. First-generation American, grew up in Milpitas. Immigrant family with likely modest means; no inherited wealth or domain connections.",
+    "ecosystem_summary": "Sacramento State construction management program provided a close-knit cohort. Cofounder team included Ralph Gootee (ex-Pixar) and other software engineers. iPad launch wave created perfect timing for mobile construction blueprints. YC and Bay Area ecosystem supported growth.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "gustaf-alstromer",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "No exceptional early cognitive or technical indicators documented. Entrepreneurial drive demonstrated by co-founding Heysan and entering YC W07, but specific prodigy-level abilities not evidenced.",
+    "inherited_summary": "From Alingsås near Gothenburg, Sweden. Middle-class Swedish background with stable upbringing. No specific family domain overlap or wealth documented. Attended university (Helsinki University of Technology track implied by business studies).",
+    "ecosystem_summary": "YC Winter 2007 batch — one of the earliest and smallest YC cohorts (11 founders). Silicon Valley placement provided access to the mobile messaging wave. Later Airbnb growth team (helped start it, scaled to 150 people) and YC partnership compounded the network.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "immad-akhund",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Programmed for fun as a kid; Cambridge CS graduate. Serial founder from early twenties (Clickpass, Heyzap, Mercury). Capable engineer and entrepreneur but no prodigy-level early indicators documented.",
+    "inherited_summary": "Born in Pakistan, moved to London at age 9. Mother was a teacher, father owned a mechanic shop — middle-class immigrant family. Cambridge education implies academic ability but no inherited wealth or domain-specific networks.",
+    "ecosystem_summary": "University of Cambridge CS provided elite education. YC acceleration with Clickpass opened the Silicon Valley network. Serial founding through Heyzap to Mercury compounded YC and investor relationships. Immigrant path to SF startup ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "deepinder-goyal",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-described 'terrible student' who failed class VI and struggled in school. Scraped into IIT Delhi in the lowest batch. No prodigy indicators; drive and execution intensity rather than exceptional cognitive ability defined his early path.",
+    "inherited_summary": "Born in Muktsar, Punjab to a botany teacher father and English teacher mother. Middle-class academic family in small-town India; books mattered more than money. No inherited wealth or business domain connections.",
+    "ecosystem_summary": "IIT Delhi (elite Indian engineering institution) and Bain & Company provided the institutional pipeline. Cofounder Pankaj Chaddah was a Bain colleague. India's internet consumer wave and smartphone adoption created perfect timing for restaurant discovery.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "peyush-bansal",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Failed the IIT entrance exam, attended McGill University in Canada instead. Worked at Microsoft briefly. Capable engineer and entrepreneur but no exceptional early cognitive indicators; drive and consumer focus defined his path.",
+    "inherited_summary": "Born in New Delhi to a family of chartered accountants (Bal Kishan and Kiran Bansal). Middle-class Delhi family; cousin's success at HP shaped his father's views. Parents supported his education in Canada despite financial constraints.",
+    "ecosystem_summary": "McGill University engineering, Microsoft Seattle experience (including dinner at Bill Gates' house), and India e-commerce wave provided the ecosystem. Cofounders Amit Chaudhary and Sumeet Kapahi formed the complementary team. SearchMyCampus served as a warmup venture.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jennifer-fleiss",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Yale cum laude in political science, Harvard MBA. Smart and capable with entrepreneurial instincts (drafted a patent over spring break at Yale), but no prodigy-level early cognitive indicators. Strong institutional pipeline and business acumen.",
+    "inherited_summary": "Grew up in New York City; attended Yale and Harvard Business School — an elite education pipeline implying upper-middle-class family resources. NYC upbringing with access to fashion and commerce networks.",
+    "ecosystem_summary": "Yale College and Harvard Business School provided elite institutional access. Jennifer Hyman cofounder partnership at HBS was the key relationship. NYC fashion/commerce ecosystem and the 2008-09 e-commerce wave provided timing and market access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jessica-alba",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Interested in acting from age 5, took first acting class at 12, signed by an agent within 9 months. Chosen from 1,200 candidates for Dark Angel. Strong drive and performance ability, but no exceptional cognitive or academic indicators.",
+    "inherited_summary": "Father in Air Force (later real estate broker), mother a housewife. Family moved frequently — 12 different schools. Catholic, loving but not affluent. Middle-to-working-class military family with no entertainment industry connections.",
+    "ecosystem_summary": "Los Angeles geography provided access to the entertainment industry. Atlantic Theater Company training with William H. Macy and Felicity Huffman. James Cameron's Dark Angel (Fox) was the breakout role at 19, providing global visibility and career momentum.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sean-rad",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started first company (Orgoo) at 18 while at USC. Early entrepreneurial drive with parents giving him a cell phone at 13. No exceptional cognitive or technical prodigy indicators, but strong product and business instincts.",
+    "inherited_summary": "Born in Los Angeles to a Persian Jewish family; parents emigrated from Iran in the 1970s and worked in consumer tech. Grew up in Beverly Hills with a large extended family (12 uncles/aunts, 42 first cousins). Wealthy immigrant family with tech industry exposure.",
+    "ecosystem_summary": "USC (dropped out) provided the Mateen connection. Hatch Labs/IAC incubation provided the institutional platform for Tinder. Mobile social wave and campus distribution strategy (via USC Greek system) were perfectly timed. Complementary cofounder team with Mateen and Badeen.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "justin-mateen",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Ran MW Entertainment, a profitable party promotion business at USC, demonstrating marketing and growth instincts. No exceptional cognitive or technical indicators, but strong social intelligence and viral growth skills.",
+    "inherited_summary": "Born in Beverly Hills; attended Brentwood School (private). Family wealth evident from parents' house being used for the Tinder launch party with hundreds of attendees. Wealthy LA family with social capital and private school education.",
+    "ecosystem_summary": "USC Marshall School of Business and the Greek system provided the social network and early Tinder distribution channel. Hatch Labs/IAC incubation and Rad partnership formed the core team. Mobile dating wave and campus growth loops were perfectly timed.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jose-valim",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Got a computer at age 8-10 and developed deep interest in multi-core systems. Became a Ruby on Rails Core Team member by ~25, created Devise (widely used authentication library), and authored technical books. Exceptional open-source technical output by mid-twenties.",
+    "inherited_summary": "Brazilian middle-class family; received a computer at a young age. Studied engineering at Escola Politécnica (University of São Paulo) and earned a Master's from Politecnico di Torino in Italy. Stable, educated family that supported his technical pursuits.",
+    "ecosystem_summary": "Rails open-source community provided a global peer network and reputation-building platform. Plataformatec consultancy cofounded with peers in São Paulo. Ruby/Erlang ecosystems and the open-source community compounding were the primary accelerants.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "wang-xing",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Graduated from Tsinghua University (elite Chinese engineering school) and attended University of Delaware for PhD. Avid reader who excelled at school. Capable engineer but known as 'the Cloner' — adaptation skills rather than prodigy-level innovation.",
+    "inherited_summary": "Born to a wealthy businessman father who owned a cement factory in Longyan, Fujian. Privileged upbringing with a counterfeit PC gifted by his father. Family wealth enabled serial entrepreneurship through multiple failed ventures before Meituan success.",
+    "ecosystem_summary": "Tsinghua University provided elite education and key relationships (wife Guo Wanhuai, roommate Wang Huiwen). US graduate study at Delaware exposed him to Friendster and American social networks. China's social internet wave provided massive market timing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "richard-liu",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Graduated from Renmin University with a law degree. Self-taught programming in spare time. No prodigy indicators; path defined by execution intensity and adversity-catalyzed self-creation rather than exceptional cognitive ability.",
+    "inherited_summary": "Born to a peasant farming family in rural Suqian, Jiangsu. Extreme poverty — ate meat only once or twice a year, survived on corn and sweet potatoes. Village pooled 500 yuan and 76 eggs to send him to university. Active economic disadvantage.",
+    "ecosystem_summary": "Renmin University provided the educational escape from rural poverty. Beijing's Zhongguancun electronics market provided the geographic immersion for his retail booth. China's e-commerce wave was the structural timing, but no elite peers or mentors in early years.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ilkka-paananen",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Studied business at Helsinki University of Technology. Admitted to having 'zero experience' and 'hardly knew what I was doing' when named Sumea CEO at 22. No prodigy indicators; strength was in team-building and culture, not exceptional early technical ability.",
+    "inherited_summary": "Born in Kauhajoki, Finland to educator parents. Stable Finnish middle-class upbringing with access to quality education. No significant inherited wealth or domain-specific connections documented.",
+    "ecosystem_summary": "Helsinki University of Technology provided the peer network. Sumea was founded by student peers who made him CEO. Finnish mobile gaming ecosystem in the early 2000s (pre-iPhone) was a frontier environment. Digital Chocolate acquisition provided his 'MBA in business.'",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "yu-suzuki",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Promoted to project leader in his first year at Sega — normally a 7-8 year path. Conducted 3D animation research at university using mainframe computers. Exceptional early engineering and design talent recognized immediately by Sega leadership.",
+    "inherited_summary": "Born in Kamaishi, Japan to parents who both worked in the music industry (traditional music production). Stable, creative household but not in the technology domain. Father wanted him to continue in music, but Suzuki rebelled toward computing.",
+    "ecosystem_summary": "Sega's arcade hardware labs in 1980s Japan provided a frontier environment for hardware and game experimentation. Japan's arcade game industry was at its peak. Sega's AM2 team and resources enabled his pioneering 3D and taikan arcade cabinet innovations.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "will-wright",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Graduated high school at 16. Self-directed learner interested in models, systems, robotics, and architecture. Invented the simulation game genre — Raid on Bungeling Bay at 24, then SimCity design logic. Exceptional systems-thinking ability from a young age.",
+    "inherited_summary": "Father was a chemical engineer and plastics company owner who died when Will was 9. Mother was a stage actress who moved the family to Louisiana. Middle-class background with intellectual parents, but early father death created instability.",
+    "ecosystem_summary": "Attended multiple universities (LSU, Louisiana Tech, New School) but never completed a degree. Broderbund published his first game. Bay Area move connected him to the early game industry. No elite institutional pipeline or notable mentors in early years.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "american-mcgee",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Gifted in mathematics and science; accepted to a magnet school for computer science. Got a Commodore 64 at 11 from his uncle and taught himself BASIC. Highly creative with early programming aptitude despite extreme personal adversity.",
+    "inherited_summary": "Born in Dallas to an eccentric house-painter mother. Biological father assaulted him on his 13th birthday. Abandoned at 16 when mother sold the house for her partner's surgery, leaving him with only a bed, books, clothes, and a Commodore 64. Active disadvantage — abuse, abandonment, poverty.",
+    "ecosystem_summary": "Met John Carmack at an apartment complex at 21 and was offered a job at id Software — a once-in-a-generation peer environment. id Software's Doom/Quake era with Carmack, Kevin Cloud, and Tim Willits was the defining frontier of 1990s game development.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "cliff-bleszinski",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Built his first game on an Apple computer as a child, sold games in Ziploc bags from his parents' house. Shipped his first commercial title (Palace of Deceit) at 17. Self-taught designer and programmer with intense early creative output in the shareware era.",
+    "inherited_summary": "Father was an engineer at Polaroid who died when Cliff was 15. Middle-class family with technology exposure through father's engineering career. Mother moved family to California after father's death, creating disruption during high school.",
+    "ecosystem_summary": "Epic MegaGames (Tim Sweeney's company) in the shareware era provided the platform. Sweeney mentored and partnered with him. The 1990s shareware/PC gaming scene and Epic's growth into Unreal/Gears of War provided a compounding ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kim-swift",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Knew she wanted to make video games from junior year of high school. DigiPen graduate who co-created Narbacular Drop as a senior project — a game so impressive that Gabe Newell hired the entire team on the spot. Design lead on Portal at ~24.",
+    "inherited_summary": "Father heard about DigiPen from a coworker and suggested she apply. Middle-class family with supportive, tech-aware father. No significant inherited wealth or industry connections, but stable family with educational support.",
+    "ecosystem_summary": "DigiPen Institute of Technology provided the specialized game development training. The DigiPen-to-Valve pipeline — Gabe Newell personally hiring the Narbacular Drop team — is a once-in-a-generation peer environment. Valve's Source engine and creative culture enabled Portal.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jenova-chen",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Father entered him in programming contests from age 10. Earned CS degree from Shanghai Jiao Tong University and a minor in digital art. Self-taught digital art and animation. MFA thesis 'Flow in Games' at USC became the commercial game Flow — multi-disciplinary talent.",
+    "inherited_summary": "Born in Shanghai to a middle-class family. Father worked on one of the earliest giant computers in China and ended his career in software development. Computer access from a young age (PC-286) and programming training provided direct domain apprenticeship.",
+    "ecosystem_summary": "USC Interactive Media MFA program and Tracy Fullerton's Game Innovation Lab provided the institutional platform. Kellee Santiago cofounder partnership. Sony's three-game PSN deal provided distribution and funding for the indie digital wave.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kellee-santiago",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "NYU Tisch School of the Arts (experimental theater), then USC Interactive Media MFA. Capable producer and organizer who recognized the creative potential in Chen's work. No exceptional early cognitive or creative indicators, but strong producing and partnership instincts.",
+    "inherited_summary": "Born in Caracas, Venezuela; father was a software engineer (Cuban-born) who managed software companies in Central/South America. Raised in Richmond, Virginia. Father's tech career provided early computer access. Middle-to-upper-middle-class with international background.",
+    "ecosystem_summary": "NYU Tisch and USC Interactive Media MFA provided elite institutional access. Jenova Chen partnership was the key cofounder relationship. Sony PSN indie distribution wave and the USC game design program's pioneering status provided the ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "steve-russell",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Dartmouth math major who hand-compiled the first two versions of the LISP interpreter at MIT. Created Spacewar! on the PDP-1 — one of the first digital video games. Exceptional programming ability in the earliest era of computing.",
+    "inherited_summary": "Born in Hartford, CT. Uncle was George Washington Pierce, a Harvard professor and pioneer in ultrasonics/acoustics. Middle-class family with academic connections. Uncle arranged a tour of the Harvard Mark I computer, sparking his interest in computing.",
+    "ecosystem_summary": "MIT AI Lab with John McCarthy and Marvin Minsky — a once-in-a-generation computing environment. Tech Model Railroad Club (TMRC) provided the peer hacker culture. PDP-1 access via Professor Jack Dennis was extraordinarily rare for the early 1960s.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "richard-garriott",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught programmer who built dungeon-crawl games in high school. Commercially published Akalabeth at 18 and Ultima I at 20. Defined the computer RPG genre as a teenager. Exceptional early creative and technical output in a nascent field.",
+    "inherited_summary": "Son of NASA astronaut Owen Garriott (Skylab 3, STS-9). Mother was an artist with a master's degree. Raised in Nassau Bay, Texas near Johnson Space Center — neighbors were astronauts and engineers. Family financially supported Origin Systems. Rare, trajectory-changing family context.",
+    "ecosystem_summary": "NASA community in Houston provided a science/engineering-rich environment. Early Apple II access at high school (teachers let him use it freely). Brother Robert Garriott was a durable cofounder for Origin Systems. Apple II era timing was perfect for PC game publishing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "toby-fox",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Created RPG Maker games with brothers from a young age. Built the EarthBound Halloween Hack ROM hack as a teenager. Composed music for Homestuck as a high school senior, becoming leader of the music team. Solo-developed Undertale (code, design, music) at 23 — exceptional multi-disciplinary output.",
+    "inherited_summary": "Born in Manchester, New Hampshire. Mother was a retired paraprofessional in Manchester schools. Three brothers. Modest background with no domain connections or inherited wealth. Family supported creative interests but no special industry access.",
+    "ecosystem_summary": "Online fan communities (Starmen Forum, MS Paint Adventures) provided his primary learning and reputation-building environment. Andrew Hussie (Homestuck creator) became a key collaborator, even letting Fox develop Undertale in his basement. Internet fandom and digital distribution were the ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "edmund-mcmillen",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Prolific self-taught artist and game designer from a young age. Produced independent comics and Flash games throughout his teens and early twenties. Gish won Indie Game of the Year at 24. Intense creative output and distinctive artistic vision despite difficult upbringing.",
+    "inherited_summary": "Born in Santa Cruz County to a born-again Christian family of Mexican descent. Family plagued by drug and alcohol addiction. Raised mostly by grandmother, the only family member who supported his creative interests. Religious family shunned his love of comics and monsters. Active disadvantage.",
+    "ecosystem_summary": "Newgrounds and the Flash game community provided his primary distribution and peer network. Online indie game distribution was the ecosystem. No elite institutions, mentors, or frontier geography — self-created through online communities and relentless output.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "phil-fish",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Attended NAD game design program (2004). Worked at Ubisoft and Artificial Mind and Movement. Fez was an IGF standout by ~23. Capable designer with strong visual aesthetic, but no exceptional early cognitive or technical indicators documented.",
+    "inherited_summary": "Born in Montreal to parents who were art school dropouts but shared art and gaming interests. Father translated The Legend of Zelda into French for him. Middle-class Quebec family with creative/gaming orientation, but no significant wealth or industry connections.",
+    "ecosystem_summary": "Montreal game development scene (Ubisoft, indie community) provided the ecosystem. NAD (National Animation and Design Centre) provided formal training. Kokoromi collective and GAMMA events positioned him in the indie game art scene. IGF recognition launched Fez hype.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "mackenzie-scott",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Wrote a 142-page novel at age 6. Studied English at Princeton under Toni Morrison, who called her 'one of the best students I've ever had in my creative-writing classes.' Exceptional early writing ability and intellectual capacity.",
+    "inherited_summary": "Grew up in San Francisco's Pacific Heights and Ross — privileged childhood with homes in expensive neighborhoods. Father was a successful financial planner, mother stayed home. Family later declared bankruptcy, causing her to leave boarding school, but early upbringing was affluent.",
+    "ecosystem_summary": "Princeton University and Toni Morrison's mentorship was trajectory-changing. D.E. Shaw connected her to Jeff Bezos. The Bezos partnership and 1994 internet commerce timing drove Amazon's founding. Morrison also connected her to literary agent Binky Urban.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "curtis-priem",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Architected IBM's Professional Graphics Adapter — the PC industry's first professional graphics processor — shortly after RPI graduation. Approximately 200 U.S. and international patents in graphics and I/O systems. Exceptional early technical depth in a nascent field.",
+    "inherited_summary": "Family moved 'all over the east coast' before settling outside Cleveland. Middle-class family; father's profession not specified. RPI education chosen partly for its IBM computer. Cello training with Cleveland Orchestra's Donald White. Stable but no domain overlap or wealth.",
+    "ecosystem_summary": "RPI provided the engineering foundation. Vermont Microsystems gave him the platform to architect the IBM PGA. Sun Microsystems (GX graphics chip) extended his frontier experience. PC graphics frontier in the early 1980s was perfect timing for his specialized skills.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jony-ive",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Certain he wanted to design from age 13-14. Graduated with first-class BA from Newcastle Polytechnic in 1989. Student designs exhibited at the Design Museum in London. Intense design focus and craft from teenage years, despite dyslexia.",
+    "inherited_summary": "Father Mike Ive was a silversmith who became a design technology teacher and schools inspector — direct domain apprenticeship. Design was 'the family business.' Father nurtured his talent, taking him to workshops and teaching him craftsmanship principles like 'finish the back of the drawer.'",
+    "ecosystem_summary": "Newcastle Polytechnic's industrial design program (Bauhaus-inspired) provided formal training. Tangerine consultancy cofounded ~22 provided diverse client experience. Bob Brunner recruited him to Apple at 25, where the Apple design environment and later Jobs partnership defined his career.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "harley-finkelstein",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started DJ company at 13, scaling T-shirt business nationally from age 17. Serial entrepreneur from young age with intense drive and hustle. Self-funded education through entrepreneurship, demonstrating exceptional early business instincts and execution.",
+    "inherited_summary": "Born in Montreal to Hungarian immigrant family (1956 revolution). Family lost everything around 2001 — father could no longer work, mother and sisters had no money. Had to support family through college. Active economic disadvantage during formative years.",
+    "ecosystem_summary": "McGill University and Concordia provided the educational base. Montreal's entrepreneurial community and textile trade history supported his T-shirt business. Tobias Lütke/Shopify connection (as early customer #137) became the defining partnership. Ottawa startup cluster.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "anthony-pompliano",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Bucknell University (football + Army National Guard). Served as Army sergeant in Iraq. Founded and sold two small startups after military service. Capable and driven but no exceptional early cognitive or technical indicators.",
+    "inherited_summary": "Father is founder of IT services company Anexio. Parents encouraged entrepreneurial bent — Pompliano and brothers were 'always scheming up ways to make money.' Middle-class with entrepreneurial father, but no significant wealth or domain-specific networks.",
+    "ecosystem_summary": "Army service provided discipline but not tech ecosystem access. Bucknell University provided education. Facebook and Snapchat product/growth roles provided Silicon Valley exposure, but no elite institution or legendary peer environment in early years.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "brewster-kahle",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "MIT BS in computer science and engineering (1982) with AI focus. Hand-compiled LISP interpreter. Lead engineer on the Connection Machine at Thinking Machines. Invented WAIS, the first internet distributed search system. Exceptional early technical output in AI and search.",
+    "inherited_summary": "Born in NYC, raised in Scarsdale. Father was a mechanical engineer. Middle-class suburban family with engineering background. Scarsdale High School and MIT education imply stable, supportive family with academic resources.",
+    "ecosystem_summary": "MIT AI Lab studying under Marvin Minsky and Danny Hillis — a once-in-a-generation computing environment. Thinking Machines Corporation (cofounded with Hillis) placed him at the frontier of parallel supercomputing. TMRC and early internet/ARPANET access were extraordinarily rare.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "brendan-iribe",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Discovered how to hack game memory and modify code as a preteen on his first IBM PC. Got first programming job at 15. Dropped out of UMD to pursue Scaleform. Strong early technical aptitude and entrepreneurial drive from a young age.",
+    "inherited_summary": "Raised by mother Elizabeth, first in western Virginia then Howard County, MD. Stepfather Alan Peters (chemist) cultivated his computer and gaming interests and helped him buy his first computer. Uncle provided seed funding and accounting for Scaleform. Middle-class, supportive family.",
+    "ecosystem_summary": "University of Maryland provided the Antonov partnership (met as freshmen in Denton Hall). Scaleform team (Iribe, Antonov, Reisse) built leading game UI middleware. Game middleware frontier and later Palmer Luckey/Oculus connection provided the VR wave timing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "michael-antonov",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started programming on a calculator, then created games for his home PC in high school. UMD CS graduate. Built graphics engines in high school. Cofounded Scaleform as CTO at ~23. Strong self-taught technical ability from a young age.",
+    "inherited_summary": "Immigrated from post-Soviet Russia to the U.S. at age 14 (~1993). Family of biologists — educated but experienced shortage of money during Soviet collapse. Immigrant path with educated family but no wealth or domain-specific tech connections.",
+    "ecosystem_summary": "University of Maryland CS provided the Iribe partnership (met as freshmen in Denton Hall). Scaleform team built widely licensed game UI middleware used in hundreds of games. Later Oculus cofounding with Luckey and Iribe on the VR frontier wave.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "nate-mitchell",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Knew from earliest memories he wanted to create games and virtual worlds. Dickinson College CS graduate. Capable engineer with strong product instincts, but no exceptional early cognitive or technical prodigy indicators documented.",
+    "inherited_summary": "Attended St. Andrew's Episcopal School (private school) and Dickinson College. Middle-class family with sufficient resources for private education. Connection to Brendan Iribe through cousin Paul Iribe (St. Andrew's alumnus) provided the industry entry point.",
+    "ecosystem_summary": "Scaleform and Gaikai alumni network provided the technical peer group. Iribe connection (through cousin) was the key relationship. Palmer Luckey partnership and Oculus cofounding on the VR wave provided the frontier timing. Facebook acquisition validated the ecosystem.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "harry-stebbings",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Built a global VC media brand from zero at 18 with ~$50 and no VC network, through relentless cold outreach and podcasting. Read everything on VC as a young teenager after watching The Social Network. Exceptional drive, communication ability, and platform-native distribution instincts from a young age.",
+    "inherited_summary": "Born in London. Educated at Felsted School (private) and Mander Portman Woodward. Middle-to-upper-middle-class London family. No VC or tech industry family connections. Mother is close and supportive (walks marathons with him weekly).",
+    "ecosystem_summary": "London tech scene and podcasting platform provided the distribution channel. Atomico internship provided initial VC industry access. Stride.VC partnership with Fred Destin and later 20VC fund launch compounded the network. Cold outreach to 200+ VCs built the platform.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "akshay-kothari",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Purdue BS in electrical engineering, Stanford MS. Self-funded Stanford education to explore broadly across music, mechanical engineering, CS, and d.school. Built Pulse in 6 weeks during d.school Launchpad course. Exceptional multi-disciplinary ability and entrepreneurial drive.",
+    "inherited_summary": "Born in Ahmedabad, India. Supportive parents and grandparents who allowed him to chase his dreams. Middle-class Indian family with no significant wealth or US tech connections. Two brothers. Family provided emotional support and educational backing.",
+    "ecosystem_summary": "Stanford University and the d.school Launchpad course provided the institutional platform. Ankit Gupta cofounder partnership in Andrew Ng's machine learning class. iPad launch wave and Steve Jobs' public demo of Pulse created perfect timing. Silicon Valley ecosystem and LinkedIn acquisition.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "simon-last",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "University of Maryland CS student who joined Notion after Zhao found his visual programming portfolio on Twitter. Dropped out of UMD to work full-time. Capable engineer with interest in visual programming, but thin public biographical detail limits assessment.",
+    "inherited_summary": "Family background not publicly documented. No information available on parents' professions, wealth, or domain connections. Scored conservatively based on absence of evidence.",
+    "ecosystem_summary": "Ivan Zhao partnership was the defining cofounder relationship. SF startup scene and the Notion rebuild in Kyoto (cost arbitrage) shaped the early product. Zhao's mother provided a $150K emergency loan. Akshay Kothari later joined as third co-founder/COO.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "josh-kopelman",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Co-founded Infonautics as a Wharton sophomore (~1992) and took it public on NASDAQ by 1996 in his mid-twenties. Serial founder (Half.com, TurnTide) and VC. Exceptional early entrepreneurial achievement — IPO before age 26.",
+    "inherited_summary": "Grew up in Great Neck, NY (upper-middle-class Long Island). Father was a professor at Baruch College, mother a real estate broker. Professional/academic family with stability but no tech industry wealth or direct domain connections.",
+    "ecosystem_summary": "Wharton School at University of Pennsylvania provided the entrepreneurial education and cofounder connections. Early internet timing (1992 founding) was perfect for Infonautics. Philadelphia tech ecosystem and later First Round Capital network compounded over time.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jessica-mah",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught coding at age 9. First business at 11 (server space resale). Finished high school at 15, attended Simon's Rock early college, then UC Berkeley CS at 17. Co-founded inDinero at 19 and entered YC. Prodigy-level early achievement across multiple domains.",
+    "inherited_summary": "Born in Westchester, NY to Hong Kong immigrant parents who were entrepreneurs in the clothing business. Entrepreneurial family norms and likely financial stability, but no software dynasty or tech domain overlap. Immigrant business family provided entrepreneurial modeling.",
+    "ecosystem_summary": "Bard College at Simon's Rock (early college program) provided accelerated education. UC Berkeley CS and Y Combinator (S10 batch) provided the institutional pipeline. Andy Su cofounder partnership at Berkeley. Silicon Valley and Paul Graham's mentorship (she was a 'PG favorite').",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "andy-su",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "UC Berkeley CS student who was Jessica Mah's lab partner and cofounder. Capable engineer who served as technical co-founder/CTO of inDinero. No exceptional early cognitive indicators independently documented; assessment limited by thin public biographical detail.",
+    "inherited_summary": "Family background less documented than Mah's. No specific information available on parents' professions, wealth, or domain connections. Scored conservatively based on absence of evidence.",
+    "ecosystem_summary": "UC Berkeley CS provided the educational foundation and the Mah partnership. Y Combinator (S10 batch) provided acceleration. Silicon Valley investor network including YouTube founder Jawed Karim, Keith Rabois, and Jeremy Stoppelman backed inDinero.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "dennis-crowley",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Syracuse communications graduate and NYU ITP master's student. Highly competitive and game-obsessed from childhood (called Nintendo Power at 11 to check if he was first to beat Zelda). Strong domain immersion in social/location tech but no prodigy-level cognitive indicators.",
+    "inherited_summary": "Born in Medway, Massachusetts. Attended Xaverian Brothers High School (private Catholic school). Middle-class family with stable upbringing. Close-knit family that 'made everything playful.' No significant wealth or tech domain connections.",
+    "ecosystem_summary": "NYU's Interactive Telecommunications Program (ITP) provided the creative tech environment and Alex Rainert cofounder connection. NYC tech scene and Vindigo work experience provided domain immersion. Google acquisition of Dodgeball and later Foursquare's founding on the location-social wave.",
+    "scoring_confidence": "Medium"
+  }
+]

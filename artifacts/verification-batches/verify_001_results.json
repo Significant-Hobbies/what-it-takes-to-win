@@ -1,0 +1,343 @@
+[
+  {
+    "person_id": "tyler-rose",
+    "name": "Tyler Rose",
+    "verdict": "KEEP",
+    "reason": "Forbes 30 Under 30 (Science) and raised $6M seed from General Catalyst, SV Angel, and Paul Graham for Bindwell, with research cited in Nature Scientific Reports.",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Dropped out of high school to co-found a biotech company, published research cited in Nature Scientific Reports, and earned Forbes 30 Under 30 at 18 — exceptional learning speed and domain aptitude in computational biology.",
+    "inherited_summary": "Indo-Chinese background with family farming connections in China providing domain knowledge; access to elite programs like Wolfram Summer Research Program suggests moderate family educational advantage.",
+    "ecosystem_summary": "YC W25, Wolfram Summer Research Program, and backing from General Catalyst, SV Angel, and Paul Graham in San Francisco provided a strong frontier ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "navvye-anand",
+    "name": "Navvye Anand",
+    "verdict": "KEEP",
+    "reason": "Forbes 30 Under 30 (Science) and raised $6M seed from General Catalyst, SV Angel, and Paul Graham for Bindwell, with research cited in Nature Scientific Reports.",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Caltech student and World Science Scholar who earned Forbes 30 Under 30 at 19 with published research — exceptional reasoning and domain aptitude in bioinformatics and AI.",
+    "inherited_summary": "Indo-Chinese roots in Punjab, India with limited family context; access to Caltech suggests educational drive but no clear inherited wealth or networks.",
+    "ecosystem_summary": "Caltech, Wolfram Summer Research Program, YC W25, and elite investor backing provided a strong frontier ecosystem for scientific entrepreneurship.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "lorenss-martinsons",
+    "name": "Lorenss Martinsons",
+    "verdict": "REMOVE",
+    "reason": "Publications are at minor venues (SCiL, CogSci) not top-tier conferences, and his only claims beyond YC are Yale attendance and a brief engineering role at Hume AI."
+  },
+  {
+    "person_id": "ethne-laude",
+    "name": "Ethne Laude",
+    "verdict": "REMOVE",
+    "reason": "No major funding, Forbes recognition, Wikipedia article, or top-tier publications; her only achievements beyond YC are Stanford attendance and government/defense internships."
+  },
+  {
+    "person_id": "tamish-pulappadi",
+    "name": "Tamish Pulappadi",
+    "verdict": "KEEP",
+    "reason": "Featured in Rolling Stone India, youngest-ever Ernie Ball Music Man endorsee at 13 (only Indian), and worked on robotic vision at DeepMind — clear notability beyond YC.",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Guitar prodigy sponsored at 13, Stanford CS & Music double major, and DeepMind robotic vision experience — strong creative and technical abilities across music and engineering.",
+    "inherited_summary": "Father served as primary music mentor and took him to performances; Bangalore-based family supported musical development from a young age.",
+    "ecosystem_summary": "Stanford, DeepMind, Ernie Ball endorsement network, and YC provided access to elite institutions and creative-technical communities.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "aubteen-pourbiazar",
+    "name": "Aubteen Pour-Biazar",
+    "verdict": "REMOVE",
+    "reason": "Only $625K in funding with no Forbes recognition, Wikipedia article, or major publications; his sole claims beyond YC are a White House internship and Duke attendance."
+  },
+  {
+    "person_id": "nicole-ma",
+    "name": "Nicole Ma",
+    "verdict": "REMOVE",
+    "reason": "ICML and ICLR publications are workshop papers only (not main-track), and she has no major funding, Forbes recognition, or Wikipedia article beyond YC and Stanford research."
+  },
+  {
+    "person_id": "zeyneb-kaya",
+    "name": "Zeyneb Kaya",
+    "verdict": "KEEP",
+    "reason": "Regeneron Science Talent Search 5th place ($90K) at age 17 — one of the most prestigious US high school science competitions — plus Coca Cola Scholar and published NLP research.",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Regeneron STS 5th place at 17, authored MADLIBS algorithm for endangered language NLP, and published multiple ICLR workshop papers — exceptional reasoning, creativity, and domain aptitude.",
+    "inherited_summary": "From Saratoga, CA (affluent Silicon Valley area) with educated parents; access to elite science competitions suggests moderate family educational advantage.",
+    "ecosystem_summary": "Saratoga High School science ecosystem, Stanford, Regeneron STS network, and YC provided strong institutional and peer support.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "nick-papciak",
+    "name": "Nick Papciak",
+    "verdict": "REMOVE",
+    "reason": "No major funding, Forbes recognition, Wikipedia article, or top-tier publications; his only claims beyond YC are being head TA for Algorithms at Georgia Tech and a Meta internship."
+  },
+  {
+    "person_id": "cathy-di",
+    "name": "Cathy Di",
+    "verdict": "KEEP",
+    "reason": "Raised $11M seed for Dedalus Labs (exceeding the $10M threshold), backed by Kindred Ventures, Saga Ventures, and angels from Hugging Face, Slack, and Supabase.",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Princeton CS dropout, ex-Voyage AI PM, and CEO who raised $11M seed — strong technical foundation and product intuition for AI infrastructure.",
+    "inherited_summary": "Limited family context available; Princeton CS admission suggests academic ability but no clear inherited wealth, networks, or domain advantage.",
+    "ecosystem_summary": "Princeton, YC S25, Voyage AI (acquired by MongoDB), and elite angel investors from Hugging Face, Slack, and Supabase provided a strong developer-tools ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "aayush-sheth",
+    "name": "Aayush Sheth",
+    "verdict": "KEEP",
+    "reason": "Co-founded Metis which was acquired by DoorDash in March 2026 — a major acquisition by a well-known public company.",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Duke CS student who scaled Metis to mid-7-figure ARR and achieved a DoorDash acquisition within ~10 months — strong execution and technical ability.",
+    "inherited_summary": "Limited family context available; Duke CS suggests educational drive but no clear inherited wealth or networks.",
+    "ecosystem_summary": "Duke, YC, CRV backing, Dorm Room Fund network, and DoorDash acquisition provided strong accelerator and exit ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "marcus-yearwood",
+    "name": "Marcus Yearwood",
+    "verdict": "KEEP",
+    "reason": "Co-founded Metis which was acquired by DoorDash in March 2026 — a major acquisition by a well-known public company.",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Duke junior from Colombia with generative modeling research background who co-founded Metis and achieved a DoorDash acquisition — solid execution but less individual distinction than co-founder.",
+    "inherited_summary": "From Colombia with limited family context; distributed team across US and Colombia suggests modest background without clear inherited leverage.",
+    "ecosystem_summary": "Duke, YC, CRV backing, and DoorDash acquisition provided strong accelerator and exit ecosystem despite cross-border logistics.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "iqbol-temirkhojaev",
+    "name": "Iqbol Temirkhojaev",
+    "verdict": "KEEP",
+    "reason": "Extraordinary trajectory from Tajikistan: VC-backed startup at 13, acquisition by UN at 14, software patent at 15, presidential medal at 16, O-1 extraordinary ability visa, and first Tajikistan founder in YC.",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "3x national Olympiad gold medalist, startup at 13, exit at 14, patent at 15, presidential medal at 16, O-1 visa — exceptional learning speed, drive, and resilience from an extraordinarily disadvantaged starting point.",
+    "inherited_summary": "From Tajikistan (developing country with minimal startup ecosystem); 'retired his mother at 18' indicating family financial need rather than inherited wealth or networks.",
+    "ecosystem_summary": "Minimal domestic ecosystem in Tajikistan; accessed YC and international investors through sheer persistence, but lacked the peer, mentor, and institutional density of typical founders.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "michael-baron",
+    "name": "Michael Baron",
+    "verdict": "REMOVE",
+    "reason": "Only $500K in funding with no Forbes recognition, Wikipedia article, or top-tier publications; his sole claims beyond YC are SpaceX and Apple internships."
+  },
+  {
+    "person_id": "sam-rogers",
+    "name": "Sam Rogers",
+    "verdict": "KEEP",
+    "reason": "Forbes Asia 30 Under 30 (2026 list) and raised $1.2M pre-seed led by YC for Brumby/GrazeMate, with a remarkable personal story of climbing Everest after a spinal injury.",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Published ML/robotics research from age 15, placed 2nd in international AI competition, and climbed Everest after spinal surgery — strong resilience, creativity, and technical ability.",
+    "inherited_summary": "Family runs 6,000 head of cattle on a Queensland station, providing domain knowledge and agricultural assets; rural Australian upbringing with real resources but limited tech networks.",
+    "ecosystem_summary": "University of Sydney robotics, YC, Antler, and NextGen Ventures provided access to accelerators, but Australian rural ecosystem is far less dense than SF.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jonathan-grtz",
+    "name": "Jonathan Görtz",
+    "verdict": "KEEP",
+    "reason": "Built Ossus/Librar Labs from 0 to $110M valuation in 6 months with backing from Norrsken and investors from OpenAI, Anthropic, and Scale; also sold prior company Cyberboost.",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "High school dropout who self-taught, slept in library basements, built a company to $110M valuation in 6 months, and had a prior exit — exceptional drive and execution despite lacking formal credentials.",
+    "inherited_summary": "From Lund, Sweden with no family resources; high school dropout who slept in library basements — active disadvantage in family wealth, stability, and educational networks.",
+    "ecosystem_summary": "YC W26 and investors from OpenAI, Anthropic, Scale, and Norrsken (Klarna founder's VC) provided strong backing, but departed company due to co-founder conflicts, limiting ecosystem stability.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "muhammad-awan",
+    "name": "Muhammad Awan",
+    "verdict": "REMOVE",
+    "reason": "Was a founding engineer (not founder) at Boardy AI and his own company Sequence Markets has only $125K funding; no Forbes recognition, Wikipedia article, or top-tier publications."
+  },
+  {
+    "person_id": "raj-patel",
+    "name": "Raj Patel",
+    "verdict": "REMOVE",
+    "reason": "Human Archive raised $8.2M (below the $10M threshold) with no Forbes recognition, Wikipedia article, top-tier publications, or Olympiad medals; his only claim beyond YC is the seed round."
+  },
+  {
+    "person_id": "rushil-agarwal",
+    "name": "Rushil Agarwal",
+    "verdict": "REMOVE",
+    "reason": "Human Archive raised $8.2M (below the $10M threshold) with no Forbes recognition, Wikipedia article, top-tier publications, or Olympiad medals; his only claim beyond YC is the seed round."
+  },
+  {
+    "person_id": "samay-maini",
+    "name": "Samay Maini",
+    "verdict": "REMOVE",
+    "reason": "Human Archive raised $8.2M (below the $10M threshold) with no Forbes recognition, Wikipedia article, top-tier publications, or Olympiad medals; his only claim beyond YC is the seed round."
+  },
+  {
+    "person_id": "shloke-patel",
+    "name": "Shloke Patel",
+    "verdict": "REMOVE",
+    "reason": "Human Archive raised $8.2M (below the $10M threshold) with no Forbes recognition, Wikipedia article, top-tier publications, or Olympiad medals; his only claim beyond YC is the seed round."
+  },
+  {
+    "person_id": "arthur-zhou",
+    "name": "Arthur Zhou",
+    "verdict": "REMOVE",
+    "reason": "USAMO qualifier (top 250, not medal) and USACO Platinum (not IOI medal) do not meet the Olympiad medal criterion, and he has no major funding, Forbes recognition, or top-tier publications."
+  },
+  {
+    "person_id": "kent-goodman",
+    "name": "Kent Goodman",
+    "verdict": "REMOVE",
+    "reason": "No major funding, Forbes recognition, Wikipedia article, or top-tier publications; his only claims beyond YC are a perfect MIT GPA and BCG consulting experience."
+  },
+  {
+    "person_id": "vansh-ramani",
+    "name": "Vansh Ramani",
+    "verdict": "KEEP",
+    "reason": "Published a main-track paper at ICLR 2025 (Bonsai: Graph Condensation) and built Panaroma, a vector search algorithm merged into Meta FAISS — top-tier research publication.",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "IIT Delhi CS undergraduate who published at ICLR 2025, conducted research at CMU and University of Copenhagen, and built an algorithm merged into Meta FAISS — strong research ability and technical depth.",
+    "inherited_summary": "IIT Delhi admission requires passing one of the world's most competitive exams, suggesting strong educational foundation and family support for academics.",
+    "ecosystem_summary": "IIT Delhi, CMU (Prof. Pradeep Ravikumar), University of Copenhagen (Dr. Panagiotis Karras), YC, and Meta FAISS integration provided elite research and startup ecosystems.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "richard-zhou",
+    "name": "Richard Zhou",
+    "verdict": "KEEP",
+    "reason": "Published at ICLR and EMNLP before age 20, VEX Robotics World Finals competitor, and co-built Aemon which set a world record beating Google DeepMind on an NP-hard optimization problem.",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Published at top AI conferences before 20, Euclid Math Contest Provincial Champion, VEX Robotics World Finals, and co-built Aemon that beat DeepMind's record — strong reasoning, creativity, and technical execution.",
+    "inherited_summary": "University of Waterloo CS admission is highly competitive; twin brother co-founder provides built-in collaboration advantage; some educational support indicated.",
+    "ecosystem_summary": "Waterloo, Afore Capital (FIR), YC, and the Aemon world record recognition provided strong institutional and accelerator support.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ray-xu",
+    "name": "Ray Xu",
+    "verdict": "KEEP",
+    "reason": "Published at EMNLP 2024 Main and ICLR 2025 (confirmed on LinkedIn) and co-built Aemon which set a world record beating Google DeepMind on an NP-hard optimization problem.",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Published at EMNLP 2024 Main and ICLR 2025 before age 20, UIUC CS, and co-built Aemon that beat DeepMind's record — strong research ability and technical execution.",
+    "inherited_summary": "UIUC CS admission suggests educational foundation; twin brother co-founder provides built-in collaboration advantage; some educational support indicated.",
+    "ecosystem_summary": "UIUC, Lapis Labs (student AI research org), YC, and the Aemon world record recognition provided strong institutional and accelerator support.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "srihan-balaji",
+    "name": "Srihan Balaji",
+    "verdict": "REMOVE",
+    "reason": "No major funding, Forbes recognition, Wikipedia article, or top-tier publications; his only claims beyond YC are TJHSST attendance and Lockheed Martin/AWS work experience."
+  },
+  {
+    "person_id": "abhisheik-sharma",
+    "name": "Abhisheik Sharma",
+    "verdict": "KEEP",
+    "reason": "Published two main-track ACL papers (ACL 2025 and ACL 2026) as an undergraduate researcher — ACL is a top-tier NLP conference equivalent to the listed venues.",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Published at ACL 2025 and ACL 2026 (main-track) as an undergraduate researcher under Prof. Snigdha Chaturvedi — strong research ability and NLP domain aptitude.",
+    "inherited_summary": "Researcher at UNC Chapel Hill and Georgia Tech suggests educational support; limited family context available but academic trajectory implies moderate advantage.",
+    "ecosystem_summary": "UNC Chapel Hill NLP lab, Georgia Tech, YC, and the ACL research community provided strong mentorship and peer networks for early research output.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "dimittri-choudhury",
+    "name": "Dimittri Choudhury",
+    "verdict": "KEEP",
+    "reason": "Co-founded Meoria which scaled to 100,000+ users in 6 months, meeting the large user base notability criterion.",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Moved from a French village to Paris to SF with $300, built Meoria to 100K+ users, and dropped out to pursue startups — strong drive, execution, and adaptability.",
+    "inherited_summary": "From a 'random village in France' with limited resources; moved with only $300, indicating no inherited wealth or networks.",
+    "ecosystem_summary": "Paris tech ecosystem, YC W26, and San Francisco provided the accelerator and peer network to scale a consumer product rapidly.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "alexandre-klobb",
+    "name": "Alexandre Klobb",
+    "verdict": "KEEP",
+    "reason": "Co-founded Meoria which scaled to 100,000+ users in 6 months, meeting the large user base notability criterion.",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught full-stack and AI engineer who started freelancing at 15, co-built Meoria to 100K+ users, and dropped out of engineering school — strong technical ability and drive.",
+    "inherited_summary": "From France, self-taught, dropped out of engineering school; no clear inherited wealth, networks, or domain advantage.",
+    "ecosystem_summary": "Paris tech ecosystem, YC W26, and San Francisco provided the accelerator and peer network to scale a consumer product rapidly.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "malhar-bhide",
+    "name": "Malhar Bhide",
+    "verdict": "REMOVE",
+    "reason": "Nature Scientific Reports is not Nature (much lower selectivity), the 1517 Fund grant is not a major recognition, and he has no major funding, Forbes recognition, or Wikipedia article."
+  },
+  {
+    "person_id": "kabir-jain",
+    "name": "Kabir Jain",
+    "verdict": "KEEP",
+    "reason": "Gold medalist at the International Olympiad in AI (1st internationally), published at NeurIPS 2024 and ICLR 2025 (Spotlight), with 2 additional ICML 2026 papers — exceptional research and competition record.",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "IOAI gold medalist (1st internationally), NeurIPS 2024 + ICLR 2025 Spotlight + ICML 2026 papers, MIT JuliaLabs, Oxford CS — exceptional reasoning, learning speed, and research output at a young age.",
+    "inherited_summary": "International background across Oxford, NUS, MIT, and Singapore suggests educated family with global mobility; some educational advantage but limited specific family context.",
+    "ecosystem_summary": "Oxford, MIT JuliaLabs/CSAIL, Singapore's national water agency, YC, and the IOAI competition network provided elite institutional and research ecosystem access.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ziming-qiu",
+    "name": "Ziming Qiu",
+    "verdict": "REMOVE",
+    "reason": "Only $125K in funding with no Forbes recognition, Wikipedia article, top-tier publications, or Olympiad medals; his only claims beyond YC are NUS education and co-founding Inviscid AI."
+  },
+  {
+    "person_id": "janet-liu",
+    "name": "Janet Liu",
+    "verdict": "REMOVE",
+    "reason": "Only $500K in funding with no Forbes recognition, Wikipedia article, top-tier publications, or Olympiad medals; her only claims beyond YC are an MIT quadruple major and D.E. Shaw experience."
+  },
+  {
+    "person_id": "melinda-liu",
+    "name": "Melinda Liu",
+    "verdict": "REMOVE",
+    "reason": "Only $500K in funding with no Forbes recognition, Wikipedia article, top-tier publications, or Olympiad medals; her only claims beyond YC are an MIT degree, JPMorgan experience, and self-published economics books."
+  },
+  {
+    "person_id": "christine-watts",
+    "name": "Christine Watts",
+    "verdict": "REMOVE",
+    "reason": "Only $500K in funding with no Forbes recognition, Wikipedia article, top-tier publications, or Olympiad medals; her only claims beyond YC are an MIT degree and BCG/NERA consulting experience."
+  },
+  {
+    "person_id": "edgar-babajanyan",
+    "name": "Edgar Babajanyan",
+    "verdict": "REMOVE",
+    "reason": "Only $500K in funding with no Forbes recognition, Wikipedia article, or top-tier publications; his GPT4You 'acquisition' was small and not by a well-known company, and his other experience is internships."
+  }
+]

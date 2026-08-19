@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "didier-deschamps",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Multi-sport athlete excelling in cross-country and 1000m (champion of France minime), described as a 'wonderboy' fought over by top clubs. Debuted professionally at 16 and showed exceptional leadership and maturity from age 15 at Nantes academy.",
+    "inherited_summary": "Working-class Basque family; father was a house painter, mother a wool seller. No domain connections or wealth, though stable and supportive family. Brother died in a plane crash when Deschamps was 19.",
+    "ecosystem_summary": "Joined Nantes' renowned youth academy at 14 under Jean-Claude Suaudeau, part of France's elite football pipeline. Boarding at La Jonelière with autonomy and daily training. French football system provided structured development.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "alfredo-di-stefano",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Exceptional natural talent recognized in street football; debuted for River Plate at 17, became top scorer in Europe by 21. Built legendary stamina from farm work, but not a structured prodigy.",
+    "inherited_summary": "Father was a former River Plate defender who introduced him to football and secured an audition at the club. Direct domain knowledge and club access, though family was working-class in Barracas, Buenos Aires.",
+    "ecosystem_summary": "River Plate during the iconic La Maquina era — one of the greatest club teams of the era. Argentine football culture and street football immersion. Copa América 1947 victory with Argentina.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "alessandro-del-piero",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Precocious talent recognized by Padova scout who gave him the maximum 3-star rating. Debuted in Serie B at 17, transferred to Juventus at 18. Turned down Torino at 12 as too young to leave home.",
+    "inherited_summary": "Father was an electrician, mother a housekeeper; rural working-class family in Saccon, Veneto. Older brother Stefano briefly played professionally for Sampdoria, providing some domain exposure and a model.",
+    "ecosystem_summary": "Padova youth academy at 13, then Juventus at 18 — one of the world's top clubs. Italian football system, one of the strongest leagues. Giampiero Boniperti facilitated the Juventus transfer.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "astor-piazzolla",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Child prodigy — first recording at 10, composed first tango at 11, appeared in Carlos Gardel's film at 13. Studied Bach with Béla Wilda (Rachmaninoff student) from age 12. Virtuoso bandoneon player from age 8.",
+    "inherited_summary": "Father was an Italian immigrant barber in New York, working-class. Father bought him a bandoneon at 8 and exposed him to tango records, providing domain entry despite modest means.",
+    "ecosystem_summary": "Grew up in Greenwich Village/Little Italy during Jazz Age New York. Joined Aníbal Troilo's top-tier orchestra at 18. Studied composition with Ginastera in Buenos Aires. Tango golden age in Buenos Aires provided the perfect cultural context.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "pete-best",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "No exceptional musical ability noted; recruited by the Beatles primarily because he had his own drum kit and was available for Hamburg. Adequate drummer but not a prodigy or standout talent.",
+    "inherited_summary": "Mother Mona opened the Casbah Coffee Club in their cellar, giving direct access to the Beatles and Liverpool's music scene. Father from Liverpool sports promoter family (ran Liverpool Stadium boxing arena). 15-bedroom house.",
+    "ecosystem_summary": "The Casbah Coffee Club was the birthplace of the Merseybeat scene — the Quarrymen (future Beatles) played there. Direct access to Lennon, McCartney, Harrison. Hamburg gigs and Polydor recordings. Once-in-a-generation peer environment.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "fernando-botero",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-taught artist who published illustrations at 16, had first solo exhibition at 19, and won second prize at Colombia's National Salon at 20. Exceptional drive and self-directed artistic development from poverty.",
+    "inherited_summary": "Father died when he was 4, mother worked as seamstress. Humble means in Medellín with no art connections or family stability. Uncle helped with education but no domain advantages.",
+    "ecosystem_summary": "Largely isolated from art institutions; influenced by colonial Baroque churches and Medellín city life. Jesuit school and brief bullfighting training. Prize money from National Salon enabled European study in Madrid and Italy.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "glenn-gould",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Prodigy — perfect pitch at 3, reading music before words, composing at 5, ATCM diploma at 12. Hummed instead of crying as a baby. Struck single notes and listened to decay — atypical behavior indicating extraordinary auditory sensitivity.",
+    "inherited_summary": "Mother was a piano teacher who gave him first lessons at 4 and was a distant relative of Edvard Grieg. Father was a furrier and amateur violinist. Middle-class Toronto family with strong musical environment from birth.",
+    "ecosystem_summary": "Toronto Conservatory of Music (now Royal Conservatory) from age 10. Studied piano with Alberto Guerrero for 10 years, organ with Frederick Silvester, theory with Leo Smith. Kiwanis Music Festivals. Canadian musical infrastructure.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "zito",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Natural leader and determined midfielder, but no prodigy-level evidence. Joined Santos relatively late at 19 after amateur football in small towns. Intended to become a schoolteacher before football.",
+    "inherited_summary": "Modest family in Roseira, a small town in São Paulo interior. Father ran a family store. No football connections or wealth. Working-class background.",
+    "ecosystem_summary": "Santos FC during its golden era alongside Pelé — one of the greatest club teams in history. Brazilian football system and São Paulo football culture. Captain of Santos, winning multiple Libertadores and World Cups.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "roberto-mancini",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Described as an 'enfant prodige' — debuted in Serie A at 16, played all 30 league games, scored 9 goals. Nearly joined AC Milan at 13 (letter sent to wrong club). Exceptional early talent recognized by Bologna.",
+    "inherited_summary": "Father Aldo was supportive and recognized his talent, organizing the Bologna trial, but was not in the football domain. Modest rural Marche family. Father gave tactical advice ('play more backward so they notice you').",
+    "ecosystem_summary": "Bologna youth academy at 13, Serie A debut at 16 under Tarcisio Burgnich. Transferred to Sampdoria for £2.2 million at 17. Famous strike partnership with Gianluca Vialli. Italian football system, one of the world's strongest leagues.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "vasily-smyslov",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won USSR Junior Championship at 17, tied for 1st-2nd in Moscow City Championship same year, 3rd in strongest Soviet tournaments at 19. Exceptional endgame skill developed through father's library study.",
+    "inherited_summary": "Father was an engineering technician and strong chess player who studied under Mikhail Chigorin. Taught chess at 6, provided 100+ chess books, and was sole teacher for 7.5 years. Direct domain instruction from a master-level player.",
+    "ecosystem_summary": "Moscow chess scene with Gorky Park pavilions, Young Pioneers clubs, and factory chess sections. Soviet chess pipeline provided structured competitive access. Father's chess library of 100+ books was a significant resource.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "luciano-pavarotti",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Good natural voice recognized by Arrigo Pola after a 15-minute audition, but no early prodigy evidence. Began serious vocal study at 19, relatively late. Sang in church choir from age 9, initially wanted to be a football goalkeeper.",
+    "inherited_summary": "Poor family in public housing in Modena. Father was a baker and amateur tenor who exposed him to opera records. Mother worked in cigar factory. Two-room apartment. Father reluctantly consented to music career.",
+    "ecosystem_summary": "Arrigo Pola offered free daily voice lessons for 3 years — critical mentorship. Later studied with Ettore Campogalliani alongside childhood friend Mirella Freni. Italian opera tradition. Won Achille Peri competition leading to professional debut.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "raymond-kopa",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Exceptional natural talent to escape mining life — finished second in national youth football trials, immediate professional impact at 17 with Angers. Determined to use football as escape from the mines.",
+    "inherited_summary": "Born to Polish immigrant family in coal mining town. Father, grandfather, and brother all miners. Worked in mines from 14, lost a finger in mining accident. Poverty, immigrant status, and physical danger — active disadvantage.",
+    "ecosystem_summary": "French football pipeline from local club to Angers to Reims. Mentor Paul Sinibaldi at Angers. Reims was one of France's top clubs. But largely self-created from adversity — football was the escape from the mines.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "neymar",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Prodigy — spotted at 6 by a coach, playing against older kids at 9, Santos created a U-10 team just for him on Zito's recommendation. Professional debut at 17, scored 42 goals in 60 matches at 18. Futsal developed exceptional technique.",
+    "inherited_summary": "Father was a former professional footballer who became his career advisor and manager from childhood. Family initially poor (single room in grandmother's house) but father's domain knowledge guided career. Family income improved rapidly through Neymar's earnings.",
+    "ecosystem_summary": "Santos FC academy — Pelé's club with history of producing Brazilian internationals. Futsal culture in Brazil honed technique. Zito (two-time World Cup winner) personally discovered him. Real Madrid trial at 14. Brazilian football system.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "amy-winehouse",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Performing with jazz groups by 16, signed to Island Records at 19. Exceptional vocal ability and songwriting recognized early. National Youth Jazz Orchestra experience. Ivor Novello Award for 'Stronger Than Me' at 20.",
+    "inherited_summary": "Deep jazz family roots — maternal uncles were professional jazz musicians, grandmother was a singer who dated Ronnie Scott, father sang jazz around the house. Jewish family in London. Parents separated when she was 9.",
+    "ecosystem_summary": "Attended Sylvia Young Theatre School and BRIT School — elite performing arts institutions. National Youth Jazz Orchestra. London music scene. Signed to Island Records through EMI publishing deal. Early demo passed to music executive.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "gary-moore",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Teen guitar prodigy in Belfast/Dublin scene — playing clubs at 14, joined Skid Row at 15-16. Recognized as exceptional by Peter Green of Fleetwood Mac. Self-described 'blues snob' at 14, playing for 5 years by then.",
+    "inherited_summary": "Father ran the Queen's Hall ballroom in Holywood, giving early exposure to live music and performance. Father bought him first guitar at 10. Working-class Belfast family but music-adjacent through father's ballroom.",
+    "ecosystem_summary": "Belfast/Dublin blues-rock scene with Rory Gallagher as peer. Peter Green of Fleetwood Mac personally mentored him, helped secure CBS record deal. Phil Lynott collaboration in Skid Row and later Thin Lizzy. Blues-rock boom timing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "nilton-santos",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Good natural football talent recognized during military service, but late starter — debuted professionally at 23. No early prodigy evidence. Worked as waiter and fisherman before football. Known as 'Encyclopedia of Football' for tactical understanding.",
+    "inherited_summary": "Working-class family on Governador Island, Rio. Father was a fisherman, seven children. Had to work to help support family. No football connections or resources.",
+    "ecosystem_summary": "Discovered during military service playing for Aeronautics officers' team — sergeant invited him to Botafogo. Rio de Janeiro football culture. Botafogo, one of Brazil's major clubs. Brazilian football system. Zezé Moreira as coach.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "paul-mauriat",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Playing tunes by ear at 5, entered Marseille Conservatory at 10, won top prize at 15. Father recognized ability early and provided lessons. Prodigy-level early musical ability, though career diverted by family finances.",
+    "inherited_summary": "Father was a postal inspector and amateur classical pianist/violinist who gave him music lessons from age 8 and enrolled him at conservatory. Modest family — finances forced Mauriat to work as postman briefly. Father was a fantastic teacher.",
+    "ecosystem_summary": "Marseille Conservatory provided formal training. Franck Pourcel friendship and mentorship in Paris. But largely self-built career — wartime opportunity (depleted musician ranks) enabled conductor job at 17. Limited by family finances.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ferenc-puskas",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Prodigy — debuted for Kispest at 16, international at 18, top scorer in all of Europe by 21. Father registered him under pseudonym 'Miklós Kovács' to bypass minimum age rules. Known as 'Öcsi' (Buddy) from childhood.",
+    "inherited_summary": "Father was a former footballer and coach at Kispest AC. Direct domain instruction and club access from childhood. Father registered him under a pseudonym to circumvent age rules. Family was poor (one-room apartment) but father's coaching role provided pathway.",
+    "ecosystem_summary": "Kispest/Honvéd — club taken over by Hungarian Army, becoming the national team's backbone. Childhood friend and teammate József Bozsik. Budapest football culture. Father coached the team to league titles. Hungarian football system at its peak.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "garrincha",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Extraordinary natural dribbling talent — dribbled through Brazilian international Nilton Santos in first Botafogo training session, scored hat-trick on debut. Unique ability despite no structured development. Raw, untrained genius.",
+    "inherited_summary": "Born with severely deformed legs (right 6cm shorter, legs turned in/out, S-shaped spine) in poverty. Father was alcoholic. Worked in textile factory. Grandparents had been enslaved. No advantages — active physical and economic disadvantage.",
+    "ecosystem_summary": "Discovered at Botafogo trial at 19-20. Nilton Santos endorsed him immediately. Botafogo, a major Brazilian club. But came from isolated rural Pau Grande with no football infrastructure. Largely self-created from extreme adversity.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "terence-hill",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Discovered by chance at 12 at a swimming meet — no exceptional early acting ability. He himself said he didn't like acting and got fever before scenes. Career built on looks and opportunity rather than prodigy talent.",
+    "inherited_summary": "Father was a chemist, middle-class family. Mother was German. No film industry connections. Family lived in Dresden during WWII (survived bombing), then returned to Italy.",
+    "ecosystem_summary": "Discovered by Dino Risi, a major Italian filmmaker. Trained at Actor's Studio in Rome under Gloria Guerrieri. Italian cinema golden age — appeared in Visconti's The Leopard, films by de Sica, Pontecorvo. Prolific Italian film industry of 1950s-60s.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "claudia-cardinale",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Extraordinary physical beauty — pulled from a crowd to win beauty contest she didn't enter. But no early acting training or prodigy evidence; was reluctant to act and initially wanted to be a teacher. Career driven by appearance and mentorship.",
+    "inherited_summary": "Working-class Sicilian immigrant family in Tunisia. Father was a railway worker. No film connections. Did not speak Italian until starting in Italian films. Experienced rape and pregnancy as teenager.",
+    "ecosystem_summary": "Franco Cristaldi became sustained mentor, signing 7-year contract and managing career. Venice Film Festival discovery via beauty contest. Italian cinema golden age — starred for Visconti, Fellini, Leone. Perfect timing for 1960s European cinema.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "rod-laver",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Australian and US Junior champion at 19, won Grand Slam (all four majors) at 24. Exceptional athletic ability from young age. Father recognized potential, built backyard court, drove to tournaments. Nicknamed 'Rocket' by Hopman.",
+    "inherited_summary": "Father was a cattleman/butcher who built a clay tennis court in the backyard and drove sons to tournaments. Tennis family — all three brothers played. Not wealthy but deeply supportive. Father convinced Charlie Hollis to coach sons for free.",
+    "ecosystem_summary": "Coached by Charlie Hollis (family friend, army veteran) and Harry Hopman (legendary Australian Davis Cup captain). Australian tennis system was the world's best in the 1950s-60s, producing multiple Grand Slam champions. Backyard court was a magnet for local talent including Mal Anderson.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "lorin-maazel",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Prodigy — perfect pitch, began conducting at 7, debuted at 8 conducting University of Idaho Orchestra. Conducted NBC Symphony at 11 at Toscanini's invitation. By 13 had conducted NBC, NY Philharmonic, LA Philharmonic, and Pittsburgh Symphony. Conducted from memory, corrected musicians' mistakes.",
+    "inherited_summary": "Musical family — father was a singing teacher, parents moved from Paris to US for his career. Mother was a violinist. Middle-class American family with strong musical orientation. Parents actively facilitated his prodigy career.",
+    "ecosystem_summary": "Studied with Vladimir Bakaleinikov from age 7. Toscanini personally invited him to conduct NBC Symphony. Interlochen National Music Camp. By 12, toured US conducting major orchestras. Studied with Pierre Monteux. Once-in-a-generation access to world's greatest orchestras as a child.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "brigitte-bardot",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Described as 'outstanding pupil' at Conservatoire de Paris under Boris Knyazev, won ballet awards. But not prodigy-level in performance arts; career was primarily built on extraordinary physical appearance and modeling discovery.",
+    "inherited_summary": "Prosperous Parisian family in the 16th arrondissement — father was an engineer and factory owner. Conservative Catholic, upper-middle-class. Mother enrolled her in ballet from age 7. Private school education. Financial stability and cultural capital.",
+    "ecosystem_summary": "Conservatoire de Paris under Boris Knyazev. Elle magazine cover at 15 (spotted by director Helene Lazareff). Roger Vadim partnership — directed her breakthrough film. Paris cinema ecosystem. Perfect timing for sexual revolution and French New Wave cinema.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "neil-young",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Played in bands from teens, knew at 13-14 that music was his life. Formed multiple bands (Jades, Squires) in Winnipeg. But no prodigy-level early achievement; steady development through performing experience.",
+    "inherited_summary": "Father Scott Young was a well-known Canadian journalist and sportswriter, providing cultural capital but not music-specific advantages. Parents divorced when he was 12. Mother was a TV panelist. Middle-class but disrupted by divorce.",
+    "ecosystem_summary": "Winnipeg's vibrant 1960s music scene with hundreds of bands. Moved to LA in 1966 — co-founded Buffalo Springfield with Stephen Stills. LA folk-rock scene at the perfect moment. Later collaboration with Crosby, Stills & Nash. Crazy Horse as backing band.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ismail-kadare",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Published first poetry collection at 16-18, becoming an established literary voice in Albania by mid-twenties. Sent manuscript to publisher at 16, was accepted. Exceptional literary talent and drive from young age.",
+    "inherited_summary": "Father was a post office employee, mother a homemaker. Modest family in Gjirokastër. Great-grandfather was a Bektashi poet, providing some literary lineage. No wealth or publishing connections. Grew up under fascist occupation then Stalinist rule.",
+    "ecosystem_summary": "University of Tirana for literature, then Gorky Institute in Moscow. Albanian state literary system provided publication渠道. But constrained by political oppression and isolation. Gjirokastër's Ottoman cultural heritage influenced his writing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "france-gall",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Learned piano at 5, guitar at 11, formed band with brothers. But career was largely father-driven — he took her to studios, managed her career, and used his industry connections. Won Eurovision at 17 but songs were written and produced by others.",
+    "inherited_summary": "Father Robert Gall was a lyricist for Edith Piaf and Charles Aznavour. Mother was a singer, daughter of Paul Berthier who co-founded The Little Singers of Paris. Uncle Jacques Berthier was a composer. Deep, multi-generational French music industry roots. Father personally secured Philips Records contract.",
+    "ecosystem_summary": "Backstage at Paris Olympia as a child. Philips Records contract through father's connections. Eurovision Song Contest win at 17. Serge Gainsbourg wrote her hits. Yé-yé pop wave of 1960s France. Father managed every aspect of her early career.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "mikhail-tal",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Prodigy — won against a master at 13 in a simultaneous exhibition using an imaginative combination. Grandmaster at 21, won Soviet Championship twice at 21-22, World Chess Champion at 23 (youngest ever at the time). Extraordinary tactical genius.",
+    "inherited_summary": "Father was a medical doctor, providing middle-class stability. Father taught him chess at 7. But no chess-specific family background or connections. Jewish family in Riga.",
+    "ecosystem_summary": "Riga Palace of Young Pioneers chess club. Alexander Koblents (Latvian champion) provided sustained individual training from 1949 through World Championship. Soviet chess pipeline. But Riga was not the center of Soviet chess (Moscow/Leningrad were).",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "rosalind-franklin",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "'Alarmingly clever' at 6, doing arithmetic for pleasure. Knew she wanted to be a scientist by 15. Six distinctions in matriculation, won scholarships. Topped classes at St. Paul's. Exceptional early scholastic ability and scientific aptitude.",
+    "inherited_summary": "Prominent Anglo-Jewish family. Father Ellis Franklin was a partner at Keyser's Bank. Affluent and influential family with banking and publishing businesses. Elite schooling at St. Paul's Girls' School. Cambridge access. Father initially discouraged science career but supported education.",
+    "ecosystem_summary": "St. Paul's Girls' School — one of few girls' schools teaching physics and chemistry, with Gustav Holst as music director. Newnham College, Cambridge. BCURA for wartime research. But faced significant gender barriers in science that limited her recognition.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "antonio-conte",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Debuted in Serie A at 16 — one of the youngest in Lecce's history. Exceptional talent recognized early. Father coached local youth team. Suffered tibia fracture but recovered. 'Always wanted to play football every minute of the day.'",
+    "inherited_summary": "Father Cosimino was coach and president of local club Juventina Lecce, providing early football immersion. Strict household with emphasis on schoolwork first. Modest family in Lecce. Father passed on football passion but was not a professional.",
+    "ecosystem_summary": "Lecce youth academy at 13 ('bought for 8 footballs'). Serie A debut at 16 under Carlo Mazzone. Juventus at 22 under Giovanni Trapattoni. Italian football system. Youth coaches Lillino Caus and Carlo Mugo provided formative training.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "luciano-berio",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Good musical ability from family training, but first public performance at 22 — relatively late. Hand injury during WWII forced pivot from piano to composition. Not a prodigy; developed through conservatory training and exposure to avant-garde.",
+    "inherited_summary": "Father and grandfather were both organists and composers — family traced musical lineage to 18th century. Taught piano from age 6, assisted with church musical duties. Direct multi-generational musical domain immersion.",
+    "ecosystem_summary": "Milan Conservatory studying with Ghedini and Paribeni. Koussevitzky Foundation Scholarship to Tanglewood in 1952. Studied with Luigi Dallapiccola. Exposure to Stravinsky, Bartók, Second Viennese School. Met Cathy Berberian at conservatory.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "andrei-sakharov",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Graduated Moscow State University with distinction. Home-schooled by father in math and physics. Exceptional scientific promise recognized early. Invented practical armor-piercing shell testing process at wartime munitions factory.",
+    "inherited_summary": "Father was a physics professor at Second Moscow State University who tutored him at home in math and physics. Russian intelligentsia family. Mother from noble military family. Strong intellectual family environment with love of literature and science.",
+    "ecosystem_summary": "Moscow State University, graduated with distinction. PhD under Igor Tamm at Lebedev Institute — one of the great theoretical physicists. Wartime munitions factory work provided practical engineering experience. Soviet scientific system at its peak.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "alain-delon",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "No exceptional early ability — 'academically 43rd out of 44.' No formal acting training. Career built entirely on striking physical appearance discovered at Cannes. Rebellious, expelled from multiple schools.",
+    "inherited_summary": "Parents divorced when he was 4. Father cinema projectionist, mother pharmacy assistant. Placed in foster family. Chaotic childhood with feeling of rejection. Expelled from schools, joined Marines, served time in military prison. Active disadvantage.",
+    "ecosystem_summary": "French New Wave cinema boom of late 1950s-60s. Discovered at 1957 Cannes Film Festival. Yves Allégret persuaded him to pursue acting in France. Paris cultural scene. Perfect timing for European cinema's golden age. No training but right place, right time, right looks.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "truman-capote",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-taught to read before school. Writing seriously from age 11, practicing 3 hours daily — obsessive self-directed practice. 'Miriam' won O. Henry Award. Published debut novel at 24, NYT bestseller. Exceptional literary prodigy from extreme adversity.",
+    "inherited_summary": "Mother abandoned him with relatives in Monroeville, Alabama. Father was a neglectful salesman. Mother tried to abort him. Sent to live with aunts. No family stability, wealth, or literary connections. Active disadvantage through parental abandonment.",
+    "ecosystem_summary": "Childhood friend Harper Lee in Monroeville. Copyboy at The New Yorker. Catherine Wood, a high school English teacher, encouraged his talent. Bennett Cerf at Random House gave him a contract. But largely self-created from isolation and adversity.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "adriano-celentano",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Inspired by Elvis Presley, formed rock and roll bands as teenager. But no exceptional early musical ability noted — career built on charisma, timing, and being first to bring rock and roll to Italy. Watchmaker before music career.",
+    "inherited_summary": "Working-class parents from Apulia who moved to Milan for work. No music connections. Grew up in modest neighborhood near Milano Centrale station. Father was not in music or entertainment.",
+    "ecosystem_summary": "Milan rock and roll scene of late 1950s. Played in band with Giorgio Gaber and Enzo Jannacci as peers. Ezio Leoni (Jolly Records A&R) discovered and signed him, co-authored early hits. Elvis Presley/rock and roll wave timing. Fellini cast him in La Dolce Vita.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "pierre-gilles-de-gennes",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Early mathematical talent — inspector amazed by his symmetry argument. Entered ENS at 19 through revolutionary experimental sciences stream. Became leader of his peer group. Home-schooled due to health problems, developing independence of spirit.",
+    "inherited_summary": "Father was a doctor (died 1941), mother a nurse. Middle-class family. Parents met during WWI. Father died when de Gennes was young. Home-schooled due to health problems. Not wealthy but educated family.",
+    "ecosystem_summary": "École Normale Supérieure — France's most elite academic institution. CEA Saclay research center. Advisors Anatole Abragam and Jacques Friedel. Postdoc with Charles Kittel at Berkeley. Les Houches summer school with Peierls and Shockley. Elite French academic pipeline at its best.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "amos-oz",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Taught himself to read at 5, read 1-2 books daily. Exceptional literary ability from young age. Published first book at 25-26. But literary development was shaped by trauma (mother's suicide at 12) rather than structured mentorship.",
+    "inherited_summary": "Intellectual parents — father was a librarian (hoped to be professor), mother university-educated from wealthy family (lost fortune). Great-uncle Joseph Klausner was Hebrew University professor. But impoverished Jerusalem neighborhood, mother's suicide at 12 was devastating.",
+    "ecosystem_summary": "Kibbutz Hulda at 14 provided community and time to write. Hebrew University for philosophy and literature. Jerusalem literary milieu. Klausner family library. But constrained by poverty, political turmoil, and personal trauma. Largely self-created.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "leonard-cohen",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Published first poem at university, won Chester MacNaghten Literary Competition. Student council president, heavily involved in theater and arts. Published first poetry book at 22 as inaugural McGill Poetry Series volume, reviewed by Northrop Frye.",
+    "inherited_summary": "Prominent Jewish family in Westmount, Montreal. Grandfather Lyon Cohen was founding president of Canadian Jewish Congress, ran one of city's largest clothing companies. Father died when Cohen was 9. Comfortable upper-middle-class upbringing with significant community standing.",
+    "ecosystem_summary": "McGill University — mentored by poets Irving Layton and Louis Dudek who helped publish his first book. Montreal literary scene. Trust income supported his writing career. Jewish cultural and literary tradition. Private Jewish day school education.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "just-fontaine",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Scored 23 goals in 16 games at 17 in Moroccan top-flight, 62 in 48 for US Marocaine. Hat-trick on France debut. Exceptional natural scoring ability — 13 goals in single World Cup (record still stands). Self-described 'graduated on grass.'",
+    "inherited_summary": "Father was a civil servant at state tobacco monopoly, Spanish mother. Seven children. Modest family in colonial Morocco. Expelled from high school for indiscipline. No football connections or wealth.",
+    "ecosystem_summary": "US Marocaine in Moroccan league provided early competitive platform. Mario Zatelli (French international) discovered and recruited him to Nice. Stade de Reims, one of France's top clubs. French football pipeline. Albert Batteux coached him at Reims and France.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "james-dean",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Interested in acting from young age, debated and did drama in high school. But no exceptional early achievement before Actors Studio admission. Talent developed through training and mentorship rather than prodigy-level ability.",
+    "inherited_summary": "Mother died of cancer when he was 9. Father sent him to live with aunt and uncle on Quaker farm in Indiana and never returned. No family stability, wealth, or industry connections. Active disadvantage through parental loss and abandonment.",
+    "ecosystem_summary": "UCLA theater program. Admitted to Actors Studio — one of the most selective acting institutions — studying method acting under Lee Strasberg. Rogers Brackett (radio director) became patron and mentor. Elia Kazan cast him in East of Eden. James Whitmore was early mentor.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "daniel-passarella",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Reached first team at local club by 15, prolific scoring defender (9 goals in 36 games at Sarmiento). Exceptional determination despite small stature. Broke leg as child, learned to play left-footed. Named Argentine Footballer of the Year at 23.",
+    "inherited_summary": "Only child of yard foreman and housewife in Chacabuco. Grew up in poverty, dropped out of school at 13 to work. Father was a football fan and Racing delegate but not a professional player. No professional connections or wealth.",
+    "ecosystem_summary": "Local club Argentino de Chacabuco, then Sarmiento de Junín. River Plate at 20 — one of Argentina's biggest clubs. Néstor Rossi (River coach) discovered him. Argentine football culture. Overcame three failed try-outs at Boca, Independiente, and Estudiantes before River.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jon-voight",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Interested in acting in high school (played Puck in Midsummer Night's Dream). Steady progression through Catholic University and Neighborhood Playhouse. But no exceptional early achievement; career built through training and persistence.",
+    "inherited_summary": "Father was a professional golfer (Czech immigrant). Brothers achieved distinction — Barry Voight (volcanologist at Penn State), Chip Taylor (songwriter of 'Wild Thing'). Middle-class family in Yonkers. Supportive but no acting connections.",
+    "ecosystem_summary": "Catholic University of America (BA in art, 1960). Neighborhood Playhouse School of the Theatre under Sanford Meisner — one of the great acting teachers. Broadway debut in The Sound of Music at 22. New York theater ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "yayoi-kusama",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began drawing from hallucinations at 10, created 200+ artworks for first solo exhibition at 23. Obsessive production and distinctive artistic vision from childhood. Exceptional creative drive channeled through psychological adversity.",
+    "inherited_summary": "Family owned affluent plant nursery and seed farm. But mother was physically and verbally abusive, tore up her drawings. Father was absent womanizer. Wealth but active family dysfunction — mother sent her to spy on father's affairs. No support for artistic career.",
+    "ecosystem_summary": "Matsumoto provided natural environment that inspired early work. Kyoto City University of Arts for Nihonga training. Early solo exhibitions in hometown. But largely isolated and self-driven; avant-garde connections and NYC art scene came later, after age 26.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "maurice-jarre",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Came to music relatively late at 16 — no early prodigy evidence. Worked acharnement at Conservatoire. Chose percussion because 'it was already too late to become violinist or clarinetist.' Steady development through training.",
+    "inherited_summary": "Father was a radio technical director in Lyon — middle-class, technology-adjacent but not music domain. Father opposed his switch from engineering to music. Father brought home records that sparked his interest in sound.",
+    "ecosystem_summary": "Conservatoire de Paris — studied composition under Arthur Honegger, percussion with Félix Passerone. Radiodiffusion Française. Théâtre National Populaire as music director at 25-26. Paris cinema ecosystem. Pierre Boulez as colleague at Renaud-Barrault company.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "joe-hisaishi",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started violin at 4 via Suzuki method. Multi-instrumentalist in brass band (trumpet, trombone, saxophone, conducting). Transcribed scores for peers. Early passion for composition. Encountered Glenn Gould's Bach and minimalist composers as formative influences.",
+    "inherited_summary": "Parents were not musicians. Father had a gramophone and shared love of movies, watching hundreds yearly together. Modest background in Nakano, Nagano. Father's gramophone provided early music exposure across genres.",
+    "ecosystem_summary": "Suzuki Method violin school from age 4. Kunitachi College of Music from 1969, majoring in composition. Collaborated with minimalist artists as music engraver. Studied under Takaeo Watanabe. Anime industry entry provided early professional platform. Minimalist movement influence.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "li-ka-shing",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Exceptional drive and business acumen — rose from plastics trainee to general manager before 20, founded Cheung Kong Industries at 22. Self-educated through voracious reading while working 16-hour days. Made profit in first year and every year after.",
+    "inherited_summary": "Born in Chaozhou, China. Fled to Hong Kong as refugee at 12. Father (school headmaster) died of TB when Li was 14-15. Left school to support family. Poverty, refugee status, no network or support. Active disadvantage through war, displacement, and orphanhood.",
+    "ecosystem_summary": "Post-war Hong Kong boom provided enormous economic opportunity. Plastics industry was growing. But largely self-created from adversity — no mentors, no institutional access, no networks. Built everything from personal savings and borrowed funds.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "nico",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Career built on striking physical appearance — 5'10', chiseled features, pale skin. No exceptional talent or ability in any domain. Discovered at 16 by photographer. Modeling and acting opportunities came from looks, not skill.",
+    "inherited_summary": "Father from wealthy Päffgen brewery family dynasty in Cologne but was killed in WWII in 1942 when Nico was 4. Mother worked as seamstress. Grew up poor in post-war Berlin. Left school at 13. Family wealth was lost through war and father's death.",
+    "ecosystem_summary": "Discovered at 16 by photographer Herbert Tobias who gave her stage name. Vogue, Elle, Chanel modeling in Paris. Coco Chanel contracted her at 17. Fellini spotted her and cast in La Dolce Vita. Post-war European fashion and film scene. Paris/Berlin/Rome cultural circuit.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "fairuz",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Unusual singing voice noticed at 10 at school show. Exceptional memory — learned 4 pages of poetry in 2 hours. Natural vocal talent recognized by multiple professionals. Became iconic Arab singer with first hit at 16-17.",
+    "inherited_summary": "Father was a typesetter in a print shop, modest Syriac Orthodox/Maronite Christian family. Single-room house in Beirut sharing kitchen with neighbors. No music connections or wealth. Father initially reluctant to send her to conservatory.",
+    "ecosystem_summary": "Mohammed Flayfel discovered her voice at school show, trained her in intonation and poetic form, recruited her to Lebanese Conservatory. Halim el Roumi (head of Lebanese radio) appointed her as chorus singer. Rahbani brothers collaboration defined her career. Beirut cultural hub.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "axl-rose",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Powerful voice, sang as choirboy in Pentecostal church. But no exceptional early musical achievement. Career built on raw talent, charisma, and drive. Five arrests as teenager in Lafayette before moving to LA.",
+    "inherited_summary": "Father was a troubled delinquent who abducted and allegedly molested him, then disappeared. Stepfather allegedly physically and sexually abusive. Strict oppressive Pentecostal household. Poverty, instability, and trauma. Active disadvantage.",
+    "ecosystem_summary": "LA rock scene of 1980s — co-founded Guns N' Roses with Slash, Izzy Stradlin, Duff McKagan, Steven Adler. MTV era and 1980s LA glam metal scene. Right timing for hard rock's commercial peak. Bandmate chemistry was exceptional.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "michel-legrand",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Child prodigy — began piano at 3, entered Conservatoire de Paris at 10-11, graduated with top honors as both composer and pianist. First in all classes. Described as 'enfant prodige.' 'I Love Paris' became international hit at 22, selling 8 million copies.",
+    "inherited_summary": "Father Raymond Legrand was a renowned conductor and composer. Mother's brother Jacques Hélian was also a conductor. Maternal grandfather was Armenian. Deep multi-generational musical family. Father's industry connections directly helped him secure work as arranger with Maurice Chevalier and others.",
+    "ecosystem_summary": "Conservatoire de Paris under Nadia Boulanger — one of the great composition teachers. Met Igor Stravinsky through Boulanger. Father introduced him to French chanson industry. Worked with Edith Piaf, Yves Montand, Maurice Chevalier. French music industry at its mid-century peak.",
+    "scoring_confidence": "High"
+  }
+]

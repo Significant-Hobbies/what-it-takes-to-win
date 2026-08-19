@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "ahmed-elshireef",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-taught programmer via online courses starting around age 12; won Young Inventor Competition at 13 and led development of Cira Robot at 15 (UN-recognized, Silver Medal at Geneva). Described as a prodigy in Egypt, built Lothgha speech therapy app reaching 75k+ users.",
+    "inherited_summary": "Born in Saudi Arabia, moved to Egypt at 12 where he felt alone with only his laptop as a friend. Attended public schools and received AUC's Egyptian Public Schools Scholarship (need-based), indicating financial disadvantage.",
+    "ecosystem_summary": "AUC scholarship provided university access; robotics club and online courses were his primary learning ecosystem. Limited tech ecosystem in Egypt; moved to San Francisco in 2025 where he found stronger peer environment but had to restart competition.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "saif-elhager",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-taught Roblox game development at 9, made several thousand dollars selling digital products. By 15, earning $60k/year from derivatives trading. Built AiHello to 7-figure revenue at 19 with 40 employees. Exceptional early entrepreneurial drive and self-learning ability.",
+    "inherited_summary": "From Egypt, parents were supportive but not wealthy — father was initially skeptical, mother encouraged him. Parents trusted him with unrestricted screen time. No evidence of domain inheritance or professional connections.",
+    "ecosystem_summary": "Unrestricted internet access and Roblox platform were his primary ecosystem. Met co-founder Ganesh Krishan online in 2022. No elite institutions or mentors early on; self-taught through online platforms and observation.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tanner-jones",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "2018 national debate runner-up, coached the 2021 national debate champion. John Sloan Dickey Scholar at Dartmouth (PPE and Classics). Founded and exited Downballot Solutions during college. Declined Harvard Law to start Vulcan. Strong early achievement in debate and entrepreneurship.",
+    "inherited_summary": "From Texas; no specific evidence of family wealth or domain connections, but Dartmouth education and debate success suggest stable upper-middle class background. No notable family business or industry connections.",
+    "ecosystem_summary": "Dartmouth (elite institution), Joe Lonsdale's Cicero Institute as Technology and Regulatory Policy Director, co-founder relationships from middle school (Chris Minge) and Dartmouth powerlifting (Aleksander Mekhanik). Strong policy and debate ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "chris-minge",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Princeton CS and Philosophy (2018-2022), then Google ML infrastructure engineer working on Gemini, Waymo, Vertex AI, and Tensorflow. Capable engineer with strong academic background, but no evidence of prodigy-level early achievement.",
+    "inherited_summary": "Based in Austin, TX. Princeton education suggests stable middle/upper-middle class background. No specific evidence of family wealth, domain inheritance, or notable connections.",
+    "ecosystem_summary": "Princeton University (elite institution), Google ML infrastructure team (frontier technology access), co-founder relationship with Tanner Jones since middle school. Strong institutional and peer ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "aleksander-mekhanik",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "National chess champion (First Place at US Continental National Chess Tournament), Jack Byrne Scholar for Dartmouth's top math students, Ivy League and Arizona powerlifting record holder. Exceptional multi-domain achievement in chess, math, and powerlifting.",
+    "inherited_summary": "From Arizona, attended Basha High School. No evidence of family wealth or domain connections, but stable enough for chess and powerlifting training. Jack Byrne grant at Dartmouth indicates merit-based support.",
+    "ecosystem_summary": "Dartmouth (elite institution) with Jack Byrne Scholars program for top math students. Co-founder relationships with Tanner Jones (powerlifting at Dartmouth) and Chris Minge. Dropped out to found Vulcan.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "rithvik-gabri",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "1600 SAT, National Merit Finalist, Coca-Cola Scholar (150 of 103,800 applicants), First Robotics World Champion. Founded Bizzy AI (YC S25) at 18 as Stanford freshman. Exceptional academic and extracurricular achievement.",
+    "inherited_summary": "From Irving, Texas. Attended Cistercian Preparatory School (private Catholic school). No evidence of significant family wealth or domain connections, but private school suggests upper-middle class.",
+    "ecosystem_summary": "Cistercian Preparatory School, Stanford CS (class of 2028), First Robotics World Championship, YC S25. Strong institutional pipeline from prep school to Stanford to YC.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ansh-sheth",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Debate team captain and tournament champion, co-president of economics club at Harker. Built chatbot training program for East African women at 16. Stanford class of 2028. Strong above-average ability but no prodigy-level evidence.",
+    "inherited_summary": "From San Jose, CA. Attended The Harker School (elite private school, ~$50k/year). Grew up in Silicon Valley with debate coaching from Stanford's Dean of Education. Significant family investment in elite education.",
+    "ecosystem_summary": "The Harker School (elite private school in Silicon Valley), Stanford University, debate coaching from Stanford's Dean of Education Paul Kim. Growing up in Silicon Valley provided frontier ecosystem exposure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "raymond-allie",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Attended Stuyvesant High School (selective public), Cornell Engineering (Math and CS). Apple internship, ML intern at BlackPrint Technologies. Capable but no evidence of prodigy-level early achievement.",
+    "inherited_summary": "From NYC. Stuyvesant is merit-based public school. No evidence of family wealth, domain inheritance, or notable connections.",
+    "ecosystem_summary": "Stuyvesant High School (selective NYC public school), Cornell Engineering, growing up in NYC with direct exposure to real estate rental market. Co-founded Generative AI at Cornell with Jake Phelan.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jake-phelan",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Cornell CS student, co-founded Generative AI at Cornell, interned at Scale AI. Passionate about AI and game development. Above-average ability but no evidence of prodigy-level achievement.",
+    "inherited_summary": "From Long Island/Ithaca NY. No evidence of family wealth, domain inheritance, or notable connections.",
+    "ecosystem_summary": "Cornell University CS program, co-founded Generative AI at Cornell (building peer community), Scale AI internship. NYC area provided some real estate market exposure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "luke-shiels",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-taught software engineering and UI design from age 9-10. Asked for a calligraphy set at 11, studied websites for hours to understand design. Founding design engineer at Delphi ($18.7M raised). Exceptional self-taught ability from young age.",
+    "inherited_summary": "From Poland. No evidence of family wealth or domain connections. Pilot training suggests middle-class background. Self-taught through observation and online resources.",
+    "ecosystem_summary": "Self-taught through online observation. Pivotal mentor was his boss who advised choosing tech over aviation. Delphi founding team provided SF tech ecosystem exposure. Limited early ecosystem in Poland.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "brenden-prinsmckinney",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "McGill economics, Goldman Sachs, McKinsey (advised DoD on reshoring), Knight-Hennessy Scholar at Stanford (JD/PhD). Co-founded PennyDrops and Zua Microfinance. Strong academic and professional pipeline but no prodigy-level evidence.",
+    "inherited_summary": "From Los Angeles, CA. McGill and Stanford pipeline suggests upper-middle class background. Co-founded with Meagan Prins (McGill classmate and later Knight-Hennessy Scholar). No specific evidence of family wealth or domain connections.",
+    "ecosystem_summary": "Knight-Hennessy Scholars at Stanford (one of most selective graduate scholarships globally), McGill University, Goldman Sachs, McKinsey with DoD advisory role. Elite institutional pipeline across education and consulting.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "berkley-noble",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Deep domain expertise in molten-salt electrolysis through hands-on lab work. Holds patent for electrochemical metal cell, built only U.S. pilot magnesium electrolyzer in 20+ years. Technical depth developed through graduate research, not prodigy-level early ability.",
+    "inherited_summary": "Oregon State University (BS Chemical Engineering) and University of Oregon (MS). Public university education. No evidence of family wealth or domain inheritance.",
+    "ecosystem_summary": "University of Oregon electrochemistry program under Shannon Boettcher and Paul Kempler. Access to electrochemistry lab facilities. Mentor Skip Rochefort who introduced him to the program. Specialized lab access was key.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "eshan-dosani",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "First-generation college student at UChicago (economics and political science). Founded UChicago Harm Reduction Project (5,000+ Narcan kits), worked at White House ONDCP. Strong domain commitment and capability but no prodigy-level evidence.",
+    "inherited_summary": "First-generation college student. Attended UChicago on full scholarship. No family wealth, domain connections, or educational inheritance.",
+    "ecosystem_summary": "University of Chicago (elite institution), research mentorship with Prof. Harold Pollack, White House ONDCP experience, 5 years of addiction/mental health domain work. Strong institutional access despite disadvantaged background.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "aram-shatakhtsyan",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "IOI 2007 Silver Medalist at 16 — rare, trajectory-changing prodigy-level achievement. Won numerous programming competitions including Armenia's National Informatics Olympiad and ACM ICPC. Coded for over 5 years before university.",
+    "inherited_summary": "Father was a programmer who first taught him to code — direct domain inheritance. Grew up in Yerevan, Armenia. Family provided knowledge but limited economic opportunities.",
+    "ecosystem_summary": "Childhood friendship with Tigran Sloyan (MIT, Google) who became CodeSignal co-founder. Yerevan State University (not internationally known). Struggled to get tech jobs due to non-traditional resume despite IOI medal — limited ecosystem in Armenia.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "saurav-kumar",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Bellarmine College Prep, UIUC CS (top-5 program), interned at NVIDIA and Meta, founding engineer at Icon. Co-founded BLAST AI. Strong academic and professional pipeline but no prodigy-level evidence.",
+    "inherited_summary": "Attended Bellarmine College Preparatory (elite private high school in San Jose, ~$25k/year). Grew up in Silicon Valley. Private school suggests upper-middle class but no specific domain inheritance.",
+    "ecosystem_summary": "Bellarmine College Prep (elite Silicon Valley high school), UIUC CS, Silicon Valley location, NVIDIA/Meta/Icon experience. Lifelong friendship and co-founding partnership with Veer Juneja since age 14.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "katie-ledecky",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Olympic gold at 15 (2012 London 800m freestyle), youngest member of U.S. Olympic swimming team. By 26 had 7 Olympic golds and 19 World Championship golds. Exceptional early achievement with world records in multiple events.",
+    "inherited_summary": "Father David Ledecky is an attorney (Harvard/Yale educated). Uncle Jon Ledecky is a multimillionaire co-owner of the New York Islanders. Mother swam competitively at University of New Mexico. Upper-middle class Bethesda, MD family.",
+    "ecosystem_summary": "Stone Ridge School of the Sacred Heart (private school in Bethesda), elite Montgomery County swim programs, older brother Michael as training partner, mother as former collegiate swimmer. Strong swimming ecosystem in Bethesda area.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "simone-biles",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Discovered gymnastics talent at 6 on daycare field trip; coach noticed her imitating other gymnasts. Most decorated gymnast in history with 30 World Championship medals and 7 Olympic golds by 26. Exceptional natural athletic endowment.",
+    "inherited_summary": "Born to mother struggling with substance abuse; spent ages 3-5 in foster care. Adopted by grandparents Ron and Nellie Biles in Spring, Texas. Active early childhood disadvantage through foster care and maternal addiction.",
+    "ecosystem_summary": "Adopted into stable family in Spring, Texas (gymnastics hub). Discovered at gymnastics center at 6. World Champions Centre in Texas built by her family. Elite coaching pipeline in Houston area.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "iga-swiatek",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won French Open at 19 (first Polish player to win a Grand Slam). By 25 had 6 Grand Slam titles and 125 weeks at world No. 1. Excelled in math and English in school. Exceptional early tennis achievement.",
+    "inherited_summary": "Father Tomasz Swiatek is a former Olympic rower (1988 Seoul). Mother Dorota is an orthodontist. Upper-middle class family in Warsaw with direct athletic domain inheritance from father.",
+    "ecosystem_summary": "Trained at Mera Warsaw tennis club from 14, then Legia Warsaw. Father's athletic guidance and discipline. School with flexibility for tournament travel. Coach Piotr Sierzputowski. Strong Polish tennis development pipeline.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "coco-gauff",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Walking at 9 months, athletic prodigy signs from age 3. Wimbledon main draw at 15 (defeated Venus Williams). US Open champion at 19. Exceptional early athletic achievement with clear prodigy trajectory.",
+    "inherited_summary": "Both parents D1 college athletes — father Corey (basketball), mother Candi (track at Florida State). Family relocated from Atlanta to Florida for tennis training at 8. Homeschooled for more court time. Significant family investment.",
+    "ecosystem_summary": "Patrick Mouratoglou Tennis Academy in France (Serena Williams' coach), Delray Beach Florida tennis hub, father's 10-year plan modeled on Williams sisters, Brad Gilbert coaching. Once-in-a-generation tennis development ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "mirra-andreeva",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "French Open Grand Slam champion by 19, youngest WTA 1000 champion (Dubai 2025). On court since age 2 picking up balls, started at 6. Exceptional early tennis achievement with rapid WTA rise.",
+    "inherited_summary": "Born in Krasnoyarsk, Siberia. Mother introduced both daughters to tennis. Older sister Erika also professional tennis player. Parents supported tennis but no evidence of wealth; family relocated multiple times for training.",
+    "ecosystem_summary": "Moved from Siberia to Sochi to Cannes, France for training. Coaches Jean-René Lisnard and Jean-Christophe Faurel (who also coached Coco Gauff). Later coached by Conchita Martinez (Wimbledon champion). Strong European tennis training base.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "leylah-fernandez",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "US Open finalist at 19, defeating Osaka, Kerber, and Svitolina. Started tennis at 5, competing at 10. Exceptional early achievement despite being cut from Tennis Quebec development program at 7 for being too small.",
+    "inherited_summary": "Father Jorge is a former professional soccer player from Ecuador who became her tennis coach despite no tennis experience. Mother Irene (Filipino descent) worked in California to support family, separating them for years. Working-middle class family.",
+    "ecosystem_summary": "Father as dedicated self-taught coach using books and videos. Family moved from Montreal to Florida for year-round tennis. Cut from Tennis Quebec development program — limited formal ecosystem. Relied on father's soccer-derived training methods.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ariarne-titmus",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "4 Olympic golds by 24, ended Katie Ledecky's 6-year unbeaten run. Born with umbilical cord around neck, not breathing at birth. Described as 'never the most talented but most dogged.' Exceptional competitive achievement through determination.",
+    "inherited_summary": "Father Steve is a TV journalist (Seven Network newsreader). Mother Robyn is a former national-level track sprinter. Family had 16-acre property with indoor pool and horses in Tasmania. Middle-class with athletic background.",
+    "ecosystem_summary": "Family relocated from Tasmania to Queensland when she was 14 for elite swimming training. Coach Dean Boxall. Swimming Australia development pipeline identified her at 14. Significant family sacrifice including parental separation during relocation.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "torri-huske",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "3 Olympic golds at 22 (2024 Paris), 6 World Championship golds. Set national high school records. Father says she 'was not a prodigy' — got good around 13, exploded at 15. Exceptional achievement through sustained development.",
+    "inherited_summary": "Only child of Ying (emigrated from China during Cultural Revolution) and Jim Huske. Stable, supportive family in Arlington, VA. Mother's hard work ethic from immigrant background. Public school education.",
+    "ecosystem_summary": "Arlington Aquatic Club with coach Evan Stiles (6 days/week training from age 5-18). Yorktown High School (public). Stanford University swimming. Dedicated local coaching laid foundation for elite success.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "nicol-martinenghi",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Olympic gold (100m breaststroke, Paris 2024), 4 European junior golds. First Italian to swim 100m in under 59 seconds. Exceptional swimming achievement, though developed through normal Italian swimming pipeline.",
+    "inherited_summary": "Born in Azzate, Varese, Italy. Father Samuele is a goldsmith/jeweler who played basketball. Mother Alessandra's family runs a historic pastry shop. Stable middle-class family with no particular swimming background.",
+    "ecosystem_summary": "Local swimming club, first coach Franco De Franco who was pivotal in his development. Switched from basketball to swimming via pact with friend. Normal Italian swimming development pipeline without elite early academy.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sydney-mclaughlinlevrone",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Youngest U.S. track Olympian since 1972 at 16. World record holder in 400m hurdles (50.37s), first woman to break 51-second barrier. 2 Olympic golds by 25. Exceptional early achievement with prodigy-level track performance.",
+    "inherited_summary": "Father Willie was 3-time NCAA All-American in 400m (Manhattan College Hall of Fame, 1984 Olympic Trials semi-finalist). Mother Mary was a track star in high school. Brother Taylor made 2016 Olympic team in 400m hurdles. Deep athletic family inheritance.",
+    "ecosystem_summary": "Union Catholic Regional High School (private Catholic school with strong track program). University of Kentucky track. Family athletic environment with all 4 siblings competing. The Armory in NYC for track meets. Strong coaching and competitive ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "noah-lyles",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Olympic champion (200m, 2024), 8 World Championship golds by 26. Started track at 12 after initially being a gymnast. Overcame severe childhood asthma requiring hospital visits. Exceptional achievement despite early health challenges.",
+    "inherited_summary": "Parents Kevin Lyles and Keisha Caine both competed in track and field at Seton Hall University. Parents divorced; moved with mother to Alexandria, VA. Athletic domain inheritance from both parents, but divorced family context.",
+    "ecosystem_summary": "T.C. Williams High School (public school). Normal public school track program. No elite early training academy. Turned professional out of high school. Overcame severe asthma as child. Limited early elite ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "nafissatou-thiam",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Olympic gold at 21 (youngest heptathlon gold medalist ever), 2 Olympic golds by 26. Set world U20 indoor pentathlon record. Won first national title at 15. Exceptional multi-event athletic ability from young age.",
+    "inherited_summary": "Father Bamba Thiam (Senegalese sculptor/painter), mother Danièle Denisty (school teacher, former athlete, masters heptathlete). Parents divorced at age 2. Mother raised 4 children. Modest home in Liège. Mother's athletic background was key influence.",
+    "ecosystem_summary": "Coach Roger Lespagnard (3-time Olympic decathlete) from age 14. Commuted 60km daily by train from Namur to Liège for training. RFC Liège training. JOC and Belgian athletics support. Exceptional dedication to access elite coaching.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "alison-dos-santos",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "World champion at 22 (400m hurdles), 3rd fastest 400m hurdler in history (46.29s). Overcame severe childhood burns (hot oil at 10 months) and resulting shyness. Exceptional athletic achievement from disadvantaged background.",
+    "inherited_summary": "Born in São Joaquim da Barra, Brazil to father Gerson and mother Sueli. Youngest of 4 children. Parents separated. Family not rich — switched from judo to track because of cost. Worked-class background with active disadvantage.",
+    "ecosystem_summary": "Local track in Brazil, childhood friend persuaded him to try track. Coach Felipe Siqueira. Later trained at Chula Vista, USA. Limited early resources; gravel tracks in home city. Brazilian athletics pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "winfred-yavi",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Olympic gold (3000m steeplechase, 2024 - Olympic record), World champion (2023), 2nd fastest steeplechaser ever. Competed at World Championships at 17. Exceptional athletic achievement from rural Kenyan background.",
+    "inherited_summary": "From Ukia, Makueni County, Kenya. Rural background with limited resources. Couldn't make Kenyan national team (3rd in trials, only 2 selected). Active disadvantage of poverty and lack of access to national team.",
+    "ecosystem_summary": "Teacher noticed talent and encouraged parents. Connected by Kenyan sports sector contact to represent Bahrain at 15. Kenyan running culture as base but couldn't access national team. Bahrain athletic program provided opportunity and support.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "camryn-rogers",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Olympic gold (hammer throw, 2024), 2-time World champion, 3 NCAA titles, 4th woman to throw 80m. First hammer throw at 12 — coach said 'we can work with that.' Exceptional athletic achievement from disadvantaged background.",
+    "inherited_summary": "Raised by single mother Shari (hairdresser) in Richmond, BC. Parents divorced at 3, estranged from father. Experienced homelessness at 13 when family lost condo. Active disadvantage of poverty and family instability.",
+    "ecosystem_summary": "Kajaks Track Club in Richmond, coach Richard Collier discovered her talent. UC Berkeley and coach Mo Saatara. NCAA champion pipeline at Cal. Local club access was critical entry point despite financial hardship.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "mikaela-shiffrin",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Olympic gold at 18 (youngest slalom Olympic champion ever), 'fundamentals dialed by 6.' 100+ World Cup wins, 6 overall World Cup titles by 26. Prodigy-level skiing ability from extremely young age — trajectory-changing.",
+    "inherited_summary": "Father Jeff Shiffrin is an anesthesiologist and former Dartmouth College ski racer. Mother Eileen is a nationally prominent masters ski racer and ICU nurse. Both parents competitive ski racers. Upper-middle class family in Vail, CO.",
+    "ecosystem_summary": "Ski Club Vail from age 7, Burke Mountain Academy (elite ski academy in Vermont), mother as primary travel companion and coach on World Cup circuit. World Cup debut at 15. Once-in-a-generation ski racing development ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "eileen-gu",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "2 Olympic golds at 18 (youngest Olympic freestyle skiing champion), 2-time world champion, 3-time X Games champion. Skiing at 3, freestyle at 8, senior competitions at 13. Prodigy-level multi-domain talent (skiing, running, academics).",
+    "inherited_summary": "Mother Yan Gu emigrated from China, raised Eileen as single parent, was a part-time ski instructor. San Francisco upbringing with bedroom view of Golden Gate Bridge. Financially comfortable enough for regular Tahoe ski trips. American father not involved in raising.",
+    "ecosystem_summary": "Northstar's freeskiing team from age 8, Lake Tahoe ski resorts, mother's ski knowledge. University High School in SF. Chose to compete for China at 15, opening sponsorship and media opportunities. Strong but not once-in-a-generation ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "red-gerard",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Olympic gold at 17 (slopestyle, PyeongChang 2018), youngest snowboarding gold medalist, youngest winter Olympian to win gold since 1928. Started snowboarding at 2. Exceptional early achievement in debut Olympic slopestyle.",
+    "inherited_summary": "6th of 7 children born in Cleveland, OH. Family moved to Silverthorne, CO when he was 7 for mountain living. Parents Conrad and Jen supportive of snowboarding. Large family, not wealthy but relocated for lifestyle.",
+    "ecosystem_summary": "Summit County, Colorado (elite snowboarding location near Breckenridge). Family built terrain park in backyard with rope tow powered by dirt bike engine. Older brothers as training partners and inspirations. Park City/Summit County snowboarding culture.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "su-yiming",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Olympic gold at 17 (big air, Beijing 2022), China's first snowboard Olympic gold. Started snowboarding at 4, sponsored at 7. Also a successful child actor. Exceptional multi-domain early achievement in snowboarding and acting.",
+    "inherited_summary": "Parents were both snowboarders — among China's earliest. Father Su Qun actively supported and guided career. Direct domain inheritance from parents. Sponsored at age 7, child acting career provided additional income.",
+    "ecosystem_summary": "Parents' snowboarding background, Jilin Province mountain access. Chinese national team recruitment in 2017. Trained worldwide, learned fluent English. Beijing 2022 home Olympics provided perfect timing and national support.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ayumu-hirano",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "X Games silver at 14 (youngest medalist), 2 Olympic silvers by 19, Olympic gold at 23. Started snowboarding and skateboarding at 4. Did 280 runs per day as a child. Prodigy-level early achievement in halfpipe.",
+    "inherited_summary": "Father Hidenori was a surfer who opened a surf shop and built a skate park (Nihonkai Skate Park) in hometown. All three brothers are snowboarders. Burton sponsorship from 4th grade. Strong domain-supportive family.",
+    "ecosystem_summary": "Father built skate park, drove him to halfpipe at Yokone ski resort. Burton sponsorship from young age. Moved to US to train with coaches Elijah Teter and Boyd. Signed agent Carl Harris. Strong competitive and sponsorship ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ester-ledecka",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "2 Olympic golds at PyeongChang 2018 in two different sports (super-G skiing and parallel giant slalom snowboarding) — unprecedented feat. Skiing at 4, snowboarding at 5. Prodigy-level multi-sport talent, trajectory-changing.",
+    "inherited_summary": "Father Janek Ledecký is a famous musician in Czech Republic and Slovakia. Mother Zuzana is a figure skater. Grandfather Jan Klapáč is a 2-time Olympic ice hockey medalist. Prominent sporting and artistic family with significant resources.",
+    "ecosystem_summary": "Sporting family with multi-sport access from young age (ice hockey, skiing, snowboarding). Prague location. Brother inspired snowboarding. Junior world champion at 18. World Cup circuit access from teens. Strong Czech winter sports infrastructure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sage-kotsenburg",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "First-ever Olympic snowboard slopestyle champion (Sochi 2014) at 20. Started snowboarding at 5, competing from 6. U.S. Open debut at 12. Turned pro as teenager. Exceptional early achievement in debut Olympic event.",
+    "inherited_summary": "Born in Coeur d'Alene, ID, grew up in Park City, UT. Father Steve is a real estate agent, mother Carol Ann. Supportive parents who let him turn pro as teenager. Middle-class family in Park City.",
+    "ecosystem_summary": "Park City, UT — 2002 Winter Olympics location with Olympic Park facilities. Park City Mountain Resort in backyard. Older brother Blaze as inspiration and training partner. Sister Kirra also professional snowboarder. Elite snowboarding geography.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "yuzuru-hanyu",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "2 Olympic golds (2014, 2018), first Asian men's Olympic champion, first to land quad loop in competition. Won novice championship as 4th grader. His '9-year-old self' was already technically complete. Prodigy-level skating ability.",
+    "inherited_summary": "Father is a high school teacher, mother a department store clerk in Sendai, Japan. Working-class family with no particular wealth or skating background. Older sister Saya started skating first.",
+    "ecosystem_summary": "Sendai figure skating boom (1998 Nagano Olympics produced local skaters). Coach Shoichiro Tsuzuki (strict, structured training). Sendai rinks as training base. Affected by 2011 earthquake. Waseda University for higher education.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "kaori-sakamoto",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "3-time World champion (2022-2024), Olympic bronze (2022). Started skating at 4 after seeing it on TV drama. 'Precocious talent on ice' who became serious at 8. Exceptional achievement through sustained development.",
+    "inherited_summary": "Born in Kobe, Japan. Youngest of three sisters. No evidence of family wealth or skating background. Normal family in Kobe. Graduated from Kobe Gakuin University.",
+    "ecosystem_summary": "Kobe skating facilities, consistent coaching from Sonoko Nakano, Mitsuko Graham, and Sei Kawahara since starting. Sysmex Kobe skating club. Local Japanese skating pipeline without elite early academy.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "karlanthony-towns",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "#1 overall NBA draft pick (2015), Rookie of the Year, 6-time All-Star. Practiced with father's JV team as 5th grader. Dominican national team at 16. 3.96 GPA. Exceptional early basketball development.",
+    "inherited_summary": "Father Karl Sr. played basketball at Monmouth University (record rebounder) and coached high school basketball. Mother Jacqueline (Dominican, nurse). Direct basketball domain inheritance from father who coached and trained him daily.",
+    "ecosystem_summary": "Father's coaching and daily training (1,000 jump shots, 6 days/week). St. Joseph High School (Catholic prep). John Calipari coached Dominican national team and recruited him to Kentucky. Kentucky basketball pipeline. Strong basketball development ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "trae-young",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Led NCAA in both points and assists (only player ever). 4-time NBA All-Star by 23. 42.6 ppg in senior year of high school. Started basketball at 4 at YMCA. Exceptional early basketball achievement.",
+    "inherited_summary": "Father Rayford Young played basketball at Texas Tech (star point guard) and professionally in Europe. Grew up around basketball with father's pro career and then coaching at OU. Direct basketball domain inheritance.",
+    "ecosystem_summary": "Father's basketball network and coaching at OU. Norman, OK with OKC Thunder season tickets. Coach Lon Kruger at OU. YMCA training from age 4. Ball boy for OU Sooners. Strong basketball development environment through father's connections.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "remco-evenepoel",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Junior world champion in both road race and time trial (2018). Vuelta winner at 22, 2 Olympic golds at 24. Dominated junior ranks immediately after switching from football at 17. Exceptional athletic adaptability and achievement.",
+    "inherited_summary": "Father Patrick Evenepoel was a professional cyclist (won 1993 GP de Wallonie) before becoming a plasterer. Mother Agna is a hairdresser. Direct cycling domain inheritance from father. Father's old bike and cycling connections.",
+    "ecosystem_summary": "Anderlecht and PSV football academies (elite youth development). Belgian cycling culture. Father's cycling network. Mentor Fred Vandervennet (3-time Belgian marathon champion). Quick-Step pro team. Strong dual-sport development ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "egan-bernal",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Tour de France winner at 22 (youngest since 1909, first Latin American). Giro d'Italia winner at 24. Started riding at 5, first race at 8. Mountain bike world championship medals as junior. Exceptional cycling achievement from poverty.",
+    "inherited_summary": "Born into relative poverty in Zipaquirá, Colombia. Father Germán was a security guard and amateur cyclist. Mother Flor worked in a flower factory. Secondhand bike, borrowed entry fee for first race. Active economic disadvantage.",
+    "ecosystem_summary": "Colombian cycling culture. Local coaches Fabio Rodríguez and Pablo Mazuera. High-altitude training in Andes (2,600m+). Signed with European team (Androni Giocattoli) as teen. Limited early resources but strong Colombian cycling tradition.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ilia-topuria",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "UFC champion in two divisions, undefeated. Started Greco-Roman wrestling at 7 in Georgia, BJJ at 15 in Spain. Won IBJJF European silver at 17. Exceptional combat sports achievement from refugee background.",
+    "inherited_summary": "Born in Germany to Georgian refugee parents from Abkhazia. Displaced twice — to Georgia at 7, to Spain at 15 after Russo-Georgian War. Father worked 7 days/week to settle family. Active disadvantage of refugee displacement.",
+    "ecosystem_summary": "Greco-Roman wrestling in Georgia from 7. Climent Club in Alicante, Spain (first MMA academy in city) from 15. Brother Aleksandre as training partner. Limited early resources but found key gym in Spain. Bullying in Georgia built resilience.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kayla-harrison",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "2 Olympic golds in judo (2012, 2016), only American judoka to win Olympic gold. Started judo at 6, didn't win for first 3 years. Junior World Champion 2008. Youngest ever Rokudan. Exceptional achievement despite severe trauma.",
+    "inherited_summary": "Mother took judo in college and enrolled Kayla at 6. Middletown, OH working-class background. No family wealth. Sexually abused by childhood judo coach from ages 12-16 — devastating personal trauma. No inherited advantages.",
+    "ecosystem_summary": "Mother introduced sport. First coach Daniel Doyle was abusive (imprisoned). Moved to Pedro's Judo Center in Boston at 16 — elite coaching with Jimmy Pedro and Big Jim who rebuilt her confidence. Critical mentorship after trauma.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "zhang-weili",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "First Chinese UFC champion, 2-time UFC Women's Strawweight Champion. Started kung fu at 6, sent to wushu school at 12. Sanda career ended by injury, worked in gym before MMA debut at 24. Exceptional achievement from working-class background.",
+    "inherited_summary": "Father is a retired mine digger. Mother is a housewife. From Hebei Province, China. Working-class family with no resources. Older brother quit gold trading job to support her career. Active economic disadvantage.",
+    "ecosystem_summary": "Handan kung fu culture (cradle of Yang Family Taichi). Wushu school at 12. Black Tiger Fight Club in Beijing. Limited early MMA infrastructure in China. Ronda Rousey as inspiration for MMA career. Self-trained at Beijing gym.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "shakur-stevenson",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Olympic silver at 19, 4-division world champion by 26. AIBA amateur title at 13. Started boxing at 5 with grandfather, won first fight at 8. 'Born with exceptional timing.' Exceptional boxing ability from very young age.",
+    "inherited_summary": "Father not involved in raising him. Mother Malikah raised him as oldest of 9 siblings in Newark, NJ. Grew up in Newark's tough streets, family constantly moving apartments. Active disadvantage of poverty and absent father.",
+    "ecosystem_summary": "Grandfather Wali Moses (boxing trainer) was pivotal — ran local gym, trained Shakur from 5. Newark boxing community. Limited resources but grandfather's dedicated coaching was trajectory-changing. Andre Ward as inspiration.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "junto-nakatani",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "3-division world champion by 26. U-15 national boxing champion. Started karate at 8, boxing in 6th grade. Pro debut at 17. 32-1 professional record. Exceptional boxing achievement through dedicated development.",
+    "inherited_summary": "Parents ran a Japanese restaurant in Mie Prefecture. Working-class family with no boxing background. Family moved to Sagamihara for his boxing career. No inherited wealth or domain connections.",
+    "ecosystem_summary": "KOZO gym in Mie, coach Ishii who made him switch to southpaw. M.T gym in Tokyo. Trained in US with Rudy Hernandez. Family sacrificed for boxing — moved cities. Dropped out of high school to pursue boxing. Limited but dedicated ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "emanuel-navarrete",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "3-division world champion, WBO junior featherweight champion at 23. 40-2 professional record with 33 KOs. Turned pro at 17. Exceptional boxing achievement from deeply disadvantaged working-class background.",
+    "inherited_summary": "Born in San Juan Zitlaltepec, State of Mexico. Working-class family. Father worked construction. Navarrete worked as a bricklayer (albañil) for 3 years alongside training. Only completed primary and secondary school. Active economic disadvantage.",
+    "ecosystem_summary": "Uncle/coach Pedro Navarrete (also a boxer) trained him from age 7. Boxing family — brothers Jhonny and Pedro also boxed. Modest local gyms with no sponsors. Mexican small-club boxing circuit. Limited early resources but strong family boxing tradition.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "takuto-otoguro",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "World champion at 19 (youngest Japanese wrestler ever), Olympic gold at 22. Won 5 straight national elementary titles from 2nd-6th grade. Started wrestling at 4. Prodigy-level wrestling ability from extremely young age — trajectory-changing.",
+    "inherited_summary": "Father Seiya was a former wrestler who set up a home wrestling room in their apartment and coached both sons. Working-class family. Father's wrestling knowledge was key but family had limited resources — 8-tatami room home dojo.",
+    "ecosystem_summary": "Father as coach with homemade home dojo. Older brother Keisuke (also 2020 Olympian) as training partner. JOC Elite Academy in Tokyo from junior high. Yamanashi Gakuin University. Japan Self-Defense Forces Physical Training School. Strong Japanese wrestling pipeline.",
+    "scoring_confidence": "High"
+  }
+]

@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "bill-gates",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Programmed from age 13 at Lakeside; therapist gave him an IQ test and recognized neurodivergent hyper-concentration. Taught a computer class and wrote a scheduling program in high school. Exceptional curiosity and drive, though not a traditional prodigy.",
+    "inherited_summary": "Father was a prominent corporate lawyer; mother served on United Way board alongside IBM CEO. Affluent Seattle family that could afford private Lakeside schooling and substantial educational latitude.",
+    "ecosystem_summary": "Met Paul Allen at Lakeside School. Lakeside Mothers Club bought a teletype giving rare early mainframe access in 1968. Teletype Club peer group. Right place (Seattle), right time (dawn of personal computing).",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "steve-jobs",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Curious and creative from a young age — redesigned toys, showed early design aptitude. Not an exceptional cognitive prodigy but had strong aesthetic and product instincts emerging in adolescence.",
+    "inherited_summary": "Adoptive parents were working/middle class — father was a machinist who taught him basic electronics in the garage. Supportive and committed to funding college, but no wealth or domain connections.",
+    "ecosystem_summary": "Grew up in Silicon Valley surrounded by HP engineers; neighbor Larry Lang mentored him in electronics. Summer job at HP. Met Wozniak through local network. Homebrew Computer Club and Atari provided frontier ecosystem access.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "steve-wozniak",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Into electronics from childhood; ham radio license at 10, built voltmeters, calculators, and games from scratch. Self-taught deep hardware design ability, extremely bright but bored by school. Built the Apple I from years of hobby engineering.",
+    "inherited_summary": "Father was a Lockheed electrical engineer who taught him electronics on a blackboard and got ham radio licenses together. Stable technical household in Silicon Valley with direct domain knowledge transfer.",
+    "ecosystem_summary": "Homestead High School had a well-equipped electronics lab and dedicated teacher. Silicon Valley electronics culture. Worked at HP. Homebrew Computer Club provided peer community. Partnership with Jobs supplied the business half.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "michael-dell",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Business prodigy — ran a mail-order stamp business at 12 ($2,000), sold newspaper subscriptions at 16 ($18,000 in one year using data-driven targeting), took apart his first computer at 15. Exceptional early business and quantitative aptitude.",
+    "inherited_summary": "Father was an orthodontist, mother a stockbroker and financial consultant. Upper-middle-class Houston family with professional discipline and market exposure. Parents wanted him to become a doctor.",
+    "ecosystem_summary": "University of Texas at Austin provided the dorm-room launchpad. Early PC era timing was favorable. Number Sense Club and early Teletype access in school. No elite institutional or mentor ecosystem, but good timing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "mark-zuckerberg",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Programmed from ~age 11, built ZuckNet at 12, created a music player using machine learning in high school. Took graduate computer courses at Mercy College while still in high school. Private tutor could barely stay ahead of him. Above-average but not prodigy-level.",
+    "inherited_summary": "Father was a dentist who introduced programming on an Atari 800; mother was a psychiatrist. Comfortable professional household in Dobbs Ferry, NY. Parents hired a private computer tutor and sent him to Phillips Exeter Academy.",
+    "ecosystem_summary": "Harvard provided a dense, high-status campus network that was the initial market for Facebook. Phillips Exeter Academy. Roommate network including Moskovitz, Saverin, and Hughes. Silicon Valley migration for scaling.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "dustin-moskovitz",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Smart enough for Harvard but no exceptional early cognitive or creative achievements documented. Learned PHP from a book to help Zuckerberg expand Facebook. Capable and hardworking, but above-average rather than exceptional.",
+    "inherited_summary": "Stable professional family in Ocala, Florida. No directly relevant parental domain advantage established. Family supported Harvard attendance.",
+    "ecosystem_summary": "Harvard roommate network gave him direct access to Zuckerberg and the initial campus market. Joined Facebook founding team as one of the earliest members. Silicon Valley migration with Zuckerberg. Once-in-a-generation peer environment.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "eduardo-saverin",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Graduated magna cum laude from Harvard in economics. Made $300,000 from oil futures investments using meteorology predictions while in college. Above-average intelligence and business acumen, but not a prodigy.",
+    "inherited_summary": "Born into a wealthy Jewish-Brazilian family in São Paulo. Father was a businessman in clothing, shipping, energy, and real estate. Grandfather founded Tip Top children's clothing chain. Attended Gulliver Preparatory School in Miami. Personal capital available at Facebook's earliest stage.",
+    "ecosystem_summary": "Harvard network provided access to Zuckerberg and the founding team. President of Harvard Investment Association. Phoenix S.K. Club and Alpha Epsilon Pi fraternity connections. Provided initial $1,000 seed capital for Facebook servers.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "sean-parker",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Father taught him programming at age 7 on an Atari 800. By his teens, was hacking into Fortune 500 networks and military databases — FBI raided his home at 16. Autodidact who barely finished high school. Exceptional early technical ability and network-building instincts.",
+    "inherited_summary": "Father was a U.S. government oceanographer and chief scientist at NOAA. Mother was a TV advertising broker. Middle-class suburban Virginia family with a technical/academic father who encouraged risk-taking early.",
+    "ecosystem_summary": "Met Shawn Fanning online at 15, bonding over programming and hacking. Co-founded Napster at 19. Early internet ecosystem and underground hacker community. Later became founding president of Facebook, connecting to Zuckerberg.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "shawn-fanning",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-taught programming starting around age 16-17 with a computer gifted by his uncle. Built Napster as a freshman at Northeastern. Above-average technical ability and product insight, but not a prodigy — had to buy a book to finish the GUI.",
+    "inherited_summary": "Family was on welfare; father was absent. Lived in a foster home for a time. Uncle John Fanning provided a computer and encouragement, serving as a paternal figure. Active disadvantage from poverty and family instability.",
+    "ecosystem_summary": "Uncle provided computer access and office space. IRC community connected him to Sean Parker at 14. Northeastern University dorm environment. Uncle's business guidance (though contentious). Early internet peer network through IRC.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "marc-andreessen",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Discovered programming at 12 on a Commodore 64, created a virtual calculator in 6th grade and games in 7th grade. Above-average ability but not a prodigy. IBM internships in college. The decisive advantage was institutional, not personal.",
+    "inherited_summary": "Raised in rural New Lisbon, Wisconsin ('the sticks'). Father was a seed company sales manager, mother worked in customer service at Lands' End. Working-class upbringing with no domain overlap or connections.",
+    "ecosystem_summary": "University of Illinois NCSA provided access to a supercomputer center at the dawn of the web. Partnership with Eric Bina. Perfect timing — built Mosaic in 1993 when the web was emerging. Moved to Silicon Valley to co-found Netscape. Once-in-a-generation timing and institutional access.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "larry-page",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Fell in love with computers at age 6, playing with first-generation PCs left by his parents. First kid in elementary school to submit a word-processed assignment. Built a Lego inkjet printer at University of Michigan. Knew he wanted to start a company by age 12.",
+    "inherited_summary": "Father was a computer science professor at Michigan State University (PhD from Michigan, pioneer in AI). Mother taught computer programming at MSU. Deep domain overlap — computers in the home by 1978, academically privileged household.",
+    "ecosystem_summary": "Stanford PhD program paired him with Sergey Brin on PageRank. University of Michigan engineering. Silicon Valley at the right time. Stanford's research ecosystem and computing infrastructure. Brin partnership was the decisive peer relationship.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "sergey-brin",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Graduated from University of Maryland in three years with highest honors in mathematics and computer science. NSF graduate fellowship to Stanford. Father taught him programming before emigrating. Montessori education fostered independence and creativity.",
+    "inherited_summary": "Father was a mathematics professor at University of Maryland (barred from astronomy in USSR due to anti-Semitism). Mother was a researcher at NASA Goddard. Highly educated scientific immigrant family with stable academic support after migration to Maryland.",
+    "ecosystem_summary": "Stanford PhD program paired him with Larry Page. University of Maryland honors program. Silicon Valley at the right time. Stanford research ecosystem. Page partnership was the decisive peer relationship. Immigrant urgency as additional motivation.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jerry-yang",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Graduated first in his high school class, student body president. Earned BS and MS in electrical engineering from Stanford in four years while working part-time. Above-average ability and drive, but not a prodigy.",
+    "inherited_summary": "Father died when he was two. Mother was an English professor who moved the family from Taiwan to San Jose when he was 10. Immigrant family with modest means — knew only the word 'shoe' in English upon arrival. No financial or domain advantage.",
+    "ecosystem_summary": "Stanford provided the research environment and partnership with David Filo. Early web timing was perfect — built Yahoo directory when web navigation was unsolved. Stanford's EE department and Silicon Valley geography.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "elon-musk",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Taught himself programming early, sold a game called Blastar at age 12. Voracious reader from young age. Exceptional intensity and drive. Not a traditional prodigy but showed strong early technical and entrepreneurial aptitude despite difficult childhood.",
+    "inherited_summary": "Father was an electromechanical engineer, pilot, and property developer — wealthy but reportedly abusive. Mother was a model and dietitian. Parents divorced when he was 10. Family provided resources and computer access but also significant trauma. Claims of extraordinary inherited wealth are disputed.",
+    "ecosystem_summary": "Grew up in Pretoria, South Africa — isolated from global tech hubs. Moved to Canada then US for university. Silicon Valley access came later. Limited early ecosystem advantage; the decisive factors were personal drive and later migration to the right geography.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "max-levchin",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Obsessed with cryptography from teenage years, influenced by Soviet-era surveillance fears. Self-taught coding using pen and paper. Family of scientists — grandmother ran Kiev observatory. Built multiple companies before PayPal. Exceptional technical drive from constraint.",
+    "inherited_summary": "Ukrainian-Jewish family immigrated to Chicago in 1991 as political refugees with $700. Parents were scientists but had no capital. Father and mother worked menial jobs initially. Active disadvantage from refugee status and starting from scratch.",
+    "ecosystem_summary": "University of Illinois at Urbana-Champaign (same as Andreessen). Moved to Silicon Valley after graduation. Co-founded PayPal with Peter Thiel. UIUC computer science and Silicon Valley internet-payments ecosystem. PayPal mafia peer network.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tony-hsieh",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Entrepreneurial from a young age — worm farms, photo button businesses as a kid. Creative and resourceful. Harvard CS degree. Above-average ability but not a prodigy; his strength was business and social intelligence.",
+    "inherited_summary": "Father was a chemical engineer at Chevron. Mother was a social worker. Taiwanese-American immigrant family. Grew up in affluent Marin County, attended private Branson School. Stable professional household with educational resources.",
+    "ecosystem_summary": "Harvard provided the network — met Alfred Lin (future Zappos CFO/COO) and Sanjay Madan (LinkExchange co-founder) there. Early web timing for LinkExchange. Harvard CS department and Quincy House entrepreneurial culture.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "garrett-camp",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Fell in love with computers around age 10 when uncle lent him a Macintosh Plus. Electrical engineering degree and master's in software engineering from University of Calgary. Above-average technical ability but no exceptional early achievement.",
+    "inherited_summary": "Father was an economist who became a home builder; mother was an artist/designer who became a home builder. Middle-class Calgary family with self-employed, entrepreneurial parents. No direct tech domain overlap.",
+    "ecosystem_summary": "University of Calgary provided the graduate school environment and co-founder network (Geoff Smith and others). Angel investor connection brought him to Silicon Valley. Early web discovery problem space. Later co-founded Uber with Travis Kalanick.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "aaron-levie",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Launched about 15 companies as a teenager, including a joke search engine. Got into programming as a teenager. Restless energy and entrepreneurial drive from young age. Above-average but not exceptional cognitive ability.",
+    "inherited_summary": "Father was a chemical engineer at a paper company; mother was a speech-language pathologist. Family moved to Mercer Island, an affluent Seattle suburb. Stable middle-class professional household with early computer access.",
+    "ecosystem_summary": "Childhood friend network on Mercer Island — met Dylan Smith in middle school, Jeff Queisser as a neighbor. Co-founding team of childhood friends. Got Mark Cuban as early investor via cold email. USC and Silicon Valley for scaling.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "dylan-smith",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Entrepreneurial from high school — started a tutoring company. Funded Box with $20,000 in online poker winnings. Duke economics degree. Above-average business and financial aptitude but not exceptional cognitive ability.",
+    "inherited_summary": "Father is an attorney who helped incorporate Box. Grew up on Mercer Island, an affluent Seattle suburb. Stable professional family with legal resources and support for entrepreneurship.",
+    "ecosystem_summary": "Longstanding friendship with Aaron Levie from middle school provided the co-founder pairing. Duke University. Childhood friend network on Mercer Island. Early cloud storage timing. No elite institutional mentor or frontier ecosystem access initially.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "alexis-ohanian",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Obsessed with technology from middle school — built websites, ran Quake II clans. Took the only CS class in his high school but lost confidence in the major. Above-average but not exceptional; his strength was design and community building.",
+    "inherited_summary": "Father was a travel agent; mother was a pharmacy technician. Armenian-American heritage (grandparents were genocide refugees). Middle-class family in Columbia, Maryland. No domain overlap or significant connections.",
+    "ecosystem_summary": "Met Steve Huffman at University of Virginia on the first day of college. Applied to Y Combinator (early batch) — Paul Graham personally mentored and pivoted their idea to Reddit. YC provided the critical institutional accelerator and network.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "steve-huffman",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started programming at age 8. Computer science degree at UVA. Applied early-decision hoping for Jefferson Scholars program. Above-average early technical ability with sustained coding from childhood.",
+    "inherited_summary": "Parents divorced when young. Father was entrepreneurial (talked about restaurants, go-kart rinks). Stepfather was a successful business/military man. Multiple entrepreneurial influences in the family, though middle class.",
+    "ecosystem_summary": "Met Alexis Ohanian at UVA on the first day of college. Applied to Y Combinator (early batch) — Paul Graham pivoted their idea to Reddit. YC provided critical accelerator access. Entrepreneurial family culture made starting a company seem normal.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "sam-altman",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Received first computer (Apple Macintosh) at age 8, learned to code and disassemble hardware. Built an autonomous helicopter navigation system as a Stanford undergraduate. Private school CS teacher mentored him in AI. Above-average early ability.",
+    "inherited_summary": "Mother is a dermatologist; father was a real estate broker. Middle-class Jewish family in St. Louis. Attended John Burroughs School, an elite private college-prep school. Comfortable professional household with elite educational access.",
+    "ecosystem_summary": "Stanford CS provided Silicon Valley access. Co-founded Loopt in the first YC batch. Paul Graham personally chose him as YC president successor at age 28. Extraordinary network access through YC — mentored by Graham, connected to hundreds of founders.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "drew-houston",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Programmed from age 5, father showed him BASIC on a PC Junior. Beta-tested computer games for security flaws as a middle schooler. Worked for a robotics startup as a teenager. Perfect SAT score. Built multiple startups before Dropbox. Exceptional early technical ability.",
+    "inherited_summary": "Father was an electrical engineer who supported early computing. Mother was a librarian. Stable professional household in Acton, Massachusetts. Parents noticed his precocity but chose not to have him skip grades for socialization.",
+    "ecosystem_summary": "MIT computer science provided the technical foundation and network. Met Arash Ferdowsi through Kyle Vogt at MIT. Y Combinator (Boston program) accepted Dropbox. Paul Graham connected him to Ferdowsi. Silicon Valley for scaling.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "arash-ferdowsi",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Built his own computer at age 9-10. Graduated first in his high school class. MIT electrical engineering and computer science. Above-average technical ability with early self-driven hardware and software aptitude.",
+    "inherited_summary": "Son of Iranian immigrants. Father was a mortgage broker; mother also Iranian-born. Parents settled in Overland Park, Kansas after emigrating. Middle-class family that invested in education. No direct tech domain overlap.",
+    "ecosystem_summary": "MIT provided the technical foundation and connection to Drew Houston via mutual friend Kyle Vogt. Dropped out to co-found Dropbox. Y Combinator ecosystem. Silicon Valley for scaling. Kansas City tech connection through Vogt.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "brian-chesky",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Showed early art and design aptitude — asked Santa for badly designed toys so he could redesign them. Drew replicas of paintings, redesigned shoes. Captain of hockey teams. Strong creative/design instincts but not a cognitive prodigy.",
+    "inherited_summary": "Both parents were social workers in upstate New York. Working/middle-class family with no business, tech, or design connections. Parents were concerned about his choice to attend art school. No inherited leverage.",
+    "ecosystem_summary": "RISD provided elite design education and the partnership with Joe Gebbia. Moved to San Francisco at the right time. Y Combinator accepted Airbnb. Gebbia friendship and complementary skills. Silicon Valley ecosystem for scaling.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "joe-gebbia",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Artistic from early childhood — always drawing. Accepted into Georgia Governor's Honors Program for art in high school. RISD graphic design and industrial design. Above-average creative ability but not exceptional cognitive ability.",
+    "inherited_summary": "Parents were independent health food sales representatives who started their own brokerage company. Entrepreneurial family in suburban Atlanta. Middle class with self-employed parents who supported art education.",
+    "ecosystem_summary": "RISD provided elite design education and partnership with Brian Chesky. Took supplementary business classes at Brown and MIT while at RISD. San Francisco move and Y Combinator. Chesky friendship was the decisive peer relationship.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "nathan-blecharczyk",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Taught himself programming at age 12 using his father's engineering books. By 14, was earning money writing programs for clients worldwide. Made nearly $1 million from a web-hosting business in high school. Exceptional early technical and entrepreneurial achievement.",
+    "inherited_summary": "Father was an electrical engineer who encouraged tinkering — brought home old Xerox and soda machines for him to take apart. Upper-middle-class family in Boston. Attended Boston Latin Academy (exam school). Direct domain exposure from father.",
+    "ecosystem_summary": "Harvard computer science provided the network and credential. Met Joe Gebbia through Craigslist housing. Airbnb founding team with Chesky and Gebbia. Self-taught engineering skills from a young age. Silicon Valley for scaling.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "daniel-ek",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Got first computer at 5, first guitar at 4. Started first business at 14 designing websites. By 16, was earning more than both parents combined. Built and sold multiple companies before Spotify. Exceptional early technical and business ability despite disadvantaged background.",
+    "inherited_summary": "Raised largely by a single mother in Rågsved, a 'pretty rough' working-class Stockholm suburb. Father was a car mechanic/IT engineer who was out of the picture early. Mother was a childminder. Active disadvantage from poverty and single-parent upbringing.",
+    "ecosystem_summary": "Stockholm had early broadband access — 'saw the internet 10 years before everyone else.' First generation to have teens on the internet. KTH Royal Institute of Technology (briefly). Stockholm tech ecosystem and early web timing were significant advantages.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tobi-l-tke",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Received first computer (Amstrad CPC) at age 6. By 11-12, was rewriting game code and building his own games. Diagnosed with learning disabilities and medicated in school. Dropped out at 16 for a programming apprenticeship. Self-taught deep technical ability from a young age.",
+    "inherited_summary": "Father was an internist (medical doctor); mother was a teacher of special-needs children. Middle-class professional family in Koblenz, Germany. Parents gave him a computer early but didn't understand it; took him for assessments due to his obsession.",
+    "ecosystem_summary": "German dual education system provided a structured programming apprenticeship at Siemens. Open source community and Ruby on Rails ecosystem. Moved to Canada for personal reasons, then built Shopify. No elite institutional or frontier ecosystem access initially.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "david-karp",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Learned HTML at 11 and began designing websites for businesses. Dropped out of Bronx Science at 14 to homeschool. Became head of product at UrbanBaby as a teenager. Self-taught coder with exceptional early technical and product ability for his age.",
+    "inherited_summary": "Mother was a science teacher at the Calhoun School (which David attended). Father was a film and television composer. Creative/professional Manhattan household that supported unusually flexible schooling and early work. Parents separated when he was 17.",
+    "ecosystem_summary": "NYC tech scene provided early access. Mother's connection to Frederator Studios led to an internship at 14, where he learned from computer engineers. UrbanBaby provided real startup experience as a teen. No elite institutional pipeline, but strong early professional exposure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "matt-mullenweg",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began blogging in 2002 on the b2 platform. Took over the abandoned b2 project and co-created WordPress at 19. Attended arts high school for jazz saxophone. Above-average technical ability but not a prodigy — his advantage was community and timing.",
+    "inherited_summary": "Father was a computer programmer at Brown & Root who encouraged early computer use. Mother was a stay-at-home mom. Middle-class Houston family. Father took him to PC user group meetings. Some domain exposure through father's profession.",
+    "ecosystem_summary": "Houston blogging community and online forums provided early peer network. Open source b2 community and Mike Little co-creator. CNET hired him and allowed part-time WordPress development. San Francisco move for tech career. Open source community was the key ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "david-heinemeier-hansson",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Learned PHP in high school building gaming review sites. Programming didn't click easily at first — he found it difficult until much later. Copenhagen Business School degree. Above-average but a relatively late bloomer in programming, not a prodigy.",
+    "inherited_summary": "Father was a hustler who fixed electronics and made trades; mother worked part-time in care. Working-class upbringing in Copenhagen. No domain overlap or significant connections. Independence and resourcefulness from family culture.",
+    "ecosystem_summary": "Built Daily Rush (Danish gaming site) which attracted attention from Jason Fried of 37signals. Fried hired him to build Basecamp, where he created Ruby on Rails. The 37signals/Fried partnership was the decisive ecosystem advantage. Open source Ruby community amplified his work.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "palmer-luckey",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught electronics from a young age. Built 50+ VR headset prototypes as a teenager, first at 17 in his parents' garage. Funded projects by fixing and reselling damaged iPhones. Took community college courses from age 14-15. Exceptional self-driven engineering ability.",
+    "inherited_summary": "Father was a car salesman; mother was a stay-at-home mom who homeschooled all four children. Working-class Long Beach, California family. No technology domain overlap. Parents gave him half the garage and tolerated highly unusual experimentation.",
+    "ecosystem_summary": "VR enthusiast community on MTBS3D forums provided peer network and technical knowledge. Kickstarter provided funding and distribution. Silicon Valley connection through Brendan Iribe and Nate Mitchell who partnered with him. Right timing for VR revival.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "nick-d-aloisio",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Taught himself app development at 12, downloaded Apple developer kit and learned by trial and error. Built first app at 12, Summly at 15. Youngest person to receive venture capital at 16. Exceptional early achievement for age, though not prodigy-level cognitive ability.",
+    "inherited_summary": "Father is an investment banker; mother is a lawyer. Attended King's College School, an elite independent school in Wimbledon. Highly educated, affluent professional family in London with resources for technology and education.",
+    "ecosystem_summary": "Early App Store platform provided democratized distribution — a 12-year-old could publish alongside major companies. Horizons Ventures (Li Ka-shing's fund) invested $300,000 at 15. Yahoo acquired Summly for $30M at 17. Early mobile platform timing was decisive.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "josh-browder",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Learned to code with BASIC as a child, programming iPhone apps by 13. Built apps for human rights organizations as a teenager. Created DoNotPay at 18. Above-average early technical ability with strong self-driven initiative.",
+    "inherited_summary": "Son of Bill Browder, prominent financier and anti-Putin campaigner (formerly CEO of largest foreign investment firm in Russia). Grandson of Felix Browder, mathematician and AMS president. Great-grandson was head of US Communist Party. Exceptional financial, academic, and activist family pedigree.",
+    "ecosystem_summary": "Stanford University provided the Silicon Valley base. Audited Stanford machine learning classes to scale DoNotPay. Family heritage in law, finance, and advocacy directly informed the product domain. London and Silicon Valley networks. Press-friendly framing amplified reach.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "boyan-slat",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Tinkering from age 2 — building treehouses, ziplines, experimenting with explosives. Developed ocean cleanup concept at 16 for a school project. Above-average curiosity and engineering instinct, but not a traditional prodigy. Drive and conviction were his distinguishing traits.",
+    "inherited_summary": "Father was a Croatian artist; mother was a Dutch-British consultant for foreigners relocating to Holland. Middle-class family in Delft, Netherlands. Supportive family that allowed intensive experimentation and public advocacy as a teenager.",
+    "ecosystem_summary": "TU Delft aerospace engineering (briefly). TEDx Delft talk went viral in 2013, providing the platform to attract talent and funding. Thiel Fellowship provided runway. Crowdfunding campaign raised $90,000. Delft tech community and viral media ecosystem were catalytic.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "george-hotz",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "First person to unlock the iPhone at 17. Reverse-engineered the PlayStation 3. Attended Bergen County Academies (magnet school for engineering). Johns Hopkins CTY program alumnus. DEF CON CTF winner with CMU's PPP team. Rare, trajectory-changing technical ability — prodigy-level hacker.",
+    "inherited_summary": "Grew up in Glen Rock, New Jersey. Family had a T-Mobile family plan (suggesting middle class). No significant family wealth or domain connections documented. Father suggested he patent his iPhone unlock method.",
+    "ecosystem_summary": "Bergen County Academies magnet school provided technical peer group. Hacker community (iPhone jailbreak scene, PS3 hacking) provided distribution and reputation. CMU's Plaid Parliament of Pwning (PPP) CTF team. Online hacker community was his primary ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "alexandr-wang",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Math Olympiad Program qualifier, US Physics Team member, USACO finalist. Won UNM-PNM math contest for seven consecutive years. Landed full-time engineering jobs at Addepar and Quora at 17. Rare, trajectory-changing competitive achievement — prodigy-level math and programming.",
+    "inherited_summary": "Both parents were Chinese immigrant nuclear physicists at Los Alamos National Laboratory. Grew up in Los Alamos, New Mexico — a research-dense environment. Highly educated scientific family with direct STEM domain overlap.",
+    "ecosystem_summary": "Los Alamos National Laboratory environment provided a research-dense upbringing. MIT (briefly) provided initial network. Y Combinator accelerator. Addepar and Quora work experience as a teenager. Silicon Valley at the dawn of the AI boom — perfect timing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "lucy-guo",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Taught herself to code in elementary school to cheat at Neopets. Making money via PayPal by second grade. Built bots for online games, sold Pokémon cards, created websites with Google AdSense. Above-average early technical and entrepreneurial ability.",
+    "inherited_summary": "Both parents were Chinese immigrant electrical engineers who were laid off early in her life, leading to a very frugal upbringing. Grew up in Fremont/Pleasanton, California. Middle-class immigrant family with technical exposure but financial constraint.",
+    "ecosystem_summary": "Carnegie Mellon University (dropped out for Thiel Fellowship). Internships at Facebook, Snapchat (first female designer, helped build Snap Maps), and Quora where she met Alexandr Wang. Y Combinator. Silicon Valley ecosystem from a young age. Thiel Fellowship provided runway.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "dylan-field",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Learned algebra at age 6. So bored in middle school he hung out with the janitor, a math savant who taught him proofs. Participated in FIRST Robotics. Child actor (Windows XP commercial). Organized a 150-student hackathon at Brown. Above-average early ability.",
+    "inherited_summary": "Father was a respiratory therapist at a hospital; mother was a resource specialist teacher at an elementary school. Working/middle-class family in Penngrove, California (Sonoma County). No domain overlap or significant connections.",
+    "ecosystem_summary": "Brown University CS department provided the network and partnership with Evan Wallace. Thiel Fellowship provided $100,000 and runway to leave school. Silicon Valley move. Wallace's WebGL expertise was the technical foundation. O'Reilly, LinkedIn, and Flipboard internships.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "evan-wallace",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Developed deep WebGL expertise at Brown. Created a water simulation demo that WIRED called 'one of the most impressive WebGL demos ever.' Interned at Microsoft (PowerPoint) and Pixar as a software engineer. Above-average technical ability with specialized graphics expertise.",
+    "inherited_summary": "Limited public information on family background. Brown University access suggests a stable, at least middle-class upbringing. No specific domain overlap or wealth indicators documented.",
+    "ecosystem_summary": "Brown University CS department provided the partnership with Dylan Field. Served as TA for CS classes. Microsoft and Pixar internship experience. Silicon Valley move with Field via Thiel Fellowship. The Field-Wallace technical pairing was the key ecosystem advantage.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "whitney-wolfe-herd",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Launched a clothing line and sustainable tote bag business while at SMU. No exceptional early cognitive or technical ability documented. Above-average entrepreneurial drive and social intelligence, but not a prodigy.",
+    "inherited_summary": "Father was a property developer; mother was a homemaker. Comfortable family in Salt Lake City with commercial/business exposure through father. Parents divorced during her youth. Some business exposure but no tech domain overlap.",
+    "ecosystem_summary": "SMU provided the educational base. Hatch Labs incubator connected her to the Tinder founding team. Tinder co-founder experience provided direct dating-product knowledge. Andrey Andreev (Badoo founder) backed Bumble with $10M. Tinder ecosystem was the training ground.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "melanie-perkins",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Trained seriously in figure skating and sold handmade scarves as a teenager. Founded Fusion Books at 19 after observing design software difficulty while tutoring. Above-average drive and observation, but not a prodigy. Her strength was persistence through years of rejection.",
+    "inherited_summary": "Mother was a teacher; father was a Malaysian engineer of Filipino and Sri Lankan heritage. Stable professional household in Perth, Australia. Parents supported education and early entrepreneurship. Some domain exposure through father's engineering background.",
+    "ecosystem_summary": "University of Western Australia provided the initial environment. Met investor Bill Tai who connected her to Lars Rasmussen (Google Maps co-creator) as mentor. Cameron Adams (former Google designer) joined as third co-founder. Three years of pitching before Silicon Valley investment.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ben-francis",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Discovered aptitude for IT at 17 after being an 'average' student. Built apps and websites around fitness. Self-taught sewing from grandmother to make gym clothes. Above-average but not exceptional; his advantage was deep immersion in fitness culture, not cognitive ability.",
+    "inherited_summary": "Mother was a nurse in a heart unit; father's profession not prominently documented. Working-class family in Bromsgrove, West Midlands. No business or tech domain connections. Started Gymshark in parents' garage with £1,000 of savings from Pizza Hut job.",
+    "ecosystem_summary": "Online fitness culture and YouTube/social media provided native distribution — sent clothes to fitness YouTubers. Aston University (dropped out). No elite institutional or mentor ecosystem. The social media influencer ecosystem was the key catalytic factor.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sophia-amoruso",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Diagnosed with depression and ADHD in adolescence. Dropped out of school, was homeschooled. No exceptional early cognitive, creative, or technical ability documented. Her skills in styling, photography, and copywriting were developed later through direct selling experience.",
+    "inherited_summary": "Middle-class family in San Diego/Sacramento. Parents divorced during her senior year of high school. No significant wealth, domain overlap, or connections. Left home at 17 and lived nomadically.",
+    "ecosystem_summary": "eBay platform provided the marketplace and distribution channel. MySpace and early social media provided marketing reach. San Francisco location. No elite institutional or mentor access. The eBay marketplace ecosystem was the primary catalytic factor, accessed with no starting advantage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "gurbaksh-chahal",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Dropped out of high school at 16 to found ClickAgents. Fell in love with the internet and online advertising as a teenager. Above-average business and technical aptitude for his age, but not a prodigy. Drive and determination fueled by bullying and immigrant experience.",
+    "inherited_summary": "Born in India, emigrated to San Jose at age 4. Family arrived with $25. Father worked as a postal worker/security officer; mother was a nurse's assistant. Lived in a one-bedroom apartment in low-income housing. Active disadvantage from poverty, immigrant status, and racial bullying.",
+    "ecosystem_summary": "Grew up in San Jose, California — Silicon Valley geography provided exposure to the tech industry. Early internet advertising boom timing was favorable. No elite institutional or mentor access. Self-taught through internet access. Dot-com era provided the market opportunity.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "evan-spiegel",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Took design classes at Otis and Art Center while in high school. Strong design portfolio that got him into Stanford. Above-average creative and design ability but not a cognitive prodigy. Not a top academic student but had exceptional design instincts and social intelligence.",
+    "inherited_summary": "Both parents were lawyers — father at Munger Tolles & Olson (earned $3M+ in 2006), mother a Harvard Law graduate and tax attorney. Grew up in a $2M house in Pacific Palisades. Crossroads School (elite prep). Very affluent with luxury cars, club memberships, and powerful legal/business networks.",
+    "ecosystem_summary": "Stanford (father's alma mater) provided the network. Kappa Sigma fraternity connected him to Bobby Murphy. Family friend let him sit in on graduate entrepreneurship classes with Eric Schmidt and Chad Hurley. Scott Cook (Intuit founder) as mentor. Stanford product design program. Once-in-a-generation ecosystem access.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "bobby-murphy",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Stanford mathematical and computational science degree. Above-average technical ability but no exceptional early achievements documented. Private Catholic school education. His strength was steady technical execution paired with Spiegel's vision.",
+    "inherited_summary": "Father was Irish-American; mother was a first-generation Filipino-American immigrant. Both parents had California state government jobs. Grew up in Berkeley. Private Catholic schooling (School of the Madeleine, Saint Mary's College High School). Middle-class stable family.",
+    "ecosystem_summary": "Stanford provided the network and partnership with Evan Spiegel. Kappa Sigma fraternity connection. Mathematical and computational science program. Silicon Valley ecosystem. Spiegel-Murphy partnership was the decisive peer relationship. Used half his Revel Systems paycheck to fund Snapchat servers.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kevin-systrom",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Introduced to programming through Doom 2 level design as a child. Took every computer class at Middlesex School (elite private). Strong in both photography and programming. Above-average but not exceptional; his advantage was combining design sense with technical ability.",
+    "inherited_summary": "Mother was a marketing executive at tech companies (Monster.com, Swapit, Zipcar). Father was VP of Human Resources at TJX Companies. Affluent Boston suburb (Holliston). Strong tech-industry exposure through mother's career. Private school education at Middlesex School.",
+    "ecosystem_summary": "Stanford management science and engineering. Mayfield Fellows program connected him to Mike Krieger. Odeo internship (became Twitter). Google experience. Stanford's entrepreneurial ecosystem. Krieger partnership. Silicon Valley at the dawn of mobile photography. Mark Zuckerberg tried to recruit him pre-Facebook.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "mike-krieger",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Father brought home an IBM clone at 7; Krieger discovered he loved modifying code. By 13, was a dexterous coder who started a web design business. Stanford symbolic systems with HCI focus. Above-average early technical ability with self-driven learning from a young age.",
+    "inherited_summary": "Born in São Paulo, Brazil. Moved to California in 2004 to attend Stanford. Limited public information on family wealth or profession. Brazilian middle-class background suggested by international Stanford attendance. No specific domain overlap documented.",
+    "ecosystem_summary": "Stanford symbolic systems program and Mayfield Fellows connected him to Kevin Systrom. Microsoft PowerPoint and Meebo work experience. Silicon Valley ecosystem. Systrom partnership was the decisive peer relationship. Stanford's HCI and entrepreneurship programs were key institutional advantages.",
+    "scoring_confidence": "Medium"
+  }
+]

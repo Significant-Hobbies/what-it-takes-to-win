@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "jorge-padilla-perez",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Contributed to the seminal U-NET paper in medical image segmentation. Pursued MSc in Biomedical Computing at TUM and Bachelor's in Mathematics from UNED. 8+ years of AI research experience across medical imaging and augmented reality.",
+    "inherited_summary": "Spanish background, studied at UNED (Spain's national distance university) before TUM. No evidence of family wealth or domain connections.",
+    "ecosystem_summary": "Research collaborations with ETH Zurich, Stanford, University of Augsburg, and TU Munich. Munich's AI/medical imaging ecosystem provided frontier research access and elite institutional connections.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "jade-checlair",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "PhD at UChicago in geophysical sciences, developed statistical methods for planetary discovery adopted by NASA flagship missions. Published 8 papers with 270 citations. Spent summer in Tokyo researching exoplanets during undergrad.",
+    "inherited_summary": "Born and raised in Brussels, Belgium. Stable upbringing enabling international education (U of Toronto, Tokyo research, UChicago PhD). No specific family wealth or domain connections identified.",
+    "ecosystem_summary": "U of Toronto for physics undergrad, UChicago for PhD, NASA Ames research internship. Met co-founder Leeav Lipton in first-year physics at U of Toronto — 10+ year relationship. BCG experience provided business ecosystem access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "leeav-lipton",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Astrophysics background from U of Toronto. NASA JPL researcher (2015-2016) working on SuperBIT balloon-borne telescope for cosmology. Published astrophysics research. First data scientist at Borealis AI (RBC's AI research lab).",
+    "inherited_summary": "No family background information found. Canadian education path through U of Toronto suggests stable but not elite background.",
+    "ecosystem_summary": "U of Toronto physics program, NASA JPL research position, Borealis AI (RBC's AI lab). Met co-founder Jade Checlair in first-year physics at U of Toronto — decade-long collaboration.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "swen-koller",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "MSc in Computer Science from Imperial College London with AI/ML research at Tsinghua University. Co-founded bravo at ~22, grew to 1,000+ businesses, won >>venture>> competition, and exited. Forbes DACH 30 Under 30. Now at Harvard MBA.",
+    "inherited_summary": "Born in Switzerland. Swiss upbringing with access to strong education system. No specific family wealth or domain connections identified, but Swiss middle-class background provided stability.",
+    "ecosystem_summary": "Imperial College London for MSc, Tsinghua University for research, Harvard Business School for MBA. BCG experience. Won ETH Zurich/McKinsey venture competition. Swiss startup ecosystem and Harvard network.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jack-collins",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Irish Mathematical Olympiad finalist (2012). MS in Computing (Machine Learning) from Imperial College London. Created magentic open-source framework (2k+ GitHub stars). Built NLP/LLM solutions across healthcare for years before they were mainstream.",
+    "inherited_summary": "From Clarinbridge, a small town outside Galway, Ireland. Studied physics at NUIG (University of Galway). No family wealth or domain connections identified — working-class Irish background.",
+    "ecosystem_summary": "Imperial College London for MS in ML. Year abroad at UC Santa Barbara. Roam Analytics and Parexel for NLP healthcare experience. Founding engineer at Develop Health (0 to $7M ARR in 14 months). Met co-founder Swen Koller at Imperial.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "bera-sogut",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "2x ACM ICPC World Finalist — 24th worldwide at Moscow World Finals, 10th at North American Championship. Codeforces profile registered 12 years ago (early teens), reaching candidate master level. Ex-Google (reCAPTCHA, Maps APIs) and Amazon Robotics.",
+    "inherited_summary": "Turkish background, studied at McGill University in Montreal. No family wealth or domain connections identified. Competitive programming path suggests merit-based achievement.",
+    "ecosystem_summary": "McGill University for BSc in Mathematics and Computer Science. ICPC team with Eric Hu and Thien-Trung Vuong. Google and Amazon Robotics experience. Met co-founder at McGill. Competitive programming hall of fame profile.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "victor-luo",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Founded first startup Bound at 16 but as non-technical founder. Flunked AP CS in 10th grade. Self-taught coding at 21 after shutting down first startup. Went from self-study to Amazon intern to TikTok ML Scientist in 3 years. Strong drive and resilience, not prodigy-level cognition.",
+    "inherited_summary": "From Los Angeles, CA. Founded NEAR to provide scholarships for rural Chinese students — suggests personal connection to underprivileged backgrounds. No family wealth or domain connections identified.",
+    "ecosystem_summary": "Self-taught coding journey. Amazon internship, then TikTok as ML Scientist. YC W26 with Perfectly. No elite school or notable early mentors. SF ecosystem access through YC.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "huimin-xie",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Founding member of TikTok Live and Tech Lead of Revenue Growth Direction at TikTok Live US Recommendation Team. Previously at BIGO where awarded Outstanding Employee of the Year (top 7%). Strong ML engineering career but no early prodigy indicators.",
+    "inherited_summary": "No family background information found. Chinese background likely based on career path (BIGO, TikTok). GitHub joined 2017.",
+    "ecosystem_summary": "BIGO (Singapore-based) then TikTok at massive scale. Founding member of TikTok Live — frontier-scale recommendation systems. Co-founders from TikTok. YC W26 ecosystem.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "amit-yadav",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Director's Medal at IIT Gandhinagar (highest honor, graduated in 3.5 years with two degrees). Fastest direct PhD from Purdue University in 3 years under IEEE/ACM Fellow Prof. Edward Delp. 20+ publications at CVPR, NeurIPS, ICASSP. Multiple international fellowships (Mitacs, JASSO).",
+    "inherited_summary": "From India. IIT path is purely merit-based through competitive exam. No family wealth or domain connections identified. Serves on Board of Directors of PAN IIT USA.",
+    "ecosystem_summary": "IIT Gandhinagar for undergrad, Purdue University for PhD under distinguished IEEE/ACM Fellow. Meta Research Scientist (LlaMA team, Reality Labs). Mentors PhD students from Stanford, Purdue, and University of Trento.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ai-daniil-bekirov",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "UCL Computer Science student who dropped out after first year at 20. Previously first hire at Structured AI (YC S24) and worked at Iterate.com. Applied to YC on a whim a day before deadline. Capable builder but no prodigy-level indicators.",
+    "inherited_summary": "Ukrainian nationality. Relatives pressured him to finish degree rather than pursue startup — suggests no family wealth or startup background. No domain connections.",
+    "ecosystem_summary": "UCL for CS (1 year). Worked at Iterate.com (founded by ex-Monzo CTO) and StructuredAI (YC F25). YC W26 with group partner Jared Friedman. SF-based. No notable early peers or mentors beyond work connections.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "matej-novak",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Imperial College London (MEng Computing) to MIT (CS exchange year). 3x founder (Assetario, Kontext, EigenPal). Built Assetario to serve 2 of top 25 grossing mobile apps. Morgan Stanley Award at Imperial. President of Czech & Slovak Society.",
+    "inherited_summary": "From Slovakia but attended American International School Vienna — an elite international school for expat families. This suggests upper-middle-class or affluent family with international mobility. Embassy of Slovakia volunteer work in London.",
+    "ecosystem_summary": "American International School Vienna for high school. Imperial College London for MEng. MIT for exchange year with UROP in data science. Internships at McKinsey, Improbable, Accenture. Assetario backed by Credo Ventures and Hoxton Ventures.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "georgia-witchel",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Elite ice climber with 8 world records and Olympic demonstration (Lillehammer 2016). Dropped out of high school, first student in Harvey Mudd history admitted without a diploma. CS degree from Harvey Mudd, Master's in Bioengineering from UW. Tesla internship. Multi-domain exceptional achievement.",
+    "inherited_summary": "Born in San Francisco, moved to Colorado in 2008. San Francisco Friends School (private Quaker school) for early education, then Durango High School. Stable family supporting elite athletics and education across multiple cities.",
+    "ecosystem_summary": "San Francisco Friends School, Harvey Mudd College (CS), UW Master of Applied Bioengineering. Tesla internship. Founded Louiza Labs ($5M raised) and now Mantis (YC W26). UW bioengineering program and Harvey Mudd's elite engineering ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jibran-hutchins",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Published in IEEE and Elsevier Q1 journals for operations research and machine learning while in high school. Accepted to CMU Tepper School of Business. NCAA DIII athlete (cross country, track). Co-founded Haladir at 18, raised $4.4M seed.",
+    "inherited_summary": "From Fairfax, VA. Attended W.T. Woodson High School (public school). No family wealth or domain connections identified. PE research at Grant Park Holdings and McLean Investment Group during high school.",
+    "ecosystem_summary": "W.T. Woodson High School with research-oriented peer group (co-founders published together). CMU Tepper School of Business. YC W26 with $4.4M from Susa Ventures, SV Angel, Joshua Browder, and BoxGroup. High school research ecosystem with co-founders.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "quan-huynh",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Published in IEEE and Elsevier Q1 journals for operations research and machine learning while in high school. Left UVA to co-found Haladir at ~19-20, raised $4.4M seed. Strong early research achievement in OR/ML.",
+    "inherited_summary": "Left UVA (public university) to pursue startup. No family wealth or domain connections identified. Co-founded with high school colleagues who published academic papers together.",
+    "ecosystem_summary": "High school research ecosystem with co-founders (Jibran Hutchins, Preston Schmittou, Joseph Tso) who published together in IEEE/Elsevier. UVA before dropping out. YC W26 with $4.4M seed from top investors.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "preston-schmittou",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Published in IEEE and Elsevier Q1 journals for operations research and machine learning while in high school. Left UVA Wise (small regional campus) as freshman to build Haladir in San Francisco. Exceptional achievement given limited resources.",
+    "inherited_summary": "From London, Kentucky — a rural town in the Appalachian region. UVA Wise is a small regional campus, suggesting limited educational resources and likely modest economic background. Active disadvantage of rural geography and limited access.",
+    "ecosystem_summary": "High school research ecosystem with co-founders who published together. UVA Wise before dropping out. YC W26 ecosystem. Overcame geographic isolation from rural Kentucky to reach SF startup ecosystem.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "joseph-tso",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Published in IEEE and Elsevier Q1 journals for operations research and machine learning while in high school. Admitted to Princeton University. Left after just two months to co-found Haladir, raised $4.4M seed. Strong early research and academic achievement.",
+    "inherited_summary": "Admitted to Princeton University — suggests strong academic preparation. No specific family wealth or domain connections identified, but Princeton admission indicates solid educational foundation.",
+    "ecosystem_summary": "Princeton University (briefly). High school research ecosystem with co-founders who published together in IEEE/Elsevier. YC W26 with $4.4M seed from top investors.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "nami-lindquist",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Triple-degree from Penn's elite M&T program (Wharton BS Economics + Engineering BAS CS + Accelerated MSE CS). Won Penn's President's Innovation Prize (2025) for Sync Labs. Founded TEDx at her high school. Strong multi-domain achievement.",
+    "inherited_summary": "From Bellevue, WA — an affluent Seattle suburb with excellent public schools. Attended Interlake and Bellevue High Schools. Personal motivation from family medical experiences (hit by car, brother's 6 surgeries). Stable, middle-to-upper-middle-class background.",
+    "ecosystem_summary": "Bellevue, WA public schools. Penn's Jerome Fisher M&T Program — one of the most selective dual-degree programs in the country. President's Innovation Prize ($100K + stipend). Penn I-Corps cohort. YC W26.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kabir-jain",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Gold medalist at the inaugural International Olympiad in AI (2024, Bulgaria) — 1st internationally in take-home round. Published research at NeurIPS and ICLR as a teenager. Worked at MIT JuliaLabs. Reading CS at Oxford. NUS High School for gifted students. Trajectory-changing early achievement.",
+    "inherited_summary": "Based in Singapore. Attended NUS High School of Mathematics and Science (specialized government school for gifted students — merit-based admission). International background across Oxford, NUS, MIT, Singapore. No specific family wealth identified but Singapore-based education suggests stability.",
+    "ecosystem_summary": "NUS High School of Math & Science (specialized 6-year gifted program). NTU conducted IOAI selection and training under Prof. Luke Ong. MIT JuliaLabs for physics-informed ML. Oxford for CS. Singapore's AI ecosystem (PUB, AI Singapore). Co-founded Inviscid AI (YC W26) with Ziming Qiu from NUS High.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ziming-qiu",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Attended NUS High School of Mathematics and Science (specialized 6-year program for gifted students, ages 12-18). NUS dual degree in CS and Mathematics with honors. Strong technical aptitude in computational physics and AI theory. Co-founded Inviscid AI at ~21.",
+    "inherited_summary": "Singapore-based. NUS High School admission is merit-based through testing. No family wealth or domain connections identified.",
+    "ecosystem_summary": "NUS High School of Math & Science (specialized gifted program). National University of Singapore for dual degree. Singapore's tech/AI ecosystem. Co-founded with Kabir Jain (also NUS High, IOAI gold medalist). YC W26.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "mike-knoop",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Grew up in St. Louis, MO. Self-taught HTML from 'Learn HTML in 24 Hours' book. BS in Mechanical Engineering from University of Missouri with finite element modeling research. Dropped out of grad school to co-found Zapier. Smart and capable but no prodigy indicators.",
+    "inherited_summary": "Grew up in St. Louis, MO. Attended University of Missouri (Mizzou) — state public university. Middle-class Midwest background with no domain overlap or family connections in tech.",
+    "ecosystem_summary": "Met co-founders Wade Foster and Bryan Helmig at Mizzou/Startup Weekend in Columbia, MO. Veterans United Home Loans freelance work. YC (rejected first time, accepted second). Right timing for SaaS/no-code/automation wave. Remote-first pioneer.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "henry-birgelee",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Invented MPIC as a Princeton undergraduate — now an industry-wide standard securing every HTTPS connection, mandated by CA/Browser Forum. Won Calvin Dodd MacCracken Senior Thesis Award and CRA Undergraduate Researcher Award runner-up. High school CyberPatriot national championship team. Trajectory-changing early achievement.",
+    "inherited_summary": "Princeton University Class of 2021/2020. High school had a competitive cybersecurity team (CyberPatriot). No specific family wealth identified, but stable enough for competitive CS in high school and Princeton education.",
+    "ecosystem_summary": "Princeton University under Prof. Prateek Mittal and Provost Jennifer Rexford — world-leading network security researchers. CyberPatriot national championship team in high school. MPIC standards work with CA/Browser Forum, Let's Encrypt, Google Trust Services. Once-in-a-generation research environment producing real-world impact at industry scale.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "grace-cimaszewski",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Princeton PhD (2020-2026) in ECE. Published transformative research on web PKI security. Runner-up for Privacy Enhancing Technology Award and Andreas Pfitzmann Best Student Paper Award. Mapped attack surface of millions of websites to shape MPIC deployment.",
+    "inherited_summary": "No family background information found. Princeton PhD admission is merit-based.",
+    "ecosystem_summary": "Princeton University PhD program. Worked closely with Henry Birge-Lee and Prof. Prateek Mittal on MPIC research. Direct industry impact through collaborations with Google Trust Services and CA/Browser Forum. Visiting researcher at Google and Corelight Labs.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "prateek-mittal",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "B.Tech from IIT Guwahati (2006). PhD from UIUC (2012) in 4 years. Princeton professor with ACM Grace Murray Hopper Award (2023), IEEE Fellow (2026), Blavatnik National Award Finalist (2025). One of the most cited researchers in privacy and security. Distinguished Alumni from both IIT Guwahati and UIUC.",
+    "inherited_summary": "From India. IIT admission is through highly competitive JEE exam — purely merit-based. No family wealth or domain connections identified.",
+    "ecosystem_summary": "IIT Guwahati for B.Tech. UIUC for MS/PhD under Nikita Borisov. UC Berkeley postdoc under Dawn Song. Princeton professor with CITP interim directorship. His lab produced MPIC technology and mentored Henry Birge-Lee and Grace Cimaszewski.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ronan-nopp",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Designed controls for manned eVTOL aircraft as a student. Won multiple UW entrepreneurship competitions. Obsession with RC airplanes from young age was gateway to engineering. Founded Voltair at 23. Capable engineer but no prodigy indicators.",
+    "inherited_summary": "No family background information found. Based in Pullman, WA — small college town. No family wealth or domain connections identified.",
+    "ecosystem_summary": "Friends with co-founder Hayden Gosch since middle school — both studied ECE at UW. UW entrepreneurship competitions (Dempsey Startup, Environmental Innovation Challenge). DARPA and Air Force work. Voltair backed by YC and Convective Capital.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "hayden-gosch",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Co-founded Voltair at 23. Won UW Environmental Innovation Challenge and Dempsey Startup Competition. 2 years of system protection engineering at Seattle City Light while still a student. Energy infrastructure expertise. Capable but no prodigy indicators.",
+    "inherited_summary": "From Seattle area. No family background information found. No family wealth or domain connections identified.",
+    "ecosystem_summary": "Friends with co-founder Ronan Nopp since middle school — both studied ECE at UW. Seattle City Light internship for energy infrastructure expertise. UW entrepreneurship ecosystem. Voltair backed by YC and Convective Capital.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "avi-gotskind",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "GWU Elliott School of International Affairs. Director of MENA Program at Onero Institute. Formerly a musician (National Youth Orchestra). Consulted for Virgin Galactic, Amazon Kuiper, ExoAnalytic Solutions. Non-technical background but strong GTM and government affairs expertise.",
+    "inherited_summary": "Studied across US, Israel (Reichman University), and Singapore (NTU) — international study suggests upper-middle-class family with global mobility. No specific family wealth or domain connections identified.",
+    "ecosystem_summary": "GWU Elliott School, Reichman University (Israel), NTU (Singapore). National Youth Orchestra membership. Onero Institute (youth-driven research org). Consulting for major aerospace companies (Virgin Galactic, Amazon Kuiper). Voltair team with UW engineering co-founders.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "warren-weissbluth",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Rice University Operations Research engineering. Boeing internship during freshman year. Helped raise $1M SBIR at NSF-funded startups while still a student. Joined Voltair to run operations. Capable engineer/operator but no prodigy indicators.",
+    "inherited_summary": "Rice University — selective private university suggesting solid academic preparation and likely middle-to-upper-middle-class background. Also described as 'Former Husky' (UW connection). No specific family wealth identified.",
+    "ecosystem_summary": "Rice University for Operations Research. Boeing internship (freshman year). 2x NSF-funded startups with $1M SBIR. UW connection. Voltair team with complementary engineering co-founders. YC W26.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "keenan-venuti",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Harvard BA (Psychology & CS) and Northwestern MS. Staff AI Engineer at Ironclad (YC S15) — built AI systems for contract automation at a leading legal tech company. Deep legal AI expertise. Strong academic and career trajectory.",
+    "inherited_summary": "Harvard University for BA — Ivy League education suggesting strong academic preparation. No specific family wealth or domain connections identified.",
+    "ecosystem_summary": "Harvard University for BA, Northwestern for MS. Ironclad (YC S15) as Staff AI Engineer — deep legal AI experience. SF-based. YC W26 with Vector Legal. Co-founders include former YC Legal and Fenwick lawyers.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "bram-schork",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Caltech mechanical engineer with aerospace minor, completed in 3 years (2022-2025). SpaceX Starlink Space Lasers engineering intern. 9 years of hands-on engineering experience across aerospace and robotics by ~21. 6'6\" water polo team captain. Founded General Astronautics at 21 with oversubscribed seed round.",
+    "inherited_summary": "From Villanova, PA — affluent Philadelphia suburb. Attended The Haverford School, an elite private school in the Philadelphia area (tuition ~$40k/year). Upper-middle-class to wealthy family background with access to elite private education.",
+    "ecosystem_summary": "The Haverford School (elite private school). Caltech for mechanical engineering (3 years). SpaceX Starlink internship. iMetalx (aerospace simulation). NVIDIA Inception Program. YC W26. Caltech's elite aerospace/robotics ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "janet-liu",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "MIT graduate in 3 years with quadruple major (CS, Economics, Data Science, and Finance). Federal Reserve digital payments research and D.E. Shaw investment strategy. Won MIT Female Founders Pitch Competition. Co-President of MIT Women Business Leaders. VP Finance of MIT StartLabs. Board member of Harvard-MIT Cooperative Society. Trajectory-changing cognitive capacity.",
+    "inherited_summary": "No family background information found. MIT admission is merit-based. Co-founded with closest friends Christine Watts and Melinda Liu from MIT.",
+    "ecosystem_summary": "MIT for quadruple major (Class of '26, graduated early 2025). Federal Reserve and D.E. Shaw experience. MIT entrepreneurship ecosystem (StartLabs, Women Business Leaders). Co-founded Oxus with MIT friends. YC W26.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "melinda-liu",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "MIT graduate in 3 years. Published economics books for young people ('Elementary Economics', 'Economics for Tweens') with her sister. Co-founded nonprofit for economic literacy. JPMorgan Growth Equity experience. Strong multi-domain achievement.",
+    "inherited_summary": "Co-authored economics books with her sister — suggests intellectually engaged family. No specific family wealth identified, but MIT admission and early publishing suggest supportive, educated family.",
+    "ecosystem_summary": "MIT (Class of '26, graduated early 2025). JPMorgan Growth Equity. Co-founded Oxus with Janet Liu and Christine Watts — close friends from MIT. YC W26. MIT's entrepreneurship and finance ecosystem.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "christine-watts",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "MIT graduate in 3 years with BS in Artificial Intelligence. BCG and NERA consulting experience. Built ML systems for fintech startups. Co-founded Oxus at ~21. Strong technical and business aptitude.",
+    "inherited_summary": "No family background information found. MIT admission is merit-based.",
+    "ecosystem_summary": "MIT (2022-2025, 3 years). BCG and NERA consulting. Co-founded Oxus with Janet Liu and Melinda Liu — close friends from MIT. YC W26. MIT's AI and entrepreneurship ecosystem.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "lewis-lien-polansky",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Founded CyberSpace cybersecurity (CTF hacking group) at ~16-17. Former CEO at aiCode.fail which had a small acquisition. Background in product design and finance, not deep technical. Applied to YC 3x before acceptance. Strong entrepreneurial drive but not prodigy-level technical ability.",
+    "inherited_summary": "From South Pasadena, CA. Dropped out of Purdue (Finance). Used $9,000 from Purdue pitch competitions to fund initial SF stay. No family wealth or domain connections identified — resource-constrained path to YC.",
+    "ecosystem_summary": "Purdue University (Finance, dropped out). Purdue pitch competitions for initial funding. Applied to YC 3x. SF startup ecosystem. Co-founder Edgar Babajanyan from Purdue. YC W26.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "edgar-babajanyan",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Took AP Computer Science in high school (2022). Double major at Purdue (Network Engineering and System Design). Built software for Rocketbook, Sony, and Reality Interactive. Former CEO at GPT4You (small acquisition). Algorithms engineer at Hondius Capital. Capable builder but no prodigy indicators.",
+    "inherited_summary": "Took AP CS in high school (2022), suggesting birth year ~2004. Purdue University — public state university. No family wealth or domain connections identified.",
+    "ecosystem_summary": "Purdue University (Network Engineering and System Design). Purdue Hackers community. Purdue Computer and Information Technology research. Co-founder Lewis Polansky from Purdue. YC W26. SF startup ecosystem.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "paulina-xu",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "MIT student majoring in AI (6-4) and Physics (flex 8). Research at MIT Kavli Institute for Astrophysics and MIT Haystack Observatory. Michigan Math and Science Scholar program. Was a high school student interested in astrophysics and CS. Dropped out before second year to found Agentic Fabriq.",
+    "inherited_summary": "No family background information found. MIT admission is merit-based. Michigan Math and Science Scholar suggests summer enrichment program access.",
+    "ecosystem_summary": "MIT for AI + Physics. MIT Kavli Institute for Astrophysics and Space Research. MIT Haystack Observatory. Met co-founder Matthew Xu at MIT admit weekend. YC W26. MIT's elite research ecosystem.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "matthew-xu",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "MIT student majoring in AI and Math. Research at MIT CSAIL (RNA-seq analysis pipeline for Alzheimer's gene expression). Dropped out before second year to found Agentic Fabriq. Strong technical aptitude with research experience at elite lab.",
+    "inherited_summary": "No family background information found. MIT admission is merit-based.",
+    "ecosystem_summary": "MIT for AI + Math. MIT CSAIL (Computer Science and AI Laboratory) research. Met co-founder Paulina Xu at MIT admit weekend. YC W26. MIT's elite CS/AI research ecosystem.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "clarence-chen",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Born in Hong Kong, attended Harrow International School Hong Kong. Taekwondo black belt at 10. Accepted to Stanford, Cambridge, Columbia, and Cornell. Stanford CS & Math. Seven-figure exit from stealth startup before/during Stanford. Research experience across MIT, Oxford, Stanford, Harvard, Cambridge. Multi-domain exceptional achievement.",
+    "inherited_summary": "Attended Harrow International School Hong Kong — one of the most elite private schools in Asia (tuition ~$30-40k/year). Family from Chaozhou, China with Teochew heritage. Elite private education and international mobility indicate significant family wealth.",
+    "ecosystem_summary": "Harrow International School Hong Kong (elite British private school). Stanford University for CS & Math. Research at MIT, Oxford, Harvard, Cambridge. SV Angel and decacorn founders backing Travo. Once-in-a-generation ecosystem access across multiple elite institutions.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "alexander-calafiura",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "East Side Community High School (NYC public consortium school). Stanford CS & Math. Co-editor-in-chief of student newspaper, Chalkbeat Student Voice Fellow. Wachtell (top law firm) and Manhattan DA experience. China manufacturing ops. Published op-eds in Chalkbeat. Strong academic and extracurricular achievement from public school background.",
+    "inherited_summary": "From New York City. Attended East Side Community High School — a public consortium school exempt from Regents exams. No family wealth or domain connections identified. Chinese and American identity.",
+    "ecosystem_summary": "East Side Community High School (NYC public). Stanford University for CS & Math. Wachtell Lipton (elite law firm) and Manhattan DA experience. Co-founders from Stanford freshman year. YC W26 with SV Angel and decacorn backing.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "michael-dalva",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Stanford CS/AI track. Researcher in Stanford High Assurance Computer Architectures Lab — researching silent data corruptions in DNN training. US Air Force ML Research Award recipient (one of four students nationally). Wrote code for satellites. Strong early research achievement.",
+    "inherited_summary": "No family background information found. Stanford freshman in Fall 2024 — admission is merit-based.",
+    "ecosystem_summary": "Stanford University for CS/AI. Stanford High Assurance Computer Architectures Lab. US Air Force ML Research Award. Co-founders from Stanford freshman year. YC W26 with SV Angel and decacorn backing.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "ashwin-sriram",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Stanford CS. Led backend at edtech startup with millions of users. Met co-founders freshman year at Stanford. Capable engineer but no prodigy indicators or exceptional early achievements identified.",
+    "inherited_summary": "No family background information found. Stanford admission is merit-based.",
+    "ecosystem_summary": "Stanford University for CS. Met co-founders (Clarence Chen, Michael Dalva, Alexander Calafiura) freshman year (Fall 2024). YC W26 with SV Angel and decacorn backing. Stanford's entrepreneurship ecosystem.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "benjamin-muozcerro",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "From Concepción, Chile. Physics & Math at Stanford. 5 years of quantum computing research at Harvard and Max Planck Institute by age 22. Built a subatomic particle detector in school with teacher's help. Participated in math olympiads organized by Universidad de Concepción. Started preparing for US university in 7th grade.",
+    "inherited_summary": "From Concepción, Chile — not a wealthy background. Built particle detector in school lab with teacher Ariel Araneda's help. Public school education in Chile. No family wealth or domain connections — achievement through personal drive and school mentorship.",
+    "ecosystem_summary": "School science lab in Concepción with mentor teacher. Math olympiads at Universidad de Concepción. Stanford for Physics & Math. Harvard and Max Planck Institute for quantum computing research. Met co-founder Alen in high school in Chile. YC W26.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "alen-rubilarmuoz",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "From Chile. Full scholarship to Minerva University. Geometric deep learning research for protein design at Vanderbilt University. Topological neural networks at Leipzig University. Analog computing at Tetramem. 1 year Civil Engineering at PUC Chile before Minerva. Strong ML research across multiple institutions.",
+    "inherited_summary": "From Chile. Full scholarship to Minerva University — indicates financial need. Dropped out of Minerva. Previously studied at PUC Chile (1 year Civil Engineering). No family wealth — scholarship-dependent education path.",
+    "ecosystem_summary": "Minerva University (global rotation program across SF, South Korea, Germany, Argentina) on full scholarship. Vanderbilt University for deep learning research. Leipzig University for topological neural networks. PUC Chile. Met co-founder Benjamin in high school in Chile. YC W26.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "ryan-samadi",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Stanford CS on AI track. Citadel commodities trader. Founding engineer of a $XXMM+ commodities startup. Led $1.7M Kudla Fund at Stanford (15 students, L/S equity strategy). BAML fixed income trading analyst. PE analyst at IIFG in LA. Strong finance + tech dual-track achievement.",
+    "inherited_summary": "Based in Boulder, Colorado. No family background information found. Stanford admission is merit-based.",
+    "ecosystem_summary": "Stanford University for CS/AI. Citadel (Global Equities, commodities). Kudla Fund at Stanford ($1.7M AUM). BAML and IIFG experience. Co-founded Alt-X with Michael Wachsman (Cornell). YC W26.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "michael-wachsman",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Cornell MEng '25 in Computer Science. ML research at Precision Systems Design Laboratory (motion sickness classifier). Built AI security systems. NIST cybersecurity policy work. Published novel ML research at Cornell. Capable engineer but no prodigy indicators.",
+    "inherited_summary": "No family background information found. Cornell MEng is a professional master's program.",
+    "ecosystem_summary": "Cornell University for MEng in CS. Precision Systems Design Laboratory research. Cornell startup ecosystem. Co-founded Alt-X with Ryan Samadi (Stanford). YC W26. SF-based.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "noah-yin",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Berkeley CS grad. Published 6 apps. Completed $100k+ in mobile app contracts. Integrated ML in Amazon Maps for 100k+ Prime drivers. President of MDB (Mobile Developers of Berkeley). ML research on COVID-19 classification at Columbia. Strong early builder with research and product experience.",
+    "inherited_summary": "No family background information found. Berkeley CS admission is merit-based. Based in San Francisco.",
+    "ecosystem_summary": "UC Berkeley CS. Amazon (Maps Location Intelligence). MDB (premier mobile dev org at Berkeley) as President. Columbia University ML research. Co-founded Pollen with Berkeley friends (Jeffrey Yum, Aldrin Ong). YC W26.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "aldrin-ong",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started building apps at 15, published 3 apps on App Store. 2x AWS intern serving 3M users. Tennis app (Trainme) hit #3 trending on Google Play, endorsed by Indonesian Tennis Association. 7-year mobile developer by age 22. Berkeley CS and Data Science (GPA 3.7). Strong early builder.",
+    "inherited_summary": "Based in Berkeley, CA. Customer service representative at UC Berkeley while studying — suggests working through school. Speaks Cantonese, Indonesian, and Malay. No family wealth or domain connections identified.",
+    "ecosystem_summary": "UC Berkeley CS and Data Science. Amazon Web Services (2x intern). MDB (Mobile Developers of Berkeley). Co-founded Pollen with Noah Yin and Jeffrey Yum from Berkeley/MDB. YC W26.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "jeffrey-yum",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "From Torrance, CA. Berkeley EECS grad. iOS Developer and VP at MDB (Mobile Developers of Berkeley). Intern at LLNL (Lawrence Livermore National Lab) and Keck Medicine of USC. Capable engineer but no prodigy indicators.",
+    "inherited_summary": "From Torrance, CA — South Bay Los Angeles area. No family wealth or domain connections identified.",
+    "ecosystem_summary": "UC Berkeley EECS. MDB (Mobile Developers of Berkeley) as VP and iOS Developer. LLNL and USC Keck Medicine internships. Co-founded Pollen with Noah Yin and Aldrin Ong from Berkeley/MDB. YC W26.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "vishnu-sampathkumar",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Columbia CS 2025. Built sourcing tech for Sierra Ventures (VC firm). ML engineer at Modulus (AI security startup, acquired 2024). ML intern at BrainSightAI. Capable engineer with VC and startup experience but no prodigy indicators.",
+    "inherited_summary": "No family background information found. Columbia admission is merit-based.",
+    "ecosystem_summary": "Columbia University for CS. Sierra Ventures (VC firm) for sourcing tech. Modulus Labs (AI security, acquired). BrainSightAI. Met co-founder Shiv Kampani on first day of orientation at Columbia. YC W26.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "shiv-kampani",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Dhirubhai Ambani International School (Mumbai, class of '22) with perfect 45/45 IB score, 36 ACT, 11/11 A* IGCSE. Columbia CS with 4.19 GPA. First-author NeurIPS paper (LLM-initialized Differentiable Causal Discovery). AI Resident at SandboxAQ. Trajectory-changing cognitive ability and early research achievement.",
+    "inherited_summary": "Attended Dhirubhai Ambani International School in Mumbai — one of India's most elite private schools, founded by Mukesh Ambani (India's richest person). Tuition ~$10k+/year in India. Elite education access indicates affluent family background.",
+    "ecosystem_summary": "Dhirubhai Ambani International School (elite private school). Columbia University for CS. SandboxAQ (AI residency). NeurIPS 2024 presentation. Met co-founder Vishnu Sampathkumar on first day of orientation at Columbia. YC W26.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "alejandro-zaniolo",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Helped build a startup to $40M ARR and profitability. Previous startup acquired by Blueground. Head of Business Development at Blueground, scaled Partner Network from 0 to 1,000+ B2B partners. Strong operator and business development skills but no prodigy indicators.",
+    "inherited_summary": "Family ran two apparel brands in the US with 200+ brick-and-mortar stores that also sell online. Significant family business in retail/e-commerce providing deep domain knowledge, industry connections, and likely capital access.",
+    "ecosystem_summary": "Blueground (founded team, $40M ARR). Previous startup acquired by Blueground (Nestpick acqui-hire). YC W26 with Signals. Family retail business provided e-commerce domain expertise. No elite school or notable mentors mentioned.",
+    "scoring_confidence": "Low"
+  }
+]

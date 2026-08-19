@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "deepak-chhugani",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Capable and driven — attended Bentley University, landed a role in BofA Merrill Lynch's Latin America M&A team helping lead $3B+ in deals at a young age. No prodigy-level evidence, but strong commercial aptitude and multicultural adaptability.",
+    "inherited_summary": "Born in Kenya to Indian parents who emigrated to Ecuador; father started a small logistics/freight-forwarding business handling import-export between Asia and Latin America. Modest immigrant family with direct domain overlap in logistics.",
+    "ecosystem_summary": "Father's logistics business provided domain apprenticeship. BofA M&A experience gave financial and deal expertise. YC W18 acceptance and Tiger Global backing provided elite accelerator and investor network at the right time for LatAm cross-border trade.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jayesh-gadewar",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started a gaming server business (MHMGaming) at age 13, managing Linux servers and hardware for Counter-Strike hosting. Self-taught systems experience well before university, showing early technical aptitude and entrepreneurial drive.",
+    "inherited_summary": "Born in Mumbai, India in 1999. No evidence of family wealth or domain connections. Attended Mumbai University for engineering — a standard public university path.",
+    "ecosystem_summary": "Mumbai University engineering provided baseline technical education. Co-founder team at Scrut Automation and Lightspeed/Endiya backing provided some ecosystem support, but no elite institutions or notable mentors in early stages.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jules-a-hoffmann",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Published his first scientific paper on aquatic Heteroptera of Luxembourg at age 17, co-authored with his father. Could identify insect species by his mid-teens, showing exceptional early domain aptitude in entomology.",
+    "inherited_summary": "Father was a high school biology teacher and amateur entomologist who took young Jules on collecting trips and directly mentored him, leading to a co-authored first paper at 17. Strong family-domain apprenticeship in biological science.",
+    "ecosystem_summary": "University of Strasbourg for biology, PhD under Professor Pierre Joly at the only insect research lab in Strasbourg. CNRS research position provided sustained institutional support. Post-doc at Philipps-Universität Marburg. Strong European academic pipeline.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tsukasa-hosaka",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Competent goalkeeper who progressed through Kofu Daiichi High School and Meiji University's football program. No evidence of exceptional early ability or prodigy status, but solid athletic development.",
+    "inherited_summary": "Born in Kofu, Yamanashi. No evidence of family wealth, domain connections, or notable advantages. Standard Japanese upbringing.",
+    "ecosystem_summary": "Meiji University provided one of Japan's prominent football programs. Furukawa Electric's company-backed club offered a structured professional pathway. Japanese corporate sports system of the 1950s-60s provided reasonable institutional support.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "toru-takemitsu",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Largely self-taught composer who began composing at 16 despite no formal training and no access to a piano (drew a keyboard on paper). Made public debut at 20. Exceptional creative ability and autodidactic drive despite extreme material deprivation.",
+    "inherited_summary": "Father was a government official in Dalian who died when Toru was 8. Family returned to Japan; home destroyed twice in air raids. Could not afford a piano post-war. Wartime displacement, conscription, and poverty created active disadvantage.",
+    "ecosystem_summary": "Discovered Western music via U.S. Armed Forces radio during postwar occupation. Studied briefly under Yasuji Kiyose and assisted Fumio Hayasaka with film music, gaining practical compositional mentorship. Postwar Japan's avant-garde scene provided some cultural context, but largely isolated and self-made.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "magnus-andersson",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Skilled playmaker with good tactical understanding despite modest physical dimensions. Started at local club and progressed steadily through Swedish handball pipeline. No evidence of prodigy-level early ability.",
+    "inherited_summary": "Born in Linköping, Sweden. No evidence of family wealth, domain connections, or notable advantages. Standard Swedish upbringing with local club access.",
+    "ecosystem_summary": "Swedish handball culture and the 'Bengan Boys' golden era provided a strong national team environment. IF Saab and HK Drott offered competitive club platforms. Good but not elite development pipeline.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "francisco-ibáñez-talavera",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Showed drawing talent from childhood and published his first drawing at age 11 in the magazine Chicos. From ages 14-21, simultaneously worked at a bank and created comic series for multiple magazines, building extensive early creative output and reps.",
+    "inherited_summary": "Born in Barcelona to a lower-middle-class family. Father was an accountant from Alicante, mother from Andalusia. No artistic family background or industry connections. Modest household.",
+    "ecosystem_summary": "Barcelona's comic publishing scene, particularly Bruguera publishing house and Pulgarcito magazine, provided a vibrant ecosystem for Spanish comics in the 1950s. Good industry access but not elite mentorship or institutional training.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "oscar-panno",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Learned chess at 6 from his father, became 'chess addicted' at 12 after joining River Plate's chess room. Won the World Junior Chess Championship at 18 and became a grandmaster at 20. Placed third at the Gothenburg Interzonal ahead of Geller, Petrosian, and Spassky. Prodigy-level chess ability.",
+    "inherited_summary": "Father was an auto mechanic who taught him chess at 6 and bought board games. Grandfather had a chess library with Bogoljubow textbooks. Modest working-class family in Saavedra, Buenos Aires, but with direct domain introduction.",
+    "ecosystem_summary": "Club Atlético River Plate's chess room provided immersion from age 12, with instructors Alfredo Espósito and Julio Bolbochán. Buenos Aires's strong chess culture, shaped by pre-war European émigré masters like Miguel Najdorf, provided an elite competitive environment.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "edwin-van-der-sar",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Joined Ajax's system at a relatively late age (19-20) for a top goalkeeper. Showed good athletic ability but no prodigy-level early evidence. Developed into elite keeper through coaching and system rather than raw early talent.",
+    "inherited_summary": "Born in Voorhout, Netherlands. No evidence of family wealth, domain connections, or notable advantages. Standard Dutch upbringing with local youth football access.",
+    "ecosystem_summary": "Ajax's elite development pipeline under Louis van Gaal and the Cruyffian Total Football philosophy provided world-class coaching and tactical education. The Ajax academy is one of football's premier development systems, giving him significant ecosystem advantage despite late entry.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "egon-franke",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began fencing at 17, which is relatively late for elite fencing. Won Polish junior foil championship at 19 and progressed to national team and Olympic level. Capable athlete but no evidence of prodigy-level early ability.",
+    "inherited_summary": "Born in Gleiwitz (now Gliwice), Poland to a working-class family. Father was a gasworks employee. Modest background with no domain connections or wealth.",
+    "ecosystem_summary": "Trained under coach Antoni Franz at Budowlanych Gliwice, then Andrzej Przeździecki at Legia Warszawa during military service. The Polish fencing system and military sports clubs provided structured coaching, though not elite international-level mentorship.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "maurício-rua",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began Muay Thai training around age 15-16 following his older brother, and turned professional at 20. Won the PRIDE Middleweight Grand Prix at 23. Good natural fighting ability and toughness, but not a child prodigy — developed through elite camp training.",
+    "inherited_summary": "Father was a businessman, mother a former track athlete and marathon runner. Middle-class Brazilian family. Older brother Murilo 'Ninja' Rua was already training at Chute Boxe, providing direct domain introduction and sibling mentorship.",
+    "ecosystem_summary": "Chute Boxe Academy in Curitiba was one of MMA's premier fight camps, with coaches Rudimar Fedrigo and Rafael Cordeiro, and training alongside Wanderlei Silva. The Curitiba fight ecosystem and PRIDE FC platform provided elite-level training and competition access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kai-van-lieshout",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Studied mechatronics engineering at the University of Melbourne. Co-founded Lyrebird Health at 21, motivated by personal chronic illness experience. Capable engineering student with entrepreneurial drive, but no prodigy-level evidence.",
+    "inherited_summary": "University of Melbourne engineering student. Co-founder Linus Talacko attended the same primary and secondary school, suggesting a stable educational background. Personal medical experience drove the venture. Modest advantages.",
+    "ecosystem_summary": "Startmate Student Fellowship connected him to co-founder and startup ecosystem. University of Melbourne provided engineering education. Australian tech ecosystem and AI medical scribe wave provided timing advantage, but no elite mentors or frontier geography.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "harrison-crowe-maxwell",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "UTS engineering student who developed an autonomous pipe-inspection robot as his capstone thesis at 18. Capable builder with problem-solving instinct, but no evidence of exceptional early cognitive ability or prodigy status.",
+    "inherited_summary": "Living in Frenchs Forest, Sydney. No evidence of family wealth, domain connections, or notable advantages. UTS is a solid but not elite university.",
+    "ecosystem_summary": "UTS engineering labs provided thesis project infrastructure. AWS internship connected him to co-founder Shyeon Delnawaz. Three co-founder team provided complementary skills. Australian startup ecosystem, but no elite mentors or frontier geography.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "martina-qin",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Worked in strategy at EY and as product manager at Westpac before founding Qloud Games at 25. Capable corporate professional with entrepreneurial pivot, but no evidence of exceptional early ability or prodigy status.",
+    "inherited_summary": "Self-funded $500K with partner Michael Su, suggesting some personal or family financial resources. Corporate career background at EY and Westpac indicates professional-class background. Co-founder partner is a former Canva software developer.",
+    "ecosystem_summary": "a16z's Speedrun gaming accelerator provided institutional access. Co-founder partnership with Michael Su (Canva developer) and Eric Mallon provided complementary team. Kickstarter community and cozy gaming trend provided market timing.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "jess-no-limit",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started as a professional Mobile Legends: Bang Bang player competing with EVOS Legends in MPL Indonesia, achieving global rankings. Good gaming mechanical skill and content creation ability, but no evidence of broader cognitive prodigy.",
+    "inherited_summary": "Tobias Justin, Indonesian. No evidence of family wealth, domain connections, or notable advantages.",
+    "ecosystem_summary": "EVOS Legends esports team in MPL Indonesia provided professional gaming infrastructure. The Southeast Asian mobile gaming boom and YouTube's algorithmic distribution provided perfect timing and platform leverage for content creation virality.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "giniro",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began esports hosting career at 23 by volunteering in UK collegiate esports while working as a technology consultant. Rose through broadcasting through persistence and talent. No evidence of exceptional early ability before career start.",
+    "inherited_summary": "Half-Dutch, half-Moroccan. No evidence of family wealth, domain connections, or notable advantages. Began by volunteering while working full-time.",
+    "ecosystem_summary": "UK collegiate esports scene provided entry point. Discovery by a Riot Games representative opened doors to LEC and international broadcasting. University of Warwick connection. Breaking barriers as first Arabic woman in esports broadcasting created both constraint and opportunity.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "mason-thames",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began ballet at 7, touring with a professional international ballet company as the youngest cast member for four years. Transitioned to acting with early TV and film roles. Strong performing ability but not prodigy-level in any single domain.",
+    "inherited_summary": "Born in Dallas (some sources say Arizona, moved to Dallas at 1). Older sister Brooke-Madison was a trained ballerina who inspired his start. Parents got him an agent in Texas and moved the family to LA at 11-12 to support his career. Supportive, resourceful family.",
+    "ecosystem_summary": "Professional ballet company touring provided early performing experience. Apple TV+ (For All Mankind) and Universal Pictures (The Black Phone at 14) provided major studio access. Family relocation to LA positioned him in the entertainment capital. Strong industry pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "alex-consani",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began modeling at 12, becoming the world's youngest transgender model. Built social media following through absurdist comedic TikTok content starting in 2020. Savvy with platforms and self-presentation, but no evidence of prodigy-level ability.",
+    "inherited_summary": "Born in Petaluma, California. Started modeling at 12 with family support. Signed with IMG Models at 16. Some family resources implied by early modeling career start and relocation to NYC at 18.",
+    "ecosystem_summary": "IMG Models signing at 16 provided elite agency representation. TikTok platform during COVID-19 provided viral distribution. Tom Ford runway and fashion industry's increasing trans visibility provided market timing. Good but not exceptional ecosystem access.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "kathryn-newton",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began acting at age 4 on All My Children (2001-2004). Won two Young Artist Awards for Gary Unmarried (2008-2010). Starred in Paranormal Activity 4 at 15. Early start and consistent work, but child-actor pipeline rather than prodigy-level talent.",
+    "inherited_summary": "Only child of Robin and David Newton. Father played college golf (plus-2 index). Family moved from Florida to Los Angeles when she was 12 to support her acting career. Upper-middle-class family with resources to relocate and support child acting career.",
+    "ecosystem_summary": "All My Children (soap opera), CBS's Gary Unmarried, and Notre Dame High School in Sherman Oaks provided strong entertainment industry pipeline. Family relocation to LA positioned her at the center of the industry. Consistent TV and film access from age 4.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "wesley-wang",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started filmmaking at 11, casting family and funding production through chess lessons. Became a FIDE Master in chess at 14, an 11-time National Champion and 6-time All-American. Co-founded CHESSanity nonprofit at 10. Viral short film with 9.3M+ YouTube views in high school. Multi-domain prodigy in chess and filmmaking.",
+    "inherited_summary": "From Long Island, New York. Attended Jericho High School, a top-ranked public school. Parents supported filmmaking and chess activities. Middle-class family with enough resources for chess training and early film equipment.",
+    "ecosystem_summary": "Jericho High School (top public school), Harvard College admission, Darren Aronofsky mentorship and Sony/TriStar Pictures feature deal. YouTube viral distribution and Harvard network provided strong ecosystem leverage at the right time.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "marcello-hernandez",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began doing stand-up in Miami before moving to NYC after graduating from John Carroll University in 2019. Grounded at NYC comedy clubs for three years before breakthrough. Capable comedian with strong work ethic, but no prodigy-level evidence.",
+    "inherited_summary": "Latino background, Miami upbringing. No evidence of family wealth, entertainment connections, or notable advantages. John Carroll University education.",
+    "ecosystem_summary": "NYC stand-up comedy circuit provided the proving ground. Just for Laughs Montreal 'New Faces' selection in 2022 provided industry recognition that led to SNL audition. Good comedy ecosystem access through persistence, but no elite mentors or institutional pipeline.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "chappell-roan",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began piano at 10-11, won school talent show at 13, uploaded covers to YouTube at 14-15. Wrote 'Die Young' at Interlochen Arts camp. Signed with Atlantic Records at 17. Above-average musical ability and early songwriting, but not prodigy-level.",
+    "inherited_summary": "Born in Willard, Missouri (population ~6,000), oldest of four in a conservative Christian family. Mother is a veterinarian, father a retired Naval Reservist who managed the family veterinary practice. Small-town, religious upbringing with no music industry connections. Parents supportive of music.",
+    "ecosystem_summary": "Interlochen Center for the Arts summer camp provided arts education exposure. YouTube platform enabled label discovery. Atlantic Records signing at 17 provided industry access. Conservative small-town upbringing was a constraint that queer identity later transformed into artistic catalyst.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "noah-kahan",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began writing songs at age 8. Received first guitar at 10. Uploaded music to SoundCloud and YouTube as a teenager. Signed with Republic Records at 20 after producer Joel Little discovered him. Early songwriting start but not prodigy-level.",
+    "inherited_summary": "Grew up on a tree farm in Strafford, Vermont. Father Josh Kahan was a musician and triathlete who taught him guitar. Mother Lauri Berkenkamp was a best-selling author who taught him to write. Both parents provided direct domain exposure in music and writing. Middle-class rural family.",
+    "ecosystem_summary": "SoundCloud and YouTube platforms provided early online distribution. Producer Joel Little (Lorde, Taylor Swift) discovery led to Republic Records signing. TikTok virality with Stick Season provided massive distribution. Rural Vermont identity became artistic differentiator.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "caitlin-clark",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began playing basketball at age 5. Skills so advanced her parents placed her on boys' teams because no girls' league could match her. D1 coaches were recruiting her before freshman year of high school. Grade-school phenom with prodigy-level court vision and scoring ability. NCAA all-time leading scorer, two-time Naismith Player of the Year, #1 WNBA draft pick.",
+    "inherited_summary": "Father Brent Clark played college basketball at Simpson College and is a vice president at a product company. Mother Anne Clark (née Nizzi) — her father was a football coach and school administrator at Dowling Catholic. Sports-centric middle-class family in West Des Moines with direct athletic lineage.",
+    "ecosystem_summary": "All Iowa Attack AAU program (produced 300+ collegiate players) in sixth grade, coached by Dickson Jensen. Dowling Catholic High School. USA Basketball gold medals (U16, U19). Iowa basketball culture and strong AAU pipeline. Elite development pathway though not a historic powerhouse program.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jayson-tatum",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Put up a triple-double as a high school freshman at Chaminade against elite competition. Gatorade National Player of the Year in 2016. McDonald's All-American. Top recruit in the class of 2016. Exceptional early basketball achievement, though physical advantages (6'8\" with NBA player father) contributed.",
+    "inherited_summary": "Father Justin Tatum was a 6'6\" college basketball player at Saint Louis University who became a professional player and coach. Mother Brandy Cole was a teenage single mother who pursued law school while raising him. Mixed: direct basketball lineage from father, but modest single-parent household with financial constraints.",
+    "ecosystem_summary": "Chaminade College Preparatory School (top private school in St. Louis) where alumnus Bradley Beal was a mentor. Father coached at rival CBC High School, providing intense training from age 10-11. Larry Hughes (NBA player) was his godfather. Duke University for one year. Strong basketball pipeline with multiple mentors.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "xandra-pohl",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-taught DJing via YouTube tutorials after seeing Alison Wonderland at Lollapalooza in high school. Mother bought her first controller. Built social media following through GRWM content on TikTok. Savvy with platforms but no prodigy-level musical ability.",
+    "inherited_summary": "Grew up in Cincinnati, Ohio. Father is a dentist, mother is a real estate agent. Attended Cincinnati Country Day School (private school). Upper-middle-class family with resources for private education, Lollapalooza tickets, and DJ equipment.",
+    "ecosystem_summary": "University of Miami provided social environment. TikTok platform provided viral distribution. Lollapalooza and F1 Miami Grand Prix provided performance opportunities. Kygo's Palm Tree MGMT provided industry representation. Good ecosystem access through social media timing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "nathan-nwachukwu",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-taught coding via online resources. Suffered serious eye injury at 15 that blinded him in one eye and forced a six-month school absence, during which he began teaching online physics classes. Built Klas platform and raised $130K angel funding at 18. Significant early achievement despite physical adversity.",
+    "inherited_summary": "Grew up in Port Harcourt, Nigeria. Mother was a professor of chemical pathology, providing academic role model and educational ambition. Modest Nigerian background but with academic family influence.",
+    "ecosystem_summary": "Nigerian tech ecosystem provided some startup community. YC co-founder matching and angel funding provided early capital access. Self-created online teaching during recovery from eye injury. Limited institutional infrastructure compared to US/EU ecosystems.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "terry-djony",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-taught programming at age 13 using a PC and slow internet in rural Indonesia. Attended ITB for Engineering Physics before dropping out to pursue entrepreneurship. Built Chatbiz.id and was accepted to YC W21 at 21. Significant early technical self-education despite resource constraints.",
+    "inherited_summary": "Grew up in Lampung, a rural city in Indonesia, with limited resources and slow internet. No evidence of family wealth or domain connections. Active resource disadvantage in rural Indonesia.",
+    "ecosystem_summary": "Institut Teknologi Bandung (ITB), one of Indonesia's top universities, provided some academic ecosystem. YC W21 acceptance provided accelerator access as the only Indonesian company in the cohort. WhatsApp commerce domain timing in Indonesia. Self-created ecosystem through persistence.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sam-oshay",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Valedictorian at Head-Royce School (elite private school). Admitted to UPenn's Jerome Fisher M&T Program, earning dual degrees in CS (Penn Engineering) and Economics (Wharton). Completed 10 classes in senior year to sprint to early graduation. Exceptional academic achievement and drive.",
+    "inherited_summary": "Three-generation family wholesale distribution business — grandfather immigrated to America in 1952 and started a hardware wholesale business, father started his own distributorship. Grew up working in the family warehouse for a decade. Attended Head-Royce School (private, Oakland). Upper-middle-class Bay Area family with direct domain overlap.",
+    "ecosystem_summary": "Head-Royce School (elite private), UPenn's Jerome Fisher M&T Program (one of the most selective dual-degree programs), YC S20, Bay Area startup ecosystem. Strong institutional pipeline at every stage with direct domain apprenticeship from family business.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "luna-yu",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-described science nerd who completed both Bachelor's and Master's degrees in Environmental Science at the University of Toronto by age 21. Founded Genecis Bioindustries at 20. Strong early academic achievement and entrepreneurial drive in a technical domain.",
+    "inherited_summary": "Grew up in southern Ontario with engineer parents. Mother was specifically a wastewater engineer, providing direct domain proximity to environmental science and waste conversion. Grandparents taught her never to waste food, which became the philosophical foundation for her company. Strong family-domain overlap.",
+    "ecosystem_summary": "University of Toronto provided strong environmental science education and research infrastructure. YC participation and Extreme Tech Challenge win provided accelerator and competition ecosystem. Canadian cleantech community. Good but not exceptional institutional access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "isaac-eaves",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Diagnosed with ADHD at age 6, which he transformed into product insight for Joon Health. Started a Minecraft server business in middle school. Became student body president at Santa Barbara City College. 10,000+ hours of gaming as a child provided domain expertise. Above-average ability channeled through personal challenge.",
+    "inherited_summary": "Raised in a rural area of Virginia. No evidence of family wealth, tech connections, or domain background. ADHD diagnosis at 6 created early schooling challenges. Modest background.",
+    "ecosystem_summary": "Santa Barbara City College to UC Berkeley transfer provided educational pipeline. YC W22 acceptance provided accelerator access. Personal ADHD experience provided deep domain proximity for pediatric behavioral health product. Self-created path through community college system.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "aryah-oztanir",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Built a Discord bot with 10,000+ users at age 14. Led urban farming and ed-tech software projects at 18. Created a real-time Apollo.io alternative with 20,000 global uses at 19. Earned the Morehead-Cain full-ride merit scholarship to UNC Chapel Hill. Significant early technical output and project-building ability.",
+    "inherited_summary": "Grew up in Foster City, California (Bay Area peninsula). Attended Aragon High School (solid public school). Morehead-Cain Scholarship suggests strong academic record. Bay Area upbringing provided some tech-culture exposure. Middle-class family.",
+    "ecosystem_summary": "Morehead-Cain Scholarship (one of the most prestigious merit scholarships in the US) to UNC Chapel Hill provided elite institutional access. YC W26 acceptance with Paul Graham backing. Co-founder Ajay Misra. UNC finance student ecosystem provided domain context for o11's financial services focus.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "savio-martin",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began coding at age 12 in Kerala, India. Named Product Hunt Maker of the Year at 14. Built Glow (300K+ users, #5 in App Store) and Iconify (3M+ logo generations) as a teenager. Won multiple hackathons (AWS, HarperDB, Clerk, Auth0). Accepted to YC P26 at 18 years 10 months. Prodigy-level early building output and product sense.",
+    "inherited_summary": "Born and raised in Kerala, India. Attended Infant Jesus Public School, a standard local school. No evidence of family wealth, tech connections, or domain background. Self-taught through hackathons and side projects.",
+    "ecosystem_summary": "Product Hunt community provided early recognition and distribution. Hackathon circuit (AWS, Hashnode) provided competitive building reps. EVM fellowship. YC P26 acceptance. Self-created ecosystem through online communities with limited local infrastructure in Kerala.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ishraq-khan",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Moved from Bangladesh to the US at age 8. Self-taught programming on a laptop his parents bought. Built AI tools as a teenager. Founded Kodezi at 17, raised $20K angel investment before 18, $800K before 19, and $2M by 22. Aggressive cold-emailing to CEOs, VCs, and AI researchers. Significant early technical and entrepreneurial achievement.",
+    "inherited_summary": "Born in Dhaka, Bangladesh. Family immigrated to the US in 2011 when he was 8. Parents bought him a laptop that enabled his programming journey. Immigrant family with modest resources but enough for a computer.",
+    "ecosystem_summary": "AI wave timing provided market tailwind. Self-created network through cold-emailing CEOs, VCs, and AI researchers. Skipped college to pursue entrepreneurship. Limited institutional ecosystem access early on, but built his own through persistence and the AI coding tool market timing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "steven-tey",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Studied CS at Minerva University (2017-2021). Joined Vercel as Developer Advocate at 22. Built multiple viral open-source projects: One Word Domains, ShareGPT, and Novel (16K+ GitHub stars). Prolific builder with strong product and distribution instincts. Significant early output though not prodigy-level.",
+    "inherited_summary": "Attended Minerva University, an unconventional online-first university — not a traditional elite institution. No evidence of family wealth or domain connections. Self-driven building trajectory.",
+    "ecosystem_summary": "Vercel platform and ecosystem provided powerful distribution leverage. Next.js and AI SDK wave timing was perfect for his projects. Twitter and Hacker News provided viral distribution channels. DevRel role at Vercel gave him platform access and audience. Strong ecosystem leverage through platform-native building.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "alec-nguyen",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Born in Vietnam, moved to US to attend Lawrence University in Wisconsin. Worked as research assistant in economics and data science. Co-founded Afforai at 22 with college friend. Scaled to $1M revenue in first year. Capable builder and entrepreneur, but no prodigy-level evidence.",
+    "inherited_summary": "Born in Vietnam, immigrated to the US for college. Attended Lawrence University, a small liberal arts college in Wisconsin — not an elite institution. No evidence of family wealth or domain connections. Immigrant with modest resources.",
+    "ecosystem_summary": "Lawrence University provided college environment and co-founder connection. Product Hunt launch provided initial distribution. AI wave timing. Co-founder partnership with Austin Hung Nguyen. Self-created path without elite institutional access.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "abi-raja",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Attended NUS High School of Mathematics & Science in Singapore (2005-2008), a specialized school for mathematically talented students. Was hired by Mozilla in high school to work on a Firefox extension. Stanford CS degree (2009-2013). Co-founded PeerCDN right after graduation. Significant early technical achievement.",
+    "inherited_summary": "Singapore education system provided strong schooling. NUS High School of Math & Science is a specialized elite school. Stable educational background in Singapore. Some advantage from access to elite Singaporean education.",
+    "ecosystem_summary": "NUS High School of Mathematics & Science (elite specialized school), Stanford University CS, Silicon Valley location. Co-founded PeerCDN with Feross Aboukhadijeh (who had Facebook internship, YouTube Instant fame) and John Hiesey. Acquired by Yahoo in 2013. Elite educational and peer pipeline at every stage.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "charles-bochet",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Studied structural engineering at École des Ponts ParisTech, one of France's top engineering schools. Served as CTO of Luckey Homes (acquired by Airbnb) and then Engineering Manager at Airbnb Paris. Co-founded Twenty (53K+ GitHub stars, YC). Strong technical and leadership trajectory by mid-20s.",
+    "inherited_summary": "French elite engineering education at École des Ponts ParisTech suggests strong academic background and likely middle-to-upper-middle-class French family. Access to France's grande école system implies some educational privilege.",
+    "ecosystem_summary": "École des Ponts ParisTech (elite French engineering school), Luckey Homes/Airbnb acquisition pipeline, Airbnb Paris engineering team, YC acceptance. Co-founder team with Félix Malfait. Open-source community distribution. Strong institutional pipeline through French elite education and Airbnb ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "felix-malfait",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Studied at both HEC Paris (Master in Management/Entrepreneurship) and École des Ponts ParisTech (Master of Engineering, Economics & Finance) — France's top business and engineering schools simultaneously. Co-founded Luckey Homes (acquired by Airbnb). Worked at Goldman Sachs and Airbnb. Exceptional academic and professional trajectory.",
+    "inherited_summary": "Dual enrollment at HEC Paris and École des Ponts ParisTech — France's most elite business and engineering grandes écoles. This requires passing highly competitive French entrance exams, implying strong educational preparation and likely upper-middle-class background with academic family support.",
+    "ecosystem_summary": "HEC Paris + École des Ponts dual pipeline, Goldman Sachs experience, Luckey Homes/Airbnb acquisition and team, YC acceptance. Co-founder team with Charles Bochet. France's elite educational network and Airbnb startup ecosystem provided strong institutional leverage at every stage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "dillion-verma",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Pursued dual degrees in CS (University of Waterloo) and Business (Wilfrid Laurier University) from 2016-2021. Completed 5 internships including at NVIDIA and Shopify. Competed in 21+ hackathons. Part of first buildspace cohort. Built MagicUI (21K+ GitHub stars). Significant early technical output and competitive drive.",
+    "inherited_summary": "University of Waterloo CS and Wilfrid Laurier Business dual-degree program access suggests strong academic background. Canadian university system. Some family resources for education but no evidence of wealth or domain connections.",
+    "ecosystem_summary": "University of Waterloo's elite CS co-op program (5 internships at NVIDIA, Shopify, etc.), 21+ hackathons for competitive reps, buildspace cohort for community, GitHub distribution for open-source. Strong Canadian tech pipeline with elite internship access and hackathon ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "yonom-simon-farshid",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started coding at age 12 and joined GitHub in 2012. Co-founded READO, a book recommendation engine that grew to 140K monthly active users. Competed in 8 hackathons across 5 countries. Created assistant-ui (10K+ GitHub stars) at 25. Significant early technical output and building consistency.",
+    "inherited_summary": "No evidence of family wealth, domain connections, or notable advantages. Early coding start suggests self-driven rather than family-supported.",
+    "ecosystem_summary": "Hackathon circuit across 5 countries provided competitive building reps and community. GitHub and YC W25 provided distribution. AI chat interface wave timing. READO's 140K MAUs demonstrated product-building ability. Self-created ecosystem through hackathons and online communities.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "chaitanya-mishra",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started tinkering with computers at 12. By age 16-17, had 100+ merge commits to the Linux kernel (memory management, systems code), served on the dev committee at Google DeepMind's JAX Privacy project, and was a core contributor to Google's Gemma LLMs. Runs his school's IT systems in exchange for flexible attendance. Prodigy-level systems programming ability for his age.",
+    "inherited_summary": "High school student from India. No evidence of family wealth, tech connections, or domain background. Self-taught through online resources and open-source contribution.",
+    "ecosystem_summary": "Google DeepMind JAX Privacy dev committee and Gemma contributor status provided elite institutional access despite being a high school student in India. Linux kernel community provided mentorship through code review. Largely self-driven ecosystem access through open-source contribution rather than formal institutional pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "gilbert-o-sullivan",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began playing piano as a child in Swindon, writing songs throughout his formative years. Played in semi-professional bands at Swindon Art College, including one with Rick Davies (later of Supertramp). Strong songwriting craft developed through persistent self-education, but not prodigy-level.",
+    "inherited_summary": "Born in Waterford, Ireland in 1946 to a working-class family. Father was a butcher at Clover Meats, mother ran a sweet shop. Family emigrated to a council house in Swindon when he was 7. Father died of stomach cancer when Gilbert was 12. Working-class Irish immigrant with active disadvantage.",
+    "ecosystem_summary": "Swindon Art College provided creative environment and band connections (Rick Davies of Supertramp). Gordon Mills, the manager behind Tom Jones and Engelbert Humperdinck, became his manager and provided industry access. UK pop scene of the early 1970s. Some ecosystem support through key mentor.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "peter-aerts",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Played football for seven years before starting taekwondo at 14. Transitioned to kickboxing at 15. Won his first professional fight after one year of training. Won IKBF World Heavyweight Championship at 19. Natural fighting ability but relatively late start — not a child prodigy.",
+    "inherited_summary": "Born in Eindhoven, Netherlands. Grandfather and uncle were active in combat sports, introducing him to the field. Father was a lumberjack. Working-class Dutch family with some domain exposure through extended family.",
+    "ecosystem_summary": "The Netherlands was the global frontier for kickboxing and Muay Thai. Trained under Eddy Smulders at Judoka-Kickboxing gym, then Thom Harinck at the famous Chakuriki Gym. Dutch kickboxing hub with intense competition and world-class gyms provided elite development ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "katarina-witt",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Began skating at age 5 at the Küchwald ice rink. Natural aptitude was quickly recognized by coach Bernd Egert. Won first East German national championship at 16. Olympic gold at 18. Significant early athletic ability and performance charisma, though the state system was the dominant advantage.",
+    "inherited_summary": "Born in Staaken, East Germany. Mother was a physiotherapist, father directed an agricultural cooperative. Working-class East German family with no skating connections. The state sports system, not family resources, drove her development.",
+    "ecosystem_summary": "East German state sports system identified her talent at 5 and placed her in the Kinder- und Jugendsportschule (special school for athletically talented children). Legendary coach Jutta Müller (mother of 1968 Olympic silver medalist Gabriele Seyfert) coached her from age 9. SC Karl-Marx-Stadt club. Six-day-a-week training, sometimes seven hours daily. Once-in-a-generation state-sponsored elite sports pipeline.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "mick-doohan",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began riding motorcycles at age 9 and competing in off-road dirt bike events. Natural talent on two wheels, but started road racing relatively late at 19. Won first 500cc GP at 25. Good natural riding ability but not a prodigy — developed through years of dirt track experience.",
+    "inherited_summary": "Born in Brisbane, Australia. Youngest of three brothers in a motorcycle-mad family. Father took the brothers dirt track racing but died when Doohan was 12, ending formal racing support. Worked as a concreter. Modest working-class background with family domain interest but no wealth.",
+    "ecosystem_summary": "Australian motorcycle racing culture provided grassroots dirt track environment. Honda factory team provided elite machinery and support later in career. Self-taught progression from dirt to road racing. Australian racing community was supportive but not an elite development academy.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "nick-price",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started caddying for his brother at age 8. Taught himself golf, playing up to 144 holes a day as a teenager with cheap green fees in Rhodesia. Won Junior World golf tournament at 17. Self-taught swing with exceptional early dedication and volume of practice.",
+    "inherited_summary": "Born in Durban, South Africa to British parents. Father was a career British military officer (Major in artillery) who died in 1967 when Nick was 10. Family moved to Rhodesia when he was 3. No golf connections. Military family in a conflict zone. Father's death was a disadvantage, but Rhodesia's cheap golf access was a geographic advantage.",
+    "ecosystem_summary": "Rhodesia's cheap green fees (10 cents) and year-round playing weather allowed massive practice volume. Brother Tim gave him his first club. Prince Edward School in Salisbury where he captained the golf team. David Leadbetter coaching came later. Rhodesian Bush War created isolation but also cheap, uncrowded courses.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "elijah-renner",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Built an audience of 3,000+ on X in middle school editing Fortnite videos, earning over $7,000. Cold-emailed a Stanford AIMI researcher (Dr. Alaa Youssef), which led to AI/ML research opportunities. Won Regeneron STS scholarship. Admitted to Stanford CS. Accepted to YC S26 as CTO of Shepherd while a high school senior. Significant early achievement through self-driven initiative.",
+    "inherited_summary": "Growing up in rural Vermont, far from Silicon Valley with no tech-industry connections. No evidence of family wealth or domain background. Geographic isolation was an active disadvantage that he overcame through online initiative.",
+    "ecosystem_summary": "Stanford AIMI research access (through cold-emailing), Regeneron STS scholarship, Stanford CS admission, YC S26 acceptance with $500K funding. Co-founder trio with Philip Meng and Ishan Ramrakhiani from high school. Once he accessed the ecosystem, strong institutional support — but the access was self-created from rural isolation.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "philip-meng",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Published multiple AI research papers on LLM bias and low-resource languages at top conferences while still in high school. Interned at Animoca Brands and 645 Ventures. Hosted The Early Founder podcast interviewing young founders. Co-founded Shepherd and was accepted to YC S26 as CEO while a high school senior. Prodigy-level early research output.",
+    "inherited_summary": "Internships at Animoca Brands and 645 Ventures while in high school suggest some early access to venture and tech networks. Stanford admission. Some family or network advantage implied by early internship access, though details are limited.",
+    "ecosystem_summary": "Published AI research at top conferences provided academic credibility. Internships at Animoca Brands and 645 Ventures provided industry exposure. Stanford admission. Co-founder trio with Elijah Renner and Ishan Ramrakhiani. YC S26 acceptance with $500K. Podcast platform provided network-building tool. Strong ecosystem access for a high school student.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ishan-ramrakhiani",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Conducted research at Dartmouth and was admitted to Stanford's BMC program before co-founding Shepherd. Serves as CPO handling product and design. Above-average ability but very little is publicly documented about early life or exceptional achievements.",
+    "inherited_summary": "Very little publicly documented about family background, wealth, or connections. Stanford BMC admission suggests strong academic record. No clear evidence of domain family background or significant advantages.",
+    "ecosystem_summary": "Dartmouth research access, Stanford BMC program admission, co-founder trio with Philip Meng and Elijah Renner from high school. YC S26 acceptance with $500K. The complementary three-person co-founder team is the strongest documented ecosystem advantage.",
+    "scoring_confidence": "Low"
+  }
+]

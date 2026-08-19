@@ -1,0 +1,202 @@
+[
+  {
+    "person_id": "skyler-chan",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-directed passion for space from age 7, drawing planetary habitats. Air Force-trained pilot at 16. Graduated UC Berkeley EECS in 3 years. Built NASA-funded 3D printer launched into space and vehicle software at Tesla. Exceptional drive and early technical achievement, though not a traditional prodigy.",
+    "inherited_summary": "No family background in tech or engineering. Grew up in Vancouver, Canada attending public schools. Self-directed with no local aerospace community or family connections to leverage.",
+    "ecosystem_summary": "Royal Canadian Air Cadets (111 Pegasus Squadron) provided aviation training. UC Berkeley EECS provided elite engineering education. Tesla and NASA experience offered frontier ecosystem access. YC W26 as youngest solo space founder.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jesse-choe",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Top 1% competitive coder in the US, USACO Platinum competitor. First high schooler to write competitive coding questions. Founded CerealCodes nonprofit coding competition platform. Jane Street extern at 18. Significant early achievement in competitive programming.",
+    "inherited_summary": "Family in the electrical contracting industry (not tech). Attended TJHSST, a prestigious public magnet school in Virginia. Middle-class family with general professional exposure but no direct tech industry connections.",
+    "ecosystem_summary": "Attended TJHSST (Thomas Jefferson High School for Science and Technology), one of the top STEM magnet schools in the US. Met co-founder Gautham in middle school coding class. YC S25 and W26 batches provided accelerator ecosystem and strong co-founder duo.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "gautham-ramachandran",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Top 5% competitive coder in the US. Published 3 ICML preprints related to reinforcement learning. Bootstrapped business to $120K at 16. Developed algorithm for classifying brain signals featured on local news. Significant early achievement across coding and ML research.",
+    "inherited_summary": "Family in the electrical contracting industry. Met co-founder Jesse in middle school coding class. Middle-class background with no direct tech industry family connections. Accepted to UC Berkeley but chose to build a startup instead, later attending Rutgers.",
+    "ecosystem_summary": "Met co-founder Jesse Choe in middle school coding class and collaborated on CerealCodes. YC S25 and W26 batches. Strong co-founder duo with complementary skills. UC Berkeley admission (though not attended) signals strong academic pipeline access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "qasim-munye",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-taught ML while completing medical school at King's College London. Ran e-commerce business during medical school, using bots to automate order fulfillment. Built ShortlyAI solo while still a medical student. Smart and highly capable with strong self-directed learning, but no prodigy-level early indicators.",
+    "inherited_summary": "Medical student (MBBS) at King's College London. From London/UK. E-commerce income paid off first year medical school fees, suggesting middle-class background without significant family wealth. No clear family domain overlap with tech.",
+    "ecosystem_summary": "King's College London provided medical education and access to Kings20 accelerator. Met co-founder Mariam Ahmed at university's Entrepreneurship Institute. Good institutional access but no exceptional peer environment or frontier ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "mariam-ahmed",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Won Alan Turing Centenary Prize at King's College London. Sold $1.2B in custom institutional trades at Goldman Sachs in a single year. Studied CS with Management at KCL. Capable and high-achieving but no exceptional early cognitive indicators before university.",
+    "inherited_summary": "Born and raised in New York City. Studied at King's College London. No specific family background details available, but NYC upbringing and UK university education suggest middle-class or upper-middle-class background with some means.",
+    "ecosystem_summary": "King's College London for CS with Management. Goldman Sachs trading floor experience. YC S23 cohort. Met co-founder Qasim Munye at university's Entrepreneurship Institute. Good institutional access but not a rare peer environment.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "cooper-mcbride",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "UW Electrical Engineering graduate focused on power electronics. Went from construction laborer and Tesla intern to SpaceX Lead Hardware Test Engineer and Shield AI management in ~6 years. Capable engineer with strong work ethic, but no exceptional early cognitive indicators.",
+    "inherited_summary": "Construction laborer background at Wolf Creek Real Estate Services. Worked part-time during college at Seattle City Light. Working-class background with no family domain overlap or connections in tech or aerospace.",
+    "ecosystem_summary": "University of Washington ECE program with UW EcoCAR project experience. Rapid career progression through elite frontier companies: Tesla internship, SpaceX (Lead Hardware Test Engineer, Manager), Shield AI (Senior Manager). YC W26 with Kyten Technologies.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ahmad-khan",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Built robotics infrastructure at OpenMind where the robot became first in history to ring the NASDAQ bell. Studying Mathematics at University of Waterloo. Co-founded YC company at age 20-21. Capable but no prodigy-level early indicators like Olympiads.",
+    "inherited_summary": "From Kolkata, India. Attended La Martiniere for Boys, one of Kolkata's most prestigious schools. Family background not detailed, but attendance at elite private school suggests upper-middle-class family with emphasis on education.",
+    "ecosystem_summary": "La Martiniere for Boys (elite Kolkata school). University of Waterloo (strong tech talent pipeline with co-op program). YC W26 with strong co-founder team (Huzaifa Ahmad and Prama Yudhistira). San Francisco-based for company building.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "huzaifa-ahmad",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Built consumer apps with millions of downloads. Reverse engineered every major ATS platform and built Talently (200K+ job applications) while in college. UC Berkeley CS graduate. Capable builder with strong hacking instincts, but no prodigy-level early indicators.",
+    "inherited_summary": "UC Berkeley CS graduate. Based in San Francisco. No specific family background details available. No clear family domain overlap or industry connections mentioned.",
+    "ecosystem_summary": "UC Berkeley CS program (top-tier). Worked at PlayAI, AWS, and Capital One. YC W26 with strong co-founder team (Ahmad Khan and Prama Yudhistira). San Francisco-based with access to Silicon Valley ecosystem.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "prama-yudhistira",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Piano prodigy who started at age 8, won 5 awards at Qatar National Music Competition including Qatar Philharmonic Orchestra prize at age 15. Performed Mozart Piano Concerto No. 20 from memory with the Qatar Philharmonic. Pivoted to CS at Georgia Tech and built coding agents at Codegen and GPU firmware at AMD. Multi-domain exceptional talent.",
+    "inherited_summary": "Grew up in Qatar, attended Doha College (British curriculum international school). Indonesian heritage. International school education suggests upper-middle-class family with global exposure, though no specific family profession details available.",
+    "ecosystem_summary": "Doha College (elite British international school in Qatar). Georgia Tech CS program. Codegen (coding agents) and AMD (GPU firmware) experience. YC W26 with strong co-founder team. Multi-country exposure (Qatar, US) providing diverse perspectives.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "matthew-chen",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Chemistry research at 15. Taught himself to code at 18. Math and CS double major at Cornell. Ex-national team and semi-pro soccer goalie. Built features at Google and Meta reaching 100M+ users. Financially independent at 17. Exceptional drive and multi-domain talent despite disadvantaged background.",
+    "inherited_summary": "Washed dishes and waited tables to pay for college. Financially independent at 17. Active financial disadvantage requiring self-support through college. No family wealth, domain connections, or safety net.",
+    "ecosystem_summary": "Cornell University (Math+CS, AI research). Google and Meta experience building features at massive scale. YC W26 cohort. Despite disadvantaged background, accessed elite institutions through merit and self-drive.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "leo-gierhake",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Made $250K as a high-stakes poker pro at age 17. Founded a crypto investing platform at 18. Generated 7-figure PnL in DeFi markets. ETH Zurich Electrical Engineering student. Researcher at Jump Trading building models for billions in trading volume. Exceptional early achievement in quantitative trading and poker.",
+    "inherited_summary": "ETH Zurich EE student. 'Hustled high stakes poker to pay for college' suggests self-funded education without family wealth. No clear family background in tech or finance. No inherited domain connections.",
+    "ecosystem_summary": "ETH Zurich (one of the world's top engineering universities). Jump Trading (elite quantitative trading firm). YC W26 with co-founder Matthew Chen. Access to elite European technical education and top-tier quant finance ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "zakaria-el-hjouji",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Graduated top of class at LSE. Earned Master's from MIT. Built and sold a software product while at MIT. Won 3 prominent AI hackathons. Left Morocco at 18 with limited English and no network. Exceptional academic achievement overcoming significant barriers.",
+    "inherited_summary": "From Agadir, Morocco. Left at 18 for UK with limited English and no network. Funded by three scholarships. Active disadvantage as immigrant with no family wealth, connections, or domain overlap in destination countries.",
+    "ecosystem_summary": "LSE (top of class), MIT (Master's). 7 years at Uber (pricing algorithms) and Meta AI (GPU kernels). YC W26 with cousin co-founder Younes. Elite institutional trajectory from LSE to MIT to Silicon Valley, overcoming geographic and linguistic barriers.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "younes-el-hjouji",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Founding engineer at Cosmonio (acquired by Intel). Built Computer Vision training and serving platform from scratch. 6+ years building scalable backend, cloud, and AI systems. Capable engineer with strong career trajectory but no exceptional early cognitive indicators.",
+    "inherited_summary": "From Agadir, Morocco. Cousins with co-founder Zakaria. No specific family background details available. Based in Groningen, Netherlands during Cosmonio/Intel tenure. No clear family domain overlap or wealth.",
+    "ecosystem_summary": "Cosmonio (acquired by Intel) provided early startup and computer vision experience. Intel continued AI frameworks work. YC W26 with cousin co-founder Zakaria. Good career trajectory but no exceptional peer environment or frontier ecosystem access until YC.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "zi-zhang",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Led security infrastructure at Bloomberg securing 325k+ terminals. Built world's first unified MCP server at ACI.dev with 4k GitHub stars in 1 month. Research experience at Huazhong University in nanocomposite materials. Capable engineer with strong career achievements but no exceptional early cognitive indicators.",
+    "inherited_summary": "Chinese education background (Huazhong University of Science and Technology). Based in UK/US. No specific family background details available. No clear family domain overlap or industry connections.",
+    "ecosystem_summary": "Huazhong University of Science and Technology for research. Bloomberg (Platform Security Tech Lead) in London. ACI.dev as Head of Engineering. YC W26 with Proximotty. Good career trajectory but no exceptional peer environment or elite institutional access early on.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "oskar-block",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Cracked the Stryktipset betting code as a teenager, becoming a betting millionaire. Started first company at 18 building ML models for sports betting (121% ROI over 5,000 bets). Bootstrapped second startup to +$1M ARR and 25,000 MAU. Worked at McKinsey and Goldman Sachs. Exceptional early achievement in quantitative betting and entrepreneurship.",
+    "inherited_summary": "From Nyköping, Sweden. Attended floor hockey high school (innebandygymnasiet) in Umeå, not an academic track. No clear family wealth or domain connections. Middle-class Swedish background with no special inherited advantages.",
+    "ecosystem_summary": "McKinsey and Goldman Sachs experience. Worked at two Swedish unicorns. Stockholm-based startup ecosystem. YC W26 with strong co-founder team (Tobias, Petrus, Oscar). Self-built companies from high school with no special institutional access early on.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tobias-estreen",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Lead Data Scientist at QuantumBlack leading agentic AI teams for global clients. Turned down a professional League of Legends contract. Background in physics and ML from KTH and KU Leuven. Capable with strong technical track record but no exceptional early cognitive indicators.",
+    "inherited_summary": "Raised in a patent attorney family. Father is a patent attorney, which directly inspired the Stilta company idea. Upper-middle-class Swedish family with direct domain overlap in the IP/patent space their startup targets.",
+    "ecosystem_summary": "KTH Royal Institute of Technology and KU Leuven for physics and ML. QuantumBlack (McKinsey's AI arm) as Lead Data Scientist. Netlight consulting. YC W26 with strong four-person co-founder team met at McKinsey/QuantumBlack. Stockholm-based with access to Swedish tech ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "petrus-werner",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Education at Chalmers, KTH, and UC Berkeley. Built and deployed AI systems at QuantumBlack and AWS for 5 years. Capable engineer with strong career trajectory but no exceptional early cognitive indicators or prodigy-level achievements.",
+    "inherited_summary": "Swedish. Education spanning Chalmers, KTH, and UC Berkeley suggests family with means to support international study. No specific family profession details available. Moderate inherited advantage through access to multiple elite institutions.",
+    "ecosystem_summary": "Chalmers University of Technology, KTH, and UC Berkeley (exchange/coursework). QuantumBlack (McKinsey) and AWS experience. YC W26 with strong four-person co-founder team. Access to both Swedish and American elite technical institutions.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "tom-achache",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Admitted to École Polytechnique (one of France's most elite grandes écoles) via the competitive MP concours. MS at Columbia. Published quantum computing research with IBM researchers. Led Perception at Chef Robotics deploying 50+ production robots. Strong academic and technical trajectory from elite French education system.",
+    "inherited_summary": "French education (École Polytechnique, Paris Nanterre). No specific family background details available. École Polytechnique admission is merit-based through competitive exam, not requiring family wealth, but French grande école track often implies educated family background.",
+    "ecosystem_summary": "École Polytechnique (France's top engineering school, competitive concours admission). Columbia University MS. SLAC National Accelerator Laboratory internship. Chef Robotics and Ambient.ai (YC W17) experience. YC W26 with Unisson. Elite institutional trajectory across France and US.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jimmy-wei",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Published research at Meta FAIR on multiparty conversational AI with Transformer models. MS from Cornell, BS from Bucknell. Built features at Roblox reaching 100M+ DAU. CTO at DeFi startup in Outlier Ventures accelerator. Capable engineer and researcher but no exceptional early cognitive indicators.",
+    "inherited_summary": "Full name Chiehmin (Jimmy) Wei. Worked across Taipei, Beijing, Seoul, Edinburgh, Boston, and NYC. Dual degree from Cornell and Technion. International mobility and multi-country education suggest family with some means and global orientation, though no specific wealth indicators.",
+    "ecosystem_summary": "Bucknell University (BS CS), Cornell University (MS), and Technion (dual degree). Meta FAIR research experience. Roblox engineering at massive scale. Outlier Ventures DeFi accelerator. YC W26 with IncidentFox. Strong institutional access across US and Israel.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "ivan-zakazov",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Admitted to university at age 15 (prodigy). EPFL doctoral program with 1st year fellowship (top 9% of 750 applicants). Published papers at EMNLP 2025 and NeurIPS 2024 Workshop. Research intern at Microsoft. Former Philips Research and KAWA AI. Mentored 12 MSc students. Prodigy-level early cognitive ability with rare university admission at 15.",
+    "inherited_summary": "Based in Lausanne, Switzerland. No specific family background details available. Co-founders are EPFL master students he supervised, suggesting no family connections in tech. No clear inherited wealth or domain overlap.",
+    "ecosystem_summary": "EPFL (elite Swiss technical university) for both undergraduate (admitted at 15) and PhD. Microsoft Research internship. Philips Research experience. dlab under Prof. Robert West at EPFL. YC W26 with Compresr. Elite European research institution ecosystem with frontier industry research experience.",
+    "scoring_confidence": "Medium"
+  }
+]

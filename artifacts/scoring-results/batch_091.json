@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "ilya-volodarsky",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Born in Russia, grew up in Northeast Pennsylvania. Gained admission to MIT, demonstrating strong academic ability. Co-founded Segment as an MIT undergraduate, showing entrepreneurial drive and technical capability, though no specific prodigy-level evidence found.",
+    "inherited_summary": "Immigrant from Russia to Northeast Pennsylvania. No evidence of family wealth, domain connections, or notable professional networks. Working-class to middle-class background with no domain overlap in technology.",
+    "ecosystem_summary": "MIT was the pivotal advantage — connected him to co-founders Peter Reinhardt and Calvin French-Owen in the same dorm. The Founder's Journey class and Adam Smith (Xobni/Kite) mentorship catalyzed entrepreneurship. YC accelerator and move to SF provided frontier ecosystem access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "calvin-frenchconnor",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started coding at age 9-10 on a TI-83 calculator, building games and animations. Met Peter Reinhardt at a summer math camp in 7th grade. MIT admission and co-founding Segment show strong technical ability and early domain aptitude.",
+    "inherited_summary": "Father worked in the software industry at HP's calculator division and ed-tech companies, bringing home a computer that sparked Calvin's interest. Upper-middle class family with direct parent domain overlap in software/technology.",
+    "ecosystem_summary": "Met co-founder Peter Reinhardt at a 7th grade summer math camp, later became MIT roommates. MIT provided elite institutional access and the Founder's Journey class. Adam Smith mentorship and YC accelerator provided frontier ecosystem access in SF.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "austin-rieb",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "MIT graduate and fourth co-founder of Segment. MIT admission demonstrates above-average ability, but very limited public information is available about his specific early achievements or prodigy-level indicators.",
+    "inherited_summary": "No publicly available information about family background, parents' professions, or wealth status. Cannot determine inherited advantages.",
+    "ecosystem_summary": "MIT was the primary advantage, connecting him to the Segment co-founding team (Reinhardt, French-Owen, Volodarsky). YC accelerator and move to SF provided frontier ecosystem access.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "jeffrey-ip",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Imperial College London graduate. Worked at Google (YouTube infrastructure) and Microsoft (Office 365 AI). Created DeepEval open-source framework growing to 400K+ monthly downloads, demonstrating strong technical ability and domain aptitude in AI/ML.",
+    "inherited_summary": "No publicly available information about family background, parents' professions, or wealth status. Imperial College London education suggests solid academic foundation but no evidence of inherited leverage.",
+    "ecosystem_summary": "Imperial College London (elite institution) led to roles at Google and Microsoft building AI/ML infrastructure. The critical advantage was building DeepEval as an open-source project on GitHub, growing to massive adoption. YC W25 provided frontier ecosystem access in SF.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kritin-vongthongsri",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Princeton ORFE + CS graduate. Published at CHI as an undergraduate, demonstrating above-average academic and research ability. Built NLP pipelines for fintech startups and researched self-driving cars/HCI at Princeton. Co-created DeepEval with 500K+ monthly downloads.",
+    "inherited_summary": "Thai background. Worked at KASIKORNBANK in Thailand, suggesting a professional family with some finance/technology exposure. Middle-class background with international education access.",
+    "ecosystem_summary": "Princeton (elite institution) provided research opportunities and HCI research mentorship. GitHub open-source platform was the direct channel for DeepEval's growth. YC W25 provided frontier ecosystem access in SF.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "charlie-maki",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Harvard CS '23 graduate. Served as Managing Director at Harvard Undergraduate Capital Partners, showing leadership and finance interest. Founding engineer at Chorus scaling from $0 to $1M ARR. Solid academic ability but no specific prodigy-level evidence.",
+    "inherited_summary": "No publicly available information about family background, parents' professions, or wealth status.",
+    "ecosystem_summary": "Harvard (elite institution) provided access to Harvard Undergraduate Capital Partners and strong network. Founding engineer experience at Chorus provided direct startup scaling exposure. YC ecosystem and SF location for Bystreet/Vovana.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sankeerth-rao-karingula",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Exceptional academic trajectory: IIT Bombay (BTech & MTech in EE, one of India's most competitive programs) via Ramaiah IIT Study Circle. PhD in ML at UC San Diego with publications at COLT, SODA, and FOCS — top-tier theoretical CS venues. Google Research Scientist. Prodigy-level academic achievement.",
+    "inherited_summary": "Prepared for IIT through Ramaiah IIT Study Circle, suggesting a middle-class Indian family investing heavily in competitive exam preparation. No evidence of family wealth or domain connections.",
+    "ecosystem_summary": "IIT Bombay (elite Indian institution) to UCSD PhD to Google Research. The extreme competitiveness of IIT JEE provided both adversity and elite peer filtering. Frontier ML research ecosystem at Google and UCSD.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "joshua-belofsky",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started coding early (GitHub at 13-14). UChicago CS & Neuroscience. Conducted ML research at NASA Ames Research Center and Caltech as an undergraduate, advised by Dr. Jim Fan (NVIDIA) and Guanzhi Wang. Published LoRA adapter paper and contributed to NitroGen foundation model paper.",
+    "inherited_summary": "From Los Angeles area. UChicago education suggests middle-class or upper-middle-class family. No specific evidence of parent domain overlap or significant wealth.",
+    "ecosystem_summary": "UChicago provided strong academic foundation. NASA Ames Research Center and Caltech research access as an undergraduate was exceptional. Mentorship from Dr. Jim Fan (NVIDIA) and Guanzhi Wang provided frontier AI research connections. YC W25 for General Trajectory.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "mark-hughes",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "First class honours degree from Trinity College Dublin (Business Studies). HEC Paris exchange. Solid academic performer but in business rather than technical fields. Entrepreneurial drive shown through founding Gradguide and raising €2M.",
+    "inherited_summary": "Irish background. No evidence of family wealth or domain connections. Was unemployed for six months after graduation, suggesting no significant family safety net or professional network.",
+    "ecosystem_summary": "A mentor helped him land a job at Intercom (early sales hire), which became the critical career advantage — deep sales/CX domain expertise and meeting co-founder Patrick Finlay. Founded Gradguide (raised €2M, exit). YC W25 with Solidroad in SF.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "patrick-finlay",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Trinity College Dublin (Computer Engineering). Research focus on Ethereum smart contract dispute resolution. Solid technical foundation but no specific prodigy-level or exceptional early achievement evidence.",
+    "inherited_summary": "Irish background. No publicly available information about family background, parents' professions, or wealth status.",
+    "ecosystem_summary": "Trinity College Dublin provided technical foundation. Intercom (product engineer) was the key career advantage — meeting co-founder Mark Hughes and gaining product/engineering domain experience. Co-founded Monaru (YC S2019) before Solidroad (YC W25), making him a repeat YC founder.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "eva-herget",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Phillips Exeter Academy and UChicago Economics graduate. Goldman Sachs equity analyst. Built a YouTube channel (Eva's Binder) analyzing Pokemon card finance and wrote for TCGplayer/PSA. Hit $500K ARR selling Pokemon cards in 3 months, showing exceptional entrepreneurial drive and analytical ability.",
+    "inherited_summary": "Attended Phillips Exeter Academy, one of the most elite and expensive boarding schools in the US (~$60K/year), indicating significant family wealth. UChicago and Goldman Sachs trajectory consistent with upper-middle-class to wealthy family background.",
+    "ecosystem_summary": "Phillips Exeter Academy (elite boarding school) connected her to co-founder Jonathan Jenkins (best friends since Exeter). UChicago provided financial analytics skills. YC W25 and SF provided frontier ecosystem access. Online Pokemon TCG community provided platform-native distribution.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "imogen-low",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught coder who won engineering prizes in high school and a Westpac Bank Trust scholarship. Skipped traditional college to join SAP as ML engineer in Singapore at 17. Co-founded NWO.ai at 21, Forbes 30 Under 30 at 23. Exceptional self-driven learning and early career acceleration.",
+    "inherited_summary": "Attended Brisbane Girls Grammar School (selective Australian school). Westpac Bank Trust scholarship suggests merit-based support rather than family wealth. Middle-class Australian family with supportive environment for her technical pursuits.",
+    "ecosystem_summary": "SAP in Singapore at 17 provided ML engineering experience and connection to co-founders for NWO.ai. Moved to NYC for NWO.ai (raised $3.5M seed). Forbes 30 Under 30 network. Later FuseAI (YC W25). Online platform and self-directed learning were key channels.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tyrone-davis-iii",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "US National Chess Master at age 16, entirely self-taught from watching YouTube. Became chess master in 4 years. Learned 4 languages. MIT CS graduate. Ron Brown Scholar. Prodigy-level cognitive ability demonstrated through chess mastery from self-directed learning.",
+    "inherited_summary": "Grew up in the Bronx, NYC, in a challenging socio-economic background. Ron Brown Scholar (need-based scholarship for African-American students). Practiced chess in Union Square and NYC parks rather than elite chess academies. Active disadvantage from poverty and limited resources.",
+    "ecosystem_summary": "Chess-in-the-Schools program and Impact Coaching Network provided early chess access. MIT (elite institution) connected him to co-founder Guang Cui and provided CS education. Chess club president at MIT. YC W25 for Miyagi Labs. YouTube was a transformative learning tool.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "guang-cui",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "MIT CS & Mathematics graduate. Math team captain in high school. Quantitative trader at Five Rings, Jane Street, and Akuna Capital. Software engineer at Instagram. Competed on American Ninja Warrior. Strong analytical and physical abilities, but not prodigy-level in any single domain.",
+    "inherited_summary": "From Maryland. MIT education and math team background suggest a supportive middle-class family with emphasis on STEM education. No evidence of significant family wealth or domain connections.",
+    "ecosystem_summary": "MIT (elite institution) where he met co-founder Tyrone Davis III. Elite quant trading firms (Five Rings, Jane Street, Akuna) provided frontier finance experience. Research at University of Maryland in Ramsey theory and supersymmetry. YC W25 for Miyagi Labs.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sachitt-arora",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Graduated with BS in CS from Georgia Tech at 19 and MS at 20 with perfect 4.0 GPA, specializing in ML and HPC. One of the youngest YC founders ever (YC W25) at age 20. Research thesis on SSD performance for GPUDirectStorage. Prodigy-level academic acceleration.",
+    "inherited_summary": "Younger brother of co-founder Nitya Arora. Both siblings in YC W25 together. From Singapore/India background. Family supportive enough to enable sibling co-founding duo and early university enrollment, suggesting middle-class professional family.",
+    "ecosystem_summary": "Georgia Tech (strong CS program) for both BS and MS. Sibling co-founder dynamic with Nitya provided a high-trust peer team. YC W25 at age 20 provided frontier ecosystem access. LASR Labs and MagMutual experience. SF relocation.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "nitya-arora",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Completed Master's in AI at Georgia Tech. Worked at NVIDIA on AI/robotics projects (Isaac Sim, synthetic data generation). Was the youngest person at YC until her younger brother joined. Global Citizen Scholar. Strong technical ability in AI/robotics but not prodigy-level.",
+    "inherited_summary": "From Singapore. Older sister of co-founder Sachitt Arora. Global Citizen Scholar suggests merit-based recognition. Family supportive of both siblings' tech careers and early acceleration, indicating middle-class professional family.",
+    "ecosystem_summary": "Georgia Tech for Master's in AI. NVIDIA provided frontier AI/robotics domain experience. Sibling co-founder dynamic with Sachitt. Background in Singapore influenced entrepreneurial mindset. YC W25 and SF provided frontier ecosystem access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "nikhil-srinivasan",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Dropped out of RPI but conducted research at the prestigious Wyss Institute at Harvard in George Church's synthetic biology lab (2009-2014). YC Fellow 2015. Co-founded Distributed Systems (acquired by Coinbase 2018). Forbes 30 Under 30. Strong entrepreneurial and research ability despite non-traditional path.",
+    "inherited_summary": "Dropped out of Rensselaer Polytechnic Institute. No evidence of family wealth or domain connections. College dropout suggests no significant family safety net forcing self-reliance.",
+    "ecosystem_summary": "Wyss Institute at Harvard (George Church's lab) provided elite research access and credibility. YC Fellow (2015) and YC pipeline. SF Bay Area ecosystem. Coinbase acquisition provided crypto industry network. Active angel investor network.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "josh-earle",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Carleton University (Bachelor of Commerce). Product designer with 6+ years building SaaS products. Met co-founder Leo Paz at Carleton. Solid capabilities but no exceptional early achievement or prodigy-level indicators.",
+    "inherited_summary": "From Ottawa, Canada. No publicly available information about family background, parents' professions, or wealth status.",
+    "ecosystem_summary": "Carleton University connected him to co-founder Leo Paz. Techstars Chicago provided accelerator mentorship. YC W25 with Outlit. SF relocation for frontier ecosystem access. DMZ pitch competition win provided early validation.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "leo-paz",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Carleton University (Computer Software Engineering). Software engineer at Phreesia for 4+ years. 6+ years building enterprise web applications. Solid technical foundation but no exceptional early achievement indicators.",
+    "inherited_summary": "Canadian, from Ottawa. No publicly available information about family background, parents' professions, or wealth status.",
+    "ecosystem_summary": "Carleton University connected him to co-founder Josh Earle. Phreesia provided 4+ years of enterprise engineering experience. Techstars Chicago and YC W25 with Outlit. SF relocation for frontier ecosystem access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tyler-rose",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "ML researcher at Wolfram Research as a high schooler, developing state-of-the-art models for protein-ligand binding affinity prediction. Published in Nature Scientific Reports. Left high school to build Bindwell. Forbes 30 Under 30 (Science). Prodigy-level early research achievement in ML and computational biology.",
+    "inherited_summary": "Grew up in Cupertino, California, in the heart of Silicon Valley. Early access to ML research and GPU programming (CUDA). Indo-Chinese founder with family connections to farming in China. Silicon Valley location and early research access indicate upper-middle-class background.",
+    "ecosystem_summary": "Cupertino/Silicon Valley geography provided early access to ML research community. Wolfram Research and Wolfram Summer Research Program connected him to co-founder Navvye Anand. YC W25 with Bindwell, raised $6M from General Catalyst, SV Angel, Paul Graham. SF frontier ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "navvye-anand",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Scored 100/100 in math on board examinations (national topper). Attended Caltech for Applied Mathematics at 17. Took graduate courses in Biochemistry and Math as a freshman. World Science Scholar. Only high schooler selected for Polymath REU. Published in Nature Scientific Reports. Prodigy-level mathematical ability.",
+    "inherited_summary": "From New Delhi, India. Attended Sanskriti School (good private school). Roots in Punjab, India. Certificate of Academic Excellence 7 years in a row. Middle-class professional Indian family investing in education.",
+    "ecosystem_summary": "Caltech (elite institution) for Applied Mathematics. Wolfram Summer Research Program connected him to co-founder Tyler Rose. NSF-funded Polymath REU. Michigan Math and Science Scholars camp. YC W25 with Bindwell, raised $6M. SF frontier ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "daniel-park",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Attended Hansung Science High School (selective science school in Korea). Built Kumefood, a $2M/year e-commerce business using computer vision, while still in medical school. Dropped out at 22 to pursue tech entrepreneurship. Strong dual ability in medicine and technology.",
+    "inherited_summary": "Korean-born. Attended selective science high school, suggesting a family that valued STEM education. Medical school at Kyung Hee University. Middle-class Korean family with educational emphasis.",
+    "ecosystem_summary": "Hansung Science High School (selective) provided science-focused education. Kyung Hee University medical school. Self-taught computer vision for e-commerce. Limited access to elite international institutions or notable mentors before YC. YC W25 with Pickle provided SF frontier ecosystem access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "emmett-kim",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "KAIST CS (dropout), also studied at UW-Madison. Met co-founder Hojin Yu in high school. Built consumer apps that hit #1 in Apple App Store Social category. Serial founder before age 24. Strong product and engineering ability with early entrepreneurial output.",
+    "inherited_summary": "Korean-born. Attended Korea Science Academy of KAIST (selective science high school), suggesting a family that valued STEM education. Middle-class Korean family with science-oriented background.",
+    "ecosystem_summary": "Korea Science Academy of KAIST (selective science high school) connected him to co-founder Hojin Yu. KAIST provided CS education. Built consumer apps reaching #1 on App Store. YC W25 with Pickle provided SF frontier ecosystem access. Limited elite mentorship before YC.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "hojin-yu",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Attended Korea Science Academy of KAIST (selective science high school). KAIST AI student, summa cum laude CS & EE (dropout). Built a self-driving AI model at 21. Research intern at KAIST AI. Strong technical ability in ML and autonomous systems.",
+    "inherited_summary": "Korean-born. Attended Korea Science Academy of KAIST (selective science high school), suggesting a family that valued STEM education. Middle-class Korean family with science-oriented background.",
+    "ecosystem_summary": "Korea Science Academy of KAIST (selective science high school) connected him to co-founder Emmett Kim. KAIST AI provided research environment and self-driving AI experience. YC W25 with Pickle provided SF frontier ecosystem access. Limited elite international mentorship before YC.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "rami-seid",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "High school dropout at 14, expelled for excessive absences. Diagnosed with ADHD and ASD after being misdiagnosed with depression. Self-taught AI researcher who became CTO of a govtech company (360 Ground) as a teenager in Ethiopia. Built ML Chat community with 100+ top researchers and a weights-and-biases tracking app used by 4,000+ researchers. Exceptional self-driven learning despite significant adversity.",
+    "inherited_summary": "From Ethiopia. Expelled from school at 14, endured antidepressants with serious side effects before correct diagnosis. No family wealth or domain connections. Active disadvantage from growing up in Ethiopia with limited educational infrastructure and neurodivergent challenges.",
+    "ecosystem_summary": "iCog Labs internship (known for Sophia humanoid robot) provided early robotics/AI access. Online ML community (Twitter/ml_chat) connected him to top researchers globally. Largely isolated in Ethiopia with no access to elite institutions or mentors until moving to US. YC W25 with Lucid.ai provided frontier ecosystem access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "abel-van-steenweghen",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "TU Delft MSc Computer Science (AI specialization). Master's thesis on automated DL model compression. Built StudySets.AI reaching 10,000 users. Solid technical ability but no exceptional early achievement or prodigy-level indicators.",
+    "inherited_summary": "Belgian, from Ghent. TU Delft education suggests middle-class European family with access to good education. No evidence of significant family wealth or domain connections.",
+    "ecosystem_summary": "TU Delft (strong technical university) where he met co-founder Brecht Pierreux. Buildspace SF2 cohort and Nights & Weekends program. YC W25 with Macadamia. SF relocation for frontier ecosystem access. Wintercircus Startup Campus in Belgium.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "brecht-pierreux",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "ETH Zurich MSc Mechanical Engineering (elite institution), Caltech thesis. Won ETH Medal (2024) for outstanding Master's thesis. Worked at SpaceX (Starlink Engineer) and NASA JPL. Exceptional academic and professional trajectory in aerospace engineering.",
+    "inherited_summary": "Belgian, from Ghent. European engineering education at ETH Zurich suggests middle-class family with strong educational support. No evidence of significant family wealth or domain connections.",
+    "ecosystem_summary": "ETH Zurich (elite) and Caltech provided world-class engineering education. SpaceX and NASA JPL provided frontier aerospace domain experience directly relevant to Macadamia. Met co-founder Abel at TU Delft. YC W25 and SF provided frontier ecosystem access.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "joe-hewett",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started web development at age 5, showing rare early tool access. University of Warwick CS. Published A-level computing notes covering machine code to algorithms. President of Warwick AI. Built AI systems at Netcraft stopping $100M+ in fraud annually. Strong early coding start and AI domain expertise.",
+    "inherited_summary": "British. University of Warwick education and early coding at 5 suggest a supportive family with access to computers from a very young age. Middle-class UK family with technology-friendly environment.",
+    "ecosystem_summary": "University of Warwick (good but not elite globally) where he led Warwick AI. Netcraft provided cybersecurity and AI fraud detection domain experience. Founder in Residence at Entrepreneur First. YC W25 with Asteroid/Entropy Labs. SF frontier ecosystem access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "rahul-gudise",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "University of Waterloo CS. Built Canada's first instant immigration PDF filler. Worked at NVIDIA and Tesla as software engineer. Sent 200-300 internship applications showing exceptional persistence. Forbes Business Council Member. Strong technical ability and entrepreneurial drive.",
+    "inherited_summary": "Canadian citizen of Indian origin. Immigrant who experienced immigration challenges firsthand. Seeking US permanent residency. Active disadvantage from immigration challenges and being a first-generation immigrant.",
+    "ecosystem_summary": "Met co-founders Rishabh Sambare and Haokun Qin in middle school — all three attended University of Waterloo, creating an exceptional long-term co-founder team. Velocity incubator advisor provided mentorship. NVIDIA and Tesla internships. YC W25 with Gale. SF frontier ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "josh-kelly",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Stanford Mechanical Engineering graduate. Built Rube Goldberg machines, roller coaster models, and 3D printers from childhood. Cold-emailed Mark Rober as a freshman, leading to transformative mentorship. NASA JPL and Zipline experience. Forbes 30 Under 30. Strong engineering ability and initiative.",
+    "inherited_summary": "Grew up in a small town in Maryland outside Baltimore. Neither parent graduated college. High school had very limited history of students going to top universities. Active disadvantage from non-college-educated family and limited educational resources.",
+    "ecosystem_summary": "Stanford (elite institution) was transformative. Cold-emailing Mark Rober led to becoming Head of Engineering for his YouTube channel and Crunch Labs — a rare mentorship. NASA JPL and Zipline internships. Met co-founder Mason Landon Smith at Mark Rober. YC W25 with Pave Robotics.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "benjamin-kilimnik",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Brown University CS. Co-authored paper at OSDI'23 (top-tier systems venue) on GDPR-compliant database. Worked on NASA-supported CubeSat SBUDNIC satellite project. Designed cryptographic protocols advised by Professors Anna Lysyanskaya and Malte Schwarzkopf. High-frequency crypto trader. Strong research output as an undergraduate.",
+    "inherited_summary": "No publicly available information about family background, parents' professions, or wealth status.",
+    "ecosystem_summary": "Brown University provided research mentorship from Professors Lysyanskaya (cryptography) and Schwarzkopf (systems). OSDI'23 publication is exceptional for an undergraduate. NASA-supported CubeSat project. Pixie Labs (acquired by New Relic) provided startup network connections. Met co-founder Pete Stevenson through Pixie Labs connections.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "bardia-safari",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Stanford CS undergraduate (on leave). Co-founded Fundsy (financial services platform) before age 18 with high school friend. Interned at Amazon and JuiceMind. Founded YC-backed Olive at 19, raised $2.1M. Early entrepreneurial drive and product-building ability.",
+    "inherited_summary": "Met co-founder Shrey Gupta at Irvine High School. From Irvine, CA (Orange County). Middle-class background with access to good public schools. No evidence of significant family wealth or domain connections.",
+    "ecosystem_summary": "Stanford (elite institution) provided CS education and Silicon Valley network. 6+ year co-founder relationship with Shrey Gupta from high school. YC W25 with Olive. Amazon and JuiceMind internships. SF frontier ecosystem access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "shrey-gupta",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Writing code since 2012 (~age 10). Co-founded Fundsy at age 15-16 with high school friend. NASA intern (satellite data), Capital One intern (tools for 400K+ cardholders), Campsite intern (acquired by Notion). UC Davis CS dropout. Early entrepreneurial and coding start.",
+    "inherited_summary": "From Irvine, CA. Met co-founder Bardia Safari at Irvine High School. Self-described as '20 year old studying computer science.' Middle-class background with access to good public schools. No evidence of significant family wealth.",
+    "ecosystem_summary": "UC Davis (good but not elite CS program). 6+ year co-founder relationship with Bardia from high school. NASA, Capital One, and Campsite internships provided diverse professional experience. YC W25 with Olive. SF frontier ecosystem access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jay-ram",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Columbia University Physics & CS (completed in 3 years). Quantitative researcher at AQR Capital Management. Research at Hume AI on LLM interpretability. Built viral AI prank-calling app hitting #1 on App Store with ~500K calls. Vice president of Biophysics Society. Strong multi-domain ability.",
+    "inherited_summary": "No publicly available information about family background, parents' professions, or wealth status.",
+    "ecosystem_summary": "Columbia University (elite institution) for Physics & CS in 3 years. 8VC Fellow providing VC network access and mentorship. AQR (elite quant firm) and Hume AI (frontier emotion AI) provided domain experience. Met co-founder Lorenss Martinsons at Hume AI. YC W25 with HUD.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "lorenss-martinsons",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Yale Cognitive Science (class of 2026). Represented Latvia at International Linguistics Olympiad (silver medal). Knows five languages. Published ML and computational cognitive science research. AI interpretability research engineer at Hume AI. Multi-disciplinary: artist, filmmaker, composer. Strong academic and creative abilities.",
+    "inherited_summary": "Latvian-born, attended Riga State Gymnasium No.1 (public IB school). No evidence of family wealth or domain connections. Immigrant to the US for university.",
+    "ecosystem_summary": "Yale (elite institution) for Cognitive Science with research at Cognitive & Neural Computation Lab and Computational Linguistics lab. International Linguistics Olympiad provided competitive academic credential. Hume AI connected him to co-founder Jay Ram. YC W25 with HUD.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "edward-huang",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "King's Scholar at Eton (top 3 in entrance exams). First class degree at Oxford with top-3 exam performance. Scored within top 0.5% of candidates in TSA entrance exam. Gibbs Prize, John Hicks Foundation Bursary. CFA charterholder. Solo-founded finbar and wrote MVP to first revenue. Rare trajectory-changing academic excellence.",
+    "inherited_summary": "Eton College King's Scholar — one of the most elite educational pedigrees in the world. Eton → Oxford → Goldman Sachs → Balyasny pipeline represents textbook upper-elite British education. King's Scholarship provides substantial bursary but Eton admission itself signals elite family background.",
+    "ecosystem_summary": "Eton → Oxford → Goldman Sachs → Balyasny represents a once-in-a-generation elite pipeline. 13+ year friendship with co-founder Robin Gan through Eton, Oxford, and London roommates. Chief Investment Officer at Eton College Investment Club. Director of Oxford Strategy Group. Elite finance network from Goldman Sachs and Balyasny.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "adarsh-ambati",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Davidson Fellow at 16. Built a contactless vital signs monitor at 13 with 1,000+ tests in a 40-participant pilot study. Coolest Projects USA Grand Prize. Gloria Barron Prize winner. Stanford Mathematics major. Prodigy-level early achievement in engineering and computer science.",
+    "inherited_summary": "From San Jose, CA. Attended Archbishop Mitty High School (private Catholic school). Indian heritage. Mother's health crisis (heart block) inspired early innovation. Middle-class family with supportive environment for STEM pursuits.",
+    "ecosystem_summary": "San Jose/Silicon Valley geography. Archbishop Mitty High School. Stanford University (elite institution). Coolest Projects USA and Raspberry Pi community provided competition circuit and recognition. Davidson Fellows Scholarship program. National science fair circuit. YC W25 with Candor/Sophris.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ansh-gupta",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Completed Georgia Tech CS degree in 3 years. Systems Modelling Engineering Intern at Zipline (built event-based simulator for drone deliveries, 23% speedup). President of Shooting Stars Foundation (nonprofit providing STEM scholarships). Co-founded Candor/Sophris (YC W25). Above-average academic acceleration.",
+    "inherited_summary": "From Atlanta, GA. Attended Washington High School. Youth leadership roles from 2019 (high school) suggest supportive family environment. Middle-class background with emphasis on community service and STEM.",
+    "ecosystem_summary": "Georgia Tech (strong CS program) completed in 3 years. Zipline internship provided autonomous systems domain experience. Met co-founders Adarsh and Aditya through YC/Stanford connections. Shooting Stars Foundation provided nonprofit leadership experience. YC W25 and SF frontier ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "aditya-iyengar",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Stanford CS undergraduate. Accumulated 4+ years of professional software engineering experience while still in school, working at FlutterFlow (YC W21), Uber, and NASA. Teaching Assistant at Stanford. Strong ability to balance academics with extensive professional work.",
+    "inherited_summary": "No publicly available information about family background, parents' professions, or wealth status.",
+    "ecosystem_summary": "Stanford (elite institution) for CS. FlutterFlow (YC W21), Uber, and NASA provided diverse professional experience while in school. Met co-founders Adarsh and Ansh. YC W25 with Candor/Sophris. SF frontier ecosystem access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "abhinav-sinha",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Stanford BS/MS CS with AI specialization. Research at Stanford AI Lab on AI agents solving math olympiad problems (AIME/USAMO). Quant at Citadel Securities and SIG. SWE at Apple (Find-My team). Co-authored research on Deep Q-Networks with LLM feedback. Strong multi-domain technical ability.",
+    "inherited_summary": "No publicly available information about family background, parents' professions, or wealth status.",
+    "ecosystem_summary": "Stanford (elite institution) BS/MS CS. Stanford AI Lab (SAIL) provided frontier AI research access. Met co-founders Andy and Jeremy playing Super Smash Bros freshman year at Stanford. Citadel, SIG, and Apple provided elite industry experience. YC W25 with Lucidic AI.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "andy-liang",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Stanford BS/MS CS (AI specialization). Represented Stanford at ICPC North American Championship (one of three). Built GrocerCheck at 17 with 200K+ users, endorsed by Government of Canada. Ex Citadel and AppLovin. Strong competitive programming and product-building ability.",
+    "inherited_summary": "From Vancouver, Canada. Lived with grandparents (vulnerable population) which inspired GrocerCheck. Built GrocerCheck as a 17-year-old high school student. Middle-class Canadian family.",
+    "ecosystem_summary": "Stanford (elite institution) BS/MS CS. ICPC North American Championship provided competitive programming credential. Met co-founders Abhinav and Jeremy at Stanford freshman year. Citadel and AppLovin experience. YC W25 with Lucidic AI. SF frontier ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jeremy-tian",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Stanford BS/MS CS (AI specialization). Started as premed, switched to CS by sophomore year. DRW quant trading intern. ML intern at Steel Dynamics (F500). Co-authored research paper at Stanford on Deep Q-Networks with LLM-based feedback. Wrote popular YC application guide. Strong adaptability and ML research ability.",
+    "inherited_summary": "No publicly available information about family background, parents' professions, or wealth status.",
+    "ecosystem_summary": "Stanford (elite institution) BS/MS CS. Met co-founders Abhinav and Andy playing Super Smash Bros freshman year. DRW (elite quant firm) and Steel Dynamics internships. Co-authored Stanford research on Deep Q-Networks. YC W25 with Lucidic AI. SF frontier ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jason-liao",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "UBC Sauder School of Business (full ride scholarship). Graduate coursework at Tsinghua University in Quantum Computing (Yao Class), NLP, and Deep Learning. Youngest quant researcher at a $60B hedge fund (CC&L). Helped build record-breaking fraud detection AI model at Tsinghua. Strong quantitative and ML abilities.",
+    "inherited_summary": "From Canada. Full ride scholarship at UBC suggests financial need rather than family wealth. No evidence of family domain connections or inherited leverage.",
+    "ecosystem_summary": "UBC (good university) with full ride scholarship. Tsinghua University (elite Chinese institution) for graduate coursework provided ML research access. $60B hedge fund (CC&L) as youngest quant researcher. Met co-founders at UBC. YC W25 with Mundo AI. SF frontier ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "naijide-anwaer",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Youngest Platform Product Manager at Binance US. 7 years of industry experience across finance, telecom, and marketing. Speaks 4 languages. UBC Psychology & Commerce. Strong professional trajectory and multilingual ability but no exceptional cognitive or prodigy-level indicators.",
+    "inherited_summary": "High school diplomas from Bahrain and Jeddah, suggesting international upbringing. Based in Vancouver. No evidence of family wealth or domain connections. Multicultural, globally mobile family background.",
+    "ecosystem_summary": "UBC connected him to Mundo AI co-founders. Binance US provided crypto/fintech domain experience as youngest Platform PM. International upbringing in Bahrain and Jeddah provided multilingual foundation. YC W25 with Mundo AI. SF frontier ecosystem access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "garreth-lee",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "UBC CS (Dean's List, Science Scholar). First Indonesian at Hugging Face, where he helped build the world's best open pre-training dataset. Member of Technical Staff at Cohere working on pretraining data. Published tokenization research at Hugging Face. Strong ML engineering and research abilities.",
+    "inherited_summary": "From Indonesia. Growing up in Indonesia with 800+ languages/dialects inspired multilingual AI focus. No evidence of family wealth or domain connections. UBC education suggests middle-class family with international education access.",
+    "ecosystem_summary": "UBC CS (Dean's List, Science Scholar). Hugging Face (frontier AI company) as first Indonesian employee provided elite ML engineering experience. Cohere (frontier LLM company) for pretraining data work. Met co-founders at UBC. YC W25 with Mundo AI. SF frontier ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "rayan-ghandour",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "UChicago degrees in Chemistry and Economics. One of the youngest biochemistry researchers at Pritzker School of Engineering. Recognized as top consulting analyst in the US for pioneering automation in pharmaceutical compliance at PwC. Forbes Technology Council. Strong multidisciplinary academic and professional achievement.",
+    "inherited_summary": "No publicly available information about family background, parents' professions, or wealth status.",
+    "ecosystem_summary": "UChicago (elite institution) for Chemistry & Economics. Pritzker School of Engineering research access as undergraduate. PwC pharma consulting provided deep domain exposure. Known co-founder Raouf for over a decade. YC W25 with G LNK. UChicago Medicine Ventures backing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "raouf-abujaber",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "UChicago multidisciplinary degrees in CS, Economics, and Astrophysics. 3 years of ML research at AxLab developing neural network architectures. Published at UIST 2024 (top HCI conference) on TorqueCapsules. Jeff Metcalf Fellowship Grant. Anesthesiology Scholar. Strong multidisciplinary research output.",
+    "inherited_summary": "No publicly available information about family background, parents' professions, or wealth status.",
+    "ecosystem_summary": "UChicago (elite institution) for triple major. AxLab (Professor Ken Nakagaki's lab) provided 3 years of ML/HCI research mentorship. UIST 2024 publication is exceptional for an undergraduate. Known co-founder Rayan for over a decade. YC W25 with G LNK.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ronit-jain",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "UC Berkeley Regents and Chancellor's Scholar in EECS (top ~2% of admits). Research assistant at BAIR (Berkeley AI Research). Attended Berkeley HAAS Business Academy for Youth in high school. Co-founded both Pluto and Strike (both YC W25). Strong academic and research credentials.",
+    "inherited_summary": "Grew up in Los Altos, CA (Silicon Valley). Attended Saint Francis High School (private Catholic school). Berkeley HAAS Business Academy for Youth in high school. Silicon Valley location and private school indicate upper-middle-class family with significant educational investment.",
+    "ecosystem_summary": "Los Altos/Silicon Valley geography. UC Berkeley (elite institution) Regents Scholar. BAIR (Berkeley AI Research) provided frontier AI research access. Berkeley HAAS Business Academy for Youth provided early business education. Met co-founder Aarav at Berkeley. YC W25 with Pluto and Strike.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "aarav-patel",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "UC Berkeley CS Summa Cum Laude. Accel Scholar (competitive VC mentorship program). Won Soma Capital Hackathon with AutoCrispy (AI CRISPR guide design tool). Five internships. Avid debater. Science and Engineering Program at Manalapan High School (selective). Strong academic and competitive achievement.",
+    "inherited_summary": "Attended Science and Engineering Program at Manalapan High School (selective NJ program). Father (Pritesh Patel) is a proud professional. Middle-class family with strong educational emphasis. Five internships suggest family support for career development.",
+    "ecosystem_summary": "UC Berkeley (elite institution) CS Summa Cum Laude. Accel Scholar program provided VC mentorship and network access. Soma Capital Hackathon win. Met co-founder Ronit at Berkeley. CS 170 Course Staff. Berkeley Business Society. YC W25 with Pluto and Strike.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "andrew-yan",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Columbia BA in CS and Math completed in 3 years. UPenn MS. Jazz prodigy who performed at Kennedy Center, Lincoln Center, and Abbey Road Studios. NJ All State Jazz Ensemble (1st Tenor Sax). Played in the band that inspired the Oscar-winning film Whiplash. Google APM on Search. Worked at DeepMind on generative media. Rare multi-domain prodigy-level achievement in both academics and music.",
+    "inherited_summary": "From Princeton, NJ area. Attended Princeton High School Studio Band. Jazz training from young age with performances at elite venues (Kennedy Center, Lincoln Center, Abbey Road) suggests upper-middle-class family with significant investment in musical education. Princeton area indicates affluent suburb.",
+    "ecosystem_summary": "Columbia (elite institution) for CS & Math in 3 years. UPenn for MS. Princeton High School Studio Band (inspired Whiplash) provided elite jazz peer environment. Google APM program (highly competitive). DeepMind (frontier AI). Almaworks (Columbia startup accelerator) leadership. US Army Lab and Vimeo experience. YC W25 with AthenaHQ.",
+    "scoring_confidence": "High"
+  }
+]

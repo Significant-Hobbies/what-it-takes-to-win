@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "web-dev-simplified",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Did not grow up coding; discovered programming senior year of high school via a robotics class. Self-taught web development through YouTube and blog articles during college. Above-average curiosity and drive but not a traditional prodigy.",
+    "inherited_summary": "Born in Iowa, moved frequently (Nebraska, Delaware, back to Nebraska). No documented family wealth, domain connections, or industry networks. Working-to-middle class family.",
+    "ecosystem_summary": "YouTube platform timing was the primary advantage — launched channel in 2018 as web-dev tutorial content was scaling. No elite institutions, notable mentors, or peer groups documented. Self-created distribution.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "mudge",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Explored computer security from elementary school, reverse-engineering copy protection on the family Apple II. Self-taught hacker who published the foundational 'How to Write Buffer Overflows' paper at 24. Exceptional early systems aptitude.",
+    "inherited_summary": "Family had an Apple II computer in elementary school — relatively rare access for the era. Born in Alabama; family background otherwise undocumented. Modest middle-class upbringing.",
+    "ecosystem_summary": "L0pht hacker think tank and Cult of the Dead Cow provided a once-in-a-generation peer environment in the Boston hacker scene. L0pht testified to the U.S. Senate. This peer collective was catalytic and trajectory-changing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "patrick-mckenzie",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Taught himself BASIC from a library book using graph paper to simulate computer memory before owning a computer. Self-taught programmer with strong curiosity. Above average but not prodigy-level.",
+    "inherited_summary": "Grew up 'not wealthy' in a not-so-great Chicago public school district. No documented family wealth, domain connections, or industry networks. Working-class background.",
+    "ecosystem_summary": "Hacker News and blogging community provided online distribution. No elite institutions or mentors. Launched Bingo Card Creator while working as a Japanese salaryman — self-created ecosystem rather than inherited advantage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "dan-shipper",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started coding at age 10 after reading a Bill Gates biography. Built BlackBerry apps in high school and 10-15 web apps during freshman year at UPenn. Exceptional early entrepreneurial drive and coding ability.",
+    "inherited_summary": "University of Pennsylvania student. Family background not well documented; no evidence of significant family wealth or domain connections. Likely middle class with enough support to attend UPenn.",
+    "ecosystem_summary": "UPenn provided a strong entrepreneurial peer group. First Round Capital's Dorm Room Fund provided early capital. Partner Justin Meltzer was a key cofounder. SF tech press ecosystem validated early work.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "nathan-baschez",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught coder inspired by Paul Graham essays, learning from Head First books. Prolific side-project creator (4+ per year). Above-average curiosity and execution but not prodigy-level ability.",
+    "inherited_summary": "Grew up in Arkansas. Attended Michigan State University for Political Theory/Philosophy. No documented family wealth, domain connections, or industry networks.",
+    "ecosystem_summary": "Ryan Hoover partnership for Product Hunt was the key catalytic relationship. Bay Area maker community, General Assembly network, and early platform-native distribution provided significant ecosystem advantage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "linus-sebastian",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Diagnosed with ADHD as a child. Worked as house painter before tech career. Not a coding prodigy or exceptional early ability — success came from communication skills and platform timing.",
+    "inherited_summary": "Grew up on a hobby farm in Maple Ridge, British Columbia. No documented family wealth, domain connections, or industry networks. Working-to-middle class family.",
+    "ecosystem_summary": "NCIX retail job provided access to tech products and video production experience. YouTube platform timing (2008) was the key structural advantage. Luke Lafreniere collaboration was a useful peer partnership.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ijustine",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-taught HTML at age 12, built websites by viewing source code. Took apart electronics as a child. Above-average curiosity and tech fluency but not prodigy-level.",
+    "inherited_summary": "Father was a coal miner of Slovak descent, mother was a PE teacher. Grew up in rural Washington County, Pennsylvania. Working-class family with no tech or media connections.",
+    "ecosystem_summary": "Early YouTube adoption (2006) and Justin.tv lifecasting (2007) were the key structural advantages. Pittsburgh offered minimal tech ecosystem. Platform timing was the primary catalyst.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "lewis-hilsenteger",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Tech enthusiast from childhood but no documented exceptional early ability. Studied digital arts at Toronto School of Art. Success came from domain immersion and platform timing rather than prodigy-level talent.",
+    "inherited_summary": "Born in Toronto, Canada. No documented family wealth, domain connections, or industry networks. Middle-class background.",
+    "ecosystem_summary": "Ran an Apple repair shop (iUpgrade) providing hands-on tech domain exposure. YouTube platform timing (2010) for unboxing format was the key structural advantage. Jack McCann collaboration.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "felix-kjellberg",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Competitive gamer (World of Warcraft, reached max level) and self-taught video editor. Above-average gaming fluency and entertainment instinct but not a traditional prodigy.",
+    "inherited_summary": "Mother was named CIO of the Year in Sweden; father is a corporate executive. Upper-middle class family in Gothenburg. Parents cut financial support when he dropped out of Chalmers, but family provided educational foundation.",
+    "ecosystem_summary": "YouTube platform timing (2010) and Sweden's strong gaming/internet culture were the main advantages. No elite institutions or mentors. Worked at a hot dog stand to fund early videos — self-created path.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tyler-blevins",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Natural gaming ability — beat older brothers at Halo at age 9-10. Competitive from young age. Above-average gaming aptitude but not prodigy-level in the traditional sense.",
+    "inherited_summary": "Father was a gamer who introduced consoles to the family. Suburban Chicago (Grayslake/Lake Villa) working-to-middle class family. Father attended early tournaments with him. Supportive but not wealthy.",
+    "ecosystem_summary": "MLG Halo pro circuit (2009) and early Twitch adoption (2011) provided competitive infrastructure. No elite institutions or notable mentors. Years of grinding with modest viewership before Fortnite breakout.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "n0tail",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Started playing video games at age 2. Became one of the youngest professional Heroes of Newerth players at 15. Won four consecutive DreamHack events. Exceptional early competitive achievement.",
+    "inherited_summary": "Grandfather was Jógvan Sundstein, former Faroese Prime Minister. Parents supportive of gaming career. Danish/Faroese middle-to-upper-middle class family with political connections.",
+    "ecosystem_summary": "Fnatic sponsorship at 18, long-standing partnership with Fly (Tal Aizik), and co-founding OG created a once-in-a-generation esports peer environment. Back-to-back TI wins (2018-19) with the same team. Elite peer team was trajectory-changing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jared-isaacman",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Founded United Bank Card at 16 after leaving high school. Extreme entrepreneurial drive and execution intensity from a young age. Not a traditional cognitive prodigy but exceptional business aptitude.",
+    "inherited_summary": "Youngest of four in a Jewish family in Summit, NJ (affluent area). Used $10,000 from grandfather as seed money. Father worked in the business. Upper-middle class background with some family support.",
+    "ecosystem_summary": "Client relationship with MSI CEO Mario Parisi provided early industry entry. Self-created path from parents' basement. No elite institutions or notable mentors — execution intensity dominated.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "chris-messina",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Picked up web design in high school, attended CMU for communication design. Creative interdisciplinary thinker who proposed the hashtag. Above-average ability but not prodigy-level.",
+    "inherited_summary": "From Bedford, New Hampshire. Attended Carnegie Mellon University (selective). No documented family wealth or domain connections, but CMU education implies upper-middle class background.",
+    "ecosystem_summary": "CMU's interdisciplinary design program, early SF social-web scene, BarCamp meetups, and Firefox/open-source community provided strong ecosystem. Right place (SF), right time (dawn of social web) for his domain.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tantek-celik",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Stanford BS and MS in Computer Science under Terry Winograd. Led development of the Tasman rendering engine for IE/Mac. Exceptional technical ability in web standards and browser engineering.",
+    "inherited_summary": "Turkish-American. Stanford education implies solid academic foundation. No documented family wealth or specific industry connections beyond education.",
+    "ecosystem_summary": "Stanford (Terry Winograd as advisor), Apple Computer, and Microsoft provided elite institutional access. W3C representation for Microsoft. Strong institutional pipeline from Stanford through major tech companies.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ryan-block",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Network engineering background, self-taught writer. Above-average tech fluency but not exceptional early cognitive ability. Success came from being in the right place at the right time.",
+    "inherited_summary": "Attended The New School for writing and philosophy. No documented family wealth, domain connections, or industry networks. Middle-class background.",
+    "ecosystem_summary": "Peter Rojas mentorship at Engadget was the key catalytic relationship. Gadget-blog wave (Weblogs Inc./AOL) provided structural timing. Rojas handoff to Block as managing editor at 23 was a significant opportunity.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "elizabeth-spiers",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Duke University public policy graduate, first in family to attend college. Sharp writer with outsider voice. Above-average intellectual ability but not prodigy-level.",
+    "inherited_summary": "Adopted, raised in Wetumpka, Alabama. Father was a Southern Company lineman, mother was a janitor. Attended a segregation academy. First-generation college student. Active socioeconomic disadvantage.",
+    "ecosystem_summary": "Duke University provided a selective institutional pipeline. Nick Denton partnership to launch Gawker was the key catalytic relationship. NYC media scene and early-2000s blog wave provided structural timing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "rand-fishkin",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught, left University of Washington two classes shy of graduating. Not exceptional early cognitive ability but strong content and marketing instincts. Built expertise through public experimentation.",
+    "inherited_summary": "Mother Gillian Muessig was co-founder of SEOMoz — a direct family business in the same domain. Grandfather Seymour Fishkin contributed math/engineering expertise to early SEO work. Family business provided both capital and domain knowledge.",
+    "ecosystem_summary": "Mother as cofounder was a high-trust peer partnership. Seattle independent SEO community, SEOmoz blog as distribution, and Hacker News provided ecosystem. Blog-native distribution was a structural advantage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "dwarkesh-patel",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Mental math training via UCMass abacus program in India. UT Austin CS under Scott Aaronson. Extreme preparation intensity — reads academic papers for weeks before interviews. Exceptional intellectual curiosity and drive.",
+    "inherited_summary": "Father is a physician (H-1B visa immigrant). Mother studied accounting and education. Immigrant family that moved frequently for father's rural medical posts. Middle-class immigrant background with strong educational values.",
+    "ecosystem_summary": "UT Austin CS program, Scott Aaronson as professor, AI boom timing (2020-2024), and Bay Area ecosystem access. Cold-email strategy for guest acquisition. Emergent Ventures support. Right time for AI interest wave.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ninja",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Natural gaming ability — beat older brothers at Halo at age 9-10. Competitive from young age. Above-average gaming aptitude but not prodigy-level in the traditional sense.",
+    "inherited_summary": "Father was a gamer who introduced consoles to the family. Suburban Chicago (Grayslake/Lake Villa) working-to-middle class family. Father attended early tournaments with him. Supportive but not wealthy.",
+    "ecosystem_summary": "MLG Halo pro circuit (2009) and early Twitch adoption (2011) provided competitive infrastructure. No elite institutions or notable mentors. Years of grinding with modest viewership before Fortnite breakout.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "notail-johan-sundstein",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Started playing video games at age 2. Became one of the youngest professional Heroes of Newerth players at 15. Won four consecutive DreamHack events. Exceptional early competitive achievement.",
+    "inherited_summary": "Grandfather was Jógvan Sundstein, former Faroese Prime Minister. Parents supportive of gaming career. Danish/Faroese middle-to-upper-middle class family with political connections.",
+    "ecosystem_summary": "Fnatic sponsorship at 18, long-standing partnership with Fly (Tal Aizik), and co-founding OG created a once-in-a-generation esports peer environment. Back-to-back TI wins (2018-19) with the same team. Elite peer team was trajectory-changing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "robert-tappan-morris",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Harvard BA, Cornell CS graduate student. Built the Morris worm at 22 — first major internet worm. Described as 'brilliant' by friends. Exceptional systems and security aptitude cultivated from a young age.",
+    "inherited_summary": "Father Robert Morris Sr. was a Bell Labs Unix/Multics cryptographer and NSA chief scientist. This is a rare, trajectory-changing family domain advantage — direct access to the deepest computer security knowledge in the country.",
+    "ecosystem_summary": "Bell Labs father provided deep systems/security mentorship. Harvard and Cornell provided elite CS training. Early internet security wave timing. The Peck School and Delbarton (private schools) in New Jersey.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "unbox-therapy",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Tech enthusiast from childhood but no documented exceptional early ability. Studied digital arts at Toronto School of Art. Success came from domain immersion and platform timing rather than prodigy-level talent.",
+    "inherited_summary": "Born in Toronto, Canada. No documented family wealth, domain connections, or industry networks. Middle-class background.",
+    "ecosystem_summary": "Ran an Apple repair shop (iUpgrade) providing hands-on tech domain exposure. YouTube platform timing (2010) for unboxing format was the key structural advantage. Jack McCann collaboration.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "pewdiepie",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Competitive gamer (World of Warcraft, reached max level) and self-taught video editor. Above-average gaming fluency and entertainment instinct but not a traditional prodigy.",
+    "inherited_summary": "Mother was named CIO of the Year in Sweden; father is a corporate executive. Upper-middle class family in Gothenburg. Parents cut financial support when he dropped out of Chalmers, but family provided educational foundation.",
+    "ecosystem_summary": "YouTube platform timing (2010) and Sweden's strong gaming/internet culture were the main advantages. No elite institutions or mentors. Worked at a hot dog stand to fund early videos — self-created path.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "alexander-wang",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Attended CSM summer program at 15, enrolled at Parsons at 18, dropped out after two years. Early fashion talent with knitwear debut at 21. CFDA/Vogue Fashion Fund winner at 23. Exceptional early creative achievement.",
+    "inherited_summary": "Chinese immigrant family with strong entrepreneurial spirit. Mother served as chairman of his company, brother as CFO, sister-in-law as CEO. Family provided direct financial and operational backing — a rare, trajectory-changing family business advantage.",
+    "ecosystem_summary": "Parsons School of Design, NYC fashion ecosystem, Teen Vogue internship. Family connections for Chinese production. CFDA/Vogue Fashion Fund provided industry validation. Strong institutional and geographic ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "olivier-rousteing",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Left fashion school (ESMOD) early, rose to head womenswear at Roberto Cavalli in Milan. Rapid career progression but not prodigy-level early ability. Drive and ambition were primary endowments.",
+    "inherited_summary": "Adopted from orphanage at 5 months by white French couple in Bordeaux. Mother is an optician, father a seaport manager. Middle-class, supportive family but no fashion industry connections.",
+    "ecosystem_summary": "Roberto Cavalli in Milan provided hands-on industry training. Christophe Decarnin mentorship at Balmain was catalytic. Paris fashion ecosystem and unprecedented appointment at 25 as creative director of a heritage house.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "simone-rocha",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Attended fashion shows as an infant. Worked in father's studio from age 13-18. CSM MA under Louise Wilson. Graduate collection debuted at Tate Modern and London Fashion Week. Exceptional early domain fluency from family immersion.",
+    "inherited_summary": "Father John Rocha is Ireland's most famous fashion designer. Mother Odette is a designer and business partner. Deep multi-generational fashion family — this is a rare, trajectory-changing domain inheritance with direct studio access and industry networks.",
+    "ecosystem_summary": "CSM MA under Louise Wilson (legendary fashion educator). Fashion East support. London Fashion Week debut. Dover Street Market immediate stocking. Father's studio, connections, and production infrastructure provided significant ecosystem advantage.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jonathan-anderson",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Severe dyslexia diagnosed in primary school. Initially pursued acting in Washington DC before switching to menswear design. London College of Fashion graduate. Above-average creative ability with determination fueled by overcoming dyslexia.",
+    "inherited_summary": "Father Willie Anderson was Ireland rugby international captain. Mother Heather was an English teacher. Grandfather was a textile designer. Parents remortgaged their home to fund his early label. Significant family financial and emotional sacrifice.",
+    "ecosystem_summary": "Prada visual merchandising under Manuela Pavesi provided industry exposure. BFC NewGen sponsorship. London Fashion Week ecosystem. Parents' financial backing enabled label launch. Grandfather's textile connection provided early creative influence.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "christopher-kane",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Discovered fashion through TV programs at age 9. CSM under Louise Wilson for six years. Graduate collection won Harrods Design Award and was immediately lauded by international critics. Exceptional talent recognized immediately by the fashion establishment.",
+    "inherited_summary": "Youngest of five in a former mining village (Newarthill, North Lanarkshire). Father was an engineer/draughtsman, mother a housewife. Working-class Scottish background with no financial or fashion industry advantages. Father died during his studies.",
+    "ecosystem_summary": "CSM under Louise Wilson was the key institutional advantage. Donatella Versace mentorship and immediate hire for Atelier couture. Sibling partnership with sister Tammy (business partner/muse). London Fashion Week platform. Talent overcame background disadvantage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "molly-goddard",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "CSM BA in knitwear, left MA under Louise Wilson a year early. Distinctive creative vision but not prodigy-level. Success came from unconventional party-format debut that immediately attracted top retailers.",
+    "inherited_summary": "Daughter of Sarah Edwards and Mark Goddard. Grew up in Ladbroke Grove, West London. Parents provided practical support — staging, sewing space in their house. Middle-class family with creative leanings but no fashion industry connections.",
+    "ecosystem_summary": "CSM under Louise Wilson provided the institutional pipeline. Dover Street Market and IT Hong Kong placed orders immediately after debut. BFC NewGen sponsorship. Boyfriend Tom Shickle as business partner and sister Alice as stylist. London Fashion Week ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "grace-wales-bonner",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "CSM BA graduate, won L'Oreal Professionnel Talent Award for graduate collection 'Afrique.' Dean's prize for academic dissertation. Exceptional intellectual depth and creative talent recognized by the fashion establishment.",
+    "inherited_summary": "Mother is a business consultant, father is a lawyer. One parent white English, other Jamaican. Middle-class South London family (Dulwich/Stockwell). No fashion industry connections but strong professional/academic household.",
+    "ecosystem_summary": "CSM pipeline, Fashion East debut, LVMH Prize for Young Fashion Designers (2016). Placement year at Meadham Kirchhoff and assistantship with Vogue editor Camilla Nickerson. London fashion ecosystem with immediate prize validation.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tyler-mitchell",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught photography from YouTube tutorials starting at 14. Built Tumblr following with skate videos. NYU Tisch graduate. Above-average ability with strong self-taught foundation but not prodigy-level.",
+    "inherited_summary": "Father is a consultant, mother is a conference planner, both in finance. Grew up in Marietta, Georgia. Attended The Westminster Schools (private, elite Atlanta). Upper-middle class family that bought him a camera in ninth grade.",
+    "ecosystem_summary": "NYU Tisch School of the Arts. Deborah Willis as mentor at Tisch. Tumblr/Instagram platform for early distribution. Beyoncé commission for Vogue cover was the breakthrough. SVA summer intensive. NYC photography ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "nadine-ijewere",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Initially planned medicine (A-levels in physics, chemistry, biology, maths). Added photography as side subject and fell in love. London College of Fashion. Above-average creative ability but not prodigy-level.",
+    "inherited_summary": "Nigerian father and Jamaican mother. Grew up in Peckham, South London. No documented family wealth or fashion/photography industry connections. Working-to-middle class immigrant family.",
+    "ecosystem_summary": "London College of Fashion provided institutional pipeline. London fashion ecosystem. Social media (Instagram) for building relationships and distribution. No notable mentors or elite peer groups documented.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "petra-collins",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started photography at 15 after a knee injury ended ballet career. Dyslexic, struggled in school. Art was an outlet. Above-average creative ability but not prodigy-level — success came from mentorships and platform timing.",
+    "inherited_summary": "Father is a criminal lawyer, mother is a script supervisor (Hungarian refugee). Middle-class Toronto family. Parents identified visual art as an outlet and steered her to Rosedale Heights School of the Arts — significant parental investment in her creative development.",
+    "ecosystem_summary": "Richard Kern mentorship (met at 17, became his casting director). Ryan McGinley protege. Tavi Gevinson's Rookie magazine provided early distribution. Tumblr/Instagram era created structural wave for young feminist photographers. Toronto and NYC art scenes.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jade-fadojutimi",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Slade School BA (2015), Royal College of Art MA (2017). First solo exhibition at 24 with immediate Tate, ICA Miami, and Dallas Museum of Art acquisitions. Exceptional talent recognized by elite art institutions at a young age.",
+    "inherited_summary": "Father is a management consultant, mother is a civil servant. British of Nigerian heritage. Middle-class family in Ilford, East London. No art world connections but stable professional household.",
+    "ecosystem_summary": "Slade School of Fine Art and Royal College of Art — the elite UK art school pipeline. Pippy Houldsworth Gallery representation. Immediate institutional acquisitions (Tate, ICA Miami, Dallas MMA). London art ecosystem. Venice Biennale participation.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "fewocious-victor-langlois",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Started creating art at 13 as a coping mechanism for an abusive household. Self-taught digital artist. $2.16M Christie's sale at 18 — youngest artist with a solo sale at Christie's. Exceptional creative output under extreme adversity.",
+    "inherited_summary": "Removed from father's abusive household by social services. Raised by unsupportive grandparents who told him his art was 'ugly.' Active family disadvantage — abusive household, no support for artistic pursuits.",
+    "ecosystem_summary": "NFT market wave of 2021 was a once-in-a-generation structural opportunity for young digital artists. SuperRare and Nifty Gateway platforms provided distribution. Christie's auction house validation. Online art community provided acceptance unavailable at home.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "diana-sinclair",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Drawing on iPad from an early age. YoungArts National Finalist in Photography. Multi-media artist (charcoal, watercolor, photography, filmmaking). Above-average creative ability with early multi-media fluency.",
+    "inherited_summary": "Mother is a writer, father is an artist and software developer. Artistic and tech-savvy household that encouraged experimentation with different media from an early age. Direct family domain advantage at the intersection of art and technology.",
+    "ecosystem_summary": "NFT market wave (2021-2022), Christie's 3.0 inaugural sale, Whitney Houston estate NFT collaboration at 17. IX Shells (Itzel Yard) as mentor in the NFT art community. SVA summer intensive. Online art communities from tween years.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "richard-quinn",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "CSM BA Fashion Print, MA in Fashion with Stella McCartney Scholarship. H&M Design Award winner at 26. Above-average talent with distinctive print-focused approach but not prodigy-level.",
+    "inherited_summary": "Youngest of five children. Father has a scaffolding yard in south London. Working-class background in Eltham, southeast London. No fashion industry connections or family wealth.",
+    "ecosystem_summary": "CSM pipeline (BA and MA) was the key institutional advantage. Stella McCartney Scholarship provided financial support and mentorship. H&M Design Award provided industry validation. London fashion ecosystem. Tutor Natalie Gibson.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "campbell-addy",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Discovered photography in school library during detention at 16. CSM Fashion Communication. Self-created Nii Journal and Nii Agency while still in school. Above-average creative drive but not prodigy-level.",
+    "inherited_summary": "British-Ghanaian, born in South London. Jehovah's Witness mother, low-income community. Parents separated. Father in Ghana. Outed as gay at 17, fled home, taken in by Albert Kennedy Trust, placed in foster care. Active socioeconomic disadvantage.",
+    "ecosystem_summary": "CSM Fashion Communication provided institutional pipeline. Jamie Morgan mentorship and ShowStudio internship. Ib Kamara friendship was catalytic. Self-created distribution via Nii Journal/Agency. London fashion ecosystem. Foster parent Richard Field (gay artist) provided support.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "amit-elor",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started wrestling at age 4. Youngest US wrestler to win Olympic gold (age 20). Youngest senior world champion in US wrestling history (18). Exceptional early athletic achievement with years of competitive dominance.",
+    "inherited_summary": "Israeli immigrant family. Father Yair was a shot putter/discus thrower (Boise State athletic scholarship). Six siblings all athletic — sister and brother won USA Wrestling Junior National titles. Strong family sports ecosystem.",
+    "ecosystem_summary": "Sibling wrestling ecosystem provided daily training partners from age 4. NYC Regional Training Center. Terry Steiner (USA Wrestling women's coach) and Sara McMann as coaches. USA Wrestling national team pipeline. Mother drove 8-9 hours to competitions.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "lando-norris",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Karting from age 7, won world karting championship at 14 (broke Lewis Hamilton's record). First F1 podium at 20. Exceptional early racing talent recognized from the very start.",
+    "inherited_summary": "Father Adam Norris is a multimillionaire (~£200M net worth) who co-owned Hargreaves Lansdown and retired at 36. Funded the entire junior racing career until F1. Millfield School (elite private). This is a rare, trajectory-changing financial advantage for motorsport.",
+    "ecosystem_summary": "Millfield School (elite private school). McLaren pipeline from junior formulae. Mark Berryman as manager. Father's wealth enabled full-time training, private tutoring, and unlimited karting from age 7. Right geography (UK motorsport hub).",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "oscar-piastri",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "RC car racing at 6 (beat adults in first event). Karting at 9. Won F3 (2020) and F2 (2021) back-to-back — only driver to win Formula Renault, F3, and F2 in successive seasons. Exceptional early racing talent.",
+    "inherited_summary": "Father Chris Piastri runs HP Tuners (automotive software company) that sponsored his career with up to A$6.5M. Both grandfathers were mechanics. Father served as his kart mechanic. Private school (Haileybury). Rare, trajectory-changing family domain and capital advantage.",
+    "ecosystem_summary": "Father as mechanic and sponsor was the foundational ecosystem. James Sera (Australian karting champion) as early coach. Moved to UK at 14 for European racing (Haileybury sister school). Prema team for F3/F2. Automotive family domain provided deep immersion from birth.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "victor-wembanyama",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "7'4\" with unprecedented agility, ball-handling, and shooting skills for his size. #1 overall NBA draft pick. Unanimous Rookie of the Year. This is a rare, trajectory-changing physical and athletic endowment — a generational prospect.",
+    "inherited_summary": "Mother Élodie de Fautereau was a professional basketball player and French national team member, now youth coach. Father Félix was a track and field athlete. Maternal grandfather played pro basketball. Both siblings play at high levels. Rare, trajectory-changing multi-generational athletic family.",
+    "ecosystem_summary": "Nanterre 92 youth system, then ASVEL (Tony Parker's club), then Metropolitans 92. French national basketball pipeline. Mother as youth coach provided foundational training from age 4. Growing up in gyms. French basketball development system.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "alphonso-davies",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Exceptional speed and athleticism. MLS debut at 15 (second-youngest in MLS history). Bayern Munich transfer at 18 for record MLS fee. UEFA Champions League winner at 19. Exceptional early athletic achievement.",
+    "inherited_summary": "Born in a Liberian refugee camp in Ghana to parents who fled civil war. Moved to Canada at age 5 with very modest means. Active socioeconomic disadvantage — refugee background, poverty, no resources.",
+    "ecosystem_summary": "Free Footie Programme (after-school initiative for lower-income kids) provided initial access. Vancouver Whitecaps academy at 14. Bayern Munich pipeline. Canada's refugee resettlement provided safety and access to organized soccer. Talent overcame background disadvantage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "gabriela-fundora",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started boxing at age 6. Youngest undisputed boxing world champion across all divisions in the four-belt era at 22. National Championship winner as amateur. Exceptional early athletic achievement in boxing.",
+    "inherited_summary": "Father Freddy (Cuban immigrant) is her trainer and relocated the family specifically for boxing opportunities. Brother Sebastian is also a world champion boxer. Deep family boxing ecosystem with father as coach and brother as training partner.",
+    "ecosystem_summary": "Father as coach from age 6. Brother Sebastian as world champion training partner. Coachella Valley Boxing Club (Lee Espinoza). Family relocated from Florida to California for better boxing access. Family van trips to competitions. Deep family-domain immersion.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "alina-zagitova",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Started skating at age 4. Olympic gold at 15 in her first senior season. World champion at 16. Exceptional early athletic achievement with technically demanding back-loaded programs.",
+    "inherited_summary": "Father Ilnaz Zagitov is an ice hockey coach who introduced her to skating. Russian ice sports culture. Family moved for father's career. Middle-class family in Russia's ice sports system.",
+    "ecosystem_summary": "Eteri Tutberidze's training group at Sambo-70 in Moscow is the world's most dominant women's figure skating camp — a once-in-a-generation elite training environment. Moved to Moscow at 13 with grandmother. Russian systematic figure skating pipeline. Father's hockey background provided ice sports immersion from birth.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ana-gamer",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Played 10+ hours of Dota 2 daily from early teens. Dropped out of high school at 16 to move to Shanghai alone. Extreme dedication and mechanical skill but success driven more by volume of practice than prodigy-level ability.",
+    "inherited_summary": "Parents initially against gaming career. Brother was supportive and convinced mother. Melbourne, Australia. No documented family wealth or gaming industry connections. Working-to-middle class family.",
+    "ecosystem_summary": "CDEC in-house league in Shanghai provided elite Chinese Dota 2 training environment. OG team chemistry with N0tail and Fly was catalytic. Esports boom timing. Moving alone to Shanghai at 16 demonstrated exceptional commitment. Two TI wins with OG.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "donk-cs2",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started playing Counter-Strike at age 4-5. 12 hours daily practice. Youngest-ever CS Major champion at 17. HLTV Player of the Year at 17. Exceptional early achievement with extraordinary practice volume from a very young age.",
+    "inherited_summary": "Older brother introduced him to CS 1.6 at age 4-5. Parents accepted gaming hobby. Grew up in Tomsk, Siberia (remote location). No documented family wealth. Working-class family in a remote Siberian city.",
+    "ecosystem_summary": "OverDrive (CIS talent scout) discovered him at 14 via FACEIT matches. Spirit Academy and Team Spirit provided organizational support. FACEIT online platform enabled access despite remote location. Moved to Belgrade for better ping and infrastructure. Online platforms bridged geographic isolation.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kaylia-nemour",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started gymnastics at age 4. French junior national champion. Olympic gold on uneven bars at 17 — first gymnast from any African nation to win an Olympic medal. Developed one of the most difficult uneven bars routines in history. Exceptional early athletic achievement.",
+    "inherited_summary": "French mother, Algerian father. Born in Saint-Benoît-la-Forêt, France. No documented family wealth or athletic background. Middle-class family. Nationality switch to Algeria through father's heritage.",
+    "ecosystem_summary": "Avoine Beaumont Gymnastique club in France with coaches Marc and Gina Chirilcenco. Nadia Massé as choreographer. French gymnastics infrastructure provided training. Nationality switch to Algeria paradoxically provided competition access when French federation blocked her. 30 hours/week training.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "arisa-trew",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started skating at 7-8. First woman to land a 720 and 900 in competition at 13. Olympic gold at 14 — Australia's youngest ever Olympic champion. Prodigy-level early achievement in skateboarding.",
+    "inherited_summary": "Father Simon (Welsh), mother Aiko (Japanese). Only child. Gold Coast, Australia. Parents supportive of skating — father skated with her, mother managed logistics. Middle-class family that invested in Level Up Academy.",
+    "ecosystem_summary": "Gold Coast's emerging skateboarding ecosystem with private skate academies. Level Up Australia Academy (coach Trevor Ward, former pro skateboarder) combined elite coaching with homeschooling. Skateboarding's Olympic debut (2020/2024) provided perfect timing. Tony Hawk as inspiration and mentor figure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "leon-marchand",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Started swimming at 6. Not the best in youth categories (shorter, less powerful) but developed late. Four individual Olympic golds at 22 — fourth swimmer in history to do so at a single Games. Exceptional talent that blossomed with elite coaching.",
+    "inherited_summary": "Both parents were Olympic swimmers — father Xavier Marchand (1996, 2000 Olympics), mother Céline Bonnet (1992 Olympics). Uncle Christophe Marchand was also a two-time Olympian. Maternal grandfather played pro basketball. Rare, trajectory-changing three-generation Olympic swimming family.",
+    "ecosystem_summary": "Dauphins du TOEC club in Toulouse (father's club). Bob Bowman (Michael Phelps' former coach) at Arizona State University — a legendary, trajectory-changing coaching relationship. ASU collegiate swimming pipeline. Parents encouraged move to US for elite coaching. Perfect coaching match.",
+    "scoring_confidence": "High"
+  }
+]

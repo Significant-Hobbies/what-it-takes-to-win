@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "vladimir-cosma",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started violin at age 4 and gave his first concert as a child prodigy at 8 in Bucharest. Began composing at 12 and won first prizes for violin and composition at the Bucharest Conservatory. Exceptional early musical ability, though not at the level of international competition prodigies.",
+    "inherited_summary": "Born into a multi-generational musical family: father Teodor was a pianist and conductor, mother Carola was a writer-composer, uncle Edgar was a composer and conductor, and grandmother was a pianist who studied with Ferruccio Busoni. Rare, trajectory-changing family domain immersion from birth.",
+    "ecosystem_summary": "Trained at the National Conservatory in Bucharest, then moved to Paris in 1963 to study with Nadia Boulanger at the Conservatoire national supérieur de musique. Access to elite European classical music institutions and legendary mentorship, though not a once-in-a-generation peer environment.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "john-newcombe",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Won the C grade Sunday men's tennis competition at age 8 against players 16 and older. Australian junior champion three consecutive years (1961-63) and Davis Cup team member at 19. Significant early athletic achievement and competitive drive.",
+    "inherited_summary": "Middle-class Sydney family with no particular tennis connections. Stable, supportive upbringing that allowed him to pursue multiple sports before focusing on tennis in his mid-teens.",
+    "ecosystem_summary": "Part of the legendary Australian tennis pipeline under coach Harry Hopman, who won 15 Davis Cup championships from 1950-67. Tony Roche doubles partnership. Once-in-a-generation tennis ecosystem that dominated the sport for decades.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "candice-bergen",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "No evidence of exceptional cognitive or creative prodigy-level ability. Her early career was built on inherited beauty and entertainment access rather than demonstrated talent. Appeared on father's radio show as a child and became a Vogue cover model before acting.",
+    "inherited_summary": "Daughter of Edgar Bergen, one of America's most famous entertainers (ventriloquist), and Frances Bergen, a model. Grew up in Beverly Hills playing with children of Walt Disney, Judy Garland, and Jimmy Stewart. Rare, trajectory-changing Hollywood access and family name recognition.",
+    "ecosystem_summary": "Beverly Hills upbringing with direct Hollywood access. Sidney Lumet gave her film debut in The Group (1966) and Steve McQueen co-starred in The Sand Pebbles. The Hollywood ecosystem was readily accessible through family connections.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "avicii",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Tried guitar and piano as a child but showed no particular aptitude for either. Self-taught FL Studio production at 16 with a natural ear for melody, but not a traditional prodigy. His ability was more about creative intuition than exceptional early cognitive capacity.",
+    "inherited_summary": "Son of Klas Bergling, who ran an office supply business, and actress Anki Lidén. Middle-class Stockholm family with a half-brother who was a DJ. Modest creative exposure but no significant wealth or industry leverage.",
+    "ecosystem_summary": "Stockholm's electronic music scene, online forums (Laidback Luke forum, Myspace), and perfect timing for the EDM boom of the early 2010s. Manager Ash Pournouri spotted him at 18 and drove his career. Significant ecosystem advantage through platform-native timing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "will-smith",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began rapping at 12 and was described as a 'sharp street-corner poet with a terrific sense of humor.' Won the first-ever Grammy for Best Rap Performance at 20. Charisma, quick wit, and natural performing ability evident from a young age — significant early achievement.",
+    "inherited_summary": "Middle-class West Philadelphia family. Father was a U.S. Air Force veteran and refrigeration engineer; mother was a school board administrator with a Carnegie Mellon degree. Attended private Catholic elementary school. Stable, supportive family but no entertainment industry connections.",
+    "ecosystem_summary": "Met DJ Jazzy Jeff at 16 at a house party, forming a durable partnership. Rode the wave of hip-hop's mainstream emergence in the late 1980s. Philadelphia's vibrant music scene provided a platform, though not an elite institutional pipeline.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "rod-stewart",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Failed the eleven-plus exam and had an undistinguished academic record. His distinctive raspy voice and stage presence were natural assets, but there is no evidence of exceptional early cognitive or creative ability. Success came through persistence and serial band membership.",
+    "inherited_summary": "Working-class family in Highgate, North London. Father was a Scottish master builder who later bought a newsagent shop. Family was 'neither affluent nor poor' but had no music industry connections or domain overlap.",
+    "ecosystem_summary": "London's music scene in the 1960s provided opportunities through the British blues rock wave. Busking at 17, then five bands in five years before joining the Jeff Beck Group at 22. The London scene was a modest advantage of geography and timing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "gianni-rivera",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Made his Serie A debut at 15 years, 9 months — the third youngest in history. Scored his first Serie A goal shortly after. Bought by AC Milan at 17 for a record transfer fee. Won the Ballon d'Or. Prodigy-level football ability recognized from age 13.",
+    "inherited_summary": "Father was a railway worker in Alessandria, Piedmont. Working-class family with no football connections. Rivera was discovered through local youth football, not family networks.",
+    "ecosystem_summary": "Scouted at 13 by Franco Pedroni, assistant coach at Alessandria. Juan Schiaffino mentored him at AC Milan and insisted the club sign him. The Italian football pipeline and AC Milan's infrastructure provided significant institutional support.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "nicolas-cage",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Aspired to act from an early age and took a summer class at American Conservatory Theatre at 15. Dropped out of Beverly Hills High School to pursue acting. No evidence of prodigy-level ability; his early career was heavily facilitated by family connections.",
+    "inherited_summary": "Born into the Coppola filmmaking dynasty — nephew of Francis Ford Coppola, son of literature professor August Coppola and choreographer Joy Vogelsang. Grandparents were composer Carmine Coppola and actress Italia Pennino. Rare, trajectory-changing family name and direct Hollywood access.",
+    "ecosystem_summary": "Attended Beverly Hills High School (known for entertainment alumni), ACT in San Francisco, and UCLA. Appeared in uncle's films (Rumble Fish, The Cotton Club, Peggy Sue Got Married). Hollywood ecosystem was directly accessible through family.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "joe-cocker",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began singing at 12 in his brother Victor's skiffle group. His distinctive voice was a natural asset, but there is no evidence of exceptional early cognitive or creative ability. Success came through years of performing in Sheffield pubs while working as a gas fitter apprentice.",
+    "inherited_summary": "Working-class Sheffield family. Father was a civil servant. No music industry connections or domain overlap. No financial safety net for pursuing music.",
+    "ecosystem_summary": "Sheffield pub and club circuit provided years of performing experience. Formed the Grease Band with Chris Stainton. Signed by producer Denny Cordell, leading to breakthrough. Modest advantage of being in the right country at the right time for British rock.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "rené-arnoux",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "No evidence of prodigy-level racing ability. Started racing relatively late and progressed through mechanic training and racing school rather than childhood karting. Won the Volant Shell scholarship as top student at Winfield Racing School at 25.",
+    "inherited_summary": "Working-class family in rural Pontcharra, near Grenoble. Father was a company accountant who built him a kart and raced locally with him. Modest financial and emotional support, but no significant wealth or motorsport connections.",
+    "ecosystem_summary": "Trainee mechanic at a Grenoble garage specializing in Alpine Renaults, giving direct motorsport technology exposure. Winfield Racing School and Volant Shell scholarship provided a structured path into professional racing. Significant institutional support for a working-class driver.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "nusrat-fateh-ali-khan",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Showed a penchant for music and particular aptitude for singing before age 10. Joined father's qawwali party as tabla player in youth. First public performance at 15 at father's funeral. Became head of family qawwali party at 22-23. Significant early musical ability in a demanding tradition.",
+    "inherited_summary": "Born into a 600-year family tradition of qawwali performance. Father Ustad Fateh Ali Khan was a renowned musicologist and qawwal. Uncles Ustad Mubarak Ali Khan and Ustad Salamat Ali Khan were famous qawwals. Rare, trajectory-changing multi-generational musical lineage.",
+    "ecosystem_summary": "Trained by father and then uncles after father's death in 1964. Radio Pakistan provided a national platform from 1965. The family qawwali party infrastructure provided a ready-made performing ensemble. Significant traditional ecosystem, though not elite institutional.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "filippo-inzaghi",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Progressed through Italian youth football normally, turning professional at 18. Required loan spells in lower divisions before breaking through at Atalanta at 23. Good goal-scoring instinct but not prodigy-level early achievement.",
+    "inherited_summary": "Brother Simone Inzaghi was also a professional footballer, suggesting a football-friendly family environment. Piacenza youth academy provided early development. Modest advantage of a stable family with football familiarity.",
+    "ecosystem_summary": "Italian football pipeline through San Nicolò, Piacenza youth academy, and loan spells at AlbinoLeffe and Verona. Serie A ecosystem at Atalanta provided the breakthrough platform. Significant national football infrastructure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "shakira",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Wrote her first poem at age 4 and first song at 8. Belly dancing from age 4. Signed by Sony Music Colombia at 13 after impressing executives. Her debut album (released at 14) contained songs written between ages 8 and 13. Prodigy-level songwriting and performing ability from extremely young age.",
+    "inherited_summary": "Father William Mebarak was a jeweler and writer of Lebanese descent; mother Nidia Ripoll was Colombian. Family experienced bankruptcy, creating financial hardship. No music industry connections despite father's creative interests.",
+    "ecosystem_summary": "Local theater producer Monica Ariza convinced Sony Music Colombia to audition her at 13. Colombian/Latin music scene provided a market. Modest advantage — no elite institutions or mentors, just a local connector who opened one door.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jim-morrison",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Described as 'the smartest kid in his class' and a voracious reader who asked for the complete works of Nietzsche as a high school graduation present. Exceptional literary and poetic aptitude from a young age, though not a traditional prodigy. Creative and intellectual drive was evident early.",
+    "inherited_summary": "Father was a U.S. Navy rear admiral who commanded naval forces during the Gulf of Tonkin incident. Upper-middle-class military family with frequent relocations. Significant stability and educational access, though the authoritarian family dynamic created rebellion rather than support.",
+    "ecosystem_summary": "UCLA film program provided artistic exposure and connection to Ray Manzarek. The Los Angeles Sunset Strip club scene of 1965-66 was a frontier for counterculture music. The 1960s counterculture wave provided perfect timing for his artistic vision.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "mikhail-khodorkovsky",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Ambitious and received excellent grades. Became deputy head of Komsomol (Communist Youth League) at his university, demonstrating exceptional early organizational and political ability. Significant institutional achievement at a young age in a competitive Soviet system.",
+    "inherited_summary": "Parents Boris and Marina were engineers at a factory making measuring instruments in Moscow. Middle-class, well-educated Soviet family. Father was Jewish, mother Orthodox Christian, both quietly anti-communist. Modest advantage of educated parents but no wealth or connections.",
+    "ecosystem_summary": "Leveraged Komsomol position at Mendeleev Institute to access nascent private enterprise opportunities during Gorbachev's perestroika. Perfect timing at the dawn of Russian capitalism in Moscow. Rare, trajectory-changing institutional access and timing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "keke-rosberg",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started karting as a toddler and became an accomplished kart racer by his teens. Won five Finnish kart championships and the Scandinavian and European kart championship in 1973. Significant early achievement in motorsport from a very young age.",
+    "inherited_summary": "Parents were Finnish — father became a veterinarian, mother a chemist — and both competed in rallies, giving early motorsport exposure. Middle-class family that was supportive but not wealthy. 'No silver spoon' — Rosberg had to hustle and self-finance his early career.",
+    "ecosystem_summary": "Finnish karting scene, then European Formula Vee/Super Vee pipeline. American entrant Fred Opert provided crucial patronage for international racing. Significant ecosystem support through the European motorsport ladder, though not an elite factory pipeline.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ian-gillan",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Influenced by Elvis Presley from a young age and started fronting local bands at 17. Built vocal power through years of relentless gigging, sometimes playing five shows a night. Natural performing ability but no evidence of prodigy-level talent.",
+    "inherited_summary": "Working-class background. Grandfather was an opera singer, providing a musical lineage. Modest advantage of a musical family thread, but no financial or industry leverage.",
+    "ecosystem_summary": "London music scene of the 1960s. The Javelins, Wainwright's Gentlemen, and four years with Episode Six provided an apprenticeship. Roger Glover partnership at Episode Six led to Deep Purple. Modest advantage of being in London during the British rock explosion.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "richard-gere",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Attended University of Massachusetts on a gymnastics scholarship, suggesting good athletic ability. Dropped out to pursue acting. No evidence of prodigy-level acting or cognitive ability; his rise was through the theater pipeline rather than exceptional early talent.",
+    "inherited_summary": "Middle-class family background. College scholarship indicates stable educational support. No entertainment industry connections or domain overlap in the family.",
+    "ecosystem_summary": "Ascended the theater pipeline quickly: Seattle Repertory Theatre and Provincetown Playhouse in 1969, Broadway debut in 1971, lead in London's Grease in 1973. The New York and London theater ecosystem provided a structured path to success.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "mario-kempes",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started playing at 7, joined Talleres reserves at 14, and debuted professionally at 19 with 11 goals in 13 games. Prolific goal-scoring from early in his career, culminating in World Cup top scorer and Golden Ball at 24. Significant early athletic achievement.",
+    "inherited_summary": "Grew up in Bell Ville, Córdoba — a small town known as Argentina's 'national capital of football.' No particular family wealth or football connections mentioned. Modest background.",
+    "ecosystem_summary": "Bell Ville's football culture and ball manufacturing industry provided immersion. Instituto youth academy and Rosario Central provided professional development. Argentine football pipeline with Ossie Ardiles as a peer. Significant national football ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "raúl",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Scored 65 goals in a youth season at Atlético Madrid at 13. After moving to Real Madrid's youth system, scored 13 goals in 7 games for the C team and was fast-tracked to the first team at 17 — the youngest Real Madrid debutant ever. Prodigy-level goal-scoring ability recognized from childhood.",
+    "inherited_summary": "Grew up in San Cristóbal de los Ángeles, a modest Madrid suburb. Father was unemployed at the time of his debut. No football connections or family wealth. Street football education with friends.",
+    "ecosystem_summary": "Atlético Madrid youth academy at 13, then Real Madrid's youth system at 15 when Atlético dissolved their youth teams. Jorge Valdano fast-tracked him to the first team. Madrid's football culture and two elite youth academies provided significant development.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "nick-drake",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Learned piano at an early age, encouraged by his musical mother. Took up guitar at 16 and began writing songs at 18. Capable musician and songwriter but not a prodigy — his talent emerged relatively late and was more about sensitivity and artistry than exceptional early output.",
+    "inherited_summary": "Father was an engineer and chairman/managing director of Wolseley Engineering. Mother was a songwriter who encouraged his musical education. Attended elite schools: Eagle House preparatory school and Marlborough College. Significant upper-middle-class advantage with musical parent.",
+    "ecosystem_summary": "Won a scholarship to Fitzwilliam College, Cambridge. Signed to Island Records at 20 while still a student. Producer Joe Boyd (Fairport Convention) shepherded his debut album. Cambridge and the British folk scene provided a significant cultural ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "david-beckham",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Won a skills competition at the Bobby Charlton Soccer School at 11. Signed schoolboy forms with Manchester United at 14. Good player with exceptional free-kick ability, but his early trajectory was driven more by obsessive practice and parental support than prodigy-level raw talent.",
+    "inherited_summary": "Middle-class family in Leytonstone, East London. Father Ted was a Manchester United fanatic who coached his local youth team and instilled lifelong passion for the club. Mother Sandra was supportive. Modest advantage of a football-obsessed, stable family.",
+    "ecosystem_summary": "Manchester United's academy under Eric Harrison, alongside the Class of '92 (Giggs, Scholes, Neville, Butt). Bobby Charlton Soccer School connection. Rare, once-in-a-generation peer environment that produced multiple world-class players simultaneously.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "hans-zimmer",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Played piano from age 3 and showed creative experimentation by modifying the family piano. Self-taught and rejected formal lessons. Inspired by Morricone's score at 12, setting his career direction. Significant early creative drive and self-directed musical development.",
+    "inherited_summary": "Mother was a classically trained pianist and musician; father was an engineer and inventor. Jewish family, both parents WWII survivors. Father died when Zimmer was 6, creating instability. Mixed advantage — musical mother but early father death and disrupted upbringing.",
+    "ecosystem_summary": "Moved to London as a teenager. Wrote advertising jingles for Air-Edel Associates. Played keyboards with the Buggles (Video Killed the Radio Star). Found pivotal mentor in film composer Stanley Myers, who taught him orchestral work. Significant London music scene and mentorship.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "arturo-merzario",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Ran his first race at 19, which is relatively late for a racing driver. No evidence of prodigy-level ability. Built expertise through Abarth factory team experience in sports cars and hill climbs over several years.",
+    "inherited_summary": "Father was a building contractor who provided financial support for his racing. Brother's car and parents' Giulietta Spider 1300 were used for early racing. Significant family financial backing for a motorsport career.",
+    "ecosystem_summary": "Hired by Abarth as a test and racing driver, providing factory team access and expertise in sports cars. Italian motorsport ecosystem in the 1960s. Won Mugello Grand Prix and European Tourism Championship in 1969, earning a Ferrari factory call.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "paco-de-lucía",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started guitar at age 5 under father's strict guidance, practicing up to 12 hours daily. Father removed him from school to focus solely on guitar. Made radio debut at 11, won special prize at flamenco competition at 12, recorded first album at 16. Prodigy-level virtuosity from childhood.",
+    "inherited_summary": "Father Antonio Sánchez Pecino was a flamenco guitarist who introduced him to the instrument at 5 and enforced extreme practice regimes. Brothers Pepe (flamenco singer) and Ramón (flamenco guitarist) were musical peers. Rare, trajectory-changing family-domain apprenticeship in Andalusian flamenco heartland.",
+    "ecosystem_summary": "Born in Algeciras, in the heart of Andalusian flamenco territory. Radio Algeciras provided early broadcasting platform. Brothers as performing partners. The deep flamenco tradition of southern Spain provided cultural immersion, though not elite institutional training.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "brian-jones",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Learned piano from 6, became first clarinet in school orchestra, got saxophone at 15 and guitar at 17. Self-taught multi-instrumentalist who could play 30+ instruments. Exceptional musical aptitude across multiple instruments, though not a traditional prodigy.",
+    "inherited_summary": "Middle-class Cheltenham family. Father was a piano teacher and aeronautical engineer; mother played piano and organ and led the church choir. Highly musical household with both parents actively involved in music. Significant musical family environment.",
+    "ecosystem_summary": "Left home for London to immerse in the blues scene. Connected with Alexis Korner, a key figure in British blues. Founded the Rolling Stones with Jagger and Richards at 20. The London R&B scene and British blues boom of the early 1960s provided a significant peer environment.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "bobby-moore",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Exceptional game intelligence and reading of play noted from early in his career. Debuted for West Ham first team at 17, replacing his mentor. Youngest man ever to captain England. Significant early football intelligence and leadership, though not a physical prodigy.",
+    "inherited_summary": "Working-class family in Barking, East London. No documented football connections. A school teacher connected him to West Ham's youth setup at 15. No family wealth or domain overlap.",
+    "ecosystem_summary": "West Ham United's youth academy provided development. Malcolm Allison was a crucial mentor before tuberculosis forced his retirement. Geoff Hurst was a peer. The East London football culture and West Ham's academy system provided significant institutional support.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "albano-carrisi",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Possessed a notable four-and-a-half octave vocal range as a natural asset. No evidence of prodigy-level early achievement or training. Left home at 16 and worked menial jobs while pursuing music, building his career through persistence.",
+    "inherited_summary": "Born into a humble farming family in Cellino San Marco, Apulia. No documented musical lineage and no financial safety net. Active disadvantage of poverty and rural isolation from music industry centers.",
+    "ecosystem_summary": "Left home at 16 for Milan, working as waiter, cook, and assembly line worker. Won Adriano Celentano's 'New Voices' competition in 1965 and joined Clan Celentano. Milan's music scene and Celentano's platform provided a modest entry point.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "john-mcenroe",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Ranked 7th nationally by age 12. Wimbledon semifinalist at 18 as a qualifier. NCAA singles champion at Stanford in 1978. Youngest U.S. Open champion in 31 years at 20. Prodigy-level tennis ability with exceptional hand-eye coordination and court craft from a young age.",
+    "inherited_summary": "Father was a U.S. Air Force officer who became a lawyer, providing upper-middle-class stability. Grew up in Douglaston, Queens with access to the Douglaston Club. Attended Trinity School in Manhattan. Significant financial and educational advantage for tennis development.",
+    "ecosystem_summary": "Port Washington Tennis Academy on Long Island, a major American tennis pipeline. Harry Hopman, the legendary Australian coach, supervised his boyhood training. Stanford University under Coach Dick Gould. Rare, trajectory-changing elite tennis infrastructure and coaching.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "gerhard-berger",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "No evidence of prodigy-level racing ability. Grew up around his father's trucking company, driving trucks from a young age, which gave unusual early driving experience. Progressed through AlfaSuds, Formula Ford, and F3 without dominant early results.",
+    "inherited_summary": "Father Johann owned a trucking company in Wörgl, Austria. Early and unusual access to driving vehicles through the family business. Significant family financial and practical support for a motorsport career.",
+    "ecosystem_summary": "Progressed through the German and European Formula Three pipeline, a recognized motorsport ladder. ATS and Arrows provided F1 entry. The European single-seater racing ecosystem provided a structured path to F1.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "monica-seles",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Began tennis at 5 under father's coaching. Won the Junior Orange Bowl at 11, attracting international attention. Turned pro at 15, won French Open at 16 (youngest ever), reached world #1 at 17. Prodigy-level tennis ability from extremely young age.",
+    "inherited_summary": "Father Karolj was a cartoonist and former triple-jump champion who coached her from age 5, using creative methods (drawing cartoon characters on tennis balls). Family relocated from Yugoslavia to Florida for her career. Modest financial means but exceptional parental coaching dedication.",
+    "ecosystem_summary": "Nick Bollettieri Tennis Academy in Bradenton, Florida — the premier tennis academy of its era. Jelena Genčić as early coach in Yugoslavia. Family relocated entirely to support her training. Rare, trajectory-changing academy environment and family sacrifice.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "sebastian-vettel",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Began karting at age 3 and competitive karting at 8. Accepted into Red Bull Junior Team at 11. Dominated 2004 Formula BMW ADAC with 18 wins from 20 races. Youngest F1 race winner at 21, youngest World Champion at 23. Prodigy-level driving ability from toddler age.",
+    "inherited_summary": "Father Norbert was a carpenter and enthusiastic hillclimb karter. Mother Heike was supportive. Middle-class family that made sacrifices for his karting. Modest advantage of a motorsport-interested father but no significant wealth.",
+    "ecosystem_summary": "Red Bull Junior Team at age 11 provided a fully funded, structured pipeline to F1. Kerpen karting circuit (Schumacher's home track) provided elite early competition. Michael Schumacher befriended and mentored him from childhood. Rare, trajectory-changing development program.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "george-lucas",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "A voracious reader from age 8, drawn to history and adventure novels. His student film 'Electronic Labyrinth: THX 1138 4EB' won first prize at the National Student Film Festival. Significant creative and filmmaking talent, though not a traditional prodigy — he found his metier relatively late after abandoning racing.",
+    "inherited_summary": "Father was a stationery store owner in Modesto, California. Raised on a walnut ranch. Middle-class family with no film industry connections. Family didn't own a TV until he was 10.",
+    "ecosystem_summary": "USC School of Cinematic Arts — part of a remarkable cohort including Spielberg, Scorsese, Walter Murch, and John Milius. Warner Bros. scholarship to observe Coppola. Co-founded American Zoetrope with Coppola. Rare, once-in-a-generation New Hollywood era peer environment and mentorship.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "sade",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "No evidence of exceptional early musical ability. Studied fashion design at Saint Martin's School of Art and worked as a designer and model before entering music in her early 20s. Her talent emerged through performing with Pride rather than through early prodigy-level output.",
+    "inherited_summary": "Father was a Nigerian economics professor (Adebisi Adu); mother was an English nurse (Anne Hayes). Parents separated when she was 4. Middle-class background with educated father, but raised by single mother in Essex. Modest advantage of educated parent.",
+    "ecosystem_summary": "Saint Martin's School of Art provided creative education and London network. Joined Pride, then formed Sade with key members Stuart Matthewman, Paul Denman, and Andrew Hale. Epic Records signed the band in 1983. London's 1980s music scene and art school ecosystem provided significant platform.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "carlos-santana",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Learned violin at 5 and guitar at 8 under father's tutelage. Became a roadie for and then bass player with Javier Bátiz's Los TJ's at 12. Multi-genre musical fusion ability evident from early teens. Significant early musical development across multiple instruments and styles.",
+    "inherited_summary": "Father was a mariachi violinist from a long line of professional folk musicians — Santana is a fourth-generation musician. Family was poor but deeply musical. Father provided direct domain training from age 5. Significant musical family lineage, though without wealth.",
+    "ecosystem_summary": "Family's move to Tijuana exposed him to blues through Javier Bátiz. Move to San Francisco placed him at the center of the 1960s psychedelic rock scene. Bill Graham's Fillmore West provided a legendary venue platform. Woodstock performance in 1969. Rare, trajectory-changing frontier geography and timing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "mohammed-ben-sulayem",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "No evidence of prodigy-level driving ability. Won his first Middle East Rally Championship title at 24, which is a solid but not exceptional age for rally success. His dominance in MERC (14 titles) suggests strong ability, but early evidence is limited.",
+    "inherited_summary": "Born into a wealthy Dubai family. Brother Sultan Ahmed bin Sulayem is chairman of Dubai Port World and a major real estate developer. Father served as advisor to Sheikh Rashid, the ruler of Dubai. Rare, trajectory-changing family wealth and political connections.",
+    "ecosystem_summary": "Dubai's desert terrain provided ideal rally training ground. Studied business at American University in Washington, D.C. Works Toyota and Ford drives in the Middle East Rally Championship. Co-driver Ronan Morgan. Significant regional motorsport infrastructure and factory team access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "rudi-völler",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started senior career at 17 with Kickers Offenbach. Showed early goal-scoring ability, becoming 2. Bundesliga top scorer with 37 goals at 22, then Bundesliga top scorer and German Footballer of the Year at 23. Significant early goal-scoring achievement.",
+    "inherited_summary": "No particular family wealth or football connections mentioned. Normal German football background. No documented domain overlap in the family.",
+    "ecosystem_summary": "German football pipeline through TSV Hanau, Kickers Offenbach, 1860 Munich, and Werder Bremen. The Bundesliga ecosystem and German football culture provided a strong developmental pathway. Significant national football infrastructure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "cha-bum-kun",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Selected for South Korea U20 at 17. Made senior international debut at 18, the youngest debutant at the time. Reached 100 international caps by 24 — a world record. Won Asian Games gold at 24. Significant early achievement in international football from a young age.",
+    "inherited_summary": "Son of a farmer in Hwaseong, Gyeonggi. Grew up in poverty — adding sesame oil to bibimbap was a luxury. Father recognized his athletic talent and bought skates with hard-earned money. Active disadvantage of rural poverty and no football connections.",
+    "ecosystem_summary": "High school manager Chang Woon-soo was a crucial mentor who kept him in school despite violence from older students. Korea University provided football development. The South Korean national team system provided international exposure. Significant pipeline despite humble origins.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "anni-frid-lyngstad",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began singing professionally at 13 with Evald Ek's Orchestra. Won the national singing contest Flugan in 1964. Natural performing ability, but no evidence of prodigy-level talent. Her career was built through years of performing in dance bands.",
+    "inherited_summary": "Born to a Norwegian mother and German soldier father. Mother died of kidney failure at 21 when Anni-Frid was a toddler. Raised by grandmother in Sweden in modest circumstances. Ostracized as a 'Tyskerbarn' (German child). Active disadvantage of war orphan status, poverty, and social stigma.",
+    "ecosystem_summary": "Swedish music scene provided performing opportunities from age 13. Won 'New Faces' national talent competition at 21, securing EMI contract and national TV exposure. Modest advantage of Sweden's music infrastructure, but no elite training or mentors.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "mike-oldfield",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught guitar from age 10 by copying Bert Jansch and John Renbourn records. Performing in folk clubs by 11-12. Formed folk duo with sister at 14, recording an album at 15. Joined Kevin Ayers' Whole World at 17, gaining access to Abbey Road Studios. Multi-instrumentalist prodigy who recorded Tubular Bells at 19, playing almost all instruments.",
+    "inherited_summary": "Father was a practicing GP (doctor) — middle-class. Mother suffered from mental illness and was frequently hospitalized. Family problems were severe; Oldfield described having a 'nervous breakdown' as a teenager. Mixed advantage — educated father but deeply unstable home life.",
+    "ecosystem_summary": "Kevin Ayers' Whole World band provided access to Abbey Road Studios at 17, where he learned multiple instruments. Richard Branson's nascent Virgin Records and the Manor Studios provided the platform for Tubular Bells. Significant mentorship through the progressive rock ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "alla-pugacheva",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Enrolled in music school at 7 and performed at the Column Hall of the House of Unions at 5. Recorded her first song 'Robot' for national radio at 16. Clear mezzo-soprano and strong performing ability from a young age. Significant early musical development through the Soviet state system.",
+    "inherited_summary": "Parents were WWII veterans (frontoviks) in Moscow. Family had very little money — Pugacheva started working at 15 to help. No music industry connections or family wealth. Working-class Soviet background.",
+    "ecosystem_summary": "Soviet state music education system: music school No. 31 at 7, Ippolitov-Ivanov music college. National radio provided a platform at 16. Toured with Soviet state bands for nearly a decade. The Soviet state cultural apparatus provided significant training and exposure infrastructure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "barry-gibb",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began performing with his brothers at age 9 in 1955. Started writing songs from age 9 when father bought him a guitar. Developed signature vocal harmonies and falsetto with brothers Robin and Maurice from childhood. Significant early musical development through sibling collaboration.",
+    "inherited_summary": "Father Hugh Gibb was a professional big-band drummer and bandleader — direct musical domain immersion from birth. Mother Barbara was supportive of the family's musical endeavors. Significant musical family environment, though not wealthy.",
+    "ecosystem_summary": "Sibling collaboration with Robin and Maurice from age 9 was a unique peer environment. Family emigrated to Australia in 1958, where they honed their act through years of local performances at RSL clubs and matinees. The British Invasion wave and Australian performance circuit provided significant development.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "bonnie-tyler",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Possessed a distinctive husky voice as a natural asset. Left school at 16 with no qualifications. No evidence of prodigy-level ability or early creative output. Career built through seven years of relentless gigging in pubs and working men's clubs.",
+    "inherited_summary": "Grew up in a Welsh council house in a working-class mining family. Left school at 16 with no qualifications. No music industry connections or financial safety net. Active disadvantage of poverty and lack of access.",
+    "ecosystem_summary": "South Wales pub and working men's club circuit provided years of performing experience. Discovered by a talent scout in 1975 after seven years of gigging. Modest advantage of the Welsh music tradition, but no elite institutions or mentors.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "adrian-smith",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Became interested in rock music at 15 and learned guitar from friend Dave Murray. No evidence of prodigy-level ability. Built his skills through years of gigging on the London pub circuit with his band Urchin before joining Iron Maiden at 23.",
+    "inherited_summary": "Working-class family in Hackney, London. No music industry connections or domain overlap in the family. No financial advantage for pursuing music.",
+    "ecosystem_summary": "Met Dave Murray at 15, who taught him guitar and became his lifelong Iron Maiden bandmate. The London NWOBHM (New Wave of British Heavy Metal) scene provided a vibrant peer environment. Pub circuit provided years of performing reps. Significant peer and scene advantage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "eros-ramazzotti",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started guitar at 7 with father's encouragement. Wrote songs as a teenager. Failed conservatory admission, indicating he was not at a prodigy level. Capable songwriter and performer but not exceptional early ability.",
+    "inherited_summary": "Grew up in Cinecittà Est, an impoverished suburb of Rome, in a public housing complex. Father Rodolfo was a construction worker/housepainter and amateur musician. Mother was a housewife. Active disadvantage of poverty and lack of music industry connections.",
+    "ecosystem_summary": "Voci Nuove di Castrocaro talent contest at 17 earned a DDD label contract. Renato Brioschi mentored him to win Sanremo Newcomers' category in 1984 at 20. The Sanremo Festival platform and Italian pop market provided a significant national ecosystem for breakthrough.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "pavel-nedved",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started playing football at 5 for hometown club Tatran Skalná. Progressed steadily through the Czechoslovak youth system. Key player in Czech Republic's run to the Euro 1996 final at 23-24. Significant early athletic development and international achievement.",
+    "inherited_summary": "Father Václav was an excavator driver (bagrista) at a kaolin mine. Mother Anna was a seamstress and textile shop assistant. Grew up in a small panel apartment in Skalná near the German border. Working-class family with no football connections.",
+    "ecosystem_summary": "Czechoslovak football pipeline through Tatran Skalná, RH Cheb, and Škoda Plzeň. Mentor Josef Žaloudek at Plzeň was described as his 'second dad.' Military service loan to Dukla Prague opened the path to first-league football. Sparta Prague provided the elite domestic platform. Significant national football infrastructure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "the-undertaker",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Exceptional physical stature at 6'10\" with athletic ability (college basketball). No evidence of prodigy-level wrestling ability — started training at 22, relatively late. His advantage was physical dimensions and athletic background rather than exceptional early skill.",
+    "inherited_summary": "Born in Houston, Texas. No particular family wealth or wrestling connections mentioned. Father Frank Calaway was not in the entertainment industry. No documented domain overlap.",
+    "ecosystem_summary": "Trained under Buzz Sawyer (who scammed him). Paid dues across regional promotions (WCCW, USWA, WCW). Vince McMahon and the WWF platform provided the career-defining opportunity as The Undertaker. The WWF's national reach was a significant institutional advantage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "val-kilmer",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Became the youngest person at the time admitted to Juilliard School's Drama Division at 17. Co-wrote and performed in 'How It All Began' at Joe Papp's Public Theater while still at Juilliard. Exceptional early acting achievement — Juilliard admission at 17 is a rare credential.",
+    "inherited_summary": "Father Eugene Dorris Kilmer was an industrialist and developer with a reported $100M fortune from aerospace parts supply. Mother was of Swedish descent. Parents divorced when he was 8. Significant family wealth, though father's business later filed for bankruptcy.",
+    "ecosystem_summary": "Attended Chatsworth High School with Kevin Spacey and Mare Winningham. Juilliard's Drama Division (Group 10) provided elite theatrical training. Joe Papp's Public Theater and off-Broadway with Sean Penn and Kevin Bacon. LA geography and New York theater connections provided significant ecosystem access.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "dunga",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Entered Internacional's professional squad at 17 in 1980. Captained Brazil's U-20 team to the 1983 World Youth Championship title at 19. Won Olympic silver at 20. Significant early achievement as a leader and player in Brazil's youth system.",
+    "inherited_summary": "No particular family wealth or football connections mentioned. Standard Brazilian football background. No documented domain overlap in the family.",
+    "ecosystem_summary": "Brazil's youth national team system and Internacional Porto Alegre provided elite development. The U-20 World Cup and Olympic pipeline gave international exposure from a young age. The Brazilian football ecosystem and Serie A migration path provided significant infrastructure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "enrique-iglesias",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began writing and performing songs as a teenager at Miami restaurants. No evidence of prodigy-level ability. His debut album's success (1 million copies in 3 months) was remarkable but heavily facilitated by industry infrastructure and his father's publicist as manager.",
+    "inherited_summary": "Son of Julio Iglesias, one of the world's best-selling musical artists, and Isabel Preysler, a Spanish-Filipina socialite and magazine journalist. Raised in Miami at Gulliver Private School. Used father's former publicist Fernán Martínez as manager. Rare, trajectory-changing family name and industry access, even though he actively tried to hide his lineage.",
+    "ecosystem_summary": "Fonovisa Records (Mexican label) signed him. Father's former publicist managed his career. The Latin pop wave of the 1990s provided perfect market timing. Miami's Latin music scene provided a geographic base. Significant industry ecosystem access through family connections.",
+    "scoring_confidence": "High"
+  }
+]

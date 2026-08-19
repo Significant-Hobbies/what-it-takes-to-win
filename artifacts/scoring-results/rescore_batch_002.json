@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "jean-marie-pfaff",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Showed strong athletic ability as a street footballer with natural goalkeeping instincts, but no evidence of prodigy-level talent beyond good reflexes and determination.",
+    "inherited_summary": "Grew up in extreme poverty living in a caravan with 12 siblings; father was a door-to-door carpet salesman who died of cancer when Pfaff was 12, leaving the family destitute.",
+    "ecosystem_summary": "Two older brothers who were goalkeepers arranged his transfer to KSK Beveren's youth system, providing a football pathway, but Beveren was a modest club without elite infrastructure.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "richard-wright",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught guitar, trumpet, trombone, and piano at age 12 while recovering from a broken leg, showing musical aptitude, but not at a prodigy level.",
+    "inherited_summary": "Father was head biochemist at Unigate Dairies, providing a comfortable middle-class upbringing; attended the independent Haberdashers' Aske's School and received private music theory lessons.",
+    "ecosystem_summary": "Grew up in northwest London at the epicenter of the 1960s music revolution; met Waters and Mason at Regent Street Polytechnic and was joined by Syd Barrett, forming the complementary team that became Pink Floyd.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tech-custom-01-08-adam-dangelo",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Won a silver medal at the International Olympiad in Informatics (2002) and was an ICPC world finalist, demonstrating significant competitive programming achievement at the highest level.",
+    "inherited_summary": "Attended Phillips Exeter Academy, an elite boarding school, suggesting family resources and emphasis on education, though specific family financial details are not well documented.",
+    "ecosystem_summary": "The combination of Phillips Exeter (where he met Zuckerberg), Caltech's elite CS program, and the high-trust peer relationship with Zuckerberg that opened the Facebook door represents a once-in-a-generation institutional and personal network.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tech-custom-01-10-aaron-swartz",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Taught himself to read at age 3, built a Wikipedia-like site at 12 (winning the ArsDigita Prize), and co-authored the RSS 1.0 specification at 14, demonstrating rare prodigy-level technical and intellectual ability.",
+    "inherited_summary": "Father founded and ran the Mark Williams Company, a software firm, providing direct domain exposure; family was comfortable enough to send him to private school (North Shore Country Day) and provide early internet access.",
+    "ecosystem_summary": "Deeply embedded in early internet communities and the W3C/Creative Commons ecosystem with mentorship from Lawrence Lessig and connections to Tim Berners-Lee, providing both technical depth and distribution channels.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tech-custom-04-07-john-von-neumann",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Universally recognized as one of the greatest child prodigies in history; could divide 8-digit numbers in his head at age 6 and mastered calculus by age 8, with encyclopedic memory and extraordinary reasoning ability.",
+    "inherited_summary": "Born into a wealthy Jewish banking family in Budapest; father was a banker with a doctorate in law elevated to Hungarian nobility in 1913, with private tutors in multiple languages and an 18-room apartment.",
+    "ecosystem_summary": "Attended the elite Lutheran Gymnasium under legendary teacher László Rátz (who also taught Wigner), received private university-level tutoring from Gábor Szegő and Michael Fekete, and studied under Hilbert at Göttingen—a once-in-a-generation mathematical ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tech-custom-06-03-srinivasa-ramanujan",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "A self-taught mathematical genius of the highest order who independently developed thousands of results in isolation, demonstrating rare prodigy-level insight that stunned G.H. Hardy.",
+    "inherited_summary": "Grew up in extreme poverty in colonial India; father was a clerk in a sari shop, mother a housewife, living in a small traditional home with no mathematical background or financial resources.",
+    "ecosystem_summary": "Had virtually no access to formal mathematical training or the mathematical establishment; worked in isolation with only Carr's Synopsis as a starting point, and failed college exams because he focused exclusively on mathematics.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tech-custom-07-03-niels-bohr",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Did well at school without ever being described as brilliant (usually third or fourth in class), with his real strength being in physical education; his scientific talent was nurtured rather than innately prodigious.",
+    "inherited_summary": "Father was a professor of physiology at the University of Copenhagen, mother came from a prominent Danish Jewish political and commercial family, and the household hosted leading scientists and philosophers as an intellectual salon.",
+    "ecosystem_summary": "Had access to his father's laboratory as a student (enabling prize-winning research), studied under Christiansen at the University of Copenhagen, and later worked at Cavendish under J.J. Thomson and Rutherford at Manchester.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tech-custom-07-07-carl-friedrich-gauss",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "One of the greatest mathematical prodigies in history; instantly summed integers 1-100 at age 7 by spotting the pairing pattern, was a calculating prodigy with extraordinary mental arithmetic, and made major discoveries as a teenager.",
+    "inherited_summary": "Born into poverty in Brunswick; father was a butcher, bricklayer, gardener, and treasurer of a death-benefit fund, and his mother was nearly illiterate, with no inherited wealth or educational background.",
+    "ecosystem_summary": "Schoolteacher Büttner and assistant Martin Bartels recognized and mentored his talent, and the Duke of Brunswick provided a continuous stipend from 1792 enabling study at Collegium Carolinum and Göttingen, though Gauss worked mostly alone.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "cesaria-evora",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Possessed a beautiful contralto voice recognized early by local musicians, but there is no evidence of prodigy-level vocal training or ability in her early years.",
+    "inherited_summary": "Grew up in extreme poverty in Mindelo, Cape Verde; father (a violinist) died when she was 7, mother was a cook and maid, and she was placed in an orphanage because the family could not support her.",
+    "ecosystem_summary": "Mindelo's status as an international port town provided lively nightlife venues and Radio Mindelo for early exposure, and mentor Gregório Gonçalves (Ti Goy) guided her from age 15, but the colonial environment offered minimal infrastructure.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "philip-warren-anderson",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "A good student encouraged by a first-rate mathematics teacher, but not described as a prodigy; his scientific talent was developed through elite institutional training rather than innate exceptional ability.",
+    "inherited_summary": "Father was a professor of plant pathology at the University of Illinois, maternal grandfather was a mathematics professor, and maternal uncle was a Rhodes Scholar, providing deep multi-generational academic roots and scientist family friends.",
+    "ecosystem_summary": "Harvard on a full scholarship under Van Vleck, followed by Bell Labs in Shockley's solid-state group—the world's leading industrial research lab—constituted an elite institutional pipeline from university to frontier research.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jane-fonda",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Initially reluctant to act and described as plain and shy, her talent was developed through training at the Actors Studio rather than being innately prodigious.",
+    "inherited_summary": "Daughter of Henry Fonda, one of America's most iconic actors, providing instant name recognition, industry access, and domain mentorship; grew up in a wealthy Hollywood family with deep industry connections.",
+    "ecosystem_summary": "Trained at the elite Actors Studio under Lee Strasberg, was directed by family friend Joshua Logan in her film and Broadway debuts, and modeled for Vogue, providing multiple high-level industry entry points.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tigran-petrosian",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Showed strong chess ability and a disciplined, scientific style, but was not described as a prodigy in the manner of some other world champions; his rise was steady rather than meteoric.",
+    "inherited_summary": "Orphaned during WWII with an illiterate father who worked as a street cleaner; was forced to sweep streets himself to survive, with deteriorating hearing adding to his adversity.",
+    "ecosystem_summary": "Trained at the Tiflis Palace of Pioneers under Archil Ebralidze from age 12, providing structured chess education through the Soviet system, but the environment was modest compared to elite Moscow chess circles.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "roger-glover",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began playing guitar at 13 and showed musical competence, forming bands as a teenager, but displayed no evidence of prodigy-level talent.",
+    "inherited_summary": "Born in Wales to parents who ran pubs in London, providing a middle-class upbringing with exposure to live music, but no documented family musical background or significant financial advantage.",
+    "ecosystem_summary": "Growing up in London during the 1960s rock explosion and forming Episode Six with Ian Gillan provided years of gigging experience and a complementary partnership that directly led to joining Deep Purple.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sid-vicious",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Had no musical training and was famously unable to play bass competently; his fame was driven by persona and cultural timing rather than any demonstrated personal endowment in music.",
+    "inherited_summary": "Raised by a single mother who sold marijuana to get by after his father abandoned the family; grew up in working-class poverty across Kent and East London with a turbulent, drug-affected household.",
+    "ecosystem_summary": "Proximity to the London punk scene centered on McLaren and Westwood's SEX shop and his friendship with John Lydon provided access to the Sex Pistols, riding the explosive cultural wave of punk rock in 1977.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "richard-harris",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "A talented rugby player whose athletic career was cut short by tuberculosis, showing natural performing presence but no evidence of prodigy-level acting talent before training.",
+    "inherited_summary": "Born into a comfortable middle-class family in Limerick with a flour merchant father and a nine-bedroom house, but the collapse of the family firm meant much of his childhood was spent in reduced circumstances.",
+    "ecosystem_summary": "Trained at LAMDA and joined Joan Littlewood's Theatre Workshop, a significant theatrical incubator, making his professional debut in Brendan Behan's The Quare Fellow before a notable West End impact at 26.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "boris-spassky",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Defeated Soviet champion Botvinnik in a simultaneous exhibition at age 10, became the youngest Soviet master at 15, and the youngest grandmaster at 18, demonstrating significant prodigy-level chess talent.",
+    "inherited_summary": "Family lived in stark postwar poverty in Leningrad; parents divorced, father served in the military and was largely absent, and coach Zak had to feed the young Spassky during times of severe deprivation.",
+    "ecosystem_summary": "The Soviet chess development pipeline provided elite training at the Leningrad Palace of Pioneers under Vladimir Zak, who gave sustained individualized coaching, stipends, and even food, creating a structured path to elite competition.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "hank-marvin",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught banjo and guitar from a book, showing musical aptitude and determination, but no evidence of prodigy-level ability.",
+    "inherited_summary": "Father was an army officer and the family could not afford music lessons; Marvin taught himself from a book, indicating a working-class background without musical connections.",
+    "ecosystem_summary": "Moving to London at 16 in 1958 during the birth of British rock and roll, landing at the 2i's Coffee Bar in Soho—a key talent discovery venue—led to joining Cliff Richard's backing band, providing immediate national distribution.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "kenzaburō-ōe",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Excelled as a student and showed strong writing ability, winning the Akutagawa Prize at 23, but was not described as a literary prodigy in his early years.",
+    "inherited_summary": "Born into a landowning family in a remote village on Shikoku, though much property was lost due to postwar land reform; father died in 1944, and mother became the driving force behind his education with books.",
+    "ecosystem_summary": "Attended the University of Tokyo to study French Literature under Professor Kazuo Watanabe, giving both literary training and access to Japan's literary establishment during the postwar structural wave of opportunity for new voices.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "zoltán-czibor",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Showed good footballing ability with a powerful shot and excellent ball control, but was not described as a prodigy; started organized football relatively late at 13.",
+    "inherited_summary": "Working-class background; was working as a train engine driver before being noticed by a youth team coach, with no documented family financial advantage or football connections.",
+    "ecosystem_summary": "Benefited from Hungary's elite football ecosystem, playing alongside Puskás, Kocsis, and Bozsik in the legendary Golden Team that went unbeaten for 32 consecutive games, one of the greatest national teams ever.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "yves-montand",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Showed natural charisma and performing ability from his first amateur nights at 16, but no evidence of prodigy-level talent; his distinctive style was self-created through years of practice.",
+    "inherited_summary": "Poor Italian immigrant family in Marseille; father was a broom manufacturer who fled fascist Italy, and Montand left school at 11 to work in factories and his sister's hair salon with no financial safety net.",
+    "ecosystem_summary": "The decisive catalyst was Édith Piaf, who discovered him in 1944, made him part of her act, and provided sustained mentorship and career transformation in the Paris music hall ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "romy-schneider",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Had natural screen presence and was interested in school plays, but her early opportunities were overwhelmingly a product of inherited family access rather than independent achievement.",
+    "inherited_summary": "Born into a three-generation theatrical dynasty: father Wolf Albach-Retty was a leading Vienna actor, mother Magda Schneider was a major German film star, and grandmother Rosa Albach-Retty was a celebrated theater actress; mother arranged her film debut at 15.",
+    "ecosystem_summary": "Direct film industry access from birth through both parents, with her mother arranging her debut alongside her at 15 and her stepfather managing her career, within the golden age of German-language cinema.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ray-bradbury",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began writing stories at age 12 and was prolific and determined, but was not a prodigy in the traditional literary sense; his talent was developed through relentless self-creation and fandom immersion.",
+    "inherited_summary": "Father was a telephone and power lineman; the family struggled during the Depression, arrived in Los Angeles with only $40, and Bradbury could not afford college, instead educating himself at the public library.",
+    "ecosystem_summary": "Immersed in the Los Angeles Science Fiction Society as a teenager, meeting established writers like Heinlein and Leigh Brackett, who coached him in writing techniques; the pulp magazine era provided a structural wave enabling young writers to sell without credentials.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "simone-inzaghi",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Showed football competence and an aptitude for leadership from a young age, but spent years on loan in lower divisions, suggesting modest natural ability compared to his elite brother.",
+    "inherited_summary": "Older brother Filippo Inzaghi became a World Cup winner and Champions League winner, providing a template and high-profile family name in Italian football, though no parental football background is documented.",
+    "ecosystem_summary": "The Piacenza youth system and Italian loan system developed him through competitive reps, but he spent several years in lower divisions before his breakout, indicating a standard rather than elite pipeline.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "nílton-santos",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Showed natural footballing talent that was immediately recognized at Botafogo, but his late professional debut at 23 suggests he was not a prodigy; his talent was raw and developed late.",
+    "inherited_summary": "First of seven children born into a working-class family on Governador Island in Rio; worked as a waiter to help support the family before his football career took off.",
+    "ecosystem_summary": "The military sports system provided visibility through the Aeronautics officers' team, leading to a Botafogo trial, and Rio's football culture offered opportunity, but his late start limited early institutional development.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ferenc-puskás",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Described as a boy wonder who debuted at 16, became an international at 18, and was top scorer in all of Europe at 21, demonstrating significant early talent that was recognized immediately.",
+    "inherited_summary": "Father was a former professional footballer who coached at Kispest, the club where Puskás debuted, providing direct parental domain expertise, early coaching, and a clear pathway into elite football from childhood.",
+    "ecosystem_summary": "The Kispest/Honvéd infrastructure and the Hungarian Army's takeover of the club in 1948 concentrated talent and resources, creating an elite team that formed the backbone of the legendary Golden Team.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "friedrich-dürrenmatt",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Showed intellectual curiosity from a young age, passionate about Greek mythology and astronomy by age 10, but displayed no evidence of prodigy-level literary talent before his first play at 26.",
+    "inherited_summary": "Son of a Protestant pastor in Konolfingen with a grandfather who was a conservative politician, providing an intellectual and culturally engaged household, though not specifically a literary one.",
+    "ecosystem_summary": "Studied at the Universities of Zürich and Bern, and the Zürich Schauspielhaus theatre scene during and after WWII was a significant cultural frontier, but most of his early advantage appears self-created.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "alexander-grothendieck",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Independently rediscovered the Lebesgue measure as an undergraduate at Montpellier, demonstrating rare prodigy-level mathematical insight that was immediately recognized by leading mathematicians in Paris.",
+    "inherited_summary": "Born to an anarchist Russian-Jewish father who died in Auschwitz and a German journalist mother; grew up stateless and was interned as an enemy alien in wartime France under extreme hardship with no family support.",
+    "ecosystem_summary": "The elite French mathematical pipeline—Cartan's seminar at ENS, then PhD at Nancy under Schwartz and Dieudonné—provided crucial mentorship and network access that channeled his extraordinary talent.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "charlie-watts",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Developed a jazz obsession as a child and showed dedication to drumming, but was not a prodigy; his talent was built through years of practice and immersion in jazz records.",
+    "inherited_summary": "Born to a lorry driver and a factory worker in Bloomsbury, London; the family lived in a prefab in Wembley that had survived Luftwaffe bombing, with no evidence of family wealth or music industry connections.",
+    "ecosystem_summary": "London's early 1960s rhythm and blues scene was a frontier ecosystem; meeting Alexis Korner, the godfather of British blues, who invited him to join Blues Incorporated, led to connections with the Rolling Stones members.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "lászló-kubala",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Was playing senior football by 17 and signed for Ferencváros at 18, with exceptional talent recognized from a young age; scored 27 goals in 49 games at Ferencváros, indicating significant early ability.",
+    "inherited_summary": "Working-class Budapest family; father was a bricklayer and mother a factory worker, but brother-in-law Ferdinand Daučík was a national team coach who became Barcelona coach, providing a significant professional connection.",
+    "ecosystem_summary": "The adversity of wartime and Cold War displacement shaped his peripatetic career; the Ferencváros pipeline and brother-in-law's coaching connection facilitated his Barcelona signing, but refugee status disrupted continuity.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jay-z",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Showed strong lyrical ability and read far beyond his grade level as a child, but was not a documented prodigy; his skills were developed through years of street-level practice and competition.",
+    "inherited_summary": "Born in the Marcy Projects public housing in Brooklyn; father abandoned the family when he was young, and he grew up in poverty, eventually involved in drug dealing to support himself.",
+    "ecosystem_summary": "Brooklyn's position as the center of 1990s hip-hop provided the cultural ecosystem, and mentor Jaz-O provided early guidance, but rejection by every major label forced him to self-create his path via Roc-A-Fella Records.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "dave-murray",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Showed obsessive dedication to guitar practice (up to 7 hours/day) after discovering Hendrix at 15, but started relatively late and displayed no evidence of prodigy-level ability before his late teens.",
+    "inherited_summary": "Grew up in deep poverty in London with a disabled father and part-time cleaner mother; the family moved constantly around London's East End, with Murray attending over a dozen schools.",
+    "ecosystem_summary": "The London rock ecosystem and the NWOBHM (New Wave of British Heavy Metal) wave provided structural tailwind, and his partnership with Steve Harris in Iron Maiden gave him a platform, but the environment was not elite.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "richard-burton",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Displayed a strong speaking and singing voice from a young age, winning an Eistedtfod prize as a boy soprano, and showed natural talent for literature and performance that was recognized by his mentor.",
+    "inherited_summary": "Born the 12th child of a Welsh coal miner in Pontrhydyfen; mother died when he was 2, father was an alcoholic miner, and he was raised by his elder sister in a working-class household with no theatrical tradition.",
+    "ecosystem_summary": "Schoolmaster Philip Burton recognized his talent, adopted him, and provided intensive dramatic training including voice coaching, effectively replacing his biological family's limitations with theatrical education—a transformative mentorship.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "omar-sharif",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Academically gifted with a particular talent for languages and a degree in mathematics and physics from Cairo University, but showed no evidence of prodigy-level acting talent before his debut.",
+    "inherited_summary": "Born to a wealthy family; father was a precious woods merchant and mother was a noted society hostess whose house was visited by King Farouk, providing wealth, society connections, and exclusive education at Victoria College.",
+    "ecosystem_summary": "The golden age of Egyptian cinema provided a structural wave, director Youssef Chahine (a school friend) discovered him and cast him in his debut, and his marriage to leading actress Faten Hamama cemented his star status.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "debbie-reynolds",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Showed natural performing ability and comfort in front of audiences, but had no formal dance, singing, or acting training before being discovered at the Miss Burbank contest at 16.",
+    "inherited_summary": "Born to a working-class family in El Paso, Texas; father was a carpenter for the Southern Pacific Railroad and mother took in laundry, raised in a strict Nazarene church environment with no entertainment connections.",
+    "ecosystem_summary": "The MGM studio system—the premier talent pipeline of Golden Age Hollywood—provided her entry, and Gene Kelly's mentorship during Singin' in the Rain, where he taught her to dance during production, was career-defining.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "grace-kelly",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Described as painfully shy and 'the family failure' who couldn't command a room like her siblings; her acting talent was developed through training rather than innate prodigy-level ability.",
+    "inherited_summary": "Born into an affluent and influential Philadelphia family; father was a three-time Olympic gold medalist and wealthy brickwork contractor, uncle George Kelly was a Pulitzer Prize-winning dramatist, and uncle Walter Kelly was a vaudeville star.",
+    "ecosystem_summary": "Uncle George Kelly helped her gain admission to the American Academy of Dramatic Arts and mentored her, and she subsequently worked with top Hollywood directors including Hitchcock, Ford, and Zinnemann during Golden Age Hollywood.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "sophia-loren",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Possessed natural screen presence and beauty that was recognized early, but showed no evidence of prodigy-level acting talent; her abilities were developed through experience and mentorship.",
+    "inherited_summary": "Grew up in poverty in war-torn Pozzuoli near Naples; father abandoned the family and refused to marry her mother, and Loren was born in a charity ward for unwed mothers with hunger as the major theme of her childhood.",
+    "ecosystem_summary": "Immersion in the Cinecittà film ecosystem in post-war Rome and producer Carlo Ponti's sustained mentorship, which transformed her image and guided her to a Paramount contract, were key advantages in the Italian cinema golden age.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "barbra-streisand",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Knew she had a good voice from age 5 and won a talent contest that launched her career, with her debut album winning the Grammy for Album of the Year at 21, demonstrating significant vocal talent recognized early.",
+    "inherited_summary": "Father died when she was 15 months old, leaving the family in near poverty with a low-paid bookkeeper mother; however, her mother was a former soprano and maternal grandfather was a cantor, providing a musical heritage.",
+    "ecosystem_summary": "Moved to Manhattan at 16 and immersed in the New York nightclub and Broadway ecosystem, with Greenwich Village clubs like the Bon Soir and Blue Angel providing the platform for her rapid rise to Broadway and Columbia Records.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "maria-callas",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Displayed formidable musicality and memory from her early teens, enabling professional opera performances at 17 during wartime, with her prodigy-level vocal talent causing immediate institutional recognition.",
+    "inherited_summary": "Parents separated and mother took her to Athens in poverty; mother was overbearing and pushed Maria toward singing for social status, with wartime deprivation creating intense urgency but no financial support.",
+    "ecosystem_summary": "Private study with Elvira de Hidalgo, a famous Spanish soprano, provided sustained high-quality vocal training and direct access to professional roles at the Greek National Opera, though the wartime environment was challenging.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "zubin-mehta",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Showed musical aptitude from early childhood, playing violin and piano by age 7 and conducting his father's orchestra at 16, but was not described as a prodigy; his abilities were nurtured through immersion.",
+    "inherited_summary": "Father Mehli Mehta was a self-taught violinist who founded and conducted the Bombay Symphony Orchestra, providing unusually deep family-domain apprenticeship in Western classical music from birth.",
+    "ecosystem_summary": "Entered the Vienna Academy at 18, studying under Hans Swarowsky alongside future luminaries Abbado and Barenboim, providing elite institutional training and an exceptional peer cohort in one of Europe's top music institutions.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "gene-simmons",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Showed entrepreneurial drive and dedication to music from his teens, but displayed no evidence of prodigy-level musical talent; his success was built on persona and business acumen.",
+    "inherited_summary": "Born to a Hungarian Jewish Holocaust-survivor single mother in Israel; family was 'dirt poor' and immigrated to Queens when he was 8, with his mother working in a sweatshop to support them.",
+    "ecosystem_summary": "The complementary partnership with Paul Stanley and immersion in the NYC rock scene of the mid-1970s provided the platform for KISS, riding the shock rock/glam wave, but no elite mentors or institutional support are documented.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "larisa-latynina",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Showed 'superb artistry, inborn probably' and natural athletic grace, but was not described as a prodigy; her talent was identified through ballet and channeled into gymnastics relatively late.",
+    "inherited_summary": "Father was killed at the Battle of Stalingrad and her illiterate mother worked two jobs as a cleaner and watchman to support the family, with extreme poverty during wartime childhood in Ukraine.",
+    "ecosystem_summary": "The Soviet gymnastics performance pipeline identified her talent through ballet and channeled her into elite training at Burevestnik Kyiv under coach Oleksandr Mishakov, who also coached Olympic champion Boris Shakhlin.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "richard-henderson",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "A good student who graduated with 1st class honours in physics from Edinburgh, but was not described as a prodigy; his talent was developed through elite institutional training.",
+    "inherited_summary": "Father was a baker in a small rural village (Newcastleton) and the family lived in council housing; mother persuaded the school to let him start early, but there were no documented financial advantages or academic connections.",
+    "ecosystem_summary": "Access to the MRC Laboratory of Molecular Biology in Cambridge, one of the world's premier molecular biology labs, where he worked under David Blow alongside talented peers like Tom Steitz and Paul Sigler, was the key institutional advantage.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "james-gosling",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught programming as a teenager by sneaking into the University of Calgary computer lab, and wrote real software for the ISIS 2 satellite in high school, demonstrating significant early technical ability.",
+    "inherited_summary": "Middle-class family in Calgary; mother was a school teacher and father organized geological expeditions for oil companies, but the family could not afford electronics parts, so Gosling scavenged discarded materials.",
+    "ecosystem_summary": "A friend of his father's gave him a tour of the University of Calgary computer lab that sparked his interest, and he later attended CMU, one of the top CS programs, with access to elite research infrastructure and advisors (Sproull, Reddy).",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "marissa-mayer",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Described as 'painfully shy' as a child but showed early interest in math and science and was academically strong, though not at a prodigy level; her talent was developed through Stanford's elite programs.",
+    "inherited_summary": "Middle-class family in Wausau, Wisconsin; father was an environmental engineer and mother an art teacher, with a grandfather who served as mayor for 32 years—stable but not wealthy or tech-connected.",
+    "ecosystem_summary": "Stanford's elite Symbolic Systems program and its Silicon Valley location positioned her at the epicenter of the internet search wave, leading to Google employee #20 and its first woman software engineer.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "eric-schmidt",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Described himself as a 'hardcore programmer from age 14' and co-authored Lex, the standard Unix lexical analyzer generator, at age 20, demonstrating significant early programming achievement.",
+    "inherited_summary": "Father was a professor of international economics at Virginia Tech and Johns Hopkins who worked at the U.S. Treasury during the Nixon Administration; mother held a master's degree in psychology, providing an academic household with government ties.",
+    "ecosystem_summary": "Access to Bell Labs as a Princeton undergraduate intern placed him at the epicenter of Unix development in the 1970s, with Mike Lesk as collaborator and mentor, amplifying his contributions during a foundational era in computing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "andrey-kolmogorov",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Wrote a treatise on Newton's laws of mechanics before university and produced an internationally significant result at age 19 (a summable function with an almost-everywhere divergent Fourier series), marking him as a rare prodigy.",
+    "inherited_summary": "Orphaned at birth with mother dying in childbirth and father exiled; raised by aunt Vera in his grandfather's noble household, which provided an educated environment but no wealth advantage or mathematical lineage.",
+    "ecosystem_summary": "The Luzitania research group at Moscow State University, led by Luzin and including Aleksandrov, Suslin, and Urysohn, provided an exceptional peer environment of world-class mathematicians that stimulated his early research.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "brian-armstrong",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Displayed entrepreneurial drive from grade school (candy-reselling venture) and founded UniversityTutor.com at 20, but showed no evidence of prodigy-level technical or business ability.",
+    "inherited_summary": "Both parents were engineers and he grew up near San Jose in the heart of Silicon Valley, attending Bellarmine College Preparatory (a private Catholic school), providing a technical household environment and geographic proximity to tech.",
+    "ecosystem_summary": "Rice University provided a solid education, and later Airbnb experience exposed him to payment systems, but no elite mentors, notable cofounders, or exceptional institutional networks are documented before Coinbase.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "dharmesh-shah",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Excelled at math and showed programming aptitude once exposed to computers, but self-described as 'the least likely to start a company' and a 'very quiet kid,' with no evidence of prodigy-level ability.",
+    "inherited_summary": "Born in a small industrial town in Gujarat, India, with no paved streets or hospitals; father ran a small plastics factory and childhood was modest (no TV, no hot running water), though the family eventually immigrated to the US.",
+    "ecosystem_summary": "SunGard provided domain expertise in financial services software, and a distribution deal with his former employer helped bootstrap Pyramid Digital Solutions, but the ecosystem was largely self-created rather than inherited or elite.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "stephane-lambiel",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Recognized as exceptionally talented by coach Peter Grütter by age 9, landing triple toe loops by age 10, with unusual spins and jumping ability noted from a young age, indicating significant natural physical talent.",
+    "inherited_summary": "Father owned a construction/earthmoving company and mother was Portuguese-born, providing a working-to-middle-class background in rural Switzerland; parents divorced, and the village created a fan club to help fund skating costs reaching 100,000 Swiss francs per season.",
+    "ecosystem_summary": "Dedicated world-class coach Peter Grütter provided sustained mentorship from age 9-10, and Geneva training provided access to quality ice time, but the environment was a rural Swiss village rather than an elite institutional system.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "arturo-pomar",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Learned chess at age 3-5 by watching his father and grandfather play, drew against reigning World Champion Alekhine at 13 in a 70+ move game, and was hailed as the 'Mozart of Chess,' demonstrating rare prodigy-level talent.",
+    "inherited_summary": "Born in poverty in post-civil war Spain; family faced economic hardship and Pomar helped support them by playing simultaneous exhibitions, with no financial resources or institutional support.",
+    "ecosystem_summary": "World Champion Alexander Alekhine took personal interest, gave him special lessons, and devoted part of a book to him, providing mentorship from the game's highest authority, though the broader Spanish chess infrastructure was minimal.",
+    "scoring_confidence": "High"
+  }
+]

@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "cumrun-vafa",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Showed early curiosity about physics from second grade, asking why the moon doesn't fall and why there are three dimensions. Self-studied Einstein's special relativity in high school. Strong intellectual drive but not a traditional competition prodigy.",
+    "inherited_summary": "Father studied in the US and encouraged American education. Family lived in a compound in Shemiran with supportive extended family. Middle-to-upper-middle class Iranian family with no direct scientific background.",
+    "ecosystem_summary": "Attended Alborz High School, Iran's most prestigious science school. MIT undergraduate (double major math/physics), Princeton PhD under Edward Witten at the frontier of string theory. The MIT-to-Princeton-to-Witten pipeline was a rare, trajectory-changing ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "eva-silverstein",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Fascinated by relativity as a teenager after father's explanation, read Einstein's books, hooked on physics in first high school class. Strong early intellectual curiosity but not a competition prodigy.",
+    "inherited_summary": "Father is professor emeritus of philosophy at Washington State University. Mother Lorinda Knight. Academic family in Spokane, Washington, with father first piquing her interest in physics.",
+    "ecosystem_summary": "Lewis and Clark High School with inspiring physics teacher Larry Elsom. Harvard undergraduate (AB 1992), Princeton PhD (1996) under Edward Witten. The Harvard-to-Princeton-to-Witten pipeline at the frontier of string theory was exceptional.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "kannan-soundararajan",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won IMO silver medal at 16 (1991). Attended Research Science Institute (RSI) at MIT. Won Morgan Prize for outstanding undergraduate research. Published research in number theory while still in high school, mentored by Balasubramanian. Prodigy-level early achievement.",
+    "inherited_summary": "Grew up in Chennai, India. No evidence of wealthy or academic parents. School teachers noticed his talent and introduced him to Alladi Ramakrishnan at the Institute of Mathematical Sciences. Ordinary family background.",
+    "ecosystem_summary": "Padma Seshadri High School with teachers who connected him to Institute of Mathematical Sciences. Mentor R. Balasubramanian had huge impact. RSI at MIT, University of Michigan undergrad, Princeton PhD under Peter Sarnak. Strong mentorship pipeline from Chennai to Princeton.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "sara-seager",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Loved stars from a young age after camping trip and star party with father. Good at math and physics but not a prodigy. Discovered astronomy as a career path at age 16 during a campus open house.",
+    "inherited_summary": "Father was a physician and pioneer in hair transplantation. Parents divorced when she was in elementary school; difficult relationship with stepfather. Father discouraged astronomy career. Middle class but unstable home life.",
+    "ecosystem_summary": "Jarvis Collegiate Institute (200-year-old public school known for science). University of Toronto math/physics specialist program. Harvard PhD under Dimitar Sasselov at the dawn of the exoplanet era. Good institutional pipeline with fortuitous timing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "feng-zhang",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Participated in RSI at MIT in high school (1999), ISEF finalist (1998). Started working in a gene therapy lab as a high school sophomore. Strong early scientific engagement and ability, though not a traditional prodigy.",
+    "inherited_summary": "Both parents were computer programmers in China. Moved to Iowa at age 11 with mother. Immigrant family, middle class. Parents valued education and science.",
+    "ecosystem_summary": "Central Academy in Des Moines and Theodore Roosevelt HS. RSI at MIT provided early research exposure. Harvard undergrad (chemistry/physics) under Xiaowei Zhuang, Stanford PhD under Karl Deisseroth. Strong institutional pipeline through Harvard and Stanford.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "roland-fryer",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "No early academic prodigy indicators. First flickers of academic talent appeared in college when he shifted from sports to economics. Athletic scholarship to University of Texas at Arlington. Ability emerged late relative to peers in this cohort.",
+    "inherited_summary": "Raised by grandmother in Daytona Beach after mother left and father was incarcerated. Father was abusive alcoholic. Family involved in crack cocaine dealing. Profoundly unstable and disadvantaged childhood environment.",
+    "ecosystem_summary": "Penn State economics PhD program provided mentorship and opportunity. Postdoc with Nobel laureate Gary Becker at University of Chicago. Harvard Society of Fellows. The academic ecosystem that recruited and supported him was important but not exceptional for his field.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jon-kleinberg",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started programming at age 10 on Apple II, creating his own games. Strong early engagement with computing. Cornell AB, MIT SM and PhD. Above-average ability with early coding interest, though not a competition prodigy.",
+    "inherited_summary": "Born in Boston. Limited evidence about family background. Attended Cornell for undergraduate, suggesting stable middle-class family with educational values. No evidence of significant domain-specific family advantages.",
+    "ecosystem_summary": "Cornell undergraduate, MIT PhD under Michel Goemans. Visiting scientist at IBM Almaden Research Center where he developed HITS algorithm. Strong institutional pipeline with industry research access at the dawn of web search.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "juan-maldacena",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Loved physics from young age, tinkered with father. Strong student at Instituto Balseiro. Not a traditional prodigy but showed deep early interest and aptitude in physics. Published AdS/CFT shortly after PhD.",
+    "inherited_summary": "Father was an engineer who worked in Argentine nuclear program. Mother was an English translator. Middle-class family in Buenos Aires with technical/engineering background that influenced his interests.",
+    "ecosystem_summary": "Instituto Balseiro in Bariloche (elite physics bootcamp selecting best young physicists from Argentina). Princeton PhD under Curtis Callan with access to the best particle physicists. The Balseiro-to-Princeton pipeline at the frontier of string theory was exceptional.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "gavin-schmidt",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Mathematics degree at Oxford. Walked into a PhD at UCL by chance. Good quantitative ability but no evidence of exceptional early achievement or prodigy-level talent.",
+    "inherited_summary": "Attended The Corsham School (a comprehensive/state school). No evidence of special family background, academic connections, or wealth. Ordinary British upbringing.",
+    "ecosystem_summary": "Jesus College Oxford for BA, UCL for PhD in applied mathematics. NASA GISS postdoc and eventually director. Good institutions but no evidence of exceptional peer environment or legendary mentorship during formative years.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "frank-wilczek",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Parents recognized he was exceptional via IQ test. Entered University of Chicago at 17. Co-discovered asymptotic freedom in QCD at age 22 as a graduate student. Rare, trajectory-changing early ability.",
+    "inherited_summary": "Working-class family in Queens, New York. Father was radio/TV repairman who became self-taught engineer via night classes. Grandparents were immigrants. Lower-middle class with strong educational values but no domain-specific advantages.",
+    "ecosystem_summary": "Public schools in Queens with specialized/advanced classes and a strong peer group (30+ students, half went into science/medicine). University of Chicago, Princeton PhD under David Gross. Good institutional pipeline with exceptional mentor.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "gerd-faltings",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Completed PhD at 24 at University of Munster. Preferred math because 'things are either true or false.' No specific early prodigy evidence but strong early aptitude leading to Fields Medal work.",
+    "inherited_summary": "Both parents held PhDs in science — father in physics, mother in chemistry. Grew up in Germany's Ruhrgebiet industrial region. Strong scientific family background that influenced his early interests.",
+    "ecosystem_summary": "University of Munster for PhD, then formative year at Harvard (1978-79). Good but not exceptional early ecosystem. The Harvard postdoc year was important but the base institution was not elite for mathematics.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "michael-freedman",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "From a family of prodigies — father finished high school at 13, uncle at 12. Skipped first-year calculus to enroll directly in upper-level courses. Completed Princeton PhD at 22. Rare, trajectory-changing early ability.",
+    "inherited_summary": "Father was an aeronautical engineer, musician, writer, and recreational mathematician who later earned a PhD in logic from UCLA. Mother was an actress and artist. Family of intellectuals and prodigies with strong mathematical environment at home.",
+    "ecosystem_summary": "UC Berkeley briefly, then Princeton graduate program under William Browder. Princeton's topology group was strong. Family's intellectual culture provided early exposure to mathematical research.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "efim-zelmanov",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Showed impressive mathematical abilities in school. Entered Novosibirsk State University at 17, completed PhD at 25. Strong early ability but no specific prodigy-level competition evidence.",
+    "inherited_summary": "Father was a railway transport engineer, mother was a school librarian. Ordinary Soviet family in Khabarovsk, then Novosibirsk. No special family advantages or academic connections.",
+    "ecosystem_summary": "Novosibirsk State University, part of the strong Soviet mathematics tradition at Akademgorodok. Supervised by prominent algebraists Shirshov and Bokut. The Novosibirsk math ecosystem was significant for algebra.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ben-green",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Demanded 'sums' from age 3. Interested in numbers as a child. Participated in math Olympiads. First class honors in all three years at Cambridge. Strong early mathematical ability, though not IMO medal-level.",
+    "inherited_summary": "Grew up in Bristol, attended state schools (Bishop Road Primary, Fairfield Grammar). Father took him to library. No evidence of academic or wealthy family background. Ordinary English upbringing.",
+    "ecosystem_summary": "Trinity College Cambridge for BA (first class), Part III (distinction), and PhD under Tim Gowers (Fields Medalist). The Cambridge mathematical ecosystem with Gowers as advisor was significant.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jordan-ellenberg",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Taught himself to read at age 2. Scored 800 on math SAT at 12. Two IMO gold medals (1987, 1989) with perfect scores. Two-time Putnam Fellow at Harvard. Part of Johns Hopkins Study of Mathematically Precocious Youth. Rare, prodigy-level ability.",
+    "inherited_summary": "Both parents are statisticians. Mother (Susan Ellenberg) was a biostatistician at University of Pennsylvania and former high school math teacher. House was full of mathematical materials. Strong academic family with direct domain overlap.",
+    "ecosystem_summary": "Montgomery County math team, University of Maryland honors calculus in 8th grade under Larry Washington. Harvard undergrad, PhD under Barry Mazur. Strong early ecosystem with access to university-level math as a teenager.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "vaughan-jones",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Not at the top of his class at Auckland Grammar. Played rugby, sang in choir. Curious and willing to keep going, but no early prodigy indicators. Mathematical ability emerged more fully at university.",
+    "inherited_summary": "Parents divorced when he was small. Raised by mother around Waikato. Father absent. Sent to boarding school at age 8. Modest background with family instability.",
+    "ecosystem_summary": "St Peter's boarding school, Auckland Grammar School (competitive, strong school). Swiss Government Scholarship to study in Geneva. PhD under Andre Haefliger. The scholarship and Geneva mentorship were key ecosystem advantages.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "venki-ramakrishnan",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "BSc at 19, PhD in physics at 24. Good academic ability but no evidence of prodigy-level early achievement. Transitioned from physics to biology, showing adaptability rather than exceptional early aptitude.",
+    "inherited_summary": "Both parents were scientists. Father (C.V. Ramakrishnan) headed biochemistry department at University of Baroda, published in Nature. Mother (R. Rajalakshmi) was also a scientist. Strong scientific family with direct domain overlap.",
+    "ecosystem_summary": "University of Baroda (BSc), UCSD, Ohio University PhD. Not elite institutions for his field. The family scientific environment was more important than institutional ecosystem in early years.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "andrew-fire",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Entered UC Berkeley at 16, earned BA in mathematics at 19 (Phi Beta Kappa, highest honors). PhD in biology at MIT at 24. Exceptional early academic trajectory with early university entry.",
+    "inherited_summary": "Born at Stanford University Hospital. Grew up in Sunnyvale, California. Parents (Janet and Philip Fire) not documented as academics. Middle-class Silicon Valley area family.",
+    "ecosystem_summary": "UC Berkeley at 16 for undergraduate, MIT PhD under Nobel laureate Phillip Sharp. MRC LMB postdoc under Sydney Brenner. Strong institutional pipeline with Nobel-level mentors.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "victor-ambros",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Interested in science from age 9, built telescope, amateur astronomer. Realized math skills weren't up to physics, switched to molecular biology. MIT BS and PhD. Good ability but no prodigy indicators.",
+    "inherited_summary": "Father was a Polish WWII refugee who became a farmer. Grew up on a small dairy farm in Hartland, Vermont, one of eight children. Working-class, rural background with no academic family tradition.",
+    "ecosystem_summary": "MIT for both BS and PhD under David Baltimore (Nobel laureate). Postdoc under H. Robert Horvitz (another Nobel laureate). Exceptional mentorship at MIT was the key ecosystem advantage.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "esther-duflo",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-described as 'not stellar at anything in particular' but 'very organized' and 'solid in every school subject.' Good student but no prodigy indicators. Strong academic competence rather than exceptional ability.",
+    "inherited_summary": "Mother was a pediatrician, father was a mathematics professor. Grew up in Asnieres, a western suburb of Paris. Academic family with both parents in intellectual professions. Stable, educated household.",
+    "ecosystem_summary": "Attended Henri IV (magnet high school in Paris), then Ecole Normale Superieure (elite French institution). MIT PhD under Abhijit Banerjee and Joshua Angrist. The ENS-to-MIT pipeline was significant.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jack-szostak",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Father built him a chemistry lab in the basement. Mother supplied chemicals from her work. Entered McGill at 15, BSc at 19, PhD at Cornell by 25. Strong early scientific engagement with hands-on experimentation from childhood.",
+    "inherited_summary": "Father was an aeronautical engineer (RCAF). Mother worked for a Montreal chemical company and supplied chemicals for his experiments. Middle-class family with both parents directly supporting his scientific interests.",
+    "ecosystem_summary": "McGill University at 15, Cornell PhD, Jackson Laboratory summer program. Good institutions but not exceptional for his field. The home chemistry lab was the most distinctive early ecosystem feature.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "peter-shor",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won IMO silver medal (1977), placed 3rd in USAMO, Putnam Fellow (1978). Exceptional competition achievements at the highest level. Rare, trajectory-changing mathematical ability.",
+    "inherited_summary": "Father (S.W. Williston Shor) fostered early interest in math via Scientific American's Martin Gardner column. Descendant of Samuel Wendell Williston. Father had academic lineage. Middle-class family.",
+    "ecosystem_summary": "Tamalpais High School, Caltech undergraduate (strong Putnam team), MIT PhD under Tom Leighton. Bell Labs for career. Good institutional pipeline with strong math competition environment at Caltech.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "gilles-brassard",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Older brother Robert taught him advanced math concepts from an early age. Entered University of Montreal at 13, BSc at 17, MSc at 20. Exceptional early university entry showing strong early ability.",
+    "inherited_summary": "Older brother sparked passion for math. No evidence of wealthy or academic parents. Montreal, Canadian family. Brother's mentorship was the key family advantage.",
+    "ecosystem_summary": "University of Montreal for BSc and MSc, Cornell PhD under John Hopcroft (Turing Award winner). Met Charles Bennett at a conference in 1979, launching quantum cryptography collaboration. Strong advisor and serendipitous collaboration.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "thomas-piketty",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Entered ENS at 18, completed PhD at 22 (best thesis of the year), assistant professor at MIT at 22. Exceptional academic trajectory at elite French institutions, though not a traditional prodigy.",
+    "inherited_summary": "Parents were involved in Trotskyist group and May 1968 protests before retreating from politics. Mother became primary school teacher, father a technician at research institute. Father from bourgeois family but left it. Working-to-middle class.",
+    "ecosystem_summary": "Ecole Normale Superieure (elite French institution), EHESS/LSE joint PhD under Roger Guesnerie. Assistant professor at MIT at 22. The ENS-to-EHESS/LSE pipeline and early MIT faculty position were exceptional.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "carolyn-bertozzi",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Harvard summa cum laude in chemistry. Fell in love with organic chemistry at Harvard. Talented athlete and musician in high school. Good academic ability but no prodigy-level early indicators.",
+    "inherited_summary": "Father (William Bertozzi) was a physics professor at MIT. All of father's four siblings went into sciences. Strong scientific family with direct academic connections and encouragement to explore technology.",
+    "ecosystem_summary": "Grew up in Lexington, MA (academic Boston suburb). Harvard undergraduate (summa cum laude 1988), UC Berkeley PhD (1993). Strong institutional pipeline through Harvard and Berkeley.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "maria-chudnovsky",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Entered St. Petersburg Lyceum 30 (specialist math school) at age 7 via competitive exam. Always interested in math. Co-proved the Strong Perfect Graph Conjecture as a PhD student. Strong early mathematical ability.",
+    "inherited_summary": "Both parents were engineers. Father loved math and encouraged her interest. Family emigrated from USSR to Israel when she was 13. Middle-class professional family with mathematical interests.",
+    "ecosystem_summary": "St. Petersburg Lyceum 30 (specialist math school), Leo Baeck High School in Haifa (advanced math curriculum), Technion for BSc/MSc, Princeton PhD under Paul Seymour. Strong math-focused educational pipeline from Russia to Israel to Princeton.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "lov-grover",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "IIT Delhi bachelor's at 20, Stanford PhD at 23-24. Good academic trajectory but no evidence of prodigy-level early ability or competition achievements. Inventiveness emerged later in career.",
+    "inherited_summary": "Born in Meerut, India. No evidence of special family background, wealth, or academic connections. Ordinary Indian family background.",
+    "ecosystem_summary": "IIT Delhi (elite Indian engineering institution), Stanford PhD, Bell Labs (legendary research institution). The IIT-to-Stanford-to-Bell Labs pipeline was strong, especially Bell Labs for quantum computing work.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "johan-hastad",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won IMO gold medal in 1977 at age 17 (also silver in 1979, bronze in 1976 and 1978). ACM Doctoral Dissertation Award. Rare, trajectory-changing competition achievement at the highest level.",
+    "inherited_summary": "Swedish background. No evidence of special family wealth, academic connections, or domain-specific advantages. Ordinary Swedish upbringing.",
+    "ecosystem_summary": "Stockholm University (BS), Uppsala University (MSc), MIT PhD under Shafi Goldwasser. The MIT theoretical computer science ecosystem under Goldwasser was exceptional for complexity theory.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "alexander-razborov",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Completed PhD at Moscow State University at 24. Won Nevanlinna Prize at 27. Strong early mathematical ability in circuit complexity, though no specific prodigy-level competition evidence found.",
+    "inherited_summary": "Born in Belovo, USSR. No evidence of special family background, wealth, or academic connections. Ordinary Soviet family.",
+    "ecosystem_summary": "Moscow State University (elite Soviet institution), Steklov Mathematical Institute PhD under Sergei Adian. The Soviet/Moscow mathematical tradition in logic and complexity was strong. Nevanlinna Prize at 27 confirmed exceptional early trajectory.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sanjeev-arora",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Topped IIT JEE in 1986 (India's most competitive exam). MIT undergraduate, Berkeley PhD. ACM Doctoral Dissertation Award. Exceptional academic ability demonstrated by topping IIT JEE.",
+    "inherited_summary": "Born in Jodhpur, India. No evidence of special family background, wealth, or academic connections. Ordinary Indian family.",
+    "ecosystem_summary": "IIT Kanpur briefly then MIT undergraduate, Berkeley PhD under Umesh Vazirani. The IIT-to-MIT-to-Berkeley pipeline in theoretical computer science was exceptional.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "madhu-sudan",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "IIT Delhi bachelor's, Berkeley PhD at 26. Nevanlinna Prize winner. Good academic trajectory but no specific prodigy-level early evidence or competition achievements found.",
+    "inherited_summary": "Born in Madras (Chennai), India. No evidence of special family background, wealth, or academic connections. Ordinary Indian family.",
+    "ecosystem_summary": "IIT Delhi (elite Indian engineering institution), Berkeley PhD under Umesh Vazirani. The IIT-to-Berkeley pipeline in theoretical computer science was strong, same advisor as Arora.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "dan-spielman",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Studied math at University of Pennsylvania while in 8th grade. Yale summa cum laude, MIT PhD at 25, ACM Doctoral Dissertation Award. Exceptional early mathematical ability with university-level work as a teenager.",
+    "inherited_summary": "Father was a lawyer and former junior chess standout. Mother was a speech therapist at Temple University. Jewish family in Philadelphia. Middle-class professional family. Father's chess ability may reflect mathematical aptitude.",
+    "ecosystem_summary": "The Philadelphia School (progressive, grade-free), Germantown Friends School, UPenn tutoring in 8th grade, Yale undergrad, MIT PhD under Michael Sipser. Strong educational ecosystem with early university access.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "brian-kobilka",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-described as 'not a particularly good student in grade school' with problems learning to read. No early prodigy indicators. Academic ability developed gradually. MD at Yale at 26.",
+    "inherited_summary": "Father and grandfather were bakers in small-town Little Falls, Minnesota (population 7,000). Working-class, rural background. Family owned and operated a bakery. No academic or domain-specific advantages.",
+    "ecosystem_summary": "University of Minnesota Duluth (regional university), Yale MD, Duke postdoc with Robert Lefkowitz (Nobel laureate). The Lefkowitz lab at Duke was the key ecosystem advantage, but early ecosystem was ordinary.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "shinya-yamanaka",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "Good at mathematics and physics in school. Practiced judo seriously, suffered multiple fractures. MD at Kobe University at 25. Solid academic ability but no prodigy indicators. Career path shifted from surgery to research.",
+    "inherited_summary": "Father ran a small factory manufacturing sawing machine components in Higashi-Osaka. Engineer who designed and made products himself. Mother helped run business. Middle-class family with engineering/entrepreneurial background.",
+    "ecosystem_summary": "Tennoji Junior High/High School (good school attached to Osaka Kyoiku University). Kobe University MD, Osaka City University PhD. Not elite institutions. Gladstone Institutes postdoc at UCSF was important but came later.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "william-kaelin",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Gravitated toward math and computer science in high school. Got a C- in lab course with note that 'future lies outside the laboratory.' Good academic ability but no prodigy indicators. MD at Duke at 25.",
+    "inherited_summary": "Father was an international tax and estate lawyer in Manhattan (Duke law school). Mother majored in mathematics at Adelphi, became actuary at MetLife, then homemaker. Upper-middle class family with strong educational values.",
+    "ecosystem_summary": "St. Agnes Cathedral School, then public school in Fairfield, CT. Duke University for undergraduate and MD. Johns Hopkins for residency. Good institutions but no exceptional early peer environment or mentorship.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "peter-ratcliffe",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Interested in chemistry and building things as a child (explosives, molten metals). Headmaster steered him from chemistry to medicine. Good intellectual curiosity but no prodigy indicators. MB BChir at Cambridge at 24.",
+    "inherited_summary": "Father was the local lawyer in Carnforth, Lancashire. Mother was a telephonist who became homemaker. Middle-class family in small railway town. Stable but not wealthy or academic.",
+    "ecosystem_summary": "Lancaster Royal Grammar School (good school). Won open scholarship to Gonville and Caius College, Cambridge. St Bartholomew's Hospital for medical degree. Oxford for renal medicine research under David Weatherall. Strong institutional pipeline.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "huda-zoghbi",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Good at biology and math in school. Initially wanted to study literature. No prodigy indicators. MD at American University of Beirut (interrupted by civil war), completed at Meharry Medical College at 25.",
+    "inherited_summary": "Father owned olive oil and soap business, was self-taught scholar who loved reading. Mother was homemaker who insisted on medicine. Neither parent went to college. Middle-class Lebanese family valuing knowledge.",
+    "ecosystem_summary": "American University of Beirut (interrupted by civil war). Transferred to Meharry Medical College. Baylor College of Medicine residency and postdoc under Arthur Beaudet. The war disrupted her ecosystem; Baylor was the key later advantage.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "gregory-winter",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Trinity College Cambridge for natural sciences, PhD at MRC LMB at 25. No specific prodigy indicators found. Solid academic trajectory through Cambridge system.",
+    "inherited_summary": "Father was a professor of French who moved from academia to administration in Ghana. Academic family. Spent childhood in Ghana before returning to England. Father's academic position provided international exposure.",
+    "ecosystem_summary": "Royal Grammar School Newcastle, Trinity College Cambridge (BA 1973), PhD at MRC Laboratory of Molecular Biology (legendary institution) under Brian Hartley. The MRC LMB was a trajectory-changing research environment.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "reinhard-genzel",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Father taught him physics from young age. Built optical spectrometer at 16 that could resolve sodium D lines. Strong early experimental physics ability with hands-on engagement from childhood.",
+    "inherited_summary": "Father was a well-known experimental solid state physicist and Max Planck Institute director. Grew up above physics laboratories at the university. Mother studied economics. Rare, trajectory-changing family background in physics.",
+    "ecosystem_summary": "Grew up in physics laboratory environment. Father became founding director of Max Planck Institute for solid state research and directed him toward radio astronomy. Bonn PhD at MPIfR, Berkeley postdoc under Charlie Townes (Nobel laureate). Exceptional ecosystem from childhood through postdoc.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "emmanuel-candes",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Ecole Polytechnique (elite French engineering school), Stanford PhD at 26. Good academic ability but no specific prodigy-level early evidence or competition achievements found.",
+    "inherited_summary": "Father worked in human resources, mother was editor (after raising children). Both had early college degrees. Two brothers with engineering degrees. Middle-class Parisian family with educational values but no academic or domain-specific advantages.",
+    "ecosystem_summary": "Ecole Polytechnique (elite French institution), University of Paris VI/IX for MSc, Stanford PhD under David Donoho. The Polytechnique-to-Stanford pipeline with Donoho as advisor was strong for statistics and signal processing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "andrea-ghez",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Wanted to be first female astronaut from young age. Excelled in math and science in high school. Teaching computer programming at 13. MIT BS in physics, Caltech PhD. Good ability but not prodigy-level.",
+    "inherited_summary": "Father was an economics professor (Columbia PhD) at University of Chicago. Mother became director of contemporary art gallery. Academic/intellectual family. Attended University of Chicago Lab Schools as faculty child.",
+    "ecosystem_summary": "University of Chicago Laboratory Schools (elite private school). MIT undergraduate (BS 1987), Caltech PhD under Gerry Neugebauer (pioneer of infrared astronomy). Strong institutional pipeline with elite schools throughout.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "konstantin-novoselov",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Technical from young age — experiments with electrolysis, electromagnets, gunpowder recipes at 8. Physics and math Olympiads. Free rein with school physics lab equipment. Strong early experimental aptitude.",
+    "inherited_summary": "Mother was an English teacher at his school. Father was an engineer at local factory. Middle-class Soviet family in industrial city. Parents working full time, giving him after-school hours for independent experimentation.",
+    "ecosystem_summary": "Distance Learning School of MIPT (Phystech) introduced by teachers. MIPT for MSc (elite Russian physics institution). Nijmegen PhD under Andre Geim, then Manchester. The MIPT-to-Geim mentorship was the key ecosystem advantage.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "andre-geim",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Left school with top grade 'gold medal.' MIPT with top-grade master's degree. Good academic ability but no specific prodigy indicators. Inventiveness and boldness emerged later in career.",
+    "inherited_summary": "Father was chief engineer at large vacuum-electronics factory (equivalent to CEO). Mother was head of quality control. Top layer of Soviet technocrats. However, ethnic German identity caused discrimination, and father and grandfather were imprisoned in labor camps. Significant disadvantage despite professional status.",
+    "ecosystem_summary": "MIPT (elite Russian physics institution, top-grade master's 1982). Institute of Solid State Physics PhD (1987). Nijmegen, then Manchester. The MIPT ecosystem was strong, but ethnic discrimination limited opportunities in USSR.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "saul-perlmutter",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Harvard magna cum laude in physics. Berkeley PhD at 26. Good academic ability but no specific prodigy-level early evidence. Intellectual curiosity across multiple domains (music, philosophy, physics).",
+    "inherited_summary": "Both parents were university professors — father in chemical engineering at University of Pennsylvania, mother in social work at Temple University. Grandparents were Eastern European Jewish immigrants who valued education. Strong academic family.",
+    "ecosystem_summary": "Greene Street Friends School and Germantown Friends School (Quaker schools in Philadelphia). Harvard undergraduate (magna cum laude 1981), Berkeley PhD under Richard Muller. Strong institutional pipeline with Quaker school values and elite universities.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "adam-riess",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Teaching adult computer programming class at age 13. Attended elite New Jersey Governor's School in the Sciences. MIT BS in physics (Phi Beta Kappa), Harvard PhD. Strong early ability with teaching at young age.",
+    "inherited_summary": "Father ran a frozen-foods distribution company (engineer-turned-entrepreneur). Mother was a psychologist. Middle-class family in Warren, New Jersey. Parents kept him grounded by requiring work in father's deli.",
+    "ecosystem_summary": "Watchung Hills High School, New Jersey Governor's School in the Sciences (elite summer program). MIT undergraduate (1992), Harvard PhD under Robert Kirshner (1996). Strong institutional pipeline with elite summer program and top advisors.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "duncan-haldane",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Attended St Paul's School London (elite) and Christ's College Cambridge. No specific prodigy indicators found. Solid academic trajectory through elite British educational system.",
+    "inherited_summary": "Father was a psychiatrist in the NHS, from Scotland. Mother was a Carinthian Slovene medical student from Austria who couldn't complete her studies in Britain. Medical family that greatly valued science and education. Multicultural heritage.",
+    "ecosystem_summary": "St Paul's School London (elite private school), Christ's College Cambridge, PhD under Philip Anderson (Nobel laureate) at Cambridge. The St Paul's-to-Cambridge-to-Anderson pipeline was exceptional for condensed matter physics.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "takaaki-kajita",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Spent high school time practicing Japanese archery (kyudo). Not particularly focused on physics as a student. Attended Saitama University (local, not elite). No early prodigy indicators. Regretted not studying more physics as undergrad.",
+    "inherited_summary": "Grew up in countryside in Higashimatsuyama, Saitama, surrounded by rice fields. No evidence of special family background, wealth, or academic connections. Ordinary Japanese rural family.",
+    "ecosystem_summary": "Saitama University (local university) for BSc/MSc, then University of Tokyo PhD under Masatoshi Koshiba (future Nobel laureate) at the Kamiokande experiment. The Koshiba lab and Kamiokande detector were the key ecosystem advantages despite modest early education.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "carl-wieman",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Voracious reader in isolated rural childhood. Private geometry course from math professor Bill Firey. Nearly failed first physics class at MIT but thrived in research lab, running own lab by sophomore year. Strong early research ability.",
+    "inherited_summary": "Father was a sawmill worker in Oregon coastal range. Fourth of five children. Grew up in forests far from towns, no TV. Working-class rural background with no academic or domain-specific advantages.",
+    "ecosystem_summary": "Moved to Corvallis for better schools (home of Oregon State University). MIT undergraduate (worked in Daniel Kleppner's lab), Stanford PhD under Theodor Hansch (Nobel laureate). The MIT-to-Stanford pipeline with Nobel-level mentors was key.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "david-julius",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Reluctant student who turned in assignments late. Accepted to Stuyvesant HS (magnet school) somewhat unexpectedly. MIT BS, Berkeley PhD. Good ability that developed over time, but no prodigy indicators.",
+    "inherited_summary": "Parents were first-generation Americans, children of Eastern European Jewish immigrants. Father was electrical engineer at telephone company. Mother was NYC elementary school teacher. Working-class Brooklyn family with modest resources.",
+    "ecosystem_summary": "Stuyvesant High School (elite NYC magnet school for science/math). MIT undergraduate (BS 1977), UC Berkeley PhD under Jeremy Thorner and Randy Schekman (Nobel laureate). Strong institutional pipeline from magnet school through Nobel-level mentorship.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "shuji-nakamura",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "Curious about nature, liked making things (wooden toys, catapults). Self-taught physics reader. Grades not good enough for University of Tokyo. Attended Tokushima University (regional school). Practical ingenuity rather than academic prodigy.",
+    "inherited_summary": "Father was a maintenance man for Shikoku Electric Power. Maternal grandparents were farmers. Grew up in tiny fishing village on Shikoku island. Working-class, rural background with no academic or domain-specific advantages.",
+    "ecosystem_summary": "Tokushima University (regional, non-elite school with outdated textbooks and former high-school teachers as professors). Joined Nichia Corporation (small, obscure local company with ~200 employees). No elite institutional access or notable mentors during formative years. Success came through sheer persistence in industrial setting.",
+    "scoring_confidence": "High"
+  }
+]

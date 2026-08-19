@@ -1,0 +1,503 @@
+[
+  {
+    "person_id": "shaurya-gupta",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started coding at 9, self-taught through online courses and YouTube. Won Apple Swift Student Challenge at 13, invited to WWDC and met Tim Cook. Won the challenge again in 2026. Built SpendSmart (open-source, 1.5M+ Twitter views, 549 GitHub stars) and became YC founding engineer at 15. Exceptional early achievement with no parental technical background.",
+    "inherited_summary": "Immigrated from India to Canada in 2019. Parents have no technical background — neither could help with coding. Attended a private school in India before moving to Hamilton, Ontario. Stable immigrant family but no domain connections or wealth.",
+    "ecosystem_summary": "Leveraged online coding communities, hackathons, and Apple's Swift Student Challenge ecosystem. Buildspace grant ($5K) provided some support. No elite institutional access or notable mentors documented. Online platform access was the key ecosystem enabler.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "nicolas-muntwyler",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Completed BS and MS in Computer Science at ETH Zurich (2017-2023), one of Europe's top technical universities. Built generai.art before co-founding nunu.ai. Solid technical capability but no prodigy-level early achievement documented.",
+    "inherited_summary": "No family background information available. Swiss education system is accessible; ETH Zurich admission is merit-based. No evidence of family wealth, domain connections, or industry networks.",
+    "inherited_summary_2": "",
+    "ecosystem_summary": "ETH Zurich provided elite technical education and the environment where he met co-founders Jan Schnyder and Kyrill Hux in 2017. Research assistant at University of Zurich. YC W23 acceptance and a16z SR003 funding provided acceleration. The ETH peer network was the key ecosystem advantage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sajal-khanna",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Studied CS at BITS Pilani (2013-2017), one of India's top engineering schools. Worked at Capital One in credit analytics. Above-average technical ability but no exceptional early achievement or prodigy evidence.",
+    "inherited_summary": "Middle-class Indian family background. No parental domain expertise in fintech or technology documented. No significant family wealth or industry connections.",
+    "ecosystem_summary": "BITS Pilani provided a strong engineering peer group. Capital One experience in credit analytics directly informed the Akudo concept. YC S21 acceptance provided network and validation. Co-founder team with Lavika Aggarwal and Jagveer Gandhi.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "callum-ferguson",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Studied CS at University of Missouri-Columbia (2017-2021). Joined GitHub in 2015, indicating early coding interest. Co-founded Bonsai Browser at 21. Above-average ability but no exceptional early achievement documented.",
+    "inherited_summary": "No family background information available. Attended a public state university, suggesting a middle-class background without significant family wealth or domain connections.",
+    "ecosystem_summary": "Co-founded Bonsai Browser with Cameron Ferguson (who studied at University of Edinburgh — likely not a sibling given different schools). YC W22 acceptance provided the main ecosystem acceleration. No elite institutional or mentor advantages documented.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "nick-dobroshinsky",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Spent 5 hours/day from 5th-7th grade building a Roblox game (tens of thousands of lines of code). Opened Fidelity account in 7th grade, got into value investing via Buffett. Built EveryTicker MVP in 3 days in 8th grade. Youngest-ever Thiel Fellow at 16. Exceptional early concentration and domain immersion.",
+    "inherited_summary": "Grew up in Sammamish, Washington, an affluent Seattle suburb. Parents were supportive enough to let him open a Fidelity account in 7th grade. No parental domain expertise in finance or tech documented, but stable, well-resourced family environment.",
+    "ecosystem_summary": "Attended Skyline High School in Sammamish. Interned at Tencent Robotics Lab and participated in robotics competitions (Future Martians 9023). Thiel Fellowship provided funding and network. Primarily self-driven through online tools and platforms rather than elite institutional access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "yasser-elsaid",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Studied CS at Cairo University (2017-2019) then York University in Canada (2020-2023). Secured internships at BlackBerry, Tesla, and Meta. Built Chatbase to $64K MRR in 6 months as a bootstrapped solo founder. Smart and capable but not a prodigy — his advantage was AI first-mover timing.",
+    "inherited_summary": "Immigrated from Egypt to Canada in 2019 for university. No family wealth, domain connections, or tech industry networks documented. Working-class immigrant background with no parental tech exposure.",
+    "ecosystem_summary": "York University's Lassonde School provided a decent CS education. FAANG internships (BlackBerry, Tesla, Meta) gave industry exposure. The key advantage was timing — building on OpenAI's API weeks before ChatGPT launched. Twitter viral launch to 16 followers was the distribution breakthrough.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "federico-faggin",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Built model airplanes from scratch at 11 with no money, teaching himself design and construction. Co-designed and built a small experimental computer at Olivetti at age 19, leading four technicians. Earned physics degree summa cum laude from University of Padua. Exceptional early mechanical and electronic aptitude.",
+    "inherited_summary": "Father was a teacher of history and philosophy at a liceo classico, also a libero docente (PhD equivalent) who taught at University of Padua and wrote ~40 books. Mother was an elementary school teacher. Intellectual household but not in technology domain. Grew up during wartime with limited resources.",
+    "ecosystem_summary": "Joined Olivetti's Electronic R&D Laboratory at 19 — one of the most advanced computing companies in Italy at the time. Then moved to SGS-Fairchild and was sent to Silicon Valley in 1968, landing at Fairchild Semiconductor and then Intel. The Olivetti-to-Silicon Valley pipeline was a trajectory-changing ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "klaus-wolfermann",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started in gymnastics via his father, discovered strong throwing ability at 14 through handball. Trained as a toolmaker at Siemens before studying at the Bavarian Sports Academy. Good natural athletic ability but not a prodigy — developed through sustained training.",
+    "inherited_summary": "Father was a blacksmith and successful gymnast who brought him to gymnastics halls, introducing him to sport. Working-class background; trained as a toolmaker before pursuing sports. Father provided early sports exposure but no wealth or elite connections.",
+    "ecosystem_summary": "West German sports system provided structured training and competitive pipelines. Coach Hermann Rieder at the Bavarian Sports Academy. SV Gendorf employed him as a sports teacher with flexible hours for training. Solid athletic infrastructure but not exceptional.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ángel-cabrera",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Caddied at Córdoba Golf Club from age 10, learned golf playing against other caddies for money. Powerful swing and fierce determination caught members' attention. Dropped out of elementary school to caddie full-time. Natural athletic talent developed through raw repetition, not coaching.",
+    "inherited_summary": "Born in poverty in Córdoba, Argentina. Father was a handyman, mother a maid. Parents separated when he was 3-4; raised by paternal grandmother in impoverished conditions. Active disadvantage — hunger-filled childhood, broken home, no resources.",
+    "ecosystem_summary": "Córdoba Golf Club provided access to the sport through caddying. Mentor Eduardo Romero, a professional golfer who lived two blocks away, encouraged him to take up golf at 15 and became his sponsor. Juan Cruz Molina, a local real estate magnate, bought him his first set of clubs at 16. Mentor-driven ecosystem despite poverty.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "uljana-semjonova",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "At 7 feet (213 cm) tall with extraordinary physical proportions, she was over 6 feet by age 13. Her physical dominance was so complete that she never lost a single game in official international competition. Rare, trajectory-changing physical endowment that made her the most dominant women's basketball player of her era.",
+    "inherited_summary": "Born in Zarasai, Lithuania to an Old Believer family. Second youngest of six children. No family sports background or wealth documented. Modest rural background with no domain connections.",
+    "ecosystem_summary": "Soviet sports system identified and developed her talent, placing her at TTT Riga at age 16. TTT Riga was an elite club that won 15 European Champion's Cups during her career. The Soviet state sports pipeline provided structured training, competition, and resources — a significant ecosystem advantage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "go-nagai",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Created manga with help from brother Yasutaka as a teenager. Suffered an illness that motivated him to pursue manga seriously. Debuted professionally at 22. Creative drive and persistence but no prodigy-level achievement before his apprenticeship.",
+    "inherited_summary": "Born in Wajima, fourth of five brothers. Family returned from Shanghai. Father died when he was young; mother opposed his manga aspirations and secretly convinced publishers to reject his work. No family wealth or industry connections. Mother's opposition was an active barrier.",
+    "ecosystem_summary": "Became assistant to Shotaro Ishinomori at 19 — one of the most influential manga artists in Japan. Ishinomori studio provided hands-on craft training. Invited as one of the first artists in the new Weekly Shōnen Jump, which became the dominant manga magazine. The Ishinomori apprenticeship was trajectory-changing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tayson",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started playing Fortnite at 14 with friends in Slovenia. Won back-to-back FNCS Grand Finals at 16 (2020). Exceptional mechanical skill and competitive consistency for his age, but standard esports trajectory without prodigy-level markers.",
+    "inherited_summary": "From a small village in Slovenia. Parents were supportive of his gaming once they saw his potential. No family gaming background, wealth, or industry connections. Working-class background in a small country with limited esports infrastructure.",
+    "ecosystem_summary": "Fortnite's entirely online competitive ecosystem allowed a Slovenian teenager to compete globally. Team FRAG and later Team Falcons provided organizational support. The Fortnite esports wave (2019-2020) was the key timing advantage. No elite institutional access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "mongraal",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started gaming at 8, competing in Halo and Call of Duty by 10. Became the youngest professional Fortnite player in the world at 13 when signed by Team Secret. Competed in Fortnite World Cup at 14, placing 6th in duos ($225K) and 13th in solos ($150K). Exceptional early mechanical skill and competitive achievement.",
+    "inherited_summary": "From Sidcup, Kent/Bexley, London. Parents very supportive — father agreed to accompany him to competitions worldwide. Older brother in university. Stable, supportive middle-class family with willingness to invest time in his gaming career.",
+    "ecosystem_summary": "Fortnite esports wave provided the platform. Team Secret and then FaZe Clan provided professional infrastructure. The online competitive ecosystem allowed early discovery. No elite institutional access, but the Fortnite World Cup and pro team system were significant.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "archie-rocket-league",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Began competing in RLCS as a teenager. Won first RLCS EU Regional at 15 in December 2020. Became the only player to qualify for every RLCS EU Regional Main Event, showing exceptional consistency. Strong mechanical skill but standard esports trajectory.",
+    "inherited_summary": "From Leeds, England. Father Matthew Pickthall is a retail manager (former Tesco area manager) with a WSET wine diploma. Middle-class family. Father and brother attend his events. No gaming industry connections or family wealth.",
+    "ecosystem_summary": "RLCS online competitive ecosystem provided the platform. No elite institutional access or notable mentors documented. The online Rocket League competitive circuit was the primary ecosystem enabler.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "firstkiller",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started competing in Rocket League around age 12-13 in 2017, one of the youngest in the NA scene. Finished 5th at RLCS NA Championship at 16, 3rd-4th at World Championship at 17. Named NA RLCS MVP in 2023. Strong early start and consistent excellence.",
+    "inherited_summary": "No family background information available. American player. No evidence of family wealth, domain connections, or industry networks.",
+    "ecosystem_summary": "RLCS competitive ecosystem provided the platform. Shopify Rebellion team infrastructure. No elite institutional access or notable mentors documented. The online competitive circuit was the primary ecosystem enabler.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "rise-rocket-league",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Rose through the European Rocket League competitive scene as a teenager. Won first RLCS Major at 17 in July 2022. First player to score 200 RLCS LAN goals. Ranked 3rd best player of 2022. Strong mechanical skill and consistency.",
+    "inherited_summary": "English player. No family background, parental domain expertise, or financial platform documented. No evidence of family wealth or industry connections.",
+    "ecosystem_summary": "RLCS competitive ecosystem provided the platform. No elite institutional access or notable mentors documented. The online and LAN competitive circuit was the primary ecosystem enabler.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "royce-branning",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started a company (Closet Clicks) at 15 with his older brother Rich while in high school. Graduated from Notre Dame with CS degree. Worked at Quicken for 3 years. Above-average entrepreneurial drive and technical ability, but not prodigy-level.",
+    "inherited_summary": "Born and raised in the Bay Area, specifically Menlo Park, California — ground zero of Silicon Valley. Older brother Rich was co-founder of his first startup. Grew up watching 'software eat the world' from ground zero. Upper-middle-class Bay Area family with tech immersion.",
+    "ecosystem_summary": "Bay Area/Silicon Valley immersion from birth. Menlo-Atherton High School. University of Notre Dame CS program. Quicken internship and full-time role in Menlo Park. YC W23 acceptance. Met co-founder Oliver Hill through YC matching platform. Deep Silicon Valley ecosystem access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "oliver-hill",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Attended Deerfield Academy (elite boarding school), then Georgetown University for CS. Walked onto Division I football team as placekicker with 100% field goal accuracy. Worked at Amazon on Alexa ML. Solid technical ability but no exceptional early achievement.",
+    "inherited_summary": "Attended Deerfield Academy, an elite boarding school in Massachusetts (~$65K/year tuition), suggesting significant family wealth. Georgetown University for undergraduate. Upper-class background with access to elite education from an early age.",
+    "ecosystem_summary": "Deerfield Academy and Georgetown provided elite educational environments. Amazon/Alexa ML experience. YC W23 with Clearspace. Met co-founder Royce Branning through YC matching platform. Good ecosystem access but not frontier-level.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sara-alfageeh",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught drawing starting halfway through high school, inspired by online fanart. Switched from psychology to illustration in college after reading Ms Marvel. Built significant online following through art. Creative talent and drive but not a prodigy — started drawing relatively late.",
+    "inherited_summary": "Jordanian-American family with Bedouin roots, born and raised in the US (Boston area). Stable, supportive immigrant family. No direct tech or gaming industry connections, but cultural emphasis on education and creativity.",
+    "ecosystem_summary": "Co-founded One More Multiverse with Thariq Shihipar and Hisham Bedri. YC W20 acceptance. Built distribution through TikTok (190K+ followers), Discord (50K members), and Twitter. San Francisco-based. The YC ecosystem and co-founder team were key advantages.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "clix-cody-conrod",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Introduced to video games at 5, started Fortnite at 13. Qualified for Fortnite World Cup at 14, winning $162,500. Built 8.4M Twitch followers and 3.82M YouTube subscribers. Exceptional gaming skill and content creation ability, but standard esports trajectory.",
+    "inherited_summary": "Born in Watertown, Connecticut to Scott Conrod and Lucy DiLoreto, of German and Italian descent. Small-town, working/middle-class family. Father bought him a $1,000 gaming PC at 14 with a contract to repay. No gaming industry connections or family wealth.",
+    "ecosystem_summary": "Fortnite esports wave and Twitch/YouTube distribution platforms were the key enablers. Older brother introduced him to Fortnite. Misfits, NRG, and XSET provided team infrastructure. No elite institutional access — purely platform-driven ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "dylan-johnson-good-gamers",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "No prior game development experience or artistic training. Was a COVID ICU nurse who tinkered with Fortnite Creative tools on PS4 to decompress. His success came from platform timing and viral product design, not exceptional early ability.",
+    "inherited_summary": "Ohio-born healthcare worker. No family background in gaming, technology, or game development. Nursing career suggests middle-class background with no domain connections.",
+    "ecosystem_summary": "Fortnite UGC (user-generated content) wave and Epic Games' revenue-sharing model were the key ecosystem enablers. Early adoption of Fortnite Creative tools gave him a first-mover advantage. No elite institutional or mentor access — purely platform-driven.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "melanie-capone",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Built competitive foundation in Counter-Strike before transitioning to Valorant in 2020. Joined Cloud9 White in October 2020 and immediately dominated the Game Changers circuit. Attended St. Clair College for computer systems. Strong gaming skill but no prodigy-level early markers.",
+    "inherited_summary": "From Windsor, Ontario, Canada (some sources say California/Texas). Dropped out of St. Clair College. No family background, wealth, or gaming industry connections documented. Had to hide her gaming identity in high school due to social stigma.",
+    "ecosystem_summary": "Cloud9 White team infrastructure and the Valorant Game Changers circuit (all-female competitive league) provided the platform. MAJKL team formed organically before Cloud9 signing. The Game Changers wave was well-timed for her CS:GO background.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "josh-glodoveza",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started making YouTube thumbnails at 13, earning $5,000+/year. Landed stream coordinator role at Sentinels at 13. Became VP of talent at Fanjoy at 18. Co-founded PANEL at 20. Exceptional early industry entry and hustle, building a career from age 13.",
+    "inherited_summary": "Born and raised in Manila, Philippines. Father was an Overseas Filipino Worker (OFW) in Qatar for most of his childhood. Mother moved the family to Qatar to reunite. Working-class immigrant background with no gaming industry connections.",
+    "ecosystem_summary": "Twitch/streaming wave and the gaming creator economy provided the platform. Sentinels, Gen.G, and Ader Gaming provided industry access. The move to Qatar at 12 (which led to gaming as solace) was a geographic catalyst. Forbes 30 Under 30 validation.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tarik-celik",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started playing CS:GO competitively in middle school (CAL leagues). Created popular deathmatch servers (FragShack) in high school. Won ELEAGUE Boston Major at 21, first American MVP of a CS:GO Major. Strong competitive skill and community engagement from young age.",
+    "inherited_summary": "Born in Brooklyn, New York, of Turkish descent. Parents initially against his gaming career. Has a younger sister and brother. Working-class immigrant family with no gaming industry connections.",
+    "ecosystem_summary": "North American CS:GO competitive pipeline provided the platform. CLG, OpTic Gaming, and Cloud9 provided elite team infrastructure. The Boston Major victory on home soil was perfectly timed. Streaming on Twitch provided distribution. Dropped out of college after one semester.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "xalavier-nelson-jr",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Wrote game reviews at 12 on a personal WordPress blog, became a PC Gamer columnist in his early teens. Accumulated deep domain knowledge of the game industry before transitioning to development at 17. Founded Strange Scaffold at ~21 with $2,000 from his father. Exceptional early domain immersion and self-directed learning.",
+    "inherited_summary": "Grew up in Texas in a military/unschooling family. Father joined the military to support the family; parents 'started with nothing.' Father provided $2,000 to start Strange Scaffold. Modest background but supportive of self-directed learning.",
+    "ecosystem_summary": "Unschooling fostered self-directed learning and intense concentration. Military family travels exposed him to diverse experiences and online friendships. Indie game community connections built through journalism. No elite institutional access — ecosystem was self-created through online networks.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sahil-lavingia",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught Photoshop at 14 when middle school gave students free licenses. Built 20 apps and made over $100,000 by 15, becoming financially independent. Became Pinterest's 4th employee at 18. Founded Gumroad at 19, raising $1.1M. Exceptional early achievement in design and entrepreneurship.",
+    "inherited_summary": "Son of Singapore-based investment bankers of Indian origin. Lived in Hong Kong, Singapore, London, and New York growing up. Globally mobile, upper-middle-class family with strong financial and professional networks. Significant inherited leverage through family background.",
+    "ecosystem_summary": "Silicon Valley ecosystem access was decisive — moved there for USC, dropped out for Pinterest, then founded Gumroad. Josh Elman at Greylock Partners served as mentor. Pinterest network provided credibility and connections. The global upbringing gave him adaptability and confidence.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "laura-behrens-wu",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Studied economics in Switzerland. Stumbled into Silicon Valley through a chance encounter with a YC founder at a Zurich meetup. Co-founded Shippo at ~21. Smart and entrepreneurial but no exceptional early achievement before the startup.",
+    "inherited_summary": "German diplomat father (German foreign ministry) and Taiwanese mother. Grew up across Germany, Beijing (6 years), Berlin, Ecuador, and Cairo. Elite global upbringing with diplomatic family status, multilingual education, and international mobility. Significant inherited leverage through diplomat family background.",
+    "ecosystem_summary": "Chance encounter with a YC alumnus at a Zurich meetup led to a LendUp internship, which introduced her to Silicon Valley. Co-founded Shippo with Simon Kreuz. YC ecosystem access. The e-commerce shipping wave was well-timed. Entry to SV was serendipitous rather than pre-existing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "rohan-puri",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Research specialist at MIT Media Lab who co-invented biometric identification technology (Zensei) in collaboration with Google. Co-instructed a graduate-level course on computational imaging at MIT. Founded Stable Auto at ~18. Exceptional early research achievement at an elite institution.",
+    "inherited_summary": "No family background information available. MIT Media Lab position suggests strong academic preparation but no evidence of family wealth or domain connections.",
+    "ecosystem_summary": "MIT Media Lab provided the elite institutional environment, research resources, and Google collaboration. Met co-founder Jamie Schiel in the Camera Culture group. MIT E14 Fund and Ubiquity Ventures backed Stable Auto. The MIT Media Lab ecosystem was trajectory-changing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "harrison-chase",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Graduated from Harvard in 2017 with BA in Statistics and CS. Got into ML through sports analytics. Five years of ML engineering experience at Kensho and Robust Intelligence before building LangChain. Solid academic and career trajectory but no prodigy-level early achievement.",
+    "inherited_summary": "No family background information available. Harvard admission suggests strong academic preparation but no evidence of family wealth or domain connections.",
+    "ecosystem_summary": "Harvard provided elite education and CS foundation. Kensho Technologies (fintech ML startup) and Robust Intelligence provided five years of ML engineering reps. The LLM/ChatGPT structural wave in late 2022 was perfectly timed for LangChain. GitHub open-source distribution was the key channel.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "aravind-krishnan",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "At 14, learned about horseshoe crab blood harvesting during a school trip and spent his entire high school career in a university lab genetically engineering plants as biosensors. Won Truman Scholarship, UN Millennium Fellowship. Founded ToxiSense as a UPenn freshman. Exceptional early scientific research achievement.",
+    "inherited_summary": "From Newark, Delaware. Stable family in a middle-class suburban area near multiple universities. Family took trips to the Jersey Shore. No direct family domain expertise in biotech, but supportive of his scientific pursuits from a young age.",
+    "ecosystem_summary": "Contacted ~100 professors and was accepted into Rutgers professor Eric Lam's lab in high school — providing university lab access and mentorship. UPenn/Wharton's Vagelos LSM program (dual life sciences and business). Won Wharton Venture Lab Startup Challenge. Co-founder team of classmates. Truman Scholar.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jschlatt",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started making YouTube videos at 14 in 2013, uploading Call of Duty gameplay. Played cello in middle/high school. Went viral with 'elon r u ok' at 18 (27M+ views). Comedic talent and early platform engagement but no prodigy-level markers.",
+    "inherited_summary": "Born in New York City, grew up in Brooklyn/Long Island. Youngest of three siblings. Parents' identities and professions unknown. Worked at a deli as a teenager. Dropped out of college with ~$100K in student loans. Working-class background with no industry connections.",
+    "ecosystem_summary": "YouTube platform provided distribution from age 14. SMPLive Minecraft server (2019) and Dream SMP provided collaborative content ecosystems. OTK (One True King) collective provided network. The Minecraft multiplayer content wave was well-timed. No elite institutional access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "slimecicle",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Created YouTube channel at 12-13 in 2011. Channel blew up in 2016 with Overwatch content ('Inside the Mind of a Mei Player' with 13M+ views). Studied broadcast media production at Champlain College. Humor and content creation talent but no prodigy-level early markers.",
+    "inherited_summary": "Born in Virginia, USA. Has a younger brother. Parents' names and professions not publicly disclosed. Attended Flint High School in Virginia and Champlain College in Vermont. No evidence of family wealth or industry connections.",
+    "ecosystem_summary": "YouTube platform provided distribution from age 12. The Overwatch content wave (2016) was the first viral catalyst. Dream SMP and QSMP Minecraft collaborations expanded audience. Champlain College provided broadcast media skills. No elite institutional access.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "margit-korondi",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won Olympic gold on uneven bars at 20, plus 5 additional medals in the same Olympics (1952). Father trained her from infancy — she was gymnastics-trained before she could walk. Eight total Olympic medals across two Games. Exceptional early achievement driven by lifelong domain immersion.",
+    "inherited_summary": "Father was Korondi (Kronstein) Ferenc, a Hungarian champion gymnast who became a physical education teacher and gymnastics coach at BBTE and then Vasas. He trained her from a few weeks old, swinging and rotating her. Direct family-domain apprenticeship with a champion-level coach as father.",
+    "ecosystem_summary": "Hungarian gymnastics pipeline was one of the world's strongest in this era. Father-coach at Vasas Budapest provided elite training. The Hungarian sports system produced multiple Olympic champions. The father-daughter coaching relationship was a trajectory-changing ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "vasyl-lomachenko",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Built an amateur record of 396 wins and 1 loss. Won Olympic gold at 20 (2008 Beijing), awarded Val Barker Trophy as outstanding boxer. Won World Championships gold in 2009 and 2011. Arguably the greatest amateur boxer of all time — rare, trajectory-changing physical and cognitive endowment.",
+    "inherited_summary": "Father Anatoly was a boxing coach and PE teacher who designed a deliberate training plan from before Vasyl's birth. Put boxing gloves on him at 3 days old. Directed him through Ukrainian dance and gymnastics before boxing to build footwork and athleticism. Father-coach relationship was the defining advantage.",
+    "ecosystem_summary": "Ukrainian boxing pipeline provided competitive infrastructure. Father's innovative training methods (dance, gymnastics, crosswords, swimming, tennis) were ahead of their time. The Soviet/post-Soviet sports system identified and supported his talent. Father's coaching was trajectory-changing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "andrás-adorján",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "European Junior Chess Champion at 19 (1969), World Junior Championship runner-up behind Anatoly Karpov the same year. Became chess master at 16. International Master at 20, Grandmaster at 23. Strong early competitive achievement in chess.",
+    "inherited_summary": "Born in Budapest as András Jocha, adopted mother's maiden name Adorján at 18. No family chess background or domain connections documented. Grew up in Kispest-Wekerle housing estate in Budapest. No evidence of family wealth or chess lineage.",
+    "ecosystem_summary": "Budapest's strong chess culture provided competitive infrastructure. Trained by Bela Papp at Angyalföldi Sportiskola from 1962. Hungarian chess ecosystem produced multiple grandmasters. Papp was an exceptional coach who managed his competitive development. Solid but not once-in-a-generation.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sofia-polgár",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Won the Magistrale di Roma tournament at 14, scoring 8.5/9 against grandmasters with a performance rating of 2879 — one of the strongest tournament performances in chess history. Started playing chess at 4. Prodigy-level achievement as the product of a deliberate educational experiment.",
+    "inherited_summary": "Father László Polgár was a Hungarian psychologist who designed a deliberate experiment to prove 'geniuses are made, not born.' He and wife Klára (both teachers with PhDs in education) homeschooled their three daughters with chess as the specialist subject. Once-in-a-generation family-domain apprenticeship.",
+    "ecosystem_summary": "Three Polgár sisters (Sofia, Judit, Susan) formed an exceptional peer team that trained together daily. Father served as dedicated full-time coach. Budapest chess culture provided competitive infrastructure. Bobby Fischer visited and played with the sisters. Once-in-a-generation peer and mentor environment.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "grunk",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Created YouTube channel at 12 (2016), started Twitch streaming at 13 (2018). Joined SMPLive Minecraft server at 14, befriended content creators. Became Twitch Partner with 50K+ followers by 18. Early platform engagement and content creation ability but no prodigy-level markers.",
+    "inherited_summary": "Born in the United States. Parents' identities and professions unknown. Raised in a supportive family environment. No evidence of family wealth, gaming industry connections, or domain expertise.",
+    "ecosystem_summary": "SMPLive Minecraft server provided early creator connections. The Group collective (based in Austin, Texas) amplified reach through cross-platform collaboration. Twitch and YouTube platforms provided distribution. The Minecraft streaming wave was well-timed. No elite institutional access.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "ironmouse",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Originally trained as a coloratura soprano opera singer. Diagnosed with CVID, which left her largely bedridden and isolated. Turned to streaming at 20 using a free avatar and FaceRig software. Won Content Creator of the Year at The Game Awards 2023. Distinctive talent shaped by adversity.",
+    "inherited_summary": "Puerto Rican. Diagnosed with common variable immunodeficiency (CVID), which left her largely bedridden and isolated. Could not work to afford medications. Active health disadvantage that constrained her entire life trajectory. No family wealth or connections documented.",
+    "ecosystem_summary": "VTuber wave and Kizuna AI's inspiration provided the platform. VShojo agency (founding member) provided infrastructure. Twitch platform provided distribution. The COVID-19 pandemic paradoxically increased her relevance as online interaction surged. Opera training gave distinctive singing ability.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "shgurr",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Created YouTube channel at 15 (2011) as an outlet for social withdrawal. Self-taught animation using Sony Vegas, Paint Tool SAI, and Audacity. Produced storytime animations that resonated with the YouTube animation community. Creative talent and persistence but no prodigy-level markers.",
+    "inherited_summary": "Born in California, one of nine siblings. Raised in a devout LDS (Mormon) family. Bullied in school and church, described herself as 'miserable' and socially withdrawn as a teenager. Large family but no domain connections or wealth. Social adversity but stable home.",
+    "ecosystem_summary": "YouTube animation wave (2011-2015) provided the platform. Online animation community (Jaiden Animations, TheOdd1sOut peer group) provided peer support. BYU for animation. LDS mission to Montreal provided life experience. No elite institutional access — self-taught through online tools.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "somethingelseyt",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Created YouTube channel at 16 (2014), initially with gaming content. Pivoted to storytime animations in 2016. Viral hit 'I'm Something Else' in March 2019 (78M+ views). Self-taught animation and creative talent but no prodigy-level early markers.",
+    "inherited_summary": "Born in Arizona, of Mexican and European descent. Father is Mexican-American, mother of European descent. Supportive parents. Has an older sister and younger brother (KshotTV, also a YouTuber). Working/middle-class family with no industry connections.",
+    "ecosystem_summary": "YouTube animation wave provided the platform. Animation Squad peer group (Jaiden Animations, TheOdd1sOut) provided collaboration opportunities. The viral music video format was well-timed. No elite institutional access — self-taught through online tools and community.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "zachary-hsieh-zhc",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Interested in art from early age, inspired by comic books. At 16, committed to practicing drawing 12+ hours a day, seven days a week. Created YouTube channel at 14 while at School of Visual Arts. Reached 1M subscribers at 20, 25M+ by 23. Exceptional dedication and intensive self-driven practice.",
+    "inherited_summary": "Born in San Jose, California. Attended School of Visual Arts in New York City (a private art college ~$40K/year). Stable, supportive family in an affluent area. Access to expensive art education suggests upper-middle-class background.",
+    "ecosystem_summary": "School of Visual Arts in NYC provided formal art training (though he dropped out). YouTube art challenge video format provided viral distribution. Night Media (management company) provided professional representation. Forbes 30 Under 30. The YouTube art content wave was well-timed.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "jalaiah-harmon",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Formally trained in hip-hop, ballet, lyrical, jazz, tumbling, and tap from a young age. Created the Renegade dance at 14, which became one of the most viral dances on TikTok. Choreographic ability combining multiple dance disciplines at a young age. Exceptional early creative achievement.",
+    "inherited_summary": "Parents are Dr. Stefanie Harmon and Dr. Brian Harmon — both educators with doctoral degrees. Grew up in Fayetteville, Georgia, a suburban Atlanta area. Stable, educated, middle-class family with strong support for her dance training.",
+    "ecosystem_summary": "Dance studio training near her home provided formal foundation. Dance411 studio in Atlanta for professional-level training. TikTok platform provided viral distribution. New York Times profile (February 2020) was the credit-claiming catalyst. Forbes 30 Under 30. The TikTok dance wave was perfectly timed.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "charu-thomas",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Graduated high school a year early due to academic excellence. Enrolled at Georgia Tech for industrial engineering. Began research with Thad Starner (Google Glass inventor) as a sophomore. Won Best Paper at ACM International Symposium on Wearable Computers. Founded Oculogx at 18-19. Exceptional early academic and research achievement.",
+    "inherited_summary": "Born in Australia, moved to Atlanta suburbs at age 2. Graduated high school early with a governor's scholarship. Stable family in an area with strong universities. Originally planned to be an academic mathematician. Supportive family environment for academic pursuits.",
+    "ecosystem_summary": "Georgia Tech's top-ranked ISyE program provided elite education. Thad Starner (Google Glass technical lead) was a trajectory-changing mentor. Atlanta's growing startup ecosystem. Won Atlanta Startup Battle ($100K). Forbes 30 Under 30. The AR/wearable computing wave was well-timed.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "danya-sherman",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Founded KnoNap at 19-20 after being drugged and assaulted while studying abroad. Invented a cocktail napkin that detects date rape drugs. Won GWU New Venture Competition. Entrepreneurial drive born from adversity rather than exceptional early ability.",
+    "inherited_summary": "Grew up in a Jewish home in Scottsdale, Arizona (affluent Phoenix suburb). Parents are entrepreneurial — they encouraged her to enroll in a Women's Entrepreneurial Leadership course. Stable, upper-middle-class family with entrepreneurial background. Won a TV cooking contest in high school for a college scholarship.",
+    "ecosystem_summary": "George Washington University provided the academic environment and New Venture Competition platform. Women's Entrepreneurial Leadership Initiative course was the catalyst. Halcyon incubator provided support. Forbes 30 Under 30 Social Entrepreneurs. Toyota Mother of Invention award. Solid but not elite ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "punk",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Playing games since age 4. Started Street Fighter IV at 11 in 2009. Broke into professional scene at 18, winning ELEAGUE Street Fighter V Invitational ($150K) and finishing 2nd at EVO 2017. First American to win EVO main stage in over a decade (2024). Exceptional early gaming ability and competitive achievement.",
+    "inherited_summary": "Mother is a registered nurse, father is an engineer. Parents separated when he was 14. Five older siblings. Middle-class family in Philadelphia. Parents supportive of gaming career despite initial reservations. Father's engineering background suggests technical household.",
+    "ecosystem_summary": "Fighting Game Community (FGC) ecosystem provided competitive infrastructure. Played online from age 11, then competed locally. No elite team infrastructure or institutional support in early career — the FGC is primarily community-driven. The Street Fighter V release wave (2016) was well-timed.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "idom",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started playing fighting games at 11-12 after a bad breakup. Rose to prominence at Next Level Battle Circuit (NLBC) in New York with dominant performances. Won Capcom Cup 2019 at 20 ($250K), defeating Punk in Grand Finals. Self-taught through online play, exceptional mechanical skill and game understanding.",
+    "inherited_summary": "From Jamaica, Queens, New York. No family background, parental professions, or financial information documented. No evidence of family wealth, gaming connections, or domain expertise.",
+    "ecosystem_summary": "Next Level Battle Circuit (NLBC) in New York — one of the FGC's most competitive local tournaments — was the key training ground. The New York/East Coast FGC scene provided strong peer competition. The Street Fighter V competitive wave was well-timed. No elite institutional access.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "kevin-liu-hf",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Completed SB in Mathematics and CS at MIT with 5.0/5.0 GPA. MEng researcher at MIT CSAIL. Published first-author paper at EMNLP 2023 on truthfulness in language models. MITRE Undergraduate Research and Innovation Scholar. Interned at NASDAQ in high school. Exceptional academic and research achievement.",
+    "inherited_summary": "Attended Carmel High School in Carmel, Indiana (affluent Indianapolis suburb) with 4.7/4.0 GPA. Stable family in an affluent suburban area with strong schools. No direct family domain expertise documented but academic environment suggests educated household.",
+    "ecosystem_summary": "MIT CSAIL provided elite research environment. Mentored by Jacob Andreas and Dylan Hadfield-Menill. MIT SuperUROP program provided research infrastructure. Access to HuggingFace and PyTorch tools. The LLM research wave was perfectly timed for his EMNLP publication.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "teven-le-scao",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Studied applied mathematics at École Polytechnique (2014-2018), one of France's most elite engineering schools (admission through competitive exam). Then NLP at CMU's Language Technologies Institute (2017-2019). Lead author of BLOOM (176B-parameter model). Key contributor to Hugging Face Transformers library. Exceptional academic trajectory.",
+    "inherited_summary": "Admission to École Polytechnique requires passing one of France's most competitive exams, typically requiring years of intensive preparatory classes (classes préparatoires). This suggests strong academic preparation, likely from an educated family. The school is military-affiliated (DGA). No direct family wealth info.",
+    "ecosystem_summary": "École Polytechnique and CMU's LTI are both elite institutions. Joined Hugging Face in February 2020 as an early research engineer — perfect timing for the open-source AI/LLM wave. The BigScience workshop for BLOOM and Hugging Face's Transformers library (162K+ GitHub stars) provided trajectory-changing platforms.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "maryam-mirzakhani",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won IMO gold medal at 17 (1994, first Iranian woman) and a perfect-score gold at 18 (1995). First Iranian to achieve a perfect IMO score. Later won the Fields Medal (2014). Rare, trajectory-changing mathematical prodigy — one of the greatest mathematicians of her generation.",
+    "inherited_summary": "Father Ahmad Mirzakhani was an electrical engineer. Mother Zahra Haghighi. Grew up in Tehran during the Iran-Iraq war (1980-1988), a difficult period. Parents were 'always very supportive and encouraging' and valued meaningful professions over achievement. Older brother sparked her interest in science. Educated, supportive middle-class family.",
+    "ecosystem_summary": "Attended Tehran's Farzanegan School, part of NODET (National Organization for Development of Exceptional Talents) — a pipeline for Iran's brightest students. Lifelong friend Roya Beheshti (now math professor at WashU) was a key peer. Sharif University of Technology for undergrad. Harvard PhD under Curtis McMullen. The NODET pipeline was trajectory-changing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "waldemar-cierpinski",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Ran 6km daily to and from school as a child because he couldn't afford the bus, building aerobic base. Originally a steeplechase runner, switched to marathon in 1974. Won Olympic marathon gold in 1976 with an Olympic record. Good natural endurance developed through circumstance rather than exceptional early talent.",
+    "inherited_summary": "Born in Neugattersleben, East Germany, to Polish parents who fled Poland in 1945 as refugees. Father was handicapped. Seven siblings. Modest refugee family with limited resources — active disadvantage through poverty and displacement.",
+    "ecosystem_summary": "East German state sports system provided structured training, coaching, and competitive pipelines — one of the world's most disciplined athletic programs. Trained as part of the state system from teenage years. The steeplechase-to-marathon transition was well-coached. The East German sports infrastructure was a significant ecosystem advantage.",
+    "scoring_confidence": "Medium"
+  }
+]

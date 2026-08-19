@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "jeremy-irons",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Played drums in school band at Sherborne but showed no exceptional early acting ability. Attended Bristol Old Vic Theatre School for classical training, suggesting above-average aptitude rather than prodigy-level talent.",
+    "inherited_summary": "Born to an accountant father in a prosperous middle-class family on the Isle of Wight. Attended the independent Sherborne School, indicating family wealth sufficient for elite private education.",
+    "ecosystem_summary": "Educated at elite Sherborne School and the prestigious Bristol Old Vic Theatre School, providing rare classical theatrical training. London West End debut in Godspell at the Roundhouse placed him in a strong theatrical ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "colin-bell",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Showed strong football passion from childhood and signed professional at 17, becoming Bury's captain quickly. Above-average athletic ability but no evidence of prodigy-level talent.",
+    "inherited_summary": "Grew up in a working-class mining community in Hesleden, County Durham. Mother played ladies football and died when he was a child. No financial or professional advantages; father raised the family.",
+    "ecosystem_summary": "Played for Horden Colliery Welfare Juniors before signing with Bury at 17 and transferring to Manchester City at 20. Standard professional football pipeline with no elite academy or notable mentorship.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "peter-schmeichel",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started football at 8 with exceptional physical attributes (6'4\", 100kg) that gave him natural goalkeeping advantages. Told he could play for Denmark at 9, but not a prodigy in the traditional sense.",
+    "inherited_summary": "Father was a Polish jazz musician and immigrant who was a double agent; mother was a Danish nurse. Held Polish citizenship until age 6. Immigrant working-class background with family turbulence.",
+    "ecosystem_summary": "Progressed through Danish football system (Høje-Gladsaxe, Gladsaxe-Hero BK, Hvidovre, Brøndby). Worked multiple non-football jobs while playing in lower divisions. Joined Brøndby at 23 for immediate league titles.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "luka-modrić",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Showed determination and football skill from a young age, playing on hotel parking lots as a refugee. Rejected by Hajduk Split for being too small and weak, but overcame through persistence rather than prodigy-level talent.",
+    "inherited_summary": "Family became refugees during the Croatian War of Independence. Grandfather was executed by Serb rebels in 1991. Family lived in hotels for seven years; father couldn't afford shinpads. Active disadvantage of war and poverty.",
+    "ecosystem_summary": "Played at NK Zadar and joined Dinamo Zagreb at 16, with a loan spell in Bosnia. Football was an escape from war but the ecosystem was disrupted by conflict. No elite academy or notable mentors documented.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "fabio-cannavaro",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Was a ball boy at Napoli at 13 and joined the youth academy, showing early football dedication. Serie A debut at 19. Above-average ability but not prodigy-level; his path was driven by immersion in Napoli's system.",
+    "inherited_summary": "Father was a bank clerk who played football at provincial level; mother was a maid. Brother Paolo also became a professional footballer. Working-class Naples family with modest football connections.",
+    "ecosystem_summary": "Napoli youth academy during the Maradona era was a transformative environment. Trained alongside Maradona and Ciro Ferrara as a ball boy and youth player. Immersion in elite Serie A environment at a young age.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "john-bonham",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started drumming at age 5 using household containers and coffee tins, never took formal lessons. Built his own kit from scraps. Natural drumming prodigy with exceptional early aptitude and relentless self-driven practice.",
+    "inherited_summary": "Father was a carpenter running family building business (JH Bonham & Son); mother ran a newsagent shop. Working class but stable; parents supported his passion by buying drums. Briefly attended Wilton House private school.",
+    "ecosystem_summary": "Midlands music scene provided relentless gigging opportunities from mid-teens. Met Robert Plant in local bands, leading to connection with Jimmy Page. Led Zeppelin formation at the dawn of hard rock was perfect timing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "john-travolta",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Showed early interest in performing nurtured by his mother, dropped out of high school at 16 to pursue acting. No evidence of prodigy-level talent, but above-average drive and performing aptitude from a young age.",
+    "inherited_summary": "Mother was an actress, singer, and high school drama teacher who inspired all six children to become actors. Father was a semiprofessional football player turned tire salesman. Deep family immersion in performing arts.",
+    "ecosystem_summary": "Moved to New York at 16 with parental support, landing off-Broadway and Broadway roles. Rode the 1970s TV-film boom and disco culture wave. Family theatrical ecosystem provided direct domain apprenticeship.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "richard-branson",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Had dyslexia and poor academic performance, but showed exceptional entrepreneurial drive from age 16, launching Student magazine and building a mail-order record business by 20. Modest cognitive advantage offset by learning difficulty.",
+    "inherited_summary": "Father was a barrister, grandfather was a judge and Privy Councillor. Attended Stowe School, a prestigious public school. Upper-middle class family with strong professional background. Mother was entrepreneurial.",
+    "ecosystem_summary": "London music scene in the 1960s-70s provided a major cultural and commercial wave. Co-founded with Nik Powell. Stowe School provided some network. Right timing for the music boom but no elite institutional mentorship.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "carl-sagan",
+    "personal_endowment_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "inherited_leverage_score": 0,
+    "endowment_summary": "Entered University of Chicago at 16 on full scholarship. High school newspaper described him as 'a walking encyclopedia.' Showed exceptional curiosity about astronomy from childhood, deciding to become an astronomer in high school.",
+    "inherited_summary": "Father was a Ukrainian immigrant garment worker; mother was from Austro-Hungarian immigrant family. Grew up in a working-class Jewish neighborhood in Brooklyn. No financial or domain advantages.",
+    "ecosystem_summary": "University of Chicago provided an extraordinary intellectual environment with mentors including Enrico Fermi, Harold Urey, H.J. Muller, and Gerard Kuiper. The Hutchins great-books curriculum and the space race timing were once-in-a-generation advantages.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "rupert-murdoch",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Did not excel academically at Geelong Grammar or Oxford, but showed shrewd problem-solving and financial astuteness. No evidence of prodigy-level ability; his advantage was inherited position rather than personal endowment.",
+    "inherited_summary": "Father Sir Keith Murdoch was Australia's leading newspaper magnate. Groomed from childhood to take over the family business. Father introduced him to Fleet Street editors and arranged stints at the Birmingham Gazette. Inherited News Limited at 22.",
+    "ecosystem_summary": "Geelong Grammar (prestigious boarding school), Oxford (Worcester College), and apprenticeship at Lord Beaverbrook's Daily Express. Father's Fleet Street connections provided direct access to media power structure.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "bernie-madoff",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Founded his firm at 22 using savings from odd jobs. No evidence of exceptional early ability or prodigy-level talent. Above-average drive and financial interest but unremarkable academic path through Hofstra.",
+    "inherited_summary": "Father was a plumber who transitioned to stockbroking and founded Gibraltar Securities (later shut down by SEC). Father-in-law Saul Alpern was a successful accountant who loaned $50,000 and referred early clients. Family finance exposure.",
+    "ecosystem_summary": "Wall Street proximity in Queens/NYC. Father-in-law's client network provided the initial capital and investor base. No elite institutional or mentorship advantages documented.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "leon-cooper",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Set up home labs as a child, ran experiments after school at Bronx Science, won Westinghouse Science Talent Search as finalist. Showed exceptional early scientific aptitude with hands-on experimentation from childhood.",
+    "inherited_summary": "Father was an immigrant from Belarus, mother from Poland who died when he was 7. Grew up partly in a foster home in Mount Vernon. Immigrant family with financial hardship and loss of mother at young age.",
+    "ecosystem_summary": "Bronx High School of Science (elite specialized school), Columbia University (BA, MA, PhD), IAS Princeton, and collaboration with John Bardeen at Illinois. Once-in-a-generation institutional pipeline from Bronx Science to the quantum mechanics frontier.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "warren-buffett",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Sold gum door-to-door at 6, bought first stock at 11, bought a 40-acre farm at 14, had $9,800 in savings by college graduation. Exceptional early business and investing aptitude with intense focus from childhood.",
+    "inherited_summary": "Father was U.S. Congressman Howard Buffett and investment businessman. Grandfather had a grocery business. Father actively cultivated his interest in business, taking him to the office on Saturdays. Congressional family with finance connections.",
+    "ecosystem_summary": "Mentored by Ben Graham at Columbia Business School and worked at Graham-Newman. Father's brokerage provided early exposure. Omaha and Washington D.C. environments. Strong mentorship pipeline from the father of value investing.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "douglas-osheroff",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Took apart toys to study electric motors at 6, built a 100,000-volt X-ray machine in high school from secondhand parts. Showed exceptional experimental aptitude and intense scientific curiosity from a very early age.",
+    "inherited_summary": "Father was a doctor, mother was a nurse. Middle-class family in small logging town of Aberdeen, WA. Parents were supportive, bought scientific toys, and allowed children to attend any university they could get into.",
+    "ecosystem_summary": "Caltech (BS 1967, Feynman lectures) and Cornell's low-temperature physics lab with Lee and Richardson. Once-in-a-generation institutional environment at the frontier of low-temperature physics research.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tech-custom-01-05-claude-shannon",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Built a telegraph from fencing wire as a youth, earned dual degrees in math and EE at 20, wrote groundbreaking master's thesis applying Boolean algebra to switching circuits at 22. Exceptional early ability bridging math and engineering.",
+    "inherited_summary": "Father was a judge, mother was a teacher. Middle-upper class family in Gaylord, Michigan. Stable, educated family but no direct domain overlap in computing or mathematics.",
+    "ecosystem_summary": "MIT provided access to Vannevar Bush's differential analyzer and the intellectual environment for his thesis. Bell Labs followed. MIT in the 1930s was a once-in-a-generation environment at the dawn of computing and information theory.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tech-custom-01-12-max-rafael-levchin",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Self-taught coding, founded several small startups while at UIUC. Showed entrepreneurial drive but no evidence of prodigy-level programming ability. Learned to code with pen and paper in Ukraine.",
+    "inherited_summary": "Immigrated from Kyiv to Chicago in 1991 at 16 with Ukrainian-Jewish family and limited financial resources ($700). Family of scientists (grandmother ran Kiev observatory) but arrived as refugees with no financial privilege.",
+    "ecosystem_summary": "UIUC for computer science, co-founded PayPal with Peter Thiel at 23. The PayPal Mafia network and Silicon Valley at the dot-com boom provided a significant peer and timing advantage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "murray-gell-mann",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Entered Yale at 15 on full scholarship, earned PhD from MIT at 22. Recognized as a child prodigy with exceptional intellectual range across archaeology, linguistics, and physics. Trajectory-changing early cognitive ability.",
+    "inherited_summary": "Father was an Austrian immigrant who ran a language school, which declined during the Depression. Intellectual family but not wealthy. Father guided him toward physics over his preferred archaeology and linguistics.",
+    "ecosystem_summary": "Yale, MIT (PhD under Weisskopf), University of Chicago (with Fermi), and Caltech (with Feynman). Once-in-a-generation institutional pipeline through the epicenters of post-war particle physics.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "justin-frankel",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-taught programming on his brother's Atari, ran school computer network, wrote email application for students, achieved 4.0+ GPA. Created Winamp at 18, showing exceptional early programming and product ability.",
+    "inherited_summary": "Father was a lawyer, mother was a postal worker/health food store employee. Grew up in a mobile home in Sedona, Arizona. Modest circumstances with no domain overlap or financial advantages.",
+    "ecosystem_summary": "Internet wave and open-source community provided distribution. Briefly attended University of Utah. No elite institutional or mentorship advantages; largely self-created through online communities and the MP3 wave.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "akio-morita",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Showed early interest in tinkering with electronics and physics, but no evidence of prodigy-level ability. His advantage was primarily family business exposure and capital rather than personal endowment.",
+    "inherited_summary": "Born into a wealthy 15th-generation sake brewing family in Nagoya. Groomed from childhood to take over the family business, sitting in on company meetings. Father funded the founding of Tokyo Tsushin Kogyo (Sony) with initial capital.",
+    "ecosystem_summary": "Osaka Imperial University for physics. Met Masaru Ibuka during WWII through a Navy research committee. Post-war Japan provided a rebuilding opportunity. Complementary co-founder partnership with Ibuka was critical.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "paul-a-m-dirac",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Showed exceptional mathematical ability from primary school. Earned two degrees (engineering and math) from Bristol by 21. Largely self-taught in advanced mathematics. Significant ability but not a traditional prodigy.",
+    "inherited_summary": "Father was a Swiss French teacher at a Bristol technical college, strict and authoritarian. Mother was a librarian. Modest household with no family background in physics or mathematics. Father's strictness created an unhappy home.",
+    "ecosystem_summary": "Cambridge under Ralph Fowler at the epicenter of the quantum mechanics revolution. Access to Heisenberg's pre-publication work through Fowler. Cambridge in the 1920s was a once-in-a-generation intellectual environment.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "enrico-fermi",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Showed extraordinary mathematical talent from childhood, built electric motors, studied advanced physics independently. Entrance essay for Scuola Normale was at doctoral level, astounding examiners. Self-taught graduate-level physics by 17.",
+    "inherited_summary": "Father was a railroad administrator, mother was a schoolteacher. Middle-class family in Rome with no scientific tradition. No financial or domain advantages from family.",
+    "ecosystem_summary": "Scuola Normale Superiore in Pisa via competitive examination. Amidei, his father's colleague, was the critical mentor who recognized his genius and directed him to advanced study. Pisa and then the quantum revolution in Europe.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "alan-turing",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Showed early mathematical talent, won nearly every math prize at Sherborne School. Struggled in conventional schooling but pursued his own ideas with exceptional originality. Above-average but not clearly prodigy-level in his early years.",
+    "inherited_summary": "Father served in the Indian Civil Service, upper-middle class British family. Mother was daughter of the chief engineer of the Madras and Southern Mahratta Railway. Family had professional connections and could afford elite schooling.",
+    "ecosystem_summary": "Sherborne School and King's College, Cambridge, where he was elected Fellow in 1935. Immersed in the mathematical logic tradition under Newman's influence. Cambridge in the 1930s was a strong ecosystem for mathematical logic.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "john-collison",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Co-founded first company at 16, sold Auctomatic for $5M at 17, co-founded Stripe at 20. Self-taught coder with exceptional early entrepreneurial achievement. Not a traditional prodigy but significant early business output.",
+    "inherited_summary": "Parents were STEM professionals: mother a microbiologist, father an electronic engineer, both became entrepreneurs. Middle-class family in rural Ireland with strong scientific background and entrepreneurial modeling.",
+    "ecosystem_summary": "Brother Patrick as co-founder was a critical complementary team. Y Combinator funding, Harvard/MIT enrollment, and Silicon Valley at the right time. The brother partnership and YC ecosystem were trajectory-changing advantages.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "julian-schwinger",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Published first physics paper at 16-17, read Physical Review papers in high school, completed PhD at 21. Bethe said at 17 his QED knowledge was equal to his own. Recognized prodigy with trajectory-changing early ability.",
+    "inherited_summary": "Father was a garment manufacturer; family was prosperous before 1929 crash then declined. Orthodox Jewish family in upper Manhattan. Middle class with some financial instability after the crash.",
+    "ecosystem_summary": "Townsend Harris High School (elite public school), CCNY, Columbia under Rabi's mentorship, Berkeley under Oppenheimer. Rabi was the critical mentor who recognized his talent and facilitated his transfer. Once-in-a-generation pipeline.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "wolfgang-pauli",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Read Einstein's relativity papers while still in gymnasium, hiding them under his desk during class. Published first paper at 18, PhD under Sommerfeld at 21. Sommerfeld asked him to write an encyclopedia article on relativity as an undergraduate. Prodigy-level.",
+    "inherited_summary": "Father was a university chemistry professor who had been inspired by Ernst Mach. Godfather was Ernst Mach, the physicist. Scientifically connected family with direct access to leading scientific thought.",
+    "ecosystem_summary": "Sommerfeld (PhD at Munich), Born (Göttingen), and Bohr (Copenhagen) formed a once-in-a-generation mentorship chain through the epicenters of the quantum revolution. Direct access to the leading physicists of the era.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "guillermo-rauch",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-taught programming from age 7-10, started a business at 11 doing remote JavaScript projects, became MooTools core developer at 16. Exceptional early programming ability and product sense despite limited resources.",
+    "inherited_summary": "Grew up in a poor neighborhood in Lanús, Buenos Aires, Argentina with limited internet access. Father was an engineering enthusiast who brought a computer home. Active disadvantage of poverty and geographic isolation from tech hubs.",
+    "ecosystem_summary": "Open-source communities (MooTools, then Node.js) were his primary learning ecosystem. Moved to San Francisco at 18. No elite institutional access; largely self-created through online communities and the open-source movement.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "russel-simmons",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Graduated from IMSA and UIUC with a CS degree. No evidence of prodigy-level ability, but strong technical foundation from elite specialized schooling. Above-average capability.",
+    "inherited_summary": "From Homewood, Illinois. Limited information on parents' professions or family wealth. No documented domain overlap or significant family advantages.",
+    "ecosystem_summary": "IMSA (Illinois Mathematics and Science Academy, elite residential school), UIUC CS, PayPal as co-founder and Lead Software Architect, and the PayPal Mafia network. Max Levchin's incubator led to Yelp with Stoppelman. Once-in-a-generation peer network.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "werner-heisenberg",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Self-taught differential and integral calculus, elliptic functions, and abstract number theory while still in gymnasium, far exceeding the curriculum. Outstanding, ambitious, and self-confident pupil with exceptional mathematical ability.",
+    "inherited_summary": "Father was a secondary school teacher who became Germany's only ordinarius professor of medieval and modern Greek studies. Academic family with grandfather as headmaster of the Maximilians-Gymnasium. Upper-middle class academic environment.",
+    "ecosystem_summary": "Studied under Sommerfeld (PhD at Munich), Born (habilitation at Göttingen), and Bohr (Copenhagen). The Sommerfeld-Pauli-Heisenberg seminar was elite. Once-in-a-generation pipeline through the quantum revolution's epicenters.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tech-custom-04-04-evan-you",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Had early computer access but mainly used it for games and Flash design. Self-taught JavaScript inspired by Chrome Experiments. Created Vue.js as a side project at 26. Above-average ability but not prodigy-level; came to programming relatively late.",
+    "inherited_summary": "Father bought him a 486 computer in primary school and encouraged him to learn English and study abroad. Middle-class Chinese family that valued education. Father wanted him to study finance but supported his design path.",
+    "ecosystem_summary": "Google Creative Lab provided exposure to AngularJS and frontend prototyping. Hacker News and GitHub provided distribution for Vue.js. The design-technology intersection at Parsons was a unique but not elite ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tech-custom-04-05-dan-abramov",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started coding at 12 via PowerPoint macros, learned JavaScript at 14 when step-father asked him to build a database. Self-taught with strong curiosity but no evidence of prodigy-level ability. Created Redux at 22.",
+    "inherited_summary": "From Omsk, Russia. Modest background with no documented financial or domain advantages. Step-father's request to build a database was the catalyst for learning JavaScript. Working-class Russian background.",
+    "ecosystem_summary": "React ecosystem and online developer community were his primary learning environment. React Europe conference provided the platform for Redux's launch. No elite institutional access; largely self-created through online communities.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tech-custom-04-06-bram-cohen",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Learned BASIC at 5 on a Timex Sinclair, designed a Connect 4 game with AI in 7th grade using techniques most students don't learn until college. Passed the AIME and attended Stuyvesant. Bell Labs intern in high school. Exceptional early programming ability.",
+    "inherited_summary": "Father was a computer scientist (associate dean at NJIT), mother was a teacher. Grew up on the Upper West Side of Manhattan. Upper-middle class family with direct domain overlap in computer science.",
+    "ecosystem_summary": "Stuyvesant High School (elite specialized school), Bell Labs internship in high school, dot-com companies in the Bay Area. P2P hacking community and CodeCon. Strong technical ecosystem with early access to frontier computing.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tech-custom-04-09-ingvar-kamprad",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started selling matches at 5, expanded to fish, Christmas decorations, seeds, pens, and pencils. Had 12+ years of selling experience before founding IKEA at 17. Exceptional early entrepreneurial drive and domain aptitude from a very young age.",
+    "inherited_summary": "Family owned the largest farm in the area (449 hectares) in Småland, Sweden. Father gave him a cash reward for academic success which funded IKEA's founding. Frugal upbringing but land-owning family with some resources.",
+    "ecosystem_summary": "Småland's culture of frugality and resourcefulness shaped his approach. Business high school in Gothenburg exposed him to Taylorism. Mail-order opportunity in post-war Sweden. No elite institutional or mentorship advantages.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tech-custom-04-10-patrick-collison",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Started programming at 10, took first computer course at 8, won BT Young Scientist at 16 for creating a programming language (Croma). Enrolled at MIT at 17. Exceptional early achievement in programming and competition.",
+    "inherited_summary": "Parents were STEM professionals: mother a microbiologist, father an electronic engineer, both became entrepreneurs. Middle-class family in rural Ireland with strong scientific background and entrepreneurial modeling.",
+    "ecosystem_summary": "Brother John as co-founder, Y Combinator funding, MIT enrollment, and Silicon Valley. The brother partnership and YC ecosystem were trajectory-changing. Auctomatic exit at 19 provided capital and experience for Stripe.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tech-custom-04-11-sam-yagan",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Graduated from IMSA and Harvard with a math major. No evidence of prodigy-level ability but strong academic path. Above-average capability demonstrated by elite school admissions.",
+    "inherited_summary": "Son of Syrian immigrants. Father was a computer scientist at University of Illinois hospital system, mother was a pediatrician. Middle-class professional immigrant family with emphasis on education.",
+    "ecosystem_summary": "IMSA (elite residential school), Harvard, and co-founders Chris Coyne, Max Krohn, and Christian Rudder as roommates. The dot-com boom timing was critical. Harvard peer network provided the founding team for multiple ventures.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tech-custom-04-12-paul-dirac",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Showed exceptional mathematical ability from primary school. Earned two degrees from Bristol by 21. Largely self-taught in advanced mathematics. Significant ability but not a traditional prodigy; his genius emerged at Cambridge.",
+    "inherited_summary": "Father was a Swiss French teacher, strict and authoritarian, creating an unhappy home. Mother was a librarian. Modest household with no family background in physics or mathematics. Father's strictness was an emotional disadvantage.",
+    "ecosystem_summary": "Cambridge under Ralph Fowler at the epicenter of the quantum mechanics revolution. Access to Heisenberg's pre-publication work. Cambridge in the 1920s was a once-in-a-generation intellectual environment for theoretical physics.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tech-custom-05-05-john-nash",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Read Men of Mathematics at 14 and independently proved Fermat's results. Entered Carnegie Tech at 16 on Westinghouse Scholarship. A professor wrote 'He is a mathematical genius' in his Princeton application. Trajectory-changing prodigy-level ability.",
+    "inherited_summary": "Father was an electrical engineer at Appalachian Electric Power Company. Mother was a schoolteacher. Middle-class family in Bluefield, West Virginia. Parents encouraged education but no domain overlap in mathematics.",
+    "ecosystem_summary": "Carnegie Tech (Westinghouse Scholarship), Princeton as the epicenter of game theory under von Neumann's influence. Princeton mathematics in the late 1940s was a once-in-a-generation environment for game theory.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tech-custom-05-06-jawed-karim",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "UIUC CS and Stanford MS. No evidence of prodigy-level early ability, but solid technical foundation. Above-average capability demonstrated by elite university admissions and PayPal hiring.",
+    "inherited_summary": "Father was a 3M researcher, mother was a biochemistry scientist at University of Minnesota. Scientist parents provided intellectual grounding. Family fled racism in East Germany, immigrating to Minnesota in 1992. Immigrant adversity with professional family.",
+    "ecosystem_summary": "UIUC, PayPal Mafia network where he met co-founders Chen and Hurley, and Silicon Valley at the internet wave. The PayPal network was a once-in-a-generation peer environment that directly enabled YouTube's founding.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tech-custom-05-08-andrew-mccollum",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Harvard CS student who met Zuckerberg through classes. No evidence of exceptional early ability or prodigy-level talent. His role at Facebook was initially graphics/design rather than core engineering. Above-average but unremarkable.",
+    "inherited_summary": "Born in California. Attended Harvard University. Limited information on parents' professions or family wealth. Harvard admission suggests at least middle-class background with strong academic preparation.",
+    "ecosystem_summary": "Harvard placed him among the Zuckerberg peer group at the exact right moment for the social media wave. Being at Harvard in 2004 with Zuckerberg was a once-in-a-generation positioning advantage that drove his outcome.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "tech-custom-05-11-steve-chen",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Attended IMSA and UIUC for CS. No evidence of prodigy-level early ability, but strong technical foundation from elite specialized schooling. Above-average capability demonstrated by IMSA admission.",
+    "inherited_summary": "Immigrated from Taiwan to the US at age 8 in 1986, settling in Illinois. Father opened a branch office in Chicago. Immigrant family with middle-class resources but no domain overlap or significant advantages.",
+    "ecosystem_summary": "IMSA (elite residential school), UIUC, PayPal where he met co-founders Hurley and Karim, and Silicon Valley at the internet wave. The PayPal Mafia network was a once-in-a-generation peer environment.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tech-custom-05-12-jeremy-stoppelman",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Interested in computers from 5th grade, began investing in stocks at 14, UIUC computer engineering. Above-average ability with dual interest in business and technology, but no evidence of prodigy-level talent.",
+    "inherited_summary": "Father was a securities lawyer who took small companies public and talked about stocks. Mother was an English teacher who ran a marketing business. Upper-middle class family in Arlington, Virginia with finance exposure.",
+    "ecosystem_summary": "UIUC, PayPal (rose to VP of Engineering), Max Levchin as mentor and initial $1M investor for Yelp, Silicon Valley at the Web 2.0 wave. The PayPal ecosystem and Levchin mentorship were trajectory-changing advantages.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tech-custom-06-01-niels-henrik-abel",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Mathematical genius discovered by teacher Holmboe at 16. By 21, proved the impossibility of solving the quintic equation, a 250-year-old open problem. Trajectory-changing prodigy-level ability recognized early.",
+    "inherited_summary": "Father was a Lutheran pastor in poverty-stricken Norway. Father died when Abel was 18, leaving the family destitute. Grew up in extreme poverty during Norway's economic crisis. Active disadvantage of poverty and orphanhood.",
+    "ecosystem_summary": "Cathedral School in Christiania where Holmboe discovered and mentored him. University of Christiania with financial support from professors. Holmboe's mentorship was critical, but the ecosystem was limited by Norway's poverty and isolation.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tech-custom-06-07-paul-allen",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Achieved perfect SAT score (1600), showed exceptional programming skills. Met Gates at Lakeside and became expert coder through thousands of hours of practice. Significant early ability but not clearly prodigy-level on his own.",
+    "inherited_summary": "Father was associate director of University of Washington Libraries, mother was a teacher. Upper-middle class family that could afford Lakeside School (prestigious private school). Educated family that valued learning.",
+    "ecosystem_summary": "Lakeside School with rare Teletype terminal access and the Bill Gates partnership was a once-in-a-generation peer environment. The Lakeside computer club and early access to mainframe time were trajectory-changing advantages.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tech-custom-06-08-david-hilbert",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Did not shine at school initially, described himself as a 'dull and silly' boy. Transferred to a more science-oriented gymnasium and achieved highest marks in mathematics. Above-average ability that developed through university rather than prodigy-level early talent.",
+    "inherited_summary": "Father was a county judge, grandfather was a judge and Privy Councillor. Mother was interested in philosophy, astronomy, and prime numbers. Upper-middle class legal/academic family in Königsberg.",
+    "ecosystem_summary": "University of Königsberg with lifelong friendships with Minkowski and mentorship from Hurwitz. PhD under Lindemann. The German mathematical tradition and the Minkowski-Hurwitz peer group were once-in-a-generation advantages.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tech-custom-06-10-bernhard-riemann",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Read Legendre's 900-page Theory of Numbers in six days. Showed exceptional mathematical talent from early age, with calculation abilities that astonished teachers. Significant early ability recognized by his gymnasium director.",
+    "inherited_summary": "Father was a poor Lutheran pastor in rural Germany. Second of six children in a family that struggled financially. Originally enrolled in theology to help family finances. Active disadvantage of poverty.",
+    "ecosystem_summary": "University of Göttingen (studied under Gauss) and University of Berlin (influenced by Dirichlet, Jacobi, Eisenstein). Access to the leading mathematical centers of the era was a once-in-a-generation advantage despite poverty.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tech-custom-06-12-évariste-galois",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "Mathematical prodigy who read Legendre and Lagrange as a teenager and solved the 350-year-old problem of solvability by radicals by his late teens. Trajectory-changing prodigy-level ability, though unrecognized by the establishment.",
+    "inherited_summary": "Father was mayor of Bourg-la-Reine, mother was well-educated and provided classical education at home until 12. Middle-class family. Father committed suicide in 1829 after political dispute, a significant emotional trauma.",
+    "ecosystem_summary": "Collège Louis-le-Grand in Paris, but his papers were lost or rejected by the Académie des Sciences. Political turmoil and expulsion from École Normale left him without institutional support. Paris mathematical establishment largely rejected him.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tech-custom-07-01-chris-hughes",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "No evidence of exceptional early ability. Non-technical role at Facebook focused on UX and communications. Above-average academic ability demonstrated by Andover and Harvard admission, but not prodigy-level.",
+    "inherited_summary": "Father was an industrial paper salesman, mother was a mathematics teacher. Only child in a working-middle class evangelical Lutheran family in Hickory, NC. Attended Phillips Academy Andover on financial aid.",
+    "ecosystem_summary": "Elite school pipeline from Phillips Academy Andover (on financial aid) to Harvard, where he met Zuckerberg as a freshman roommate. The Harvard-Zuckerberg peer group at the social media wave was a once-in-a-generation positioning advantage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tech-custom-07-11-freeman-dyson",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Tried to calculate the number of atoms in the Sun at age 4. Won first place in scholarship to Winchester College at 12, scholarship to Trinity College Cambridge at 15. Worked through Jordan's Cours d'Analyse as a teenager. Trajectory-changing prodigy.",
+    "inherited_summary": "Father was a knighted composer and music educator at Winchester College. Comfortable intellectual household with cook, gardener, housemaid, and nursemaid. Upper-middle class family with direct access to elite schooling through father's position.",
+    "ecosystem_summary": "Winchester College (elite, where father was Director of Music), Trinity College Cambridge, and Cornell (Bethe, Feynman). Once-in-a-generation pipeline through elite British schooling to the QED unification frontier.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tech-custom-07-12-ken-thompson",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Navy brat who moved frequently. Interested in games, chess, and computers. Ran school computers at UC Berkeley. No evidence of prodigy-level ability but strong technical aptitude that developed through university access to computers.",
+    "inherited_summary": "Father was in the US Navy; family moved frequently. No documented technical or financial advantages. Working-class military family with no domain overlap in computing.",
+    "ecosystem_summary": "UC Berkeley (BS, MS under Berlekamp) and Bell Labs, where he created Unix on a PDP-7 with Dennis Ritchie. Bell Labs in the late 1960s was a once-in-a-generation research environment with extraordinary freedom and resources.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "tech-custom-08-01-paul-erdős",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Could multiply three-digit numbers at 4, calculated how many seconds a person had lived at 5. Published first mathematical paper at 16-18, with an elementary proof of Bertrand's postulate. Trajectory-changing prodigy-level ability.",
+    "inherited_summary": "Both parents were mathematics teachers who provided direct domain instruction. Father taught him infinite series and set theory at 16. Homeschooled with tutors due to mother's overprotectiveness after losing two daughters. Direct mathematical family apprenticeship.",
+    "ecosystem_summary": "University of Budapest and the KöMaL problem-solving journal provided a mathematical community. Hungarian mathematical tradition was strong. However, anti-Jewish restrictions and wartime disruption limited his ecosystem access.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tech-custom-08-02-edsger-dijkstra",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Scored highest possible marks in mathematics, physics, chemistry, and biology in school exams. Above-average ability but no evidence of prodigy-level talent. His algorithmic insights emerged through programming practice rather than exceptional early cognition.",
+    "inherited_summary": "Father was a chemistry teacher who served as president of the Dutch Chemical Society. Mother was a trained mathematician who never held a formal job but taught him mathematical elegance. Educated professional family with direct mathematical influence from mother.",
+    "ecosystem_summary": "Father spotted a Cambridge programming course advertisement and sent him there in 1951. Mathematical Centre in Amsterdam under van Wijngaarden's mentorship provided early computing access. One of the Netherlands' first programmers at the dawn of computing.",
+    "scoring_confidence": "Medium"
+  }
+]

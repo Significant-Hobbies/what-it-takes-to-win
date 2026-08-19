@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "danny-lol",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Exceptional mechanical ADC skill with rapid competitive development, going from amateur tournaments to LCS champion within two years. Above-average ability but no documented prodigy-level achievements before competitive play.",
+    "inherited_summary": "No family background, parental occupation, or early life details are documented in available sources. No evidence of significant inherited advantage or disadvantage.",
+    "ecosystem_summary": "Benefited from the EG Prodigies developmental pipeline and Evil Geniuses' LCS infrastructure, which provided elite coaching and a structured path to the main roster at age 17.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "humanoid",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Sustained competitive development over five years from the Czech amateur scene to LEC champion, demonstrating strong strategic depth and adaptability. Above-average ability but no prodigy-level indicators documented.",
+    "inherited_summary": "No family background, parental occupation, or early life details are documented in available sources.",
+    "ecosystem_summary": "Progressed through the Czech amateur LoL scene to the LEC via Splyce and MAD Lions, a standard European esports pathway with good but not elite infrastructure.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "yay-valorant",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Six years of CS:GO experience from age 15 provided a strong mechanical foundation that transferred to Valorant. Above-average aim and game sense, but not prodigy-level early achievement.",
+    "inherited_summary": "No family background, parental occupation, or early life details are documented in available sources.",
+    "ecosystem_summary": "Transitioned from CS:GO to Valorant during the game's launch wave, joining Team Envy and then OpTic Gaming. Good organizational platform but not a once-in-a-generation peer environment.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "cned",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Rapid rise from the Turkish Valorant scene to Champions MVP at age 19 within 18 months of competitive play, demonstrating exceptional mechanical talent and clutch performance on the biggest stage.",
+    "inherited_summary": "No family background, parental occupation, or early life details are documented in available sources.",
+    "ecosystem_summary": "Entered through the Turkish Valorant scene with BBL Esports, then joined Acend in the EMEA region. Solid organizational pathway but not an elite developmental pipeline.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "derke",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Strong mechanical skill transfer from Finnish CS:GO to Valorant, developing into one of the world's top duelists. Above-average ability but not prodigy-level early achievement.",
+    "inherited_summary": "No family background details beyond Finnish nationality and Russian heritage. No evidence of significant inherited advantage or disadvantage.",
+    "ecosystem_summary": "Joined Fnatic at age 18, one of the most storied esports organizations, providing elite infrastructure, coaching, and a strong roster for international competition.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "less-valorant",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Valorant world champion at age 17, one of the youngest Champions winners ever, with clutch performances on the biggest stage. Exceptional early competitive achievement for his age.",
+    "inherited_summary": "No family background, parental occupation, or early life details are documented in available sources.",
+    "ecosystem_summary": "Joined LOUD, Brazil's premier esports organization, benefiting from a strong Brazilian Valorant scene and a championship-caliber roster at age 16.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "pancada",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Cross-game transition from Crossfire to Valorant Champions winner demonstrates strong gaming fundamentals and adaptability. Above-average but not prodigy-level early ability.",
+    "inherited_summary": "No family background details beyond Brazilian nationality and Crossfire origins. No evidence of significant inherited advantage or disadvantage.",
+    "ecosystem_summary": "Joined LOUD, Brazil's premier esports organization, benefiting from a growing Brazilian Valorant ecosystem and a championship roster.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "collapse-dota",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started Dota 2 at 13, won The International at 19, and became a two-time TI champion. Exceptional game talent and rapid competitive development from PC cafes in Dagestan.",
+    "inherited_summary": "Father is a chief physician at a hospital, providing a middle-to-upper-middle-class background. Father initially opposed gaming and wanted him to attend medical school, creating tension before being persuaded by Team Spirit's manager.",
+    "ecosystem_summary": "Team Spirit roster with exceptional teammates, CIS Dota culture, and manager Korb3n who personally negotiated with his father. The Team Spirit environment was a high-trust peer team that won back-to-back TIs.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "torontotokyo",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Mathematics olympiad winner in Tuva with very high EGE scores, admitted to Moscow State University's prestigious Faculty of Computational Mathematics and Cybernetics (VMK). Exceptional cognitive ability, though he started Dota 2 late at 23.",
+    "inherited_summary": "Father Ekher Khertek is educated and supportive, described by a senator as part of a 'modern and creative family.' Middle-class Tuvan family with emphasis on education and mathematics.",
+    "ecosystem_summary": "Team Spirit roster with Collapse and other elite players, CIS Dota scene. MSU education provided a strong analytical foundation. The Team Spirit environment was a high-trust peer team that won TI10 within 18 months of his debut.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ropz",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Introduced to Counter-Strike 1.6 at age 7 by his older brother, mastered KZ movement mechanics, and was named to HLTV Top 20 in his debut year at 17. A decade of early specialization and exceptional mechanical depth.",
+    "inherited_summary": "Father owned large farms in Estonia that went bankrupt, leading to loss of the family home and the father's tragic suicide. Significant financial and emotional adversity during formative years.",
+    "ecosystem_summary": "Developed through the FACEIT PUG system rather than traditional team climbing, accumulating ~6,000 hours before being discovered. mousesports provided a professional platform, but Estonia had a limited local CS scene.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "guido-messina",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won all races in Sicily as a teenager, became world champion in the individual pursuit at age 17 in 1948. Exceptional physical talent and endurance, winning five career world titles and Olympic gold.",
+    "inherited_summary": "From humble origins in Monreale, Sicily. Arrived in Turin in 1947 with a cardboard suitcase and a broken bicycle, working in a bike shop in exchange for room and board. No family wealth or connections.",
+    "ecosystem_summary": "Italian track cycling pipeline was among the world's strongest. Discovered by ex-racer Pierino Bertolazzo, who identified his pursuit talent and connected him to the national team system. The Italian national cycling federation provided structured coaching and collegial training.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sergei-novikov",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Participated in Mathematical Olympiad competitions at ages 13 and 14 with outstanding results recognized by teachers. Published first paper on cohomology of the Steenrod algebra at 21. Exceptional mathematical aptitude from a young age.",
+    "inherited_summary": "Born into one of the most distinguished mathematical families in the USSR. Father Pyotr Novikov was an academician and outstanding mathematician; mother Lyudmila Keldysh was a full professor of mathematics. Uncle Mstislav Keldysh was President of the USSR Academy of Sciences. Four of five siblings pursued mathematical/scientific careers.",
+    "ecosystem_summary": "Grew up in a special society where children of mathematicians received additional instruction. Entered Moscow State University in 1955, studied under Mikhail Postnikov, and worked at the Steklov Institute. The elite Soviet mathematical ecosystem provided unparalleled mentorship and peer environment.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "li-xiaoshuang",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Discovered by a gymnastics coach at age 6 for his physical aptitude, joined the Hubei provincial team at 9 and the Chinese national team at 12. Won Olympic gold at 18 and the all-around world championship, demonstrating exceptional early physical talent.",
+    "inherited_summary": "Born into a poor family of porters in Xiantao, Hubei Province during the Cultural Revolution. Father was a dockworker, mother was unemployed. Twins sent to live with maternal grandfather due to poverty. No financial resources or domain connections.",
+    "ecosystem_summary": "China's elite gymnastics pipeline is one of the most rigorous in the world: early discovery at 6, provincial team at 9, national team at 12, with dedicated coaching from Ding Xiapeng and the full national training infrastructure.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "naser-orić",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 0,
+    "endowment_summary": "No evidence of exceptional early ability. Completed standard military service and police training. His appointment as commander at 25 was driven by wartime circumstances and local roots rather than exceptional prior achievement.",
+    "inherited_summary": "Born in a small village near Srebrenica to a modest family. Grandfather had fought with the Ustaše during WWII. Humble rural background with no notable family resources or connections.",
+    "ecosystem_summary": "Standard Yugoslav military service and police training provided basic skills. The outbreak of the Bosnian War created the circumstances for his command role, but there was no exceptional institutional ecosystem or mentorship before the war.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "gabriele-veneziano",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Did well in maths and physics with little effort in high school, guided by an excellent teacher. Above-average ability but not prodigy-level; his breakthrough came from being in the right place at the right time rather than exceptional early cognitive capacity.",
+    "inherited_summary": "Middle-class Italian family in Florence. Lived at home with his family through university, providing stability. No notable family wealth or scientific connections, but a supportive and stable upbringing.",
+    "ecosystem_summary": "Studied under Raoul Gatto at the University of Florence, who gathered a group of brilliant young theorists including Altarelli, Maiani, and Gallavotti. PhD at the Weizmann Institute under Hector Rubinstein. Visiting CERN in 1968 led to the Veneziano amplitude discovery. This was an elite, frontier-level physics network at the dawn of string theory.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "alvaro-načinović",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Showed great promise as a young player, called up to Yugoslav U-19 and U-21 national teams. Above-average physical talent (194cm) but no prodigy-level early achievement documented.",
+    "inherited_summary": "No family background, parental occupation, or early life details are documented beyond his birth in Rijeka. No evidence of significant inherited advantage or disadvantage.",
+    "ecosystem_summary": "Grew up in Rijeka, a handball-strong region of Yugoslavia, and joined hometown club RK Zamet at age 14. The Yugoslav handball system was one of the strongest in the world, providing an elite pipeline through U-21 and senior national teams.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "kiril-lazarov",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started handball at 10, debuted senior at 15, national team at 18. Natural scoring ability and confidence, but not prodigy-level early achievement. His career was built on sustained development over decades.",
+    "inherited_summary": "Father Blagoja Lazarov was a professional handball player and coach who introduced Kiril to the sport. Brother Filip also became a professional handball player. A handball family with direct domain knowledge and coaching from the start.",
+    "ecosystem_summary": "Father was player-coach of the local team in Sveti Nikole and served as his first coach. Progressed through RK Ovče Pole, RK Borec, and RK Pelister in the Macedonian/Yugoslav handball system before moving to Zagreb, Veszprém, and Barcelona.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "lee-chong-wei",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started badminton at 11 (late for elite level), reached World No. 1 and won 69 career titles. Exceptional talent discovered relatively late, overcoming significant financial barriers to reach the national squad at 17.",
+    "inherited_summary": "Born into a poor family in Bagan Serai, Perak. Father earned RM800 monthly and could not afford a racquet. Lee was initially regarded as a burden to the family. Used a racquet borrowed from his father's friend during early training.",
+    "ecosystem_summary": "Discovered by local coach Teh Peng Huat and later national coach Misbun Sidek, who brought him into the national squad at 17. The Malaysian national badminton academy provided elite training, though he endured hourly bus trips and isolation as a newcomer.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "eduard-gufeld",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Learned chess at the relatively late age of 14, initially preferring football. Won the Ukrainian junior championship at 18 and became a national master by 22. Above-average ability but not a prodigy; his late start limited early accumulation.",
+    "inherited_summary": "Father was killed at the front during the first year of WWII. He and his mother were evacuated from Kyiv to Samarkand. Wartime orphaning and displacement created significant early adversity.",
+    "ecosystem_summary": "Trained with a serious lineage of Kyiv masters including Olshansky, Polyak, Lipnitsky, and Khavin. The Soviet chess system was the strongest in the world, providing access to USSR Championships and the World Student Chess Olympiad.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "broky",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Amassed roughly 6,000 hours of CS:GO by age 18 through the FACEIT PUG system, demonstrating strong mechanical AWP talent. Above-average ability but self-made rather than prodigy-level.",
+    "inherited_summary": "No family background, parental occupation, or early life details are documented in available sources. No evidence of significant inherited advantage or disadvantage.",
+    "ecosystem_summary": "Recruited to FaZe Clan at 18, an unusual leap from near-unknown to one of the most prestigious CS:GO organizations. FaZe provided elite teammates, infrastructure, and a global platform.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "ax1le",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Developed into one of the best riflers in CS:GO, winning IEM Katowice at 19 with multiple HLTV Top 20 appearances. Above-average ability but no prodigy-level early indicators documented.",
+    "inherited_summary": "No family background information is available in reviewed sources. No evidence of significant inherited advantage or disadvantage.",
+    "ecosystem_summary": "Developed through the Gambit Youngsters academy system, a structured pathway from youth to professional CS:GO in the CIS region. The Gambit organization provided elite coaching and a championship-caliber roster.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "sh1ro",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Introduced to Counter-Strike at age 5 by his uncle, showing exceptional game sense and in-game analytics from a young age. IEM Katowice MVP at 19 and HLTV #4 player of 2021. Early start and deep mechanical understanding indicate significant aptitude.",
+    "inherited_summary": "Parents worked extensively (father worked with cars) in Cheboksary, Russia. Working-class family with no domain connections. Parents were permissive about gaming but cautious about travel; uncle advocated for his competitive participation.",
+    "ecosystem_summary": "Developed through FACEIT matchmaking and the Gambit Youngsters academy system. His uncle supported early competitive participation and verified the legitimacy of the Gambit bootcamp. The Gambit organization provided an elite CIS CS pathway.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "b1t",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Described by HLTV as a 'prodigy-level talent' from the CIS region. Won PGL Major Stockholm at 18 as the youngest Intel Grand Slam winner. Selected from 1,900 applicants for NAVI's Esports Camp, indicating exceptional early ability recognized by elite scouts.",
+    "inherited_summary": "Born in Dnipro, moved several times across Ukraine before settling in Kyiv. Introduced to Counter-Strike by his uncle. Had eight years of wrestling training. No family wealth or domain connections documented.",
+    "ecosystem_summary": "Selected through NAVI's Esports Camp (1 of 10 from 1,900 applicants), joined NAVI Junior, and was promoted to the main roster alongside s1mple. The NAVI organization is one of the most prestigious in CIS CS, providing elite coaching and infrastructure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "zeus-lol",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Entered T1 Academy at 15, won back-to-back World Championships at 19 and 20 with Finals MVP honors. Exceptional early competitive achievement at the highest level of LoL esports.",
+    "inherited_summary": "No family background information is documented in available sources. No evidence of significant inherited advantage or disadvantage.",
+    "ecosystem_summary": "T1 Academy is the most prestigious LoL developmental pipeline in South Korea. Playing alongside Faker on T1's main roster provided a once-in-a-generation peer environment. The Korean LoL ecosystem is the most competitive in the world.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "oner",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Won three consecutive World Championships (2023-2025), an unprecedented achievement. Strong jungler but less individually dominant than some peers; his success was heavily enabled by the T1 ecosystem.",
+    "inherited_summary": "From Gwangju, South Korea. No family background information beyond his hometown is documented. No evidence of significant inherited advantage or disadvantage.",
+    "ecosystem_summary": "T1 Academy and main roster alongside Faker provided the most elite LoL developmental platform in the world. The Korean LoL ecosystem and T1's infrastructure represent a once-in-a-generation peer environment.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "ruler-lol",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Topped the KR server Challenger list for 1-2 years before receiving professional offers. Won Worlds MVP at 18, one of the youngest MVPs in LoL history. Exceptional early competitive achievement.",
+    "inherited_summary": "Attended an industry high school in South Korea. No family wealth or domain connections documented. Chose gaming over studies after solo queue rankings improved.",
+    "ecosystem_summary": "The Korean solo queue ecosystem is the most competitive in the world. Signed by Samsung Galaxy through coach Edgar's recommendation, providing an elite organizational platform for his Worlds 2017 MVP run.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "knight-lol",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began professional career at 16, set the LPL record for solo kills in a split (35 in Spring 2021). Exceptional mid lane mechanics recognized as among the best in China from a young age.",
+    "inherited_summary": "Born in Pingxiang City, Jiangxi Province, China. No family background, parental occupation, or early life details are documented in available sources.",
+    "ecosystem_summary": "Progressed through the LSPL to the LPL via Young Miracles, Suning, and Top Esports. The LPL ecosystem and TES platform provided elite infrastructure and teammate support for his championship runs.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "369-lol",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won LPL Summer 2020 at 19 and became the top laner with the most LPL titles. Strong competitive development but not prodigy-level early achievement; built his career through sustained improvement.",
+    "inherited_summary": "Born in Jiaozuo, Henan Province. Grew up with his grandmother and younger sister in a free-spirited household. No family wealth or domain connections documented.",
+    "ecosystem_summary": "Joined Top Esports' sister team 'King of the Future' at 17, was promoted to the main roster, and later moved to JD Gaming. The LPL ecosystem and TES/JDG platforms provided elite organizational support.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "bin-lol",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began professional career at 15 in the LDL, reached the Worlds 2020 final at 17 (one of the youngest finalists ever), and won MSI 2022. Exceptional early competitive achievement with an aggressive, mechanically brilliant playstyle.",
+    "inherited_summary": "Born in Huangzhou District, Huanggang City, Hubei Province, China. No family background, parental occupation, or early life details are documented in available sources.",
+    "ecosystem_summary": "Developed through Suning's secondary team (Suning-S) in the LDL, promoted to the main LPL roster. Later played for RNG and BLG. The LPL ecosystem provided a strong developmental pathway and multiple elite organizational platforms.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "wei-lol",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Began professional career at 15 with Young Miracles, won MSI 2021 at 18 in his first year with RNG, and was named All-Pro First Team Jungler. Exceptional early competitive achievement.",
+    "inherited_summary": "Born in Bozhou, Anhui Province, China. No family background, parental occupation, or early life details are documented in available sources.",
+    "ecosystem_summary": "Progressed through Young Miracles and eStar to RNG, one of the most storied Chinese LoL organizations. The LPL ecosystem and RNG platform provided elite infrastructure for his MSI championship runs.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "gala-lol",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won the LDL Summer Split championship in his debut year at 17, then became LPL Finals MVP and a two-time MSI champion. Exceptional ADC mechanics and clutch performance from a young age.",
+    "inherited_summary": "Born in Cangzhou City, Hebei Province, China. No family background, parental occupation, or early life details are documented in available sources.",
+    "ecosystem_summary": "Started with Dominus Esports in the LDL, joined RNG in 2020. The LPL ecosystem and RNG platform provided elite infrastructure and a championship-caliber roster for his two MSI titles.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "martin-st-louis",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Became the University of Vermont's all-time leading scorer with 267 points, demonstrating strong hockey IQ and work ethic. However, he was undersized and went undrafted, limiting his early advantage to above-average rather than exceptional.",
+    "inherited_summary": "Working-class family in Laval, Quebec. Father was a postal worker who worked two jobs; mother was his key emotional supporter. No hockey background in the family. Father grew up in a family lumber mill as the 10th of 14 children.",
+    "ecosystem_summary": "Quebec hockey culture provided a strong developmental environment, and he attracted nearly 30 NCAA Division I programs. Chose University of Vermont for proximity to family. However, he was consistently overlooked for his size, limiting institutional support.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "george-eaton",
+    "personal_endowment_score": 0,
+    "inherited_leverage_score": 3,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "No evidence of exceptional driving talent or early achievement. His racing career was fundamentally enabled by family wealth rather than demonstrated prodigy-level ability. He competed in F1 and Can-Am but without notable results.",
+    "inherited_summary": "Member of the Eaton family, dubbed 'Canada's royal family' with a $2 billion fortune. Youngest son of John and Signy Eaton of the T. Eaton Company department store dynasty. The family name and wealth directly enabled access to racing cars, top teams, and F1 opportunities.",
+    "ecosystem_summary": "Family wealth provided access to top racing teams like BRM and Can-Am entries. The Eaton family's social network in Toronto's establishment connected him to the racing world. However, he did not benefit from an elite driver development pipeline or legendary mentorship.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "thae-su-nyein",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Won Miss Grand Myanmar at 16, one of the youngest national pageant winners in Myanmar's history, and placed second runner-up at Miss Grand International 2024. Notable early achievement in pageantry but no evidence of exceptional cognitive or creative ability.",
+    "inherited_summary": "From Taungoo, Bago Region, Myanmar. Limited reliable family background information is available. She was studying at Canadian International College, suggesting some family resources, but no clear evidence of significant inherited advantage.",
+    "ecosystem_summary": "Supported by Miss Grand Myanmar national director Htoo Ant Lwin and the Miss Grand International platform. The Myanmar pageant ecosystem provided a national stage, but it is not an elite global developmental pipeline.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "ian-thorpe",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Rare, trajectory-changing physical advantages: size 17 feet, 190cm arm span, and a large frame. Became the youngest-ever individual male World Champion in swimming at 15. Broke 10 national age-group records at 13 and represented Australia at 14. Prodigy-level physical endowment.",
+    "inherited_summary": "Sporting family: father Ken was a promising junior cricketer who topped batting averages ahead of Bob Simpson, mother Margaret played A-grade netball. Elder sister Christina's swimming involvement led Ian into the pool. Upper-middle-class Sydney family with strong athletic genetics.",
+    "ecosystem_summary": "Australian swimming system is one of the world's strongest. Coached by Doug Frost from 1995. Sister's swimming provided early entry to the sport. The Australian institute and national team infrastructure supported his rapid rise from a young age.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "malala-yousafzai",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Exceptional courage, articulacy, and determination from a young age. Began blogging for BBC Urdu at 11 about life under Taliban rule, spoke publicly for girls' education from early childhood, and received Pakistan's National Youth Peace Prize at 14. Remarkable early intellectual and moral development.",
+    "inherited_summary": "Father Ziauddin Yousafzai was a teacher, school owner, and education activist who ran the Khushal Public School in Mingora. He provided direct domain mentorship, taught her to be a good speaker despite his own stutter, and gave her the platform from which she launched her advocacy. Grandfather was also a teacher and orator.",
+    "ecosystem_summary": "Father's school provided the institutional base for her activism. The BBC Urdu platform gave her an international voice at 11. Taliban oppression served as a catalytic adversary, and the assassination attempt and survival generated global media attention that amplified her cause to the Nobel Peace Prize.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "gunnar-nilsson",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Natural driving talent with an engineering background that gave him technical depth in car setup. Won the British F3 Championship in only his second season. However, he started racing late at 23, limiting early accumulation of reps.",
+    "inherited_summary": "Second son of a local building contractor in Helsingborg. Father died leaving a successful construction business, and his wealthy mother indulged his racing ambitions. The family construction business provided financial resources and a business partner (Dan Molin) for a transport company.",
+    "ecosystem_summary": "Progressed through Formula Vee, Super Vee, and F3 with sponsorship from Västkust-Stugan. Secured a works March drive in British F3, then a Lotus F1 seat. Fellow Swedes Ronnie Peterson and Reine Wisell served as inspirations. The British F3 series was the premier launchpad to F1.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "wang-liqin",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Selected at age 6 by coach Shen Yiming for his height advantage, quick reflexes, and coordination. Joined the Shanghai municipal team at 13 and the Chinese national team at 15. Won Olympic gold at 22 and was ranked #1 in the world for 25 consecutive months. Exceptional physical and technical aptitude from a young age.",
+    "inherited_summary": "Born to an ordinary worker's family in Shanghai's Zhabei District. Both parents were truck drivers at a local factory with no sports background. No family wealth or domain connections. Parents sent him to play table tennis to improve his fitness.",
+    "ecosystem_summary": "China's national table tennis system is the most elite sports pipeline in the world. Early selection at 6 by coach Shen Yiming, Shanghai municipal team at 13, national team at 15. Dedicated coaches from grassroots amateur sports schools through the national team provided unparalleled structured development.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "tian",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Reached Diamond on the Chinese Super Server at age 13, turned pro at 15, and won the 2019 World Championship with Finals MVP honors at 19. Exceptional early game sense and competitive achievement.",
+    "inherited_summary": "Father introduced him to gaming through Red Alert and eventually supported his pro career despite the family's traditional Chinese medicine background. Family had some gaming exposure through the father, providing modest domain overlap.",
+    "ecosystem_summary": "Developed through YM Esports, known as the 'West Point' of the LPL, before joining FPX where he formed a pivotal partnership with Doinb. The LPL ecosystem and FPX's championship roster provided an elite platform for his Worlds MVP run.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "crisp",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started professional career at 17 and developed into a World Championship-winning support. His long-standing bot lane partnership with Lwx was central to FPX's success, but no prodigy-level early individual achievement is documented.",
+    "inherited_summary": "Born in Hengyang City, Hunan Province. No family background, parental occupation, or early life details are documented in available sources.",
+    "ecosystem_summary": "Progressed through TCS Team, Newbee, and FPX in the LPL ecosystem. The durable bot lane partnership with Lwx and the FPX roster provided a high-trust peer team environment for the 2019 World Championship run.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "lwx",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Won the 2019 World Championship and was named Most Improved Player, indicating strong development rather than prodigy-level early talent. His durable bot lane partnership with Crisp was the foundation of his success.",
+    "inherited_summary": "No family background, parental occupation, or early life details are documented in available sources. No evidence of significant inherited advantage or disadvantage.",
+    "ecosystem_summary": "Started with Newbee alongside Crisp before both joined FPX in December 2017. The LPL ecosystem and the durable Crisp bot lane partnership provided a high-trust peer team environment for the 2019 World Championship victory.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "doinb",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "High-elo solo queue streamer in Korea with four King IDs, praised by Faker before turning pro. Won the 2019 World Championship and earned four LPL MVP awards. Exceptional game knowledge and unconventional champion pool demonstrated from his streaming days.",
+    "inherited_summary": "Father liked China and frequently visited for business, supporting Doinb's move to China at 18. Middle-class South Korean family with father working in telecommunications. Father's openness to China provided modest cross-cultural advantage.",
+    "ecosystem_summary": "Part of the 2014-15 Korean Exodus to the LPL. Recruited by Qiao Gu Reapers in the developmental league, then progressed through multiple LPL teams to FPX. The LPL ecosystem and his partnership with Tian at FPX provided the platform for his Worlds 2019 victory.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "nuguri",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Mechanically brilliant and hyper-aggressive playstyle noted from his amateur days. Won the 2020 World Championship at 21 with LCK Summer Playoffs MVP honors. Exceptional early mechanical talent recognized within the Korean LoL scene.",
+    "inherited_summary": "No family background, parental occupation, or early life details are documented in available sources. No evidence of significant inherited advantage or disadvantage.",
+    "ecosystem_summary": "Joined DAMWON Gaming in November 2017, which was promoted to the LCK in 2018. The DAMWON roster featuring ShowMaker and Canyon provided an elite team ecosystem. The Korean solo queue and LCK infrastructure supported his development.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "ghost",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Debuted professionally at 16 with CJ Entus in the LCK, giving him years of top-flight experience. Steady AD carry play was integral to DAMWON's World Championship and LCK titles, but he was not the star player. Above-average ability with strong experience.",
+    "inherited_summary": "No family background, parental occupation, or early life details are documented in available sources. No evidence of significant inherited advantage or disadvantage.",
+    "ecosystem_summary": "The LCK ecosystem and Korean esports infrastructure provided elite development. Joining DAMWON Gaming placed him in a championship-caliber roster with ShowMaker, Canyon, and Nuguri for their dominant 2020-2021 run.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "jynxzi",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started streaming at 17 with an average of 4 viewers in his first year. Built his audience through consistent daily streaming and comedic personality rather than exceptional early cognitive or gaming ability. Above-average entertainment instincts.",
+    "inherited_summary": "Born in Florida (some sources say Washington state). Father was supportive from the beginning, watching his early streams with zero viewers. Parents' occupations are not publicly documented. Humble background with no industry connections.",
+    "ecosystem_summary": "Grew his audience through TikTok short-form clips driving viewers to Twitch. The R6 Siege niche and the Twitch/TikTok platform ecosystem provided the tools for growth, but he had no notable peers, mentors, or institutional support early on.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "iitztimmy",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Introduced to gaming by his older brother at age 5, developing FPS mechanical skill across multiple titles. Above-average gaming ability but not prodigy-level; his breakthrough came from a viral 54-hour stream rather than exceptional early competitive achievement.",
+    "inherited_summary": "Korean-American born in San Francisco. Older brother introduced him to gaming. Parents are supportive (father watches his games despite health issues) but no family wealth or industry connections documented. Middle-class background.",
+    "ecosystem_summary": "Started streaming during a college summer break in 2019, was signed by Golden Guardians as a pro Apex Legends player, then pivoted to full-time content creation. The Apex Legends launch wave and Twitch platform provided the opportunity, but no elite institutional ecosystem.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "mrbeast",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Obsessively studied the YouTube algorithm from age 13, experimenting with content for four years before his breakthrough. Intensely competitive from childhood per his mother. Exceptional drive, entrepreneurial streak, and content strategy ability from a young age, though not a traditional cognitive prodigy.",
+    "inherited_summary": "Born to parents who were both active-duty military. Mother was a prison warden and later ROTC leader at East Carolina University. Parents divorced in 2007 under difficult circumstances. Middle-class upbringing in Greenville, NC with no industry connections. Diagnosed with Crohn's disease as a teenager.",
+    "ecosystem_summary": "Started on YouTube in 2012 with a hand-me-down laptop from his bedroom in Greenville, NC — not a media hub. The creator economy wave and YouTube platform provided the tools, but he had no notable peers, mentors, or institutional support early on. His friend team was self-assembled.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ryan-trahan",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Valedictorian of his high school class, cross country athlete, and co-founded Neptune Bottle water brand at 16 while still in high school. Exceptional drive and multi-domain competence from a young age, combining academic, athletic, and entrepreneurial achievement.",
+    "inherited_summary": "Born in Sugar Land, Texas, raised in small-town rural Texas (Eagle Lake/Altair area). Has a brother named Matthew. No family wealth or industry connections documented. Middle-class or working-class small-town background.",
+    "ecosystem_summary": "Started his YouTube channel at 15 from a small town in Texas. The NCAA conflict at Texas A&M (forced to choose between college athletics and YouTube) served as a catalyst for full-time content creation. The YouTube platform provided the tools, but no elite institutional ecosystem or mentorship.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "thegrefg",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started his YouTube channel at 14 and consistently published gameplay videos for over five years. Earned more than his parents from his bedroom while still in high school. Above-average gaming and content ability, but not prodigy-level early cognitive achievement.",
+    "inherited_summary": "Born in Alhama de Murcia, a small town in the Region of Murcia, Spain. Parents worked conventional jobs. No family wealth or industry connections. Self-built from a small town with no media infrastructure.",
+    "ecosystem_summary": "Started on YouTube in 2012 with Call of Duty content from his bedroom in a small Spanish town. The Fortnite Twitch wave and the Spanish gaming community provided the audience, but he had no notable peers, mentors, or institutional support early on.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ludwig",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Graduated cum laude from Arizona State University with dual degrees in English literature and journalism. Inaugural member of a comedy club at ASU. Above-average intellectual and comedic ability, but no prodigy-level early achievement documented.",
+    "inherited_summary": "Born in Hollis, New Hampshire to a French mother and Swedish father. Father passed away from alcoholism-related complications when Ludwig was 10. Middle-class upbringing with no industry connections. Grew up bilingual in English and French.",
+    "ecosystem_summary": "Built an audience through Super Smash Bros. Melee commentary and comedy content at ASU. The Smash Bros. community and Twitch platform provided the ecosystem, but no elite institutional support or notable mentors early in his career. His collaboration with QTCinderella later boosted his profile.",
+    "scoring_confidence": "Medium"
+  }
+]

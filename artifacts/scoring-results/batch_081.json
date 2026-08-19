@@ -1,0 +1,502 @@
+[
+  {
+    "person_id": "matt-lohstroh",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Texas A&M finance student who bought his first bitcoin in 2016 and identified the flare gas mining opportunity as a sophomore. Capable and entrepreneurial but no evidence of prodigy-level ability or exceptional early achievement.",
+    "inherited_summary": "Self-funded Giga Energy from lawn care and landscaping earnings. No evidence of family wealth or domain connections; cofounder Brent Whitehead's oil and gas family provided the complementary industry access.",
+    "ecosystem_summary": "Complementary cofounder dynamic with Whitehead (oil/gas family with actual well access). Texas oil field ecosystem provided the perfect testing ground. Right timing at the intersection of bitcoin mining and energy waste mitigation in 2019.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "reid-waldman",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Completed UMKC's accelerated 6-year BA/MD program, became a board-certified dermatologist with 100+ publications and a textbook. Prolific researcher with deep clinical domain expertise, though not a traditional prodigy.",
+    "inherited_summary": "Father is a physician (anesthesiologist) who provided direct career counseling and mentorship. UMKC legacy family spanning three generations (grandfather, father, uncle, siblings all UMKC graduates), providing deep institutional and professional networks.",
+    "ecosystem_summary": "UMKC 6-year BA/MD program and UConn dermatology residency (Distinction in Clinical Trials) provided solid clinical training. Good institutional support but not elite-tier ecosystem compared to Harvard/MIT-level pipelines.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "moseley-andrews",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "MIT Mechanical Engineering graduate who worked as a researcher in the MIT Media Lab developing novel sensing and imaging techniques. Led engineering projects including rehabilitation products and neurosurgical instruments. Strong technical ability from early on.",
+    "inherited_summary": "No publicly available information about family background, wealth, or parental professions. Scores based on absence of evidence of inherited advantage.",
+    "ecosystem_summary": "MIT and the Media Lab provided elite institutional access and direct connection to cofounders Rory Beyer and Sameer Jafri. The team became the youngest to receive FDA Class III medical device approval. Based in SF Bay Area, a frontier ecosystem for medical technology.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ritika-poddar",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Lehigh undergrad followed by Cornell MS in CS with focus on NLP and machine learning. Solid technical foundation with industry experience at IBM and Verizon, but no evidence of prodigy-level early achievement.",
+    "inherited_summary": "No publicly available information about family background or parental professions. No evidence of inherited wealth or domain connections.",
+    "ecosystem_summary": "Cornell Tech's Connective Media program connected her to her cofounder and provided NLP/ML expertise. NYC tech ecosystem and prior industry experience at IBM and Verizon provided relevant domain exposure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "david-eng",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Stanford BS and MS in Computer Science, served as course instructor for CS 161 (Algorithms) at Stanford. Published research in AI-based medical imaging including automated coronary calcium scoring. Strong technical ability demonstrated by teaching at Stanford.",
+    "inherited_summary": "No publicly available information about family background or parental professions. No evidence of inherited wealth or domain connections.",
+    "ecosystem_summary": "Stanford CS and the AIMI (AI in Medicine & Imaging) network placed him at the center of Silicon Valley's AI-healthcare intersection. YC backing and Sequoia Capital support validated the venture. Elite institutional and investor ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "emma-west",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "BS in Mathematics from Boston College and PhD in Biological and Biomedical Sciences from Harvard. Postdoctoral fellow at HHMI. Deep domain expertise in genetics and developmental biology that directly formed the basis of Digital Biology.",
+    "inherited_summary": "No publicly available information about family background or parental professions. No evidence of inherited wealth or domain connections.",
+    "ecosystem_summary": "Harvard PhD program and HHMI postdoctoral fellowship provided elite research training. Boston/Cambridge biotech ecosystem and Harvard network provided access to funding and collaborators. Bill & Melinda Gates Foundation grant validated the work.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "connor-tsuchida",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "PhD in Bioengineering from UC Berkeley/UCSF under Nobel Laureate Jennifer Doudna. Prior training at UW, Pfizer, Harvard, and NYU School of Medicine. His thesis research on CRISPR safety directly formed the basis of Azalea Therapeutics.",
+    "inherited_summary": "No publicly available information about family background or parental professions. No evidence of inherited wealth or domain connections.",
+    "ecosystem_summary": "Training under Nobel Laureate Jennifer Doudna at UC Berkeley is a once-in-a-generation mentor relationship. The Doudna lab directly spawned Azalea Therapeutics. Berkeley/SF Bay Area biotech frontier ecosystem and cofounding with Doudna provided trajectory-changing access.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jose-amich",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Harvard BA in Molecular and Cellular Biology with multiple elite research fellowships (PRISE, Herchel Smith, Harvard College Research Program). Research under Prof. Joan Brugge at Harvard Medical School. Also earned MIT Sloan MBA. Strong academic and research trajectory.",
+    "inherited_summary": "No publicly available information about family background or parental professions. No evidence of inherited wealth or domain connections.",
+    "ecosystem_summary": "Harvard and MIT Sloan provided elite dual-institution training. Research under Joan Brugge at Harvard Medical School gave domain exposure. Y Combinator S19 and the Boston medtech ecosystem supported Zeta Surgical's launch and FDA clearance.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "vasu-nadella",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Dropped out of McGill but founded and sold Macromeasures (ML personalization startup) before age 26, then served as EIR at Inovia Capital. Serial entrepreneur with demonstrated ability to build and exit companies early.",
+    "inherited_summary": "No publicly available information about family background or parental professions. The Nadella surname is notable but no confirmed relation to Satya Nadella. No evidence of inherited wealth or domain connections.",
+    "ecosystem_summary": "Toronto tech ecosystem, McGill research background, and EIR role at Inovia Capital provided mentorship and healthcare/life sciences exposure. Investors include Sam Altman and Marc Benioff, indicating strong network access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "kingson-lin",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Born to immigrant parents from rural Fujian, China, raised by grandparents until age 5. Graduated summa cum laude, Phi Beta Kappa, Sigma Xi from Penn. Yale MD/PhD with research published in Science. Pioneering research on brain cancer therapeutics that formed Modifi Bio. Trajectory-changing academic achievement despite disadvantaged background.",
+    "inherited_summary": "First-generation, low-income (FGLI) student. Immigrant parents from rural Fujian fishing province. Participated in PENNCAP pre-freshman program for non-traditional backgrounds. Active financial disadvantage.",
+    "ecosystem_summary": "Penn (with PENNCAP support) and Yale MD/PhD provided elite institutional access. Mentorship from Professors Molander (Penn), Bindra and Herzon (Yale). Paul & Daisy Soros Fellowship provided critical financial and network support.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "hassaan-raza",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "UT Austin CS education with prior work experience at Google and Apple as SWE TPM. Product studio experience in ML (avatars, 3D reconstruction). Strong technical foundation with frontier company experience, though not prodigy-level.",
+    "inherited_summary": "No publicly available information about family background or parental professions. No evidence of inherited wealth or domain connections.",
+    "ecosystem_summary": "San Francisco/Silicon Valley ecosystem, Sequoia/Scale VC/YC backing, and exceptional cofounder dynamic with Quinn Favret (met through U Michigan connection). Google and Apple experience provided frontier company exposure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "soroush-ghodsi-boushehri",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Clear prodigy: started coding at age 8 with Scratch, built a stock trading app and startup data tool as a pre-teen. Became YC's youngest founder ever at age 15. Cold-called Sam Altman as a 14-year-old. Trajectory-changing early ability.",
+    "inherited_summary": "Parents are a professor of machine learning and a data scientist, providing direct domain inheritance and early access to computing. Family understood and supported his entrepreneurial efforts from a young age.",
+    "ecosystem_summary": "Waterloo entrepreneurial ecosystem provided co-working spaces and mentorship from founders like Ted Livingston (Kik founder). YC acceptance at age 15 provided elite accelerator access. The Waterloo tech hub culture was catalytic.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "carlo-kobe",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Harvard Statistics student who dropped out to build Fizz/Mine. Product manager at Merantix (Berlin AI lab). Capable and entrepreneurial, but no evidence of prodigy-level early achievement or exceptional cognitive indicators.",
+    "inherited_summary": "German immigrant who couldn't get a credit card as an international student — the founding insight for Fizz. No evidence of family wealth or domain connections; modest immigrant background.",
+    "ecosystem_summary": "Harvard placed him in the elite startup pipeline, connecting him to YC (S21) and top investors (Kleiner Perkins, SV Angel). The Harvard-YC-Silicon Valley pipeline was the key ecosystem advantage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "nivatha-balendra",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Discovered a novel species of oil-degrading bacteria at age 17, becoming an Intel ISEF finalist. Early hands-on research through MUHC mentoring and INRS apprenticeship as a teenager. Strong scientific aptitude demonstrated early, though not a traditional prodigy.",
+    "inherited_summary": "No evidence of family wealth or domain connections. Mother died of cancer during her college years. No notable inherited advantage.",
+    "ecosystem_summary": "MUHC high school mentoring program and INRS lab apprenticeship provided rare early access to research facilities. McGill's Dobson Centre for Entrepreneurship and MaRS Women in Cleantech Challenge provided entrepreneurial support. Montreal cleantech ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "callie-lissinna",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "University of Alberta Mechanical Engineering graduate who led in-orbit operations of Alberta's first satellite (Ex-Alta 1) as a student. Capable engineer with hands-on satellite experience, but no evidence of prodigy-level early achievement.",
+    "inherited_summary": "No publicly available information about family background or parental professions. Grew up in Edmonton with no notable family advantage in space or technology.",
+    "ecosystem_summary": "WISEST programs (Choices 2009, SET 2013, SRP 2014) provided early lab exposure and mentorship that put her on the engineering trajectory. AlbertaSat student program connected her to cofounders. YC (2022) and Creative Destruction Lab provided accelerator support.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ivan-cornejo",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-taught guitar at age 8 via YouTube tutorials, showing musical aptitude and self-direction. Built large Instagram/TikTok following with covers. Musical talent and drive, but not prodigy-level cognitive ability in the traditional sense.",
+    "inherited_summary": "Raised in a modest immigrant household in Riverside, California by Mexican parents from Michoacán. Father came to California at 17. Working-class immigrant family with no wealth or industry connections.",
+    "ecosystem_summary": "YouTube, Instagram, and TikTok platforms provided the distribution channel that enabled discovery. Right timing for social media-driven music careers. No elite institutional or mentor ecosystem — largely self-driven via online platforms.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "kahlil-greene",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Yale graduate who became the first Black student body president in the school's 318-year history. Built massive TikTok following as 'Gen Z Historian.' Capable communicator and strategist, but no evidence of prodigy-level cognitive ability.",
+    "inherited_summary": "From Germantown, Maryland. Experienced systemic educational inequity which catalyzed his drive. No evidence of family wealth or notable professional connections.",
+    "ecosystem_summary": "Yale admission provided elite institutional access and platform. TikTok timing was critical — joined in January 2021 and went viral. NYT, Forbes, and WME representation amplified reach. Yale network and credibility opened doors.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "janet-ho",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Harvard BA in Government with CS secondary. Held product roles at Zynga, Rakuten, and The League, then became managing partner at Aegis Ventures before cofounding Hume AI. Solid career trajectory but no prodigy indicators.",
+    "inherited_summary": "No publicly available information about family background or parental professions. No evidence of inherited wealth or domain connections.",
+    "ecosystem_summary": "Harvard provided the entry point to product roles at multiple tech companies. Aegis Ventures managing partner role gave VC experience. NYC ecosystem and Hume AI's backing by EQT, USV, Nat Friedman, and Daniel Gross provided strong investor network.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ethan-perez",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Rice University Outstanding Senior (top of engineering department). NYU PhD under Kyunghyun Cho and Douwe Kiela, funded by NSF and Open Philanthropy. Published influential AI safety research including RAG and Automated Red Teaming. Strong academic trajectory.",
+    "inherited_summary": "No publicly available information about family background or parental professions. No evidence of inherited wealth or domain connections.",
+    "ecosystem_summary": "NYU PhD with elite advisors (Cho, Kiela). Internships at Google, Uber, DeepMind, and FAIR provided frontier lab experience. Mentorship from Geoffrey Irving at DeepMind. Anthropic position placed him at a frontier AI safety lab at the right time.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "alexander-isaacson",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Penn State Smeal College of Business graduate who founded Happy Valley VC (first student-run VC fund at Penn State) and managed the Nittany Lion Fund ($15M student hedge fund). Capable and entrepreneurial, but not elite-tier institution or prodigy-level.",
+    "inherited_summary": "No publicly available information about family background or parental professions. No evidence of inherited wealth or domain connections.",
+    "ecosystem_summary": "Penn State provided student-run VC and hedge fund experience — unusual but not elite-tier. Investment banking at Citi and Torreya Partners (EV deals) provided domain exposure. NYC location but not a frontier ecosystem for EV infrastructure.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "max-pfeiffer",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "University of Washington Electrical Engineering graduate who worked on Tesla Semi prototype engineering. Demonstrated CAN bus reverse engineering skills. Capable engineer with hands-on EV domain expertise, but no prodigy indicators.",
+    "inherited_summary": "No evidence of family wealth or domain connections. Lived in a van in Tesla's parking lot, indicating bootstrapped resources rather than inherited advantage.",
+    "ecosystem_summary": "Tesla experience provided deep domain expertise and connection to cofounder Trey Camp. UW Endowed Innovation Award. CleanTech Alliance exposure. The Tesla-to-startup pipeline was the key ecosystem advantage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "emily-cohen",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Dalton School (elite NYC private) then Stanford CS and Economics with distinction, Phi Beta Kappa. CS section leader, co-directed TreeHacks (Stanford's premier hackathon), co-founded 'Code Like a Girl' at Dalton. Strong academic and leadership trajectory.",
+    "inherited_summary": "Attended The Dalton School, one of New York City's most elite private schools. Upper-middle class NYC family with the resources for elite private education. Strong educational platform from an early age.",
+    "ecosystem_summary": "Dalton-to-Stanford pipeline placed her directly in Silicon Valley's venture ecosystem. Neo Scholar (2018) connected her to Ali Partovi who brought her to Neo as Partner. Co-directed TreeHacks with Andrew Milich. Google and McKinsey experience. Once-in-a-generation ecosystem access.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "qualeasha-wood",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "RISD BFA in printmaking and Cranbrook Academy of Art MFA in photography. Talented artist who became one of the youngest in the Met's permanent collection at 24-25. Artistic talent and drive, but no evidence of prodigy-level early cognitive ability.",
+    "inherited_summary": "Born and raised in Long Branch, New Jersey. No evidence of family wealth or art world connections. Practice was catalyzed by being doxxed and receiving death threats as a student — adversity rather than inherited advantage.",
+    "ecosystem_summary": "RISD and Cranbrook Academy of Art are elite art institutions that provided training and network. Studio Museum in Harlem residency. Met acquisition at a young age provided career-defining institutional validation. Elite art world ecosystem access.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "dina-radenkovic",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "UCL Medical School with best overall performance in physiology BSc. STEM competition background in mathematics, physics, biology, and chemistry. SALT Bio Fund partner and King's College London researcher. Strong scientific aptitude from an early age.",
+    "inherited_summary": "Father was a professor of embryology in South Serbia, providing direct domain inheritance and early science exposure. Aunt was also a doctor. Medical family provided intellectual environment, though war-torn Serbia created significant adversity.",
+    "ecosystem_summary": "UCL Medical School, King's College London research, Harvard's George Church lab collaboration, and Founders Forum exposure. Cofounding with serial entrepreneur Martin Varsavsky provided critical business expertise. UK-to-US biotech pipeline.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "vicente-zavarce",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Northeastern University finance and entrepreneurship graduate. Led user acquisition at Postmates, gaining directly applicable domain expertise. Capable and entrepreneurial, but no evidence of prodigy-level early achievement.",
+    "inherited_summary": "Grew up in crisis-era Venezuela until age 18, experiencing significant economic and political adversity. Immigrant to the US with no family wealth or industry connections.",
+    "ecosystem_summary": "Northeastern co-op program (including Arbor Advisors in Palo Alto) provided real-world experience. Postmates user acquisition role gave directly transferable expertise for Yummy. YC (S21) backing and SF ecosystem supported scaling. Adversity provided unique market insight.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "andrew-milich",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Graduated Stanford as Henry Ford II Scholar with the #1 record in Engineering. Worked on safety and security systems at SpaceX and autonomous vehicles at Zoox. Sequoia described him as coming to office hours to help other students rather than seeking help. Prodigy-level academic performance.",
+    "inherited_summary": "No publicly available information about family background or parental professions. No evidence of inherited wealth or domain connections.",
+    "ecosystem_summary": "Stanford Engineering provided elite institutional access. SpaceX and Zoox experience gave frontier company exposure. Cofounded Skiff with Jason Ginsberg (another Stanford polymath). Sequoia Capital backing. Silicon Valley ecosystem at the right time for privacy tech.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "shensi-ding",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Columbia CS graduate who served as Engineering Student Council President. Career path through Credit Suisse (IB), Silver Lake (growth equity), and Chief of Staff at Expanse. Solid academic and career trajectory but no prodigy indicators.",
+    "inherited_summary": "No publicly available information about family background or parental professions. No evidence of inherited wealth or domain connections.",
+    "ecosystem_summary": "Columbia connected her to cofounder Gil Feig (met as freshmen). Credit Suisse and Silver Lake provided finance and startup evaluation experience. Expanse Chief of Staff role gave firsthand integration problem exposure. NYC/SF tech ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "steven-vasilev",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Built deep domain expertise in sneaker culture and streetwear, running a custom sneaker business for celebrities. Built online communities of millions through social media. Passionate about technology from a young age, but no traditional academic prodigy indicators.",
+    "inherited_summary": "No publicly available information about family background or parental professions. No evidence of inherited wealth or domain connections.",
+    "ecosystem_summary": "Cofounded RTFKT with Benoit Pagotto (ex-Fnatic CMO) and Chris Le (gaming/entertainment), providing complementary expertise. a16z backing and Nike acquisition. Perfect timing for NFT/Web3 explosion in 2020-2021. Online community building was the key ecosystem advantage.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "rakan-alshawaf",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Queen's University engineering student who took a gap year to Shenzhen, learned Mandarin in 8 months, and built Ryno Global to 8-figure revenue. Capable entrepreneur with hustle, but no prodigy-level early achievement.",
+    "inherited_summary": "Born in Toronto to Syrian immigrants. Father was a serial entrepreneur who inspired Rakan's entrepreneurial drive. Family moved internationally (Syria, Saudi Arabia, UAE, China, Canada) due to father's business. Entrepreneurial family culture but not wealthy.",
+    "ecosystem_summary": "Shenzhen manufacturing ecosystem was the critical frontier advantage — direct access to Chinese manufacturing and supply chain. Queen's University and Cansbridge Fellowship provided network. Global upbringing gave unique cross-cultural perspective.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "carina-chaz",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Self-taught nose who created her first fragrance at age 13 while growing up in her parents' beauty manufacturing lab. Deep domain expertise from years of hands-on experience. Artistic and entrepreneurial aptitude, but not a traditional cognitive prodigy.",
+    "inherited_summary": "Mother is a formulator who ran a beauty manufacturing lab (LaNatura, founded 1987). Immigrant parents ran a small manufacturing facility in LA making products for hotels and spas. Direct family domain inheritance with rare early access to formulation tools and chemists.",
+    "ecosystem_summary": "LA beauty ecosystem and Instagram/Sephora distribution channel. Grew up in a beauty manufacturing lab — rare early tools/facilities access. However, the venture was bootstrapped and grassroots (knocking on doors, trade shows) without elite institutional or investor ecosystem support.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "chazz-sims",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "MIT BS and MEng in Computer Science. Worked at Goldman Sachs, was a CODE2040 fellow (program for underrepresented minorities in tech), and won MIT's iOS Games Competition. Strong technical ability at an elite institution.",
+    "inherited_summary": "CODE2040 fellow, indicating he comes from an underrepresented minority background. No evidence of family wealth or domain connections. The fellowship program specifically supports Black and Latino students in tech.",
+    "ecosystem_summary": "MIT and the Media Lab's Development Ventures class connected him to three cofounders. MIT's delta v accelerator and Center for Transportation Logistics provided institutional support. The MIT startup ecosystem was critical to launching Wise Systems.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "nabeel-alamgir",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Immigrant from Bangladesh who learned English from Scorsese films and worked his way up from busboy to CMO at Bareburger. Remarkable hustle and domain expertise gained through lived experience, but no traditional academic or cognitive prodigy indicators.",
+    "inherited_summary": "Born in Bangladesh, moved to Kuwait, then Queens at age 15. Father was a taxi driver, mother worked at Dunkin' Donuts. Working-class immigrant family in poverty. Active financial and social disadvantage.",
+    "ecosystem_summary": "Bareburger provided deep domain expertise — working from busboy to CMO gave firsthand restaurant operations knowledge. NYC restaurant ecosystem. No elite institutional or mentor access; largely self-taught through lived experience.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "matt-mccambridge",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Harvard Government graduate who taught leadership under Ron Heifetz at the Kennedy School. Worked at Insight Venture Partners and Shore Capital. Capable with strong career trajectory, but no prodigy indicators.",
+    "inherited_summary": "No publicly available information about family background or parental professions. No evidence of inherited wealth or domain connections.",
+    "ecosystem_summary": "Harvard connected him to cofounder Scott Sansovich (met on day 3 of freshman year). Ron Heifetz mentorship at Kennedy School. Insight Venture Partners provided VC experience and healthcare exposure. Grand Central Tech/Company Ventures residency program.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "allisa-song",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Korean-American immigrant. Dual degree in Psychology Honors and Biology from University of Washington. MD candidate at Mayo Clinic. Published peer-reviewed author in neuroscience, ophthalmology, and plastic surgery. USPTO Collegiate Inventor medal. Strong academic and research trajectory.",
+    "inherited_summary": "Born in Seoul, South Korea, immigrated to the US in 2001. Family experienced financial instability and health insurance gaps. Active disadvantage — 'health insurance, doctor's appointments, and financial stability were all luxuries.'",
+    "ecosystem_summary": "University of Washington provided lab access and connection to team members. Mayo Clinic MD program provided elite medical training. UW BioE lab mates formed the Nanodropper team. Forbes 30 Under 30 and USPTO recognition provided visibility.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "jelena-notaros",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Ranked 1st of 75 at CU Boulder with 4.0 GPA. Earned 5.0/5.0 at MIT as NSF Graduate Research Fellow and Presidential Fellow. Became MIT assistant professor by age ~27. Top-Three DARPA Riser. Published in Nature. Prodigy-level academic achievement across the board.",
+    "inherited_summary": "Attended Poudre High School (public school in Fort Collins, CO) — IB program. No evidence of family wealth or domain connections. Academic achievement appears self-driven rather than inherited.",
+    "ecosystem_summary": "CU Boulder (with Chancellor's Recognition Award) to MIT (NSF Fellow, Presidential Fellow) provided elite institutional pipeline. DARPA recognition and MIT faculty position placed her at the frontier of integrated silicon photonics research. Strong but not once-in-a-generation peer environment.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "ben-simmons",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Basketball prodigy who played against 12-year-olds at age 7. Won three straight US high school national championships at Montverde Academy. Became #1 overall NBA draft pick and Rookie of the Year. Trajectory-changing athletic ability from a very young age.",
+    "inherited_summary": "Father Dave Simmons played 13 years of professional basketball in Australia's NBL, providing direct domain inheritance, training, connections, and basketball knowledge from birth. Family relocated to support his development.",
+    "ecosystem_summary": "Montverde Academy (elite US high school basketball program) provided national-level competition and exposure. Australian Institute of Sport. LSU (godfather was a coach). Three national championships at Montverde. Elite basketball development pipeline.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "alexander-liegl",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Born and raised in Munich, Germany. Stanford double-major in Applied Mathematics and Philosophy. Discovered bitcoin in 2012, mined it in his dorm room. Founded Bessel Capital (institutionally-funded quant hedge fund) as a sophomore. First-ever undergraduate analyst at Stanford Management Company. Strong intellectual range and early achievement.",
+    "inherited_summary": "From Munich, Germany — international education at Stanford suggests upper-middle-class background with resources for US education. Convinced parents to invest in bitcoin. No evidence of direct domain inheritance but stable, supportive family.",
+    "ecosystem_summary": "Stanford placed him at the center of Silicon Valley. Peter Thiel and Digital Currency Group backing for Layer1. Stanford Management Company experience provided endowment investment exposure. Right timing for bitcoin (2012) and crypto mining in Texas.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ben-botvinick",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started coding early (GitHub account at age 15) and launched Hyper at age 17. Built a payments platform for Discord communities that processed over $80M. Early start and strong technical ability for his age, though not prodigy-level.",
+    "inherited_summary": "Grew up in Palo Alto, California — deep Silicon Valley ecosystem access from childhood. This geographic advantage provided cultural immersion in tech entrepreneurship from an early age.",
+    "ecosystem_summary": "Palo Alto provided Silicon Valley ecosystem access. Discord platform community was the key distribution channel. YC (S21) and General Catalyst ($17.2M Series A) backing. Right timing for community-based payments platforms.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "andrew-malek",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Harvard CS and Music (Honors). Attended Collège Notre-Dame de Jamhour (elite Jesuit school in Lebanon) and studied piano at the Lebanese National Conservatory for 7 years. Goldman Sachs and Clarity Money experience. Strong academic and musical aptitude.",
+    "inherited_summary": "Grew up in Lebanon attending an elite Jesuit school (Collège Notre-Dame de Jamhour, 13 years) and studying at the national conservatory. Elite education indicates upper-middle-class family, but Lebanon's political instability created adversity.",
+    "ecosystem_summary": "Harvard connected him to cofounder Marc Atiyeh (childhood friend from same high school and Harvard). Marc's brother provided additional network. Lux Capital and DCM backing. The childhood-friend-to-cofounder pipeline from Lebanon to Harvard was unique.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "christina-gilbert",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Valedictorian with record-high GPA at Los Gatos High School. #1 nationally for Parliamentary Debate (2012). #2 nationally for Congressional Debate (2013 NSDA). Youngest-ever president of Stanford Debate Society. Stanford CS with 4.7 GPA. Google APM. Prodigy-level academic and competitive achievement.",
+    "inherited_summary": "Grew up in Los Gatos, California — Silicon Valley area, suggesting middle to upper-middle-class background. Proximity to Silicon Valley from childhood provided cultural context, but no evidence of direct domain inheritance or family wealth.",
+    "ecosystem_summary": "Los Gatos placed her in Silicon Valley from childhood. Stanford CS, Google APM program, and YC (S21) provided elite pipeline. General Catalyst and Sequoia backing. Co-founded OneSchema with Stanford CS connection. Strong Silicon Valley ecosystem access.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "eric-ho",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Yale Computer Science (2012-2016) with Facebook software engineering internship. Cofounded RippleMatch based on direct experience with broken college recruiting. Capable and mission-driven, but no evidence of prodigy-level early achievement.",
+    "inherited_summary": "No publicly available information about family background or parental professions. No evidence of inherited wealth or domain connections.",
+    "ecosystem_summary": "Yale connected him to cofounder Andrew Myers and provided the recruiting experience that inspired RippleMatch. Kevin Ryan (Yale board member) was first investor. Goldman Sachs led Series B ($45M). Yale community support was critical to launch.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "julianna-lamb",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Stanford CS and History graduate. Grew up in Idaho where she 'didn't even know what computer science was.' Worked at Strava, Plaid, and VGS before cofounding Stytch. Solid engineering career, but no prodigy indicators and late exposure to CS.",
+    "inherited_summary": "Grew up in Idaho with no exposure to computer science — no family domain inheritance or tech connections. Working-to-middle-class background with no inherited advantage in technology.",
+    "ecosystem_summary": "Stanford CS provided elite institutional access. Plaid was the key ecosystem — met cofounder Reed McGinley-Stempel there and gained direct authentication domain expertise. Benchmark, Thrive, Index, and Coatue backing. SF tech ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "luke-jacobs",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "IU Bloomington Environmental Science (full academic scholarship). Worked as environmental scientist at GHD, giving direct domain expertise for Encamp. Published in Journal of Ecology. Capable but not prodigy-level; solid academic merit.",
+    "inherited_summary": "Brother Sam is a National Merit Scholar (ASU math/stats) and cofounder. Older brother Ben is a senior tech figure. Family academic culture with multiple high-achieving siblings, but no evidence of wealth or domain-specific inheritance.",
+    "ecosystem_summary": "IU Bloomington (full scholarship, Wells Scholar program peer) connected him to cofounder Dan Smedema (Wells Scholar). Brother cofounder dynamic. Indianapolis is not a frontier tech ecosystem. IU Philanthropic Venture Fund provided early support. Modest ecosystem advantages.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "slater-victoroff",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Attended North Hollywood Highly Gifted High School — a specialized program for gifted students. Cofounded Indico from an Olin College dorm room in 2013, before deep learning was mainstream. Kaggle competition success. Strong cognitive ability demonstrated by gifted program admission and early ML work.",
+    "inherited_summary": "No publicly available information about family background or parental professions. Admission to a highly gifted high school suggests strong cognitive endowment rather than inherited advantage.",
+    "ecosystem_summary": "North Hollywood Highly Gifted High School provided gifted peer environment. Olin College connected him to cofounder Alec Radford (co-author of DCGAN, a foundational generative AI paper). Techstars Boston accelerator. Boston ML community and early Kaggle involvement were critical.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "brandon-hill",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Stanford graduate, student body vice president, Obama White House intern. Cofounded Vori with Stanford friends. Capable leader and entrepreneur, but no evidence of prodigy-level early achievement.",
+    "inherited_summary": "Parents worked 40+ years in grocery industry — father Leon was first Black employee at Reynolds Consumer Products, rose to director of North American sales; mother Tori worked at Nabisco, Oscar Mayer, Kraft Heinz. Parents founded their own Black-owned grocery brokerage. Direct family domain inheritance with industry networks and customer relationships.",
+    "ecosystem_summary": "Stanford connected him to cofounders Tremaine Kirkman and Robert Pinkerton. Silicon Valley ecosystem with YC and Greylock backing. Parents' grocery industry network directly provided Vori's foundation. Eden Prairie to Stanford pipeline.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "levi-conlow",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started dog-walking business at age 10, was making up to $200/hour by 15. Attended GCU (Grand Canyon University), not an elite institution. Strong entrepreneurial hustle from a young age, but no academic prodigy indicators.",
+    "inherited_summary": "Parents were supportive and encouraged entrepreneurship from a young age. Father invested $50,000 of retirement savings (took a loan against childhood home) to start Lectric eBikes. Supportive family with moderate means — significant financial risk but not wealth.",
+    "ecosystem_summary": "GCU's Canyon Ventures incubator provided mentorship and space as the first occupant. Cofounder Robby Deziel (friend since 6th grade, mechanical engineer from U Minnesota) provided complementary skills. Not an elite institutional or frontier ecosystem.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "dan-pantelo",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "State-ranked debater and chess player. Started as a street salesman in NYC's lowest-income neighborhoods. Built Pantelo Group from scratch to managing $2M/month in ad spend. Capable and driven, but no traditional academic or prodigy indicators.",
+    "inherited_summary": "Son of Soviet/Ukrainian refugees. Grew up broke as an immigrant child. Active financial disadvantage and immigrant hardship.",
+    "ecosystem_summary": "NYC ecosystem provided the market for street sales and digital marketing. Binghamton University (not elite). No notable mentors or institutional access. Largely self-taught through hustle and direct experience in ad accounts.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "devin-booker",
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 2,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Basketball prodigy — McDonald's All-American, Moss Point HS all-time leading scorer (2,518 points), Mississippi Gatorade Player of the Year. Reached NBA at 18. One of six NBA players to post a 70-point game at age 21. Trajectory-changing athletic ability.",
+    "inherited_summary": "Father Melvin Booker was a professional basketball player (32 NBA games, CBA, overseas) and Big Eight Player of the Year at Missouri. Father became his personal coach and mentor — described as a 'cheat code' by peers. Direct domain inheritance with training and basketball knowledge.",
+    "ecosystem_summary": "University of Kentucky (elite basketball program under John Calipari). Moss Point HS in Mississippi. Father as dedicated coach/mentor from childhood. Battled older brother building competitive drive. Elite basketball development pipeline through Kentucky to NBA.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "victor-lopezcarmen",
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Ithaca College Magna Cum Laude, Fulbright Scholarship (first from his tribal nation), Harvard Medical School. Published researcher and advocate. Strong academic trajectory, though not prodigy-level in the traditional sense.",
+    "inherited_summary": "Member of Crow Creek Sioux Tribe and Pascua Yaqui Nation. Grew up in rural isolation (Alaska, rural Virginia). Suffered third-degree burns as a child with limited hospital access. Active disadvantage from Indigenous identity, rural poverty, and healthcare inequity.",
+    "ecosystem_summary": "Ithaca College Martin Luther King Scholars Program, Fulbright to Western Sydney University, and Harvard Medical School provided elite institutional access. Four Directions Summer Research Program at HMS connected him to a Native American physician for the first time. Ariadne Labs and UN Global Indigenous Youth Caucus provided platforms.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "misbah-ashraf",
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": -1,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Started tutoring, selling software and game CDs as a teenager to support family. Dropped out of Amity University. Serial entrepreneur (Cibola, Marsplay, Jar) with survival-driven hustle. Capable and resilient, but no academic prodigy indicators.",
+    "inherited_summary": "From Bihar Sharif, India. Middle-class family with severe financial difficulties. Father was a school teacher who took loans from moneylenders to support extended family. Active financial disadvantage and survival pressure.",
+    "ecosystem_summary": "Friends from IIT Delhi provided the peer network for Cibola. Bangalore startup hub for Jar. No elite institutional access himself (dropped out of Amity). Largely self-taught through entrepreneurial experience rather than institutional ecosystem support.",
+    "scoring_confidence": "High"
+  }
+]

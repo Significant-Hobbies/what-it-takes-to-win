@@ -1,0 +1,478 @@
+[
+  {
+    "person_id": "guilherme-avila",
+    "name": "Guilherme Avila",
+    "verdict": "REMOVE",
+    "reason": "Pico EdTech app had only 6K users and angel funding; no major funding, publications, or notable recognitions.",
+    "category_fix": null
+  },
+  {
+    "person_id": "adetokunbo-ogunnoiki",
+    "name": "Adetokunbo Ogunnoiki",
+    "verdict": "REMOVE",
+    "reason": "LooPoint toilet-finding app went viral briefly but has no major funding, users, or lasting notability.",
+    "category_fix": null
+  },
+  {
+    "person_id": "liu-zidong",
+    "name": "Liu Zidong",
+    "verdict": "KEEP",
+    "reason": "Co-founder and CEO of Sengine Technology; Forbes 30 Under 30 Asia 2026 (AI); raised RMB 100M (~$14M) from DJI founding team and Sequoia affiliates; 20+ patents in spatial intelligence.",
+    "category_fix": null,
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Pursuing PhD in Spatial AI at UT Austin on fully funded scholarship; Master's from UCL; demonstrated strong technical and leadership abilities founding a deep-tech company.",
+    "inherited_summary": "No evidence of family wealth, connections, or inherited domain expertise; appears self-made.",
+    "ecosystem_summary": "Backed by DJI founding team, Sequoia-affiliated capital, and Shenzhen government strategic fund; selected as first-batch AI Foundation Model enterprise in Shenzhen; strong Greater Bay Area AI ecosystem.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "yang-mingzhuo",
+    "name": "Yang Mingzhuo",
+    "verdict": "KEEP",
+    "reason": "Co-founder and CTO of Sengine Technology; Forbes 30 Under 30 Asia 2026 (AI); company raised ~$14M and holds 20+ patents.",
+    "category_fix": null,
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Serves as CTO of a spatial AI company; limited public information on individual background or prior achievements.",
+    "inherited_summary": "No evidence of family wealth, connections, or inherited domain expertise.",
+    "ecosystem_summary": "Same Sengine ecosystem as Liu Zidong: DJI founding team, Sequoia affiliates, Shenzhen government fund; first-batch AI Foundation Model enterprise.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "zhuang-ziyang",
+    "name": "Zhuang Ziyang",
+    "verdict": "KEEP",
+    "reason": "Co-founder and CSO of Sengine Technology; Forbes 30 Under 30 Asia 2026 (AI); company raised ~$14M and holds 20+ patents.",
+    "category_fix": null,
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "Serves as CSO of a spatial AI company; limited public information on individual background or prior achievements.",
+    "inherited_summary": "No evidence of family wealth, connections, or inherited domain expertise.",
+    "ecosystem_summary": "Same Sengine ecosystem as Liu Zidong: DJI founding team, Sequoia affiliates, Shenzhen government fund; first-batch AI Foundation Model enterprise.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "derek-nee",
+    "name": "Derek Nee",
+    "verdict": "KEEP",
+    "reason": "Co-founder and CEO of Flowith; Forbes 30 Under 30 Asia 2026 (AI); company has 1M+ users and raised $9M from HSG (Sequoia China), Vertex Ventures, and LongRiver.",
+    "category_fix": null,
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "CEO of an agentic AI startup with 1M+ users; limited public information on individual background or early achievements.",
+    "inherited_summary": "No evidence of family wealth, connections, or inherited domain expertise.",
+    "ecosystem_summary": "Backed by HSG (formerly Sequoia China), Vertex Ventures, and LongRiver Investments; Shanghai and San Francisco presence provides strong AI ecosystem access.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "wu-yichen",
+    "name": "Wu Yichen",
+    "verdict": "KEEP",
+    "reason": "Co-founder and COO of Flowith; Forbes 30 Under 30 Asia 2026 (AI); company has 1M+ users and raised $9M from top-tier VCs; also founded X ACADEMY.",
+    "category_fix": null,
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "COO of Flowith and founder of X ACADEMY; demonstrated entrepreneurial drive across multiple ventures.",
+    "inherited_summary": "No evidence of family wealth, connections, or inherited domain expertise.",
+    "ecosystem_summary": "Same Flowith ecosystem as Derek Nee: HSG, Vertex Ventures, LongRiver; Shanghai/SF AI ecosystem.",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "jia-haojun",
+    "name": "Jia Haojun",
+    "verdict": "KEEP",
+    "reason": "Co-founder and CEO of Deep Principle; Forbes 30 Under 30 Asia 2025 (Healthcare & Science); PhD in computational quantum chemistry from MIT with 25+ papers in top journals; WEF contributor.",
+    "category_fix": null,
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "PhD from MIT in computational quantum chemistry under Prof. Heather Kulik; 25+ publications in top-tier journals; President of MIT CSSA; research at Dow Chemical; exceptional academic trajectory.",
+    "inherited_summary": "No evidence of family wealth, connections, or inherited domain expertise; appears self-made through academic excellence.",
+    "ecosystem_summary": "MIT network and research infrastructure; Hangzhou AI4S ecosystem; industrial partnerships in China; Forbes and WEF recognition providing visibility.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "lucas-boller",
+    "name": "Lucas Boller",
+    "verdict": "REMOVE",
+    "reason": "Co-founded Kinetic; only achievement is being a Slush 100 2025 runner-up; no major funding, users, or notable recognitions.",
+    "category_fix": null
+  },
+  {
+    "person_id": "max-hofer",
+    "name": "Max Hofer",
+    "verdict": "REMOVE",
+    "reason": "Co-founded Parsewise; only achievement is being a Slush 100 2025 runner-up; no major funding, users, or notable recognitions.",
+    "category_fix": null
+  },
+  {
+    "person_id": "aiko-bernehed",
+    "name": "Aiko Bernehed",
+    "verdict": "REMOVE",
+    "reason": "Co-founded Alteva; only achievement is being selected as a Slush 100 2025 standout; early-stage battery startup with no major funding or traction.",
+    "category_fix": null
+  },
+  {
+    "person_id": "sara-lindfors",
+    "name": "Sara Lindfors",
+    "verdict": "REMOVE",
+    "reason": "Co-founded Normain; only achievement is being selected as a Slush 100 2025 standout; early-stage AI startup with no major funding or traction.",
+    "category_fix": null
+  },
+  {
+    "person_id": "estefana-hernndez",
+    "name": "Estefanía Hernández",
+    "verdict": "REMOVE",
+    "reason": "Co-founded Everday; only achievement is being selected as a Slush 100 2025 standout; early-stage workforce intelligence startup with no major funding or traction.",
+    "category_fix": null
+  },
+  {
+    "person_id": "nina-larsen",
+    "name": "Nina Larsen",
+    "verdict": "REMOVE",
+    "reason": "Co-founded Omaia; only achievement is being selected as a Slush 100 2025 standout; early-stage maternal mental health startup with no major funding or traction.",
+    "category_fix": null
+  },
+  {
+    "person_id": "pouya-behrouzi",
+    "name": "Pouya Behrouzi",
+    "verdict": "REMOVE",
+    "reason": "Co-founded Rayca Precision; only achievement is being selected as a Slush 100 2025 standout; early-stage biotech startup with no major funding or traction.",
+    "category_fix": null
+  },
+  {
+    "person_id": "paula-runsten",
+    "name": "Paula Runsten",
+    "verdict": "REMOVE",
+    "reason": "Co-founded Rebaba; only achievement is being selected as a Slush 100 2025 standout; early-stage startup with no major funding or traction.",
+    "category_fix": null
+  },
+  {
+    "person_id": "roope-marttila",
+    "name": "Roope Marttila",
+    "verdict": "REMOVE",
+    "reason": "Co-founded SEATOM Technologies; only achievement is being selected as a Slush 100 2025 standout; early-stage startup with no major funding or traction.",
+    "category_fix": null
+  },
+  {
+    "person_id": "marc-vetter",
+    "name": "Marc Vetter",
+    "verdict": "REMOVE",
+    "reason": "Co-founded 4QT; only achievement is being selected as a Slush 100 2025 standout; early-stage low-emission drives startup with no major funding or traction.",
+    "category_fix": null
+  },
+  {
+    "person_id": "valtteri-korkiakoski",
+    "name": "Valtteri Korkiakoski",
+    "verdict": "REMOVE",
+    "reason": "Co-founded Solace Care; only achievement is being selected as a Slush 100 2025 standout; early-stage end-of-life services startup founded in 2025 with no major funding.",
+    "category_fix": null
+  },
+  {
+    "person_id": "brendan-conroy",
+    "name": "Brendan Conroy",
+    "verdict": "REMOVE",
+    "reason": "Co-founded Universal Atmosphere Processing; only achievement is being selected as a Slush 100 2025 standout; early-stage startup with no major funding or traction.",
+    "category_fix": null
+  },
+  {
+    "person_id": "andr-xuereb",
+    "name": "André Xuereb",
+    "verdict": "REMOVE",
+    "reason": "Co-founded Merqury Cybersecurity; only achievement is being selected as a Slush 100 2025 standout; early-stage cybersecurity startup with no major funding or traction.",
+    "category_fix": null
+  },
+  {
+    "person_id": "christopher-thr",
+    "name": "Christopher Thür",
+    "verdict": "KEEP",
+    "reason": "Co-founder and CEO of Yousician; Wikipedia article; 20M monthly active users; $28M Series B; $50M annual revenue; world's largest music educator platform.",
+    "category_fix": null,
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Founded Ovelin at 23 and won Slush 100 2011; built Yousician into a profitable $50M revenue business over a decade; capable entrepreneur but not a prodigy.",
+    "inherited_summary": "No evidence of family wealth, connections, or inherited domain expertise; Helsinki-based, appears self-made.",
+    "ecosystem_summary": "Startup Sauna accelerator at Aalto University; Helsinki startup ecosystem; raised $1.4M in 2012 and $28M Series B in 2021; strong Nordic tech ecosystem support.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "stone-atwine",
+    "name": "Stone Atwine",
+    "verdict": "KEEP",
+    "reason": "Founder and CEO of Eversend; 1.6M registered users, $1B+ moved across 57 countries; Techstars and Google for Startups alum; Bloomberg profiled; 4-time Choiseul Top African Leader under 40.",
+    "category_fix": null,
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "CS degree from Mbarara University; 13+ years in fintech; self-made entrepreneur who built from Uganda to global platform; strong domain expertise but not prodigious.",
+    "inherited_summary": "No evidence of family wealth or connections; grew up in Uganda with limited access to capital and infrastructure; entirely self-made.",
+    "ecosystem_summary": "Techstars Berlin Accelerator, Visa Accelerator, Google for Startups; French government exceptional talent program; Seedrs crowdfunding; Bloomberg visibility.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "joo-caxaria",
+    "name": "João Caxaria",
+    "verdict": "REMOVE",
+    "reason": "Co-founded Codacy; won Web Summit PITCH 2014 but only raised €1.5M total and served ~3,000 developers; no Forbes 30U30, Wikipedia, or 100K+ users.",
+    "category_fix": null
+  },
+  {
+    "person_id": "simon-hennes",
+    "name": "Simon Hennes",
+    "verdict": "KEEP",
+    "reason": "Co-founder and CEO of Vivenu; Forbes 30 Under 30 Europe 2025 (Technology); $65.9M total funding; 750+ organizers across 40+ countries; 150-200 employees.",
+    "category_fix": null,
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Background in business consulting and M&A; founded Vivenu and scaled it to a global ticketing platform; capable entrepreneur but no evidence of prodigious talent.",
+    "inherited_summary": "No evidence of family wealth, connections, or inherited domain expertise; appears self-made.",
+    "ecosystem_summary": "$65.9M in total funding across 3 rounds; offices across Europe and North America; strong investor backing and global client base of 750+ organizers.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ricardo-verhaeg",
+    "name": "Ricardo Verhaeg",
+    "verdict": "REMOVE",
+    "reason": "Co-founded Inspira; won Web Summit PITCH 2023 but raised only a small undisclosed seed round; no Forbes 30U30, Wikipedia, or 100K+ users.",
+    "category_fix": null
+  },
+  {
+    "person_id": "duarte-oliveira",
+    "name": "Duarte Oliveira",
+    "verdict": "KEEP",
+    "reason": "Co-founded Intuitivo; won Web Summit PITCH 2024; platform serves 35,000+ teachers and 300,000+ students; responsible for digitizing all assessment tests in Portugal nationally.",
+    "category_fix": null,
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "FEUP (Faculdade de Engenharia da U.Porto) graduate in computer engineering; co-founded Intuitivo at 22 during COVID; capable builder but no evidence of prodigious talent.",
+    "inherited_summary": "No evidence of family wealth, connections, or inherited domain expertise; Porto-based, appears self-made.",
+    "ecosystem_summary": "UPTEC (University of Porto Science and Technology Park) incubator; University of Porto spin-off; Techstars and Demium backed; Web Summit PITCH 2024 winner providing significant visibility.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "diogo-silva",
+    "name": "Diogo Silva",
+    "verdict": "KEEP",
+    "reason": "Co-founded Intuitivo; won Web Summit PITCH 2024; platform serves 35,000+ teachers and 300,000+ students; responsible for digitizing all assessment tests in Portugal nationally.",
+    "category_fix": null,
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "FEUP computer engineering student; co-founded Intuitivo at 22 during COVID quarantine; capable builder but no evidence of prodigious talent.",
+    "inherited_summary": "No evidence of family wealth, connections, or inherited domain expertise; Porto-based, appears self-made.",
+    "ecosystem_summary": "UPTEC incubator; University of Porto spin-off; Techstars and Demium backed; Web Summit PITCH 2024 winner providing significant visibility.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "ritesh-khandelwal",
+    "name": "Ritesh Khandelwal",
+    "verdict": "KEEP",
+    "reason": "Co-founded ZYOD; raised $21.5M total ($3.5M seed from Lightspeed + $18M Series A from RTP Global); 550+ customers in 18+ countries; 100+ employees.",
+    "category_fix": null,
+    "personal_endowment_score": 1,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "IIM Kashipur alumnus; prior startup experience including 3 years on founding team of Fashinza; capable entrepreneur but no evidence of prodigious talent.",
+    "inherited_summary": "No evidence of family wealth, connections, or inherited domain expertise; appears self-made.",
+    "ecosystem_summary": "Backed by Lightspeed Venture Partners, RTP Global, Alteria Capital, Stride Ventures, and Trifecta Capital; strong Indian startup ecosystem access; FJ Labs and angel investors.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "duan-chenru",
+    "name": "Duan Chenru",
+    "verdict": "KEEP",
+    "reason": "Co-founded Deep Principle; Forbes 30 Under 30 Asia 2025 (Healthcare & Science); MIT alumnus; Forbes China 30 Under 30; research scientist at Microsoft Azure Quantum.",
+    "category_fix": null,
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "MIT alumnus; research scientist at Microsoft Azure Quantum developing AI generative algorithms for chemical design; Forbes China 30 Under 30 and Hurun U30; strong technical background.",
+    "inherited_summary": "No evidence of family wealth, connections, or inherited domain expertise; appears self-made through academic and technical excellence.",
+    "ecosystem_summary": "MIT network; Microsoft Azure Quantum experience; Hangzhou AI4S ecosystem; Forbes China and Hurun recognition; industrial partnerships in China.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "darren-zhu",
+    "name": "Darren Zhu",
+    "verdict": "REMOVE",
+    "reason": "Thiel Fellow who raised $100K from Gates Foundation for a diagnostic biosensor that did not succeed; no major funding, publications, or lasting notability.",
+    "category_fix": null
+  },
+  {
+    "person_id": "alexander-kiselev",
+    "name": "Alexander Kiselev",
+    "verdict": "REMOVE",
+    "reason": "Thiel Fellow whose company Open Industrial lasted only two years; has since hopped between tech jobs with no notable achievements.",
+    "category_fix": null
+  },
+  {
+    "person_id": "eric-mckay",
+    "name": "Eric McKay",
+    "verdict": "REMOVE",
+    "reason": "Thiel Fellow who worked at the Fed and various startups; now works at Primer; no major funding, company, or notable achievements beyond the fellowship.",
+    "category_fix": null
+  },
+  {
+    "person_id": "jeffrey-lim",
+    "name": "Jeffrey Lim",
+    "verdict": "REMOVE",
+    "reason": "Thiel Fellow in economics and finance; no evidence of major funding, notable company, or significant achievements beyond the fellowship.",
+    "category_fix": null
+  },
+  {
+    "person_id": "faheem-zaman",
+    "name": "Faheem Zaman",
+    "verdict": "REMOVE",
+    "reason": "Thiel Fellow who built mobile payment infrastructure as a teenager; no major funding, company success, Forbes 30U30, or lasting notability beyond the fellowship.",
+    "category_fix": null
+  },
+  {
+    "person_id": "nick-cammarata",
+    "name": "Nick Cammarata",
+    "verdict": "KEEP",
+    "reason": "Started Upload Robots at 14 (used by millions); co-founded ed-tech company that was acquired; CEO of Founders Fund-backed ML company; now interpretability researcher at OpenAI; early angel investor in Eaze and Roam Research.",
+    "category_fix": null,
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Started programming at 14 and built Upload Robots used by millions; Carnegie Mellon CS admission; decade of startup experience; now at OpenAI as interpretability researcher; strong autodidact.",
+    "inherited_summary": "No evidence of family wealth, connections, or inherited domain expertise; from Newburyport, MA; appears self-made.",
+    "ecosystem_summary": "Inaugural Thiel Fellowship class providing $100K and Silicon Valley mentor network; Founders Fund backing; OpenAI access; angel investing network including early Eaze and Roam Research rounds.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "david-merfield",
+    "name": "David Merfield",
+    "verdict": "REMOVE",
+    "reason": "Thiel Fellow who worked on OPEN/Tablo with Cammarata; open-source GitHub projects (randomColor 6K stars) but no major funding, company success, or notable achievements beyond the fellowship.",
+    "category_fix": null
+  },
+  {
+    "person_id": "andrew-hsu",
+    "name": "Andrew Hsu",
+    "verdict": "REMOVE",
+    "reason": "Remarkable child prodigy (3 BS degrees at 16, Stanford PhD candidate at 19) but Airy Labs raised only $1.5M and failed; no Forbes 30U30, Wikipedia, or lasting company success.",
+    "category_fix": null
+  },
+  {
+    "person_id": "john-marbach",
+    "name": "John Marbach",
+    "verdict": "REMOVE",
+    "reason": "Thiel Fellow whose edtech startup failed; returned to Wake Forest; later YC-backed startup also failed; no major funding or lasting notability.",
+    "category_fix": null
+  },
+  {
+    "person_id": "tom-currier",
+    "name": "Tom Currier",
+    "verdict": "REMOVE",
+    "reason": "Thiel Fellow who founded Black Swan Solar/QBotix which failed due to competition; filed 3 patents but no major funding, acquisition, or lasting notability.",
+    "category_fix": null
+  },
+  {
+    "person_id": "jim-danielson",
+    "name": "Jim Danielson",
+    "verdict": "REMOVE",
+    "reason": "Thiel Fellow who co-founded Makt Systems for EV motors; electrified a Porsche but no major funding, company success, or lasting notability beyond the fellowship.",
+    "category_fix": null
+  },
+  {
+    "person_id": "eden-full",
+    "name": "Eden Full",
+    "verdict": "KEEP",
+    "reason": "Invented SunSaluter at 15; Forbes 30 Under 30 (energy, 2011); won ~$300K+ in prizes (Postcode Lottery Green Challenge, Thiel Fellowship, Ashoka Youth Social Entrepreneur); deployed solar technology in Kenya and Indonesia; featured on NPR, NBC, ZDNET.",
+    "category_fix": null,
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Invented the SunSaluter at age 15; Princeton student; built solar-powered toy car at 10; demonstrated exceptional early inventive ability and social entrepreneurship drive.",
+    "inherited_summary": "Grew up in Alberta, Canada; no evidence of family wealth or connections; appears self-made through personal ingenuity.",
+    "ecosystem_summary": "Thiel Fellowship ($100K); Ashoka Foundation support; Princeton University network and Grand Challenges program; Postcode Lottery Green Challenge; significant media coverage amplifying reach.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "sujay-tyle",
+    "name": "Sujay Tyle",
+    "verdict": "KEEP",
+    "reason": "Forbes 30 Under 30 (games and apps); Harvard at 15 (one of youngest students); 2nd place at Intel ISEF (world's largest pre-college science competition); 6 years of biofuel research from age 11; Thiel Fellow.",
+    "category_fix": null,
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 2,
+    "endowment_summary": "Harvard at 15 as one of youngest students; biofuel research from age 11 with publications; 2nd at Intel ISEF; Forbes 30 Under 30; exceptional early academic and research trajectory.",
+    "inherited_summary": "No evidence of family wealth or connections; started lab research at University of Rochester at age 11; appears self-made through academic precocity.",
+    "ecosystem_summary": "Harvard University network; Thiel Fellowship ($100K) and Silicon Valley mentor network; Scopely and Hired.com experience; Forbes 30 Under 30 community.",
+    "scoring_confidence": "Medium"
+  },
+  {
+    "person_id": "james-proud",
+    "name": "James Proud",
+    "verdict": "REMOVE",
+    "reason": "Thiel Fellow who sold GigLocator for six figures (small exit) and founded Hello (sleep tracker) which shut down in 2017; Config raised only $5M seed; no Forbes 30U30 or lasting major notability.",
+    "category_fix": null
+  },
+  {
+    "person_id": "christopher-rueth",
+    "name": "Christopher Rueth",
+    "verdict": "REMOVE",
+    "reason": "Thiel Fellow who founded CommunityKit nonprofit; still working on it 14 years later with no major funding, scale, or notable achievements beyond the fellowship.",
+    "category_fix": null
+  },
+  {
+    "person_id": "ben-yu",
+    "name": "Ben Yu",
+    "verdict": "REMOVE",
+    "reason": "Thiel Fellow whose first e-commerce startup failed and second venture (Sprayable Energy) raised only $15K on Indiegogo; no major funding, company success, or lasting notability.",
+    "category_fix": null
+  },
+  {
+    "person_id": "sebastien-zany",
+    "name": "Sebastien Zany",
+    "verdict": "REMOVE",
+    "reason": "Thiel Fellow who worked on Haskell-based computation framework; now into AI; no evidence of major funding, company success, or notable achievements beyond the fellowship.",
+    "category_fix": null
+  },
+  {
+    "person_id": "gary-kurek",
+    "name": "Gary Kurek",
+    "verdict": "KEEP",
+    "reason": "Forbes 30 Under 30 Manufacturing (2015); Thiel Fellow; invented electric walker-wheelchair in high school; youngest Canadian to receive O-1A extraordinary ability visa; Canada's Top 20 Under 20.",
+    "category_fix": null,
+    "personal_endowment_score": 2,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 1,
+    "endowment_summary": "Invented mobility aids starting in high school; developed stair-climbing wheelchair prototype; Forbes 30 Under 30 Manufacturing; approximately 100 awards; demonstrated exceptional early inventive ability.",
+    "inherited_summary": "Raised on a bison ranch in Alberta, Canada; no evidence of family wealth or connections; appears self-made through personal ingenuity.",
+    "ecosystem_summary": "Thiel Fellowship ($100K) and Silicon Valley network; San Francisco startup ecosystem; Forbes 30 Under 30 recognition; but company funding remains very modest ($260K total).",
+    "scoring_confidence": "Low"
+  },
+  {
+    "person_id": "david-jiageng-luan",
+    "name": "David (Jiageng) Luan",
+    "verdict": "KEEP",
+    "reason": "Co-founder and CEO of Adept AI ($415M total funding: $65M Series A + $350M Series B); head of Amazon's AGI Lab after acqui-hire; former head of engineering at OpenAI; led Google's large model program; Thiel Fellow.",
+    "category_fix": null,
+    "personal_endowment_score": 3,
+    "inherited_leverage_score": 0,
+    "catalytic_ecosystem_score": 3,
+    "endowment_summary": "College courses at 8, CS certificate at 12, Andover and Yale; head of engineering at OpenAI; led Google's large model program; co-founded Adept with Transformer inventors; exceptional technical trajectory from childhood.",
+    "inherited_summary": "Immigrant from Moscow at age 6; no evidence of family wealth or connections; appears entirely self-made through exceptional technical ability.",
+    "ecosystem_summary": "OpenAI, Google, and Amazon networks; Adept co-founded with Transformer inventors (Ashish Vaswani, Niki Parmar); $415M from Greylock, General Catalyst, Spark Capital, Microsoft, Nvidia; Thiel Fellowship network.",
+    "scoring_confidence": "High"
+  },
+  {
+    "person_id": "clay-allsopp",
+    "name": "Clay Allsopp",
+    "verdict": "REMOVE",
+    "reason": "Thiel Fellow who founded Apptory (iPad content tool); worked at Palantir, Teespring, Opendoor, and Plaid as engineer/manager; no major funding, company success, or notable achievements beyond the fellowship.",
+    "category_fix": null
+  }
+]
