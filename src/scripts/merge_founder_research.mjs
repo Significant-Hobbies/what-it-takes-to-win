@@ -1,5 +1,5 @@
-import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from "fs";
-import { join } from "path";
+import { readFileSync, writeFileSync, existsSync, readdirSync } from "node:fs";
+import { join } from "node:path";
 
 const root = process.cwd();
 const csvPath = join(root, "src", "data", "people.csv");
@@ -200,8 +200,8 @@ function toPersonRecord(r) {
     cohort_group: "Founders / operators",
     category: "Technology founder",
     age_at_milestone: String(ageAtMilestone || ""),
-    milestone_by_age_26: milestone.substring(0, 200),
-    early_history_summary: (r.background || r.education || "").substring(0, 300),
+    milestone_by_age_26: milestone.slice(0, 200),
+    early_history_summary: (r.background || r.education || "").slice(0, 300),
     primary_leverage_engine: "Technical depth",
     normalized_primary_engine: "Scarce technical / intellectual depth",
     secondary_engine: "Timing/platform wave",
@@ -237,7 +237,7 @@ function toPersonRecord(r) {
     all_documented_early_condition_count: "3",
     primary_early_advantage_archetype: "Elite performance pipeline",
     primary_early_advantage_tags: "Frontier ecosystem, Elite peer/collaborator",
-    evidence_summary: (r.background || r.education || "").substring(0, 300),
+    evidence_summary: (r.background || r.education || "").slice(0, 300),
     early_advantage_evidence_confidence: "Low",
     source_count: String(sourceUrls.length),
     primary_source_url: sourceUrls[0] || "",

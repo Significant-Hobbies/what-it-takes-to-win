@@ -1,5 +1,5 @@
-import { readFileSync, writeFileSync, existsSync } from "fs";
-import { join } from "path";
+import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { join } from "node:path";
 
 const companies = JSON.parse(
   readFileSync(join(process.cwd(), "artifacts", "yc-companies-recent.json"), "utf8")
@@ -45,9 +45,8 @@ async function scrapeCompany(company) {
 
     // Get all LinkedIn slugs (deduplicated, in order)
     const linkedinSlugs = [];
-    let m;
-    while ((m = linkedInRegex.exec(html)) !== null) {
-      const slug = m[1].replace(/\/$/, "");
+    for (const match of html.matchAll(linkedInRegex)) {
+      const slug = match[1].replace(/\/$/, "");
       if (!seenLinkedIn.has(slug)) {
         seenLinkedIn.add(slug);
         linkedinSlugs.push(slug);
@@ -56,8 +55,8 @@ async function scrapeCompany(company) {
 
     // Get all names
     const names = [];
-    while ((m = nameRegex.exec(html)) !== null) {
-      const name = m[1].trim();
+    for (const match of html.matchAll(nameRegex)) {
+      const name = match[1].trim();
       if (name && name.length > 2 && !names.includes(name)) {
         names.push(name);
       }
@@ -66,8 +65,8 @@ async function scrapeCompany(company) {
     // Get all roles (text-sm class, but filter for role-like text)
     const roleRegex = /class="text-sm[^"]*"[^>]*>([^<]{2,60})<\/div>/g;
     const roles = [];
-    while ((m = roleRegex.exec(html)) !== null) {
-      const role = m[1].trim();
+    for (const match of html.matchAll(roleRegex)) {
+      const role = match[1].trim();
       if (role && role.length > 2 && !roles.includes(role)) {
         roles.push(role);
       }

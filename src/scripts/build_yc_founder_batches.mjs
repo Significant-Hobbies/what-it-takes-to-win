@@ -1,5 +1,5 @@
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from "fs";
-import { join } from "path";
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
+import { join } from "node:path";
 
 const founders = JSON.parse(
   readFileSync(join(process.cwd(), "artifacts", "yc-founders-unique.json"), "utf8")

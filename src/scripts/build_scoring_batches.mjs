@@ -1,5 +1,5 @@
-import { readFileSync, writeFileSync, mkdirSync } from "fs";
-import { join } from "path";
+import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { join } from "node:path";
 
 const root = process.cwd();
 const needsLLM = JSON.parse(readFileSync(join(root, "artifacts", "needs-llm-scoring.json"), "utf8"));
@@ -58,9 +58,9 @@ for (let i = 0; i < needsLLM.length; i += batchSize) {
       name: r.name,
       category: r.category || "",
       birth_year: r.birth_year || "",
-      milestone_by_age_26: (r.milestone_by_age_26 || "").substring(0, 200),
-      early_history_summary: (r.early_history_summary || "").substring(0, 300),
-      evidence_summary: (r.evidence_summary || "").substring(0, 300),
+      milestone_by_age_26: (r.milestone_by_age_26 || "").slice(0, 200),
+      early_history_summary: (r.early_history_summary || "").slice(0, 300),
+      evidence_summary: (r.evidence_summary || "").slice(0, 300),
       primary_early_advantage_archetype: r.primary_early_advantage_archetype || "",
       primary_early_advantage_tags: r.primary_early_advantage_tags || "",
       heuristic_innate: item.heuristic_innate,

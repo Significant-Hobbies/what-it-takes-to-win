@@ -1,6 +1,6 @@
-import { readFileSync, writeFileSync } from "fs";
-import { join } from "path";
-import { readdirSync, existsSync } from "fs";
+import { readFileSync, writeFileSync } from "node:fs";
+import { join } from "node:path";
+import { readdirSync, existsSync } from "node:fs";
 
 const root = process.cwd();
 const csvPath = join(root, "src", "data", "people.csv");

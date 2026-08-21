@@ -1,5 +1,5 @@
-import { readFileSync, writeFileSync } from "fs";
-import { join } from "path";
+import { readFileSync, writeFileSync } from "node:fs";
+import { join } from "node:path";
 
 const root = process.cwd();
 const csvPath = join(root, "src", "data", "people.csv");
@@ -93,18 +93,14 @@ function heuristicScore(r) {
   }
 
   // Athletes/creators with early achievement → 2
-  if (category.includes("athlete") || category.includes("sport")) {
-    if (combined.includes("olympic") || combined.includes("world champion") || combined.includes("medal")) {
+  if ((category.includes("athlete") || category.includes("sport")) && (combined.includes("olympic") || combined.includes("world champion") || combined.includes("medal"))) {
       endowment = 2;
       endowmentConfidence = "Medium";
     }
-  }
-  if (category.includes("music") || category.includes("actor") || category.includes("artist") || category.includes("creator")) {
-    if (combined.includes("prodigy") || combined.includes("youngest") || combined.includes("at age") || combined.includes("at 14") || combined.includes("at 15") || combined.includes("at 16")) {
+  if ((category.includes("music") || category.includes("actor") || category.includes("artist") || category.includes("creator")) && (combined.includes("prodigy") || combined.includes("youngest") || combined.includes("at age") || combined.includes("at 14") || combined.includes("at 15") || combined.includes("at 16"))) {
       endowment = 2;
       endowmentConfidence = "Medium";
     }
-  }
 
   // Active disadvantage → -1
   const endowmentNeg1 = ["learning disability", "dyslexia", "adhd", "autism", "speech impediment"];
@@ -266,9 +262,9 @@ function extractEndowmentSummary(r) {
   const early = r.early_history_summary || "";
   // Prefer early_history for endowment, fall back to evidence
   const source = early.length > 20 ? early : evidence;
-  if (source.length > 20) return source.substring(0, 200);
+  if (source.length > 20) return source.slice(0, 200);
   const milestone = r.milestone_by_age_26 || "";
-  if (milestone.length > 20) return milestone.substring(0, 200);
+  if (milestone.length > 20) return milestone.slice(0, 200);
   return "Early ability indicators not documented.";
 }
 
@@ -278,8 +274,8 @@ function extractInheritedSummary(r) {
   const familyContext = r.family_context_summary || "";
   const parentDomain = r.parent_family_domain_summary || "";
   // Prefer family-specific fields, then keyword-matched sentences
-  if (familyContext.length > 20) return familyContext.substring(0, 200);
-  if (parentDomain.length > 20) return parentDomain.substring(0, 200);
+  if (familyContext.length > 20) return familyContext.slice(0, 200);
+  if (parentDomain.length > 20) return parentDomain.slice(0, 200);
   const parentKeywords = ["father", "mother", "parents", "family", "parents'", "dad", "mom"];
   const sentences = (evidence + " " + early).split(/\.(?=[A-Z])/);
   const parentSentences = sentences.filter(s => parentKeywords.some(k => s.toLowerCase().includes(k)));
