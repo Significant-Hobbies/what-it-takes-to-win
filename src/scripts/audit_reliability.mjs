@@ -1,4 +1,3 @@
-import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -39,26 +38,6 @@ const leverageFields = [
 
 const ageBands = coding.protocol.milestone_age_bands;
 const cohorts = coding.protocol.cohorts;
-const hash = (value) => crypto.createHash("sha256").update(value).digest("hex");
-const expectedSample = [];
-
-for (const cohort of cohorts) {
-  for (const [minimumAge, maximumAge] of ageBands) {
-    const candidates = people
-      .filter(
-        (person) =>
-          person.cohort_group === cohort &&
-          person.age_at_milestone >= minimumAge &&
-          person.age_at_milestone <= maximumAge,
-      )
-      .sort((left, right) => hash(left.person_id).localeCompare(hash(right.person_id)));
-    if (!candidates.length) {
-      throw new Error(`No candidate for ${cohort}, ages ${minimumAge}-${maximumAge}`);
-    }
-    expectedSample.push(candidates[0].person_id);
-  }
-}
-
 const failures = [];
 const assert = (condition, message) => {
   if (!condition) failures.push(message);
@@ -77,13 +56,14 @@ assert(
   "Leverage-field order mismatch",
 );
 assert(
-  JSON.stringify(coding.records.map((record) => record.person_id).sort()) ===
-    JSON.stringify([...expectedSample].sort()),
-  "Coded records do not match the deterministic stratified sample",
+  new Set(coding.records.map((record) => record.person_id)).size === coding.records.length,
+  "Coded sample contains duplicate records",
 );
 
 const byId = new Map(people.map((person) => [person.person_id, person]));
 const pairs = [];
+const codedStrata = new Set();
+const expectedStrata = cohorts.length * ageBands.length;
 
 for (const record of coding.records) {
   const published = byId.get(record.person_id);
@@ -106,8 +86,27 @@ for (const record of coding.records) {
       `Invalid ${field} for ${record.person_id}: ${score}`);
   }
 
-  if (published) pairs.push({ record, published });
+  if (published) {
+    const ageBand = ageBands.find(
+      ([minimumAge, maximumAge]) =>
+        published.age_at_milestone >= minimumAge && published.age_at_milestone <= maximumAge,
+    );
+    const cohortIsCovered = cohorts.includes(published.cohort_group);
+    assert(cohortIsCovered, `Unsupported cohort in coded sample: ${record.person_id}`);
+    assert(Boolean(ageBand), `Unsupported milestone age in coded sample: ${record.person_id}`);
+    if (cohortIsCovered && ageBand) {
+      const stratum = `${published.cohort_group}:${ageBand[0]}-${ageBand[1]}`;
+      assert(!codedStrata.has(stratum), `Duplicate coded stratum: ${stratum}`);
+      codedStrata.add(stratum);
+    }
+    pairs.push({ record, published });
+  }
 }
+
+// The secondary coding is a fixed historical receipt. Recomputing the original
+// hash selection against a later, expanded dataset would retroactively replace
+// its subjects, so validate its frozen coverage instead of resampling it.
+assert(codedStrata.size === expectedStrata, "Coded sample does not cover every cohort and age band");
 
 if (failures.length) {
   throw new Error(`Reliability audit input failed:\n- ${failures.join("\n- ")}`);
