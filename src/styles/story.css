@@ -1108,3 +1108,49 @@
   height: 100%;
   width: 100%;
 }
+
+/* Sound toggle. Present but quiet — a reader who does not want audio should not
+   have to notice it, and it is off until pressed. */
+.story-sound {
+  align-items: center;
+  background: rgba(11, 16, 32, 0.72);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  bottom: 24px;
+  color: var(--text-dim);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--mono);
+  font-size: 11px;
+  gap: 7px;
+  letter-spacing: 0.06em;
+  min-height: 34px;
+  padding: 0 14px;
+  position: fixed;
+  right: 24px;
+  text-transform: uppercase;
+  z-index: 5;
+}
+
+.story-sound:hover,
+.story-sound:focus-visible {
+  border-color: var(--accent-2);
+  color: var(--text);
+}
+
+.story-sound[aria-pressed="true"] {
+  border-color: var(--accent-2);
+  color: var(--accent-2);
+}
+
+.story-sound-mark {
+  font-size: 13px;
+  line-height: 1;
+}
+
+@media (max-width: 640px) {
+  .story-sound {
+    bottom: 16px;
+    right: 16px;
+  }
+}

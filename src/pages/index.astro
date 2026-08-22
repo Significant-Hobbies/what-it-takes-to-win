@@ -212,6 +212,11 @@ const structuredData = {
 
     <div class="story-progress" aria-hidden="true"><i></i></div>
 
+    <button class="story-sound" type="button" data-story-sound aria-pressed="false">
+      <span class="story-sound-mark" aria-hidden="true">♪</span>
+      <span class="story-sound-label">Sound off</span>
+    </button>
+
     <nav class="story-rail" aria-label="Story chapters">
       <a class="story-rail-brand" href="#story-opening" aria-label="Back to story opening">LS</a>
       <ol>
@@ -457,6 +462,30 @@ const structuredData = {
         || (device.deviceMemory && device.deviceMemory <= 4)
       );
       const storyWorld = storyCanvas && !reduceMotion && !lowCapability ? mountMarbleWorld(storyCanvas) : null;
+
+      // Optional audio. Nothing is constructed until the reader presses the
+      // toggle, so a reader who never wants it pays nothing for it.
+      const soundButton = document.querySelector<HTMLButtonElement>("[data-story-sound]");
+      const soundLabel = soundButton?.querySelector<HTMLElement>(".story-sound-label");
+      let audio: import("../scripts/marble-audio").MarbleAudio | null = null;
+      let soundOn = false;
+      if (soundButton && storyCanvas && storyWorld) {
+        soundButton.addEventListener("click", async () => {
+          soundOn = !soundOn;
+          if (!audio) {
+            const module = await import("../scripts/marble-audio");
+            audio = module.createMarbleAudio();
+          }
+          audio.setEnabled(soundOn);
+          soundButton.setAttribute("aria-pressed", String(soundOn));
+          if (soundLabel) soundLabel.textContent = soundOn ? "Sound on" : "Sound off";
+        });
+        storyCanvas.addEventListener("marble-hole", (event) => {
+          audio?.strike((event as CustomEvent<{ index: number }>).detail.index);
+        });
+      } else if (soundButton) {
+        soundButton.hidden = true;
+      }
       const requestedShotValue = new URLSearchParams(window.location.search).get("shot");
       const requestedShot = requestedShotValue === null ? Number.NaN : Number(requestedShotValue);
 
@@ -472,6 +501,8 @@ const structuredData = {
       };
 
       let scheduled = false;
+      let lastProgress = 0;
+      let lastProgressTime = performance.now();
       const updateStoryState = () => {
         const start = chapters[0]?.offsetTop || 0;
         const endChapter = chapters.at(-1);
@@ -482,6 +513,12 @@ const structuredData = {
           : scrollProgress;
         story.style.setProperty("--story-progress", String(progress));
         storyWorld?.setProgress(progress);
+        const now = performance.now();
+        const elapsed = Math.max(16, now - lastProgressTime);
+        // Normalised scroll rate, so the roll follows the reader rather than a clock.
+        audio?.setSpeed(Math.min(1, (Math.abs(progress - lastProgress) / elapsed) * 9000));
+        lastProgress = progress;
+        lastProgressTime = now;
 
         const atDocumentEnd = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 4;
         const focusLine = window.innerHeight * 0.48;
