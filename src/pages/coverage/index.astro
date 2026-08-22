@@ -7,10 +7,18 @@ const coverage = summarizeCoverage(peopleData as CoveragePerson[]);
 const formatShare = (share: number) =>
   `${share.toFixed(share === Math.round(share) ? 0 : 1)}%`;
 
+// The release verdict is derived, never asserted: paths added after the last
+// reachability pass carry no audit verdict, so the audit cannot be called
+// complete while any remain pending.
+const auditComplete = coverage.auditPending.count === 0;
+const releaseVerdict = auditComplete
+  ? "Double-coding and source reachability are complete across every published path. User comprehension and matched comparison remain pending."
+  : `Double-coding is complete. Source reachability covers ${coverage.auditReviewed.count.toLocaleString()} of ${coverage.total.toLocaleString()} paths — ${coverage.auditPending.count.toLocaleString()} added since the last pass carry no audit verdict yet. User comprehension and matched comparison remain pending.`;
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Evidence coverage — What It Takes to Win",
+  name: "Evidence coverage — Look Sideways",
   description:
     `Live coverage metrics, evidence confidence, sample composition, and unresolved audit boundaries for ${coverage.total.toLocaleString()} early-breakthrough paths.`,
   url: "https://paths.significanthobbies.com/coverage/",
@@ -19,7 +27,7 @@ const structuredData = {
 ---
 
 <Base
-  title="Evidence Coverage — What It Takes to Win"
+  title="Evidence Coverage — Look Sideways"
   description={`Inspect source depth, trajectory completeness, confidence, sample composition, and unresolved research boundaries across ${coverage.total.toLocaleString()} paths.`}
   structuredData={structuredData}
 >
@@ -38,10 +46,10 @@ const structuredData = {
       <aside class="coverage-verdict" aria-label="Current evidence verdict">
         <span>Release assessment</span>
         <strong>Structurally complete</strong>
-        <p>Double-coding and source reachability audit complete. User comprehension and matched comparison remain pending.</p>
+        <p>{releaseVerdict}</p>
         <div class="coverage-verdict-mark">
-          <b>{coverage.independentlyAudited.count}</b>
-          <span>of {coverage.total.toLocaleString()} sources independently verified</span>
+          <b>{coverage.independentlyAudited.count.toLocaleString()}</b>
+          <span>of {coverage.total.toLocaleString()} paths have every listed source verified reachable</span>
         </div>
       </aside>
     </div>
@@ -95,11 +103,17 @@ const structuredData = {
         <h3>Indexable evidence</h3>
         <p>Two sources, non-low leverage confidence, a milestone, and a trajectory.</p>
       </article>
-      <article class="coverage-ladder-done">
+      <article class={auditComplete ? "coverage-ladder-done" : undefined}>
         <span>04 · External verification</span>
         <strong>{formatShare(coverage.independentlyAudited.share)}</strong>
         <h3>Source reachability verified</h3>
-        <p>Source URLs have been fetched and verified reachable. Content verification and user comprehension remain pending.</p>
+        <p>
+          Source URLs have been fetched and verified reachable on
+          {" "}{coverage.auditReviewed.count.toLocaleString()} audited paths.
+          {auditComplete
+            ? " Content verification and user comprehension remain pending."
+            : ` ${coverage.auditPending.count.toLocaleString()} newer paths are not yet audited. Content verification and user comprehension remain pending.`}
+        </p>
       </article>
     </div>
   </section>
@@ -232,15 +246,22 @@ const structuredData = {
 
   <section class="coverage-roadmap" aria-labelledby="roadmap-heading">
     <p class="eyebrow">What would earn an audited v1.0</p>
-    <h2 id="roadmap-heading">Two gates done. Two remain.</h2>
+    <h2 id="roadmap-heading">{auditComplete ? "Two gates done. Two remain." : "One gate done. Three remain."}</h2>
     <ol>
       <li class="coverage-roadmap-done">
         <span>01</span>
         <div><strong>Double-code a stratified sample.</strong><p>Completed 2026-07-31. 16-record stratified sample across cohort-tier cells. Quadratic-weighted kappa 0.723 for tier; leverage exact agreement 33.8% (within-one 91.9%). See the reliability report.</p></div>
       </li>
-      <li class="coverage-roadmap-done">
+      <li class={auditComplete ? "coverage-roadmap-done" : undefined}>
         <span>02</span>
-        <div><strong>Audit source reachability.</strong><p>Completed {coverage.auditDate || "2026-08-08"}. All {coverage.totalSourceUrls?.toLocaleString() || "9,472"} source URLs fetched and verified. {coverage.independentlyAudited.count.toLocaleString()} of {coverage.total.toLocaleString()} people have all sources reachable.</p></div>
+        <div><strong>Audit source reachability.</strong><p>
+          Last pass {coverage.auditDate || "2026-08-08"}, covering
+          {" "}{coverage.auditedSourceUrls.toLocaleString()} source URLs across
+          {" "}{coverage.auditReviewed.count.toLocaleString()} of {coverage.total.toLocaleString()} paths.
+          {" "}{coverage.independentlyAudited.count.toLocaleString()} paths have every source reachable.
+          {!auditComplete
+            && ` ${coverage.auditPending.count.toLocaleString()} paths added since that pass are still unaudited, so this gate is not closed.`}
+        </p></div>
       </li>
       <li>
         <span>03</span>

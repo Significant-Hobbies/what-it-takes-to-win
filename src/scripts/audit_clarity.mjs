@@ -61,7 +61,16 @@ const contracts = [
       "A selected atlas—not a miniature population",
       "This project cannot count every promising path that disappeared",
       "how many failed for every Bill Gates",
-      "Two gates done. Two remain.",
+      // The gate tally and the reachability sentences are derived from the
+      // audit status of the published records, so this contract pins only what
+      // must hold in either state: a stated gate count, a path-denominated
+      // reachability figure, and the two pending gates. Pinning a fixed tally
+      // is what let "Two gates done" survive as a false claim after 837
+      // unaudited paths were published.
+      "gate done.",
+      "paths have every listed source verified reachable",
+      "Content verification and user comprehension remain pending",
+      "User comprehension and matched comparison remain pending",
     ],
   },
   {

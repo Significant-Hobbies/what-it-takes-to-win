@@ -52,6 +52,44 @@ const sourceDomainCount = (person: CoveragePerson) => {
   ).size;
 };
 
+const countSourceUrls = (people: CoveragePerson[]) =>
+  people.reduce(
+    (sum, person) => sum + (Array.isArray(person.source_urls) ? person.source_urls.length : 0),
+    0,
+  );
+
+// A record only counts as reviewed once the reachability pass has recorded a
+// verdict for it. Records published after the last pass carry no status, so
+// they must not be folded into a "verified" denominator.
+const AUDIT_VERDICTS = new Set([
+  "source_verified",
+  "partial_source_verification",
+  "source_verification_failed",
+]);
+
+const wasAudited = (person: CoveragePerson) =>
+  AUDIT_VERDICTS.has(String(person.source_audit_status));
+
+function summarizeSourceAudit(people: CoveragePerson[]) {
+  const reviewed = people.filter(wasAudited);
+  const dates = people
+    .map((person) => person.source_audit_date)
+    .filter((date): date is string => typeof date === "string" && date.length > 0);
+  return {
+    auditDate: dates.length > 0 ? dates.sort().reverse()[0] : undefined,
+    auditedSourceUrls: countSourceUrls(reviewed),
+    failed: people.filter(
+      (person) => person.source_audit_status === "source_verification_failed",
+    ).length,
+    partial: people.filter(
+      (person) => person.source_audit_status === "partial_source_verification",
+    ).length,
+    pending: people.length - reviewed.length,
+    reviewed: reviewed.length,
+    verified: people.filter((person) => person.source_audit_status === "source_verified").length,
+  };
+}
+
 export function summarizeCoverage(people: CoveragePerson[]) {
   const total = people.length;
   const sourcesTwoPlus = people.filter(
@@ -77,25 +115,11 @@ export function summarizeCoverage(people: CoveragePerson[]) {
       Array.isArray(person.trajectory) &&
       person.trajectory.length > 0,
   ).length;
-  const independentlyAudited = people.filter(
-    (person) => person.source_audit_status === "source_verified",
-  ).length;
-  const partialVerified = people.filter(
-    (person) => person.source_audit_status === "partial_source_verification",
-  ).length;
+  const audit = summarizeSourceAudit(people);
   const twoDistinctSourceDomains = people.filter(
     (person) => sourceDomainCount(person) >= 2,
   ).length;
-  const totalSourceUrls = people.reduce(
-    (sum, person) => sum + (Array.isArray(person.source_urls) ? person.source_urls.length : 0),
-    0,
-  );
-  const auditDates = people
-    .map((person) => person.source_audit_date)
-    .filter((date): date is string => typeof date === "string" && date.length > 0);
-  const auditDate = auditDates.length > 0
-    ? auditDates.sort().reverse()[0]
-    : undefined;
+  const totalSourceUrls = countSourceUrls(people);
 
   const cohorts = [...new Set(people.map((person) => person.cohort_group).filter(Boolean))]
     .map((label) => {
@@ -128,15 +152,28 @@ export function summarizeCoverage(people: CoveragePerson[]) {
       share: percent(indexable, total),
     },
     independentlyAudited: {
-      count: independentlyAudited,
-      share: percent(independentlyAudited, total),
+      count: audit.verified,
+      share: percent(audit.verified, total),
     },
     partialVerified: {
-      count: partialVerified,
-      share: percent(partialVerified, total),
+      count: audit.partial,
+      share: percent(audit.partial, total),
+    },
+    auditFailed: {
+      count: audit.failed,
+      share: percent(audit.failed, total),
+    },
+    auditReviewed: {
+      count: audit.reviewed,
+      share: percent(audit.reviewed, total),
+    },
+    auditPending: {
+      count: audit.pending,
+      share: percent(audit.pending, total),
     },
     totalSourceUrls,
-    auditDate,
+    auditedSourceUrls: audit.auditedSourceUrls,
+    auditDate: audit.auditDate,
     twoDistinctSourceDomains: {
       count: twoDistinctSourceDomains,
       share: percent(twoDistinctSourceDomains, total),
