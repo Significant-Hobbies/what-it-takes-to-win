@@ -29,49 +29,44 @@
 - Primary actions use the blue accent; secondary actions remain text or outline.
 - Cards use one-pixel borders and no decorative shadows.
 - Eyebrows are uppercase mono labels that orient, not decorate.
-- The homepage is a marble run: **three marbles, one board, one clock.** Sixty-
-  four read as a competition, which is the frame the essay dismantles. One
-  compared nothing. Two on separate boards never met. Three on a shared board
-  touch, jostle, and trade the lead.
-- **The lead must change hands.** Each marble has a different speed profile — one
-  dives hardest and bleeds most, one holds pace where the board stops helping —
-  and the board deliberately alternates steep and shallow so the order turns over
-  more than once. A reader who watches the lead trade cannot come away thinking
-  the finishing order measured the marbles. The marble handed the most starting
-  momentum currently finishes last, and that is the point, not a bug.
-- Profiles come from the three condition factors the profiles publish: inherited
-  sets starting momentum, endowment sets rolling retention, ecosystem sets how
-  much of a slope converts to speed at all.
-- "One of many" is carried by **ghost branches** that peel away at junctions and
-  fade — alternatives that were available and did not happen.
-- The board is a real obstacle course: a first hole the run *starts inside*, a
-  shallow run-out, a descending helix, a long flat, a leverage drop, a gap
-  crossed on momentum, switchbacks, gates hanging lower as they go, and a peg
-  field. A reader should be able to name what is happening.
-- Contact between marbles is a **pure function of the current frame**, with no
-  accumulated state, so the whole scene still scrubs exactly in both directions.
+- The homepage is a marble run: **three marbles, one open channel, one clock.**
+  Sixty-four read as a competition, which is the frame the essay dismantles. One
+  compared nothing. Two on separate boards never met.
+- **The lead must change hands.** Each marble has a different speed profile and
+  the channel alternates steep and shallow, so the order turns over more than
+  once. The marble handed the most starting momentum currently finishes last.
+  That is the argument, not a bug.
+- **The running surface must be visible.** The track is an open channel swept
+  from a U profile with a bright lip along both edges. It was a `TubeGeometry`
+  with `side: BackSide` — the inside far wall of a pipe — and rendered as grey
+  sausages that no amount of lighting could rescue.
+- **Marbles are excluded from tone mapping** (`toneMapped: false`) but still lit.
+  ACES desaturated them to near-white three separate times, through clearcoat,
+  then emissive, then the palette. Excluding them fixes the cause; keeping the
+  material lit keeps them reading as spheres rather than flat discs.
+- **Marbles must be large in frame.** The camera sits low and close alongside the
+  channel, the way this footage is actually shot. An aerial vantage put them at
+  5% of frame height, which is why nobody could tell what was happening.
+- **The scene renders on demand.** Once the damped scroll progress settles there
+  is nothing new to draw. It used to run rAF forever, competing with the reader's
+  own scrolling for the main thread.
+- **No shadow maps and no point lights.** A moving caster regenerated a 2048 map
+  every frame, and eight point lights each cost a full per-fragment pass. Marbles
+  get a contact disc; lighting is hemisphere plus two directional.
+- Pixel ratio is capped at 1.25. Above that the scene gains nothing visible.
+- Motion is read from receding trail ghosts, not a blur pass.
+- Contact between marbles is a **pure function of the current frame**, so the
+  whole scene still scrubs exactly in both directions.
 - The peg field's amplitude is hash-derived, never score-derived. Luck must not
   look like it is rewarding anything.
-- The run is already moving at scroll zero, and it starts *in* the first hole.
-  Anything before the first drop is dead air the reader must scroll past.
-- The channel barely clears three marbles abreast. Wider and the board becomes a
-  pipe the camera looks down.
-- The camera anchors to the pack's average position and **averages board
-  geometry over a window of arc length**. Chasing the marbles directly threw the
-  frame around every time the board turned, worst through the helix.
+- The run starts *inside* the first hole at scroll zero.
+- "One of many" is carried by ghost branches that peel away and fade.
 - Lateral framing is verified by projecting each marble to normalised device
-  coordinates (`data-story-ndc`, `data-story-runners`), not by eye. An earlier
-  version put the whole field at screen x ~520, under the copy column:
-  rendering every frame, invisible.
-- Each marble carries its own point light, so it is unmistakably the brightest
-  thing present and lights the stretch of board it is on.
-- The three condition factors are never summed anywhere in the product, in the
-  world or on a profile. A composite would be one more number to rank people by.
-- **Sound is opt-in and synthesised.** Off until pressed, no AudioContext
-  constructed until then, no audio files. The roll follows scroll *speed*, not a
-  clock: the marbles are only moving while the reader is.
-- The non-WebGL fallback is an inline SVG generated from the same shape, never an
-  exported render. Raster plates drifted once already.
+  coordinates (`data-story-runners`), not by eye.
+- The three condition factors are never summed anywhere in the product.
+- **Sound is opt-in and synthesised.** Off until pressed, no AudioContext until
+  then, no audio files. The roll follows scroll speed, not a clock.
+- The non-WebGL fallback is a generated inline SVG, never an exported render.
 - Evidence coverage uses ruled ledgers, confidence bars, and explicit pending
   states; completeness and verification must never share one badge.
 - Charts always include a visible title and an accessible text label.
