@@ -18,6 +18,9 @@
     "audit:tiers": "node src/scripts/audit_tiers.mjs",
     "audit:reliability": "node src/scripts/audit_reliability.mjs",
     "audit:sources": "node src/scripts/audit_sources.mjs",
+    "sync:stats": "node src/scripts/sync_dataset_stats.mjs",
+    "render:og": "node src/scripts/render_og_image.mjs",
+    "audit:stats": "node src/scripts/sync_dataset_stats.mjs --check",
     "quality:unused": "node src/scripts/check-code-health.mjs unused",
     "quality:complexity": "node src/scripts/check-code-health.mjs complexity",
     "quality:duplication": "node src/scripts/check-code-health.mjs duplication",
@@ -25,7 +28,7 @@
     "quality:dependencies": "node src/scripts/check-code-health.mjs dependencies",
     "quality:suppressions": "node src/scripts/check-code-health.mjs suppressions",
     "quality:hygiene": "node src/scripts/check-code-health.mjs hygiene",
-    "quality": "pnpm run format:check && pnpm run lint && pnpm run check && pnpm run test:coverage && pnpm run build && pnpm run audit:discovery && pnpm run audit:clarity && pnpm run audit:tiers && pnpm run audit:reliability && pnpm run quality:unused && pnpm run quality:complexity && pnpm run quality:duplication && pnpm run quality:cycles && pnpm run quality:dependencies && pnpm run quality:suppressions && pnpm run quality:hygiene",
+    "quality": "pnpm run format:check && pnpm run lint && pnpm run check && pnpm run test:coverage && pnpm run build && pnpm run audit:discovery && pnpm run audit:clarity && pnpm run audit:tiers && pnpm run audit:reliability && pnpm run audit:stats && pnpm run quality:unused && pnpm run quality:complexity && pnpm run quality:duplication && pnpm run quality:cycles && pnpm run quality:dependencies && pnpm run quality:suppressions && pnpm run quality:hygiene",
     "ready": "pnpm run quality",
     "deploy": "pnpm run ready && wrangler pages deploy dist --project-name success-by-26 --branch main"
   },

@@ -1,8 +1,10 @@
-# What It Takes to Win
+# Look Sideways
 
-An evidence-led visualization of 2,770 early-breakthrough paths: documented
+<!-- dataset-summary:start -->
+An evidence-led visualization of 3,577 early-breakthrough paths: documented
 starting conditions, leverage provenance, luck, compounding trajectories, and
 the significance of observed milestones.
+<!-- dataset-summary:end -->
 
 Explore the public project at
 [paths.significanthobbies.com](https://paths.significanthobbies.com).
@@ -29,6 +31,14 @@ pnpm run build
 pnpm run audit:discovery
 pnpm run audit:clarity
 pnpm run audit:tiers
+pnpm run audit:stats
+```
+
+After changing the dataset, refresh the figures quoted in this file and
+`PROJECT_STATUS.md`:
+
+```bash
+pnpm run sync:stats
 ```
 
 Created and maintained by [Sarthak Agrawal](https://sarthakagrawal.dev) under
