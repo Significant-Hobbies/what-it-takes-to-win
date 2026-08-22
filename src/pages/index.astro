@@ -35,6 +35,47 @@ const chapters = [
 
 const wordSpans = (text: string) => text.split(" ");
 
+// Static fallback for readers who never see the marble run: reduced motion, a
+// low-capability device, or no WebGL. Generated here rather than exported as
+// raster plates — the previous five .webp stills were renders of a world that
+// had since been replaced, and nothing in the build could notice. An SVG built
+// from the same lane shape cannot drift out of step with the scene it stands in
+// for, and costs a few hundred bytes instead of 1.3 MB.
+const FALLBACK_LANES = [
+  { inherited: 3, ecosystem: 3 },
+  { inherited: 2, ecosystem: 2 },
+  { inherited: 1, ecosystem: 2 },
+  { inherited: 2, ecosystem: 3 },
+  { inherited: 0, ecosystem: 2 },
+  { inherited: 1, ecosystem: 1 },
+  { inherited: -1, ecosystem: 1 },
+  { inherited: -1, ecosystem: 0 },
+  { inherited: 0, ecosystem: -1 },
+  { inherited: 1, ecosystem: 0 },
+  { inherited: -1, ecosystem: -1 },
+  { inherited: 0, ecosystem: -1 },
+];
+const FALLBACK_COLORS = [
+  "#2f5fe0", "#0f9d8a", "#d2691e", "#c2255c", "#d4a017", "#2f9e44",
+  "#6741d9", "#1c7ed6", "#c92a2a", "#74b816", "#e8590c", "#4263eb",
+];
+const fallbackLanes = FALLBACK_LANES.map((lane, index) => {
+  // Release height is what inheritance bought; the run's slope is what the
+  // ecosystem does with it. A negative ecosystem flattens toward the finish.
+  const start = 150 - lane.inherited * 22 + index * 4;
+  const end = start + 210 + lane.ecosystem * 34;
+  return {
+    color: FALLBACK_COLORS[index % FALLBACK_COLORS.length],
+    end,
+    headwind: lane.ecosystem < 0 || lane.inherited < 0,
+    marbles: [0.24, 0.34, 0.44].map((t) => ({
+      x: 120 + t * 900,
+      y: start + (end - start) * t * 0.62,
+    })),
+    start,
+  };
+});
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -84,57 +125,37 @@ const structuredData = {
   <div class="story-shell" data-story data-active-chapter="0">
     <div class="story-atmosphere" aria-hidden="true">
       <canvas class="story-webgl" data-story-webgl></canvas>
-      <div class="story-plates">
-        <figure class="story-plate" data-story-plate="0">
-          <img
-            src="/assets/story/observatory-survivor.webp"
-            alt=""
-            width="1672"
-            height="941"
-            decoding="async"
-            fetchpriority="high"
-          />
-        </figure>
-        <figure class="story-plate" data-story-plate="1">
-          <img
-            data-story-src="/assets/story/observatory-terraces.webp"
-            alt=""
-            width="1672"
-            height="941"
-            loading="lazy"
-            decoding="async"
-          />
-        </figure>
-        <figure class="story-plate" data-story-plate="2">
-          <img
-            data-story-src="/assets/story/observatory-leverage.webp"
-            alt=""
-            width="1672"
-            height="941"
-            loading="lazy"
-            decoding="async"
-          />
-        </figure>
-        <figure class="story-plate" data-story-plate="3">
-          <img
-            data-story-src="/assets/story/observatory-sequence.webp"
-            alt=""
-            width="1672"
-            height="941"
-            loading="lazy"
-            decoding="async"
-          />
-        </figure>
-        <figure class="story-plate" data-story-plate="4">
-          <img
-            data-story-src="/assets/story/observatory-boundary.webp"
-            alt=""
-            width="1672"
-            height="941"
-            loading="lazy"
-            decoding="async"
-          />
-        </figure>
+      <div class="story-fallback">
+        <svg viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" role="presentation">
+          <defs>
+            <linearGradient id="fallback-sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#111826" />
+              <stop offset="1" stop-color="#0b0d12" />
+            </linearGradient>
+          </defs>
+          <rect width="1200" height="700" fill="url(#fallback-sky)" />
+          {fallbackLanes.map((lane) => (
+            <>
+              <path
+                d={`M 90 ${lane.start} C 420 ${lane.start + 24}, 760 ${lane.end - 40}, 1150 ${lane.end}`}
+                fill="none"
+                stroke={lane.headwind ? "#3a3326" : "#232a3a"}
+                stroke-width="7"
+                stroke-linecap="round"
+              />
+              <path
+                d={`M 90 ${lane.start} C 420 ${lane.start + 24}, 760 ${lane.end - 40}, 1150 ${lane.end}`}
+                fill="none"
+                stroke={lane.headwind ? "#f0a36b" : "#5fd3bc"}
+                stroke-opacity={lane.headwind ? "0.5" : "0.28"}
+                stroke-width="1"
+              />
+              {lane.marbles.map((marble) => (
+                <circle cx={marble.x} cy={marble.y} r="7" fill={lane.color} />
+              ))}
+            </>
+          ))}
+        </svg>
       </div>
       <div class="story-wash"></div>
       <div class="story-depth story-depth-far"></div>
@@ -455,7 +476,6 @@ const structuredData = {
     const links = Array.from(document.querySelectorAll<HTMLAnchorElement>("[data-story-link]"));
     const activeNumber = document.querySelector<HTMLElement>("[data-active-number]");
     const activeTitle = document.querySelector<HTMLElement>("[data-active-title]");
-    const plateImages = Array.from(document.querySelectorAll<HTMLImageElement>("[data-story-src]"));
 
     if (story && chapters.length) {
       story.classList.add("story-ready");
@@ -472,19 +492,9 @@ const structuredData = {
       const requestedShotValue = new URLSearchParams(window.location.search).get("shot");
       const requestedShot = requestedShotValue === null ? Number.NaN : Number(requestedShotValue);
 
-      const loadPlate = (index: number) => {
-        const image = plateImages[index - 1];
-        const source = image?.dataset.storySrc;
-        if (!image || !source || image.src) return;
-        image.src = source;
-      };
-      loadPlate(1);
-
       const activate = (chapter: HTMLElement) => {
         const index = Number(chapter.dataset.chapterIndex || 0);
         story.dataset.activeChapter = String(index);
-        loadPlate(index);
-        loadPlate(index + 1);
         links.forEach((link, linkIndex) => {
           if (linkIndex === index) link.setAttribute("aria-current", "step");
           else link.removeAttribute("aria-current");

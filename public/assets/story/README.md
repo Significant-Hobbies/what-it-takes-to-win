@@ -1,18 +1,16 @@
-# Story world assets
+# Homepage atmosphere
 
-These five scene plates were generated specifically for *Look Sideways*
-with OpenAI's built-in image generation on 2026-08-14, then converted to WebP
-for the canonical `/` landing journey. They are fallback artwork; the primary
-experience is a continuous procedural Three.js observatory rendered by
-`src/scripts/story-world.ts`.
+There are no raster plates here any more.
 
-- `observatory-survivor.webp`: 64 glass trajectories converging through a monumental orrery
-- `observatory-terraces.webp`: unequal limestone terraces, bridges, and access lifts
-- `observatory-leverage.webp`: a brass-and-glass instrument that multiplies one input beam
-- `observatory-sequence.webp`: six portals connected by one continuing cobalt path
-- `observatory-boundary.webp`: an open celestial sphere with fractured orbits and a vast horizon
+The homepage's non-WebGL fallback — what a visitor sees under
+`prefers-reduced-motion`, on a low-capability device, or with no WebGL — used to
+be five exported `.webp` renders of the scene. When the scene changed from a
+stone observatory to a marble run, the fallback kept showing the observatory and
+nothing in the build could notice: they were just images.
 
-The owner selected this brighter *Impossible Observatory* direction after
-reviewing three composition probes. The art direction and prompts are original
-to this project. No artwork, models, textures, or code from Kage were copied or
-redistributed.
+The fallback is now an inline SVG generated in `src/pages/index.astro` from the
+same lane shape the 3D world uses, so it cannot drift out of step with the scene
+it stands in for. It also costs a few hundred bytes rather than 1.3 MB.
+
+If the marble run's lane structure changes, update `FALLBACK_LANES` in
+`src/pages/index.astro`.

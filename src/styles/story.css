@@ -51,7 +51,7 @@
 
 .story-webgl-ready .story-webgl { opacity: 1; }
 
-.story-plates {
+.story-fallback {
   position: absolute;
   z-index: 0;
   inset: 0;
@@ -59,7 +59,7 @@
   transition: opacity 800ms cubic-bezier(0.16, 1, 0.3, 1), filter 800ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.story-webgl-ready .story-plates {
+.story-webgl-ready .story-fallback {
   opacity: 0;
   filter: blur(10px);
 }
@@ -1101,4 +1101,10 @@
 
   .story-opening { padding-top: 160px; padding-bottom: 120px; }
   .story-chapter { padding-top: 110px; padding-bottom: 110px; }
+}
+
+.story-fallback svg {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
