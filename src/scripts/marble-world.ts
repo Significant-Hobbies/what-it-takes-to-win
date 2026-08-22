@@ -63,12 +63,6 @@ const COURSE_LENGTH = 240;
 const LANE_SPACING = 3.4;
 const COURSE_HALF_WIDTH = ((LANE_COUNT - 1) / 2) * LANE_SPACING;
 
-/** Deterministic hash-based jitter. No Math.random: the world must be stable. */
-function jitter(seed: number): number {
-  const x = Math.sin(seed * 127.1 + 311.7) * 43_758.545_3;
-  return x - Math.floor(x);
-}
-
 /**
  * Build the twelve lane seeds.
  *
@@ -94,6 +88,12 @@ function buildLaneSeeds(): LaneSeed[] {
   const assigned = seeds.reduce((sum, seed) => sum + seed.marbles, 0);
   seeds[0].marbles += TOTAL_MARBLES - assigned;
   return seeds;
+}
+
+/** Deterministic hash-based jitter. No Math.random: the world must be stable. */
+function jitter(seed: number): number {
+  const x = Math.sin(seed * 127.1 + 311.7) * 43_758.545_3;
+  return x - Math.floor(x);
 }
 
 /**
@@ -150,7 +150,7 @@ function buildLaneCurve(seed: LaneSeed, index: number): THREE.CatmullRomCurve3 {
   // Every lane leaves the same hopper mouth, then fans to its own line. The
   // shared origin matters: the reader has to see one release, not twelve.
   let height = 34 + seed.inherited * 5.5;
-  points.push(new THREE.Vector3(x * 0.18, height + 4, 16));
+  points.push(new THREE.Vector3(x * 0.72, height + 4, 16));
 
   for (const section of SECTIONS) {
     const drop = sectionDrop(section.id, seed);
@@ -308,6 +308,8 @@ interface MarbleUnit {
   mesh: THREE.Mesh;
   lane: Lane;
   offset: number;
+  /** Unique 0..63 slot, used to give every marble its own place in the heap. */
+  slot: number;
   spin: THREE.Vector3;
 }
 
@@ -335,6 +337,7 @@ function buildMarbles(lanes: Lane[], group: THREE.Group): MarbleUnit[] {
       units.push({
         lane,
         mesh,
+        slot: created,
         // Marbles in one lane are staggered so the pack reads as a pack.
         offset: n,
         spin: new THREE.Vector3(
@@ -373,33 +376,60 @@ function trackHeightAt(z: number): number {
   return height;
 }
 
-/** The hopper every marble leaves from: one release, not twelve. */
-function buildHopper(group: THREE.Group) {
-  const shell = new THREE.Mesh(
-    new THREE.CylinderGeometry(7.5, 2.2, 9, 26, 1, true),
-    new THREE.MeshStandardMaterial({
-      color: COLORS.frame,
-      metalness: 0.55,
-      roughness: 0.44,
-      side: THREE.DoubleSide,
-    }),
-  );
-  shell.position.set(0, trackHeightAt(16) + 6, 18);
-  group.add(shell);
+/** Where waiting marbles pile up, and where the hopper prop is centred. */
+const LANE_SEEDS = buildLaneSeeds();
+const HIGHEST_RELEASE = Math.max(
+  ...LANE_SEEDS.map((seed) => 34 + seed.inherited * 5.5 + 4),
+);
 
-  const lip = new THREE.Mesh(
-    new THREE.TorusGeometry(7.5, 0.18, 8, 34),
-    new THREE.MeshStandardMaterial({
-      color: COLORS.boost,
-      emissive: COLORS.boost,
-      emissiveIntensity: 0.35,
-      metalness: 0.6,
-      roughness: 0.34,
-    }),
-  );
-  lip.position.set(0, trackHeightAt(16) + 10.5, 18);
-  lip.rotation.x = Math.PI / 2;
-  group.add(lip);
+const HOPPER = {
+  radius: 7.2,
+  // Clear of the lane mouths: the field has to be visible above the bundle.
+  y: HIGHEST_RELEASE + 4.5,
+  z: 18,
+};
+
+/**
+ * The release ring: one start for all sixty-four marbles.
+ *
+ * This was a tapered funnel, and the funnel kept hiding the marbles it was
+ * supposed to contain — first because the heap sat below its narrow throat, then
+ * because the camera rides only a few units above the rim and a nine-unit cone
+ * occludes its own interior at that angle. An open ring says the same thing
+ * (they all leave from here) and cannot hide the field.
+ */
+function buildReleaseRing(group: THREE.Group) {
+  const y = HOPPER.y;
+  const brass = new THREE.MeshStandardMaterial({
+    color: COLORS.boost,
+    emissive: COLORS.boost,
+    emissiveIntensity: 0.4,
+    metalness: 0.62,
+    roughness: 0.32,
+  });
+
+  const rim = new THREE.Mesh(new THREE.TorusGeometry(HOPPER.radius, 0.2, 8, 44), brass);
+  rim.position.set(0, y, HOPPER.z);
+  rim.rotation.x = Math.PI / 2;
+  group.add(rim);
+
+  // Spokes give the ring structure without enclosing anything.
+  const strut = new THREE.MeshStandardMaterial({
+    color: COLORS.rail,
+    metalness: 0.55,
+    roughness: 0.45,
+  });
+  for (let i = 0; i < 6; i += 1) {
+    const angle = (i / 6) * Math.PI * 2;
+    const spoke = new THREE.Mesh(new THREE.BoxGeometry(HOPPER.radius, 0.12, 0.12), strut);
+    spoke.position.set(
+      (Math.cos(angle) * HOPPER.radius) / 2,
+      y - 0.6,
+      HOPPER.z + (Math.sin(angle) * HOPPER.radius) / 2,
+    );
+    spoke.rotation.y = -angle;
+    group.add(spoke);
+  }
 }
 
 /** Truss frames over the leverage hall, so the section reads as built. */
@@ -572,12 +602,12 @@ function createWorld(renderer: THREE.WebGLRenderer, lowQuality: boolean): WorldR
   const marbleGroup = new THREE.Group();
   scene.add(trackGroup, marbleGroup);
 
-  const lanes: Lane[] = buildLaneSeeds().map((seed, index) => {
+  const lanes: Lane[] = LANE_SEEDS.map((seed, index) => {
     const curve = buildLaneCurve(seed, index);
     return { curve, seed, ...integrateLane(curve, seed) };
   });
   for (const lane of lanes) buildTrack(lane, trackGroup);
-  buildHopper(trackGroup);
+  buildReleaseRing(trackGroup);
   buildTrusses(trackGroup);
   buildSequenceGates(trackGroup);
   buildLuckPegs(trackGroup);
@@ -614,8 +644,11 @@ interface FrameOptions extends WorldResources {
 
 function createFrameRenderer(options: FrameOptions) {
   const { camera, canvas, lanes, marbles, renderer, scene, slowest } = options;
+  const heapHeight = HOPPER.y;
+  const HEAP_RADIUS = HOPPER.radius - 1.1;
   const workingPosition = new THREE.Vector3();
   const fieldCentre = new THREE.Vector3();
+  const ndc = new THREE.Vector3();
   let renderedFrames = 0;
 
   return () => {
@@ -634,17 +667,33 @@ function createFrameRenderer(options: FrameOptions) {
       const last = unit.lane.positions.length - 1;
       samplePositionAtIndex(unit.lane, index, workingPosition);
       if (index < 0) {
-        // Still in the hopper: queue up the entry chute rather than sharing the
-        // release point with every other waiting marble.
-        workingPosition.z += -index * 1.05;
-        workingPosition.y += -index * 0.52;
+        // Waiting its turn. A queue strung up the entry chute put the whole
+        // field off-camera at progress 0, so the opening frame — the one that
+        // has to say "sixty-four of these" — was empty. Heap them in the hopper
+        // instead, on a golden-angle disc so the pile packs evenly and stays
+        // identical under scrub.
+        // Place from the marble's unique slot, not from its queue depth: depth
+        // is identical for the same position in every lane, so twelve marbles
+        // shared each spot and the heap of sixty-four showed about seven.
+        const place = unit.slot;
+        const angle = place * 2.399_963_23;
+        // Sit in the funnel's mouth, not below its throat. The first attempt
+        // heaped them at the base, where the taper is only 2.2 wide, so most of
+        // the field spread outside the cone and the wall hid it from a camera
+        // looking down — 64 marbles rendering, none of them visible.
+        const spread = Math.min(HEAP_RADIUS, 0.5 + Math.sqrt(place) * 0.78);
+        workingPosition.set(
+          Math.cos(angle) * spread,
+          heapHeight + Math.sin(place * 1.7) * 0.6,
+          HOPPER.z + Math.sin(angle) * spread * 0.62,
+        );
       }
       unit.mesh.position.copy(workingPosition);
       unit.mesh.position.y += 0.62;
       unit.mesh.visible = index < last;
       const rolled = Math.max(0, index) * 2.1;
       unit.mesh.rotation.set(unit.spin.x * rolled, unit.spin.y * rolled, -rolled);
-      if (unit.mesh.visible && index > 0) {
+      if (unit.mesh.visible) {
         fieldCentre.add(unit.mesh.position);
         framedCount += 1;
       }
@@ -653,22 +702,41 @@ function createFrameRenderer(options: FrameOptions) {
     else samplePosition(lanes[0], clock, fieldCentre);
 
     // Behind and above the field, looking down the course so the lanes converge
-    // and the queues read in depth. The aim point sits left of the course
-    // centreline, pushing the run into the right half, clear of the copy column.
+    // and the queues read in depth.
+    //
     // Lateral position is absolute, not centroid-relative: the lane bundle spans
     // +/-COURSE_HALF_WIDTH, and anchoring x to the field put the camera inside
     // the tubes whenever the pack was still compact. Only height and depth
     // follow the field.
+    //
+    // The aim point sits well to the -x side of the field, which is what pushes
+    // the field into the right half of the frame, clear of the copy column.
+    //
+    // The offset is calibrated, not guessed. data-story-ndc reports where the
+    // field lands in normalised device coordinates; two measurements gave
+    // ndc.x = -0.4375 - 0.0225 * offset, so the run needs roughly -33 to sit
+    // around +0.3. Without this the whole pack rendered at screen x ~520,
+    // underneath the copy, which read as "the marbles are missing".
     camera.position.set(
       COURSE_HALF_WIDTH + 7 + progress * 4,
       fieldCentre.y + 8,
       fieldCentre.z + 27,
     );
-    camera.lookAt(-8, fieldCentre.y - 2.5, fieldCentre.z - 26);
+    camera.lookAt(fieldCentre.x - 33, fieldCentre.y - 2.5, fieldCentre.z - 26);
 
     renderer.render(scene, camera);
     renderedFrames += 1;
     canvas.dataset.storyFrames = String(renderedFrames);
+    // Diagnostics for driving the page from a headless browser: without these
+    // an empty frame is indistinguishable from a camera pointed at nothing.
+    canvas.dataset.storyMarbles = String(framedCount);
+    canvas.dataset.storyCamera = `${camera.position.x.toFixed(1)},${camera.position.y.toFixed(1)},${camera.position.z.toFixed(1)}`;
+    canvas.dataset.storyField = `${fieldCentre.x.toFixed(1)},${fieldCentre.y.toFixed(1)},${fieldCentre.z.toFixed(1)}`;
+    // Where the field lands in normalised device coordinates. Inside [-1,1] on
+    // x and y means it is genuinely on screen, which separates a framing bug
+    // from a shading or occlusion one.
+    ndc.copy(fieldCentre).project(camera);
+    canvas.dataset.storyNdc = `${ndc.x.toFixed(2)},${ndc.y.toFixed(2)},${ndc.z.toFixed(2)}`;
   };
 }
 
