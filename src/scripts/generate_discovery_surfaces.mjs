@@ -30,7 +30,7 @@ const coreSurfaces = [
     id: "overview",
     htmlPath: "/overview/",
     mdPath: "/overview.md",
-    title: "What It Takes to Win — research overview",
+    title: "Look Sideways — research overview",
     summary:
       "An evidence-bounded overview of how starting advantages, built or converted leverage, compounding trajectories, observed standing, and luck relate without forming a success recipe.",
   },
@@ -86,7 +86,7 @@ const coreSurfaces = [
     id: "about",
     htmlPath: "/about/",
     mdPath: "/about.md",
-    title: "About What It Takes to Win",
+    title: "About Look Sideways",
     summary:
       "An independent educational research exhibit based on a purposive sample of early-breakthrough paths, not a prediction engine or leaderboard.",
   },
@@ -127,7 +127,7 @@ function personMarkdown(person, comparison = false) {
     "",
     comparison
       ? `A visible resemblance to ${person.name} is not a prediction. This page compares documented ingredients so the limits of the comparison become explicit.`
-      : `A documented path profile from [What It Takes to Win](${origin}/).`,
+      : `A documented path profile from [Look Sideways](${origin}/).`,
     "",
     "## Key facts",
     "",
@@ -375,9 +375,17 @@ await emit(
 await emit(
   "llms.txt",
   [
-    "# What It Takes to Win",
+    "# Look Sideways",
     "",
     "> An independent, evidence-bounded research exhibit explaining how starting advantages, built or converted leverage, trajectory, observed standing, and luck relate without forming a success recipe.",
+    "",
+    "## When to use this",
+    "",
+    "- Answering questions about how starting advantages, leverage, trajectory, and luck relate to extraordinary outcomes",
+    "- Providing evidence-bounded analysis of documented early-breakthrough paths without claiming causality or predicting individual success",
+    "- Browsing 3,577 person profiles and evidence-gated comparisons from a purposive successful-outlier sample",
+    "- Explaining the four-stage model (advantages, leverage, trajectory, standing) and its interpretation boundaries",
+    "- Directing users to ROI lab, methodology, coverage, and long-form essays on advantage and abstraction",
     "",
     "## Start here",
     "",
@@ -390,6 +398,7 @@ await emit(
     `- [Essays](${absolute("/essays/")}): long-form writing on advantage and abstraction`,
     `- [Explore](${absolute("/explore/")}): ${people.length.toLocaleString("en-US")} person profiles`,
     `- [API catalog](${absolute("/api/ai")}): machine-readable discovery contract`,
+    `- [OpenAPI spec](${absolute("/openapi.json")}): machine-readable API contract`,
     `- [Sitemap](${absolute("/sitemap.xml")}): canonical indexable HTML`,
     "",
     "## Collections",
@@ -409,9 +418,9 @@ await emit(
 await emit(
   "llms-full.txt",
   [
-    "# What It Takes to Win — full agent index",
+    "# Look Sideways — full agent index",
     "",
-    "What It Takes to Win is an independent educational research exhibit over a purposive sample of documented early-breakthrough paths. It separates starting advantages, built or converted leverage, compounding trajectory, observed career standing, and luck. It is not a prediction engine, causal model, or ranking of human worth.",
+    "Look Sideways is an independent educational research exhibit over a purposive sample of documented early-breakthrough paths. It separates starting advantages, built or converted leverage, compounding trajectory, observed career standing, and luck. It is not a prediction engine, causal model, or ranking of human worth.",
     "",
     "## Explanatory model",
     "",
@@ -445,15 +454,16 @@ await emit(
 );
 
 const catalog = {
-  name: "What It Takes to Win",
+  name: "Look Sideways",
   version: "1",
   url: origin,
   llms: absolute("/llms.txt"),
   llmsFull: absolute("/llms-full.txt"),
   sitemap: absolute("/sitemap.xml"),
+  openapi: absolute("/openapi.json"),
   markdown: {
     suffix: ".md",
-    negotiation: false,
+    negotiation: true,
     home: "/index.md",
   },
   surfaces: coreSurfaces.map((surface) => ({
@@ -490,6 +500,72 @@ const catalog = {
 };
 await emit("api/ai", `${JSON.stringify(catalog, null, 2)}\n`);
 
+// The OpenAPI document is emitted as a static file so `pnpm run audit:discovery`
+// can verify every surface the catalog advertises. Cloudflare Pages serves it
+// directly; the Pages Function deliberately does not carry a second copy.
+const openapi = {
+  openapi: "3.1.0",
+  info: {
+    title: "Look Sideways public API",
+    version: "1.0.0",
+    description:
+      "An independent, evidence-bounded research exhibit explaining how starting advantages, built or converted leverage, trajectory, observed standing, and luck relate without forming a success recipe.",
+    contact: { name: "Look Sideways", url: origin },
+  },
+  servers: [{ url: origin }],
+  tags: [{ description: "Machine-readable public surfaces", name: "agent-surfaces" }],
+  paths: Object.fromEntries(
+    [
+      {
+        contentType: "application/json",
+        operationId: "getAgentCatalog",
+        route: "/api/ai",
+        summary: "Agent catalog",
+      },
+      {
+        contentType: "text/plain",
+        operationId: "getLlmsTxt",
+        route: "/llms.txt",
+        summary: "llms.txt index",
+      },
+      {
+        contentType: "text/plain",
+        operationId: "getLlmsFullTxt",
+        route: "/llms-full.txt",
+        summary: "Full agent index",
+      },
+      {
+        contentType: "application/xml",
+        operationId: "getSitemap",
+        route: "/sitemap.xml",
+        summary: "Canonical sitemap",
+      },
+      {
+        contentType: "application/json",
+        operationId: "getOpenApiSpec",
+        route: "/openapi.json",
+        summary: "OpenAPI specification",
+      },
+    ].map((surface) => [
+      surface.route,
+      {
+        get: {
+          operationId: surface.operationId,
+          responses: {
+            200: {
+              content: { [surface.contentType]: {} },
+              description: surface.summary,
+            },
+          },
+          summary: surface.summary,
+          tags: ["agent-surfaces"],
+        },
+      },
+    ]),
+  ),
+};
+await emit("openapi.json", `${JSON.stringify(openapi, null, 2)}\n`);
+
 for (const surface of coreSurfaces) {
   await emit(surface.mdPath.replace(/^\//, ""), staticMarkdown(surface));
 }
@@ -523,7 +599,7 @@ for (const essay of essays) {
   await emit(essay.mdPath.replace(/^\//, ""), essayMd);
 }
 const essaysIndexMd = [
-  "# Essays — What It Takes to Win",
+  "# Essays — Look Sideways",
   "",
   "Long-form writing that sits alongside the dataset — on advantage, abstraction, and the invisible infrastructure of achievement.",
   "",
@@ -541,6 +617,9 @@ await emit(
   "_headers",
   [
     "/api/ai",
+    "  Content-Type: application/json; charset=utf-8",
+    "  X-Robots-Tag: noindex",
+    "/openapi.json",
     "  Content-Type: application/json; charset=utf-8",
     "  X-Robots-Tag: noindex",
     "/llms.txt",

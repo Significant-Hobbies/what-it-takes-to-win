@@ -75,7 +75,7 @@ if (missingMarkdown === 0) {
 
 const llms = await read("llms.txt");
 if (
-  llms.startsWith("# What It Takes to Win")
+  llms.startsWith("# Look Sideways")
   && llms.includes(`${origin}/roi.md`)
   && !llms.includes("<!doctype")
 ) {
@@ -97,7 +97,7 @@ if (
 
 const llmsFull = await read("llms-full.txt");
 if (
-  llmsFull.startsWith("# What It Takes to Win — full agent index")
+  llmsFull.startsWith("# Look Sideways — full agent index")
   && llmsFull.includes("## Agent-readable collections")
   && !llmsFull.includes("<!doctype")
 ) {
@@ -114,6 +114,7 @@ try {
     && api.llms === `${origin}/llms.txt`
     && api.llmsFull === `${origin}/llms-full.txt`
     && api.sitemap === `${origin}/sitemap.xml`
+    && api.openapi === `${origin}/openapi.json`
     && Array.isArray(api.surfaces)
     && api.surfaces.length === coreSurfaceCount
     && Array.isArray(api.collections)
@@ -128,6 +129,39 @@ try {
   }
 } catch {
   failures.push("/api/ai is not valid JSON");
+}
+
+// Every machine-readable URL the catalog advertises must exist in the build.
+// The catalog previously pointed at /openapi.json while only an uncommitted
+// Pages Function could serve it, which no local check could see.
+const openapiText = await read("openapi.json");
+try {
+  const openapi = JSON.parse(openapiText);
+  const advertised = Object.keys(openapi.paths ?? {});
+  const missing = [];
+  for (const route of advertised) {
+    try {
+      await stat(path.join(dist, route.replace(/^\//, "")));
+    } catch {
+      missing.push(route);
+    }
+  }
+  if (
+    openapi.openapi === "3.1.0"
+    && openapi.servers?.[0]?.url === origin
+    && advertised.includes("/openapi.json")
+    && advertised.includes("/api/ai")
+    && advertised.every((route) => openapi.paths[route].get?.operationId)
+    && missing.length === 0
+  ) {
+    passes.push(`/openapi.json describing ${advertised.length} agent surfaces`);
+  } else if (missing.length > 0) {
+    failures.push(`/openapi.json advertises unbuilt surfaces: ${missing.join(", ")}`);
+  } else {
+    failures.push("/openapi.json is missing required spec fields");
+  }
+} catch {
+  failures.push("/openapi.json is not valid JSON");
 }
 
 const headers = await read("_headers");
