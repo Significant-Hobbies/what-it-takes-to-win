@@ -224,7 +224,7 @@ const structuredData = {
     <div class="story-progress" aria-hidden="true"><i></i></div>
 
     <nav class="story-rail" aria-label="Story chapters">
-      <a class="story-rail-brand" href="#story-opening" aria-label="Back to story opening">WTW</a>
+      <a class="story-rail-brand" href="#story-opening" aria-label="Back to story opening">LS</a>
       <ol>
         {chapters.map((chapter, index) => (
           <li>
@@ -447,7 +447,7 @@ const structuredData = {
   </div>
 
   <script>
-    import { mountStoryWorld } from "../scripts/story-world";
+    import { mountMarbleWorld } from "../scripts/marble-world";
 
     const story = document.querySelector<HTMLElement>("[data-story]");
     const storyCanvas = document.querySelector<HTMLCanvasElement>("[data-story-webgl]");
@@ -468,7 +468,7 @@ const structuredData = {
         device.connection?.saveData
         || (device.deviceMemory && device.deviceMemory <= 4)
       );
-      const storyWorld = storyCanvas && !reduceMotion && !lowCapability ? mountStoryWorld(storyCanvas) : null;
+      const storyWorld = storyCanvas && !reduceMotion && !lowCapability ? mountMarbleWorld(storyCanvas) : null;
       const requestedShotValue = new URLSearchParams(window.location.search).get("shot");
       const requestedShot = requestedShotValue === null ? Number.NaN : Number(requestedShotValue);
 
