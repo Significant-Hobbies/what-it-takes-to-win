@@ -1,28 +1,30 @@
-// The marble run: the homepage's scroll-driven world.
+// The marble run: one marble, one course, and the branches it did not take.
 //
-// Sixty-four marbles are released together and race down twelve lanes to a
-// single finish. The lanes are not fair, and that is the entire point — the
-// essay this project is named after asks the reader to picture exactly this and
-// then notice that comparing two marbles' positions tells you almost nothing
-// about the marbles.
+// This started as a race — sixty-four marbles down twelve lanes. A race is the
+// wrong picture. It reads as a competition, which is the frame the essay this
+// project is named after spends its whole length dismantling, and a crowd of
+// marbles is impossible to follow. Biography hides the branches; it does not
+// line up rivals.
 //
-// Every lane is generated from one person-shaped triple, the same three
-// condition factors the profiles publish:
+// So there is one marble, on a real obstacle course: a release drop through a
+// funnel, a descending helix, a leverage hall that multiplies whatever speed it
+// arrives carrying, a gap it has to cross on momentum alone, gates that hang
+// lower as it goes, and a peg field that deflects it for no reason at all. At
+// each junction a ghost branch peels away and fades — the path that was
+// available and did not happen. Those are the "many" the headline means.
 //
-//   inherited  -> release height. A high drop converts to speed for free.
-//   endowment  -> rolling efficiency. How little momentum is lost per metre.
-//   ecosystem  -> what the track does. Boosters and clean banks, or gravel,
-//                 counter-slopes, and dead flats.
+// The course is bound to the same three condition factors the profiles publish:
 //
-// A -1 on any factor is a headwind, not a blank: it becomes a real uphill
-// section the marble has to climb with whatever speed it arrived carrying.
+//   inherited  -> the height of the opening drop. Altitude nobody earned.
+//   endowment  -> rolling efficiency. How little speed bleeds per metre.
+//   ecosystem  -> whether the middle helps or fights: a bank or a counter-slope.
 //
-// MOTION MODEL — deliberately not a physics engine. Scroll can go backwards,
-// and a rigid-body simulation cannot be scrubbed: reversing it needs the whole
-// history. Instead each lane integrates a speed profile once at construction
-// into an arc-length/time table, which is then inverted at render time. That
-// makes marble position a pure function of scroll progress: identical every
-// time, reversible, and independent of frame rate.
+// MOTION MODEL — deliberately not a physics engine. Scroll runs backwards, and a
+// rigid-body simulation cannot be scrubbed: reversing it needs the whole history.
+// The course is integrated once at construction into an arc-length/time table,
+// inverted at render time. Marble position is a pure function of scroll
+// progress: reversible, frame-rate independent, identical every run. Steeper
+// sections still genuinely run faster.
 import * as THREE from "three";
 import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
 
@@ -31,64 +33,26 @@ export interface MarbleWorldController {
   setProgress: (progress: number) => void;
 }
 
-/** One lane's generating triple, on the published -1..3 condition scale. */
-interface LaneSeed {
-  endowment: number;
-  inherited: number;
-  ecosystem: number;
-  marbles: number;
-}
+/** The marble's generating triple, on the published -1..3 condition scale. */
+const CONDITION = { ecosystem: 1, endowment: 2, inherited: 2 };
 
 const COLORS = {
-  bed: 0x27324a,
-  rail: 0x2f3a52,
-  frame: 0x141a26,
+  bed: 0x2a3550,
   boost: 0x5fd3bc,
   drag: 0xf0a36b,
   finish: 0xffd9a0,
-  sky: 0x0b0d12,
-  fog: 0x0d1220,
+  fog: 0x0b1020,
+  frame: 0x161d2b,
+  ghost: 0x6478a0,
+  marble: 0xff8f3f,
+  rail: 0x3b4763,
+  sky: 0x080a10,
 };
 
-// Marble liveries. Readable apart at distance and in motion, which matters more
-// here than palette elegance: the reader needs to track one marble.
-const MARBLE_COLORS = [
-  0x2f5fe0, 0x0f9d8a, 0xd2691e, 0xc2255c, 0xd4a017, 0x2f9e44,
-  0x6741d9, 0x1c7ed6, 0xc92a2a, 0x74b816, 0xe8590c, 0x4263eb,
-];
-
-const LANE_COUNT = 12;
-const TOTAL_MARBLES = 64;
-const COURSE_LENGTH = 240;
-const LANE_SPACING = 3.4;
-const COURSE_HALF_WIDTH = ((LANE_COUNT - 1) / 2) * LANE_SPACING;
-
-/**
- * Build the twelve lane seeds.
- *
- * Spread across the real distribution rather than a flattering sample: most
- * paths sit mid-scale, a few carry a genuine headwind, and one lane gets the
- * full stack of tailwinds. Lane 0 is the one the story follows to the finish.
- */
-function buildLaneSeeds(): LaneSeed[] {
-  const seeds: LaneSeed[] = [
-    { endowment: 2, inherited: 3, ecosystem: 3, marbles: 4 },
-    { endowment: 2, inherited: 2, ecosystem: 2, marbles: 5 },
-    { endowment: 3, inherited: 1, ecosystem: 2, marbles: 5 },
-    { endowment: 1, inherited: 2, ecosystem: 3, marbles: 6 },
-    { endowment: 2, inherited: 0, ecosystem: 2, marbles: 6 },
-    { endowment: 1, inherited: 1, ecosystem: 1, marbles: 7 },
-    { endowment: 2, inherited: -1, ecosystem: 1, marbles: 6 },
-    { endowment: 3, inherited: -1, ecosystem: 0, marbles: 5 },
-    { endowment: 1, inherited: 0, ecosystem: -1, marbles: 5 },
-    { endowment: 0, inherited: 1, ecosystem: 0, marbles: 5 },
-    { endowment: 1, inherited: -1, ecosystem: -1, marbles: 5 },
-    { endowment: 0, inherited: 0, ecosystem: -1, marbles: 5 },
-  ];
-  const assigned = seeds.reduce((sum, seed) => sum + seed.marbles, 0);
-  seeds[0].marbles += TOTAL_MARBLES - assigned;
-  return seeds;
-}
+const MARBLE_RADIUS = 1.15;
+const TRACK_RADIUS = 1.55;
+const SAMPLES = 620;
+const UP = new THREE.Vector3(0, 1, 0);
 
 /** Deterministic hash-based jitter. No Math.random: the world must be stable. */
 function jitter(seed: number): number {
@@ -97,477 +61,373 @@ function jitter(seed: number): number {
 }
 
 /**
- * The five sections, matching the five scroll chapters. Each does a different
- * job to the marble, so the terrain under the reader changes as the copy does.
- *
- *   release   64 marbles leave one hopper together.
- *   start     lanes separate to the heights their inheritance bought.
- *   leverage  gain proportional to the speed already carried.
- *   sequence  ordered gates: arriving early is what opens the next one.
- *   boundary  arbitrary deflection, then the single remembered finish.
+ * The course, obstacle by obstacle. Each section is something the marble goes
+ * through rather than a length of slope — the reader should be able to name what
+ * is happening, not just watch a descent.
  */
-const SECTIONS = [
-  { id: "release", from: 12, to: -18 },
-  { id: "start", from: -18, to: -72 },
-  { id: "leverage", from: -72, to: -128 },
-  { id: "sequence", from: -128, to: -184 },
-  { id: "boundary", from: -184, to: -COURSE_LENGTH },
-] as const;
-
-/** Height lost across one section for a given lane. Negative means a climb. */
-function sectionDrop(sectionId: string, seed: LaneSeed): number {
-  if (sectionId === "release") return 7;
-  if (sectionId === "start") {
-    // The starting field only sorts; it does not yet reward or punish.
-    return 5.5;
-  }
-  if (sectionId === "leverage") {
-    // Leverage multiplies what is already there. A lane arriving with a good
-    // gradient gets a steeper hall; a lane with an ecosystem headwind gets a
-    // counter-slope it has to climb on borrowed momentum.
-    return seed.ecosystem < 0 ? -3.2 : 4 + seed.ecosystem * 3.1;
-  }
-  if (sectionId === "sequence") {
-    // Compounding is order-dependent: a flat run for anyone who arrived slow.
-    return seed.ecosystem <= 0 ? 0.6 : 3.4 + seed.ecosystem * 1.2;
-  }
-  // The boundary is the same gentle fall for everyone. Luck is not scored.
-  return 4.2;
-}
-
-/**
- * A lane's centreline, assembled section by section.
- *
- * `inherited` lifts the release point, so a high-inheritance lane starts with
- * altitude it never had to earn. Everything after that is decided by which
- * section the marble is in and what that section does to it.
- */
-function buildLaneCurve(seed: LaneSeed, index: number): THREE.CatmullRomCurve3 {
-  const x = (index - (LANE_COUNT - 1) / 2) * LANE_SPACING;
-  const wobble = (jitter(index * 3.3) - 0.5) * 1.6;
+function buildCoursePoints(): THREE.Vector3[] {
   const points: THREE.Vector3[] = [];
+  const push = (x: number, y: number, z: number) => points.push(new THREE.Vector3(x, y, z));
 
-  // Every lane leaves the same hopper mouth, then fans to its own line. The
-  // shared origin matters: the reader has to see one release, not twelve.
-  let height = 34 + seed.inherited * 5.5;
-  points.push(new THREE.Vector3(x * 0.72, height + 4, 16));
+  // 01 RELEASE — a steep drop through a funnel ring. Its height is the
+  // inheritance: speed handed over before the marble has done anything.
+  const top = 46 + CONDITION.inherited * 5;
+  push(3, top, 36);
+  push(1.5, top - 7, 27);
+  push(0, top - 14, 19);
 
-  for (const section of SECTIONS) {
-    const drop = sectionDrop(section.id, seed);
-    const steps = section.id === "boundary" ? 4 : 3;
-    for (let step = 1; step <= steps; step += 1) {
-      const t = step / steps;
-      const z = section.from + (section.to - section.from) * t;
-      height -= drop / steps;
-      // Lanes converge slightly toward the finish: many starts, one end.
-      const converge = 1 - 0.28 * ((16 - z) / (16 + COURSE_LENGTH));
-      let lateral = x * converge + Math.sin(step * 1.1 + index) * (0.5 + wobble * 0.3);
-      if (section.id === "boundary") {
-        // Arbitrary deflection, hash-derived rather than score-derived: this
-        // section must not look like it is rewarding anything.
-        lateral += (jitter(index * 13.7 + step * 5.1) - 0.5) * 3.4;
-      }
-      points.push(new THREE.Vector3(lateral, height, z));
-    }
+  // 02 STARTING FIELD — a fast chute, banking gently away.
+  push(-2, top - 20, 10);
+  push(-4, top - 25, 0);
+  push(-4, top - 29, -11);
+
+  // 03 HELIX — a descending spiral. Pure marble-run, and it shows the marble
+  // from every side inside one continuous camera move.
+  const helixTop = top - 29;
+  const helixSteps = 24;
+  for (let i = 1; i <= helixSteps; i += 1) {
+    const t = i / helixSteps;
+    const angle = t * Math.PI * 2 * 1.75;
+    push(
+      -4 + Math.sin(angle) * 11,
+      helixTop - t * 21,
+      -15 - t * 27 + (Math.cos(angle) - 1) * 5,
+    );
   }
 
-  return new THREE.CatmullRomCurve3(points, false, "catmullrom", 0.5);
+  // 04 LEVERAGE HALL — an accelerating bank. Ecosystem decides whether this
+  // multiplies the speed already carried or takes some of it back.
+  let y = helixTop - 21;
+  const hallDrop = CONDITION.ecosystem < 0 ? -3 : 5 + CONDITION.ecosystem * 2.6;
+  for (let i = 1; i <= 5; i += 1) {
+    const t = i / 5;
+    y -= hallDrop / 5;
+    push(-4 + Math.sin(t * Math.PI) * 9, y, -47 - t * 35);
+  }
+
+  // 05 THE GAP — a shallow arc across a break in the structure. Whatever
+  // momentum arrives is what carries it: the leverage argument as geometry.
+  push(1, y - 1.4, -86);
+  push(5, y - 2.4, -94);
+  push(7.5, y - 4.2, -102);
+
+  // 06 SEQUENCE — a straight run through gates, each lower than the last.
+  y -= 4.2;
+  for (let i = 1; i <= 5; i += 1) {
+    const t = i / 5;
+    y -= 2.5;
+    push(7.5 - t * 5.5, y, -102 - t * 44);
+  }
+
+  // 07 PEG FIELD — lateral deflection with nothing behind it. The amplitude is
+  // hash-derived, never score-derived: luck must not look like a reward.
+  for (let i = 1; i <= 8; i += 1) {
+    const t = i / 8;
+    y -= 2;
+    push(2 + (jitter(i * 9.7) - 0.5) * 16, y, -146 - t * 54);
+  }
+
+  // 08 FINISH — one remembered end.
+  push(0, y - 4, -206);
+  push(0, y - 6.5, -218);
+  return points;
 }
 
+const COURSE = new THREE.CatmullRomCurve3(buildCoursePoints(), false, "catmullrom", 0.5);
+
 /**
- * Integrate the lane into an arc-length -> arrival-time table.
+ * Integrate the course into an arc-length -> arrival-time table.
  *
- * Speed comes from accumulated drop (gravity), is bled off by rolling loss
- * (worse for a low-endowment marble), and cannot fall to zero — a stalled
- * marble would divide by zero and freeze the scrub. An uphill span therefore
- * reads as a crawl rather than a stop, which is also the honest picture: the
- * paths in this dataset all did reach their milestone.
+ * Speed accumulates from drop, bleeds to rolling loss (worse for a low
+ * endowment), and never reaches zero: a stalled marble would divide by zero and
+ * freeze the scrub. An uphill span reads as a crawl instead, which is also the
+ * honest picture — every path in this dataset did reach its milestone.
  */
-function integrateLane(curve: THREE.CatmullRomCurve3, seed: LaneSeed) {
-  const samples = 240;
-  const efficiency = 0.955 + seed.endowment * 0.008;
-  const times: number[] = [0];
+function integrateCourse() {
   const positions: THREE.Vector3[] = [];
-  let speed = 2.4;
+  const times: number[] = [0];
+  const efficiency = 0.978 + CONDITION.endowment * 0.004;
+  let speed = 3;
   let elapsed = 0;
 
-  for (let i = 0; i <= samples; i += 1) {
-    positions.push(curve.getPointAt(i / samples));
-  }
-  for (let i = 1; i <= samples; i += 1) {
+  for (let i = 0; i <= SAMPLES; i += 1) positions.push(COURSE.getPointAt(i / SAMPLES));
+  for (let i = 1; i <= SAMPLES; i += 1) {
     const previous = positions[i - 1];
     const current = positions[i];
     const distance = previous.distanceTo(current);
     const gradient = (previous.y - current.y) / Math.max(0.0001, distance);
-    // Downhill adds speed, uphill removes it, and rolling loss always applies.
-    speed = Math.max(0.55, speed * efficiency + gradient * 5.6);
+    speed = Math.max(1.1, speed * efficiency + gradient * 3.4);
     elapsed += distance / speed;
     times.push(elapsed);
   }
-
-  const total = times[times.length - 1];
-  return { positions, times, total };
+  return { positions, times, total: elapsed };
 }
 
-interface Lane {
-  seed: LaneSeed;
-  curve: THREE.CatmullRomCurve3;
-  positions: THREE.Vector3[];
-  times: number[];
-  total: number;
-}
+const TRACK = integrateCourse();
 
-/** Arc samples between consecutive marbles in a lane: ~3 units, over a diameter. */
-const MARBLE_GAP_SAMPLES = 3;
-
-/** Invert the time table: which arc sample has this lane reached at time `t`? */
-function sampleIndexAtTime(lane: Lane, t: number): number {
-  const { times } = lane;
-  const clamped = Math.min(Math.max(t, 0), lane.total);
+/** Which arc sample has the marble reached at time `t`? */
+function sampleIndexAtTime(t: number): number {
+  const clamped = Math.min(Math.max(t, 0), TRACK.total);
   let low = 0;
-  let high = times.length - 1;
+  let high = TRACK.times.length - 1;
   while (high - low > 1) {
     const mid = (low + high) >> 1;
-    if (times[mid] <= clamped) low = mid;
+    if (TRACK.times[mid] <= clamped) low = mid;
     else high = mid;
   }
-  const span = times[high] - times[low] || 1;
-  return low + (clamped - times[low]) / span;
+  const span = TRACK.times[high] - TRACK.times[low] || 1;
+  return low + (clamped - TRACK.times[low]) / span;
 }
 
-/** Position at a fractional arc sample. */
-function samplePositionAtIndex(lane: Lane, index: number, target: THREE.Vector3) {
-  const last = lane.positions.length - 1;
+function samplePositionAtIndex(index: number, target: THREE.Vector3) {
+  const last = TRACK.positions.length - 1;
   const clamped = Math.min(Math.max(index, 0), last);
   const low = Math.floor(clamped);
   const high = Math.min(last, low + 1);
-  target.lerpVectors(lane.positions[low], lane.positions[high], clamped - low);
+  target.lerpVectors(TRACK.positions[low], TRACK.positions[high], clamped - low);
 }
 
-/**
- * Convenience wrapper: position at time `t`, returning normalised arc progress.
- * Shares the one binary search rather than repeating it.
- */
-function samplePosition(lane: Lane, t: number, target: THREE.Vector3): number {
-  const index = sampleIndexAtTime(lane, t);
-  samplePositionAtIndex(lane, index, target);
-  return index / (lane.times.length - 1);
+/** Sideways vector at a point on the course, for placing things beside it. */
+function courseRightAt(at: number, target: THREE.Vector3): THREE.Vector3 {
+  return target.crossVectors(COURSE.getTangentAt(Math.min(0.999, at)), UP).normalize();
 }
 
-function buildTrack(lane: Lane, group: THREE.Group) {
+function buildTrackBed(group: THREE.Group) {
   const bed = new THREE.Mesh(
-    new THREE.TubeGeometry(lane.curve, 190, 1.15, 10, false),
+    new THREE.TubeGeometry(COURSE, 720, TRACK_RADIUS, 12, false),
     new THREE.MeshStandardMaterial({
       color: COLORS.bed,
-      emissive: 0x0d1424,
-      emissiveIntensity: 0.6,
-      metalness: 0.22,
-      roughness: 0.68,
+      emissive: 0x121a2b,
+      emissiveIntensity: 0.55,
+      metalness: 0.24,
+      roughness: 0.64,
       side: THREE.BackSide,
     }),
   );
   bed.receiveShadow = true;
   group.add(bed);
 
-  // Rails read the lane's ecosystem: mint where the track helps, amber where it
-  // fights. This is the only place the world colours a value judgement, and it
-  // describes the track, never the marble.
-  const railColor = lane.seed.ecosystem < 0
-    ? COLORS.drag
-    : lane.seed.ecosystem > 1
-    ? COLORS.boost
-    : COLORS.rail;
+  // Rails along the top edges, so the channel reads as a channel from any angle
+  // rather than as a dark ribbon.
+  const right = new THREE.Vector3();
   for (const side of [-1, 1]) {
-    const railPoints = lane.positions.filter((_unused, i) => i % 4 === 0).map((point) =>
-      new THREE.Vector3(point.x + side * 1.2, point.y + 0.5, point.z)
-    );
+    const railPoints: THREE.Vector3[] = [];
+    for (let i = 0; i <= 110; i += 1) {
+      const at = i / 110;
+      const point = COURSE.getPointAt(at);
+      courseRightAt(at, right);
+      railPoints.push(
+        point.clone().addScaledVector(right, side * TRACK_RADIUS * 0.94).setY(point.y + 1.15),
+      );
+    }
     const rail = new THREE.Mesh(
-      new THREE.TubeGeometry(new THREE.CatmullRomCurve3(railPoints), 140, 0.075, 5, false),
+      new THREE.TubeGeometry(new THREE.CatmullRomCurve3(railPoints), 460, 0.12, 6, false),
       new THREE.MeshStandardMaterial({
-        color: railColor,
-        emissive: railColor,
-        emissiveIntensity: lane.seed.ecosystem === 0 ? 0.12 : 0.5,
+        color: COLORS.boost,
+        emissive: COLORS.boost,
+        emissiveIntensity: 0.55,
         metalness: 0.5,
-        roughness: 0.4,
+        roughness: 0.34,
       }),
     );
     group.add(rail);
   }
-
-  // Release gate, so the reader can see that all twelve start at once from
-  // visibly different altitudes.
-  const gate = new THREE.Mesh(
-    new THREE.BoxGeometry(2.6, 0.35, 0.5),
-    new THREE.MeshStandardMaterial({ color: COLORS.frame, metalness: 0.4, roughness: 0.5 }),
-  );
-  gate.position.copy(lane.positions[0]).add(new THREE.Vector3(0, 1.4, 1.2));
-  group.add(gate);
 }
 
-interface MarbleUnit {
-  mesh: THREE.Mesh;
-  lane: Lane;
-  offset: number;
-  /** Unique 0..63 slot, used to give every marble its own place in the heap. */
-  slot: number;
-  spin: THREE.Vector3;
-}
+/**
+ * Ghost branches: at each junction, a path that was available and did not
+ * happen. This is what "one of many" means here — an alternative that fades out,
+ * not a rival in the next lane.
+ */
+function buildGhostBranches(group: THREE.Group) {
+  const material = new THREE.MeshBasicMaterial({
+    color: COLORS.ghost,
+    opacity: 0.13,
+    transparent: true,
+  });
+  const right = new THREE.Vector3();
 
-function buildMarbles(lanes: Lane[], group: THREE.Group): MarbleUnit[] {
-  const units: MarbleUnit[] = [];
-  const geometry = new THREE.SphereGeometry(0.62, 32, 24);
-  let created = 0;
-
-  for (const lane of lanes) {
-    for (let n = 0; n < lane.seed.marbles; n += 1) {
-      const color = MARBLE_COLORS[created % MARBLE_COLORS.length];
-      const mesh = new THREE.Mesh(
-        geometry,
-        new THREE.MeshStandardMaterial({
-          color,
-          emissive: color,
-          emissiveIntensity: 0.18,
-          envMapIntensity: 0.35,
-          metalness: 0.05,
-          roughness: 0.28,
-        }),
+  for (const [index, at] of [0.06, 0.17, 0.33, 0.49, 0.63, 0.77, 0.89].entries()) {
+    const origin = COURSE.getPointAt(at);
+    const tangent = COURSE.getTangentAt(at);
+    courseRightAt(at, right);
+    const away = (jitter(index * 3.1) > 0.5 ? 1 : -1) * (1 + jitter(index * 5.3));
+    const points = [origin.clone()];
+    for (let step = 1; step <= 5; step += 1) {
+      points.push(
+        origin.clone()
+          .addScaledVector(tangent, step * 7)
+          .addScaledVector(right, away * step * step * 1.4)
+          .setY(origin.y - step * (2 + jitter(index + step) * 2.4)),
       );
-      mesh.castShadow = true;
-      group.add(mesh);
-      units.push({
-        lane,
-        mesh,
-        slot: created,
-        // Marbles in one lane are staggered so the pack reads as a pack.
-        offset: n,
-        spin: new THREE.Vector3(
-          jitter(created + 1.1) * 0.4,
-          jitter(created + 2.2) * 0.4,
-          1,
-        ).normalize(),
-      });
-      created += 1;
     }
+    group.add(new THREE.Mesh(
+      new THREE.TubeGeometry(new THREE.CatmullRomCurve3(points), 44, TRACK_RADIUS * 0.5, 7, false),
+      material,
+    ));
   }
-  return units;
 }
 
-/**
- * Approximate track height at a given z, taken from a mid-range reference lane.
- * Props place themselves against this rather than against hardcoded numbers,
- * which is how the trusses and gates first ended up far below the track.
- */
-const referenceLane: LaneSeed = { ecosystem: 1, endowment: 2, inherited: 1, marbles: 0 };
-
-function trackHeightAt(z: number): number {
-  let height = 34 + referenceLane.inherited * 5.5 + 4;
-  for (const section of SECTIONS) {
-    const drop = sectionDrop(section.id, referenceLane);
-    if (z <= section.to) {
-      height -= drop;
-      continue;
-    }
-    if (z < section.from) {
-      const t = (section.from - z) / (section.from - section.to);
-      height -= drop * t;
-    }
-    break;
-  }
-  return height;
-}
-
-/** Where waiting marbles pile up, and where the hopper prop is centred. */
-const LANE_SEEDS = buildLaneSeeds();
-const HIGHEST_RELEASE = Math.max(
-  ...LANE_SEEDS.map((seed) => 34 + seed.inherited * 5.5 + 4),
-);
-
-const HOPPER = {
-  radius: 7.2,
-  // Clear of the lane mouths: the field has to be visible above the bundle.
-  y: HIGHEST_RELEASE + 4.5,
-  z: 18,
-};
-
-/**
- * The release ring: one start for all sixty-four marbles.
- *
- * This was a tapered funnel, and the funnel kept hiding the marbles it was
- * supposed to contain — first because the heap sat below its narrow throat, then
- * because the camera rides only a few units above the rim and a nine-unit cone
- * occludes its own interior at that angle. An open ring says the same thing
- * (they all leave from here) and cannot hide the field.
- */
+/** The funnel ring the marble drops through to start. */
 function buildReleaseRing(group: THREE.Group) {
-  const y = HOPPER.y;
-  const brass = new THREE.MeshStandardMaterial({
-    color: COLORS.boost,
-    emissive: COLORS.boost,
-    emissiveIntensity: 0.4,
-    metalness: 0.62,
-    roughness: 0.32,
-  });
-
-  const rim = new THREE.Mesh(new THREE.TorusGeometry(HOPPER.radius, 0.2, 8, 44), brass);
-  rim.position.set(0, y, HOPPER.z);
-  rim.rotation.x = Math.PI / 2;
-  group.add(rim);
-
-  // Spokes give the ring structure without enclosing anything.
-  const strut = new THREE.MeshStandardMaterial({
-    color: COLORS.rail,
-    metalness: 0.55,
-    roughness: 0.45,
-  });
-  for (let i = 0; i < 6; i += 1) {
-    const angle = (i / 6) * Math.PI * 2;
-    const spoke = new THREE.Mesh(new THREE.BoxGeometry(HOPPER.radius, 0.12, 0.12), strut);
-    spoke.position.set(
-      (Math.cos(angle) * HOPPER.radius) / 2,
-      y - 0.6,
-      HOPPER.z + (Math.sin(angle) * HOPPER.radius) / 2,
-    );
-    spoke.rotation.y = -angle;
-    group.add(spoke);
-  }
+  const ring = new THREE.Mesh(
+    new THREE.TorusGeometry(4.6, 0.22, 8, 40),
+    new THREE.MeshStandardMaterial({
+      color: COLORS.boost,
+      emissive: COLORS.boost,
+      emissiveIntensity: 0.6,
+      metalness: 0.6,
+      roughness: 0.3,
+    }),
+  );
+  ring.position.copy(COURSE.getPointAt(0.014));
+  ring.rotation.x = Math.PI / 2.5;
+  group.add(ring);
 }
 
-/** Truss frames over the leverage hall, so the section reads as built. */
+/** Truss hoops over the leverage hall, so the section reads as built. */
 function buildTrusses(group: THREE.Group) {
   const material = new THREE.MeshStandardMaterial({
     color: COLORS.rail,
-    metalness: 0.62,
+    metalness: 0.6,
     roughness: 0.42,
   });
-  const radius = COURSE_HALF_WIDTH + 4;
-  for (let i = 0; i < 6; i += 1) {
-    const z = -76 - i * 9.5;
-    const frame = new THREE.Mesh(new THREE.TorusGeometry(radius, 0.26, 6, 26, Math.PI), material);
-    // Arch over the lanes, springing from just below the track on either side.
-    frame.position.set(0, trackHeightAt(z) - 2, z);
-    group.add(frame);
+  for (let i = 0; i < 7; i += 1) {
+    const point = COURSE.getPointAt(0.5 + i * 0.021);
+    const hoop = new THREE.Mesh(new THREE.TorusGeometry(6.6, 0.18, 6, 26, Math.PI), material);
+    hoop.position.set(point.x, point.y - 1.5, point.z);
+    group.add(hoop);
   }
 }
 
-/** Ordered gates: passing one early is what leaves the next one open. */
+/** Gates through the sequence run, each hanging lower than the last. */
 function buildSequenceGates(group: THREE.Group) {
   const post = new THREE.MeshStandardMaterial({
     color: COLORS.frame,
     metalness: 0.5,
-    roughness: 0.5,
+    roughness: 0.48,
   });
-  const arm = new THREE.MeshStandardMaterial({
+  const bar = new THREE.MeshStandardMaterial({
     color: COLORS.drag,
     emissive: COLORS.drag,
-    emissiveIntensity: 0.45,
-    metalness: 0.4,
+    emissiveIntensity: 0.6,
+    metalness: 0.42,
     roughness: 0.4,
   });
-  for (let i = 0; i < 4; i += 1) {
-    const z = -134 - i * 13;
-    const y = trackHeightAt(z) - 2;
+  const right = new THREE.Vector3();
+  for (let i = 0; i < 5; i += 1) {
+    const at = 0.655 + i * 0.027;
+    const point = COURSE.getPointAt(at);
+    courseRightAt(at, right);
     for (const side of [-1, 1]) {
-      const column = new THREE.Mesh(new THREE.BoxGeometry(0.26, 9, 0.26), post);
-      column.position.set(side * (COURSE_HALF_WIDTH + 3), y + 4, z);
+      const column = new THREE.Mesh(new THREE.BoxGeometry(0.22, 5.6, 0.22), post);
+      column.position.copy(point).addScaledVector(right, side * 4.6);
+      column.position.y += 2.5;
       group.add(column);
     }
-    const bar = new THREE.Mesh(
-      new THREE.BoxGeometry(COURSE_HALF_WIDTH * 2 + 6, 0.22, 0.22),
-      arm,
-    );
-    // Later gates hang lower and tilt further: the window is closing.
-    bar.position.set(0, y + 7.2 - i * 0.6, z);
-    bar.rotation.z = i * 0.045;
-    group.add(bar);
+    const lintel = new THREE.Mesh(new THREE.BoxGeometry(9.2, 0.18, 0.18), bar);
+    lintel.position.set(point.x, point.y + 5 - i * 0.45, point.z);
+    lintel.rotation.z = i * 0.03;
+    group.add(lintel);
   }
 }
 
 /** Deflector pegs. Placement is hash-derived, never score-derived. */
-function buildLuckPegs(group: THREE.Group) {
-  const geometry = new THREE.CylinderGeometry(0.11, 0.11, 1.3, 6);
-  const material = new THREE.MeshStandardMaterial({
-    color: 0x64748f,
-    emissive: 0x2b3550,
-    emissiveIntensity: 0.28,
-    metalness: 0.4,
-    roughness: 0.5,
-  });
-  const PEG_COUNT = 46;
-  const pegs = new THREE.InstancedMesh(geometry, material, PEG_COUNT);
+function buildPegField(group: THREE.Group) {
+  const PEGS = 34;
+  const pegs = new THREE.InstancedMesh(
+    new THREE.CylinderGeometry(0.14, 0.14, 2.6, 7),
+    new THREE.MeshStandardMaterial({
+      color: 0x7c8aa8,
+      emissive: 0x33405c,
+      emissiveIntensity: 0.42,
+      metalness: 0.45,
+      roughness: 0.42,
+    }),
+    PEGS,
+  );
   const matrix = new THREE.Matrix4();
-  for (let i = 0; i < PEG_COUNT; i += 1) {
-    const x = (jitter(i * 2.3) - 0.5) * (COURSE_HALF_WIDTH * 2 + 6);
-    const z = -188 - jitter(i * 4.7) * 46;
-    const y = trackHeightAt(z) + 0.5 + jitter(i * 6.1) * 1.4;
-    matrix.makeTranslation(x, y, z);
+  for (let i = 0; i < PEGS; i += 1) {
+    const point = COURSE.getPointAt(0.795 + (i / PEGS) * 0.19);
+    matrix.makeTranslation(
+      point.x + (jitter(i * 2.7) - 0.5) * 15,
+      point.y + 1.5,
+      point.z + (jitter(i * 4.1) - 0.5) * 6,
+    );
     pegs.setMatrixAt(i, matrix);
   }
   pegs.instanceMatrix.needsUpdate = true;
   group.add(pegs);
 }
 
-/** Finish arch: the single remembered end of sixty-four starts. */
+/** Finish arch: the one remembered end. */
 function buildFinish(group: THREE.Group) {
+  const at = COURSE.getPointAt(0.994);
   const arch = new THREE.Mesh(
-    new THREE.TorusGeometry(COURSE_HALF_WIDTH + 4, 0.22, 8, 40, Math.PI),
+    new THREE.TorusGeometry(7.2, 0.24, 8, 40, Math.PI),
     new THREE.MeshStandardMaterial({
       color: COLORS.finish,
       emissive: COLORS.finish,
-      emissiveIntensity: 0.3,
+      emissiveIntensity: 0.5,
       metalness: 0.55,
-      roughness: 0.35,
+      roughness: 0.32,
     }),
   );
-  arch.position.set(0, trackHeightAt(-COURSE_LENGTH) - 1.5, -COURSE_LENGTH - 2);
+  arch.position.set(at.x, at.y - 1, at.z);
   group.add(arch);
 }
 
-function buildEnvironment(scene: THREE.Scene) {
-  scene.add(new THREE.HemisphereLight(0x9fc4ff, 0x0a0e16, 1.15));
+function buildMarble(group: THREE.Group): THREE.Mesh {
+  const marble = new THREE.Mesh(
+    new THREE.SphereGeometry(MARBLE_RADIUS, 40, 28),
+    new THREE.MeshPhysicalMaterial({
+      clearcoat: 0.35,
+      clearcoatRoughness: 0.24,
+      color: COLORS.marble,
+      emissive: COLORS.marble,
+      emissiveIntensity: 0.24,
+      envMapIntensity: 0.16,
+      metalness: 0,
+      roughness: 0.2,
+    }),
+  );
+  marble.castShadow = true;
+  group.add(marble);
+  return marble;
+}
 
-  const key = new THREE.DirectionalLight(0xfff0d8, 2.1);
-  key.position.set(-34, 58, 26);
+function buildEnvironment(scene: THREE.Scene) {
+  scene.add(new THREE.HemisphereLight(0x9fc4ff, 0x0a0e16, 1.2));
+
+  const key = new THREE.DirectionalLight(0xfff2dc, 2.4);
+  key.position.set(-30, 60, 30);
   key.castShadow = true;
   key.shadow.mapSize.set(2048, 2048);
-  // Without a bias the marbles self-shadow: the shadow map covers ~100x120
-  // units, so a 1.2-unit marble spans a dozen texels and speckles into
-  // multicoloured noise. normalBias offsets along the surface normal, which is
-  // the correct fix for spheres; a depth bias alone leaves peppering at grazing
-  // angles. This was the actual cause of the marbles reading as grey grit.
-  key.shadow.bias = -0.0005;
-  key.shadow.normalBias = 0.08;
   Object.assign(key.shadow.camera, {
-    bottom: -60,
-    far: 260,
-    left: -50,
-    near: 1,
-    right: 50,
-    top: 60,
+    bottom: -70, far: 320, left: -60, near: 1, right: 60, top: 70,
   });
+  // Without a bias the marble self-shadows into speckle at this map resolution.
+  key.shadow.bias = -0.0005;
+  key.shadow.normalBias = 0.06;
   scene.add(key);
 
-  const rim = new THREE.DirectionalLight(0x6f8dff, 1.5);
-  rim.position.set(30, 12, -80);
+  const rim = new THREE.DirectionalLight(0x6f8dff, 1.35);
+  rim.position.set(34, 14, -90);
   scene.add(rim);
 
-  // Raking light along the course so marbles pick up a travelling highlight.
-  const rake = new THREE.DirectionalLight(0xffd9a0, 1.1);
-  rake.position.set(46, 6, 20);
-  scene.add(rake);
-
-  // One accent per section. The reader should feel the chapter change in the
-  // light, not only in the copy: cool at the release, warm through the leverage
-  // hall, amber at the closing gates, pale and thin at the boundary.
+  // One accent per chapter, following the course, so the chapter change is felt
+  // in the light and not only in the copy.
   const accents: [number, number, number][] = [
-    [0x9fc4ff, 1.5, 0],
-    [0xbfe0ff, 1.3, -46],
-    [0x5fd3bc, 2.2, -100],
-    [0xf0a36b, 2.0, -156],
-    [0xffd9a0, 1.7, -212],
+    [0x9fc4ff, 1.4, 0.04],
+    [0xbfe0ff, 1.3, 0.24],
+    [0x5fd3bc, 2.1, 0.52],
+    [0xf0a36b, 1.9, 0.72],
+    [0xffd9a0, 1.7, 0.93],
   ];
-  for (const [color, intensity, z] of accents) {
-    const light = new THREE.PointLight(color, intensity * 300, 150, 2);
-    light.position.set(6, trackHeightAt(z) + 13, z);
+  for (const [color, intensity, at] of accents) {
+    const point = COURSE.getPointAt(at);
+    const light = new THREE.PointLight(color, intensity * 320, 170, 2);
+    light.position.set(point.x + 4, point.y + 12, point.z);
     scene.add(light);
   }
 }
@@ -586,40 +446,33 @@ function disposeScene(scene: THREE.Scene) {
 interface WorldResources {
   camera: THREE.PerspectiveCamera;
   environmentTexture: THREE.Texture;
-  lanes: Lane[];
-  marbles: MarbleUnit[];
+  marble: THREE.Mesh;
   scene: THREE.Scene;
-  slowest: number;
 }
 
 function createWorld(renderer: THREE.WebGLRenderer, lowQuality: boolean): WorldResources {
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(COLORS.sky);
-  scene.fog = new THREE.FogExp2(COLORS.fog, 0.0075);
-  const camera = new THREE.PerspectiveCamera(lowQuality ? 52 : 46, 1, 0.2, 420);
+  scene.fog = new THREE.FogExp2(COLORS.fog, 0.0066);
+  const camera = new THREE.PerspectiveCamera(lowQuality ? 58 : 50, 1, 0.2, 460);
 
-  const trackGroup = new THREE.Group();
-  const marbleGroup = new THREE.Group();
-  scene.add(trackGroup, marbleGroup);
-
-  const lanes: Lane[] = LANE_SEEDS.map((seed, index) => {
-    const curve = buildLaneCurve(seed, index);
-    return { curve, seed, ...integrateLane(curve, seed) };
-  });
-  for (const lane of lanes) buildTrack(lane, trackGroup);
-  buildReleaseRing(trackGroup);
-  buildTrusses(trackGroup);
-  buildSequenceGates(trackGroup);
-  buildLuckPegs(trackGroup);
-  buildFinish(trackGroup);
-  const marbles = buildMarbles(lanes, marbleGroup);
+  const world = new THREE.Group();
+  scene.add(world);
+  buildTrackBed(world);
+  buildGhostBranches(world);
+  buildReleaseRing(world);
+  buildTrusses(world);
+  buildSequenceGates(world);
+  buildPegField(world);
+  buildFinish(world);
+  const marble = buildMarble(world);
   buildEnvironment(scene);
 
   const pmrem = new THREE.PMREMGenerator(renderer);
-  const environmentRoom = new RoomEnvironment();
-  const environmentTexture = pmrem.fromScene(environmentRoom, 0.04).texture;
+  const room = new RoomEnvironment();
+  const environmentTexture = pmrem.fromScene(room, 0.04).texture;
   scene.environment = environmentTexture;
-  environmentRoom.traverse((object) => {
+  room.traverse((object) => {
     (object as THREE.Mesh).geometry?.dispose();
   });
   pmrem.dispose();
@@ -629,11 +482,7 @@ function createWorld(renderer: THREE.WebGLRenderer, lowQuality: boolean): WorldR
   renderer.toneMappingExposure = 1.12;
   renderer.shadowMap.enabled = !lowQuality;
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-
-  // The slowest lane sets the clock, so scroll progress 1 means every marble
-  // has finished rather than only the leaders.
-  const slowest = lanes.reduce((max, lane) => Math.max(max, lane.total), 0);
-  return { camera, environmentTexture, lanes, marbles, scene, slowest };
+  return { camera, environmentTexture, marble, scene };
 }
 
 interface FrameOptions extends WorldResources {
@@ -642,101 +491,62 @@ interface FrameOptions extends WorldResources {
   renderer: THREE.WebGLRenderer;
 }
 
+/**
+ * How far in the marble already is at scroll progress 0.
+ *
+ * It used to sit still until the reader scrolled, so the first thing anyone saw
+ * was a static frame — the least interesting moment in the sequence. A head
+ * start means the opening view is already mid-drop.
+ */
+const HEAD_START = 0.09;
+
 function createFrameRenderer(options: FrameOptions) {
-  const { camera, canvas, lanes, marbles, renderer, scene, slowest } = options;
-  const heapHeight = HOPPER.y;
-  const HEAP_RADIUS = HOPPER.radius - 1.1;
-  const workingPosition = new THREE.Vector3();
-  const fieldCentre = new THREE.Vector3();
+  const { camera, canvas, marble, renderer, scene } = options;
+  const position = new THREE.Vector3();
+  const aim = new THREE.Vector3();
+  const tangent = new THREE.Vector3();
+  const right = new THREE.Vector3();
   const ndc = new THREE.Vector3();
   let renderedFrames = 0;
 
   return () => {
-    const progress = Math.min(Math.max(options.getProgress(), 0), 1);
-    // Ease the clock so the release reads as a release rather than a jump cut.
-    const clock = progress * progress * (3 - 2 * progress) * slowest * 1.04;
+    const scroll = Math.min(Math.max(options.getProgress(), 0), 1);
+    // Ease so the run accelerates into the course rather than jump-cutting.
+    const eased = scroll * scroll * (3 - 2 * scroll);
+    const travelled = Math.min(1, HEAD_START + eased * (1 - HEAD_START));
+    const index = sampleIndexAtTime(travelled * TRACK.total);
+    const at = Math.min(0.999, index / SAMPLES);
 
-    let framedCount = 0;
-    fieldCentre.set(0, 0, 0);
-    for (const unit of marbles) {
-      const leadIndex = sampleIndexAtTime(unit.lane, clock);
-      // Constant arc-length spacing behind the lane's leader, so marbles never
-      // interpenetrate no matter how slow the section is. Time-based spacing
-      // stacked them on uphill spans and z-fought into colour noise.
-      const index = leadIndex - unit.offset * MARBLE_GAP_SAMPLES;
-      const last = unit.lane.positions.length - 1;
-      samplePositionAtIndex(unit.lane, index, workingPosition);
-      if (index < 0) {
-        // Waiting its turn. A queue strung up the entry chute put the whole
-        // field off-camera at progress 0, so the opening frame — the one that
-        // has to say "sixty-four of these" — was empty. Heap them in the hopper
-        // instead, on a golden-angle disc so the pile packs evenly and stays
-        // identical under scrub.
-        // Place from the marble's unique slot, not from its queue depth: depth
-        // is identical for the same position in every lane, so twelve marbles
-        // shared each spot and the heap of sixty-four showed about seven.
-        const place = unit.slot;
-        const angle = place * 2.399_963_23;
-        // Sit in the funnel's mouth, not below its throat. The first attempt
-        // heaped them at the base, where the taper is only 2.2 wide, so most of
-        // the field spread outside the cone and the wall hid it from a camera
-        // looking down — 64 marbles rendering, none of them visible.
-        const spread = Math.min(HEAP_RADIUS, 0.5 + Math.sqrt(place) * 0.78);
-        workingPosition.set(
-          Math.cos(angle) * spread,
-          heapHeight + Math.sin(place * 1.7) * 0.6,
-          HOPPER.z + Math.sin(angle) * spread * 0.62,
-        );
-      }
-      unit.mesh.position.copy(workingPosition);
-      unit.mesh.position.y += 0.62;
-      unit.mesh.visible = index < last;
-      const rolled = Math.max(0, index) * 2.1;
-      unit.mesh.rotation.set(unit.spin.x * rolled, unit.spin.y * rolled, -rolled);
-      if (unit.mesh.visible) {
-        fieldCentre.add(unit.mesh.position);
-        framedCount += 1;
-      }
-    }
-    if (framedCount > 0) fieldCentre.multiplyScalar(1 / framedCount);
-    else samplePosition(lanes[0], clock, fieldCentre);
+    samplePositionAtIndex(index, position);
+    marble.position.copy(position);
+    marble.position.y += MARBLE_RADIUS * 0.5;
 
-    // Behind and above the field, looking down the course so the lanes converge
-    // and the queues read in depth.
-    //
-    // Lateral position is absolute, not centroid-relative: the lane bundle spans
-    // +/-COURSE_HALF_WIDTH, and anchoring x to the field put the camera inside
-    // the tubes whenever the pack was still compact. Only height and depth
-    // follow the field.
-    //
-    // The aim point sits well to the -x side of the field, which is what pushes
-    // the field into the right half of the frame, clear of the copy column.
-    //
-    // The offset is calibrated, not guessed. data-story-ndc reports where the
-    // field lands in normalised device coordinates; two measurements gave
-    // ndc.x = -0.4375 - 0.0225 * offset, so the run needs roughly -33 to sit
-    // around +0.3. Without this the whole pack rendered at screen x ~520,
-    // underneath the copy, which read as "the marbles are missing".
-    camera.position.set(
-      COURSE_HALF_WIDTH + 7 + progress * 4,
-      fieldCentre.y + 8,
-      fieldCentre.z + 27,
-    );
-    camera.lookAt(fieldCentre.x - 33, fieldCentre.y - 2.5, fieldCentre.z - 26);
+    // Rolling follows distance covered, so it stays in step under scrub.
+    const rolled = at * 250;
+    marble.rotation.set(rolled * 0.35, rolled * 0.12, -rolled);
+
+    // Chase camera in the course's own frame: behind, above, and off to one
+    // side, so the marble is seen against the track it is running rather than
+    // from a fixed vantage. The aim point is pushed to the -right side, which is
+    // what places the marble in the right half of the frame clear of the copy
+    // column; verified by projecting to NDC rather than by eye (data-story-ndc).
+    tangent.copy(COURSE.getTangentAt(at)).normalize();
+    courseRightAt(at, right);
+    camera.position.copy(position)
+      .addScaledVector(tangent, -27)
+      .addScaledVector(right, 11)
+      .addScaledVector(UP, 12.5);
+    aim.copy(position).addScaledVector(tangent, 24).addScaledVector(right, -15);
+    aim.y -= 2.5;
+    camera.lookAt(aim);
 
     renderer.render(scene, camera);
     renderedFrames += 1;
+    ndc.copy(position).project(camera);
     canvas.dataset.storyFrames = String(renderedFrames);
-    // Diagnostics for driving the page from a headless browser: without these
-    // an empty frame is indistinguishable from a camera pointed at nothing.
-    canvas.dataset.storyMarbles = String(framedCount);
-    canvas.dataset.storyCamera = `${camera.position.x.toFixed(1)},${camera.position.y.toFixed(1)},${camera.position.z.toFixed(1)}`;
-    canvas.dataset.storyField = `${fieldCentre.x.toFixed(1)},${fieldCentre.y.toFixed(1)},${fieldCentre.z.toFixed(1)}`;
-    // Where the field lands in normalised device coordinates. Inside [-1,1] on
-    // x and y means it is genuinely on screen, which separates a framing bug
-    // from a shading or occlusion one.
-    ndc.copy(fieldCentre).project(camera);
+    canvas.dataset.storyMarble = `${position.x.toFixed(1)},${position.y.toFixed(1)},${position.z.toFixed(1)}`;
     canvas.dataset.storyNdc = `${ndc.x.toFixed(2)},${ndc.y.toFixed(2)},${ndc.z.toFixed(2)}`;
+    canvas.dataset.storyTravel = travelled.toFixed(3);
   };
 }
 
@@ -782,7 +592,7 @@ export function mountMarbleWorld(canvas: HTMLCanvasElement): MarbleWorldControll
     if (destroyed) return;
     const delta = Math.min(0.05, (now - lastTime) / 1000);
     lastTime = now;
-    currentProgress = THREE.MathUtils.damp(currentProgress, targetProgress, 5.2, delta);
+    currentProgress = THREE.MathUtils.damp(currentProgress, targetProgress, 5.4, delta);
     render();
     if (visible) frame = window.requestAnimationFrame(tick);
   };

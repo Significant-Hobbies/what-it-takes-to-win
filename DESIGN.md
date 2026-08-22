@@ -29,30 +29,37 @@
 - Primary actions use the blue accent; secondary actions remain text or outline.
 - Cards use one-pixel borders and no decorative shadows.
 - Eyebrows are uppercase mono labels that orient, not decorate.
-- The homepage is a five-chapter marble run. Sixty-four marbles are released
-  from one hopper down twelve lanes to a single finish, and scroll position
-  drives the race. The lanes are deliberately unfair: that is the argument, not
-  a flaw in the model. The former evidence overview lives at `/overview/`.
-- Every lane is generated from one condition-factor triple, the same three the
-  profiles publish. Inherited sets release height, endowment sets rolling
-  efficiency, ecosystem shapes the middle. A −1 becomes a real uphill section.
-- The five sections each do a different job to the marble, so the terrain under
-  the reader changes as the copy does: one visible release; lanes separating to
-  the heights inheritance bought; a leverage hall whose gain is proportional to
-  the speed already carried; ordered gates that hang lower along the run; and a
-  boundary of hash-derived deflection that must never look like it is rewarding
-  anything.
-- Marble liveries are jewel tones, not pastels, because the reader has to be
-  able to follow one marble. Reflectivity stays low for the same reason: a
-  mirror finish shows the environment instead of the colour.
+- The homepage is a five-chapter marble run with **one** marble. A field of
+  marbles reads as a race, and a race is a competition — the exact frame the
+  essay spends its length dismantling. One marble is a journey, and it is the
+  only thing a reader can actually follow.
+- "One of many" is carried by **ghost branches**: at each junction a translucent
+  path peels away and fades. Those are the alternatives that were available and
+  did not happen. Biography hides the branches; it does not line up rivals.
+- The course is a real obstacle course, not a slope: a release drop through a
+  funnel ring, a fast chute, a descending helix, a trussed leverage hall, a gap
+  crossed on momentum alone, gates that hang lower along the run, and a peg field
+  that deflects for no reason. A reader should be able to name what is happening.
+- The marble is generated from one condition-factor triple, the same three the
+  profiles publish. Inherited sets the height of the opening drop, endowment sets
+  rolling efficiency, ecosystem decides whether the middle helps or fights.
+- The peg field's amplitude is hash-derived, never score-derived. Luck must not
+  look like it is rewarding anything.
+- The run is already moving at scroll position zero. A static opening frame is
+  the least interesting moment in the sequence.
+- The channel barely clears the marble. Much wider and the track reads as a pipe.
+- The camera chases in the course's own frame — behind, above, off to one side —
+  and aims far enough ahead that the next obstacle is in shot. Framing the whole
+  course makes the marble too small to follow; framing only the marble loses the
+  course.
+- Lateral framing is verified by projecting the marble to normalised device
+  coordinates (`data-story-ndc`), not by eye. An earlier version put it at screen
+  x ~520, underneath the copy column: rendering every frame, invisible.
 - The three condition factors are never summed anywhere in the product, in the
   world or on a profile. A composite would be one more number to rank people by.
-- Landmarks are read sequentially rather than all at once. The camera stays
-  close and travels with the pack; framing the whole course makes the marbles
-  too small to tell apart.
-- The non-WebGL fallback is an inline SVG generated from the same lane shape,
-  never an exported render. Raster plates drifted once already: they kept
-  showing a stone observatory after the observatory was removed.
+- The non-WebGL fallback is an inline SVG generated from the same shape — one
+  path, ghost branches, one marble — never an exported render. Raster plates
+  drifted once already: they kept showing a stone observatory after it was gone.
 - Evidence coverage uses ruled ledgers, confidence bars, and explicit pending
   states; completeness and verification must never share one badge.
 - Charts always include a visible title and an accessible text label.

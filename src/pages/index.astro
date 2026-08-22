@@ -38,41 +38,24 @@ const wordSpans = (text: string) => text.split(" ");
 // Static fallback for readers who never see the marble run: reduced motion, a
 // low-capability device, or no WebGL. Generated here rather than exported as
 // raster plates — the previous five .webp stills were renders of a world that
-// had since been replaced, and nothing in the build could notice. An SVG built
-// from the same lane shape cannot drift out of step with the scene it stands in
-// for, and costs a few hundred bytes instead of 1.3 MB.
-const FALLBACK_LANES = [
-  { inherited: 3, ecosystem: 3 },
-  { inherited: 2, ecosystem: 2 },
-  { inherited: 1, ecosystem: 2 },
-  { inherited: 2, ecosystem: 3 },
-  { inherited: 0, ecosystem: 2 },
-  { inherited: 1, ecosystem: 1 },
-  { inherited: -1, ecosystem: 1 },
-  { inherited: -1, ecosystem: 0 },
-  { inherited: 0, ecosystem: -1 },
-  { inherited: 1, ecosystem: 0 },
-  { inherited: -1, ecosystem: -1 },
-  { inherited: 0, ecosystem: -1 },
+// had since been replaced, and nothing in the build could notice.
+//
+// It mirrors what the 3D shows: one path taken, and the branches that were
+// available and did not happen.
+const FALLBACK_BRANCHES = [
+  { at: 0.14, away: -1, drop: 92 },
+  { at: 0.3, away: 1, drop: 128 },
+  { at: 0.47, away: -1, drop: 104 },
+  { at: 0.63, away: 1, drop: 150 },
+  { at: 0.79, away: -1, drop: 118 },
 ];
-const FALLBACK_COLORS = [
-  "#2f5fe0", "#0f9d8a", "#d2691e", "#c2255c", "#d4a017", "#2f9e44",
-  "#6741d9", "#1c7ed6", "#c92a2a", "#74b816", "#e8590c", "#4263eb",
-];
-const fallbackLanes = FALLBACK_LANES.map((lane, index) => {
-  // Release height is what inheritance bought; the run's slope is what the
-  // ecosystem does with it. A negative ecosystem flattens toward the finish.
-  const start = 150 - lane.inherited * 22 + index * 4;
-  const end = start + 210 + lane.ecosystem * 34;
+// The lived path: a release drop, a long descent, and a shallow run-out.
+const FALLBACK_PATH = "M 70 96 C 250 150, 300 250, 470 300 C 660 356, 700 430, 900 470 C 1030 496, 1090 528, 1180 546";
+const fallbackBranches = FALLBACK_BRANCHES.map((branch) => {
+  const x = 70 + branch.at * 1110;
+  const y = 96 + branch.at * 450;
   return {
-    color: FALLBACK_COLORS[index % FALLBACK_COLORS.length],
-    end,
-    headwind: lane.ecosystem < 0 || lane.inherited < 0,
-    marbles: [0.24, 0.34, 0.44].map((t) => ({
-      x: 120 + t * 900,
-      y: start + (end - start) * t * 0.62,
-    })),
-    start,
+    d: `M ${x} ${y} C ${x + 60} ${y + branch.away * 26}, ${x + 130} ${y + branch.drop * 0.55}, ${x + 200} ${y + branch.drop}`,
   };
 });
 
@@ -130,31 +113,16 @@ const structuredData = {
           <defs>
             <linearGradient id="fallback-sky" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0" stop-color="#111826" />
-              <stop offset="1" stop-color="#0b0d12" />
+              <stop offset="1" stop-color="#080a10" />
             </linearGradient>
           </defs>
           <rect width="1200" height="700" fill="url(#fallback-sky)" />
-          {fallbackLanes.map((lane) => (
-            <>
-              <path
-                d={`M 90 ${lane.start} C 420 ${lane.start + 24}, 760 ${lane.end - 40}, 1150 ${lane.end}`}
-                fill="none"
-                stroke={lane.headwind ? "#3a3326" : "#232a3a"}
-                stroke-width="7"
-                stroke-linecap="round"
-              />
-              <path
-                d={`M 90 ${lane.start} C 420 ${lane.start + 24}, 760 ${lane.end - 40}, 1150 ${lane.end}`}
-                fill="none"
-                stroke={lane.headwind ? "#f0a36b" : "#5fd3bc"}
-                stroke-opacity={lane.headwind ? "0.5" : "0.28"}
-                stroke-width="1"
-              />
-              {lane.marbles.map((marble) => (
-                <circle cx={marble.x} cy={marble.y} r="7" fill={lane.color} />
-              ))}
-            </>
+          {fallbackBranches.map((branch) => (
+            <path d={branch.d} fill="none" stroke="#6478a0" stroke-opacity="0.22" stroke-width="9" stroke-linecap="round" />
           ))}
+          <path d={FALLBACK_PATH} fill="none" stroke="#2a3550" stroke-width="15" stroke-linecap="round" />
+          <path d={FALLBACK_PATH} fill="none" stroke="#5fd3bc" stroke-opacity="0.42" stroke-width="1.5" />
+          <circle cx="470" cy="300" r="11" fill="#ff8f3f" />
         </svg>
       </div>
       <div class="story-wash"></div>
