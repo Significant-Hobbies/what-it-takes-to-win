@@ -22,8 +22,8 @@ const auditGates = [
   { label: "Matched comparison", status: "pending", note: "No control group" },
 ];
 const {
-  title = "What It Takes to Win",
-  description = "What early conditions accelerate breakthroughs? A data-driven look at 2,500+ people and the advantages that shaped their paths.",
+  title = "Look Sideways",
+  description = `Look sideways for information, never for a verdict. ${peopleData.length.toLocaleString()} documented paths with their starting conditions, built leverage, sequence, and luck held apart.`,
   robots = "index,follow",
   canonicalPath,
   socialImage = "/og-image.png",
@@ -62,14 +62,14 @@ const isActive = (link: (typeof navLinks)[number]) =>
     <meta name="color-scheme" content="dark" />
     {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="What It Takes to Win" />
+    <meta property="og:site_name" content="Look Sideways" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
     <meta property="og:image" content={socialImageUrl} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content={`What It Takes to Win: ${peopleData.length.toLocaleString()} paths, four layers, no success formula.`} />
+    <meta property="og:image:alt" content={`Look Sideways: ${peopleData.length.toLocaleString()} documented paths, four layers, no success formula.`} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
@@ -82,9 +82,9 @@ const isActive = (link: (typeof navLinks)[number]) =>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <div class="container header-inner">
-        <a href="/" class="brand" aria-label="What It Takes to Win home">
-          <span class="brand-mark">↗</span>
-          <span class="brand-text">What It Takes to Win</span>
+        <a href="/" class="brand" aria-label="Look Sideways home">
+          <span class="brand-mark">→</span>
+          <span class="brand-text">Look Sideways</span>
         </a>
         <nav class="site-nav" aria-label="Primary navigation">
           {navLinks.map((link) => (
@@ -121,7 +121,7 @@ const isActive = (link: (typeof navLinks)[number]) =>
     <footer class="site-footer">
       <div class="container footer-inner">
         <div class="footer-primary">
-          <p class="footer-kicker">What It Takes to Win</p>
+          <p class="footer-kicker">Look Sideways</p>
           <p class="footer-statement">The same ingredients do not make the same path.</p>
           <p class="footer-summary">
             An independent research exhibit about advantage, built leverage,

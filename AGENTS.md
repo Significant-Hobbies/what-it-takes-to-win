@@ -11,7 +11,8 @@ and record durable follow-up in this repository's GitHub Issues.
 - **Local dev**: `pnpm run dev`
 - **Build/check**: `pnpm run check` then `pnpm run build`
 - **Deploy**: `pnpm run deploy` to Cloudflare Pages project `success-by-26`
-  (the internal infrastructure name; the product is **What It Takes to Win**)
+  (a legacy infrastructure name kept to avoid a redeploy; the product is
+  **Look Sideways**)
 
 ## Work tracking
 

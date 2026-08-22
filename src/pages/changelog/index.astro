@@ -4,6 +4,27 @@ import Base from "../../layouts/Base.astro";
 const repository = "https://github.com/Significant-Hobbies/what-it-takes-to-win";
 const releases = [
   {
+    date: "2026-08-22",
+    title: "Three sources, read side by side",
+    outcomes: [
+      "Every profile now opens with the condition-factor decomposition — what the person brought, what they were handed, and what surrounded them. The annotation existed on all 3,577 records but had never been surfaced anywhere in the product.",
+      "The three are shown side by side and never added together. A combined total would be one more number to rank people by, which is the reading this project refuses; held apart, the three explain why one path ran differently from another.",
+      "The scale runs −1 to 3, and a −1 is a documented headwind rather than a blank. 458 profiles record inherited conditions that actively worked against the path — poverty, displacement, family instability — and those readings are now visible instead of being collapsed into a zero.",
+      "The condition factors are documented in the data dictionary and methodology for the first time, and their coverage is reported in the gated dataset stats.",
+    ],
+  },
+  {
+    date: "2026-08-22",
+    title: "Renamed to Look Sideways, and the evidence claims corrected",
+    outcomes: [
+      "The exhibit is now Look Sideways, after the line it argues for: look sideways for information, never for a verdict. The former name promised a recipe for winning, which is the premise this project exists to dismantle.",
+      "The coverage page no longer claims the source reachability audit is complete. It reports that 2,740 of 3,577 paths carry an audit verdict and names the 837 published since the last pass, and the release verdict, gate count, and rung styling are now derived from the dataset rather than asserted.",
+      "The 837 founder-expansion records were stamped with the release they actually shipped in instead of the oldest data version, so their provenance is recoverable and the cohort can be audited on its own.",
+      "A machine-readable /openapi.json joined the agent surfaces, and the discovery audit now fails if the catalog advertises a URL the build does not produce.",
+      "README and PROJECT_STATUS figures are generated from the published dataset and checked in the quality gate, so the prose can no longer drift behind the data as it did from 2,770 to 3,577 paths.",
+    ],
+  },
+  {
     date: "2026-08-14",
     title: "The Expected Value & ROI Lab launched",
     outcomes: [
@@ -38,7 +59,7 @@ const releases = [
   },
   {
     date: "2026-07-24",
-    title: "What It Takes to Win launched",
+    title: "The research exhibit launched",
     outcomes: [
       "The full 2,585-person research set became available at paths.significanthobbies.com without downsampling.",
       "Overview, Insights, Explore, person paths, comparison questionnaires, Evidence, Methodology, and About became public.",
@@ -64,8 +85,8 @@ const releases = [
 ---
 
 <Base
-  title="Changelog | What It Takes to Win"
-  description="Meaningful improvements to the What It Takes to Win research exhibit."
+  title="Changelog | Look Sideways"
+  description="Meaningful improvements to the Look Sideways research exhibit."
   canonicalPath="/changelog/"
 >
   <section class="changelog-intro">

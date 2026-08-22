@@ -3,10 +3,14 @@ import Base from "../../layouts/Base.astro";
 import peopleData from "../../data/people.json";
 import {
   ADVANTAGE_FIELDS,
+  CONDITION_FACTOR_MAX,
+  CONDITION_FACTOR_MIN,
+  CONDITION_FACTOR_STEPS,
   LEVERAGE_FIELDS,
   LUCK_FORMS,
   SCORE_FAMILIES,
   buildPersonPath,
+  getConditionFactors,
   getPersonLeverageProvenance,
   summarizeOutcomes,
   type OutcomePerson,
@@ -20,6 +24,7 @@ export function getStaticPaths() {
 const people = peopleData as OutcomePerson[];
 const p = people.find((person) => person.person_id === Astro.params.id)!;
 const path = buildPersonPath(p, people);
+const conditionFactors = getConditionFactors(p);
 const outcomeSummary = summarizeOutcomes(people);
 const standing = outcomeSummary.tiers.find((tier) => tier.tier === p.success_tier)!;
 const standingBand = standing.rankStart === 1
@@ -52,7 +57,7 @@ const structuredData = {
       "@type": "WebPage",
       "@id": `${personUrl}#webpage`,
       url: personUrl,
-      name: `${p.name} — What It Takes to Win`,
+      name: `${p.name} — Look Sideways`,
       description: p.milestone_by_age_26,
       mainEntity: { "@id": `${personUrl}#person` },
       isPartOf: { "@id": "https://paths.significanthobbies.com/#website" },
@@ -70,7 +75,7 @@ const structuredData = {
 ---
 
 <Base
-  title={`${p.name} — What It Takes to Win`}
+  title={`${p.name} — Look Sideways`}
   description={p.milestone_by_age_26}
   structuredData={structuredData}
 >
@@ -147,6 +152,61 @@ const structuredData = {
       </div>
     )}
 
+    <section class="condition-factors" data-clarity-contract="condition-factors">
+      <div class="section-heading">
+        <p class="eyebrow">Where the conditions came from</p>
+        <h2>Three sources, read side by side</h2>
+        <p>
+          Each is placed on a &minus;1 to {CONDITION_FACTOR_MAX} scale from documented
+          evidence, and the three are never added together. A combined total would
+          rank {p.name}{" "}against other people. Held apart, they explain why this
+          path ran differently from another one&mdash;which is the only comparison
+          this project supports.
+        </p>
+      </div>
+      <div class="condition-factor-grid">
+        {conditionFactors.map((factor) => (
+          <article class={`condition-factor condition-factor-${factor.band ?? "unassessed"}`}>
+            <p class="condition-factor-gloss">{factor.gloss}</p>
+            <h3>{factor.label}</h3>
+            <p class="condition-factor-score">
+              <b>{factor.assessed ? (factor.score! > 0 ? `+${factor.score}` : String(factor.score)) : "—"}</b>
+              <span>{factor.bandLabel}</span>
+            </p>
+            <div
+              class="condition-factor-axis"
+              role="img"
+              aria-label={factor.assessed
+                ? `${factor.score} on a scale from ${CONDITION_FACTOR_MIN} to ${CONDITION_FACTOR_MAX}`
+                : "Not assessed"}
+            >
+              {CONDITION_FACTOR_STEPS.map((step) => (
+                <i
+                  class={`${step < 0 ? "negative" : ""} ${factor.score === step ? "current" : ""}`.trim() || undefined}
+                ><span>{step > 0 ? `+${step}` : String(step)}</span></i>
+              ))}
+            </div>
+            <p class="condition-factor-question">{factor.question}</p>
+            {factor.summary
+              ? <p class="condition-factor-summary">{factor.summary}</p>
+              : (
+                <p class="condition-factor-summary condition-factor-muted">
+                  The reviewed sources did not support a judgement here.
+                </p>
+              )}
+          </article>
+        ))}
+      </div>
+      <p class="condition-factor-note">
+        A &minus;1 is a documented headwind, not a missing value; a 0 means the
+        sources record nothing notable either way.
+        {p.scoring_confidence ? ` Annotation confidence: ${p.scoring_confidence}.` : ""}
+        {" "}These are analyst readings of what the sources record, not measurements
+        of merit, talent, or effort. The twenty-two scored dimensions below break the
+        same evidence down further.
+      </p>
+    </section>
+
     <div class="section-title">How this path compounded</div>
     <div class="path-flow" data-clarity-contract="person-path">
       <article class="path-step score-family-path advantage-family">
@@ -164,7 +224,7 @@ const structuredData = {
         <div class="path-label"><span>02</span> {SCORE_FAMILIES.leverage.label}</div>
         <h3>{path.leverageTotal}/{SCORE_FAMILIES.leverage.max} multiplying-capacity score</h3>
         <p>
-          Strongest observed levers:
+          Strongest observed levers:{" "}
           {path.strongestLeverage.map((field) => field.label).join(", ") || "none clearly documented"}.
         </p>
         <p class="score-family-boundary">{SCORE_FAMILIES.leverage.boundary}</p>

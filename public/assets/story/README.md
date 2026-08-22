@@ -1,6 +1,6 @@
 # Story world assets
 
-These five scene plates were generated specifically for *What It Takes to Win*
+These five scene plates were generated specifically for *Look Sideways*
 with OpenAI's built-in image generation on 2026-08-14, then converted to WebP
 for the canonical `/` landing journey. They are fallback artwork; the primary
 experience is a continuous procedural Three.js observatory rendered by
