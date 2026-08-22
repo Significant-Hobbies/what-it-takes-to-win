@@ -97,35 +97,78 @@ function buildLaneSeeds(): LaneSeed[] {
 }
 
 /**
- * A lane's centreline.
+ * The five sections, matching the five scroll chapters. Each does a different
+ * job to the marble, so the terrain under the reader changes as the copy does.
+ *
+ *   release   64 marbles leave one hopper together.
+ *   start     lanes separate to the heights their inheritance bought.
+ *   leverage  gain proportional to the speed already carried.
+ *   sequence  ordered gates: arriving early is what opens the next one.
+ *   boundary  arbitrary deflection, then the single remembered finish.
+ */
+const SECTIONS = [
+  { id: "release", from: 12, to: -18 },
+  { id: "start", from: -18, to: -72 },
+  { id: "leverage", from: -72, to: -128 },
+  { id: "sequence", from: -128, to: -184 },
+  { id: "boundary", from: -184, to: -COURSE_LENGTH },
+] as const;
+
+/** Height lost across one section for a given lane. Negative means a climb. */
+function sectionDrop(sectionId: string, seed: LaneSeed): number {
+  if (sectionId === "release") return 7;
+  if (sectionId === "start") {
+    // The starting field only sorts; it does not yet reward or punish.
+    return 5.5;
+  }
+  if (sectionId === "leverage") {
+    // Leverage multiplies what is already there. A lane arriving with a good
+    // gradient gets a steeper hall; a lane with an ecosystem headwind gets a
+    // counter-slope it has to climb on borrowed momentum.
+    return seed.ecosystem < 0 ? -3.2 : 4 + seed.ecosystem * 3.1;
+  }
+  if (sectionId === "sequence") {
+    // Compounding is order-dependent: a flat run for anyone who arrived slow.
+    return seed.ecosystem <= 0 ? 0.6 : 3.4 + seed.ecosystem * 1.2;
+  }
+  // The boundary is the same gentle fall for everyone. Luck is not scored.
+  return 4.2;
+}
+
+/**
+ * A lane's centreline, assembled section by section.
  *
  * `inherited` lifts the release point, so a high-inheritance lane starts with
- * altitude it never had to earn. `ecosystem` shapes the middle: a positive
- * ecosystem keeps the gradient working, a negative one inserts a counter-slope
- * the marble must climb.
+ * altitude it never had to earn. Everything after that is decided by which
+ * section the marble is in and what that section does to it.
  */
 function buildLaneCurve(seed: LaneSeed, index: number): THREE.CatmullRomCurve3 {
   const x = (index - (LANE_COUNT - 1) / 2) * LANE_SPACING;
-  const releaseHeight = 26 + seed.inherited * 7;
   const wobble = (jitter(index * 3.3) - 0.5) * 1.6;
   const points: THREE.Vector3[] = [];
 
-  // Release: a short steep chute so every marble gets moving.
-  points.push(new THREE.Vector3(x, releaseHeight, 12));
-  points.push(new THREE.Vector3(x, releaseHeight - 5, 2));
+  // Every lane leaves the same hopper mouth, then fans to its own line. The
+  // shared origin matters: the reader has to see one release, not twelve.
+  let height = 34 + seed.inherited * 5.5;
+  points.push(new THREE.Vector3(x * 0.18, height + 4, 16));
 
-  // Main descent in six spans. The ecosystem factor decides whether each span
-  // keeps giving height back or takes it away.
-  const spans = 6;
-  let height = releaseHeight - 5;
-  for (let span = 1; span <= spans; span += 1) {
-    const z = 2 - (COURSE_LENGTH * span) / spans;
-    const adverse = seed.ecosystem < 0 && (span === 2 || span === 4);
-    const flat = seed.ecosystem === 0 && span === 3;
-    const drop = adverse ? -2.4 : flat ? 0.4 : 2.6 + seed.ecosystem * 1.15;
-    height -= drop;
-    const lateral = x + Math.sin(span * 0.9 + index) * (0.7 + wobble * 0.35);
-    points.push(new THREE.Vector3(lateral, height, z));
+  for (const section of SECTIONS) {
+    const drop = sectionDrop(section.id, seed);
+    const steps = section.id === "boundary" ? 4 : 3;
+    for (let step = 1; step <= steps; step += 1) {
+      const t = step / steps;
+      const z = section.from + (section.to - section.from) * t;
+      height -= drop / steps;
+      // Lanes converge slightly toward the finish: many starts, one end.
+      const converge = 1 - 0.28 * ((16 - z) / (16 + COURSE_LENGTH));
+      let lateral = x * converge + Math.sin(step * 1.1 + index) * (0.5 + wobble * 0.3);
+      if (section.id === "boundary") {
+        // Arbitrary deflection, hash-derived rather than score-derived: this
+        // section must not look like it is rewarding anything.
+        lateral += (jitter(index * 13.7 + step * 5.1) - 0.5) * 3.4;
+      }
+      points.push(new THREE.Vector3(lateral, height, z));
+    }
   }
 
   return new THREE.CatmullRomCurve3(points, false, "catmullrom", 0.5);
@@ -306,6 +349,149 @@ function buildMarbles(lanes: Lane[], group: THREE.Group): MarbleUnit[] {
   return units;
 }
 
+/**
+ * Approximate track height at a given z, taken from a mid-range reference lane.
+ * Props place themselves against this rather than against hardcoded numbers,
+ * which is how the trusses and gates first ended up far below the track.
+ */
+const referenceLane: LaneSeed = { ecosystem: 1, endowment: 2, inherited: 1, marbles: 0 };
+
+function trackHeightAt(z: number): number {
+  let height = 34 + referenceLane.inherited * 5.5 + 4;
+  for (const section of SECTIONS) {
+    const drop = sectionDrop(section.id, referenceLane);
+    if (z <= section.to) {
+      height -= drop;
+      continue;
+    }
+    if (z < section.from) {
+      const t = (section.from - z) / (section.from - section.to);
+      height -= drop * t;
+    }
+    break;
+  }
+  return height;
+}
+
+/** The hopper every marble leaves from: one release, not twelve. */
+function buildHopper(group: THREE.Group) {
+  const shell = new THREE.Mesh(
+    new THREE.CylinderGeometry(7.5, 2.2, 9, 26, 1, true),
+    new THREE.MeshStandardMaterial({
+      color: COLORS.frame,
+      metalness: 0.55,
+      roughness: 0.44,
+      side: THREE.DoubleSide,
+    }),
+  );
+  shell.position.set(0, trackHeightAt(16) + 6, 18);
+  group.add(shell);
+
+  const lip = new THREE.Mesh(
+    new THREE.TorusGeometry(7.5, 0.18, 8, 34),
+    new THREE.MeshStandardMaterial({
+      color: COLORS.boost,
+      emissive: COLORS.boost,
+      emissiveIntensity: 0.35,
+      metalness: 0.6,
+      roughness: 0.34,
+    }),
+  );
+  lip.position.set(0, trackHeightAt(16) + 10.5, 18);
+  lip.rotation.x = Math.PI / 2;
+  group.add(lip);
+}
+
+/** Truss frames over the leverage hall, so the section reads as built. */
+function buildTrusses(group: THREE.Group) {
+  const material = new THREE.MeshStandardMaterial({
+    color: COLORS.rail,
+    metalness: 0.62,
+    roughness: 0.42,
+  });
+  const radius = COURSE_HALF_WIDTH + 4;
+  for (let i = 0; i < 6; i += 1) {
+    const z = -76 - i * 9.5;
+    const frame = new THREE.Mesh(new THREE.TorusGeometry(radius, 0.26, 6, 26, Math.PI), material);
+    // Arch over the lanes, springing from just below the track on either side.
+    frame.position.set(0, trackHeightAt(z) - 2, z);
+    group.add(frame);
+  }
+}
+
+/** Ordered gates: passing one early is what leaves the next one open. */
+function buildSequenceGates(group: THREE.Group) {
+  const post = new THREE.MeshStandardMaterial({
+    color: COLORS.frame,
+    metalness: 0.5,
+    roughness: 0.5,
+  });
+  const arm = new THREE.MeshStandardMaterial({
+    color: COLORS.drag,
+    emissive: COLORS.drag,
+    emissiveIntensity: 0.45,
+    metalness: 0.4,
+    roughness: 0.4,
+  });
+  for (let i = 0; i < 4; i += 1) {
+    const z = -134 - i * 13;
+    const y = trackHeightAt(z) - 2;
+    for (const side of [-1, 1]) {
+      const column = new THREE.Mesh(new THREE.BoxGeometry(0.26, 9, 0.26), post);
+      column.position.set(side * (COURSE_HALF_WIDTH + 3), y + 4, z);
+      group.add(column);
+    }
+    const bar = new THREE.Mesh(
+      new THREE.BoxGeometry(COURSE_HALF_WIDTH * 2 + 6, 0.22, 0.22),
+      arm,
+    );
+    // Later gates hang lower and tilt further: the window is closing.
+    bar.position.set(0, y + 7.2 - i * 0.6, z);
+    bar.rotation.z = i * 0.045;
+    group.add(bar);
+  }
+}
+
+/** Deflector pegs. Placement is hash-derived, never score-derived. */
+function buildLuckPegs(group: THREE.Group) {
+  const geometry = new THREE.CylinderGeometry(0.11, 0.11, 1.3, 6);
+  const material = new THREE.MeshStandardMaterial({
+    color: 0x64748f,
+    emissive: 0x2b3550,
+    emissiveIntensity: 0.28,
+    metalness: 0.4,
+    roughness: 0.5,
+  });
+  const PEG_COUNT = 46;
+  const pegs = new THREE.InstancedMesh(geometry, material, PEG_COUNT);
+  const matrix = new THREE.Matrix4();
+  for (let i = 0; i < PEG_COUNT; i += 1) {
+    const x = (jitter(i * 2.3) - 0.5) * (COURSE_HALF_WIDTH * 2 + 6);
+    const z = -188 - jitter(i * 4.7) * 46;
+    const y = trackHeightAt(z) + 0.5 + jitter(i * 6.1) * 1.4;
+    matrix.makeTranslation(x, y, z);
+    pegs.setMatrixAt(i, matrix);
+  }
+  pegs.instanceMatrix.needsUpdate = true;
+  group.add(pegs);
+}
+
+/** Finish arch: the single remembered end of sixty-four starts. */
+function buildFinish(group: THREE.Group) {
+  const arch = new THREE.Mesh(
+    new THREE.TorusGeometry(COURSE_HALF_WIDTH + 4, 0.22, 8, 40, Math.PI),
+    new THREE.MeshStandardMaterial({
+      color: COLORS.finish,
+      emissive: COLORS.finish,
+      emissiveIntensity: 0.3,
+      metalness: 0.55,
+      roughness: 0.35,
+    }),
+  );
+  arch.position.set(0, trackHeightAt(-COURSE_LENGTH) - 1.5, -COURSE_LENGTH - 2);
+  group.add(arch);
+}
+
 function buildEnvironment(scene: THREE.Scene) {
   scene.add(new THREE.HemisphereLight(0x9fc4ff, 0x0a0e16, 1.15));
 
@@ -339,20 +525,21 @@ function buildEnvironment(scene: THREE.Scene) {
   rake.position.set(46, 6, 20);
   scene.add(rake);
 
-  // Finish plane: the single remembered end of sixty-four starts.
-  const finish = new THREE.Mesh(
-    new THREE.PlaneGeometry(LANE_COUNT * LANE_SPACING + 8, 14),
-    new THREE.MeshStandardMaterial({
-      color: COLORS.finish,
-      emissive: COLORS.finish,
-      emissiveIntensity: 0.28,
-      transparent: true,
-      opacity: 0.09,
-      side: THREE.DoubleSide,
-    }),
-  );
-  finish.position.set(0, -6, -COURSE_LENGTH - 4);
-  scene.add(finish);
+  // One accent per section. The reader should feel the chapter change in the
+  // light, not only in the copy: cool at the release, warm through the leverage
+  // hall, amber at the closing gates, pale and thin at the boundary.
+  const accents: [number, number, number][] = [
+    [0x9fc4ff, 1.5, 0],
+    [0xbfe0ff, 1.3, -46],
+    [0x5fd3bc, 2.2, -100],
+    [0xf0a36b, 2.0, -156],
+    [0xffd9a0, 1.7, -212],
+  ];
+  for (const [color, intensity, z] of accents) {
+    const light = new THREE.PointLight(color, intensity * 300, 150, 2);
+    light.position.set(6, trackHeightAt(z) + 13, z);
+    scene.add(light);
+  }
 }
 
 function disposeScene(scene: THREE.Scene) {
@@ -390,6 +577,11 @@ function createWorld(renderer: THREE.WebGLRenderer, lowQuality: boolean): WorldR
     return { curve, seed, ...integrateLane(curve, seed) };
   });
   for (const lane of lanes) buildTrack(lane, trackGroup);
+  buildHopper(trackGroup);
+  buildTrusses(trackGroup);
+  buildSequenceGates(trackGroup);
+  buildLuckPegs(trackGroup);
+  buildFinish(trackGroup);
   const marbles = buildMarbles(lanes, marbleGroup);
   buildEnvironment(scene);
 
@@ -404,7 +596,7 @@ function createWorld(renderer: THREE.WebGLRenderer, lowQuality: boolean): WorldR
 
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.02;
+  renderer.toneMappingExposure = 1.12;
   renderer.shadowMap.enabled = !lowQuality;
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
@@ -468,11 +660,11 @@ function createFrameRenderer(options: FrameOptions) {
     // the tubes whenever the pack was still compact. Only height and depth
     // follow the field.
     camera.position.set(
-      COURSE_HALF_WIDTH + 17 + progress * 5,
-      fieldCentre.y + 16,
-      fieldCentre.z + 48,
+      COURSE_HALF_WIDTH + 7 + progress * 4,
+      fieldCentre.y + 8,
+      fieldCentre.z + 27,
     );
-    camera.lookAt(-6, fieldCentre.y - 5, fieldCentre.z - 36);
+    camera.lookAt(-8, fieldCentre.y - 2.5, fieldCentre.z - 26);
 
     renderer.render(scene, camera);
     renderedFrames += 1;
