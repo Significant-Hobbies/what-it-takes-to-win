@@ -1,0 +1,7 @@
+# The research corpus ships as CRLF-delimited CSV, the form the research and
+# merge pipeline produces. Line endings are preserved deliberately, so exempt
+# these files from whitespace checking: `git diff --check` counts each touched
+# line's CR as trailing whitespace, which failed `pnpm run quality:hygiene` on
+# every dataset edit even when the edit itself was clean.
+src/data/*.csv -whitespace
+data/**/*.csv -whitespace
