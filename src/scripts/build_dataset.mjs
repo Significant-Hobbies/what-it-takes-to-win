@@ -94,6 +94,49 @@ const numericFields = [
   "current_position_year",
 ];
 
+// The three condition factors are read side by side, never summed.
+//
+// The scale runs -1 to 3, not 0 to 3. A -1 is not missing data: across all 471
+// records that carry one, the paired summary describes an active headwind ("No
+// meaningful ecosystem advantages", "Learning difficulties actively
+// disadvantaged her"). A 0 is the neutral case — working-class, supportive,
+// nothing notable either way. Collapsing -1 into 0 or null would erase exactly
+// the paths that began behind.
+const conditionFactorFields = [
+  "personal_endowment_score",
+  "inherited_leverage_score",
+  "catalytic_ecosystem_score",
+];
+const CONDITION_FACTOR_MIN = -1;
+const CONDITION_FACTOR_MAX = 3;
+
+/** Parse one condition factor, keeping -1 and returning null only when absent. */
+function normalizeConditionFactor(value) {
+  if (value === "" || value == null) return null;
+  const parsed = Number(value);
+  if (Number.isNaN(parsed)) return null;
+  return Math.max(CONDITION_FACTOR_MIN, Math.min(CONDITION_FACTOR_MAX, parsed));
+}
+
+/** Collect range errors for the three condition factors on one record. */
+function conditionFactorErrors(person) {
+  const errors = [];
+  for (const field of conditionFactorFields) {
+    const value = person[field];
+    if (value === null) continue;
+    if (
+      typeof value !== "number"
+      || value < CONDITION_FACTOR_MIN
+      || value > CONDITION_FACTOR_MAX
+    ) {
+      errors.push(
+        `${person.person_id}: ${field} must be null or a number ${CONDITION_FACTOR_MIN}-${CONDITION_FACTOR_MAX}`,
+      );
+    }
+  }
+  return errors;
+}
+
 const advantageScoreFields = [
   "early_family_financial_platform_support_score",
   "parent_family_domain_advantage_score",
@@ -116,6 +159,9 @@ const out = people.map((p) => {
   }
   for (const f of advantageScoreFields) {
     if (o[f] != null) o[f] = Math.max(0, Math.min(2, o[f]));
+  }
+  for (const f of conditionFactorFields) {
+    o[f] = normalizeConditionFactor(o[f]);
   }
   o.source_urls = [...new Set(
     (o.source_urls_pipe || "")
@@ -272,6 +318,7 @@ function validateDataset(records) {
         errors.push(`${person.person_id}: ${field} outside 0-2`);
       }
     }
+    errors.push(...conditionFactorErrors(person));
     if (!Array.isArray(person.trajectory) || person.trajectory.length === 0) {
       errors.push(`${person.person_id}: missing trajectory`);
     }

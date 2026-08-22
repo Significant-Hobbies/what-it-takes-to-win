@@ -26,6 +26,13 @@ export type OutcomePerson = {
   source_count?: number;
   source_audit_status?: string;
   annotation_status?: string;
+  personal_endowment_score?: number | null;
+  inherited_leverage_score?: number | null;
+  catalytic_ecosystem_score?: number | null;
+  endowment_summary?: string;
+  inherited_summary?: string;
+  ecosystem_summary?: string;
+  scoring_confidence?: string;
   source_urls: string[];
   [key: string]: unknown;
 };
@@ -131,6 +138,136 @@ export const SCORE_FAMILIES = {
     boundary: "Measures what was present, not whether it was inherited, earned, self-built, external, or mixed.",
   },
 } as const;
+
+// The twenty-two scored dimensions answer "how much." These three answer
+// "where did it come from" — the decomposition the essay actually argues for:
+// the marble, where it was dropped, and the shape of the track.
+//
+// They are deliberately never summed. A composite would be one more number to
+// rank people by, which is the reading this project exists to refuse. Read side
+// by side, they explain a difference; added up, they score a person.
+//
+// The scale runs -1 to 3. A -1 is a documented headwind, not a missing value:
+// every record carrying one has a summary describing active disadvantage. A 0
+// is the neutral case. Treating -1 as absent would delete the paths that began
+// behind, which are the ones the argument most depends on.
+export const CONDITION_FACTOR_MIN = -1;
+export const CONDITION_FACTOR_MAX = 3;
+
+/** Every value the scale can take, negative end first, for axis rendering. */
+export const CONDITION_FACTOR_STEPS = [-1, 0, 1, 2, 3];
+
+export type ConditionFactorBand = "headwind" | "neutral" | "tailwind";
+
+export type ConditionFactor = {
+  key: string;
+  label: string;
+  gloss: string;
+  question: string;
+  summaryKey: string;
+};
+
+export const CONDITION_FACTORS: ConditionFactor[] = [
+  {
+    key: "personal_endowment_score",
+    label: "What they brought",
+    gloss: "The marble itself",
+    question:
+      "What capability, drive, or early skill is documented in the person rather than their surroundings?",
+    summaryKey: "endowment_summary",
+  },
+  {
+    key: "inherited_leverage_score",
+    label: "What they were handed",
+    gloss: "Where it was dropped",
+    question:
+      "What money, family standing, network, or permission was already in place before the work began?",
+    summaryKey: "inherited_summary",
+  },
+  {
+    key: "catalytic_ecosystem_score",
+    label: "What surrounded them",
+    gloss: "The shape of the track",
+    question:
+      "What place, timing, institution, or peer group made the next step available?",
+    summaryKey: "ecosystem_summary",
+  },
+];
+
+const BAND_LABELS: Record<ConditionFactorBand, string> = {
+  headwind: "Active headwind",
+  neutral: "Neither way",
+  tailwind: "Tailwind",
+};
+
+export function getConditionFactorBand(score: number): ConditionFactorBand {
+  if (score < 0) return "headwind";
+  if (score === 0) return "neutral";
+  return "tailwind";
+}
+
+export type ConditionFactorReading = {
+  key: string;
+  label: string;
+  gloss: string;
+  question: string;
+  score: number | null;
+  band: ConditionFactorBand | null;
+  bandLabel: string;
+  assessed: boolean;
+  summary: string;
+};
+
+/**
+ * Read the three condition factors for one person.
+ *
+ * `score` stays `null` only when the corpus has no value at all. A -1 is a real
+ * reading and reports as the `headwind` band.
+ */
+export function getConditionFactors(person: OutcomePerson): ConditionFactorReading[] {
+  return CONDITION_FACTORS.map((factor) => {
+    const raw = person[factor.key];
+    const score = typeof raw === "number" && Number.isFinite(raw)
+      ? Math.max(CONDITION_FACTOR_MIN, Math.min(CONDITION_FACTOR_MAX, raw))
+      : null;
+    const band = score === null ? null : getConditionFactorBand(score);
+    const summary = typeof person[factor.summaryKey] === "string"
+      ? String(person[factor.summaryKey]).trim()
+      : "";
+    return {
+      assessed: score !== null,
+      band,
+      bandLabel: band === null ? "Not assessed" : BAND_LABELS[band],
+      gloss: factor.gloss,
+      key: factor.key,
+      label: factor.label,
+      question: factor.question,
+      score,
+      summary,
+    };
+  });
+}
+
+/** Distribution of each factor across a cohort, split by band. */
+export function getConditionFactorCoverage(people: OutcomePerson[]) {
+  return CONDITION_FACTORS.map((factor) => {
+    const readings = people
+      .map((person) => person[factor.key])
+      .filter((raw): raw is number => typeof raw === "number" && Number.isFinite(raw));
+    const inBand = (band: ConditionFactorBand) =>
+      readings.filter((score) => getConditionFactorBand(score) === band).length;
+    return {
+      assessed: readings.length,
+      headwind: inBand("headwind"),
+      key: factor.key,
+      label: factor.label,
+      neutral: inBand("neutral"),
+      share: people.length === 0 ? 0 : Math.round((readings.length / people.length) * 1000) / 10,
+      tailwind: inBand("tailwind"),
+      unassessed: people.length - readings.length,
+    };
+  });
+}
 
 export const LEVERAGE_ORIGINS = [
   { key: "self-built", label: "Self-built", summary: "Practice, skill, focus, or distribution accumulated directly." },

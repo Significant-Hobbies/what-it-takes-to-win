@@ -49,3 +49,10 @@ source_urls_pipe,biographical_summary_or_provenance,Deduplicated source URLs sep
 annotation_status,interpretive_annotation,Signals that scores are interpretive rather than measured facts.
 source_audit_status,metadata,Whether an independent source audit has been completed.
 data_version,metadata,See methodology and taxonomy; field name is intentionally descriptive.
+personal_endowment_score,condition_factor,"What the person brought: documented capability, drive, or early skill. Scale -1 to 3, where -1 is an active headwind (for example a documented learning disability), 0 is nothing notable either way, and 3 is exceptional. Never summed with the other two condition factors."
+inherited_leverage_score,condition_factor,"What the person was handed before the work began: money, family standing, network, or permission. Scale -1 to 3, where -1 is an active headwind (poverty, instability, displacement) and 3 is substantial inherited advantage. Never summed with the other two condition factors."
+catalytic_ecosystem_score,condition_factor,"What surrounded the person: place, timing, institutions, and peer group. Scale -1 to 3, where -1 is an active headwind (no infrastructure, mentors, or access) and 3 is an exceptionally catalytic environment. Never summed with the other two condition factors."
+endowment_summary,condition_factor,Prose evidence behind personal_endowment_score.
+inherited_summary,condition_factor,Prose evidence behind inherited_leverage_score.
+ecosystem_summary,condition_factor,Prose evidence behind catalytic_ecosystem_score.
+scoring_confidence,condition_factor,Annotator confidence in the three condition-factor readings for this record.

@@ -132,6 +132,14 @@ const contracts = [
     name: "Connected person path",
     file: "person/bill-gates/index.html",
     markers: [
+      // The condition factors must keep their two load-bearing disclosures: that
+      // the three are never combined into a rank, and that a -1 is a documented
+      // headwind rather than a blank. Both are easy to lose in an edit.
+      'data-clarity-contract="condition-factors"',
+      "Three sources, read side by side",
+      "never added together",
+      "documented headwind, not a missing value",
+      "not measurements",
       'data-clarity-contract="person-path"',
       "Starting advantages",
       "Built or converted leverage",

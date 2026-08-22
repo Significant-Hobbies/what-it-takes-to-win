@@ -8,9 +8,15 @@ import {
   getLeverageTotal,
   getPathCounterexamples,
   getPersonLeverageProvenance,
+  getConditionFactorBand,
+  getConditionFactorCoverage,
+  getConditionFactors,
   getStrongestFields,
   getTierDefinition,
   isComparisonPageIndexable,
+  CONDITION_FACTORS,
+  CONDITION_FACTOR_MAX,
+  CONDITION_FACTOR_MIN,
   LEVERAGE_FIELDS,
   SCORE_FAMILIES,
   summarizeOutcomes,
@@ -218,4 +224,71 @@ test("path comparisons and person summaries remain deterministic", () => {
   assert.equal(path.tierDefinition.tier, 1);
   assert.equal(getPathCounterexamples([person({ source_count: 0 })]).length, 0);
   assert.equal(getStrongestFields(person(), LEVERAGE_FIELDS).length, 0);
+});
+
+test("condition factors distinguish headwind, neutral, and tailwind", () => {
+  const readings = getConditionFactors(
+    person({
+      personal_endowment_score: 2,
+      endowment_summary: "  Documented early skill.  ",
+      inherited_leverage_score: 0,
+      inherited_summary: "Working class, supportive, nothing notable either way.",
+      catalytic_ecosystem_score: -1,
+      ecosystem_summary: "No mentors, no institutions, no tools.",
+    }),
+  );
+
+  assert.equal(readings.length, CONDITION_FACTORS.length);
+  assert.deepEqual(readings.map((r) => r.score), [2, 0, -1]);
+  // A -1 is a recorded finding, not a gap: all three are assessed here.
+  assert.deepEqual(readings.map((r) => r.assessed), [true, true, true]);
+  assert.deepEqual(readings.map((r) => r.band), ["tailwind", "neutral", "headwind"]);
+  assert.equal(readings[2].bandLabel, "Active headwind");
+  assert.equal(readings[0].summary, "Documented early skill.");
+  assert.equal(readings[0].label, "What they brought");
+  assert.equal(readings[2].gloss, "The shape of the track");
+  assert.ok(readings[1].question.length > 0);
+});
+
+test("condition factor bands split at zero", () => {
+  assert.equal(getConditionFactorBand(-1), "headwind");
+  assert.equal(getConditionFactorBand(0), "neutral");
+  assert.equal(getConditionFactorBand(1), "tailwind");
+  assert.equal(getConditionFactorBand(CONDITION_FACTOR_MAX), "tailwind");
+});
+
+test("condition factors clamp overflow and reject non-numeric input", () => {
+  const readings = getConditionFactors(
+    person({
+      personal_endowment_score: -9,
+      inherited_leverage_score: 9,
+      catalytic_ecosystem_score: "2",
+      endowment_summary: 42,
+    }),
+  );
+
+  assert.equal(readings[0].score, CONDITION_FACTOR_MIN, "scores clamp to the documented minimum");
+  assert.equal(readings[0].summary, "", "a non-string summary is dropped");
+  assert.equal(readings[1].score, CONDITION_FACTOR_MAX, "scores clamp to the documented maximum");
+  assert.equal(readings[2].score, null, "an unparsed string is not treated as a number");
+  assert.equal(readings[2].assessed, false);
+  assert.equal(readings[2].bandLabel, "Not assessed");
+});
+
+test("condition factor coverage counts each band separately", () => {
+  const people = [
+    person({ personal_endowment_score: 2, inherited_leverage_score: -1, catalytic_ecosystem_score: 3 }),
+    person({ personal_endowment_score: 0, inherited_leverage_score: null, catalytic_ecosystem_score: 2 }),
+    person({ personal_endowment_score: 1, inherited_leverage_score: -1, catalytic_ecosystem_score: 0 }),
+    person({ personal_endowment_score: 3, inherited_leverage_score: 2, catalytic_ecosystem_score: 1 }),
+  ];
+  const coverage = getConditionFactorCoverage(people);
+
+  assert.deepEqual(coverage.map((c) => c.assessed), [4, 3, 4]);
+  assert.deepEqual(coverage.map((c) => c.unassessed), [0, 1, 0]);
+  assert.deepEqual(coverage.map((c) => c.headwind), [0, 2, 0]);
+  assert.deepEqual(coverage.map((c) => c.neutral), [1, 0, 1]);
+  assert.deepEqual(coverage.map((c) => c.tailwind), [3, 1, 3]);
+  assert.deepEqual(coverage.map((c) => c.share), [100, 75, 100]);
+  assert.deepEqual(getConditionFactorCoverage([]).map((c) => c.share), [0, 0, 0]);
 });

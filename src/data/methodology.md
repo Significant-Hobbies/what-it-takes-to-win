@@ -161,6 +161,45 @@ confidence. Missing evidence never becomes “self-built.” This is a transpare
 deterministic reading of the current annotations—not a measurement of merit, a
 self-made percentage, or a claim about private effort.
 
+## Condition factors (−1 to 3, read separately)
+
+Alongside the twenty-two scored dimensions, every record carries three condition
+factors that answer a different question. The dimensions describe *how much* of
+something was present. These describe *where it came from*:
+
+- **`personal_endowment_score` — what they brought.** Documented capability,
+  drive, or early skill located in the person rather than their surroundings.
+- **`inherited_leverage_score` — what they were handed.** Money, family
+  standing, network, or permission already in place before the work began.
+- **`catalytic_ecosystem_score` — what surrounded them.** Place, timing,
+  institutions, and peer group that made the next step available.
+
+Each runs from −1 to 3:
+
+| Value | Meaning |
+| --- | --- |
+| **−1** | An active headwind. The record documents a condition working against the path—poverty, displacement, a learning disability, absent infrastructure. |
+| **0** | Nothing notable either way. Neither a documented advantage nor a documented obstacle. |
+| **1–3** | An increasing tailwind, where 3 is exceptional. |
+
+A −1 is a reading, not a missing value. Every record carrying one has a paired
+prose summary describing the disadvantage. Collapsing −1 into 0 would erase the
+distinction between a path that began level and a path that began behind, which
+is the distinction this project exists to make visible.
+
+Each score has a matching prose field (`endowment_summary`, `inherited_summary`,
+`ecosystem_summary`) holding the evidence it rests on, plus a
+`scoring_confidence` for the set.
+
+**The three factors are never summed.** A combined total would be one more
+number to rank people by, and ranking is the interpretation this project
+refuses. Read side by side they explain why two paths diverged. Added together
+they would score a person, which the evidence does not support and the argument
+does not permit.
+
+These remain analyst readings of what sources record. They are not measurements
+of merit, talent, or effort, and a −1 is not a claim about anyone's capacity.
+
 ## Person-specific comparison
 
 Every published profile has an `/am-i-the-next/<person>/` questionnaire. It uses
