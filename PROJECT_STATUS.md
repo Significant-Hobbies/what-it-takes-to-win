@@ -43,6 +43,10 @@ formula or a repeatable identity.
 
 ## Timeline
 
+- 2026-08-23 — selected and completed the Kinetic Essay homepage: a continuous
+  paper-and-ink composition with a scroll-driven SVG marble course, prominent
+  essays, a compact mobile race register, and no WebGL dependency on the story
+  surface
 - 2026-08-23 — completed a public-surface design pass across all 15 product
   surfaces: consolidated navigation around Explore, Essays, Methodology, and
   Evidence; rebuilt Explore as a research atlas; strengthened profile,
@@ -151,7 +155,8 @@ formula or a repeatable identity.
 - Ultracite/Biome lint contract with zero findings across 35 applicable source
   and configuration files, enforced by `pnpm run ready`
 - Owned editorial product changelog at `/changelog`
-- Dark, dense, scannable visualization UI
+- Light, editorial, scannable visualization UI with a shared paper-and-ink
+  surface system
 - Fleet-aligned design context, visible keyboard focus, skip navigation, active-page state, reduced-motion handling, accessible search/chart labels, and responsive CTA hierarchy
 - Custom Open Graph share surface and complete Open Graph/Twitter metadata
 - Search-ready discovery surfaces: real 404 responses, public robots.txt, a build-derived canonical sitemap (see Dataset Stats), and evidence-gated comparison indexing

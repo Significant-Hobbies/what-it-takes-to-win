@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Direction B — Counterfactual Broadcast</title>
+  <link rel="stylesheet" href="probes.css">
+  <style>
+    :root { --ink:#111315; --paper:#eeeadd; --signal:#ff5a36; --blue:#2352ff; }
+    body { background: var(--paper); color: var(--ink); }
+    .mast { height: 62px; display: grid; grid-template-columns: 1fr 1.4fr 1fr; align-items: center; padding: 0 28px; border-bottom: 2px solid var(--ink); background: var(--paper); }
+    .brand { font-size: 17px; font-weight: 900; letter-spacing: -.045em; }
+    .mast nav { display:flex; justify-content:center; gap:22px; font-size:10px; font-weight:750; text-transform:uppercase; letter-spacing:.09em; }
+    .mast .live { justify-self:end; display:flex; align-items:center; gap:8px; color:var(--signal); font-size:10px; font-weight:850; letter-spacing:.12em; text-transform:uppercase; }
+    .live::before { width:7px;height:7px;border-radius:50%;background:var(--signal);content:"";box-shadow:0 0 0 4px rgba(255,90,54,.12); }
+    .broadcast { display:grid; grid-template-columns:minmax(0,1.8fr) minmax(315px,.72fr); min-height:730px; border-bottom:2px solid var(--ink); }
+    .race-feed { position:relative; overflow:hidden; min-height:730px; background:var(--ink); color:var(--paper); border-right:2px solid var(--ink); }
+    .feed-head { position:absolute; z-index:8; top:24px; left:26px; right:26px; display:flex; justify-content:space-between; color:rgba(238,234,221,.58); font-size:10px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+    .feed-head strong { color:var(--paper); }
+    .course { position:absolute; inset:105px -1% 108px; perspective:900px; transform:rotate(-3deg); }
+    .stripe { position:absolute; left:-8%; width:116%; height:112px; transform:rotate(-6deg) skewX(-12deg); border-top:1px solid rgba(255,255,255,.2); border-bottom:1px solid rgba(255,255,255,.2); background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.01)),repeating-linear-gradient(90deg,transparent 0 12%,rgba(255,255,255,.05) 12.1% 12.25%); box-shadow:inset 0 30px 50px #050505; }
+    .stripe:nth-child(1){top:18px}.stripe:nth-child(2){top:184px;left:-2%;transform:rotate(4deg) skewX(-8deg)}.stripe:nth-child(3){top:350px;left:-6%;transform:rotate(-2deg) skewX(-18deg)}
+    .stripe::after{position:absolute;left:0;right:0;top:50%;height:1px;background:rgba(255,255,255,.16);content:""}
+    .sphere { width:49px; }
+    .sphere.red { --marble:#ff5a36;--marble-hi:#ffd0bd;--marble-lo:#851d09;left:61%;top:75px; }
+    .sphere.blue { --marble:#3e66ff;--marble-hi:#d6ddff;--marble-lo:#0b216c;left:45%;top:241px; }
+    .sphere.cream { --marble:#e7d69c;--marble-hi:#fff8dd;--marble-lo:#6d5720;left:70%;top:407px; }
+    .caption { position:absolute; z-index:8; left:26px; bottom:24px; width:70%; }
+    .caption .eyebrow { color:#ff795d; }
+    .caption h1 { margin:10px 0 0; max-width:720px; font-size:clamp(43px,5vw,72px); line-height:.94; letter-spacing:-.057em; }
+    .analysis { display:flex; flex-direction:column; background:var(--paper); }
+    .analysis-head { padding:22px 24px 18px; border-bottom:2px solid var(--ink); }
+    .analysis-head h2 { margin:8px 0 0; font-size:26px; line-height:1.02; letter-spacing:-.045em; }
+    .chapter-list { flex:1; display:grid; grid-template-rows:repeat(5,1fr); }
+    .chapter-item { display:grid; grid-template-columns:44px 1fr; gap:12px; padding:16px 20px; border-bottom:1px solid rgba(17,19,21,.24); color:rgba(17,19,21,.48); }
+    .chapter-item .num { font-size:11px; font-weight:850; }
+    .chapter-item strong { display:block; margin-bottom:5px; color:inherit; font-size:13px; }
+    .chapter-item p { margin:0; font-size:11px; line-height:1.42; }
+    .chapter-item.active { background:var(--blue); color:white; }
+    .begin { margin:20px; display:flex; justify-content:space-between; align-items:center; padding:14px 15px; border:0; background:var(--signal); color:#fff; font-size:11px; font-weight:850; text-transform:uppercase; letter-spacing:.08em; }
+    .ticker { display:grid; grid-template-columns:auto 1fr auto; background:var(--ink); color:var(--paper); border-bottom:2px solid var(--ink); }
+    .ticker > * { padding:13px 18px; border-right:1px solid rgba(238,234,221,.25); }
+    .ticker strong { background:var(--signal); font-size:11px; letter-spacing:.1em; text-transform:uppercase; }
+    .ticker p { margin:0; font-size:12px; }
+    .ticker span { color:#ff795d; font-weight:800; font-size:11px; }
+    .essays { display:grid; grid-template-columns:220px 1fr 1fr; border-bottom:2px solid var(--ink); }
+    .essays > * { min-height:210px; padding:25px; border-right:1px solid rgba(17,19,21,.36); }
+    .essays h3 { margin:42px 0 12px; max-width:370px; font-size:25px; line-height:1.02; letter-spacing:-.04em; }
+    .essays p { margin:0; color:#66645d; font-size:12px; line-height:1.5; }
+    @media(max-width:800px){.mast{grid-template-columns:1fr auto}.mast nav{display:none}.broadcast{grid-template-columns:1fr}.analysis{display:none}.race-feed{min-height:720px}.caption{width:88%}.essays{grid-template-columns:1fr}.essays>header{min-height:auto}.ticker{grid-template-columns:auto 1fr}.ticker span{display:none}}
+  </style>
+</head>
+<body>
+  <header class="mast"><a class="brand" href="#">LOOK SIDEWAYS</a><nav><a href="#">Story</a><a href="#">Atlas</a><a href="#">Compare</a><a href="#">Essays</a><a href="#">Evidence</a></nav><span class="live">Counterfactual feed / B</span></header>
+  <main>
+    <section class="broadcast">
+      <div class="race-feed"><div class="feed-head"><span><strong>3,577</strong> documented paths</span><span>Race state / starting lines</span></div><div class="course" aria-hidden="true"><div class="stripe"></div><div class="stripe"></div><div class="stripe"></div><i class="sphere red"></i><i class="sphere blue"></i><i class="sphere cream"></i></div><header class="caption"><p class="eyebrow">Chapter 01 / Conditions</p><h1>The lead changes when the conditions do.</h1></header></div>
+      <aside class="analysis"><div class="analysis-head"><p class="eyebrow">The argument / live</p><h2>Three marbles.<br>One course.</h2></div><div class="chapter-list"><div class="chapter-item active"><span class="num">01</span><div><strong>Starting lines</strong><p>Access is already uneven before the first visible move.</p></div></div><div class="chapter-item"><span class="num">02</span><div><strong>Timing</strong><p>The same choice lands differently in a different moment.</p></div></div><div class="chapter-item"><span class="num">03</span><div><strong>Leverage</strong><p>Small advantages compound after an opening appears.</p></div></div><div class="chapter-item"><span class="num">04</span><div><strong>Sequence</strong><p>Order changes what each later choice can do.</p></div></div><div class="chapter-item"><span class="num">05</span><div><strong>Luck</strong><p>Some turns are encountered, not authored.</p></div></div></div><button class="begin"><span>Begin the race</span><span>→</span></button></aside>
+    </section>
+    <div class="ticker"><strong>Reading contract</strong><p>Selected successful outliers. No control group. No forecast.</p><span>Evidence, not prediction</span></div>
+    <section class="essays"><header><p class="eyebrow">Essays / 02</p></header><article><p class="eyebrow">01 / Sequence</p><h3>Success stories hide the roads not taken.</h3><p>8 min read&nbsp;&nbsp; ↗</p></article><article><p class="eyebrow">02 / Conditions</p><h3>Similar ingredients do not reproduce the same outcome.</h3><p>6 min read&nbsp;&nbsp; ↗</p></article></section>
+  </main>
+  <div class="probe-note">Direction probe / not production</div>
+</body>
+</html>

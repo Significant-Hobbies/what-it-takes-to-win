@@ -19,13 +19,16 @@ outlier and no-control-group boundaries, distinguish starting position from
 built or converted leverage, and keep luck explicit and unscored. No causal
 claims, predictions, remote runtime assets, or borrowed visual motifs.
 
-Direction: A dark, open research channel where three marbles enter with unequal
-starting conditions and visibly diverge. Ruled evidence panels, restrained
-mint/cobalt/amber signals, and the system mono/sans pairing keep the argument
-continuous with the rest of Look Sideways. The memorable moment is the first
-viewport's three-path experiment: one visible outcome, several surviving
-branches, and no closed machine pretending to explain the result.
+Direction: Kinetic Essay. A warm paper reading column and an annotated course
+share one continuous plane. Three marbles travel one scroll-scrubbed SVG course
+and trade the lead as the active chapter changes which condition matters. Sober
+book type carries the major argument; precise sans labels, ink rules, route blue,
+vermilion, and ochre carry evidence. The memorable moment is the first viewport's
+full-height moving diagram with the argument written directly beside it—never a
+dark inset, podium, dashboard, or decorative atlas rail.
 
 Responsive and access: Semantic document order is complete without JavaScript.
-Below tablet width and under reduced motion, chapters read in normal flow and
-pinning yields to clarity.
+At tablet and phone widths the diagram moves inline above the chapters and the
+essay index stays visible. Reduced motion receives a deliberate static race
+state. Native scrolling, keyboard navigation, and selectable prose are never
+intercepted by the effect.

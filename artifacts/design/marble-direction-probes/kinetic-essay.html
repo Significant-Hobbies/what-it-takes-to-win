@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Direction C — Kinetic Essay</title>
+  <link rel="stylesheet" href="probes.css">
+  <style>
+    :root{--paper:#f2f0e7;--ink:#1c1c19;--red:#db422e;--blue:#315f91;--rule:#b7b3a7}
+    body{background:var(--paper);color:var(--ink)}
+    .page{position:relative;min-height:790px;overflow:hidden;border-bottom:1px solid var(--ink)}
+    .nav{position:relative;z-index:10;height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 4.4vw;border-bottom:1px solid var(--rule)}
+    .brand{font-size:16px;font-weight:900;letter-spacing:-.04em}
+    .nav nav{display:flex;gap:24px;color:#62615b;font-size:10px;font-weight:750;letter-spacing:.08em;text-transform:uppercase}
+    .nav .dir{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
+    .opening{position:relative;z-index:5;display:grid;grid-template-columns:minmax(420px,.84fr) 1.3fr;min-height:714px}
+    .copy{padding:7vh 3vw 48px 4.4vw;display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid var(--rule)}
+    .copy .eyebrow{color:var(--red)}
+    h1{max-width:610px;margin:20px 0 20px;font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:clamp(56px,6vw,90px);line-height:.92;letter-spacing:-.055em}
+    .dek{max-width:430px;margin:0;color:#66635d;font-size:16px;line-height:1.5}
+    .bottomline{display:flex;justify-content:space-between;align-items:end;gap:30px;border-top:1px solid var(--rule);padding-top:18px}
+    .bottomline strong{display:block;font-family:Georgia,serif;font-size:28px;font-weight:500}
+    .bottomline span{font-size:10px;text-transform:uppercase;letter-spacing:.1em}
+    .bottomline button{padding:11px 15px;border:1px solid var(--ink);background:transparent;color:var(--ink);font-size:11px;font-weight:800}
+    .diagram{position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(183,179,167,.14) 1px,transparent 1px),linear-gradient(rgba(183,179,167,.14) 1px,transparent 1px);background-size:48px 48px}
+    .diagram::before{position:absolute;inset:0;background:linear-gradient(110deg,transparent 0 42%,rgba(255,255,255,.45) 42% 43%,transparent 43%);content:""}
+    .route{position:absolute;left:4%;width:100%;height:128px;border:2px solid var(--ink);border-left:0;border-right:0;border-radius:50% 5% 55% 4%;transform-origin:center;background:rgba(242,240,231,.66);box-shadow:inset 0 0 0 13px rgba(28,28,25,.03)}
+    .route::after{position:absolute;left:0;right:0;top:50%;border-top:1px dashed rgba(28,28,25,.4);content:""}
+    .route.one{top:12%;transform:rotate(7deg)}.route.two{top:39%;left:-2%;transform:rotate(-9deg)}.route.three{top:67%;transform:rotate(4deg)}
+    .sphere{width:42px;border-color:rgba(28,28,25,.6);box-shadow:inset -7px -8px 12px rgba(0,0,0,.18),5px 8px 0 rgba(28,28,25,.12)}
+    .sphere.red{--marble:#dd4a34;--marble-hi:#ffd1bd;--marble-lo:#76190f;left:67%;top:21%}.sphere.blue{--marble:#46739f;--marble-hi:#d8ecff;--marble-lo:#163550;left:42%;top:48%}.sphere.gold{--marble:#d0a64a;--marble-hi:#fff1bd;--marble-lo:#65501f;left:74%;top:75%}
+    .annotation{position:absolute;z-index:6;max-width:185px;padding-top:8px;border-top:2px solid var(--ink);font-size:11px;line-height:1.42}
+    .annotation strong{display:block;margin-bottom:3px;font-size:10px;letter-spacing:.1em;text-transform:uppercase}.a1{left:8%;top:8%}.a2{right:4%;top:44%;border-color:var(--red)}.a3{left:13%;bottom:5%;border-color:var(--blue)}
+    .path-label{position:absolute;z-index:6;right:4%;top:8%;font-family:Georgia,serif;font-size:21px;font-style:italic}
+    .essay-band{display:grid;grid-template-columns:.58fr 1fr 1fr;background:var(--paper)}
+    .essay-band>*{min-height:270px;padding:30px 4vw;border-right:1px solid var(--rule)}
+    .essay-band header{display:flex;flex-direction:column;justify-content:space-between}
+    .essay-band header strong{font-family:Georgia,serif;font-size:25px;font-weight:500;line-height:1.08}
+    .essay-band article{display:flex;flex-direction:column;justify-content:space-between}
+    .essay-band h2{max-width:420px;margin:28px 0 18px;font-family:Georgia,serif;font-size:32px;font-weight:500;line-height:1.02;letter-spacing:-.03em}
+    .essay-band footer{display:flex;justify-content:space-between;padding-top:16px;border-top:1px solid var(--rule);font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+    @media(max-width:800px){.nav nav{display:none}.opening{grid-template-columns:1fr}.copy{min-height:630px;border-right:0}.diagram{min-height:620px;border-top:1px solid var(--rule)}.essay-band{grid-template-columns:1fr}.essay-band>*{border-bottom:1px solid var(--rule)}h1{font-size:58px}}
+  </style>
+</head>
+<body>
+  <main>
+    <section class="page"><header class="nav"><a class="brand" href="#">Look Sideways</a><nav><a href="#">Story</a><a href="#">Atlas</a><a href="#">Compare</a><a href="#">Essays</a><a href="#">Evidence</a></nav><span class="dir">C / Kinetic Essay</span></header><div class="opening"><section class="copy"><div><p class="eyebrow">A visual argument about success</p><h1>The path you remember is one of many.</h1><p class="dek">Three marbles. One course. The lead changes when the conditions do.</p></div><div class="bottomline"><div><span>Documented paths</span><strong>3,577</strong></div><button>Begin the race&nbsp; →</button></div></section><section class="diagram" aria-label="Marble race course"><span class="path-label">Same course, different conditions.</span><div class="route one"></div><div class="route two"></div><div class="route three"></div><i class="sphere red"></i><i class="sphere blue"></i><i class="sphere gold"></i><p class="annotation a1"><strong>01 / Starting lines</strong>Access is already uneven before the first visible choice.</p><p class="annotation a2"><strong>02 / Timing</strong>The same move lands differently in a different moment.</p><p class="annotation a3"><strong>Reading contract</strong>Selected successful outliers. No control group. No forecast.</p></section></div></section>
+    <section class="essay-band"><header><p class="eyebrow">The argument continues</p><strong>Two essays.<br>One evidence room.</strong><small>Essays / 02</small></header><article><div><p class="eyebrow">Essay 01 / Sequence</p><h2>Success stories hide the roads not taken.</h2></div><footer><span>8 min read</span><span>Open ↗</span></footer></article><article><div><p class="eyebrow">Essay 02 / Conditions</p><h2>Similar ingredients do not reproduce the same outcome.</h2></div><footer><span>6 min read</span><span>Open ↗</span></footer></article></section>
+  </main>
+  <div class="probe-note">Direction probe / not production</div>
+</body>
+</html>

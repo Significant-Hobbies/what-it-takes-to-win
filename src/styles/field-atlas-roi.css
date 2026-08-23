@@ -1,0 +1,117 @@
+/* Field Atlas translation for ROI Lab. The calculator remains an instrument,
+   but it is a ruled field worksheet rather than a black dashboard panel. */
+
+.roi-main { color: var(--survey-ink); }
+
+.roi-kicker,
+.roi-step {
+  color: var(--route-red);
+  font-family: var(--sans);
+  letter-spacing: .02em;
+}
+
+.roi-intro {
+  position: relative;
+  border-bottom: 2px solid var(--survey-ink);
+}
+
+.roi-intro::after {
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+  width: 24%;
+  height: 6px;
+  background: var(--route-red);
+  content: "";
+}
+
+.roi-definition,
+.roi-ledger,
+.roi-proof,
+.roi-effort-exhibit {
+  border-radius: 0;
+  border-color: var(--survey-ink);
+  background: transparent;
+  box-shadow: none;
+}
+
+.roi-definition { border: 0; border-top: 5px solid var(--route-blue); border-bottom: 1px solid var(--survey-ink); }
+.roi-definition > div { border-color: var(--border); }
+.roi-definition p { color: var(--route-blue); }
+.roi-definition strong { color: var(--survey-ink); }
+
+.roi-workbench { gap: 1px; background: var(--survey-ink); border-bottom: 1px solid var(--survey-ink); }
+.roi-ledger,
+.roi-proof { border: 0; background: var(--sheet); }
+
+.roi-ledger-section { border-color: var(--border); }
+.roi-frame-section { background: var(--index-sheet); }
+.roi-ledger-footer { background: var(--index-sheet); border-top: 1px solid var(--survey-ink); }
+
+.roi-section-heading h2,
+.roi-proof-status strong,
+.roi-proof-section-heading h3,
+.roi-path-label strong,
+.roi-effort-copy h2 { color: var(--survey-ink); }
+
+.roi-field input,
+.roi-field select,
+.roi-row input,
+.roi-row select,
+.roi-probability-check {
+  border-color: var(--border);
+  border-radius: 3px;
+  background: rgba(255,255,255,.42);
+  color: var(--survey-ink);
+}
+
+.roi-field input::placeholder,
+.roi-row input::placeholder { color: #6f7f78; }
+
+.roi-stage-guide {
+  border: 0;
+  border-block: 1px solid var(--border);
+  border-radius: 0;
+  background: transparent;
+}
+
+.roi-rows,
+.roi-row,
+.roi-primary-result,
+.roi-result-grid,
+.roi-allocation,
+.roi-formula-proof,
+.roi-contributions { border-color: var(--border); }
+
+.roi-cell-output,
+.roi-primary-result output,
+.roi-result-grid dd,
+.roi-allocation-list dd,
+.roi-contribution-row > span { color: var(--survey-ink); }
+
+.roi-add-button,
+.roi-button { border-radius: 3px; }
+.roi-button-primary { background: var(--route-blue); color: #fff; }
+
+.roi-proof { position: sticky; top: 80px; }
+.roi-proof-status { background: var(--index-sheet); border-color: var(--route-red); }
+.roi-proof-status[data-state="complete"] { background: var(--index-sheet); border-color: var(--route-lichen); }
+
+.roi-allocation-bar,
+.roi-contribution-track,
+.roi-path-bar { background: color-mix(in srgb, var(--survey-ink) 12%, transparent); }
+
+.roi-effort-exhibit {
+  border: 0;
+  border-top: 2px solid var(--survey-ink);
+  border-bottom: 1px solid var(--survey-ink);
+  background: var(--index-sheet);
+}
+
+.roi-path-bar { border-radius: 0; }
+
+@media (max-width: 900px) {
+  .roi-workbench { gap: 20px; background: transparent; border-bottom: 0; }
+  .roi-ledger,
+  .roi-proof { border: 1px solid var(--survey-ink); }
+}

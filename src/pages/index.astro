@@ -7,7 +7,7 @@ import {
   getAdvantageTotal,
   type OutcomePerson,
 } from "../lib/outcome-model";
-import "../styles/story.css";
+import "../styles/kinetic-essay-story.css";
 
 const people = peopleData as OutcomePerson[];
 const total = people.length;
@@ -26,38 +26,12 @@ const highConfidence = people.filter(
 const cohortCount = new Set(people.map((person) => person.cohort_group)).size;
 
 const chapters = [
-  { id: "the-survivor", label: "The survivor", short: "Survivor" },
-  { id: "the-start", label: "The starting field", short: "Start" },
-  { id: "the-levers", label: "What multiplies", short: "Leverage" },
-  { id: "the-sequence", label: "What compounds", short: "Sequence" },
-  { id: "the-boundary", label: "What stays unknowable", short: "Boundary" },
+  { id: "the-survivor", label: "Survivor selection" },
+  { id: "the-start", label: "Starting position" },
+  { id: "the-levers", label: "Built leverage" },
+  { id: "the-sequence", label: "Sequence" },
+  { id: "the-boundary", label: "Luck and limits" },
 ];
-
-const wordSpans = (text: string) => text.split(" ");
-
-// Static fallback for readers who never see the marble run: reduced motion, a
-// low-capability device, or no WebGL. Generated here rather than exported as
-// raster plates — the previous five .webp stills were renders of a world that
-// had since been replaced, and nothing in the build could notice.
-//
-// It mirrors what the 3D shows: one path taken, and the branches that were
-// available and did not happen.
-const FALLBACK_BRANCHES = [
-  { at: 0.14, away: -1, drop: 92 },
-  { at: 0.3, away: 1, drop: 128 },
-  { at: 0.47, away: -1, drop: 104 },
-  { at: 0.63, away: 1, drop: 150 },
-  { at: 0.79, away: -1, drop: 118 },
-];
-// The lived path: a release drop, a long descent, and a shallow run-out.
-const FALLBACK_PATH = "M 70 96 C 250 150, 300 250, 470 300 C 660 356, 700 430, 900 470 C 1030 496, 1090 528, 1180 546";
-const fallbackBranches = FALLBACK_BRANCHES.map((branch) => {
-  const x = 70 + branch.at * 1110;
-  const y = 96 + branch.at * 450;
-  return {
-    d: `M ${x} ${y} C ${x + 60} ${y + branch.away * 26}, ${x + 130} ${y + branch.drop * 0.55}, ${x + 200} ${y + branch.drop}`,
-  };
-});
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -99,456 +73,276 @@ const structuredData = {
   mainClass="story-main"
 >
   <!--
-    THESIS: A famous outcome is the last visible frame of a branching path, not a reproducible recipe.
-    OWN-WORLD: The Impossible Observatory—daylit limestone, brass instruments, transparent trajectories, and cobalt evidence light.
-    STORY: Move from the selected survivor through starting position and leverage to sequence, uncertainty, and grounded agency.
-    FIRST VIEWPORT: One decisive sentence occupies the left while 64 glass trajectories converge through a monumental orrery on the right.
-    FORM: The canonical landing journey in Persuade mode, staged as one continuous observatory rather than a stack of cards.
+    THESIS: A remembered outcome is one visible route, not a repeatable recipe; this refuses the standard metric-led hero.
+    OWN-WORLD: Warm paper, black editorial ink, route blue, vermilion, ochre, sober serif arguments, and exact sans annotation.
+    STORY: Watch three marbles trade the lead, then inspect the conditions, sequence, and uncertainty the finish conceals.
+    FIRST VIEWPORT: The argument owns the left half; one full-height annotated course owns the right; the race action sits at the lower left.
+    FORM: Kinetic Essay, selected owner direction, staged as a sticky evidence figure beside five scrolling passages.
   -->
-  <div class="story-shell" data-story data-active-chapter="0">
-    <div class="story-atmosphere" aria-hidden="true">
-      <canvas class="story-webgl" data-story-webgl></canvas>
-      <div class="story-fallback">
-        <svg viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" role="presentation">
+  <article class="kinetic-story" data-story data-active-chapter="0">
+    <div class="kinetic-progress" aria-hidden="true"><i></i></div>
+
+    <div class="kinetic-narrative">
+      <header class="kinetic-opening" id="story-opening">
+        <div>
+          <p class="kinetic-kicker">A visual argument about success</p>
+          <h1>The path you remember is one of many.</h1>
+          <p class="kinetic-deck">
+            Three marbles. One course. The lead changes when the conditions do.
+          </p>
+          <p class="kinetic-summary">
+            We collected {total.toLocaleString()} early-breakthrough paths. They do
+            not reveal a formula for winning. They reveal what the finished story
+            leaves out.
+          </p>
+        </div>
+
+        <div class="kinetic-opening-bottom">
+          <dl class="kinetic-count">
+            <dt>Documented paths</dt>
+            <dd>{total.toLocaleString()}</dd>
+          </dl>
+          <a class="kinetic-begin" href="#race-course">Begin the race <span aria-hidden="true">↓</span></a>
+        </div>
+
+        <nav class="kinetic-essay-preview" aria-label="Related essays">
+          <span>Read the full arguments</span>
+          <a href="/essays/everyone-has-lost-their-marbles/">Everyone Has Lost Their Marbles <b>↗</b></a>
+          <a href="/essays/who-filled-the-kings-jug/">Who Filled the King's Jug? <b>↗</b></a>
+        </nav>
+      </header>
+
+      <figure class="kinetic-course" id="race-course" aria-labelledby="race-title race-description">
+        <svg viewBox="0 0 820 700" preserveAspectRatio="xMidYMid meet" role="img">
+          <title id="race-title">Three marbles sharing one changing course</title>
+          <desc id="race-description">
+            The marbles trade the lead as the story moves through starting position,
+            leverage, sequence, and luck. The diagram does not rank people or predict outcomes.
+          </desc>
           <defs>
-            <linearGradient id="fallback-sky" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#111826" />
-              <stop offset="1" stop-color="#080a10" />
-            </linearGradient>
+            <radialGradient id="runner-red" cx="32%" cy="25%" r="70%">
+              <stop offset="0" stop-color="#ffe0d2" />
+              <stop offset="0.16" stop-color="#ef725d" />
+              <stop offset="0.7" stop-color="#c83424" />
+              <stop offset="1" stop-color="#68140c" />
+            </radialGradient>
+            <radialGradient id="runner-blue" cx="32%" cy="25%" r="70%">
+              <stop offset="0" stop-color="#e1f0ff" />
+              <stop offset="0.16" stop-color="#6f95bb" />
+              <stop offset="0.7" stop-color="#315f91" />
+              <stop offset="1" stop-color="#142f49" />
+            </radialGradient>
+            <radialGradient id="runner-ochre" cx="32%" cy="25%" r="70%">
+              <stop offset="0" stop-color="#fff3c6" />
+              <stop offset="0.16" stop-color="#d7b65d" />
+              <stop offset="0.7" stop-color="#a77d26" />
+              <stop offset="1" stop-color="#594111" />
+            </radialGradient>
           </defs>
-          <rect width="1200" height="700" fill="url(#fallback-sky)" />
-          {fallbackBranches.map((branch) => (
-            <path d={branch.d} fill="none" stroke="#6478a0" stroke-opacity="0.22" stroke-width="9" stroke-linecap="round" />
-          ))}
-          <path d={FALLBACK_PATH} fill="none" stroke="#2a3550" stroke-width="15" stroke-linecap="round" />
-          <path d={FALLBACK_PATH} fill="none" stroke="#5fd3bc" stroke-opacity="0.42" stroke-width="1.5" />
-          <circle cx="470" cy="300" r="11" fill="#ff8f3f" />
+
+          <g class="course-field" aria-hidden="true">
+            <path class="course-outline" d="M -50 130 C 160 40 350 120 410 220 S 315 390 460 450 S 720 360 870 590" />
+            <path class="course-bed" d="M -50 130 C 160 40 350 120 410 220 S 315 390 460 450 S 720 360 870 590" />
+            <path class="course-centre" d="M -50 130 C 160 40 350 120 410 220 S 315 390 460 450 S 720 360 870 590" />
+            <path class="course-gate" d="M 338 128 L 438 110" />
+            <path class="course-gate course-gate-second" d="M 380 440 L 426 510" />
+            <circle class="course-deflector" cx="604" cy="424" r="18" />
+            <circle class="course-deflector" cx="651" cy="419" r="11" />
+            <circle class="course-deflector" cx="692" cy="438" r="14" />
+          </g>
+
+          <path data-race-path="0" class="runner-path" d="M -50 105 C 160 15 350 95 410 195 S 315 365 460 425 S 720 335 870 565" />
+          <path data-race-path="1" class="runner-path" d="M -50 130 C 160 40 350 120 410 220 S 315 390 460 450 S 720 360 870 590" />
+          <path data-race-path="2" class="runner-path" d="M -50 155 C 160 65 350 145 410 245 S 315 415 460 475 S 720 385 870 615" />
+
+          <g class="runner" data-runner="0" transform="translate(126 72)" aria-hidden="true">
+            <ellipse class="runner-shadow" cx="6" cy="10" rx="22" ry="9" />
+            <circle r="19" fill="url(#runner-red)" />
+          </g>
+          <g class="runner" data-runner="1" transform="translate(92 114)" aria-hidden="true">
+            <ellipse class="runner-shadow" cx="6" cy="10" rx="22" ry="9" />
+            <circle r="19" fill="url(#runner-blue)" />
+          </g>
+          <g class="runner" data-runner="2" transform="translate(54 153)" aria-hidden="true">
+            <ellipse class="runner-shadow" cx="6" cy="10" rx="22" ry="9" />
+            <circle r="19" fill="url(#runner-ochre)" />
+          </g>
         </svg>
-      </div>
-      <div class="story-wash"></div>
-      <div class="story-depth story-depth-far"></div>
-      <div class="story-depth story-depth-near"></div>
-      <div class="story-stage">
-        <div class="stage-coordinate stage-coordinate-x"></div>
-        <div class="stage-coordinate stage-coordinate-y"></div>
 
-        <div class="stage-scene stage-scene-survivor" data-scene="0">
-          <div class="branch-origin-grid">
-            {Array.from({ length: 64 }).map((_, index) => (
-              <i class={index === 45 ? "is-selected" : undefined}></i>
-            ))}
-          </div>
-          <svg class="branch-lines" viewBox="0 0 560 420" preserveAspectRatio="none">
-            <path d="M54 48 C180 48 172 210 282 210 S390 210 506 210" />
-            <path d="M54 104 C170 104 180 210 282 210" />
-            <path d="M54 160 C168 160 178 210 282 210" />
-            <path d="M54 216 C160 216 186 210 282 210" />
-            <path d="M54 272 C168 272 178 210 282 210" />
-            <path d="M54 328 C170 328 180 210 282 210" />
-            <path d="M54 384 C180 384 172 210 282 210" />
-          </svg>
-          <div class="stage-outcome"><span>01</span><small>visible outcome</small></div>
-          <p class="stage-method-note">Illustration · six hypothetical 50/50 gates</p>
+        <div class="race-folio">
+          <span>Same course, different conditions.</span>
+          <strong>Figure <b data-active-number>01</b> / 05</strong>
         </div>
 
-        <div class="stage-scene stage-scene-start" data-scene="1">
-          <div class="start-axis">
-            <span>less documented access</span>
-            <div class="start-axis-rule">
-              {Array.from({ length: 12 }).map((_, index) => <i style={`--mark:${index}`}></i>)}
-            </div>
-            <span>more documented access</span>
-          </div>
-          <div class="stage-measure">
-            <strong>{averageAdvantage}</strong>
-            <span>average documented starting advantage</span>
-            <small>/ {SCORE_FAMILIES.advantage.max}</small>
-          </div>
+        <div class="race-note" data-race-note="0"><strong>Survivor selection</strong><span>The remembered finish hides the routes that disappeared.</span></div>
+        <div class="race-note" data-race-note="1"><strong>Starting position</strong><span>Access is already uneven before the first visible move.</span></div>
+        <div class="race-note" data-race-note="2"><strong>Built leverage</strong><span>Small advantages compound after an opening appears.</span></div>
+        <div class="race-note" data-race-note="3"><strong>Sequence</strong><span>The same ingredients land differently in a different order.</span></div>
+        <div class="race-note" data-race-note="4"><strong>Luck / unscored</strong><span>Some turns are encountered, not authored.</span></div>
+
+        <figcaption>
+          <strong>Reading contract</strong>
+          <span>Selected successful outliers. No control group. No forecast.</span>
+          <em>Illustrative course; positions are not scores.</em>
+        </figcaption>
+      </figure>
+
+      <aside class="kinetic-mobile-register" id="race-register" aria-label="Current race passage">
+        <div>
+          <span>Race passage</span>
+          <strong data-mobile-title>Survivor selection</strong>
+          <small>Illustrative positions, not scores</small>
         </div>
+        <svg viewBox="0 0 320 72" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M 9 38 C 86 5 145 65 213 33 S 275 19 311 38" />
+          <circle data-mobile-runner="0" cx="44" cy="28" r="7" class="mobile-runner-red" />
+          <circle data-mobile-runner="1" cx="40" cy="38" r="7" class="mobile-runner-blue" />
+          <circle data-mobile-runner="2" cx="36" cy="48" r="7" class="mobile-runner-ochre" />
+        </svg>
+      </aside>
 
-        <div class="stage-scene stage-scene-leverage" data-scene="2">
-          <div class="leverage-rings">
-            <i></i><i></i><i></i><i></i>
-            <strong>×</strong>
-          </div>
-          <div class="stage-measure">
-            <strong>{averageLeverage}</strong>
-            <span>average built or converted leverage</span>
-            <small>/ {SCORE_FAMILIES.leverage.max}</small>
-          </div>
-        </div>
+      <nav class="kinetic-chapter-index" aria-label="Story chapters">
+        <span>Five passages</span>
+        <ol>
+          {chapters.map((chapter, index) => (
+            <li><a href={`#${chapter.id}`} data-story-link={index} aria-current={index === 0 ? "step" : undefined}><span>{String(index + 1).padStart(2, "0")}</span>{chapter.label}</a></li>
+          ))}
+        </ol>
+      </nav>
 
-        <div class="stage-scene stage-scene-sequence" data-scene="3">
-          <svg class="sequence-map" viewBox="0 0 560 420">
-            <path class="sequence-muted" d="M28 336 C140 292 142 350 228 266 S368 176 532 130" />
-            <path class="sequence-muted" d="M28 336 C132 324 166 242 238 264 S362 302 532 214" />
-            <path class="sequence-active" d="M28 336 C112 338 156 266 230 258 S348 166 532 82" />
-            <circle cx="28" cy="336" r="6" />
-            <circle cx="230" cy="258" r="6" />
-            <circle cx="532" cy="82" r="8" />
-          </svg>
-          <div class="sequence-label sequence-label-start">opening</div>
-          <div class="sequence-label sequence-label-middle">feedback</div>
-          <div class="sequence-label sequence-label-end">recognition</div>
-        </div>
-
-        <div class="stage-scene stage-scene-boundary" data-scene="4">
-          <div class="luck-orbit">
-            <span class="orbit-core">unscored</span>
-            <i style="--orbit-angle:18deg">era</i>
-            <i style="--orbit-angle:86deg">encounter</i>
-            <i style="--orbit-angle:158deg">timing</i>
-            <i style="--orbit-angle:226deg">shock</i>
-            <i style="--orbit-angle:302deg">variance</i>
-          </div>
-        </div>
-
-        <div class="stage-caption">
-          <span>Figure <b data-active-number>01</b> / 05</span>
-          <strong data-active-title>The survivor</strong>
-        </div>
-      </div>
-    </div>
-
-    <div class="story-progress" aria-hidden="true"><i></i></div>
-
-    <button class="story-sound" type="button" data-story-sound aria-pressed="false">
-      <span class="story-sound-mark" aria-hidden="true">♪</span>
-      <span class="story-sound-label">Sound off</span>
-    </button>
-
-    <nav class="story-rail" aria-label="Story chapters">
-      <a class="story-rail-brand" href="#story-opening" aria-label="Back to story opening">LS</a>
-      <ol>
-        {chapters.map((chapter, index) => (
-          <li>
-            <a
-              href={`#${chapter.id}`}
-              data-story-link={index}
-              aria-current={index === 0 ? "step" : undefined}
-            >
-              <span>{String(index + 1).padStart(2, "0")}</span>
-              <strong>{chapter.short}</strong>
-            </a>
-          </li>
-        ))}
-      </ol>
-      <a class="story-rail-exit" href="/explore/">Explore <span>↗</span></a>
-    </nav>
-
-    <header class="story-opening" id="story-opening">
-      <div class="story-opening-copy">
-        <p class="story-kicker">{total.toLocaleString()} documented paths · 5 chapters · 7 minutes</p>
-        <h1>The path you remember is one of many.</h1>
-        <p class="story-deck">
-          We collected {total.toLocaleString()} early-breakthrough paths. They do
-          not reveal a formula for winning. They reveal what the finished story
-          leaves out.
-        </p>
-        <a class="story-begin" href="#the-survivor">
-          Begin with the visible outcome
-          <span aria-hidden="true">↓</span>
-        </a>
-      </div>
-      <div class="story-opening-note">
-        <span>Reading contract</span>
-        <p>Selected successful outliers. No control group. No forecast.</p>
-      </div>
-    </header>
-
-    <div class="story-chapters">
-      <section
-        class="story-chapter"
-        id="the-survivor"
-        data-story-chapter
-        data-chapter-index="0"
-        data-short-title="The survivor"
-        aria-labelledby="story-heading-1"
-      >
-        <div class="story-copy">
-          <p class="chapter-index"><span>01</span> Survivor selection</p>
-          <h2 id="story-heading-1">
-            {wordSpans("Biography starts at the end.").map((word, index) => (
-              <span class="story-heading-word" style={`--word-index:${index}`}>{word}</span>
-            ))}
-          </h2>
-          <p class="chapter-lede">
-            Every person in this atlas is here because a documented breakthrough
-            happened by 26. Selection begins after the outcome is already known.
-          </p>
-          <p>
-            The archive shows the branch that stayed visible. It cannot count
-            everyone with a similar start whose path met different timing,
-            gatekeepers, obligations, health, or luck.
-          </p>
-          <aside class="chapter-evidence">
-            <span>Thought experiment · not a measured probability</span>
-            <strong>64 plausible starts → 1 remembered finish</strong>
-            <p>Six hypothetical 50/50 gates are enough to make the final dot look inevitable in reverse.</p>
-          </aside>
-          <a class="chapter-link" href="/#survivor-path">Inspect the full survivor-path exhibit →</a>
+      <section class="kinetic-chapter" id="the-survivor" data-story-chapter data-chapter-index="0">
+        <div class="chapter-number">01</div>
+        <div class="chapter-copy">
+          <p class="chapter-topic">Survivor selection</p>
+          <h2>Biography starts at the end.</h2>
+          <p class="chapter-lede">Every person in this archive is here because a documented breakthrough happened by 26. Selection begins after the outcome is already known.</p>
+          <p>The archive shows the branch that stayed visible. It cannot count everyone with a similar start whose path met different timing, gatekeepers, obligations, health, or luck.</p>
+          <aside class="kinetic-proof"><span>Thought experiment · not a measured probability</span><strong>64 plausible starts → 1 remembered finish</strong><p>Six hypothetical 50/50 gates are enough to make the final dot look inevitable in reverse.</p></aside>
+          <a class="chapter-link" href="/overview/#survivor-path">Inspect the survivor-path exhibit →</a>
         </div>
       </section>
 
-      <section
-        class="story-chapter"
-        id="the-start"
-        data-story-chapter
-        data-chapter-index="1"
-        data-short-title="The starting field"
-        aria-labelledby="story-heading-2"
-      >
-        <div class="story-copy">
-          <p class="chapter-index"><span>02</span> Starting position</p>
-          <h2 id="story-heading-2">
-            {wordSpans("Before talent had a résumé, the field was already uneven.").map((word, index) => (
-              <span class="story-heading-word" style={`--word-index:${index}`}>{word}</span>
-            ))}
-          </h2>
-          <p class="chapter-lede">
-            Family resources, domain exposure, geography, institutions, tools,
-            mentors, peers, and physical edge change which first moves are available.
-          </p>
-          <p>
-            Across {total.toLocaleString()} selected paths, the average documented
-            starting-advantage score is {averageAdvantage} out of {SCORE_FAMILIES.advantage.max}.
-            That is a description of evidence near the start—not a talent score
-            and not proof that undocumented support was absent.
-          </p>
-          <dl class="story-fact-line">
-            <div><dt>Dimensions</dt><dd>12</dd></div>
-            <div><dt>Cohorts</dt><dd>{cohortCount}</dd></div>
-            <div><dt>Avg milestone age</dt><dd>{averageMilestoneAge}</dd></div>
-          </dl>
+      <section class="kinetic-chapter" id="the-start" data-story-chapter data-chapter-index="1">
+        <div class="chapter-number">02</div>
+        <div class="chapter-copy">
+          <p class="chapter-topic">Starting position</p>
+          <h2>Before talent had a résumé, the field was already uneven.</h2>
+          <p class="chapter-lede">Family resources, domain exposure, geography, institutions, tools, mentors, peers, and physical edge change which first moves are available.</p>
+          <p>Across {total.toLocaleString()} selected paths, the average documented starting-advantage score is {averageAdvantage} out of {SCORE_FAMILIES.advantage.max}. It describes evidence near the start—not talent, and not absent support.</p>
+          <dl class="kinetic-facts"><div><dt>Dimensions</dt><dd>12</dd></div><div><dt>Cohorts</dt><dd>{cohortCount}</dd></div><div><dt>Avg milestone age</dt><dd>{averageMilestoneAge}</dd></div></dl>
           <a class="chapter-link" href="/methodology/">See how starting conditions are coded →</a>
         </div>
       </section>
 
-      <section
-        class="story-chapter"
-        id="the-levers"
-        data-story-chapter
-        data-chapter-index="2"
-        data-short-title="What multiplies"
-        aria-labelledby="story-heading-3"
-      >
-        <div class="story-copy">
-          <p class="chapter-index"><span>03</span> Built or converted leverage</p>
-          <h2 id="story-heading-3">
-            {wordSpans("Then some work begins to multiply itself.").map((word, index) => (
-              <span class="story-heading-word" style={`--word-index:${index}`}>{word}</span>
-            ))}
-          </h2>
-          <p class="chapter-lede">
-            Reps produce skill. Skill earns trust. Trust attracts collaborators.
-            Distribution brings feedback. Earlier proof changes the next opening.
-          </p>
-          <p>
-            The average documented leverage score is {averageLeverage} out of {SCORE_FAMILIES.leverage.max}.
-            But presence is not provenance. The same visible lever may have been
-            built, enabled, earned, supplied from outside, or mixed.
-          </p>
-          <ul class="origin-line" aria-label="Possible origins of leverage">
-            {LEVERAGE_ORIGINS.slice(0, 5).map((origin) => <li>{origin.label}</li>)}
-          </ul>
-          <aside class="chapter-evidence chapter-evidence-compact">
-            <span>Evidence signal</span>
-            <strong>{highConfidence.toLocaleString()} paths have high-confidence leverage coding</strong>
-          </aside>
+      <section class="kinetic-chapter" id="the-levers" data-story-chapter data-chapter-index="2">
+        <div class="chapter-number">03</div>
+        <div class="chapter-copy">
+          <p class="chapter-topic">Built or converted leverage</p>
+          <h2>Then some work begins to multiply itself.</h2>
+          <p class="chapter-lede">Reps produce skill. Skill earns trust. Trust attracts collaborators. Distribution brings feedback. Earlier proof changes the next opening.</p>
+          <p>The average documented leverage score is {averageLeverage} out of {SCORE_FAMILIES.leverage.max}. Presence is not provenance: a visible lever may have been built, enabled, earned, supplied from outside, or mixed.</p>
+          <ul class="kinetic-origins" aria-label="Possible origins of leverage">{LEVERAGE_ORIGINS.slice(0, 5).map((origin) => <li>{origin.label}</li>)}</ul>
+          <aside class="kinetic-proof kinetic-proof-compact"><span>Evidence signal</span><strong>{highConfidence.toLocaleString()} paths have high-confidence leverage coding</strong></aside>
           <a class="chapter-link" href="/insights/#comparison-breaks-heading">Inspect why origin changes the comparison →</a>
         </div>
       </section>
 
-      <section
-        class="story-chapter"
-        id="the-sequence"
-        data-story-chapter
-        data-chapter-index="3"
-        data-short-title="What compounds"
-        aria-labelledby="story-heading-4"
-      >
-        <div class="story-copy">
-          <p class="chapter-index"><span>04</span> Compounding trajectory</p>
-          <h2 id="story-heading-4">
-            {wordSpans("A path is a sequence, not a score.").map((word, index) => (
-              <span class="story-heading-word" style={`--word-index:${index}`}>{word}</span>
-            ))}
-          </h2>
-          <p class="chapter-lede">
-            Two people can have similar ingredients and still meet them in a
-            different order, under a different clock, with different conversion costs.
-          </p>
-          <p>
-            Starting advantage changes the available moves. Leverage changes how
-            effectively effort can compound. Trajectory records what happened
-            next. Observed standing describes the finish; it is not calculated
-            from the earlier scores.
-          </p>
-          <ol class="sequence-steps">
-            <li><span>01</span><strong>Starting position</strong></li>
-            <li><span>02</span><strong>Built leverage</strong></li>
-            <li><span>03</span><strong>Trajectory</strong></li>
-            <li><span>04</span><strong>Observed standing</strong></li>
-          </ol>
+      <section class="kinetic-chapter" id="the-sequence" data-story-chapter data-chapter-index="3">
+        <div class="chapter-number">04</div>
+        <div class="chapter-copy">
+          <p class="chapter-topic">Compounding trajectory</p>
+          <h2>A path is a sequence, not a score.</h2>
+          <p class="chapter-lede">Two people can have similar ingredients and still meet them in a different order, under a different clock, with different conversion costs.</p>
+          <p>Starting advantage changes the available moves. Leverage changes how effectively effort can compound. Observed standing describes the finish; it is not calculated from the earlier scores.</p>
+          <ol class="kinetic-sequence"><li><span>01</span><strong>Starting position</strong></li><li><span>02</span><strong>Built leverage</strong></li><li><span>03</span><strong>Trajectory</strong></li><li><span>04</span><strong>Observed standing</strong></li></ol>
           <a class="chapter-link" href="/person/bill-gates/">Read one connected path end to end →</a>
         </div>
       </section>
 
-      <section
-        class="story-chapter story-chapter-final"
-        id="the-boundary"
-        data-story-chapter
-        data-chapter-index="4"
-        data-short-title="What stays unknowable"
-        aria-labelledby="story-heading-5"
-      >
-        <div class="story-copy">
-          <p class="chapter-index"><span>05</span> Luck and the boundary</p>
-          <h2 id="story-heading-5">
-            {wordSpans("Keep the model. Lose the prophecy.").map((word, index) => (
-              <span class="story-heading-word" style={`--word-index:${index}`}>{word}</span>
-            ))}
-          </h2>
-          <p class="chapter-lede">
-            Era, geography, encounters, gatekeepers, shocks, timing, and outcome
-            variance act across every transition. They stay visible here—and unscored.
-          </p>
-          <p>
-            You can inspect conditions, build capability, choose better feedback,
-            extend runway, and move closer to the work. You cannot inherit another
-            person's sequence or turn a surviving biography into your forecast.
-          </p>
-          <blockquote class="story-close">
-            <p>Study the conditions. Inspect what was built. Respect what cannot be replayed.</p>
-            <footer>Then return to your own unfinished branch.</footer>
-          </blockquote>
-          <a class="story-essay-feature" href="/essays/who-filled-the-kings-jug/">
-            <span class="story-essay-meta">Featured essay · 6 min read</span>
-            <strong>Who Filled the King's Jug?</strong>
-            <span class="story-essay-summary">
-              Privilege, abstraction, and the invisible work behind accomplishment.
-              {" "}<b>Read the essay →</b>
-            </span>
-          </a>
-          <div class="story-actions">
-            <a class="story-action-primary" href="/explore/">Explore {total.toLocaleString()} paths</a>
-            <a href="/coverage/">Check the evidence</a>
-            <a href="/compare/">Test a comparison</a>
-          </div>
+      <section class="kinetic-chapter kinetic-chapter-final" id="the-boundary" data-story-chapter data-chapter-index="4">
+        <div class="chapter-number">05</div>
+        <div class="chapter-copy">
+          <p class="chapter-topic">Luck and the boundary</p>
+          <h2>Keep the model. Lose the prophecy.</h2>
+          <p class="chapter-lede">Era, geography, encounters, gatekeepers, shocks, timing, and outcome variance act across every transition. They stay visible here—and unscored.</p>
+          <p>You can inspect conditions, build capability, choose better feedback, extend runway, and move closer to the work. You cannot inherit another person's sequence or turn a surviving biography into your forecast.</p>
+          <blockquote class="kinetic-close"><p>Study the conditions. Inspect what was built. Respect what cannot be replayed.</p><footer>Then return to your own unfinished branch.</footer></blockquote>
+          <div class="kinetic-actions"><a class="kinetic-action-primary" href="/explore/">Explore {total.toLocaleString()} paths</a><a href="/coverage/">Check the evidence</a><a href="/compare/">Test a comparison</a></div>
         </div>
       </section>
     </div>
-  </div>
+
+    <section class="kinetic-essays" aria-labelledby="essays-heading">
+      <header><p id="essays-heading">The argument continues</p><h2>Two essays.<br />One evidence room.</h2><a href="/essays/">All essays →</a></header>
+      <a class="kinetic-essay" href="/essays/everyone-has-lost-their-marbles/"><span>Essay 01 · 8 min read</span><strong>Everyone Has Lost Their Marbles</strong><p>Trajectories, comparison, and the bounded agency that actually runs a life.</p><b>Read essay ↗</b></a>
+      <a class="kinetic-essay" href="/essays/who-filled-the-kings-jug/"><span>Essay 02 · 6 min read</span><strong>Who Filled the King's Jug?</strong><p>Privilege, abstraction, and the invisible work behind accomplishment.</p><b>Read essay ↗</b></a>
+    </section>
+  </article>
 
   <script>
-    import { mountMarbleWorld } from "../scripts/marble-world";
-
     const story = document.querySelector<HTMLElement>("[data-story]");
-    const storyCanvas = document.querySelector<HTMLCanvasElement>("[data-story-webgl]");
     const chapters = Array.from(document.querySelectorAll<HTMLElement>("[data-story-chapter]"));
     const links = Array.from(document.querySelectorAll<HTMLAnchorElement>("[data-story-link]"));
+    const paths = Array.from(document.querySelectorAll<SVGPathElement>("[data-race-path]"));
+    const runners = Array.from(document.querySelectorAll<SVGGElement>("[data-runner]"));
+    const mobileRunners = Array.from(document.querySelectorAll<SVGCircleElement>("[data-mobile-runner]"));
     const activeNumber = document.querySelector<HTMLElement>("[data-active-number]");
-    const activeTitle = document.querySelector<HTMLElement>("[data-active-title]");
+    const mobileTitle = document.querySelector<HTMLElement>("[data-mobile-title]");
+    const raceNotes = Array.from(document.querySelectorAll<HTMLElement>("[data-race-note]"));
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const requestedShotValue = new URLSearchParams(window.location.search).get("shot");
+    const requestedShot = requestedShotValue === null ? Number.NaN : Number(requestedShotValue);
+    const leadByChapter = [[0.026, 0.005, -0.016], [-0.012, 0.032, 0.004], [0.006, -0.014, 0.036], [0.034, 0.004, -0.012], [0, 0, 0]];
 
-    if (story && chapters.length) {
-      story.classList.add("story-ready");
-      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      const device = navigator as Navigator & {
-        connection?: { saveData?: boolean };
-        deviceMemory?: number;
-      };
-      const lowCapability = Boolean(
-        device.connection?.saveData
-        || (device.deviceMemory && device.deviceMemory <= 4)
-      );
-      const storyWorld = storyCanvas && !reduceMotion && !lowCapability ? mountMarbleWorld(storyCanvas) : null;
-
-      // Optional audio. Nothing is constructed until the reader presses the
-      // toggle, so a reader who never wants it pays nothing for it.
-      const soundButton = document.querySelector<HTMLButtonElement>("[data-story-sound]");
-      const soundLabel = soundButton?.querySelector<HTMLElement>(".story-sound-label");
-      let audio: import("../scripts/marble-audio").MarbleAudio | null = null;
-      let soundOn = false;
-      if (soundButton && storyCanvas && storyWorld) {
-        soundButton.addEventListener("click", async () => {
-          soundOn = !soundOn;
-          if (!audio) {
-            const module = await import("../scripts/marble-audio");
-            audio = module.createMarbleAudio();
-          }
-          audio.setEnabled(soundOn);
-          soundButton.setAttribute("aria-pressed", String(soundOn));
-          if (soundLabel) soundLabel.textContent = soundOn ? "Sound on" : "Sound off";
-        });
-        storyCanvas.addEventListener("marble-hole", (event) => {
-          audio?.strike((event as CustomEvent<{ index: number }>).detail.index);
-        });
-      } else if (soundButton) {
-        soundButton.hidden = true;
-      }
-      const requestedShotValue = new URLSearchParams(window.location.search).get("shot");
-      const requestedShot = requestedShotValue === null ? Number.NaN : Number(requestedShotValue);
-
-      const activate = (chapter: HTMLElement) => {
-        const index = Number(chapter.dataset.chapterIndex || 0);
+    if (story && chapters.length === 5 && paths.length === runners.length) {
+      let frame = 0;
+      const activate = (index: number) => {
         story.dataset.activeChapter = String(index);
-        links.forEach((link, linkIndex) => {
-          if (linkIndex === index) link.setAttribute("aria-current", "step");
-          else link.removeAttribute("aria-current");
-        });
+        links.forEach((link, linkIndex) => linkIndex === index ? link.setAttribute("aria-current", "step") : link.removeAttribute("aria-current"));
+        raceNotes.forEach((note, noteIndex) => note.setAttribute("aria-hidden", String(noteIndex !== index)));
         if (activeNumber) activeNumber.textContent = String(index + 1).padStart(2, "0");
-        if (activeTitle) activeTitle.textContent = chapter.dataset.shortTitle || "";
+        if (mobileTitle) mobileTitle.textContent = chapters[index]?.querySelector<HTMLElement>(".chapter-topic")?.textContent ?? "Current passage";
       };
-
-      let scheduled = false;
-      let lastProgress = 0;
-      let lastProgressTime = performance.now();
-      const updateStoryState = () => {
-        const start = chapters[0]?.offsetTop || 0;
-        const endChapter = chapters.at(-1);
-        const end = endChapter ? endChapter.offsetTop + endChapter.offsetHeight - window.innerHeight : start + 1;
-        const scrollProgress = Math.min(1, Math.max(0, (window.scrollY - start) / Math.max(1, end - start)));
-        const progress = Number.isFinite(requestedShot)
-          ? Math.min(1, Math.max(0, requestedShot))
-          : scrollProgress;
-        story.style.setProperty("--story-progress", String(progress));
-        storyWorld?.setProgress(progress);
-        const now = performance.now();
-        const elapsed = Math.max(16, now - lastProgressTime);
-        // Normalised scroll rate, so the roll follows the reader rather than a clock.
-        audio?.setSpeed(Math.min(1, (Math.abs(progress - lastProgress) / elapsed) * 9000));
-        lastProgress = progress;
-        lastProgressTime = now;
-
-        const atDocumentEnd = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 4;
-        const focusLine = window.innerHeight * 0.48;
-        const activeChapter = Number.isFinite(requestedShot)
-          ? chapters[Math.min(chapters.length - 1, Math.round(requestedShot * (chapters.length - 1)))]
-          : atDocumentEnd
-          ? chapters.at(-1)
-          : chapters.reduce((closest, chapter) => {
-              const bounds = chapter.getBoundingClientRect();
-              const closestBounds = closest.getBoundingClientRect();
-              const distance = bounds.top <= focusLine && bounds.bottom >= focusLine
-                ? 0
-                : Math.min(Math.abs(bounds.top - focusLine), Math.abs(bounds.bottom - focusLine));
-              const closestDistance = closestBounds.top <= focusLine && closestBounds.bottom >= focusLine
-                ? 0
-                : Math.min(Math.abs(closestBounds.top - focusLine), Math.abs(closestBounds.bottom - focusLine));
-              return distance < closestDistance ? chapter : closest;
-            }, chapters[0]);
-        if (activeChapter) activate(activeChapter);
-        scheduled = false;
+      const update = () => {
+        const start = story.offsetTop;
+        const lastChapter = chapters.at(-1);
+        const end = lastChapter ? lastChapter.offsetTop + lastChapter.offsetHeight - window.innerHeight : start + 1;
+        const naturalProgress = Math.min(1, Math.max(0, (window.scrollY - start) / Math.max(1, end - start)));
+        const progress = Number.isFinite(requestedShot) ? Math.min(1, Math.max(0, requestedShot)) : naturalProgress;
+        const focusLine = window.innerHeight * 0.46;
+        const activeChapter = Number.isFinite(requestedShot) ? Math.min(4, Math.round(progress * 4)) : chapters.reduce((bestIndex, chapter, index) => {
+          const bounds = chapter.getBoundingClientRect();
+          const bestBounds = chapters[bestIndex].getBoundingClientRect();
+          const distance = bounds.top <= focusLine && bounds.bottom >= focusLine ? 0 : Math.min(Math.abs(bounds.top - focusLine), Math.abs(bounds.bottom - focusLine));
+          const bestDistance = bestBounds.top <= focusLine && bestBounds.bottom >= focusLine ? 0 : Math.min(Math.abs(bestBounds.top - focusLine), Math.abs(bestBounds.bottom - focusLine));
+          return distance < bestDistance ? index : bestIndex;
+        }, 0);
+        activate(activeChapter);
+        story.style.setProperty("--race-progress", String(progress));
+        const motionIsReduced = reducedMotion.matches && !Number.isFinite(requestedShot);
+        const baseProgress = motionIsReduced ? 0.42 : 0.12 + progress * 0.82;
+        runners.forEach((runner, index) => {
+          const path = paths[index];
+          const length = path.getTotalLength();
+          const lead = motionIsReduced ? 0 : (leadByChapter[activeChapter]?.[index] ?? 0);
+          const at = Math.min(0.97, Math.max(0.035, baseProgress + lead));
+          const point = path.getPointAtLength(length * at);
+          runner.setAttribute("transform", `translate(${point.x.toFixed(2)} ${point.y.toFixed(2)})`);
+          const mobileRunner = mobileRunners[index];
+          if (mobileRunner) {
+            mobileRunner.setAttribute("cx", String(18 + at * 284));
+          }
+        });
+        frame = 0;
       };
-      window.addEventListener("scroll", () => {
-        if (scheduled) return;
-        scheduled = true;
-        window.requestAnimationFrame(updateStoryState);
-      }, { passive: true });
-      window.addEventListener("resize", updateStoryState, { passive: true });
-      window.addEventListener("hashchange", updateStoryState);
-      document.addEventListener("astro:before-swap", () => storyWorld?.destroy(), { once: true });
-      window.requestAnimationFrame(updateStoryState);
+      const schedule = () => {
+        if (frame) return;
+        frame = window.requestAnimationFrame(update);
+      };
+      window.addEventListener("scroll", schedule, { passive: true });
+      window.addEventListener("resize", schedule);
+      reducedMotion.addEventListener("change", schedule);
+      update();
     }
   </script>
 </Base>

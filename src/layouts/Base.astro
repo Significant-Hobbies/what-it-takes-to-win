@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import "../styles/exhibit-finish.css";
+import "../styles/field-atlas.css";
 import peopleData from "../data/people.json";
 import { summarizeCoverage, type CoveragePerson } from "../lib/coverage";
 const peopleCount = peopleData.length;
@@ -30,14 +31,11 @@ const canonicalUrl = Astro.site
 const socialImageUrl = Astro.site ? new URL(socialImage, Astro.site).toString() : socialImage;
 const currentPath = Astro.url.pathname;
 const navLinks = [
-  { href: "/", label: "Story" },
-  { href: "/essays/", label: "Essays" },
-  { href: "/insights/", label: "Insights" },
-  { href: "/explore/", label: "Explore", activePrefixes: ["/explore/", "/person/"] },
-  { href: "/compare/", label: "Am I Next?", activePrefixes: ["/compare/", "/am-i-the-next/"] },
-  { href: "/roi/", label: "ROI Lab" },
-  { href: "/coverage/", label: "Evidence" },
-  { href: "/methodology/", label: "Methodology" },
+  { href: "/", label: "Story", index: "01" },
+  { href: "/explore/", label: "Atlas", index: "02", activePrefixes: ["/explore/", "/person/"] },
+  { href: "/compare/", label: "Compare", index: "03", activePrefixes: ["/compare/", "/am-i-the-next/"] },
+  { href: "/essays/", label: "Essays", index: "04" },
+  { href: "/coverage/", label: "Evidence", index: "05", activePrefixes: ["/coverage/", "/methodology/"] },
 ];
 const isActive = (link: (typeof navLinks)[number]) =>
   link.href === "/"
@@ -52,8 +50,8 @@ const isActive = (link: (typeof navLinks)[number]) =>
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="robots" content={robots} />
-    <meta name="theme-color" content="#0b0d12" />
-    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#eef0e7" />
+    <meta name="color-scheme" content="light" />
     {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Look Sideways" />
@@ -77,36 +75,20 @@ const isActive = (link: (typeof navLinks)[number]) =>
     <header class="site-header">
       <div class="container header-inner">
         <a href="/" class="brand" aria-label="Look Sideways home">
-          <span class="brand-mark">→</span>
-          <span class="brand-text">Look Sideways</span>
+          <span class="brand-mark" aria-hidden="true">↗</span>
+          <span class="brand-lockup">
+            <span class="brand-text">Look Sideways</span>
+            <span class="brand-subtitle">Atlas of documented paths</span>
+          </span>
         </a>
         <nav class="site-nav" aria-label="Primary navigation">
           {navLinks.map((link) => (
             <a href={link.href} aria-current={isActive(link) ? "page" : undefined}>
+              <span>{link.index}</span>
               {link.label}
             </a>
           ))}
         </nav>
-        <div class="nav-search">
-          <input
-            type="search"
-            id="nav-search-input"
-            role="combobox"
-            aria-label="Search people"
-            aria-autocomplete="list"
-            aria-controls="nav-search-results"
-            aria-expanded="false"
-            placeholder={`Search ${peopleData.length.toLocaleString()} people…`}
-            autocomplete="off"
-          />
-          <div
-            id="nav-search-results"
-            class="nav-search-results"
-            role="listbox"
-            aria-label="People search results"
-            style="display:none;"
-          ></div>
-        </div>
       </div>
     </header>
     <main id="main-content" class:list={["container", mainClass]} tabindex="-1">
@@ -130,6 +112,9 @@ const isActive = (link: (typeof navLinks)[number]) =>
                 <span class="audit-gate-mark" aria-hidden="true">
                   {gate.status === "done" ? "✓" : gate.status === "partial" ? "◐" : "○"}
                 </span>
+                <span class="visually-hidden">
+                  {gate.status === "done" ? "Complete: " : gate.status === "partial" ? "Partially complete: " : "Pending: "}
+                </span>
                 <span class="audit-gate-label">{gate.label}</span>
                 <span class="audit-gate-note">{gate.note}</span>
               </li>
@@ -142,6 +127,7 @@ const isActive = (link: (typeof navLinks)[number]) =>
           <a href="/coverage/">Evidence coverage</a>
           <a href="/methodology/">Methodology</a>
           <a href="/essays/">Essays</a>
+          <a href="/insights/">Insights</a>
           <a href="/roi/">ROI lab</a>
           <a href="/about/">About</a>
           <a href="/changelog/">Changelog</a>
@@ -167,88 +153,6 @@ const isActive = (link: (typeof navLinks)[number]) =>
         });
       }
 
-      (function() {
-        const input = document.getElementById('nav-search-input') as HTMLInputElement | null;
-        const results = document.getElementById('nav-search-results');
-        if (!input || !results) return;
-
-        let index = null;
-        let loadingPromise = null;
-
-        function setResultsOpen(open: boolean) {
-          results.style.display = open ? 'block' : 'none';
-          input.setAttribute('aria-expanded', String(open));
-        }
-
-        function escapeHtml(value: string) {
-          return value.replace(/[&<>"']/g, (character) => ({
-            '&': '&amp;',
-            '<': '&lt;',
-            '>': '&gt;',
-            '"': '&quot;',
-            "'": '&#039;',
-          })[character] || character);
-        }
-
-        function loadIndex() {
-          if (index) return Promise.resolve(index);
-          if (loadingPromise) return loadingPromise;
-          loadingPromise = fetch('/data/search-index.json')
-            .then(r => r.json())
-            .then(data => {
-              index = data.map(p => ({
-                id: p.id,
-                name: p.name,
-                category: p.category || '',
-                searchText: (p.name + ' ' + (p.category || '') + ' ' + (p.milestone || '')).toLowerCase(),
-              }));
-              return index;
-            });
-          return loadingPromise;
-        }
-
-        // Lazy-load on first focus
-        input.addEventListener('focus', function() {
-          if (!index) loadIndex();
-          if (this.value.trim().length >= 2) {
-            setResultsOpen(true);
-          }
-        });
-
-        input.addEventListener('input', function() {
-          const q = this.value.trim().toLowerCase();
-          if (q.length < 2) {
-            setResultsOpen(false);
-            return;
-          }
-          if (!index) {
-            loadIndex().then(() => doSearch(q));
-            return;
-          }
-          doSearch(q);
-        });
-
-        function doSearch(q) {
-          const matches = index.filter(p => p.searchText.includes(q)).slice(0, 8);
-          if (matches.length === 0) {
-            results.innerHTML = '<div class="nsr-empty">No results</div>';
-            setResultsOpen(true);
-            return;
-          }
-          results.innerHTML = matches.map(p => {
-            const personPath = encodeURIComponent(p.id);
-            return `<a data-person-path="${personPath}" class="nsr-item" role="option"><span class="nsr-name">${escapeHtml(p.name)}</span><span class="nsr-cat">${escapeHtml(p.category)}</span></a>`;
-          }).join('');
-          results.querySelectorAll<HTMLAnchorElement>('[data-person-path]').forEach((anchor) => {
-            anchor.href = "/person/" + anchor.dataset.personPath + "/";
-          });
-          setResultsOpen(true);
-        }
-
-        input.addEventListener('blur', function() {
-          setTimeout(() => { setResultsOpen(false); }, 200);
-        });
-      })();
     </script>
     <script
       is:inline

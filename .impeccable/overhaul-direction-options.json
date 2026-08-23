@@ -1,0 +1,33 @@
+{
+  "title": "Choose the new Look Sideways visual world",
+  "question": "All three preserve the research model and replace the released dashboard grammar. Choose one system to carry across every public surface, steer a hybrid, or re-roll.",
+  "options": [
+    {
+      "id": "comparison-light-table",
+      "label": "Comparison Light Table",
+      "kicker": "RECOMMENDED",
+      "lineage": "Photographic light boxes, acetate overlays, and forensic registration sheets",
+      "body": "The product becomes a place where incomplete paths are physically aligned and their mismatch stays visible. Strongest connection to the name and comparison mechanism; risk is looking clinical unless profiles retain human narrative.",
+      "hero": "artifacts/design/overhaul-directions/light-table-1440.png"
+    },
+    {
+      "id": "field-atlas",
+      "label": "Field Atlas",
+      "kicker": "MOST INSTITUTIONAL",
+      "lineage": "Geological surveys, route maps, field editions, and evidence legends",
+      "body": "The dataset becomes terrain: starts, leverage, sequence, and luck read as separate route layers. Clearest publication system and easiest to extend; risk is making individual lives feel too geographic or abstract.",
+      "hero": "artifacts/design/overhaul-directions/field-atlas-1440.png"
+    },
+    {
+      "id": "documentary-cut-room",
+      "label": "Documentary Cut Room",
+      "kicker": "MOST NARRATIVE",
+      "lineage": "Contact sheets, timecode, edit benches, and visible sequence splices",
+      "body": "Biography becomes the final edit, with missing footage and alternate takes made explicit. Strongest storytelling system; risk is preserving too much dark-screen atmosphere from the rejected surface.",
+      "hero": "artifacts/design/overhaul-directions/cut-room-1440.png"
+    }
+  ],
+  "reroll": true,
+  "canon": true,
+  "steer": true
+}
