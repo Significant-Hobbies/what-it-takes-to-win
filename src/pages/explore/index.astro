@@ -1,7 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
 import peopleData from "../../data/people.json";
-import { TIER_DEFINITIONS } from "../../lib/outcome-model";
 
 const people = peopleData;
 const cohorts = [...new Set(people.map((p) => p.cohort_group).filter(Boolean))].sort();
@@ -10,63 +9,150 @@ const engines = [...new Set(people.map((p) => p.normalized_primary_engine).filte
 const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_archetype).filter(Boolean))].sort();
 ---
 
-<Base title="Explore — Look Sideways">
-  <section class="hero" style="padding-bottom:24px;">
-    <h1>Explore {people.length} people</h1>
+<Base title="Explore — Look Sideways" mainClass="explore-main">
+  <section class="hero explore-hero">
+    <p class="eyebrow">Research atlas</p>
+    <h1>Explore {people.length.toLocaleString("en-US")} people</h1>
     <p class="lede">Find a path to inspect—not a person to rank. Open any profile to see starting conditions, leverage provenance, luck boundaries, trajectory, and a person-specific “Am I the next…?” questionnaire.</p>
+    <dl class="explore-contract" aria-label="Atlas interpretation contract">
+      <div>
+        <dt>Unit</dt>
+        <dd>One person, one early milestone</dd>
+      </div>
+      <div>
+        <dt>Use</dt>
+        <dd>Inspect paths, do not rank people</dd>
+      </div>
+      <div>
+        <dt>Boundary</dt>
+        <dd>Selected outliers, no control group</dd>
+      </div>
+    </dl>
+    <a class="explore-jump" href="#filters">Search and filter the atlas <span aria-hidden="true">↓</span></a>
   </section>
 
-  <div class="filters" id="filters">
-    <input type="search" id="search" placeholder="Search name, milestone, summary…" />
-    <select id="f-cohort">
-      <option value="">All cohorts</option>
-      {cohorts.map((c) => <option value={c}>{c}</option>)}
-    </select>
-    <select id="f-category">
-      <option value="">All categories</option>
-      {categories.map((c) => <option value={c}>{c}</option>)}
-    </select>
-    <select id="f-engine">
-      <option value="">All engines</option>
-      {engines.map((c) => <option value={c}>{c}</option>)}
-    </select>
-    <select id="f-archetype">
-      <option value="">All archetypes</option>
-      {archetypes.map((c) => <option value={c}>{c}</option>)}
-    </select>
-    <select id="f-tier">
-      <option value="">All outcome tiers</option>
-      {TIER_DEFINITIONS.map((tier) => <option value={tier.tier}>T{tier.tier} · {tier.name}</option>)}
-    </select>
-    <select id="f-sort">
-      <option value="name">Sort: name (A→Z)</option>
-      <option value="age-asc">Sort: milestone age (low→high)</option>
-      <option value="age-desc">Sort: milestone age (high→low)</option>
-      <option value="leverage">Inspect: leverage (high→low, not a rank)</option>
-    </select>
-    <span id="count" style="font-family:var(--mono);font-size:12px;color:var(--text-faint);">Loading…</span>
-  </div>
+  <section class="explore-index" aria-labelledby="explore-index-heading">
+    <header class="explore-index-heading">
+      <div>
+        <p class="eyebrow">Published index</p>
+        <h2 id="explore-index-heading">Filter the atlas</h2>
+      </div>
+      <p id="count" role="status" aria-live="polite">Loading paths…</p>
+    </header>
+
+    <fieldset class="filters" id="filters">
+      <legend class="visually-hidden">Filter published paths</legend>
+      <label class="filter-field filter-field-search" for="search">
+        <span>Search</span>
+        <input type="search" id="search" placeholder="Name, milestone, or summary" />
+      </label>
+      <label class="filter-field" for="f-cohort">
+        <span>Cohort</span>
+        <select id="f-cohort">
+          <option value="">All cohorts</option>
+          {cohorts.map((c) => <option value={c}>{c}</option>)}
+        </select>
+      </label>
+      <label class="filter-field" for="f-category">
+        <span>Field</span>
+        <select id="f-category">
+          <option value="">All categories</option>
+          {categories.map((c) => <option value={c}>{c}</option>)}
+        </select>
+      </label>
+      <label class="filter-field" for="f-engine">
+        <span>Primary engine</span>
+        <select id="f-engine">
+          <option value="">All engines</option>
+          {engines.map((c) => <option value={c}>{c}</option>)}
+        </select>
+      </label>
+      <label class="filter-field" for="f-archetype">
+        <span>Archetype</span>
+        <select id="f-archetype">
+          <option value="">All archetypes</option>
+          {archetypes.map((c) => <option value={c}>{c}</option>)}
+        </select>
+      </label>
+      <label class="filter-field filter-field-sort" for="f-sort">
+        <span>Order</span>
+        <select id="f-sort">
+          <option value="name">Name (A→Z)</option>
+          <option value="age-asc">Milestone age (low→high)</option>
+          <option value="age-desc">Milestone age (high→low)</option>
+        </select>
+      </label>
+    </fieldset>
+    <div class="filter-footer">
+      <details class="filter-key">
+        <summary>What do these terms mean?</summary>
+        <p><strong>Primary engine</strong> is the main mechanism behind an early milestone. <strong>Archetype</strong> groups similar starting advantages. Both are interpretation aids, not scores.</p>
+      </details>
+      <div class="active-filter-bar">
+        <span id="active-filters">No filters active</span>
+        <button class="filter-reset" id="clear-filters" type="button" disabled>Clear all</button>
+      </div>
+    </div>
+  </section>
 
   <div class="person-grid" id="results">
-    <div style="padding:40px;text-align:center;color:var(--text-faint);">Loading people…</div>
+    <div class="explore-state" role="status">Loading published paths…</div>
+  </div>
+  <div class="results-actions" id="results-actions" hidden>
+    <button class="load-more" id="load-more" type="button">Load 48 more paths</button>
   </div>
 
-  <script is:inline type="application/json" id="tier-definitions" set:html={JSON.stringify(TIER_DEFINITIONS)} />
   <script>
-    let people = null;
-    const tierDefinitions = JSON.parse(document.getElementById("tier-definitions").textContent);
+    type Person = {
+      age_at_milestone?: number;
+      category?: string;
+      cohort_group?: string;
+      early_history_summary?: string;
+      milestone_by_age_26?: string;
+      name: string;
+      normalized_primary_engine?: string;
+      person_id: string;
+      primary_early_advantage_archetype?: string;
+    };
+
+    let people: Person[] | null = null;
+    let visibleCount = 48;
     const results = document.getElementById("results") as HTMLElement;
     const countEl = document.getElementById("count") as HTMLElement;
+    const activeFilters = document.getElementById("active-filters") as HTMLElement;
+    const clearFilters = document.getElementById("clear-filters") as HTMLButtonElement;
+    const resultsActions = document.getElementById("results-actions") as HTMLElement;
+    const loadMore = document.getElementById("load-more") as HTMLButtonElement;
     const search = document.getElementById("search") as HTMLInputElement;
     const fCohort = document.getElementById("f-cohort") as HTMLSelectElement;
     const fCategory = document.getElementById("f-category") as HTMLSelectElement;
     const fEngine = document.getElementById("f-engine") as HTMLSelectElement;
     const fArchetype = document.getElementById("f-archetype") as HTMLSelectElement;
-    const fTier = document.getElementById("f-tier") as HTMLSelectElement;
     const fSort = document.getElementById("f-sort") as HTMLSelectElement;
 
-    function escapeHtml(s) {
-      return String(s).replace(/[&<>"']/g, (c) => ({ "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;" }[c]));
+    function escapeHtml(value: unknown) {
+      const entities: Record<string, string> = { "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;" };
+      return String(value).replace(/[&<>"']/g, (character) => entities[character]);
+    }
+
+    const controls = [search, fCohort, fCategory, fEngine, fArchetype, fSort];
+
+    function clearAllFilters() {
+      for (const control of controls) control.value = control === fSort ? "name" : "";
+      visibleCount = 48;
+      render();
+    }
+
+    function syncUrl() {
+      const params = new URLSearchParams();
+      if (search.value.trim()) params.set("q", search.value.trim());
+      if (fCohort.value) params.set("cohort", fCohort.value);
+      if (fCategory.value) params.set("field", fCategory.value);
+      if (fEngine.value) params.set("engine", fEngine.value);
+      if (fArchetype.value) params.set("archetype", fArchetype.value);
+      if (fSort.value !== "name") params.set("order", fSort.value);
+      const query = params.toString();
+      window.history.replaceState({}, "", query ? `${window.location.pathname}?${query}` : window.location.pathname);
     }
 
     function render() {
@@ -76,7 +162,6 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
       const category = fCategory.value;
       const engine = fEngine.value;
       const archetype = fArchetype.value;
-      const tier = fTier.value;
       const sort = fSort.value;
 
       const list = people.filter((p) => {
@@ -84,7 +169,6 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
         if (category && p.category !== category) return false;
         if (engine && p.normalized_primary_engine !== engine) return false;
         if (archetype && p.primary_early_advantage_archetype !== archetype) return false;
-        if (tier && String(p.success_tier) !== tier) return false;
         if (q) {
           const hay = `${p.name} ${p.milestone_by_age_26} ${p.early_history_summary} ${p.category} ${p.primary_early_advantage_archetype}`.toLowerCase();
           if (!hay.includes(q)) return false;
@@ -92,39 +176,90 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
         return true;
       });
 
-      if (sort === "leverage") list.sort((a,b) => (b.total_leverage_score||0) - (a.total_leverage_score||0));
+      if (q && sort === "name") {
+        const searchRank = (person: Person) => {
+          const name = person.name.toLowerCase();
+          if (name === q) return 0;
+          if (name.startsWith(q)) return 1;
+          if (name.includes(q)) return 2;
+          return 3;
+        };
+        list.sort((a, b) => searchRank(a) - searchRank(b) || a.name.localeCompare(b.name));
+      }
       else if (sort === "age-asc") list.sort((a,b) => (a.age_at_milestone||0) - (b.age_at_milestone||0));
       else if (sort === "age-desc") list.sort((a,b) => (b.age_at_milestone||0) - (a.age_at_milestone||0));
       else if (sort === "name") list.sort((a,b) => a.name.localeCompare(b.name));
 
-      countEl.textContent = `${list.length} / ${people.length}`;
-      results.innerHTML = list.map((p) => {
+      const filterLabels = [
+        q ? `“${search.value.trim()}”` : "",
+        cohort,
+        category,
+        engine,
+        archetype,
+      ].filter(Boolean);
+      activeFilters.textContent = filterLabels.length ? filterLabels.join(" · ") : "No filters active";
+      clearFilters.disabled = filterLabels.length === 0 && sort === "name";
+      syncUrl();
+
+      if (list.length === 0) {
+        countEl.textContent = `0 of ${people.length.toLocaleString()} paths`;
+        results.innerHTML = '<div class="explore-state explore-state-empty" role="status"><strong>No paths match this combination.</strong><span>Remove a filter or return to the full atlas.</span><button class="filter-reset" data-clear-filters type="button">Clear all filters</button></div>';
+        resultsActions.hidden = true;
+        return;
+      }
+
+      const displayed = list.slice(0, visibleCount);
+      countEl.textContent = `${displayed.length.toLocaleString()} of ${list.length.toLocaleString()} matching paths`;
+      resultsActions.hidden = displayed.length >= list.length;
+      results.innerHTML = displayed.map((p, index) => {
         const href = "/person/" + encodeURIComponent(p.person_id) + "/";
         return `
         <a class="person-card" href="` + href + `">
-          <div class="name">${escapeHtml(p.name)}</div>
+          <div class="path-record-label">Path record ${String(index + 1).padStart(3, "0")}</div>
+          <div class="person-card-heading">
+            <div class="name">${escapeHtml(p.name)}</div>
+            <span class="person-card-arrow" aria-hidden="true">↗</span>
+          </div>
           <div class="cat">${escapeHtml(p.category || "")} · age ${p.age_at_milestone ?? "?"}</div>
           <div class="milestone">${escapeHtml(p.milestone_by_age_26 || "")}</div>
-          <div class="scores">
-            <span class="score-pill">L <strong>${p.total_leverage_score ?? "—"}</strong></span>
-            <span class="score-pill">T${p.success_tier ?? "?"} ${escapeHtml(tierDefinitions.find(tier => tier.tier === p.success_tier)?.name || "")}</span>
-            ${p.primary_early_advantage_archetype ? `<span class="score-pill">${escapeHtml(p.primary_early_advantage_archetype)}</span>` : ""}
+          <div class="path-record-meta">
+            ${p.normalized_primary_engine ? `<span><b>Engine</b>${escapeHtml(p.normalized_primary_engine)}</span>` : ""}
+            ${p.primary_early_advantage_archetype ? `<span><b>Archetype</b>${escapeHtml(p.primary_early_advantage_archetype)}</span>` : ""}
           </div>
         </a>
       `;
       }).join("");
     }
 
-    [search, fCohort, fCategory, fEngine, fArchetype, fTier, fSort].forEach((el) =>
-      el.addEventListener("input", render)
-    );
+    const params = new URLSearchParams(window.location.search);
+    search.value = params.get("q") ?? "";
+    fCohort.value = params.get("cohort") ?? "";
+    fCategory.value = params.get("field") ?? "";
+    fEngine.value = params.get("engine") ?? "";
+    fArchetype.value = params.get("archetype") ?? "";
+    fSort.value = params.get("order") ?? "name";
+
+    for (const control of controls) {
+      control.addEventListener("input", () => {
+        visibleCount = 48;
+        render();
+      });
+    }
+    clearFilters.addEventListener("click", clearAllFilters);
+    loadMore.addEventListener("click", () => {
+      visibleCount += 48;
+      render();
+    });
+    results.addEventListener("click", (event) => {
+      if ((event.target as HTMLElement).closest("[data-clear-filters]")) clearAllFilters();
+    });
 
     // Fetch data client-side instead of embedding
-    fetch("/data/people.json").then(r => r.json()).then(data => {
+    fetch("/data/people.json").then((response: Response) => response.json()).then((data: Person[]) => {
       people = data;
       render();
-    }).catch(err => {
-      results.innerHTML = '<div style="padding:40px;text-align:center;color:var(--text-faint);">Failed to load data. Please refresh.</div>';
+    }).catch(() => {
+      results.innerHTML = '<div class="explore-state explore-state-error" role="alert"><strong>The atlas could not load.</strong><span>Refresh the page to try again.</span></div>';
     });
   </script>
 </Base>

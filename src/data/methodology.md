@@ -1,4 +1,6 @@
-# Methodology
+---
+title: Methodology
+---
 
 ## Research question
 
@@ -207,17 +209,19 @@ up to four of that person’s strongest documented starting conditions and up to
 four of their strongest leverage fields. The visitor reports the presence of
 those same ingredients and selects an origin for each reported lever.
 
-The result has three descriptive outputs:
+The result is a non-aggregated mechanism map. Each selected starting condition
+and capability stays on its own row, showing the profile's documented level,
+the visitor's answer, and whether those two visible values align. Leverage
+origins are compared separately because an equal observed capability can have
+an inherited, enabled, earned, self-built, external, mixed, or unresolved
+origin.
 
-- **Starting overlap:** normalized closeness across the selected starting conditions.
-- **Leverage overlap:** normalized closeness across the selected capabilities.
-- **Surface resemblance:** the average of those two overlaps.
-
-The result then identifies where comparison breaks: ingredient composition,
-leverage provenance, sequence, and luck. It does not output the probability of
-success, a predicted tier, a ceiling, or a claim that the visitor is “the next”
-person. Direct comparison is an acquisition and reflection device, not the
-product’s conclusion.
+The mechanism map then identifies where comparison breaks: ingredient
+composition, leverage provenance, sequence, and luck. It deliberately does not
+collapse those observations into a resemblance percentage. It does not output
+the probability of success, a predicted tier, a ceiling, or a claim that the
+visitor is “the next” person. Direct comparison is an acquisition and
+reflection device, not the product’s conclusion.
 
 ## Luck and outcome variance
 

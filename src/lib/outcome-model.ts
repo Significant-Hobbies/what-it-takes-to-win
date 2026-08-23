@@ -373,7 +373,7 @@ const PROVENANCE_LINKS: Record<string, string[]> = {
   ],
 };
 
-export const TIER_DEFINITIONS = [
+const TIER_DEFINITIONS = [
   {
     tier: 1,
     name: "Global icon",

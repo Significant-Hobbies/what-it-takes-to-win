@@ -1,26 +1,41 @@
 ---
 import Base from "../../layouts/Base.astro";
-import methodology from "../../data/methodology.md?raw";
-const lines = methodology.split("\n");
-function inline(s) {
-  return s.replace(/`([^`]+)`/g, '<code>$1</code>');
-}
+import { Content as MethodologyContent } from "../../data/methodology.md";
 ---
 
-<Base title="Methodology — Look Sideways">
-  <section class="hero" style="padding-bottom:24px;">
+<Base title="Methodology — Look Sideways" mainClass="methodology-main">
+  <section class="hero methodology-hero">
+    <p class="eyebrow">Research protocol</p>
     <h1>Methodology & limitations</h1>
     <p class="lede">Read this before interpreting any score. The dataset is a research beta, not a measurement.</p>
+    <div class="methodology-verdict">
+      <span>Interpretation boundary</span>
+      <strong>Descriptive evidence, not a causal recipe.</strong>
+    </div>
   </section>
 
-  <article class="prose">
-    {lines.map((line) => {
-      if (line.startsWith("# ")) return <h1 style="display:none;">{line.slice(2)}</h1>;
-      if (line.startsWith("## ")) return <h2>{line.slice(3)}</h2>;
-      if (line.startsWith("### ")) return <h3>{line.slice(4)}</h3>;
-      if (line.startsWith("- ")) return <li set:html={inline(line.slice(2))} />;
-      if (line.trim() === "") return <br />;
-      return <p set:html={inline(line)} />;
-    })}
-  </article>
+  <div class="methodology-layout">
+    <aside class="methodology-contract" aria-labelledby="methodology-contract-heading">
+      <p class="eyebrow">Reading contract</p>
+      <h2 id="methodology-contract-heading">What this project can say</h2>
+      <dl>
+        <div>
+          <dt>Can describe</dt>
+          <dd>Repeated conditions and capabilities in selected early-breakthrough paths.</dd>
+        </div>
+        <div>
+          <dt>Cannot establish</dt>
+          <dd>Base rates, causality, counterfactuals, or a probability of success.</dd>
+        </div>
+        <div>
+          <dt>Current evidence</dt>
+          <dd><a href="/coverage/">Inspect the live coverage ledger →</a></dd>
+        </div>
+      </dl>
+    </aside>
+
+    <article class="prose methodology-prose">
+      <MethodologyContent />
+    </article>
+  </div>
 </Base>

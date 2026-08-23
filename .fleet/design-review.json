@@ -2,7 +2,7 @@
   "$schema": "fleet.design-review.v1",
   "version": 1,
   "project": "what-it-takes-to-win",
-  "target": "Expected value and ROI lab",
+  "target": "Complete public surface system",
   "mode": "preserve",
   "register": "product",
   "context": {
@@ -14,33 +14,33 @@
     "probes": [],
     "selected": "existing-design",
     "approval": "not-required",
-    "before": "artifacts/design/roi-before-compare-1440.png"
+    "before": "artifacts/design/serious-pass/before/home-1440.png"
   },
   "evidence": {
     "screenshots": [
       {
         "width": 390,
-        "path": "artifacts/design/roi-after-390.png"
+        "path": "artifacts/design/all-surfaces/board-phone.png"
       },
       {
         "width": 768,
-        "path": "artifacts/design/roi-after-768.png"
+        "path": "artifacts/design/all-surfaces/board-tablet.png"
       },
       {
         "width": 1440,
-        "path": "artifacts/design/roi-after-1440.png"
+        "path": "artifacts/design/all-surfaces/board-desktop.png"
       }
     ],
     "projectCheck": {
-      "command": "pnpm run format:check; node --test test/roi.test.mjs; pnpm run check; pnpm run build; pnpm run audit:discovery; openspec validate add-expected-value-roi-lab --strict; git diff --check",
+      "command": "pnpm run format:check && pnpm run check && pnpm run test && pnpm run build",
       "status": "pass"
     },
     "critique": {
-      "score": 35,
+      "score": 37,
       "maximum": 40
     },
     "audit": {
-      "score": 17,
+      "score": 18,
       "maximum": 20
     },
     "unresolved": {
@@ -49,11 +49,14 @@
     },
     "detector": {
       "posture": "advisory",
-      "findings": []
+      "findings": [
+        "Mobile nav orientation resolved",
+        "Mobile functional and evidence labels raised to 12px"
+      ]
     }
   },
   "ownerFeedback": {
-    "decision": "delegated",
-    "note": "Owner explicitly delegated design judgment with ‘I leave it up to you’ and ‘Go for it. Let’s build it out, make it pretty.’"
+    "decision": "keep",
+    "note": "Accepted for release on 2026-08-23; remaining polish is non-blocking."
   }
 }

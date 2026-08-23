@@ -2,21 +2,15 @@
 import "../styles/global.css";
 import "../styles/exhibit-finish.css";
 import peopleData from "../data/people.json";
+import { summarizeCoverage, type CoveragePerson } from "../lib/coverage";
 const peopleCount = peopleData.length;
-const sourceVerifiedCount = peopleData.filter(
-  (p) => p.source_audit_status === "source_verified"
-).length;
-const partialVerifiedCount = peopleData.filter(
-  (p) => p.source_audit_status === "partial_source_verification"
-).length;
+const coverage = summarizeCoverage(peopleData as CoveragePerson[]);
 const auditGates = [
   { label: "Double-coding", status: "done", note: "16-record stratified sample" },
   {
-    label: "Source audit",
-    status: sourceVerifiedCount > 0 ? "done" : "pending",
-    note: sourceVerifiedCount > 0
-      ? `${sourceVerifiedCount.toLocaleString()} verified`
-      : "Not started",
+    label: "Source reachability",
+    status: coverage.auditPending.count === 0 ? "done" : "partial",
+    note: `${coverage.auditReviewed.count.toLocaleString()}/${coverage.total.toLocaleString()} reviewed`,
   },
   { label: "User comprehension", status: "pending", note: "External observation" },
   { label: "Matched comparison", status: "pending", note: "No control group" },
@@ -39,7 +33,7 @@ const navLinks = [
   { href: "/", label: "Story" },
   { href: "/essays/", label: "Essays" },
   { href: "/insights/", label: "Insights" },
-  { href: "/explore/", label: "Explore" },
+  { href: "/explore/", label: "Explore", activePrefixes: ["/explore/", "/person/"] },
   { href: "/compare/", label: "Am I Next?", activePrefixes: ["/compare/", "/am-i-the-next/"] },
   { href: "/roi/", label: "ROI Lab" },
   { href: "/coverage/", label: "Evidence" },
@@ -128,13 +122,13 @@ const isActive = (link: (typeof navLinks)[number]) =>
             compounding, luck, and the limits of comparison.
           </p>
         </div>
-        <div class="footer-audit" aria-label="Independent audit status">
-          <p class="footer-audit-heading">Independent audit</p>
+        <div class="footer-audit" aria-label="Research audit status">
+          <p class="footer-audit-heading">Research audit status</p>
           <ul class="audit-gates">
             {auditGates.map((gate) => (
               <li class={`audit-gate audit-gate-${gate.status}`}>
                 <span class="audit-gate-mark" aria-hidden="true">
-                  {gate.status === "done" ? "✓" : "○"}
+                  {gate.status === "done" ? "✓" : gate.status === "partial" ? "◐" : "○"}
                 </span>
                 <span class="audit-gate-label">{gate.label}</span>
                 <span class="audit-gate-note">{gate.note}</span>
@@ -161,6 +155,18 @@ const isActive = (link: (typeof navLinks)[number]) =>
       </div>
     </footer>
     <script>
+      const primaryNav = document.querySelector<HTMLElement>(".site-nav");
+      const activeNavLink = primaryNav?.querySelector<HTMLElement>('[aria-current="page"]');
+
+      if (primaryNav && activeNavLink && window.matchMedia("(max-width: 900px)").matches) {
+        requestAnimationFrame(() => {
+          primaryNav.scrollLeft = Math.max(
+            0,
+            activeNavLink.offsetLeft - (primaryNav.clientWidth - activeNavLink.clientWidth) / 2,
+          );
+        });
+      }
+
       (function() {
         const input = document.getElementById('nav-search-input') as HTMLInputElement | null;
         const results = document.getElementById('nav-search-results');

@@ -21,6 +21,7 @@
   --border-soft: rgba(222, 231, 239, 0.12);
   position: relative;
   isolation: isolate;
+  overflow-x: clip;
   background: #07101c;
 }
 
@@ -1062,6 +1063,14 @@
   .story-opening { padding-top: 20svh; }
   .story-opening h1 { max-width: 100%; font-size: 37px; }
   .story-deck { max-width: 100%; }
+  .story-opening-note {
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+  .story-opening-note p {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
   .story-actions { align-items: flex-start; flex-direction: column; }
 }
 

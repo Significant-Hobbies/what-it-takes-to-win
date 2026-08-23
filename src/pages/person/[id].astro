@@ -78,23 +78,27 @@ const structuredData = {
   title={`${p.name} — Look Sideways`}
   description={p.milestone_by_age_26}
   structuredData={structuredData}
+  mainClass="person-main"
 >
   <section class="person-detail">
-    <p style="margin:24px 0 8px;font-family:var(--mono);font-size:12px;color:var(--text-faint);">
+    <p class="person-back">
       <a href="/explore/">← back to explore</a>
     </p>
-    <h1>{p.name}</h1>
-    <div class="cat">
-      {p.cohort_group} · {p.category} · milestone at age {p.age_at_milestone} ·
-      <a href={`/insights/#tier-${p.success_tier}`}>T{p.success_tier} {path.tierDefinition.name}</a>
-    </div>
+    <header class="person-profile-header">
+      <p class="eyebrow">Documented path</p>
+      <h1>{p.name}</h1>
+      <div class="cat">
+        {p.cohort_group} · {p.category} · milestone at age {p.age_at_milestone} ·
+        <a href={`/insights/#tier-${p.success_tier}`}>T{p.success_tier} {path.tierDefinition.name}</a>
+      </div>
 
-    <div class="milestone-box">
-      <div class="label">Milestone (age {p.age_at_milestone})</div>
-      <div class="text">{p.milestone_by_age_26}</div>
-    </div>
+      <div class="milestone-box">
+        <div class="label">Selected early milestone · age {p.age_at_milestone}</div>
+        <div class="text">{p.milestone_by_age_26}</div>
+      </div>
 
-    <div class="summary">{p.early_history_summary}</div>
+      <p class="summary">{p.early_history_summary}</p>
+    </header>
     <section
       class={`standing-context tier-${p.success_tier}`}
       aria-labelledby="standing-context-heading"
@@ -140,14 +144,14 @@ const structuredData = {
     </div>
 
     {p.starting_point && p.starting_point !== "Not documented in reviewed sources." && (
-      <div class="grid grid-2" style="margin-bottom:8px;">
+      <div class="grid grid-2 person-context-grid">
         <div class="card">
           <h3>Starting point</h3>
-          <p style="font-size:14px;color:var(--text-dim);margin:0;">{p.starting_point}</p>
+          <p>{p.starting_point}</p>
         </div>
         <div class="card">
           <h3>Current position ({p.current_position_year ?? "—"}{p.is_living === false ? " · deceased" : ""})</h3>
-          <p style="font-size:14px;color:var(--text-dim);margin:0;">{p.current_position || "Not documented."}</p>
+          <p>{p.current_position || "Not documented."}</p>
         </div>
       </div>
     )}

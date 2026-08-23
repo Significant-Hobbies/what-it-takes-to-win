@@ -28,6 +28,9 @@
 
 - Primary actions use the blue accent; secondary actions remain text or outline.
 - Cards use one-pixel borders and no decorative shadows.
+- Concept color belongs in labels, data marks, and state—not on container
+  borders. Structural borders stay neutral so the interface reads as a
+  publication rather than a collection of themed cards.
 - Eyebrows are uppercase mono labels that orient, not decorate.
 - The homepage is a marble run: **three marbles, one open channel, one clock.**
   Sixty-four read as a competition, which is the frame the essay dismantles. One

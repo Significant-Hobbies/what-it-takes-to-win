@@ -24,7 +24,7 @@ const essays = [
   },
 ];
 
-const formatDate = (iso) =>
+const formatDate = (iso: string) =>
   new Date(`${iso}T00:00:00`).toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
@@ -36,35 +36,49 @@ const formatDate = (iso) =>
   title="Essays — Look Sideways"
   description="Long-form essays on advantage, abstraction, and the invisible infrastructure of achievement."
   canonicalPath="/essays/"
+  mainClass="essays-main"
 >
-  <section class="hero" style="padding-bottom:24px;">
+  <section class="hero essays-hero">
     <p class="eyebrow">Writing</p>
     <h1>Essays</h1>
     <p class="lede">
       Long-form pieces that sit alongside the dataset — on advantage, abstraction,
       and the invisible infrastructure of achievement.
     </p>
+    <p class="essays-edition">Edition 01 · {essays.length} published pieces</p>
   </section>
 
-  <ol class="essay-list">
+  <section class="essays-index" aria-labelledby="essays-index-heading">
+    <header class="essays-index-heading">
+      <p class="eyebrow">Reading room</p>
+      <h2 id="essays-index-heading">Arguments behind the atlas</h2>
+    </header>
+    <ol class="essay-list">
     {
-      essays.map((essay) => (
+      essays.map((essay, index) => (
         <li>
           <article class="essay-card">
-            <h2>
-              <a href={essay.href}>{essay.title}</a>
-            </h2>
-            <p class="essay-card-subtitle">{essay.subtitle}</p>
-            <p class="essay-card-meta">
-              <time datetime={essay.date}>{formatDate(essay.date)}</time>
-              <span>·</span>
-              <span>{essay.readingMinutes} min read</span>
-            </p>
-            <p class="essay-card-desc">{essay.description}</p>
-            <a class="essay-card-link" href={essay.href}>Read the essay →</a>
+            <p class="essay-card-index">{String(index + 1).padStart(2, "0")}</p>
+            <div class="essay-card-copy">
+              <p class="essay-card-meta">
+                <time datetime={essay.date}>{formatDate(essay.date)}</time>
+                <span>·</span>
+                <span>{essay.readingMinutes} min read</span>
+              </p>
+              <h3>
+                <a href={essay.href}>{essay.title}</a>
+              </h3>
+              <p class="essay-card-subtitle">{essay.subtitle}</p>
+              <p class="essay-card-desc">{essay.description}</p>
+            </div>
+            <a class="essay-card-link" href={essay.href} aria-label={`Read ${essay.title}`}>
+              <span>Read essay</span>
+              <span aria-hidden="true">↗</span>
+            </a>
           </article>
         </li>
       ))
     }
-  </ol>
+    </ol>
+  </section>
 </Base>

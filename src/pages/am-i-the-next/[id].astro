@@ -146,8 +146,8 @@ const structuredData = {
         you will also identify where yours came from—the distinction a raw score hides.
       </p>
       <p>
-        The result is <strong>surface resemblance</strong>: descriptive overlap across the selected
-        fields, not the probability that you become {person.name}.
+        The result is a <strong>mechanism map</strong>: each selected field stays separate, so a few
+        visible similarities cannot turn into a personality score or a forecast.
       </p>
     </div>
 
@@ -280,13 +280,24 @@ const structuredData = {
       }[character] || character));
     }
 
-    function overlapScore(fields: any[], values: FormData, prefix: string) {
-      if (!fields.length) return 0;
-      const scores = fields.map((field) => {
+    function mechanismRows(fields: any[], values: FormData, prefix: string, personName: string) {
+      return fields.map((field) => {
         const answer = Number(values.get(`${prefix}-${field.key}`));
-        return 1 - (Math.abs(answer - field.target) / field.max);
-      });
-      return Math.round(scores.reduce((sum, score) => sum + score, 0) / scores.length * 100);
+        const distance = Math.abs(answer - field.target);
+        const relation = distance === 0
+          ? { className: "is-same", label: "same recorded level" }
+          : distance === 1
+            ? { className: "is-nearby", label: "nearby, not equal" }
+            : { className: "is-different", label: "different recorded level" };
+        return `
+          <div class="mechanism-row">
+            <strong>${escapeHtml(field.label)}</strong>
+            <span>${escapeHtml(personName)} <b>${field.target}/${field.max}</b></span>
+            <span>You <b>${answer}/${field.max}</b></span>
+            <em class="${relation.className}">${relation.label}</em>
+          </div>
+        `;
+      }).join("");
     }
 
     if (form && result && error && dataElement) {
@@ -299,9 +310,8 @@ const structuredData = {
         }
         error.hidden = true;
         const values = new FormData(form);
-        const advantageOverlap = overlapScore(comparison.advantages, values, "adv");
-        const leverageOverlap = overlapScore(comparison.leverage, values, "lev");
-        const surfaceOverlap = Math.round((advantageOverlap + leverageOverlap) / 2);
+        const advantageRows = mechanismRows(comparison.advantages, values, "adv", comparison.person.name);
+        const leverageRows = mechanismRows(comparison.leverage, values, "lev", comparison.person.name);
         const provenanceRows = comparison.leverage.map((field: any) => {
           const visitorOrigin = String(values.get(`origin-${field.key}`) || "unresolved");
           const visitorLabel = visitorOrigin.replace(/(^|-)([a-z])/g, (_: string, separator: string, letter: string) => `${separator ? " " : ""}${letter.toUpperCase()}`);
@@ -316,25 +326,25 @@ const structuredData = {
             </div>
           `;
         }).join("");
-        const highSurface = surfaceOverlap >= 75;
         result.innerHTML = `
           <div class="result-hero">
-            <p class="eyebrow">Surface resemblance</p>
-            <div class="result-score">${surfaceOverlap}<span>%</span></div>
-            <h2>${highSurface ? "The visible ingredients overlap. The future still does not." : "The visible paths differ—and the score is still not destiny."}</h2>
-            <p>This is descriptive overlap across ${comparison.advantages.length + comparison.leverage.length} selected fields, not the probability that you become ${escapeHtml(comparison.person.name)}.</p>
+            <p class="eyebrow">Mechanism map · no composite score</p>
+            <h2>The visible fields stay separate. The future stays unknowable.</h2>
+            <p>Each row compares one documented signal. No average can turn these ${comparison.advantages.length + comparison.leverage.length} observations into the probability that you become ${escapeHtml(comparison.person.name)}.</p>
           </div>
-          <div class="compare-score-families">
-            <div class="card compare-family-result advantage-family">
-              <div class="compare-family-stage">Starting-position overlap</div>
-              <div class="compare-family-score">${advantageOverlap}<span>%</span></div>
-              <p>Even equal totals can contain different family, institutional, geographic, and mentor conditions.</p>
-            </div>
-            <div class="card compare-family-result leverage-family">
-              <div class="compare-family-stage">Capability overlap</div>
-              <div class="compare-family-score">${leverageOverlap}<span>%</span></div>
-              <p>The amount can look similar while its origin and interaction with the path remain different.</p>
-            </div>
+          <div class="mechanism-map-grid">
+            <section class="mechanism-family advantage-family">
+              <div class="compare-family-stage">Starting conditions</div>
+              <h3>Visible access near the beginning</h3>
+              <p>Equal recorded levels can still hide different family, institutional, geographic, and mentor conditions.</p>
+              <div class="mechanism-rows">${advantageRows}</div>
+            </section>
+            <section class="mechanism-family leverage-family">
+              <div class="compare-family-stage">Current capabilities</div>
+              <h3>Visible multiplying capacity now</h3>
+              <p>Equal recorded levels can come from different origins and interact with a path in a different order.</p>
+              <div class="mechanism-rows">${leverageRows}</div>
+            </section>
           </div>
           <div class="result-breakdown">
             <h3>Where the direct comparison breaks</h3>

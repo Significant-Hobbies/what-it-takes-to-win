@@ -1024,6 +1024,41 @@
 }
 
 @media (max-width: 620px) {
+  .roi-kicker,
+  .roi-step,
+  .roi-definition span,
+  .roi-field > span,
+  .roi-mobile-label,
+  .roi-stage-guide,
+  .roi-proof-status > span,
+  .roi-primary-result > span,
+  .roi-result-grid dt,
+  .roi-proof-section-heading span,
+  .roi-allocation-list dt,
+  .roi-allocation-list dd,
+  .roi-allocation > p,
+  .roi-formula-proof li span,
+  .roi-formula-proof li strong,
+  .roi-contribution-list > p,
+  .roi-contribution-row strong,
+  .roi-contribution-row span,
+  .roi-path-comparison figcaption,
+  .roi-path-label span,
+  .roi-path-legend {
+    font-size: 12px;
+  }
+
+  .roi-button,
+  .roi-add-button,
+  .roi-text-button,
+  .roi-field input,
+  .roi-field select,
+  .roi-row input,
+  .roi-row select,
+  .roi-remove-button {
+    min-height: 44px;
+  }
+
   .roi-intro {
     padding-top: 42px;
   }
@@ -1057,6 +1092,7 @@
 
   .roi-remove-button {
     width: auto;
+    min-width: 44px;
     justify-self: start;
     color: var(--text-faint);
     font-size: 11px;

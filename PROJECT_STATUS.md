@@ -1,6 +1,6 @@
 # Look Sideways — PROJECT STATUS
 
-Last updated: 2026-08-22
+Last updated: 2026-08-23
 
 ## Why / What
 
@@ -43,6 +43,12 @@ formula or a repeatable identity.
 
 ## Timeline
 
+- 2026-08-23 — completed a public-surface design pass across all 15 product
+  surfaces: consolidated navigation around Explore, Essays, Methodology, and
+  Evidence; rebuilt Explore as a research atlas; strengthened profile,
+  questionnaire, essay, methodology, ROI, and error-page hierarchy; and
+  replaced ornamental color-coded container borders with a neutral publication
+  system while retaining semantic color for data and state
 - 2026-08-22 — surfaced the condition-factor decomposition (what they brought /
   were handed / were surrounded by) as the primary read on every profile; the
   annotation existed on all 3,577 records but had never shipped. Corrected the
@@ -133,6 +139,9 @@ formula or a repeatable identity.
 
 ## Features (shipped)
 
+- Publication-grade surface system with neutral structural borders, semantic
+  data color, a shared responsive shell, and documented visual QA across all 15
+  public surface families
 - Input-based Expected Value & ROI Lab with no runtime AI or data transmission,
   visible formulas, synthetic example, probability reconciliation, downside and
   break-even context, and local stage allocation
