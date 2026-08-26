@@ -2,7 +2,7 @@
   "$schema": "fleet.design-review.v1",
   "version": 1,
   "project": "what-it-takes-to-win",
-  "target": "Complete public surface system",
+  "target": "Guided comparison-futility journey across the public product",
   "mode": "overhaul",
   "register": "product",
   "context": {
@@ -37,23 +37,23 @@
     "screenshots": [
       {
         "width": 390,
-        "path": "artifacts/design/kinetic-essay-build/home-390.png"
+        "path": "artifacts/design/comparison-journey-build/home-390.png"
       },
       {
         "width": 768,
-        "path": "artifacts/design/kinetic-essay-build/home-768.png"
+        "path": "artifacts/design/comparison-journey-build/home-768.png"
       },
       {
         "width": 1440,
-        "path": "artifacts/design/kinetic-essay-build/home-1440.png"
+        "path": "artifacts/design/comparison-journey-build/home-1440.png"
       }
     ],
     "projectCheck": {
-      "command": "pnpm run check && pnpm run format:check && pnpm run build && git diff --check",
+      "command": "pnpm test && pnpm run check && pnpm run format:check && pnpm run build && pnpm run audit:discovery && pnpm run audit:clarity && pnpm run audit:stats && git diff --check",
       "status": "pass"
     },
     "critique": {
-      "score": 36,
+      "score": 38,
       "maximum": 40
     },
     "audit": {
@@ -67,14 +67,15 @@
     "detector": {
       "posture": "advisory",
       "findings": [
-        "CLI detector: 0 source findings for src/pages/index.astro",
-        "No runtime console errors or horizontal overflow at 390, 768, and 1440 pixels",
-        "Finish review: Kinetic Essay preserves the selected probe and needs no conceptual redesign"
+        "CLI detector: 0 source findings across eight representative markup targets",
+        "No runtime console errors, duplicate ids, unlabeled controls, or horizontal overflow on representative routes at 390, 768, and 1440 pixels",
+        "Runtime typography warnings are advisory and concentrated in repeated archive metadata; the intentional Kinetic Essay palette, grid, and course illustration were preserved",
+        "Critique: 23/24 applicable heuristics, with zero unresolved P0 or P1 findings"
       ]
     }
   },
   "ownerFeedback": {
     "decision": "keep",
-    "note": "Owner accepted the Kinetic Essay implementation for release on 2026-08-23 and explicitly chose not to spend more time iterating. Responsive evidence, critique, audit, and build are complete."
+    "note": "Owner retained the approved Kinetic Essay visual system and approved the comparison-futility journey refocus on 2026-08-26. Responsive evidence, independent critique, detector review, and project checks are complete."
   }
 }

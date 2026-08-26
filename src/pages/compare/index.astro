@@ -1,22 +1,17 @@
 ---
 import Base from "../../layouts/Base.astro";
 import peopleData from "../../data/people.json";
-import { getAdvantageTotal, type OutcomePerson } from "../../lib/outcome-model";
+import { getConditionFactors, type OutcomePerson } from "../../lib/outcome-model";
+import { getReachBand } from "../../lib/journey-model";
 
 const people = peopleData as OutcomePerson[];
 const featuredIds = [
   "bill-gates",
-  "mark-zuckerberg",
-  "vitalik-buterin",
-  "billie-eilish",
-  "cristiano-ronaldo",
-  "roger-federer",
-  "yo-yo-ma",
-  "madonna",
-  "grigori-perelman",
-  "nadia-comaneci",
-  "ayrton-senna",
-  "celine-dion",
+  "bonnie-tyler",
+  "sudha-murty",
+  "mark-webber",
+  "guillermo-rauch",
+  "ben-goodger",
 ];
 const featured = featuredIds
   .map((id) => people.find((person) => person.person_id === id))
@@ -24,16 +19,15 @@ const featured = featuredIds
 ---
 
 <Base
-  title="Am I the Next…? Choose a Path"
-  description="Choose a notable person, compare the visible ingredients of your paths, and see exactly why resemblance is not destiny."
+  title="Break a Comparison — Look Sideways"
+  description="Choose a documented path and see why shared visible ingredients cannot reproduce another person's outcome."
 >
   <section class="hero insight-hero">
-    <p class="eyebrow">Comparison is the doorway—not the answer</p>
-    <h1>Who do you think you might be the next?</h1>
+    <p class="eyebrow">A secondary evidence exercise</p>
+    <h1>Break a comparison.</h1>
     <p class="lede">
-      Pick a person and compare the visible ingredients: starting position, later leverage, where
-      that leverage came from, sequence, and luck. The result measures surface resemblance. It does
-      not predict their outcome for you.
+      Choose a path. Hold its three sources of advantage, perseverance, sequence, and luck apart.
+      The exercise ends when the identity comparison no longer survives.
     </p>
   </section>
 
@@ -47,23 +41,20 @@ const featured = featuredIds
     <div class="section-heading" style="margin-top:0;">
       <p class="eyebrow">Start with a familiar path</p>
       <h2 id="choose-person-heading">Choose a person</h2>
-      <p>Each questionnaire uses that person’s strongest documented signals, not a generic success quiz.</p>
+      <p>The set deliberately mixes extreme public outliers with broader professionally distinctive paths.</p>
     </div>
     <div class="person-grid">
       {featured.map((person) => (
         <a class="person-card next-person-card" href={`/am-i-the-next/${person.person_id}/`}>
-          <div class="name">Am I the next {person.name}?</div>
-          <div class="cat">{person.cohort_group} · milestone at {person.age_at_milestone}</div>
+          <div class="name">Break the {person.name} comparison</div>
+          <div class="cat">{person.cohort_group} · {getReachBand(person).label}</div>
           <div class="milestone">{person.milestone_by_age_26}</div>
-          <div class="scores">
-            <span class="score-pill advantage-pill">
-              Start <strong>{getAdvantageTotal(person)}/24</strong>
-            </span>
-            <span class="score-pill leverage-pill">
-              Leverage <strong>{person.total_leverage_score}/25</strong>
-            </span>
+          <div class="path-record-meta">
+            {getConditionFactors(person).map((factor) => (
+              <span><b>{factor.label}</b>{factor.assessed ? factor.bandLabel : "Not assessed"}</span>
+            ))}
           </div>
-          <span class="card-link">Compare visible ingredients →</span>
+          <span class="card-link">See where the analogy fails →</span>
         </a>
       ))}
     </div>
@@ -73,10 +64,10 @@ const featured = featuredIds
     <article class="card">
       <h3>What the result can reveal</h3>
       <ul class="clean-list">
-        <li>Which documented starting conditions overlap.</li>
-        <li>Which multiplying capabilities are present in both paths.</li>
-        <li>Whether similar leverage appears to come from different origins.</li>
-        <li>Where your next buildable gap may be.</li>
+        <li>What the person brought.</li>
+        <li>What they were handed.</li>
+        <li>What surrounded them.</li>
+        <li>Where repeated work and unchosen openings appear.</li>
       </ul>
     </article>
     <article class="card">
@@ -93,7 +84,7 @@ const featured = featuredIds
   <section class="closing-cta">
     <p class="eyebrow">All {people.length.toLocaleString()} paths</p>
     <h2>Looking for someone else?</h2>
-    <p>Search the full dataset, open their profile, then use the person-specific comparison.</p>
+    <p>Search the full dataset and inspect a path through the same three-source model.</p>
     <a class="btn-link btn-link-primary" href="/explore/">Find a person →</a>
   </section>
 </Base>

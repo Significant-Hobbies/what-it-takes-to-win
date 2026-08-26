@@ -12,10 +12,14 @@ import {
   buildPersonPath,
   getConditionFactors,
   getPersonLeverageProvenance,
-  summarizeOutcomes,
   type OutcomePerson,
   type ScoreField,
 } from "../../lib/outcome-model";
+import {
+  getLuckEvidence,
+  getPerseveranceEvidence,
+  getReachBand,
+} from "../../lib/journey-model";
 
 export function getStaticPaths() {
   return peopleData.map((p) => ({ params: { id: p.person_id } }));
@@ -25,12 +29,9 @@ const people = peopleData as OutcomePerson[];
 const p = people.find((person) => person.person_id === Astro.params.id)!;
 const path = buildPersonPath(p, people);
 const conditionFactors = getConditionFactors(p);
-const outcomeSummary = summarizeOutcomes(people);
-const standing = outcomeSummary.tiers.find((tier) => tier.tier === p.success_tier)!;
-const standingBand = standing.rankStart === 1
-  ? `Top ${standing.topBandEnd.toFixed(1)}% tier`
-  : `${standing.topBandStart.toFixed(1)}–${standing.topBandEnd.toFixed(1)}% band from the top`;
-
+const reachBand = getReachBand(p);
+const perseveranceEvidence = getPerseveranceEvidence(p);
+const luckEvidence = getLuckEvidence(p);
 function barRows(fields: ScoreField[], person: OutcomePerson) {
   return fields.map((field) => {
     const rawValue = person[field.key];
@@ -89,7 +90,7 @@ const structuredData = {
       <h1>{p.name}</h1>
       <div class="cat">
         {p.cohort_group} · {p.category} · milestone at age {p.age_at_milestone} ·
-        <a href={`/insights/#tier-${p.success_tier}`}>T{p.success_tier} {path.tierDefinition.name}</a>
+        <a href="/insights/#broader-success">{reachBand.label}</a>
       </div>
 
       <div class="milestone-box">
@@ -99,58 +100,19 @@ const structuredData = {
 
       <p class="summary">{p.early_history_summary}</p>
     </header>
-    <section
-      class={`standing-context tier-${p.success_tier}`}
-      aria-labelledby="standing-context-heading"
-      data-clarity-contract="outcome-distribution-context"
-    >
-      <div class="standing-context-heading">
-        <div>
-          <p class="eyebrow">Standing in this curated dataset</p>
-          <h2 id="standing-context-heading">
-            {standingBand} · ranks {standing.rankStart.toLocaleString()}–{standing.rankEnd.toLocaleString()}
-          </h2>
-        </div>
-        <span class="tier-badge">T{p.success_tier} · {standing.name}</span>
-      </div>
-      <div class="standing-context-stats">
-        <div>
-          <strong>{standing.count.toLocaleString()}</strong>
-          <span>profiles in the same tier</span>
-        </div>
-        <div>
-          <strong>{standing.lowerOutcomeCount.toLocaleString()}</strong>
-          <span>lower-tier paths in this dataset</span>
-        </div>
-        <div>
-          <strong>{standing.lowerPerMember.toFixed(1)}×</strong>
-          <span>lower-tier paths per {standing.name.toLowerCase()} profile</span>
-        </div>
-      </div>
-      <p class="standing-context-boundary">
-        This is a tier band, not {p.name}'s exact percentile: people are not ranked within a tier.
-        It is also not a success probability. Every person here already had a documented early
-        breakthrough; ordinary attempts and near-misses are outside the dataset.
-      </p>
-    </section>
-    <div class="person-next-cta">
-      <div>
-        <strong>Think your path resembles {p.name}'s?</strong>
-        <span>Compare the visible ingredients, then see exactly where the comparison stops working.</span>
-      </div>
-      <a class="btn-link btn-link-primary" href={`/am-i-the-next/${p.person_id}/`}>
-        Am I the next {p.name}? →
-      </a>
-    </div>
+    <aside class="person-reading-boundary">
+      <strong>Do not ask whether you are the next {p.name}.</strong>
+      <span>Ask what this path reveals about conditions, repeated work, and unchosen openings.</span>
+    </aside>
 
     {p.starting_point && p.starting_point !== "Not documented in reviewed sources." && (
       <div class="grid grid-2 person-context-grid">
         <div class="card">
-          <h3>Starting point</h3>
+          <h2>Starting point</h2>
           <p>{p.starting_point}</p>
         </div>
         <div class="card">
-          <h3>Current position ({p.current_position_year ?? "—"}{p.is_living === false ? " · deceased" : ""})</h3>
+          <h2>Current position ({p.current_position_year ?? "—"}{p.is_living === false ? " · deceased" : ""})</h2>
           <p>{p.current_position || "Not documented."}</p>
         </div>
       </div>
@@ -206,10 +168,33 @@ const structuredData = {
         sources record nothing notable either way.
         {p.scoring_confidence ? ` Annotation confidence: ${p.scoring_confidence}.` : ""}
         {" "}These are analyst readings of what the sources record, not measurements
-        of merit, talent, or effort. The twenty-two scored dimensions below break the
-        same evidence down further.
+        of merit, talent, or effort. The twenty-two scored dimensions remain available
+        inside the deeper research detail.
       </p>
     </section>
+
+    <section class="path-forces" aria-labelledby="path-forces-heading">
+      <div class="section-heading">
+        <p class="eyebrow">What moved through the conditions</p>
+        <h2 id="path-forces-heading">Perseverance and luck stay visible—not scored.</h2>
+      </div>
+      <div class="path-force-grid">
+        <article>
+          <span>{perseveranceEvidence.label}</span>
+          <strong>{perseveranceEvidence.summary}</strong>
+          <p>{perseveranceEvidence.boundary}</p>
+        </article>
+        <article>
+          <span>{luckEvidence.label}</span>
+          <strong>{luckEvidence.summary}</strong>
+          <p>{luckEvidence.boundary}</p>
+        </article>
+      </div>
+    </section>
+
+    <details class="research-detail">
+      <summary>Open the legacy 22-field research annotation</summary>
+      <div class="research-detail-body">
 
     <div class="section-title">How this path compounded</div>
     <div class="path-flow" data-clarity-contract="person-path">
@@ -304,6 +289,8 @@ const structuredData = {
       {" "}starting advantage and {path.tierLeverageMean.toFixed(1)} / {SCORE_FAMILIES.leverage.max}
       {" "}leverage. Similar scores appear in other tiers, so these figures describe positioning—not a cause.
     </div>
+      </div>
+    </details>
 
     {Array.isArray(p.trajectory) && p.trajectory.length > 0 && (
       <>

@@ -3,6 +3,12 @@ import test from "node:test";
 
 import { summarizeCoverage } from "../src/lib/coverage.ts";
 import {
+  getLuckEvidence,
+  getPerseveranceEvidence,
+  getReachBand,
+  summarizeReachBands,
+} from "../src/lib/journey-model.ts";
+import {
   ADVANTAGE_FIELDS,
   getAdvantageTotal,
   getLeverageTotal,
@@ -291,4 +297,55 @@ test("condition factor coverage counts each band separately", () => {
   assert.deepEqual(coverage.map((c) => c.tailwind), [3, 1, 3]);
   assert.deepEqual(coverage.map((c) => c.share), [100, 75, 100]);
   assert.deepEqual(getConditionFactorCoverage([]).map((c) => c.share), [0, 0, 0]);
+});
+
+test("reach bands broaden the corpus without inventing a universal percentile", () => {
+  assert.equal(getReachBand(person({ success_tier: 1 })).label, "Extreme public outlier");
+  assert.equal(getReachBand(person({ success_tier: 2 })).label, "Field-leading");
+  assert.equal(getReachBand(person({ success_tier: 3 })).percentileLabel, "Toward the 0.1% band");
+  assert.equal(getReachBand(person({ success_tier: 4 })).key, "professionally-distinctive");
+
+  const bands = summarizeReachBands([
+    person({ success_tier: 1 }),
+    person({ success_tier: 2 }),
+    person({ success_tier: 3 }),
+    person({ success_tier: 4 }),
+  ]);
+  assert.deepEqual(bands.map(({ count, share }) => ({ count, share })), [
+    { count: 1, share: 25 },
+    { count: 1, share: 25 },
+    { count: 2, share: 50 },
+  ]);
+  assert.equal(summarizeReachBands([]).every((band) => band.share === 0), true);
+});
+
+test("path forces expose sourced evidence without scoring silence", () => {
+  const documented = person({
+    early_history_summary:
+      "She spent seven years performing in clubs before being discovered by a talent scout.",
+    source_urls: ["https://example.com/biography"],
+    trajectory: [
+      {
+        age: 24,
+        description: "Spotted by a talent scout during a club performance.",
+        title: "The encounter",
+        year: 1975,
+      },
+    ],
+  });
+  const perseverance = getPerseveranceEvidence(documented);
+  const luck = getLuckEvidence(documented);
+
+  assert.match(perseverance.summary, /seven years/i);
+  assert.match(perseverance.boundary, /not a grit or merit score/i);
+  assert.equal(perseverance.sourceUrls.length, 1);
+  assert.equal(luck.label, "Encounter luck");
+  assert.match(luck.summary, /spotted/i);
+  assert.doesNotMatch(luck.summary, /seven years/i);
+  assert.match(luck.boundary, /not an estimate/i);
+
+  const silent = person({ early_history_summary: "A short biography.", source_urls: [] });
+  assert.match(getPerseveranceEvidence(silent).summary, /Not documented/i);
+  assert.match(getPerseveranceEvidence(silent).boundary, /not evidence/i);
+  assert.match(getLuckEvidence(silent).summary, /No discrete luck event/i);
 });

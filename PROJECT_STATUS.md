@@ -1,23 +1,26 @@
 # Look Sideways — PROJECT STATUS
 
-Last updated: 2026-08-23
+Last updated: 2026-08-26
 
 ## Why / What
 
 <!-- dataset-summary:start -->
-Explanatory visualization of 3,577 early-breakthrough paths — how documented
-starting conditions, leverage provenance, luck, and compounding trajectories
-relate to the significance of an observed milestone without claiming a causal
-formula or a repeatable identity.
+Guided explanatory journey through 3,577 early-breakthrough paths — how what
+people brought, were handed, and were surrounded by interacted with
+perseverance, sequence, and luck without becoming a causal formula, percentile,
+or repeatable identity.
 <!-- dataset-summary:end -->
 
-**Users:** researchers, writers, curious general public
+**Users:** people caught in unhelpful comparison, plus researchers, writers,
+and curious readers who want the evidence behind the argument
 
 **IN scope:**
 - Static Astro + ECharts visualization site
-- Per-person detail pages with full score breakdowns, trajectories, and sources
+- A five-chapter journey explaining why comparison is futile as a verdict
+- Per-person detail pages led by three condition factors, perseverance, luck,
+  trajectories, and sources
 - Explore page with filters/search/sort
-- Person-specific “Am I the next…?” questionnaires with evidence gates
+- Person-specific comparison breakers with evidence gates
 - Methodology and about pages
 - Dataset extension via subagent research (target 5K people, ceiling)
 
@@ -43,6 +46,13 @@ formula or a repeatable identity.
 
 ## Timeline
 
+- 2026-08-26 — released a product refocus around a guided comparison-futility
+  journey; made the three condition factors the public model across primary
+  surfaces; added sourced perseverance and unscored luck; surfaced 1,670
+  professionally distinctive paths as the first broader-success band; demoted
+  the old 22-field and four-stage models to progressive research detail;
+  replaced resemblance questionnaires with static comparison breakers; and
+  integrated the Fleet product strip into the two-column footer
 - 2026-08-23 — selected and completed the Kinetic Essay homepage: a continuous
   paper-and-ink composition with a scroll-driven SVG marble course, prominent
   essays, a compact mobile race register, and no WebGL dependency on the story
@@ -129,19 +139,20 @@ formula or a repeatable identity.
 ## Products
 
 - **Website** — `https://paths.significanthobbies.com` (Astro static site, Cloudflare Pages project `success-by-26`)
-  - `/` — overview with charts (age distribution, cohort, leverage engine, archetype, early-advantage averages)
-  - `/insights/` — one-minute answer, comparison-redundancy explanation, luck model, divergent-path counterexamples, tier definitions, overlap, and five-question clarity contract
-  - `/explore/` — filterable/searchable grid of all people, including outcome-tier filtering (lazy-loads data client-side)
-  - `/person/[id]/` — connected path with per-lever origin, evidence signals, confidence, luck boundary, trajectory, and named-person comparison entry
+  - `/` — five-chapter guided argument through survivor selection, three condition factors, perseverance, luck, and release from identity comparison
+  - `/overview/` — deeper research overview and charts behind the public model
+  - `/insights/` — evidence room with the three-factor model, broader success band, luck, divergent paths, and progressive research detail
+  - `/explore/` — filterable/searchable evidence atlas with qualitative outcome-reach filtering (lazy-loads data client-side)
+  - `/person/[id]/` — three condition factors, perseverance and luck evidence, trajectory, sources, and progressive 22-field research detail
   - `/compare/` — chooser for familiar person-specific comparisons; explicitly not a ranking or forecast
   - `/roi/` — local expected-value and ROI worksheet using only user-supplied
     investments, outcomes, probabilities, valuations, and stage classifications
-  - `/am-i-the-next/[id]/` — evidence-first questionnaire showing starting overlap, leverage overlap, provenance differences, sequence, luck, and why resemblance is not destiny
+  - `/am-i-the-next/[id]/` — static comparison breaker showing conditions, perseverance, sequence, luck, and why resemblance is not destiny
   - `/coverage/` — live source depth, domain diversity, trajectory completeness, confidence, sample composition, indexability, and independent-audit boundaries
   - `/methodology/` — full methodology and limitations
   - `/about/` — project description
 
-## Features (shipped)
+## Features (current source and production)
 
 - Publication-grade surface system with neutral structural borders, semantic
   data color, a shared responsive shell, and documented visual QA across all 15
@@ -164,7 +175,9 @@ formula or a repeatable identity.
   concrete surfaces and two templated collections, and a noindex Markdown
   mirror for every canonical URL
 - Homepage Organization/WebSite/Dataset JSON-LD plus WebPage/Person JSON-LD on every person profile
-- Evidence-bounded explanatory model: starting advantages → built or converted leverage → compounding trajectory → observed career standing
+- One public explanatory model used across primary surfaces: what they brought, what they were handed, and what surrounded them; the factors are never summed
+- Sourced perseverance evidence and explicit unscored luck on the journey, person pages, comparison breakers, and evidence room
+- Three qualitative reach bands, including 1,670 professionally distinctive paths as broader coverage toward the 0.1% range without a universal percentile claim
 - Distinct starting-advantage and built-or-converted-leverage score families, including separate visual treatments, scales, and an explicit self-built / advantage-enabled / earned / external / mixed provenance boundary
 - Defined T1–T4 editorial outcome ladder with observed averages, ranges, overlap, and correlation context
 - Dataset-relative outcome bands with cumulative rank ranges, lower-tier counts and ratios, selected-sample boundaries, and power-law limits
@@ -181,11 +194,11 @@ formula or a repeatable identity.
 - Responsive visual QA across the six primary routes and complete Compare/Explore interaction checks
 - 5 overview charts on homepage (ECharts) with click-through detail panels
 - Viewport-activated chart loading so ECharts does not block the initial page render
-- Explore page with search + cohort, category, engine, archetype, outcome-tier, and sort controls
-- Per-person detail pages with connected path synthesis, per-lever provenance, confidence, evidence signals, and cohort-relative context
+- Explore page with search + cohort, category, qualitative outcome reach, and sort controls
+- Per-person detail pages led by the three-factor model, with deeper provenance and score detail available progressively
 - Lazy-loaded nav search (fetches slim search index on first focus)
 - Lazy-loaded explore data (fetches people.json client-side)
-- Person-specific questionnaire pages with required answers, visible source evidence, search-index quality gates, and a non-predictive resemblance breakdown
+- Person-specific comparison-breaker pages with visible source evidence, search-index quality gates, and no resemblance score
 - Trajectory data on every published path — starting point, current position, and career milestones; the three-or-more-event share is reported under Dataset Stats
 - Dataset validation: unique IDs; scores in range; no missing key fields
 - Static build and preview suitable for Cloudflare Pages without a runtime adapter
@@ -207,7 +220,7 @@ formula or a repeatable identity.
 - **Pass comparison/search evidence gate:** 71.7% (2,564/3,577)
 - **Condition factors (−1 to 3, never summed):** brought 3,577 scored (3 headwind), handed 3,577 scored (458 headwind), surrounded 3,577 scored (5 headwind)
 - **Listed source URLs:** 12,677
-- **Canonical sitemap URLs:** 6,152
+- **Canonical sitemap URLs:** 6,153
 - **Secondary double-coded records:** 16
 - **Source reachability audit:** 2,740/3,577 paths reviewed — 1,498 fully reachable, 1,234 partial, 8 failed. 837 paths added since the last pass are unaudited.
 - **Independent content audit:** pending; URL reachability does not verify claim support

@@ -93,4 +93,4 @@ But understanding privilege means remembering to ask:
 
 ---
 
-The rest of this project tries to answer that question with data — [thousands of documented paths](/explore/), each with its starting conditions, built leverage, and trajectory [made visible](/insights/).
+The rest of this project asks that question across [thousands of documented paths](/explore/): what did someone bring, what were they handed, and what surrounded them? The [evidence room](/insights/) keeps perseverance and luck visible without turning either into a score.

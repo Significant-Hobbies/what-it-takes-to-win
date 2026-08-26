@@ -2,20 +2,18 @@
 import Base from "../../layouts/Base.astro";
 import peopleData from "../../data/people.json";
 import {
-  LEVERAGE_ORIGINS,
-  OUTCOME_STAGES,
-  SCORE_FAMILIES,
-  getAdvantageTotal,
-  getTierDefinition,
-  summarizeOutcomes,
+  CONDITION_FACTORS,
+  getConditionFactors,
   type OutcomePerson,
 } from "../../lib/outcome-model";
 import { summarizeCoverage, type CoveragePerson } from "../../lib/coverage";
+import { getReachBand, summarizeReachBands } from "../../lib/journey-model";
 
 const people = peopleData;
 const total = people.length;
-const outcomeSummary = summarizeOutcomes(people as OutcomePerson[]);
 const coverage = summarizeCoverage(people as CoveragePerson[]);
+const reachBands = summarizeReachBands(people as OutcomePerson[]);
+const broaderBand = reachBands.find((band) => band.key === "professionally-distinctive")!;
 
 const cohorts: Record<string, number> = {};
 people.forEach((p) => { cohorts[p.cohort_group] = (cohorts[p.cohort_group] || 0) + 1; });
@@ -42,12 +40,13 @@ people.forEach((p) => {
   if (a != null && ageBuckets[a] != null) ageBuckets[a]++;
 });
 
-const avgLeverage = (people.reduce((s, p) => s + (p.total_leverage_score || 0), 0) / total).toFixed(1);
-const avgAdvantage = (
-  people.reduce((sum, person) => sum + getAdvantageTotal(person as OutcomePerson), 0) / total
-).toFixed(1);
 const avgAge = (people.reduce((s, p) => s + (p.age_at_milestone || 0), 0) / total).toFixed(1);
-const maxLeverage = SCORE_FAMILIES.leverage.max;
+const conditionAverages = CONDITION_FACTORS.map((factor) => ({
+  ...factor,
+  average: (
+    people.reduce((sum, person) => sum + Number(person[factor.key] ?? 0), 0) / total
+  ).toFixed(1),
+}));
 
 const advantageFields = [
   "early_family_financial_platform_support_score",
@@ -134,7 +133,7 @@ const structuredData = {
       url: "https://paths.significanthobbies.com/",
       name: "Look Sideways",
       description:
-        `A research atlas of ${total.toLocaleString()} early breakthrough paths, separating starting advantage, built leverage, trajectory, standing, and luck.`,
+        `A guided research atlas of ${total.toLocaleString()} paths showing what people brought, were handed, and were surrounded by, with perseverance and luck kept visible.`,
       publisher: { "@id": "https://paths.significanthobbies.com/#publisher" },
     },
     {
@@ -142,7 +141,7 @@ const structuredData = {
       "@id": "https://paths.significanthobbies.com/#dataset",
       name: "Look Sideways: Early Breakthrough Paths",
       description:
-        `A curated dataset of ${total.toLocaleString()} people born from 1950 onward, documenting early milestones, starting advantages, leverage, trajectory, career standing, evidence confidence, and luck boundaries.`,
+        `A curated dataset of ${total.toLocaleString()} people born from 1950 onward, documenting early milestones, three condition factors, perseverance evidence, trajectory, outcome reach, evidence confidence, and luck boundaries.`,
       url: "https://paths.significanthobbies.com/methodology/",
       creator: { "@id": "https://paths.significanthobbies.com/#publisher" },
       isAccessibleForFree: true,
@@ -150,10 +149,11 @@ const structuredData = {
       measurementTechnique: "Evidence-backed biographical coding under a published interpretive rubric",
       variableMeasured: [
         "Early breakthrough milestone",
-        "Starting advantage",
-        "Built or converted leverage",
-        "Compounding trajectory",
-        "Observed career standing",
+        "What they brought",
+        "What they were handed",
+        "What surrounded them",
+        "Documented perseverance",
+        "Qualitative outcome reach",
         "Evidence confidence",
       ],
     },
@@ -163,7 +163,7 @@ const structuredData = {
 
 <Base
   title="Look Sideways — How Extraordinary Outcomes Happen"
-  description={`Explore ${total.toLocaleString()} documented paths to extraordinary outcomes—separating starting advantage, built leverage, trajectory, standing, and luck.`}
+  description={`Explore ${total.toLocaleString()} documented paths through three condition factors, perseverance, sequence, and luck.`}
   structuredData={structuredData}
 >
   <section class="hero insight-hero research-hero">
@@ -172,17 +172,16 @@ const structuredData = {
         <p class="eyebrow">{total.toLocaleString()} early breakthrough paths</p>
         <h1>Extraordinary outcomes are surviving paths.</h1>
         <p class="lede">
-          See what people started with, what they built, what compounded—and how
-          much of the visible finish still depended on sequence and luck.
+          See what people brought, what they were handed, and what surrounded
+          them—then keep perseverance, sequence, and luck in the frame.
         </p>
-        <div class="hero-model-preview" aria-label="The four-stage explanatory model">
-          <span>Starting position</span>
-          <span aria-hidden="true">→</span>
-          <span>Built leverage</span>
-          <span aria-hidden="true">→</span>
-          <span>Trajectory</span>
-          <span aria-hidden="true">→</span>
-          <span>Observed standing</span>
+        <div class="hero-model-preview" aria-label="The three-factor explanatory model">
+          {CONDITION_FACTORS.map((factor, index) => (
+            <>
+              {index > 0 && <span aria-hidden="true">·</span>}
+              <span>{factor.label}</span>
+            </>
+          ))}
         </div>
         <div class="hero-actions">
           <a class="btn-link btn-link-primary" href="#survivor-path">See why comparison breaks</a>
@@ -210,10 +209,10 @@ const structuredData = {
       </aside>
     </div>
     <div class="meta-row">
-      <span><strong>{total}</strong> curated people</span>
+      <span><strong>{total.toLocaleString()}</strong> curated paths</span>
       <span>avg milestone age <strong>{avgAge}</strong></span>
-      <span>avg starting advantage <strong>{avgAdvantage} / {SCORE_FAMILIES.advantage.max}</strong></span>
-      <span>avg built/converted leverage <strong>{avgLeverage} / {maxLeverage}</strong></span>
+      <span>professionally distinctive <strong>{broaderBand.count.toLocaleString()}</strong></span>
+      <span>universal percentile <strong>not claimed</strong></span>
     </div>
   </section>
 
@@ -301,58 +300,56 @@ const structuredData = {
   </section>
 
   <div class="insight-callout" data-clarity-contract="central-finding">
-    <strong>The data shows a gradient, not a formula.</strong>
-    {" "}T1 profiles average {outcomeSummary.tiers[0].advantage.mean.toFixed(1)} in documented
-    starting advantage and {outcomeSummary.tiers[0].leverage.mean.toFixed(1)} in built or converted
-    leverage; T4 profiles average {outcomeSummary.tiers[3].advantage.mean.toFixed(1)} and{" "}
-    {outcomeSummary.tiers[3].leverage.mean.toFixed(1)}. But their ranges overlap. A head start
-    changes the available moves; it is not the same thing as later multiplying capacity. Luck,
-    sequence, and the origin of each lever explain why matching totals still do not make matching paths.
+    <strong>The archive shows recurring conditions, not a success formula.</strong>
+    {" "}{broaderBand.count.toLocaleString()} paths—{broaderBand.share.toFixed(1)}% of this selected
+    archive—already sit in a professionally distinctive band beyond the most famous outliers. That
+    is evidence of broader coverage, not proof of a universal top-0.1% percentile. Conditions,
+    perseverance, sequence, luck, and invisible alternatives still prevent one life from forecasting another.
   </div>
 
-  <section aria-labelledby="home-model-heading" data-clarity-contract="four-stage-model">
+  <section aria-labelledby="home-model-heading" data-clarity-contract="three-factor-model">
     <div class="section-heading" style="margin-top:0;">
       <p class="eyebrow">The explanatory model</p>
-      <h2 id="home-model-heading">Four layers—not one success score</h2>
+      <h2 id="home-model-heading">Three factors, always read side by side</h2>
     </div>
     <div class="outcome-model" style="margin-bottom:24px;">
-      {OUTCOME_STAGES.map((stage) => (
-        <article class={`stage-card stage-${stage.number}`}>
-          <div class="stage-number">{stage.number}</div>
-          <h3>{stage.name}</h3>
-          <p>{stage.summary}</p>
+      {conditionAverages.map((factor, index) => (
+        <article class={`stage-card stage-${index + 1}`}>
+          <div class="stage-number">{String(index + 1).padStart(2, "0")}</div>
+          <h3>{factor.label}</h3>
+          <p>{factor.question}</p>
+          <strong>{factor.gloss} · archive mean {factor.average} / 3</strong>
         </article>
       ))}
     </div>
     <p style="margin:0 0 36px;color:var(--text-dim);font-size:13px;">
-      <a href="/insights/">See the tier definitions, score ranges, and strongest observed differences →</a>
+      The three readings are never added into a rank. <a href="/insights/">See the evidence and boundaries →</a>
     </p>
   </section>
 
-  <section class="score-family-section" aria-labelledby="score-families-heading" data-clarity-contract="score-family-distinction">
+  <section class="score-family-section" aria-labelledby="score-families-heading" data-clarity-contract="path-forces">
     <div class="section-heading">
-      <p class="eyebrow">Two different questions</p>
-      <h2 id="score-families-heading">What did they start with—and what later multiplied their work?</h2>
+      <p class="eyebrow">Two forces that are not scores</p>
+      <h2 id="score-families-heading">Perseverance matters. Luck still interrupts.</h2>
     </div>
     <div class="score-family-grid">
       <article class="score-family-card advantage-family">
-        <div class="score-family-kicker">01 · Position at the start</div>
-        <h3>{SCORE_FAMILIES.advantage.label}</h3>
-        <div class="score-family-value">{avgAdvantage}<span> / {SCORE_FAMILIES.advantage.max} dataset average</span></div>
-        <p>{SCORE_FAMILIES.advantage.definition}</p>
-        <strong>{SCORE_FAMILIES.advantage.boundary}</strong>
+        <div class="score-family-kicker">Repeated action in the record</div>
+        <h3>Documented perseverance</h3>
+        <p>Practice, rejection, recovery, or sustained attempts appear only when a source describes them.</p>
+        <strong>This is evidence of behaviour—not a grit, merit, or moral score.</strong>
       </article>
       <article class="score-family-card leverage-family">
-        <div class="score-family-kicker">02 · Multiplying capacity later present</div>
-        <h3>{SCORE_FAMILIES.leverage.label}</h3>
-        <div class="score-family-value">{avgLeverage}<span> / {SCORE_FAMILIES.leverage.max} dataset average</span></div>
-        <p>{SCORE_FAMILIES.leverage.definition}</p>
-        <strong>{SCORE_FAMILIES.leverage.boundary}</strong>
+        <div class="score-family-kicker">Unchosen openings and variance</div>
+        <h3>Luck across the path</h3>
+        <p>Era, place, encounters, gatekeepers, shocks, and outcomes can redirect excellent work.</p>
+        <strong>Luck remains explicit and unscored because the counterfactual is unknowable.</strong>
       </article>
     </div>
     <div class="provenance-note">
-      <strong>Leverage has more than one origin.</strong>
-      {LEVERAGE_ORIGINS.map((origin) => <span><b>{origin.label}</b> — {origin.summary}</span>)}
+      <strong>Keep the distinction simple.</strong>
+      <span>The three factors describe conditions. Perseverance describes documented action.</span>
+      <span>Luck preserves the uncertainty that biography tends to delete.</span>
     </div>
   </section>
 
@@ -376,6 +373,8 @@ const structuredData = {
     </dl>
   </section>
 
+  <details class="research-detail">
+    <summary>Open the detailed 22-field research annotations</summary>
   <section class="data-atlas" aria-labelledby="data-atlas-heading">
     <div class="section-heading">
       <p class="eyebrow">The dataset at a glance</p>
@@ -417,6 +416,7 @@ const structuredData = {
     <div id="chart-advantage" class="chart" role="img" aria-label="Bar chart showing average starting-advantage scores across twelve dimensions"></div>
   </div>
   </section>
+  </details>
 
   <section class="featured-paths" aria-labelledby="featured-paths-heading">
     <div class="featured-paths-heading">
@@ -425,18 +425,17 @@ const structuredData = {
         <h2 id="featured-paths-heading">Twelve paths that cannot be collapsed into one recipe</h2>
         <p>
           These people span fields, starting positions, leverage compositions, and sequences.
-          Their <strong>0–{maxLeverage}</strong> totals record capability presence—not where it came
-          from, whether it was repeatable, or how luck redirected the path.
+          Every card uses the same three factors. The values are readings of documented evidence,
+          not totals, rankings, or claims about merit.
         </p>
       </div>
-      <aside class="leverage-key" aria-label="Leverage score explanation">
-        <div class="leverage-key-value">{avgLeverage}<span> / {maxLeverage}</span></div>
-        <strong>built/converted leverage average</strong>
+      <aside class="leverage-key" aria-label="Reach-band explanation">
+        <div class="leverage-key-value">{broaderBand.count.toLocaleString()}</div>
+        <strong>professionally distinctive paths</strong>
         <p>
-          Higher means more documented capacity for effort to compound. It is not a talent score,
-          a pass mark, or a formula for someone’s tier.
+          This broadens the archive toward the 0.1% range without inventing one cross-field percentile.
         </p>
-        <a href="/methodology/">Read the scoring boundary →</a>
+        <a href="/methodology/">Read the reach boundary →</a>
       </aside>
     </div>
     <p class="featured-selection-note">
@@ -453,22 +452,21 @@ const structuredData = {
             <div class="name">{p.name}</div>
             <div class="cat">{p.category} · milestone at {p.age_at_milestone}</div>
           </div>
-          <span class={`featured-tier tier-${p.success_tier}`} title={getTierDefinition(p.success_tier).short}>
-            T{p.success_tier} · {getTierDefinition(p.success_tier).name}
+          <span class={`featured-tier tier-${p.success_tier}`}>
+            {getReachBand(p as OutcomePerson).label}
           </span>
         </div>
         <div class="milestone">{p.milestone_by_age_26}</div>
-        <div class="featured-leverage">
-          <div class="featured-leverage-label">
-            <span>Built or converted leverage</span>
-            <strong>{p.total_leverage_score}<small> / {maxLeverage}</small></strong>
-          </div>
-          <div class="featured-leverage-track" aria-hidden="true">
-            <span style={`width:${((p.total_leverage_score || 0) / maxLeverage) * 100}%`}></span>
-          </div>
+        <div class="featured-leverage" aria-label={`Three condition factors for ${p.name}`}>
+          {getConditionFactors(p as OutcomePerson).map((factor) => (
+            <div class="featured-leverage-label">
+              <span>{factor.label}</span>
+              <strong>{factor.score ?? "—"}<small> / 3</small></strong>
+            </div>
+          ))}
         </div>
         <div class="featured-card-footer">
-          <span class="featured-archetype">Starting pattern: {p.primary_early_advantage_archetype || "No dominant archetype"}</span>
+          <span class="featured-archetype">Three readings · never summed</span>
           <span class="featured-inspect">Inspect path <span aria-hidden="true">→</span></span>
         </div>
       </a>
@@ -486,7 +484,7 @@ const structuredData = {
     <strong>Study the path. Do not inherit the comparison.</strong>
     <div class="hero-actions">
       <a class="btn-link btn-link-primary" href="/explore/">Inspect {total.toLocaleString()} paths</a>
-      <a class="hero-secondary-link" href="/compare/">Use comparison as a diagnostic →</a>
+      <a class="hero-secondary-link" href="/compare/">Break a specific comparison →</a>
     </div>
   </section>
 

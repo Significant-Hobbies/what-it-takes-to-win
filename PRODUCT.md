@@ -2,9 +2,10 @@
 
 ## Audience situation
 
-Readers arrive with a familiar but misleading question: “Am I the next famous
-person?” They need a fast, credible explanation of why visible similarities do
-not reproduce timing, leverage origins, sequence, luck, or outcomes.
+Readers arrive after turning another person's visible outcome into a judgement
+about their own pace, ability, or worth. They need a guided, credible explanation
+of why the comparison deletes conditions, perseverance, sequence, luck, and the
+unobserved paths that did not survive.
 
 ## Register
 
@@ -13,7 +14,7 @@ product, ranking, or prediction engine.
 
 ## Voice
 
-- Direct, curious, and evidence-bounded
+- Direct, humane, and evidence-bounded
 - Specific numbers before adjectives
 - Short statements followed by inspectable evidence
 - Never deterministic, motivational, or status-seeking
@@ -34,6 +35,16 @@ product, ranking, or prediction engine.
 ## Fleet checklist applicability
 
 This is a free educational research surface. Pricing, testimonials, migration
-guides, and competitor pages do not apply. The primary action is learning the
-four-stage model; the interactive named-person questionnaire is the product
-demonstration.
+guides, and competitor pages do not apply. The primary action is completing the
+guided comparison-futility journey. Evidence, profiles, and articles follow the
+argument; the atlas is the proof room, not the front door.
+
+Every public explanation of advantage uses one three-source structure:
+
+1. What they brought
+2. What they were handed
+3. What surrounded them
+
+Perseverance and luck cross those sources as documented path evidence. Neither is
+summed into a person score. Numeric percentile claims require a field-specific,
+sourced denominator; otherwise outcome reach stays qualitative.

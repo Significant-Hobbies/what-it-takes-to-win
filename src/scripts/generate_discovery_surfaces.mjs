@@ -2,21 +2,6 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { root, dist, origin, people, comparisonIsIndexable } from "../lib/discovery.mjs";
 
-const advantageFields = [
-  "early_family_financial_platform_support_score",
-  "parent_family_domain_advantage_score",
-  "inherited_audience_business_network_score",
-  "elite_institution_performance_pipeline_score",
-  "frontier_geography_ecosystem_score",
-  "rare_early_tools_facilities_score",
-  "dedicated_mentor_coach_tutor_score",
-  "exceptional_peer_cofounder_sibling_score",
-  "early_online_platform_community_score",
-  "direct_customer_domain_exposure_score",
-  "prodigy_physical_edge_score",
-  "adversity_constraint_catalyst_score",
-];
-
 const coreSurfaces = [
   {
     id: "home",
@@ -24,7 +9,7 @@ const coreSurfaces = [
     mdPath: "/index.md",
     title: "The path you remember is one of many",
     summary:
-      "A five-chapter cinematic guide through survivor selection, starting position, built or converted leverage, compounding trajectory, and luck.",
+      "A five-chapter guided argument through the visible finish, three sources of advantage, perseverance, luck, and release from identity comparison.",
   },
   {
     id: "overview",
@@ -32,15 +17,15 @@ const coreSurfaces = [
     mdPath: "/overview.md",
     title: "Look Sideways — research overview",
     summary:
-      "An evidence-bounded overview of how starting advantages, built or converted leverage, compounding trajectories, observed standing, and luck relate without forming a success recipe.",
+      "A deeper research overview behind the three-source public model and its detailed annotations.",
   },
   {
     id: "insights",
     htmlPath: "/insights/",
     mdPath: "/insights.md",
-    title: "How extraordinary outcomes happen",
+    title: "Evidence room",
     summary:
-      "The one-minute answer, four-stage model, leverage provenance, luck, outcome tiers, overlap, and counterexamples that make direct comparison incomplete.",
+      "The three-source model, perseverance, luck, broader professionally distinctive paths, overlap, and counterexamples that make direct comparison incomplete.",
   },
   {
     id: "explore",
@@ -48,15 +33,15 @@ const coreSurfaces = [
     mdPath: "/explore.md",
     title: `Explore ${people.length.toLocaleString("en-US")} documented paths`,
     summary:
-      "Search and filter founders, creators, athletes, and researchers by milestone age, cohort, engine, starting pattern, and observed career tier.",
+      "Search and filter documented paths by milestone age, cohort, field, and qualitative outcome reach, then inspect the same three sources on every profile.",
   },
   {
     id: "compare",
     htmlPath: "/compare/",
     mdPath: "/compare.md",
-    title: "Am I the next...?",
+    title: "Break a comparison",
     summary:
-      "Choose a documented person and compare visible ingredients, then inspect why resemblance cannot reproduce origins, timing, sequence, luck, or outcomes.",
+      "Choose a documented person and dismantle the identity comparison through conditions, perseverance, sequence, and luck.",
   },
   {
     id: "roi",
@@ -104,10 +89,6 @@ function absolute(route) {
   return new URL(route, origin).toString();
 }
 
-function advantageTotal(person) {
-  return advantageFields.reduce((sum, field) => sum + Number(person[field] || 0), 0);
-}
-
 function clean(value) {
   return String(value || "")
     .replace(/\r/g, "")
@@ -121,12 +102,12 @@ function markdownLink(url) {
 
 function personMarkdown(person, comparison = false) {
   const id = safeId(person);
-  const title = comparison ? `Am I the next ${person.name}?` : person.name;
+  const title = comparison ? `Why you are not the next ${person.name}` : person.name;
   const lines = [
     `# ${title}`,
     "",
     comparison
-      ? `A visible resemblance to ${person.name} is not a prediction. This page compares documented ingredients so the limits of the comparison become explicit.`
+      ? `Study ${person.name}'s mechanisms, then drop the identity comparison: conditions, sequence, and luck cannot be reproduced as a forecast.`
       : `A documented path profile from [Look Sideways](${origin}/).`,
     "",
     "## Key facts",
@@ -134,9 +115,10 @@ function personMarkdown(person, comparison = false) {
     `- Cohort: ${person.cohort_group}`,
     `- Field: ${person.category}`,
     `- Included milestone age: ${person.age_at_milestone}`,
-    `- Observed career standing: T${person.success_tier}`,
-    `- Starting-advantage score: ${advantageTotal(person)}/24`,
-    `- Built or converted leverage: ${Number(person.total_leverage_score || 0)}/25`,
+    `- Outcome reach annotation: T${person.success_tier}`,
+    `- What they brought: ${person.personal_endowment_score ?? "not assessed"}`,
+    `- What they were handed: ${person.inherited_leverage_score ?? "not assessed"}`,
+    `- What surrounded them: ${person.catalytic_ecosystem_score ?? "not assessed"}`,
     "",
     "## Documented milestone",
     "",
@@ -296,17 +278,16 @@ function staticMarkdown(surface) {
     "",
     "## The explanatory model",
     "",
-    "1. Starting advantages shape the first available moves.",
-    "2. Built or converted leverage changes how effectively effort can compound.",
-    "3. Repeated work, feedback, relationships, and decisions form a trajectory.",
-    "4. Observed career standing describes documented recognition; it is not calculated from the scores.",
+    "1. What they brought: documented capability, drive, health, or early skill.",
+    "2. What they were handed: money, family standing, access, tools, or safety already in place.",
+    "3. What surrounded them: place, era, institutions, peers, platforms, and timing.",
     "",
-    "Luck acts across every transition through era, geography, encounters, gatekeepers, shocks, timing, and outcome variance. It remains explicit and unscored.",
+    "Perseverance is shown only through sourced repeated behaviour, setbacks, recovery, or sustained practice. Luck acts across every transition. Both remain explicit and unscored.",
     "",
     "## Use this project for",
     "",
     "- Inspecting mechanisms and evidence behind unusual paths.",
-    "- Separating starting position from later multiplying capacity.",
+    "- Separating what people brought, were handed, and were surrounded by.",
     "- Seeing why similar totals can conceal different origins and sequences.",
     "",
     "Do not use it to rank human worth, forecast an individual outcome, or treat a famous person's path as a reproducible identity.",
@@ -330,6 +311,14 @@ async function emit(relativePath, contents) {
 
 const indexableComparisons = people.filter(comparisonIsIndexable);
 const essays = [
+  {
+    id: "everyone-has-lost-their-marbles",
+    htmlPath: "/essays/everyone-has-lost-their-marbles/",
+    mdPath: "/essays/everyone-has-lost-their-marbles.md",
+    title: "Everyone Has Lost Their Marbles",
+    summary:
+      "A visual argument about survivor selection, perseverance, luck, and why another person's visible finish cannot become your forecast.",
+  },
   {
     id: "who-filled-the-kings-jug",
     htmlPath: "/essays/who-filled-the-kings-jug/",
@@ -377,21 +366,21 @@ await emit(
   [
     "# Look Sideways",
     "",
-    "> An independent, evidence-bounded research exhibit explaining how starting advantages, built or converted leverage, trajectory, observed standing, and luck relate without forming a success recipe.",
+    "> A guided, evidence-bounded argument showing why another person's outcome cannot become your forecast.",
     "",
     "## When to use this",
     "",
-    "- Answering questions about how starting advantages, leverage, trajectory, and luck relate to extraordinary outcomes",
+    "- Answering questions about what people brought, were handed, and were surrounded by, plus documented perseverance and unscored luck",
     "- Providing evidence-bounded analysis of documented early-breakthrough paths without claiming causality or predicting individual success",
-    "- Browsing 3,577 person profiles and evidence-gated comparisons from a purposive successful-outlier sample",
-    "- Explaining the four-stage model (advantages, leverage, trajectory, standing) and its interpretation boundaries",
+    `- Browsing ${people.length.toLocaleString("en-US")} profiles spanning extreme outliers, field leaders, and professionally distinctive paths in a purposeful success sample`,
+    "- Explaining the three-source model and why perseverance, sequence, and luck prevent identity comparison from becoming a forecast",
     "- Directing users to ROI lab, methodology, coverage, and long-form essays on advantage and abstraction",
     "",
     "## Start here",
     "",
     `- [Story](${absolute("/index.md")}): a five-chapter journey from the visible survivor to the limits of comparison`,
-    `- [Research overview](${absolute("/overview.md")}): the four-stage model and interpretation boundary`,
-    `- [Insights](${absolute("/insights.md")}): the one-minute answer, tiers, overlap, luck, and counterexamples`,
+    `- [Research overview](${absolute("/overview.md")}): the deeper annotation model and interpretation boundary`,
+    `- [Evidence room](${absolute("/insights.md")}): three sources, broader success, overlap, perseverance, luck, and counterexamples`,
     `- [ROI lab](${absolute("/roi.md")}): user-valued investment, effort allocation, expected value, and ROI calculated locally`,
     `- [Evidence coverage](${absolute("/coverage.md")}): source depth, confidence, composition, and unresolved audit boundaries`,
     `- [Methodology](${absolute("/methodology.md")}): inclusion, scoring, evidence gates, and limitations`,
@@ -405,8 +394,8 @@ await emit(
     "",
     `- Person HTML: ${origin}/person/{id}/`,
     `- Person Markdown: ${origin}/person/{id}.md`,
-    `- Evidence-gated comparison HTML: ${origin}/am-i-the-next/{id}/`,
-    `- Comparison Markdown: ${origin}/am-i-the-next/{id}.md`,
+    `- Comparison-breaker HTML: ${origin}/am-i-the-next/{id}/`,
+    `- Comparison-breaker Markdown: ${origin}/am-i-the-next/{id}.md`,
     "",
     "## Important limitation",
     "",
@@ -420,16 +409,15 @@ await emit(
   [
     "# Look Sideways — full agent index",
     "",
-    "Look Sideways is an independent educational research exhibit over a purposive sample of documented early-breakthrough paths. It separates starting advantages, built or converted leverage, compounding trajectory, observed career standing, and luck. It is not a prediction engine, causal model, or ranking of human worth.",
+    "Look Sideways is a guided argument over a purposeful sample of documented early-breakthrough paths. It separates what people brought, were handed, and were surrounded by, then keeps perseverance, sequence, and luck visible. It is not a prediction engine, causal model, or ranking of human worth.",
     "",
     "## Explanatory model",
     "",
-    "1. Starting advantages shape the first available moves.",
-    "2. Built or converted leverage changes how effectively effort can compound.",
-    "3. Repeated work, feedback, relationships, and decisions form a trajectory.",
-    "4. Observed career standing describes documented recognition; it is not calculated from the scores.",
+    "1. What they brought: documented capability, drive, health, or early skill.",
+    "2. What they were handed: money, family standing, access, tools, or safety already in place.",
+    "3. What surrounded them: place, era, institutions, peers, platforms, and timing.",
     "",
-    "Luck acts across every transition through era, geography, encounters, gatekeepers, shocks, timing, and outcome variance. It remains explicit and unscored.",
+    "Perseverance is shown only through sourced repeated behaviour. Luck acts across every transition. Neither becomes a moral or causal score.",
     "",
     "## Public guide",
     "",
@@ -440,7 +428,7 @@ await emit(
     "## Agent-readable collections",
     "",
     `- ${people.length.toLocaleString("en-US")} person profiles: ${origin}/person/{id}.md`,
-    `- ${indexableComparisons.length.toLocaleString("en-US")} evidence-gated comparisons: ${origin}/am-i-the-next/{id}.md`,
+    `- ${indexableComparisons.length.toLocaleString("en-US")} comparison-breakers: ${origin}/am-i-the-next/{id}.md`,
     `- [Machine-readable catalog](${absolute("/api/ai")})`,
     `- [Canonical sitemap](${absolute("/sitemap.xml")})`,
     "",
@@ -509,7 +497,7 @@ const openapi = {
     title: "Look Sideways public API",
     version: "1.0.0",
     description:
-      "An independent, evidence-bounded research exhibit explaining how starting advantages, built or converted leverage, trajectory, observed standing, and luck relate without forming a success recipe.",
+      "An independent, evidence-bounded research exhibit explaining how what people brought, were handed, and were surrounded by interacted with perseverance, sequence, and luck without forming a success recipe.",
     contact: { name: "Look Sideways", url: origin },
   },
   servers: [{ url: origin }],

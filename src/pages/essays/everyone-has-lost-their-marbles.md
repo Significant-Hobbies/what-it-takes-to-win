@@ -163,4 +163,4 @@ Then return to your own course and make the best next move that is still genuine
 
 ---
 
-This project exists for exactly that reason — to turn other people's paths into [information, not verdicts](/explore/). Each documented trajectory shows its starting conditions, built leverage, and the [costs behind the score](/insights/).
+This project exists for exactly that reason — to turn other people's paths into [information, not verdicts](/). Each documented trajectory asks what the person brought, what they were handed, what surrounded them, where perseverance appears, and which parts remain luck. The [evidence room](/insights/) keeps the limits beside the findings.

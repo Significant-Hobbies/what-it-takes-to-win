@@ -4,7 +4,7 @@ title: Methodology
 
 ## Research question
 
-Which capability and early conditions repeatedly appear among people who reached a material milestone early in their careers?
+Why does comparison fail when documented paths contain different conditions, repeated work, sequence, and unchosen openings?
 
 ## Unit of analysis
 
@@ -18,20 +18,28 @@ The public [evidence coverage ledger](/coverage/) reports the current source
 depth, trajectory completeness, annotation confidence, indexability, cohort
 composition, and independent-audit boundary directly from the published data.
 
-## Explanatory model
+## Public explanatory model
 
-The product organizes each record as an observed four-stage path:
+The public product asks the same three questions on every primary surface:
 
-1. **Starting conditions:** inherited or encountered access, institutions, geography, tools, mentors, peers, ability, and constraints.
-2. **Built or converted leverage:** reps, scarce skill, distribution, networks, teams, timing, concentration, runway, and domain proximity that supplied multiplying capacity later in the path.
-3. **Compounding trajectory:** the documented sequence of work, feedback, relationships, and transitions around the early milestone.
-4. **Observed career standing:** the documented career-recognition band through the data cutoff.
+1. **What they brought:** documented capability, drive, health, or early skill located in the person.
+2. **What they were handed:** money, family standing, network, permission, tools, or safety already in place.
+3. **What surrounded them:** place, era, institutions, mentors, peers, platforms, and timing that made later moves available.
+
+The three sources are never summed. **Perseverance** is shown only through
+sourced repeated work, setbacks, recovery, or sustained practice. **Luck** is
+shown through documented structural timing, encounters, shocks, and the outcome
+variance the archive cannot recover. Neither becomes a causal or moral score.
+
+The detailed 22-field starting-condition and leverage rubric remains available
+below as secondary research annotation. It is not the reader's primary mental
+model.
 
 This is a descriptive model, not a causal recipe. The dataset can show which
 conditions and capabilities repeatedly accompany early breakthroughs. It cannot
 establish that a condition made the outcome happen.
 
-## Outcome tiers
+## Outcome reach
 
 The selected milestone determines eligibility for this early-breakthrough dataset. `success_tier` is a separate editorial summary of documented career recognition through the data cutoff:
 
@@ -39,6 +47,12 @@ The selected milestone determines eligibility for this early-breakthrough datase
 - **T2 — Field-leading:** a dominant figure at the top of a field through major prizes, championships, commercial impact, or sustained elite recognition.
 - **T3 — Domain-recognized:** notable and widely recognized among people who follow the domain.
 - **T4 — Specialist-known:** notable, but recognition remains primarily within a niche or among specialists.
+
+For public reading, T1 is described as **extreme public outlier**, T2 as
+**field-leading**, and T3/T4 together as **professionally distinctive**. The
+latter broadens the archive toward the kind of success often described informally
+as top 0.1%. It is not a measured population percentile. Numeric percentiles may
+only be published when an authoritative field-specific denominator exists.
 
 The tier is not calculated from advantage or leverage scores, and it should not be read as the significance of only the selected early milestone. It does not
 measure human worth, virtue, or future potential. The stored field remains
@@ -202,26 +216,18 @@ does not permit.
 These remain analyst readings of what sources record. They are not measurements
 of merit, talent, or effort, and a −1 is not a claim about anyone's capacity.
 
-## Person-specific comparison
+## Person-specific comparison breaker
 
-Every published profile has an `/am-i-the-next/<person>/` questionnaire. It uses
-up to four of that person’s strongest documented starting conditions and up to
-four of their strongest leverage fields. The visitor reports the presence of
-those same ingredients and selects an origin for each reported lever.
+Every published profile keeps a compatible `/am-i-the-next/<person>/` route,
+but it is now a reading page rather than a questionnaire. It places the same
+three factors side by side, then shows sourced perseverance, luck, and the
+sequence of documented events.
 
-The result is a non-aggregated mechanism map. Each selected starting condition
-and capability stays on its own row, showing the profile's documented level,
-the visitor's answer, and whether those two visible values align. Leverage
-origins are compared separately because an equal observed capability can have
-an inherited, enabled, earned, self-built, external, mixed, or unresolved
-origin.
-
-The mechanism map then identifies where comparison breaks: ingredient
-composition, leverage provenance, sequence, and luck. It deliberately does not
-collapse those observations into a resemblance percentage. It does not output
-the probability of success, a predicted tier, a ceiling, or a claim that the
-visitor is “the next” person. Direct comparison is an acquisition and
-reflection device, not the product’s conclusion.
+The page identifies where comparison breaks: different conditions, different
+timing, different encounters, and unobserved alternatives. It does not produce
+a resemblance percentage, probability of success, predicted reach, ceiling,
+or claim that the visitor is “the next” person. Comparison is the doorway to
+the argument, not its conclusion.
 
 ## Luck and outcome variance
 
@@ -234,7 +240,7 @@ Luck is treated as cross-cutting rather than as a residual score:
 
 The dataset has no failed control group and cannot reconstruct counterfactuals.
 A numeric luck score would therefore imply false precision. Luck remains
-explicit in the explanatory model, comparison result, Insights page, and person
+explicit in the explanatory model, comparison breaker, Evidence page, and person
 profiles, but unscored.
 
 ## Coin-toss thought experiment
@@ -258,8 +264,8 @@ Person-specific pages are generated for all published records so internal
 navigation remains complete. A page is indexable only when the record has at
 least two listed sources, non-low leverage evidence confidence, a non-empty
 milestone, and a trajectory. Records below that threshold receive `noindex`.
-Pages expose the person-specific evidence before the questionnaire and never
-claim affiliation or endorsement.
+Pages expose the person-specific evidence and never claim affiliation or
+endorsement.
 
 ## Source standard
 

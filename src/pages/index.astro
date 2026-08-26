@@ -2,35 +2,39 @@
 import Base from "../layouts/Base.astro";
 import peopleData from "../data/people.json";
 import {
-  LEVERAGE_ORIGINS,
-  SCORE_FAMILIES,
-  getAdvantageTotal,
+  CONDITION_FACTORS,
+  LUCK_FORMS,
+  getConditionFactorCoverage,
   type OutcomePerson,
 } from "../lib/outcome-model";
+import {
+  getLuckEvidence,
+  getPerseveranceEvidence,
+  summarizeReachBands,
+} from "../lib/journey-model";
 import "../styles/kinetic-essay-story.css";
 
 const people = peopleData as OutcomePerson[];
 const total = people.length;
-const averageAdvantage = (
-  people.reduce((sum, person) => sum + getAdvantageTotal(person), 0) / total
-).toFixed(1);
-const averageLeverage = (
-  people.reduce((sum, person) => sum + person.total_leverage_score, 0) / total
-).toFixed(1);
 const averageMilestoneAge = (
   people.reduce((sum, person) => sum + person.age_at_milestone, 0) / total
 ).toFixed(1);
-const highConfidence = people.filter(
-  (person) => String(person.leverage_evidence_confidence).toLowerCase() === "high",
-).length;
 const cohortCount = new Set(people.map((person) => person.cohort_group)).size;
+const conditionCoverage = getConditionFactorCoverage(people);
+const reachBands = summarizeReachBands(people);
+const broaderBand = reachBands.find((band) => band.key === "professionally-distinctive")!;
+const bonnieTyler = people.find((person) => person.person_id === "bonnie-tyler")!;
+const daveMurray = people.find((person) => person.person_id === "dave-murray")!;
+const bonniePerseverance = getPerseveranceEvidence(bonnieTyler);
+const bonnieLuck = getLuckEvidence(bonnieTyler);
+const davePerseverance = getPerseveranceEvidence(daveMurray);
 
 const chapters = [
-  { id: "the-survivor", label: "Survivor selection" },
-  { id: "the-start", label: "Starting position" },
-  { id: "the-levers", label: "Built leverage" },
-  { id: "the-sequence", label: "Sequence" },
-  { id: "the-boundary", label: "Luck and limits" },
+  { id: "the-survivor", label: "The visible finish" },
+  { id: "the-start", label: "Three sources" },
+  { id: "the-levers", label: "Perseverance" },
+  { id: "the-sequence", label: "Luck" },
+  { id: "the-boundary", label: "The release" },
 ];
 
 const structuredData = {
@@ -42,7 +46,7 @@ const structuredData = {
       name: "Look Sideways",
       url: "https://paths.significanthobbies.com/",
       description:
-        "An evidence-bounded research exhibit about starting advantage, leverage, trajectory, observed standing, and luck.",
+        "A guided, evidence-bounded argument about why another person's path cannot become your forecast.",
     },
     {
       "@type": "Dataset",
@@ -56,7 +60,7 @@ const structuredData = {
       "@type": "Article",
       headline: "The path you remember is one of many",
       description:
-        "A five-chapter guide to starting advantage, built leverage, compounding trajectory, observed standing, and luck.",
+        "A five-chapter journey through survivor selection, three sources of advantage, perseverance, luck, and the limits of comparison.",
       url: "https://paths.significanthobbies.com/",
       isPartOf: { "@id": "https://paths.significanthobbies.com/#website" },
       about: { "@id": "https://paths.significanthobbies.com/#dataset" },
@@ -67,7 +71,7 @@ const structuredData = {
 
 <Base
   title="Look Sideways — The Path You Remember Is One of Many"
-  description={`Walk through ${total.toLocaleString()} documented early-breakthrough paths in five chapters: survivor selection, starting position, leverage, trajectory, and luck.`}
+  description={`A guided journey through ${total.toLocaleString()} documented paths showing why comparison loses the conditions, perseverance, sequence, and luck that made each outcome possible.`}
   canonicalPath="/"
   structuredData={structuredData}
   mainClass="story-main"
@@ -88,12 +92,12 @@ const structuredData = {
           <p class="kinetic-kicker">A visual argument about success</p>
           <h1>The path you remember is one of many.</h1>
           <p class="kinetic-deck">
-            Three marbles. One course. The lead changes when the conditions do.
+            Comparison keeps the finish and deletes almost everything that produced it.
           </p>
           <p class="kinetic-summary">
-            We collected {total.toLocaleString()} early-breakthrough paths. They do
-            not reveal a formula for winning. They reveal what the finished story
-            leaves out.
+            Follow the argument first. Then inspect the evidence: {total.toLocaleString()}{" "}
+            documented paths, including {broaderBand.count.toLocaleString()} professionally
+            distinctive outcomes—not only global icons.
           </p>
         </div>
 
@@ -102,22 +106,16 @@ const structuredData = {
             <dt>Documented paths</dt>
             <dd>{total.toLocaleString()}</dd>
           </dl>
-          <a class="kinetic-begin" href="#race-course">Begin the race <span aria-hidden="true">↓</span></a>
+          <a class="kinetic-begin" href="#race-course">Begin the journey <span aria-hidden="true">↓</span></a>
         </div>
-
-        <nav class="kinetic-essay-preview" aria-label="Related essays">
-          <span>Read the full arguments</span>
-          <a href="/essays/everyone-has-lost-their-marbles/">Everyone Has Lost Their Marbles <b>↗</b></a>
-          <a href="/essays/who-filled-the-kings-jug/">Who Filled the King's Jug? <b>↗</b></a>
-        </nav>
       </header>
 
       <figure class="kinetic-course" id="race-course" aria-labelledby="race-title race-description">
         <svg viewBox="0 0 820 700" preserveAspectRatio="xMidYMid meet" role="img">
           <title id="race-title">Three marbles sharing one changing course</title>
           <desc id="race-description">
-            The marbles trade the lead as the story moves through starting position,
-            leverage, sequence, and luck. The diagram does not rank people or predict outcomes.
+            The marbles trade the lead as the story moves through visible outcomes,
+            conditions, perseverance, and luck. The diagram does not rank people or predict outcomes.
           </desc>
           <defs>
             <radialGradient id="runner-red" cx="32%" cy="25%" r="70%">
@@ -174,15 +172,15 @@ const structuredData = {
           <strong>Figure <b data-active-number>01</b> / 05</strong>
         </div>
 
-        <div class="race-note" data-race-note="0"><strong>Survivor selection</strong><span>The remembered finish hides the routes that disappeared.</span></div>
-        <div class="race-note" data-race-note="1"><strong>Starting position</strong><span>Access is already uneven before the first visible move.</span></div>
-        <div class="race-note" data-race-note="2"><strong>Built leverage</strong><span>Small advantages compound after an opening appears.</span></div>
-        <div class="race-note" data-race-note="3"><strong>Sequence</strong><span>The same ingredients land differently in a different order.</span></div>
-        <div class="race-note" data-race-note="4"><strong>Luck / unscored</strong><span>Some turns are encountered, not authored.</span></div>
+        <div class="race-note" data-race-note="0"><strong>The visible finish</strong><span>The remembered outcome hides every route that disappeared.</span></div>
+        <div class="race-note" data-race-note="1"><strong>Three sources</strong><span>What they brought, what they were handed, and what surrounded them.</span></div>
+        <div class="race-note" data-race-note="2"><strong>Perseverance / evidenced</strong><span>Repeated work matters, but biographies record it unevenly.</span></div>
+        <div class="race-note" data-race-note="3"><strong>Luck / unscored</strong><span>Some openings are encountered, not authored.</span></div>
+        <div class="race-note" data-race-note="4"><strong>The release</strong><span>Study mechanisms. Do not borrow another person's identity.</span></div>
 
         <figcaption>
           <strong>Reading contract</strong>
-          <span>Selected successful outliers. No control group. No forecast.</span>
+          <span>Purposeful success sample. No whole-population baseline. No forecast.</span>
           <em>Illustrative course; positions are not scores.</em>
         </figcaption>
       </figure>
@@ -213,10 +211,10 @@ const structuredData = {
       <section class="kinetic-chapter" id="the-survivor" data-story-chapter data-chapter-index="0">
         <div class="chapter-number">01</div>
         <div class="chapter-copy">
-          <p class="chapter-topic">Survivor selection</p>
+          <p class="chapter-topic">The visible finish</p>
           <h2>Biography starts at the end.</h2>
           <p class="chapter-lede">Every person in this archive is here because a documented breakthrough happened by 26. Selection begins after the outcome is already known.</p>
-          <p>The archive shows the branch that stayed visible. It cannot count everyone with a similar start whose path met different timing, gatekeepers, obligations, health, or luck.</p>
+          <p>A biography keeps the branch that stayed visible. It loses people with similar ability and effort whose paths met different obligations, health, timing, gatekeepers, or luck.</p>
           <aside class="kinetic-proof"><span>Thought experiment · not a measured probability</span><strong>64 plausible starts → 1 remembered finish</strong><p>Six hypothetical 50/50 gates are enough to make the final dot look inevitable in reverse.</p></aside>
           <a class="chapter-link" href="/overview/#survivor-path">Inspect the survivor-path exhibit →</a>
         </div>
@@ -225,55 +223,93 @@ const structuredData = {
       <section class="kinetic-chapter" id="the-start" data-story-chapter data-chapter-index="1">
         <div class="chapter-number">02</div>
         <div class="chapter-copy">
-          <p class="chapter-topic">Starting position</p>
-          <h2>Before talent had a résumé, the field was already uneven.</h2>
-          <p class="chapter-lede">Family resources, domain exposure, geography, institutions, tools, mentors, peers, and physical edge change which first moves are available.</p>
-          <p>Across {total.toLocaleString()} selected paths, the average documented starting-advantage score is {averageAdvantage} out of {SCORE_FAMILIES.advantage.max}. It describes evidence near the start—not talent, and not absent support.</p>
-          <dl class="kinetic-facts"><div><dt>Dimensions</dt><dd>12</dd></div><div><dt>Cohorts</dt><dd>{cohortCount}</dd></div><div><dt>Avg milestone age</dt><dd>{averageMilestoneAge}</dd></div></dl>
-          <a class="chapter-link" href="/methodology/">See how starting conditions are coded →</a>
+          <p class="chapter-topic">Three sources of advantage</p>
+          <h2>Ask three questions. Keep them separate.</h2>
+          <p class="chapter-lede">Every visible advantage belongs to one of three places: inside the person, already prepared for them, or around them when the work met the world.</p>
+          <ol class="kinetic-factor-list">
+            {CONDITION_FACTORS.map((factor) => {
+              const coverage = conditionCoverage.find((entry) => entry.key === factor.key)!;
+              return (
+                <li>
+                  <span>{factor.gloss}</span>
+                  <strong>{factor.label}</strong>
+                  <p>{factor.question}</p>
+                  <small>{coverage.assessed.toLocaleString()} paths assessed · never added to the other layers</small>
+                </li>
+              );
+            })}
+          </ol>
+          <p class="kinetic-boundary">The detailed 22-field rubric still exists in the evidence room. It no longer needs to be the reader's mental model.</p>
+          <a class="chapter-link" href="/methodology/#condition-factors--1-to-3-read-separately">Read the three-factor method →</a>
         </div>
       </section>
 
       <section class="kinetic-chapter" id="the-levers" data-story-chapter data-chapter-index="2">
         <div class="chapter-number">03</div>
         <div class="chapter-copy">
-          <p class="chapter-topic">Built or converted leverage</p>
-          <h2>Then some work begins to multiply itself.</h2>
-          <p class="chapter-lede">Reps produce skill. Skill earns trust. Trust attracts collaborators. Distribution brings feedback. Earlier proof changes the next opening.</p>
-          <p>The average documented leverage score is {averageLeverage} out of {SCORE_FAMILIES.leverage.max}. Presence is not provenance: a visible lever may have been built, enabled, earned, supplied from outside, or mixed.</p>
-          <ul class="kinetic-origins" aria-label="Possible origins of leverage">{LEVERAGE_ORIGINS.slice(0, 5).map((origin) => <li>{origin.label}</li>)}</ul>
-          <aside class="kinetic-proof kinetic-proof-compact"><span>Evidence signal</span><strong>{highConfidence.toLocaleString()} paths have high-confidence leverage coding</strong></aside>
-          <a class="chapter-link" href="/insights/#comparison-breaks-heading">Inspect why origin changes the comparison →</a>
+          <p class="chapter-topic">Perseverance matters</p>
+          <h2>Effort changes a path. It does not make paths equivalent.</h2>
+          <p class="chapter-lede">Repeated work creates skill, proof, trust, and more chances to encounter an opening. But the same perseverance can land on different terrain and produce different returns.</p>
+          <div class="kinetic-case-ledger">
+            <article>
+              <span>{bonnieTyler.name} · {broaderBand.label}</span>
+              <strong>{bonniePerseverance.summary}</strong>
+              <p>{bonniePerseverance.boundary}</p>
+              <a href={`/person/${bonnieTyler.person_id}/`}>Inspect the full path →</a>
+            </article>
+            <article>
+              <span>{daveMurray.name} · {broaderBand.label}</span>
+              <strong>{davePerseverance.summary}</strong>
+              <p>{davePerseverance.boundary}</p>
+              <a href={`/person/${daveMurray.person_id}/`}>Inspect the full path →</a>
+            </article>
+          </div>
+          <p class="kinetic-boundary">A biography that does not mention perseverance is missing evidence—not documenting its absence.</p>
         </div>
       </section>
 
       <section class="kinetic-chapter" id="the-sequence" data-story-chapter data-chapter-index="3">
         <div class="chapter-number">04</div>
         <div class="chapter-copy">
-          <p class="chapter-topic">Compounding trajectory</p>
-          <h2>A path is a sequence, not a score.</h2>
-          <p class="chapter-lede">Two people can have similar ingredients and still meet them in a different order, under a different clock, with different conversion costs.</p>
-          <p>Starting advantage changes the available moves. Leverage changes how effectively effort can compound. Observed standing describes the finish; it is not calculated from the earlier scores.</p>
-          <ol class="kinetic-sequence"><li><span>01</span><strong>Starting position</strong></li><li><span>02</span><strong>Built leverage</strong></li><li><span>03</span><strong>Trajectory</strong></li><li><span>04</span><strong>Observed standing</strong></li></ol>
-          <a class="chapter-link" href="/person/bill-gates/">Read one connected path end to end →</a>
+          <p class="chapter-topic">Luck matters</p>
+          <h2>Some doors are encountered, not authored.</h2>
+          <p class="chapter-lede">Luck acts at every transition: the era, the person who notices, the gate that opens, the shock that never arrives, and the variance no biography can recover.</p>
+          <aside class="kinetic-proof kinetic-proof-case">
+            <span>{bonnieLuck.label} · {bonnieTyler.name}</span>
+            <strong>{bonnieLuck.summary}</strong>
+            <p>{bonnieLuck.boundary}</p>
+          </aside>
+          <ul class="kinetic-luck-list">
+            {LUCK_FORMS.map((form) => <li><strong>{form.label}</strong><span>{form.summary}</span></li>)}
+          </ul>
+          <p class="kinetic-boundary">Luck is visible here and deliberately unscored. This successful-only archive cannot estimate its causal share.</p>
         </div>
       </section>
 
       <section class="kinetic-chapter kinetic-chapter-final" id="the-boundary" data-story-chapter data-chapter-index="4">
         <div class="chapter-number">05</div>
         <div class="chapter-copy">
-          <p class="chapter-topic">Luck and the boundary</p>
-          <h2>Keep the model. Lose the prophecy.</h2>
-          <p class="chapter-lede">Era, geography, encounters, gatekeepers, shocks, timing, and outcome variance act across every transition. They stay visible here—and unscored.</p>
-          <p>You can inspect conditions, build capability, choose better feedback, extend runway, and move closer to the work. You cannot inherit another person's sequence or turn a surviving biography into your forecast.</p>
-          <blockquote class="kinetic-close"><p>Study the conditions. Inspect what was built. Respect what cannot be replayed.</p><footer>Then return to your own unfinished branch.</footer></blockquote>
-          <div class="kinetic-actions"><a class="kinetic-action-primary" href="/explore/">Explore {total.toLocaleString()} paths</a><a href="/coverage/">Check the evidence</a><a href="/compare/">Test a comparison</a></div>
+          <p class="chapter-topic">The comparison breaks</p>
+          <h2>The outcome is not portable.</h2>
+          <p class="chapter-lede">You can learn from what someone built. You cannot inherit what they brought, replay what they were handed, reproduce what surrounded them, or schedule the same luck.</p>
+          <div class="kinetic-reach" aria-label="Outcome reach represented in the archive">
+            {reachBands.map((band) => (
+              <div>
+                <span>{band.label}</span>
+                <strong>{band.count.toLocaleString()}</strong>
+                <small>{band.share}% of this purposeful archive</small>
+              </div>
+            ))}
+          </div>
+          <p>The archive already reaches beyond the most famous 0.001%-style stories: {broaderBand.count.toLocaleString()} paths sit in the broader professionally distinctive band. “Top 0.1%” is treated as a direction of coverage, not a population statistic, until a field supplies a defensible denominator.</p>
+          <blockquote class="kinetic-close"><p>Compare mechanisms for information. Never compare identities for a verdict.</p><footer>Then return to your own unfinished path.</footer></blockquote>
+          <div class="kinetic-actions"><a class="kinetic-action-primary" href="/insights/">Enter the evidence room</a></div>
         </div>
       </section>
     </div>
 
     <section class="kinetic-essays" aria-labelledby="essays-heading">
-      <header><p id="essays-heading">The argument continues</p><h2>Two essays.<br />One evidence room.</h2><a href="/essays/">All essays →</a></header>
+      <header><p id="essays-heading">Go deeper after the journey</p><h2>Evidence first.<br />Articles when you want more.</h2><a href="/essays/">All articles →</a></header>
       <a class="kinetic-essay" href="/essays/everyone-has-lost-their-marbles/"><span>Essay 01 · 8 min read</span><strong>Everyone Has Lost Their Marbles</strong><p>Trajectories, comparison, and the bounded agency that actually runs a life.</p><b>Read essay ↗</b></a>
       <a class="kinetic-essay" href="/essays/who-filled-the-kings-jug/"><span>Essay 02 · 6 min read</span><strong>Who Filled the King's Jug?</strong><p>Privilege, abstraction, and the invisible work behind accomplishment.</p><b>Read essay ↗</b></a>
     </section>

@@ -92,7 +92,7 @@ const reliability = JSON.parse(
 // Mirrors audit_discovery.mjs: nine core surfaces, the essays index plus each
 // published essay, one URL per person, and one per evidence-gated comparison.
 const CORE_SURFACES = 9;
-const ESSAY_URLS = 2;
+const ESSAY_URLS = 3;
 const sitemapUrls = CORE_SURFACES + ESSAY_URLS + total + indexable;
 
 const cohortLine = tally((person) => person.cohort_group)
@@ -105,14 +105,14 @@ const provenanceLine = tally((person) => person.data_version)
   .map(([label, value]) => `${label} ${number(value)}`)
   .join(", ");
 
-const summary = `An evidence-led visualization of ${number(total)} early-breakthrough paths: documented
-starting conditions, leverage provenance, luck, compounding trajectories, and
-the significance of observed milestones.`;
+const summary = `A guided, evidence-led journey through ${number(total)} early-breakthrough paths: what
+people brought, were handed, and were surrounded by, with perseverance, luck,
+and the limits of comparison kept visible.`;
 
-const statusSummary = `Explanatory visualization of ${number(total)} early-breakthrough paths — how documented
-starting conditions, leverage provenance, luck, and compounding trajectories
-relate to the significance of an observed milestone without claiming a causal
-formula or a repeatable identity.`;
+const statusSummary = `Guided explanatory journey through ${number(total)} early-breakthrough paths — how what
+people brought, were handed, and were surrounded by interacted with
+perseverance, sequence, and luck without becoming a causal formula, percentile,
+or repeatable identity.`;
 
 const stats = [
   `- **Total people:** ${number(total)} (born 1950+)`,

@@ -4,20 +4,27 @@ import peopleData from "../../data/people.json";
 import "../../styles/insights.css";
 import {
   ADVANTAGE_FIELDS,
+  CONDITION_FACTORS,
   LEVERAGE_FIELDS,
   LEVERAGE_ORIGINS,
   LUCK_FORMS,
   OUTCOME_STAGES,
   SCORE_FAMILIES,
   getAdvantageTotal,
+  getConditionFactorCoverage,
+  getConditionFactors,
   getPathCounterexamples,
   summarizeOutcomes,
   type OutcomePerson,
   type ScoreField,
 } from "../../lib/outcome-model";
+import { summarizeReachBands } from "../../lib/journey-model";
 
 const people = peopleData as OutcomePerson[];
 const summary = summarizeOutcomes(people);
+const conditionCoverage = getConditionFactorCoverage(people);
+const reachBands = summarizeReachBands(people);
+const broaderBand = reachBands.find((band) => band.key === "professionally-distinctive")!;
 const counterexamples = getPathCounterexamples(people);
 const tierOne = people.filter((person) => person.success_tier === 1);
 const tierFour = people.filter((person) => person.success_tier === 4);
@@ -148,50 +155,44 @@ const overlapChartData = {
 ---
 
 <Base
-  title="How Extraordinary Outcomes Happen — Look Sideways"
-  description="A clear, evidence-bounded model of how starting advantages, built or converted leverage, and compounding trajectories relate to extraordinary early outcomes."
+  title="Evidence Room — Look Sideways"
+  description="Evidence for why comparison breaks: what people brought, what they were handed, what surrounded them, perseverance, luck, and divergent outcomes."
 >
   <section class="hero insight-hero">
-    <p class="eyebrow">The model</p>
-    <h1>Extraordinary people are not made by one advantage.</h1>
+    <p class="eyebrow">The evidence room</p>
+    <h1>Keep asking the same three questions.</h1>
     <p class="lede">
-      Starting advantages change the first moves available. Built or converted leverage describes
-      the multiplying capacity later present. It may be self-built, advantage-enabled, earned,
-      external, or mixed. The early milestone puts someone in this dataset; the tier separately
-      summarizes documented career recognition.
+      What did they bring? What were they handed? What surrounded them? Then inspect the repeated
+      work, sequence, and unchosen openings. Evidence can explain a path without turning it into your forecast.
     </p>
     <div class="hero-actions">
-      <a class="btn-link btn-link-primary" href="/compare/">Choose a person to inspect</a>
+      <a class="btn-link btn-link-primary" href="#broader-success">See the broader success band</a>
       <a class="btn-link" href="/explore/">Study individual paths</a>
     </div>
   </section>
 
   <div class="insight-callout" data-clarity-contract="central-finding">
     <strong>The clearest finding:</strong>
-    {" "}higher tiers have higher average starting advantage and built or converted leverage, but
-    the ranges overlap heavily. Position and multiplying capacity are different layers. Neither
-    score determines the outcome.
+    {" "}similar visible conditions repeatedly lead to different outcomes. The differences live in
+    provenance, perseverance, sequence, luck, missing controls, and facts a biography never records.
   </div>
 
   <section class="minute-answer" aria-labelledby="minute-answer-heading" data-clarity-contract="one-minute-answer">
-    <p class="eyebrow">The answer in one minute</p>
-    <h2 id="minute-answer-heading">How extraordinary outcomes are made</h2>
+    <p class="eyebrow">The model in one minute</p>
+    <h2 id="minute-answer-heading">Three sources. Two forces. No formula.</h2>
     <div class="minute-answer-grid">
+      {CONDITION_FACTORS.map((factor) => {
+        const coverage = conditionCoverage.find((entry) => entry.key === factor.key)!;
+        return (
+          <div>
+            <strong>{factor.label}</strong>
+            <p>{factor.question} Assessed on {coverage.assessed.toLocaleString()} paths and never summed with the other layers.</p>
+          </div>
+        );
+      })}
       <div>
-        <strong>Starting advantages shape the first available moves.</strong>
-        <p>They change access, feedback speed, runway, available attempts, and who notices the work.</p>
-      </div>
-      <div>
-        <strong>Leverage can be built, converted, earned, or encountered.</strong>
-        <p>Reps, scarce skill, distribution, teams, timing, concentration, and domain proximity make effort compound—but the score does not reveal each lever’s origin.</p>
-      </div>
-      <div>
-        <strong>Trajectory is the conversion record.</strong>
-        <p>It shows what someone repeatedly built, learned, joined, shipped, practiced, or changed before the milestone.</p>
-      </div>
-      <div>
-        <strong>Tier describes observed career recognition—not human worth.</strong>
-        <p>Higher tiers average more starting advantage and built or converted leverage, but the overlap is too large for either score to determine the outcome.</p>
+        <strong>Perseverance changes what happens next.</strong>
+        <p>Repeated work, retries, recovery, and sustained practice are shown only when sources document them. Silence is not scored.</p>
       </div>
       <div>
         <strong>Luck acts across every arrow.</strong>
@@ -199,15 +200,37 @@ const overlapChartData = {
       </div>
     </div>
     <p class="minute-conclusion">
-      <strong>Therefore:</strong>{" "}a large head start can place someone nearer an observed high-tier
-      profile, but cannot manufacture the outcome. A small head start creates friction, not a ceiling.
-      The most useful question is which leverage can be deliberately strengthened next.
+      <strong>Therefore:</strong>{" "}compare mechanisms for information, never identities for a verdict.
+      The same layers do not arrive in the same order, receive the same repetition, or meet the same luck.
     </p>
   </section>
 
+  <section id="broader-success" aria-labelledby="broader-success-heading">
+    <div class="section-heading">
+      <p class="eyebrow">Beyond the 0.001%-style stories</p>
+      <h2 id="broader-success-heading">The archive already reaches toward broader professional distinction.</h2>
+      <p>
+        {broaderBand.count.toLocaleString()} paths—{broaderBand.share}% of the archive—are domain-recognized
+        or specialist-known rather than global icons. That is the first expansion toward the kind of success
+        people informally call the top 0.1%. It is not presented as a population percentile without a field denominator.
+      </p>
+    </div>
+    <div class="distribution-headline reach-band-ledger">
+      {reachBands.map((band) => (
+        <article>
+          <span>{band.label}</span>
+          <strong>{band.count.toLocaleString()}</strong>
+          <small>{band.share}% of this purposeful archive</small>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <details class="research-detail">
+    <summary>Open the legacy 22-field annotation detail</summary>
   <section aria-labelledby="score-family-heading" data-clarity-contract="score-family-distinction">
     <div class="section-heading">
-      <p class="eyebrow">Do not collapse these scores</p>
+      <p class="eyebrow">Deeper research detail</p>
       <h2 id="score-family-heading">A head start and a multiplying capability are not the same thing</h2>
       <p>
         The first score describes documented position near the beginning. The second describes
@@ -237,7 +260,10 @@ const overlapChartData = {
       <p>Person pages now infer a best-supported origin for every non-zero lever, show the linked evidence, state confidence, and preserve “unresolved” when the biography cannot tell us.</p>
     </div>
   </section>
+  </details>
 
+  <details class="research-detail">
+    <summary>Open the legacy ingredient-frequency atlas</summary>
   <section class="trait-atlas" aria-labelledby="trait-atlas-heading">
     <div class="section-heading trait-atlas-heading">
       <p class="eyebrow">Evidence frequency atlas · {people.length.toLocaleString()} paths</p>
@@ -371,6 +397,7 @@ const overlapChartData = {
         .forEach((details) => details.removeAttribute("open"));
     }
   </script>
+  </details>
 
   <section aria-labelledby="comparison-breaks-heading" data-clarity-contract="comparison-redundancy">
     <div class="section-heading">
@@ -547,8 +574,7 @@ const overlapChartData = {
                 <strong>{person.name}</strong>
                 <span>{person.cohort_group} · T{person.success_tier}</span>
                 <small>
-                  start {getAdvantageTotal(person)}/24 · leverage {person.total_leverage_score}/25 ·
-                  milestone age {person.age_at_milestone}
+                  {getConditionFactors(person).map((factor) => `${factor.label}: ${factor.score ?? "—"}`).join(" · ")}
                 </small>
                 <p>{person.milestone_by_age_26}</p>
               </a>
@@ -559,6 +585,8 @@ const overlapChartData = {
     </div>
   </section>
 
+  <details class="research-detail">
+    <summary>Open the legacy four-stage research model</summary>
   <section aria-labelledby="path-heading" data-clarity-contract="four-stage-model">
     <div class="section-heading">
       <p class="eyebrow">A four-stage path</p>
@@ -574,6 +602,7 @@ const overlapChartData = {
       ))}
     </div>
   </section>
+  </details>
 
   <section aria-labelledby="tiers-heading" data-clarity-contract="tier-definitions">
     <div class="section-heading">
@@ -600,6 +629,8 @@ const overlapChartData = {
     </div>
   </section>
 
+  <details class="research-detail">
+    <summary>Open the legacy score-overlap analysis</summary>
   <section aria-labelledby="gradient-heading" data-clarity-contract="gradient-and-overlap">
     <div class="section-heading">
       <p class="eyebrow">What the dataset observes</p>
@@ -938,15 +969,16 @@ const overlapChartData = {
       </table>
     </div>
   </section>
+  </details>
 
   <section class="grid grid-2 interpretation-grid" aria-label="Interpretation boundaries">
     <article class="card">
       <h3>What this supports</h3>
       <ul class="clean-list">
         <li>Seeing which conditions repeatedly accompany early breakthroughs.</li>
-        <li>Separating inherited or encountered access from multiplying capacity later present.</li>
-        <li>Finding profiles with similar starting positions but different outcomes.</li>
-        <li>Identifying practical dimensions a visitor can deliberately strengthen.</li>
+        <li>Separating what a person brought, what they were handed, and what surrounded them.</li>
+        <li>Seeing how perseverance, sequence, and luck redirect superficially similar paths.</li>
+        <li>Finding mechanisms worth investigating without turning a person into a template.</li>
       </ul>
     </article>
     <article class="card">
@@ -972,16 +1004,16 @@ const overlapChartData = {
         <p>Totals hide composition, provenance, sequence, and luck. Even a close person-specific match is only surface resemblance—not the probability of reproducing someone’s outcome.</p>
       </details>
       <details>
-        <summary>Can I ask “Am I the next X?” for a specific person?</summary>
-        <p>Yes. Every published profile has a person-specific questionnaire using that individual’s strongest documented starting conditions and levers. The result shows overlap and then explains where comparison breaks.</p>
+        <summary>Can I test a specific comparison?</summary>
+        <p>Yes. Every published profile can be read through the same three sources, documented perseverance, sequence, and luck. The exercise dismantles the identity comparison instead of producing a resemblance score.</p>
       </details>
       <details>
         <summary>Where does luck fit?</summary>
         <p>Across every stage. Structural luck, encounters, events, and outcome variance can redirect the path. Luck remains explicit but unscored because the dataset has no failed control group and cannot recover counterfactuals.</p>
       </details>
       <details>
-        <summary>Was each capability inherited, enabled, earned, external, or built?</summary>
-        <p>Person pages provide the best-supported origin for every non-zero lever, the evidence signals behind that inference, and a confidence label. When the record cannot distinguish origins, the answer is explicitly unresolved.</p>
+        <summary>Where did the visible advantages come from?</summary>
+        <p>Every profile starts with the same three layers: what the person brought, what they were handed, and what surrounded them. Detailed capability provenance remains available as secondary research evidence.</p>
       </details>
       <details>
         <summary>Why do superficially similar profiles diverge?</summary>
@@ -989,17 +1021,17 @@ const overlapChartData = {
       </details>
       <details>
         <summary>What percentile is this person—and how many people were far from them?</summary>
-        <p>Each person page shows the rank band of their editorial tier, the lower-tier count, and the lower-tier-per-member ratio inside this {people.length.toLocaleString()}-person early-breakthrough sample. It cannot estimate population odds or how many similar people failed because those people are not in the dataset.</p>
+        <p>Each person page shows a qualitative reach band inside this {people.length.toLocaleString()}-path archive. It does not claim a population percentile or estimate how many similar people failed, because the relevant field denominator and failed control group are absent.</p>
       </details>
     </div>
   </section>
 
   <section class="closing-cta">
-    <p class="eyebrow">Make the model personal</p>
-    <h2>See your position without turning it into a prediction.</h2>
+    <p class="eyebrow">Leave with the argument intact</p>
+    <h2>Use comparison for information, not identity.</h2>
     <p>
-      Choose a specific person, inspect the overlap, and leave with buildable gaps rather than a predicted identity.
+      Inspect another path if it teaches you something. Stop when it becomes a verdict about your pace or worth.
     </p>
-    <a class="btn-link btn-link-primary" href="/compare/">Choose a person →</a>
+    <a class="btn-link btn-link-primary" href="/explore/?reach=professional">Browse broader professional paths →</a>
   </section>
 </Base>

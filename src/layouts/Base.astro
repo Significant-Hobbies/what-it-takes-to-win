@@ -18,7 +18,7 @@ const auditGates = [
 ];
 const {
   title = "Look Sideways",
-  description = `Look sideways for information, never for a verdict. ${peopleData.length.toLocaleString()} documented paths with their starting conditions, built leverage, sequence, and luck held apart.`,
+  description = `Look sideways for information, never for a verdict. ${peopleData.length.toLocaleString()} documented paths showing what people brought, were handed, and were surrounded by, with perseverance and luck held apart.`,
   robots = "index,follow",
   canonicalPath,
   socialImage = "/og-image.png",
@@ -31,11 +31,10 @@ const canonicalUrl = Astro.site
 const socialImageUrl = Astro.site ? new URL(socialImage, Astro.site).toString() : socialImage;
 const currentPath = Astro.url.pathname;
 const navLinks = [
-  { href: "/", label: "Story", index: "01" },
-  { href: "/explore/", label: "Atlas", index: "02", activePrefixes: ["/explore/", "/person/"] },
-  { href: "/compare/", label: "Compare", index: "03", activePrefixes: ["/compare/", "/am-i-the-next/"] },
-  { href: "/essays/", label: "Essays", index: "04" },
-  { href: "/coverage/", label: "Evidence", index: "05", activePrefixes: ["/coverage/", "/methodology/"] },
+  { href: "/", label: "Journey", index: "01" },
+  { href: "/insights/", label: "Evidence", index: "02", activePrefixes: ["/insights/", "/coverage/", "/methodology/"] },
+  { href: "/essays/", label: "Articles", index: "03" },
+  { href: "/explore/", label: "Atlas", index: "04", activePrefixes: ["/explore/", "/person/", "/compare/", "/am-i-the-next/"] },
 ];
 const isActive = (link: (typeof navLinks)[number]) =>
   link.href === "/"
@@ -61,7 +60,7 @@ const isActive = (link: (typeof navLinks)[number]) =>
     <meta property="og:image" content={socialImageUrl} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content={`Look Sideways: ${peopleData.length.toLocaleString()} documented paths, four layers, no success formula.`} />
+    <meta property="og:image:alt" content={`Look Sideways: ${peopleData.length.toLocaleString()} documented paths, three sources of advantage, no success formula.`} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
@@ -78,7 +77,7 @@ const isActive = (link: (typeof navLinks)[number]) =>
           <span class="brand-mark" aria-hidden="true">↗</span>
           <span class="brand-lockup">
             <span class="brand-text">Look Sideways</span>
-            <span class="brand-subtitle">Atlas of documented paths</span>
+            <span class="brand-subtitle">A guided argument against comparison</span>
           </span>
         </a>
         <nav class="site-nav" aria-label="Primary navigation">
@@ -100,8 +99,9 @@ const isActive = (link: (typeof navLinks)[number]) =>
           <p class="footer-kicker">Look Sideways</p>
           <p class="footer-statement">The same ingredients do not make the same path.</p>
           <p class="footer-summary">
-            An independent research exhibit about advantage, built leverage,
-            compounding, luck, and the limits of comparison.
+            An independent research exhibit about what people brought, what they
+            were handed, what surrounded them, perseverance, luck, and the limits
+            of comparison.
           </p>
         </div>
         <div class="footer-audit" aria-label="Research audit status">
@@ -128,12 +128,32 @@ const isActive = (link: (typeof navLinks)[number]) =>
           <a href="/methodology/">Methodology</a>
           <a href="/essays/">Essays</a>
           <a href="/insights/">Insights</a>
+          <a href="/compare/">Break a comparison</a>
           <a href="/roi/">ROI lab</a>
           <a href="/about/">About</a>
           <a href="/changelog/">Changelog</a>
           <a href="https://github.com/Significant-Hobbies/what-it-takes-to-win/issues">Roadmap</a>
           <a href="https://github.com/Significant-Hobbies/what-it-takes-to-win">Source code</a>
         </nav>
+        <div class="footer-products">
+          <p class="footer-products-heading">More projects by Sarthak</p>
+          <portfolio-project-strip
+            current-project="what-it-takes-to-win"
+            label="More projects by Sarthak"
+            integrated
+          >
+            <nav class="footer-products-fallback" aria-label="More projects by Sarthak">
+              <a href="https://codevetter.com">CodeVetter</a>
+              <a href="https://heypace.app">HeyPace</a>
+              <a href="https://highsignal.app">High Signal</a>
+              <a href="https://posttrainllm.com">PostTrainLLM</a>
+              <a href="https://significanthobbies.com">Significant Hobbies</a>
+              <a href="https://chatgpt.significanthobbies.com">Memory Map</a>
+              <a href="https://anchor.significanthobbies.com">Anchor</a>
+              <a href="https://sassmaker.com">All projects</a>
+            </nav>
+          </portfolio-project-strip>
+        </div>
         <div class="footer-meta-row">
           <p class="footer-meta">{peopleCount.toLocaleString()} paths · People born 1950+</p>
           <p class="footer-meta">Independent research by Sarthak Agrawal</p>
@@ -157,13 +177,13 @@ const isActive = (link: (typeof navLinks)[number]) =>
     <script
       is:inline
       src="https://sassmaker.com/project-strip.js"
-      data-project="what-it-takes-to-win"
       defer
     ></script>
     <script
       is:inline
       src="https://sassmaker.com/ai-chat-footer.js"
-      data-name="What It Takes to Win"
+      data-name="Look Sideways"
+      data-compose="false"
       defer
     ></script>
   </body>

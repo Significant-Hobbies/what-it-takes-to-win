@@ -1,9 +1,9 @@
 # Look Sideways
 
 <!-- dataset-summary:start -->
-An evidence-led visualization of 3,577 early-breakthrough paths: documented
-starting conditions, leverage provenance, luck, compounding trajectories, and
-the significance of observed milestones.
+A guided, evidence-led journey through 3,577 early-breakthrough paths: what
+people brought, were handed, and were surrounded by, with perseverance, luck,
+and the limits of comparison kept visible.
 <!-- dataset-summary:end -->
 
 Explore the public project at
@@ -13,9 +13,12 @@ Explore the public project at
 
 - Visualizes a source-linked dataset across athletes, creators, founders, and
   researchers
-- Explores starting advantages separately from built or converted leverage
-- Provides per-person trajectories, cohort comparisons, and evidence-gated
-  questionnaires
+- Uses the same three condition factors everywhere: what a person brought, was
+  handed, and was surrounded by
+- Keeps sourced perseverance and unscored luck visible on individual paths
+- Includes 1,670 professionally distinctive paths beyond the most famous
+  outliers, without inventing a universal percentile
+- Breaks person-to-person comparisons instead of producing resemblance scores
 - Publishes methodology, coverage, sitemap, structured data, Markdown mirrors,
   `llms.txt`, and `/api/ai`
 

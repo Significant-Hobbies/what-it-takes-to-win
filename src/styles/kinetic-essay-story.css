@@ -702,6 +702,160 @@ body:has(.kinetic-story) .site-footer {
   font-size: 10px;
 }
 
+.kinetic-factor-list,
+.kinetic-case-ledger,
+.kinetic-luck-list,
+.kinetic-reach {
+  margin: 30px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--kinetic-ink);
+  list-style: none;
+}
+
+.kinetic-factor-list li {
+  display: grid;
+  grid-template-columns: minmax(92px, 0.7fr) minmax(142px, 1fr) minmax(180px, 1.7fr);
+  gap: 12px 18px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--kinetic-rule);
+}
+
+.kinetic-factor-list li > span,
+.kinetic-case-ledger span,
+.kinetic-proof-case > span,
+.kinetic-reach span {
+  color: var(--kinetic-faint);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.kinetic-factor-list li > strong {
+  font-size: 13px;
+}
+
+.kinetic-factor-list li > p,
+.kinetic-factor-list li > small {
+  margin: 0;
+  color: var(--kinetic-muted);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.kinetic-factor-list li > small {
+  grid-column: 2 / -1;
+  color: var(--kinetic-faint);
+}
+
+.chapter-copy .kinetic-boundary {
+  margin-top: 20px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--kinetic-rule);
+  font-size: 12px;
+}
+
+.kinetic-case-ledger {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.kinetic-case-ledger article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+  padding: 18px 22px 18px 0;
+  border-bottom: 1px solid var(--kinetic-rule);
+}
+
+.kinetic-case-ledger article + article {
+  padding-right: 0;
+  padding-left: 22px;
+  border-left: 1px solid var(--kinetic-rule);
+}
+
+.kinetic-case-ledger strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.kinetic-case-ledger p,
+.kinetic-proof-case p {
+  margin: 0;
+  color: var(--kinetic-muted);
+  font-size: 11px;
+  line-height: 1.48;
+}
+
+.kinetic-case-ledger a {
+  margin-top: auto;
+  color: var(--kinetic-blue);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.kinetic-proof-case {
+  border-top-color: var(--kinetic-ochre);
+}
+
+.kinetic-luck-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.kinetic-luck-list li {
+  display: grid;
+  gap: 5px;
+  padding: 12px 18px 12px 0;
+  border-bottom: 1px solid var(--kinetic-rule);
+}
+
+.kinetic-luck-list li:nth-child(even) {
+  padding-right: 0;
+  padding-left: 18px;
+  border-left: 1px solid var(--kinetic-rule);
+}
+
+.kinetic-luck-list strong {
+  font-size: 12px;
+}
+
+.kinetic-luck-list span {
+  color: var(--kinetic-muted);
+  font-size: 11px;
+  line-height: 1.42;
+}
+
+.kinetic-reach {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.kinetic-reach > div {
+  display: grid;
+  gap: 5px;
+  padding: 14px 16px 14px 0;
+  border-bottom: 1px solid var(--kinetic-rule);
+}
+
+.kinetic-reach > div + div {
+  padding-left: 16px;
+  border-left: 1px solid var(--kinetic-rule);
+}
+
+.kinetic-reach strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.kinetic-reach small {
+  color: var(--kinetic-muted);
+  font-size: 10px;
+}
+
 .kinetic-close {
   margin: 34px 0 0;
   padding: 25px 0 0;
@@ -1044,8 +1198,8 @@ body:has(.kinetic-story) .site-footer {
   }
 
   .kinetic-course {
-    height: 520px;
-    min-height: 520px;
+    height: 460px;
+    min-height: 460px;
   }
 
   .kinetic-course svg {
@@ -1086,7 +1240,7 @@ body:has(.kinetic-story) .site-footer {
   }
 
   .kinetic-chapter-index {
-    padding: 22px;
+    display: none;
   }
 
   .kinetic-mobile-register {
@@ -1130,6 +1284,32 @@ body:has(.kinetic-story) .site-footer {
     padding: 10px 0;
     border-right: 0;
     border-bottom: 1px solid var(--kinetic-rule);
+  }
+
+  .kinetic-factor-list li {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .kinetic-factor-list li > small {
+    grid-column: 1;
+  }
+
+  .kinetic-case-ledger,
+  .kinetic-luck-list,
+  .kinetic-reach {
+    grid-template-columns: 1fr;
+  }
+
+  .kinetic-case-ledger article,
+  .kinetic-case-ledger article + article,
+  .kinetic-luck-list li,
+  .kinetic-luck-list li:nth-child(even),
+  .kinetic-reach > div,
+  .kinetic-reach > div + div {
+    padding-right: 0;
+    padding-left: 0;
+    border-left: 0;
   }
 
   .kinetic-essays {

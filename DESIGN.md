@@ -18,8 +18,10 @@ The approved direction probe is
 
 ## Product translation
 
-- **Unique mechanism:** place documented paths beside one another while
-  keeping starting conditions, built leverage, sequence, and luck separate.
+- **Unique mechanism:** guide the reader through why comparison fails, then
+  place documented paths beside one another while keeping what people brought,
+  what they were handed, what surrounded them, perseverance, sequence, and luck
+  separate.
 - **Cultural home:** annotated long-form visual essays, research figures,
   editorial diagrams, and working-paper marginalia.
 - **First-surface proof:** three marbles run the same course, trade the lead as
@@ -86,7 +88,8 @@ a dark media window.
 - Desktop story pages use a reading column beside a sticky evidence figure.
   Utility routes may use a wider ruled sheet without a permanent sidebar.
 - Page headers are compact and quiet so the first argument begins immediately.
-- The primary navigation stays short: Story, Atlas, Compare, Essays, Evidence.
+- The primary navigation stays short and follows the reading order: Journey,
+  Evidence, Articles, Atlas.
   Secondary destinations move to the footer or contextual indexes.
 - Major explanatory regions may share hairline rules like a fold-out legend.
   They do not become rounded cards.
@@ -117,8 +120,9 @@ a dark media window.
 
 ## Story surface
 
-The homepage remains a five-chapter explanation of survivor selection,
-starting conditions, built leverage, sequence, and luck. A scroll-scrubbed SVG
+The homepage remains a five-chapter explanation of the visible finish, the
+three sources of advantage, perseverance, luck, and the release from identity
+comparison. A scroll-scrubbed SVG
 marble race is the central demonstration; the Kinetic Essay system draws the
 course, annotations, chapter figures, and interpretation boundaries onto one
 continuous page:

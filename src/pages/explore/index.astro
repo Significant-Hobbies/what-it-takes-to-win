@@ -5,15 +5,13 @@ import peopleData from "../../data/people.json";
 const people = peopleData;
 const cohorts = [...new Set(people.map((p) => p.cohort_group).filter(Boolean))].sort();
 const categories = [...new Set(people.map((p) => p.category).filter(Boolean))].sort();
-const engines = [...new Set(people.map((p) => p.normalized_primary_engine).filter(Boolean))].sort();
-const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_archetype).filter(Boolean))].sort();
 ---
 
 <Base title="Explore — Look Sideways" mainClass="explore-main">
   <section class="hero explore-hero">
     <p class="eyebrow">Research atlas</p>
     <h1>Explore {people.length.toLocaleString("en-US")} people</h1>
-    <p class="lede">Find a path to inspect—not a person to rank. Open any profile to see starting conditions, leverage provenance, luck boundaries, trajectory, and a person-specific “Am I the next…?” questionnaire.</p>
+    <p class="lede">The evidence room behind the journey. Inspect what each person brought, what they were handed, what surrounded them, and where perseverance or luck appears in the record.</p>
     <dl class="explore-contract" aria-label="Atlas interpretation contract">
       <div>
         <dt>Unit</dt>
@@ -25,7 +23,7 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
       </div>
       <div>
         <dt>Boundary</dt>
-        <dd>Selected outliers, no control group</dd>
+        <dd>Purposeful success sample, no control group</dd>
       </div>
     </dl>
     <a class="explore-jump" href="#filters">Search and filter the atlas <span aria-hidden="true">↓</span></a>
@@ -60,18 +58,13 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
           {categories.map((c) => <option value={c}>{c}</option>)}
         </select>
       </label>
-      <label class="filter-field" for="f-engine">
-        <span>Primary engine</span>
-        <select id="f-engine">
-          <option value="">All engines</option>
-          {engines.map((c) => <option value={c}>{c}</option>)}
-        </select>
-      </label>
-      <label class="filter-field" for="f-archetype">
-        <span>Archetype</span>
-        <select id="f-archetype">
-          <option value="">All archetypes</option>
-          {archetypes.map((c) => <option value={c}>{c}</option>)}
+      <label class="filter-field" for="f-reach">
+        <span>Outcome reach</span>
+        <select id="f-reach">
+          <option value="">All reach bands</option>
+          <option value="professional">Professionally distinctive</option>
+          <option value="field">Field-leading</option>
+          <option value="extreme">Extreme public outlier</option>
         </select>
       </label>
       <label class="filter-field filter-field-sort" for="f-sort">
@@ -86,7 +79,7 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
     <div class="filter-footer">
       <details class="filter-key">
         <summary>What do these terms mean?</summary>
-        <p><strong>Primary engine</strong> is the main mechanism behind an early milestone. <strong>Archetype</strong> groups similar starting advantages. Both are interpretation aids, not scores.</p>
+        <p><strong>Outcome reach</strong> describes recognition inside this purposeful archive. “Professionally distinctive” broadens the evidence toward the kind of success often described as top 0.1%, but it is not a universal percentile without a field denominator.</p>
       </details>
       <div class="active-filter-bar">
         <span id="active-filters">No filters active</span>
@@ -107,12 +100,14 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
       age_at_milestone?: number;
       category?: string;
       cohort_group?: string;
+      catalytic_ecosystem_score?: number | null;
       early_history_summary?: string;
+      inherited_leverage_score?: number | null;
       milestone_by_age_26?: string;
       name: string;
-      normalized_primary_engine?: string;
+      personal_endowment_score?: number | null;
       person_id: string;
-      primary_early_advantage_archetype?: string;
+      success_tier?: number;
     };
 
     let people: Person[] | null = null;
@@ -126,8 +121,7 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
     const search = document.getElementById("search") as HTMLInputElement;
     const fCohort = document.getElementById("f-cohort") as HTMLSelectElement;
     const fCategory = document.getElementById("f-category") as HTMLSelectElement;
-    const fEngine = document.getElementById("f-engine") as HTMLSelectElement;
-    const fArchetype = document.getElementById("f-archetype") as HTMLSelectElement;
+    const fReach = document.getElementById("f-reach") as HTMLSelectElement;
     const fSort = document.getElementById("f-sort") as HTMLSelectElement;
 
     function escapeHtml(value: unknown) {
@@ -135,7 +129,24 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
       return String(value).replace(/[&<>"']/g, (character) => entities[character]);
     }
 
-    const controls = [search, fCohort, fCategory, fEngine, fArchetype, fSort];
+    const controls = [search, fCohort, fCategory, fReach, fSort];
+
+    function reachKey(person: Person) {
+      if (person.success_tier === 1) return "extreme";
+      if (person.success_tier === 2) return "field";
+      return "professional";
+    }
+
+    function reachLabel(person: Person) {
+      if (person.success_tier === 1) return "Extreme public outlier";
+      if (person.success_tier === 2) return "Field-leading";
+      return "Professionally distinctive";
+    }
+
+    function factorValue(value: number | null | undefined) {
+      if (typeof value !== "number") return "—";
+      return value > 0 ? `+${value}` : String(value);
+    }
 
     function clearAllFilters() {
       for (const control of controls) control.value = control === fSort ? "name" : "";
@@ -148,8 +159,7 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
       if (search.value.trim()) params.set("q", search.value.trim());
       if (fCohort.value) params.set("cohort", fCohort.value);
       if (fCategory.value) params.set("field", fCategory.value);
-      if (fEngine.value) params.set("engine", fEngine.value);
-      if (fArchetype.value) params.set("archetype", fArchetype.value);
+      if (fReach.value) params.set("reach", fReach.value);
       if (fSort.value !== "name") params.set("order", fSort.value);
       const query = params.toString();
       window.history.replaceState({}, "", query ? `${window.location.pathname}?${query}` : window.location.pathname);
@@ -160,17 +170,15 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
       const q = search.value.trim().toLowerCase();
       const cohort = fCohort.value;
       const category = fCategory.value;
-      const engine = fEngine.value;
-      const archetype = fArchetype.value;
+      const reach = fReach.value;
       const sort = fSort.value;
 
       const list = people.filter((p) => {
         if (cohort && p.cohort_group !== cohort) return false;
         if (category && p.category !== category) return false;
-        if (engine && p.normalized_primary_engine !== engine) return false;
-        if (archetype && p.primary_early_advantage_archetype !== archetype) return false;
+        if (reach && reachKey(p) !== reach) return false;
         if (q) {
-          const hay = `${p.name} ${p.milestone_by_age_26} ${p.early_history_summary} ${p.category} ${p.primary_early_advantage_archetype}`.toLowerCase();
+          const hay = `${p.name} ${p.milestone_by_age_26} ${p.early_history_summary} ${p.category}`.toLowerCase();
           if (!hay.includes(q)) return false;
         }
         return true;
@@ -194,8 +202,7 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
         q ? `“${search.value.trim()}”` : "",
         cohort,
         category,
-        engine,
-        archetype,
+        reach ? reachLabel({ name: "", person_id: "", success_tier: reach === "extreme" ? 1 : reach === "field" ? 2 : 3 }) : "",
       ].filter(Boolean);
       activeFilters.textContent = filterLabels.length ? filterLabels.join(" · ") : "No filters active";
       clearFilters.disabled = filterLabels.length === 0 && sort === "name";
@@ -223,8 +230,10 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
           <div class="cat">${escapeHtml(p.category || "")} · age ${p.age_at_milestone ?? "?"}</div>
           <div class="milestone">${escapeHtml(p.milestone_by_age_26 || "")}</div>
           <div class="path-record-meta">
-            ${p.normalized_primary_engine ? `<span><b>Engine</b>${escapeHtml(p.normalized_primary_engine)}</span>` : ""}
-            ${p.primary_early_advantage_archetype ? `<span><b>Archetype</b>${escapeHtml(p.primary_early_advantage_archetype)}</span>` : ""}
+            <span><b>What they brought</b>${factorValue(p.personal_endowment_score)}</span>
+            <span><b>What they were handed</b>${factorValue(p.inherited_leverage_score)}</span>
+            <span><b>What surrounded them</b>${factorValue(p.catalytic_ecosystem_score)}</span>
+            <span><b>Outcome reach</b>${escapeHtml(reachLabel(p))}</span>
           </div>
         </a>
       `;
@@ -235,8 +244,7 @@ const archetypes = [...new Set(people.map((p) => p.primary_early_advantage_arche
     search.value = params.get("q") ?? "";
     fCohort.value = params.get("cohort") ?? "";
     fCategory.value = params.get("field") ?? "";
-    fEngine.value = params.get("engine") ?? "";
-    fArchetype.value = params.get("archetype") ?? "";
+    fReach.value = params.get("reach") ?? "";
     fSort.value = params.get("order") ?? "name";
 
     for (const control of controls) {

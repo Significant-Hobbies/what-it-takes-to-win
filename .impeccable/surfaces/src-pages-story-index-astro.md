@@ -7,17 +7,19 @@ related_targets: ["src/styles/global.css","src/styles/story.css","src/layouts/Ba
 
 Mode: Persuade.
 
-Scope: `/` is the canonical five-chapter entry to the research model. The
+Scope: `/` is the canonical five-chapter comparison-futility journey. The
 former homepage remains at `/overview/`; `/story/` redirects to `/`.
 
-Audience and job: A first-time reader should understand why a visible biography
-cannot be treated as a repeatable formula. The primary action is to continue
-into Explore; Evidence and Compare remain visible secondary paths.
+Audience and job: A first-time reader should understand why another person's
+visible outcome cannot be turned into a judgement about their own pace or worth.
+The primary action is to continue into Evidence after completing the journey;
+Articles and the Atlas remain secondary paths.
 
-Proof and constraints: Use build-derived dataset summaries, name the selected-
-outlier and no-control-group boundaries, distinguish starting position from
-built or converted leverage, and keep luck explicit and unscored. No causal
-claims, predictions, remote runtime assets, or borrowed visual motifs.
+Proof and constraints: Use build-derived dataset summaries, name the purposeful-
+sample and no-control-group boundaries, use what they brought / were handed /
+were surrounded by everywhere, and keep perseverance evidenced and luck
+explicit and unscored. No causal claims, invented population percentiles,
+predictions, remote runtime assets, or borrowed visual motifs.
 
 Direction: Kinetic Essay. A warm paper reading column and an annotated course
 share one continuous plane. Three marbles travel one scroll-scrubbed SVG course
