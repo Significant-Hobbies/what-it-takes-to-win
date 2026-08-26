@@ -1,0 +1,43 @@
+[
+  {
+    "signal_id": "sail-2026-funding-neil-movva",
+    "person_name": "Neil Movva",
+    "aliases": ["Neil Movva", "nmovva", "neilmovva"],
+    "field": "Founders / operators",
+    "event_date": "2026-06-25",
+    "birth_year": 1998,
+    "age_basis": "year_only_conservative",
+    "age_at_event": 28,
+    "age_confidence": "high",
+    "event_type": "company_funding_and_valuation",
+    "event_summary": "Co-founded and led Sail Research when it disclosed $80 million in seed and Series A funding at a reported $450 million valuation.",
+    "outcome_strength": 95,
+    "metrics": {
+      "capital_raised_usd": 80000000,
+      "valuation_usd": 450000000
+    },
+    "calibration_gate": "founder_outcome_review",
+    "sources": [
+      {
+        "url": "https://www.sailresearch.com/blog/sail-raises-80m",
+        "origin": "sailresearch.com",
+        "evidence_origin": "sail-2026-funding-announcement",
+        "role": "first_party_event"
+      },
+      {
+        "url": "https://fortune.com/2026/06/25/exclusive-sail-apple-kleiner-perkins-gpu-token-nvdia-sequoia-80-million/",
+        "origin": "fortune.com",
+        "evidence_origin": "fortune-original-reporting",
+        "role": "independent_age_and_event"
+      },
+      {
+        "url": "https://www.kleinerperkins.com/perspectives/sail-the-inference-platform-for-long-horizon-agents/",
+        "origin": "kleinerperkins.com",
+        "evidence_origin": "sail-2026-funding-announcement",
+        "role": "investor_team_background"
+      }
+    ],
+    "detected_at": "2026-08-26",
+    "research_status": "age_30_eligible"
+  }
+]

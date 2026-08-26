@@ -38,7 +38,7 @@ const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
   (match) => match[1],
 );
 const indexableComparisons = people.filter(comparisonIsIndexable);
-const coreSurfaceCount = 9;
+const coreSurfaceCount = 10;
 const essayCount = 3; // essays index + 2 published essays
 const expectedSitemapCount = coreSurfaceCount + essayCount + people.length + indexableComparisons.length;
 if (

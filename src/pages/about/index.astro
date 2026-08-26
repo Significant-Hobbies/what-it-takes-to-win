@@ -1,14 +1,17 @@
 ---
 import Base from "../../layouts/Base.astro";
+import candidateCoverage from "../../data/candidate-coverage.json";
 import peopleData from "../../data/people.json";
 
 const peopleCount = peopleData.length.toLocaleString();
+const candidateCount = candidateCoverage.total_candidates.toLocaleString();
+const backlogCount = candidateCoverage.queued_backlog.toLocaleString();
 ---
 
 <Base title="About — Look Sideways">
   <section class="hero" style="padding-bottom:24px;">
     <h1>About this project</h1>
-    <p class="lede">An open visualization of an early-advantage dataset covering {peopleCount} people.</p>
+    <p class="lede">An uncapped public-evidence coverage project with {candidateCount} discovered candidates and {peopleCount} published profiles.</p>
   </section>
 
   <article class="prose">
@@ -23,14 +26,16 @@ const peopleCount = peopleData.length.toLocaleString();
       Perseverance appears only when sources document repeated work, setbacks, recovery, or
       sustained practice. Luck remains visible and unscored. The early milestone determines
       inclusion; outcome reach summarizes documented recognition through the data cutoff. The
-      archive includes global icons, field leaders, and 1,670 professionally distinctive paths,
-      broadening the evidence toward the kind of success often described as top 0.1% without
-      inventing a universal percentile. See <a href="/insights/">how the evidence model works</a>.
+      archive includes global icons, field leaders, and professionally distinctive paths. The
+      working target is the top 0.001% of each exact-age global cohort, but that calibration remains
+      under methodology review. See <a href="/coverage/">the live coverage funnel</a> and
+      <a href="/insights/">how the evidence model works</a>.
     </p>
 
     <h2>What it is not</h2>
     <ul>
-      <li>Not a census or representative sample of successful people.</li>
+      <li>Not a claim of complete capture: private, local, and poorly indexed outcomes remain hard to discover.</li>
+      <li>Not representative of the full population; the corpus intentionally contains successful outliers.</li>
       <li>Not a causal estimate of which advantages produce success.</li>
       <li>Not a ranking of human worth or talent.</li>
       <li>Not a predictor of individual outcomes.</li>
@@ -50,7 +55,8 @@ const peopleCount = peopleData.length.toLocaleString();
 
     <h2>Source & release terms</h2>
     <p>
-      This research build includes {peopleCount} people born in or after 1950. Release terms for the
+      This research build includes {peopleCount} published people born in or after 1950 and keeps
+      {backlogCount} discovered candidates visible for research or publication. Release terms for the
       original annotations and scripts are still under review; the repository does not yet grant
       the suggested CC BY 4.0 or MIT licences. Third-party sources retain their own terms.
       See <a href="https://github.com/Significant-Hobbies/what-it-takes-to-win">GitHub</a> for source.

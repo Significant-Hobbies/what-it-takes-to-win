@@ -1,0 +1,24 @@
+[
+  {
+    "person_name": "Neil Movva",
+    "expected_source": "yc-directory",
+    "expected_signal": "sail-2026-funding-neil-movva",
+    "expected_state": "published"
+  },
+  {
+    "person_name": "Bill Gates",
+    "expected_state": "published"
+  },
+  {
+    "person_name": "Serena Williams",
+    "expected_state": "published"
+  },
+  {
+    "person_name": "Taylor Swift",
+    "expected_state": "published"
+  },
+  {
+    "person_name": "Terence Tao",
+    "expected_state": "published"
+  }
+]

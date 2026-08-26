@@ -1,0 +1,58 @@
+name: Suggest a person
+description: Nominate a missing age-relative outlier with dated public evidence.
+title: "[Person suggestion] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggestions are public and do not guarantee research or publication. Do not include private, confidential, or sensitive personal information.
+  - type: input
+    id: person
+    attributes:
+      label: Person
+      description: Use the person's public name.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Dated age-relative outcome
+      description: State what happened, when it happened, and the person's age at the time.
+    validations:
+      required: true
+  - type: input
+    id: source-one
+    attributes:
+      label: First evidence source
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: source-two
+    attributes:
+      label: Second independent evidence source
+      description: Use a different evidence origin, not another copy of the same announcement.
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Relationship to the person
+      options:
+        - No personal relationship
+        - I am this person
+        - Colleague, collaborator, or organization
+        - Friend or family member
+        - Other disclosed relationship
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Public-submission confirmation
+      options:
+        - label: I have not included private, confidential, or sensitive personal information.
+          required: true
+        - label: I understand that the existing research and publication gates still apply.
+          required: true

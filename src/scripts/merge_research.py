@@ -10,7 +10,7 @@ Writes:
   - src/data/people.jsonl (same, in JSONL)
   - data/research/merge_report.json (stats on eligibility, duplicates, errors)
 
-Only people with eligibility_status == "age_26_eligible" are added to the main
+Only people with an age-30 or legacy age-26 eligible status are added to the main
 dataset. Ineligible and unverified candidates are kept in the research directory
 for transparency but not merged into the published dataset.
 """
@@ -158,8 +158,8 @@ def main() -> int:
             # Validate required fields for eligible rows
             status = obj.get("eligibility_status", "unverified_candidate")
             # Normalize creator-track statuses to the canonical forms
-            eligible_statuses = {"age_26_eligible", "eligible", "eligible_background_unverified"}
-            ineligible_statuses = {"age_26_ineligible", "ineligible"}
+            eligible_statuses = {"age_30_eligible", "age_26_eligible", "eligible", "eligible_background_unverified"}
+            ineligible_statuses = {"age_30_ineligible", "age_26_ineligible", "ineligible"}
             if status in eligible_statuses:
                 missing = REQUIRED_FIELDS - set(obj.keys())
                 if missing:
@@ -182,7 +182,7 @@ def main() -> int:
                 # Validate numeric ranges roughly
                 ok = True
                 for f, (lo, hi) in [
-                    ("age_at_milestone", (0, 26)),
+                    ("age_at_milestone", (0, 30)),
                     ("success_tier", (1, 4)),
                 ]:
                     v = obj.get(f)

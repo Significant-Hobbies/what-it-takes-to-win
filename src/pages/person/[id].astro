@@ -94,11 +94,16 @@ const structuredData = {
       </div>
 
       <div class="milestone-box">
-        <div class="label">Selected early milestone · age {p.age_at_milestone}</div>
+        <div class="label">Selected age-relative milestone · age {p.age_at_milestone}</div>
         <div class="text">{p.milestone_by_age_26}</div>
       </div>
 
       <p class="summary">{p.early_history_summary}</p>
+      <p class="person-contribution-link">
+        <a href={`/contribute/?task=edit&person=${encodeURIComponent(p.name)}&profile=${encodeURIComponent(personUrl)}`}>
+          Spot something wrong? Propose an edit →
+        </a>
+      </p>
     </header>
     <aside class="person-reading-boundary">
       <strong>Do not ask whether you are the next {p.name}.</strong>

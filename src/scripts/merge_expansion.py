@@ -37,7 +37,7 @@ def load_expansion_batches():
                 except:
                     continue
                 
-                if p.get('eligibility_status') != 'age_26_eligible':
+                if p.get('eligibility_status') not in {'age_30_eligible', 'age_26_eligible'}:
                     continue
                 
                 name = p.get('name', '').strip()

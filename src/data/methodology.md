@@ -8,15 +8,24 @@ Why does comparison fail when documented paths contain different conditions, rep
 
 ## Unit of analysis
 
-One person and one selected milestone that occurred at or before age 26. The milestone may be commercial, technical, creative, athletic, scientific, or institutional. The dataset does not claim that this was the person's final or most important achievement.
+One person and one selected milestone that occurred at or before age 30. The milestone may be commercial, technical, creative, athletic, scientific, or institutional. The dataset does not claim that this was the person's final or most important achievement. The stored field remains `milestone_by_age_26` for dataset compatibility while the corpus is migrated; it now means the selected age-relative milestone.
 
 ## Selection
 
-The published dataset is a purposive outlier sample assembled to cover founders, operators, creators, athletes, researchers, and independent engineers. It is not a census, representative sample, or estimate of the base rate of success. The live [evidence coverage ledger](/coverage/) reports the current denominator.
+The project is building an uncapped public-evidence census of people with unusually strong documented outcomes for their exact age, across founders, operators, creators, athletes, researchers, and independent engineers. It does not claim access to private or unpublicized outcomes, and it does not downsample verified qualifiers to meet a record target. The live [evidence coverage ledger](/coverage/) reports the discovered universe, research backlog, published corpus, and known blind spots.
 
 The public [evidence coverage ledger](/coverage/) reports the current source
 depth, trajectory completeness, annotation confidence, indexability, cohort
 composition, and independent-audit boundary directly from the published data.
+
+New admissions use three versioned, fail-closed verdicts. The discovery gate
+promotes dated, typed, age-relative outcome signals into research. The research
+gate requires an applicable age-banded outcome rule and independently useful
+evidence. The publication gate then reproduces identity, age, field, source,
+and trajectory consistency against the completed record. A researcher-written
+`eligible` status is not sufficient by itself. Current age-banded outcome rules
+are labelled provisional research screens until exact-age field prevalence is
+independently calibrated.
 
 ## Public explanatory model
 
@@ -286,12 +295,12 @@ The sample begins with successful people. It cannot estimate whether an advantag
 
 ## Early-bloomer bias
 
-The dataset is restricted to people who had a notable milestone **early in their careers** (the study uses age 26 as its cutoff). This is a deliberate design choice — the project is about early breakthroughs — but it creates a structural bias:
+The dataset is restricted to people who had a notable milestone **by age 30**. This is a deliberate design choice—the project is about unusually early outcomes—but it creates a structural bias:
 
 - Late bloomers are underrepresented. Stan Lee published his first comic at 38, Vera Wang designed her first dress at 40, Samuel L. Jackson broke through at 43. None of them appear here.
 - Person-specific resemblance only compares visible ingredients from early-breakthrough profiles. It cannot represent late-bloomer routes that fall outside the study window.
 
-This bias is acceptable for the project's purpose (exploring early breakthroughs) but should be kept in mind when interpreting any score or comparison.
+This bias is accepted for the project's age-relative coverage purpose and must remain visible when interpreting any annotation or comparison.
 
 ## Measurement concerns
 

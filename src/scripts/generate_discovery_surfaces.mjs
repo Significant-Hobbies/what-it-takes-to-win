@@ -2,6 +2,10 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { root, dist, origin, people, comparisonIsIndexable } from "../lib/discovery.mjs";
 
+const candidateCoverage = JSON.parse(
+  await readFile(path.join(root, "src", "data", "candidate-coverage.json"), "utf8"),
+);
+
 const coreSurfaces = [
   {
     id: "home",
@@ -57,7 +61,7 @@ const coreSurfaces = [
     mdPath: "/coverage.md",
     title: "Evidence coverage",
     summary:
-      "Live source depth, trajectory completeness, confidence, sample composition, indexability, and unresolved independent-audit boundaries.",
+      "The live candidate funnel, source freshness, published evidence depth, indexability, and unresolved audit boundaries.",
   },
   {
     id: "methodology",
@@ -73,7 +77,15 @@ const coreSurfaces = [
     mdPath: "/about.md",
     title: "About Look Sideways",
     summary:
-      "An independent educational research exhibit based on a purposive sample of early-breakthrough paths, not a prediction engine or leaderboard.",
+      "An independent project building an uncapped public-evidence census of unusually early achievement, not a prediction engine or leaderboard.",
+  },
+  {
+    id: "contribute",
+    htmlPath: "/contribute/",
+    mdPath: "/contribute.md",
+    title: "Suggest a person or propose an edit",
+    summary:
+      "A public, evidence-first workflow for nominating a missing age-relative outlier or correcting a published profile through a moderated GitHub issue.",
   },
 ];
 
@@ -198,11 +210,23 @@ function coverageMarkdown(surface) {
   const audited = people.filter(
     (person) => person.source_audit_status === "source_verified",
   ).length;
+  const discovered = candidateCoverage.total_candidates;
+  const backlog = candidateCoverage.queued_backlog;
+  const goldSet = candidateCoverage.gold_set;
+  const staleSources = candidateCoverage.sources.filter((source) => source.stale).length;
 
   return [
     `# ${surface.title}`,
     "",
     surface.summary,
+    "",
+    "## Candidate coverage funnel",
+    "",
+    `- Discovered candidates: ${discovered.toLocaleString("en-US")}`,
+    `- Research and publication backlog: ${backlog.toLocaleString("en-US")}`,
+    `- Published profiles: ${total.toLocaleString("en-US")}`,
+    `- Named gold-set recall: ${goldSet.passed}/${goldSet.total}`,
+    `- Stale registered sources: ${staleSources}/${candidateCoverage.sources.length}`,
     "",
     "## Current published coverage",
     "",
@@ -215,7 +239,7 @@ function coverageMarkdown(surface) {
     "",
     "## Interpretation boundary",
     "",
-    "Structural completeness is not independent verification. This is a selected early-breakthrough atlas with no matched unsuccessful control group. It cannot estimate success probabilities, causal effects, population prevalence, or how many similar-background people failed for each visible outlier.",
+    "The project has no record ceiling, but public discoverability and research capacity still constrain observed coverage. Structural completeness is not independent verification. The published corpus has no matched unsuccessful control group and cannot estimate success probabilities, causal effects, population prevalence, or how many similar-background people failed for each visible outlier.",
     "",
     "## External gates still pending",
     "",
@@ -268,9 +292,36 @@ function roiMarkdown(surface) {
   ].join("\n");
 }
 
+function contributeMarkdown(surface) {
+  return [
+    `# ${surface.title}`,
+    "",
+    surface.summary,
+    "",
+    "## Suggest a person",
+    "",
+    "Name the person, a dated outcome at age 30 or younger, their age at the event, and two independently useful public evidence sources.",
+    "",
+    "## Propose an edit",
+    "",
+    "Identify the published profile and current claim, state the proposed correction and reason, and attach at least one authoritative public source.",
+    "",
+    "## Submission boundary",
+    "",
+    "The contribution page validates and previews a public GitHub issue draft. It does not send data until the contributor deliberately opens GitHub, and it never directly changes the dataset. Do not include private, confidential, medical, financial-account, or other sensitive personal information.",
+    "",
+    "Maintainers may request stronger evidence, merge duplicates, decline a suggestion, or preserve the existing record. Every accepted addition or edit remains subject to the existing research and publication gates.",
+    "",
+    `- [Open the contribution desk](${absolute("/contribute/")})`,
+    `- [Inspect the evidence gates](${absolute("/coverage/")})`,
+    "",
+  ].join("\n");
+}
+
 function staticMarkdown(surface) {
   if (surface.id === "coverage") return coverageMarkdown(surface);
   if (surface.id === "roi") return roiMarkdown(surface);
+  if (surface.id === "contribute") return contributeMarkdown(surface);
   return [
     `# ${surface.title}`,
     "",
@@ -372,7 +423,7 @@ await emit(
     "",
     "- Answering questions about what people brought, were handed, and were surrounded by, plus documented perseverance and unscored luck",
     "- Providing evidence-bounded analysis of documented early-breakthrough paths without claiming causality or predicting individual success",
-    `- Browsing ${people.length.toLocaleString("en-US")} profiles spanning extreme outliers, field leaders, and professionally distinctive paths in a purposeful success sample`,
+    `- Browsing ${people.length.toLocaleString("en-US")} published profiles inside an uncapped candidate-coverage project`,
     "- Explaining the three-source model and why perseverance, sequence, and luck prevent identity comparison from becoming a forecast",
     "- Directing users to ROI lab, methodology, coverage, and long-form essays on advantage and abstraction",
     "",
@@ -399,7 +450,7 @@ await emit(
     "",
     "## Important limitation",
     "",
-    "The dataset is a purposive successful-outlier sample with interpretive annotations. It cannot estimate causal effects, base rates, counterfactual outcomes, or an individual's probability of success.",
+    "The project is building an uncapped public-evidence census, not claiming complete population capture. Its published corpus contains successful outliers with interpretive annotations and cannot estimate causal effects, base rates, counterfactual outcomes, or an individual's probability of success.",
     "",
   ].join("\n"),
 );
@@ -409,7 +460,7 @@ await emit(
   [
     "# Look Sideways — full agent index",
     "",
-    "Look Sideways is a guided argument over a purposeful sample of documented early-breakthrough paths. It separates what people brought, were handed, and were surrounded by, then keeps perseverance, sequence, and luck visible. It is not a prediction engine, causal model, or ranking of human worth.",
+    "Look Sideways is a guided argument and an uncapped public-evidence coverage project for documented early-breakthrough paths. It separates what people brought, were handed, and were surrounded by, then keeps perseverance, sequence, and luck visible. It is not a prediction engine, causal model, or ranking of human worth.",
     "",
     "## Explanatory model",
     "",
@@ -434,7 +485,7 @@ await emit(
     "",
     "## Interpretation boundary",
     "",
-    "The dataset is a purposive successful-outlier sample with interpretive annotations. Structural completeness is not independent verification. The project cannot estimate causal effects, population base rates, counterfactual outcomes, or an individual's probability of success.",
+    "The project is building an uncapped public-evidence census, not claiming complete population capture. Its published corpus contains successful outliers with interpretive annotations. Structural completeness is not independent verification. The project cannot estimate causal effects, population base rates, counterfactual outcomes, or an individual's probability of success.",
     "",
     "Current external research gates include independent double-coding, factual and annotation source audits, first-time-user comprehension observation, and a matched comparison study before any population or counterfactual claim.",
     "",
@@ -481,7 +532,8 @@ const catalog = {
     notes: "All listed surfaces are public and require no account.",
   },
   limitations: [
-    "Purposive successful-outlier sample",
+    "Publicly discoverable outcomes only; complete population capture is not claimed",
+    "Top-0.001% exact-age calibration is under methodology review",
     "Interpretive annotations, not causal estimates",
     "No prediction of individual outcomes",
   ],

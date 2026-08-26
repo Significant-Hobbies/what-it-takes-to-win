@@ -1,0 +1,394 @@
+---
+import Base from "../../layouts/Base.astro";
+import { CONTRIBUTION_ISSUES_URL } from "../../lib/contribution";
+import "../../styles/contribute.css";
+
+const relationshipOptions = [
+  "No personal relationship",
+  "I am this person",
+  "Colleague, collaborator, or organization",
+  "Friend or family member",
+  "Other disclosed relationship",
+];
+---
+
+<Base
+  title="Suggest a person or propose an edit — Look Sideways"
+  description="Help improve the Look Sideways public research record with a sourced person suggestion or factual profile edit."
+  mainClass="contribute-main"
+>
+  <section class="contribute-hero" data-clarity-contract="public-contribution-workflow">
+    <div>
+      <p class="contribute-kicker">Public research desk · issue #29</p>
+      <h1>Make the record better.</h1>
+      <p class="contribute-lede">
+        Point to someone missing or correct a claim already published. Bring the
+        evidence; the existing research gates decide what changes.
+      </p>
+    </div>
+    <aside class="contribute-boundary" aria-label="Contribution boundary">
+      <span>Before you begin</span>
+      <strong>Your draft becomes a public GitHub issue.</strong>
+      <p>
+        Do not include private, confidential, medical, financial-account, or
+        other sensitive personal information. Nothing submitted here directly
+        edits the dataset.
+      </p>
+    </aside>
+  </section>
+
+  <nav class="contribute-task-index" aria-label="Choose a contribution task">
+    <span>Choose one task</span>
+    <button type="button" data-task="suggest" aria-controls="suggest-panel" aria-pressed="true">
+      <b>Suggest a person</b>
+      <small>Missing path · two sources</small>
+    </button>
+    <button type="button" data-task="edit" aria-controls="edit-panel" aria-pressed="false">
+      <b>Propose an edit</b>
+      <small>Existing claim · sourced correction</small>
+    </button>
+  </nav>
+
+  <div class="contribute-workspace">
+    <aside class="contribute-protocol" aria-label="How contributions are reviewed">
+      <p>Review protocol</p>
+      <ol>
+        <li><span>1</span>Describe one concrete change.</li>
+        <li><span>2</span>Attach public evidence.</li>
+        <li><span>3</span>Review the exact issue draft.</li>
+        <li><span>4</span>Open it on GitHub for moderation.</li>
+      </ol>
+      <p class="contribute-protocol-note">
+        GitHub sign-in is required only at the final handoff. Your entries stay
+        in this page until then.
+      </p>
+    </aside>
+
+    <section class="contribute-sheet" aria-live="polite">
+      <div id="suggest-panel" data-panel="suggest">
+        <header class="contribute-sheet-heading">
+          <span>Task A · coverage signal</span>
+          <h2>Who is missing?</h2>
+          <p>
+            Suggest a person only when you can name a dated outcome at age 30
+            or younger and support it with two independent public sources.
+          </p>
+        </header>
+
+        <form id="suggest-form" novalidate>
+          <div class="contribute-error-summary" data-error-summary role="alert" hidden></div>
+          <div class="contribute-field-grid">
+            <label class="contribute-field contribute-field-wide">
+              <span>Person's public name</span>
+              <input name="name" autocomplete="name" maxlength="120" required />
+              <small data-error-for="name"></small>
+            </label>
+            <label class="contribute-field contribute-field-wide">
+              <span>Dated age-relative outcome</span>
+              <textarea name="outcome" rows="4" maxlength="1200" required placeholder="What happened, and why might it be unusually strong for that age?"></textarea>
+              <small data-error-for="outcome"></small>
+            </label>
+            <label class="contribute-field">
+              <span>Event date</span>
+              <input name="eventDate" type="date" required />
+              <small data-error-for="eventDate"></small>
+            </label>
+            <label class="contribute-field">
+              <span>Age at event</span>
+              <input name="age" type="number" min="0" max="30" inputmode="numeric" required />
+              <small data-error-for="age"></small>
+            </label>
+            <label class="contribute-field contribute-field-wide">
+              <span>First evidence source</span>
+              <input name="sourceOne" type="url" inputmode="url" placeholder="https://" required />
+              <small>Official announcement, governing body, original reporting, or equivalent.</small>
+              <small data-error-for="sourceOne"></small>
+            </label>
+            <label class="contribute-field contribute-field-wide">
+              <span>Second independent evidence source</span>
+              <input name="sourceTwo" type="url" inputmode="url" placeholder="https://" required />
+              <small>Use a different evidence origin—not another copy of one announcement.</small>
+              <small data-error-for="sourceTwo"></small>
+            </label>
+            <label class="contribute-field">
+              <span>Your relationship</span>
+              <select name="relationship">
+                {relationshipOptions.map((option) => <option>{option}</option>)}
+              </select>
+            </label>
+            <label class="contribute-field">
+              <span>Additional notes <em>optional</em></span>
+              <textarea name="notes" rows="3" maxlength="800"></textarea>
+            </label>
+          </div>
+          <label class="contribute-confirmation">
+            <input name="publicConfirmation" type="checkbox" required />
+            <span>
+              This is suitable for a public issue and contains no private,
+              confidential, or sensitive personal information.
+              <small data-error-for="publicConfirmation"></small>
+            </span>
+          </label>
+          <div class="contribute-actions">
+            <button class="button button-primary" type="submit">Review person suggestion</button>
+            <span>No data is sent at this step.</span>
+          </div>
+        </form>
+      </div>
+
+      <div id="edit-panel" data-panel="edit" hidden>
+        <header class="contribute-sheet-heading">
+          <span>Task B · correction note</span>
+          <h2>What should change?</h2>
+          <p>
+            Quote one claim, state the correction plainly, and attach the
+            strongest public source you have. An issue never edits the record directly.
+          </p>
+        </header>
+
+        <form id="edit-form" novalidate>
+          <div class="contribute-error-summary" data-error-summary role="alert" hidden></div>
+          <div class="contribute-field-grid">
+            <label class="contribute-field">
+              <span>Person or profile</span>
+              <input name="person" maxlength="160" required />
+              <small data-error-for="person"></small>
+            </label>
+            <label class="contribute-field">
+              <span>Profile URL <em>optional</em></span>
+              <input name="profileUrl" type="url" inputmode="url" placeholder="https://paths.significanthobbies.com/person/…" />
+              <small data-error-for="profileUrl"></small>
+            </label>
+            <label class="contribute-field contribute-field-wide">
+              <span>Current claim</span>
+              <textarea name="currentClaim" rows="3" maxlength="1200" required placeholder="Quote or summarize the exact statement that should change."></textarea>
+              <small data-error-for="currentClaim"></small>
+            </label>
+            <label class="contribute-field contribute-field-wide">
+              <span>Proposed correction</span>
+              <textarea name="proposedCorrection" rows="4" maxlength="1200" required></textarea>
+              <small data-error-for="proposedCorrection"></small>
+            </label>
+            <label class="contribute-field contribute-field-wide">
+              <span>Why it should change</span>
+              <textarea name="reason" rows="3" maxlength="1000" required></textarea>
+              <small data-error-for="reason"></small>
+            </label>
+            <label class="contribute-field contribute-field-wide">
+              <span>Authoritative evidence source</span>
+              <input name="sourceOne" type="url" inputmode="url" placeholder="https://" required />
+              <small data-error-for="sourceOne"></small>
+            </label>
+            <label class="contribute-field">
+              <span>Second source <em>optional</em></span>
+              <input name="sourceTwo" type="url" inputmode="url" placeholder="https://" />
+              <small data-error-for="sourceTwo"></small>
+            </label>
+            <label class="contribute-field">
+              <span>Your relationship</span>
+              <select name="relationship">
+                {relationshipOptions.map((option) => <option>{option}</option>)}
+              </select>
+            </label>
+          </div>
+          <label class="contribute-confirmation">
+            <input name="publicConfirmation" type="checkbox" required />
+            <span>
+              This is suitable for a public issue and contains no private,
+              confidential, or sensitive personal information.
+              <small data-error-for="publicConfirmation"></small>
+            </span>
+          </label>
+          <div class="contribute-actions">
+            <button class="button button-primary" type="submit">Review proposed edit</button>
+            <span>No data is sent at this step.</span>
+          </div>
+        </form>
+      </div>
+
+      <section class="contribute-review" id="contribute-review" aria-labelledby="review-heading" hidden>
+        <header class="contribute-sheet-heading">
+          <span>Final review · public issue</span>
+          <h2 id="review-heading" tabindex="-1">Read what GitHub will receive.</h2>
+          <p>
+            Opening GitHub does not submit automatically. You can edit the issue
+            there before choosing its final submit button.
+          </p>
+        </header>
+        <div class="contribute-draft">
+          <div>
+            <span>Issue title</span>
+            <pre id="draft-title"></pre>
+          </div>
+          <div>
+            <span>Issue body</span>
+            <pre id="draft-body"></pre>
+          </div>
+        </div>
+        <p class="contribute-copy-status" id="copy-status" role="status"></p>
+        <div class="contribute-actions contribute-review-actions">
+          <a class="button button-primary" id="open-github" href={CONTRIBUTION_ISSUES_URL} target="_blank" rel="noopener">Open GitHub issue draft ↗</a>
+          <button class="button button-secondary" id="copy-draft" type="button">Copy draft</button>
+          <button class="contribute-back" id="back-to-form" type="button">← Return to edit</button>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <section class="contribute-close" aria-labelledby="contribute-close-heading">
+    <p>Editorial boundary</p>
+    <div>
+      <h2 id="contribute-close-heading">A contribution opens a question. It does not settle one.</h2>
+      <p>
+        Maintainers may ask for better evidence, merge duplicates, decline a
+        suggestion, or preserve the existing record. Accepted changes still pass
+        the same age, source, evidence-origin, and publication checks.
+      </p>
+    </div>
+  </section>
+
+  <script>
+    import {
+      buildEditIssue,
+      buildSuggestionIssue,
+      validateEdit,
+      validateSuggestion,
+      type IssueDraft,
+      type ProposeEditInput,
+      type SuggestPersonInput,
+      type ValidationErrors,
+    } from "../../lib/contribution";
+
+    const taskButtons = [...document.querySelectorAll<HTMLButtonElement>("[data-task]")];
+    const panels = [...document.querySelectorAll<HTMLElement>("[data-panel]")];
+    const review = document.getElementById("contribute-review") as HTMLElement;
+    const reviewHeading = document.getElementById("review-heading") as HTMLElement;
+    const draftTitle = document.getElementById("draft-title") as HTMLElement;
+    const draftBody = document.getElementById("draft-body") as HTMLElement;
+    const openGitHub = document.getElementById("open-github") as HTMLAnchorElement;
+    const copyDraft = document.getElementById("copy-draft") as HTMLButtonElement;
+    const copyStatus = document.getElementById("copy-status") as HTMLElement;
+    const backToForm = document.getElementById("back-to-form") as HTMLButtonElement;
+    let activeTask = "suggest";
+    let activeDraft: IssueDraft | null = null;
+
+    function setTask(task: string, focus = false) {
+      activeTask = task === "edit" ? "edit" : "suggest";
+      review.hidden = true;
+      for (const button of taskButtons) {
+        const selected = button.dataset.task === activeTask;
+        button.setAttribute("aria-pressed", String(selected));
+        if (selected && focus) button.focus();
+      }
+      for (const panel of panels) panel.hidden = panel.dataset.panel !== activeTask;
+      const params = new URLSearchParams(window.location.search);
+      params.set("task", activeTask);
+      window.history.replaceState({}, "", `${window.location.pathname}?${params.toString()}`);
+    }
+
+    function formValue(form: HTMLFormElement, name: string) {
+      return String(new FormData(form).get(name) || "");
+    }
+
+    function showErrors(form: HTMLFormElement, errors: ValidationErrors) {
+      for (const field of form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>("[name]")) {
+        field.removeAttribute("aria-invalid");
+      }
+      for (const element of form.querySelectorAll<HTMLElement>("[data-error-for]")) {
+        element.textContent = "";
+      }
+      const entries = Object.entries(errors);
+      for (const [name, message] of entries) {
+        const field = form.elements.namedItem(name) as HTMLElement | null;
+        field?.setAttribute("aria-invalid", "true");
+        const error = form.querySelector<HTMLElement>(`[data-error-for="${name}"]`);
+        if (error) error.textContent = message;
+      }
+      const summary = form.querySelector<HTMLElement>("[data-error-summary]")!;
+      summary.hidden = entries.length === 0;
+      summary.innerHTML = entries.length
+        ? `<strong>Review ${entries.length} ${entries.length === 1 ? "field" : "fields"}.</strong><ul>${entries.map(([, message]) => `<li>${message}</li>`).join("")}</ul>`
+        : "";
+      if (entries.length > 0) {
+        summary.focus();
+        const firstField = form.elements.namedItem(entries[0][0]) as HTMLElement | null;
+        firstField?.focus();
+      }
+    }
+
+    function showDraft(draft: IssueDraft) {
+      activeDraft = draft;
+      for (const panel of panels) panel.hidden = true;
+      draftTitle.textContent = draft.title;
+      draftBody.textContent = draft.body;
+      openGitHub.href = draft.url;
+      copyStatus.textContent = "";
+      review.hidden = false;
+      review.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+      reviewHeading.focus({ preventScroll: true });
+    }
+
+    document.getElementById("suggest-form")?.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const form = event.currentTarget as HTMLFormElement;
+      const input: SuggestPersonInput = {
+        name: formValue(form, "name"),
+        outcome: formValue(form, "outcome"),
+        eventDate: formValue(form, "eventDate"),
+        age: formValue(form, "age"),
+        sourceOne: formValue(form, "sourceOne"),
+        sourceTwo: formValue(form, "sourceTwo"),
+        relationship: formValue(form, "relationship"),
+        notes: formValue(form, "notes"),
+        publicConfirmation: Boolean(new FormData(form).get("publicConfirmation")),
+      };
+      const errors = validateSuggestion(input);
+      showErrors(form, errors);
+      if (Object.keys(errors).length === 0) showDraft(buildSuggestionIssue(input));
+    });
+
+    document.getElementById("edit-form")?.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const form = event.currentTarget as HTMLFormElement;
+      const input: ProposeEditInput = {
+        person: formValue(form, "person"),
+        profileUrl: formValue(form, "profileUrl"),
+        currentClaim: formValue(form, "currentClaim"),
+        proposedCorrection: formValue(form, "proposedCorrection"),
+        reason: formValue(form, "reason"),
+        sourceOne: formValue(form, "sourceOne"),
+        sourceTwo: formValue(form, "sourceTwo"),
+        relationship: formValue(form, "relationship"),
+        publicConfirmation: Boolean(new FormData(form).get("publicConfirmation")),
+      };
+      const errors = validateEdit(input);
+      showErrors(form, errors);
+      if (Object.keys(errors).length === 0) showDraft(buildEditIssue(input));
+    });
+
+    for (const button of taskButtons) {
+      button.addEventListener("click", () => setTask(button.dataset.task || "suggest"));
+    }
+
+    backToForm.addEventListener("click", () => setTask(activeTask));
+    copyDraft.addEventListener("click", async () => {
+      if (!activeDraft) return;
+      const text = `${activeDraft.title}\n\n${activeDraft.body}`;
+      try {
+        await navigator.clipboard.writeText(text);
+        copyStatus.textContent = "Draft copied. If GitHub is unavailable, paste it into a new issue later.";
+      } catch {
+        copyStatus.textContent = "Automatic copy was unavailable. Select the visible title and body to copy them manually.";
+      }
+    });
+
+    const params = new URLSearchParams(window.location.search);
+    const initialTask = params.get("task") === "edit" ? "edit" : "suggest";
+    const editForm = document.getElementById("edit-form") as HTMLFormElement;
+    const person = editForm.elements.namedItem("person") as HTMLInputElement;
+    const profileUrl = editForm.elements.namedItem("profileUrl") as HTMLInputElement;
+    person.value = params.get("person") || "";
+    profileUrl.value = params.get("profile") || "";
+    setTask(initialTask);
+  </script>
+</Base>

@@ -1,0 +1,141 @@
+{
+  "as_of": "2026-08-26",
+  "objective": "uncapped_public_evidence_coverage",
+  "target_age_max": 30,
+  "birth_year_min": 1950,
+  "denominator": {
+    "provider": "United Nations Population Division",
+    "dataset": "World Population Prospects 2024",
+    "url": "https://population.un.org/wpp/",
+    "unit": "exact-age global cohort",
+    "target_share": 0.00001,
+    "label": "top 0.001%-calibrated",
+    "status": "methodology_review_pending"
+  },
+  "gate_registry": {
+    "version": "2026-08-26.1",
+    "calibration_status": "provisional_research_screen"
+  },
+  "gate_funnel": {
+    "signals": 1,
+    "discovery_passed": 1,
+    "research_passed": 1,
+    "publication_passed": 1
+  },
+  "total_candidates": 10339,
+  "lifecycle": {
+    "discovered": 0,
+    "enriched": 0,
+    "queued": 3115,
+    "researched": 0,
+    "eligible": 961,
+    "ineligible": 2685,
+    "published": 3578,
+    "stale": 0
+  },
+  "fields": [
+    {
+      "label": "Founders / operators",
+      "count": 5182
+    },
+    {
+      "label": "Athletes",
+      "count": 1652
+    },
+    {
+      "label": "Other documented fields",
+      "count": 1320
+    },
+    {
+      "label": "Researchers / independent engineers",
+      "count": 1127
+    },
+    {
+      "label": "Creators / artists",
+      "count": 1058
+    }
+  ],
+  "queued_backlog": 4076,
+  "high_priority_backlog": 0,
+  "sources": [
+    {
+      "id": "published-corpus",
+      "label": "Published Look Sideways corpus",
+      "candidates": 3578,
+      "snapshot_date": "2026-08-26",
+      "age_days": 0,
+      "stale": false
+    },
+    {
+      "id": "yc-directory",
+      "label": "Y Combinator company directory",
+      "candidates": 4105,
+      "snapshot_date": "2026-08-19",
+      "age_days": 7,
+      "stale": false
+    },
+    {
+      "id": "pantheon-ranked",
+      "label": "Pantheon and Wikipedia candidate queue",
+      "candidates": 3000,
+      "snapshot_date": "2026-07-22",
+      "age_days": 35,
+      "stale": false
+    },
+    {
+      "id": "founder-engineer-queue",
+      "label": "Founder and engineer candidate queue",
+      "candidates": 1071,
+      "snapshot_date": "2026-07-22",
+      "age_days": 35,
+      "stale": false
+    },
+    {
+      "id": "creator-queue",
+      "label": "Creator candidate queue",
+      "candidates": 476,
+      "snapshot_date": "2026-07-30",
+      "age_days": 27,
+      "stale": false
+    },
+    {
+      "id": "tech-queue",
+      "label": "Technology candidate queue",
+      "candidates": 290,
+      "snapshot_date": "2026-07-22",
+      "age_days": 35,
+      "stale": false
+    }
+  ],
+  "gold_set": {
+    "passed": 5,
+    "total": 5,
+    "results": [
+      {
+        "person_name": "Neil Movva",
+        "pass": true,
+        "actual_state": "published"
+      },
+      {
+        "person_name": "Bill Gates",
+        "pass": true,
+        "actual_state": "published"
+      },
+      {
+        "person_name": "Serena Williams",
+        "pass": true,
+        "actual_state": "published"
+      },
+      {
+        "person_name": "Taylor Swift",
+        "pass": true,
+        "actual_state": "published"
+      },
+      {
+        "person_name": "Terence Tao",
+        "pass": true,
+        "actual_state": "published"
+      }
+    ]
+  }
+}

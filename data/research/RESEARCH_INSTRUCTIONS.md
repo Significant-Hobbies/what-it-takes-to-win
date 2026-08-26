@@ -4,13 +4,13 @@
 
 You are researching **{N} candidate people** from a batch CSV file. For each person,
 you must decide whether they had a **material, independently verifiable milestone
-by age 26**, and if so, code their early-advantage scores per the rubric below.
+by age 30**, and if so, code their early-advantage scores per the rubric below.
 
 ## Critical rules
 
 1. **Eligibility first.** If you cannot identify a specific, dated, material
-   milestone that occurred at or before age 26, mark the person
-   `age_26_ineligible` and move on. Do NOT force a milestone. Fame that arrived
+   milestone that occurred at or before age 30, mark the person
+   `age_30_ineligible` and move on. Do NOT force a milestone. Fame that arrived
    later does not count, even if the eventual achievement was extreme.
 
 2. **Two sources minimum** for the milestone date. Wikipedia is acceptable as
@@ -29,6 +29,28 @@ by age 26**, and if so, code their early-advantage scores per the rubric below.
 5. **Output one JSON object per person** in the output JSONL file. Even
    ineligible people get a row (with `eligibility_status` set accordingly and
    scores null).
+
+## Publication admission
+
+Research output is not a publication decision. New people must also have a
+registered event signal in `data/research/coverage/signals.json` and a matching
+coverage result. The versioned rules in
+`data/research/coverage/gate-registry.json` reproduce three separate verdicts:
+
+1. **Discovery** checks identity, a valid event date, conservative age, typed
+   metrics, and source provenance. A new event type may clear discovery so it
+   is not missed, but cannot clear research until its field rule is reviewed.
+2. **Research** checks the applicable age-banded outcome screen and requires an
+   independently useful source role and two evidence origins. Two domains that
+   repeat one announcement do not count as independent evidence.
+3. **Publication** checks the complete research record against the same signal,
+   including identity, field, age, source preservation, and the qualifying
+   trajectory event.
+
+`eligibility_status: age_30_eligible` cannot bypass these gates. If no field
+gate exists, preserve the candidate and request a reviewed gate addition; do
+not invent a threshold inside a research result. The current age-banded outcome
+rules are provisional research screens, not an audited top-0.001% claim.
 
 ## Output schema (JSONL, one object per line)
 
@@ -85,7 +107,7 @@ by age 26**, and if so, code their early-advantage scores per the rubric below.
   "annotation_status": "subagent_researched_beta",
   "source_audit_status": "not_independently_audited",
   "data_version": "0.3.0-trajectory-beta",
-  "eligibility_status": "age_26_eligible | age_26_ineligible | unverified_candidate",
+  "eligibility_status": "age_30_eligible | age_30_ineligible | unverified_candidate",
   "starting_point": "One sentence: family/class/origin context at birth (e.g. 'Born to a middle-class family in X; father was an engineer, mother a teacher'). Use 'Not documented' if unknown.",
   "current_position": "One sentence: latest known status/role/achievement as of research date (e.g. 'CEO of X; net worth ~$Y; resides in Z'). For deceased: 'Died in YEAR at age N; final role: X'.",
   "current_position_year": integer year of current_position (e.g. 2025, or year of death),
@@ -107,8 +129,8 @@ For **eligible** people only, also code:
 - **current_position_year** — integer year that current_position reflects (e.g. 2025 for living people, or year of death).
 - **is_living** — true if living as of the research date, false if deceased.
 - **trajectory** — array of 3-8 objects, each `{year, age, event}`:
-  - Always include the age-26 milestone as one point.
-  - Include 2-7 additional career-defining milestones after age 26 (major awards, foundings, breakthroughs, role changes, deaths).
+  - Always include the selected age-30-or-younger milestone as one point.
+  - Include 2-7 additional career-defining milestones after it (major awards, foundings, breakthroughs, role changes, deaths).
   - Each `event` is one original sentence.
   - Sort ascending by year.
   - For deceased people, the final entry may be the death event.
@@ -167,11 +189,11 @@ Ineligible people should have null/empty trajectory fields.
    - Their Wikipedia page (primary source).
    - At least one additional source for the milestone date.
    - Sources for family background if you can find them.
-3. Decide eligibility (material milestone by age 26?).
+3. Decide eligibility (material milestone by age 30?).
 4. If eligible, code all scores and write summaries.
-5. If ineligible, write a row with `eligibility_status: "age_26_ineligible"`,
-   null scores, and a brief `milestone_by_age_26` note explaining why they were
-   excluded (e.g. "Fame arrived at age 32 with X; no material milestone by 26 found.").
+5. If ineligible, write a row with `eligibility_status: "age_30_ineligible"`,
+     null scores, and a brief `milestone_by_age_26` note explaining why they were
+     excluded (e.g. "Fame arrived at age 32 with X; no material milestone by 30 found.").
 6. Append each person's JSON object as one line to the output JSONL file at the
    path given to you.
 

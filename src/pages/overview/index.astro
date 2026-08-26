@@ -34,7 +34,7 @@ people.forEach((p) => {
 });
 
 const ageBuckets: Record<number, number> = {};
-for (let a = 13; a <= 26; a++) ageBuckets[a] = 0;
+for (let a = 13; a <= 30; a++) ageBuckets[a] = 0;
 people.forEach((p) => {
   const a = p.age_at_milestone;
   if (a != null && ageBuckets[a] != null) ageBuckets[a]++;
@@ -141,7 +141,7 @@ const structuredData = {
       "@id": "https://paths.significanthobbies.com/#dataset",
       name: "Look Sideways: Early Breakthrough Paths",
       description:
-        `A curated dataset of ${total.toLocaleString()} people born from 1950 onward, documenting early milestones, three condition factors, perseverance evidence, trajectory, outcome reach, evidence confidence, and luck boundaries.`,
+        `The published corpus of an uncapped public-evidence coverage project: ${total.toLocaleString()} people born from 1950 onward, documenting early milestones, three condition factors, perseverance evidence, trajectory, outcome reach, evidence confidence, and luck boundaries.`,
       url: "https://paths.significanthobbies.com/methodology/",
       creator: { "@id": "https://paths.significanthobbies.com/#publisher" },
       isAccessibleForFree: true,
@@ -380,7 +380,7 @@ const structuredData = {
       <p class="eyebrow">The dataset at a glance</p>
       <h2 id="data-atlas-heading">Where the observed paths cluster</h2>
       <p>
-        These charts describe a selected atlas of early breakthroughs. They show
+        These charts describe the currently published corpus of early breakthroughs. They show
         recurring patterns—not population odds, causal effects, or a recipe.
       </p>
     </div>

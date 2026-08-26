@@ -307,8 +307,8 @@ function validateDataset(records) {
         errors.push(`${person.person_id || "unknown"}: missing ${field}`);
       }
     }
-    if (person.age_at_milestone < 0 || person.age_at_milestone > 26) {
-      errors.push(`${person.person_id}: age_at_milestone outside 0-26`);
+    if (person.age_at_milestone < 0 || person.age_at_milestone > 30) {
+      errors.push(`${person.person_id}: age_at_milestone outside 0-30`);
     }
     if (person.success_tier < 1 || person.success_tier > 4) {
       errors.push(`${person.person_id}: success_tier outside 1-4`);

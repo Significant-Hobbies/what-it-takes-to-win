@@ -1,11 +1,14 @@
 ---
 import Base from "../../layouts/Base.astro";
+import candidateCoverage from "../../data/candidate-coverage.json";
 import peopleData from "../../data/people.json";
 import { summarizeCoverage, type CoveragePerson } from "../../lib/coverage";
+import "../../styles/coverage.css";
 
 const coverage = summarizeCoverage(peopleData as CoveragePerson[]);
 const formatShare = (share: number) =>
   `${share.toFixed(share === Math.round(share) ? 0 : 1)}%`;
+const lifecycleStates = ["queued", "eligible", "ineligible", "published"] as const;
 
 // The release verdict is derived, never asserted: paths added after the last
 // reachability pass carry no audit verdict, so the audit cannot be called
@@ -20,7 +23,7 @@ const structuredData = {
   "@type": "WebPage",
   name: "Evidence coverage — Look Sideways",
   description:
-    `Live coverage metrics, evidence confidence, sample composition, and unresolved audit boundaries for ${coverage.total.toLocaleString()} early-breakthrough paths.`,
+    `Live candidate, research-backlog, publication, and evidence metrics across ${candidateCoverage.total_candidates.toLocaleString()} discovered people.`,
   url: "https://paths.significanthobbies.com/coverage/",
   isPartOf: { "@id": "https://paths.significanthobbies.com/#website" },
 };
@@ -28,24 +31,24 @@ const structuredData = {
 
 <Base
   title="Evidence Coverage — Look Sideways"
-  description={`Inspect source depth, trajectory completeness, confidence, sample composition, and unresolved research boundaries across ${coverage.total.toLocaleString()} paths.`}
+  description={`Inspect ${candidateCoverage.total_candidates.toLocaleString()} discovered candidates, the research backlog, source freshness, and publication evidence across ${coverage.total.toLocaleString()} paths.`}
   structuredData={structuredData}
 >
   <section class="hero coverage-hero" data-clarity-contract="public-evidence-coverage">
     <div class="coverage-hero-grid">
       <div>
-        <p class="eyebrow">Evidence coverage · live from the published dataset</p>
-        <h1>Complete enough to inspect.<br />Not complete enough to predict.</h1>
+        <p class="eyebrow">Coverage ledger · candidates through publication</p>
+        <h1>No record ceiling.<br />Every gap stays visible.</h1>
         <p class="lede">
-          Every published path has a milestone, narrative context, present-day
-          position, and trajectory. That structural completeness is useful.
-          It is not the same as independent verification, representative sampling,
-          or causal evidence.
+          The project now tracks discovered people before they become profiles.
+          Publication still requires a dated age-relative outcome and independently
+          useful evidence; uncaught private or poorly indexed outcomes remain a known
+          boundary rather than a reason to declare the census complete.
         </p>
       </div>
       <aside class="coverage-verdict" aria-label="Current evidence verdict">
         <span>Release assessment</span>
-        <strong>Structurally complete</strong>
+        <strong>Coverage in progress</strong>
         <p>{releaseVerdict}</p>
         <div class="coverage-verdict-mark">
           <b>{coverage.independentlyAudited.count.toLocaleString()}</b>
@@ -70,6 +73,102 @@ const structuredData = {
         <strong>{formatShare(coverage.indexable.share)}</strong>
         <span>pass the search evidence gate</span>
       </div>
+    </div>
+  </section>
+
+  <nav class="coverage-contents" aria-label="Coverage page sections">
+    <span>On this sheet</span>
+    <a href="#candidate-coverage-heading">Funnel</a>
+    <a href="#coverage-ladder-heading">Evidence levels</a>
+    <a href="#confidence-heading">Confidence</a>
+    <a href="#composition-heading">Composition</a>
+    <a href="#boundary-heading">Missing denominator</a>
+    <a href="#roadmap-heading">Audit gates</a>
+  </nav>
+
+  <section class="coverage-section" aria-labelledby="candidate-coverage-heading">
+    <div class="coverage-section-heading">
+      <div>
+        <p class="eyebrow">The complete funnel</p>
+        <h2 id="candidate-coverage-heading">A profile count is not a coverage claim.</h2>
+      </div>
+      <p>
+        The target is uncapped public-evidence coverage through age
+        {" "}{candidateCoverage.target_age_max}. The top-0.001% calibration remains
+        methodology-review pending until its exact-age field gates are independently audited.
+      </p>
+    </div>
+    <div class="coverage-ladder coverage-funnel-route">
+      <article>
+        <span>01 · Discovered universe</span>
+        <strong>{candidateCoverage.total_candidates.toLocaleString()}</strong>
+        <h3>Unique candidate identities</h3>
+        <p>Deduplicated across the published corpus and four broad research queues.</p>
+      </article>
+      <article class="coverage-ladder-pending">
+        <span>02 · Research backlog</span>
+        <strong>{candidateCoverage.queued_backlog.toLocaleString()}</strong>
+        <h3>Awaiting publication decisions</h3>
+        <p>Queued, researched, or eligible candidates that are not yet published.</p>
+      </article>
+      <article class="coverage-ladder-done">
+        <span>03 · Published evidence</span>
+        <strong>{candidateCoverage.lifecycle.published.toLocaleString()}</strong>
+        <h3>Evidence-gated paths</h3>
+        <p>No qualifying person is downsampled to preserve a target record count.</p>
+      </article>
+      <article class={candidateCoverage.gold_set.passed === candidateCoverage.gold_set.total ? "coverage-ladder-done" : "coverage-ladder-pending"}>
+        <span>04 · Recall backtest</span>
+        <strong>{candidateCoverage.gold_set.passed}/{candidateCoverage.gold_set.total}</strong>
+        <h3>Known outliers recovered</h3>
+        <p>A five-person sentinel check, including Neil Movva—not a population recall estimate.</p>
+      </article>
+    </div>
+    <dl class="coverage-state-key" aria-label="Coverage state definitions">
+      <div>
+        <dt>Candidate</dt>
+        <dd>A discovered identity with source provenance, before an eligibility decision.</dd>
+      </div>
+      <div>
+        <dt>Published</dt>
+        <dd>A dated age-relative milestone supported by independently useful evidence.</dd>
+      </div>
+      <div>
+        <dt>Indexable</dt>
+        <dd>A published profile that also clears the stricter search-evidence gate.</dd>
+      </div>
+      <div>
+        <dt>Audited</dt>
+        <dd>A profile whose listed source links were checked in the latest reachability pass.</dd>
+      </div>
+    </dl>
+    <div class="composition-grid">
+      <article>
+        <h3>Source freshness</h3>
+        <div class="composition-bars">
+          {candidateCoverage.sources.map((source) => (
+            <div class="composition-row">
+              <div>
+                <span>{source.label}</span>
+                <strong>{source.candidates.toLocaleString()} · {source.stale ? "stale" : `${source.age_days}d old`}</strong>
+              </div>
+            </div>
+          ))}
+        </div>
+      </article>
+      <article>
+        <h3>Known lifecycle states</h3>
+        <div class="composition-bars">
+          {lifecycleStates.map((state) => (
+            <div class="composition-row">
+              <div>
+                <span>{state}</span>
+                <strong>{candidateCoverage.lifecycle[state].toLocaleString()}</strong>
+              </div>
+            </div>
+          ))}
+        </div>
+      </article>
     </div>
   </section>
 
@@ -167,12 +266,12 @@ const structuredData = {
   <section class="coverage-section" aria-labelledby="composition-heading">
     <div class="coverage-section-heading">
       <div>
-        <p class="eyebrow">Sample composition</p>
-        <h2 id="composition-heading">A selected atlas—not a miniature population.</h2>
+        <p class="eyebrow">Published composition</p>
+        <h2 id="composition-heading">The published corpus sits inside a larger queue.</h2>
       </div>
       <p>
-        Every person already cleared an early-breakthrough threshold. These shares
-        describe this atlas only; they do not estimate how common success is.
+        Every published person cleared an age-relative evidence gate. These shares
+        describe the published corpus; candidate and source gaps remain visible above.
       </p>
     </div>
     <div class="composition-grid">
@@ -213,7 +312,7 @@ const structuredData = {
 
   <section class="coverage-boundary" aria-labelledby="boundary-heading">
     <div>
-      <p class="eyebrow">The denominator that is missing</p>
+      <p class="eyebrow">The denominator that remains unobservable</p>
       <h2 id="boundary-heading">
         This project cannot count every promising path that disappeared.
       </h2>
@@ -227,7 +326,7 @@ const structuredData = {
     <div class="boundary-ledger">
       <article>
         <span>Observed</span>
-        <strong>{coverage.total.toLocaleString()} selected early breakthroughs</strong>
+        <strong>{candidateCoverage.total_candidates.toLocaleString()} candidates; {coverage.total.toLocaleString()} published</strong>
       </article>
       <article>
         <span>Not observed</span>
@@ -250,7 +349,7 @@ const structuredData = {
     <ol>
       <li class="coverage-roadmap-done">
         <span>01</span>
-        <div><strong>Double-code a stratified sample.</strong><p>Completed 2026-07-31. 16-record stratified sample across cohort-tier cells. Quadratic-weighted kappa 0.723 for tier; leverage exact agreement 33.8% (within-one 91.9%). See the reliability report.</p></div>
+        <div><strong>Double-code a stratified sample.</strong><p>Completed 2026-07-31 across every populated cohort and career tier. Tier agreement was 0.723; leverage scores matched exactly 33.8% of the time and landed within one point 91.9% of the time.</p></div>
       </li>
       <li class={auditComplete ? "coverage-roadmap-done" : undefined}>
         <span>02</span>
@@ -276,5 +375,9 @@ const structuredData = {
       <a class="btn-link btn-link-primary" href="/explore/">Inspect the published paths</a>
       <a class="hero-secondary-link" href="/methodology/">Read the full methodology →</a>
     </div>
+    <p class="coverage-release">
+      <span>The release</span>
+      <strong>Look sideways for information. Never turn another path into a verdict on your own.</strong>
+    </p>
   </section>
 </Base>

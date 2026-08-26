@@ -23,7 +23,7 @@ const categories = [...new Set(people.map((p) => p.category).filter(Boolean))].s
       </div>
       <div>
         <dt>Boundary</dt>
-        <dd>Purposeful success sample, no control group</dd>
+        <dd>Successful-outlier corpus, no control group</dd>
       </div>
     </dl>
     <a class="explore-jump" href="#filters">Search and filter the atlas <span aria-hidden="true">↓</span></a>
@@ -79,7 +79,7 @@ const categories = [...new Set(people.map((p) => p.category).filter(Boolean))].s
     <div class="filter-footer">
       <details class="filter-key">
         <summary>What do these terms mean?</summary>
-        <p><strong>Outcome reach</strong> describes recognition inside this purposeful archive. “Professionally distinctive” broadens the evidence toward the kind of success often described as top 0.1%, but it is not a universal percentile without a field denominator.</p>
+        <p><strong>Outcome reach</strong> describes recognition inside the published corpus. It is not a universal percentile without a field and exact-age denominator.</p>
       </details>
       <div class="active-filter-bar">
         <span id="active-filters">No filters active</span>
@@ -94,6 +94,11 @@ const categories = [...new Set(people.map((p) => p.category).filter(Boolean))].s
   <div class="results-actions" id="results-actions" hidden>
     <button class="load-more" id="load-more" type="button">Load 48 more paths</button>
   </div>
+  <aside class="explore-contribution">
+    <span>Missing from the atlas?</span>
+    <p>Suggest a person with a dated age-relative outcome and two independent public sources.</p>
+    <a href="/contribute/?task=suggest">Suggest a person →</a>
+  </aside>
 
   <script>
     type Person = {

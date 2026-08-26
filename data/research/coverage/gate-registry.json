@@ -1,0 +1,73 @@
+{
+  "version": "2026-08-26.1",
+  "calibration_status": "provisional_research_screen",
+  "target_age_max": 30,
+  "discovery": {
+    "minimum_source_origins": 1,
+    "allowed_age_confidence": ["high", "medium"]
+  },
+  "research": {
+    "minimum_source_origins": 2,
+    "minimum_evidence_origins": 2,
+    "minimum_independent_sources": 1,
+    "allowed_age_confidence": ["high"],
+    "independent_source_roles": [
+      "independent_event",
+      "independent_age_and_event",
+      "official_award",
+      "authoritative_rank",
+      "independent_adoption"
+    ]
+  },
+  "publication": {
+    "legacy_baseline": {
+      "people": 3577,
+      "identity_sha256": "2cf564c707b423da98ac68e60c6b73ffc3b7a31f03daa340ce28d4cca803e533"
+    },
+    "minimum_source_domains": 2,
+    "minimum_trajectory_events": 3,
+    "required_record_fields": [
+      "person_id",
+      "name",
+      "cohort_group",
+      "category",
+      "birth_year",
+      "age_at_milestone",
+      "milestone_by_age_26",
+      "evidence_summary",
+      "primary_source_url",
+      "source_urls",
+      "trajectory",
+      "eligibility_status"
+    ]
+  },
+  "event_types": {
+    "company_funding_and_valuation": {
+      "field": "Founders / operators",
+      "metric_mode": "any",
+      "age_bands": [
+        {
+          "max_age": 20,
+          "thresholds": {
+            "capital_raised_usd": 10000000,
+            "valuation_usd": 50000000
+          }
+        },
+        {
+          "max_age": 25,
+          "thresholds": {
+            "capital_raised_usd": 25000000,
+            "valuation_usd": 150000000
+          }
+        },
+        {
+          "max_age": 30,
+          "thresholds": {
+            "capital_raised_usd": 50000000,
+            "valuation_usd": 250000000
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,312 @@
+.coverage-hero {
+  padding-right: 0;
+}
+
+.coverage-hero-grid {
+  grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.85fr);
+  gap: clamp(42px, 6vw, 82px);
+}
+
+.coverage-hero h1 {
+  max-width: 840px;
+  font-size: clamp(52px, 5.5vw, 76px);
+  line-height: 0.96;
+  text-wrap: balance;
+}
+
+.coverage-verdict {
+  padding: 24px 0;
+  border: 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: transparent;
+}
+
+.coverage-contents {
+  position: sticky;
+  z-index: 20;
+  top: 68px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  min-height: 52px;
+  overflow-x: auto;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: color-mix(in srgb, var(--sheet) 96%, transparent);
+  scrollbar-width: none;
+  backdrop-filter: blur(10px);
+}
+
+.coverage-contents::-webkit-scrollbar {
+  display: none;
+}
+
+.coverage-contents span,
+.coverage-contents a {
+  flex: 0 0 auto;
+  font-size: 12px;
+}
+
+.coverage-contents span {
+  color: var(--route-red);
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.coverage-contents a {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  color: var(--text-dim);
+  text-decoration: none;
+}
+
+.coverage-contents a:hover {
+  color: var(--route-blue);
+  text-decoration: underline;
+}
+
+.coverage-section-heading h2,
+.coverage-boundary h2,
+.coverage-roadmap h2 {
+  scroll-margin-top: 132px;
+}
+
+.coverage-ladder {
+  gap: 0;
+  border: 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: transparent;
+}
+
+.coverage-ladder article {
+  min-height: 242px;
+  border-right: 1px solid var(--border);
+  background: transparent;
+}
+
+.coverage-ladder article:last-child {
+  border-right: 0;
+}
+
+.coverage-ladder .coverage-ladder-pending,
+.coverage-ladder .coverage-ladder-done {
+  background: transparent;
+}
+
+.coverage-ladder-pending {
+  box-shadow: inset 0 3px var(--warn);
+}
+
+.coverage-ladder-done {
+  box-shadow: inset 0 3px var(--route-lichen);
+}
+
+.coverage-state-key {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 26px 0 48px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.coverage-state-key > div {
+  padding: 0 22px 22px;
+  border-right: 1px solid var(--border-soft);
+}
+
+.coverage-state-key > div:first-child {
+  padding-left: 0;
+}
+
+.coverage-state-key > div:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+
+.coverage-state-key dt {
+  color: var(--route-blue);
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.coverage-state-key dd {
+  margin: 8px 0 0;
+  color: var(--text-dim);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.confidence-comparison,
+.composition-grid {
+  gap: 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.confidence-comparison > article,
+.composition-grid > article {
+  padding: 30px 32px 34px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.confidence-comparison > article + article,
+.composition-grid > article + article {
+  padding-right: 0;
+  padding-left: 32px;
+  border-left: 1px solid var(--border);
+}
+
+.coverage-boundary {
+  border: 0;
+  border-radius: 0;
+  background: var(--survey-ink);
+  color: var(--sheet);
+  transform: rotate(-0.25deg);
+}
+
+.coverage-boundary h2,
+.coverage-boundary > div:first-child > p:last-child,
+.coverage-boundary .boundary-ledger strong {
+  color: var(--sheet);
+}
+
+.coverage-boundary .eyebrow,
+.coverage-boundary .boundary-ledger span {
+  color: #d7a24a;
+}
+
+.coverage-boundary .boundary-ledger {
+  background: rgba(242, 240, 231, 0.26);
+}
+
+.coverage-boundary .boundary-ledger article {
+  background: var(--survey-ink);
+}
+
+.coverage-release {
+  display: grid;
+  grid-template-columns: minmax(120px, 0.25fr) minmax(0, 1fr);
+  gap: 28px;
+  margin: 70px 0 0;
+  padding: 30px 0 0;
+  border-top: 2px solid var(--survey-ink);
+}
+
+.coverage-release span {
+  color: var(--route-red);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.coverage-release strong {
+  max-width: 820px;
+  font-size: clamp(24px, 3vw, 38px);
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+}
+
+@media (max-width: 1000px) {
+  .coverage-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .coverage-hero h1 {
+    max-width: 760px;
+  }
+
+  .coverage-state-key {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .coverage-state-key > div:nth-child(2) {
+    border-right: 0;
+  }
+
+  .coverage-state-key > div:nth-child(n + 3) {
+    padding-top: 22px;
+    border-top: 1px solid var(--border-soft);
+  }
+
+  .coverage-state-key > div:nth-child(3) {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .coverage-contents {
+    top: 64px;
+    gap: 18px;
+    margin-right: -18px;
+    margin-left: -18px;
+    padding: 0 18px;
+  }
+
+  .coverage-hero h1 {
+    font-size: clamp(42px, 12vw, 54px);
+  }
+
+  .coverage-ladder article {
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .coverage-ladder article:last-child {
+    border-bottom: 0;
+  }
+
+  .coverage-state-key {
+    grid-template-columns: 1fr;
+  }
+
+  .coverage-state-key > div,
+  .coverage-state-key > div:first-child,
+  .coverage-state-key > div:nth-child(3),
+  .coverage-state-key > div:last-child {
+    padding: 18px 0;
+    border-top: 1px solid var(--border-soft);
+    border-right: 0;
+  }
+
+  .coverage-state-key > div:first-child {
+    border-top: 0;
+  }
+
+  .confidence-comparison,
+  .composition-grid {
+    border: 0;
+  }
+
+  .confidence-comparison > article,
+  .composition-grid > article,
+  .confidence-comparison > article + article,
+  .composition-grid > article + article {
+    padding: 26px 0;
+    border: 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .confidence-comparison > article:last-child,
+  .composition-grid > article:last-child {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .coverage-boundary {
+    transform: none;
+  }
+
+  .coverage-release {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}

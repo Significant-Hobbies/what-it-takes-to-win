@@ -1,0 +1,63 @@
+name: Propose a profile edit
+description: Correct or strengthen a published claim with public evidence.
+title: "[Profile edit] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Edit proposals are public. Quote only what needs correction and do not include private, confidential, or sensitive personal information.
+  - type: input
+    id: profile
+    attributes:
+      label: Profile URL or person
+      placeholder: https://paths.significanthobbies.com/person/...
+    validations:
+      required: true
+  - type: textarea
+    id: current-claim
+    attributes:
+      label: Current claim
+      description: Quote or summarize the exact statement that should change.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction
+      description: State the replacement fact or wording.
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why it should change
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: Authoritative evidence source
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Relationship to the person
+      options:
+        - No personal relationship
+        - I am this person
+        - Colleague, collaborator, or organization
+        - Friend or family member
+        - Other disclosed relationship
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Public-submission confirmation
+      options:
+        - label: I have not included private, confidential, or sensitive personal information.
+          required: true
+        - label: I understand that an issue does not directly change the published dataset.
+          required: true

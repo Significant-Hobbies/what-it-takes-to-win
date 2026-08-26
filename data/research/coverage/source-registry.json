@@ -1,0 +1,74 @@
+{
+  "as_of": "2026-08-26",
+  "sources": [
+    {
+      "id": "published-corpus",
+      "label": "Published Look Sideways corpus",
+      "kind": "published",
+      "path": "src/data/people.json",
+      "snapshot_date": "2026-08-26",
+      "freshness_days": 14
+    },
+    {
+      "id": "yc-directory",
+      "label": "Y Combinator company directory",
+      "kind": "candidate-json",
+      "path": "artifacts/yc-founders-unique.json",
+      "snapshot_date": "2026-08-19",
+      "freshness_days": 30
+    },
+    {
+      "id": "pantheon-ranked",
+      "label": "Pantheon and Wikipedia candidate queue",
+      "kind": "candidate-csv",
+      "path": "data/research/filtered_candidates_5.csv",
+      "snapshot_date": "2026-07-22",
+      "freshness_days": 90
+    },
+    {
+      "id": "founder-engineer-queue",
+      "label": "Founder and engineer candidate queue",
+      "kind": "candidate-csv",
+      "path": "data/research/founder_engineer_candidates.csv",
+      "snapshot_date": "2026-07-22",
+      "freshness_days": 90
+    },
+    {
+      "id": "creator-queue",
+      "label": "Creator candidate queue",
+      "kind": "candidate-csv",
+      "path": "data/research/creator_candidates_combined.csv",
+      "snapshot_date": "2026-07-30",
+      "freshness_days": 90
+    },
+    {
+      "id": "tech-queue",
+      "label": "Technology candidate queue",
+      "kind": "candidate-csv",
+      "path": "data/research/tech_candidates_v2_filtered.csv",
+      "snapshot_date": "2026-07-22",
+      "freshness_days": 90
+    }
+  ],
+  "research_sources": [
+    {
+      "id": "general-research",
+      "path": "data/research/results",
+      "format": "jsonl"
+    },
+    {
+      "id": "yc-research",
+      "path": "artifacts/yc-founder-results",
+      "format": "json"
+    }
+  ],
+  "denominator": {
+    "provider": "United Nations Population Division",
+    "dataset": "World Population Prospects 2024",
+    "url": "https://population.un.org/wpp/",
+    "unit": "exact-age global cohort",
+    "target_share": 0.00001,
+    "label": "top 0.001%-calibrated",
+    "status": "methodology_review_pending"
+  }
+}

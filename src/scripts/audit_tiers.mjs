@@ -72,7 +72,7 @@ for (const cohort of cohorts) {
       if (required.some((value) => !value)) {
         failures.push(`Incomplete sampled record: ${person.person_id}`);
       }
-      if (person.age_at_milestone > 26) {
+      if (person.age_at_milestone > 30) {
         failures.push(`Milestone age outside study window: ${person.person_id}`);
       }
     }
