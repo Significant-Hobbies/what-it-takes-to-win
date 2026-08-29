@@ -1,0 +1,53 @@
+{
+  "$schema": "fleet.landing-audit.v1",
+  "project": "what-it-takes-to-win",
+  "priority": "P4",
+  "decision": "Active",
+  "auditedAt": "2026-08-29",
+  "candidateUrl": "https://contained-heath-partially-backup.trycloudflare.com/",
+  "productionUrl": "https://paths.significanthobbies.com/",
+  "releaseState": "Latest-source footer cleanup and dual shared footer composition are qualified through a temporary Cloudflare tunnel. They are not deployed by this audit.",
+  "implementationAction": "preserve",
+  "migrationCandidate": false,
+  "gates": {
+    "contentPurpose": {
+      "score": 100,
+      "status": "pass",
+      "evidence": "The opening argument, five-chapter guided journey, 3,578-path corpus, evidence boundaries, source-linked profiles, research-audit status, and direct comparison-breaker action explain both the product and its humane purpose with unusual precision. It explicitly separates conditions, perseverance, sequence, luck, and selection effects while refusing prediction or causal overclaiming."
+    },
+    "designQuality": {
+      "score": 97,
+      "status": "pass",
+      "evidence": "The kinetic editorial race-course direction is distinctive, information-dense, and tightly aligned with the comparison argument. The page maintains clear progression, evidence hierarchy, restrained color semantics, and strong mobile reduction. Exact 390 and 1440 pixel checks found zero overflow or runtime failures and confirmed one project strip plus one Ask AI footer after the shared-footer cleanup."
+    },
+    "seo": {
+      "score": 100,
+      "status": "pass",
+      "evidence": "The candidate passes all 15 homepage checks with no warnings: exact 52-character title, 158-character description, canonical, complete social metadata, working social image, Article plus Dataset plus WebSite JSON-LD, clean heading hierarchy, approximately 3,026 server-rendered words, and no broken internal links."
+    },
+    "geo": {
+      "score": 100,
+      "status": "pass",
+      "evidence": "The canonical site independently reports S-tier 100%. Repository discovery checks pass across 6,156 canonical sitemap URLs, a Markdown mirror for every sitemap URL, llms briefs, /api/ai, OpenAPI, noindex boundaries, and content types. The temporary-host scanner reports only expected foreign-canonical advisories because Astro Preview preserves the production origin."
+    },
+    "performance": {
+      "score": 98,
+      "status": "pass",
+      "evidence": "PSI Swarm completed all four candidate profiles. LCP measured 2.19 s on slow mobile, 1.00 s on mid mobile, 507 ms on fast mobile, and 321 ms on desktop, with CLS 0 throughout and only 35 ms TBT on the slowest profile."
+    }
+  },
+  "verification": {
+    "passed": [
+      "43/43 repository tests",
+      "typecheck",
+      "7,172-page Astro production build",
+      "clarity contract audit",
+      "discovery contract audit",
+      "latest-candidate browser checks at 390 and 1440 pixels",
+      "latest-candidate SEO audit",
+      "canonical GEO audit",
+      "latest-candidate PSI Swarm coverage profile"
+    ]
+  },
+  "minimumObserved": 97
+}
