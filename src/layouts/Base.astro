@@ -136,25 +136,6 @@ const isActive = (link: (typeof navLinks)[number]) =>
           <a href="https://github.com/Significant-Hobbies/what-it-takes-to-win/issues">Roadmap</a>
           <a href="https://github.com/Significant-Hobbies/what-it-takes-to-win">Source code</a>
         </nav>
-        <div class="footer-products">
-          <p class="footer-products-heading">More projects by Sarthak</p>
-          <portfolio-project-strip
-            current-project="what-it-takes-to-win"
-            label="More projects by Sarthak"
-            integrated
-          >
-            <nav class="footer-products-fallback" aria-label="More projects by Sarthak">
-              <a href="https://codevetter.com">CodeVetter</a>
-              <a href="https://heypace.app">HeyPace</a>
-              <a href="https://highsignal.app">High Signal</a>
-              <a href="https://posttrainllm.com">PostTrainLLM</a>
-              <a href="https://significanthobbies.com">Significant Hobbies</a>
-              <a href="https://chatgpt.significanthobbies.com">Memory Map</a>
-              <a href="https://anchor.significanthobbies.com">Anchor</a>
-              <a href="https://sassmaker.com">All projects</a>
-            </nav>
-          </portfolio-project-strip>
-        </div>
         <div class="footer-meta-row">
           <p class="footer-meta">{peopleCount.toLocaleString()} paths · People born 1950+</p>
           <p class="footer-meta">Independent research by Sarthak Agrawal</p>
@@ -178,6 +159,8 @@ const isActive = (link: (typeof navLinks)[number]) =>
     <script
       is:inline
       src="https://sassmaker.com/project-strip.js"
+      data-project="what-it-takes-to-win"
+      crossorigin="anonymous"
       defer
     ></script>
     <script
@@ -185,6 +168,7 @@ const isActive = (link: (typeof navLinks)[number]) =>
       src="https://sassmaker.com/ai-chat-footer.js"
       data-name="Look Sideways"
       data-compose="false"
+      crossorigin="anonymous"
       defer
     ></script>
   </body>
