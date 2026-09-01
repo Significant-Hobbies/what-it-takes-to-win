@@ -1,6 +1,6 @@
 # Look Sideways — PROJECT STATUS
 
-Last updated: 2026-08-26
+Last updated: 2026-08-31
 
 ## Why / What
 
@@ -46,6 +46,10 @@ and curious readers who want the evidence behind the argument
 
 ## Timeline
 
+- 2026-08-31 — wired the product's dedicated Microsoft Clarity project through
+  the shared public layout, disclosed the PostHog and Clarity boundary in the
+  footer, and excluded the local-only ROI worksheet to keep its user-supplied
+  inputs out of session replay; production remains unchanged pending deploy
 - 2026-08-26 — released a product refocus around a guided comparison-futility
   journey; made the three condition factors the public model across primary
   surfaces; added sourced perseverance and unscored luck; surfaced 1,670

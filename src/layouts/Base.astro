@@ -68,6 +68,14 @@ const isActive = (link: (typeof navLinks)[number]) =>
     {structuredData && <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <script is:inline async src="/scripts/posthog.js"></script>
+    {currentPath !== "/roi/" && (
+      <script
+        is:inline
+        async
+        src="https://www.clarity.ms/tag/y6bw72v6ih"
+        onload="window.clarity('set', 'project_id', 'what-it-takes-to-win')"
+      ></script>
+    )}
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -140,6 +148,11 @@ const isActive = (link: (typeof navLinks)[number]) =>
           <p class="footer-meta">{peopleCount.toLocaleString()} paths · People born 1950+</p>
           <p class="footer-meta">Independent research by Sarthak Agrawal</p>
         </div>
+        <p class="footer-meta">
+          PostHog and Microsoft Clarity measure use of the public research
+          exhibit. Clarity is disabled on the local-only ROI worksheet so its
+          inputs are not included in session replay.
+        </p>
       </div>
     </footer>
     <script>
@@ -167,7 +180,6 @@ const isActive = (link: (typeof navLinks)[number]) =>
       is:inline
       src="https://sassmaker.com/ai-chat-footer.js"
       data-name="Look Sideways"
-      data-compose="false"
       crossorigin="anonymous"
       defer
     ></script>
