@@ -122,6 +122,20 @@ try {
     && api.collections.every(
       (collection) => collection.urlTemplate && collection.mdTemplate,
     )
+    // A cross-origin agent reading this catalog in bulk has no base to resolve
+    // against, so every advertised address must carry the origin.
+    && api.markdown?.home?.startsWith(`${origin}/`)
+    && api.surfaces.every(
+      (surface) =>
+        surface.url?.startsWith(`${origin}/`) && surface.md?.startsWith(`${origin}/`),
+    )
+    && api.collections.every(
+      (collection) =>
+        collection.urlTemplate.startsWith(`${origin}/`)
+        && collection.mdTemplate.startsWith(`${origin}/`)
+        && collection.urlTemplate.includes("{id}")
+        && collection.mdTemplate.includes("{id}"),
+    )
   ) {
     passes.push("/api/ai catalog");
   } else {

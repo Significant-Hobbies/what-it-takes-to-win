@@ -101,6 +101,13 @@ function absolute(route) {
   return new URL(route, origin).toString();
 }
 
+// Catalog templates keep their `{id}` placeholder, which `new URL()` would
+// percent-encode into `%7Bid%7D`. Cross-origin agents still need the origin, so
+// join by hand rather than dropping back to a relative template.
+function absoluteTemplate(route) {
+  return `${origin}${route}`;
+}
+
 function clean(value) {
   return String(value || "")
     .replace(/\r/g, "")
@@ -503,27 +510,27 @@ const catalog = {
   markdown: {
     suffix: ".md",
     negotiation: true,
-    home: "/index.md",
+    home: absolute("/index.md"),
   },
   surfaces: coreSurfaces.map((surface) => ({
     id: surface.id,
-    url: surface.htmlPath,
-    md: surface.mdPath,
+    url: absolute(surface.htmlPath),
+    md: absolute(surface.mdPath),
     kind: "static",
   })),
   collections: [
     {
       id: "people",
       count: people.length,
-      urlTemplate: "/person/{id}/",
-      mdTemplate: "/person/{id}.md",
+      urlTemplate: absoluteTemplate("/person/{id}/"),
+      mdTemplate: absoluteTemplate("/person/{id}.md"),
       kind: "person",
     },
     {
       id: "comparisons",
       count: indexableComparisons.length,
-      urlTemplate: "/am-i-the-next/{id}/",
-      mdTemplate: "/am-i-the-next/{id}.md",
+      urlTemplate: absoluteTemplate("/am-i-the-next/{id}/"),
+      mdTemplate: absoluteTemplate("/am-i-the-next/{id}.md"),
       kind: "evidence-gated-comparison",
     },
   ],
