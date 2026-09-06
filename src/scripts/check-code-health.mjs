@@ -28,13 +28,12 @@ const baselines = {
     percentage: 1.0667829949238579,
   },
   suppressions: 0,
-  dependencies: { critical: 0, highIds: 4, highFindings: 4 },
+  dependencies: { critical: 0, highIds: 3, highFindings: 3 },
 };
 const acceptedHigh = new Set([
   "GHSA-2v37-7h3g-55p8",
   "GHSA-4cwx-7wf7-3272",
   "GHSA-5p4m-2wfm-xmqj",
-  "GHSA-7p8r-x3mc-p8w7",
 ]);
 
 function output(message) {
