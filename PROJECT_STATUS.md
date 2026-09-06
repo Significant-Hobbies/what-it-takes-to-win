@@ -1,6 +1,6 @@
 # Look Sideways — PROJECT STATUS
 
-Last updated: 2026-08-31
+Last updated: 2026-09-06
 
 ## Why / What
 
@@ -46,6 +46,12 @@ and curious readers who want the evidence behind the argument
 
 ## Timeline
 
+- 2026-09-06 — made the repository readable for outside participants: rewrote
+  the README, added a `docs/` set (project brief, FAQ, glossary, architecture,
+  surfaces, dataset, research pipeline, quality gates, repository map, decision
+  log, lessons), CONTRIBUTING, and folder indexes; redrew the Open Graph share
+  card in the Kinetic Essay system; updated the toolchain and pinned patched
+  transitive packages so `pnpm audit` is clean; opened issue #36 for the podcast
 - 2026-08-31 — wired the product's dedicated Microsoft Clarity project through
   the shared public layout, disclosed the PostHog and Clarity boundary in the
   footer, and excluded the local-only ROI worksheet to keep its user-supplied
