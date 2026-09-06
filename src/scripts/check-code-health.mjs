@@ -28,13 +28,11 @@ const baselines = {
     percentage: 1.0667829949238579,
   },
   suppressions: 0,
-  dependencies: { critical: 0, highIds: 3, highFindings: 3 },
+  dependencies: { critical: 0, highIds: 0, highFindings: 0 },
 };
-const acceptedHigh = new Set([
-  "GHSA-2v37-7h3g-55p8",
-  "GHSA-4cwx-7wf7-3272",
-  "GHSA-5p4m-2wfm-xmqj",
-]);
+// Patched transitive versions are pinned through pnpm.overrides in package.json,
+// so no high advisory is currently accepted. Add an ID here only with a reason.
+const acceptedHigh = new Set([]);
 
 function output(message) {
   process.stdout.write(`${message}\n`);
