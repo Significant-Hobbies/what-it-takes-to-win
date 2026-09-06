@@ -164,5 +164,8 @@ continuous page:
 ## Share surface
 
 The Open Graph image uses the Kinetic Essay system and communicates the core
-claim at thumbnail size: three marbles, one changing course, 3,577 documented
-paths, and no success formula.
+claim at thumbnail size: the paper-and-ink sheet, the serif line "Look sideways
+for information, never for a verdict.", three marbles on one changing course,
+and no success formula. It carries no dataset count; the live figure sits in
+the build-derived `og:image:alt`. The source is `public/og-image.svg` and
+`pnpm run render:og` rasterises it.
