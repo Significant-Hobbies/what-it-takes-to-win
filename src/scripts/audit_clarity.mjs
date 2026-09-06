@@ -61,7 +61,6 @@ const contracts = [
       "No record ceiling",
       "Coverage in progress",
       "A profile count is not a coverage claim",
-      "top-0.001% calibration remains",
       "Coverage is a ladder—not one percentage",
       "Two source domains",
       "Source reachability verified",

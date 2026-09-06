@@ -540,7 +540,7 @@ const catalog = {
   },
   limitations: [
     "Publicly discoverable outcomes only; complete population capture is not claimed",
-    "Top-0.001% exact-age calibration is under methodology review",
+    "Uncapped public-evidence coverage with no fixed record count or percentile target",
     "Interpretive annotations, not causal estimates",
     "No prediction of individual outcomes",
   ],

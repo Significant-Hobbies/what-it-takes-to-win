@@ -50,7 +50,7 @@ coverage result. The versioned rules in
 `eligibility_status: age_30_eligible` cannot bypass these gates. If no field
 gate exists, preserve the candidate and request a reviewed gate addition; do
 not invent a threshold inside a research result. The current age-banded outcome
-rules are provisional research screens, not an audited top-0.001% claim.
+rules are provisional research screens, not an audited percentile claim.
 
 ## Output schema (JSONL, one object per line)
 

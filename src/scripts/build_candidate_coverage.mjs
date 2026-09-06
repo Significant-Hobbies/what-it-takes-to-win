@@ -235,7 +235,6 @@ const summary = {
   objective: "uncapped_public_evidence_coverage",
   target_age_max: 30,
   birth_year_min: 1950,
-  denominator: registry.denominator,
   gate_registry: {
     version: gateRegistry.version,
     calibration_status: gateRegistry.calibration_status,

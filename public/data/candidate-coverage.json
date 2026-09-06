@@ -3,15 +3,6 @@
   "objective": "uncapped_public_evidence_coverage",
   "target_age_max": 30,
   "birth_year_min": 1950,
-  "denominator": {
-    "provider": "United Nations Population Division",
-    "dataset": "World Population Prospects 2024",
-    "url": "https://population.un.org/wpp/",
-    "unit": "exact-age global cohort",
-    "target_share": 0.00001,
-    "label": "top 0.001%-calibrated",
-    "status": "methodology_review_pending"
-  },
   "gate_registry": {
     "version": "2026-08-26.1",
     "calibration_status": "provisional_research_screen"
