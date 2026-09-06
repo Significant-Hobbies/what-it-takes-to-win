@@ -134,6 +134,27 @@ A dedicated Clarity project was wired through the shared layout, the PostHog
 and Clarity boundary was disclosed in the footer, and the ROI worksheet was
 excluded from replay.
 
+## 2026-09-07: Pokemon cards concept — deferred, conflicts with anti-ranking thesis
+
+Issue #33 proposed showing people as collectible cards with statistics scores
+at different trajectory points (birth, current, in-between), prettified
+standalone profile pages, and a future scratch-card gamification layer.
+
+The concept conflicts with the project's core thesis and standing decisions:
+
+- The three condition factors are never summed into a single score. A card
+  with aggregate stats invites exactly the ranking the exhibit refuses.
+- Gamified distribution (scratch cards, collecting) frames people as
+  rewards and undermines the evidence-led reading.
+- "Statistics scores at different trajectory points" reintroduces a
+  resemblance score, which was already replaced by person-specific
+  comparison breakers (2026-07-23).
+
+Deferred, not killed. A future version could work if it avoids aggregate
+scoring, keeps the three factors separate, and frames the card as a
+provenance artifact rather than a collectible. That would require explicit
+owner approval and a design that passes the anti-ranking gate.
+
 ## Standing decisions
 
 - The three condition factors are never summed anywhere in the product.
