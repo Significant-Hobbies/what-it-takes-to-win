@@ -125,3 +125,20 @@ The repository does not yet grant a licence. Third-party sources, including
 Wikipedia, Pantheon, and every linked URL, keep their own terms. See
 [src/data/LICENSE_DATA.md](src/data/LICENSE_DATA.md) for the suggested terms
 and attribution.
+
+<!-- portfolio-retained-work:2026-09-07 -->
+## Retained work from the portfolio review
+
+These are unresolved requirements retained at the owner’s request. They are not completed features. Work should follow a concrete need and fresh evidence.
+
+### Start the Look Sideways podcast: first-person accounts beside the evidence
+
+Qualify a first-person podcast pilot with permission, source evidence and a useful editorial purpose before expanding the publication.
+
+Original requirements and discussion: [#36](https://github.com/Significant-Hobbies/what-it-takes-to-win/issues/36).
+
+### Build comprehensive age-outlier coverage
+
+Expand age-outlier coverage with explicit source and survivorship boundaries; avoid interpreting the sample as a population forecast.
+
+Original requirements and discussion: [#32](https://github.com/Significant-Hobbies/what-it-takes-to-win/issues/32).
