@@ -73,7 +73,7 @@ const isActive = (link: (typeof navLinks)[number]) =>
         is:inline
         async
         src="https://www.clarity.ms/tag/y6bw72v6ih"
-        onload="window.clarity('set', 'project_id', 'what-it-takes-to-win')"
+        onload="typeof window.clarity === 'function' && window.clarity('set', 'project_id', 'what-it-takes-to-win')"
       ></script>
     )}
     <script is:inline src="/app-health-log.js" defer></script>
