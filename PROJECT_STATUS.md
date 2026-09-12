@@ -1,6 +1,6 @@
 # Look Sideways — PROJECT STATUS
 
-Last updated: 2026-09-06
+Last updated: 2026-09-12
 
 ## Why / What
 
@@ -46,6 +46,9 @@ and curious readers who want the evidence behind the argument
 
 ## Timeline
 
+- 2026-09-12 — published a luck directory of nine sourced ordinary-person
+  cases (place, timing, a forced door, a visa draw) under the same four luck
+  forms used on the journey, with sitemap, Markdown mirrors, and a chapter-04 link
 - 2026-09-06 — made the repository readable for outside participants: rewrote
   the README, added a `docs/` set (project brief, FAQ, glossary, architecture,
   surfaces, dataset, research pipeline, quality gates, repository map, decision
@@ -152,6 +155,8 @@ and curious readers who want the evidence behind the argument
   - `/` — five-chapter guided argument through survivor selection, three condition factors, perseverance, luck, and release from identity comparison
   - `/overview/` — deeper research overview and charts behind the public model
   - `/insights/` — evidence room with the three-factor model, broader success band, luck, divergent paths, and progressive research detail
+  - `/luck/` — field plate of nine sourced ordinary-person luck cases grouped by structural, encounter, event, and variance forms
+  - `/luck/[id]/` — one case: what they did, what they did not choose, figures, limit, sources
   - `/explore/` — filterable/searchable evidence atlas with qualitative outcome-reach filtering (lazy-loads data client-side)
   - `/person/[id]/` — three condition factors, perseverance and luck evidence, trajectory, sources, and progressive 22-field research detail
   - `/compare/` — chooser for familiar person-specific comparisons; explicitly not a ranking or forecast
@@ -164,6 +169,8 @@ and curious readers who want the evidence behind the argument
 
 ## Features (current source and production)
 
+- Luck directory of nine sourced ordinary-person cases grouped by the four
+  luck forms, linked from chapter 04 of the journey and the footer
 - Publication-grade surface system with neutral structural borders, semantic
   data color, a shared responsive shell, and documented visual QA across all 15
   public surface families
@@ -230,7 +237,7 @@ and curious readers who want the evidence behind the argument
 - **Pass comparison/search evidence gate:** 71.7% (2,565/3,578)
 - **Condition factors (−1 to 3, never summed):** brought 3,578 scored (3 headwind), handed 3,578 scored (458 headwind), surrounded 3,578 scored (5 headwind)
 - **Listed source URLs:** 12,682
-- **Canonical sitemap URLs:** 6,155
+- **Canonical sitemap URLs:** 6,166
 - **Secondary double-coded records:** 16
 - **Source reachability audit:** 2,740/3,578 paths reviewed — 1,498 fully reachable, 1,234 partial, 8 failed. 838 paths added since the last pass are unaudited.
 - **Independent content audit:** pending; URL reachability does not verify claim support

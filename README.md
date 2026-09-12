@@ -45,8 +45,8 @@ by, and ranking is the reading this project refuses.
   controls.
 - Person-specific comparison breakers that show conditions, sequence, and luck
   instead of a resemblance score.
-- An evidence room, a live coverage ledger, a full methodology page, and two
-  long-form essays.
+- An evidence room, a luck directory of nine ordinary-person cases, a live
+  coverage ledger, a full methodology page, and two long-form essays.
 - A local-only expected-value and ROI worksheet that never transmits input.
 - Agent and search surfaces: sitemap, Markdown mirrors of every page,
   `llms.txt`, `/api/ai`, `/openapi.json`, and JSON-LD.

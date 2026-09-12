@@ -20,6 +20,8 @@ Production is at `https://paths.significanthobbies.com`.
 | Route | Job |
 |---|---|
 | `/insights/` | Evidence room: three-factor model, broader success band, luck, divergent paths, progressive research detail |
+| `/luck/` | Field plate of nine sourced ordinary-person luck cases, grouped by form |
+| `/luck/[id]/` | One case: what they did, what they did not choose, figures, limit, sources |
 | `/overview/` | Deeper research overview with the archive-wide charts |
 | `/explore/` | Atlas with search, cohort, category, outcome-reach, and sort controls |
 | `/person/[id]/` | One profile: condition factors, perseverance and luck evidence, trajectory, sources, and the 22-field research detail |
@@ -55,8 +57,8 @@ Production is at `https://paths.significanthobbies.com`.
 
 Counts are derived from the corpus and change with each dataset release. The
 generated block in [PROJECT_STATUS.md](../PROJECT_STATUS.md) is the current
-source. At 3,578 profiles the sitemap holds 6,155 URLs and the Astro build
-emits about 7,200 pages including mirrors.
+source. At 3,578 profiles plus the luck directory the sitemap holds 6,166 URLs
+and the Astro build emits about 7,200 pages including mirrors.
 
 ## Design evidence
 

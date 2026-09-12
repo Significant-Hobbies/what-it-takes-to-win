@@ -1,6 +1,7 @@
 import { readdir, readFile, stat } from "node:fs/promises";
 import path from "node:path";
 import { dist, origin, people, comparisonIsIndexable } from "../lib/discovery.mjs";
+import { luckCases } from "../data/luck-cases.mjs";
 
 const failures = [];
 const passes = [];
@@ -40,7 +41,8 @@ const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
 const indexableComparisons = people.filter(comparisonIsIndexable);
 const coreSurfaceCount = 10;
 const essayCount = 3; // essays index + 2 published essays
-const expectedSitemapCount = coreSurfaceCount + essayCount + people.length + indexableComparisons.length;
+const luckCount = 1 + luckCases.length; // luck index + one page per case study
+const expectedSitemapCount = coreSurfaceCount + essayCount + luckCount + people.length + indexableComparisons.length;
 if (
   sitemap.startsWith('<?xml version="1.0" encoding="UTF-8"?>')
   && sitemapUrls.length === expectedSitemapCount

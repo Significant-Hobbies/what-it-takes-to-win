@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { root, dist, origin, people, comparisonIsIndexable } from "../lib/discovery.mjs";
+import { luckCases, LUCK_FORM_LABELS } from "../data/luck-cases.mjs";
 
 const candidateCoverage = JSON.parse(
   await readFile(path.join(root, "src", "data", "candidate-coverage.json"), "utf8"),
@@ -390,6 +391,8 @@ const canonicalRoutes = [
   ...coreSurfaces.map((surface) => surface.htmlPath),
   "/essays/",
   ...essays.map((essay) => essay.htmlPath),
+  "/luck/",
+  ...luckCases.map((item) => `/luck/${item.id}/`),
   ...people.map((person) => `/person/${encodeURIComponent(safeId(person))}/`),
   ...indexableComparisons.map(
     (person) => `/am-i-the-next/${encodeURIComponent(safeId(person))}/`,
@@ -443,6 +446,7 @@ await emit(
     `- [Evidence coverage](${absolute("/coverage.md")}): source depth, confidence, composition, and unresolved audit boundaries`,
     `- [Methodology](${absolute("/methodology.md")}): inclusion, scoring, evidence gates, and limitations`,
     `- [Essays](${absolute("/essays/")}): long-form writing on advantage and abstraction`,
+    `- [Luck directory](${absolute("/luck/")}): nine sourced cases of luck that landed on ordinary people — place, timing, a forced door, a visa draw`,
     `- [Explore](${absolute("/explore/")}): ${people.length.toLocaleString("en-US")} person profiles`,
     `- [API catalog](${absolute("/api/ai")}): machine-readable discovery contract`,
     `- [OpenAPI spec](${absolute("/openapi.json")}): machine-readable API contract`,
@@ -660,6 +664,55 @@ const essaysIndexMd = [
 ].join("\n");
 await emit("essays.md", essaysIndexMd);
 
+// Luck directory Markdown mirrors — one index + one per case study.
+const luckIndexMd = [
+  "# Luck directory — Look Sideways",
+  "",
+  "Nine sourced cases of luck that landed on ordinary people: place, timing, a forced door, a visa draw. Every figure is sourced. None of it is a method.",
+  "",
+  ...luckCases.map(
+    (item) => `- [${item.title}](${absolute(`/luck/${item.id}.md`)}): ${item.summary}`,
+  ),
+  "",
+  `- [Read the luck directory](${absolute("/luck/")})`,
+  "",
+].join("\n");
+await emit("luck.md", luckIndexMd);
+for (const item of luckCases) {
+  const caseMd = [
+    `# ${item.title}`,
+    "",
+    item.subtitle,
+    "",
+    `**Luck form:** ${LUCK_FORM_LABELS[item.form]} · **Period:** ${item.period} · **Category:** ${item.category} · **Figure:** ${item.figure}`,
+    "",
+    "## What they did",
+    "",
+    item.theSetup,
+    "",
+    "## What they did not choose",
+    "",
+    item.theLuck,
+    "",
+    "## Figures",
+    "",
+    ...item.theNumbers.map((line) => `- ${line}`),
+    "",
+    "## Limit",
+    "",
+    item.boundary,
+    "",
+    "## Sources",
+    "",
+    ...item.sources.map((source) => `- [${source.label}](${source.url})`),
+    "",
+    `- [Read the HTML case study](${absolute(`/luck/${item.id}/`)})`,
+    `- [Back to the luck directory](${absolute("/luck/")})`,
+    "",
+  ].join("\n");
+  await emit(path.join("luck", `${item.id}.md`), caseMd);
+}
+
 await emit(
   "_headers",
   [
@@ -689,6 +742,9 @@ await emit(
     "  Content-Type: text/markdown; charset=utf-8",
     "  X-Robots-Tag: noindex",
     "/essays/*.md",
+    "  Content-Type: text/markdown; charset=utf-8",
+    "  X-Robots-Tag: noindex",
+    "/luck/*.md",
     "  Content-Type: text/markdown; charset=utf-8",
     "  X-Robots-Tag: noindex",
     "",

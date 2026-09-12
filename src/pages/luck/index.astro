@@ -1,0 +1,114 @@
+---
+import Base from "../../layouts/Base.astro";
+import "../../styles/luck.css";
+import {
+  luckCases,
+  LUCK_FORM_LABELS,
+  LUCK_FORM_ORDER,
+  LUCK_FORM_SUMMARIES,
+} from "../../data/luck-cases";
+
+const groups = LUCK_FORM_ORDER.map((form) => ({
+  form,
+  label: LUCK_FORM_LABELS[form],
+  summary: LUCK_FORM_SUMMARIES[form],
+  cases: luckCases.filter((item) => item.form === form),
+}));
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Luck directory — Look Sideways",
+  description:
+    "Nine sourced cases of luck that landed on ordinary people: place, timing, a forced door, a visa draw. No formula.",
+  url: "https://paths.significanthobbies.com/luck/",
+  isPartOf: { "@type": "WebSite", name: "Look Sideways", url: "https://paths.significanthobbies.com/" },
+};
+---
+
+<Base
+  title="Luck directory — Look Sideways"
+  description="Nine sourced cases of luck that landed on ordinary people: place, timing, a forced door, a visa draw. No formula."
+  canonicalPath="/luck/"
+  mainClass="luck-main"
+  structuredData={structuredData}
+>
+  <section class="hero luck-hero">
+    <p class="luck-kicker">Field plate · unscored</p>
+    <h1>Luck that did not require a biography.</h1>
+    <p class="lede">
+      The archive follows 3,578 early breakthroughs. These nine cases sit
+      beside that record: people who held a job, a house, a visa petition, or
+      a patch of farmland when something they did not schedule arrived.
+    </p>
+    <p class="luck-edition">{luckCases.length} cases · four forms · sourced figures</p>
+  </section>
+
+  <dl class="luck-contract">
+    <div>
+      <dt>Question</dt>
+      <dd>How does luck land on people who are not famous?</dd>
+    </div>
+    <div>
+      <dt>Method</dt>
+      <dd>Separate what they did from what they did not choose. State the numbers. Keep a boundary.</dd>
+    </div>
+    <div>
+      <dt>Limit</dt>
+      <dd>A case is not a method. Similar setups still finish differently.</dd>
+    </div>
+  </dl>
+
+  <ol class="luck-form-key" aria-label="Four luck forms">
+    {groups.map((group) => (
+      <li>
+        <a href={`#form-${group.form}`}>
+          <strong>{group.label}</strong>
+          <span>{group.cases.length}</span>
+        </a>
+        <p>{group.summary}</p>
+      </li>
+    ))}
+  </ol>
+
+  {groups.map((group) => (
+    <section class={`luck-form luck-form-${group.form}`} id={`form-${group.form}`} aria-labelledby={`heading-${group.form}`}>
+      <header class="luck-form-heading">
+        <p class="luck-form-mark" aria-hidden="true"></p>
+        <div>
+          <h2 id={`heading-${group.form}`}>{group.label}</h2>
+          <p>{group.summary}</p>
+        </div>
+      </header>
+      <ol class="luck-list">
+        {group.cases.map((item) => (
+          <li>
+            <article class={`luck-entry luck-entry-${item.form}`}>
+              <p class="luck-figure">
+                <strong>{item.figure}</strong>
+                <span>{item.figureLabel}</span>
+              </p>
+              <div class="luck-copy">
+                <p class="luck-meta">
+                  <span>{item.category}</span>
+                  <span>{item.period}</span>
+                </p>
+                <h3><a href={`/luck/${item.id}/`}>{item.title}</a></h3>
+                <p class="luck-sub">{item.subtitle}</p>
+                <p class="luck-sum">{item.summary}</p>
+              </div>
+              <a class="luck-go" href={`/luck/${item.id}/`}>Open case</a>
+            </article>
+          </li>
+        ))}
+      </ol>
+    </section>
+  ))}
+
+  <p class="luck-close">
+    These cases do not estimate luck's share of any outcome. They show openings
+    that arrived beside ordinary work. Read them after
+    <a href="/#the-sequence">chapter 04 of the journey</a>, then return to the
+    <a href="/insights/">evidence room</a>.
+  </p>
+</Base>

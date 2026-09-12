@@ -1,0 +1,92 @@
+---
+import Base from "../../layouts/Base.astro";
+import "../../styles/luck.css";
+import { luckCases, LUCK_FORM_LABELS } from "../../data/luck-cases";
+
+export function getStaticPaths() {
+  return luckCases.map((item) => ({ params: { id: item.id } }));
+}
+
+const id = Astro.params.id!;
+const index = luckCases.findIndex((item) => item.id === id);
+const item = luckCases[index];
+const prev = index > 0 ? luckCases[index - 1] : null;
+const next = index < luckCases.length - 1 ? luckCases[index + 1] : null;
+
+const pageUrl = `https://paths.significanthobbies.com/luck/${item.id}/`;
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: item.title,
+  description: item.summary,
+  url: pageUrl,
+  isPartOf: {
+    "@type": "CollectionPage",
+    url: "https://paths.significanthobbies.com/luck/",
+    name: "Luck directory — Look Sideways",
+  },
+  about: { "@type": "Thing", name: item.category },
+};
+---
+
+<Base
+  title={`${item.title} — Look Sideways`}
+  description={item.summary}
+  canonicalPath={`/luck/${item.id}/`}
+  mainClass="luck-main"
+  structuredData={structuredData}
+>
+  <article class={`luck-detail luck-detail-${item.form}`}>
+    <p class="luck-back"><a href="/luck/">Luck directory</a></p>
+
+    <header class="luck-detail-header">
+      <p class="luck-meta">
+        <span>{LUCK_FORM_LABELS[item.form]}</span>
+        <span>{item.period}</span>
+        <span>{item.category}</span>
+      </p>
+      <h1>{item.title}</h1>
+      <p class="luck-detail-subtitle">{item.subtitle}</p>
+      <p class="luck-detail-figure">
+        <strong>{item.figure}</strong>
+        <span>{item.figureLabel}</span>
+      </p>
+    </header>
+
+    <section class="luck-section">
+      <h2>What they did</h2>
+      <p>{item.theSetup}</p>
+    </section>
+
+    <section class="luck-section">
+      <h2>What they did not choose</h2>
+      <p>{item.theLuck}</p>
+    </section>
+
+    <section class="luck-numbers" aria-label="Verified figures">
+      <h2>Figures</h2>
+      <ul>
+        {item.theNumbers.map((line) => <li>{line}</li>)}
+      </ul>
+    </section>
+
+    <aside class="luck-boundary">
+      <h2>Limit</h2>
+      <p>{item.boundary}</p>
+    </aside>
+
+    <section class="luck-sources" aria-label="Sources">
+      <h2>Sources</h2>
+      <ul>
+        {item.sources.map((source) => (
+          <li><a href={source.url} rel="noopener noreferrer">{source.label}</a></li>
+        ))}
+      </ul>
+    </section>
+
+    <nav class="luck-detail-nav" aria-label="More cases">
+      {prev ? <a href={`/luck/${prev.id}/`}>{prev.title}</a> : <span class="disabled">Earlier</span>}
+      {next ? <a href={`/luck/${next.id}/`}>{next.title}</a> : <span class="disabled">Later</span>}
+    </nav>
+  </article>
+</Base>

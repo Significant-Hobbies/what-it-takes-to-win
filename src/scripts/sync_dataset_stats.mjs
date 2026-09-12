@@ -14,6 +14,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { root, people, comparisonIsIndexable } from "../lib/discovery.mjs";
+import { luckCases } from "../data/luck-cases.mjs";
 
 const checkOnly = process.argv.includes("--check");
 
@@ -89,11 +90,13 @@ const reliability = JSON.parse(
   await readFile(path.join(root, "quality", "reliability", "secondary-coding-v1.json"), "utf8"),
 );
 
-// Mirrors audit_discovery.mjs: nine core surfaces, the essays index plus each
-// published essay, one URL per person, and one per evidence-gated comparison.
-const CORE_SURFACES = 9;
+// Mirrors audit_discovery.mjs: ten core surfaces, the essays index plus each
+// published essay, the luck directory plus each case, one URL per person, and
+// one per evidence-gated comparison.
+const CORE_SURFACES = 10;
 const ESSAY_URLS = 3;
-const sitemapUrls = CORE_SURFACES + ESSAY_URLS + total + indexable;
+const luckUrls = 1 + luckCases.length;
+const sitemapUrls = CORE_SURFACES + ESSAY_URLS + luckUrls + total + indexable;
 
 const cohortLine = tally((person) => person.cohort_group)
   .map(([label, value]) => `${label} ${number(value)}`)
