@@ -345,5 +345,3 @@ export const luckCases = [
     ],
   },
 ];
-
-export const luckCaseById = Object.fromEntries(luckCases.map((c) => [c.id, c]));

@@ -26,4 +26,3 @@ export declare const LUCK_FORM_LABELS: Record<LuckForm, string>;
 export declare const LUCK_FORM_SUMMARIES: Record<LuckForm, string>;
 export declare const LUCK_FORM_ORDER: LuckForm[];
 export declare const luckCases: LuckCase[];
-export declare const luckCaseById: Record<string, LuckCase>;
