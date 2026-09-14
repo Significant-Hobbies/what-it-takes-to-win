@@ -72,14 +72,19 @@ const isActive = (link: (typeof navLinks)[number]) =>
     {structuredData && <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <script is:inline async src="/scripts/posthog.js"></script>
-    {currentPath !== "/roi/" && (
+    {currentPath !== "/roi/" && (<>
+      <script is:inline>
+        window.clarity = window.clarity || function () {
+          (window.clarity.q = window.clarity.q || []).push(arguments);
+        };
+      </script>
       <script
         is:inline
         async
         src="https://www.clarity.ms/tag/y6bw72v6ih"
         onload="typeof window.clarity === 'function' && window.clarity('set', 'project_id', 'what-it-takes-to-win')"
       ></script>
-    )}
+    </>)}
     <script
       is:inline
       defer
