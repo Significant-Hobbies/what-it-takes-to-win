@@ -1,0 +1,9 @@
+<div class="chance-lab" data-chance-lab>
+  <div class="chance-intro"><h3>A small experiment in randomness</h3><p>Two imaginary people. The same invented chance per attempt. A different number of attempts they can afford.</p><p class="lab-disclaimer">Illustration only: a made-up one-in-six chance per attempt. Not your odds in life.</p></div>
+  <div class="draw-table">
+    {[4, 12].map(count => <div class="draw-person"><h4>Room for {count} attempts</h4><div class="draw-dots" data-draw={count} aria-hidden="true">{Array.from({length:count}, () => <span></span>)}</div><p data-draw-result={count}>Not drawn yet</p></div>)}
+  </div>
+  <div class="draw-actions"><button type="button" data-draw-again hidden>Draw both lives <span aria-hidden="true">↻</span></button><p data-draw-status aria-live="polite">More attempts can create more chances. They do not promise an opening.</p></div>
+  <noscript><p>Interactive draws need JavaScript. The lesson still holds: more independent attempts increase the chance of at least one opening in this toy model, but either person can receive none.</p></noscript>
+  <details><summary>What this experiment leaves out</summary><p>Every draw here is independent, with the same invented probability. Real attempts differ: learning, connections, discrimination, costs and circumstances change them. An opening is not a final success. The experiment illustrates uncertainty; it cannot predict a person’s future.</p><p>Who can afford to try again? Money, health, support and obligations are unequal too. More attempts are not a moral obligation.</p></details>
+</div>

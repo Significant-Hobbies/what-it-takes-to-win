@@ -1,0 +1,16 @@
+---
+import type { featuredPaths } from "../data/documentary.mjs";
+interface Props { person: typeof featuredPaths[number] }
+const { person } = Astro.props;
+---
+<div class="life-story" data-life-story>
+  <ol class="life-timeline" aria-label={`${person.name}'s chronology`}>
+    {person.steps.map(step => (
+      <li>
+        <p class="life-date">{step.when}</p>
+        <p class="life-fact">{step.text}{" "}<a class="life-source" href={step.source ?? person.source} target="_blank" rel="noopener noreferrer" aria-label={`Source for ${person.name}: ${step.title} (opens in a new tab)`}>Source</a></p>
+      </li>
+    ))}
+  </ol>
+  <p class="doc-boundary">{person.boundary}</p>
+</div>

@@ -1,5 +1,87 @@
 # Visual system
 
+## Guided exhibit · owner-delegated finish · 2026-09-14
+
+The owner explicitly delegated the final design after rejecting the long pale
+chronology and clarifying that the subject is everyday life, not company wealth.
+The homepage now adopts the event-gallery study as a guided exhibit: midnight
+green (#14251f), warm yellow (#e9e6b9), coral (#e7ac95), and pale sky (#d2e2e5).
+These colors own sections, not scores or positive/negative outcome coding.
+Large humanist sans headings, occasional book-serif emphasis, compact evidence
+labels, native links and disclosures. Dark opening suits a personal, reflective
+read; light scenes break the rhythm for close inspection. No sticky chapter bar.
+
+Sequence: a comparison omits history; the king's jug demonstrates unequal
+preparation; three short life excerpts connect access, work and encounters;
+turning points span work, investing/ownership, place and chance; an explicitly
+hypothetical random-draw experiment separates attempts from outcomes; practical
+agency and the preserved essays close the journey. The experiment's invented
+one-in-six probability is not a model or estimate of anyone's prospects.
+
+The first screen contains a real miniature history beside the proposition.
+Person and event details live in their own readable pages, with sources and
+boundaries. Events use one canonical data module and native destination links;
+filtering is a progressive enhancement. Articles and full person records stay
+intact. No new dependencies, chart engine, autoplay or intake questionnaire.
+All chapter hashes remain. This section supersedes previous homepage decisions;
+the established reading system remains on articles and archive pages.
+
+## Clean life reading · 2026-09-14
+
+Owner rejected the busy biographical accordion and explicitly asked to implement
+the discussed clean direction. Preserve paper, ink and sourced content; replace
+the stacked interaction with one person selector and an always-readable dated
+chronology. No per-step headings, counters, categories, takeaway sidebar,
+instruction label, reveal control or next-step button. Sources remain inline;
+the evidence boundary and full archive link remain at the end. The chapter
+index has been removed following the owner's feedback about redundant navigation.
+This supersedes the earlier sequential-disclosure requirements below. Shared
+LifeStory renders this same plain chronology on featured profiles. Article
+text and the underlying curated data are preserved.
+
+## Shared masthead · 2026-09-14
+
+Owner rejected the boxed, numbered navbar's appearance, not its destinations.
+The shared header now uses an unboxed italic serif **Paths** wordmark and quiet
+sans navigation aligned to the documentary's content width. Preserve the four
+destinations and native links. No badge, tagline, numbered link labels, vertical
+logo divider, blue active slab, glass effect, or added navigation runtime.
+Use the documentary paper/ink colors, a hairline text underline for the current
+page, and explicit keyboard focus. Keep the phone header in one compact row
+where it fits, allowing reflow at smaller widths rather than hiding destinations.
+This supersedes older global header styling only; articles remain unchanged.
+
+## Approved homepage evolution · 2026-09-13
+
+Issue #39 replaces the homepage's permanent marble race with a six-chapter
+guided documentary. The owner approved the scope and requested exceptional
+visual craft. The rest of this document continues to govern untouched routes;
+this section supersedes its homepage-specific five-chapter/race requirements.
+
+The first viewport shows documented early conditions beside a visible outcome.
+A warm-paper reading surface leads into an ink-green illustrated garden: a jug,
+flowers, water, and the preparation concealed by the final action. Native
+disclosure reveals hidden preparation. This is explicitly illustrative.
+Real-life timelines then lead into shared events and unequal exposure, repeated
+attempts and unequal recovery capacity, and a quiet conclusion about agency.
+
+Use book serif major sentences, readable sans evidence, restrained ochre,
+sage, and rust for distinct roles. No score-like vertical trajectory, autoplay,
+forced intake, personal reflection input, or causal percentage. Sources are
+linked beside each moment; personas use progressive enhancement and meaningful hashes.
+All content remains reachable without JavaScript. Preserve existing routes and
+old chapter hashes. No new runtime dependency.
+
+The follow-up readiness pass makes the two routes through the jug metaphor
+explicit: inherited preparation beside preparation still to do. These are not
+timed or quantified historical claims. Featured lives use one shared sequential
+disclosure component on the homepage and their profiles, with primary chronology
+separate from an interpretive margin note. All legacy profile material remains
+available in an optional archive disclosure. The employee account is inline,
+dated, attributed, and distinguishes conditional equity from realized wealth.
+Owner essays are preserved verbatim; their surrounding journey is the redesign.
+
+
 ## Selected direction
 
 **Kinetic Essay** was selected on 2026-08-23 for the complete public surface

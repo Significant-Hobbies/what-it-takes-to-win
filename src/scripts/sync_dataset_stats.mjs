@@ -15,6 +15,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { root, people, comparisonIsIndexable } from "../lib/discovery.mjs";
 import { luckCases } from "../data/luck-cases.mjs";
+import { turningPoints } from "../data/turning-points.mjs";
 
 const checkOnly = process.argv.includes("--check");
 
@@ -96,7 +97,7 @@ const reliability = JSON.parse(
 const CORE_SURFACES = 10;
 const ESSAY_URLS = 3;
 const luckUrls = 1 + luckCases.length;
-const sitemapUrls = CORE_SURFACES + ESSAY_URLS + luckUrls + total + indexable;
+const sitemapUrls = CORE_SURFACES + ESSAY_URLS + luckUrls + turningPoints.length + total + indexable;
 
 const cohortLine = tally((person) => person.cohort_group)
   .map(([label, value]) => `${label} ${number(value)}`)

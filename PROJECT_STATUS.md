@@ -232,12 +232,12 @@ and curious readers who want the evidence behind the argument
 - **Tier distribution:** T1 653, T2 1,254, T3 1,498, T4 173
 - **Record provenance:** 0.3.0-trajectory-beta 2,224, 2026-08-19-founder-expansion 837, 0.2.0-subagent-beta 229, 2026-08-08-expansion 183, 0.1.0-beta 104, 2026-08-26-age-outlier-coverage 1
 - **Three-event trajectory coverage:** 92.0% (3,291/3,578)
-- **Two or more listed sources:** 87.6% (3,135/3,578)
-- **Two or more source domains:** 87.1% (3,115/3,578)
-- **Pass comparison/search evidence gate:** 71.7% (2,565/3,578)
+- **Two or more listed sources:** 87.6% (3,136/3,578)
+- **Two or more source domains:** 87.1% (3,116/3,578)
+- **Pass comparison/search evidence gate:** 71.7% (2,566/3,578)
 - **Condition factors (−1 to 3, never summed):** brought 3,578 scored (3 headwind), handed 3,578 scored (458 headwind), surrounded 3,578 scored (5 headwind)
-- **Listed source URLs:** 12,682
-- **Canonical sitemap URLs:** 6,166
+- **Listed source URLs:** 12,686
+- **Canonical sitemap URLs:** 6,180
 - **Secondary double-coded records:** 16
 - **Source reachability audit:** 2,740/3,578 paths reviewed — 1,498 fully reachable, 1,234 partial, 8 failed. 838 paths added since the last pass are unaudited.
 - **Independent content audit:** pending; URL reachability does not verify claim support

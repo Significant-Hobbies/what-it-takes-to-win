@@ -1,6 +1,9 @@
 ---
 import Base from "../../layouts/Base.astro";
 import peopleData from "../../data/people.json";
+import { featuredPaths } from "../../data/documentary.mjs";
+import LifeStory from "../../components/LifeStory.astro";
+import "../../styles/documentary.css";
 import {
   ADVANTAGE_FIELDS,
   CONDITION_FACTOR_MAX,
@@ -27,6 +30,7 @@ export function getStaticPaths() {
 
 const people = peopleData as OutcomePerson[];
 const p = people.find((person) => person.person_id === Astro.params.id)!;
+const featured = featuredPaths.find(person => person.id === p.person_id);
 const path = buildPersonPath(p, people);
 const conditionFactors = getConditionFactors(p);
 const reachBand = getReachBand(p);
@@ -79,8 +83,21 @@ const structuredData = {
   title={`${p.name} — Look Sideways`}
   description={p.milestone_by_age_26}
   structuredData={structuredData}
-  mainClass="person-main"
+  mainClass={featured ? "documentary-main" : "person-main"}
 >
+  <div class:list={{ documentary: Boolean(featured) }}>
+  <div class:list={{ "doc-width": Boolean(featured), "documentary-profile": Boolean(featured) }}>
+    {featured && <>
+      <nav class="profile-return" aria-label="Return to journey"><a href={`/#life-${featured.id}`}>← Back to this life in the journey</a><a href="/explore/">Explore the archive →</a></nav>
+      <p class="doc-eyebrow">A documented life / {featured.place}</p>
+      <h1>{featured.name}</h1>
+      <p class="profile-deck">{featured.opening}</p>
+      <LifeStory person={featured} />
+      <div class="profile-sources"><p>These selected moments use the same sources as the main journey. They are not a complete biography.</p><a href={`/contribute/?task=edit&person=${encodeURIComponent(p.name)}&profile=${encodeURIComponent(personUrl)}`}>Propose a correction →</a></div>
+      <a class="doc-next" href="/#the-sequence">Continue the journey: the world moves <span aria-hidden="true">→</span></a>
+    </>}
+  <details class="archive-record" open={!featured}>
+    <summary hidden={!featured}>Full archive record, chronology & research annotations</summary>
   <section class="person-detail">
     <p class="person-back">
       <a href="/explore/">← back to explore</a>
@@ -410,4 +427,7 @@ const structuredData = {
       </>
     )}
   </section>
+  </details>
+  </div>
+  </div>
 </Base>

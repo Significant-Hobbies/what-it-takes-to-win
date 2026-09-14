@@ -2,6 +2,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { root, dist, origin, people, comparisonIsIndexable } from "../lib/discovery.mjs";
 import { luckCases, LUCK_FORM_LABELS } from "../data/luck-cases.mjs";
+import { turningPoints } from "../data/turning-points.mjs";
 
 const candidateCoverage = JSON.parse(
   await readFile(path.join(root, "src", "data", "candidate-coverage.json"), "utf8"),
@@ -393,6 +394,7 @@ const canonicalRoutes = [
   ...essays.map((essay) => essay.htmlPath),
   "/luck/",
   ...luckCases.map((item) => `/luck/${item.id}/`),
+  ...turningPoints.map((item) => `/turning-points/${item.id}/`),
   ...people.map((person) => `/person/${encodeURIComponent(safeId(person))}/`),
   ...indexableComparisons.map(
     (person) => `/am-i-the-next/${encodeURIComponent(safeId(person))}/`,
@@ -665,6 +667,16 @@ const essaysIndexMd = [
 await emit("essays.md", essaysIndexMd);
 
 // Luck directory Markdown mirrors — one index + one per case study.
+for (const point of turningPoints) {
+  await emit(path.join("turning-points", `${point.id}.md`), [
+    `# ${point.name} — Paths`, "", point.kind, "", point.story, "",
+    "## The choice", "", point.choice, "", "## The circumstances", "", point.chance, "",
+    "## A different position", "", point.other, "", "## Limit", "", point.limit, "",
+    `[Source](${point.url.startsWith("/") ? absolute(point.url) : point.url})`, "",
+    `[Read the HTML story](${absolute(`/turning-points/${point.id}/`)})`, "",
+  ].join("\n"));
+}
+
 const luckIndexMd = [
   "# Luck directory — Look Sideways",
   "",

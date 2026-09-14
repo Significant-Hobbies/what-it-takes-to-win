@@ -1,0 +1,73 @@
+---
+interface Props {
+  links: { href: string; label: string; active: boolean }[];
+}
+const { links } = Astro.props;
+---
+<header class="paths-masthead">
+  <div class="paths-masthead-inner">
+    <a class="paths-wordmark" href="/" aria-label="Paths home">Paths</a>
+    <nav class="paths-navigation" aria-label="Primary navigation">
+      {links.map(link => <a href={link.href} aria-current={link.active ? "page" : undefined}>{link.label}</a>)}
+    </nav>
+  </div>
+</header>
+<style>
+  .paths-masthead {
+    --header-paper: #f3f0e7;
+    --header-ink: #253b30;
+    --header-muted: #596355;
+    background: var(--header-paper);
+    color: var(--header-ink);
+  }
+  .paths-masthead-inner {
+    width: min(1264px, 100%);
+    min-height: 104px;
+    margin-inline: auto;
+    padding: 16px 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  .paths-wordmark {
+    color: var(--header-ink);
+    font: italic 44px/1 "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    letter-spacing: -.035em;
+    text-decoration: none;
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .paths-navigation { display: flex; align-items: center; gap: 32px; }
+  .paths-navigation a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    color: var(--header-muted);
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 1px;
+  }
+  .paths-navigation a[aria-current="page"] { color: var(--header-ink); text-decoration-line: underline; }
+  .paths-navigation a:hover { color: var(--header-ink); text-decoration-line: underline; }
+  .paths-wordmark:hover { color: var(--header-muted); text-decoration: none; }
+  .paths-masthead a:focus-visible { outline: 2px solid var(--header-ink); outline-offset: 5px; border-radius: 2px; }
+  @media (max-width: 1000px) {
+    .paths-masthead-inner { padding-inline: 32px; min-height: 88px; }
+    .paths-navigation { gap: 24px; }
+  }
+  @media (max-width: 680px) {
+    .paths-masthead-inner { min-height: 80px; padding: 12px 22px; gap: 16px; }
+    .paths-wordmark { font-size: 34px; }
+    .paths-navigation { gap: 10px; }
+    .paths-navigation a { min-width: 44px; justify-content: center; font-size: 13px; text-underline-offset: 6px; }
+  }
+  @media (max-width: 359px) {
+    .paths-masthead-inner { padding-inline: 16px; gap: 8px; flex-wrap: wrap; }
+    .paths-navigation { gap: 8px; flex-wrap: wrap; }
+  }
+</style>

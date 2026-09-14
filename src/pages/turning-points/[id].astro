@@ -1,0 +1,21 @@
+---
+import Base from "../../layouts/Base.astro";
+import { turningPoints } from "../../data/turning-points.mjs";
+import "../../styles/journey.css";
+export function getStaticPaths() {
+  return turningPoints.map(point => ({params:{id:point.id},props:{point}}));
+}
+const { point } = Astro.props;
+const related = turningPoints.filter(item => item.id !== point.id && item.categories.some(category => point.categories.includes(category))).slice(0,3);
+---
+<Base title={`${point.name} — Paths`} description={point.caption} canonicalPath={`/turning-points/${point.id}/`} quietShell={true} mainClass="journey-main">
+  <article class="journey event-reader">
+    <div class="journey-width">
+      <a class="reader-back" href="/#the-sequence">← Back to the turning points</a>
+      <header class="event-reader-heading"><p>{point.kind}</p><h1>{point.name}</h1><p class="reader-deck">{point.tag}</p></header>
+      <div class="reader-body"><p class="reader-story">{point.story}</p><dl class="event-mechanism"><div><dt>The choice</dt><dd>{point.choice}</dd></div><div><dt>The circumstances</dt><dd>{point.chance}</dd></div><div><dt>A different position</dt><dd>{point.other}</dd></div></dl><aside class="reader-boundary"><h2>What this does not tell us</h2><p>{point.limit}</p></aside><a class="reader-source" href={point.url} target={point.url.startsWith("https:") ? "_blank" : undefined} rel={point.url.startsWith("https:") ? "noopener noreferrer" : undefined}>{point.sourceLabel} ↗{point.url.startsWith("https:") && <span class="visually-hidden"> (opens in a new tab)</span>}</a></div>
+      <section class="related-stories"><h2>Another side of the story</h2><div>{related.map(item => <a href={`/turning-points/${item.id}/`}><span>{item.situation}</span><strong>{item.name} ↗</strong></a>)}</div></section>
+      <a class="reader-continue" href="/#another-attempt">Continue the journey: chance and attempts →</a>
+    </div>
+  </article>
+</Base>

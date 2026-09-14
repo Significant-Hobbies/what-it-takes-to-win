@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import "../styles/exhibit-finish.css";
 import "../styles/field-atlas.css";
+import SiteHeader from "../components/SiteHeader.astro";
 import peopleData from "../data/people.json";
 import { summarizeCoverage, type CoveragePerson } from "../lib/coverage";
 const peopleCount = peopleData.length;
@@ -17,24 +18,27 @@ const auditGates = [
   { label: "Matched comparison", status: "pending", note: "No control group" },
 ];
 const {
-  title = "Look Sideways",
+  title = "Paths",
   description = `Look sideways for information, never for a verdict. ${peopleData.length.toLocaleString()} documented paths showing what people brought, were handed, and were surrounded by, with perseverance and luck held apart.`,
   robots = "index,follow",
   canonicalPath,
   socialImage = "/og-image.png",
   structuredData,
   mainClass = "",
+  quietShell = false,
 } = Astro.props;
+// Older route titles remain valid inputs while the shared shell owns the current brand.
+const pageTitle = title.replaceAll("Look Sideways", "Paths");
 const canonicalUrl = Astro.site
   ? new URL(canonicalPath ?? Astro.url.pathname, Astro.site).toString()
   : null;
 const socialImageUrl = Astro.site ? new URL(socialImage, Astro.site).toString() : socialImage;
 const currentPath = Astro.url.pathname;
 const navLinks = [
-  { href: "/", label: "Journey", index: "01" },
-  { href: "/insights/", label: "Evidence", index: "02", activePrefixes: ["/insights/", "/coverage/", "/methodology/"] },
-  { href: "/essays/", label: "Articles", index: "03" },
-  { href: "/explore/", label: "Atlas", index: "04", activePrefixes: ["/explore/", "/person/", "/compare/", "/am-i-the-next/"] },
+  { href: "/", label: "Journey" },
+  { href: "/insights/", label: "Evidence", activePrefixes: ["/insights/", "/coverage/", "/methodology/"] },
+  { href: "/essays/", label: "Articles" },
+  { href: "/explore/", label: "Atlas", activePrefixes: ["/explore/", "/person/", "/compare/", "/am-i-the-next/"] },
 ];
 const isActive = (link: (typeof navLinks)[number]) =>
   link.href === "/"
@@ -46,23 +50,23 @@ const isActive = (link: (typeof navLinks)[number]) =>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>{title}</title>
+    <title>{pageTitle}</title>
     <meta name="description" content={description} />
     <meta name="robots" content={robots} />
     <meta name="theme-color" content="#eef0e7" />
     <meta name="color-scheme" content="light" />
     {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Look Sideways" />
-    <meta property="og:title" content={title} />
+    <meta property="og:site_name" content="Paths" />
+    <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
     <meta property="og:image" content={socialImageUrl} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content={`Look Sideways: ${peopleData.length.toLocaleString()} documented paths, three sources of advantage, no success formula.`} />
+    <meta property="og:image:alt" content={`Paths: ${peopleData.length.toLocaleString()} documented paths, three sources of advantage, no success formula.`} />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
+    <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={socialImageUrl} />
     {structuredData && <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />}
@@ -78,34 +82,16 @@ const isActive = (link: (typeof navLinks)[number]) =>
     )}
     <script is:inline src="/app-health-log.js" defer></script>
   </head>
-  <body>
+  <body class:list={{ "journey-shell": quietShell }}>
     <a class="skip-link" href="#main-content">Skip to content</a>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a href="/" class="brand" aria-label="Look Sideways home">
-          <span class="brand-mark" aria-hidden="true">↗</span>
-          <span class="brand-lockup">
-            <span class="brand-text">Look Sideways</span>
-            <span class="brand-subtitle">A guided argument against comparison</span>
-          </span>
-        </a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          {navLinks.map((link) => (
-            <a href={link.href} aria-current={isActive(link) ? "page" : undefined}>
-              <span>{link.index}</span>
-              {link.label}
-            </a>
-          ))}
-        </nav>
-      </div>
-    </header>
+    <SiteHeader links={quietShell ? [{ href: "/explore/", label: "Explore ↗", active: false }] : navLinks.map(link => ({ href: link.href, label: link.label, active: isActive(link) }))} />
     <main id="main-content" class:list={["container", mainClass]} tabindex="-1">
       <slot />
     </main>
-    <footer class="site-footer">
+    {quietShell ? <footer class="journey-footer"><a href="/" aria-label="Paths home">Paths</a><nav aria-label="Footer navigation"><a href="/essays/">Articles</a><a href="/methodology/">Methodology</a><a href="/coverage/">Evidence coverage</a><a href="/about/">About</a></nav><p>{peopleCount.toLocaleString()} documented lives · An independent research exhibit</p><p>Public-site analytics: PostHog and Microsoft Clarity.</p></footer> : <footer class="site-footer">
       <div class="container footer-inner">
         <div class="footer-primary">
-          <p class="footer-kicker">Look Sideways</p>
+          <p class="footer-kicker">Paths</p>
           <p class="footer-statement">The same ingredients do not make the same path.</p>
           <p class="footer-summary">
             An independent research exhibit about what people brought, what they
@@ -150,12 +136,13 @@ const isActive = (link: (typeof navLinks)[number]) =>
             title="GitHub repository"
             target="_blank"
             rel="noopener noreferrer"
-          >
+            >
             <svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor" aria-hidden="true">
               <path
                 d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
               ></path>
             </svg>
+            <span class="visually-hidden">GitHub repository</span>
           </a>
         </nav>
         <div class="footer-meta-row">
@@ -168,34 +155,20 @@ const isActive = (link: (typeof navLinks)[number]) =>
           inputs are not included in session replay.
         </p>
       </div>
-    </footer>
-    <script>
-      const primaryNav = document.querySelector<HTMLElement>(".site-nav");
-      const activeNavLink = primaryNav?.querySelector<HTMLElement>('[aria-current="page"]');
-
-      if (primaryNav && activeNavLink && window.matchMedia("(max-width: 900px)").matches) {
-        requestAnimationFrame(() => {
-          primaryNav.scrollLeft = Math.max(
-            0,
-            activeNavLink.offsetLeft - (primaryNav.clientWidth - activeNavLink.clientWidth) / 2,
-          );
-        });
-      }
-
-    </script>
-    <script
+    </footer>}
+    {!quietShell && <script
       is:inline
       src="https://sassmaker.com/project-strip.js"
       data-project="what-it-takes-to-win"
       crossorigin="anonymous"
       defer
-    ></script>
-    <script
+    ></script>}
+    {!quietShell && <script
       is:inline
       src="https://sassmaker.com/ai-chat-footer.js"
-      data-name="Look Sideways"
+      data-name="Paths"
       crossorigin="anonymous"
       defer
-    ></script>
+    ></script>}
   </body>
 </html>

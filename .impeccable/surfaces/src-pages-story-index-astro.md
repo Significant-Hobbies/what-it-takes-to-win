@@ -2,35 +2,35 @@
 version: 1
 slug: "src-pages-story-index-astro"
 primary_target: "src/pages/index.astro"
-related_targets: ["src/styles/global.css","src/styles/story.css","src/layouts/Base.astro"]
+related_targets: ["src/styles/journey.css","src/scripts/journey.ts","src/data/turning-points.mjs","src/components/ChanceLab.astro","src/pages/turning-points/[id].astro","src/layouts/Base.astro"]
 ---
 
-Mode: Persuade.
+Mode: Experience. Owner-delegated finish, issue #39, September 14, 2026.
 
-Scope: `/` is the canonical five-chapter comparison-futility journey. The
-former homepage remains at `/overview/`; `/story/` redirects to `/`.
+The homepage helps a reader stop turning another person's visible outcome into
+a verdict on their own worth. The sequence remains freely scrollable; all six
+historical chapter hashes resolve. Articles and the complete archive remain
+unchanged and freely accessible.
 
-Audience and job: A first-time reader should understand why another person's
-visible outcome cannot be turned into a judgement about their own pace or worth.
-The primary action is to continue into Evidence after completing the journey;
-Articles and the Atlas remain secondary paths.
+A sourced miniature Gates history makes the opening concrete. The jug scene
+shows inherited preparation versus preparation still to do. Three selectable
+life excerpts show access, work and encounters in three short passages each;
+full chronology and sources remain on the person pages.
 
-Proof and constraints: Use build-derived dataset summaries, name the purposeful-
-sample and no-control-group boundaries, use what they brought / were handed /
-were surrounded by everywhere, and keep perseverance evidenced and luck
-explicit and unscored. No causal claims, invented population percentiles,
-predictions, remote runtime assets, or borrowed visual motifs.
+Thirteen turning points span work, ownership/investing, place, moving,
+encounters and disruptions. The default shows six varied examples, with a
+single situation filter and an explicit show-all action. Native links open
+complete sourced reader pages with choices, circumstances, another position,
+and limits. These are dated cases, not live prices or estimates of employee
+wealth. Opposing consequences and selection limits stay visible.
 
-Direction: Kinetic Essay. A warm paper reading column and an annotated course
-share one continuous plane. Three marbles travel one scroll-scrubbed SVG course
-and trade the lead as the active chapter changes which condition matters. Sober
-book type carries the major argument; precise sans labels, ink rules, route blue,
-vermilion, and ochre carry evidence. The memorable moment is the first viewport's
-full-height moving diagram with the argument written directly beside it—never a
-dark inset, podium, dashboard, or decorative atlas rail.
+The random-draw table is an explicitly invented, independent one-in-six toy
+experiment with room for four versus twelve attempts. It is not a life model,
+personal forecast or success score. It can produce no openings, unequal
+outcomes, or more openings from fewer attempts. The closing distinguishes
+exposure, learning and survivable costs without imposing more ambition.
 
-Responsive and access: Semantic document order is complete without JavaScript.
-At tablet and phone widths the diagram moves inline above the chapters and the
-essay index stays visible. Reduced motion receives a deliberate static race
-state. Native scrolling, keyboard navigation, and selectable prose are never
-intercepted by the effect.
+No-JavaScript visitors can read all life excerpts and all turning points; the
+lab retains its explanation and labels its interactive dependency. No personal
+information is requested. Native controls, live result announcements, responsive
+layouts, keyboard focus and reduced-motion safety are required.

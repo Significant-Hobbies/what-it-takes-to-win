@@ -2,80 +2,117 @@
   "$schema": "fleet.design-review.v1",
   "version": 1,
   "project": "what-it-takes-to-win",
-  "target": "Guided comparison-futility journey across the public product",
+  "target": "Homepage guided exhibit, turning-point reader and randomness experiment",
+  "surfaceMode": "experience",
   "mode": "overhaul",
-  "register": "product",
+  "register": "brand",
   "context": {
     "product": "PRODUCT.md",
     "design": "DESIGN.md"
   },
   "direction": {
     "references": [
-      "Bruno Simon's portfolio: the interactive 3D world is the primary product canvas",
-      "The Pudding's scrollytelling practice: a sticky visual argument advances by chapter",
-      "Playdate: one distinctive mechanism gives the whole product its identity"
+      "https://paths.significanthobbies.com/essays/who-filled-the-kings-jug/",
+      "https://paths.significanthobbies.com/essays/everyone-has-lost-their-marbles/"
     ],
     "probes": [
-      {
-        "id": "marble-theatre",
-        "path": "artifacts/design/marble-direction-probes/marble-theatre-1440.png"
-      },
-      {
-        "id": "counterfactual-broadcast",
-        "path": "artifacts/design/marble-direction-probes/counterfactual-broadcast-1440.png"
-      },
-      {
-        "id": "kinetic-essay",
-        "path": "artifacts/design/marble-direction-probes/kinetic-essay-1440.png"
-      }
+      { "id": "guided-event-exhibit", "path": "artifacts/design/event-directions/gallery.html" },
+      { "id": "atlas", "path": "artifacts/design/event-directions/atlas.html" },
+      { "id": "cinema", "path": "artifacts/design/event-directions/cinema.html" }
     ],
-    "selected": "kinetic-essay",
-    "approval": "approved",
-    "before": ""
+    "selected": "guided-event-exhibit",
+    "approval": "delegated",
+    "before": "artifacts/design/documentary-followup/life-next-1440.png",
+    "library": {
+      "strategy": "upstream-first",
+      "primary": "existing-project-system",
+      "sources": [
+        "https://preline.co/docs/components/card.html",
+        "https://preline.co/docs/components/modal.html"
+      ],
+      "runtime": "existing",
+      "customReplacement": {
+        "used": false,
+        "authorization": "not-required",
+        "reason": "Existing project styling with native anchors, select, disclosures and dedicated story readers; no modal runtime or new production dependency. Upstream card/modal patterns informed direction studies, not copied proprietary code. Auxiliary design-inspiration skill was unavailable; main design workflow governed the implementation."
+      }
+    },
+    "contract": {
+      "purpose": "Help readers understand why another person's outcome cannot judge their own pace or worth.",
+      "purposeSource": "PRODUCT.md#Audience situation; owner-approved issue #39",
+      "canonicalPurpose": "A guided, credible explanation of conditions, perseverance, sequence, luck, and unobserved paths.",
+      "purposeAlignment": "match",
+      "driftNote": "",
+      "audience": "Readers who feel behind after comparing success at similar ages.",
+      "job": "Understand an unequal starting point, explore a real turning point, and leave with bounded agency.",
+      "thesis": "A compact guided exhibit makes conditions, choices and chance visible before inviting deeper reading.",
+      "system": "Midnight green, warm yellow, coral and pale sky section fields; strong sans display and book-serif moments; native controls.",
+      "signature": "A miniature life history, inherited jug preparation, situation-linked stories and an explicitly hypothetical random-draw experiment.",
+      "risk": "Breadth must not become a wealth gallery or a personal-probability simulator; keep opposing outcomes and explicit limits."
+    }
   },
   "evidence": {
     "screenshots": [
       {
         "width": 390,
-        "path": "artifacts/design/comparison-journey-build/home-390.png"
+        "path": "artifacts/design/finished-journey/home-390.png"
       },
       {
         "width": 768,
-        "path": "artifacts/design/comparison-journey-build/home-768.png"
+        "path": "artifacts/design/finished-journey/home-768.png"
       },
       {
         "width": 1440,
-        "path": "artifacts/design/comparison-journey-build/home-1440.png"
+        "path": "artifacts/design/finished-journey/home-1440.png"
+      },
+      {
+        "width": 390,
+        "path": "artifacts/design/finished-journey/gallery-390.png"
+      },
+      {
+        "width": 768,
+        "path": "artifacts/design/finished-journey/lab-768.png"
+      },
+      {
+        "width": 1440,
+        "path": "artifacts/design/finished-journey/ending-1440.png"
+      },
+      {
+        "width": 390,
+        "path": "artifacts/design/finished-journey/lab-390.png"
       }
     ],
     "projectCheck": {
-      "command": "pnpm test && pnpm run check && pnpm run format:check && pnpm run build && pnpm run audit:discovery && pnpm run audit:clarity && pnpm run audit:stats && git diff --check",
+      "command": "pnpm run ready; git diff --check",
       "status": "pass"
-    },
-    "critique": {
-      "score": 38,
-      "maximum": 40
-    },
-    "audit": {
-      "score": 19,
-      "maximum": 20
     },
     "unresolved": {
       "p0": 0,
       "p1": 0
     },
+    "critique": { "score": 36, "maximum": 40 },
+    "audit": { "score": 17, "maximum": 20 },
     "detector": {
       "posture": "advisory",
-      "findings": [
-        "CLI detector: 0 source findings across eight representative markup targets",
-        "No runtime console errors, duplicate ids, unlabeled controls, or horizontal overflow on representative routes at 390, 768, and 1440 pixels",
-        "Runtime typography warnings are advisory and concentrated in repeated archive metadata; the intentional Kinetic Essay palette, grid, and course illustration were preserved",
-        "Critique: 23/24 applicable heuristics, with zero unresolved P0 or P1 findings"
-      ]
+      "findings": [],
+      "note": "Independent B ran exactly once against src/pages/index.astro; zero findings. A 36/40, B audit 17/20; neither found P0/P1. See .impeccable/critique/2026-09-14T05-21-33Z__src-pages-index-astro.md."
+    },
+    "comprehension": {
+      "status": "pass",
+      "reviewer": "Independent assessment A, sealed before B findings",
+      "answers": {
+        "product": "A guided exhibit explaining what comparisons omit.",
+        "audience": "People feeling behind others their age.",
+        "value": "More truthful interpretation of outcomes followed by affordable ways to create opportunities.",
+        "mechanism": "Unequal starting conditions, life excerpts, turning points and a fictional probability exercise lead to bounded agency.",
+        "proof": "Linked documented histories, selection limits and an explicitly fictional probability exercise.",
+        "nextAction": "See what came before starts the journey; essays and archive remain optional."
+      },
+      "mismatches": []
     }
   },
   "ownerFeedback": {
-    "decision": "keep",
-    "note": "Owner retained the approved Kinetic Essay visual system and approved the comparison-futility journey refocus on 2026-08-26. Responsive evidence, independent critique, detector review, and project checks are complete."
+    "decision": "delegated",
+    "note": "Owner: get it to a really good finished state on your own. No additional direction approval needed. No commit, push or deploy authority."
   }
 }
