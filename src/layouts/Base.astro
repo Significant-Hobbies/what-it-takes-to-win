@@ -80,6 +80,14 @@ const isActive = (link: (typeof navLinks)[number]) =>
         onload="typeof window.clarity === 'function' && window.clarity('set', 'project_id', 'what-it-takes-to-win')"
       ></script>
     )}
+    <script
+      is:inline
+      defer
+      src="https://ingest.sassmaker.com/tracker.js"
+      data-key="ahk_pub_5bf5a9051a94105f660b28ef1e15c01915f3798773baf090b2ff4cb81625bc76"
+      data-project="app-0059a056-8d82-4404-bfd1-2939a1fe2346"
+      data-identity="persistent"
+    ></script>
     <script is:inline src="/app-health-log.js" defer></script>
   </head>
   <body class:list={{ "journey-shell": quietShell }}>
@@ -88,7 +96,7 @@ const isActive = (link: (typeof navLinks)[number]) =>
     <main id="main-content" class:list={["container", mainClass]} tabindex="-1">
       <slot />
     </main>
-    {quietShell ? <footer class="journey-footer"><a href="/" aria-label="Paths home">Paths</a><nav aria-label="Footer navigation"><a href="/essays/">Articles</a><a href="/methodology/">Methodology</a><a href="/coverage/">Evidence coverage</a><a href="/about/">About</a></nav><p>{peopleCount.toLocaleString()} documented lives · An independent research exhibit</p><p>Public-site analytics: PostHog and Microsoft Clarity.</p></footer> : <footer class="site-footer">
+    {quietShell ? <footer class="journey-footer"><a href="/" aria-label="Paths home">Paths</a><nav aria-label="Footer navigation"><a href="/essays/">Articles</a><a href="/methodology/">Methodology</a><a href="/coverage/">Evidence coverage</a><a href="/about/">About</a></nav><p>{peopleCount.toLocaleString()} documented lives · An independent research exhibit</p><p>Public-site analytics: App Health, PostHog and Microsoft Clarity.</p></footer> : <footer class="site-footer">
       <div class="container footer-inner">
         <div class="footer-primary">
           <p class="footer-kicker">Paths</p>
