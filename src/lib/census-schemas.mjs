@@ -57,6 +57,10 @@ const isIsoDate = (value) =>
 const isHttpsUrl = (value) =>
   typeof value === "string" && /^https:\/\/[^\s]+$/.test(value);
 
+function optionalStringArray(value, maxLength) {
+  return value === undefined || (Array.isArray(value) && value.every((item) => nonEmptyString(item, maxLength)));
+}
+
 // A person as first observed in a source: identity plus whatever the source
 // recorded, before enrichment or resolution.
 export function validateCandidateRecord(record) {
@@ -68,12 +72,8 @@ export function validateCandidateRecord(record) {
   }
   if (!optionalString(record.country)) problems.push("candidate.country must be a string");
   if (!optionalString(record.field)) problems.push("candidate.field must be a string");
-  if (record.aliases !== undefined && (!Array.isArray(record.aliases) || !record.aliases.every((a) => nonEmptyString(a)))) {
-    problems.push("candidate.aliases must be an array of names");
-  }
-  if (record.source_ids !== undefined && (!Array.isArray(record.source_ids) || !record.source_ids.every((s) => nonEmptyString(s, 120)))) {
-    problems.push("candidate.source_ids must be an array of source ids");
-  }
+  if (!optionalStringArray(record.aliases)) problems.push("candidate.aliases must be an array of names");
+  if (!optionalStringArray(record.source_ids, 120)) problems.push("candidate.source_ids must be an array of source ids");
   if (record.state !== undefined && !RESEARCH_STATES.includes(record.state)) {
     problems.push(`candidate.state must be one of ${RESEARCH_STATES.join("/")}`);
   }
@@ -111,6 +111,23 @@ export function validateIdentityRecord(record) {
 }
 
 // A documented outcome: what happened, when, and where it was reported.
+function validateEventSources(sources) {
+  if (!Array.isArray(sources) || sources.length === 0) {
+    return ["event.sources must list at least one source"];
+  }
+  return sources.flatMap((source, index) => {
+    const check = validateSourceRecord(source);
+    return check.valid ? [] : [`event.sources[${index}]: ${check.problems.join("; ")}`];
+  });
+}
+
+function boundedIntegerProblem(value, options) {
+  if (value === undefined || value === null) return null;
+  const number = Number(value);
+  const bounded = options.integer ? Number.isInteger(number) : Number.isFinite(number);
+  return bounded && number >= options.min && number <= options.max ? null : options.message;
+}
+
 export function validateCensusEvent(record) {
   const problems = [];
   if (!isPlainObject(record)) return { valid: false, problems: ["event must be an object"] };
@@ -118,25 +135,12 @@ export function validateCensusEvent(record) {
   if (!nonEmptyString(record.event_type, 80)) problems.push("event.event_type is required");
   if (!isIsoDate(record.event_date)) problems.push("event.event_date must be an ISO date");
   if (!nonEmptyString(record.person_name)) problems.push("event.person_name is required");
-  if (!Array.isArray(record.sources) || record.sources.length === 0) {
-    problems.push("event.sources must list at least one source");
-  } else {
-    record.sources.forEach((source, index) => {
-      const check = validateSourceRecord(source);
-      if (!check.valid) problems.push(`event.sources[${index}]: ${check.problems.join("; ")}`);
-    });
-  }
-  if (record.age_at_event !== undefined && record.age_at_event !== null) {
-    const age = Number(record.age_at_event);
-    if (!Number.isInteger(age) || age < 0 || age > 120) {
-      problems.push("event.age_at_event must be an integer age");
-    }
-  }
-  if (record.outcome_strength !== undefined) {
-    const strength = Number(record.outcome_strength);
-    if (!Number.isFinite(strength) || strength < 0 || strength > 100) {
-      problems.push("event.outcome_strength must be a number in [0, 100]");
-    }
+  problems.push(...validateEventSources(record.sources));
+  for (const problem of [
+    boundedIntegerProblem(record.age_at_event, { integer: true, min: 0, max: 120, message: "event.age_at_event must be an integer age" }),
+    boundedIntegerProblem(record.outcome_strength, { integer: false, min: 0, max: 100, message: "event.outcome_strength must be a number in [0, 100]" }),
+  ]) {
+    if (problem) problems.push(problem);
   }
   return { valid: problems.length === 0, problems };
 }
