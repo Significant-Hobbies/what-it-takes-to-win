@@ -127,6 +127,8 @@ function mergeCandidateMetadata(current, candidate, source) {
   });
   current.batch ||= candidate.batch || "";
   current.birth_year ||= Number(candidate.birth_year) || null;
+  current.country ||= candidate.country_name || candidate.country || null;
+  current.occupation ||= candidate.occupation || candidate.category || null;
   if (current.field === "Other documented fields") current.field = fieldFor(candidate, source.id);
 }
 

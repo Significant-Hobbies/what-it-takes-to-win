@@ -1,6 +1,6 @@
 # Project brief
 
-A five-minute introduction to Look Sideways for someone who has not seen it
+A five-minute introduction to Paths for someone who has not seen it
 before. No code, no build steps. The site itself is at
 [paths.significanthobbies.com](https://paths.significanthobbies.com).
 
@@ -11,27 +11,21 @@ a judgement about themselves: I am behind, I am not capable, I should have done
 this by now. That judgement uses the one thing the story kept, the visible
 finish, and throws away almost everything that produced it.
 
-Look Sideways is built for that moment. It guides the reader through why the
+Paths is built for that moment. It guides the reader through why the
 comparison cannot become a verdict, and then hands them the evidence so they can
 check the argument rather than take it on trust.
 
 ## The argument
 
-The homepage is a five-chapter essay drawn as a marble course. Three marbles run
-the same track and trade the lead as the terrain changes. The chapters are:
+The homepage opens with “Same age. Different starting lines.” It moves from
+Bill Gates' early access to computing to a metaphor about prepared support,
+three short life histories, and thirteen turning-point stories. A small random
+draw illustrates why good attempts can still have different outcomes.
 
-1. Biography starts at the end. Everyone in the archive is here because a
-   documented breakthrough already happened, so the sample is selected after
-   the outcome. The paths that did not survive are not in any biography.
-2. Ask three questions and keep them separate. What did the person bring? What
-   were they handed? What surrounded them? These are three sources of
-   advantage, and the project never adds them into one score.
-3. Effort changes a path but does not make paths equivalent. Perseverance is
-   shown only where sources document it, and the same effort lands differently
-   on different terrain.
-4. Some doors are encountered, not authored. Luck stays visible and unscored.
-5. The outcome is not portable. Compare mechanisms for information. Never
-   compare identities for a verdict.
+The argument is that work, support, constraints and chance interact. A visible
+finish does not reveal everything that preceded it. The site invites readers
+to learn from mechanisms without treating someone else's life as a verdict on
+their own. Its examples and toy experiment are not forecasts or causal proof.
 
 ## The evidence behind it
 
@@ -47,8 +41,8 @@ profiles record a headwind in what the person was handed. That figure is
 visible instead of being collapsed into zero.
 
 Outcome reach is an editorial band, not a calculation. It describes how far the
-documented career travelled, from global icon to specialist-known, and 1,671
-profiles sit in the professionally distinctive band. The archive is not only
+documented career travelled, from global icon to specialist-known, and the
+professionally distinctive band includes people beyond global icons. The archive is not only
 famous people.
 
 ## What the project refuses to do
@@ -82,14 +76,32 @@ One person built it between July and September 2026 with heavy use of coding
 agents for research batches, scoring, and implementation. Research ran as
 hundreds of small batches, each producing one JSON record per candidate with a
 strict rule: if a dated milestone by the target age could not be sourced, the
-person was marked ineligible rather than forced in. Every published figure on
-the site is derived at build time from the corpus, so the prose cannot drift
-behind the data.
+person was marked ineligible rather than forced in. Dataset totals on the main research surfaces are derived at build time.
+Editorial examples and documentation still need review when the project changes.
 
-Two research gates are complete: a blinded second coding of 16 records, and a
-reachability check of every source URL. Two remain deliberately open because
-they need people who did not build the product: first-time comprehension and a
-matched comparison study with an unsuccessful control group.
+A blinded second coding covered 16 records. Source reachability has been
+reviewed for 2,740 of 3,578 profiles; 838 remain outside that pass. Reachability
+does not establish that a source supports a claim. Independent content review,
+external comprehension testing and a matched comparison with unsuccessful
+paths remain open. Consult the [live coverage ledger](https://paths.significanthobbies.com/coverage/)
+for current status.
+
+## Podcast conversations
+
+Sarthak Agrawal, the creator of Paths, is preparing a podcast pilot about the
+work, people, constraints and unexpected turns behind a life. Guests are
+invited to challenge the project's interpretation and explain what public
+biographies miss. A polished success story is not required.
+
+An initial reply only starts a conversation. Length, audio or video format,
+recording permission and publication terms will be agreed before recording.
+Guests can skip questions and review the quotes and claims drawn from their
+conversation before publication. Their accounts will remain attributed
+first-person testimony, separate from independently sourced biography and
+interpretive scores.
+
+If you received an invitation, reply to its sender to discuss taking part.
+See [the participant introduction](https://paths.significanthobbies.com/about/#conversations).
 
 ## Where to look next
 
