@@ -365,10 +365,22 @@ export function researchPriority(record, sourceStats = new Map()) {
 export function summarizeLedger(records, sources, goldSet) {
   const byState = Object.fromEntries(RESEARCH_STATES.map((state) => [state, 0]));
   const byField = {};
+  const byCohort = {};
+  const byGeography = {};
+  const byExactAge = {};
   for (const record of records) {
     byState[record.state] = (byState[record.state] || 0) + 1;
     const field = record.field || "Unknown";
     byField[field] = (byField[field] || 0) + 1;
+    const cohort = Number(record.birth_year)
+      ? `${Math.floor(Number(record.birth_year) / 10) * 10}s`
+      : "unknown";
+    byCohort[cohort] = (byCohort[cohort] || 0) + 1;
+    const geography = record.country || "Unknown";
+    byGeography[geography] = (byGeography[geography] || 0) + 1;
+    const age = Number(record.age_at_latest_signal);
+    const ageKey = Number.isFinite(age) ? String(age) : "unknown";
+    byExactAge[ageKey] = (byExactAge[ageKey] || 0) + 1;
   }
   const goldResults = goldSet.map((entry) => {
     const record = records.find(
@@ -391,6 +403,19 @@ export function summarizeLedger(records, sources, goldSet) {
     fields: Object.entries(byField)
       .map(([label, count]) => ({ label, count }))
       .sort((left, right) => right.count - left.count),
+    cohorts: Object.entries(byCohort)
+      .map(([label, count]) => ({ label, count }))
+      .sort((left, right) => left.label.localeCompare(right.label)),
+    geographies: Object.entries(byGeography)
+      .map(([label, count]) => ({ label, count }))
+      .sort((left, right) => right.count - left.count || left.label.localeCompare(right.label)),
+    exact_ages: Object.entries(byExactAge)
+      .map(([label, count]) => ({ label, count }))
+      .sort((left, right) => {
+        const rank = (label) => (label === "unknown" ? Number.MAX_SAFE_INTEGER : Number(label));
+        return rank(left.label) - rank(right.label);
+      }),
+    stale_sources: sources.filter((source) => source.stale).length,
     queued_backlog: records.filter((record) => ["queued", "eligible", "researched"].includes(record.state)).length,
     high_priority_backlog: records.filter(
       (record) => record.state !== "published" && record.priority >= 70,

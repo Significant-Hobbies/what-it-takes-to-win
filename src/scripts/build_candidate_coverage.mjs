@@ -119,14 +119,24 @@ function newCandidateRecord(candidate, source, identityKey, name) {
 }
 
 function mergeCandidateMetadata(current, candidate, source) {
+  recordSource(current, candidate, source);
+  mergeFieldFallbacks(current, candidate, source);
+}
+
+function recordSource(current, candidate, source) {
   if (!current.source_ids.includes(source.id)) current.source_ids.push(source.id);
   current.source_records.push({
     source_id: source.id,
     candidate_id: candidate.candidate_id || candidate.person_id || candidate.slug || "",
     batch: candidate.batch || "",
   });
+}
+
+function mergeFieldFallbacks(current, candidate, source) {
   current.batch ||= candidate.batch || "";
   current.birth_year ||= Number(candidate.birth_year) || null;
+  current.country ||= candidate.country_name || candidate.country || null;
+  current.occupation ||= candidate.occupation || candidate.category || null;
   if (current.field === "Other documented fields") current.field = fieldFor(candidate, source.id);
 }
 

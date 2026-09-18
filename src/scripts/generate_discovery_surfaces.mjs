@@ -21,7 +21,7 @@ const coreSurfaces = [
     id: "overview",
     htmlPath: "/overview/",
     mdPath: "/overview.md",
-    title: "Look Sideways — research overview",
+    title: "Paths — research overview",
     summary:
       "A deeper research overview behind the three-source public model and its detailed annotations.",
   },
@@ -77,7 +77,7 @@ const coreSurfaces = [
     id: "about",
     htmlPath: "/about/",
     mdPath: "/about.md",
-    title: "About Look Sideways",
+    title: "About Paths",
     summary:
       "An independent project building an uncapped public-evidence census of unusually early achievement, not a prediction engine or leaderboard.",
   },
@@ -129,7 +129,7 @@ function personMarkdown(person, comparison = false) {
     "",
     comparison
       ? `Study ${person.name}'s mechanisms, then drop the identity comparison: conditions, sequence, and luck cannot be reproduced as a forecast.`
-      : `A documented path profile from [Look Sideways](${origin}/).`,
+      : `A documented path profile from [Paths](${origin}/).`,
     "",
     "## Key facts",
     "",
@@ -427,7 +427,7 @@ await emit(
 await emit(
   "llms.txt",
   [
-    "# Look Sideways",
+    "# Paths",
     "",
     "> A guided, evidence-bounded argument showing why another person's outcome cannot become your forecast.",
     "",
@@ -471,9 +471,9 @@ await emit(
 await emit(
   "llms-full.txt",
   [
-    "# Look Sideways — full agent index",
+    "# Paths — full agent index",
     "",
-    "Look Sideways is a guided argument and an uncapped public-evidence coverage project for documented early-breakthrough paths. It separates what people brought, were handed, and were surrounded by, then keeps perseverance, sequence, and luck visible. It is not a prediction engine, causal model, or ranking of human worth.",
+    "Paths is a guided argument and an uncapped public-evidence coverage project for documented early-breakthrough paths. It separates what people brought, were handed, and were surrounded by, then keeps perseverance, sequence, and luck visible. It is not a prediction engine, causal model, or ranking of human worth.",
     "",
     "## Explanatory model",
     "",
@@ -506,7 +506,7 @@ await emit(
 );
 
 const catalog = {
-  name: "Look Sideways",
+  name: "Paths",
   version: "1",
   url: origin,
   llms: absolute("/llms.txt"),
@@ -559,11 +559,11 @@ await emit("api/ai", `${JSON.stringify(catalog, null, 2)}\n`);
 const openapi = {
   openapi: "3.1.0",
   info: {
-    title: "Look Sideways public API",
+    title: "Paths public API",
     version: "1.0.0",
     description:
       "An independent, evidence-bounded research exhibit explaining how what people brought, were handed, and were surrounded by interacted with perseverance, sequence, and luck without forming a success recipe.",
-    contact: { name: "Look Sideways", url: origin },
+    contact: { name: "Paths", url: origin },
   },
   servers: [{ url: origin }],
   tags: [{ description: "Machine-readable public surfaces", name: "agent-surfaces" }],
@@ -652,7 +652,7 @@ for (const essay of essays) {
   await emit(essay.mdPath.replace(/^\//, ""), essayMd);
 }
 const essaysIndexMd = [
-  "# Essays — Look Sideways",
+  "# Essays — Paths",
   "",
   "Long-form writing that sits alongside the dataset — on advantage, abstraction, and the invisible infrastructure of achievement.",
   "",
@@ -678,7 +678,7 @@ for (const point of turningPoints) {
 }
 
 const luckIndexMd = [
-  "# Luck directory — Look Sideways",
+  "# Luck directory — Paths",
   "",
   "Nine sourced cases of luck that landed on ordinary people: place, timing, a forced door, a visa draw. Every figure is sourced. None of it is a method.",
   "",

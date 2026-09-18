@@ -12,6 +12,7 @@ top-level file, it points there instead of repeating it.
 | Page | Read it when |
 |---|---|
 | [Project brief](brief.md) | You want the whole project in five minutes, no code required |
+| [Podcast outreach](podcast-outreach.md) | You are preparing a personal guest invitation and interview questions |
 | [FAQ](faq.md) | You have a specific question about the claims, the data, or the site |
 | [Glossary](glossary.md) | A term such as "outcome reach" or "comparison breaker" is unclear |
 
