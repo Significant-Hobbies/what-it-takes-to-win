@@ -1,6 +1,6 @@
 /**
  * Cloudflare Pages Functions middleware — agent SEO surfaces for
- * paths.significanthobbies.com (Look Sideways).
+ * paths.significanthobbies.com (Paths).
  * Handles JSON error responses, Vary: Accept, and agent-friendly 404s.
  *
  * The machine-readable surfaces themselves — /api/ai, /openapi.json, /llms.txt,

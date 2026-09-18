@@ -78,7 +78,7 @@ if (missingMarkdown === 0) {
 
 const llms = await read("llms.txt");
 if (
-  llms.startsWith("# Look Sideways")
+  llms.startsWith("# Paths")
   && llms.includes(`${origin}/roi.md`)
   && !llms.includes("<!doctype")
 ) {
@@ -100,7 +100,7 @@ if (
 
 const llmsFull = await read("llms-full.txt");
 if (
-  llmsFull.startsWith("# Look Sideways — full agent index")
+  llmsFull.startsWith("# Paths — full agent index")
   && llmsFull.includes("## Agent-readable collections")
   && !llmsFull.includes("<!doctype")
 ) {
