@@ -2,6 +2,8 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import {
   AGE_CONFIDENCE,
+  CALIBRATION_GATE_STATES,
+  CENSUS_SCHEMA_VERSION,
   RESEARCH_STATES,
   validateAgeConfidence,
   validateCalibrationGate,
@@ -90,6 +92,11 @@ test("age confidence and research states are closed enums", () => {
   assert.equal(validateAgeConfidence("precise-ish").valid, false);
   for (const value of RESEARCH_STATES) assert.equal(validateResearchState(value).valid, true);
   assert.equal(validateResearchState("done").valid, false);
+});
+
+test("schema version and gate states are pinned contract constants", () => {
+  assert.equal(CENSUS_SCHEMA_VERSION, "fleet.census-schemas.v1");
+  assert.deepEqual(CALIBRATION_GATE_STATES, ["pass", "fail", "uncalibrated"]);
 });
 
 test("calibration gates must decide from a denominator or abstain with a reason", () => {
