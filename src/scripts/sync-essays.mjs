@@ -39,21 +39,26 @@ const parseFrontmatter = (raw) => {
   return { data, body: match[2] };
 };
 
+// skip = false | "heading" | "outline" — a `**Outline:**` block ends at `---`,
+// a skipped heading section ends at the next heading. Returns [nextSkip, keep].
+const transition = (line, skip) => {
+  if (/^# /.test(line)) return [false, false]; // drafts may carry an h1; the layout renders its own
+  if (HEADING.test(line)) {
+    const drop = SKIP_HEADING.test(line.replace(/^#+\s*/, ""));
+    return [drop ? "heading" : false, !drop];
+  }
+  if (!skip && /^\*\*Outline:?\*\*/.test(line.trim())) return ["outline", false];
+  if (line.trim() === "---") return [skip === "outline" ? false : skip, false];
+  return [skip, !skip];
+};
+
 const stripWorkingSections = (body) => {
   const kept = [];
-  // skip = false | "heading" | "outline" — a `**Outline:**` block ends at `---`,
-  // a skipped heading section ends at the next heading.
   let skip = false;
   for (const line of body.split("\n")) {
-    if (/^# /.test(line)) { skip = false; continue; } // drafts may carry an h1; the layout renders its own
-    if (HEADING.test(line)) {
-      skip = SKIP_HEADING.test(line.replace(/^#+\s*/, "")) ? "heading" : false;
-      if (!skip) kept.push(line);
-      continue;
-    }
-    if (!skip && /^\*\*Outline:?\*\*/.test(line.trim())) { skip = "outline"; continue; }
-    if (line.trim() === "---") { if (skip === "outline") skip = false; continue; }
-    if (!skip) kept.push(line);
+    const [next, keep] = transition(line, skip);
+    skip = next;
+    if (keep) kept.push(line);
   }
   return kept
     .join("\n")

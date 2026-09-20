@@ -4,7 +4,7 @@ title: "The problem with turning success into a single score"
 description: "Why ranking human paths with a single success score fails. Explore evidence from 3,578 early-breakthrough paths that separates conditions, perseverance, and luck."
 date: "2026-09-20"
 author: "Sarthak Agrawal"
-readingMinutes: 7
+readingMinutes: 6
 canonicalPath: "/essays/the-problem-with-turning-success-into-a-single-score/"
 ---
 
@@ -24,7 +24,6 @@ This arithmetic is broken. It assumes that conditions, effort, and luck are inte
 
 The single score exists primarily to rank people. It serves the observer's need for hierarchy, not understanding. When we reduce a path to a percentile, we weaponize their outcome against those who started from a different position.
 
-
 ## Disaggregating the Starting Line
 
 To replace the single score, we must separate the variables. Rather than a monolithic metric of success, the paths of the 3,578 individuals in the dataset can be read through three distinct, non-additive condition factors: what the person brought, what they were handed, and what surrounded them.
@@ -42,7 +41,6 @@ This factor does not measure human worth; it measures the initial tools availabl
 The second factor addresses economic, familial, and network inheritances. The archive reveals stark contrasts in this dimension. Among the 3,578 individuals, 458 faced documented headwinds in what they were handed, starting from positions of economic scarcity or social exclusion.
 
 Separating this factor from a general success metric is critical. It clarifies the distinction between built leverage and starting advantage. When an individual achieves a breakthrough, identifying what they were handed prevents the observer from attributing the entire outcome purely to merit.
-
 
 ### What Surrounded Them
 

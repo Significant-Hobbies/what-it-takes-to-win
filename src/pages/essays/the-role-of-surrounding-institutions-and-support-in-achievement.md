@@ -79,4 +79,3 @@ Understanding this does not diminish the work that was done. It still takes imme
 ## Next action
 
 Explore the reality of surrounding support directly. Visit the [Explore atlas](/explore/) to filter paths by outcome reach and cohort. Select any profile, such as a field-leading founder or athlete, and examine their specific `catalytic_ecosystem_score`. Look at the condition factors side-by-side to see exactly what surrounded the breakthrough, and read the [Evidence](/insights/) that documents the tools, peers, and institutions that made the outcome possible.
-

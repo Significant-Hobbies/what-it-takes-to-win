@@ -30,7 +30,6 @@ Consider a bounded 64-to-1 thought experiment. Sixty-four people start a difficu
 
 When you compare yourself to that final survivor based solely on perseverance, you are judging your own effort against an outcome that was shaped by a survivor selection process. You are comparing yourself to the streak, not just the effort.
 
-
 ## What counts: What you brought
 
 The first category of credible evidence we isolate is what a person brought to their path. This includes the internal capacities, learned skills, and specific leverage they built or converted over time.
@@ -58,7 +57,6 @@ The third category is what surrounded a person. This encompasses the macroeconom
 What surrounds you dictates the friction of your path. You do not control what surrounds you; you can only navigate it. We assign a score from −1 to 3 for the "surrounded" condition. Across all 3,578 paths in the archive, we found only 5 instances of documented headwinds in the "surrounded" category for those who broke through early. This indicates that extreme environmental friction is rarely overcome in early-breakthrough timelines.
 
 If you compare your outcome in a high-friction environment to someone else's outcome in a low-friction environment, you are misreading the evidence. The timeline difference is a reflection of the friction.
-
 
 ## Leaving luck unscored
 
@@ -89,4 +87,3 @@ Comparison fails as a verdict because the variables are too complex, the unobser
 ## Next action
 
 Stop running identical-effort comparisons against visible survivors. Pick one person whose path you have previously used to judge your own pace. Use the Compare tool to map their specific "brought, handed, and surrounded" conditions against your own. Look carefully at the variables you do not share, and use that concrete evidence to drop the comparison.
-

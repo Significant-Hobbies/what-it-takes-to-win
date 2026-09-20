@@ -36,8 +36,6 @@ Crucially, these three factors are never summed into a single score. A total sco
 
 Sequence interacts with these three factors constantly. What surrounded you at age 18 dictates the immediate utility of what you were handed at age 16. A financial gift (what you were handed) has a profoundly different structural impact during an era of expanding industries (what surrounded you) than it does during a geographic contraction. When you compare your progress against one of the 1,670 professionally distinctive paths identified in the archive, you are often looking at a sequence where these three factors aligned. You cannot judge your own pace without auditing your own three factors and acknowledging any of the 458 headwinds you faced that the other person bypassed.
 
-*(Internal-link suggestion: Link "three-source structure" to the `/insights/` evidence room to provide readers with the detailed methodology.)*
-
 ## The four forms of luck that shape sequences
 
 Luck is frequently treated as a generic force, but it operates through highly specific mechanisms. Our project published a luck directory featuring nine sourced ordinary-person cases designed strictly to isolate these mechanisms. Through this lens, we group luck into four forms: structural, encounter, event, and variance.
@@ -45,8 +43,6 @@ Luck is frequently treated as a generic force, but it operates through highly sp
 Structural luck is deeply embedded in your geography, era, or systemic global policies—for instance, winning a highly contested visa draw. Encounter luck involves the unpredictable collision with individuals who open doors that would otherwise remain bolted shut. Event luck is a discrete external shock, such as a sudden policy shift that instantaneously creates demand for a skill you have been building. Variance luck is the favorable outcome of repeated probabilistic events, where successfully surviving a high-risk scenario allows you to continue playing the game.
 
 When comparing paths, we often consciously ignore luck because it cannot be readily replicated by effort. Yet, the sequence of a career is largely steered by when and how these four forms of luck materialize. If a person experiences positive encounter luck early in their journey, they gain access to networks that subsequently increase their variance luck. Identical choices made by two different people will yield entirely different outcomes based on the luck that intercedes directly between the choice and the final result. Therefore, comparing your current state to another's without accounting for their unscored luck creates a false equivalence.
-
-*(Internal-link suggestion: Link "luck directory" directly to the `/luck/` field plate for concrete examples of ordinary-person luck cases.)*
 
 ## Survivorship bias and the bounded 64-to-1 thought experiment
 
@@ -69,5 +65,3 @@ When you see a trajectory that resembles yours, use it strictly to gather inform
 Stop attempting to sum up your intrinsic worth by comparing your ongoing timeline to someone else’s curated highlight reel. The next time you feel the friction of comparison, pause and map out the invisible variables. Audit the three condition factors: what you brought, what you were handed, and what currently surrounds you. Identify any structural headwinds that might be slowing your pace.
 
 Use the Explore atlas to inspect qualitative outcome reach and read the raw, unscored evidence of other complex paths. Look sideways to understand the intricate mechanics of advantage, to gather evidence on exactly how doors open, and to properly study trajectories—but never look sideways for a verdict on yourself.
-
-*(Internal-link suggestion: Link "Explore atlas" to the `/explore/` page to encourage immediate exploration of the evidence.)*
