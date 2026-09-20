@@ -1,4 +1,4 @@
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { root, dist, origin, people, comparisonIsIndexable } from "../lib/discovery.mjs";
 import { luckCases, LUCK_FORM_LABELS } from "../data/luck-cases.mjs";
@@ -370,24 +370,30 @@ async function emit(relativePath, contents) {
 }
 
 const indexableComparisons = people.filter(comparisonIsIndexable);
-const essays = [
-  {
-    id: "everyone-has-lost-their-marbles",
-    htmlPath: "/essays/everyone-has-lost-their-marbles/",
-    mdPath: "/essays/everyone-has-lost-their-marbles.md",
-    title: "Everyone Has Lost Their Marbles",
-    summary:
-      "A visual argument about survivor selection, perseverance, luck, and why another person's visible finish cannot become your forecast.",
-  },
-  {
-    id: "who-filled-the-kings-jug",
-    htmlPath: "/essays/who-filled-the-kings-jug/",
-    mdPath: "/essays/who-filled-the-kings-jug.md",
-    title: "Who Filled the King's Jug?",
-    summary:
-      "Privilege is having more of life prepared for you in advance — a private, high-level interface to the world that lets some people begin near the final step.",
-  },
-];
+const essaysDir = path.join(root, "src", "pages", "essays");
+const essays = (
+  await Promise.all(
+    (await readdir(essaysDir))
+      .filter((file) => file.endsWith(".md"))
+      .map(async (file) => {
+        const raw = await readFile(path.join(essaysDir, file), "utf8");
+        const fm = raw.match(/^---\n([\s\S]*?)\n---/)?.[1] ?? "";
+        const field = (name) =>
+          fm.match(new RegExp(`^${name}:\\s*"?(.*?)"?\\s*$`, "m"))?.[1] ?? "";
+        const id = file.replace(/\.md$/, "");
+        return {
+          id,
+          htmlPath: `/essays/${id}/`,
+          mdPath: `/essays/${id}.md`,
+          title: field("title"),
+          summary: field("description"),
+          date: field("date"),
+        };
+      }),
+  )
+).sort(
+  (a, b) => b.date.localeCompare(a.date) || a.title.localeCompare(b.title),
+);
 const canonicalRoutes = [
   ...coreSurfaces.map((surface) => surface.htmlPath),
   "/essays/",
