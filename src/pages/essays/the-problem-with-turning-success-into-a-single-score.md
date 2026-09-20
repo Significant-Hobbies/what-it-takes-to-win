@@ -24,7 +24,6 @@ This arithmetic is broken. It assumes that conditions, effort, and luck are inte
 
 The single score exists primarily to rank people. It serves the observer's need for hierarchy, not understanding. When we reduce a path to a percentile, we weaponize their outcome against those who started from a different position.
 
-*(Internal link suggestion: Link "review of 3,578 early-breakthrough paths" to the [/explore/](/explore/) atlas.)*
 
 ## Disaggregating the Starting Line
 
@@ -44,7 +43,6 @@ The second factor addresses economic, familial, and network inheritances. The ar
 
 Separating this factor from a general success metric is critical. It clarifies the distinction between built leverage and starting advantage. When an individual achieves a breakthrough, identifying what they were handed prevents the observer from attributing the entire outcome purely to merit.
 
-*(Internal link suggestion: Link "distinction between built leverage and starting advantage" to the [/insights/](/insights/) page.)*
 
 ### What Surrounded Them
 

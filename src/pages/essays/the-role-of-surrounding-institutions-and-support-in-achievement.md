@@ -80,18 +80,3 @@ Understanding this does not diminish the work that was done. It still takes imme
 
 Explore the reality of surrounding support directly. Visit the [Explore atlas](/explore/) to filter paths by outcome reach and cohort. Select any profile, such as a field-leading founder or athlete, and examine their specific `catalytic_ecosystem_score`. Look at the condition factors side-by-side to see exactly what surrounded the breakthrough, and read the [Evidence](/insights/) that documents the tools, peers, and institutions that made the outcome possible.
 
-<!--
-Source notes (do not publish):
-This draft relies on the authoritative models documented in:
-- `src/data/methodology.md`: Public explanatory model (brought, handed, surrounded), the non-summing condition factors (catalytic_ecosystem_score), the limitations of comparison, structural vs. encounter luck, and the tier distributions.
-- `src/data/data_dictionary.csv`: Definitions of `catalytic_ecosystem_score` (what surrounded them: place, timing, institutions, and peer group. Scale -1 to 3).
-- `src/data/advantage_taxonomy.csv`: Definitions and scoring criteria for `frontier_geography_ecosystem_score`, `elite_institution_performance_pipeline_score`, `exceptional_peer_cofounder_sibling_score`, `early_online_platform_community_score`, `dedicated_mentor_coach_tutor_score`, and `rare_early_tools_facilities_score`.
-- `src/data/luck-cases.mjs`: Reference to specific luck cases (e.g., `bangalore-it-boom`, `h1b-visa-lottery`) to illustrate structural and encounter luck.
-- `PRODUCT.md`: Guidelines for the brand register (independent public research exhibit), voice (direct, humane, specific numbers, short statements), and anti-references (no motivational claims, no generic filler).
-- `DESIGN.md`: The requirement to focus on evidence, human paths without summing scores, and keeping the limits of comparison in view.
-
-Limitations applied:
-- The article explicitly avoids claiming causal effects or guaranteeing success, reflecting the warnings in `methodology.md`.
-- It does not calculate a final score, as summing condition factors is prohibited.
-- It refrains from using generic motivational language.
--->

@@ -30,7 +30,6 @@ Consider a bounded 64-to-1 thought experiment. Sixty-four people start a difficu
 
 When you compare yourself to that final survivor based solely on perseverance, you are judging your own effort against an outcome that was shaped by a survivor selection process. You are comparing yourself to the streak, not just the effort.
 
-*(Internal link suggestion: Link to the 'Equal-effort / different-distance exhibit' on the Insights page.)*
 
 ## What counts: What you brought
 
@@ -60,7 +59,6 @@ What surrounds you dictates the friction of your path. You do not control what s
 
 If you compare your outcome in a high-friction environment to someone else's outcome in a low-friction environment, you are misreading the evidence. The timeline difference is a reflection of the friction.
 
-*(Internal link suggestion: Link to the 'Timing and Market Conditions' section of the Explore atlas.)*
 
 ## Leaving luck unscored
 
@@ -92,4 +90,3 @@ Comparison fails as a verdict because the variables are too complex, the unobser
 
 Stop running identical-effort comparisons against visible survivors. Pick one person whose path you have previously used to judge your own pace. Use the Compare tool to map their specific "brought, handed, and surrounded" conditions against your own. Look carefully at the variables you do not share, and use that concrete evidence to drop the comparison.
 
-*(Internal link suggestion: Link to the `/compare/` tool to run a static comparison breaker.)*
