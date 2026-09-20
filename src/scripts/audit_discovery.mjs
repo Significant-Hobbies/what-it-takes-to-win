@@ -41,7 +41,8 @@ const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
 );
 const indexableComparisons = people.filter(comparisonIsIndexable);
 const coreSurfaceCount = 10;
-const essayCount = 3; // essays index + 2 published essays
+const essayPages = (await readdir(path.join(dist, "essays"), { withFileTypes: true })).filter((entry) => entry.isDirectory()).length;
+const essayCount = 1 + essayPages; // essays index + one page per essay
 const luckCount = 1 + luckCases.length; // luck index + one page per case study
 const expectedSitemapCount = coreSurfaceCount + essayCount + luckCount + turningPoints.length + people.length + indexableComparisons.length;
 if (

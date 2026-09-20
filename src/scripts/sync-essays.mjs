@@ -1,0 +1,102 @@
+#!/usr/bin/env node
+// Convert SEO article drafts from marketing/articles/ into essay pages.
+//
+// Usage: node src/scripts/sync-essays.mjs <drafts-dir>
+//
+// <drafts-dir> contains flat *.md files with marketing-draft frontmatter
+// (title, slug, target_query, search_intent, meta_title, meta_description)
+// and working sections (Outline, Internal-Link Suggestions, Source Notes)
+// that must never be published. Output lands in src/pages/essays/ using the
+// Essay layout contract (title, description, date, author, readingMinutes,
+// canonicalPath).
+
+import { readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { join, basename } from "node:path";
+
+const [draftsDir] = process.argv.slice(2);
+if (!draftsDir) {
+  console.error("usage: node src/scripts/sync-essays.mjs <drafts-dir>");
+  process.exit(1);
+}
+
+const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+const HEADING = /^#{1,4} /;
+const SKIP_HEADING = /^(outline|internal[- ]link\w*|source notes)\b/i;
+const INLINE_NOTE = /\*?\[Internal[- ]Link\s*Suggestions?:[^\]]*\]\*?/gi;
+const INLINE_NOTE_LINE = /^[ \t]*\*?\(\s*Internal[- ]Link\s*Suggestions?:.*\)\s*\*?[ \t]*$/gim;
+const DRAFT_COMMENT = /<!--[\s\S]*?(?:source notes|do not publish)[\s\S]*?-->/gi;
+const today = new Date().toISOString().slice(0, 10);
+const outDir = new URL("../pages/essays/", import.meta.url).pathname;
+
+const parseFrontmatter = (raw) => {
+  const match = raw.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
+  if (!match) throw new Error("missing frontmatter");
+  const data = {};
+  for (const line of match[1].split("\n")) {
+    const m = line.match(/^([a-z_]+):\s*(.*)$/);
+    if (m) data[m[1]] = m[2].trim().replace(/^"(.*)"$/, "$1");
+  }
+  return { data, body: match[2] };
+};
+
+// skip = false | "heading" | "outline" — a `**Outline:**` block ends at `---`,
+// a skipped heading section ends at the next heading. Returns [nextSkip, keep].
+const transition = (line, skip) => {
+  if (/^# /.test(line)) return [false, false]; // drafts may carry an h1; the layout renders its own
+  if (HEADING.test(line)) {
+    const drop = SKIP_HEADING.test(line.replace(/^#+\s*/, ""));
+    return [drop ? "heading" : false, !drop];
+  }
+  if (!skip && /^\*\*Outline:?\*\*/.test(line.trim())) return ["outline", false];
+  if (line.trim() === "---") return [skip === "outline" ? false : skip, false];
+  return [skip, !skip];
+};
+
+const stripWorkingSections = (body) => {
+  const kept = [];
+  let skip = false;
+  for (const line of body.split("\n")) {
+    const [next, keep] = transition(line, skip);
+    skip = next;
+    if (keep) kept.push(line);
+  }
+  return kept
+    .join("\n")
+    .replace(DRAFT_COMMENT, "")
+    .replace(INLINE_NOTE_LINE, "")
+    .replace(INLINE_NOTE, "")
+    .replace(/[ \t]+\n/g, "\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+};
+
+const yamlString = (value) => `"${value.replace(/\\/g, "\\\\").replace(/"/g, '\\"')}"`;
+
+let count = 0;
+for (const file of readdirSync(draftsDir).filter((f) => f.endsWith(".md")).sort()) {
+  const { data, body } = parseFrontmatter(readFileSync(join(draftsDir, file), "utf8"));
+  const slug = (data.slug || basename(file, ".md")).split("/").filter(Boolean).pop();
+  if (!data.title?.trim()) throw new Error(`${file}: missing title`);
+  if (!data.meta_description?.trim()) throw new Error(`${file}: missing meta_description`);
+  if (!SLUG.test(slug)) throw new Error(`${file}: bad slug ${slug}`);
+  const clean = stripWorkingSections(body);
+  if (!clean) throw new Error(`${file}: empty body after stripping working sections`);
+  const readingMinutes = Math.max(1, Math.ceil(clean.split(/\s+/).length / 220));
+  const out = [
+    "---",
+    "layout: ../../layouts/Essay.astro",
+    `title: ${yamlString(data.title)}`,
+    `description: ${yamlString(data.meta_description)}`,
+    `date: "${today}"`,
+    'author: "Sarthak Agrawal"',
+    `readingMinutes: ${readingMinutes}`,
+    `canonicalPath: "/essays/${slug}/"`,
+    "---",
+    "",
+    clean,
+    "",
+  ].join("\n");
+  writeFileSync(join(outDir, `${slug}.md`), out);
+  count++;
+}
+console.log(`Synced ${count} essay(s) into src/pages/essays/`);

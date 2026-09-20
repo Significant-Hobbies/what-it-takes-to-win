@@ -1,28 +1,30 @@
 ---
 import Base from "../../layouts/Base.astro";
 
-const essays = [
-  {
-    href: "/essays/everyone-has-lost-their-marbles/",
-    title: "Everyone Has Lost Their Marbles",
-    subtitle:
-      "Trajectories, comparison, and the bounded agency that actually runs a life.",
-    date: "2026-08-18",
-    readingMinutes: 8,
-    description:
-      "Comparison as judgment is logically broken — it removes nearly every cause that produced the result, keeps only the visible score, and then pretends the score explains something. It does not.",
-  },
-  {
-    href: "/essays/who-filled-the-kings-jug/",
-    title: "Who Filled the King's Jug?",
-    subtitle:
-      "Privilege, abstraction, and the invisible work behind accomplishment.",
-    date: "2026-08-08",
-    readingMinutes: 6,
-    description:
-      "Privilege is having more of life prepared for you in advance — a private, high-level interface to the world that lets some people begin near the final step.",
-  },
-];
+interface EssayFrontmatter {
+  title: string;
+  subtitle?: string;
+  description: string;
+  date: string;
+  readingMinutes: number;
+}
+
+const essays = Object.entries(
+  import.meta.glob<{ frontmatter: EssayFrontmatter }>("./*.md", {
+    eager: true,
+  }),
+)
+  .map(([file, mod]) => ({
+    href: `/essays/${file.replace(/^\.\//, "").replace(/\.md$/, "")}/`,
+    title: mod.frontmatter.title,
+    subtitle: mod.frontmatter.subtitle,
+    date: mod.frontmatter.date,
+    readingMinutes: mod.frontmatter.readingMinutes,
+    description: mod.frontmatter.description,
+  }))
+  .sort(
+    (a, b) => b.date.localeCompare(a.date) || a.title.localeCompare(b.title),
+  );
 
 const formatDate = (iso: string) =>
   new Date(`${iso}T00:00:00`).toLocaleDateString("en-US", {
@@ -68,7 +70,7 @@ const formatDate = (iso: string) =>
               <h3>
                 <a href={essay.href}>{essay.title}</a>
               </h3>
-              <p class="essay-card-subtitle">{essay.subtitle}</p>
+              {essay.subtitle && <p class="essay-card-subtitle">{essay.subtitle}</p>}
               <p class="essay-card-desc">{essay.description}</p>
             </div>
             <a class="essay-card-link" href={essay.href} aria-label={`Read ${essay.title}`}>
