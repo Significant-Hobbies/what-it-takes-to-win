@@ -101,7 +101,7 @@ const isActive = (link: (typeof navLinks)[number]) =>
     <main id="main-content" class:list={["container", mainClass]} tabindex="-1">
       <slot />
     </main>
-    {quietShell ? <footer class="journey-footer"><a href="/" aria-label="Paths home">Paths</a><nav aria-label="Footer navigation"><a href="/essays/">Articles</a><a href="/methodology/">Methodology</a><a href="/coverage/">Evidence coverage</a><a href="/about/">About</a></nav><p>{peopleCount.toLocaleString()} documented lives · An independent research exhibit</p><p>Public-site analytics: App Health, PostHog and Microsoft Clarity.</p></footer> : <footer class="site-footer">
+    {quietShell ? <footer class="journey-footer"><a href="/" aria-label="Paths home">Paths</a><nav aria-label="Footer navigation"><a href="/essays/">Articles</a><a href="/methodology/">Methodology</a><a href="/coverage/">Evidence coverage</a><a href="/about/">About</a><a href="https://github.com/Significant-Hobbies/what-it-takes-to-win" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav><p>{peopleCount.toLocaleString()} documented lives · An independent research exhibit</p><p>Public-site analytics: App Health, PostHog and Microsoft Clarity.</p></footer> : <footer class="site-footer">
       <div class="container footer-inner">
         <div class="footer-primary">
           <p class="footer-kicker">Paths</p>
