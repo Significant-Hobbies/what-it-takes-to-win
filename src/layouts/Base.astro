@@ -26,6 +26,7 @@ const {
   structuredData,
   mainClass = "",
   quietShell = false,
+  sharedFooter = !quietShell,
 } = Astro.props;
 // Older route titles remain valid inputs while the shared shell owns the current brand.
 const pageTitle = title.replaceAll("Look Sideways", "Paths");
@@ -169,14 +170,14 @@ const isActive = (link: (typeof navLinks)[number]) =>
         </p>
       </div>
     </footer>}
-    {!quietShell && <script
+    {sharedFooter && <script
       is:inline
       src="https://sassmaker.com/project-strip.js"
       data-project="what-it-takes-to-win"
       crossorigin="anonymous"
       defer
     ></script>}
-    {!quietShell && <script
+    {sharedFooter && <script
       is:inline
       src="https://sassmaker.com/ai-chat-footer.js"
       data-name="Paths"
