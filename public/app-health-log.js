@@ -23,7 +23,25 @@
     var eventTarget = e.target && e.target.closest ? e.target.closest("[data-health-event]") : null;
     var eventName = eventTarget && eventTarget.getAttribute("data-health-event");
     if (eventName && /^[a-z][a-z0-9_.:-]{0,63}$/.test(eventName) && window.appHealth && typeof window.appHealth.track === "function") {
+      var link = eventTarget.closest("a[href]");
+      var destination = link && new URL(link.href, location.href);
+      var sameTabNavigation = link && destination.origin === location.origin &&
+        destination.pathname !== location.pathname && e.button === 0 &&
+        !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey &&
+        link.target !== "_blank" && !link.hasAttribute("download");
+      if (sameTabNavigation) e.preventDefault();
       window.appHealth.track(eventName);
+      if (sameTabNavigation) {
+        var navigated = false;
+        var navigate = function () {
+          if (navigated) return;
+          navigated = true;
+          location.assign(link.href);
+        };
+        setTimeout(navigate, 4500);
+        try { Promise.resolve(window.appHealth.flush && window.appHealth.flush()).catch(function () {}).finally(navigate); }
+        catch (_) { navigate(); }
+      }
     }
     var t = e.target && e.target.closest ? e.target.closest("[data-log]") : null;
     var name = t && t.getAttribute("data-log");
