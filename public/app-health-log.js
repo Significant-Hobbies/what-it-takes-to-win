@@ -20,6 +20,11 @@
     send("form.submitted", { title: f.id || f.getAttribute("name") || f.getAttribute("action") || "form", props: { page: location.pathname } });
   }, true);
   document.addEventListener("click", function (e) {
+    var eventTarget = e.target && e.target.closest ? e.target.closest("[data-health-event]") : null;
+    var eventName = eventTarget && eventTarget.getAttribute("data-health-event");
+    if (eventName && /^[a-z][a-z0-9_.:-]{0,63}$/.test(eventName) && window.appHealth && typeof window.appHealth.track === "function") {
+      window.appHealth.track(eventName);
+    }
     var t = e.target && e.target.closest ? e.target.closest("[data-log]") : null;
     var name = t && t.getAttribute("data-log");
     if (name) send(name, { title: (t.textContent || "").trim().slice(0, 120) || name, props: { page: location.pathname } });

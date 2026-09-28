@@ -90,3 +90,12 @@ test("the journey renders before JavaScript and never asks for a personal score"
   assert.match(page, /everyone-has-lost-their-marbles/);
   assert.match(page, /structuredData=\{structuredData\}/);
 });
+
+test("primary public navigation emits only named App Health CTA events", () => {
+  const logger = readFileSync(new URL("../public/app-health-log.js", import.meta.url), "utf8");
+  assert.match(page, /href="#the-start" data-health-event="journey_continued"/);
+  assert.match(page, /href="\/explore\/" data-health-event="archive_opened"/);
+  assert.match(logger, /window\.appHealth\.track\(eventName\)/);
+  assert.match(logger, /\[data-health-event\]/);
+  assert.doesNotMatch(logger, /eventTarget\.textContent|eventTarget\.href/);
+});
