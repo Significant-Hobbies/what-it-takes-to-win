@@ -1,7 +1,10 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "root": true,
-  "extends": ["ultracite/biome/astro", "ultracite/biome/core"],
+  "extends": [
+    "./vendor/ultracite/7.11.0/config/biome/astro/biome.jsonc",
+    "./vendor/ultracite/7.11.0/config/biome/core/biome.jsonc"
+  ],
   "formatter": {
     "enabled": false
   },
