@@ -2,7 +2,9 @@
 import "../styles/global.css";
 import "../styles/exhibit-finish.css";
 import "../styles/field-atlas.css";
+import "../styles/precise-footer.css";
 import SiteHeader from "../components/SiteHeader.astro";
+import PrecisePathsFooter from "../components/PrecisePathsFooter.astro";
 import peopleData from "../data/people.json";
 import { summarizeCoverage, type CoveragePerson } from "../lib/coverage";
 const peopleCount = peopleData.length;
@@ -102,85 +104,95 @@ const isActive = (link: (typeof navLinks)[number]) =>
     <main id="main-content" class:list={["container", mainClass]} tabindex="-1">
       <slot />
     </main>
-    {quietShell ? <footer class="journey-footer"><a href="/" aria-label="Paths home">Paths</a><nav aria-label="Footer navigation"><a href="/essays/">Articles</a><a href="/methodology/">Methodology</a><a href="/coverage/">Evidence coverage</a><a href="/about/">About</a><a href="https://github.com/Significant-Hobbies/what-it-takes-to-win" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav><p>{peopleCount.toLocaleString()} documented lives · An independent research exhibit</p><p>Public-site analytics: App Health, PostHog and Microsoft Clarity.</p></footer> : <footer class="site-footer">
-      <div class="container footer-inner">
-        <div class="footer-primary">
-          <p class="footer-kicker">Paths</p>
-          <p class="footer-statement">The same ingredients do not make the same path.</p>
-          <p class="footer-summary">
-            An independent research exhibit about what people brought, what they
-            were handed, what surrounded them, perseverance, luck, and the limits
-            of comparison.
+    {sharedFooter ? (
+      <PrecisePathsFooter quietShell={quietShell} peopleCount={peopleCount} auditGates={auditGates} />
+    ) : quietShell ? (
+      <footer class="journey-footer">
+        <a href="/" aria-label="Paths home">Paths</a>
+        <nav aria-label="Footer navigation">
+          <a href="/essays/">Articles</a>
+          <a href="/methodology/">Methodology</a>
+          <a href="/coverage/">Evidence coverage</a>
+          <a href="/about/">About</a>
+          <a href="https://github.com/Significant-Hobbies/what-it-takes-to-win" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </nav>
+        <p>{peopleCount.toLocaleString()} documented lives · An independent research exhibit</p>
+        <p>Public-site analytics: App Health, PostHog and Microsoft Clarity.</p>
+      </footer>
+    ) : (
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <div class="footer-primary">
+            <p class="footer-kicker">Paths</p>
+            <p class="footer-statement">The same ingredients do not make the same path.</p>
+            <p class="footer-summary">
+              An independent research exhibit about what people brought, what they
+              were handed, what surrounded them, perseverance, luck, and the limits
+              of comparison.
+            </p>
+          </div>
+          <div class="footer-audit" aria-label="Research audit status">
+            <p class="footer-audit-heading">Research audit status</p>
+            <ul class="audit-gates">
+              {auditGates.map((gate) => (
+                <li class={`audit-gate audit-gate-${gate.status}`}>
+                  <span class="audit-gate-mark" aria-hidden="true">
+                    {gate.status === "done" ? "✓" : gate.status === "partial" ? "◐" : "○"}
+                  </span>
+                  <span class="visually-hidden">
+                    {gate.status === "done" ? "Complete: " : gate.status === "partial" ? "Partially complete: " : "Pending: "}
+                  </span>
+                  <span class="audit-gate-label">{gate.label}</span>
+                  <span class="audit-gate-note">{gate.note}</span>
+                </li>
+              ))}
+            </ul>
+            <a href="/coverage/" class="footer-audit-link">See evidence coverage →</a>
+          </div>
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="/overview/">Overview</a>
+            <a href="/coverage/">Evidence coverage</a>
+            <a href="/methodology/">Methodology</a>
+            <a href="/essays/">Essays</a>
+            <a href="/insights/">Insights</a>
+            <a href="/luck/">Luck directory</a>
+            <a href="/compare/">Break a comparison</a>
+            <a href="/roi/">ROI lab</a>
+            <a href="/about/">About</a>
+            <a href="/changelog/">Changelog</a>
+            <a href="/contribute/">Contribute evidence</a>
+            <a href="https://github.com/Significant-Hobbies/what-it-takes-to-win/issues">Roadmap</a>
+            <a href="https://github.com/Significant-Hobbies/what-it-takes-to-win" aria-label="GitHub repository" title="GitHub repository" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </nav>
+          <div class="footer-meta-row">
+            <p class="footer-meta">{peopleCount.toLocaleString()} paths · People born 1950+</p>
+            <p class="footer-meta">Independent research by Sarthak Agrawal</p>
+          </div>
+          <p class="footer-meta">
+            PostHog and Microsoft Clarity measure use of the public research
+            exhibit. Clarity is disabled on the local-only ROI worksheet so its
+            inputs are not included in session replay.
           </p>
         </div>
-        <div class="footer-audit" aria-label="Research audit status">
-          <p class="footer-audit-heading">Research audit status</p>
-          <ul class="audit-gates">
-            {auditGates.map((gate) => (
-              <li class={`audit-gate audit-gate-${gate.status}`}>
-                <span class="audit-gate-mark" aria-hidden="true">
-                  {gate.status === "done" ? "✓" : gate.status === "partial" ? "◐" : "○"}
-                </span>
-                <span class="visually-hidden">
-                  {gate.status === "done" ? "Complete: " : gate.status === "partial" ? "Partially complete: " : "Pending: "}
-                </span>
-                <span class="audit-gate-label">{gate.label}</span>
-                <span class="audit-gate-note">{gate.note}</span>
-              </li>
-            ))}
-          </ul>
-          <a href="/coverage/" class="footer-audit-link">See evidence coverage →</a>
-        </div>
-        <nav class="footer-nav" aria-label="Footer navigation">
-          <a href="/overview/">Overview</a>
-          <a href="/coverage/">Evidence coverage</a>
-          <a href="/methodology/">Methodology</a>
-          <a href="/essays/">Essays</a>
-          <a href="/insights/">Insights</a>
-          <a href="/luck/">Luck directory</a>
-          <a href="/compare/">Break a comparison</a>
-          <a href="/roi/">ROI lab</a>
-          <a href="/about/">About</a>
-          <a href="/changelog/">Changelog</a>
-          <a href="/contribute/">Contribute evidence</a>
-          <a href="https://github.com/Significant-Hobbies/what-it-takes-to-win/issues">Roadmap</a>
-          <a
-            href="https://github.com/Significant-Hobbies/what-it-takes-to-win"
-            aria-label="GitHub repository"
-            title="GitHub repository"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            <svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor" aria-hidden="true">
-              <path
-                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
-              ></path>
-            </svg>
-            <span class="visually-hidden">GitHub repository</span>
-          </a>
-        </nav>
-        <div class="footer-meta-row">
-          <p class="footer-meta">{peopleCount.toLocaleString()} paths · People born 1950+</p>
-          <p class="footer-meta">Independent research by Sarthak Agrawal</p>
-        </div>
-        <p class="footer-meta">
-          PostHog and Microsoft Clarity measure use of the public research
-          exhibit. Clarity is disabled on the local-only ROI worksheet so its
-          inputs are not included in session replay.
-        </p>
-      </div>
-    </footer>}
+      </footer>
+    )}
     {sharedFooter && <script
       is:inline
-      src="https://sassmaker.com/project-strip.js"
+      src="https://sassmaker.com/project-strip.js?v=precise-b0adaa67"
       data-project="what-it-takes-to-win"
+      data-theme="light"
+      data-host-only="true"
       crossorigin="anonymous"
       defer
     ></script>}
     {sharedFooter && <script
       is:inline
-      src="https://sassmaker.com/ai-chat-footer.js"
+      src="https://sassmaker.com/ai-chat-footer.js?v=precise-b0adaa67"
       data-name="Paths"
+      data-project="what-it-takes-to-win"
+      data-theme="light"
+      data-surface="web"
+      data-host-only="true"
       crossorigin="anonymous"
       defer
     ></script>}
