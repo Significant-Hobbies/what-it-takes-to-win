@@ -57,6 +57,15 @@ fleet-footer-extension.precise-footer {
   gap: 0 2rem;
 }
 
+.paths-footer-landmark {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+
 .paths-footer-primary,
 .paths-footer-audit,
 .paths-footer-nav,

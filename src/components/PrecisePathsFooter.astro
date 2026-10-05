@@ -16,23 +16,23 @@ const footerAlt =
   "Paths: A landscape of unequal starting conditions centers a route fork and comparison folio. Paths from varied shelters meet obstacles and reach different ordinary vantage points; there is no crowned winner.";
 ---
 
-<fleet-footer-extension
-  role="contentinfo"
-  class="precise-footer"
-  data-fleet-footer-project="what-it-takes-to-win"
-  product-name="Paths"
-  signature-name="Paths"
-  signature-font="newsreader"
-  font-base="/fonts/fleet-footer-precise-v1/"
-  art-src="/footer-art/what-it-takes-to-win.webp"
-  art-alt={footerAlt}
-  art-width="2170"
-  art-height="725"
-  art-position="50% 50%"
-  art-credit="Original illustration for Paths"
-  theme="light"
-  surface="web"
->
+<footer class="paths-footer-landmark" aria-label="Paths footer">
+  <fleet-footer-extension
+    class="precise-footer"
+    data-fleet-footer-project="what-it-takes-to-win"
+    product-name="Paths"
+    signature-name="Paths"
+    signature-font="newsreader"
+    font-base="/fonts/fleet-footer-precise-v1/"
+    art-src="/footer-art/what-it-takes-to-win.webp"
+    art-alt={footerAlt}
+    art-width="2170"
+    art-height="725"
+    art-position="50% 50%"
+    art-credit="Original illustration for Paths"
+    theme="light"
+    surface="web"
+  >
   {!quietShell && (
     <div slot="cta" data-fleet-footer-cta class="paths-footer-cta-wrap">
       <a class="paths-footer-cta" href="/coverage/">
@@ -131,4 +131,5 @@ const footerAlt =
       </p>
     </div>
   )}
-</fleet-footer-extension>
+  </fleet-footer-extension>
+</footer>
