@@ -17,6 +17,7 @@ const footerAlt =
 ---
 
 <fleet-footer-extension
+  role="contentinfo"
   class="precise-footer"
   data-fleet-footer-project="what-it-takes-to-win"
   product-name="Paths"
@@ -40,7 +41,7 @@ const footerAlt =
     </div>
   )}
   {quietShell ? (
-    <footer slot="navigation" data-fleet-footer-navigation class="paths-footer-quiet">
+    <div slot="navigation" data-fleet-footer-navigation class="paths-footer-quiet">
       <a class="paths-footer-mark" href="/" aria-label="Paths home">
         Paths
       </a>
@@ -59,9 +60,9 @@ const footerAlt =
       </nav>
       <p>{peopleCount.toLocaleString()} documented lives · An independent research exhibit</p>
       <p>Public-site analytics: App Health, PostHog and Microsoft Clarity.</p>
-    </footer>
+    </div>
   ) : (
-    <footer slot="navigation" data-fleet-footer-navigation class="paths-footer-full">
+    <div slot="navigation" data-fleet-footer-navigation class="paths-footer-full">
       <div class="paths-footer-primary">
         <a class="paths-footer-mark" href="/" aria-label="Paths home">
           Paths
@@ -128,6 +129,6 @@ const footerAlt =
         Clarity is disabled on the local-only ROI worksheet so its inputs are not
         included in session replay.
       </p>
-    </footer>
+    </div>
   )}
 </fleet-footer-extension>
