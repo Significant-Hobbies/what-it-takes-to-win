@@ -44,16 +44,14 @@ test('effective core preset still reports a configured TypeScript rule', () => {
   assert.ok(reportedCategories(result).includes('lint/suspicious/noDebugger'));
 });
 
-test('effective Astro preset still reports its Astro-specific JSX rule', () => {
+test('effective Astro preset enables HTML parsing with inherited a11y rules', () => {
   const fixture = path.join(tempDir, 'astro.astro');
-  writeFileSync(fixture, '<div className="fixture" />\n');
+  writeFileSync(fixture, '<img src="/fixture.png" />\n');
 
   const result = runBiomeCheck(fixture);
 
   assert.equal(result.status, 1, result.stderr);
-  assert.ok(
-    reportedCategories(result).includes('lint/suspicious/noReactSpecificProps')
-  );
+  assert.ok(reportedCategories(result).includes('lint/a11y/useAltText'));
 });
 
 test('check keeps the delegated no-errors-on-unmatched behavior', () => {
