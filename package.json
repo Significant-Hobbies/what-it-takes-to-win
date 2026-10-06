@@ -46,7 +46,8 @@
       "postcss": "^8.5.23",
       "miniflare>sharp": "0.35.4",
       "astro>devalue": "5.9.3",
-      "miniflare>undici": "7.29.1"
+      "miniflare>undici": "7.29.1",
+      "source-map-js": "1.2.2"
     },
     "patchedDependencies": {
       "http-cache-semantics@4.3.0": "patches/http-cache-semantics@4.3.0.patch"
