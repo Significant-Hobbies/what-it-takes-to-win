@@ -638,7 +638,10 @@
     },
     {
       // Test files
-      "includes": ["**/*.{test,spec,test-d,spec-d}.{ts,tsx,js,jsx}", "**/__tests__/**/*"],
+      "includes": [
+        "**/*.{test,spec,test-d,spec-d}.{ts,tsx,js,jsx}",
+        "**/__tests__/**/*"
+      ],
       "linter": {
         "rules": {
           "complexity": {
