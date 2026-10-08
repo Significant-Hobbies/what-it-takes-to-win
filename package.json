@@ -8,8 +8,8 @@
     "build": "node src/scripts/build_dataset.mjs && node src/scripts/build_candidate_coverage.mjs && astro build && node src/scripts/generate_discovery_surfaces.mjs",
     "preview": "astro preview",
     "check": "node src/scripts/build_dataset.mjs && node src/scripts/build_candidate_coverage.mjs && pnpm run typecheck",
-    "lint": "ultracite check .",
-    "format:check": "ultracite check .",
+    "lint": "biome check --no-errors-on-unmatched .",
+    "format:check": "biome check --no-errors-on-unmatched .",
     "typecheck": "node src/scripts/check-code-health.mjs types",
     "test": "node --test test/*.test.mjs",
     "test:coverage": "node --test --experimental-test-coverage --test-coverage-include='src/lib/**/*.ts' --test-coverage-lines=100 --test-coverage-branches=94 --test-coverage-functions=98 test/*.test.mjs",
@@ -40,12 +40,17 @@
     ],
     "overrides": {
       "fast-uri": "^3.1.6",
+      "http-cache-semantics": "4.3.0",
       "nanoid@<4": "^3.3.18",
       "js-yaml@>=4": "^4.3.1",
       "postcss": "^8.5.23",
       "miniflare>sharp": "0.35.4",
       "astro>devalue": "5.9.3",
-      "miniflare>undici": "7.29.1"
+      "miniflare>undici": "7.29.1",
+      "source-map-js": "1.2.2"
+    },
+    "patchedDependencies": {
+      "http-cache-semantics@4.3.0": "patches/http-cache-semantics@4.3.0.patch"
     }
   },
   "dependencies": {
@@ -58,7 +63,6 @@
     "jscpd": "5.1.2",
     "knip": "6.34.0",
     "typescript": "^5.9.3",
-    "ultracite": "7.11.0",
     "wrangler": "^4.129.0"
   }
 }
