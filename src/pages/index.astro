@@ -25,6 +25,7 @@ const excerpts = {
 const structuredData = {
   "@context": "https://schema.org", "@graph": [
   {"@type":"WebSite", "@id":"https://paths.significanthobbies.com/#website", name:"Paths", url:"https://paths.significanthobbies.com/"},
+  {"@type":"WebApplication", "@id":"https://paths.significanthobbies.com/#app", name:"Paths", alternateName:["paths.significanthobbies.com","Look Sideways"], url:"https://paths.significanthobbies.com/", applicationCategory:"EducationalApplication", isAccessibleForFree:true, publisher:{"@type":"Organization","@id":"https://significanthobbies.com/#org","name":"Significant Hobbies","url":"https://significanthobbies.com"}},
   {"@type":"Dataset", "@id":"https://paths.significanthobbies.com/#dataset", name:"Paths documented lives", description:`${people.length.toLocaleString()} documented paths with explicit source and interpretation boundaries.`, url:"https://paths.significanthobbies.com/explore/"},
   {"@type": "Article",
   headline: "Same age. Different starting lines.",

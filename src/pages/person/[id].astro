@@ -127,16 +127,20 @@ const structuredData = {
       <span>Ask what this path reveals about conditions, repeated work, and unchosen openings.</span>
     </aside>
 
-    {p.starting_point && p.starting_point !== "Not documented in reviewed sources." && (
+    {(p.starting_point && p.starting_point !== "Not documented in reviewed sources." || p.current_position) && (
       <div class="grid grid-2 person-context-grid">
-        <div class="card">
-          <h2>Starting point</h2>
-          <p>{p.starting_point}</p>
-        </div>
-        <div class="card">
-          <h2>Current position ({p.current_position_year ?? "—"}{p.is_living === false ? " · deceased" : ""})</h2>
-          <p>{p.current_position || "Not documented."}</p>
-        </div>
+        {p.starting_point && p.starting_point !== "Not documented in reviewed sources." && (
+          <div class="card">
+            <h2>Starting point</h2>
+            <p>{p.starting_point}</p>
+          </div>
+        )}
+        {p.current_position && (
+          <div class="card">
+            <h2>Current position ({p.current_position_year ?? "—"}{p.is_living === false ? " · deceased" : ""})</h2>
+            <p>{p.current_position}</p>
+          </div>
+        )}
       </div>
     )}
 
