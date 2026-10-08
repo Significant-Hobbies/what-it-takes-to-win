@@ -44,7 +44,8 @@
       "nanoid@<4": "^3.3.18",
       "js-yaml@>=4": "^4.3.1",
       "postcss": "^8.5.23",
-      "miniflare>sharp": "0.35.4",
+      "miniflare>sharp": "0.35.5",
+      "astro>sharp": "0.35.5",
       "astro>devalue": "5.9.3",
       "miniflare>undici": "7.29.1",
       "source-map-js": "1.2.2"
