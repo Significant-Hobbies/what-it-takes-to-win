@@ -3,7 +3,7 @@ import Base from "@saas-maker/templates/Base.astro";
 import { GalleryPage } from "@saas-maker/templates/gallery-page";
 import { baseProps } from "@saas-maker/templates/page";
 import { galleryContent } from "@saas-maker/templates/schema";
-import { studioFromProjects, studioProjectsFeed } from "@saas-maker/ui/blocks/footer";
+import { footerContent } from "../lib/footer";
 import home from "../content/home.json";
 import Clarity from "../components/Clarity.astro";
 import people from "../data/people.json";
@@ -31,15 +31,7 @@ const content = galleryContent.parse({
     },
   },
 });
-// The JSON carries a public-feed snapshot for offline builds; an empty list
-// falls back to StudioFooter's defaults.
-const snapshot = content.footer === false ? [] : content.footer.studio?.map(project => ({
-  id: project.id, name: project.label, url: project.href,
-}));
-const projects = await fetch(studioProjectsFeed, { signal: AbortSignal.timeout(1000) })
-  .then(response => response.ok ? response.json() : snapshot ?? [])
-  .catch(() => snapshot ?? []);
-if (content.footer) content.footer.studio = studioFromProjects(projects, { current: "what-it-takes-to-win" });
+if (content.footer) content.footer = footerContent;
 ---
 
 <Base {...baseProps(content)}>
@@ -62,26 +54,6 @@ if (content.footer) content.footer.studio = studioFromProjects(projects, { curre
       data-identity="persistent"
     ></script>
     <script is:inline src="/app-health-log.js" defer></script>
-    <script
-      is:inline
-      src="https://sassmaker.com/project-strip.js?v=precise-b0adaa67"
-      data-project="what-it-takes-to-win"
-      data-theme="light"
-      data-host-only="true"
-      crossorigin="anonymous"
-      defer
-    ></script>
-    <script
-      is:inline
-      src="https://sassmaker.com/ai-chat-footer.js?v=precise-b0adaa67"
-      data-name="Paths"
-      data-project="what-it-takes-to-win"
-      data-theme="light"
-      data-surface="web"
-      data-host-only="true"
-      crossorigin="anonymous"
-      defer
-    ></script>
     <script is:inline>
       document.addEventListener("DOMContentLoaded", () => {
         const events = { "#the-start": "journey_continued", "/explore/": "archive_opened" };

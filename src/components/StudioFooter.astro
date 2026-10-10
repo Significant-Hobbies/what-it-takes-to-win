@@ -1,0 +1,24 @@
+---
+import { renderStudioFooterHtml } from "@saas-maker/ui/footer-html";
+import footerCss from "@saas-maker/ui/footer.css?url";
+import footerScript from "@saas-maker/ui/footer.js?url";
+import home from "../content/home.json";
+import { footerContent } from "../lib/footer";
+
+// Tailwind theme colors resolve var(--token) at :root, so mirror each token as --color-* on the footer.
+const tokens = Object.entries(home.page.tokens)
+  .flatMap(([key, value]) => [`${key}:${value}`, `--color-${key.slice(2)}:${value}`])
+  .join(";");
+const footer = renderStudioFooterHtml({
+  ...footerContent,
+  product: home.product,
+  url: home.url,
+  variant: "gallery",
+  groups: [{ title: "Links", links: footerContent.links }],
+});
+---
+
+<link rel="stylesheet" href={footerCss} />
+<style is:inline set:html={`studio-footer[data-theme][data-mode] footer[data-fleet-footer][data-fleet-footer]{${tokens}}studio-footer .grid,studio-footer .grid > *,studio-footer :is(input,textarea){background:revert-layer}`}></style>
+<studio-footer data-theme="gallery" data-mode="dark" set:html={footer} />
+<script is:inline type="module" src={footerScript}></script>
