@@ -2,24 +2,10 @@
 import "../styles/global.css";
 import "../styles/exhibit-finish.css";
 import "../styles/field-atlas.css";
-import "../styles/precise-footer.css";
 import Clarity from "../components/Clarity.astro";
 import SiteHeader from "../components/SiteHeader.astro";
-import PrecisePathsFooter from "../components/PrecisePathsFooter.astro";
+import StudioFooter from "../components/StudioFooter.astro";
 import peopleData from "../data/people.json";
-import { summarizeCoverage, type CoveragePerson } from "../lib/coverage";
-const peopleCount = peopleData.length;
-const coverage = summarizeCoverage(peopleData as CoveragePerson[]);
-const auditGates = [
-  { label: "Double-coding", status: "done", note: "16-record stratified sample" },
-  {
-    label: "Source reachability",
-    status: coverage.auditPending.count === 0 ? "done" : "partial",
-    note: `${coverage.auditReviewed.count.toLocaleString()}/${coverage.total.toLocaleString()} reviewed`,
-  },
-  { label: "User comprehension", status: "pending", note: "External observation" },
-  { label: "Matched comparison", status: "pending", note: "No control group" },
-];
 const {
   title = "Paths",
   description = `Look sideways for information, never for a verdict. ${peopleData.length.toLocaleString()} documented paths showing what people brought, were handed, and were surrounded by, with perseverance and luck held apart.`,
@@ -29,7 +15,6 @@ const {
   structuredData,
   mainClass = "",
   quietShell = false,
-  sharedFooter = !quietShell,
 } = Astro.props;
 // Older route titles remain valid inputs while the shared shell owns the current brand.
 const pageTitle = title.replaceAll("Look Sideways", "Paths");
@@ -94,97 +79,6 @@ const isActive = (link: (typeof navLinks)[number]) =>
     <main id="main-content" class:list={["container", mainClass]} tabindex="-1">
       <slot />
     </main>
-    {sharedFooter ? (
-      <PrecisePathsFooter quietShell={quietShell} peopleCount={peopleCount} auditGates={auditGates} />
-    ) : quietShell ? (
-      <footer class="journey-footer">
-        <a href="/" aria-label="Paths home">Paths</a>
-        <nav aria-label="Footer navigation">
-          <a href="/essays/">Articles</a>
-          <a href="/methodology/">Methodology</a>
-          <a href="/coverage/">Evidence coverage</a>
-          <a href="/about/">About</a>
-          <a href="https://github.com/Significant-Hobbies/what-it-takes-to-win" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-        </nav>
-        <p>{peopleCount.toLocaleString()} documented lives · An independent research exhibit</p>
-        <p>Public-site analytics: App Health, PostHog and Microsoft Clarity.</p>
-      </footer>
-    ) : (
-      <footer class="site-footer">
-        <div class="container footer-inner">
-          <div class="footer-primary">
-            <p class="footer-kicker">Paths</p>
-            <p class="footer-statement">The same ingredients do not make the same path.</p>
-            <p class="footer-summary">
-              An independent research exhibit about what people brought, what they
-              were handed, what surrounded them, perseverance, luck, and the limits
-              of comparison.
-            </p>
-          </div>
-          <div class="footer-audit" aria-label="Research audit status">
-            <p class="footer-audit-heading">Research audit status</p>
-            <ul class="audit-gates">
-              {auditGates.map((gate) => (
-                <li class={`audit-gate audit-gate-${gate.status}`}>
-                  <span class="audit-gate-mark" aria-hidden="true">
-                    {gate.status === "done" ? "✓" : gate.status === "partial" ? "◐" : "○"}
-                  </span>
-                  <span class="visually-hidden">
-                    {gate.status === "done" ? "Complete: " : gate.status === "partial" ? "Partially complete: " : "Pending: "}
-                  </span>
-                  <span class="audit-gate-label">{gate.label}</span>
-                  <span class="audit-gate-note">{gate.note}</span>
-                </li>
-              ))}
-            </ul>
-            <a href="/coverage/" class="footer-audit-link">See evidence coverage →</a>
-          </div>
-          <nav class="footer-nav" aria-label="Footer navigation">
-            <a href="/overview/">Overview</a>
-            <a href="/coverage/">Evidence coverage</a>
-            <a href="/methodology/">Methodology</a>
-            <a href="/essays/">Essays</a>
-            <a href="/insights/">Insights</a>
-            <a href="/luck/">Luck directory</a>
-            <a href="/compare/">Break a comparison</a>
-            <a href="/roi/">ROI lab</a>
-            <a href="/about/">About</a>
-            <a href="/changelog/">Changelog</a>
-            <a href="/contribute/">Contribute evidence</a>
-            <a href="https://github.com/Significant-Hobbies/what-it-takes-to-win/issues">Roadmap</a>
-            <a href="https://github.com/Significant-Hobbies/what-it-takes-to-win" aria-label="GitHub repository" title="GitHub repository" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          </nav>
-          <div class="footer-meta-row">
-            <p class="footer-meta">{peopleCount.toLocaleString()} paths · People born 1950+</p>
-            <p class="footer-meta">Independent research by Sarthak Agrawal</p>
-          </div>
-          <p class="footer-meta">
-            PostHog and Microsoft Clarity measure use of the public research
-            exhibit. Clarity is disabled on the local-only ROI worksheet so its
-            inputs are not included in session replay.
-          </p>
-        </div>
-      </footer>
-    )}
-    {sharedFooter && <script
-      is:inline
-      src="https://sassmaker.com/project-strip.js?v=precise-b0adaa67"
-      data-project="what-it-takes-to-win"
-      data-theme="light"
-      data-host-only="true"
-      crossorigin="anonymous"
-      defer
-    ></script>}
-    {sharedFooter && <script
-      is:inline
-      src="https://sassmaker.com/ai-chat-footer.js?v=precise-b0adaa67"
-      data-name="Paths"
-      data-project="what-it-takes-to-win"
-      data-theme="light"
-      data-surface="web"
-      data-host-only="true"
-      crossorigin="anonymous"
-      defer
-    ></script>}
+    <StudioFooter />
   </body>
 </html>
