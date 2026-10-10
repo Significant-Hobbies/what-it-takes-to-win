@@ -1,0 +1,443 @@
+{
+  "template": "gallery",
+  "page": {
+    "title": "Paths — Same age. Different starting lines.",
+    "description": "Feel behind? Explore real lives, unequal starting points, work and randomness—without turning someone else’s outcome into a verdict on yours.",
+    "theme": "gallery",
+    "mode": "dark",
+    "motion": false,
+    "canonical": "https://paths.significanthobbies.com/",
+    "robots": "index,follow",
+    "tokens": {
+      "--brand": "#e9e6b9",
+      "--brand-foreground": "#14251f",
+      "--brand-soft": "#324c40",
+      "--brand-ink": "#e9e6b9",
+      "--background": "#14251f",
+      "--foreground": "#e9e6b9",
+      "--card": "#233c32",
+      "--card-foreground": "#e9e6b9",
+      "--muted": "#233c32",
+      "--muted-foreground": "#d2e2e5",
+      "--surface": "#233c32",
+      "--border": "#607460",
+      "--accent": "#324c40",
+      "--accent-foreground": "#e9e6b9",
+      "--ring": "#e7ac95"
+    },
+    "og": {
+      "type": "website",
+      "siteName": "Paths",
+      "image": "/og-image.png",
+      "imageWidth": 1200,
+      "imageHeight": 630,
+      "twitterCard": "summary_large_image"
+    }
+  },
+  "product": "Paths",
+  "url": "https://paths.significanthobbies.com/",
+  "mark": "/favicon.svg",
+  "frame": "none",
+  "nav": [
+    {
+      "label": "evidence",
+      "href": "/insights/"
+    },
+    {
+      "label": "articles",
+      "href": "/essays/"
+    },
+    {
+      "label": "explore",
+      "href": "/explore/"
+    }
+  ],
+  "hero": {
+    "eyebrow": "For anyone who has ever felt behind",
+    "title": "same age. different *starting lines.*",
+    "lede": "Paths explores the work, advantages and accidents behind a life. The parts a comparison leaves out.",
+    "primary": {
+      "label": "see what came before",
+      "href": "#the-start"
+    },
+    "image": "/images/prepared-garden.svg",
+    "note": "An illustration of the essay’s metaphor"
+  },
+  "sections": [
+    {
+      "kind": "statement",
+      "id": "the-start",
+      "title": "the task is the same. *the starting line isn’t.*",
+      "lede": "A king and a peasant both water the flowers. Only one arrives with the jug already filled.",
+      "rows": [
+        {
+          "title": "the king",
+          "body": "Water found. Jug filled. Carried by others. Water the flowers."
+        },
+        {
+          "title": "the peasant",
+          "body": "Find water → Fill the jug → Carry it. Water the flowers."
+        }
+      ],
+      "aside": [
+        {
+          "title": "the final action hides the work that made it possible.",
+          "body": "A metaphor, not a measured historical comparison."
+        }
+      ]
+    },
+    {
+      "kind": "statement",
+      "id": "the-levers",
+      "title": "a breakthrough *has a backstory.*",
+      "lede": "Support and effort can coexist. So can preparation and an unexpected opening."
+    },
+    {
+      "kind": "statement",
+      "id": "life-bill-gates",
+      "eyebrow": "Before Microsoft",
+      "title": "bill gates",
+      "rows": [
+        {
+          "title": "age 13",
+          "body": "A school computer, years before most people had access."
+        },
+        {
+          "title": "school years",
+          "body": "Manuals, peers and real programming work built experience."
+        },
+        {
+          "title": "1975",
+          "body": "Microsoft began after years of preparation."
+        }
+      ]
+    },
+    {
+      "kind": "statement",
+      "id": "life-serena-williams",
+      "title": "serena williams",
+      "rows": [
+        {
+          "title": "around age 3",
+          "body": "Family coaching began on Compton’s public courts."
+        },
+        {
+          "title": "age 14",
+          "body": "Her first professional appearance ended in a qualifying loss."
+        },
+        {
+          "title": "age 17",
+          "body": "Her first Grand Slam title followed years of practice."
+        }
+      ]
+    },
+    {
+      "kind": "statement",
+      "id": "life-bonnie-tyler",
+      "title": "bonnie tyler",
+      "rows": [
+        {
+          "title": "local stages",
+          "body": "She kept performing in South Wales pubs and clubs."
+        },
+        {
+          "title": "1974",
+          "body": "A scout heard her. An encounter opened a recording route."
+        },
+        {
+          "title": "1983",
+          "body": "A new collaboration brought Total Eclipse of the Heart."
+        }
+      ]
+    },
+    {
+      "kind": "statement",
+      "id": "the-sequence",
+      "title": "then the *world moves.*",
+      "lede": "A job. An investment. A move. A chance encounter. The same event can open one life and unsettle another.",
+      "rows": [
+        {
+          "title": "nvidia",
+          "body": "A job meets a wave."
+        },
+        {
+          "title": "the housing crash",
+          "body": "A bargain. A loss."
+        },
+        {
+          "title": "bangalore",
+          "body": "A frontier arrives nearby."
+        },
+        {
+          "title": "the visa draw",
+          "body": "Qualified. Still waiting."
+        },
+        {
+          "title": "bonnie tyler",
+          "body": "Someone was listening."
+        },
+        {
+          "title": "the layoff",
+          "body": "A door closes."
+        },
+        {
+          "title": "cursor",
+          "body": "A market starts moving."
+        },
+        {
+          "title": "airbnb",
+          "body": "The company goes public."
+        },
+        {
+          "title": "sandisk",
+          "body": "One company becomes two."
+        },
+        {
+          "title": "the remote move",
+          "body": "Same salary. New city."
+        },
+        {
+          "title": "shenzhen",
+          "body": "The map changes."
+        },
+        {
+          "title": "the pizza coins",
+          "body": "Nobody knew the ending."
+        },
+        {
+          "title": "the quant offer",
+          "body": "A different pay scale."
+        }
+      ],
+      "aside": [
+        {
+          "title": "work & making things · investing & ownership · place & moving · encounters & disruptions",
+          "body": "Dated examples, not investment advice or a forecast. Company valuations, share prices and money someone can spend are different things."
+        },
+        {
+          "title": "about the evidence",
+          "body": "These are selected visible outcomes. Equally persistent people without the same result are missing."
+        }
+      ]
+    },
+    {
+      "kind": "statement",
+      "id": "another-attempt",
+      "title": "good attempts. *uncertain outcomes.*",
+      "lede": "A result tells you what happened. It cannot, by itself, tell you how good the decision was.",
+      "rows": [
+        {
+          "title": "a small experiment in randomness",
+          "body": "Two imaginary people. The same invented chance per attempt. A different number of attempts they can afford. Illustration only: a made-up one-in-six chance per attempt. Not your odds in life."
+        },
+        {
+          "title": "who can afford to try again?",
+          "body": "Money, health, support and obligations are unequal too. More attempts are not a moral obligation. More attempts can create more chances. They do not promise an opening."
+        }
+      ],
+      "aside": [
+        {
+          "title": "what this experiment leaves out",
+          "body": "Real attempts differ: learning, connections, discrimination, costs and circumstances change them. An opening is not a final success. The experiment illustrates uncertainty; it cannot predict a person’s future."
+        },
+        {
+          "title": "why a few big outcomes can distort the picture",
+          "body": "We see people after a breakthrough. We cannot count everyone who made similar attempts without one. That is survivorship bias, not evidence that the missing people tried less."
+        }
+      ]
+    },
+    {
+      "kind": "statement",
+      "id": "agency",
+      "title": "give chance more *ways to find you.*",
+      "lede": "Not by doing everything. By making useful, affordable openings.",
+      "rows": [
+        {
+          "title": "put something real into the world.",
+          "body": "A small project, a useful contribution, a conversation beyond your usual circle. Work people can encounter creates occasions for feedback and connection."
+        },
+        {
+          "title": "change the next attempt.",
+          "body": "Use feedback, deepen a skill, try a different audience. Repeating the same action is not always increasing your opportunities."
+        },
+        {
+          "title": "keep the cost survivable.",
+          "body": "Time, health, money and responsibilities limit what is affordable. Smaller experiments, support, changing direction or pausing can preserve your choices."
+        }
+      ],
+      "aside": [
+        {
+          "title": "what supports this—and what doesn’t",
+          "body": "Experiments on LinkedIn found that weaker ties could improve job mobility, with effects varying by tie strength and industry. This supports a specific mechanism, not “more networking always wins.”"
+        },
+        {
+          "title": "first-person examples",
+          "body": "Pieter Levels and Marc Lou describe repeated launches and uneven returns. They are first-person examples, not proof that repeating their approach produces their results."
+        }
+      ]
+    },
+    {
+      "kind": "statement",
+      "id": "essays",
+      "title": "the letter *behind Paths.*",
+      "rows": [
+        {
+          "title": "who filled the king’s jug?",
+          "body": "The final action hides the work that made it possible."
+        },
+        {
+          "title": "everyone has lost their marbles",
+          "body": "“Age is a timestamp, not a shared starting line.”"
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "id": "the-boundary",
+    "title": "you can want more. *you don’t have to be behind.*",
+    "primary": {
+      "label": "read the letter behind Paths",
+      "href": "/essays/everyone-has-lost-their-marbles/"
+    },
+    "note": "You didn’t choose every condition. You don’t have to earn the right to stop comparing. Keep your ambition, change it, or let some of it go. Meaningful work, security, relationships and a life you enjoy are not consolation prizes. No answer to submit. No score to improve.",
+    "image": "/images/prepared-garden.svg",
+    "credit": "Original illustration for Paths"
+  },
+  "footer": {
+    "catalogId": "what-it-takes-to-win",
+    "capture": "newsletter",
+    "summary": "An independent research exhibit about what people brought, what they were handed, what surrounded them, perseverance, luck, and the limits of comparison.",
+    "legal": "Independent research by Sarthak Agrawal. Public-site analytics: App Health, PostHog and Microsoft Clarity.",
+    "links": [
+      {
+        "label": "about",
+        "href": "/about/"
+      },
+      {
+        "label": "contribute evidence",
+        "href": "/contribute/"
+      },
+      {
+        "label": "methodology",
+        "href": "/methodology/"
+      },
+      {
+        "label": "evidence coverage",
+        "href": "/coverage/"
+      },
+      {
+        "label": "explore documented lives",
+        "href": "/explore/"
+      },
+      {
+        "label": "luck directory",
+        "href": "/luck/"
+      },
+      {
+        "label": "who filled the king's jug?",
+        "href": "/essays/who-filled-the-kings-jug/"
+      },
+      {
+        "label": "everyone has lost their marbles",
+        "href": "/essays/everyone-has-lost-their-marbles/"
+      },
+      {
+        "label": "bill gates: the full life & its sources",
+        "href": "/person/bill-gates/"
+      },
+      {
+        "label": "serena williams: the full life & its sources",
+        "href": "/person/serena-williams/"
+      },
+      {
+        "label": "bonnie tyler: the full life & its sources",
+        "href": "/person/bonnie-tyler/"
+      },
+      {
+        "label": "nvidia",
+        "href": "/turning-points/nvidia/"
+      },
+      {
+        "label": "the housing crash",
+        "href": "/turning-points/housing/"
+      },
+      {
+        "label": "bangalore",
+        "href": "/turning-points/bangalore/"
+      },
+      {
+        "label": "the visa draw",
+        "href": "/turning-points/visa/"
+      },
+      {
+        "label": "bonnie tyler",
+        "href": "/turning-points/bonnie/"
+      },
+      {
+        "label": "the layoff",
+        "href": "/turning-points/layoff/"
+      },
+      {
+        "label": "cursor",
+        "href": "/turning-points/cursor/"
+      },
+      {
+        "label": "airbnb",
+        "href": "/turning-points/airbnb/"
+      },
+      {
+        "label": "sandisk",
+        "href": "/turning-points/sandisk/"
+      },
+      {
+        "label": "the remote move",
+        "href": "/turning-points/remote/"
+      },
+      {
+        "label": "shenzhen",
+        "href": "/turning-points/shenzhen/"
+      },
+      {
+        "label": "the pizza coins",
+        "href": "/turning-points/bitcoin/"
+      },
+      {
+        "label": "the quant offer",
+        "href": "/turning-points/quant/"
+      },
+      {
+        "label": "pieter levels’ account",
+        "href": "https://levels.io/12-startups-12-months/"
+      },
+      {
+        "label": "marc lou’s account",
+        "href": "https://newsletter.marclou.com/p/i-ve-made-3m-with-my-36-startups"
+      },
+      {
+        "label": "read the study",
+        "href": "https://ide.mit.edu/wp-content/uploads/2022/09/abl4476.pdf"
+      },
+      {
+        "label": "source code",
+        "href": "https://github.com/Significant-Hobbies/what-it-takes-to-win"
+      }
+    ],
+    "studio": [
+      {
+        "id": "codevetter",
+        "label": "CodeVetter",
+        "href": "https://codevetter.com"
+      },
+      {
+        "id": "posttrainllm",
+        "label": "PostTrainLLM",
+        "href": "https://posttrainllm.com"
+      },
+      {
+        "id": "anchor",
+        "label": "Anchor",
+        "href": "https://anchor.significanthobbies.com"
+      }
+    ]
+  }
+}

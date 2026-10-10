@@ -5,6 +5,8 @@ import { chapters, featuredPaths, worldEvents } from "../src/data/documentary.mj
 import { luckCases } from "../src/data/luck-cases.mjs";
 
 const page = readFileSync(new URL("../src/pages/index.astro", import.meta.url), "utf8");
+const content = JSON.parse(readFileSync(new URL("../src/content/home.json", import.meta.url), "utf8"));
+const copy = JSON.stringify(content);
 const people = JSON.parse(readFileSync(new URL("../src/data/people.json", import.meta.url), "utf8"));
 const archiveIds = new Set(people.map(person => person.person_id));
 
@@ -39,7 +41,10 @@ test("all six chapters and previous shared chapter hashes still resolve", () => 
   assert.doesNotMatch(page, /doc-chapter-nav|data-chapter-link|Journey chapters/);
   assert.equal(chapters.length, 6);
   assert.equal(new Set(chapters.map(([id]) => id)).size, 6);
-  for (const [id] of chapters) assert.ok(page.includes(`id="${id}"`), `Missing chapter ${id}`);
+  for (const [id] of chapters) assert.ok(
+    page.includes(`id="${id}"`) || content.sections.some(section => section.id === id) || content.closing.id === id,
+    `Missing chapter ${id}`,
+  );
   for (const id of ["the-survivor", "the-start", "the-levers", "the-sequence", "the-boundary"]) {
     assert.ok(chapters.some(([chapterId]) => chapterId === id));
   }
@@ -61,8 +66,10 @@ test("world events preserve sources and separate documented events from explanat
 test("homepage excerpts link to preserved full profile chronologies", () => {
   const profile = readFileSync(new URL("../src/pages/person/[id].astro", import.meta.url), "utf8");
   const component = readFileSync(new URL("../src/components/LifeStory.astro", import.meta.url), "utf8");
-  assert.match(page, /class="life-excerpt"/);
-  assert.match(page, /The full life & its sources/);
+  for (const person of featuredPaths) {
+    assert.ok(content.sections.some(section => section.id === `life-${person.id}` && section.rows.length === 3));
+    assert.ok(content.footer.links.some(link => link.href === `/person/${person.id}/` && /the full life & its sources/.test(link.label)));
+  }
   assert.match(profile, /<LifeStory person=\{featured\}/);
   assert.match(profile, /class="archive-record" open=\{!featured\}/);
   assert.match(component, /<ol class="life-timeline"/);
@@ -73,28 +80,33 @@ test("homepage excerpts link to preserved full profile chronologies", () => {
 });
 
 test("the metaphor compares both routes and labels its limits", () => {
-  assert.match(page, /The king/);
-  assert.match(page, /The peasant/);
-  assert.match(page, /Carried by others/);
-  assert.match(page, /not a measured historical comparison/);
-  assert.doesNotMatch(page, /\/luck\/#/);
+  assert.match(copy, /the king/);
+  assert.match(copy, /the peasant/);
+  assert.match(copy, /Carried by others/);
+  assert.match(copy, /not a measured historical comparison/);
+  assert.doesNotMatch(copy, /\/luck\/#/);
 });
 
 test("the journey renders before JavaScript and never asks for a personal score", () => {
-  assert.match(page, /class="jug-routes"/);
-  assert.match(page, /data-life=\{person.id\} tabindex="-1"/);
+  assert.equal(content.sections.find(section => section.id === "the-start").rows.length, 2);
+  for (const person of featuredPaths) assert.ok(content.sections.some(section => section.id === `life-${person.id}`));
+  assert.match(page, /<GalleryPage content=\{content\}/);
+  assert.doesNotMatch(page, /client:(?:load|idle|visible|only)/);
   assert.doesNotMatch(page, /<section[^>]*data-life[^>]*\shidden/);
   assert.doesNotMatch(page, /<(?:input|textarea)\b/);
   assert.doesNotMatch(page, /doc-shot-open|one success in twelve/);
-  assert.match(page, /who-filled-the-kings-jug/);
-  assert.match(page, /everyone-has-lost-their-marbles/);
-  assert.match(page, /structuredData=\{structuredData\}/);
+  assert.match(copy, /who-filled-the-kings-jug/);
+  assert.match(copy, /everyone-has-lost-their-marbles/);
+  assert.match(page, /jsonLd: structuredData/);
 });
 
 test("primary public navigation emits only named App Health CTA events", () => {
   const logger = readFileSync(new URL("../public/app-health-log.js", import.meta.url), "utf8");
-  assert.match(page, /href="#the-start" data-health-event="journey_continued"/);
-  assert.match(page, /href="\/explore\/" data-health-event="archive_opened"/);
+  assert.equal(content.hero.primary.href, "#the-start");
+  assert.ok(content.nav.some(link => link.href === "/explore/"));
+  assert.match(page, /"#the-start": "journey_continued"/);
+  assert.match(page, /"\/explore\/": "archive_opened"/);
+  assert.match(page, /link.setAttribute\("data-health-event", name\)/);
   assert.match(logger, /window\.appHealth\.track\(eventName\)/);
   assert.match(logger, /\[data-health-event\]/);
   assert.doesNotMatch(logger, /eventTarget\.textContent|eventTarget\.href/);

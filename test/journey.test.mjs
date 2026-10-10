@@ -44,8 +44,9 @@ test("randomness assumptions, unequal capacity and no-JS explanation are visible
   assert.match(lab, /Who can afford to try again/);
   assert.match(lab, /aria-live="polite"/);
   const page = readFileSync(new URL("../src/pages/index.astro", import.meta.url), "utf8");
-  assert.match(page, /What supports this/);
-  assert.match(page, /survivorship bias/);
-  assert.match(page, /No answer to submit. No score to improve/);
+  const copy = readFileSync(new URL("../src/content/home.json", import.meta.url), "utf8");
+  assert.match(copy, /what supports this/);
+  assert.match(copy, /survivorship bias/);
+  assert.match(copy, /No answer to submit. No score to improve/);
   assert.doesNotMatch(page, /doc-chapter-nav|data-chapter-link/);
 });

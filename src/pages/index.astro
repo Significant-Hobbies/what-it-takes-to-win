@@ -1,27 +1,13 @@
 ---
-import Base from "../layouts/Base.astro";
+import Base from "@saas-maker/templates/Base.astro";
+import { GalleryPage } from "@saas-maker/templates/gallery-page";
+import { baseProps } from "@saas-maker/templates/page";
+import { galleryContent } from "@saas-maker/templates/schema";
+import { studioFromProjects, studioProjectsFeed } from "@saas-maker/ui/blocks/footer";
+import home from "../content/home.json";
 import people from "../data/people.json";
-import { featuredPaths } from "../data/documentary.mjs";
-import { turningPoints, situations } from "../data/turning-points.mjs";
-import ChanceLab from "../components/ChanceLab.astro";
-import "../styles/journey.css";
-const excerpts = {
-  "bill-gates": [
-    ["Age 13", "A school computer, years before most people had access."],
-    ["School years", "Manuals, peers and real programming work built experience."],
-    ["1975", "Microsoft began after years of preparation."]
-  ],
-  "serena-williams": [
-    ["Around age 3", "Family coaching began on Compton’s public courts."],
-    ["Age 14", "Her first professional appearance ended in a qualifying loss."],
-    ["Age 17", "Her first Grand Slam title followed years of practice."]
-  ],
-  "bonnie-tyler": [
-    ["Local stages", "She kept performing in South Wales pubs and clubs."],
-    ["1974", "A scout heard her. An encounter opened a recording route."],
-    ["1983", "A new collaboration brought Total Eclipse of the Heart."]
-  ]
-};
+
+const clarityBootstrap = "\n        window.clarity = window.clarity || function () {\n          (window.clarity.q = window.clarity.q || []).push(arguments);\n        };\n      ";
 const structuredData = {
   "@context": "https://schema.org", "@graph": [
   {"@type":"WebSite", "@id":"https://paths.significanthobbies.com/#website", name:"Paths", url:"https://paths.significanthobbies.com/"},
@@ -34,127 +20,84 @@ const structuredData = {
   isPartOf: { "@id": "https://paths.significanthobbies.com/#website" }
   }]
 };
+const content = galleryContent.parse({
+  ...home,
+  page: {
+    ...home.page,
+    jsonLd: structuredData,
+    og: {
+      ...home.page.og,
+      imageAlt: `Paths: ${people.length.toLocaleString()} documented paths, three sources of advantage, no success formula.`,
+    },
+  },
+});
+// The JSON carries a public-feed snapshot for offline builds; an empty list
+// falls back to StudioFooter's defaults.
+const snapshot = content.footer === false ? [] : content.footer.studio?.map(project => ({
+  id: project.id, name: project.label, url: project.href,
+}));
+const projects = await fetch(studioProjectsFeed, { signal: AbortSignal.timeout(1000) })
+  .then(response => response.ok ? response.json() : snapshot ?? [])
+  .catch(() => snapshot ?? []);
+if (content.footer) content.footer.studio = studioFromProjects(projects, { current: "what-it-takes-to-win" });
 ---
-<!--
-THESIS: Another person's outcome leaves out the conditions and sequence that preceded it.
-OWN-WORLD: Midnight-green exhibit, yellow preparation scene, sky-blue chance table, native links and compact records.
-STORY: Recognize comparison, inspect starting conditions, explore a turning point, distinguish chance from agency.
-FIRST VIEWPORT: Direct proposition left, a sourced miniature early history right, one clear next action.
-FORM: Owner-delegated guided exhibit, developed from the event-gallery study. Details remain optional; articles preserved.
--->
-<Base title="Paths — Same age. Different starting lines." description="Feel behind? Explore real lives, unequal starting points, work and randomness—without turning someone else’s outcome into a verdict on yours." canonicalPath="/" mainClass="journey-main" quietShell={true} sharedFooter={true} structuredData={structuredData}>
-  <article class="journey" data-journey>
-    <section class="journey-hero journey-width" id="the-survivor">
-      <div class="hero-copy">
-        <p class="journey-kicker">For anyone who has ever felt behind</p>
-        <h1>Same age.<br/>Different<br/><em>starting lines.</em></h1>
-        <p>Paths explores the work, advantages and accidents behind a life. The parts a comparison leaves out.</p>
-        <a class="journey-button" href="#the-start" data-health-event="journey_continued">See what came before <span aria-hidden="true">↓</span></a>
-      </div>
-      <aside class="hero-history" aria-label="Bill Gates: what came before Microsoft">
-        <div class="history-heading"><span>Before Microsoft</span><strong>Bill Gates</strong></div>
-        <ol>
-          <li><span class="history-mark">13<small>years old</small></span><p>A computer at school.<br/>An unusually early opening.</p></li>
-          <li><span class="history-mark">Years<small>of preparation</small></span><p>Manuals. Peers.<br/>Real programming work.</p></li>
-          <li><span class="history-mark">1975<small>the visible milestone</small></span><p>Microsoft begins.</p></li>
-        </ol>
-        <a href="/person/bill-gates/">Read the history & sources ↗</a>
-      </aside>
-    </section>
 
-    <section class="starting-scene" id="the-start">
-      <div class="journey-width">
-        <div class="starting-intro"><h2>The task is the same.<br/><em>The starting line isn’t.</em></h2><p>A king and a peasant both water the flowers.<br/>Only one arrives with the jug already filled.</p></div>
-        <div class="starting-body">
-          <div class="jug-art"><svg viewBox="0 0 620 390" role="img" aria-labelledby="garden-title garden-desc">
-            <title id="garden-title">The prepared garden</title>
-            <desc id="garden-desc">An ochre jug stands beside flowering plants in an architectural garden. This scene illustrates the essay, not a historical biography.</desc>
-            <defs><pattern id="garden-tiles" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M0 42L42 0" fill="none" stroke="currentColor" stroke-opacity=".1" /></pattern></defs>
-            <path d="M20 354V155Q20 25 150 25T280 155V354" fill="#324c40"/>
-            <path d="M45 354V157Q45 50 150 50T255 157V354" fill="#233c32"/>
-            <path d="M74 354V158Q74 80 150 80T226 158V354" fill="#607460"/>
-            <circle cx="150" cy="151" r="38" fill="#d8bd77"/>
-            <path d="M46 280Q112 184 169 276T257 254V355H46" fill="#405c48"/>
-            <path d="M0 354H620V390H0Z" fill="#718069"/><path d="M0 354H620V390H0Z" fill="url(#garden-tiles)"/>
-            <path d="M86 354V336H280V354M112 336V318H257V336" fill="#9ba38a"/>
-            <path d="M338 158L362 174L386 151L406 175L432 157L426 191H345Z" fill="#d8bd77"/>
-            <path d="M352 206H421L427 232C454 255 462 314 437 340Q386 370 337 340C314 315 321 263 348 232Z" fill="#c6a458"/>
-            <path d="M424 225C511 200 504 308 449 298" fill="none" stroke="#c6a458" stroke-width="18"/>
-            <path d="M348 219L314 207L333 249" fill="#c6a458"/>
-            <path d="M352 251Q340 293 352 323" fill="none" stroke="#f0d391" stroke-width="7"/>
-            <path d="M525 332V198M563 332V163M591 332V224" fill="none" stroke="#acb88e" stroke-width="4"/>
-            <path d="M525 277Q487 271 494 245Q521 247 525 277M563 242Q593 222 603 247Q582 262 563 263M563 290Q532 281 538 265Q560 267 563 290" fill="#849c73"/>
-            <path d="M507 177L523 190L539 177V199Q523 225 507 199Z" fill="#d7a784"/>
-            <path d="M545 141L562 154L581 141V166Q563 193 545 166Z" fill="#d7a784"/>
-            <path d="M577 208L590 217L604 208V228Q590 247 577 228Z" fill="#d8bd77"/>
-            <path d="M500 328H613L600 363H512Z" fill="#b5bda1"/>
-            </svg><small>An illustration of the essay’s metaphor</small></div>
-          <div class="jug-routes">
-            <div><h3>The king</h3><p class="route-prepared">Water found. Jug filled. Carried by others.</p><p class="route-arrival">Water the flowers <span aria-hidden="true">↗</span></p></div>
-            <div><h3>The peasant</h3><p>Find water → Fill the jug → Carry it</p><p class="route-arrival">Water the flowers <span aria-hidden="true">↗</span></p></div>
-            <p class="jug-insight">The final action hides the work that made it possible.</p>
-          </div>
-        </div>
-        <div class="scene-foot"><span>A metaphor, not a measured historical comparison.</span><a href="/essays/who-filled-the-kings-jug/">Who Filled the King's Jug? ↗</a></div>
-      </div>
-    </section>
+<Base {...baseProps(content)}>
+  <Fragment slot="head">
+    <meta name="theme-color" content="#eef0e7" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" type="text/markdown" href="/index.md" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <script is:inline async src="/scripts/posthog.js"></script>
 
-    <section class="lives-scene journey-width" id="the-levers">
-      <div class="scene-heading"><h2>A breakthrough<br/><em>has a backstory.</em></h2><p>Support and effort can coexist.<br/>So can preparation and an unexpected opening.</p></div>
-      <nav class="life-picker" aria-label="Choose a life">
-        {featuredPaths.map(person => <a href={`#life-${person.id}`} data-pick={person.id}>{person.name}</a>)}
-      </nav>
-      {featuredPaths.map(person => (
-        <section class="life-excerpt" id={`life-${person.id}`} data-life={person.id} tabindex="-1" aria-label={`${person.name}'s path`}>
-          <h3 class="visually-hidden">{person.name}</h3>
-          <p class="life-place">{person.place} · {person.field}</p>
-          <ol>{excerpts[person.id as keyof typeof excerpts].map(([when, text]) => <li><span>{when}</span><p>{text}</p></li>)}</ol>
-          <a href={`/person/${person.id}/`}>The full life & its sources ↗</a>
-        </section>
-      ))}
-      <p class="selection-note">These are selected visible outcomes. Equally persistent people without the same result are missing. <a href="/coverage/">About the evidence ↗</a></p>
-    </section>
+    <script is:inline set:html={clarityBootstrap} />
+      <script
+        is:inline
+        async
+        src="https://www.clarity.ms/tag/y6bw72v6ih"
+        onload="typeof window.clarity === 'function' && window.clarity('set', 'project_id', 'what-it-takes-to-win')"
+      ></script>
 
-    <section class="turning-scene" id="the-sequence">
-      <div class="journey-width">
-        <div class="scene-heading"><h2>Then the<br/><em>world moves.</em></h2><p>A job. An investment. A move. A chance encounter.<br/>The same event can open one life and unsettle another.</p></div>
-        <div class="story-tools" data-story-tools hidden>
-          <label for="situation">Explore a situation</label>
-          <select id="situation">{situations.map(situation => <option value={situation.id}>{situation.label}</option>)}</select>
-          <p data-story-count aria-live="polite"></p>
-        </div>
-        <div class="turning-grid">
-          {turningPoints.map((event, i) => <a class={`turning-card tone-${i % 3}`} href={`/turning-points/${event.id}/`} data-story data-situations={event.categories.join(" ")}><span class="turning-situation">{event.situation}</span><h3>{event.name}</h3><p>{event.tag}</p><span class="turning-period">{event.kind}</span><span class="turning-arrow" aria-hidden="true">↗</span></a>)}
-        </div>
-        <button class="all-stories" data-all-stories hidden>Show all {turningPoints.length} turning points <span aria-hidden="true">↓</span></button>
-        <p class="story-boundary">Dated examples, not investment advice or a forecast. Company valuations, share prices and money someone can spend are different things.</p>
-      </div>
-    </section>
-
-    <section class="chance-scene" id="another-attempt"><div class="journey-width">
-      <div class="scene-heading"><h2>Good attempts.<br/><em>Uncertain outcomes.</em></h2><p>A result tells you what happened.<br/>It cannot, by itself, tell you how good the decision was.</p></div>
-      <ChanceLab />
-      <details class="research-note"><summary>Why a few big outcomes can distort the picture</summary><p>A few outcomes can dominate a total. A power law is a particular mathematical distribution, not a synonym for unfairness—and this archive does not establish one for life outcomes.</p><p>We see people after a breakthrough. We cannot count everyone who made similar attempts without one. That is survivorship bias, not evidence that the missing people tried less.</p><a href="/methodology/">Read the methodology ↗</a></details>
-    </div></section>
-
-    <section class="agency-scene journey-width">
-      <div class="scene-heading"><h2>Give chance more<br/><em>ways to find you.</em></h2><p>Not by doing everything.<br/>By making useful, affordable openings.</p></div>
-      <div class="agency-row"><span>Make & share</span><div><h3>Put something real into the world.</h3><p>A small project, a useful contribution, a conversation beyond your usual circle. Work people can encounter creates occasions for feedback and connection.</p></div><a href="/turning-points/bonnie/">A scout in the room ↗</a></div>
-      <div class="agency-row"><span>Learn & adjust</span><div><h3>Change the next attempt.</h3><p>Use feedback, deepen a skill, try a different audience. Repeating the same action is not always increasing your opportunities.</p></div><a href="https://levels.io/12-startups-12-months/" target="_blank" rel="noopener noreferrer">Pieter Levels’ account ↗</a></div>
-      <div class="agency-row"><span>Protect your room</span><div><h3>Keep the cost survivable.</h3><p>Time, health, money and responsibilities limit what is affordable. Smaller experiments, support, changing direction or pausing can preserve your choices.</p></div><a href="/turning-points/layoff/">A forced change ↗</a></div>
-      <details class="research-note"><summary>What supports this—and what doesn’t</summary><p>Experiments on LinkedIn found that weaker ties could improve job mobility, with effects varying by tie strength and industry. This supports a specific mechanism, not “more networking always wins.” <a href="https://ide.mit.edu/wp-content/uploads/2022/09/abl4476.pdf" target="_blank" rel="noopener noreferrer">Read the study ↗</a></p><p>Pieter Levels and <a href="https://newsletter.marclou.com/p/i-ve-made-3m-with-my-36-startups" target="_blank" rel="noopener noreferrer">Marc Lou</a> describe repeated launches and uneven returns. They are first-person examples, not proof that repeating their approach produces their results.</p></details>
-    </section>
-
-    <section class="ending-scene" id="the-boundary"><div class="journey-width">
-      <p>You didn’t choose every condition. You don’t have to earn the right to stop comparing.</p>
-      <h2>You can want more.<br/><em>You don’t have to be behind.</em></h2>
-      <p class="ending-copy">Keep your ambition, change it, or let some of it go. Meaningful work, security, relationships and a life you enjoy are not consolation prizes.</p>
-      <blockquote>“Age is a timestamp, not a shared starting line.”</blockquote>
-      <div class="ending-links"><a class="journey-button" href="/essays/everyone-has-lost-their-marbles/">Read the letter behind Paths ↗</a><a href="/explore/" data-health-event="archive_opened">Explore {people.length.toLocaleString()} documented lives ↗</a></div>
-      <p class="ending-small">No answer to submit. No score to improve.</p>
-    </div></section>
-  </article>
+    <script
+      is:inline
+      defer
+      src="https://ingest.sassmaker.com/tracker.js"
+      data-key="ahk_pub_5bf5a9051a94105f660b28ef1e15c01915f3798773baf090b2ff4cb81625bc76"
+      data-project="app-0059a056-8d82-4404-bfd1-2939a1fe2346"
+      data-identity="persistent"
+    ></script>
+    <script is:inline src="/app-health-log.js" defer></script>
+    <script
+      is:inline
+      src="https://sassmaker.com/project-strip.js?v=precise-b0adaa67"
+      data-project="what-it-takes-to-win"
+      data-theme="light"
+      data-host-only="true"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      is:inline
+      src="https://sassmaker.com/ai-chat-footer.js?v=precise-b0adaa67"
+      data-name="Paths"
+      data-project="what-it-takes-to-win"
+      data-theme="light"
+      data-surface="web"
+      data-host-only="true"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script is:inline>
+      document.addEventListener("DOMContentLoaded", () => {
+        const events = { "#the-start": "journey_continued", "/explore/": "archive_opened" };
+        for (const link of document.querySelectorAll("a[href]")) {
+          const name = events[link.getAttribute("href")];
+          if (name) link.setAttribute("data-health-event", name);
+        }
+      }, { once: true });
+    </script>
+  </Fragment>
+  <div id="the-survivor">
+    <GalleryPage content={content} />
+  </div>
 </Base>
-<script>
-  import "../scripts/journey";
-</script>
