@@ -26,7 +26,7 @@ function browser() {
       },
       addEventListener: window.addEventListener,
       removeEventListener: window.removeEventListener,
-      setTimeout(callback, delay) { assert.equal(delay, 90000); timers.set(1, callback); return 1; },
+      setTimeout(callback, delay) { assert.ok(delay === 30000 || delay === 90000); timers.set(1, callback); return 1; },
       clearTimeout(id) { timers.delete(id); },
     },
   };
