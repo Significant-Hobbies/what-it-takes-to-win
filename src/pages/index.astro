@@ -5,9 +5,9 @@ import { baseProps } from "@saas-maker/templates/page";
 import { galleryContent } from "@saas-maker/templates/schema";
 import { studioFromProjects, studioProjectsFeed } from "@saas-maker/ui/blocks/footer";
 import home from "../content/home.json";
+import Clarity from "../components/Clarity.astro";
 import people from "../data/people.json";
 
-const clarityBootstrap = "\n        window.clarity = window.clarity || function () {\n          (window.clarity.q = window.clarity.q || []).push(arguments);\n        };\n      ";
 const structuredData = {
   "@context": "https://schema.org", "@graph": [
   {"@type":"WebSite", "@id":"https://paths.significanthobbies.com/#website", name:"Paths", url:"https://paths.significanthobbies.com/"},
@@ -44,19 +44,14 @@ if (content.footer) content.footer.studio = studioFromProjects(projects, { curre
 
 <Base {...baseProps(content)}>
   <Fragment slot="head">
+    <link rel="preload" as="image" href={content.hero.image} fetchpriority="high" />
     <meta name="theme-color" content="#eef0e7" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="alternate" type="text/markdown" href="/index.md" />
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <script is:inline async src="/scripts/posthog.js"></script>
 
-    <script is:inline set:html={clarityBootstrap} />
-      <script
-        is:inline
-        async
-        src="https://www.clarity.ms/tag/y6bw72v6ih"
-        onload="typeof window.clarity === 'function' && window.clarity('set', 'project_id', 'what-it-takes-to-win')"
-      ></script>
+    <Clarity />
 
     <script
       is:inline

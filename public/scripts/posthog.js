@@ -10,13 +10,24 @@
       };
     }
 
-    const script = document.createElement("script");
-    script.type = "text/javascript";
-    script.crossOrigin = "anonymous";
-    script.async = true;
-    script.src = config.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js";
-    const firstScript = document.getElementsByTagName("script")[0];
-    firstScript.parentNode.insertBefore(script, firstScript);
+    // Keep the queue ready, but let the page paint before fetching analytics.
+    let started = false;
+    const events = ["pointerdown", "keydown", "touchstart", "scroll"];
+    function load() {
+      if (started) return;
+      started = true;
+      clearTimeout(timer);
+      events.forEach((event) => window.removeEventListener(event, load));
+      const script = document.createElement("script");
+      script.type = "text/javascript";
+      script.crossOrigin = "anonymous";
+      script.async = true;
+      script.src = config.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js";
+      const firstScript = document.getElementsByTagName("script")[0];
+      firstScript.parentNode.insertBefore(script, firstScript);
+    }
+    events.forEach((event) => window.addEventListener(event, load, { passive: true, once: true }));
+    const timer = setTimeout(load, 30000);
 
     let instance = posthog;
     if (name) instance = posthog[name] = [];
