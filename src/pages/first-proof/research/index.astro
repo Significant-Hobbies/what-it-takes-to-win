@@ -1,0 +1,65 @@
+---
+import Base from "../../../layouts/Base.astro";
+import "../../../styles/luck.css";
+import "../../../styles/first-proof.css";
+import { firstProofRecords, firstProofSnapshot, INTAKE_LABELS, locatedAgeBand, summarizeFirstProof } from "../../../data/first-proof";
+
+const counts = summarizeFirstProof();
+const domains = [...new Set(firstProofRecords.map((record) => record.domain))].sort();
+---
+
+<Base title="First proof research register — Paths" description="Uncleared candidates and held-back cases for Before the First Proof. Located achievements and unresolved earlier-history questions, with workbook provenance." canonicalPath="/first-proof/research/" robots="noindex,follow" mainClass="luck-main first-proof-main">
+  <header class="hero luck-hero">
+    <p class="luck-back"><a href="/first-proof/">Before the First Proof</a></p>
+    <h1>Research register</h1>
+    <p class="lede">{counts.candidates} candidates. {counts.held} held back. Every record still needs an earlier-history audit.</p>
+    <p class="first-proof-intro">These are research leads, not cleared first-excellence profiles. An age and occupation from a competition screen do not establish someone’s earlier life.</p>
+    <p class="luck-edition">{counts.people} people · {counts.sources} source URLs · {firstProofSnapshot}</p>
+  </header>
+
+  <form class="first-proof-filters" id="register-filters" hidden aria-label="Filter research records">
+    <label>Name or evidence question<input type="search" name="search" placeholder="Search the register" /></label>
+    <label>Intake group<select name="status"><option value="">All records</option><option value="A">Priority audit leads</option><option value="B">Open audit leads</option><option value="C">Held back</option></select></label>
+    <label>Domain<select name="domain"><option value="">All domains</option>{domains.map((domain) => <option>{domain}</option>)}</select></label>
+    <label>Located age band<select name="age"><option value="">All ages</option><option value="26-29">26–29</option><option value="30-34">30–34</option><option value="35-39">35–39</option><option value="outside">Outside 26–39</option><option value="unresolved">Unresolved interval</option></select></label>
+    <button type="reset">Clear filters</button>
+  </form>
+  <p id="register-count" class="first-proof-meta" role="status">Showing {counts.people} research records</p>
+  <p id="register-empty" hidden>No records match these filters. Try another name or clear the filters.</p>
+  <ol class="first-proof-records" id="register-records">
+    {firstProofRecords.map((record) => (
+      <li data-status={record.intakeStatus} data-domain={record.domain} data-age={locatedAgeBand(record.milestoneAge)} data-search={`${record.name} ${record.domain} ${record.locatedProof} ${record.background} ${record.unresolvedIssue}`.toLowerCase()}>
+        <article class="first-proof-register-entry">
+          <div><p class="first-proof-meta">{INTAKE_LABELS[record.intakeStatus]} · ID {record.id}</p><h2><a href={`/first-proof/research/${record.id}/`}>{record.name}</a></h2><p>{record.domain} · Located milestone age: {record.milestoneAge}</p></div>
+          <div><p>{record.locatedProof}</p><p class="first-proof-note">{record.researchDepth}</p><p><strong>Needs checking:</strong> {record.unresolvedIssue}</p><a href={`/first-proof/research/${record.id}/`}>Inspect record and sources →</a></div>
+        </article>
+      </li>
+    ))}
+  </ol>
+
+  <script>
+    const form = document.querySelector<HTMLFormElement>("#register-filters")!;
+    const rows = [...document.querySelectorAll<HTMLElement>("#register-records > li")];
+    const counter = document.querySelector<HTMLElement>("#register-count")!;
+    const empty = document.querySelector<HTMLElement>("#register-empty")!;
+    function filterRecords() {
+      const values = new FormData(form);
+      const query = String(values.get("search") ?? "").trim().toLowerCase();
+      const status = String(values.get("status") ?? "");
+      const domain = String(values.get("domain") ?? "");
+      const age = String(values.get("age") ?? "");
+      for (const row of rows) {
+        row.hidden = !((!query || row.dataset.search!.includes(query))
+          && (!status || row.dataset.status === status) && (!domain || row.dataset.domain === domain)
+          && (!age || row.dataset.age === age));
+      }
+      const count = rows.filter((row) => !row.hidden).length;
+      counter.textContent = `Showing ${count} of ${rows.length} research records`;
+      empty.hidden = count > 0;
+    }
+    form.hidden = false;
+    form.addEventListener("input", filterRecords);
+    form.addEventListener("submit", (event) => event.preventDefault());
+    form.addEventListener("reset", () => window.setTimeout(filterRecords, 0));
+  </script>
+</Base>

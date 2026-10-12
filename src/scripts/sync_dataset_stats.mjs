@@ -11,11 +11,12 @@
 //
 // The --check form runs inside `pnpm run quality`, so a dataset change that
 // leaves the docs behind fails the gate instead of shipping.
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { root, people, comparisonIsIndexable } from "../lib/discovery.mjs";
 import { luckCases } from "../data/luck-cases.mjs";
 import { turningPoints } from "../data/turning-points.mjs";
+import { publishedFirstProofRecords } from "../data/first-proof.mjs";
 
 const checkOnly = process.argv.includes("--check");
 
@@ -91,13 +92,14 @@ const reliability = JSON.parse(
   await readFile(path.join(root, "quality", "reliability", "secondary-coding-v1.json"), "utf8"),
 );
 
-// Mirrors audit_discovery.mjs: ten core surfaces, the essays index plus each
+// Mirrors audit_discovery.mjs: core surfaces, the essays index plus each
 // published essay, the luck directory plus each case, one URL per person, and
 // one per evidence-gated comparison.
-const CORE_SURFACES = 10;
-const ESSAY_URLS = 3;
+const CORE_SURFACES = 11;
+const ESSAY_URLS = 1 + (await readdir(path.join(root, "src", "pages", "essays")))
+  .filter((file) => file.endsWith(".md")).length;
 const luckUrls = 1 + luckCases.length;
-const sitemapUrls = CORE_SURFACES + ESSAY_URLS + luckUrls + turningPoints.length + total + indexable;
+const sitemapUrls = CORE_SURFACES + ESSAY_URLS + luckUrls + turningPoints.length + total + indexable + publishedFirstProofRecords.length;
 
 const cohortLine = tally((person) => person.cohort_group)
   .map(([label, value]) => `${label} ${number(value)}`)

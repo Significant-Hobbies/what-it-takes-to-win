@@ -1,0 +1,3435 @@
+{
+  "snapshotDate": "2026-10-11",
+  "workbook": "Paths_First_Proof_Research.xlsx",
+  "workbookSha256": "49f6b03b71bbbb957c1e8a8856c47e3b16decd625caf26241e3c8a52c54c94cb",
+  "sources": [
+    {
+      "id": "S001",
+      "domain": "anncleeves.com",
+      "url": "https://anncleeves.com/bio.html",
+      "people": "016 Ann Cleeves"
+    },
+    {
+      "id": "S002",
+      "domain": "athleticsweekly.com",
+      "url": "https://athleticsweekly.com/news/interviews/tracy-barlow-journey-sprinter-to-gb-marathoner-61955/",
+      "people": "007 Tracy Barlow"
+    },
+    {
+      "id": "S003",
+      "domain": "books.google.com",
+      "url": "https://books.google.com/books/about/All_Things_Are_Possible.html?id=cDJ56fTHqNYC",
+      "people": "125 Sue Monk Kidd"
+    },
+    {
+      "id": "S004",
+      "domain": "catholicleader.com.au",
+      "url": "https://catholicleader.com.au/life/family/faith-is-the-key-ingredient-in-julies-life_54304/",
+      "people": "034 Julie Goodwin"
+    },
+    {
+      "id": "S005",
+      "domain": "creativeloafing.com",
+      "url": "https://creativeloafing.com/content-185685-cover-story-subject-mailchimp",
+      "people": "131 Ben Chestnut"
+    },
+    {
+      "id": "S006",
+      "domain": "divyaprakash.in",
+      "url": "https://divyaprakash.in/about-me/",
+      "people": "021 Divya Prakash Dubey"
+    },
+    {
+      "id": "S007",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/%C3%85sa_Larsson",
+      "people": "072 Åsa Larsson"
+    },
+    {
+      "id": "S008",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Anand_Neelakantan",
+      "people": "050 Anand Neelakantan"
+    },
+    {
+      "id": "S009",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Anita_Shreve",
+      "people": "073 Anita Shreve"
+    },
+    {
+      "id": "S010",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Ann_Maxwell",
+      "people": "064 Ann Maxwell / Elizabeth Lowell"
+    },
+    {
+      "id": "S011",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Anuja_Chandramouli",
+      "people": "022 Anuja Chandramouli"
+    },
+    {
+      "id": "S012",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Ben_Chestnut",
+      "people": "131 Ben Chestnut"
+    },
+    {
+      "id": "S013",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Brent_Draper",
+      "people": "039 Brent Draper"
+    },
+    {
+      "id": "S014",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Brent_Weeks",
+      "people": "017 Brent Weeks"
+    },
+    {
+      "id": "S015",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Camilla_L%C3%A4ckberg",
+      "people": "044 Camilla Läckberg"
+    },
+    {
+      "id": "S016",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Carole_Matthews",
+      "people": "067 Carole Matthews"
+    },
+    {
+      "id": "S017",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Catherine_Coulter",
+      "people": "068 Catherine Coulter"
+    },
+    {
+      "id": "S018",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Dan_McLaughlin_(golfer)",
+      "people": "012 Dan McLaughlin"
+    },
+    {
+      "id": "S019",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Dashiell_Hammett",
+      "people": "127 Dashiell Hammett"
+    },
+    {
+      "id": "S020",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/David_Baldacci",
+      "people": "055 David Baldacci"
+    },
+    {
+      "id": "S021",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Debbie_Macomber",
+      "people": "014 Debbie Macomber"
+    },
+    {
+      "id": "S022",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Dennis_Lehane",
+      "people": "057 Dennis Lehane"
+    },
+    {
+      "id": "S023",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Diana_Chan",
+      "people": "037 Diana Chan"
+    },
+    {
+      "id": "S024",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Divya_Prakash_Dubey",
+      "people": "021 Divya Prakash Dubey"
+    },
+    {
+      "id": "S025",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Elizabeth_Strout",
+      "people": "070 Elizabeth Strout"
+    },
+    {
+      "id": "S026",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Frank_Skinner",
+      "people": "123 Frank Skinner"
+    },
+    {
+      "id": "S027",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Greg_Davies",
+      "people": "122 Greg Davies"
+    },
+    {
+      "id": "S028",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Harlan_Coben",
+      "people": "056 Harlan Coben"
+    },
+    {
+      "id": "S029",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Haruki_Murakami",
+      "people": "053 Haruki Murakami"
+    },
+    {
+      "id": "S030",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Hiro_Arikawa",
+      "people": "048 Hiro Arikawa"
+    },
+    {
+      "id": "S031",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Hiroko_Oyamada",
+      "people": "047 Hiroko Oyamada"
+    },
+    {
+      "id": "S032",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Jack_Foster_(athlete)",
+      "people": "008 Jack Foster"
+    },
+    {
+      "id": "S033",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/James_Dashner",
+      "people": "126 James Dashner"
+    },
+    {
+      "id": "S034",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Jayne_Ann_Krentz",
+      "people": "060 Jayne Ann Krentz"
+    },
+    {
+      "id": "S035",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Jill_Mansell",
+      "people": "066 Jill Mansell"
+    },
+    {
+      "id": "S036",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Joe_Abercrombie",
+      "people": "054 Joe Abercrombie"
+    },
+    {
+      "id": "S037",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Justin_Narayan",
+      "people": "038 Justin Narayan"
+    },
+    {
+      "id": "S038",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Karel_Sabbe",
+      "people": "011 Karel Sabbe"
+    },
+    {
+      "id": "S039",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Karin_Slaughter",
+      "people": "049 Karin Slaughter"
+    },
+    {
+      "id": "S040",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Kate_Bracks",
+      "people": "036 Kate Bracks"
+    },
+    {
+      "id": "S041",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Kathleen_E._Woodiwiss",
+      "people": "059 Kathleen E. Woodiwiss"
+    },
+    {
+      "id": "S042",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Keigo_Higashino",
+      "people": "024 Keigo Higashino"
+    },
+    {
+      "id": "S043",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Kristin_Hannah",
+      "people": "041 Kristin Hannah"
+    },
+    {
+      "id": "S044",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/LaVyrle_Spencer",
+      "people": "058 LaVyrle Spencer"
+    },
+    {
+      "id": "S045",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Larry_Brown_(writer)",
+      "people": "052 Larry Brown"
+    },
+    {
+      "id": "S046",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Lee_Mack",
+      "people": "120 Lee Mack"
+    },
+    {
+      "id": "S047",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Linda_Howard",
+      "people": "042 Linda Howard"
+    },
+    {
+      "id": "S048",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Liu_Cixin",
+      "people": "071 Liu Cixin"
+    },
+    {
+      "id": "S049",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Lonnie_Holley",
+      "people": "129 Lonnie Holley"
+    },
+    {
+      "id": "S050",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Loretta_Chase",
+      "people": "043 Loretta Chase"
+    },
+    {
+      "id": "S051",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Lucy_Foley",
+      "people": "136 Lucy Foley"
+    },
+    {
+      "id": "S052",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Lynne_Graham",
+      "people": "063 Lynne Graham"
+    },
+    {
+      "id": "S053",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Marian_Keyes",
+      "people": "065 Marian Keyes"
+    },
+    {
+      "id": "S054",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/MasterChef_Australia_series_10",
+      "people": "103 Ben Borsht; 104 Chloe Carroll; 105 Reece Hignell"
+    },
+    {
+      "id": "S055",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/MasterChef_Australia_series_11",
+      "people": "112 Tessa Boersma; 113 Simon Toohey; 114 Tim Bone"
+    },
+    {
+      "id": "S056",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/MasterChef_Australia_series_13",
+      "people": "115 Elise Pulbrook; 116 Linda Dalrymple; 117 Kishwar Chowdhury; 118 Pete Campbell; 134 Tommy Pham; 135 Depinder Chhibber"
+    },
+    {
+      "id": "S057",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/MasterChef_Australia_series_4",
+      "people": "107 Julia Taylor; 108 Mindy Woods; 109 Ben Milbourne"
+    },
+    {
+      "id": "S058",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/MasterChef_Australia_series_7",
+      "people": "110 Georgia Barnes; 111 Jessica Arnott"
+    },
+    {
+      "id": "S059",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/MasterChef_Australia_series_8",
+      "people": "098 Matt Sinclair; 099 Elise Franciskovic; 100 Mimi Baines; 101 Trent Harvey; 102 Elena Duggan"
+    },
+    {
+      "id": "S060",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/MasterChef_Australia_series_9",
+      "people": "106 Sarah Tiong"
+    },
+    {
+      "id": "S061",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Micky_Flanagan",
+      "people": "121 Micky Flanagan"
+    },
+    {
+      "id": "S062",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Miyuki_Miyabe",
+      "people": "023 Miyuki Miyabe"
+    },
+    {
+      "id": "S063",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Nadiya_Hussain",
+      "people": "040 Nadiya Hussain"
+    },
+    {
+      "id": "S064",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Natalie_Coleman",
+      "people": "030 Natalie Coleman"
+    },
+    {
+      "id": "S065",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Nicky_Spinks",
+      "people": "004 Nicky Spinks"
+    },
+    {
+      "id": "S066",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Nora_Roberts",
+      "people": "013 Nora Roberts"
+    },
+    {
+      "id": "S067",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Patrick_Rothfuss",
+      "people": "019 Patrick Rothfuss"
+    },
+    {
+      "id": "S068",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Penny_Jordan",
+      "people": "062 Penny Jordan"
+    },
+    {
+      "id": "S069",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Ping_Coombes",
+      "people": "035 Ping Coombes"
+    },
+    {
+      "id": "S070",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Preeti_Shenoy",
+      "people": "051 Preeti Shenoy"
+    },
+    {
+      "id": "S071",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Priscilla_Welch",
+      "people": "003 Priscilla Welch"
+    },
+    {
+      "id": "S072",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Purvis_Young",
+      "people": "130 Purvis Young"
+    },
+    {
+      "id": "S073",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Ravinder_Singh_(author)",
+      "people": "020 Ravinder Singh"
+    },
+    {
+      "id": "S074",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Ree_Drummond",
+      "people": "128 Ree Drummond"
+    },
+    {
+      "id": "S075",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Rhod_Gilbert",
+      "people": "045 Rhod Gilbert"
+    },
+    {
+      "id": "S076",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Scott_Lynch",
+      "people": "018 Scott Lynch"
+    },
+    {
+      "id": "S077",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Shelina_Permalloo",
+      "people": "028 Shelina Permalloo"
+    },
+    {
+      "id": "S078",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Sherryl_Woods",
+      "people": "069 Sherryl Woods"
+    },
+    {
+      "id": "S079",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Shigeru_Miyamoto",
+      "people": "025 Shigeru Miyamoto"
+    },
+    {
+      "id": "S080",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Simon_Wood_(chef)",
+      "people": "031 Simon Wood"
+    },
+    {
+      "id": "S081",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Steve_Way_(runner)",
+      "people": "002 Steve Way"
+    },
+    {
+      "id": "S082",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Susan_Elizabeth_Phillips",
+      "people": "061 Susan Elizabeth Phillips"
+    },
+    {
+      "id": "S083",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_series_10",
+      "people": "085 David Atherton; 086 Alice Fevronia; 087 Steph Blackwell; 088 Michael Chakraverty"
+    },
+    {
+      "id": "S084",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_series_11",
+      "people": "089 Dave Friday; 090 Laura Adlington; 091 Hermine Dossou"
+    },
+    {
+      "id": "S085",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_series_13",
+      "people": "092 Abdul Rehman Sharif; 093 Janusz Domagala; 094 Marie-Therese Maxy Maligisa; 095 Sandro Farmhouse"
+    },
+    {
+      "id": "S086",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_series_14",
+      "people": "096 Matty Edgell; 097 Tasha Stones"
+    },
+    {
+      "id": "S087",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_series_5",
+      "people": "074 Richard Burr; 075 Chetna Makan"
+    },
+    {
+      "id": "S088",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_series_6",
+      "people": "132 Mat Riley; 133 Tamal Ray"
+    },
+    {
+      "id": "S089",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_series_7",
+      "people": "076 Candice Brown; 077 Selasi Gbormittah; 078 Tom Gilliford"
+    },
+    {
+      "id": "S090",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_series_8",
+      "people": "079 Kate Lyon; 080 Steven Carter-Bailey"
+    },
+    {
+      "id": "S091",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_series_9",
+      "people": "081 Ruby Bhogal; 082 Briony Williams; 083 Manon Lagrève; 084 Dan Beasley-Harling"
+    },
+    {
+      "id": "S092",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Thomas_Frake",
+      "people": "033 Thomas Frake"
+    },
+    {
+      "id": "S093",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Tim_Anderson_(chef)",
+      "people": "029 Tim Anderson"
+    },
+    {
+      "id": "S094",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Tracy_Barlow_(runner)",
+      "people": "007 Tracy Barlow"
+    },
+    {
+      "id": "S095",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Walter_Mosley",
+      "people": "124 Walter Mosley"
+    },
+    {
+      "id": "S096",
+      "domain": "ffrf.org",
+      "url": "https://ffrf.org/publications/day/phyllis-diller/",
+      "people": "046 Phyllis Diller"
+    },
+    {
+      "id": "S097",
+      "domain": "freshfiction.com",
+      "url": "https://freshfiction.com/author.php?id=4687",
+      "people": "013 Nora Roberts"
+    },
+    {
+      "id": "S098",
+      "domain": "mediamilwaukee.com",
+      "url": "https://mediamilwaukee.com/culture/patrick-rothfuss-king-chronicles/",
+      "people": "019 Patrick Rothfuss"
+    },
+    {
+      "id": "S099",
+      "domain": "roseharvey.co.uk",
+      "url": "https://roseharvey.co.uk/",
+      "people": "006 Rose Harvey"
+    },
+    {
+      "id": "S100",
+      "domain": "runningmagazine.ca",
+      "url": "https://runningmagazine.ca/uncategorized/40-year-old-overweight-smoker-represent-england-commonwealth-marathon/",
+      "people": "002 Steve Way"
+    },
+    {
+      "id": "S101",
+      "domain": "the-cornish-historian.com",
+      "url": "https://the-cornish-historian.com/2025/04/04/cornish-sporting-heroes-1-emma-stepto/",
+      "people": "005 Emma Stepto"
+    },
+    {
+      "id": "S102",
+      "domain": "www.aarp.org",
+      "url": "https://www.aarp.org/entertainment/books/debbie-macomber/",
+      "people": "014 Debbie Macomber"
+    },
+    {
+      "id": "S103",
+      "domain": "www.abc.net.au",
+      "url": "https://www.abc.net.au/news/2009-07-20/masterchef-not-rigged-julie-says/1360566",
+      "people": "034 Julie Goodwin"
+    },
+    {
+      "id": "S104",
+      "domain": "www.brentweeks.com",
+      "url": "https://www.brentweeks.com/faq/",
+      "people": "017 Brent Weeks"
+    },
+    {
+      "id": "S105",
+      "domain": "www.brunel.ac.uk",
+      "url": "https://www.brunel.ac.uk/news-and-events/news/articles/MasterChef-winner-remembers-student-days-at-Brunel",
+      "people": "028 Shelina Permalloo"
+    },
+    {
+      "id": "S106",
+      "domain": "www.city-runs.co.uk",
+      "url": "https://www.city-runs.co.uk/emma-stepto-qa",
+      "people": "005 Emma Stepto"
+    },
+    {
+      "id": "S107",
+      "domain": "www.cliffsnotes.com",
+      "url": "https://www.cliffsnotes.com/literature/s/the-secret-life-of-bees/sue-monk-kidd-biography",
+      "people": "125 Sue Monk Kidd"
+    },
+    {
+      "id": "S108",
+      "domain": "www.deadgoodbooks.co.uk",
+      "url": "https://www.deadgoodbooks.co.uk/ann-cleeves-career-highlights/",
+      "people": "016 Ann Cleeves"
+    },
+    {
+      "id": "S109",
+      "domain": "www.edutopia.org",
+      "url": "https://www.edutopia.org/blog/win-the-memory-game-dominic-obrien",
+      "people": "001 Dominic O’Brien"
+    },
+    {
+      "id": "S110",
+      "domain": "www.englandathletics.org",
+      "url": "https://www.englandathletics.org/news/nicky-spinks-reflects-on-her-inspirational-journey/",
+      "people": "004 Nicky Spinks"
+    },
+    {
+      "id": "S111",
+      "domain": "www.forbesindia.com",
+      "url": "https://www.forbesindia.com/article/cross-border/saving-businesses-the-old-fashioned-wayby-email/51755/1",
+      "people": "131 Ben Chestnut"
+    },
+    {
+      "id": "S112",
+      "domain": "www.heart.co.uk",
+      "url": "https://www.heart.co.uk/showbiz/tv-movies/who-chef-tom-rhodes-masterchef-winner-2021/",
+      "people": "119 Tom Rhodes"
+    },
+    {
+      "id": "S113",
+      "domain": "www.indiegogo.com",
+      "url": "https://www.indiegogo.com/en/projects/chrishunt/kenshi-a-free-roaming-squad-based-rpg/rewards",
+      "people": "026 Chris Hunt"
+    },
+    {
+      "id": "S114",
+      "domain": "www.kennytutt.co.uk",
+      "url": "https://www.kennytutt.co.uk/",
+      "people": "032 Kenny Tutt"
+    },
+    {
+      "id": "S115",
+      "domain": "www.leadstartcorp.com",
+      "url": "https://www.leadstartcorp.com/authors/anuja-chandramouli/",
+      "people": "022 Anuja Chandramouli"
+    },
+    {
+      "id": "S116",
+      "domain": "www.macdowell.org",
+      "url": "https://www.macdowell.org/artists/walter-mosley",
+      "people": "124 Walter Mosley"
+    },
+    {
+      "id": "S117",
+      "domain": "www.mirror.co.uk",
+      "url": "https://www.mirror.co.uk/tv/who-won-masterchef-2018-bank-12359726",
+      "people": "032 Kenny Tutt"
+    },
+    {
+      "id": "S118",
+      "domain": "www.nadiyahussain.com",
+      "url": "https://www.nadiyahussain.com/about-me/",
+      "people": "040 Nadiya Hussain"
+    },
+    {
+      "id": "S119",
+      "domain": "www.pentadact.com",
+      "url": "https://www.pentadact.com/page/13/?order=ASC&orderby=title",
+      "people": "027 Tom Francis"
+    },
+    {
+      "id": "S120",
+      "domain": "www.pentadact.com",
+      "url": "https://www.pentadact.com/page/15/?order=asc&orderby=title",
+      "people": "027 Tom Francis"
+    },
+    {
+      "id": "S121",
+      "domain": "www.robyncarr.com",
+      "url": "https://www.robyncarr.com/biography/",
+      "people": "015 Robyn Carr"
+    },
+    {
+      "id": "S122",
+      "domain": "www.shelf-awareness.com",
+      "url": "https://www.shelf-awareness.com/readers/2012-01-13/book_brahmin%3A_robyn_carr.html",
+      "people": "015 Robyn Carr"
+    },
+    {
+      "id": "S123",
+      "domain": "www.soulsgrowndeep.org",
+      "url": "https://www.soulsgrowndeep.org/artist/lonnie-holley",
+      "people": "129 Lonnie Holley"
+    },
+    {
+      "id": "S124",
+      "domain": "www.soulsgrowndeep.org",
+      "url": "https://www.soulsgrowndeep.org/artist/purvis-young",
+      "people": "130 Purvis Young"
+    },
+    {
+      "id": "S125",
+      "domain": "www.studiomuseum.org",
+      "url": "https://www.studiomuseum.org/artists/purvis-young",
+      "people": "130 Purvis Young"
+    },
+    {
+      "id": "S126",
+      "domain": "www.teamgb.com",
+      "url": "https://www.teamgb.com/athlete/rose-harvey/1Zm0HLMeEiObiom7wB6f3i",
+      "people": "006 Rose Harvey"
+    },
+    {
+      "id": "S127",
+      "domain": "www.timjacksonphd.com",
+      "url": "https://www.timjacksonphd.com/an-interview-with-ultra-marathoner-ihor-verys-how-to-stay-resilient-when-challenging-yourself-to-the-limit/",
+      "people": "010 Ihor Verys"
+    },
+    {
+      "id": "S128",
+      "domain": "www.tntmagazine.com",
+      "url": "https://www.tntmagazine.com/leisure-entertainment/interviews/rhod-gilbert-interview-the-stand-up-comedian-on-being-angry-and-becoming-waless-sexiest-specimen/",
+      "people": "045 Rhod Gilbert"
+    },
+    {
+      "id": "S129",
+      "domain": "www.trailrunnermag.com",
+      "url": "https://www.trailrunnermag.com/training/trail-tips-training/kathryn-drew-and-the-power-of-consistency/",
+      "people": "009 Kathryn Drew"
+    },
+    {
+      "id": "S130",
+      "domain": "www.uk.emb-japan.go.jp",
+      "url": "https://www.uk.emb-japan.go.jp/en/event/webmagazine/jul11/tim_anderson.html",
+      "people": "029 Tim Anderson"
+    },
+    {
+      "id": "S131",
+      "domain": "www.ultrarunnermagazine.co.uk",
+      "url": "https://www.ultrarunnermagazine.co.uk/ihor-verys-discusses-his-barkley-marathons-win/",
+      "people": "010 Ihor Verys"
+    },
+    {
+      "id": "S132",
+      "domain": "www.wired.com",
+      "url": "https://www.wired.com/2009/03/bloggies-tk-tk",
+      "people": "128 Ree Drummond"
+    },
+    {
+      "id": "S133",
+      "domain": "www.womanandhome.com",
+      "url": "https://www.womanandhome.com/life/news-entertainment/masterchef-has-crowned-former-nandos-worker-tom-rhodes-winner-of-the-2021-bbc-series/",
+      "people": "119 Tom Rhodes"
+    },
+    {
+      "id": "S134",
+      "domain": "www.worldmemorychampionships.com",
+      "url": "https://www.worldmemorychampionships.com/dominic-obrien-wins-the-paneuropean-memory-championships/",
+      "people": "001 Dominic O’Brien"
+    },
+    {
+      "id": "S135",
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/World_Memory_Champion",
+      "people": "001 Dominic O’Brien"
+    }
+  ],
+  "records": [
+    {
+      "id": "001",
+      "name": "Dominic O’Brien",
+      "domain": "Memory sport",
+      "intakeStatus": "A",
+      "milestoneAge": "34",
+      "locatedProof": "Won the inaugural World Memory Championship in 1991; began deliberate memory training at 30.",
+      "background": "His own account describes school difficulties and leaving school at 16.",
+      "unresolvedIssue": "Audit employment, sport and other achievements between 16 and 25; later memory success does not settle every earlier domain.",
+      "researchDepth": "First-person history + competition organisation",
+      "sourceIds": [
+        "S109",
+        "S134",
+        "S135"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 2
+      }
+    },
+    {
+      "id": "004",
+      "name": "Nicky Spinks",
+      "domain": "Fell running",
+      "intakeStatus": "A",
+      "milestoneAge": "38",
+      "locatedProof": "Completed the Bob Graham Round in 2005; first competitive fell race was in 2001, at 34.",
+      "background": "Farm upbringing and office work; resumed recreational running at 19, well before the later fell-running results.",
+      "unresolvedIssue": "Audit running from 19 onward, horse riding, school/work and any 2001–2004 results. First ultra in 2005 is not necessarily first athletic distinction.",
+      "researchDepth": "Federation retrospective + biographical chronology",
+      "sourceIds": [
+        "S110",
+        "S065"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 3
+      }
+    },
+    {
+      "id": "014",
+      "name": "Debbie Macomber",
+      "domain": "Fiction",
+      "intakeStatus": "A",
+      "milestoneAge": "34–35",
+      "locatedProof": "Starlight was published in 1983 after years of manuscript submissions.",
+      "background": "High-school education, homemaking and raising four children; accounts describe reading difficulties.",
+      "unresolvedIssue": "First sale versus first publication chronology needs reconciliation. Cross-domain early history remains incomplete.",
+      "researchDepth": "Biographical history + reported interview",
+      "sourceIds": [
+        "S021",
+        "S102"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 4
+      }
+    },
+    {
+      "id": "016",
+      "name": "Ann Cleeves",
+      "domain": "Fiction",
+      "intakeStatus": "A",
+      "milestoneAge": "31–32",
+      "locatedProof": "A Bird in Hand, her first novel, was published in 1986.",
+      "background": "University dropout; worked as bird-observatory cook, probation officer, auxiliary coastguard and library worker.",
+      "unresolvedIssue": "Look for earlier stories, prizes or occupational distinction; do not date first achievement to the later television adaptations.",
+      "researchDepth": "Author biography + publisher chronology",
+      "sourceIds": [
+        "S001",
+        "S108"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 5
+      }
+    },
+    {
+      "id": "034",
+      "name": "Julie Goodwin",
+      "domain": "Cooking",
+      "intakeStatus": "A",
+      "milestoneAge": "38",
+      "locatedProof": "Won MasterChef Australia in 2009, after selection from thousands of applicants.",
+      "background": "Assisted in the family IT business and raised three children.",
+      "unresolvedIssue": "Earlier local cooking, business and music achievements require checking; domestic skill is not assumed to be absent.",
+      "researchDepth": "Contemporaneous reporting + interview",
+      "sourceIds": [
+        "S103",
+        "S004"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 6
+      }
+    },
+    {
+      "id": "002",
+      "name": "Steve Way",
+      "domain": "Distance running",
+      "intakeStatus": "B",
+      "milestoneAge": "33",
+      "locatedProof": "Ran 2:35:12 and placed 100th at the 2008 London Marathon; earlier 2006 marathon was 3:07.",
+      "background": "IT employment; serious training began in 2007 after smoking and weight gain.",
+      "unresolvedIssue": "Investigate whether his earlier IT career or other activities already demonstrated unusual performance; do not use 2014 Commonwealth selection as first proof.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S081",
+        "S100"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 7
+      }
+    },
+    {
+      "id": "003",
+      "name": "Priscilla Welch",
+      "domain": "Distance running",
+      "intakeStatus": "B",
+      "milestoneAge": "36",
+      "locatedProof": "Won the 1981 Glasgow Marathon in 2:55:15 after beginning competitive running at 35.",
+      "background": "Served in the British Army; accounts describe smoking and a late start to competitive running.",
+      "unresolvedIssue": "Army rank and prior performance require audit; being an officer or smoker does not prove absence of earlier excellence.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S071"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 8
+      }
+    },
+    {
+      "id": "006",
+      "name": "Rose Harvey",
+      "domain": "Distance running",
+      "intakeStatus": "B",
+      "milestoneAge": "About 29",
+      "locatedProof": "Strong 2021 marathon performances preceded her 2022 British title.",
+      "background": "Corporate lawyer who increased training after redundancy in 2020; earlier social club running.",
+      "unresolvedIssue": "Retrieve first regional-level result and audit legal/academic distinctions rather than calling the Olympic debut her first achievement.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S099",
+        "S126"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 9
+      }
+    },
+    {
+      "id": "009",
+      "name": "Kathryn Drew",
+      "domain": "Trail running",
+      "intakeStatus": "B",
+      "milestoneAge": "About 30",
+      "locatedProof": "Represented Canada in trail running in 2017; earlier Chuckanut results show progression from 2014.",
+      "background": "Event manager; coach describes several years of gradual competitive improvement.",
+      "unresolvedIssue": "Confirm birth date and pre-25 sporting/academic history; 2014 results may already constitute first meaningful proof.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S129"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 10
+      }
+    },
+    {
+      "id": "013",
+      "name": "Nora Roberts",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "30–31",
+      "locatedProof": "First published novel, Irish Thoroughbred, appeared in 1981; began writing in 1979.",
+      "background": "Homemaker and mother; publishing followed an adult start.",
+      "unresolvedIssue": "Audit school/other creative achievements and date of first acceptance, which may precede publication.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S066",
+        "S097"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 11
+      }
+    },
+    {
+      "id": "017",
+      "name": "Brent Weeks",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "31",
+      "locatedProof": "Night Angel novels were published in 2008.",
+      "background": "English graduate; worked as a teacher and bartender.",
+      "unresolvedIssue": "Establish first contract date and check earlier publication, academic honours or competitive achievements.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S104",
+        "S014"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 12
+      }
+    },
+    {
+      "id": "019",
+      "name": "Patrick Rothfuss",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "29",
+      "locatedProof": "Won a Writers of the Future contest in 2002, before the 2007 debut novel.",
+      "background": "Spent years in undergraduate education before completing a degree in 1999.",
+      "unresolvedIssue": "Check earlier school/college writing awards and university roles. The novel’s later fame is not the milestone.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S067",
+        "S098"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 13
+      }
+    },
+    {
+      "id": "021",
+      "name": "Divya Prakash Dubey",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "30–31",
+      "locatedProof": "Terms and Conditions Apply was published in 2013.",
+      "background": "Engineering and management education; corporate employment preceded Hindi fiction.",
+      "unresolvedIssue": "Check earlier writing circulation, campus prizes and professional distinctions; degrees alone are not treated as exceptional.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S006",
+        "S024"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 14
+      }
+    },
+    {
+      "id": "023",
+      "name": "Miyuki Miyabe",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "26",
+      "locatedProof": "Won the All Yomimono Mystery Prize for New Writers in 1987.",
+      "background": "Business-school training and administrative work in a law office; began writing and workshops in her twenties.",
+      "unresolvedIssue": "Audit school and other domains, plus any earlier competition results; workshop attendance alone is not distinction.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S062"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 15
+      }
+    },
+    {
+      "id": "028",
+      "name": "Shelina Permalloo",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "29",
+      "locatedProof": "Won MasterChef UK in 2012.",
+      "background": "Psychology graduate; worked in project management before the competition.",
+      "unresolvedIssue": "Audit earlier cooking contests, university honours and professional accomplishments; entertaining friends is not itself prior distinction.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S105",
+        "S077"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 16
+      }
+    },
+    {
+      "id": "029",
+      "name": "Tim Anderson",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "26",
+      "locatedProof": "Won MasterChef UK in 2011.",
+      "background": "Studied Japanese food history, lived in Japan and worked as a bar manager.",
+      "unresolvedIssue": "Check whether earlier food-related study, writing or employment already yielded recognised distinction.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S130",
+        "S093"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 17
+      }
+    },
+    {
+      "id": "031",
+      "name": "Simon Wood",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "38",
+      "locatedProof": "Won MasterChef UK in 2015.",
+      "background": "Worked in data management before moving into professional cooking.",
+      "unresolvedIssue": "Audit the scale and quality of earlier data work and any earlier cooking competitions. Job title does not establish or negate excellence.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S080"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 18
+      }
+    },
+    {
+      "id": "032",
+      "name": "Kenny Tutt",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "36",
+      "locatedProof": "Won MasterChef UK in 2018.",
+      "background": "Bank manager before the competition.",
+      "unresolvedIssue": "Banking promotions and earlier culinary competitions remain unexamined; championship is proof of cooking, not a complete life audit.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S114",
+        "S117"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 19
+      }
+    },
+    {
+      "id": "033",
+      "name": "Thomas Frake",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "32",
+      "locatedProof": "Won MasterChef UK in 2020.",
+      "background": "Broadcast-production graduate who later worked in banking.",
+      "unresolvedIssue": "Audit earlier broadcasting output, academic performance and cooking contests.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S092"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 20
+      }
+    },
+    {
+      "id": "035",
+      "name": "Ping Coombes",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "33",
+      "locatedProof": "Won MasterChef UK in 2014.",
+      "background": "Assistant hotel manager at a private hospital; entered following redundancy.",
+      "unresolvedIssue": "Identify the institution described as study in Oxford: city is not equivalent to Oxford University. Audit earlier accomplishments.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S069"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 21
+      }
+    },
+    {
+      "id": "037",
+      "name": "Diana Chan",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "About 29",
+      "locatedProof": "Won MasterChef Australia in 2017.",
+      "background": "Commerce graduate, chartered accountant and Deloitte senior analyst.",
+      "unresolvedIssue": "Professional/academic distinction before 25 is unresolved; distinguish competitive excellence from the ordinary qualification route.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S023"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 22
+      }
+    },
+    {
+      "id": "039",
+      "name": "Brent Draper",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "31–32",
+      "locatedProof": "Reached the top 13 of MasterChef Australia in 2021; won the 2023 series at 34.",
+      "background": "Concrete pumping and boilermaker training preceded the competition.",
+      "unresolvedIssue": "Use the earlier 2021 competitive showing, not only the later victory; check apprenticeship/work awards and youth activities.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S013"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 23
+      }
+    },
+    {
+      "id": "040",
+      "name": "Nadiya Hussain",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "30",
+      "locatedProof": "Won The Great British Bake Off in 2015.",
+      "background": "Mother of three; learned basic cooking at school and developed baking through books and videos.",
+      "unresolvedIssue": "Audit earlier local contests, school distinctions and any professional output. Her father’s restaurant is family context, not her own achievement.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S063",
+        "S118"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 24
+      }
+    },
+    {
+      "id": "041",
+      "name": "Kristin Hannah",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "30–31",
+      "locatedProof": "A Handful of Heaven was published in 1991.",
+      "background": "Practised law before fiction writing.",
+      "unresolvedIssue": "Check legal/academic honours and earlier stories; first acceptance likely predates first publication.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S043"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 25
+      }
+    },
+    {
+      "id": "042",
+      "name": "Linda Howard",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "31–32",
+      "locatedProof": "All That Glitters was published by Silhouette in 1982; submissions began around 1980.",
+      "background": "Trucking-company employee; wrote privately for years.",
+      "unresolvedIssue": "Long private practice is not proof of earlier distinction, but earlier school prizes and contract date still need audit.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S047"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 26
+      }
+    },
+    {
+      "id": "044",
+      "name": "Camilla Läckberg",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "28–29",
+      "locatedProof": "The Ice Princess was published in Sweden in 2003.",
+      "background": "Economics graduate and economist; childhood story-writing is documented.",
+      "unresolvedIssue": "A childhood story is not a distinction without external evaluation; check prizes and earlier professional achievements.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S015"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 27
+      }
+    },
+    {
+      "id": "045",
+      "name": "Rhod Gilbert",
+      "domain": "Comedy",
+      "intakeStatus": "B",
+      "milestoneAge": "34–35",
+      "locatedProof": "Won newcomer talent competitions in 2003 after beginning comedy in 2002.",
+      "background": "University education and market-research work preceded stand-up.",
+      "unresolvedIssue": "Confirm exact first competition and audit school/work achievements; the 2005 Edinburgh nomination is not the first proof.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S075",
+        "S128"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 28
+      }
+    },
+    {
+      "id": "047",
+      "name": "Hiroko Oyamada",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "26–27",
+      "locatedProof": "The Factory received the Shincho Prize for New Writers in 2010.",
+      "background": "Japanese-literature graduate; changed ordinary jobs several times, including work in a car factory.",
+      "unresolvedIssue": "Check university writing awards and earlier publication; exact award age needs a full birth date.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S031"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 29
+      }
+    },
+    {
+      "id": "048",
+      "name": "Hiro Arikawa",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "31",
+      "locatedProof": "Won the 2003 Dengeki Novel Prize; the winning novel was published in 2004.",
+      "background": "Publicly accessible early-life detail in the reviewed biography is sparse.",
+      "unresolvedIssue": "The award and age are clear, but no claim about absent pre-25 distinction is warranted yet.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S030"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 30
+      }
+    },
+    {
+      "id": "049",
+      "name": "Karin Slaughter",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "30",
+      "locatedProof": "Blindsighted was published and shortlisted for a debut crime-writing award in 2001.",
+      "background": "Adult writing career; earlier work history requires a better primary account.",
+      "unresolvedIssue": "Investigate the earlier sign business and school writing distinctions; not yet a clean first-excellence case.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S039"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 31
+      }
+    },
+    {
+      "id": "052",
+      "name": "Larry Brown",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "30",
+      "locatedProof": "First story appeared in Easyriders in June 1982, before the 1988 debut collection.",
+      "background": "Marine service, factory work and firefighting; began writing seriously around 1980.",
+      "unresolvedIssue": "Audit school prizes, military distinctions and earlier unpublished or locally published work.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S045"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 32
+      }
+    },
+    {
+      "id": "054",
+      "name": "Joe Abercrombie",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "30",
+      "locatedProof": "Gollancz acquired his debut in 2005; publication followed in 2006.",
+      "background": "Psychology graduate who worked in television editing.",
+      "unresolvedIssue": "Earlier professional editing may contain a qualifying accomplishment; date and evaluate the strongest pre-25 work.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S036"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 33
+      }
+    },
+    {
+      "id": "057",
+      "name": "Dennis Lehane",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "28–29",
+      "locatedProof": "A Drink Before the War was published in 1994, preceding its 1995 Shamus Award.",
+      "background": "Studied at Eckerd and later completed a creative-writing MFA.",
+      "unresolvedIssue": "Find earlier stories, competitive scholarships and writing prizes; MFA chronology and selectivity matter.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S022"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 34
+      }
+    },
+    {
+      "id": "058",
+      "name": "LaVyrle Spencer",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "35–36",
+      "locatedProof": "Avon acquired and published The Fulfillment in 1979.",
+      "background": "Teacher’s aide and mother; began her first novel in her thirties.",
+      "unresolvedIssue": "A reported flair for school writing is not itself a prize. Check school competitions and first contract date; strengthen the biographical source.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S044"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 35
+      }
+    },
+    {
+      "id": "060",
+      "name": "Jayne Ann Krentz",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "30–31",
+      "locatedProof": "Sold her first novel, Gentle Pirate, in 1979 after six years of rejected submissions.",
+      "background": "University education and library work preceded fiction.",
+      "unresolvedIssue": "Audit university distinctions, library accomplishments and any prior publications; ordinary qualifications alone do not exclude.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S034"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 36
+      }
+    },
+    {
+      "id": "061",
+      "name": "Susan Elizabeth Phillips",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "38–39",
+      "locatedProof": "Coauthored The Copeland Bride, published in 1983.",
+      "background": "Theatre-arts graduate; taught drama, speech and English, then became a stay-at-home mother.",
+      "unresolvedIssue": "Check earlier stage roles and university performances for independently selected distinction. Birth year in source is 1944, not 1948.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S082"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 37
+      }
+    },
+    {
+      "id": "062",
+      "name": "Penny Jordan",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "32",
+      "locatedProof": "First novel Duchess in Disguise appeared in March 1979, following an adult writing competition and agent interest.",
+      "background": "Left school with three O-levels; worked as a shorthand typist for fourteen years.",
+      "unresolvedIssue": "Identify the earlier competition/agent dates; audit school and occupational distinctions rather than equating private childhood stories with achievement.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S068"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 38
+      }
+    },
+    {
+      "id": "063",
+      "name": "Lynne Graham",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "30–31",
+      "locatedProof": "Bittersweet Passion was published in 1987.",
+      "background": "University education and family life preceded her published novels.",
+      "unresolvedIssue": "Early-life source is thin and partly unsourced; obtain first-person history and check Edinburgh admission/academic distinctions.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S052"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 39
+      }
+    },
+    {
+      "id": "064",
+      "name": "Ann Maxwell / Elizabeth Lowell",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "30–31",
+      "locatedProof": "Her first novel Change was published in 1975.",
+      "background": "Began writing a science-fiction novel for herself without creative-writing training.",
+      "unresolvedIssue": "Confirm birth date, first sale and earlier educational/work distinctions. Do not use an incorrect 1971 debut date.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S010"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 40
+      }
+    },
+    {
+      "id": "065",
+      "name": "Marian Keyes",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "31–32",
+      "locatedProof": "Poolbeg published Watermelon in 1995 after receiving her short stories.",
+      "background": "Law graduate who worked in administration.",
+      "unresolvedIssue": "Check earlier short-story acceptances and academic distinctions. Personal hardship is not evidence that prior excellence was absent.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S053"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 41
+      }
+    },
+    {
+      "id": "066",
+      "name": "Jill Mansell",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "34–35",
+      "locatedProof": "Had sufficient publishing success to leave hospital work in 1992; exact first acceptance remains to be located.",
+      "background": "Worked at the Burden Neurological Institute from leaving school.",
+      "unresolvedIssue": "Locate first publication/contract before 1992, and assess earlier work or school distinctions.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S035"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 42
+      }
+    },
+    {
+      "id": "068",
+      "name": "Catherine Coulter",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "35–36",
+      "locatedProof": "Signet offered a three-book contract; The Autumn Countess appeared in 1978.",
+      "background": "Studied history; wrote poetry privately as a student.",
+      "unresolvedIssue": "Audit the poetry’s publication status, graduate distinctions and earlier employment. Verify contract date rather than using publication alone.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S017"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 43
+      }
+    },
+    {
+      "id": "070",
+      "name": "Elizabeth Strout",
+      "domain": "Fiction / law",
+      "intakeStatus": "B",
+      "milestoneAge": "26",
+      "locatedProof": "First story appeared in New Letters in 1982, the year she graduated from law school with honours.",
+      "background": "College and legal education preceded fiction.",
+      "unresolvedIssue": "The 1982 honours may themselves be first proof after 25; audit earlier Bates academic distinctions and any earlier stories.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S025"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 44
+      }
+    },
+    {
+      "id": "071",
+      "name": "Liu Cixin",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "34–35",
+      "locatedProof": "A 1998 Science Fiction World story precedes the better-known 1999 publications and awards.",
+      "background": "Worked as a power-plant engineer; wrote a novel manuscript in 1989.",
+      "unresolvedIssue": "Audit earlier engineering results and whether the 1989 manuscript had external validation; reconcile first-publication accounts.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S048"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 45
+      }
+    },
+    {
+      "id": "072",
+      "name": "Åsa Larsson",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "36–37",
+      "locatedProof": "Solstorm won the Swedish crime-writing debut award in 2003.",
+      "background": "Worked as a tax lawyer before published fiction.",
+      "unresolvedIssue": "Confirm full birth date and any earlier legal/academic distinctions; the 1966 birth year is supported only weakly in this screen.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S007"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 46
+      }
+    },
+    {
+      "id": "073",
+      "name": "Anita Shreve",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "28–29",
+      "locatedProof": "Past the Island, Drifting was published in 1975 and won an O. Henry Prize in 1976.",
+      "background": "Teacher before journalism and fiction.",
+      "unresolvedIssue": "Determine whether earlier stories or journalism preceded 26, and assess university distinctions; later bestseller status is irrelevant.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S009"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 47
+      }
+    },
+    {
+      "id": "074",
+      "name": "Richard Burr",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "38",
+      "locatedProof": "2014 Bake Off runner-up; five Star Baker awards.",
+      "background": "Builder.",
+      "unresolvedIssue": "Audit earlier trade awards, academic honours and baking competitions; sustained expert judging is the located proof, not television fame.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S087"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 48
+      }
+    },
+    {
+      "id": "076",
+      "name": "Candice Brown",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "31",
+      "locatedProof": "Won Bake Off in 2016.",
+      "background": "PE teacher.",
+      "unresolvedIssue": "Investigate school and university sport: teaching PE does not establish either elite athletic performance or its absence.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S089"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 49
+      }
+    },
+    {
+      "id": "077",
+      "name": "Selasi Gbormittah",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "30",
+      "locatedProof": "2016 Bake Off semifinalist.",
+      "background": "Client service associate.",
+      "unresolvedIssue": "Earlier banking performance, school distinctions and community cooking results remain unexamined.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S089"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 50
+      }
+    },
+    {
+      "id": "078",
+      "name": "Tom Gilliford",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "26",
+      "locatedProof": "2016 Bake Off sixth-place finisher with Star Baker distinctions.",
+      "background": "Project engagement manager.",
+      "unresolvedIssue": "Resolve filming age and date the first award; check earlier creative, academic and professional achievements.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S089"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 51
+      }
+    },
+    {
+      "id": "079",
+      "name": "Kate Lyon",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "29",
+      "locatedProof": "2017 Bake Off runner-up.",
+      "background": "Health and safety inspector.",
+      "unresolvedIssue": "Search for earlier regional competitions and occupational awards; job description alone is not an early-life audit.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S090"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 52
+      }
+    },
+    {
+      "id": "080",
+      "name": "Steven Carter-Bailey",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "34",
+      "locatedProof": "2017 Bake Off runner-up.",
+      "background": "Marketer.",
+      "unresolvedIssue": "Date any earlier cake commissions or awards and investigate marketing achievements before 25.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S090"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 53
+      }
+    },
+    {
+      "id": "081",
+      "name": "Ruby Bhogal",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "29",
+      "locatedProof": "2018 Bake Off runner-up.",
+      "background": "Project manager.",
+      "unresolvedIssue": "Earlier educational distinction, engineering work and community cooking require audit.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S091"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 54
+      }
+    },
+    {
+      "id": "082",
+      "name": "Briony Williams",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "33",
+      "locatedProof": "2018 Bake Off semifinalist and Star Baker.",
+      "background": "Stay-at-home parent.",
+      "unresolvedIssue": "Reconstruct earlier employment, school and baking results; parenting is context, not evidence of absent capability.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S091"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 55
+      }
+    },
+    {
+      "id": "083",
+      "name": "Manon Lagrève",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "26",
+      "locatedProof": "2018 Bake Off episode-one Star Baker; fifth overall.",
+      "background": "Software project manager.",
+      "unresolvedIssue": "Confirm age during filming, then audit earlier school, sport and professional output.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S091"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 56
+      }
+    },
+    {
+      "id": "084",
+      "name": "Dan Beasley-Harling",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "36",
+      "locatedProof": "2018 Bake Off episode-four Star Baker.",
+      "background": "Stay-at-home parent.",
+      "unresolvedIssue": "Earlier career and any prior judged baking are missing; a childhood hobby would not itself disqualify.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S091"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 57
+      }
+    },
+    {
+      "id": "085",
+      "name": "David Atherton",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "36",
+      "locatedProof": "Won Bake Off in 2019.",
+      "background": "International health adviser.",
+      "unresolvedIssue": "Evaluate earlier nursing and humanitarian work for standout achievements rather than assuming ordinary employment.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S083"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 58
+      }
+    },
+    {
+      "id": "086",
+      "name": "Alice Fevronia",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "28",
+      "locatedProof": "2019 Bake Off runner-up.",
+      "background": "Geography teacher.",
+      "unresolvedIssue": "Check school/university honours and earlier baking competitions; distinguish selective achievement from a teaching qualification.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S083"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 59
+      }
+    },
+    {
+      "id": "087",
+      "name": "Steph Blackwell",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "28",
+      "locatedProof": "2019 Bake Off runner-up and four-time Star Baker.",
+      "background": "Shop assistant.",
+      "unresolvedIssue": "Earlier academic, sporting, musical and local baking distinctions remain unknown; retail work does not prove an unexceptional history.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S083"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 60
+      }
+    },
+    {
+      "id": "088",
+      "name": "Michael Chakraverty",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "26",
+      "locatedProof": "2019 Bake Off episode-three Star Baker.",
+      "background": "Theatre manager and fitness instructor.",
+      "unresolvedIssue": "Investigate earlier theatre performance and fitness credentials; confirm age at the recorded competition.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S083"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 61
+      }
+    },
+    {
+      "id": "089",
+      "name": "Dave Friday",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "30",
+      "locatedProof": "2020 Bake Off runner-up.",
+      "background": "Armoured security guard.",
+      "unresolvedIssue": "Audit school, workplace, sport and earlier local baking achievements before describing this as first excellence.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S084"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 62
+      }
+    },
+    {
+      "id": "090",
+      "name": "Laura Adlington",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "31",
+      "locatedProof": "2020 Bake Off runner-up.",
+      "background": "Digital manager.",
+      "unresolvedIssue": "Earlier digital work and creative outputs may predate baking; require a cross-domain timeline.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S084"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 63
+      }
+    },
+    {
+      "id": "091",
+      "name": "Hermine Dossou",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "39",
+      "locatedProof": "2020 Bake Off semifinalist.",
+      "background": "Accountant.",
+      "unresolvedIssue": "Check exact filming age, earlier accounting distinction and local baking results; near upper age boundary.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S084"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 64
+      }
+    },
+    {
+      "id": "092",
+      "name": "Abdul Rehman Sharif",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "29",
+      "locatedProof": "2022 Bake Off runner-up.",
+      "background": "Electronics engineer.",
+      "unresolvedIssue": "Investigate earlier engineering projects, competitive academic results and any baking awards.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S085"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 65
+      }
+    },
+    {
+      "id": "093",
+      "name": "Janusz Domagala",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "34",
+      "locatedProof": "2022 Bake Off semifinalist and two-time Star Baker.",
+      "background": "Personal assistant to a head teacher.",
+      "unresolvedIssue": "Reconstruct Polish and UK school/work histories and earlier creative competitions.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S085"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 66
+      }
+    },
+    {
+      "id": "094",
+      "name": "Marie-Therese Maxy Maligisa",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "29",
+      "locatedProof": "2022 Bake Off fifth-place finisher; Star Baker in episodes two and four.",
+      "background": "Architectural assistant.",
+      "unresolvedIssue": "Check earlier architecture/design awards or selective commissions and clarify earliest paid baking.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S085"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 67
+      }
+    },
+    {
+      "id": "096",
+      "name": "Matty Edgell",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "28",
+      "locatedProof": "Won Bake Off in 2023.",
+      "background": "PE and science teacher.",
+      "unresolvedIssue": "Explicitly check youth and university sport, not merely previous baking competitions.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S086"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 68
+      }
+    },
+    {
+      "id": "097",
+      "name": "Tasha Stones",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "27",
+      "locatedProof": "2023 Bake Off semifinalist; Star Baker in episodes two and three.",
+      "background": "Charity participation officer.",
+      "unresolvedIssue": "Audit school, arts, sport and earlier professional achievements; disability is not evidence about achievement history.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S086"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 69
+      }
+    },
+    {
+      "id": "098",
+      "name": "Matt Sinclair",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "27",
+      "locatedProof": "2016 MasterChef Australia runner-up.",
+      "background": "Coffee roaster.",
+      "unresolvedIssue": "Evaluate earlier professional coffee results, hospitality competitions and academic/sporting distinctions.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S059"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 70
+      }
+    },
+    {
+      "id": "099",
+      "name": "Elise Franciskovic",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "28",
+      "locatedProof": "Fourth in MasterChef Australia in 2016.",
+      "background": "Pharmacy technician.",
+      "unresolvedIssue": "Check earlier culinary contests, school distinctions and technical workplace achievement.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S059"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 71
+      }
+    },
+    {
+      "id": "100",
+      "name": "Mimi Baines",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "26",
+      "locatedProof": "Fifth in MasterChef Australia in 2016.",
+      "background": "Product manager.",
+      "unresolvedIssue": "Confirm age during judging and audit earlier product work, education and competitive hobbies.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S059"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 72
+      }
+    },
+    {
+      "id": "101",
+      "name": "Trent Harvey",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "29",
+      "locatedProof": "Sixth in MasterChef Australia in 2016.",
+      "background": "Electrician.",
+      "unresolvedIssue": "Retrieve individual judged challenge results to strengthen the performance claim; audit apprenticeship/trade and sporting awards.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S059"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 73
+      }
+    },
+    {
+      "id": "102",
+      "name": "Elena Duggan",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "32",
+      "locatedProof": "Won MasterChef Australia in 2016.",
+      "background": "Teacher.",
+      "unresolvedIssue": "School leadership, academic results and earlier arts/cooking achievements need checking; leadership title alone is not decisive.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S059"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 74
+      }
+    },
+    {
+      "id": "103",
+      "name": "Ben Borsht",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "31",
+      "locatedProof": "2018 MasterChef Australia runner-up.",
+      "background": "Builder.",
+      "unresolvedIssue": "Verify spelling against broadcaster biography; check trade distinction and any earlier cooking contests.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S054"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 75
+      }
+    },
+    {
+      "id": "104",
+      "name": "Chloe Carroll",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "28",
+      "locatedProof": "Fifth in MasterChef Australia in 2018.",
+      "background": "Nutritionist.",
+      "unresolvedIssue": "Audit professional nutrition work and earlier academic/cooking awards; locate first strong individual challenge result.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S054"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 76
+      }
+    },
+    {
+      "id": "105",
+      "name": "Reece Hignell",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "28",
+      "locatedProof": "Sixth in MasterChef Australia in 2018.",
+      "background": "Recruitment consultant.",
+      "unresolvedIssue": "Earlier hospitality experience and cooking recognition need dating; contest-table age is used rather than later return age.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S054"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 77
+      }
+    },
+    {
+      "id": "106",
+      "name": "Sarah Tiong",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "26",
+      "locatedProof": "Sixth in MasterChef Australia in 2017.",
+      "background": "Risk consultant.",
+      "unresolvedIssue": "Confirm filming age and investigate earlier academic/legal performance and judged food work.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S060"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 78
+      }
+    },
+    {
+      "id": "107",
+      "name": "Julia Taylor",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "26",
+      "locatedProof": "2012 MasterChef Australia runner-up.",
+      "background": "Legal secretary.",
+      "unresolvedIssue": "Audit earlier local cooking competitions and school/work distinctions; resolve exact age at first judged selection.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S057"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 79
+      }
+    },
+    {
+      "id": "108",
+      "name": "Mindy Woods",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "30",
+      "locatedProof": "Fourth in MasterChef Australia in 2012.",
+      "background": "Physiotherapist.",
+      "unresolvedIssue": "Check earlier sports participation and clinical/academic distinctions; a professional qualification alone is not automatic exclusion.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S057"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 80
+      }
+    },
+    {
+      "id": "109",
+      "name": "Ben Milbourne",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "30",
+      "locatedProof": "Fifth in MasterChef Australia in 2012.",
+      "background": "Secondary-school teacher.",
+      "unresolvedIssue": "Audit earlier teaching awards, academic performance, sport and local cooking.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S057"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 81
+      }
+    },
+    {
+      "id": "110",
+      "name": "Georgia Barnes",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "27",
+      "locatedProof": "2015 MasterChef Australia runner-up.",
+      "background": "Health-product representative.",
+      "unresolvedIssue": "Do not merge with the musician of the same name. Earlier nutrition work, study and competitive hobbies need audit.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S058"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 82
+      }
+    },
+    {
+      "id": "111",
+      "name": "Jessica Arnott",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "29",
+      "locatedProof": "Third in MasterChef Australia in 2015.",
+      "background": "Food-sales assistant.",
+      "unresolvedIssue": "Earlier hospitality or cooking recognition may precede the show; check independently rather than equating amateur with novice.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S058"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 83
+      }
+    },
+    {
+      "id": "112",
+      "name": "Tessa Boersma",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "27",
+      "locatedProof": "2019 MasterChef Australia runner-up.",
+      "background": "Criminal statistician.",
+      "unresolvedIssue": "Investigate earlier academic and statistical achievements and date previous cooking validation.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S055"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 84
+      }
+    },
+    {
+      "id": "114",
+      "name": "Tim Bone",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "33",
+      "locatedProof": "Fourth in MasterChef Australia in 2019.",
+      "background": "Cooking and gardening educator.",
+      "unresolvedIssue": "Earlier paid cooking education needs scrutiny: identify whether it already involved externally demonstrated excellence and at what age.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S055"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 85
+      }
+    },
+    {
+      "id": "115",
+      "name": "Elise Pulbrook",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "28",
+      "locatedProof": "Fourth in MasterChef Australia in 2021.",
+      "background": "Lawyer.",
+      "unresolvedIssue": "Audit academic/legal distinctions and earlier culinary competitions; law practice is neither automatic excellence nor evidence of its absence.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S056"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 86
+      }
+    },
+    {
+      "id": "116",
+      "name": "Linda Dalrymple",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "38",
+      "locatedProof": "Fifth in MasterChef Australia in 2021.",
+      "background": "Stay-at-home mother.",
+      "unresolvedIssue": "Reconstruct school, employment and regional cooking history, including any earlier commercial work.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S056"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 87
+      }
+    },
+    {
+      "id": "119",
+      "name": "Tom Rhodes",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "31",
+      "locatedProof": "Won MasterChef UK in 2021.",
+      "background": "Nando’s front-of-house assistant manager.",
+      "unresolvedIssue": "Audit earlier hospitality awards, academic record and amateur cooking contests; restaurant employment is relevant practice, not automatic disqualification.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S112",
+        "S133"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 88
+      }
+    },
+    {
+      "id": "120",
+      "name": "Lee Mack",
+      "domain": "Comedy",
+      "intakeStatus": "B",
+      "milestoneAge": "27",
+      "locatedProof": "Won So You Think You’re Funny? in 1995.",
+      "background": "Earlier stable and bar work; began open-mic performance in 1994.",
+      "unresolvedIssue": "Check school/holiday-entertainment performance and whether earlier paid stage work crossed the threshold before 26.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S046"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 89
+      }
+    },
+    {
+      "id": "121",
+      "name": "Micky Flanagan",
+      "domain": "Comedy",
+      "intakeStatus": "B",
+      "milestoneAge": "38",
+      "locatedProof": "Selected for Big Value Comedy at Edinburgh in 2001; professional stand-up began in 1997.",
+      "background": "Left school without qualifications; worked as fish porter and in furniture; returned to education as an adult.",
+      "unresolvedIssue": "Find the earliest selective booking or competition before 2001 and audit education/work outcomes; the 1997–2001 proof interval is provisional.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S061"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 90
+      }
+    },
+    {
+      "id": "124",
+      "name": "Walter Mosley",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "38",
+      "locatedProof": "Devil in a Blue Dress was published in 1990; writing began at 34.",
+      "background": "Worked in computing and studied writing while employed at Mobil.",
+      "unresolvedIssue": "Audit school achievements, software work and earlier publications; the writing-course start is not itself proof.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S095",
+        "S116"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 91
+      }
+    },
+    {
+      "id": "125",
+      "name": "Sue Monk Kidd",
+      "domain": "Writing",
+      "intakeStatus": "B",
+      "milestoneAge": "30",
+      "locatedProof": "First personal essay was published in Guideposts and reprinted in Reader’s Digest.",
+      "background": "Nursing graduate, registered nurse and nursing instructor.",
+      "unresolvedIssue": "Audit academic and nursing distinctions before 26; do not use the much later first novel as first achievement.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S003",
+        "S107"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 92
+      }
+    },
+    {
+      "id": "126",
+      "name": "James Dashner",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "30–31",
+      "locatedProof": "A Door in the Woods was published in 2003.",
+      "background": "Studied accounting through master’s level; wrote privately as a child.",
+      "unresolvedIssue": "Check academic honours and earlier publishing; do not equate childhood practice or an ordinary degree with demonstrated distinction. Inclusion is biographical, not endorsement.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S033"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 93
+      }
+    },
+    {
+      "id": "127",
+      "name": "Dashiell Hammett",
+      "domain": "Fiction",
+      "intakeStatus": "B",
+      "milestoneAge": "28",
+      "locatedProof": "The Parthian Shot appeared in The Smart Set in October 1922.",
+      "background": "Worked as a private detective before writing.",
+      "unresolvedIssue": "Investigate earlier detective work and military distinctions; the later famous novels are not first proof.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S019"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 94
+      }
+    },
+    {
+      "id": "128",
+      "name": "Ree Drummond",
+      "domain": "Blogging",
+      "intakeStatus": "B",
+      "milestoneAge": "38",
+      "locatedProof": "Won the Best Kept Secret category at the 2007 Bloggies after starting a blog in 2006.",
+      "background": "USC graduate; homemaking and ranch life preceded blogging.",
+      "unresolvedIssue": "Audit earlier writing/photography and academic outcomes. Family wealth and support must be disclosed separately from her own achievements.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S132",
+        "S074"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 95
+      }
+    },
+    {
+      "id": "129",
+      "name": "Lonnie Holley",
+      "domain": "Visual art",
+      "intakeStatus": "B",
+      "milestoneAge": "31",
+      "locatedProof": "Birmingham Museum of Art displayed his sandstone carvings in 1981; art-making began in 1979.",
+      "background": "Self-taught artist; first-person account describes beginning with found materials in adulthood.",
+      "unresolvedIssue": "Audit earlier craft, music and community recognition; first museum support is an upper bound, not necessarily first local excellence.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S049",
+        "S123"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 96
+      }
+    },
+    {
+      "id": "131",
+      "name": "Ben Chestnut",
+      "domain": "Software business",
+      "intakeStatus": "B",
+      "milestoneAge": "About 33–34",
+      "locatedProof": "Mailchimp had roughly 10,000 users in 2007 and became the founders’ full-time business.",
+      "background": "Industrial-design education and web-design work preceded the email product.",
+      "unresolvedIssue": "Audit pre-26 technical/design accomplishments and locate the agency’s first substantial results; exact birth year is not settled.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S012",
+        "S111",
+        "S005"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 97
+      }
+    },
+    {
+      "id": "132",
+      "name": "Mat Riley",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "37",
+      "locatedProof": "Bake Off episode-six Star Baker in 2015.",
+      "background": "Firefighter.",
+      "unresolvedIssue": "Investigate school, sport, emergency-service distinctions and earlier baking contests; expert judging is the located proof.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S088"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 98
+      }
+    },
+    {
+      "id": "133",
+      "name": "Tamal Ray",
+      "domain": "Baking",
+      "intakeStatus": "B",
+      "milestoneAge": "29",
+      "locatedProof": "2015 Bake Off runner-up.",
+      "background": "Trainee anaesthetist.",
+      "unresolvedIssue": "Selective medical education and earlier exam performance require scrutiny; neither a medical job title nor missing grades resolves prior excellence.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S088"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 99
+      }
+    },
+    {
+      "id": "134",
+      "name": "Tommy Pham",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "31",
+      "locatedProof": "Top-seven MasterChef Australia finish in 2021, with repeatedly highly rated individual dishes.",
+      "background": "Kindergarten teacher.",
+      "unresolvedIssue": "Audit earlier teaching, academic, sporting and culinary achievements; competition performance does not establish a novice start.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S056"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 100
+      }
+    },
+    {
+      "id": "135",
+      "name": "Depinder Chhibber",
+      "domain": "Cooking",
+      "intakeStatus": "B",
+      "milestoneAge": "29",
+      "locatedProof": "Won two individual MasterChef Australia immunity challenges in May 2021.",
+      "background": "Pharmacist.",
+      "unresolvedIssue": "Check earlier academic distinction and cooking contests; professional qualification alone is not treated as proof of exceptional performance.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S056"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Candidates",
+        "row": 101
+      }
+    },
+    {
+      "id": "005",
+      "name": "Emma Stepto",
+      "domain": "Distance running",
+      "intakeStatus": "C",
+      "milestoneAge": "About 38–39",
+      "locatedProof": "Won the 2008 Duchy Open 3,000 m and placed second in the county 5,000 m.",
+      "background": "Later adult return to running; interviews also mention running at school.",
+      "unresolvedIssue": "Establish exact age and whether school running included county/district selection; not a clean late-start claim yet.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S101",
+        "S106"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 2
+      }
+    },
+    {
+      "id": "007",
+      "name": "Tracy Barlow",
+      "domain": "Distance running",
+      "intakeStatus": "C",
+      "milestoneAge": "Earlier record conflicts",
+      "locatedProof": "Later elite marathon results cannot be treated as her first athletic proof.",
+      "background": "Nurse; club athletics included sprinting, hurdles and triple jump before distance running.",
+      "unresolvedIssue": "Southern League athletics in her early twenties may already clear the requested regional threshold. Keep outside the clean cohort.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S094",
+        "S002"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 3
+      }
+    },
+    {
+      "id": "008",
+      "name": "Jack Foster",
+      "domain": "Distance running",
+      "intakeStatus": "C",
+      "milestoneAge": "37",
+      "locatedProof": "Third in the 1969 Canadian National Exhibition marathon in 2:19:03; began running at 32.",
+      "background": "Factory work and extensive earlier cycling.",
+      "unresolvedIssue": "Earlier cycling must be checked for racing results; being a late runner is not sufficient.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S032"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 4
+      }
+    },
+    {
+      "id": "010",
+      "name": "Ihor Verys",
+      "domain": "Ultrarunning",
+      "intakeStatus": "C",
+      "milestoneAge": "Late twenties; exact first proof open",
+      "locatedProof": "Major ultra results followed a move into trail running during the pandemic.",
+      "background": "Immigrated to Canada; first-person interviews describe discovering running in adulthood.",
+      "unresolvedIssue": "Need a dated earliest competitive milestone and full earlier-history audit before age eligibility is asserted.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S131",
+        "S127"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 5
+      }
+    },
+    {
+      "id": "011",
+      "name": "Karel Sabbe",
+      "domain": "Ultrarunning",
+      "intakeStatus": "C",
+      "milestoneAge": "26",
+      "locatedProof": "Set a Pacific Crest Trail speed record in 2016.",
+      "background": "Dentist; earlier football and tennis are documented.",
+      "unresolvedIssue": "Youth football/tennis competitive level is unresolved. A prior regional selection would disqualify a first-excellence interpretation.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S038"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 6
+      }
+    },
+    {
+      "id": "012",
+      "name": "Dan McLaughlin",
+      "domain": "Amateur golf",
+      "intakeStatus": "C",
+      "milestoneAge": "34",
+      "locatedProof": "Reached a single-digit golf handicap after beginning his golf experiment at 30; source reports 5.2 in 2013.",
+      "background": "Previously worked as a commercial photographer.",
+      "unresolvedIssue": "Confirm handicap with contemporaneous records, assess its competitive level, and audit earlier photography. Did not achieve the intended PGA goal.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S018"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 7
+      }
+    },
+    {
+      "id": "015",
+      "name": "Robyn Carr",
+      "domain": "Fiction",
+      "intakeStatus": "C",
+      "milestoneAge": "Age not securely established",
+      "locatedProof": "Author interview dates her first book deal to 1978; first novel publication is generally dated 1980.",
+      "background": "Trained as a nurse and moved repeatedly as a military spouse.",
+      "unresolvedIssue": "Verify birth date and distinguish contract from publication before admitting to the age-qualified cohort.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S121",
+        "S122"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 8
+      }
+    },
+    {
+      "id": "018",
+      "name": "Scott Lynch",
+      "domain": "Fiction",
+      "intakeStatus": "C",
+      "milestoneAge": "26",
+      "locatedProof": "A publisher bought his first novel in August 2004; publication followed in 2006.",
+      "background": "Worked as dishwasher, waiter, cook, office manager, web designer and freelance writer.",
+      "unresolvedIssue": "Earlier freelance writing needs a substantive audit; it could already constitute the first professional distinction.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S076"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 9
+      }
+    },
+    {
+      "id": "020",
+      "name": "Ravinder Singh",
+      "domain": "Fiction",
+      "intakeStatus": "C",
+      "milestoneAge": "26",
+      "locatedProof": "I Too Had a Love Story was published in 2008; contemporaneous coverage followed.",
+      "background": "Engineering graduate and Infosys employee; ISB study came later, not before the first novel.",
+      "unresolvedIssue": "2007 versus 2008 publication chronology could cross the age-25/26 boundary. Resolve first acceptance and publication dates, then audit earlier academic/technical achievements.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S073"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 10
+      }
+    },
+    {
+      "id": "022",
+      "name": "Anuja Chandramouli",
+      "domain": "Fiction",
+      "intakeStatus": "C",
+      "milestoneAge": "Birth/publication dates require reconciliation",
+      "locatedProof": "Debut Arjuna appeared around 2012–2013.",
+      "background": "College education; trained Bharatanatyam dancer; childhood writing competitions are mentioned in biographical material.",
+      "unresolvedIssue": "Earlier dance/writing achievements and conflicting birth dates make this an unresolved case, not a clean match.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S011",
+        "S115"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 11
+      }
+    },
+    {
+      "id": "024",
+      "name": "Keigo Higashino",
+      "domain": "Fiction",
+      "intakeStatus": "C",
+      "milestoneAge": "26–27",
+      "locatedProof": "Rampo Prize finalist in 1984 and winner in 1985.",
+      "background": "Electrical engineer; was university archery-club captain.",
+      "unresolvedIssue": "Archery captaincy is a material earlier-performance flag requiring competitive-level verification.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S042"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 12
+      }
+    },
+    {
+      "id": "025",
+      "name": "Shigeru Miyamoto",
+      "domain": "Game development",
+      "intakeStatus": "C",
+      "milestoneAge": "26–28",
+      "locatedProof": "Worked on Sheriff in 1979 and directed Donkey Kong in 1981.",
+      "background": "Industrial-design graduate; joined Nintendo in 1977, at 24, through a family introduction.",
+      "unresolvedIssue": "Audit whether his pre-25 design portfolio or Nintendo work already met the threshold. Family access must remain visible.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S079"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 13
+      }
+    },
+    {
+      "id": "026",
+      "name": "Chris Hunt",
+      "domain": "Game development",
+      "intakeStatus": "C",
+      "milestoneAge": "Unverified",
+      "locatedProof": "Kenshi developed from a long solo project into a commercially released game.",
+      "background": "Development alongside security work is documented.",
+      "unresolvedIssue": "Birth year and earliest independently validated milestone are not established in the reviewed sources.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S113"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 14
+      }
+    },
+    {
+      "id": "027",
+      "name": "Tom Francis",
+      "domain": "Game development",
+      "intakeStatus": "C",
+      "milestoneAge": "Unverified",
+      "locatedProof": "Gunpoint achieved commercial success in 2013.",
+      "background": "Previously a PC Gamer journalist.",
+      "unresolvedIssue": "Verify age and whether earlier journalism was already a competitive professional distinction.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S120",
+        "S119"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 15
+      }
+    },
+    {
+      "id": "030",
+      "name": "Natalie Coleman",
+      "domain": "Cooking",
+      "intakeStatus": "C",
+      "milestoneAge": "29",
+      "locatedProof": "Won MasterChef UK in 2013.",
+      "background": "Credit controller and part-time techno DJ.",
+      "unresolvedIssue": "Prior DJ bookings, releases and competitive standing could be earlier excellence; investigate before inclusion.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S064"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 16
+      }
+    },
+    {
+      "id": "036",
+      "name": "Kate Bracks",
+      "domain": "Cooking",
+      "intakeStatus": "C",
+      "milestoneAge": "Mid-thirties; source conflict",
+      "locatedProof": "Won MasterChef Australia in 2011.",
+      "background": "School teacher and mother of three; later returned to teaching.",
+      "unresolvedIssue": "Sources conflict on age (competition table versus birth year). Verify age and earlier school/work achievements.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S040"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 17
+      }
+    },
+    {
+      "id": "038",
+      "name": "Justin Narayan",
+      "domain": "Cooking",
+      "intakeStatus": "C",
+      "milestoneAge": "27 reported; verify exact age",
+      "locatedProof": "Won MasterChef Australia in 2021.",
+      "background": "Youth pastor; also acted in a 2018 short film.",
+      "unresolvedIssue": "Earlier acting selection and achievements need examination; reliable age confirmation is still required.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S037"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 18
+      }
+    },
+    {
+      "id": "043",
+      "name": "Loretta Chase",
+      "domain": "Fiction",
+      "intakeStatus": "C",
+      "milestoneAge": "37–38",
+      "locatedProof": "Isabella was bought by a New York editor and published in 1987.",
+      "background": "Clerical, teaching and administrative work; professional exhibition-catalogue and video writing preceded novels.",
+      "unresolvedIssue": "Earlier paid writing may be the relevant first proof; date and evaluate it before using the novel milestone.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S050"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 19
+      }
+    },
+    {
+      "id": "046",
+      "name": "Phyllis Diller",
+      "domain": "Comedy",
+      "intakeStatus": "C",
+      "milestoneAge": "34–35",
+      "locatedProof": "Radio work in 1952 preceded the celebrated 1955 Purple Onion engagement at 37.",
+      "background": "Studied piano at music college without graduating; later homemaking and employment.",
+      "unresolvedIssue": "Piano performance level before 25 is a substantial unresolved flag; do not present her as an unskilled homemaker.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S096"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 20
+      }
+    },
+    {
+      "id": "050",
+      "name": "Anand Neelakantan",
+      "domain": "Fiction",
+      "intakeStatus": "C",
+      "milestoneAge": "About 38–39; birth date to confirm",
+      "locatedProof": "Asura was published in May 2012 and reached bestseller charts.",
+      "background": "Engineering graduate; Indian Oil employee; also drew cartoons for Malayalam magazines.",
+      "unresolvedIssue": "Date earlier published cartoons and assess their selectivity; verify birth date before age-qualified inclusion.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S008"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 21
+      }
+    },
+    {
+      "id": "051",
+      "name": "Preeti Shenoy",
+      "domain": "Fiction",
+      "intakeStatus": "C",
+      "milestoneAge": "About 36–37; verify",
+      "locatedProof": "34 Bubblegums and Candies followed her earlier blog; later fiction became bestselling.",
+      "background": "Self-taught artist as well as writer.",
+      "unresolvedIssue": "Earlier art exhibitions, commissions and blog reception could shift the first proof; birth and publication dates need consolidation.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S070"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 22
+      }
+    },
+    {
+      "id": "053",
+      "name": "Haruki Murakami",
+      "domain": "Fiction",
+      "intakeStatus": "C",
+      "milestoneAge": "30",
+      "locatedProof": "Hear the Wind Sing won the Gunzo New Writers Prize in 1979.",
+      "background": "Ran a jazz bar; described beginning fiction at 29.",
+      "unresolvedIssue": "Waseda admission and earlier bar-business performance need examination; do not substitute his own ordinary-person description for a cross-domain audit.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S029"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 23
+      }
+    },
+    {
+      "id": "055",
+      "name": "David Baldacci",
+      "domain": "Fiction",
+      "intakeStatus": "C",
+      "milestoneAge": "35",
+      "locatedProof": "Absolute Power was published in 1996 following years of unpublished writing.",
+      "background": "Practised law for nine years.",
+      "unresolvedIssue": "University of Virginia law admission and prior legal performance are material academic/professional flags; do not count as a clean match.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S020"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 24
+      }
+    },
+    {
+      "id": "056",
+      "name": "Harlan Coben",
+      "domain": "Fiction",
+      "intakeStatus": "C",
+      "milestoneAge": "28",
+      "locatedProof": "Play Dead was accepted and published in 1990.",
+      "background": "Amherst graduate; worked in his grandfather’s travel business.",
+      "unresolvedIssue": "Selective Amherst admission and earlier school/work distinction require resolution before inclusion.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S028"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 25
+      }
+    },
+    {
+      "id": "059",
+      "name": "Kathleen E. Woodiwiss",
+      "domain": "Fiction",
+      "intakeStatus": "C",
+      "milestoneAge": "32–33",
+      "locatedProof": "Avon published The Flame and the Flower in 1972.",
+      "background": "Military spouse and mother; wrote after repeated abandoned attempts.",
+      "unresolvedIssue": "Earlier paid fashion modelling in Japan is a real cross-domain flag; determine its selection level and date.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S041"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 26
+      }
+    },
+    {
+      "id": "067",
+      "name": "Carole Matthews",
+      "domain": "Fiction",
+      "intakeStatus": "C",
+      "milestoneAge": "36–37",
+      "locatedProof": "First novel Let’s Meet on Platform Eight appeared in 1997.",
+      "background": "Worked in beauty therapy, secretarial work, freelance writing and television presenting.",
+      "unresolvedIssue": "Earlier broadcasting and freelance publication may already meet the threshold. The first novel is not safely the first proof.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S016"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 27
+      }
+    },
+    {
+      "id": "069",
+      "name": "Sherryl Woods",
+      "domain": "Fiction",
+      "intakeStatus": "C",
+      "milestoneAge": "37–38",
+      "locatedProof": "First romance novels appeared under pen names in 1982.",
+      "background": "Journalist who had become a television editor.",
+      "unresolvedIssue": "Earlier journalism/editorial promotion is a substantial potential distinction and must be dated; not a clean novel-first case.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S078"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 28
+      }
+    },
+    {
+      "id": "075",
+      "name": "Chetna Makan",
+      "domain": "Baking",
+      "intakeStatus": "C",
+      "milestoneAge": "35",
+      "locatedProof": "2014 Bake Off semifinalist and episode-six Star Baker.",
+      "background": "Fashion designer.",
+      "unresolvedIssue": "Earlier design work could already qualify; date commissions, awards and competitive education outcomes before admitting.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S087"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 29
+      }
+    },
+    {
+      "id": "095",
+      "name": "Sandro Farmhouse",
+      "domain": "Baking",
+      "intakeStatus": "C",
+      "milestoneAge": "30",
+      "locatedProof": "2022 Bake Off runner-up.",
+      "background": "Nanny.",
+      "unresolvedIssue": "Earlier professional cake work is a material flag; date and assess commissions before treating the show as first proof.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S085"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 30
+      }
+    },
+    {
+      "id": "113",
+      "name": "Simon Toohey",
+      "domain": "Cooking",
+      "intakeStatus": "C",
+      "milestoneAge": "32",
+      "locatedProof": "Third in MasterChef Australia in 2019.",
+      "background": "Cocktail barman.",
+      "unresolvedIssue": "Earlier cocktail competitions could be the actual first proof; their dates may move eligibility into or outside the cohort.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S055"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 31
+      }
+    },
+    {
+      "id": "117",
+      "name": "Kishwar Chowdhury",
+      "domain": "Cooking",
+      "intakeStatus": "C",
+      "milestoneAge": "38",
+      "locatedProof": "Third in MasterChef Australia in 2021.",
+      "background": "Printing-business owner.",
+      "unresolvedIssue": "Earlier design education and business performance could be prior distinction; obtain dates and concrete outcomes.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S056"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 32
+      }
+    },
+    {
+      "id": "118",
+      "name": "Pete Campbell",
+      "domain": "Cooking",
+      "intakeStatus": "C",
+      "milestoneAge": "36",
+      "locatedProof": "2021 MasterChef Australia runner-up.",
+      "background": "Tattoo artist.",
+      "unresolvedIssue": "Professional artistic output may already qualify as earlier excellence; cannot use culinary debut as first all-domain proof.",
+      "researchDepth": "Competition record: age, result and occupation; no full early-life review",
+      "sourceIds": [
+        "S056"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 33
+      }
+    },
+    {
+      "id": "122",
+      "name": "Greg Davies",
+      "domain": "Comedy",
+      "intakeStatus": "C",
+      "milestoneAge": "34–35",
+      "locatedProof": "A credited television role in 2003 preceded his later comedy breakthrough.",
+      "background": "Drama and English graduate; spent thirteen years teaching.",
+      "unresolvedIssue": "A small TV role may be below the threshold; earlier theatrical work and teaching distinctions require audit.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S027"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 34
+      }
+    },
+    {
+      "id": "123",
+      "name": "Frank Skinner",
+      "domain": "Comedy",
+      "intakeStatus": "C",
+      "milestoneAge": "31",
+      "locatedProof": "Television debut in 1988 preceded the 1991 Perrier Award at 34.",
+      "background": "English degree, postgraduate study and teaching before stand-up.",
+      "unresolvedIssue": "Earlier academic honours may already qualify; verify results and dates before describing him as first-excellence-in-adulthood.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S026"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 35
+      }
+    },
+    {
+      "id": "130",
+      "name": "Purvis Young",
+      "domain": "Visual art",
+      "intakeStatus": "C",
+      "milestoneAge": "28 at project start; proof date unresolved",
+      "locatedProof": "Goodbread Alley public paintings began around 1971 and attracted outside attention.",
+      "background": "Learned drawing in childhood; returned to art during imprisonment.",
+      "unresolvedIssue": "Date the first external selection or meaningful sale and examine teenage art. Public display alone does not establish the required distinction.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S124",
+        "S125",
+        "S072"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 36
+      }
+    },
+    {
+      "id": "136",
+      "name": "Lucy Foley",
+      "domain": "Fiction",
+      "intakeStatus": "C",
+      "milestoneAge": "28–29",
+      "locatedProof": "The Book of Lost and Found was published in 2015.",
+      "background": "English study at UCL and Durham; publishing-editor work before novels.",
+      "unresolvedIssue": "Earlier selective academic outcomes and editorial achievements may be the actual first proof; resolve before inclusion.",
+      "researchDepth": "Biographical desk screen; incomplete pre-26 coverage",
+      "sourceIds": [
+        "S051"
+      ],
+      "publicationStatus": "Not cleared for first-excellence claim",
+      "provenance": {
+        "sheet": "Held back",
+        "row": 37
+      }
+    }
+  ]
+}
