@@ -144,7 +144,7 @@ and claim-specific independence assessment. No additional leads are implied.
 
 | Draft lead | Context and evidence | Classification / decisive limit |
 |---|---|---|
-| Mansukhbhai Ambabhai Jagani | Agricultural tooling in Gujarat; R19/R20 award records, contemporary R21 reporting and Gujarati R22. | Unresolved: earlier customer/prototype and exhibition evidence may precede the award; age and selective acceptance need original records. |
+| Mansukhbhai Ambabhai Jagani | Agricultural tooling in Gujarat; R19/R20 award records, contemporary R21 reporting and Gujarati R22. | Unresolved: the 1994 design and 2000 exhibition precede the award; dated prototype construction/customer acceptance and age remain unknown. |
 | Chintakindi Mallesham | Weaving machinery; R23 award record and R24 interview. | Unresolved: conflicting reported ages could change core eligibility at the first sale. Development duration also conflicts. |
 | Remya Jose | Household-work engineering; R20/R26 student-award evidence and contemporary R27/R28 coverage. | Earlier-excellence contrast, excluded from core: national recognition at reported 17. Exact earliest school result and full contrast-profile clearance remain open. |
 

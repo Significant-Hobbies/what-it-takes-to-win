@@ -682,7 +682,7 @@
     {
       "id": "MJ2",
       "personId": "draft-mansukhbhai-jagani",
-      "statement": "The award account dates a customer-driven prototype to 1994 and an invited science-congress exhibition to January 2000.",
+      "statement": "The award account dates a farmer-requested design to 1994 and an invited science-congress exhibition to January 2000; it does not date a built prototype or customer acceptance.",
       "sourceIds": [
         "R19"
       ],
@@ -748,7 +748,7 @@
     {
       "id": "CM2",
       "personId": "draft-chintakindi-mallesham",
-      "statement": "The account dates development to 1992, a working machine to 1999 and first sale to 2000; it reports childhood weaving and later electronics changes.",
+      "statement": "The account dates development to 1992, the first machine made to 1999 and first sale to 2000; it reports childhood weaving and later electronics changes.",
       "sourceIds": [
         "R23"
       ],
@@ -1633,7 +1633,7 @@
       "timeline": {
         "capability": [
           {
-            "kind": "customer-prototype",
+            "kind": "farmer-requested-design",
             "date": "1994",
             "datePrecision": "year",
             "claimIds": [
@@ -1733,7 +1733,7 @@
             "MJ2",
             "MJ3"
           ],
-          "gap": "Customer prototype precedes award; first independently validated technical result unknown."
+          "gap": "Design precedes award; dated prototype construction, customer acceptance and first independently validated technical result unknown."
         },
         {
           "domain": "Other competitive or community pursuits",
@@ -1743,7 +1743,7 @@
         }
       ],
       "holdReasons": [
-        "Earlier customer success may precede the award; age and earliest qualifying result unresolved.",
+        "Dated prototype construction and customer acceptance unknown; age and earliest qualifying result unresolved.",
         "No full earlier-domain audit or primary age record; selection denominator unknown."
       ],
       "contradictions": [],
@@ -1770,7 +1770,16 @@
         "secondReviewer": null,
         "decision": "pending"
       },
-      "corrections": [],
+      "corrections": [
+        {
+          "correctedOn": "2026-10-14",
+          "claimIds": [
+            "MJ2"
+          ],
+          "reason": "Independent review identified that R19 dates a farmer-requested design, not construction or customer testing.",
+          "supersedes": "1994 customer-driven prototype and earlier customer-success wording."
+        }
+      ],
       "researchContext": "India; Gujarat agricultural tooling and repair trade; Gujarati-language reporting.",
       "milestoneAssessment": {
         "claimIds": [
@@ -1783,8 +1792,8 @@
         "namedContribution": "Named device inventor; later support/design assistance kept separate.",
         "standard": "NIF national second prize; individual scores and original judging rules not recovered.",
         "comparisonPool": "Unknown category denominator; no percentile.",
-        "earliestProof": "2000 invitation and 1994 customer prototype are earlier leads, not automatically qualifying.",
-        "ageAtProof": "Unknown; later reported age alone does not date earliest customer proof.",
+        "earliestProof": "The 2000 invitation is an earlier external-proof lead, not automatically qualifying; the 1994 design does not establish customer acceptance.",
+        "ageAtProof": "Unknown; later reported age alone does not establish age at the earliest qualifying result.",
         "independentCorroboration": "R21 independently publishes contemporary activity but quotes NIF; R22 is a separate Gujarati report with unidentified informants. Neither clears early history."
       }
     },
@@ -1820,7 +1829,7 @@
             ]
           },
           {
-            "kind": "working-prototype",
+            "kind": "first-machine-made",
             "date": "1999",
             "datePrecision": "year",
             "claimIds": [
@@ -1912,7 +1921,7 @@
           "claimIds": [
             "CM2"
           ],
-          "gap": "Prototype and early sale could be cohort-changing; original acceptance and primary age evidence missing."
+          "gap": "First machine and early sale could be cohort-changing; original acceptance and primary age evidence missing."
         },
         {
           "domain": "Other competitive or community pursuits",
@@ -1922,7 +1931,7 @@
         }
       ],
       "holdReasons": [
-        "Age contradiction could change whether the 1999–2000 result occurred before 26.",
+        "Age contradiction could change whether the reported 1999–2000 events occurred before 26.",
         "First sale is not automatically qualifying excellence; no independent customer/technical assessment recovered.",
         "Primary award evidence does not clear all earlier domains."
       ],
@@ -1962,7 +1971,16 @@
         "secondReviewer": null,
         "decision": "pending"
       },
-      "corrections": [],
+      "corrections": [
+        {
+          "correctedOn": "2026-10-14",
+          "claimIds": [
+            "CM2"
+          ],
+          "reason": "Independent review requested the narrower first-machine-made wording supported by R23; no working-performance validation inferred.",
+          "supersedes": "1999 working machine / working-prototype wording."
+        }
+      ],
       "researchContext": "India; weaving and machinery, historical Andhra Pradesh / present Telangana.",
       "milestoneAssessment": {
         "claimIds": [
@@ -1975,7 +1993,7 @@
         "standard": "NIF advisory review and novelty/social-utility inquiry; process-level evidence, not his individual score sheet.",
         "comparisonPool": "Overall submissions contain non-unique entries; relevant category pool unknown.",
         "earliestProof": "Reported first sale precedes the award; original transaction and quality threshold not recovered.",
-        "ageAtProof": "Unresolved; conflicting reported ages span materially different possible ages at prototype/first sale.",
+        "ageAtProof": "Unresolved; conflicting reported ages span materially different possible ages at first machine/first sale.",
         "independentCorroboration": "R24 is a separate newsroom interview; early history still comes from the subject. R25 belongs to the scouting/support network."
       }
     },

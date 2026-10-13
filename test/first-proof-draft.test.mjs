@@ -120,8 +120,13 @@ test("unregistered research leads cannot impersonate intake or lose contrast exc
 });
 
 test("new lead evidence retains cohort-changing uncertainty and source dependence", () => {
+  const jagani = draft.cases.find((entry) => entry.personId === "draft-mansukhbhai-jagani");
   const mallesham = draft.cases.find((entry) => entry.personId === "draft-chintakindi-mallesham");
   const remya = draft.cases.find((entry) => entry.personId === "draft-remya-jose");
+  assert.equal(jagani.timeline.capability[0].kind, "farmer-requested-design");
+  assert.ok(!jagani.timeline.proof.some((event) => event.date === "1994"));
+  assert.equal(mallesham.timeline.capability[1].kind, "first-machine-made");
+  assert.ok(!mallesham.timeline.proof.some((event) => event.date === "1999"));
   assert.equal(mallesham.birthEvidence.date, null);
   assert.ok(mallesham.contradictions.some((conflict) => conflict.id === "CM-age" && conflict.status === "unresolved"));
   assert.equal(mallesham.earlierQualifyingProof, null);
