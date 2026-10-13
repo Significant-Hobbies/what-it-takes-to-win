@@ -1,0 +1,124 @@
+[
+  {
+    "id": "S001",
+    "domain": "anncleeves.com",
+    "url": "https://anncleeves.com/bio.html",
+    "people": "016 Ann Cleeves",
+    "attemptedAt": "2026-10-13T10:20:01.372789+00:00",
+    "status": 200,
+    "finalUrl": "https://anncleeves.com/bio.html",
+    "sha256": "3f6a3f93d9a51cff6bbf3d7e65a95da40a77f203da219a0dd7b2d20626953463"
+  },
+  {
+    "id": "S004",
+    "domain": "catholicleader.com.au",
+    "url": "https://catholicleader.com.au/life/family/faith-is-the-key-ingredient-in-julies-life_54304/",
+    "people": "034 Julie Goodwin",
+    "attemptedAt": "2026-10-13T10:20:01.374359+00:00",
+    "status": 200,
+    "finalUrl": "https://catholicleader.com.au/life/family/faith-is-the-key-ingredient-in-julies-life_54304/",
+    "sha256": "243ee44f2dffa32dea49246952d25a7df6d6b42c7e0dfa2bc6e59032ff85a2fc"
+  },
+  {
+    "id": "S021",
+    "domain": "en.wikipedia.org",
+    "url": "https://en.wikipedia.org/wiki/Debbie_Macomber",
+    "people": "014 Debbie Macomber",
+    "attemptedAt": "2026-10-13T10:20:01.375115+00:00",
+    "status": 200,
+    "finalUrl": "https://en.wikipedia.org/wiki/Debbie_Macomber",
+    "sha256": "9d5eaadc48cc382905f48fb2873f1acf194a27ee224fd3272bac80b9d2b374c7"
+  },
+  {
+    "id": "S065",
+    "domain": "en.wikipedia.org",
+    "url": "https://en.wikipedia.org/wiki/Nicky_Spinks",
+    "people": "004 Nicky Spinks",
+    "attemptedAt": "2026-10-13T10:20:01.375674+00:00",
+    "status": 200,
+    "finalUrl": "https://en.wikipedia.org/wiki/Nicky_Spinks",
+    "sha256": "1a1892050270c53081b4c51ab89a9b8d8b91fee3f948e9466667bda82adbd3e3"
+  },
+  {
+    "id": "S102",
+    "domain": "www.aarp.org",
+    "url": "https://www.aarp.org/entertainment/books/debbie-macomber/",
+    "people": "014 Debbie Macomber",
+    "attemptedAt": "2026-10-13T10:20:01.376016+00:00",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "S103",
+    "domain": "www.abc.net.au",
+    "url": "https://www.abc.net.au/news/2009-07-20/masterchef-not-rigged-julie-says/1360566",
+    "people": "034 Julie Goodwin",
+    "attemptedAt": "2026-10-13T10:20:01.376347+00:00",
+    "status": 200,
+    "finalUrl": "https://www.abc.net.au/news/2009-07-20/masterchef-not-rigged-julie-says/1360566",
+    "sha256": "ea39e439c966051a23a6fabd17865a9c06af30515a0f28d36d2e3cb990e9960d"
+  },
+  {
+    "id": "S108",
+    "domain": "www.deadgoodbooks.co.uk",
+    "url": "https://www.deadgoodbooks.co.uk/ann-cleeves-career-highlights/",
+    "people": "016 Ann Cleeves",
+    "attemptedAt": "2026-10-13T10:20:01.841049+00:00",
+    "status": 200,
+    "finalUrl": "https://www.deadgoodbooks.co.uk/ann-cleeves-career-highlights/",
+    "sha256": "74049d4d410c5615641072f055c520f5183e216f574ff1b30d3ae71df98925d9"
+  },
+  {
+    "id": "S109",
+    "domain": "www.edutopia.org",
+    "url": "https://www.edutopia.org/blog/win-the-memory-game-dominic-obrien",
+    "people": "001 Dominic O’Brien",
+    "attemptedAt": "2026-10-13T10:20:01.907971+00:00",
+    "status": 200,
+    "finalUrl": "https://www.edutopia.org/blog/win-the-memory-game-dominic-obrien",
+    "sha256": "090167fd31a6c5b6ce9c086971c1a2873b8d5c2121e0b2ff2b7a44afa697fbfa"
+  },
+  {
+    "id": "S110",
+    "domain": "www.englandathletics.org",
+    "url": "https://www.englandathletics.org/news/nicky-spinks-reflects-on-her-inspirational-journey/",
+    "people": "004 Nicky Spinks",
+    "attemptedAt": "2026-10-13T10:20:02.049059+00:00",
+    "status": 200,
+    "finalUrl": "https://www.englandathletics.org/news/nicky-spinks-reflects-on-her-inspirational-journey/",
+    "sha256": "50c729aeb91193ecee092b2c8b7aebf8c06abd81a63a219a3d43a4e884ad1f1a"
+  },
+  {
+    "id": "S134",
+    "domain": "www.worldmemorychampionships.com",
+    "url": "https://www.worldmemorychampionships.com/dominic-obrien-wins-the-paneuropean-memory-championships/",
+    "people": "001 Dominic O’Brien",
+    "attemptedAt": "2026-10-13T10:20:02.452529+00:00",
+    "status": 200,
+    "finalUrl": "https://www.worldmemorychampionships.com/dominic-obrien-wins-the-paneuropean-memory-championships/",
+    "sha256": "b3a1df84b8c7a7828fb809d071a563a4d26b68e918ef569aa05a5a613ed095c7"
+  },
+  {
+    "id": "S135",
+    "domain": "en.wikipedia.org",
+    "url": "https://en.wikipedia.org/wiki/World_Memory_Champion",
+    "people": "001 Dominic O’Brien",
+    "attemptedAt": "2026-10-13T10:20:02.526305+00:00",
+    "status": 200,
+    "finalUrl": "https://en.wikipedia.org/wiki/World_Memory_Champion",
+    "sha256": "6d90fc0886a4a10611e3c74031f58767f2ef134286445724bec32ffcf8677d3b"
+  },
+  {
+    "id": "D01",
+    "url": "https://debbiemacomber.com/about-debbie/biography",
+    "attemptedAt": "2026-10-13T10:20:02.818241+00:00",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "N01",
+    "url": "https://www.bobgrahamclub.org.uk/",
+    "attemptedAt": "2026-10-13T10:20:03.082187+00:00",
+    "status": 200,
+    "finalUrl": "https://www.bobgrahamclub.org.uk/",
+    "sha256": "9ee9431a02ff325ef592ff1e0744ed8e3432f130ece1c056c6741693a0484c6c"
+  }
+]
