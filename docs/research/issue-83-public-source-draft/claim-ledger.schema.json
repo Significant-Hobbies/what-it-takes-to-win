@@ -1,0 +1,664 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Before the First Proof draft claim ledger",
+  "description": "Draft-only schema. Independent review and publication use the separately gated runtime review model; this ledger cannot grant approval.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "const": "./claim-ledger.schema.json"
+    },
+    "schemaVersion": {
+      "const": 1
+    },
+    "updatedOn": {
+      "type": "string",
+      "format": "date"
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "publisher": {
+            "type": "string",
+            "minLength": 1
+          },
+          "origin": {
+            "type": "string",
+            "minLength": 1
+          },
+          "location": {
+            "type": "string",
+            "minLength": 1
+          },
+          "limitation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "author": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "publishedDate": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "datePrecision": {
+            "enum": [
+              "unknown",
+              "year",
+              "season",
+              "month",
+              "day",
+              "year-range",
+              "day-range"
+            ]
+          },
+          "accessedOn": {
+            "type": "string",
+            "format": "date"
+          },
+          "kind": {
+            "enum": [
+              "organisational-record",
+              "first-person",
+              "event-record",
+              "reported-interview",
+              "author-record",
+              "publisher-interview",
+              "scholarly-analysis",
+              "contemporary-report",
+              "promotional-record"
+            ]
+          },
+          "access": {
+            "enum": [
+              "retrieved",
+              "unavailable",
+              "search-extract-only"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "url",
+          "title",
+          "publisher",
+          "origin",
+          "location",
+          "limitation",
+          "author",
+          "publishedDate",
+          "datePrecision",
+          "accessedOn",
+          "kind",
+          "access"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "personId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "datePrecision": {
+            "enum": [
+              "unknown",
+              "year",
+              "season",
+              "month",
+              "day",
+              "year-range",
+              "day-range"
+            ]
+          },
+          "assessment": {
+            "enum": [
+              "recorded",
+              "reported",
+              "conflicted"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "personId",
+          "statement",
+          "sourceIds",
+          "date",
+          "datePrecision",
+          "assessment"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "personId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "status": {
+            "const": "held"
+          },
+          "earlierQualifyingProof": {
+            "type": "null"
+          },
+          "strongestAt25": {
+            "type": "null"
+          },
+          "birthEvidence": {
+            "type": "object",
+            "properties": {
+              "date": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "precision": {
+                "enum": [
+                  "unknown",
+                  "year",
+                  "season",
+                  "month",
+                  "day",
+                  "year-range",
+                  "day-range"
+                ]
+              },
+              "note": {
+                "type": "string",
+                "minLength": 1
+              },
+              "claimIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "date",
+              "precision",
+              "note",
+              "claimIds"
+            ],
+            "additionalProperties": false
+          },
+          "timeline": {
+            "type": "object",
+            "properties": {
+              "capability": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "date": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "datePrecision": {
+                      "enum": [
+                        "unknown",
+                        "year",
+                        "season",
+                        "month",
+                        "day",
+                        "year-range",
+                        "day-range"
+                      ]
+                    },
+                    "claimIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "date",
+                    "datePrecision",
+                    "claimIds"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "proof": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "date": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "datePrecision": {
+                      "enum": [
+                        "unknown",
+                        "year",
+                        "season",
+                        "month",
+                        "day",
+                        "year-range",
+                        "day-range"
+                      ]
+                    },
+                    "claimIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "date",
+                    "datePrecision",
+                    "claimIds"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "capability",
+              "proof"
+            ],
+            "additionalProperties": false
+          },
+          "conditions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "claimIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "uniqueItems": true
+                },
+                "unknown": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "label",
+                "claimIds",
+                "unknown"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "attempts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "claimIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "uniqueItems": true
+                },
+                "unknown": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "label",
+                "claimIds",
+                "unknown"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "subsequentOutcomes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "date": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "datePrecision": {
+                  "enum": [
+                    "unknown",
+                    "year",
+                    "season",
+                    "month",
+                    "day",
+                    "year-range",
+                    "day-range"
+                  ]
+                },
+                "claimIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "uniqueItems": true
+                }
+              },
+              "required": [
+                "kind",
+                "date",
+                "datePrecision",
+                "claimIds"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "earlyHistory": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "domain": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "state": {
+                  "enum": [
+                    "partial",
+                    "open"
+                  ]
+                },
+                "claimIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "uniqueItems": true
+                },
+                "gap": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "domain",
+                "state",
+                "claimIds",
+                "gap"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "holdReasons": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "contradictions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "claimIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "uniqueItems": true
+                },
+                "status": {
+                  "const": "unresolved"
+                },
+                "note": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "id",
+                "claimIds",
+                "status",
+                "note"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "searches": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "query": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "language": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "searchedOn": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "result": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "query",
+                "language",
+                "searchedOn",
+                "result"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "nextChecks": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "review": {
+            "type": "object",
+            "properties": {
+              "author": {
+                "type": "string",
+                "minLength": 1
+              },
+              "secondReviewer": {
+                "type": "null"
+              },
+              "decision": {
+                "const": "pending"
+              }
+            },
+            "required": [
+              "author",
+              "secondReviewer",
+              "decision"
+            ],
+            "additionalProperties": false
+          },
+          "corrections": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "correctedOn": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "claimIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "uniqueItems": true
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "supersedes": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "correctedOn",
+                "claimIds",
+                "reason",
+                "supersedes"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "personId",
+          "name",
+          "aliases",
+          "status",
+          "earlierQualifyingProof",
+          "strongestAt25",
+          "birthEvidence",
+          "timeline",
+          "conditions",
+          "attempts",
+          "subsequentOutcomes",
+          "earlyHistory",
+          "holdReasons",
+          "contradictions",
+          "searches",
+          "nextChecks",
+          "review",
+          "corrections"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "updatedOn",
+    "purpose",
+    "sources",
+    "claims",
+    "cases"
+  ],
+  "additionalProperties": false
+}

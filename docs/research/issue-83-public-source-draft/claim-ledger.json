@@ -1,0 +1,1253 @@
+{
+  "$schema": "./claim-ledger.schema.json",
+  "schemaVersion": 1,
+  "updatedOn": "2026-10-14",
+  "purpose": "Draft research only; no runtime publication input. Null means unknown, never no earlier achievement.",
+  "sources": [
+    {
+      "id": "R01",
+      "url": "https://www.worldmemorychampionships.com/wp-content/uploads/2013/10/2013_WMC_Press_Pack.pdf",
+      "title": "2013 World Memory Championships press pack",
+      "publisher": "World Memory Sports Council",
+      "author": "Jennifer Goddard (historical table compiler)",
+      "publishedDate": "2013",
+      "datePrecision": "year",
+      "accessedOn": "2026-10-14",
+      "origin": "wmc-results",
+      "kind": "organisational-record",
+      "location": "PDF p.33, Champion Leaders Table, 1991 row",
+      "limitation": "Retrospective draft table, not the original score sheet. Text extraction read; screenshot interface returned no viewable image. Seven-person field needs visual second review.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R02",
+      "url": "https://www.edutopia.org/blog/win-the-memory-game-dominic-obrien",
+      "title": "Every Child Can Win the Memory Game",
+      "publisher": "Edutopia",
+      "author": "Dominic O’Brien",
+      "publishedDate": "2014-05-20",
+      "datePrecision": "day",
+      "accessedOn": "2026-10-14",
+      "origin": "obrien-testimony",
+      "kind": "first-person",
+      "location": "Opening autobiographical paragraphs",
+      "limitation": "Page also displays Updated April 21, 2014. School and training claims have one witness.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R03",
+      "url": "https://www.worldmemorychampionships.com/results-and-statistics/",
+      "title": "Results and Statistics",
+      "publisher": "World Memory Sports Council",
+      "author": null,
+      "publishedDate": null,
+      "datePrecision": "unknown",
+      "accessedOn": "2026-10-14",
+      "origin": "wmc-results",
+      "kind": "organisational-record",
+      "location": "Current Statistics",
+      "limitation": "Current ranking baseline is WMC 2021; it does not supply the original 1991 rules.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R04",
+      "url": "https://www.runbg.co.uk/Bob%20Graham.htm",
+      "title": "My Bob Graham Round",
+      "publisher": "Nicky Spinks website",
+      "author": "Nicky Spinks",
+      "publishedDate": null,
+      "datePrecision": "unknown",
+      "accessedOn": "2026-10-14",
+      "origin": "spinks-testimony",
+      "kind": "first-person",
+      "location": "Page heading",
+      "limitation": "Event date is shown; publication date is not. Not independent club ratification.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R05",
+      "url": "https://dpfr.org.uk/wp_dpfr/wp-content/uploads/2025/09/Nicky-Spinks-Double-Bob-Graham-Round.pdf",
+      "title": "Double Bob Graham Round, 14th/15th May 2016",
+      "publisher": "Dark Peak Fell Runners",
+      "author": "Nicky Spinks",
+      "publishedDate": null,
+      "datePrecision": "unknown",
+      "accessedOn": "2026-10-14",
+      "origin": "spinks-testimony",
+      "kind": "first-person",
+      "location": "PDF p.1, Background",
+      "limitation": "2016 narrative republished in a PDF whose print header is 2025; exact first publication date unknown. Retrieved directly after browser extractor failed.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R06",
+      "url": "https://www.johnmuirtrust.org/assets/000/000/763/JMT_Journal_62_spring_2017_WEB_original_original.pdf?1603110116=",
+      "title": "Interview: Nicky Spinks, Journal 62",
+      "publisher": "John Muir Trust",
+      "author": "Kevin Lelland",
+      "publishedDate": "2017",
+      "datePrecision": "season",
+      "accessedOn": "2026-10-14",
+      "origin": "spinks-testimony",
+      "kind": "first-person",
+      "location": "Printed p.34, opening question; Spring 2017",
+      "limitation": "Interview origin remains Spinks. Direct PDF text checked after follow-up web extraction timed out.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R07",
+      "url": "https://www.brucescrown.co.uk/Archive/2004%20Rings%20of%20Fire%20results%20and%20report%20by%20RO%20Colin%20Butler.pdf",
+      "title": "The Rings of Fire August 14/15 2004 Results",
+      "publisher": "Bruce’s Crown archive",
+      "author": "Colin Butler (archive attribution)",
+      "publishedDate": null,
+      "datePrecision": "unknown",
+      "accessedOn": "2026-10-14",
+      "origin": "butler-2004-results",
+      "kind": "event-record",
+      "location": "Scanned PDF pp.1–2: heading and Heart of Granite table",
+      "limitation": "All four scanned pages inspected. Original report hosted by the current organiser Spinks; distinct named historical author, not a second modern witness. Event date is not upload date.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R08",
+      "url": "https://www.fionaoutdoors.co.uk/2024/04/bruces-crown-race-returns-to-galloway-hills-southern-scotland",
+      "title": "Bruce’s Crown Race returns to Galloway Hills, southern Scotland",
+      "publisher": "FionaOutdoors",
+      "author": "Fiona",
+      "publishedDate": "2024-04-12",
+      "datePrecision": "day",
+      "accessedOn": "2026-10-14",
+      "origin": "spinks-testimony",
+      "kind": "reported-interview",
+      "location": "Opening 2004 race account",
+      "limitation": "Article combines reporting with Spinks testimony; not independent earlier-life evidence.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R09",
+      "url": "https://debbiemacomber.com/wp-content/uploads/2024/03/Book-List_Website.pdf",
+      "title": "Stories in Chronological Order",
+      "publisher": "Debbie Macomber website",
+      "author": null,
+      "publishedDate": null,
+      "datePrecision": "unknown",
+      "accessedOn": "2026-10-14",
+      "origin": "macomber-bibliography",
+      "kind": "author-record",
+      "location": "PDF p.1, first two rows",
+      "limitation": "Visual table checked. URL upload month is not treated as publication date. Publication dates do not date acquisition.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R10",
+      "url": "https://wow-womenonwriting.com/28-FE3-DebbieMacomber.html",
+      "title": "Debbie Macomber: A Romance Writer Passionate About Her Characters and Stories",
+      "publisher": "WOW! Women on Writing",
+      "author": "Margo L. Dill",
+      "publishedDate": null,
+      "datePrecision": "unknown",
+      "accessedOn": "2026-10-14",
+      "origin": "macomber-testimony",
+      "kind": "first-person",
+      "location": "Answers about the rented typewriter and first acceptance",
+      "limitation": "Page discusses an upcoming August 2009 event but lacks a clear article dateline. Do not assign 2009 as a certified publication date.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R11",
+      "url": "https://www.publishersweekly.com/pw/by-topic/authors/profiles/article/89912-debbie-macomber-queen-of-hearts.html",
+      "title": "Debbie Macomber, Queen of Hearts",
+      "publisher": "Publishers Weekly",
+      "author": "Elaine Szewczyk",
+      "publishedDate": "2022-07-22",
+      "datePrecision": "day",
+      "accessedOn": "2026-10-14",
+      "origin": "pw-editorial-2022",
+      "kind": "reported-interview",
+      "location": "Paragraphs beginning Born in Yakima and Macomber married",
+      "limitation": "Online dateline July 22; print issue July 25. Reporter’s bibliographic framing is distinct; childhood and household details still originate with Macomber.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R12",
+      "url": "https://liverpooluniversitypress.blog/2024/04/08/in-conversation-with-ann-cleeves/",
+      "title": "In Conversation with… Ann Cleeves",
+      "publisher": "Liverpool University Press",
+      "author": "Alison Welsby",
+      "publishedDate": "2024-04-08",
+      "datePrecision": "day",
+      "accessedOn": "2026-10-14",
+      "origin": "lup-publication-record",
+      "kind": "publisher-interview",
+      "location": "Introduction and questions on chapter commission and island residence",
+      "limitation": "Publisher confirms its own 1982 volume. Commission circumstances and working arrangements are Cleeves testimony, not independent witness evidence.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R13",
+      "url": "https://journals.ucc.ie/index.php/irishjournalofanthropology/article/download/4408/6566/10975",
+      "title": "Tracing Lines in the Hilbre Sands: A Spatial Anthropology of Islandness and Other Fictions",
+      "publisher": "Irish Journal of Anthropology",
+      "author": "Les Roberts and Hazel Andrews",
+      "publishedDate": "2023",
+      "datePrecision": "year",
+      "accessedOn": "2026-10-14",
+      "origin": "roberts-andrews-reading",
+      "kind": "scholarly-analysis",
+      "location": "Vol.26(1), pp.104,107–108,117",
+      "limitation": "Authors analyse and cite the chapter, independently corroborating its existence and attribution; the life account remains Cleeves’s original narrative. No commission-date evidence.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R14",
+      "url": "https://www.abc.net.au/news/2009-07-19/julie-savours-masterchef-victory/1359412",
+      "title": "Julie savours MasterChef victory",
+      "publisher": "ABC News",
+      "author": "Rebekah van Druten",
+      "publishedDate": "2009-07-19",
+      "datePrecision": "day",
+      "accessedOn": "2026-10-14",
+      "origin": "abc-result-reporting",
+      "kind": "contemporary-report",
+      "location": "Opening result paragraphs",
+      "limitation": "Reported result and age, not birth certificate or original judging log. Updated January 19, 2012.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R15",
+      "url": "https://hope1032.com.au/education/nobody-knew-it-was-this-bad-julie-goodwin-in-her-new-memoir/",
+      "title": "Nobody Knew It Was This Bad: Julie Goodwin in Her New Memoir",
+      "publisher": "Hope 103.2",
+      "author": "Georgia Free",
+      "publishedDate": "2024-06-07",
+      "datePrecision": "day",
+      "accessedOn": "2026-10-14",
+      "origin": "goodwin-testimony",
+      "kind": "reported-interview",
+      "location": "School captain, university, youth group and From chaos to glory paragraphs",
+      "limitation": "Memoir/interview origin, not independent school records. Sensitive personal disclosures unnecessary to the milestone audit are not reproduced.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R16",
+      "url": "https://10.com.au/masterchef/articles/where-are-they-now-julie-goodwin/tpa190615yrfgh",
+      "title": "Where Are They Now: Julie Goodwin",
+      "publisher": "Network Ten",
+      "author": null,
+      "publishedDate": null,
+      "datePrecision": "unknown",
+      "accessedOn": "2026-10-14",
+      "origin": "ten-programme-record",
+      "kind": "organisational-record",
+      "location": "Search-index extract only",
+      "limitation": "Search result labels her season-one winner in 2009. Full-page retrieval failed; cannot certify rules, age or field from this lead.",
+      "access": "search-extract-only"
+    },
+    {
+      "id": "R17",
+      "url": "https://www.bobgrahamclub.org.uk/index.php?page=members",
+      "title": "Bob Graham Club member record lead",
+      "publisher": "Bob Graham Club",
+      "author": null,
+      "publishedDate": null,
+      "datePrecision": "unknown",
+      "accessedOn": "2026-10-14",
+      "origin": "bob-graham-club",
+      "kind": "organisational-record",
+      "location": "Requested members endpoint",
+      "limitation": "Full retrieval failed; no individual ratification claim made.",
+      "access": "unavailable"
+    },
+    {
+      "id": "R18",
+      "url": "https://awsprxdam.crownmediadev.com.s3-us-west-1.amazonaws.com/highRes/642443.pdf",
+      "title": "Mrs. Miracle production biographies",
+      "publisher": "Hallmark / Crown Media",
+      "author": null,
+      "publishedDate": null,
+      "datePrecision": "unknown",
+      "accessedOn": "2026-10-14",
+      "origin": "macomber-promotional-bio",
+      "kind": "promotional-record",
+      "location": "Search extract: Macomber biography",
+      "limitation": "Extract says Heartsong acquired in 1982. Full retrieval failed including certificate hostname mismatch; security not bypassed. Acquisition remains a lead.",
+      "access": "search-extract-only"
+    }
+  ],
+  "claims": [
+    {
+      "id": "DO1",
+      "personId": "001",
+      "statement": "The WMSC historical table names O’Brien as the 1991 champion; the extracted row reports seven competitors.",
+      "sourceIds": [
+        "R01"
+      ],
+      "date": "1991",
+      "datePrecision": "year",
+      "assessment": "recorded"
+    },
+    {
+      "id": "DO2",
+      "personId": "001",
+      "statement": "O’Brien reports leaving school at 16 and beginning memory training at 30 after a 1987 television demonstration.",
+      "sourceIds": [
+        "R02"
+      ],
+      "date": "1987",
+      "datePrecision": "year",
+      "assessment": "reported"
+    },
+    {
+      "id": "DO3",
+      "personId": "001",
+      "statement": "The governing organisation places the first championship in London in 1991; its current rankings use a 2021 baseline.",
+      "sourceIds": [
+        "R03"
+      ],
+      "date": "1991",
+      "datePrecision": "year",
+      "assessment": "recorded"
+    },
+    {
+      "id": "NS1",
+      "personId": "004",
+      "statement": "Spinks’s round page dates her Bob Graham to 17–18 June 2005 and gives 23:33.",
+      "sourceIds": [
+        "R04"
+      ],
+      "date": "2005-06-17/2005-06-18",
+      "datePrecision": "day-range",
+      "assessment": "reported"
+    },
+    {
+      "id": "NS2",
+      "personId": "004",
+      "statement": "Her later account gives June 2005 and 23:32, one minute different from her round page.",
+      "sourceIds": [
+        "R05"
+      ],
+      "date": "2005-06",
+      "datePrecision": "month",
+      "assessment": "conflicted"
+    },
+    {
+      "id": "NS3",
+      "personId": "004",
+      "statement": "Spinks recalls road running in 2001, then a Trunce advertisement while preparing for the Great North Run by October 2002.",
+      "sourceIds": [
+        "R06"
+      ],
+      "date": "2002-10",
+      "datePrecision": "month",
+      "assessment": "reported"
+    },
+    {
+      "id": "NS4",
+      "personId": "004",
+      "statement": "The 2004 organiser’s table lists Nicky Spinks of Penistone eighth, 09:01:12, among 11 finishers and eight retired entries in Heart of Granite.",
+      "sourceIds": [
+        "R07"
+      ],
+      "date": "2004-08-14/2004-08-15",
+      "datePrecision": "day-range",
+      "assessment": "recorded"
+    },
+    {
+      "id": "NS5",
+      "personId": "004",
+      "statement": "The 2024 account describes a first-female prize in 2004 while calling Spinks the only woman among 19 entrants. A category prize alone does not establish competitive selectivity.",
+      "sourceIds": [
+        "R08"
+      ],
+      "date": "2004",
+      "datePrecision": "year",
+      "assessment": "reported"
+    },
+    {
+      "id": "NS6",
+      "personId": "004",
+      "statement": "Spinks reports route reconnaissance and a similar practice circuit from her farm; the dated interview does not quantify her early weekly hours.",
+      "sourceIds": [
+        "R06"
+      ],
+      "date": null,
+      "datePrecision": "unknown",
+      "assessment": "reported"
+    },
+    {
+      "id": "DM1",
+      "personId": "014",
+      "statement": "The author bibliography lists Starlight on 1 November 1983 and Heartsong on 28 February 1984.",
+      "sourceIds": [
+        "R09"
+      ],
+      "date": "1983-11-01",
+      "datePrecision": "day",
+      "assessment": "recorded"
+    },
+    {
+      "id": "DM2",
+      "personId": "014",
+      "statement": "Macomber calls Heartsong her first published book in 1982; that publication claim conflicts with her bibliography.",
+      "sourceIds": [
+        "R10"
+      ],
+      "date": "1982",
+      "datePrecision": "year",
+      "assessment": "conflicted"
+    },
+    {
+      "id": "DM3",
+      "personId": "014",
+      "statement": "Macomber recalls selling articles, including one to Woman’s Day for $350, before the novel sale. No article title or acceptance date is supplied.",
+      "sourceIds": [
+        "R10"
+      ],
+      "date": null,
+      "datePrecision": "unknown",
+      "assessment": "reported"
+    },
+    {
+      "id": "DM4",
+      "personId": "014",
+      "statement": "Macomber recalls rented equipment, household interruptions, studying four novels’ structures, and an editor’s rejection before another publisher bought the manuscript.",
+      "sourceIds": [
+        "R10"
+      ],
+      "date": null,
+      "datePrecision": "unknown",
+      "assessment": "reported"
+    },
+    {
+      "id": "DM5",
+      "personId": "014",
+      "statement": "Publishers Weekly reports birth in 1948 and Starlight as the first novel in 1983. The year pair implies 34–35 at release, not an exact age or first-acceptance age.",
+      "sourceIds": [
+        "R11"
+      ],
+      "date": "1983",
+      "datePrecision": "year",
+      "assessment": "reported"
+    },
+    {
+      "id": "AC1",
+      "personId": "016",
+      "statement": "LUP identifies Cleeves’s first published work as a chapter in its 1982 Hilbre volume, preceding her novel debut.",
+      "sourceIds": [
+        "R12"
+      ],
+      "date": "1982",
+      "datePrecision": "year",
+      "assessment": "recorded"
+    },
+    {
+      "id": "AC2",
+      "personId": "016",
+      "statement": "Cleeves recalls being asked by editor J. D. Craggs, a friend through bird-observatory connections, to contribute a human perspective. Commission and acceptance dates are absent.",
+      "sourceIds": [
+        "R12"
+      ],
+      "date": null,
+      "datePrecision": "unknown",
+      "assessment": "reported"
+    },
+    {
+      "id": "AC3",
+      "personId": "016",
+      "statement": "Cleeves dates Hilbre residence to 1977–1981 and social-work study to the move; she describes diary writing and starting fiction during pregnancy leave.",
+      "sourceIds": [
+        "R12"
+      ],
+      "date": "1977/1981",
+      "datePrecision": "year-range",
+      "assessment": "reported"
+    },
+    {
+      "id": "AC4",
+      "personId": "016",
+      "statement": "Roberts and Andrews analyse A year on Hilbre and cite Cleeves’s 1982 chapter at pages 48–64; this independently corroborates attribution and publication, not acceptance timing.",
+      "sourceIds": [
+        "R13"
+      ],
+      "date": "1982",
+      "datePrecision": "year",
+      "assessment": "recorded"
+    },
+    {
+      "id": "JG1",
+      "personId": "034",
+      "statement": "ABC reports Goodwin as the 38-year-old winner on 19 July 2009, with judges George Calombaris, Gary Mehigan and Matt Preston. This dates reporting/broadcast, not filming.",
+      "sourceIds": [
+        "R14"
+      ],
+      "date": "2009-07-19",
+      "datePrecision": "day",
+      "assessment": "reported"
+    },
+    {
+      "id": "JG2",
+      "personId": "034",
+      "statement": "The 2024 interview account reports elected Year 12 school captaincy at Hornsby Girls High School, an earlier selection needing its own threshold audit.",
+      "sourceIds": [
+        "R15"
+      ],
+      "date": null,
+      "datePrecision": "unknown",
+      "assessment": "reported"
+    },
+    {
+      "id": "JG3",
+      "personId": "034",
+      "statement": "The same account describes interrupted education study, youth-group service, family IT work and creative cooking; it supplies no complete pre-26 achievement inventory.",
+      "sourceIds": [
+        "R15"
+      ],
+      "date": null,
+      "datePrecision": "unknown",
+      "assessment": "reported"
+    },
+    {
+      "id": "JG4",
+      "personId": "034",
+      "statement": "Goodwin recalls a friend encouraging her application and time away from family and business during the show. Exact practice hours and pre-show paid cooking remain unknown.",
+      "sourceIds": [
+        "R15"
+      ],
+      "date": null,
+      "datePrecision": "unknown",
+      "assessment": "reported"
+    }
+  ],
+  "cases": [
+    {
+      "personId": "001",
+      "name": "Dominic O’Brien",
+      "aliases": [
+        "Dominic O'Brien"
+      ],
+      "status": "held",
+      "earlierQualifyingProof": null,
+      "strongestAt25": null,
+      "birthEvidence": {
+        "date": null,
+        "precision": "unknown",
+        "note": "No primary birth record located; age 30 in a year does not establish a birthday.",
+        "claimIds": [
+          "DO2"
+        ]
+      },
+      "timeline": {
+        "capability": [
+          {
+            "kind": "practice",
+            "date": "1987",
+            "datePrecision": "year",
+            "claimIds": [
+              "DO2"
+            ]
+          }
+        ],
+        "proof": [
+          {
+            "kind": "competition",
+            "date": "1991",
+            "datePrecision": "year",
+            "claimIds": [
+              "DO1",
+              "DO3"
+            ]
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "label": "Brought: self-directed training after demonstration",
+          "claimIds": [
+            "DO2"
+          ],
+          "unknown": "Employment, financial runway, coaching, hours and support before 26 are unknown."
+        }
+      ],
+      "attempts": [],
+      "subsequentOutcomes": [],
+      "earlyHistory": [
+        {
+          "domain": "School and university",
+          "state": "partial",
+          "claimIds": [
+            "DO2"
+          ],
+          "gap": "School testimony does not audit selective achievements."
+        },
+        {
+          "domain": "Sport",
+          "state": "open",
+          "claimIds": [],
+          "gap": "No adequate pre-26 sport record located."
+        },
+        {
+          "domain": "Arts, music and writing",
+          "state": "open",
+          "claimIds": [],
+          "gap": "Arts and writing before 26 unknown; query yielded no attributable early result."
+        },
+        {
+          "domain": "Work and business",
+          "state": "open",
+          "claimIds": [],
+          "gap": "Employment and business outcomes at 16–25 unknown."
+        },
+        {
+          "domain": "Technical and scientific activity",
+          "state": "open",
+          "claimIds": [],
+          "gap": "Technical/scientific distinctions unknown; same-name engineering results not attributed."
+        },
+        {
+          "domain": "Other competitive or community pursuits",
+          "state": "open",
+          "claimIds": [],
+          "gap": "Other competitions and community distinctions unknown."
+        }
+      ],
+      "holdReasons": [
+        "Earliest proof and all-domain pre-26 history remain unresolved.",
+        "1991 exact date, original rules, score sheet and primary age evidence missing.",
+        "Historical field transcription still needs visual second review; no percentile claim."
+      ],
+      "contradictions": [],
+      "searches": [
+        {
+          "query": "\"Dominic O’Brien\" \"1991\" \"34\"",
+          "language": "en",
+          "searchedOn": "2026-10-14",
+          "result": "Autobiographical age leads; no primary date-of-birth record."
+        },
+        {
+          "query": "\"Dominic O’Brien\" \"born\" site:guinnessworldrecords.com",
+          "language": "en",
+          "searchedOn": "2026-10-14",
+          "result": "No result returned in this search."
+        },
+        {
+          "query": "\"Dominic O'Brien\" \"before\" \"guitar\" memory",
+          "language": "en",
+          "searchedOn": "2026-10-14",
+          "result": "No attributable earlier distinction located; this does not clear the arts domain."
+        }
+      ],
+      "nextChecks": [
+        "Inspect original 1991 score sheet and dated Guinness/competition entries before 1991.",
+        "Locate substantive employment and other-domain history at 16–25; do not infer absence."
+      ],
+      "review": {
+        "author": "Codex research pass",
+        "secondReviewer": null,
+        "decision": "pending"
+      },
+      "corrections": []
+    },
+    {
+      "personId": "004",
+      "name": "Nicky Spinks",
+      "aliases": [
+        "Nicola Spinks"
+      ],
+      "status": "held",
+      "earlierQualifyingProof": null,
+      "strongestAt25": null,
+      "birthEvidence": {
+        "date": null,
+        "precision": "unknown",
+        "note": "Intake secondary date 1967-04-22 remains uncorroborated; no certified age calculation.",
+        "claimIds": []
+      },
+      "timeline": {
+        "capability": [
+          {
+            "kind": "practice",
+            "date": "2002-10",
+            "datePrecision": "month",
+            "claimIds": [
+              "NS3",
+              "NS6"
+            ]
+          }
+        ],
+        "proof": [
+          {
+            "kind": "competition",
+            "date": "2004-08-14/2004-08-15",
+            "datePrecision": "day-range",
+            "claimIds": [
+              "NS4",
+              "NS5"
+            ]
+          },
+          {
+            "kind": "round-completion",
+            "date": "2005-06-17/2005-06-18",
+            "datePrecision": "day-range",
+            "claimIds": [
+              "NS1"
+            ]
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "label": "Brought: road running and route practice",
+          "claimIds": [
+            "NS3",
+            "NS6"
+          ],
+          "unknown": "Farm work schedule, costs and early support team unknown."
+        }
+      ],
+      "attempts": [],
+      "subsequentOutcomes": [],
+      "earlyHistory": [
+        {
+          "domain": "School and university",
+          "state": "open",
+          "claimIds": [],
+          "gap": "School distinctions unknown."
+        },
+        {
+          "domain": "Sport",
+          "state": "partial",
+          "claimIds": [
+            "NS3",
+            "NS4"
+          ],
+          "gap": "2004 result precedes intake milestone; earlier road/fell and horse-riding results, especially pre-26, remain open."
+        },
+        {
+          "domain": "Arts, music and writing",
+          "state": "open",
+          "claimIds": [],
+          "gap": "Arts/music/writing distinction unknown."
+        },
+        {
+          "domain": "Work and business",
+          "state": "open",
+          "claimIds": [],
+          "gap": "Office/farm roles are not a distinction audit."
+        },
+        {
+          "domain": "Technical and scientific activity",
+          "state": "open",
+          "claimIds": [],
+          "gap": "Technical/scientific distinction unknown."
+        },
+        {
+          "domain": "Other competitive or community pursuits",
+          "state": "open",
+          "claimIds": [],
+          "gap": "Community/other competition distinction unknown."
+        }
+      ],
+      "holdReasons": [
+        "2004 result may precede 2005 proof; eighth overall and a first-female prize need domain-specific threshold judgment.",
+        "No independent 2005 club ratification or primary birth evidence obtained.",
+        "No pre-26 domain cleared."
+      ],
+      "contradictions": [
+        {
+          "id": "NS-time",
+          "claimIds": [
+            "NS1",
+            "NS2"
+          ],
+          "status": "unresolved",
+          "note": "23:33 versus 23:32 remains unresolved; no silent normalization."
+        },
+        {
+          "id": "NS-start",
+          "claimIds": [
+            "NS3"
+          ],
+          "status": "unresolved",
+          "note": "Intake secondary 2001 first fell race differs from 2017 testimony placing the advertisement by October 2002. The claimed sequence needs original Trunce results."
+        }
+      ],
+      "searches": [
+        {
+          "query": "\"Nicky Spinks\" \"2005\" site:bobgrahamclub.org.uk",
+          "language": "en",
+          "searchedOn": "2026-10-14",
+          "result": "No indexed individual result; attempted members endpoint failed."
+        },
+        {
+          "query": "Nicky Spinks Bob Graham 2005 2004 results",
+          "language": "en",
+          "searchedOn": "2026-10-14",
+          "result": "Located first-person 2005 page and later conflicting account."
+        },
+        {
+          "query": "\"Nicky Spinks\" \"2004\" results race",
+          "language": "en",
+          "searchedOn": "2026-10-14",
+          "result": "Located 2004 Heart of Granite scan; inspected four pages, table on page 2."
+        }
+      ],
+      "nextChecks": [
+        "Find 2001–2004 original Trunce/road results and exact first race.",
+        "Check 2004 selection standard and category field independently; do not equate category prize with beating competitors.",
+        "Resolve club ratification, date of birth and pre-26 sport/horse-riding history."
+      ],
+      "review": {
+        "author": "Codex research pass",
+        "secondReviewer": null,
+        "decision": "pending"
+      },
+      "corrections": []
+    },
+    {
+      "personId": "014",
+      "name": "Debbie Macomber",
+      "aliases": [],
+      "status": "held",
+      "earlierQualifyingProof": null,
+      "strongestAt25": null,
+      "birthEvidence": {
+        "date": "1948",
+        "precision": "year",
+        "note": "Reported birth year only; primary date evidence still missing.",
+        "claimIds": [
+          "DM5"
+        ]
+      },
+      "timeline": {
+        "capability": [
+          {
+            "kind": "practice",
+            "date": null,
+            "datePrecision": "unknown",
+            "claimIds": [
+              "DM4"
+            ]
+          }
+        ],
+        "proof": [
+          {
+            "kind": "magazine-acceptance",
+            "date": null,
+            "datePrecision": "unknown",
+            "claimIds": [
+              "DM3"
+            ]
+          },
+          {
+            "kind": "novel-acceptance",
+            "date": null,
+            "datePrecision": "unknown",
+            "claimIds": [
+              "DM2"
+            ]
+          },
+          {
+            "kind": "novel-publication",
+            "date": "1983-11-01",
+            "datePrecision": "day",
+            "claimIds": [
+              "DM1"
+            ]
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "label": "Brought/handed/surrounded: craft study, rented typewriter, family constraints and editorial contact",
+          "claimIds": [
+            "DM4"
+          ],
+          "unknown": "Actual hours, paid-care arrangements, runway and acceptance chronology unknown."
+        }
+      ],
+      "attempts": [
+        {
+          "label": "Rejected manuscript then sale",
+          "claimIds": [
+            "DM4"
+          ],
+          "unknown": "Editor identities, submission dates and complete rejection denominator unknown."
+        }
+      ],
+      "subsequentOutcomes": [],
+      "earlyHistory": [
+        {
+          "domain": "School and university",
+          "state": "open",
+          "claimIds": [],
+          "gap": "School distinctions before 26 not audited by school-difficulty testimony."
+        },
+        {
+          "domain": "Sport",
+          "state": "open",
+          "claimIds": [],
+          "gap": "Sport distinctions unknown."
+        },
+        {
+          "domain": "Arts, music and writing",
+          "state": "partial",
+          "claimIds": [
+            "DM3"
+          ],
+          "gap": "Earlier paid article acceptance is undated; needs title, issue and selection record."
+        },
+        {
+          "domain": "Work and business",
+          "state": "open",
+          "claimIds": [],
+          "gap": "Babysitting/work anecdotes do not establish or exclude distinction."
+        },
+        {
+          "domain": "Technical and scientific activity",
+          "state": "open",
+          "claimIds": [],
+          "gap": "Technical/scientific distinction unknown."
+        },
+        {
+          "domain": "Other competitive or community pursuits",
+          "state": "open",
+          "claimIds": [],
+          "gap": "Competitive/community distinctions unknown."
+        }
+      ],
+      "holdReasons": [
+        "Earliest paid magazine acceptance could change the proposed milestone; date and selection threshold unknown.",
+        "Primary birth evidence absent; release age 34–35 does not date acceptance.",
+        "Other-domain history remains incomplete."
+      ],
+      "contradictions": [
+        {
+          "id": "DM-sale-release",
+          "claimIds": [
+            "DM1",
+            "DM2"
+          ],
+          "status": "unresolved",
+          "note": "Bibliography places Heartsong in 1984, testimony calls it published in 1982. Unread Hallmark acquisition lead may explain the wording but does not resolve it."
+        }
+      ],
+      "searches": [
+        {
+          "query": "Debbie Macomber first sale Heartsong Starlight",
+          "language": "en",
+          "searchedOn": "2026-10-14",
+          "result": "Retrieved official chronological PDF, first-person interview and independent industry framing."
+        },
+        {
+          "query": "\"Debbie Macomber\" \"Woman’s Day\" \"1981\"",
+          "language": "en",
+          "searchedOn": "2026-10-14",
+          "result": "No dated original article located."
+        },
+        {
+          "query": "\"Debbie Macomber\" \"1948\" site:historylink.org",
+          "language": "en",
+          "searchedOn": "2026-10-14",
+          "result": "No result returned; primary birth evidence not located."
+        }
+      ],
+      "nextChecks": [
+        "Locate Woman’s Day issue/byline and earliest paid acceptance, including other magazine sales.",
+        "Find original publisher acquisition/contract evidence; keep acceptance separate from release.",
+        "Review age and all pre-26 domains before any core eligibility decision."
+      ],
+      "review": {
+        "author": "Codex research pass",
+        "secondReviewer": null,
+        "decision": "pending"
+      },
+      "corrections": []
+    },
+    {
+      "personId": "016",
+      "name": "Ann Cleeves",
+      "aliases": [],
+      "status": "held",
+      "earlierQualifyingProof": null,
+      "strongestAt25": null,
+      "birthEvidence": {
+        "date": null,
+        "precision": "unknown",
+        "note": "Screening 1954 birth year remains a secondary lead; no primary age evidence obtained.",
+        "claimIds": []
+      },
+      "timeline": {
+        "capability": [
+          {
+            "kind": "residence-and-study",
+            "date": "1977/1981",
+            "datePrecision": "year-range",
+            "claimIds": [
+              "AC3"
+            ]
+          }
+        ],
+        "proof": [
+          {
+            "kind": "chapter-commission",
+            "date": null,
+            "datePrecision": "unknown",
+            "claimIds": [
+              "AC2"
+            ]
+          },
+          {
+            "kind": "chapter-publication",
+            "date": "1982",
+            "datePrecision": "year",
+            "claimIds": [
+              "AC1",
+              "AC4"
+            ]
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "label": "Brought/handed/surrounded: diary, study, editor friendship and island setting",
+          "claimIds": [
+            "AC2",
+            "AC3"
+          ],
+          "unknown": "Payment, selection pool, acceptance date, hours and household runway unknown."
+        }
+      ],
+      "attempts": [],
+      "subsequentOutcomes": [],
+      "earlyHistory": [
+        {
+          "domain": "School and university",
+          "state": "partial",
+          "claimIds": [
+            "AC3"
+          ],
+          "gap": "Social-work study identified, but selective academic results and earlier schooling remain unaudited."
+        },
+        {
+          "domain": "Sport",
+          "state": "open",
+          "claimIds": [],
+          "gap": "Sport distinctions unknown."
+        },
+        {
+          "domain": "Arts, music and writing",
+          "state": "partial",
+          "claimIds": [
+            "AC1",
+            "AC2",
+            "AC4"
+          ],
+          "gap": "1982 chapter disconfirms first-publication-as-1986. Commission may precede 26; no date established."
+        },
+        {
+          "domain": "Work and business",
+          "state": "partial",
+          "claimIds": [
+            "AC3"
+          ],
+          "gap": "Study/work placement known through testimony; individual occupational distinction unknown."
+        },
+        {
+          "domain": "Technical and scientific activity",
+          "state": "open",
+          "claimIds": [],
+          "gap": "Science contributors to Hilbre were others; do not assign their work to Cleeves."
+        },
+        {
+          "domain": "Other competitive or community pursuits",
+          "state": "open",
+          "claimIds": [],
+          "gap": "Observatory connection is context, not proof of community distinction or absence."
+        }
+      ],
+      "holdReasons": [
+        "First novel is not first publication; chapter commission/acceptance date and standard must be audited.",
+        "Residence years do not date the commission; no pre-26 exclusion asserted yet.",
+        "Primary age and all-domain early history remain incomplete."
+      ],
+      "contradictions": [],
+      "searches": [
+        {
+          "query": "\"Ann Cleeves\" \"Hilbre\" \"1982\" library",
+          "language": "en",
+          "searchedOn": "2026-10-14",
+          "result": "LUP interview plus independent scholarly reading and chapter citation found."
+        },
+        {
+          "query": "\"Ann Cleeves\" \"1954\" site:anncleeves.com",
+          "language": "en",
+          "searchedOn": "2026-10-14",
+          "result": "No primary age result returned in this search."
+        }
+      ],
+      "nextChecks": [
+        "Retrieve 1982 chapter/front matter and publisher or editor archive for commission and acceptance date.",
+        "Distinguish editor friendship/access from evidence of selective quality and individual attribution.",
+        "Complete pre-26 history before classifying transfer, delayed recognition or core fit."
+      ],
+      "review": {
+        "author": "Codex research pass",
+        "secondReviewer": null,
+        "decision": "pending"
+      },
+      "corrections": []
+    },
+    {
+      "personId": "034",
+      "name": "Julie Goodwin",
+      "aliases": [],
+      "status": "held",
+      "earlierQualifyingProof": null,
+      "strongestAt25": null,
+      "birthEvidence": {
+        "date": null,
+        "precision": "unknown",
+        "note": "ABC reports age 38 at broadcast; birth date and filming age not established.",
+        "claimIds": [
+          "JG1"
+        ]
+      },
+      "timeline": {
+        "capability": [
+          {
+            "kind": "practice",
+            "date": null,
+            "datePrecision": "unknown",
+            "claimIds": [
+              "JG3",
+              "JG4"
+            ]
+          }
+        ],
+        "proof": [
+          {
+            "kind": "school-selection",
+            "date": null,
+            "datePrecision": "unknown",
+            "claimIds": [
+              "JG2"
+            ]
+          },
+          {
+            "kind": "competition-broadcast",
+            "date": "2009-07-19",
+            "datePrecision": "day",
+            "claimIds": [
+              "JG1"
+            ]
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "label": "Brought/handed/surrounded: cooking, family business and friend prompting audition",
+          "claimIds": [
+            "JG3",
+            "JG4"
+          ],
+          "unknown": "Practice hours, paid cooking, household cover and contribution to business not independently established."
+        }
+      ],
+      "attempts": [],
+      "subsequentOutcomes": [],
+      "earlyHistory": [
+        {
+          "domain": "School and university",
+          "state": "partial",
+          "claimIds": [
+            "JG2",
+            "JG3"
+          ],
+          "gap": "Elected Year 12 captaincy is a concrete pre-26 selection lead; school record, electorate and threshold unknown."
+        },
+        {
+          "domain": "Sport",
+          "state": "open",
+          "claimIds": [],
+          "gap": "Sport distinctions unknown."
+        },
+        {
+          "domain": "Arts, music and writing",
+          "state": "partial",
+          "claimIds": [
+            "JG3"
+          ],
+          "gap": "Music/art interest is not a completed performance/award audit; same-name soprano results must not be imported."
+        },
+        {
+          "domain": "Work and business",
+          "state": "partial",
+          "claimIds": [
+            "JG3"
+          ],
+          "gap": "IT business contribution and distinctions unknown."
+        },
+        {
+          "domain": "Technical and scientific activity",
+          "state": "partial",
+          "claimIds": [
+            "JG3"
+          ],
+          "gap": "IT business mention does not demonstrate technical contribution."
+        },
+        {
+          "domain": "Other competitive or community pursuits",
+          "state": "partial",
+          "claimIds": [
+            "JG3"
+          ],
+          "gap": "Youth service described, but selective recognition unknown."
+        }
+      ],
+      "holdReasons": [
+        "School captaincy needs a threshold audit; neither automatically qualifying nor ignorable.",
+        "Original competition rules, casting pool, judging/filming date and primary age evidence missing.",
+        "Prior business, arts and other domains remain incomplete."
+      ],
+      "contradictions": [],
+      "searches": [
+        {
+          "query": "\"Julie Goodwin\" \"2009\" \"38\" site:abc.net.au",
+          "language": "en",
+          "searchedOn": "2026-10-14",
+          "result": "Located contemporary result with named judges and age."
+        },
+        {
+          "query": "\"Julie Goodwin\" \"school\" \"music\"",
+          "language": "en",
+          "searchedOn": "2026-10-14",
+          "result": "Located memoir interview with school captaincy; rejected attribution of same-name US pianist and Australian soprano results."
+        },
+        {
+          "query": "\"Julie Goodwin\" school captain site:nsw.edu.au",
+          "language": "en",
+          "searchedOn": "2026-10-14",
+          "result": "No school primary record returned."
+        },
+        {
+          "query": "\"Julie Goodwin\" \"1970\" site:juliegoodwin.com.au",
+          "language": "en",
+          "searchedOn": "2026-10-14",
+          "result": "No primary birth result returned."
+        }
+      ],
+      "nextChecks": [
+        "Locate school leadership record and selection standard before classifying earlier proof.",
+        "Retrieve original 2009 competition materials; distinguish applicants, selected contestants, finalists and broadcast from filming.",
+        "Keep ABC’s separately recorded judging dispute as an allegation, not proven misconduct."
+      ],
+      "review": {
+        "author": "Codex research pass",
+        "secondReviewer": null,
+        "decision": "pending"
+      },
+      "corrections": []
+    }
+  ]
+}
