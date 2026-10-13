@@ -20,7 +20,6 @@ research record, so most of its weight is data and evidence rather than code.
 | `.github/` | CI workflow and the two issue templates |
 | `.fleet/` | Design-review receipt and landing-audit scorecard |
 | `.impeccable/` | Critique transcripts and direction options from design passes |
-| `.codex/skills/` | OpenSpec skills kept for Codex sessions; specs themselves live in GitHub Issues |
 | `.agents/skills/`, `.claude/skills/` | Symlinks to shared Fleet skills; absent in a standalone clone |
 
 ## `src/`

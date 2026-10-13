@@ -1,0 +1,26 @@
+<script is:inline>
+  (function(c, l, a, r, i) {
+    c[a] = c[a] || function(...args) {
+      c[a].q = c[a].q || [];
+      c[a].q.push(args);
+    };
+    let done = false;
+    const events = ["pointerdown", "keydown", "touchstart", "scroll"];
+    function go() {
+      if (done) return;
+      done = true;
+      clearTimeout(timer);
+      events.forEach(function(event) { removeEventListener(event, go); });
+      const script = l.createElement(r);
+      script.async = true;
+      script.src = "https://www.clarity.ms/tag/" + i;
+      script.onload = function() {
+        if (typeof window.clarity === 'function') window.clarity('set', 'project_id', 'what-it-takes-to-win');
+      };
+      const firstScript = l.getElementsByTagName(r)[0];
+      firstScript.parentNode.insertBefore(script, firstScript);
+    }
+    events.forEach(function(event) { addEventListener(event, go, { passive: true, once: true }); });
+    const timer = setTimeout(go, 90000);
+  })(window, document, "clarity", "script", "y6bw72v6ih");
+</script>
