@@ -1,18 +1,19 @@
-# Issue #83: five priority public-source audits — DRAFT
+# Issue #83: public-source audits — DRAFT
 
 Updated 14 October 2026. [Owning issue #83](https://github.com/Significant-Hobbies/what-it-takes-to-win/issues/83).
 [PR #82](https://github.com/Significant-Hobbies/what-it-takes-to-win/pull/82) is merged;
 its integration dependency is satisfied at main `2d2a8a3`.
 
-The five audits now have a [claim ledger](claim-ledger.json) and a reusable
-[draft schema](claim-ledger.schema.json). All five remain **held**, with unknown
+The five priority audits and three unregistered leads share a [claim ledger](claim-ledger.json) and a reusable
+[draft schema](claim-ledger.schema.json). All eight remain **held** for publication, with unknown
 strongest achievements at 25 and no completed all-domain earlier-history audit.
 No finished profile, second review or publication clearance is claimed.
 The immutable workbook/register and runtime `first-proof-reviews.json` are untouched.
 
 ## Method and source boundaries
 
-This pass follows the five named priority leads, including disconfirming results.
+The first pass follows the five named priority leads, including disconfirming results.
+The second is a finite three-lead technical/context slice; it does not expand the intake.
 Sources have exact URLs, locations, publication-date precision, access dates,
 origin/dependence notes and retrieval status. Claims reference sources; timeline
 entries reference claims. An access success is not evidence approval.
@@ -20,7 +21,7 @@ entries reference claims. An access success is not evidence approval.
 The earlier 13 October access record remains in `source-access.json`. It records
 13 attempts, 11 retrieved responses and two HTTP 403 responses; those hashes
 remain historical retrieval evidence, not a claim that every source was reread.
-The new ledger records 18 sources from the 14 October pass. Search extracts and
+The ledger records 28 sources across the 14 October passes. Search extracts and
 failed retrievals are explicit; they cannot support recorded claims. Two PDFs
 that the browser extractor could not read were retrieved directly: Spinks’s
 later account and the original 2004 race scan. The latter's four pages and the
@@ -115,7 +116,9 @@ capability and proof events; working conditions and unknown hours; attempts;
 subsequent outcomes; six explicit earlier-history domains; searches actually
 performed; contradictions; hold reasons; next checks; review state and corrections.
 Empty attempt/outcome arrays mean no item documented in this pass, not no attempts
-or subsequent success. Null earlier-proof/age-25 fields mean unknown, never false.
+or subsequent success. Null earlier-proof/age-25 fields mean unknown, never false. True earlier proof
+excludes core inclusion; it does not approve a contrast profile. `intakeId: null`
+marks an unregistered research lead, whose `draft-` ID cannot impersonate an intake ID.
 
 Each claim must cite retrieved material. Source origins are claim-dependent:
 R12's publisher record and its quoted life testimony have different evidentiary
@@ -132,9 +135,43 @@ After that challenge, integrate only substantiated claims into the existing
 review model, preserving the workbook, stable IDs and provenance. Any membership
 change must pass its existing publication blockers and rights/consent review.
 
-No new leads were added: the priority audits produced unresolved earlier-result
-questions. The issue's bounded underrepresented-domain intake remains future
-work, with primary records and explicit disconfirming searches required. “Up to
-12” is a cap, not a quota; these five holds are not a failure-rate sample.
+## Bounded technical/context slice
+
+Three new **draft-only** leads were checked against existing intake identities;
+none was added to the immutable 136-person register. Their case entries add
+contribution, evaluator/standard, comparison-pool limits, first-proof/age uncertainty
+and claim-specific independence assessment. No additional leads are implied.
+
+| Draft lead | Context and evidence | Classification / decisive limit |
+|---|---|---|
+| Mansukhbhai Ambabhai Jagani | Agricultural tooling in Gujarat; R19/R20 award records, contemporary R21 reporting and Gujarati R22. | Unresolved: the 1994 design and 2000 exhibition precede the award; dated prototype construction/customer acceptance and age remain unknown. |
+| Chintakindi Mallesham | Weaving machinery; R23 award record and R24 interview. | Unresolved: conflicting reported ages could change core eligibility at the first sale. Development duration also conflicts. |
+| Remya Jose | Household-work engineering; R20/R26 student-award evidence and contemporary R27/R28 coverage. | Earlier-excellence contrast, excluded from core: national recognition at reported 17. Exact earliest school result and full contrast-profile clearance remain open. |
+
+These are three Indian cases reached through the same NIF scouting ecosystem,
+not a representative regional or occupational sample. Supporting organisations,
+NIF award books and Yojana's Shodh Yatra narrative are not independent witnesses.
+The independent newsrooms provide narrower corroboration of public activity;
+interviewed early-life testimony and institutional quotations retain their origins.
+NDTV's text caption was read; its video was not viewed or used as a performance test.
+
+The relevant award/age pages were visually inspected from public PDFs. Original
+indexed NIF download paths returned 404; the current public award-book paths
+were retrievable without access bypass. R22's Gujarati text was read in this pass,
+with independent translation review still absent. Original Telugu/Malayalam
+reporting was not recovered; English profiles cannot stand in for those archives.
+The Civil Society 2011 archive link redirected to its homepage, so no claim uses it.
+
+No reported productivity, savings or sales total is presented as independently
+measured performance. National award rank is not a universal percentile: category
+pools and individual score sheets remain unknown. Family/workshop contributions
+are retained; public source medical details and contact addresses are omitted.
+Ordinary trades, school attendance and household work are not inferred excellence.
+Unknown hours, other domains and strongest achievement at 25 remain explicit.
+Remya is an earlier-excellence contrast, not an inferred transfer or failed attempt.
+
+This finite slice is complete as held lead research. It does not finish all #83
+research/clearance gates or create a quota for more cases. “Up to 12” remains a cap,
+not a target; these holds and one exclusion are not a failure-rate sample.
 Outreach/private consent and public release/deployment remain separately scoped.
 No public site or profile was released by this source-only research pass.
