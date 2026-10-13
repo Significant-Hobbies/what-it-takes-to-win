@@ -169,6 +169,12 @@ and curious readers who want the evidence behind the argument
 
 ## Features (current source and production)
 
+- Before the First Proof collection implemented in source, with a separate
+  noindex register of 136 uncleared research records, source provenance,
+  two-lane record views, public nomination/correction handoffs, and an explicit
+  editorial publication gate. No first-excellence profiles are cleared; this
+  collection has not been deployed.
+
 - Luck directory of nine sourced ordinary-person cases grouped by the four
   luck forms, linked from chapter 04 of the journey and the footer
 - Publication-grade surface system with neutral structural borders, semantic
@@ -237,7 +243,7 @@ and curious readers who want the evidence behind the argument
 - **Pass comparison/search evidence gate:** 71.7% (2,566/3,578)
 - **Condition factors (−1 to 3, never summed):** brought 3,578 scored (3 headwind), handed 3,578 scored (458 headwind), surrounded 3,578 scored (5 headwind)
 - **Listed source URLs:** 12,686
-- **Canonical sitemap URLs:** 6,180
+- **Canonical sitemap URLs:** 6,197
 - **Secondary double-coded records:** 16
 - **Source reachability audit:** 2,740/3,578 paths reviewed — 1,498 fully reachable, 1,234 partial, 8 failed. 838 paths added since the last pass are unaudited.
 - **Independent content audit:** pending; URL reachability does not verify claim support

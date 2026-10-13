@@ -16,5 +16,6 @@ const projects = await fetch(studioProjectsFeed, { signal: AbortSignal.timeout(1
 
 export const footerContent = {
   ...content.footer,
+  links: [...content.footer.links, { label: "Before the First Proof", href: "/first-proof/" }],
   studio: studioFromProjects(projects, { current: content.footer.catalogId }),
 };

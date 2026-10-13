@@ -1,0 +1,83 @@
+---
+import Base from "../../layouts/Base.astro";
+import "../../styles/luck.css";
+import "../../styles/first-proof.css";
+import { AUDIT_DOMAINS, firstProofRecords, firstProofSnapshot, publishedFirstProofRecords, summarizeFirstProof } from "../../data/first-proof";
+import { CONTRIBUTION_ISSUES_URL } from "../../lib/contribution";
+
+const counts = summarizeFirstProof();
+const priority = firstProofRecords.filter((record) => record.intakeStatus === "A");
+const nomination = `${CONTRIBUTION_ISSUES_URL}?${new URLSearchParams({
+  title: "[First proof nomination] Person's name",
+  body: "## Before the First Proof nomination\n\nPerson's public name:\nCountry/context:\n\n## Located first proof\n\nWhat was achieved, when, and at approximately what age?\nWho evaluated it, and what made the result selective?\nPublic source URL:\n\n## Strongest earlier achievement\n\nAt 25, what was the strongest evidence this person was unusually good at anything? Include school, sport, work and hobbies. Unknown is a valid answer.\nEarlier-history source URL:\n\n## What could disqualify this case?\n\nEarlier results, uncertain dates, or contradictory evidence:\n\n## Contributor context\n\nRelationship to the person:\n\nThis issue is public. Include only public evidence. A nomination does not establish eligibility or guarantee publication.",
+})}`;
+---
+
+<Base title="Before the First Proof — Paths" description="Investigating first demonstrated excellence at 26–39. Two timelines, explicit earlier-history checks, and a research register kept separate from cleared profiles." canonicalPath="/first-proof/" mainClass="luck-main first-proof-main">
+  <header class="hero luck-hero">
+    <p class="luck-kicker">An editorial collection in research</p>
+    <h1>Before the First Proof</h1>
+    <p class="lede">What changes when someone develops their first independently demonstrated excellence after 25?</p>
+    <p class="first-proof-intro">Follow the practice before outside validation. Check what they had already achieved in every domain. An ordinary degree or job neither proves nor rules out earlier distinction.</p>
+    <p class="luck-edition">Core age window: 26–39 · Research snapshot: {firstProofSnapshot}</p>
+    <p class="first-proof-actions"><a href="#profiles">Read the collection</a><a href="/first-proof/research/">Inspect the research register</a></p>
+  </header>
+
+  <dl class="luck-contract">
+    <div><dt>First adult proof</dt><dd>No earlier qualifying achievement identified after a defined cross-domain review. This is the core question.</dd></div>
+    <div><dt>Delayed recognition</dt><dd>Earlier excellence becomes visible later. A first award does not necessarily date the first capability.</dd></div>
+    <div><dt>Transfer of excellence</dt><dd>Someone already distinguished develops another pursuit. These belong in a separate comparison group.</dd></div>
+  </dl>
+
+  <section class="first-proof-section" id="profiles" aria-labelledby="profiles-heading">
+    <h2 id="profiles-heading">Publication-cleared profiles</h2>
+    {counts.published === 0 ? (
+      <div class="first-proof-empty">
+        <p><strong>No profiles have cleared the research gates yet.</strong></p>
+        <p>The register contains {counts.candidates} candidates and {counts.held} held-back cases. None establishes the absence of earlier excellence across every domain. We will publish fewer stories rather than fill a quota with unresolved cases.</p>
+        <a href="#research-method">See what a profile must establish</a>
+      </div>
+    ) : (
+      <ol class="first-proof-records">
+        {publishedFirstProofRecords.map((record) => (
+          <li><h3><a href={`/first-proof/${record.id}/`}>{record.name}</a></h3><p>{record.domain} · First proof at {record.review!.milestone.ageMin}–{record.review!.milestone.ageMax}</p><p>{record.review!.milestone.result}</p></li>
+        ))}
+      </ol>
+    )}
+  </section>
+
+  <section class="first-proof-section" aria-labelledby="timelines-heading">
+    <h2 id="timelines-heading">Practice and proof have different clocks.</h2>
+    <div class="first-proof-lanes">
+      <div><h3>Capability and practice</h3><p>What could they already do? When did serious practice begin? What feedback, attempts, support and constraints shaped the work?</p></div>
+      <div><h3>External proof</h3><p>When did an independent evaluator first judge the result meaningfully strong? An acceptance or regional result can precede a later book, title or public breakthrough.</p></div>
+    </div>
+    <p>A first competition at 32 does not establish a first capability at 32. Private practice at 17 does not establish excellence at 17.</p>
+  </section>
+
+  <section class="first-proof-section" aria-labelledby="research-heading">
+    <h2 id="research-heading">Research in progress</h2>
+    <p>{counts.people} people, {counts.sources} distinct source URLs, and {counts.priority} priority audit leads. These are starting points for investigation. {counts.recordOnly} records contain competition results, age and occupation with no full earlier-history review.</p>
+    <ol class="first-proof-records first-proof-priorities">
+      {priority.map((record) => (
+        <li><div><h3><a href={`/first-proof/research/${record.id}/`}>{record.name}</a></h3><p class="first-proof-meta">{record.domain} · Located milestone age {record.milestoneAge}</p></div><p>{record.unresolvedIssue}</p></li>
+      ))}
+    </ol>
+    <a href="/first-proof/research/">Open all candidates and held-back cases →</a>
+    <p class="first-proof-note">The discovery pool is concentrated in cooking, baking and writing. It underrepresents local Indian achievements, engineering, trades and people without public biographies. It cannot estimate how common this trajectory is or anyone’s personal odds.</p>
+  </section>
+
+  <section class="first-proof-section" id="research-method" aria-labelledby="method-heading">
+    <h2 id="method-heading">What a profile must establish</h2>
+    <ol class="first-proof-method">
+      <li>A dated, attributable result at 26–39, an independent validator, and a defensible selection threshold. Regional-level excellence can count; fame is unnecessary.</li>
+      <li>A substantive starting-history account and an explicit review of every earlier-history domain: {AUDIT_DOMAINS.join("; ").toLowerCase()}.</li>
+      <li>Primary milestone evidence and genuinely independent corroboration. Two copies of one announcement count as one evidence origin.</li>
+      <li>A second reviewer’s challenge, resolved cohort-changing contradictions, and a clear statement of remaining coverage limits.</li>
+    </ol>
+    <p>We ask: “At 25, what was the strongest evidence that you were unusually good at anything—and who besides you would have agreed?” Then: “What evidence might make our classification wrong?”</p>
+    <p>The permissible claim is bounded: “No earlier qualifying achievement was identified in the reviewed sources and specified audit.” Missing history stays unknown.</p>
+    <p class="first-proof-actions"><a href={nomination} target="_blank" rel="noopener noreferrer">Nominate a person on GitHub ↗</a><a href="/contribute/?task=edit&person=Before%20the%20First%20Proof&profile=https%3A%2F%2Fpaths.significanthobbies.com%2Ffirst-proof%2F">Propose a sourced correction</a></p>
+    <p class="first-proof-note">Nominations open a public issue draft. Include a milestone, approximate age, strongest known earlier achievement and source links. GitHub submission remains your choice.</p>
+  </section>
+</Base>

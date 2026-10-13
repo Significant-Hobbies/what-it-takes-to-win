@@ -3,12 +3,20 @@ import path from "node:path";
 import { root, dist, origin, people, comparisonIsIndexable } from "../lib/discovery.mjs";
 import { luckCases, LUCK_FORM_LABELS } from "../data/luck-cases.mjs";
 import { turningPoints } from "../data/turning-points.mjs";
+import { firstProofRecords, publishedFirstProofRecords, recordSources, summarizeFirstProof, INTAKE_LABELS } from "../data/first-proof.mjs";
 
 const candidateCoverage = JSON.parse(
   await readFile(path.join(root, "src", "data", "candidate-coverage.json"), "utf8"),
 );
 
 const coreSurfaces = [
+  {
+    id: "first-proof",
+    htmlPath: "/first-proof/",
+    mdPath: "/first-proof.md",
+    title: "Before the First Proof",
+    summary: "Investigating first demonstrated excellence at 26–39. Unreviewed leads stay separate from publication-cleared profiles; missing earlier history remains unknown.",
+  },
   {
     id: "home",
     htmlPath: "/",
@@ -401,6 +409,7 @@ const canonicalRoutes = [
   "/luck/",
   ...luckCases.map((item) => `/luck/${item.id}/`),
   ...turningPoints.map((item) => `/turning-points/${item.id}/`),
+  ...publishedFirstProofRecords.map((record) => `/first-proof/${record.id}/`),
   ...people.map((person) => `/person/${encodeURIComponent(safeId(person))}/`),
   ...indexableComparisons.map(
     (person) => `/am-i-the-next/${encodeURIComponent(safeId(person))}/`,
@@ -455,6 +464,7 @@ await emit(
     `- [Methodology](${absolute("/methodology.md")}): inclusion, scoring, evidence gates, and limitations`,
     `- [Essays](${absolute("/essays/")}): long-form writing on advantage and abstraction`,
     `- [Luck directory](${absolute("/luck/")}): nine sourced cases of luck that landed on ordinary people — place, timing, a forced door, a visa draw`,
+    `- [Before the First Proof](${absolute("/first-proof.md")}): first adult proof, delayed recognition and transferred excellence, with separate uncleared research notes`,
     `- [Explore](${absolute("/explore/")}): ${people.length.toLocaleString("en-US")} person profiles`,
     `- [API catalog](${absolute("/api/ai")}): machine-readable discovery contract`,
     `- [OpenAPI spec](${absolute("/openapi.json")}): machine-readable API contract`,
@@ -626,7 +636,54 @@ const openapi = {
 await emit("openapi.json", `${JSON.stringify(openapi, null, 2)}\n`);
 
 for (const surface of coreSurfaces) {
-  await emit(surface.mdPath.replace(/^\//, ""), staticMarkdown(surface));
+  if (surface.id !== "first-proof") await emit(surface.mdPath.replace(/^\//, ""), staticMarkdown(surface));
+}
+const firstProofCounts = summarizeFirstProof();
+await emit("first-proof.md", [
+  "# Before the First Proof — Paths", "",
+  "How do people without an earlier standout achievement develop their first independently demonstrated excellence at 26–39?", "",
+  `Publication-cleared profiles: ${firstProofCounts.published}. Research register: ${firstProofCounts.people} people, ${firstProofCounts.candidates} candidates, ${firstProofCounts.held} held back, ${firstProofCounts.sources} distinct source URLs.`, "",
+  "A/B/C are intake priorities, not verified eligibility. Missing earlier history means unknown. This pool cannot estimate prevalence or personal odds.", "",
+  "## Two timelines", "",
+  "Capability and practice: earlier level, serious practice, feedback, support and constraints. External proof: earliest dated result, independent validator, selectivity and personal contribution. First publicity can be later than first excellence.", "",
+  "## Publication gates", "",
+  "Primary milestone evidence; substantive starting history; explicit coverage across school/university, sport, arts/writing/music, work/business, technical/scientific and other pursuits; genuinely independent corroboration; resolved contradictions; a second reviewer; visible coverage limits.", "",
+  "First adult proof is the core collection. Delayed recognition and transfers of earlier excellence remain separate. An ordinary job, degree or private hobby does not automatically prove earlier distinction.", "",
+  ...publishedFirstProofRecords.map((record) => `- [${record.name}](${absolute(`/first-proof/${record.id}.md`)}): ${record.review.milestone.result}`), "",
+  `[Inspect the uncleared research register](${absolute("/first-proof/research/")})`, "",
+  `[Read the collection and nominate a person](${absolute("/first-proof/")})`, "",
+].join("\n"));
+await emit("first-proof/research.md", [
+  "# First proof research register — Paths", "",
+  "Uncleared screening records. Priority labels indicate research order, not eligibility. Missing earlier history means unknown.", "",
+  ...firstProofRecords.map((record) => `- [${record.name}](${absolute(`/first-proof/research/${record.id}.md`)}): ${INTAKE_LABELS[record.intakeStatus]}. ${record.unresolvedIssue}`), "",
+  `[Read the HTML register](${absolute("/first-proof/research/")})`, "",
+].join("\n"));
+for (const record of firstProofRecords) {
+  const lines = [
+    `# ${record.name} — ${INTAKE_LABELS[record.intakeStatus]}`, "",
+    "Uncleared screening record. Not certified as first all-domain excellence.", "",
+    `Located milestone age: ${record.milestoneAge}. Domain: ${record.domain}.`, "",
+    record.locatedProof, "", "## Earlier background", "", record.background, "",
+    "## Unresolved audit question", "", record.unresolvedIssue, "",
+    `Research depth: ${record.researchDepth}. No full cross-domain audit established.`, "",
+    "## Source associations", "",
+    ...recordSources(record).map((source) => `- [${source.id} · ${source.domain}](${markdownLink(source.url)})`), "",
+    `Intake provenance: ${record.provenance.sheet}, row ${record.provenance.row}, stable ID ${record.id}.`, "",
+    `[Read the research note](${absolute(`/first-proof/research/${record.id}/`)})`, "",
+  ];
+  await emit(path.join("first-proof", "research", `${record.id}.md`), lines.join("\n"));
+}
+for (const record of publishedFirstProofRecords) {
+  await emit(path.join("first-proof", `${record.id}.md`), [
+    `# ${record.name} — Before the First Proof`, "", record.review.milestone.result, "",
+    "## Capability and practice", "", ...record.review.timeline.capability.map((step) => `- ${step.when}: ${step.detail}`), "",
+    "## External proof", "", ...record.review.timeline.proof.map((step) => `- ${step.when}: ${step.detail}`), "",
+    "## Coverage and limits", "", record.review.publication.coverageStatement, "",
+    "## Bounded takeaway", "", record.review.publication.takeaway, "",
+    "## Sources", "", ...recordSources(record).map((source) => `- [${source.id} · ${source.domain}](${markdownLink(source.url)})`), "",
+    `[Read the profile](${absolute(`/first-proof/${record.id}/`)})`, "",
+  ].join("\n"));
 }
 for (const person of people) {
   const id = safeId(person);
@@ -764,6 +821,8 @@ await emit(
     "  X-Robots-Tag: noindex",
     "/luck/*.md",
     "  Content-Type: text/markdown; charset=utf-8",
+    "  X-Robots-Tag: noindex",
+    "/first-proof/research/*",
     "  X-Robots-Tag: noindex",
     "",
   ].join("\n"),

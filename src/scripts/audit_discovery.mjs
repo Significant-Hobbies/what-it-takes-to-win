@@ -3,6 +3,7 @@ import path from "node:path";
 import { dist, origin, people, comparisonIsIndexable } from "../lib/discovery.mjs";
 import { luckCases } from "../data/luck-cases.mjs";
 import { turningPoints } from "../data/turning-points.mjs";
+import { firstProofRecords, publishedFirstProofRecords } from "../data/first-proof.mjs";
 
 const failures = [];
 const passes = [];
@@ -40,11 +41,11 @@ const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
   (match) => match[1],
 );
 const indexableComparisons = people.filter(comparisonIsIndexable);
-const coreSurfaceCount = 10;
+const coreSurfaceCount = 11;
 const essayPages = (await readdir(path.join(dist, "essays"), { withFileTypes: true })).filter((entry) => entry.isDirectory()).length;
 const essayCount = 1 + essayPages; // essays index + one page per essay
 const luckCount = 1 + luckCases.length; // luck index + one page per case study
-const expectedSitemapCount = coreSurfaceCount + essayCount + luckCount + turningPoints.length + people.length + indexableComparisons.length;
+const expectedSitemapCount = coreSurfaceCount + essayCount + luckCount + turningPoints.length + people.length + indexableComparisons.length + publishedFirstProofRecords.length;
 if (
   sitemap.startsWith('<?xml version="1.0" encoding="UTF-8"?>')
   && sitemapUrls.length === expectedSitemapCount
@@ -69,6 +70,25 @@ for (const url of sitemapUrls) {
     await stat(path.join(dist, markdownPathForUrl(url)));
   } catch {
     missingMarkdown += 1;
+  }
+}
+
+const firstProofIndex = await read("first-proof/index.html");
+const firstProofResearch = await read("first-proof/research/index.html");
+if (firstProofIndex.includes("Before the First Proof") && firstProofResearch.includes('content="noindex,follow"')
+  && !sitemapUrls.some((url) => url.includes("/first-proof/research/"))) {
+  passes.push("first-proof collection and noindex research boundary");
+} else failures.push("first-proof collection or research indexability boundary is incorrect");
+for (const record of firstProofRecords) {
+  const html = await read(`first-proof/research/${record.id}/index.html`);
+  if (!html.includes('content="noindex,follow"') || !html.includes("Uncleared research note")) {
+    failures.push(`first-proof research record ${record.id} lacks its evidence boundary`);
+  }
+  if (!publishedFirstProofRecords.some((item) => item.id === record.id)) {
+    try {
+      await stat(path.join(dist, "first-proof", record.id, "index.html"));
+      failures.push(`uncleared first-proof record ${record.id} has a core profile`);
+    } catch { /* No core page is the required fail-closed result. */ }
   }
 }
 if (missingMarkdown === 0) {

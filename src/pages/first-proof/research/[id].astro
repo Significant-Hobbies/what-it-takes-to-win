@@ -1,0 +1,14 @@
+---
+import Base from "../../../layouts/Base.astro";
+import FirstProofRecord from "../../../components/FirstProofRecord.astro";
+import { firstProofRecords } from "../../../data/first-proof";
+import "../../../styles/luck.css";
+import "../../../styles/first-proof.css";
+export function getStaticPaths() {
+  return firstProofRecords.map((record) => ({ params: { id: record.id }, props: { record } }));
+}
+const { record } = Astro.props;
+---
+<Base title={`${record.name} — First proof research — Paths`} description={`Uncleared research note: ${record.unresolvedIssue}`} canonicalPath={`/first-proof/research/${record.id}/`} robots="noindex,follow" mainClass="luck-main first-proof-main">
+  <FirstProofRecord record={record} />
+</Base>

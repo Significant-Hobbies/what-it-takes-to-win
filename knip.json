@@ -8,7 +8,8 @@
   "project": ["src/**/*.{ts,js,mjs,astro}"],
   "ignore": [
     "src/layouts/Essay.astro",
-    "src/data/luck-cases.d.ts"
+    "src/data/luck-cases.d.ts",
+    "src/data/first-proof.d.ts"
   ],
   "ignoreDependencies": ["@astrojs/check", "@biomejs/biome", "jscpd"]
 }
