@@ -204,7 +204,10 @@
             "const": "held"
           },
           "earlierQualifyingProof": {
-            "type": "null"
+            "enum": [
+              null,
+              true
+            ]
           },
           "strongestAt25": {
             "type": "null"
@@ -625,6 +628,69 @@
               ],
               "additionalProperties": false
             }
+          },
+          "intakeId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "classification": {
+            "enum": [
+              "unresolved",
+              "earlier-excellence-contrast"
+            ]
+          },
+          "researchContext": {
+            "type": "string",
+            "minLength": 1
+          },
+          "milestoneAssessment": {
+            "type": "object",
+            "properties": {
+              "namedContribution": {
+                "type": "string",
+                "minLength": 1
+              },
+              "standard": {
+                "type": "string",
+                "minLength": 1
+              },
+              "comparisonPool": {
+                "type": "string",
+                "minLength": 1
+              },
+              "earliestProof": {
+                "type": "string",
+                "minLength": 1
+              },
+              "ageAtProof": {
+                "type": "string",
+                "minLength": 1
+              },
+              "independentCorroboration": {
+                "type": "string",
+                "minLength": 1
+              },
+              "claimIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "namedContribution",
+              "standard",
+              "comparisonPool",
+              "earliestProof",
+              "ageAtProof",
+              "independentCorroboration",
+              "claimIds"
+            ],
+            "additionalProperties": false
           }
         },
         "required": [
@@ -645,7 +711,9 @@
           "searches",
           "nextChecks",
           "review",
-          "corrections"
+          "corrections",
+          "intakeId",
+          "classification"
         ],
         "additionalProperties": false
       }

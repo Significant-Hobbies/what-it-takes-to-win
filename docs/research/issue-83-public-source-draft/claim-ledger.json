@@ -2,7 +2,7 @@
   "$schema": "./claim-ledger.schema.json",
   "schemaVersion": 1,
   "updatedOn": "2026-10-14",
-  "purpose": "Draft research only; no runtime publication input. Null means unknown, never no earlier achievement.",
+  "purpose": "Held research only; intakeId null identifies an unregistered lead. No runtime publication input. Null means unknown; true earlier proof excludes core inclusion.",
   "sources": [
     {
       "id": "R01",
@@ -273,6 +273,156 @@
       "location": "Search extract: Macomber biography",
       "limitation": "Extract says Heartsong acquired in 1982. Full retrieval failed including certificate hostname mismatch; security not bypassed. Acquisition remains a lead.",
       "access": "search-extract-only"
+    },
+    {
+      "id": "R19",
+      "url": "https://nif.org.in/upload/award-books-biennial/1st_Award_Book.pdf",
+      "title": "First National Grassroots Innovation Awards",
+      "publisher": "National Innovation Foundation",
+      "author": null,
+      "publishedDate": "2001",
+      "datePrecision": "year",
+      "accessedOn": "2026-10-14",
+      "origin": "Award organiser; entrant history is retrospective, not independent biography.",
+      "kind": "organisational-record",
+      "location": "Printed pp. 7–8 / PDF pp. 8–9; prize page visually inspected.",
+      "limitation": "Award year; exact publication day unknown. Selection pool and original customer records not recovered.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R20",
+      "url": "https://nif.org.in/upload/award-books-biennial/3rd_Award_Book.pdf",
+      "title": "Third National Grassroots Innovation Awards",
+      "publisher": "National Innovation Foundation",
+      "author": null,
+      "publishedDate": "2005",
+      "datePrecision": "year",
+      "accessedOn": "2026-10-14",
+      "origin": "Award organiser and supporting network. Jagani and Jose histories share this source.",
+      "kind": "organisational-record",
+      "location": "Jagani printed pp. 178–180 / PDF pp. 85–87; Jose printed pp. 89–90 / PDF pp. 224–225; age/prize pages visually inspected.",
+      "limitation": "Book year, not an exact interview date. Earlier histories are reported; no birth certificates or individual judging sheets.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R21",
+      "url": "https://timesofindia.indiatimes.com/city/ahmedabad/farming-tools-to-make-life-easier/articleshow/13505080.cms",
+      "title": "Farming tools to make life easier",
+      "publisher": "The Times of India",
+      "author": "Robin David / TNN",
+      "publishedDate": "2002-06-20",
+      "datePrecision": "day",
+      "accessedOn": "2026-10-14",
+      "origin": "Robin David/TNN report; institutional details quote NIF. Separate publisher, partly shared informant.",
+      "kind": "contemporary-report",
+      "location": "Article body, South Africa workshop and attribution paragraphs.",
+      "limitation": "Corroborates contemporary public activity, not all earlier history. Jagani is assigned the bicycle pump; motorcycle tractor is assigned to another participant.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R22",
+      "url": "https://www.vtvgujarati.com/news-details/newsdetail-21070",
+      "title": "Jagani / Sanedo report (page title renders NULL)",
+      "publisher": "VTV Gujarati",
+      "author": "Sudhir Rawal (displayed label)",
+      "publishedDate": "2019-03-30",
+      "datePrecision": "day",
+      "accessedOn": "2026-10-14",
+      "origin": "Gujarati newsroom report; source witnesses not identified. Independence from innovation-network accounts is uncertain.",
+      "kind": "contemporary-report",
+      "location": "Gujarati article body; displayed last-update date and author label.",
+      "limitation": "Date is last update, not established original publication. Agent reading of Gujarati, not independent translation review; no dates inferred from narrative.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R23",
+      "url": "https://nif.org.in/upload/award-books-biennial/5th_Award_Book.pdf",
+      "title": "Fifth National Grassroots Innovation Awards",
+      "publisher": "National Innovation Foundation",
+      "author": null,
+      "publishedDate": "2009",
+      "datePrecision": "year",
+      "accessedOn": "2026-10-14",
+      "origin": "Award organiser; early life and sales are retrospective entrant accounts.",
+      "kind": "organisational-record",
+      "location": "Printed pp. xi, xiv and 6–10 / PDF pp. 13, 16 and 26–30; prize/age page visually inspected.",
+      "limitation": "Overall process is not an individual score sheet. Cumulative database or total submissions cannot serve as a category acceptance denominator.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R24",
+      "url": "https://www.thenewsminute.com/telangana/weaver-engineer-meet-telangana-man-whose-invention-won-him-padma-shri-75044",
+      "title": "From weaver to engineer: Meet the Telangana man whose invention won him a Padma Shri",
+      "publisher": "The News Minute",
+      "author": null,
+      "publishedDate": "2018-01-20",
+      "datePrecision": "day",
+      "accessedOn": "2026-10-14",
+      "origin": "Independent newsroom interview with Mallesham; earlier events still rely on his retrospective testimony.",
+      "kind": "reported-interview",
+      "location": "Age in opening; work/practice, workshop and machine-development paragraphs.",
+      "limitation": "Supports later visibility and first-person working conditions, not independent verification of all early events. Byline not recovered.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R25",
+      "url": "https://www.pallesrujana.org/inn-mallesam.html",
+      "title": "Mallesam: Laxmi Asu Machine",
+      "publisher": "Palle Srujana",
+      "author": null,
+      "publishedDate": null,
+      "datePrecision": "unknown",
+      "accessedOn": "2026-10-14",
+      "origin": "Scouting/support organisation in the NIF/Honey Bee ecosystem, not an independent corroborator.",
+      "kind": "organisational-record",
+      "location": "Development-duration paragraph.",
+      "limitation": "Undated account may describe a different development phase; cannot resolve the duration conflict.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R26",
+      "url": "https://nif.org.in/upload/state-books/NIF_Kerala_Innovates.pdf",
+      "title": "Kerala Innovates",
+      "publisher": "National Innovation Foundation",
+      "author": null,
+      "publishedDate": null,
+      "datePrecision": "unknown",
+      "accessedOn": "2026-10-14",
+      "origin": "Same award organiser and Honey Bee source family as R20.",
+      "kind": "organisational-record",
+      "location": "Printed/PDF p. 29, washing machine entry; visually inspected.",
+      "limitation": "Dates award to 2005; does not supply an independent birth record or judging denominator.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R27",
+      "url": "https://www.publicationsdivision.nic.in/journals/Journalarchives/Yojana/Yojana-English/2005/June/Yojana_2005_June_582073380.pdf",
+      "title": "Yojana, June 2005: Washing cum Exercise Machine",
+      "publisher": "Publications Division, Government of India",
+      "author": null,
+      "publishedDate": "2005-06",
+      "datePrecision": "month",
+      "accessedOn": "2026-10-14",
+      "origin": "Shodh Yatra column; near-identical NIF narrative and NIF referral at its end. Different host, same origin.",
+      "kind": "contemporary-report",
+      "location": "Printed pp. 43–44 / PDF pp. 45–46; p. 43 visually inspected.",
+      "limitation": "Contemporary publication anchor for reported age, not independent birth verification.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R28",
+      "url": "https://www.ndtv.com/video/energy-saver-girl-invents-manual-washing-machine-3897",
+      "title": "Energy saver: Girl invents manual washing machine",
+      "publisher": "NDTV",
+      "author": null,
+      "publishedDate": "2006-06-05",
+      "datePrecision": "day",
+      "accessedOn": "2026-10-14",
+      "origin": "Independent news archive page; underlying video not watched in this pass.",
+      "kind": "contemporary-report",
+      "location": "Published date and text caption only.",
+      "limitation": "Caption corroborates contemporary coverage, not tested performance; relative chronology conflicts with an earlier recorded application.",
+      "access": "retrieved"
     }
   ],
   "claims": [
@@ -517,6 +667,208 @@
       "date": null,
       "datePrecision": "unknown",
       "assessment": "reported"
+    },
+    {
+      "id": "MJ1",
+      "personId": "draft-mansukhbhai-jagani",
+      "statement": "Jagani received the 2001 national second prize for Bullet-driven farm implements.",
+      "sourceIds": [
+        "R19"
+      ],
+      "date": "2001",
+      "datePrecision": "year",
+      "assessment": "recorded"
+    },
+    {
+      "id": "MJ2",
+      "personId": "draft-mansukhbhai-jagani",
+      "statement": "The award account dates a customer-driven prototype to 1994 and an invited science-congress exhibition to January 2000.",
+      "sourceIds": [
+        "R19"
+      ],
+      "date": "1994",
+      "datePrecision": "year",
+      "assessment": "reported"
+    },
+    {
+      "id": "MJ3",
+      "personId": "draft-mansukhbhai-jagani",
+      "statement": "A later profile reports age 40, primary schooling, farm/diamond work, a year of welding training and a workshop operating for 22 years.",
+      "sourceIds": [
+        "R20"
+      ],
+      "date": null,
+      "datePrecision": "unknown",
+      "assessment": "reported"
+    },
+    {
+      "id": "MJ4",
+      "personId": "draft-mansukhbhai-jagani",
+      "statement": "Contemporary reporting identifies Jagani demonstrating a bicycle spray pump in South Africa; the motorcycle tractor is attributed to Matukia.",
+      "sourceIds": [
+        "R21"
+      ],
+      "date": "2002-06",
+      "datePrecision": "month",
+      "assessment": "recorded"
+    },
+    {
+      "id": "MJ5",
+      "personId": "draft-mansukhbhai-jagani",
+      "statement": "Gujarati reporting describes changing a three-wheel Sanedo to four wheels after difficulties on uneven terrain; prototype and order dates are absent.",
+      "sourceIds": [
+        "R22"
+      ],
+      "date": null,
+      "datePrecision": "unknown",
+      "assessment": "reported"
+    },
+    {
+      "id": "MJ6",
+      "personId": "draft-mansukhbhai-jagani",
+      "statement": "The first award account separates Jagani’s device from subsequent NIF/GIAN support and NID design assistance.",
+      "sourceIds": [
+        "R19"
+      ],
+      "date": null,
+      "datePrecision": "unknown",
+      "assessment": "reported"
+    },
+    {
+      "id": "CM1",
+      "personId": "draft-chintakindi-mallesham",
+      "statement": "Mallesham is named national first in Mechanical and Electronics; the profile reports age 37.",
+      "sourceIds": [
+        "R23"
+      ],
+      "date": "2009",
+      "datePrecision": "year",
+      "assessment": "recorded"
+    },
+    {
+      "id": "CM2",
+      "personId": "draft-chintakindi-mallesham",
+      "statement": "The account dates development to 1992, a working machine to 1999 and first sale to 2000; it reports childhood weaving and later electronics changes.",
+      "sourceIds": [
+        "R23"
+      ],
+      "date": null,
+      "datePrecision": "unknown",
+      "assessment": "reported"
+    },
+    {
+      "id": "CM3",
+      "personId": "draft-chintakindi-mallesham",
+      "statement": "The interview reports age 43 in January 2018, inconsistent with age 37 in 2009.",
+      "sourceIds": [
+        "R24",
+        "R23"
+      ],
+      "date": "2018-01",
+      "datePrecision": "month",
+      "assessment": "conflicted"
+    },
+    {
+      "id": "CM4",
+      "personId": "draft-chintakindi-mallesham",
+      "statement": "The interview describes paid electrical work by day, development at night and family support; no practice-hour record is supplied.",
+      "sourceIds": [
+        "R24"
+      ],
+      "date": null,
+      "datePrecision": "unknown",
+      "assessment": "reported"
+    },
+    {
+      "id": "CM5",
+      "personId": "draft-chintakindi-mallesham",
+      "statement": "Palle Srujana describes three years of development; the interview describes seven. Whether these refer to different phases is unknown.",
+      "sourceIds": [
+        "R25",
+        "R24"
+      ],
+      "date": null,
+      "datePrecision": "unknown",
+      "assessment": "conflicted"
+    },
+    {
+      "id": "CM6",
+      "personId": "draft-chintakindi-mallesham",
+      "statement": "The 2009 process used documentation, prior-art inquiry and advisory review of novelty and social utility; validation depth varied.",
+      "sourceIds": [
+        "R23"
+      ],
+      "date": "2009",
+      "datePrecision": "year",
+      "assessment": "recorded"
+    },
+    {
+      "id": "RJ1",
+      "personId": "draft-remya-jose",
+      "statement": "Jose is recorded as student first-prize recipient, reported age 17; the state booklet dates the award to 2005.",
+      "sourceIds": [
+        "R20",
+        "R26"
+      ],
+      "date": "2005",
+      "datePrecision": "year",
+      "assessment": "recorded"
+    },
+    {
+      "id": "RJ2",
+      "personId": "draft-remya-jose",
+      "statement": "The contemporary June 2005 column reports age 17, earlier school-science prizes and construction at reported age 14.",
+      "sourceIds": [
+        "R27"
+      ],
+      "date": "2005-06",
+      "datePrecision": "month",
+      "assessment": "reported"
+    },
+    {
+      "id": "RJ3",
+      "personId": "draft-remya-jose",
+      "statement": "The account attributes the initial diagram and instructions to Jose, material procurement to her father and fabrication to a workshop.",
+      "sourceIds": [
+        "R27"
+      ],
+      "date": null,
+      "datePrecision": "unknown",
+      "assessment": "reported"
+    },
+    {
+      "id": "RJ4",
+      "personId": "draft-remya-jose",
+      "statement": "NIF records a patent application dated 7 August 2003; this is an application, not proof of a grant.",
+      "sourceIds": [
+        "R20"
+      ],
+      "date": "2003-08-07",
+      "datePrecision": "day",
+      "assessment": "recorded"
+    },
+    {
+      "id": "RJ5",
+      "personId": "draft-remya-jose",
+      "statement": "NDTV’s June 2006 caption places Class X work two years earlier, incompatible with treating that as the first construction date before the 2003 application.",
+      "sourceIds": [
+        "R28",
+        "R20"
+      ],
+      "date": "2006-06-05",
+      "datePrecision": "day",
+      "assessment": "conflicted"
+    },
+    {
+      "id": "RJ6",
+      "personId": "draft-remya-jose",
+      "statement": "The contemporary account connects the work to household responsibilities and records her then preference not to develop it further herself.",
+      "sourceIds": [
+        "R27"
+      ],
+      "date": null,
+      "datePrecision": "unknown",
+      "assessment": "reported"
     }
   ],
   "cases": [
@@ -646,7 +998,9 @@
         "secondReviewer": null,
         "decision": "pending"
       },
-      "corrections": []
+      "corrections": [],
+      "intakeId": "001",
+      "classification": "unresolved"
     },
     {
       "personId": "004",
@@ -802,7 +1156,9 @@
         "secondReviewer": null,
         "decision": "pending"
       },
-      "corrections": []
+      "corrections": [],
+      "intakeId": "004",
+      "classification": "unresolved"
     },
     {
       "personId": "014",
@@ -962,7 +1318,9 @@
         "secondReviewer": null,
         "decision": "pending"
       },
-      "corrections": []
+      "corrections": [],
+      "intakeId": "014",
+      "classification": "unresolved"
     },
     {
       "personId": "016",
@@ -1096,7 +1454,9 @@
         "secondReviewer": null,
         "decision": "pending"
       },
-      "corrections": []
+      "corrections": [],
+      "intakeId": "016",
+      "classification": "unresolved"
     },
     {
       "personId": "034",
@@ -1247,7 +1607,561 @@
         "secondReviewer": null,
         "decision": "pending"
       },
-      "corrections": []
+      "corrections": [],
+      "intakeId": "034",
+      "classification": "unresolved"
+    },
+    {
+      "personId": "draft-mansukhbhai-jagani",
+      "intakeId": null,
+      "name": "Mansukhbhai Ambabhai Jagani",
+      "aliases": [
+        "Mansukhbhai Jagani"
+      ],
+      "status": "held",
+      "classification": "unresolved",
+      "earlierQualifyingProof": null,
+      "strongestAt25": null,
+      "birthEvidence": {
+        "date": null,
+        "precision": "unknown",
+        "note": "Reported age 40 in the later award profile; interview date and birthday unknown. No exact birth year inferred.",
+        "claimIds": [
+          "MJ3"
+        ]
+      },
+      "timeline": {
+        "capability": [
+          {
+            "kind": "customer-prototype",
+            "date": "1994",
+            "datePrecision": "year",
+            "claimIds": [
+              "MJ2"
+            ]
+          },
+          {
+            "kind": "trade-training",
+            "date": null,
+            "datePrecision": "unknown",
+            "claimIds": [
+              "MJ3"
+            ]
+          }
+        ],
+        "proof": [
+          {
+            "kind": "invited-exhibition",
+            "date": "2000-01",
+            "datePrecision": "month",
+            "claimIds": [
+              "MJ2"
+            ]
+          },
+          {
+            "kind": "national-award",
+            "date": "2001",
+            "datePrecision": "year",
+            "claimIds": [
+              "MJ1"
+            ]
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "label": "Brought: trade experience; surrounded: customers and innovation-support network.",
+          "claimIds": [
+            "MJ3",
+            "MJ6"
+          ],
+          "unknown": "Starting capital, hours, feedback timing and allocation of later design contributions unknown."
+        }
+      ],
+      "attempts": [
+        {
+          "label": "Reported redesign after terrain difficulties.",
+          "claimIds": [
+            "MJ5"
+          ],
+          "unknown": "Date, number of trials, direct customer assessment and commercial outcome unverified."
+        }
+      ],
+      "subsequentOutcomes": [
+        {
+          "kind": "reported-demonstration",
+          "date": "2002-06",
+          "datePrecision": "month",
+          "claimIds": [
+            "MJ4"
+          ]
+        }
+      ],
+      "earlyHistory": [
+        {
+          "domain": "School and university",
+          "state": "partial",
+          "claimIds": [
+            "MJ3"
+          ],
+          "gap": "Primary-school account does not establish absence of earlier distinction."
+        },
+        {
+          "domain": "Sport",
+          "state": "open",
+          "claimIds": [],
+          "gap": "No adequate earlier sport history located; absence of a result is not established."
+        },
+        {
+          "domain": "Arts, music and writing",
+          "state": "open",
+          "claimIds": [],
+          "gap": "No adequate earlier arts, music and writing history located; absence of a result is not established."
+        },
+        {
+          "domain": "Work and business",
+          "state": "partial",
+          "claimIds": [
+            "MJ3"
+          ],
+          "gap": "Pre-26 repair/customer outcomes and their standards not established."
+        },
+        {
+          "domain": "Technical and scientific activity",
+          "state": "partial",
+          "claimIds": [
+            "MJ2",
+            "MJ3"
+          ],
+          "gap": "Customer prototype precedes award; first independently validated technical result unknown."
+        },
+        {
+          "domain": "Other competitive or community pursuits",
+          "state": "open",
+          "claimIds": [],
+          "gap": "No adequate earlier other competitive or community pursuits history located; absence of a result is not established."
+        }
+      ],
+      "holdReasons": [
+        "Earlier customer success may precede the award; age and earliest qualifying result unresolved.",
+        "No full earlier-domain audit or primary age record; selection denominator unknown."
+      ],
+      "contradictions": [],
+      "searches": [
+        {
+          "query": "\"Mansukhbhai Jagani\" \"school\" \"award\"",
+          "language": "en",
+          "searchedOn": "2026-10-14",
+          "result": "Organisational history and repeated award stories; no independent pre-26 distinction audit."
+        },
+        {
+          "query": "\"મનસુખભાઈ જગાણી\" \"સનેડો\"",
+          "language": "gu",
+          "searchedOn": "2026-10-14",
+          "result": "Gujarati lead searched; R22 retrieved separately. No primary birth/earliest-order record located."
+        }
+      ],
+      "nextChecks": [
+        "Locate original dated customer acceptance and 2000 exhibition selection evidence.",
+        "Resolve primary age evidence and earlier domains; obtain independent Gujarati review before relying on translated details."
+      ],
+      "review": {
+        "author": "Codex bounded public-source research",
+        "secondReviewer": null,
+        "decision": "pending"
+      },
+      "corrections": [],
+      "researchContext": "India; Gujarat agricultural tooling and repair trade; Gujarati-language reporting.",
+      "milestoneAssessment": {
+        "claimIds": [
+          "MJ1",
+          "MJ2",
+          "MJ3",
+          "MJ4",
+          "MJ6"
+        ],
+        "namedContribution": "Named device inventor; later support/design assistance kept separate.",
+        "standard": "NIF national second prize; individual scores and original judging rules not recovered.",
+        "comparisonPool": "Unknown category denominator; no percentile.",
+        "earliestProof": "2000 invitation and 1994 customer prototype are earlier leads, not automatically qualifying.",
+        "ageAtProof": "Unknown; later reported age alone does not date earliest customer proof.",
+        "independentCorroboration": "R21 independently publishes contemporary activity but quotes NIF; R22 is a separate Gujarati report with unidentified informants. Neither clears early history."
+      }
+    },
+    {
+      "personId": "draft-chintakindi-mallesham",
+      "intakeId": null,
+      "name": "Chintakindi Mallesham",
+      "aliases": [
+        "C. Mallesham",
+        "Mallesam"
+      ],
+      "status": "held",
+      "classification": "unresolved",
+      "earlierQualifyingProof": null,
+      "strongestAt25": null,
+      "birthEvidence": {
+        "date": null,
+        "precision": "unknown",
+        "note": "Age reports conflict: 37 in 2009 versus 43 in 2018. Birthday and first-proof age unresolved.",
+        "claimIds": [
+          "CM1",
+          "CM3"
+        ]
+      },
+      "timeline": {
+        "capability": [
+          {
+            "kind": "development-start",
+            "date": "1992",
+            "datePrecision": "year",
+            "claimIds": [
+              "CM2"
+            ]
+          },
+          {
+            "kind": "working-prototype",
+            "date": "1999",
+            "datePrecision": "year",
+            "claimIds": [
+              "CM2"
+            ]
+          }
+        ],
+        "proof": [
+          {
+            "kind": "reported-first-sale",
+            "date": "2000",
+            "datePrecision": "year",
+            "claimIds": [
+              "CM2"
+            ]
+          },
+          {
+            "kind": "national-award",
+            "date": "2009",
+            "datePrecision": "year",
+            "claimIds": [
+              "CM1"
+            ]
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "label": "Brought: weaving experience; handed/surrounded: family support alongside paid work.",
+          "claimIds": [
+            "CM2",
+            "CM4"
+          ],
+          "unknown": "Hours, costs, family labour allocation and independent customer feedback unknown."
+        }
+      ],
+      "attempts": [
+        {
+          "label": "Development duration differs across accounts.",
+          "claimIds": [
+            "CM5"
+          ],
+          "unknown": "Three years may describe one phase; no contemporaneous attempt log recovered."
+        }
+      ],
+      "subsequentOutcomes": [
+        {
+          "kind": "electronics-development",
+          "date": null,
+          "datePrecision": "unknown",
+          "claimIds": [
+            "CM2"
+          ]
+        }
+      ],
+      "earlyHistory": [
+        {
+          "domain": "School and university",
+          "state": "partial",
+          "claimIds": [
+            "CM2"
+          ],
+          "gap": "School and technical testimony does not audit selective achievements."
+        },
+        {
+          "domain": "Sport",
+          "state": "open",
+          "claimIds": [],
+          "gap": "No adequate earlier sport history located; absence of a result is not established."
+        },
+        {
+          "domain": "Arts, music and writing",
+          "state": "open",
+          "claimIds": [],
+          "gap": "No adequate earlier arts, music and writing history located; absence of a result is not established."
+        },
+        {
+          "domain": "Work and business",
+          "state": "partial",
+          "claimIds": [
+            "CM2",
+            "CM4"
+          ],
+          "gap": "Earlier weaving quality, sales and professional distinctions unknown."
+        },
+        {
+          "domain": "Technical and scientific activity",
+          "state": "partial",
+          "claimIds": [
+            "CM2"
+          ],
+          "gap": "Prototype and early sale could be cohort-changing; original acceptance and primary age evidence missing."
+        },
+        {
+          "domain": "Other competitive or community pursuits",
+          "state": "open",
+          "claimIds": [],
+          "gap": "No adequate earlier other competitive or community pursuits history located; absence of a result is not established."
+        }
+      ],
+      "holdReasons": [
+        "Age contradiction could change whether the 1999–2000 result occurred before 26.",
+        "First sale is not automatically qualifying excellence; no independent customer/technical assessment recovered.",
+        "Primary award evidence does not clear all earlier domains."
+      ],
+      "contradictions": [
+        {
+          "id": "CM-age",
+          "claimIds": [
+            "CM1",
+            "CM3"
+          ],
+          "status": "unresolved",
+          "note": "Do not select whichever age makes core membership possible."
+        },
+        {
+          "id": "CM-duration",
+          "claimIds": [
+            "CM5"
+          ],
+          "status": "unresolved",
+          "note": "Development phases may differ; no reconciliation established."
+        }
+      ],
+      "searches": [
+        {
+          "query": "\"Chintakindi Mallesham\" \"before\" \"1999\" award",
+          "language": "en",
+          "searchedOn": "2026-10-14",
+          "result": "Retrospective invention accounts and repeated profiles; no primary earlier-result register."
+        }
+      ],
+      "nextChecks": [
+        "Resolve age using public primary evidence; locate first customer and technical acceptance records.",
+        "Recover original Telugu reporting where available; English reports do not clear local-language history."
+      ],
+      "review": {
+        "author": "Codex bounded public-source research",
+        "secondReviewer": null,
+        "decision": "pending"
+      },
+      "corrections": [],
+      "researchContext": "India; weaving and machinery, historical Andhra Pradesh / present Telangana.",
+      "milestoneAssessment": {
+        "claimIds": [
+          "CM1",
+          "CM2",
+          "CM3",
+          "CM6"
+        ],
+        "namedContribution": "Named Asu-machine developer; family labour/support are not erased.",
+        "standard": "NIF advisory review and novelty/social-utility inquiry; process-level evidence, not his individual score sheet.",
+        "comparisonPool": "Overall submissions contain non-unique entries; relevant category pool unknown.",
+        "earliestProof": "Reported first sale precedes the award; original transaction and quality threshold not recovered.",
+        "ageAtProof": "Unresolved; conflicting reported ages span materially different possible ages at prototype/first sale.",
+        "independentCorroboration": "R24 is a separate newsroom interview; early history still comes from the subject. R25 belongs to the scouting/support network."
+      }
+    },
+    {
+      "personId": "draft-remya-jose",
+      "intakeId": null,
+      "name": "Remya Jose",
+      "aliases": [],
+      "status": "held",
+      "classification": "earlier-excellence-contrast",
+      "earlierQualifyingProof": true,
+      "strongestAt25": null,
+      "birthEvidence": {
+        "date": null,
+        "precision": "unknown",
+        "note": "Reported age 17 in the award profile and contemporary June 2005 column; exact birthday unknown. Under-26 exclusion does not require an invented birthday.",
+        "claimIds": [
+          "RJ1",
+          "RJ2"
+        ]
+      },
+      "timeline": {
+        "capability": [
+          {
+            "kind": "school-projects",
+            "date": null,
+            "datePrecision": "unknown",
+            "claimIds": [
+              "RJ2"
+            ]
+          },
+          {
+            "kind": "washing-machine-design",
+            "date": null,
+            "datePrecision": "unknown",
+            "claimIds": [
+              "RJ2",
+              "RJ3"
+            ]
+          }
+        ],
+        "proof": [
+          {
+            "kind": "earlier-school-prizes",
+            "date": null,
+            "datePrecision": "unknown",
+            "claimIds": [
+              "RJ2"
+            ]
+          },
+          {
+            "kind": "student-national-award",
+            "date": "2005",
+            "datePrecision": "year",
+            "claimIds": [
+              "RJ1"
+            ]
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "label": "Brought: school projects; handed: materials/fabrication support; surrounded: household work.",
+          "claimIds": [
+            "RJ2",
+            "RJ3",
+            "RJ6"
+          ],
+          "unknown": "Practice hours, household labour allocation and independently measured performance unknown."
+        }
+      ],
+      "attempts": [
+        {
+          "label": "Then chose not to pursue further development herself.",
+          "claimIds": [
+            "RJ6"
+          ],
+          "unknown": "This does not establish permanent abandonment, failed invention or later career."
+        }
+      ],
+      "subsequentOutcomes": [
+        {
+          "kind": "news-coverage",
+          "date": "2006-06-05",
+          "datePrecision": "day",
+          "claimIds": [
+            "RJ5"
+          ]
+        }
+      ],
+      "earlyHistory": [
+        {
+          "domain": "School and university",
+          "state": "partial",
+          "claimIds": [
+            "RJ2"
+          ],
+          "gap": "Earlier science-fair organisers, dates and criteria missing."
+        },
+        {
+          "domain": "Sport",
+          "state": "open",
+          "claimIds": [],
+          "gap": "No adequate earlier sport history located; absence of a result is not established."
+        },
+        {
+          "domain": "Arts, music and writing",
+          "state": "open",
+          "claimIds": [],
+          "gap": "No adequate earlier arts, music and writing history located; absence of a result is not established."
+        },
+        {
+          "domain": "Work and business",
+          "state": "partial",
+          "claimIds": [
+            "RJ6"
+          ],
+          "gap": "Subsequent employment/livelihood and strongest achievement at 25 unverified."
+        },
+        {
+          "domain": "Technical and scientific activity",
+          "state": "partial",
+          "claimIds": [
+            "RJ1",
+            "RJ2",
+            "RJ4"
+          ],
+          "gap": "Earlier distinction established for core exclusion; exact earliest qualifying result remains unresolved."
+        },
+        {
+          "domain": "Other competitive or community pursuits",
+          "state": "open",
+          "claimIds": [],
+          "gap": "No adequate earlier other competitive or community pursuits history located; absence of a result is not established."
+        }
+      ],
+      "holdReasons": [
+        "Earlier-excellence contrast: national student first prize well before 26 excludes core inclusion.",
+        "Not a finished contrast profile: birthday, earliest school results and wider history remain unresolved.",
+        "Relative construction-date conflict and no independent validation of claimed machine performance."
+      ],
+      "contradictions": [
+        {
+          "id": "RJ-construction",
+          "claimIds": [
+            "RJ4",
+            "RJ5"
+          ],
+          "status": "unresolved",
+          "note": "Do not convert “two years ago” into a settled 2004 invention date; 2003 application is already earlier."
+        }
+      ],
+      "searches": [
+        {
+          "query": "\"Remya Jose\" \"science fair\" \"prizes\"",
+          "language": "en",
+          "searchedOn": "2026-10-14",
+          "result": "Repeated school-prize account; no original school result sheet recovered. Later viral age/career claims not adopted."
+        }
+      ],
+      "nextChecks": [
+        "Retrieve original school-prize and patent-application records if a finished contrast profile is pursued.",
+        "Resolve construction chronology and obtain independent history corroboration; no private records requested."
+      ],
+      "review": {
+        "author": "Codex bounded public-source research",
+        "secondReviewer": null,
+        "decision": "pending"
+      },
+      "corrections": [],
+      "researchContext": "India; Kerala, household responsibilities and school-age technical work.",
+      "milestoneAssessment": {
+        "claimIds": [
+          "RJ1",
+          "RJ2",
+          "RJ3",
+          "RJ4",
+          "RJ5"
+        ],
+        "namedContribution": "Diagram and instructions credited to Jose; procurement/fabrication support explicitly attributed.",
+        "standard": "NIF national student first prize is external recognition beyond ordinary schoolwork; individual scoring criteria not recovered.",
+        "comparisonPool": "Student-category denominator unknown; no cross-domain percentile.",
+        "earliestProof": "School prizes may be earlier; exclusion rests on documented national award, not assumed school selectivity or patent grant.",
+        "ageAtProof": "Reported 17 in 2005; exact birthday/age on ceremony day unknown. Sufficient under-26 margin for held contrast classification.",
+        "independentCorroboration": "NDTV independently records contemporary coverage, caption only. Yojana and NIF share narrative origin; no independent birth or full-history verification."
+      }
     }
   ]
 }

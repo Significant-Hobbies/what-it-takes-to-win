@@ -49,7 +49,20 @@ function validate(data) {
     }
   }
   for (const entry of data.cases) {
-    assert.equal(firstProofRecords.find((record) => record.id === entry.personId)?.name, entry.name);
+    if (entry.intakeId === null) {
+      assert.ok(entry.personId.startsWith("draft-"));
+      assert.ok(!firstProofRecords.some((record) => record.id === entry.personId || record.name === entry.name));
+      assert.ok(entry.researchContext);
+      assert.ok(entry.milestoneAssessment?.claimIds.length > 0);
+    } else {
+      assert.equal(entry.personId, entry.intakeId);
+      assert.equal(firstProofRecords.find((record) => record.id === entry.intakeId)?.name, entry.name);
+    }
+    assert.equal(entry.earlierQualifyingProof === true, entry.classification === "earlier-excellence-contrast");
+    for (const event of [...entry.timeline.capability, ...entry.timeline.proof, ...entry.subsequentOutcomes]) {
+      assert.equal(event.date === null, event.datePrecision === "unknown");
+      assert.ok(event.claimIds.length > 0);
+    }
     assert.deepEqual(entry.earlyHistory.map((domain) => domain.domain), AUDIT_DOMAINS);
     assert.ok(entry.holdReasons.length > 0);
     assert.ok(entry.nextChecks.length > 0);
@@ -60,7 +73,8 @@ function validate(data) {
 
 test("priority claim ledger preserves traceability and remains outside publication inputs", () => {
   validate(draft);
-  assert.deepEqual(draft.cases.map((entry) => entry.personId), ["001", "004", "014", "016", "034"]);
+  assert.deepEqual(draft.cases.filter((entry) => entry.intakeId !== null).map((entry) => entry.personId), ["001", "004", "014", "016", "034"]);
+  assert.deepEqual(draft.cases.filter((entry) => entry.intakeId === null).map((entry) => entry.personId), ["draft-mansukhbhai-jagani", "draft-chintakindi-mallesham", "draft-remya-jose"]);
   assert.equal(publishedFirstProofRecords.length, 0);
   assert.ok(firstProofRecords.every((record) => !record.review));
 });
@@ -88,4 +102,33 @@ test("earlier-result and date conflicts cannot silently become the intake milest
   assert.equal(cases.get("014").timeline.proof[0].date, null);
   assert.equal(cases.get("004").contradictions.length, 2);
   assert.equal(cases.get("034").timeline.proof[0].kind, "school-selection");
+});
+
+test("unregistered research leads cannot impersonate intake or lose contrast exclusion", () => {
+  for (const mutate of [
+    (data) => { data.cases[5].intakeId = "001"; },
+    (data) => { data.cases[5].personId = "001"; },
+    (data) => { delete data.cases[5].milestoneAssessment; },
+    (data) => { data.cases[7].classification = "unresolved"; },
+    (data) => { data.cases[7].earlierQualifyingProof = null; },
+    (data) => { data.cases[6].timeline.proof[0].datePrecision = "unknown"; },
+  ]) {
+    const changed = structuredClone(draft);
+    mutate(changed);
+    assert.throws(() => validate(changed));
+  }
+});
+
+test("new lead evidence retains cohort-changing uncertainty and source dependence", () => {
+  const mallesham = draft.cases.find((entry) => entry.personId === "draft-chintakindi-mallesham");
+  const remya = draft.cases.find((entry) => entry.personId === "draft-remya-jose");
+  assert.equal(mallesham.birthEvidence.date, null);
+  assert.ok(mallesham.contradictions.some((conflict) => conflict.id === "CM-age" && conflict.status === "unresolved"));
+  assert.equal(mallesham.earlierQualifyingProof, null);
+  assert.equal(remya.earlierQualifyingProof, true);
+  assert.equal(remya.status, "held");
+  assert.equal(remya.review.decision, "pending");
+  assert.equal(remya.strongestAt25, null);
+  assert.match(draft.sources.find((source) => source.id === "R27").origin, /same origin/);
+  assert.match(draft.sources.find((source) => source.id === "R28").location, /caption only/);
 });
