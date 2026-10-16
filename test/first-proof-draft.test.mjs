@@ -100,7 +100,13 @@ test("earlier-result and date conflicts cannot silently become the intake milest
   assert.equal(cases.get("016").timeline.proof[0].date, null);
   assert.equal(cases.get("014").timeline.proof[0].kind, "magazine-acceptance");
   assert.equal(cases.get("014").timeline.proof[0].date, null);
-  assert.equal(cases.get("004").contradictions.length, 2);
+  const spinks = cases.get("004");
+  assert.equal(spinks.contradictions.length, 2);
+  assert.equal(spinks.timeline.proof[0].date, "2003-03-31");
+  assert.equal(spinks.timeline.proof[0].kind, "category-win-threshold-unresolved");
+  assert.equal(spinks.birthEvidence.date, "1967-04-22");
+  assert.match(spinks.birthEvidence.note, /not an independently authenticated civil birth record/);
+  assert.equal(spinks.status, "held");
   assert.equal(cases.get("034").timeline.proof[0].kind, "school-selection");
 });
 
