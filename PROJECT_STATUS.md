@@ -169,11 +169,10 @@ and curious readers who want the evidence behind the argument
 
 ## Features (current source and production)
 
-- Before the First Proof collection implemented in source, with a separate
+- Before the First Proof collection deployed on 2026-10-16, with a separate
   noindex register of 136 uncleared research records, source provenance,
   two-lane record views, public nomination/correction handoffs, and an explicit
-  editorial publication gate. No first-excellence profiles are cleared; this
-  collection has not been deployed.
+  editorial publication gate. No first-excellence profiles are cleared.
 
 - Luck directory of nine sourced ordinary-person cases grouped by the four
   luck forms, linked from chapter 04 of the journey and the footer
