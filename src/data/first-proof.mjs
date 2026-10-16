@@ -18,15 +18,35 @@ export const TRAJECTORY_LABELS = {
 export const firstProofSources = register.sources;
 export const firstProofSnapshot = register.snapshotDate;
 export const firstProofWorkbook = { name: register.workbook, sha256: register.workbookSha256 };
-export const firstProofRecords = register.records.map((record) => ({
-  ...record,
-  review: reviews[record.id] ?? null,
-}));
+export const firstProofIntakeRecords = register.records;
+export const firstProofRecords = firstProofIntakeRecords.map((record) => {
+  const research = reviews[record.id] ?? null;
+  const correction = research?.screeningCorrection ?? null;
+  return {
+    ...record,
+    ...(correction ? {
+      milestoneAge: correction.milestoneAge,
+      locatedProof: correction.locatedProof,
+      background: correction.background,
+      unresolvedIssue: correction.unresolvedIssue,
+      researchDepth: correction.researchDepth,
+    } : {}),
+    intake: correction ? {
+      milestoneAge: record.milestoneAge,
+      locatedProof: record.locatedProof,
+      background: record.background,
+      unresolvedIssue: record.unresolvedIssue,
+      researchDepth: record.researchDepth,
+    } : null,
+    research: correction || research?.sources ? research : null,
+    review: research?.evidenceStatus ? research : null,
+  };
+});
 
-// Keep intake provenance immutable while allowing an audit to add new sources.
+// Keep workbook intake immutable while showing bounded corrections and later sources.
 export function recordSources(record) {
   const sources = record.sourceIds.map((id) => firstProofSources.find((source) => source.id === id));
-  for (const evidence of record.review?.sources ?? []) {
+  for (const evidence of [...(record.research?.sources ?? []), ...(record.review?.sources ?? [])]) {
     if (sources.some((source) => source.id === evidence.id)) continue;
     const registered = firstProofSources.find((source) => source.id === evidence.id);
     if (registered) sources.push(registered);
@@ -139,7 +159,7 @@ export function summarizeFirstProof() {
     held: firstProofRecords.filter((record) => record.intakeStatus === "C").length,
     priority: firstProofRecords.filter((record) => record.intakeStatus === "A").length,
     recordOnly: firstProofRecords.filter((record) => record.researchDepth.startsWith("Competition record:")).length,
-    sources: firstProofSources.length,
+    sources: new Set([...firstProofSources.map((source) => source.url), ...firstProofRecords.flatMap((record) => recordSources(record).map((source) => source.url))]).size,
     published: publishedFirstProofRecords.length,
   };
 }

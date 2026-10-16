@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import { AUDIT_DOMAINS, firstProofRecords, firstProofSources, firstProofWorkbook, locatedAgeBand, publicationBlockers, publishedFirstProofRecords, recordSources, summarizeFirstProof } from "../src/data/first-proof.mjs";
+import { AUDIT_DOMAINS, firstProofIntakeRecords, firstProofRecords, firstProofSources, firstProofWorkbook, locatedAgeBand, publicationBlockers, publishedFirstProofRecords, recordSources, summarizeFirstProof } from "../src/data/first-proof.mjs";
 
 function reviewedRecord() {
   const record = structuredClone(firstProofRecords[0]);
@@ -20,7 +20,7 @@ function reviewedRecord() {
 }
 
 test("workbook import preserves all identities, counts and source associations", () => {
-  assert.deepEqual(summarizeFirstProof(), { people: 136, candidates: 100, held: 36, priority: 5, recordOnly: 49, sources: 135, published: 0 });
+  assert.deepEqual(summarizeFirstProof(), { people: 136, candidates: 100, held: 36, priority: 5, recordOnly: 49, sources: 142, published: 0 });
   assert.equal(new Set(firstProofRecords.map((record) => record.id)).size, 136);
   assert.equal(new Set(firstProofRecords.map((record) => record.name)).size, 136);
   assert.equal(new Set(firstProofSources.map((source) => source.url)).size, 135);
@@ -32,6 +32,20 @@ test("workbook import preserves all identities, counts and source associations",
   }
   const workbook = readFileSync(new URL("../data/research/first-proof/Paths_First_Proof_Research.xlsx", import.meta.url));
   assert.equal(createHash("sha256").update(workbook).digest("hex"), firstProofWorkbook.sha256);
+});
+
+test("later Spinks evidence corrects the display without changing workbook intake or clearing publication", () => {
+  const intake = firstProofIntakeRecords.find((record) => record.id === "004");
+  const current = firstProofRecords.find((record) => record.id === "004");
+  assert.equal(intake.milestoneAge, "38");
+  assert.match(intake.locatedProof, /first competitive fell race was in 2001/);
+  assert.equal(current.intake.locatedProof, intake.locatedProof);
+  assert.equal(current.milestoneAge, "35–36");
+  assert.match(current.locatedProof, /female club, fell, and cross-country champion in 2003/);
+  assert.match(current.background, /first Trunce fell race to 2002/);
+  assert.equal(current.review, null);
+  assert.equal(recordSources(current).length, 9);
+  assert.ok(publicationBlockers(current).length > 0);
 });
 
 test("all intake categories remain uncleared and priority never acts as verification", () => {

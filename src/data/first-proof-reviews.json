@@ -1,1 +1,83 @@
-{}
+{
+  "004": {
+    "screeningCorrection": {
+      "milestoneAge": "35–36",
+      "locatedProof": "Penistone club awards record her as its female club, fell, and cross-country champion in 2003, aged 35–36. She later completed the Bob Graham Round during Dark Peak's June 2005 weekend in 23:33, aged 38. Neither result is established as her first qualifying proof.",
+      "background": "Farm upbringing and office work; resumed recreational running at 19. Her 50th-birthday account and the Joss Naylor challenge register support birth on 22 April 1967. Retrospective interviews date road running to 2001 and her first Trunce fell race to 2002; she recalled finding the race while training for the Great North Run by October 2002, but its exact date is unverified.",
+      "unresolvedIssue": "The 2003 club awards predate the Bob Graham, but their exact dates, selection pools, and whether they meet the first-proof threshold remain unresolved. Audit 2001–2002 results, running from 19 onward, horse riding, and school/work before asserting a first athletic distinction. A 2019 profile's stated age 51 conflicts with her 2017 age-50 account and the challenge register; do not infer birth from that profile.",
+      "researchDepth": "First-person interviews + club awards and Bob Graham rosters; earlier history incomplete"
+    },
+    "sources": [
+      {
+        "id": "S136",
+        "url": "https://results.pfrac.co.uk/awards/",
+        "accessedOn": "2026-10-16",
+        "claim": "Official Penistone awards list Nicky Spinks as 2003 female club, fell and cross-country champion and 2004 female club, fell, road and cross-country champion; award dates and comparison pools are not supplied.",
+        "origin": "Penistone Footpath Runners & AC awards register",
+        "verified": true,
+        "primary": true,
+        "supports": ["early-history"]
+      },
+      {
+        "id": "S137",
+        "url": "https://pfrac.co.uk/about/fell-and-trail-running",
+        "accessedOn": "2026-10-16",
+        "claim": "Penistone's Bob Graham list records Spinks's 2005 completion in 23:33, without an exact date.",
+        "origin": "Penistone Footpath Runners & AC Bob Graham register",
+        "verified": true,
+        "primary": true,
+        "supports": ["milestone"]
+      },
+      {
+        "id": "S138",
+        "url": "https://dpfr.org.uk/wp_dpfr/info-for-members/the-bg-round-dark-peak-style/successful-dp-completions-of-bgr",
+        "accessedOn": "2026-10-16",
+        "claim": "Dark Peak's completion list includes Spinks of Penistone among successful runners at its June 2005 Bob Graham weekend.",
+        "origin": "Dark Peak Fell Runners completion list",
+        "verified": true,
+        "primary": true,
+        "supports": ["milestone"]
+      },
+      {
+        "id": "S139",
+        "url": "https://www.johnmuirtrust.org/assets/000/000/763/JMT_Journal_62_spring_2017_WEB_original_original.pdf?1603110116=",
+        "accessedOn": "2026-10-16",
+        "claim": "In a Spring 2017 first-person interview, Spinks says she started road running in 2001 and, while training for the Great North Run by October 2002, found the Trunce; she calls it her first fell race but gives no exact race date.",
+        "origin": "John Muir Trust interview with Nicky Spinks",
+        "verified": true,
+        "primary": true,
+        "supports": ["early-history"]
+      },
+      {
+        "id": "S140",
+        "url": "https://www.inov8.com/row/blog/post/nicky-spinks-50th-joss-naylor-challenge",
+        "accessedOn": "2026-10-16",
+        "claim": "In her own 2017 account, Spinks says she turns 50 on 22 April 2017, supporting a 22 April 1967 birth date.",
+        "origin": "Nicky Spinks first-person Inov-8 account",
+        "verified": true,
+        "primary": true,
+        "supports": ["age"]
+      },
+      {
+        "id": "S141",
+        "url": "https://www.ukhillwalking.com/articles/features/my_mountains_-_nicky_spinks-12233",
+        "accessedOn": "2026-10-16",
+        "claim": "A 2019 interview dates her first Trunce fell race to 2002, but describes her as 51 in September 2019, conflicting with the first-person and challenge-register age evidence.",
+        "origin": "UKHillwalking interview by Fiona Russell",
+        "verified": true,
+        "primary": false,
+        "supports": ["early-history"]
+      },
+      {
+        "id": "S142",
+        "url": "https://jossnaylor.blogspot.com/p/completers.html",
+        "accessedOn": "2026-10-16",
+        "claim": "The Joss Naylor challenge completers register lists Spinks as W50 on 22 April 2017 and W55 on 22 April 2022, corroborating age but not independently proving an exact birth certificate date.",
+        "origin": "Joss Naylor challenge completers register",
+        "verified": true,
+        "primary": true,
+        "supports": ["age"]
+      }
+    ]
+  }
+}
