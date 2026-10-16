@@ -14,13 +14,13 @@ const correction = `/contribute/?${new URLSearchParams({ task: "edit", person: r
     <p class="lede">{record.domain} · {published ? `First proof at ${review!.milestone.ageMin}–${review!.milestone.ageMax}` : `Located milestone age ${record.milestoneAge}`}</p>
     <p class="first-proof-intro">{published ? review!.milestone.result : record.locatedProof}</p>
   </header>
-  {!published && <aside class="first-proof-empty" aria-label="Evidence boundary"><p><strong>{record.publicationStatus}.</strong></p><p>{record.unresolvedIssue}</p><p>These are imported screening claims. Their source associations have been preserved; claim-by-claim verification and the full cross-domain audit remain incomplete.</p></aside>}
+  {!published && <aside class="first-proof-empty" aria-label="Evidence boundary"><p><strong>{record.publicationStatus}.</strong></p><p>{record.unresolvedIssue}</p><p>{record.intake ? "The original workbook intake is preserved; the claims above include a later sourced screening correction. The full cross-domain audit remains incomplete." : "These are imported screening claims. Their source associations have been preserved; claim-by-claim verification and the full cross-domain audit remain incomplete."}</p></aside>}
 
   <section class="first-proof-section" aria-labelledby="timeline-heading">
     <h2 id="timeline-heading">{published ? "Before and after outside validation" : "Two timelines to investigate"}</h2>
     <div class="first-proof-lanes">
       <section><h3>Capability and practice</h3>
-        {review?.timeline?.capability?.length ? <ol>{review.timeline.capability.map((step) => <li><strong>{step.when}</strong><p>{step.detail}</p></li>)}</ol> : <><p>{record.background}</p><p class="first-proof-note">Earlier background from the register. Practice start, development dates and earlier level have not been established.</p></>}
+        {review?.timeline?.capability?.length ? <ol>{review.timeline.capability.map((step) => <li><strong>{step.when}</strong><p>{step.detail}</p></li>)}</ol> : <><p>{record.background}</p><p class="first-proof-note">Earlier background from {record.intake ? "a sourced screening correction" : "the register"}. Practice start, development dates and earlier level have not been established.</p></>}
       </section>
       <section><h3>External proof</h3>
         {review?.timeline?.proof?.length ? <ol>{review.timeline.proof.map((step) => <li><strong>{step.when}</strong><p>{step.detail}</p></li>)}</ol> : <><p>Located milestone age: {record.milestoneAge}</p><p>{record.locatedProof}</p><p class="first-proof-note">The earliest result located in screening can be later than the person’s actual first qualifying result.</p></>}
@@ -42,7 +42,7 @@ const correction = `/contribute/?${new URLSearchParams({ task: "edit", person: r
   <section class="first-proof-section" aria-labelledby="sources-heading">
     <h2 id="sources-heading">Sources associated with this record</h2>
     <ul class="first-proof-sources">{sources.map((source) => <li><a href={source.url} rel="noopener noreferrer">{source.id} · {source.domain}</a><span>{source.url}</span></li>)}</ul>
-    <p class="first-proof-note">Intake provenance: {firstProofWorkbook.name}, “{record.provenance.sheet}”, row {record.provenance.row}, stable ID {record.id}. Source links indicate where the screening account came from; they do not certify every claim.</p>
+    <p class="first-proof-note">Intake provenance: {firstProofWorkbook.name}, “{record.provenance.sheet}”, row {record.provenance.row}, stable ID {record.id}. Source links cover the original screening account and any later research; they do not certify every claim.</p>
     <a href={correction}>Propose a sourced correction or an earlier counterexample →</a>
   </section>
 </article>
