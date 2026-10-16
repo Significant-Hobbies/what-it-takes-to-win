@@ -21,11 +21,12 @@ entries reference claims. An access success is not evidence approval.
 The earlier 13 October access record remains in `source-access.json`. It records
 13 attempts, 11 retrieved responses and two HTTP 403 responses; those hashes
 remain historical retrieval evidence, not a claim that every source was reread.
-The ledger records 39 sources and 48 claims across the 14 and 16 October passes. Search extracts and
+The ledger records 45 sources and 54 claims across the 14 and 16 October passes. Search extracts and
 failed retrievals are explicit; they cannot support recorded claims. Two PDFs
 that the browser extractor could not read were retrieved directly: Spinks’s
-later account and the original 2004 race scan. The latter's four pages and the
-Macomber bibliography's first page were inspected visually. The WMC table was
+later account and the original 2004 race scan. The latter's four pages, five
+FRA magazine pages across four issues, and the Macomber bibliography's first page
+were inspected visually. The WMC table was
 read through text extraction; its visual cross-check remains open.
 
 No access controls were bypassed. The Hallmark PDF's certificate mismatch was
@@ -45,7 +46,7 @@ is calculated.
 | Intake ID | New evidence and consequence | Still held for |
 |---|---|---|
 | 001 Dominic O’Brien | R33 reports a six-deck, zero-error record in 1988; R35 separately tabulates a 35-deck record in 1990, before the 1991 title. R34 dates the title and supplies the seven ranked finishers. The 1991 win is not the earliest located external proof. | Original 1988/1990 adjudication and Guinness entry, first-proof classification, primary age, substantive pre-26 history and 1991 field/rules visual challenge. |
-| 004 Nicky Spinks | R07 is the organiser's 2004 Heart of Granite result, earlier than the intake's 2005 round. Her running club (R29) lists the 2005 round at 23:33, supporting R04 over R05's 23:32. A later England Athletics interview (R32) recalls childhood activity and recreational running at 19; this is Spinks's testimony, not a dated result. | Meaning of the 2004 performance, first race chronology, direct Bob Graham Club ratification/original timing, age and earlier domains. |
+| 004 Nicky Spinks | Original FRA tables (R40–R43) locate probable 2002 race participation and a 31 March 2003 Trunce women's-category win, followed by two more 2003 wins. These precede the 2004 Heart of Granite and 2005 Bob Graham results. Her 2017 fiftieth-birthday accounts (R44–R45) imply a 22 April 1967 birth date, with a shared self-report origin. | Abbreviated early identity, whether a local category win meets the excellence threshold, contradictory first-race chronology, independent age/earlier-history evidence and original 2005 ratification. |
 | 014 Debbie Macomber | R09 separates the two debut publication dates. R10 reports paid magazine work before the novel sale and conflates a 1982 date with publication. | Earliest magazine acceptance, acquisition date, birth evidence and prior domains. |
 | 016 Ann Cleeves | R12 identifies the 1982 Hilbre chapter; R13 independently reads and cites the original. Publisher R31 reports a 1954 birth year, making publication age 27–28; the 1986 novel cannot be treated as first publication. | Chapter commission/acceptance date, selection standard, primary age record and prior domains. |
 | 034 Julie Goodwin | R14 supplies contemporaneous result/age reporting; R36 reports 82–75 final scoring and 20 finalists from 7,500 applicants. The national audiovisual archive catalogues the 2009 final (R30). R15 introduces elected school captaincy as a concrete earlier-selection lead. | Contemporary school captain record and threshold, original show scoring/casting records and filming date, primary age and complete earlier history. |
@@ -77,26 +78,45 @@ identity evidence.
 
 ### 004 — Nicola “Nicky” Spinks
 
-See NS1–NS6. The original 2004 result scan names Spinks and her club, lists her
-eighth in 09:01:12, and contains 11 finishers plus eight retired entries. The
-current archive is hosted by Spinks, but attributes the historical report to
-organiser Colin Butler. This is a distinct document origin, not independent
-confirmation of all later testimony.
+See NS1–NS14. Five visually checked FRA magazine pages precede the 2004
+Heart of Granite scan. They list N. Spinks third woman in the 15 August 2002
+Denis Stitt race (50th/69), fourth woman in the 9 September Trunce final
+(43rd/93), and first woman in Trunce 1 on 31 March 2003 (83rd/207, eight
+listed women). A June 2003 Hunshelf organiser narrative expands the name to
+Nicky Spinks; its table lists her first of five women (35th/62). The July
+Broomhead result lists her first of three women (22nd/56). The early
+initial-only entries are a probable identity match, not direct identity proof.
+The March win is the earliest *located category win*, not a settled earliest
+qualifying result; the category's competitive standard and any earlier wins
+still require review. The 2004 scan lists her eighth in 09:01:12 among 11
+finishers plus eight retired entries, and its original report is attributed
+to organiser Colin Butler though hosted by Spinks.
+
+These 2002 entries precede Spinks's later recollection of discovering the
+Trunce while preparing for a run by October 2002. A separate intake account
+says 2001. The retrospective sequence, initial-only attribution and earliest
+race date remain unresolved; neither later memory nor a search omission can
+erase the contemporary results. Her own 2017 account of running the Joss
+Naylor Challenge on her fiftieth birthday, 22 April, implies 22 April 1967.
+A sponsor reported that birthday two days after the event, but appears to
+depend on Spinks's statement. The resulting age 35 at the March 2003 win is
+provisional, not a certified or independently authenticated birth finding.
 
 Penistone Footpath Runners & AC independently lists Spinks among its 2005
 completers and gives 23:33. The club's timing source is unstated, and its page is
 not an individual Bob Graham Club record. The 23:32 in her later account remains
 unexplained; the original timing sheet and direct ratification remain targets.
 
-The first-female prize story needs its actual comparison pool and standard;
-a category label is not proof of beating a competitive field. The 2001 versus
-2002 first-fell chronology and 23:32 versus 23:33 round times stay unresolved.
+The first-female prize story and local 2003 category wins need their actual
+comparison pools and recognition standards. A category label is not proof of
+the collection's excellence threshold. The 2001 versus 2002 first-fell
+chronology and 23:32 versus 23:33 round times stay unresolved.
 The 2022 England Athletics interview adds Spinks's recollection of running in
 childhood and again at 19, plus horse riding and cycling. It improves the list
 of pre-26 activity to check but supplies no independent early result or birth
 record. The Bob Graham Club's indexed member-list lead was not readable directly
 because of a certificate mismatch and retrieval timeout, so it supports no
-ledger claim. No primary birth record or individual club ratification was obtained.
+ledger claim. No independent birth record or individual club ratification was obtained.
 
 ### 014 — Debbie Macomber
 

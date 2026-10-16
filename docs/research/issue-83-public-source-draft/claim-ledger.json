@@ -588,6 +588,96 @@
       "location": "Indexed profile extract showing age 38 and office-manager occupation.",
       "limitation": "Direct page retrieval returned HTTP 403. The index extract is a source lead, not a verified primary age claim; publication date, original application and filming date are unknown.",
       "access": "search-extract-only"
+    },
+    {
+      "id": "R40",
+      "url": "https://www.fellrunner.org.uk/documents/fellrunner/2002_October.pdf",
+      "title": "The Fell Runner, October 2002: Denis Stitt Memorial Race",
+      "publisher": "Fell Runners Association",
+      "author": null,
+      "publishedDate": "2002-10",
+      "datePrecision": "month",
+      "accessedOn": "2026-10-16",
+      "origin": "Contemporary FRA race-results table; original timer and full identity behind N. Spinks are unstated.",
+      "kind": "event-record",
+      "location": "PDF index p.56, printed p.55, Denis Stitt Memorial Race table.",
+      "limitation": "Page visually inspected. N. Spinks is not expanded to a full name; an attributed match to Nicky is probable from place and later records, not directly proven by this table. This is a third-place women's result, not a first-proof classification.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R41",
+      "url": "https://www.fellrunner.org.uk/documents/fellrunner/2003_February.pdf",
+      "title": "The Fell Runner, February 2003: The Trunce final race",
+      "publisher": "Fell Runners Association",
+      "author": null,
+      "publishedDate": "2003-02",
+      "datePrecision": "month",
+      "accessedOn": "2026-10-16",
+      "origin": "Contemporary FRA race-results table; original timer and full identity behind N. Spinks are unstated.",
+      "kind": "event-record",
+      "location": "PDF index p.33, printed p.32, The Trunce final race table.",
+      "limitation": "Page visually inspected. N. Spinks is abbreviated, so attribution to Nicky is probable but not identity-proof on its own; fourth woman is a participation result, not settled qualifying distinction.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R42",
+      "url": "https://www.fellrunner.org.uk/documents/fellrunner/2003_June.pdf",
+      "title": "The Fell Runner, June 2003: Trunce 1",
+      "publisher": "Fell Runners Association",
+      "author": "Andy Plummer",
+      "publishedDate": "2003-06",
+      "datePrecision": "month",
+      "accessedOn": "2026-10-16",
+      "origin": "Contemporary race-organiser report by Andy Plummer, republished by the FRA; N. Spinks is abbreviated.",
+      "kind": "event-record",
+      "location": "PDF index p.36, printed p.35, Trunce 1 report and women's result table.",
+      "limitation": "Page visually inspected. Eight women are listed among 207 finishers; the report says 237 runners gathered. No complete entry list, original timing sheet or categorical first-proof standard was retrieved.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R43",
+      "url": "https://www.fellrunner.org.uk/documents/fellrunner/2003_October.pdf",
+      "title": "The Fell Runner, October 2003: Hunshelf Amble and Broomhead Chase",
+      "publisher": "Fell Runners Association",
+      "author": "David Horsfall and Andy Plummer",
+      "publishedDate": "2003-10",
+      "datePrecision": "month",
+      "accessedOn": "2026-10-16",
+      "origin": "Contemporary reports by two race organisers republished by the FRA; the Hunshelf narrative expands N. Spinks to Nicky Spinks.",
+      "kind": "event-record",
+      "location": "PDF index pp.51 and 61, printed pp.50 and 60, Hunshelf and Broomhead tables.",
+      "limitation": "Both pages visually inspected. Hunshelf lists five women among 62 finishers; Broomhead lists three among 56. These local category wins do not by themselves establish the editorial excellence threshold or exclude an earlier result.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R44",
+      "url": "https://jossnaylor.blogspot.com/2017/12/nicky-spinks-w50-22-april-2017.html",
+      "title": "Nicky Spinks (W50) - 22 April 2017",
+      "publisher": "Joss Naylor Lakeland Challenge",
+      "author": "Nicky Spinks",
+      "publishedDate": "2017-12-03",
+      "datePrecision": "day",
+      "accessedOn": "2026-10-16",
+      "origin": "Spinks's first-person birthday account hosted by the challenge organiser; not an independent birth witness.",
+      "kind": "first-person",
+      "location": "Heading and opening paragraphs identifying 22 April 2017 as her fiftieth birthday.",
+      "limitation": "Supports a self-reported 22 April 1967 birth date by inference, not a civil birth record or an independently authenticated birth date.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R45",
+      "url": "https://www.inov8.com/row/blog/post/nicky-spinks-50th-joss-naylor-challenge",
+      "title": "Nicky Spinks: My 50th Year and the Joss Naylor Challenge",
+      "publisher": "Inov8",
+      "author": "Inov8 Staff and Nicky Spinks",
+      "publishedDate": "2017-04-24",
+      "datePrecision": "day",
+      "accessedOn": "2026-10-16",
+      "origin": "Sponsor's contemporaneous staff report plus Spinks's first-person account; age likely derives from the subject, not an independent birth record.",
+      "kind": "reported-interview",
+      "location": "Introduction and Spinks's 50th-year section naming Saturday 22 April as her fiftieth birthday.",
+      "limitation": "Contemporaneously corroborates the birthday account and event date, but does not independently verify a birth certificate or earlier race chronology.",
+      "access": "retrieved"
     }
   ],
   "claims": [
@@ -744,6 +834,73 @@
       ],
       "date": null,
       "datePrecision": "unknown",
+      "assessment": "reported"
+    },
+    {
+      "id": "NS9",
+      "personId": "004",
+      "statement": "A contemporary FRA table lists N. Spinks third woman, 50th of 69 finishers, at the Denis Stitt Memorial Race on 15 August 2002. The abbreviated name and unattached club leave attribution to Nicky probable rather than proven by this table alone.",
+      "sourceIds": [
+        "R40"
+      ],
+      "date": "2002-08-15",
+      "datePrecision": "day",
+      "assessment": "recorded"
+    },
+    {
+      "id": "NS10",
+      "personId": "004",
+      "statement": "A contemporary FRA table lists N. Spinks fourth woman, 43rd of 93 finishers, in the Trunce final race on 9 September 2002. Identity is abbreviated, and this placing is not a qualifying-result verdict.",
+      "sourceIds": [
+        "R41"
+      ],
+      "date": "2002-09-09",
+      "datePrecision": "day",
+      "assessment": "recorded"
+    },
+    {
+      "id": "NS11",
+      "personId": "004",
+      "statement": "The contemporary Trunce 1 table lists N. Spinks first of eight listed women and 83rd among 207 finishers on 31 March 2003. This is the earliest located category win, not yet the earliest qualifying excellence result.",
+      "sourceIds": [
+        "R42"
+      ],
+      "date": "2003-03-31",
+      "datePrecision": "day",
+      "assessment": "recorded"
+    },
+    {
+      "id": "NS12",
+      "personId": "004",
+      "statement": "The Hunshelf organiser explicitly names Nicky Spinks as first woman on 21 June 2003; its table lists N. Spinks 35th among 62 finishers and five women, 68:25.",
+      "sourceIds": [
+        "R43"
+      ],
+      "date": "2003-06-21",
+      "datePrecision": "day",
+      "assessment": "recorded"
+    },
+    {
+      "id": "NS13",
+      "personId": "004",
+      "statement": "The Broomhead Chase table lists N. Spinks first of three listed women, 22nd among 56 finishers, in 34:22 on 13 July 2003.",
+      "sourceIds": [
+        "R43"
+      ],
+      "date": "2003-07-13",
+      "datePrecision": "day",
+      "assessment": "recorded"
+    },
+    {
+      "id": "NS14",
+      "personId": "004",
+      "statement": "Spinks's 2017 challenge account calls 22 April 2017 her fiftieth birthday, and a sponsor's report two days later repeats it. The inferred birth date is 22 April 1967; both accounts ultimately depend on her report, not a birth record.",
+      "sourceIds": [
+        "R44",
+        "R45"
+      ],
+      "date": "1967-04-22",
+      "datePrecision": "day",
       "assessment": "reported"
     },
     {
@@ -1301,13 +1458,31 @@
       "earlierQualifyingProof": null,
       "strongestAt25": null,
       "birthEvidence": {
-        "date": null,
-        "precision": "unknown",
-        "note": "Intake secondary date 1967-04-22 remains uncorroborated; no certified age calculation.",
-        "claimIds": []
+        "date": "1967-04-22",
+        "precision": "day",
+        "note": "Inferred from Spinks's own account of her fiftieth birthday on 22 April 2017, repeated in a contemporaneous sponsor report. This is primary testimony, not an independently authenticated civil birth record; age 35 at the March 2003 result remains provisional.",
+        "claimIds": [
+          "NS14"
+        ]
       },
       "timeline": {
         "capability": [
+          {
+            "kind": "race-participation",
+            "date": "2002-08-15",
+            "datePrecision": "day",
+            "claimIds": [
+              "NS9"
+            ]
+          },
+          {
+            "kind": "race-participation",
+            "date": "2002-09-09",
+            "datePrecision": "day",
+            "claimIds": [
+              "NS10"
+            ]
+          },
           {
             "kind": "practice",
             "date": "2002-10",
@@ -1327,6 +1502,30 @@
           }
         ],
         "proof": [
+          {
+            "kind": "category-win-threshold-unresolved",
+            "date": "2003-03-31",
+            "datePrecision": "day",
+            "claimIds": [
+              "NS11"
+            ]
+          },
+          {
+            "kind": "category-win-threshold-unresolved",
+            "date": "2003-06-21",
+            "datePrecision": "day",
+            "claimIds": [
+              "NS12"
+            ]
+          },
+          {
+            "kind": "category-win-threshold-unresolved",
+            "date": "2003-07-13",
+            "datePrecision": "day",
+            "claimIds": [
+              "NS13"
+            ]
+          },
           {
             "kind": "competition",
             "date": "2004-08-14/2004-08-15",
@@ -1373,9 +1572,14 @@
           "claimIds": [
             "NS3",
             "NS4",
-            "NS8"
+            "NS8",
+            "NS9",
+            "NS10",
+            "NS11",
+            "NS12",
+            "NS13"
           ],
-          "gap": "2022 testimony recalls childhood activity and recreational running at 19 without independent dates or results. The 2004 result precedes the intake milestone; earlier road/fell and horse-riding results, especially pre-26, remain open."
+          "gap": "Contemporary FRA tables locate probable 2002 participation and three 2003 women's-category wins before the 2004/2005 intake milestones. Abbreviated early identities, local-category selection thresholds, earlier 2002 results and pre-26 sport/horse-riding history remain unresolved. Her 2022 recollections alone cannot clear those gaps."
         },
         {
           "domain": "Arts, music and writing",
@@ -1405,8 +1609,8 @@
         }
       ],
       "holdReasons": [
-        "2004 result may precede 2005 proof; eighth overall and a first-female prize need domain-specific threshold judgment.",
-        "Her running club lists the 2005 completion and 23:33, but direct Bob Graham Club ratification, original timing sheet and primary birth evidence remain missing.",
+        "A 31 March 2003 Trunce category win now precedes the 2004 and 2005 results, but eight listed women, abbreviated name and missing selection standard prevent classifying it as earliest qualifying excellence; earlier wins remain possible.",
+        "Her 22 April 1967 birth date is inferred from first-person birthday testimony, not independently authenticated. The 2005 Bob Graham direct ratification and original timing sheet remain missing.",
         "No pre-26 domain cleared."
       ],
       "contradictions": [
@@ -1423,10 +1627,12 @@
         {
           "id": "NS-start",
           "claimIds": [
-            "NS3"
+            "NS3",
+            "NS9",
+            "NS10"
           ],
           "status": "unresolved",
-          "note": "Intake secondary 2001 first fell race differs from 2017 testimony placing the advertisement by October 2002. The claimed sequence needs original Trunce results."
+          "note": "Probable N. Spinks race results in August and September 2002 precede Spinks's 2017 recollection of discovering Trunce while training by October 2002; an intake secondary source instead says 2001. The early abbreviated identity and first-race chronology require source challenge."
         }
       ],
       "searches": [
@@ -1465,19 +1671,45 @@
           "language": "en",
           "searchedOn": "2026-10-16",
           "result": "Search index surfaced a Bob Graham Club PDF naming Spinks, but direct retrieval failed certificate validation and timed out; the extract supports no ledger claim."
+        },
+        {
+          "query": "site:fellrunner.org.uk/documents/fellrunner/2002 and 2003 Spinks Trunce results",
+          "language": "en",
+          "searchedOn": "2026-10-16",
+          "result": "Retrieved and visually checked four contemporary FRA magazine pages: 15 August and 9 September 2002 participation, then 31 March, 21 June and 13 July 2003 women's-category wins. Early tables abbreviate N. Spinks; no full pre-26 sport audit or 2003 threshold ruling."
+        },
+        {
+          "query": "Nicky Spinks 50th birthday 22 April 2017 Joss Naylor",
+          "language": "en",
+          "searchedOn": "2026-10-16",
+          "result": "Challenge organiser hosts Spinks's first-person birthday account; contemporaneous sponsor report repeats it. Birth date is inferred from testimony, not a certified record."
         }
       ],
       "nextChecks": [
-        "Find 2001–2004 original Trunce/road results and exact first race.",
-        "Check 2004 selection standard and category field independently; do not equate category prize with beating competitors.",
-        "Locate direct Bob Graham Club ratification/original timing, date of birth and pre-26 sport/horse-riding history."
+        "Authenticate the abbreviated 2002 and March 2003 N. Spinks entries against full-name club or race records; resolve the 2001/2002 first-race conflict.",
+        "Challenge the March 2003 Trunce category field and recognition standard before calling it qualifying excellence; search for any earlier competitive result.",
+        "Independently verify birth date and pre-26 achievements across all domains; locate Bob Graham Club ratification/original timing if using the 2005 result."
       ],
       "review": {
         "author": "Codex research pass",
         "secondReviewer": null,
         "decision": "pending"
       },
-      "corrections": [],
+      "corrections": [
+        {
+          "correctedOn": "2026-10-16",
+          "claimIds": [
+            "NS9",
+            "NS10",
+            "NS11",
+            "NS12",
+            "NS13",
+            "NS14"
+          ],
+          "reason": "Contemporary 2002–2003 race tables predate the earlier 2004-first result framing, while a first-person 2017 birthday account supports an inferred birth date with stated limits.",
+          "supersedes": "Earlier NS hold reason and README wording treating the 2004 Heart of Granite result as the earliest located competitive result; earlier birth note saying the intake date had no corroboration."
+        }
+      ],
       "intakeId": "004",
       "classification": "unresolved"
     },
