@@ -678,6 +678,66 @@
       "location": "Introduction and Spinks's 50th-year section naming Saturday 22 April as her fiftieth birthday.",
       "limitation": "Contemporaneously corroborates the birthday account and event date, but does not independently verify a birth certificate or earlier race chronology.",
       "access": "retrieved"
+    },
+    {
+      "id": "R46",
+      "url": "https://cheshirero.blogspot.com/2017/08/cheshires-only-island.html",
+      "title": "Cheshire's Only Island",
+      "publisher": "Cheshire Archives and Local Studies",
+      "author": null,
+      "publishedDate": "2017-08-10",
+      "datePrecision": "day",
+      "accessedOn": "2026-10-16",
+      "origin": "Archive staff inspection of the 1982 physical book's dust-jacket contributor note; separate from Cleeves's later life testimony.",
+      "kind": "organisational-record",
+      "location": "Hilbre local-studies ref 016561, paragraph transcribing the A. Cleeves dust-jacket note.",
+      "limitation": "Archive staff report a direct reading, but the original dust jacket was not viewed in this pass. It attests residence and a social-work qualification by publication in 1982, not the qualification award date, chapter commission/acceptance date or selection standard.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R47",
+      "url": "https://patents.google.com/patent/US6854404B2/en",
+      "title": "US6854404B2 Adaptive agricultural machine",
+      "publisher": "United States patent publication via Google Patents",
+      "author": null,
+      "publishedDate": "2005-02-15",
+      "datePrecision": "day",
+      "accessedOn": "2026-10-16",
+      "origin": "Public patent record mirrored by Google Patents; USPTO Patent Center linked but not directly readable in this pass.",
+      "kind": "organisational-record",
+      "location": "Bibliographic header and application/assignment/publication events for US10/081,507.",
+      "limitation": "Names Jagani as inventor and records filing/assignment/publication dates. Does not prove the claimed 1994 design was built, first customer acceptance, performance, commercial use or sole contribution; legal-status and priority summaries carry Google's caveat.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R48",
+      "url": "https://timesofindia.indiatimes.com/city/hyderabad/mallesham-biopic-row-over-invention-of-asu-machine/articleshow/69795206.cms",
+      "title": "Mallesham biopic: Row over invention of Asu machine",
+      "publisher": "The Times of India",
+      "author": "U Sudhakar Reddy",
+      "publishedDate": "2019-06-15",
+      "datePrecision": "day",
+      "accessedOn": "2026-10-16",
+      "origin": "Reporter interviews Y Srinivas and Mallesham separately; historical claims remain those of the interviewees.",
+      "kind": "reported-interview",
+      "location": "Paragraphs naming both accounts of the 1992 machine, 1999 development and prior contact.",
+      "limitation": "Records a live priority/contribution dispute, not adjudication. The claimed 1992 vernacular article, complaints, RTI replies, original machine and original Mallesham patent were not inspected.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R49",
+      "url": "https://telugu.asianetnews.com/amp/gallery/opinion/mallesam-is-an-ordinary-story-of-an-ordinary-man-pskirr",
+      "title": "Another ordinary person's story behind Mallesham's success",
+      "publisher": "Asianet News Telugu",
+      "author": "Kandukuri Ramesh Babu",
+      "publishedDate": "2019-06-04",
+      "datePrecision": "day",
+      "accessedOn": "2026-10-16",
+      "origin": "Opinion article relaying the Srinivas-side history and a purported excerpt of an April 2017 handloom-department report; not an independent witness to the underlying machine.",
+      "kind": "contemporary-report",
+      "location": "Sections on the earlier wooden machine and quoted English departmental comparison.",
+      "limitation": "The original signed report and its evidentiary attachments were not inspected; the reported excerpt rejects copying while describing different machines. It does not resolve historical priority, Mallesham's knowledge or independent first proof.",
+      "access": "retrieved"
     }
   ],
   "claims": [
@@ -1280,6 +1340,50 @@
       ],
       "date": null,
       "datePrecision": "unknown",
+      "assessment": "reported"
+    },
+    {
+      "id": "AC6",
+      "personId": "016",
+      "statement": "Cheshire Archives staff transcribe the 1982 volume's dust-jacket contributor note as recording Cleeves's 1977–81 Hilbre residence and a University of Liverpool Certificate of Qualification in Social Work; the qualification date is unstated.",
+      "sourceIds": [
+        "R46"
+      ],
+      "date": "1982",
+      "datePrecision": "year",
+      "assessment": "reported"
+    },
+    {
+      "id": "MJ7",
+      "personId": "draft-mansukhbhai-jagani",
+      "statement": "US patent US10/081,507 names Jagani as inventor of an adaptive agricultural machine; it records filing on 22 February 2002, assignment to SRISTI in May 2002 and grant in February 2005. This is later attributable design evidence, not 1994 construction or customer acceptance.",
+      "sourceIds": [
+        "R47"
+      ],
+      "date": "2002-02-22",
+      "datePrecision": "day",
+      "assessment": "recorded"
+    },
+    {
+      "id": "CM7",
+      "personId": "draft-chintakindi-mallesham",
+      "statement": "A 2019 reporter records Y Srinivas's claim that he and his brother made an Asu machine in 1992 and Mallesham saw it, alongside Mallesham's denial and account of his 1999 machine and 2000 distribution. Neither origin story is adjudicated by the article.",
+      "sourceIds": [
+        "R48"
+      ],
+      "date": "2019-06-15",
+      "datePrecision": "day",
+      "assessment": "conflicted"
+    },
+    {
+      "id": "CM8",
+      "personId": "draft-chintakindi-mallesham",
+      "statement": "An earlier Telugu opinion article republishes a purported 2017 handloom-department excerpt comparing an earlier wooden Asu machine to Mallesham's different models and rejecting a copying allegation; the original report was not inspected.",
+      "sourceIds": [
+        "R49"
+      ],
+      "date": "2019-06-04",
+      "datePrecision": "day",
       "assessment": "reported"
     }
   ],
@@ -1938,9 +2042,10 @@
           "domain": "School and university",
           "state": "partial",
           "claimIds": [
-            "AC3"
+            "AC3",
+            "AC6"
           ],
-          "gap": "Social-work study identified, but selective academic results and earlier schooling remain unaudited."
+          "gap": "A 1982 contributor note reports a social-work qualification; its award date, selective standard and earlier schooling remain unaudited."
         },
         {
           "domain": "Sport",
@@ -2003,6 +2108,12 @@
           "language": "en",
           "searchedOn": "2026-10-16",
           "result": "Gyldendal R31 reports 1954; publisher assertion, not a primary birth record."
+        },
+        {
+          "query": "Cheshire Archives 016561 Ann Cleeves Hilbre dust jacket contributor",
+          "language": "en",
+          "searchedOn": "2026-10-16",
+          "result": "R46 transcribes contemporary contributor note; original jacket not directly viewed."
         }
       ],
       "nextChecks": [
@@ -2283,6 +2394,14 @@
           "claimIds": [
             "MJ4"
           ]
+        },
+        {
+          "kind": "patent-filing",
+          "date": "2002-02-22",
+          "datePrecision": "day",
+          "claimIds": [
+            "MJ7"
+          ]
         }
       ],
       "earlyHistory": [
@@ -2347,6 +2466,12 @@
           "language": "gu",
           "searchedOn": "2026-10-14",
           "result": "Gujarati lead searched; R22 retrieved separately. No primary birth/earliest-order record located."
+        },
+        {
+          "query": "Mansukhbhai Ambabhai Jagani US6854404B2 patent application",
+          "language": "en",
+          "searchedOn": "2026-10-16",
+          "result": "R47 records the 2002 filing and later grant; no earlier construction/acceptance record."
         }
       ],
       "nextChecks": [
@@ -2375,14 +2500,15 @@
           "MJ2",
           "MJ3",
           "MJ4",
-          "MJ6"
+          "MJ6",
+          "MJ7"
         ],
         "namedContribution": "Named device inventor; later support/design assistance kept separate.",
         "standard": "NIF national second prize; individual scores and original judging rules not recovered.",
         "comparisonPool": "Unknown category denominator; no percentile.",
         "earliestProof": "The 2000 invitation is an earlier external-proof lead, not automatically qualifying; the 1994 design does not establish customer acceptance.",
         "ageAtProof": "Unknown; later reported age alone does not establish age at the earliest qualifying result.",
-        "independentCorroboration": "R21 independently publishes contemporary activity but quotes NIF; R22 is a separate Gujarati report with unidentified informants. Neither clears early history."
+        "independentCorroboration": "R21 independently publishes contemporary activity but quotes NIF; R22 is a separate Gujarati report with unidentified informants. Neither clears early history. R47 is a later public patent record naming Jagani; it does not settle 1994 construction or customer acceptance."
       }
     },
     {
@@ -2521,7 +2647,8 @@
       "holdReasons": [
         "Age contradiction could change whether the reported 1999–2000 events occurred before 26.",
         "First sale is not automatically qualifying excellence; no independent customer/technical assessment recovered.",
-        "Primary award evidence does not clear all earlier domains."
+        "Primary award evidence does not clear all earlier domains.",
+        "Machine-priority and contribution dispute requires original earlier-machine, departmental and patent records before a sole-inventor account."
       ],
       "contradictions": [
         {
@@ -2540,6 +2667,15 @@
           ],
           "status": "unresolved",
           "note": "Development phases may differ; no reconciliation established."
+        },
+        {
+          "id": "CM-priority",
+          "claimIds": [
+            "CM7",
+            "CM8"
+          ],
+          "status": "unresolved",
+          "note": "Srinivas and Mallesham give opposing historical accounts; an Asianet opinion piece relays a purported departmental finding but the original report and underlying records were not inspected. No copying, sole-origin or exoneration verdict inferred."
         }
       ],
       "searches": [
@@ -2548,6 +2684,12 @@
           "language": "en",
           "searchedOn": "2026-10-14",
           "result": "Retrospective invention accounts and repeated profiles; no primary earlier-result register."
+        },
+        {
+          "query": "Chintakindi Mallesham Y Srinivas 1992 Chaitanya Asu machine departmental report",
+          "language": "en/te",
+          "searchedOn": "2026-10-16",
+          "result": "R48 interviews both sides; R49 relays a purported departmental excerpt. Original records not recovered."
         }
       ],
       "nextChecks": [
@@ -2575,14 +2717,16 @@
           "CM1",
           "CM2",
           "CM3",
-          "CM6"
+          "CM6",
+          "CM7",
+          "CM8"
         ],
-        "namedContribution": "Named Asu-machine developer; family labour/support are not erased.",
+        "namedContribution": "Named Asu-machine developer in the award record; earlier-machine priority and scope of independent contribution are disputed and unresolved.",
         "standard": "NIF advisory review and novelty/social-utility inquiry; process-level evidence, not his individual score sheet.",
         "comparisonPool": "Overall submissions contain non-unique entries; relevant category pool unknown.",
         "earliestProof": "Reported first sale precedes the award; original transaction and quality threshold not recovered.",
         "ageAtProof": "Unresolved; conflicting reported ages span materially different possible ages at first machine/first sale.",
-        "independentCorroboration": "R24 is a separate newsroom interview; early history still comes from the subject. R25 belongs to the scouting/support network."
+        "independentCorroboration": "R24 is a separate newsroom interview; early history still comes from the subject. R25 belongs to the scouting/support network. R48 independently reports interviews with opposing claimants, not validation of either machine history; R49 is an opinion account of an unseen departmental report."
       }
     },
     {
