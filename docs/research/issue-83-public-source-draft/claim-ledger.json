@@ -468,6 +468,21 @@
       "location": "Opening author biography, 'f. 1954'.",
       "limitation": "Corroborates reported 1954 birth year only. No exact birthday or primary age record and no date for chapter commission/acceptance.",
       "access": "retrieved"
+    },
+    {
+      "id": "R32",
+      "url": "https://www.englandathletics.org/news/nicky-spinks-reflects-on-her-inspirational-journey/",
+      "title": "Nicky Spinks reflects on her inspirational journey",
+      "publisher": "England Athletics",
+      "author": null,
+      "publishedDate": "2022-08-24",
+      "datePrecision": "day",
+      "accessedOn": "2026-10-16",
+      "origin": "spinks-testimony; England Athletics interviewed Spinks, so this is not an independent witness to her early life.",
+      "kind": "reported-interview",
+      "location": "Early memories of running section, paragraphs on childhood activity and resuming running at 19.",
+      "limitation": "Retrospective testimony only. Does not supply a primary birth record, dated youth result, or competitive standard; its narrative ordering does not override the 2004 organiser result.",
+      "access": "retrieved"
     }
   ],
   "claims": [
@@ -580,6 +595,17 @@
       "date": "2005",
       "datePrecision": "year",
       "assessment": "recorded"
+    },
+    {
+      "id": "NS8",
+      "personId": "004",
+      "statement": "In a 2022 England Athletics interview, Spinks recalled running on a farm in childhood and resuming recreational running at 19 while living in Manchester; she also recalled horse riding and cycling. These recollections do not establish competitive distinction.",
+      "sourceIds": [
+        "R32"
+      ],
+      "date": null,
+      "datePrecision": "unknown",
+      "assessment": "reported"
     },
     {
       "id": "DM1",
@@ -1106,6 +1132,14 @@
               "NS3",
               "NS6"
             ]
+          },
+          {
+            "kind": "recreational-running",
+            "date": null,
+            "datePrecision": "unknown",
+            "claimIds": [
+              "NS8"
+            ]
           }
         ],
         "proof": [
@@ -1134,7 +1168,8 @@
           "label": "Brought: road running and route practice",
           "claimIds": [
             "NS3",
-            "NS6"
+            "NS6",
+            "NS8"
           ],
           "unknown": "Farm work schedule, costs and early support team unknown."
         }
@@ -1153,9 +1188,10 @@
           "state": "partial",
           "claimIds": [
             "NS3",
-            "NS4"
+            "NS4",
+            "NS8"
           ],
-          "gap": "2004 result precedes intake milestone; earlier road/fell and horse-riding results, especially pre-26, remain open."
+          "gap": "2022 testimony recalls childhood activity and recreational running at 19 without independent dates or results. The 2004 result precedes the intake milestone; earlier road/fell and horse-riding results, especially pre-26, remain open."
         },
         {
           "domain": "Arts, music and writing",
@@ -1166,7 +1202,9 @@
         {
           "domain": "Work and business",
           "state": "open",
-          "claimIds": [],
+          "claimIds": [
+            "NS8"
+          ],
           "gap": "Office/farm roles are not a distinction audit."
         },
         {
@@ -1231,6 +1269,18 @@
           "language": "en",
           "searchedOn": "2026-10-16",
           "result": "Penistone club page R29 lists a 23:33 completion; direct Bob Graham Club individual record still absent."
+        },
+        {
+          "query": "Nicky Spinks England Athletics early running age 19",
+          "language": "en",
+          "searchedOn": "2026-10-16",
+          "result": "Retrieved R32: subject interview recalls running before 26; no dated result, independent early-history witness or primary age record."
+        },
+        {
+          "query": "site:bobgrahamclub.org.uk/assets Nicky Spinks member list",
+          "language": "en",
+          "searchedOn": "2026-10-16",
+          "result": "Search index surfaced a Bob Graham Club PDF naming Spinks, but direct retrieval failed certificate validation and timed out; the extract supports no ledger claim."
         }
       ],
       "nextChecks": [
