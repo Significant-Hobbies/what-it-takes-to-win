@@ -768,6 +768,21 @@
       "location": "data[0].hit, registration TX0001407036: title, author/claimant, creation, first-publication and registration fields.",
       "limitation": "The registration records creation in 1982, claimed first publication on 1 February 1984 and registration on 22 June 1984. The first-publication day differs from R09's 28 February; editions or dating convention have not been reconciled. Creation is not sale or publication.",
       "access": "retrieved"
+    },
+    {
+      "id": "R52",
+      "url": "https://static.booktopia.com.au/pdf/9781741669688-1.pdf",
+      "title": "Our Family Table: Introduction",
+      "publisher": "Random House Australia; excerpt hosted by Booktopia",
+      "author": "Julie Goodwin",
+      "publishedDate": "2010",
+      "datePrecision": "year",
+      "accessedOn": "2026-10-16",
+      "origin": "Goodwin’s own retrospective introduction; separate artifact from R15 but the same personal testimony, not independent casting or early-history evidence.",
+      "kind": "first-person",
+      "location": "Printed pages viii–ix, Introduction: application and January–March sequence; childhood and later family cooking paragraphs.",
+      "limitation": "Copyrighted four-page book excerpt was read directly; only short paraphrases are recorded. It names months but not a calendar year for each selection step. Assigning them to 2009 follows the known season, not a dated application, casting sheet, filming log or independent account. No primary age or earlier-excellence evidence.",
+      "access": "retrieved"
     }
   ],
   "claims": [
@@ -1168,6 +1183,61 @@
       ],
       "date": "2009-07-19",
       "datePrecision": "day",
+      "assessment": "reported"
+    },
+    {
+      "id": "JG7",
+      "personId": "034",
+      "statement": "Goodwin recalls submitting an online MasterChef application before the subsequent January audition call and then forgetting about it; the exact submission date is unstated.",
+      "sourceIds": [
+        "R52"
+      ],
+      "date": null,
+      "datePrecision": "unknown",
+      "assessment": "reported"
+    },
+    {
+      "id": "JG8",
+      "personId": "034",
+      "statement": "Goodwin recalls receiving a phone call in January saying she had been granted an audition. The 2009 year is inferred from the season chronology; this does not date the audition itself.",
+      "sourceIds": [
+        "R52"
+      ],
+      "date": "2009-01",
+      "datePrecision": "month",
+      "assessment": "reported"
+    },
+    {
+      "id": "JG9",
+      "personId": "034",
+      "statement": "Goodwin recalls competing in the top 50 in February and advancing to the finals. The 2009 year is inferred from the season chronology; original selection criteria and results are absent.",
+      "sourceIds": [
+        "R52"
+      ],
+      "date": "2009-02",
+      "datePrecision": "month",
+      "assessment": "reported"
+    },
+    {
+      "id": "JG10",
+      "personId": "034",
+      "statement": "Goodwin recalls moving into a house with nineteen other people in March. The 2009 year is inferred from the season chronology; this does not establish the filming date or first qualifying result.",
+      "sourceIds": [
+        "R52"
+      ],
+      "date": "2009-03",
+      "datePrecision": "month",
+      "assessment": "reported"
+    },
+    {
+      "id": "JG11",
+      "personId": "034",
+      "statement": "Goodwin recalls learning basic cooking from her mother as a child, then experimenting and exchanging recipes after establishing her own household. This is practice history, not evidence of earlier external excellence.",
+      "sourceIds": [
+        "R52"
+      ],
+      "date": null,
+      "datePrecision": "unknown",
       "assessment": "reported"
     },
     {
@@ -2233,7 +2303,8 @@
             "datePrecision": "unknown",
             "claimIds": [
               "JG3",
-              "JG4"
+              "JG4",
+              "JG11"
             ]
           }
         ],
@@ -2244,6 +2315,30 @@
             "datePrecision": "unknown",
             "claimIds": [
               "JG2"
+            ]
+          },
+          {
+            "kind": "audition-invitation-not-qualifying",
+            "date": "2009-01",
+            "datePrecision": "month",
+            "claimIds": [
+              "JG8"
+            ]
+          },
+          {
+            "kind": "top-50-and-finals-selection-threshold-unresolved",
+            "date": "2009-02",
+            "datePrecision": "month",
+            "claimIds": [
+              "JG9"
+            ]
+          },
+          {
+            "kind": "finalist-house-entry-not-qualifying",
+            "date": "2009-03",
+            "datePrecision": "month",
+            "claimIds": [
+              "JG10"
             ]
           },
           {
@@ -2263,12 +2358,21 @@
           "label": "Brought/handed/surrounded: cooking, family business and friend prompting audition",
           "claimIds": [
             "JG3",
-            "JG4"
+            "JG4",
+            "JG11"
           ],
           "unknown": "Practice hours, paid cooking, household cover and contribution to business not independently established."
         }
       ],
-      "attempts": [],
+      "attempts": [
+        {
+          "label": "Online MasterChef application before January audition invitation, exact submission date unrecorded",
+          "claimIds": [
+            "JG7"
+          ],
+          "unknown": "Original application, eligibility rules, submission date and applicant pool evidence not retrieved."
+        }
+      ],
       "subsequentOutcomes": [],
       "earlyHistory": [
         {
@@ -2321,7 +2425,7 @@
       ],
       "holdReasons": [
         "School captaincy needs its contemporary roster and selection threshold; neither automatically qualifying nor ignorable.",
-        "AAP reports a 7,500-applicant/20-finalist pool and 82–75 final score, but original casting rules, judging sheets, filming date and primary age evidence remain missing; Network Ten's indexed age profile (R39) returned HTTP 403 on direct retrieval.",
+        "AAP reports a 7,500-applicant/20-finalist pool and 82–75 final score. Goodwin’s later account adds an audition invitation, top-50 round and finalist-house move, but original casting rules, selection records, judging sheets, filming date and primary age evidence remain missing; Network Ten’s indexed age profile (R39) returned HTTP 403 on direct retrieval.",
         "Prior business, arts and other domains remain incomplete."
       ],
       "contradictions": [],
@@ -2373,6 +2477,12 @@
           "language": "en",
           "searchedOn": "2026-10-16",
           "result": "Broadcaster profile R39 appears in a search extract with age 38, but direct retrieval returned HTTP 403; no age claim promoted from it."
+        },
+        {
+          "query": "Julie Goodwin Our Family Table 2010 introduction MasterChef application top 50",
+          "language": "en",
+          "searchedOn": "2026-10-16",
+          "result": "Retrieved publisher-exposed first-person book excerpt R52; months are recollected, year is inferred from the known 2009 season, and original casting documents remain absent."
         }
       ],
       "nextChecks": [
