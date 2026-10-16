@@ -169,7 +169,7 @@ Same-name pianist/soprano results surfaced in search and were not imported.
 Goodwin's own 2010 *Our Family Table* introduction (R52) recalls an online
 application followed by a January phone call granting an audition, a February
 top-50 round and finals selection, and a March move into the house with nineteen
-other contestants. The months are stated in her retrospective account; their
+other people. The months are stated in her retrospective account; their
 assignment to 2009 follows the known season rather than an independently dated
 application or casting record. The call is not the audition date, and selection
 is not automatically a qualifying first proof. She also describes learning
