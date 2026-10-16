@@ -21,7 +21,7 @@ entries reference claims. An access success is not evidence approval.
 The earlier 13 October access record remains in `source-access.json`. It records
 13 attempts, 11 retrieved responses and two HTTP 403 responses; those hashes
 remain historical retrieval evidence, not a claim that every source was reread.
-The ledger records 35 sources and 47 claims across the 14 and 16 October passes. Search extracts and
+The ledger records 39 sources and 48 claims across the 14 and 16 October passes. Search extracts and
 failed retrievals are explicit; they cannot support recorded claims. Two PDFs
 that the browser extractor could not read were retrieved directly: Spinks’s
 later account and the original 2004 race scan. The latter's four pages and the
@@ -48,7 +48,7 @@ is calculated.
 | 004 Nicky Spinks | R07 is the organiser's 2004 Heart of Granite result, earlier than the intake's 2005 round. Her running club (R29) lists the 2005 round at 23:33, supporting R04 over R05's 23:32. A later England Athletics interview (R32) recalls childhood activity and recreational running at 19; this is Spinks's testimony, not a dated result. | Meaning of the 2004 performance, first race chronology, direct Bob Graham Club ratification/original timing, age and earlier domains. |
 | 014 Debbie Macomber | R09 separates the two debut publication dates. R10 reports paid magazine work before the novel sale and conflates a 1982 date with publication. | Earliest magazine acceptance, acquisition date, birth evidence and prior domains. |
 | 016 Ann Cleeves | R12 identifies the 1982 Hilbre chapter; R13 independently reads and cites the original. Publisher R31 reports a 1954 birth year, making publication age 27–28; the 1986 novel cannot be treated as first publication. | Chapter commission/acceptance date, selection standard, primary age record and prior domains. |
-| 034 Julie Goodwin | R14 supplies contemporaneous result/age reporting; the national audiovisual archive catalogues the 2009 final (R30). R15 introduces elected school captaincy as a concrete earlier-selection lead. | School selection threshold, prior distinction, original show rules, casting/judging dates and primary age evidence. |
+| 034 Julie Goodwin | R14 supplies contemporaneous result/age reporting; R36 reports 82–75 final scoring and 20 finalists from 7,500 applicants. The national audiovisual archive catalogues the 2009 final (R30). R15 introduces elected school captaincy as a concrete earlier-selection lead. | Contemporary school captain record and threshold, original show scoring/casting records and filming date, primary age and complete earlier history. |
 
 ### 001 — Dominic O’Brien
 
@@ -126,15 +126,23 @@ matter and editorial chronology before classifying core fit or transfer.
 
 ### 034 — Julie Goodwin
 
-See JG1–JG4. The 2009 report dates broadcast/result reporting; it does not date
-filming. School captaincy is an earlier selection to investigate, not automatic
-proof of qualifying excellence. Its electorate, standard and records are missing.
+See JG1–JG6. The 2009 reports date broadcast/result reporting; they do not date
+filming. ABC's AAP report (R36) gives a reported 82/100 against Poh Ling Yeow's
+75/100 and says 20 finalists were selected from 7,500 applicants. These are
+distinct final-two, finalist and applicant pools, not the original judging
+sheets or casting rules. School captaincy is an earlier selection to investigate,
+not automatic proof of qualifying excellence. Its electorate, standard and
+contemporary roster are missing. The school's public Minerva index (R37) links
+2020–2024 issues only; its Old Girls' Union (R38) describes a physical archive
+of older school documents, without publishing the relevant captain record.
 Same-name pianist/soprano results surfaced in search and were not imported.
 
 Business contribution, arts, sport and community distinctions remain open. The
 National Film and Sound Archive catalogues the finale and Goodwin's win, but its
 page does not date filming or supply the original judging log; the programme
-itself was not viewed in this pass. The
+itself was not viewed in this pass. Network Ten's indexed season-one profile
+(R39) displays age 38 in search results, but direct retrieval returned HTTP 403,
+so it supports no verified primary-age claim. The
 prior draft's [ABC judging-dispute report](https://www.abc.net.au/news/2009-07-20/masterchef-not-rigged-julie-says/1360566)
 remains an allegation and response, not a finding of misconduct. Original rules
 and judging records would be needed to assess it.
