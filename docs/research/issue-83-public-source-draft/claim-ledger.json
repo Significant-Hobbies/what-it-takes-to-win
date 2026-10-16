@@ -483,6 +483,51 @@
       "location": "Early memories of running section, paragraphs on childhood activity and resuming running at 19.",
       "limitation": "Retrospective testimony only. Does not supply a primary birth record, dated youth result, or competitive standard; its narrative ordering does not override the 2004 organiser result.",
       "access": "retrieved"
+    },
+    {
+      "id": "R33",
+      "url": "https://www.recordholders.org/en/list/memory-cards.html",
+      "title": "History of the multi-pack playing cards memorisation records",
+      "publisher": "Recordholders.org",
+      "author": "Dominic O'Brien",
+      "publishedDate": null,
+      "datePrecision": "unknown",
+      "accessedOn": "2026-10-16",
+      "origin": "obrien-testimony; hosted by a record-history site, but the 1988 account is the subject's own recollection.",
+      "kind": "first-person",
+      "location": "Paragraph beginning 'Enter Dominic' and surrounding record sequence.",
+      "limitation": "Reports a six-deck, zero-error world record in 1988 without its exact date, original adjudication sheet or Guinness entry. The host does not turn this testimony into independent corroboration.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R34",
+      "url": "https://www.worldmemorychampionships.com/wp-content/uploads/2016/03/Synapsia-March-2016.pdf",
+      "title": "Synapsia Magazine, volume 11 issue 1: first World Memory Championships retrospective",
+      "publisher": "World Memory Sports Council",
+      "author": null,
+      "publishedDate": "2016-03",
+      "datePrecision": "month",
+      "accessedOn": "2026-10-16",
+      "origin": "Championship organiser's retrospective, not a 1991 original result sheet or independent external witness.",
+      "kind": "organisational-record",
+      "location": "PDF pp.36-39: Memoriad '91 date, entrants, adjudication and final standings.",
+      "limitation": "Browser extracted the PDF text; direct PDF retrieval returned HTTP 403 and its pages were not visually checked. It names eight competitors but seven ranked finishers, without an explanation of the difference. The 35-deck Guinness description predates the 1991 event but does not itself date that record.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R35",
+      "url": "https://www.recordholders.org/en/list/memory.html",
+      "title": "Memory and Mental Calculation World Records",
+      "publisher": "Recordholders.org",
+      "author": null,
+      "publishedDate": null,
+      "datePrecision": "unknown",
+      "accessedOn": "2026-10-16",
+      "origin": "Secondary record table compiled separately from O'Brien's first-person history on the same site; original Guinness evidence is not reproduced.",
+      "kind": "organisational-record",
+      "location": "Memorising Playing Cards, Most cards memorised (inter-shuffled packs), 1990 row.",
+      "limitation": "Lists 35 packs/1,820 cards, O'Brien, 1990 and two errors. Its present rules cannot establish the exact 1990 adjudication standard or event date.",
+      "access": "retrieved"
     }
   ],
   "claims": [
@@ -517,6 +562,40 @@
       ],
       "date": "1991",
       "datePrecision": "year",
+      "assessment": "recorded"
+    },
+    {
+      "id": "DO4",
+      "personId": "001",
+      "statement": "O'Brien recalls a six-deck, zero-error world-record attempt in 1988, before the 1991 championship; no original adjudication record or exact date was located.",
+      "sourceIds": [
+        "R33"
+      ],
+      "date": "1988",
+      "datePrecision": "year",
+      "assessment": "reported"
+    },
+    {
+      "id": "DO5",
+      "personId": "001",
+      "statement": "A secondary record table lists O'Brien's 35 inter-shuffled decks (1,820 cards, two errors) in 1990; the championship organiser retrospectively described him as a 35-deck Guinness holder before the October 1991 event.",
+      "sourceIds": [
+        "R34",
+        "R35"
+      ],
+      "date": "1990",
+      "datePrecision": "year",
+      "assessment": "recorded"
+    },
+    {
+      "id": "DO6",
+      "personId": "001",
+      "statement": "The championship organiser's retrospective dates Memoriad '91 to 26 October 1991 and ranks O'Brien first among seven finishers; it separately names eight competitors and describes seven competition events, without documenting the entry pool or original scores.",
+      "sourceIds": [
+        "R34"
+      ],
+      "date": "1991-10-26",
+      "datePrecision": "day",
       "assessment": "recorded"
     },
     {
@@ -1007,12 +1086,29 @@
         ],
         "proof": [
           {
-            "kind": "competition",
-            "date": "1991",
+            "kind": "record-attempt",
+            "date": "1988",
             "datePrecision": "year",
             "claimIds": [
+              "DO4"
+            ]
+          },
+          {
+            "kind": "record-listing",
+            "date": "1990",
+            "datePrecision": "year",
+            "claimIds": [
+              "DO5"
+            ]
+          },
+          {
+            "kind": "competition",
+            "date": "1991-10-26",
+            "datePrecision": "day",
+            "claimIds": [
               "DO1",
-              "DO3"
+              "DO3",
+              "DO6"
             ]
           }
         ]
@@ -1069,11 +1165,21 @@
         }
       ],
       "holdReasons": [
-        "Earliest proof and all-domain pre-26 history remain unresolved.",
-        "1991 exact date, original rules, score sheet and primary age evidence missing.",
-        "Historical field transcription still needs visual second review; no percentile claim."
+        "The earliest located result is a self-reported 1988 record attempt; the independently listed 1990 result predates the 1991 championship. Original adjudication and the earliest qualifying-result decision remain unresolved.",
+        "Primary age evidence and all-domain pre-26 history are missing.",
+        "Original 1991 rules and score sheet remain missing; the retrospective's eight named competitors versus seven finishers needs a source challenge. No percentile claim."
       ],
-      "contradictions": [],
+      "contradictions": [
+        {
+          "id": "DO-field",
+          "claimIds": [
+            "DO1",
+            "DO6"
+          ],
+          "status": "unresolved",
+          "note": "The organiser's 2016 account names eight competitors but seven final ranks, and the older historical table reports seven competitors. The discrepancy needs the original entry/result record."
+        }
+      ],
       "searches": [
         {
           "query": "\"Dominic O’Brien\" \"1991\" \"34\"",
@@ -1092,10 +1198,17 @@
           "language": "en",
           "searchedOn": "2026-10-14",
           "result": "No attributable earlier distinction located; this does not clear the arts domain."
+        },
+        {
+          "query": "\"Dominic O'Brien\" \"1988\" \"six decks\"; \"Dominic O'Brien\" \"1990\" \"Guinness\"",
+          "language": "en",
+          "searchedOn": "2026-10-16",
+          "result": "Located O'Brien's first-person 1988 record account, a secondary 1990 record table, and a 2016 organiser retrospective naming him a pre-1991 Guinness holder. No original Guinness page or 1988 adjudication sheet was retrieved."
         }
       ],
       "nextChecks": [
-        "Inspect original 1991 score sheet and dated Guinness/competition entries before 1991.",
+        "Retrieve the original 1988 adjudication and 1990 Guinness entry; distinguish first performance, record acceptance and book publication before classifying earliest proof.",
+        "Inspect the original 1991 score sheet, entry criteria and field accounting; visually verify the 2016 retrospective's seven-result table.",
         "Locate substantive employment and other-domain history at 16–25; do not infer absence."
       ],
       "review": {

@@ -21,7 +21,7 @@ entries reference claims. An access success is not evidence approval.
 The earlier 13 October access record remains in `source-access.json`. It records
 13 attempts, 11 retrieved responses and two HTTP 403 responses; those hashes
 remain historical retrieval evidence, not a claim that every source was reread.
-The ledger records 32 sources across the 14 and 16 October passes. Search extracts and
+The ledger records 35 sources and 47 claims across the 14 and 16 October passes. Search extracts and
 failed retrievals are explicit; they cannot support recorded claims. Two PDFs
 that the browser extractor could not read were retrieved directly: Spinks’s
 later account and the original 2004 race scan. The latter's four pages and the
@@ -44,7 +44,7 @@ is calculated.
 
 | Intake ID | New evidence and consequence | Still held for |
 |---|---|---|
-| 001 Dominic O’Brien | R01/R03 provide an organisational 1991 chronology; the historical table names the champion. R02 remains first-person training testimony. | Original rules/results, precise age and substantive pre-26 history; seven-person field transcription needs visual challenge. |
+| 001 Dominic O’Brien | R33 reports a six-deck, zero-error record in 1988; R35 separately tabulates a 35-deck record in 1990, before the 1991 title. R34 dates the title and supplies the seven ranked finishers. The 1991 win is not the earliest located external proof. | Original 1988/1990 adjudication and Guinness entry, first-proof classification, primary age, substantive pre-26 history and 1991 field/rules visual challenge. |
 | 004 Nicky Spinks | R07 is the organiser's 2004 Heart of Granite result, earlier than the intake's 2005 round. Her running club (R29) lists the 2005 round at 23:33, supporting R04 over R05's 23:32. A later England Athletics interview (R32) recalls childhood activity and recreational running at 19; this is Spinks's testimony, not a dated result. | Meaning of the 2004 performance, first race chronology, direct Bob Graham Club ratification/original timing, age and earlier domains. |
 | 014 Debbie Macomber | R09 separates the two debut publication dates. R10 reports paid magazine work before the novel sale and conflates a 1982 date with publication. | Earliest magazine acceptance, acquisition date, birth evidence and prior domains. |
 | 016 Ann Cleeves | R12 identifies the 1982 Hilbre chapter; R13 independently reads and cites the original. Publisher R31 reports a 1954 birth year, making publication age 27–28; the 1986 novel cannot be treated as first publication. | Chapter commission/acceptance date, selection standard, primary age record and prior domains. |
@@ -52,12 +52,28 @@ is calculated.
 
 ### 001 — Dominic O’Brien
 
-See DO1–DO3. A governing body's later record is useful milestone evidence, but
-is not an original 1991 score sheet. Current rankings cannot supply historical
-rules. A training start at a reported age does not establish a birthday.
-Employment, sport, arts, technical and community history before 26 remain open;
-the school account provides partial coverage only. Same-name engineering results
-are not attributed to the memory competitor without identity evidence.
+See DO1–DO6. O’Brien's own history (R33) calls a six-deck, zero-error 1988
+attempt his first world record. The Recordholders.org table (R35) lists 35
+inter-shuffled decks, 1,820 cards and two errors in 1990. The World Memory
+Sports Council's 2016 retrospective (R34) calls him a 35-deck Guinness holder
+before its 26 October 1991 championship. This corrects the chronology: 1991
+was not his first located externally recognised memory result. The 1988
+attempt remains a first-person claim without its original adjudication record;
+the 1990 record is separately tabulated but its original Guinness entry and
+exact acceptance date were not retrieved. Do not label either as the settled
+first qualifying result yet.
+
+R34 names seven ranked finishers in 1991 and describes seven contest events,
+but also names eight competitors. It does not explain the difference or
+give the full entry pool or original scores. Its PDF text was readable
+through the browser extractor; direct retrieval returned HTTP 403, so the
+historical table still needs visual review. The retrospective and R01 are
+organiser publications, not independent witnesses. Current rankings cannot
+supply historical rules. A training start at a reported age does not establish
+a birthday. Employment, sport, arts, technical and community history before 26
+remain open; the school account provides partial coverage only. Same-name
+engineering results are not attributed to the memory competitor without
+identity evidence.
 
 ### 004 — Nicola “Nicky” Spinks
 
