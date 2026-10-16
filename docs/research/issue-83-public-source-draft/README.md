@@ -21,7 +21,7 @@ entries reference claims. An access success is not evidence approval.
 The earlier 13 October access record remains in `source-access.json`. It records
 13 attempts, 11 retrieved responses and two HTTP 403 responses; those hashes
 remain historical retrieval evidence, not a claim that every source was reread.
-The ledger records 49 sources and 58 claims across the 14 and 16 October passes. Search extracts and
+The ledger records 51 sources and 60 claims across the 14 and 16 October passes. Search extracts and
 failed retrievals are explicit; they cannot support recorded claims. Two PDFs
 that the browser extractor could not read were retrieved directly: Spinks’s
 later account and the original 2004 race scan. The latter's four pages, five
@@ -47,7 +47,7 @@ is calculated.
 |---|---|---|
 | 001 Dominic O’Brien | R33 reports a six-deck, zero-error record in 1988; R35 separately tabulates a 35-deck record in 1990, before the 1991 title. R34 dates the title and supplies the seven ranked finishers. The 1991 win is not the earliest located external proof. | Original 1988/1990 adjudication and Guinness entry, first-proof classification, primary age, substantive pre-26 history and 1991 field/rules visual challenge. |
 | 004 Nicky Spinks | Original FRA tables (R40–R43) locate probable 2002 race participation and a 31 March 2003 Trunce women's-category win, followed by two more 2003 wins. These precede the 2004 Heart of Granite and 2005 Bob Graham results. Her 2017 fiftieth-birthday accounts (R44–R45) imply a 22 April 1967 birth date, with a shared self-report origin. | Abbreviated early identity, whether a local category win meets the excellence threshold, contradictory first-race chronology, independent age/earlier-history evidence and original 2005 ratification. |
-| 014 Debbie Macomber | R09 separates the two debut publication dates. R10 reports paid magazine work before the novel sale and conflates a 1982 date with publication. | Earliest magazine acceptance, acquisition date, birth evidence and prior domains. |
+| 014 Debbie Macomber | US Copyright registrations R50–R51 record claimed first publication of *Starlight* on 1 November 1983 and *Heartsong* on 1 February 1984; R09 lists 28 February for the latter. R51 records creation in 1982, while R10 recalls publication that year and earlier paid magazine work. Creation, sale and publication remain distinct. | Earliest magazine acceptance, novel acquisition date, Heartsong day discrepancy, birth evidence and prior domains. |
 | 016 Ann Cleeves | R12 identifies the 1982 Hilbre chapter; R13 independently reads and cites the original. Cheshire Archives R46 transcribes its contemporary dust-jacket contributor note, which records a social-work qualification but not its award date. Publisher R31 reports a 1954 birth year, making publication age 27–28; the 1986 novel cannot be treated as first publication. | Chapter commission/acceptance date, selection standard, primary age record and prior domains. |
 | 034 Julie Goodwin | R14 supplies contemporaneous result/age reporting; R36 reports 82–75 final scoring and 20 finalists from 7,500 applicants. The national audiovisual archive catalogues the 2009 final (R30). R15 introduces elected school captaincy as a concrete earlier-selection lead. | Contemporary school captain record and threshold, original show scoring/casting records and filming date, primary age and complete earlier history. |
 
@@ -120,10 +120,15 @@ ledger claim. No independent birth record or individual club ratification was ob
 
 ### 014 — Debbie Macomber
 
-See DM1–DM5. The official bibliography dates *Starlight* to 1 November 1983 and
-*Heartsong* to 28 February 1984. Her WOW interview calls *Heartsong* published in
-1982 and describes earlier paid articles. A search-only acquisition lead cannot
-settle that conflict. First sale, acceptance and release stay separate.
+See DM1–DM7. The author bibliography dates *Starlight* to 1 November 1983 and
+*Heartsong* to 28 February 1984. Original US Copyright registrations name
+Macomber as author and claimant and record claimed first publication on
+1 November 1983 for *Starlight* and 1 February 1984 for *Heartsong*. The latter
+day conflicts with the bibliography, although both put publication in February
+1984. The *Heartsong* registration records creation in 1982; her WOW interview
+calls it published in 1982 and describes earlier paid articles. Creation is
+neither publication nor sale, and these records do not date the novel acquisition.
+First sale, acceptance and release stay separate.
 
 The paid article title, issue and acceptance date are the next decisive checks.
 A reported birth year gives a release-age interval, not a first-proof age.
