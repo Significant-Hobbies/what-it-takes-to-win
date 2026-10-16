@@ -21,7 +21,7 @@ entries reference claims. An access success is not evidence approval.
 The earlier 13 October access record remains in `source-access.json`. It records
 13 attempts, 11 retrieved responses and two HTTP 403 responses; those hashes
 remain historical retrieval evidence, not a claim that every source was reread.
-The ledger records 51 sources and 60 claims across the 14 and 16 October passes. Search extracts and
+The ledger records 52 sources and 65 claims across the 14 and 16 October passes. Search extracts and
 failed retrievals are explicit; they cannot support recorded claims. Two PDFs
 that the browser extractor could not read were retrieved directly: Spinks’s
 later account and the original 2004 race scan. The latter's four pages, five
@@ -49,7 +49,7 @@ is calculated.
 | 004 Nicky Spinks | Original FRA tables (R40–R43) locate probable 2002 race participation and a 31 March 2003 Trunce women's-category win, followed by two more 2003 wins. These precede the 2004 Heart of Granite and 2005 Bob Graham results. Her 2017 fiftieth-birthday accounts (R44–R45) imply a 22 April 1967 birth date, with a shared self-report origin. | Abbreviated early identity, whether a local category win meets the excellence threshold, contradictory first-race chronology, independent age/earlier-history evidence and original 2005 ratification. |
 | 014 Debbie Macomber | US Copyright registrations R50–R51 record claimed first publication of *Starlight* on 1 November 1983 and *Heartsong* on 1 February 1984; R09 lists 28 February for the latter. R51 records creation in 1982, while R10 recalls publication that year and earlier paid magazine work. Creation, sale and publication remain distinct. | Earliest magazine acceptance, novel acquisition date, Heartsong day discrepancy, birth evidence and prior domains. |
 | 016 Ann Cleeves | R12 identifies the 1982 Hilbre chapter; R13 independently reads and cites the original. Cheshire Archives R46 transcribes its contemporary dust-jacket contributor note, which records a social-work qualification but not its award date. Publisher R31 reports a 1954 birth year, making publication age 27–28; the 1986 novel cannot be treated as first publication. | Chapter commission/acceptance date, selection standard, primary age record and prior domains. |
-| 034 Julie Goodwin | R14 supplies contemporaneous result/age reporting; R36 reports 82–75 final scoring and 20 finalists from 7,500 applicants. The national audiovisual archive catalogues the 2009 final (R30). R15 introduces elected school captaincy as a concrete earlier-selection lead. | Contemporary school captain record and threshold, original show scoring/casting records and filming date, primary age and complete earlier history. |
+| 034 Julie Goodwin | R14 supplies contemporaneous result/age reporting; R36 reports 82–75 final scoring and 20 finalists from 7,500 applicants. The national audiovisual archive catalogues the 2009 final (R30). Her 2010 cookbook introduction (R52) recalls the application, January audition invitation, February top-50/finals selection and March finalist-house entry. R15 introduces elected school captaincy as a concrete earlier-selection lead. | Contemporary school captain record and threshold, original show scoring/casting records and filming date, primary age and complete earlier history. |
 
 ### 001 — Dominic O’Brien
 
@@ -155,7 +155,7 @@ matter and editorial chronology before classifying core fit or transfer.
 
 ### 034 — Julie Goodwin
 
-See JG1–JG6. The 2009 reports date broadcast/result reporting; they do not date
+See JG1–JG11. The 2009 reports date broadcast/result reporting; they do not date
 filming. ABC's AAP report (R36) gives a reported 82/100 against Poh Ling Yeow's
 75/100 and says 20 finalists were selected from 7,500 applicants. These are
 distinct final-two, finalist and applicant pools, not the original judging
@@ -165,6 +165,18 @@ contemporary roster are missing. The school's public Minerva index (R37) links
 2020–2024 issues only; its Old Girls' Union (R38) describes a physical archive
 of older school documents, without publishing the relevant captain record.
 Same-name pianist/soprano results surfaced in search and were not imported.
+
+Goodwin's own 2010 *Our Family Table* introduction (R52) recalls an online
+application followed by a January phone call granting an audition, a February
+top-50 round and finals selection, and a March move into the house with nineteen
+other contestants. The months are stated in her retrospective account; their
+assignment to 2009 follows the known season rather than an independently dated
+application or casting record. The call is not the audition date, and selection
+is not automatically a qualifying first proof. She also describes learning
+cooking basics as a child and later experimenting in her own home. That is
+evidence of prior practice, not earlier external recognition or a complete
+pre-26 achievement audit. R52 and R15 both trace to Goodwin's testimony, so
+they cannot independently corroborate her life history.
 
 Business contribution, arts, sport and community distinctions remain open. The
 National Film and Sound Archive catalogues the finale and Goodwin's win, but its
