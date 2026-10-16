@@ -1,7 +1,7 @@
 {
   "$schema": "./claim-ledger.schema.json",
   "schemaVersion": 1,
-  "updatedOn": "2026-10-14",
+  "updatedOn": "2026-10-16",
   "purpose": "Held research only; intakeId null identifies an unregistered lead. No runtime publication input. Null means unknown; true earlier proof excludes core inclusion.",
   "sources": [
     {
@@ -423,6 +423,51 @@
       "location": "Published date and text caption only.",
       "limitation": "Caption corroborates contemporary coverage, not tested performance; relative chronology conflicts with an earlier recorded application.",
       "access": "retrieved"
+    },
+    {
+      "id": "R29",
+      "url": "https://pfrac.co.uk/about/fell-and-trail-running",
+      "title": "Fell and Trail Running",
+      "publisher": "Penistone Footpath Runners & AC",
+      "author": null,
+      "publishedDate": null,
+      "datePrecision": "unknown",
+      "accessedOn": "2026-10-16",
+      "origin": "Spinks's running club; separate organisational account from her first-person pages, but the source of its timing is unstated.",
+      "kind": "organisational-record",
+      "location": "Bob Graham Round section, club-members list, 2005 Nicky Spinks row.",
+      "limitation": "Club page lists 23:33 and says listed runners became Bob Graham Club members; not an individual Bob Graham Club ratification or original 2005 timing sheet. Page publication date unknown.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R30",
+      "url": "https://www.nfsa.gov.au/collection/item/masterchef-australia-julie-goodwin-and-poh-ling-yeow",
+      "title": "MasterChef Australia: Julie Goodwin and Poh Ling Yeow",
+      "publisher": "National Film and Sound Archive of Australia",
+      "author": null,
+      "publishedDate": null,
+      "datePrecision": "unknown",
+      "accessedOn": "2026-10-16",
+      "origin": "National audiovisual collection catalogue; listed footage is courtesy of producer Fremantle.",
+      "kind": "organisational-record",
+      "location": "NFSA ID B314QTFA, catalogue summary and collection metadata.",
+      "limitation": "Catalogue confirms the 2009 final and winner; underlying 91-minute programme was not viewed. No filming date, original casting pool, scores or primary age record supplied.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R31",
+      "url": "https://www.gyldendal.no/forfattere/ann-cleeves",
+      "title": "Ann Cleeves",
+      "publisher": "Gyldendal",
+      "author": null,
+      "publishedDate": null,
+      "datePrecision": "unknown",
+      "accessedOn": "2026-10-16",
+      "origin": "Publisher biography; birth year may derive from author or shared publicity material, not an independent vital record.",
+      "kind": "organisational-record",
+      "location": "Opening author biography, 'f. 1954'.",
+      "limitation": "Corroborates reported 1954 birth year only. No exact birthday or primary age record and no date for chapter commission/acceptance.",
+      "access": "retrieved"
     }
   ],
   "claims": [
@@ -526,6 +571,17 @@
       "assessment": "reported"
     },
     {
+      "id": "NS7",
+      "personId": "004",
+      "statement": "Penistone Footpath Runners & AC lists Spinks among its 2005 Bob Graham Round completers and gives 23:33, supporting her round page over her later 23:32 account without supplying the original timing sheet.",
+      "sourceIds": [
+        "R29"
+      ],
+      "date": "2005",
+      "datePrecision": "year",
+      "assessment": "recorded"
+    },
+    {
       "id": "DM1",
       "personId": "014",
       "statement": "The author bibliography lists Starlight on 1 November 1983 and Heartsong on 28 February 1984.",
@@ -625,6 +681,18 @@
       "assessment": "recorded"
     },
     {
+      "id": "AC5",
+      "personId": "016",
+      "statement": "Gyldendal's author biography gives Cleeves's birth year as 1954; a 1982 publication therefore falls at age 27–28, while an earlier chapter commission could still fall before 26.",
+      "sourceIds": [
+        "R31",
+        "R12"
+      ],
+      "date": "1954",
+      "datePrecision": "year",
+      "assessment": "reported"
+    },
+    {
       "id": "JG1",
       "personId": "034",
       "statement": "ABC reports Goodwin as the 38-year-old winner on 19 July 2009, with judges George Calombaris, Gary Mehigan and Matt Preston. This dates reporting/broadcast, not filming.",
@@ -667,6 +735,17 @@
       "date": null,
       "datePrecision": "unknown",
       "assessment": "reported"
+    },
+    {
+      "id": "JG5",
+      "personId": "034",
+      "statement": "The National Film and Sound Archive catalogues the 2009 MasterChef Australia finale, identifies Goodwin as winner and Poh Ling Yeow as runner-up, and credits producer Fremantle for the item.",
+      "sourceIds": [
+        "R30"
+      ],
+      "date": "2009",
+      "datePrecision": "year",
+      "assessment": "recorded"
     },
     {
       "id": "MJ1",
@@ -1044,7 +1123,8 @@
             "date": "2005-06-17/2005-06-18",
             "datePrecision": "day-range",
             "claimIds": [
-              "NS1"
+              "NS1",
+              "NS7"
             ]
           }
         ]
@@ -1104,7 +1184,7 @@
       ],
       "holdReasons": [
         "2004 result may precede 2005 proof; eighth overall and a first-female prize need domain-specific threshold judgment.",
-        "No independent 2005 club ratification or primary birth evidence obtained.",
+        "Her running club lists the 2005 completion and 23:33, but direct Bob Graham Club ratification, original timing sheet and primary birth evidence remain missing.",
         "No pre-26 domain cleared."
       ],
       "contradictions": [
@@ -1112,10 +1192,11 @@
           "id": "NS-time",
           "claimIds": [
             "NS1",
-            "NS2"
+            "NS2",
+            "NS7"
           ],
           "status": "unresolved",
-          "note": "23:33 versus 23:32 remains unresolved; no silent normalization."
+          "note": "Penistone club supports 23:33, but its timing origin is unstated and the original sheet is missing; 23:32 in Spinks's later account remains unexplained."
         },
         {
           "id": "NS-start",
@@ -1144,12 +1225,18 @@
           "language": "en",
           "searchedOn": "2026-10-14",
           "result": "Located 2004 Heart of Granite scan; inspected four pages, table on page 2."
+        },
+        {
+          "query": "\"Nicky Spinks\" \"2005\" \"Bob Graham\" club",
+          "language": "en",
+          "searchedOn": "2026-10-16",
+          "result": "Penistone club page R29 lists a 23:33 completion; direct Bob Graham Club individual record still absent."
         }
       ],
       "nextChecks": [
         "Find 2001–2004 original Trunce/road results and exact first race.",
         "Check 2004 selection standard and category field independently; do not equate category prize with beating competitors.",
-        "Resolve club ratification, date of birth and pre-26 sport/horse-riding history."
+        "Locate direct Bob Graham Club ratification/original timing, date of birth and pre-26 sport/horse-riding history."
       ],
       "review": {
         "author": "Codex research pass",
@@ -1330,10 +1417,12 @@
       "earlierQualifyingProof": null,
       "strongestAt25": null,
       "birthEvidence": {
-        "date": null,
-        "precision": "unknown",
-        "note": "Screening 1954 birth year remains a secondary lead; no primary age evidence obtained.",
-        "claimIds": []
+        "date": "1954",
+        "precision": "year",
+        "note": "Publisher Gyldendal reports 1954; no primary birth record or exact day obtained. Publication age is 27–28, but commission age remains undated.",
+        "claimIds": [
+          "AC5"
+        ]
       },
       "timeline": {
         "capability": [
@@ -1442,6 +1531,12 @@
           "language": "en",
           "searchedOn": "2026-10-14",
           "result": "No primary age result returned in this search."
+        },
+        {
+          "query": "\"Ann Cleeves\" birth year publisher Gyldendal",
+          "language": "en",
+          "searchedOn": "2026-10-16",
+          "result": "Gyldendal R31 reports 1954; publisher assertion, not a primary birth record."
         }
       ],
       "nextChecks": [
@@ -1499,7 +1594,8 @@
             "date": "2009-07-19",
             "datePrecision": "day",
             "claimIds": [
-              "JG1"
+              "JG1",
+              "JG5"
             ]
           }
         ]
@@ -1595,6 +1691,12 @@
           "language": "en",
           "searchedOn": "2026-10-14",
           "result": "No primary birth result returned."
+        },
+        {
+          "query": "MasterChef Australia Julie Goodwin finale National Film and Sound Archive",
+          "language": "en",
+          "searchedOn": "2026-10-16",
+          "result": "NFSA catalogue R30 confirms archival finale and winner; footage not viewed and filming date absent."
         }
       ],
       "nextChecks": [

@@ -1,6 +1,6 @@
 # Issue #83: public-source audits — DRAFT
 
-Updated 14 October 2026. [Owning issue #83](https://github.com/Significant-Hobbies/what-it-takes-to-win/issues/83).
+Updated 16 October 2026. [Owning issue #83](https://github.com/Significant-Hobbies/what-it-takes-to-win/issues/83).
 [PR #82](https://github.com/Significant-Hobbies/what-it-takes-to-win/pull/82) is merged;
 its integration dependency is satisfied at main `2d2a8a3`.
 
@@ -21,7 +21,7 @@ entries reference claims. An access success is not evidence approval.
 The earlier 13 October access record remains in `source-access.json`. It records
 13 attempts, 11 retrieved responses and two HTTP 403 responses; those hashes
 remain historical retrieval evidence, not a claim that every source was reread.
-The ledger records 28 sources across the 14 October passes. Search extracts and
+The ledger records 31 sources across the 14 and 16 October passes. Search extracts and
 failed retrievals are explicit; they cannot support recorded claims. Two PDFs
 that the browser extractor could not read were retrieved directly: Spinks’s
 later account and the original 2004 race scan. The latter's four pages and the
@@ -45,10 +45,10 @@ is calculated.
 | Intake ID | New evidence and consequence | Still held for |
 |---|---|---|
 | 001 Dominic O’Brien | R01/R03 provide an organisational 1991 chronology; the historical table names the champion. R02 remains first-person training testimony. | Original rules/results, precise age and substantive pre-26 history; seven-person field transcription needs visual challenge. |
-| 004 Nicky Spinks | R07 is the organiser's 2004 Heart of Granite result, earlier than the intake's 2005 round. R04/R05 disagree by one minute on that later round. | Meaning of the 2004 performance, first race chronology, independent ratification, age and earlier domains. |
+| 004 Nicky Spinks | R07 is the organiser's 2004 Heart of Granite result, earlier than the intake's 2005 round. Her running club (R29) lists the 2005 round at 23:33, supporting R04 over R05's 23:32. | Meaning of the 2004 performance, first race chronology, direct Bob Graham Club ratification/original timing, age and earlier domains. |
 | 014 Debbie Macomber | R09 separates the two debut publication dates. R10 reports paid magazine work before the novel sale and conflates a 1982 date with publication. | Earliest magazine acceptance, acquisition date, birth evidence and prior domains. |
-| 016 Ann Cleeves | R12 identifies the 1982 Hilbre chapter; R13 independently reads and cites the original. The 1986 novel cannot be treated as first publication. | Chapter commission/acceptance date, selection standard, age and prior domains. |
-| 034 Julie Goodwin | R14 supplies contemporaneous result/age reporting; R15 introduces elected school captaincy as a concrete earlier-selection lead. | School selection threshold, prior distinction, original show rules, casting/judging dates and primary age evidence. |
+| 016 Ann Cleeves | R12 identifies the 1982 Hilbre chapter; R13 independently reads and cites the original. Publisher R31 reports a 1954 birth year, making publication age 27–28; the 1986 novel cannot be treated as first publication. | Chapter commission/acceptance date, selection standard, primary age record and prior domains. |
+| 034 Julie Goodwin | R14 supplies contemporaneous result/age reporting; the national audiovisual archive catalogues the 2009 final (R30). R15 introduces elected school captaincy as a concrete earlier-selection lead. | School selection threshold, prior distinction, original show rules, casting/judging dates and primary age evidence. |
 
 ### 001 — Dominic O’Brien
 
@@ -66,6 +66,11 @@ eighth in 09:01:12, and contains 11 finishers plus eight retired entries. The
 current archive is hosted by Spinks, but attributes the historical report to
 organiser Colin Butler. This is a distinct document origin, not independent
 confirmation of all later testimony.
+
+Penistone Footpath Runners & AC independently lists Spinks among its 2005
+completers and gives 23:33. The club's timing source is unstated, and its page is
+not an individual Bob Graham Club record. The 23:32 in her later account remains
+unexplained; the original timing sheet and direct ratification remain targets.
 
 The first-female prize story needs its actual comparison pool and standard;
 a category label is not proof of beating a competitive field. The 2001 versus
@@ -93,7 +98,9 @@ narrative for her island life; two publishers are not two life-history witnesses
 
 An editor friendship is evidence about access, not a verdict on work quality.
 The 1977–1981 residence interval does **not** date the commission. An acceptance
-before 26 remains possible, not established. Retrieve the original chapter/front
+before 26 remains possible, not established. Gyldendal's 1954 birth year is a
+publisher assertion, not a primary birth record; it bounds publication age but
+does not date acceptance. Retrieve the original chapter/front
 matter and editorial chronology before classifying core fit or transfer.
 
 ### 034 — Julie Goodwin
@@ -104,6 +111,9 @@ proof of qualifying excellence. Its electorate, standard and records are missing
 Same-name pianist/soprano results surfaced in search and were not imported.
 
 Business contribution, arts, sport and community distinctions remain open. The
+National Film and Sound Archive catalogues the finale and Goodwin's win, but its
+page does not date filming or supply the original judging log; the programme
+itself was not viewed in this pass. The
 prior draft's [ABC judging-dispute report](https://www.abc.net.au/news/2009-07-20/masterchef-not-rigged-julie-says/1360566)
 remains an allegation and response, not a finding of misconduct. Original rules
 and judging records would be needed to assess it.
