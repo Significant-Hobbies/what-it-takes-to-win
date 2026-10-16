@@ -21,7 +21,7 @@ entries reference claims. An access success is not evidence approval.
 The earlier 13 October access record remains in `source-access.json`. It records
 13 attempts, 11 retrieved responses and two HTTP 403 responses; those hashes
 remain historical retrieval evidence, not a claim that every source was reread.
-The ledger records 45 sources and 54 claims across the 14 and 16 October passes. Search extracts and
+The ledger records 49 sources and 58 claims across the 14 and 16 October passes. Search extracts and
 failed retrievals are explicit; they cannot support recorded claims. Two PDFs
 that the browser extractor could not read were retrieved directly: Spinks’s
 later account and the original 2004 race scan. The latter's four pages, five
@@ -48,7 +48,7 @@ is calculated.
 | 001 Dominic O’Brien | R33 reports a six-deck, zero-error record in 1988; R35 separately tabulates a 35-deck record in 1990, before the 1991 title. R34 dates the title and supplies the seven ranked finishers. The 1991 win is not the earliest located external proof. | Original 1988/1990 adjudication and Guinness entry, first-proof classification, primary age, substantive pre-26 history and 1991 field/rules visual challenge. |
 | 004 Nicky Spinks | Original FRA tables (R40–R43) locate probable 2002 race participation and a 31 March 2003 Trunce women's-category win, followed by two more 2003 wins. These precede the 2004 Heart of Granite and 2005 Bob Graham results. Her 2017 fiftieth-birthday accounts (R44–R45) imply a 22 April 1967 birth date, with a shared self-report origin. | Abbreviated early identity, whether a local category win meets the excellence threshold, contradictory first-race chronology, independent age/earlier-history evidence and original 2005 ratification. |
 | 014 Debbie Macomber | R09 separates the two debut publication dates. R10 reports paid magazine work before the novel sale and conflates a 1982 date with publication. | Earliest magazine acceptance, acquisition date, birth evidence and prior domains. |
-| 016 Ann Cleeves | R12 identifies the 1982 Hilbre chapter; R13 independently reads and cites the original. Publisher R31 reports a 1954 birth year, making publication age 27–28; the 1986 novel cannot be treated as first publication. | Chapter commission/acceptance date, selection standard, primary age record and prior domains. |
+| 016 Ann Cleeves | R12 identifies the 1982 Hilbre chapter; R13 independently reads and cites the original. Cheshire Archives R46 transcribes its contemporary dust-jacket contributor note, which records a social-work qualification but not its award date. Publisher R31 reports a 1954 birth year, making publication age 27–28; the 1986 novel cannot be treated as first publication. | Chapter commission/acceptance date, selection standard, primary age record and prior domains. |
 | 034 Julie Goodwin | R14 supplies contemporaneous result/age reporting; R36 reports 82–75 final scoring and 20 finalists from 7,500 applicants. The national audiovisual archive catalogues the 2009 final (R30). R15 introduces elected school captaincy as a concrete earlier-selection lead. | Contemporary school captain record and threshold, original show scoring/casting records and filming date, primary age and complete earlier history. |
 
 ### 001 — Dominic O’Brien
@@ -132,12 +132,16 @@ they do not establish a complete attempt log, practice hours or causal explanati
 
 ### 016 — Ann Cleeves
 
-See AC1–AC4. The publisher's retrospective and an independent scholarly reading
+See AC1–AC6. The publisher's retrospective and an independent scholarly reading
 corroborate the chapter's publication and attribution. The latter cites *A year
 on Hilbre*, pages 48–64, in the 1982 volume. Both still ultimately use Cleeves's
 narrative for her island life; two publishers are not two life-history witnesses.
 
 An editor friendship is evidence about access, not a verdict on work quality.
+Cheshire Archives staff inspected a physical copy of the 1982 volume (local
+studies ref 016561) and transcribed its contributor note. It identifies Cleeves
+as holding a University of Liverpool social-work qualification. The jacket was
+not viewed directly here, and it gives neither award date nor selective standard.
 The 1977–1981 residence interval does **not** date the commission. An acceptance
 before 26 remains possible, not established. Gyldendal's 1954 birth year is a
 publisher assertion, not a primary birth record; it bounds publication age but
@@ -228,6 +232,16 @@ are retained; public source medical details and contact addresses are omitted.
 Ordinary trades, school attendance and household work are not inferred excellence.
 Unknown hours, other domains and strongest achievement at 25 remain explicit.
 Remya is an earlier-excellence contrast, not an inferred transfer or failed attempt.
+
+The US patent publication for Jagani names him as inventor, records a February
+2002 filing and later grant, and records assignment to SRISTI. It supports later
+attributable design, not a 1994 built prototype or customer acceptance. A 2019
+Times of India report interviewed both Y Srinivas and Mallesham about competing
+histories of the Asu machine; an earlier Asianet Telugu opinion article relayed
+a purported 2017 departmental report. These establish a disputed account, not
+adjudication of either origin story. The alleged earlier machine, original
+departmental report and underlying patent file were not independently inspected.
+Mallesham's contribution and earliest-result classification remain unresolved.
 
 This finite slice is complete as held lead research. It does not finish all #83
 research/clearance gates or create a quota for more cases. “Up to 12” remains a cap,
