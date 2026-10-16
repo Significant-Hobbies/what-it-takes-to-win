@@ -528,6 +528,66 @@
       "location": "Memorising Playing Cards, Most cards memorised (inter-shuffled packs), 1990 row.",
       "limitation": "Lists 35 packs/1,820 cards, O'Brien, 1990 and two errors. Its present rules cannot establish the exact 1990 adjudication standard or event date.",
       "access": "retrieved"
+    },
+    {
+      "id": "R36",
+      "url": "https://www.abc.net.au/news/2009-07-20/masterchef-not-rigged-julie-says/1360566",
+      "title": "MasterChef not rigged, Julie says",
+      "publisher": "ABC News / Australian Associated Press",
+      "author": "AAP",
+      "publishedDate": "2009-07-20",
+      "datePrecision": "day",
+      "accessedOn": "2026-10-16",
+      "origin": "Contemporaneous AAP reporting; the score image is credited to Channel Ten, while original scoring and casting records are not reproduced.",
+      "kind": "contemporary-report",
+      "location": "Result and finalist-pool paragraphs; Channel Ten image caption.",
+      "limitation": "Reports 82/100 versus 75/100 and 20 finalists from 7,500 applicants. It does not supply the original judging sheets, casting criteria, filming date or a primary birth record. Claims of rigging are presented as allegation and denial, not a finding.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R37",
+      "url": "https://hornsbygir-h.schools.nsw.gov.au/school-life/school-magazine",
+      "title": "School Magazine",
+      "publisher": "Hornsby Girls High School",
+      "author": null,
+      "publishedDate": null,
+      "datePrecision": "unknown",
+      "accessedOn": "2026-10-16",
+      "origin": "School's public magazine index.",
+      "kind": "organisational-record",
+      "location": "Minerva Magazine links for 2020 through 2024.",
+      "limitation": "Public index has no magazine from Goodwin's school years; it does not establish that an older record is absent from the school archive.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R38",
+      "url": "https://hornsbygir-h.schools.nsw.gov.au/school-life/community-involvement",
+      "title": "Community involvement: The Old Girls' Union",
+      "publisher": "Hornsby Girls High School",
+      "author": null,
+      "publishedDate": null,
+      "datePrecision": "unknown",
+      "accessedOn": "2026-10-16",
+      "origin": "School's description of its alumni archive.",
+      "kind": "organisational-record",
+      "location": "The Old Girls' Union, About Us section.",
+      "limitation": "Says the union maintains a decade-by-decade database and physical collection of school documents; no Goodwin captaincy roster, year, electorate or selection standard is published on this page.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R39",
+      "url": "https://10.com.au/masterchef/participants/season-1/julie-goodwin/pa200615vxbkz",
+      "title": "Julie Goodwin, MasterChef Season 1",
+      "publisher": "Network Ten",
+      "author": null,
+      "publishedDate": null,
+      "datePrecision": "unknown",
+      "accessedOn": "2026-10-16",
+      "origin": "Broadcaster participant profile, known here only through a search-engine extract.",
+      "kind": "organisational-record",
+      "location": "Indexed profile extract showing age 38 and office-manager occupation.",
+      "limitation": "Direct page retrieval returned HTTP 403. The index extract is a source lead, not a verified primary age claim; publication date, original application and filming date are unknown.",
+      "access": "search-extract-only"
     }
   ],
   "claims": [
@@ -851,6 +911,17 @@
       "date": "2009",
       "datePrecision": "year",
       "assessment": "recorded"
+    },
+    {
+      "id": "JG6",
+      "personId": "034",
+      "statement": "A contemporaneous AAP report says the 2009 final scored Goodwin 82/100 and Poh Ling Yeow 75/100, and says 20 finalists were chosen from 7,500 applicants. Those are reported comparison pools, not the original casting or scoring records.",
+      "sourceIds": [
+        "R36"
+      ],
+      "date": "2009-07-19",
+      "datePrecision": "day",
+      "assessment": "reported"
     },
     {
       "id": "MJ1",
@@ -1758,7 +1829,8 @@
             "datePrecision": "day",
             "claimIds": [
               "JG1",
-              "JG5"
+              "JG5",
+              "JG6"
             ]
           }
         ]
@@ -1783,7 +1855,7 @@
             "JG2",
             "JG3"
           ],
-          "gap": "Elected Year 12 captaincy is a concrete pre-26 selection lead; school record, electorate and threshold unknown."
+          "gap": "Elected Year 12 captaincy is a concrete pre-26 selection lead. Public Minerva links cover 2020–2024 (R37); the Old Girls' Union describes an older physical archive (R38), but no contemporary captain roster, electorate or threshold was retrieved."
         },
         {
           "domain": "Sport",
@@ -1825,8 +1897,8 @@
         }
       ],
       "holdReasons": [
-        "School captaincy needs a threshold audit; neither automatically qualifying nor ignorable.",
-        "Original competition rules, casting pool, judging/filming date and primary age evidence missing.",
+        "School captaincy needs its contemporary roster and selection threshold; neither automatically qualifying nor ignorable.",
+        "AAP reports a 7,500-applicant/20-finalist pool and 82–75 final score, but original casting rules, judging sheets, filming date and primary age evidence remain missing; Network Ten's indexed age profile (R39) returned HTTP 403 on direct retrieval.",
         "Prior business, arts and other domains remain incomplete."
       ],
       "contradictions": [],
@@ -1860,11 +1932,30 @@
           "language": "en",
           "searchedOn": "2026-10-16",
           "result": "NFSA catalogue R30 confirms archival finale and winner; footage not viewed and filming date absent."
+        },
+        {
+          "query": "\"Julie Goodwin\" \"82\" \"75\" \"7500\" MasterChef 2009",
+          "language": "en",
+          "searchedOn": "2026-10-16",
+          "result": "Retrieved contemporaneous ABC/AAP report R36 with reported score and applicant/finalist pools; no original judging or casting record."
+        },
+        {
+          "query": "\"Julie Goodwin\" \"Hornsby Girls\" school captain Minerva magazine",
+          "language": "en",
+          "searchedOn": "2026-10-16",
+          "result": "No contemporary captain roster surfaced. School index R37 links Minerva 2020–2024; OGU R38 describes an older physical archive. Neither verifies Goodwin's captaincy standard."
+        },
+        {
+          "query": "site:10.com.au/masterchef/participants/season-1/julie-goodwin/pa200615vxbkz age",
+          "language": "en",
+          "searchedOn": "2026-10-16",
+          "result": "Broadcaster profile R39 appears in a search extract with age 38, but direct retrieval returned HTTP 403; no age claim promoted from it."
         }
       ],
       "nextChecks": [
-        "Locate school leadership record and selection standard before classifying earlier proof.",
-        "Retrieve original 2009 competition materials; distinguish applicants, selected contestants, finalists and broadcast from filming.",
+        "Retrieve the contemporary Hornsby school captain roster or Minerva issue and election standard before classifying earlier proof; the school says its Old Girls' Union keeps a physical archive.",
+        "Retrieve original 2009 casting rules, finale judging sheets and filming date; keep AAP's applicant, finalist and final-two pools distinct.",
+        "Verify age against an accessible broadcaster/application or other primary record; R39's search-only extract cannot support a claim.",
         "Keep ABC’s separately recorded judging dispute as an allegation, not proven misconduct."
       ],
       "review": {
