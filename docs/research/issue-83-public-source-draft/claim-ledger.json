@@ -738,6 +738,36 @@
       "location": "Sections on the earlier wooden machine and quoted English departmental comparison.",
       "limitation": "The original signed report and its evidentiary attachments were not inspected; the reported excerpt rejects copying while describing different machines. It does not resolve historical priority, Mallesham's knowledge or independent first proof.",
       "access": "retrieved"
+    },
+    {
+      "id": "R50",
+      "url": "https://api.publicrecords.copyright.gov/search_service_external/simple_search_dsl?query=TX0001290183&page_number=1&records_per_page=10",
+      "title": "Starlight registration TX0001290183",
+      "publisher": "United States Copyright Office public records",
+      "author": null,
+      "publishedDate": null,
+      "datePrecision": "unknown",
+      "accessedOn": "2026-10-16",
+      "origin": "Original US Copyright Office registration record, distinct from the author's retrospective chronology.",
+      "kind": "organisational-record",
+      "location": "data[0].hit, registration TX0001290183: title, author/claimant, creation, first-publication and registration fields.",
+      "limitation": "The registration records creation in 1983, claimed first publication on 1 November 1983 and registration on 21 February 1984. These dates do not establish manuscript acquisition or the earlier magazine article; first-publication date is a registration claim, not independent observation of distribution.",
+      "access": "retrieved"
+    },
+    {
+      "id": "R51",
+      "url": "https://api.publicrecords.copyright.gov/search_service_external/simple_search_dsl?query=TX0001407036&page_number=1&records_per_page=10",
+      "title": "Heartsong registration TX0001407036",
+      "publisher": "United States Copyright Office public records",
+      "author": null,
+      "publishedDate": null,
+      "datePrecision": "unknown",
+      "accessedOn": "2026-10-16",
+      "origin": "Original US Copyright Office registration record, distinct from the author's retrospective chronology.",
+      "kind": "organisational-record",
+      "location": "data[0].hit, registration TX0001407036: title, author/claimant, creation, first-publication and registration fields.",
+      "limitation": "The registration records creation in 1982, claimed first publication on 1 February 1984 and registration on 22 June 1984. The first-publication day differs from R09's 28 February; editions or dating convention have not been reconciled. Creation is not sale or publication.",
+      "access": "retrieved"
     }
   ],
   "claims": [
@@ -1385,6 +1415,29 @@
       "date": "2019-06-04",
       "datePrecision": "day",
       "assessment": "reported"
+    },
+    {
+      "id": "DM6",
+      "personId": "014",
+      "statement": "US Copyright registration TX0001290183 names Macomber as Starlight author and claimant, records creation in 1983, claimed first publication on 1 November 1983 and registration on 21 February 1984; it does not date acceptance.",
+      "sourceIds": [
+        "R50"
+      ],
+      "date": "1983-11-01",
+      "datePrecision": "day",
+      "assessment": "recorded"
+    },
+    {
+      "id": "DM7",
+      "personId": "014",
+      "statement": "US Copyright registration TX0001407036 names Macomber as Heartsong author and claimant, records creation in 1982, claimed first publication on 1 February 1984 and registration on 22 June 1984. R09 lists 28 February 1984 instead; the day discrepancy is unresolved and neither record dates sale.",
+      "sourceIds": [
+        "R51",
+        "R09"
+      ],
+      "date": "1984-02",
+      "datePrecision": "month",
+      "assessment": "conflicted"
     }
   ],
   "cases": [
@@ -1865,7 +1918,17 @@
             "date": "1983-11-01",
             "datePrecision": "day",
             "claimIds": [
-              "DM1"
+              "DM1",
+              "DM6"
+            ]
+          },
+          {
+            "kind": "novel-publication",
+            "date": "1984-02",
+            "datePrecision": "month",
+            "claimIds": [
+              "DM1",
+              "DM7"
             ]
           }
         ]
@@ -1939,10 +2002,21 @@
           "id": "DM-sale-release",
           "claimIds": [
             "DM1",
-            "DM2"
+            "DM2",
+            "DM6",
+            "DM7"
           ],
           "status": "unresolved",
-          "note": "Bibliography places Heartsong in 1984, testimony calls it published in 1982. Unread Hallmark acquisition lead may explain the wording but does not resolve it."
+          "note": "The 2008 testimony calls Heartsong published in 1982, while the author chronology and US Copyright registration place first publication in 1984. The registration records creation in 1982, which does not establish sale or publication; original acquisition evidence is still missing."
+        },
+        {
+          "id": "DM-Heartsong-publication-day",
+          "claimIds": [
+            "DM1",
+            "DM7"
+          ],
+          "status": "unresolved",
+          "note": "The author chronology lists 28 February 1984; the US Copyright registration claims first publication on 1 February 1984. Edition or dating convention is not reconciled; both place publication in February 1984."
         }
       ],
       "searches": [
@@ -1963,11 +2037,17 @@
           "language": "en",
           "searchedOn": "2026-10-14",
           "result": "No result returned; primary birth evidence not located."
+        },
+        {
+          "query": "US Copyright registration TX0001290183 TX0001407036 Debbie Macomber",
+          "language": "en",
+          "searchedOn": "2026-10-16",
+          "result": "R50/R51 original registrations record creation, claimed first-publication and registration dates; no magazine acceptance or novel-sale date."
         }
       ],
       "nextChecks": [
         "Locate Woman’s Day issue/byline and earliest paid acceptance, including other magazine sales.",
-        "Find original publisher acquisition/contract evidence; keep acceptance separate from release.",
+        "Find original publisher acquisition/contract evidence; keep creation, acceptance and publication separate, and reconcile the Heartsong February 1984 day discrepancy.",
         "Review age and all pre-26 domains before any core eligibility decision."
       ],
       "review": {
