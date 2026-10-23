@@ -39,7 +39,7 @@
       "workerd"
     ],
     "overrides": {
-      "fast-uri": "^3.1.6",
+      "fast-uri": "3.1.8",
       "http-cache-semantics": "4.3.0",
       "nanoid@<4": "^3.3.18",
       "js-yaml@>=4": "^4.3.1",
@@ -48,10 +48,13 @@
       "astro>sharp": "0.35.5",
       "astro>devalue": "5.9.3",
       "miniflare>undici": "7.29.1",
-      "source-map-js": "1.2.2"
+      "source-map-js": "1.2.2",
+      "vite@>=8.0.0 <8.3.5": "8.3.5",
+      "smol-toml": "1.9.0"
     },
     "patchedDependencies": {
-      "http-cache-semantics@4.3.0": "patches/http-cache-semantics@4.3.0.patch"
+      "http-cache-semantics@4.3.0": "patches/http-cache-semantics@4.3.0.patch",
+      "@saas-maker/templates@0.1.17": "patches/saas-maker-templates-footer-retry-0.1.17.patch"
     }
   },
   "dependencies": {
@@ -60,7 +63,7 @@
     "@saas-maker/templates": "github:sass-maker/ui-library#v0.1.17&path:/packages/templates",
     "@saas-maker/ui": "github:sass-maker/ui-library#v0.1.17&path:/packages/ui",
     "@tailwindcss/vite": "4.3.3",
-    "astro": "^7.3.1",
+    "astro": "^7.4.2",
     "echarts": "^6.1.0",
     "react": "19.3.0",
     "react-dom": "19.3.0",
