@@ -9,7 +9,7 @@ function setup({ tracker = true, detailsCount = 6 } = {}) {
   const listeners = new Map();
   const details = Array.from({ length: detailsCount }, () => ({
     open: false,
-    addEventListener(name, callback) { listeners.set(this, callback); },
+    addEventListener(_name, callback) { listeners.set(this, callback); },
   }));
   const section = { querySelectorAll: () => details };
   let ready;

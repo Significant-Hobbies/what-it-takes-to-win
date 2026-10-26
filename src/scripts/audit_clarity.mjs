@@ -218,6 +218,14 @@ const contracts = [
     ],
   },
   {
+    name: "Comprehension exposure events",
+    file: "insights/index.html",
+    markers: [
+      'data-clarity-contract="comprehension-check"',
+      'src="/comprehension-events.js"',
+    ],
+  },
+  {
     name: "Methodological boundary",
     file: "methodology/index.html",
     markers: [
