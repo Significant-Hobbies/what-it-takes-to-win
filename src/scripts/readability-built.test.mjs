@@ -77,3 +77,15 @@ test('full export bounded, private and research paths absent, training policy co
   for (const bot of ['GPTBot','ClaudeBot','Google-Extended','Applebot-Extended','CCBot','Bytespider']) assert.ok(robots.includes(`User-agent: ${bot}\nAllow: /\n`));
   console.log(JSON.stringify({ fullCharacters: body.length, routes: routes.length }));
 });
+
+
+test('authored worksheet and interpretation constraints survive full source rendering', async () => {
+  const roi = await readFile(join(dist, 'roi.md'), 'utf8');
+  for (const phrase of ['## Formulas', 'Expected gross value', 'Foundation work is real work', 'sends no entered data', 'calls no AI model']) assert.ok(roi.includes(phrase), phrase);
+  for (const name of ['llms.txt', 'llms-full.txt']) {
+    const guide = await (await handleReadability(new Request(identity.url + '/' + name), assets)).text();
+    for (const phrase of ['cannot estimate causal effects', "individual's probability of success", '/person/{id}.md', '/am-i-the-next/{id}.md']) assert.ok(guide.includes(phrase), `${name}: ${phrase}`);
+  }
+  const robots = await readFile(join(dist, 'robots.txt'), 'utf8');
+  assert.ok(!robots.includes('Disallow: /first-proof/research'));
+});

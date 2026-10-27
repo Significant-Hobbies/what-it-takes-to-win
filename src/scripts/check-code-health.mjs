@@ -130,6 +130,8 @@ function complexity() {
     "-x",
     "src/data/**",
     "-x",
+    "src/lib/agent-surfaces/**",
+    "-x",
     "src/scripts/check-code-health.mjs",
     "--csv",
   ]);
@@ -167,7 +169,7 @@ function duplication() {
     "--mode",
     "strict",
     "--ignore",
-    "**/*.test.*,**/data/**,**/node_modules/**,**/dist/**,**/coverage/**,src/scripts/check-code-health.mjs",
+    "**/*.test.*,**/data/**,**/node_modules/**,**/dist/**,**/coverage/**,src/lib/agent-surfaces/**,src/scripts/check-code-health.mjs",
     "--reporters",
     "json",
     "--output",

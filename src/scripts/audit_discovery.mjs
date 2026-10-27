@@ -45,7 +45,8 @@ const coreSurfaceCount = 11;
 const essayPages = (await readdir(path.join(dist, "essays"), { withFileTypes: true })).filter((entry) => entry.isDirectory()).length;
 const essayCount = 1 + essayPages; // essays index + one page per essay
 const luckCount = 1 + luckCases.length; // luck index + one page per case study
-const expectedSitemapCount = coreSurfaceCount + essayCount + luckCount + turningPoints.length + people.length + indexableComparisons.length + publishedFirstProofRecords.length;
+// Changelog is public but is not one of the legacy API catalog core surfaces.
+const expectedSitemapCount = coreSurfaceCount + 1 + essayCount + luckCount + turningPoints.length + people.length + indexableComparisons.length + publishedFirstProofRecords.length;
 if (
   sitemap.startsWith('<?xml version="1.0" encoding="UTF-8"?>')
   && sitemapUrls.length === expectedSitemapCount
@@ -101,6 +102,8 @@ const llms = await read("llms.txt");
 if (
   llms.startsWith("# Paths")
   && llms.includes(`${origin}/roi.md`)
+  && llms.includes("cannot estimate causal effects")
+  && llms.includes(`${origin}/person/{id}.md`)
   && !llms.includes("<!doctype")
 ) {
   passes.push("llms.txt");
@@ -123,6 +126,8 @@ const llmsFull = await read("llms-full.txt");
 if (
   llmsFull.startsWith("# Paths — full agent index")
   && llmsFull.includes("## Agent-readable collections")
+  && llmsFull.includes("Included ")
+  && llmsFull.includes("cannot estimate causal effects")
   && !llmsFull.includes("<!doctype")
 ) {
   passes.push("llms-full.txt");

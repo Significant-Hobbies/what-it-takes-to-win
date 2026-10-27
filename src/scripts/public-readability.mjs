@@ -10,7 +10,13 @@ import { createSourceRenderer } from './readability-source.mjs';
 import { templateMarkdown } from './template-markdown.mjs';
 
 /** Explicit public registry: source templates/data, never rendered HTML or user state. */
-export async function generatePublicReadability({ root, dist, paths, people, turningPoints, publishedFirstProofRecords }) {
+export async function generatePublicReadability(options) {
+  const { root, dist, paths, people, turningPoints, publishedFirstProofRecords } = options;
+  // These authored supplements describe client-side math and evidence limits
+  // that page templates alone cannot express. Preserve them before overwriting mirrors.
+  const roiGuide = await readFile(join(dist, 'roi.md'), 'utf8');
+  const indexGuide = await readFile(join(dist, 'llms.txt'), 'utf8');
+  const fullGuide = await readFile(join(dist, 'llms-full.txt'), 'utf8');
   const renderer = await createSourceRenderer(root, identity.url);
   const pages = {};
   const routes = [];
@@ -38,6 +44,7 @@ export async function generatePublicReadability({ root, dist, paths, people, tur
       const description = result.description || defaultDescription;
       let body = result.body;
       if (path === '/explore/') body += initialAtlas(people);
+      if (path === '/roi/') body += '\n\n' + roiGuide.slice(roiGuide.indexOf('## What the worksheet'));
       body = `# ${title}\n\n> ${description}\n\nCanonical: ${canonical}\n\n${body}`;
       pages[path] = absoluteMarkdownLinks(body, canonical, { htmlPathsByMarkdown: aliases });
       const md = new URL(markdownPathFor(path), identity.url).href;
@@ -46,11 +53,11 @@ export async function generatePublicReadability({ root, dist, paths, people, tur
       if (routes.length % 500 === 0) console.log(`Public Markdown: ${routes.length}/${paths.length}`);
     }
   } finally { await renderer.close(); }
-  const manifest = createAgentSurfaceManifest({ ...identity, pages: {} });
+  const manifest = createAgentSurfaceManifest({ ...identity, notes: [indexGuide], pages: {} });
   await emit('/api/md/_catalog', JSON.stringify(routes));
-  await emit('/api/md/_identity', JSON.stringify(identity));
+  await emit('/api/md/_identity', JSON.stringify({ ...identity, notes: [indexGuide] }));
   await emit('/llms.txt', buildMarkdownIndex(manifest, routes));
-  await emit('/llms-full.txt', await buildFullMarkdown(manifest, routes, (path) => pages[path]));
+  await emit('/llms-full.txt', fullGuide + '\n\n' + await buildFullMarkdown(manifest, routes, (path) => pages[path], { maxChars: 500000 - fullGuide.length - 2 }));
   await emit('/ai.txt', buildAiTxt(manifest, routes));
   await emit('/robots.txt', robots());
   const xml = (text) => text.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('"', '&quot;');

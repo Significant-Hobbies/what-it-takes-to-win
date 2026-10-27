@@ -3,13 +3,26 @@
   "entry": [
     "astro.config.mjs",
     "src/pages/**/*.{astro,md}",
-    "src/scripts/**/*.{js,mjs}"
+    "src/scripts/**/*.{js,mjs}",
+    "functions/**/*.ts"
   ],
-  "project": ["src/**/*.{ts,js,mjs,astro}"],
+  "project": [
+    "src/**/*.{ts,js,mjs,astro}",
+    "functions/**/*.ts"
+  ],
   "ignore": [
     "src/layouts/Essay.astro",
     "src/data/luck-cases.d.ts",
     "src/data/first-proof.d.ts"
   ],
-  "ignoreDependencies": ["@astrojs/check", "@biomejs/biome", "jscpd"]
+  "ignoreDependencies": [
+    "@astrojs/check",
+    "@biomejs/biome",
+    "jscpd"
+  ],
+  "ignoreIssues": {
+    "src/lib/agent-surfaces/**": [
+      "exports"
+    ]
+  }
 }
