@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+import { markdownPathFor } from '../lib/agent-surfaces/http.mjs';
+import { identity } from "../lib/readability.mjs";
 import "../styles/exhibit-finish.css";
 import "../styles/field-atlas.css";
 import Clarity from "../components/Clarity.astro";
@@ -7,7 +9,7 @@ import SiteHeader from "../components/SiteHeader.astro";
 import StudioFooter from "../components/StudioFooter.astro";
 import peopleData from "../data/people.json";
 const {
-  title = "Paths",
+  title = identity.name,
   description = `Look sideways for information, never for a verdict. ${peopleData.length.toLocaleString()} documented paths showing what people brought, were handed, and were surrounded by, with perseverance and luck held apart.`,
   robots = "index,follow",
   canonicalPath,
@@ -17,7 +19,7 @@ const {
   quietShell = false,
 } = Astro.props;
 // Older route titles remain valid inputs while the shared shell owns the current brand.
-const pageTitle = title.replaceAll("Look Sideways", "Paths");
+const pageTitle = title.replaceAll("Look Sideways", identity.name);
 const canonicalUrl = Astro.site
   ? new URL(canonicalPath ?? Astro.url.pathname, Astro.site).toString()
   : null;
@@ -42,11 +44,13 @@ const isActive = (link: (typeof navLinks)[number]) =>
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     <meta name="robots" content={robots} />
+    {!robots.includes("noindex") && <meta name="ai-summary" content={description} />}
+    {!robots.includes("noindex") && canonicalUrl && <link rel="alternate" type="text/markdown" href={identity.url + markdownPathFor(new URL(canonicalUrl).pathname)} />}
     <meta name="theme-color" content="#eef0e7" />
     <meta name="color-scheme" content="light" />
     {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Paths" />
+    <meta property="og:site_name" content={identity.name} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
