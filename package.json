@@ -29,9 +29,11 @@
     "quality:dependencies": "node src/scripts/check-code-health.mjs dependencies",
     "quality:suppressions": "node src/scripts/check-code-health.mjs suppressions",
     "quality:hygiene": "node src/scripts/check-code-health.mjs hygiene",
-    "quality": "pnpm run format:check && pnpm run lint && pnpm run check && pnpm run test:coverage && pnpm run build && pnpm run audit:discovery && pnpm run audit:clarity && pnpm run audit:tiers && pnpm run audit:reliability && pnpm run audit:stats && pnpm run quality:unused && pnpm run quality:complexity && pnpm run quality:duplication && pnpm run quality:cycles && pnpm run quality:dependencies && pnpm run quality:suppressions && pnpm run quality:hygiene",
+    "quality": "pnpm run format:check && pnpm run lint && pnpm run check && pnpm run test:coverage && pnpm run build && pnpm run test:readability && pnpm run audit:discovery && pnpm run audit:clarity && pnpm run audit:tiers && pnpm run audit:reliability && pnpm run audit:stats && pnpm run quality:unused && pnpm run quality:complexity && pnpm run quality:duplication && pnpm run quality:cycles && pnpm run quality:dependencies && pnpm run quality:suppressions && pnpm run quality:hygiene",
     "ready": "pnpm run quality",
-    "deploy": "pnpm run ready && wrangler pages deploy dist --project-name success-by-26 --branch main"
+    "deploy": "pnpm run ready && wrangler pages deploy dist --project-name success-by-26 --branch main",
+    "test:readability": "node --test test/readability-source.test.mjs src/scripts/readability-built.test.mjs",
+    "test:readability-runtime": "node --test src/scripts/readability-runtime.test.mjs"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

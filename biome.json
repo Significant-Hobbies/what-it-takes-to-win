@@ -54,7 +54,8 @@
       "!!quality/source-audit",
       "!!**/pnpm-lock.yaml",
       "!!**/data/people.json",
-      "!!**/data/people.csv"
+      "!!**/data/people.csv",
+      "!!src/lib/agent-surfaces"
     ]
   },
   "linter": {

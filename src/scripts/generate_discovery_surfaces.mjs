@@ -1,9 +1,10 @@
+import { generatePublicReadability } from './public-readability.mjs';
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { root, dist, origin, people, comparisonIsIndexable } from "../lib/discovery.mjs";
 import { luckCases, LUCK_FORM_LABELS } from "../data/luck-cases.mjs";
 import { turningPoints } from "../data/turning-points.mjs";
-import { firstProofRecords, publishedFirstProofRecords, recordSources, summarizeFirstProof, INTAKE_LABELS } from "../data/first-proof.mjs";
+import { publishedFirstProofRecords, recordSources, summarizeFirstProof } from "../data/first-proof.mjs";
 
 const candidateCoverage = JSON.parse(
   await readFile(path.join(root, "src", "data", "candidate-coverage.json"), "utf8"),
@@ -404,6 +405,7 @@ const essays = (
 );
 const canonicalRoutes = [
   ...coreSurfaces.map((surface) => surface.htmlPath),
+  "/changelog/",
   "/essays/",
   ...essays.map((essay) => essay.htmlPath),
   "/luck/",
@@ -653,27 +655,7 @@ await emit("first-proof.md", [
   `[Inspect the uncleared research register](${absolute("/first-proof/research/")})`, "",
   `[Read the collection and nominate a person](${absolute("/first-proof/")})`, "",
 ].join("\n"));
-await emit("first-proof/research.md", [
-  "# First proof research register — Paths", "",
-  "Uncleared screening records. Priority labels indicate research order, not eligibility. Missing earlier history means unknown.", "",
-  ...firstProofRecords.map((record) => `- [${record.name}](${absolute(`/first-proof/research/${record.id}.md`)}): ${INTAKE_LABELS[record.intakeStatus]}. ${record.unresolvedIssue}`), "",
-  `[Read the HTML register](${absolute("/first-proof/research/")})`, "",
-].join("\n"));
-for (const record of firstProofRecords) {
-  const lines = [
-    `# ${record.name} — ${INTAKE_LABELS[record.intakeStatus]}`, "",
-    "Uncleared screening record. Not certified as first all-domain excellence.", "",
-    `Located milestone age: ${record.milestoneAge}. Domain: ${record.domain}.`, "",
-    record.locatedProof, "", "## Earlier background", "", record.background, "",
-    "## Unresolved audit question", "", record.unresolvedIssue, "",
-    `Research depth: ${record.researchDepth}. No full cross-domain audit established.`, "",
-    "## Source associations", "",
-    ...recordSources(record).map((source) => `- [${source.id} · ${source.domain}](${markdownLink(source.url)})`), "",
-    `Intake provenance: ${record.provenance.sheet}, row ${record.provenance.row}, stable ID ${record.id}.`, "",
-    `[Read the research note](${absolute(`/first-proof/research/${record.id}/`)})`, "",
-  ];
-  await emit(path.join("first-proof", "research", `${record.id}.md`), lines.join("\n"));
-}
+// Research-only noindex pages have no Markdown mirrors.
 for (const record of publishedFirstProofRecords) {
   await emit(path.join("first-proof", `${record.id}.md`), [
     `# ${record.name} — Before the First Proof`, "", record.review.milestone.result, "",
@@ -831,3 +813,5 @@ await emit(
 console.log(
   `Generated discovery surfaces: ${canonicalRoutes.length} canonical URLs, ${people.length + indexableComparisons.length + coreSurfaces.length + essays.length} Markdown mirrors, ${indexableComparisons.length} indexable comparisons`,
 );
+
+await generatePublicReadability({ root, dist, paths: canonicalRoutes, people, turningPoints, publishedFirstProofRecords });

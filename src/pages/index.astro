@@ -7,11 +7,12 @@ import { footerContent } from "../lib/footer";
 import home from "../content/home.json";
 import Clarity from "../components/Clarity.astro";
 import people from "../data/people.json";
+import { identity } from "../lib/readability.mjs";
 
 const structuredData = {
   "@context": "https://schema.org", "@graph": [
-  {"@type":"WebSite", "@id":"https://paths.significanthobbies.com/#website", name:"Paths", url:"https://paths.significanthobbies.com/"},
-  {"@type":"WebApplication", "@id":"https://paths.significanthobbies.com/#app", name:"Paths", alternateName:["paths.significanthobbies.com","Look Sideways"], url:"https://paths.significanthobbies.com/", applicationCategory:"EducationalApplication", isAccessibleForFree:true, publisher:{"@type":"Organization","@id":"https://significanthobbies.com/#org","name":"Significant Hobbies","url":"https://significanthobbies.com"}},
+  {"@type":"WebSite", "@id":"https://paths.significanthobbies.com/#website", name:identity.name, url:"https://paths.significanthobbies.com/"},
+  {"@type":"WebApplication", "@id":"https://paths.significanthobbies.com/#app", name:identity.name, alternateName:["paths.significanthobbies.com","Look Sideways"], url:"https://paths.significanthobbies.com/", applicationCategory:"EducationalApplication", isAccessibleForFree:true, publisher:{"@type":"Organization","@id":"https://significanthobbies.com/#org","name":"Significant Hobbies","url":"https://significanthobbies.com"}},
   {"@type":"Dataset", "@id":"https://paths.significanthobbies.com/#dataset", name:"Paths documented lives", description:`${people.length.toLocaleString()} documented paths with explicit source and interpretation boundaries.`, url:"https://paths.significanthobbies.com/explore/"},
   {"@type": "Article",
   headline: "Same age. Different starting lines.",
@@ -39,7 +40,8 @@ if (content.footer) content.footer = footerContent;
     <link rel="preload" as="image" href={content.hero.image} fetchpriority="high" />
     <meta name="theme-color" content="#eef0e7" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="alternate" type="text/markdown" href="/index.md" />
+    <link rel="alternate" type="text/markdown" href={identity.url + "/index.md"} />
+    <meta name="ai-summary" content={content.page.description} />
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <script is:inline async src="/scripts/posthog.js"></script>
 
