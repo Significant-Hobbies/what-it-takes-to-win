@@ -14,8 +14,9 @@ export const identity = {
 export const preservedMarkdownPaths = ['/assets/story/README.md', '/fonts/fleet-footer-precise-v1/README.md'];
 export const handleReadability = createStaticAssetHandler({ origin: identity.url, preserveMarkdownPaths: preservedMarkdownPaths, prebuiltFullPath: '/llms-full.txt' });
 export function robots() {
+  const trainingBots = new Set(['GPTBot', 'ClaudeBot', 'Google-Extended', 'Applebot-Extended', 'CCBot', 'Bytespider']);
   const bots = ['*', 'GPTBot', 'ClaudeBot', 'Google-Extended', 'Applebot-Extended', 'CCBot', 'Bytespider', 'OAI-SearchBot', 'ChatGPT-User', 'Claude-SearchBot', 'Claude-User', 'PerplexityBot', 'Perplexity-User'];
-  return bots.map((bot) => `User-agent: ${bot}\nAllow: /\n${identity.excludedPaths.filter((path) => path !== '/first-proof/research').map((path) => `Disallow: ${path}`).join('\n')}\nAllow: /api/ai$\nAllow: /api/md$\nAllow: /api/md/`).join('\n\n') + `\n\nSitemap: ${identity.sitemap}\n# Keep in sync with ai.txt and llms.txt.\n`;
+  return bots.map((bot) => `User-agent: ${bot}\nAllow: /\n${identity.excludedPaths.filter((path) => path !== '/first-proof/research' || trainingBots.has(bot)).map((path) => `Disallow: ${path}`).join('\n')}\nAllow: /api/ai$\nAllow: /api/md$\nAllow: /api/md/`).join('\n\n') + `\n\nSitemap: ${identity.sitemap}\n# Keep in sync with ai.txt and llms.txt.\n`;
 }
 const catalogs = new WeakMap();
 export async function advertisePublic(request, response, assets) {

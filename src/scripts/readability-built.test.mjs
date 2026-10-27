@@ -87,5 +87,8 @@ test('authored worksheet and interpretation constraints survive full source rend
     for (const phrase of ['cannot estimate causal effects', "individual's probability of success", '/person/{id}.md', '/am-i-the-next/{id}.md']) assert.ok(guide.includes(phrase), `${name}: ${phrase}`);
   }
   const robots = await readFile(join(dist, 'robots.txt'), 'utf8');
-  assert.ok(!robots.includes('Disallow: /first-proof/research'));
+  for (const group of robots.split('\n\n').filter((value) => value.startsWith('User-agent:'))) {
+    const training = /^User-agent: (GPTBot|ClaudeBot|Google-Extended|Applebot-Extended|CCBot|Bytespider)\n/.test(group);
+    assert.equal(group.includes('Disallow: /first-proof/research'), training);
+  }
 });

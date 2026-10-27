@@ -15,6 +15,8 @@ export async function generatePublicReadability(options) {
   // These authored supplements describe client-side math and evidence limits
   // that page templates alone cannot express. Preserve them before overwriting mirrors.
   const roiGuide = await readFile(join(dist, 'roi.md'), 'utf8');
+  const roiStart = roiGuide.indexOf('## What the worksheet');
+  if (roiStart < 0) throw new Error('Authored ROI worksheet guidance is missing');
   const indexGuide = await readFile(join(dist, 'llms.txt'), 'utf8');
   const fullGuide = await readFile(join(dist, 'llms-full.txt'), 'utf8');
   const renderer = await createSourceRenderer(root, identity.url);
@@ -44,7 +46,7 @@ export async function generatePublicReadability(options) {
       const description = result.description || defaultDescription;
       let body = result.body;
       if (path === '/explore/') body += initialAtlas(people);
-      if (path === '/roi/') body += '\n\n' + roiGuide.slice(roiGuide.indexOf('## What the worksheet'));
+      if (path === '/roi/') body += '\n\n' + roiGuide.slice(roiStart);
       body = `# ${title}\n\n> ${description}\n\nCanonical: ${canonical}\n\n${body}`;
       pages[path] = absoluteMarkdownLinks(body, canonical, { htmlPathsByMarkdown: aliases });
       const md = new URL(markdownPathFor(path), identity.url).href;
