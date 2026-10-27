@@ -2,7 +2,11 @@
   {
     "signal_id": "sail-2026-funding-neil-movva",
     "person_name": "Neil Movva",
-    "aliases": ["Neil Movva", "nmovva", "neilmovva"],
+    "aliases": [
+      "Neil Movva",
+      "nmovva",
+      "neilmovva"
+    ],
     "field": "Founders / operators",
     "event_date": "2026-06-25",
     "birth_year": 1998,
@@ -39,5 +43,251 @@
     ],
     "detected_at": "2026-08-26",
     "research_status": "age_30_eligible"
+  },
+  {
+    "signal_id": "cursor-2024-series-a-michael-truell",
+    "person_name": "Michael Truell",
+    "aliases": [
+      "Michael Truell"
+    ],
+    "field": "Founders / operators",
+    "event_date": "2024-08-22",
+    "birth_year": 2000,
+    "age_basis": "year_only_conservative",
+    "age_at_event": 24,
+    "age_confidence": "high",
+    "age_evidence": "A birth-year reference identifies 2000, cross-checked against dated Forbes age reporting; no exact birthday is asserted.",
+    "event_type": "company_funding_and_valuation",
+    "event_summary": "Was a Cursor co-founder when the company announced a $60 million Series A on August 22, 2024, at a conservative year-only age of 24. This is company financing, not a personal payout.",
+    "outcome_strength": 80,
+    "metrics": {
+      "capital_raised_usd": 60000000,
+      "valuation_usd": 400000000
+    },
+    "calibration_gate": "founder_outcome_review",
+    "sources": [
+      {
+        "url": "https://cursor.com/blog/series-a",
+        "origin": "cursor.com",
+        "evidence_origin": "cursor-2024-series-a-announcement",
+        "role": "first_party_event"
+      },
+      {
+        "url": "https://www.forbes.com/sites/rashishrivastava/2024/08/22/engineers-at-openai-and-midjourney-are-using-this-400-million-startups-ai-coding-software/",
+        "origin": "forbes.com",
+        "evidence_origin": "forbes-2024-original-reporting",
+        "role": "independent_event"
+      },
+      {
+        "url": "https://www.forbes.com/sites/alexyork/2025/11/30/these-30-under-30-alums-are-now-billionaires-how-they-built-their-fortunes/",
+        "origin": "forbes.com",
+        "evidence_origin": "forbes-2025-age-reporting",
+        "role": "independent_age_and_event"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Michael_Truell",
+        "origin": "en.wikipedia.org",
+        "evidence_origin": "michael-truell-birth-year-reference",
+        "role": "biographical_background"
+      }
+    ],
+    "detected_at": "2026-10-27",
+    "research_status": "age_30_eligible"
+  },
+  {
+    "signal_id": "cursor-2024-series-a-aman-sanger",
+    "person_name": "Aman Sanger",
+    "aliases": [
+      "Aman Sanger"
+    ],
+    "field": "Founders / operators",
+    "event_date": "2024-08-22",
+    "birth_year": 2000,
+    "age_basis": "year_only_conservative",
+    "age_at_event": 24,
+    "age_confidence": "high",
+    "age_evidence": "A birth-year reference identifies 2000, cross-checked against dated Forbes age reporting; no exact birthday is asserted.",
+    "event_type": "company_funding_and_valuation",
+    "event_summary": "Was a Cursor co-founder when the company announced a $60 million Series A on August 22, 2024, at a conservative year-only age of 24. This is company financing, not a personal payout.",
+    "outcome_strength": 80,
+    "metrics": {
+      "capital_raised_usd": 60000000,
+      "valuation_usd": 400000000
+    },
+    "calibration_gate": "founder_outcome_review",
+    "sources": [
+      {
+        "url": "https://cursor.com/blog/series-a",
+        "origin": "cursor.com",
+        "evidence_origin": "cursor-2024-series-a-announcement",
+        "role": "first_party_event"
+      },
+      {
+        "url": "https://www.forbes.com/sites/rashishrivastava/2024/08/22/engineers-at-openai-and-midjourney-are-using-this-400-million-startups-ai-coding-software/",
+        "origin": "forbes.com",
+        "evidence_origin": "forbes-2024-original-reporting",
+        "role": "independent_event"
+      },
+      {
+        "url": "https://www.forbes.com/sites/alexyork/2025/11/30/these-30-under-30-alums-are-now-billionaires-how-they-built-their-fortunes/",
+        "origin": "forbes.com",
+        "evidence_origin": "forbes-2025-age-reporting",
+        "role": "independent_age_and_event"
+      },
+      {
+        "url": "https://www.goodreturns.in/aman-sanger-net-worth-and-biography-blnr5324.html",
+        "origin": "www.goodreturns.in",
+        "evidence_origin": "aman-sanger-birth-year-reference",
+        "role": "biographical_background"
+      }
+    ],
+    "detected_at": "2026-10-27",
+    "research_status": "age_30_eligible"
+  },
+  {
+    "signal_id": "ai-windfalls-scott-wu",
+    "person_name": "Scott Wu",
+    "aliases": [
+      "Scott Wu"
+    ],
+    "field": "Founders / operators",
+    "event_date": "2025-09-08",
+    "birth_year": null,
+    "age_basis": "not_established",
+    "age_at_event": null,
+    "age_confidence": "low",
+    "event_type": "company_funding_and_valuation",
+    "event_summary": "Cognition announced more than $400 million of financing at a $10.2 billion post-money valuation; this is a company event, not a personal payout.",
+    "outcome_strength": 80,
+    "metrics": {
+      "capital_raised_usd": 400000000,
+      "valuation_usd": 10200000000
+    },
+    "sources": [
+      {
+        "url": "https://cognition.com/blog/funding-growth-and-the-next-frontier-of-ai-coding-agents",
+        "origin": "cognition.com",
+        "evidence_origin": "scott-wu-company-event",
+        "role": "first_party_event"
+      },
+      {
+        "url": "https://www.davidsenra.com/episode/scott-wu",
+        "origin": "www.davidsenra.com",
+        "evidence_origin": "scott-wu-background",
+        "role": "biographical_background"
+      }
+    ],
+    "detected_at": "2026-10-27",
+    "research_status": "unverified_candidate",
+    "research_notes": "Birth year conflict: the first-person interview summary says 1997, while the reviewed Wikipedia infobox says 1996 and its body says 1997. Resolve before assigning a high-confidence admission age.",
+    "follow_up_issue": "https://github.com/Significant-Hobbies/what-it-takes-to-win/issues/101"
+  },
+  {
+    "signal_id": "ai-windfalls-walden-yan",
+    "person_name": "Walden Yan",
+    "aliases": [
+      "Walden Yan"
+    ],
+    "field": "Founders / operators",
+    "event_date": "2025-09-08",
+    "birth_year": null,
+    "age_basis": "not_established",
+    "age_at_event": null,
+    "age_confidence": "low",
+    "event_type": "company_funding_and_valuation",
+    "event_summary": "Cognition announced more than $400 million of financing at a $10.2 billion post-money valuation; this is a company event, not a personal payout.",
+    "outcome_strength": 80,
+    "metrics": {
+      "capital_raised_usd": 400000000,
+      "valuation_usd": 10200000000
+    },
+    "sources": [
+      {
+        "url": "https://cognition.com/blog/funding-growth-and-the-next-frontier-of-ai-coding-agents",
+        "origin": "cognition.com",
+        "evidence_origin": "walden-yan-company-event",
+        "role": "first_party_event"
+      },
+      {
+        "url": "https://www.linkedin.com/in/waldenyan",
+        "origin": "www.linkedin.com",
+        "evidence_origin": "walden-yan-background",
+        "role": "biographical_background"
+      }
+    ],
+    "detected_at": "2026-10-27",
+    "research_status": "unverified_candidate",
+    "research_notes": "Reviewed education and career dates do not establish a reliable birth year. Do not infer age from Harvard attendance or a fellowship.",
+    "follow_up_issue": "https://github.com/Significant-Hobbies/what-it-takes-to-win/issues/101"
+  },
+  {
+    "signal_id": "ai-windfalls-russell-kaplan",
+    "person_name": "Russell Kaplan",
+    "aliases": [
+      "Russell Kaplan"
+    ],
+    "field": "Founders / operators",
+    "event_date": "2025-09-08",
+    "birth_year": null,
+    "age_basis": "not_established",
+    "age_at_event": null,
+    "age_confidence": "low",
+    "event_type": "company_funding_and_valuation",
+    "event_summary": "Cognition announced more than $400 million of financing at a $10.2 billion post-money valuation; this is a company event, not a personal payout.",
+    "outcome_strength": 80,
+    "metrics": {
+      "capital_raised_usd": 400000000,
+      "valuation_usd": 10200000000
+    },
+    "sources": [
+      {
+        "url": "https://cognition.com/blog/funding-growth-and-the-next-frontier-of-ai-coding-agents",
+        "origin": "cognition.com",
+        "evidence_origin": "russell-kaplan-company-event",
+        "role": "first_party_event"
+      },
+      {
+        "url": "https://milkeninstitute.org/events/asia-summit-2026/speakers/russell-kaplan",
+        "origin": "milkeninstitute.org",
+        "evidence_origin": "russell-kaplan-background",
+        "role": "biographical_background"
+      }
+    ],
+    "detected_at": "2026-10-27",
+    "research_status": "unverified_candidate",
+    "research_notes": "The speaker biography establishes his Cognition role and Helia/Scale history, but not a birth year or an age-qualified financing event.",
+    "follow_up_issue": "https://github.com/Significant-Hobbies/what-it-takes-to-win/issues/101"
+  },
+  {
+    "signal_id": "ai-windfalls-alexander-embiricos",
+    "person_name": "Alexander Embiricos",
+    "aliases": [
+      "Alexander Embiricos",
+      "Alex Embiricos"
+    ],
+    "field": "Founders / operators",
+    "event_date": "2024-06-24",
+    "birth_year": null,
+    "age_basis": "not_established",
+    "age_at_event": null,
+    "age_confidence": "low",
+    "event_type": "team_acquisition",
+    "event_summary": "Multi announced that its team was joining OpenAI.",
+    "outcome_strength": 80,
+    "metrics": {
+      "transaction_count": 1
+    },
+    "sources": [
+      {
+        "url": "https://multi.app/blog/multi-is-joining-openai",
+        "origin": "multi.app",
+        "evidence_origin": "alexander-embiricos-company-event",
+        "role": "first_party_event"
+      }
+    ],
+    "detected_at": "2026-10-27",
+    "research_status": "unverified_candidate",
+    "research_notes": "The founder announcement establishes Multi joining OpenAI, but gives neither personal proceeds nor a reliable birth year. No acquisition admission rule is registered.",
+    "follow_up_issue": "https://github.com/Significant-Hobbies/what-it-takes-to-win/issues/101"
   }
 ]

@@ -20,6 +20,7 @@ export type LuckCase = {
   theNumbers: string[];
   boundary: string;
   sources: LuckSource[];
+  relatedProfiles?: { id: string; name: string }[];
 };
 
 export declare const LUCK_FORM_LABELS: Record<LuckForm, string>;

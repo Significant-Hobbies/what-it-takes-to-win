@@ -1,3 +1,10 @@
+## Scoped update — 2026-10-27
+
+Checked 21 new URL pairs across the five AI-windfall profiles using the existing
+audit runner. All five have some reachable and some inaccessible sources.
+Other URL results retain their earlier retrieval dates; this was not a full
+corpus refresh. Reachability does not establish claim support.
+
 # Source URL reachability audit — 2026-08-08
 
 ## Result
