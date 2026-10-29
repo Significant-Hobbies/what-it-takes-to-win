@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
+import { parseCsv } from "../src/lib/candidate-coverage.mjs";
 
 const readJson = (path) => JSON.parse(readFileSync(new URL(path, import.meta.url), "utf8"));
 
@@ -20,4 +21,20 @@ test("published audit dates reflect each profile's URL checks, not a later scope
     publicPeople.map(({ person_id, source_audit_date }) => ({ person_id, source_audit_date })),
     people.map(({ person_id, source_audit_date }) => ({ person_id, source_audit_date })),
   );
+});
+
+test("Cursor founders retain the same tier and evidence in both CSV downloads and published JSON", () => {
+  const source = parseCsv(readFileSync(new URL("../src/data/people.csv", import.meta.url), "utf8"));
+  const download = parseCsv(readFileSync(new URL("../public/data/people.csv", import.meta.url), "utf8"));
+  const people = readJson("../public/data/people.json");
+  for (const id of ["michael-truell", "aman-sanger", "sualeh-asif", "arvid-lunnemark"]) {
+    const record = source.find((person) => person.person_id === id);
+    const csv = download.find((person) => person.person_id === id);
+    const json = people.find((person) => person.person_id === id);
+    assert.equal(csv.success_tier, "2", id);
+    assert.equal(csv.success_tier, record.success_tier, id);
+    assert.equal(Number(csv.success_tier), json.success_tier, id);
+    assert.equal(csv.evidence_summary, record.evidence_summary, id);
+    assert.equal(csv.evidence_summary, json.evidence_summary, id);
+  }
 });
