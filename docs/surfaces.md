@@ -20,7 +20,7 @@ Production is at `https://paths.significanthobbies.com`.
 | Route | Job |
 |---|---|
 | `/insights/` | Evidence room: three-factor model, broader success band, luck, divergent paths, progressive research detail |
-| `/luck/` | Field plate of nine sourced ordinary-person luck cases, grouped by form |
+| `/luck/` | Field plate of 14 sourced luck cases, including AI acquisitions and employee equity, grouped by form |
 | `/luck/[id]/` | One case: what they did, what they did not choose, figures, limit, sources |
 | `/overview/` | Deeper research overview with the archive-wide charts |
 | `/explore/` | Atlas with search, cohort, category, outcome-reach, and sort controls |

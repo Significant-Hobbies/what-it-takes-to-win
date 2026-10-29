@@ -366,7 +366,8 @@ try {
       } else {
         person.source_audit_status = "source_verification_failed";
       }
-      person.source_audit_date = auditData.audit_date;
+      const checkedDates = personResults.map((result) => result.checked).filter(Boolean).sort();
+      person.source_audit_date = checkedDates.at(-1) || auditData.audit_date;
       auditCount++;
     }
   }

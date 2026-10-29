@@ -469,24 +469,33 @@ export const luckCases = [
 {
   "id": "cursor-young-founder-equity",
   "relatedProfiles": [{"id":"michael-truell","name":"Michael Truell"},{"id":"aman-sanger","name":"Aman Sanger"},{"id":"sualeh-asif","name":"Sualeh Asif"},{"id":"arvid-lunnemark","name":"Arvid Lunnemark"}],
-  "title": "Young founders. A company valuation.",
-  "subtitle": "Michael Truell, Aman Sanger, Sualeh Asif and Arvid Lunnemark built Cursor. Financing is not a personal cash receipt.",
+  "title": "Young founders. An equity acquisition.",
+  "subtitle": "Michael Truell, Aman Sanger, Sualeh Asif and Arvid Lunnemark built Cursor. An acquisition paid in equity is not a personal cash receipt.",
   "form": "event",
-  "period": "2022–2025",
+  "period": "2022–2026",
   "category": "Founder equity",
-  "figure": "$29.3B",
-  "figureLabel": "company valuation announced in November 2025",
-  "summary": "Cursor's four MIT co-founders started the company in 2022. By November 2025, it announced financing at a $29.3 billion valuation. That is an extraordinary company outcome without being a disclosed personal payout.",
+  "figure": "$60B",
+  "figureLabel": "implied company equity value at the August 2026 acquisition",
+  "summary": "Cursor's four MIT co-founders started the company in 2022. SpaceX acquired it on August 14, 2026, at an implied equity value of $60 billion. Company equity and employee awards do not establish any individual's cash proceeds.",
   "theSetup": "Michael Truell, Aman Sanger, Sualeh Asif and Arvid Lunnemark assembled a technical team and built an AI coding product. The company announced a $60 million Series A in August 2024, followed by much larger funding rounds in 2025.",
-  "theLuck": "Their product met rapid improvements in coding models, developer demand and a market willing to finance AI companies at large valuations. Access to that market matters alongside their execution. A founder's ownership also differs substantially from an employee's grant.",
+  "theLuck": "Their product met rapid improvements in coding models, developer demand and a market willing to finance AI companies at large valuations. Access to that market matters alongside their execution. The acquisition then exchanged ownership for SpaceX equity, with some awards tied to future service. A founder's ownership differs substantially from an employee's grant.",
   "theNumbers": [
     "August 22, 2024: $60 million Series A (Cursor and independent Forbes reporting).",
     "June 6, 2025: $900 million raised at a $9.9 billion company valuation (Cursor).",
     "November 13, 2025: $2.3 billion raised at a $29.3 billion post-money company valuation (Cursor).",
+    "August 14, 2026: acquisition completed at a $60 billion implied equity value. SpaceX reported $42.5 billion of GAAP purchase consideration and $23.4 billion of equity awards attributable to future service, subject to forfeiture; these are different accounting measures, not personal cash payouts.",
     "Forbes described Truell, Sanger and Asif as 25, and Lunnemark as 26, in November 2025. Those are reported ages at that time, not joining ages for employees."
   ],
-  "boundary": "These are dated funding events. They do not disclose cash received by each founder or employee, and the company valuation is not a current personal wealth estimate. Financial security and a changed relationship with work require separate personal evidence. Four selected founders cannot establish how an entire generation feels.",
+  "boundary": "The funding rounds and completed acquisition are dated company events. The acquisition involved SpaceX shares and equity awards, including vesting conditions. The cited sources do not establish each founder's or employee's personal cash proceeds, and company transaction values are not current personal wealth estimates. Financial security and a changed relationship with work require separate personal evidence. Four selected founders cannot establish how an entire generation feels.",
   "sources": [
+    {
+      "label": "Cursor — acquisition completed, August 14, 2026",
+      "url": "https://cursor.com/blog/joining-spacex"
+    },
+    {
+      "label": "SpaceX — October 20, 2026 earnings release, Cursor merger equity and retention terms",
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001181412/31b2b4f8-a7d7-44f3-a94b-9c2cba49b021.html"
+    },
     {
       "label": "Cursor — Series A announcement",
       "url": "https://cursor.com/blog/series-a"

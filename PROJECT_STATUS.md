@@ -155,7 +155,7 @@ and curious readers who want the evidence behind the argument
   - `/` — five-chapter guided argument through survivor selection, three condition factors, perseverance, luck, and release from identity comparison
   - `/overview/` — deeper research overview and charts behind the public model
   - `/insights/` — evidence room with the three-factor model, broader success band, luck, divergent paths, and progressive research detail
-  - `/luck/` — field plate of nine sourced ordinary-person luck cases grouped by structural, encounter, event, and variance forms
+  - `/luck/` — field plate of 14 sourced luck cases, including AI acquisition and employee-equity cases, grouped by structural, encounter, event, and variance forms
   - `/luck/[id]/` — one case: what they did, what they did not choose, figures, limit, sources
   - `/explore/` — filterable/searchable evidence atlas with qualitative outcome-reach filtering (lazy-loads data client-side)
   - `/person/[id]/` — three condition factors, perseverance and luck evidence, trajectory, sources, and progressive 22-field research detail
@@ -174,7 +174,7 @@ and curious readers who want the evidence behind the argument
   two-lane record views, public nomination/correction handoffs, and an explicit
   editorial publication gate. No first-excellence profiles are cleared.
 
-- Luck directory of nine sourced ordinary-person cases grouped by the four
+- Luck directory of 14 sourced cases, including AI acquisitions and employee equity, grouped by the four
   luck forms, linked from chapter 04 of the journey and the footer
 - Publication-grade surface system with neutral structural borders, semantic
   data color, a shared responsive shell, and documented visual QA across all 15
@@ -234,7 +234,7 @@ and curious readers who want the evidence behind the argument
 
 - **Total people:** 3,580 (born 1950+)
 - **Cohort distribution:** Founders / operators 1,392, Athletes 1,079, Creators / artists 811, Researchers / independent engineers 298
-- **Tier distribution:** T1 653, T2 1,254, T3 1,500, T4 173
+- **Tier distribution:** T1 651, T2 1,258, T3 1,498, T4 173
 - **Record provenance:** 0.3.0-trajectory-beta 2,224, 2026-08-19-founder-expansion 837, 0.2.0-subagent-beta 229, 2026-08-08-expansion 183, 0.1.0-beta 104, 2026-10-27-ai-windfalls 2, 2026-08-26-age-outlier-coverage 1
 - **Three-event trajectory coverage:** 92.0% (3,293/3,580)
 - **Two or more listed sources:** 87.7% (3,140/3,580)

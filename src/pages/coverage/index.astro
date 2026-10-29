@@ -355,12 +355,14 @@ const structuredData = {
       <li class={auditComplete ? "coverage-roadmap-done" : undefined}>
         <span>02</span>
         <div><strong>Audit source reachability.</strong><p>
-          Last pass {coverage.auditDate || "2026-08-08"}, covering
+          Latest recorded profile URL check {coverage.auditDate || "2026-08-08"}.
+          Cumulative results cover
           {" "}{coverage.auditedSourceUrls.toLocaleString()} source URLs across
           {" "}{coverage.auditReviewed.count.toLocaleString()} of {coverage.total.toLocaleString()} paths.
           {" "}{coverage.independentlyAudited.count.toLocaleString()} paths have every source reachable.
+          Dates vary by profile; a scoped refresh does not recheck the whole corpus.
           {!auditComplete
-            && ` ${coverage.auditPending.count.toLocaleString()} paths added since that pass are still unaudited, so this gate is not closed.`}
+            && ` ${coverage.auditPending.count.toLocaleString()} paths still have no recorded audit results, so this gate is not closed.`}
         </p></div>
       </li>
       <li>
