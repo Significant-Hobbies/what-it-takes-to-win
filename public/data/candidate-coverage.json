@@ -8,26 +8,26 @@
     "calibration_status": "provisional_research_screen"
   },
   "gate_funnel": {
-    "signals": 1,
-    "discovery_passed": 1,
-    "research_passed": 1,
-    "publication_passed": 1
+    "signals": 7,
+    "discovery_passed": 3,
+    "research_passed": 3,
+    "publication_passed": 3
   },
-  "total_candidates": 10339,
+  "total_candidates": 10343,
   "lifecycle": {
     "discovered": 0,
     "enriched": 0,
-    "queued": 3115,
+    "queued": 3117,
     "researched": 0,
     "eligible": 961,
     "ineligible": 2685,
-    "published": 3578,
+    "published": 3580,
     "stale": 0
   },
   "fields": [
     {
       "label": "Founders / operators",
-      "count": 5182
+      "count": 5186
     },
     {
       "label": "Athletes",
@@ -101,11 +101,11 @@
     },
     {
       "label": "1990s",
-      "count": 735
+      "count": 733
     },
     {
       "label": "2000s",
-      "count": 334
+      "count": 336
     },
     {
       "label": "2010s",
@@ -113,13 +113,13 @@
     },
     {
       "label": "unknown",
-      "count": 4277
+      "count": 4281
     }
   ],
   "geographies": [
     {
       "label": "Unknown",
-      "count": 7426
+      "count": 7430
     },
     {
       "label": "France",
@@ -732,22 +732,30 @@
   ],
   "exact_ages": [
     {
+      "label": "0",
+      "count": 4
+    },
+    {
+      "label": "24",
+      "count": 2
+    },
+    {
       "label": "28",
       "count": 1
     },
     {
       "label": "unknown",
-      "count": 10338
+      "count": 10336
     }
   ],
   "stale_sources": 0,
-  "queued_backlog": 4076,
-  "high_priority_backlog": 0,
+  "queued_backlog": 4078,
+  "high_priority_backlog": 3,
   "sources": [
     {
       "id": "published-corpus",
       "label": "Published Paths corpus",
-      "candidates": 3578,
+      "candidates": 3580,
       "snapshot_date": "2026-08-26",
       "age_days": 0,
       "stale": false

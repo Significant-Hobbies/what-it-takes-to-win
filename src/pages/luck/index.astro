@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import "../../styles/luck.css";
+import people from "../../data/people.json";
 import {
   luckCases,
   LUCK_FORM_LABELS,
@@ -14,13 +15,13 @@ const groups = LUCK_FORM_ORDER.map((form) => ({
   summary: LUCK_FORM_SUMMARIES[form],
   cases: luckCases.filter((item) => item.form === form),
 }));
+const description = `${luckCases.length} sourced cases of luck: place, timing, ownership, AI acquisitions, and employee equity. Company events and personal payouts stay distinct.`;
 
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   name: "Luck directory — Look Sideways",
-  description:
-    "Nine sourced cases of luck that landed on ordinary people: place, timing, a forced door, a visa draw. No formula.",
+  description,
   url: "https://paths.significanthobbies.com/luck/",
   isPartOf: { "@type": "WebSite", name: "Look Sideways", url: "https://paths.significanthobbies.com/" },
 };
@@ -28,18 +29,19 @@ const structuredData = {
 
 <Base
   title="Luck directory — Look Sideways"
-  description="Nine sourced cases of luck that landed on ordinary people: place, timing, a forced door, a visa draw. No formula."
+  description={description}
   canonicalPath="/luck/"
   mainClass="luck-main"
   structuredData={structuredData}
 >
   <section class="hero luck-hero">
     <p class="luck-kicker">Field plate · unscored</p>
-    <h1>Luck that did not require a biography.</h1>
+    <h1>Work meets an opening.</h1>
     <p class="lede">
-      The archive follows 3,578 early breakthroughs. These nine cases sit
-      beside that record: people who held a job, a house, a visa petition, or
-      a patch of farmland when something they did not schedule arrived.
+      The archive follows {people.length.toLocaleString("en-US")} early breakthroughs.
+      These cases follow jobs, homes, visa draws, and companies when an opening
+      arrived. The AI cases distinguish a company valuation, a team joining a lab,
+      and shares employees could actually sell. None establishes a typical outcome.
     </p>
     <p class="luck-edition">{luckCases.length} cases · four forms · sourced figures</p>
   </section>
@@ -47,7 +49,7 @@ const structuredData = {
   <dl class="luck-contract">
     <div>
       <dt>Question</dt>
-      <dd>How does luck land on people who are not famous?</dd>
+      <dd>How can work meet an opening its participants did not control?</dd>
     </div>
     <div>
       <dt>Method</dt>

@@ -465,7 +465,7 @@ await emit(
     `- [Evidence coverage](${absolute("/coverage.md")}): source depth, confidence, composition, and unresolved audit boundaries`,
     `- [Methodology](${absolute("/methodology.md")}): inclusion, scoring, evidence gates, and limitations`,
     `- [Essays](${absolute("/essays/")}): long-form writing on advantage and abstraction`,
-    `- [Luck directory](${absolute("/luck/")}): nine sourced cases of luck that landed on ordinary people — place, timing, a forced door, a visa draw`,
+    `- [Luck directory](${absolute("/luck/")}): ${luckCases.length} sourced cases of place, timing, ownership, AI acquisitions, and employee equity`,
     `- [Before the First Proof](${absolute("/first-proof.md")}): first adult proof, delayed recognition and transferred excellence, with separate uncleared research notes`,
     `- [Explore](${absolute("/explore/")}): ${people.length.toLocaleString("en-US")} person profiles`,
     `- [API catalog](${absolute("/api/ai")}): machine-readable discovery contract`,
@@ -725,7 +725,7 @@ for (const point of turningPoints) {
 const luckIndexMd = [
   "# Luck directory — Paths",
   "",
-  "Nine sourced cases of luck that landed on ordinary people: place, timing, a forced door, a visa draw. Every figure is sourced. None of it is a method.",
+  `${luckCases.length} sourced cases of place, timing, ownership, AI acquisitions, and employee equity. Company events and personal payouts stay distinct. None of it is a method.`,
   "",
   ...luckCases.map(
     (item) => `- [${item.title}](${absolute(`/luck/${item.id}.md`)}): ${item.summary}`,

@@ -63,7 +63,7 @@ const structuredData = {
       <p>{item.theLuck}</p>
     </section>
 
-    <section class="luck-numbers" aria-label="Verified figures">
+    <section class="luck-numbers" aria-label="Sourced figures">
       <h2>Figures</h2>
       <ul>
         {item.theNumbers.map((line) => <li>{line}</li>)}
@@ -83,6 +83,17 @@ const structuredData = {
         ))}
       </ul>
     </section>
+
+    {item.relatedProfiles && (
+      <section class="luck-section">
+        <h2>People in the archive</h2>
+        <ul>
+          {item.relatedProfiles.map((person) => (
+            <li><a href={`/person/${person.id}/`}>{person.name}</a></li>
+          ))}
+        </ul>
+      </section>
+    )}
 
     <nav class="luck-detail-nav" aria-label="More cases">
       {prev ? <a href={`/luck/${prev.id}/`}>{prev.title}</a> : <span class="disabled">Earlier</span>}

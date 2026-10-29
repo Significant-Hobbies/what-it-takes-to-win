@@ -1,6 +1,6 @@
-// Luck directory — ordinary-person cases of luck, not the outliers in the
-// 3,578-path archive. Every figure is sourced. Voice: numbers first, no
-// formula, no causal claim.
+// Luck directory — sourced cases of openings, ownership, and timing.
+// Company events and personal financial outcomes remain distinct.
+// Voice: numbers first, no formula, no causal claim.
 //
 // Each case maps to one of the four luck forms used across the site
 // (structural, encounter, event, variance).
@@ -344,4 +344,178 @@ export const luckCases = [
       },
     ],
   },
+  // AI-era company outcomes and employee liquidity, researched October 2026.
+{
+  "id": "multi-openai-team",
+  "title": "A startup becomes a hiring route",
+  "subtitle": "Alexander Embiricos and the Multi team joined OpenAI. The product closed.",
+  "form": "event",
+  "period": "June–July 2024",
+  "category": "AI talent acquisition",
+  "figure": "1 month",
+  "figureLabel": "between the joining announcement and planned product shutdown",
+  "summary": "On June 24, 2024, Multi announced that it was joining OpenAI and that its collaboration app would close on July 24. The announcement described the move, but disclosed no price or personal payout.",
+  "theSetup": "Alexander Embiricos and his team built Multi, previously Remotion, around collaborative desktop computing. Their own announcement explained the shift toward working with AI and named the date their existing product would stop operating.",
+  "theLuck": "A larger AI company wanted the team while the standalone product was being wound down. That creates a different route from building a lasting independent business. The buyer's priorities and timing matter alongside the team's work.",
+  "theNumbers": [
+    "Announcement: June 24, 2024; planned product shutdown: July 24, 2024 (Multi founder announcement).",
+    "Acquisition price, employee retention terms and each person's proceeds: not disclosed in that announcement."
+  ],
+  "boundary": "This documents a team joining OpenAI, not a verified millionaire outcome. It does not establish a nine-month founding-to-exit timeline, Embiricos's age at the transaction, or how the move changed anyone's relationship with ambition.",
+  "sources": [
+    {
+      "label": "Multi — founder announcement by Alexander Embiricos",
+      "url": "https://multi.app/blog/multi-is-joining-openai"
+    }
+  ]
+},
+{
+  "id": "coefficient-bio-short-exit",
+  "title": "A reported exit before the first anniversary",
+  "subtitle": "Coefficient Bio illustrates the short-company-lifetime story. The payout remains a different question.",
+  "form": "event",
+  "period": "2025–April 2026",
+  "category": "AI talent acquisition",
+  "figure": "~$400M",
+  "figureLabel": "reported stock-deal value for the company",
+  "summary": "April 2026 reporting described Anthropic buying the young AI-biotech company Coefficient Bio for roughly $400 million in stock. A company sale price does not reveal a founder's spendable proceeds.",
+  "theSetup": "The team built AI tools for biological research. TechCrunch described an eight-month-old startup; other reporting gives only a 2025 formation year. The acquisition was reported in April 2026, making the short lifetime a reported detail rather than an independently established exact interval.",
+  "theLuck": "An AI lab was expanding into life sciences and valued an already assembled specialist team. The market for that expertise changed the opportunities available to a small company. It does not make the underlying research or team history only months old.",
+  "theNumbers": [
+    "Approximately $400 million in stock, reported in April 2026; the amount was not presented as a company-confirmed cash payment (Fierce Biotech, citing The Information and Eric Newcomer).",
+    "Founded in 2025 according to the company database cited by Fierce Biotech; no exact founding date is established here.",
+    "Sources disagree on the founding roster: Fierce Biotech names Aris Theologis, Nathan Frey and Joyce Hong; TechCrunch names Samuel Stanton and Nathan C. Frey. The conflict is unresolved."
+  ],
+  "boundary": "This is a reported company transaction, not a verified per-person windfall. Ownership, dilution, vesting, retention conditions, taxes and subsequent liquidity are not established. The case does not prove that any named person became financially independent, and it does not classify the whole deal as an acqui-hire without evidence.",
+  "sources": [
+    {
+      "label": "Fierce Biotech — reported transaction, formation year and founding roster",
+      "url": "https://www.fiercehealthcare.com/biotech/anthropic-acquires-stealth-ai-startup-coefficient-bio-400m-deal"
+    },
+    {
+      "label": "The Information — original transaction reporting",
+      "url": "https://www.theinformation.com/articles/anthropic-acquires-startup-coefficient-bio-400-million"
+    },
+    {
+      "label": "TechCrunch — conflicting founder account and reported stock deal",
+      "url": "https://techcrunch.com/2026/04/03/anthropic-buys-biotech-startup-coefficient-bio-in-400m-deal-reports/"
+    }
+  ]
+},
+{
+  "id": "windsurf-employee-deal",
+  "relatedProfiles": [{"id":"varun-mohan","name":"Varun Mohan"}],
+  "title": "Same company. Different routes through the deal.",
+  "subtitle": "Windsurf's founders and remaining employees did not travel through a single transaction.",
+  "form": "event",
+  "period": "July 2025",
+  "category": "AI acquisition and vesting",
+  "figure": "100%",
+  "figureLabel": "employee participation promised in Cognition's announcement",
+  "summary": "After Varun Mohan moved to Google DeepMind, Cognition announced an agreement to buy the remaining Windsurf business. It promised financial participation for every employee and changes to vesting.",
+  "theSetup": "Windsurf built an AI coding product and a customer business. Cognition CEO Scott Wu announced the acquisition agreement on July 14, 2025. Wu and Jeff Wang later described negotiating alongside Russell Kaplan and Graham Moreno. Walden Yan is separately documented as a Cognition co-founder; none of those roles establishes a personal payout.",
+  "theLuck": "Buyer demand, a leadership departure and transaction structure changed which routes were available to people working inside the same company. Ownership and vesting terms determined exposure to the deal; skill or effort alone cannot reconstruct anyone's financial result.",
+  "theNumbers": [
+    "Cognition said every Windsurf employee would participate financially.",
+    "The announcement said vesting cliffs would be waived and vesting fully accelerated for work to date.",
+    "Cognition described the deal as including the IDE, intellectual property, brand and business. It was not merely a team hire.",
+    "Individual proceeds, employee ages and the acquisition price were not disclosed in this announcement."
+  ],
+  "boundary": "These were announced commitments. They do not prove equal payouts, completed cash distributions, or financial independence for every employee. Mohan's move to Google DeepMind and Cognition's Windsurf agreement are distinct events. No age-qualified personal windfall is asserted for Wu, Yan or Kaplan.",
+  "sources": [
+    {
+      "label": "Cognition — July 14, 2025 acquisition agreement and employee terms",
+      "url": "https://cognition.com/blog/windsurf"
+    },
+    {
+      "label": "Scott Wu and Jeff Wang — one-year account of the negotiations",
+      "url": "https://cognition.com/blog/one-year-of-building-together"
+    },
+    {
+      "label": "Milken Institute — Russell Kaplan's speaker-supplied biography",
+      "url": "https://milkeninstitute.org/events/asia-summit-2026/speakers/russell-kaplan"
+    },
+    {
+      "label": "AI Engineer — Walden Yan's co-founder biography",
+      "url": "https://ai.engineer/speakers/walden-yan"
+    }
+  ]
+},
+{
+  "id": "openai-employee-liquidity",
+  "title": "When employee shares can actually be sold",
+  "subtitle": "A reported secondary sale gives stronger liquidity evidence than a funding headline.",
+  "form": "event",
+  "period": "October 2025",
+  "category": "Employee equity",
+  "figure": "$6.6B",
+  "figureLabel": "aggregate employee share sales reported by Reuters",
+  "summary": "Reuters reported that current and former OpenAI employees sold roughly $6.6 billion of shares in a transaction valuing the company at $500 billion. That documents reported liquidity in aggregate, not everyone's wealth.",
+  "theSetup": "Employees had worked at OpenAI and held equity interests. A secondary transaction let participating current and former staff sell some of those interests to investors. Joining the company, receiving equity and later being able to sell it were separate steps.",
+  "theLuck": "Investor demand and the availability of a sale window changed when paper ownership could become proceeds. An employee can do the same work without receiving the same grant or having the same opportunity to sell.",
+  "theNumbers": [
+    "Reported transaction: roughly $6.6 billion of shares sold by current and former employees (Reuters, October 2, 2025).",
+    "Company valuation associated with the transaction: $500 billion, a dated figure rather than the current valuation.",
+    "Joining ages, individual grants, sale amounts and after-tax proceeds were not established by the aggregate report."
+  ],
+  "boundary": "The aggregate cannot be divided by headcount to estimate a typical payout. It does not establish that a particular person joined at 22, sold enough to become financially independent, or stopped needing to work. Neither a company valuation nor an unvested grant is cash in the bank.",
+  "sources": [
+    {
+      "label": "Reuters via MarketScreener — employee secondary sale, October 2, 2025",
+      "url": "https://www.marketscreener.com/news/openai-hits-500-billion-valuation-after-share-sale-source-says-ce7d5bded98bf725"
+    }
+  ]
+},
+{
+  "id": "cursor-young-founder-equity",
+  "relatedProfiles": [{"id":"michael-truell","name":"Michael Truell"},{"id":"aman-sanger","name":"Aman Sanger"},{"id":"sualeh-asif","name":"Sualeh Asif"},{"id":"arvid-lunnemark","name":"Arvid Lunnemark"}],
+  "title": "Young founders. An equity acquisition.",
+  "subtitle": "Michael Truell, Aman Sanger, Sualeh Asif and Arvid Lunnemark built Cursor. An acquisition paid in equity is not a personal cash receipt.",
+  "form": "event",
+  "period": "2022–2026",
+  "category": "Founder equity",
+  "figure": "$60B",
+  "figureLabel": "implied company equity value at the August 2026 acquisition",
+  "summary": "Cursor's four MIT co-founders started the company in 2022. SpaceX acquired it on August 14, 2026, at an implied equity value of $60 billion. Company equity and employee awards do not establish any individual's cash proceeds.",
+  "theSetup": "Michael Truell, Aman Sanger, Sualeh Asif and Arvid Lunnemark assembled a technical team and built an AI coding product. The company announced a $60 million Series A in August 2024, followed by much larger funding rounds in 2025.",
+  "theLuck": "Their product met rapid improvements in coding models, developer demand and a market willing to finance AI companies at large valuations. Access to that market matters alongside their execution. The acquisition then exchanged ownership for SpaceX equity, with some awards tied to future service. A founder's ownership differs substantially from an employee's grant.",
+  "theNumbers": [
+    "August 22, 2024: $60 million Series A (Cursor and independent Forbes reporting).",
+    "June 6, 2025: $900 million raised at a $9.9 billion company valuation (Cursor).",
+    "November 13, 2025: $2.3 billion raised at a $29.3 billion post-money company valuation (Cursor).",
+    "August 14, 2026: acquisition completed at a $60 billion implied equity value. SpaceX reported $42.5 billion of GAAP purchase consideration and $23.4 billion of equity awards attributable to future service, subject to forfeiture; these are different accounting measures, not personal cash payouts.",
+    "Forbes described Truell, Sanger and Asif as 25, and Lunnemark as 26, in November 2025. Those are reported ages at that time, not joining ages for employees."
+  ],
+  "boundary": "The funding rounds and completed acquisition are dated company events. The acquisition involved SpaceX shares and equity awards, including vesting conditions. The cited sources do not establish each founder's or employee's personal cash proceeds, and company transaction values are not current personal wealth estimates. Financial security and a changed relationship with work require separate personal evidence. Four selected founders cannot establish how an entire generation feels.",
+  "sources": [
+    {
+      "label": "Cursor — acquisition completed, August 14, 2026",
+      "url": "https://cursor.com/blog/joining-spacex"
+    },
+    {
+      "label": "SpaceX — October 20, 2026 earnings release, Cursor merger equity and retention terms",
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001181412/31b2b4f8-a7d7-44f3-a94b-9c2cba49b021.html"
+    },
+    {
+      "label": "Cursor — Series A announcement",
+      "url": "https://cursor.com/blog/series-a"
+    },
+    {
+      "label": "Forbes — independent 2024 funding and founding-team reporting",
+      "url": "https://www.forbes.com/sites/rashishrivastava/2024/08/22/engineers-at-openai-and-midjourney-are-using-this-400-million-startups-ai-coding-software/"
+    },
+    {
+      "label": "Cursor — Series C announcement",
+      "url": "https://cursor.com/blog/series-c"
+    },
+    {
+      "label": "Cursor — Series D announcement",
+      "url": "https://cursor.com/blog/series-d"
+    },
+    {
+      "label": "Forbes — dated founder ages and ownership-based wealth estimates",
+      "url": "https://www.forbes.com/sites/alexyork/2025/11/30/these-30-under-30-alums-are-now-billionaires-how-they-built-their-fortunes/"
+    }
+  ]
+}
 ];

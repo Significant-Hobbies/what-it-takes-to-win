@@ -1,5 +1,580 @@
 [
   {
+    "identity_key": "russell kaplan",
+    "name": "Russell Kaplan",
+    "aliases": [
+      "Russell Kaplan"
+    ],
+    "source_ids": [
+      "event-signals"
+    ],
+    "source_records": [
+      {
+        "source_id": "event-signals",
+        "candidate_id": "",
+        "batch": ""
+      }
+    ],
+    "signals": [
+      {
+        "signal_id": "ai-windfalls-russell-kaplan",
+        "person_name": "Russell Kaplan",
+        "aliases": [
+          "Russell Kaplan"
+        ],
+        "field": "Founders / operators",
+        "event_date": "2025-09-08",
+        "birth_year": null,
+        "age_basis": "not_established",
+        "age_at_event": null,
+        "age_confidence": "low",
+        "event_type": "company_funding_and_valuation",
+        "event_summary": "Cognition announced more than $400 million of financing at a $10.2 billion post-money valuation; this is a company event, not a personal payout.",
+        "outcome_strength": 80,
+        "metrics": {
+          "capital_raised_usd": 400000000,
+          "valuation_usd": 10200000000
+        },
+        "sources": [
+          {
+            "url": "https://cognition.com/blog/funding-growth-and-the-next-frontier-of-ai-coding-agents",
+            "origin": "cognition.com",
+            "evidence_origin": "russell-kaplan-company-event",
+            "role": "first_party_event"
+          },
+          {
+            "url": "https://milkeninstitute.org/events/asia-summit-2026/speakers/russell-kaplan",
+            "origin": "milkeninstitute.org",
+            "evidence_origin": "russell-kaplan-background",
+            "role": "biographical_background"
+          }
+        ],
+        "detected_at": "2026-10-27",
+        "research_status": "unverified_candidate",
+        "research_notes": "The speaker biography establishes his Cognition role and Helia/Scale history, but not a birth year or an age-qualified financing event.",
+        "follow_up_issue": "https://github.com/Significant-Hobbies/what-it-takes-to-win/issues/101",
+        "gate_verdict": {
+          "version": "2026-08-26.1",
+          "calibration_status": "provisional_research_screen",
+          "discovery": {
+            "pass": false,
+            "reasons": [
+              "age_confidence_too_low",
+              "age_mismatch",
+              "age_outside_target"
+            ],
+            "conservative_age": 2025,
+            "event_type_registered": true,
+            "source_origins": 2
+          },
+          "research": {
+            "pass": false,
+            "reasons": [
+              "age_confidence_too_low",
+              "age_outside_event_gate",
+              "discovery_gate_failed",
+              "missing_independent_source"
+            ],
+            "evidence_origins": 2,
+            "independent_sources": 0,
+            "outcome": {
+              "pass": false,
+              "reasons": [
+                "age_outside_event_gate"
+              ]
+            }
+          },
+          "publication": {
+            "pass": false,
+            "reasons": [
+              "missing_publication_record",
+              "research_gate_failed"
+            ]
+          }
+        }
+      }
+    ],
+    "field": "Founders / operators",
+    "state": "queued",
+    "batch": "",
+    "birth_year": null,
+    "country": null,
+    "occupation": null,
+    "gates": {
+      "version": "2026-08-26.1",
+      "calibration_status": "provisional_research_screen",
+      "discovery": {
+        "pass": false,
+        "reasons": [
+          "age_confidence_too_low",
+          "age_mismatch",
+          "age_outside_target"
+        ],
+        "conservative_age": 2025,
+        "event_type_registered": true,
+        "source_origins": 2
+      },
+      "research": {
+        "pass": false,
+        "reasons": [
+          "age_confidence_too_low",
+          "age_outside_event_gate",
+          "discovery_gate_failed",
+          "missing_independent_source"
+        ],
+        "evidence_origins": 2,
+        "independent_sources": 0,
+        "outcome": {
+          "pass": false,
+          "reasons": [
+            "age_outside_event_gate"
+          ]
+        }
+      },
+      "publication": {
+        "pass": false,
+        "reasons": [
+          "missing_publication_record",
+          "research_gate_failed"
+        ]
+      }
+    },
+    "age_at_latest_signal": null,
+    "age_confidence": "low",
+    "priority": 74
+  },
+  {
+    "identity_key": "scott wu",
+    "name": "Scott Wu",
+    "aliases": [
+      "Scott Wu"
+    ],
+    "source_ids": [
+      "event-signals"
+    ],
+    "source_records": [
+      {
+        "source_id": "event-signals",
+        "candidate_id": "",
+        "batch": ""
+      }
+    ],
+    "signals": [
+      {
+        "signal_id": "ai-windfalls-scott-wu",
+        "person_name": "Scott Wu",
+        "aliases": [
+          "Scott Wu"
+        ],
+        "field": "Founders / operators",
+        "event_date": "2025-09-08",
+        "birth_year": null,
+        "age_basis": "not_established",
+        "age_at_event": null,
+        "age_confidence": "low",
+        "event_type": "company_funding_and_valuation",
+        "event_summary": "Cognition announced more than $400 million of financing at a $10.2 billion post-money valuation; this is a company event, not a personal payout.",
+        "outcome_strength": 80,
+        "metrics": {
+          "capital_raised_usd": 400000000,
+          "valuation_usd": 10200000000
+        },
+        "sources": [
+          {
+            "url": "https://cognition.com/blog/funding-growth-and-the-next-frontier-of-ai-coding-agents",
+            "origin": "cognition.com",
+            "evidence_origin": "scott-wu-company-event",
+            "role": "first_party_event"
+          },
+          {
+            "url": "https://www.davidsenra.com/episode/scott-wu",
+            "origin": "www.davidsenra.com",
+            "evidence_origin": "scott-wu-background",
+            "role": "biographical_background"
+          }
+        ],
+        "detected_at": "2026-10-27",
+        "research_status": "unverified_candidate",
+        "research_notes": "Birth year conflict: the first-person interview summary says 1997, while the reviewed Wikipedia infobox says 1996 and its body says 1997. Resolve before assigning a high-confidence admission age.",
+        "follow_up_issue": "https://github.com/Significant-Hobbies/what-it-takes-to-win/issues/101",
+        "gate_verdict": {
+          "version": "2026-08-26.1",
+          "calibration_status": "provisional_research_screen",
+          "discovery": {
+            "pass": false,
+            "reasons": [
+              "age_confidence_too_low",
+              "age_mismatch",
+              "age_outside_target"
+            ],
+            "conservative_age": 2025,
+            "event_type_registered": true,
+            "source_origins": 2
+          },
+          "research": {
+            "pass": false,
+            "reasons": [
+              "age_confidence_too_low",
+              "age_outside_event_gate",
+              "discovery_gate_failed",
+              "missing_independent_source"
+            ],
+            "evidence_origins": 2,
+            "independent_sources": 0,
+            "outcome": {
+              "pass": false,
+              "reasons": [
+                "age_outside_event_gate"
+              ]
+            }
+          },
+          "publication": {
+            "pass": false,
+            "reasons": [
+              "missing_publication_record",
+              "research_gate_failed"
+            ]
+          }
+        }
+      }
+    ],
+    "field": "Founders / operators",
+    "state": "queued",
+    "batch": "",
+    "birth_year": null,
+    "country": null,
+    "occupation": null,
+    "gates": {
+      "version": "2026-08-26.1",
+      "calibration_status": "provisional_research_screen",
+      "discovery": {
+        "pass": false,
+        "reasons": [
+          "age_confidence_too_low",
+          "age_mismatch",
+          "age_outside_target"
+        ],
+        "conservative_age": 2025,
+        "event_type_registered": true,
+        "source_origins": 2
+      },
+      "research": {
+        "pass": false,
+        "reasons": [
+          "age_confidence_too_low",
+          "age_outside_event_gate",
+          "discovery_gate_failed",
+          "missing_independent_source"
+        ],
+        "evidence_origins": 2,
+        "independent_sources": 0,
+        "outcome": {
+          "pass": false,
+          "reasons": [
+            "age_outside_event_gate"
+          ]
+        }
+      },
+      "publication": {
+        "pass": false,
+        "reasons": [
+          "missing_publication_record",
+          "research_gate_failed"
+        ]
+      }
+    },
+    "age_at_latest_signal": null,
+    "age_confidence": "low",
+    "priority": 74
+  },
+  {
+    "identity_key": "walden yan",
+    "name": "Walden Yan",
+    "aliases": [
+      "Walden Yan"
+    ],
+    "source_ids": [
+      "event-signals"
+    ],
+    "source_records": [
+      {
+        "source_id": "event-signals",
+        "candidate_id": "",
+        "batch": ""
+      }
+    ],
+    "signals": [
+      {
+        "signal_id": "ai-windfalls-walden-yan",
+        "person_name": "Walden Yan",
+        "aliases": [
+          "Walden Yan"
+        ],
+        "field": "Founders / operators",
+        "event_date": "2025-09-08",
+        "birth_year": null,
+        "age_basis": "not_established",
+        "age_at_event": null,
+        "age_confidence": "low",
+        "event_type": "company_funding_and_valuation",
+        "event_summary": "Cognition announced more than $400 million of financing at a $10.2 billion post-money valuation; this is a company event, not a personal payout.",
+        "outcome_strength": 80,
+        "metrics": {
+          "capital_raised_usd": 400000000,
+          "valuation_usd": 10200000000
+        },
+        "sources": [
+          {
+            "url": "https://cognition.com/blog/funding-growth-and-the-next-frontier-of-ai-coding-agents",
+            "origin": "cognition.com",
+            "evidence_origin": "walden-yan-company-event",
+            "role": "first_party_event"
+          },
+          {
+            "url": "https://www.linkedin.com/in/waldenyan",
+            "origin": "www.linkedin.com",
+            "evidence_origin": "walden-yan-background",
+            "role": "biographical_background"
+          }
+        ],
+        "detected_at": "2026-10-27",
+        "research_status": "unverified_candidate",
+        "research_notes": "Reviewed education and career dates do not establish a reliable birth year. Do not infer age from Harvard attendance or a fellowship.",
+        "follow_up_issue": "https://github.com/Significant-Hobbies/what-it-takes-to-win/issues/101",
+        "gate_verdict": {
+          "version": "2026-08-26.1",
+          "calibration_status": "provisional_research_screen",
+          "discovery": {
+            "pass": false,
+            "reasons": [
+              "age_confidence_too_low",
+              "age_mismatch",
+              "age_outside_target"
+            ],
+            "conservative_age": 2025,
+            "event_type_registered": true,
+            "source_origins": 2
+          },
+          "research": {
+            "pass": false,
+            "reasons": [
+              "age_confidence_too_low",
+              "age_outside_event_gate",
+              "discovery_gate_failed",
+              "missing_independent_source"
+            ],
+            "evidence_origins": 2,
+            "independent_sources": 0,
+            "outcome": {
+              "pass": false,
+              "reasons": [
+                "age_outside_event_gate"
+              ]
+            }
+          },
+          "publication": {
+            "pass": false,
+            "reasons": [
+              "missing_publication_record",
+              "research_gate_failed"
+            ]
+          }
+        }
+      }
+    ],
+    "field": "Founders / operators",
+    "state": "queued",
+    "batch": "",
+    "birth_year": null,
+    "country": null,
+    "occupation": null,
+    "gates": {
+      "version": "2026-08-26.1",
+      "calibration_status": "provisional_research_screen",
+      "discovery": {
+        "pass": false,
+        "reasons": [
+          "age_confidence_too_low",
+          "age_mismatch",
+          "age_outside_target"
+        ],
+        "conservative_age": 2025,
+        "event_type_registered": true,
+        "source_origins": 2
+      },
+      "research": {
+        "pass": false,
+        "reasons": [
+          "age_confidence_too_low",
+          "age_outside_event_gate",
+          "discovery_gate_failed",
+          "missing_independent_source"
+        ],
+        "evidence_origins": 2,
+        "independent_sources": 0,
+        "outcome": {
+          "pass": false,
+          "reasons": [
+            "age_outside_event_gate"
+          ]
+        }
+      },
+      "publication": {
+        "pass": false,
+        "reasons": [
+          "missing_publication_record",
+          "research_gate_failed"
+        ]
+      }
+    },
+    "age_at_latest_signal": null,
+    "age_confidence": "low",
+    "priority": 74
+  },
+  {
+    "identity_key": "alexander embiricos",
+    "name": "Alexander Embiricos",
+    "aliases": [
+      "Alexander Embiricos",
+      "Alex Embiricos"
+    ],
+    "source_ids": [
+      "event-signals"
+    ],
+    "source_records": [
+      {
+        "source_id": "event-signals",
+        "candidate_id": "",
+        "batch": ""
+      }
+    ],
+    "signals": [
+      {
+        "signal_id": "ai-windfalls-alexander-embiricos",
+        "person_name": "Alexander Embiricos",
+        "aliases": [
+          "Alexander Embiricos",
+          "Alex Embiricos"
+        ],
+        "field": "Founders / operators",
+        "event_date": "2024-06-24",
+        "birth_year": null,
+        "age_basis": "not_established",
+        "age_at_event": null,
+        "age_confidence": "low",
+        "event_type": "team_acquisition",
+        "event_summary": "Multi announced that its team was joining OpenAI.",
+        "outcome_strength": 80,
+        "metrics": {
+          "transaction_count": 1
+        },
+        "sources": [
+          {
+            "url": "https://multi.app/blog/multi-is-joining-openai",
+            "origin": "multi.app",
+            "evidence_origin": "alexander-embiricos-company-event",
+            "role": "first_party_event"
+          }
+        ],
+        "detected_at": "2026-10-27",
+        "research_status": "unverified_candidate",
+        "research_notes": "The founder announcement establishes Multi joining OpenAI, but gives neither personal proceeds nor a reliable birth year. No acquisition admission rule is registered.",
+        "follow_up_issue": "https://github.com/Significant-Hobbies/what-it-takes-to-win/issues/101",
+        "gate_verdict": {
+          "version": "2026-08-26.1",
+          "calibration_status": "provisional_research_screen",
+          "discovery": {
+            "pass": false,
+            "reasons": [
+              "age_confidence_too_low",
+              "age_mismatch",
+              "age_outside_target"
+            ],
+            "conservative_age": 2024,
+            "event_type_registered": false,
+            "source_origins": 1
+          },
+          "research": {
+            "pass": false,
+            "reasons": [
+              "age_confidence_too_low",
+              "discovery_gate_failed",
+              "insufficient_evidence_origins",
+              "insufficient_source_origins",
+              "missing_independent_source",
+              "unsupported_event_type"
+            ],
+            "evidence_origins": 1,
+            "independent_sources": 0,
+            "outcome": {
+              "pass": false,
+              "reasons": [
+                "unsupported_event_type"
+              ]
+            }
+          },
+          "publication": {
+            "pass": false,
+            "reasons": [
+              "missing_publication_record",
+              "research_gate_failed"
+            ]
+          }
+        }
+      }
+    ],
+    "field": "Founders / operators",
+    "state": "queued",
+    "batch": "",
+    "birth_year": null,
+    "country": null,
+    "occupation": null,
+    "gates": {
+      "version": "2026-08-26.1",
+      "calibration_status": "provisional_research_screen",
+      "discovery": {
+        "pass": false,
+        "reasons": [
+          "age_confidence_too_low",
+          "age_mismatch",
+          "age_outside_target"
+        ],
+        "conservative_age": 2024,
+        "event_type_registered": false,
+        "source_origins": 1
+      },
+      "research": {
+        "pass": false,
+        "reasons": [
+          "age_confidence_too_low",
+          "discovery_gate_failed",
+          "insufficient_evidence_origins",
+          "insufficient_source_origins",
+          "missing_independent_source",
+          "unsupported_event_type"
+        ],
+        "evidence_origins": 1,
+        "independent_sources": 0,
+        "outcome": {
+          "pass": false,
+          "reasons": [
+            "unsupported_event_type"
+          ]
+        }
+      },
+      "publication": {
+        "pass": false,
+        "reasons": [
+          "missing_publication_record",
+          "research_gate_failed"
+        ]
+      }
+    },
+    "age_at_latest_signal": null,
+    "age_confidence": "low",
+    "priority": 69
+  },
+  {
     "identity_key": "aahan sawhney",
     "name": "Aahan Sawhney",
     "aliases": [],
@@ -11402,98 +11977,6 @@
     "field": "Founders / operators",
     "state": "queued",
     "batch": "Summer 2024",
-    "birth_year": null,
-    "country": null,
-    "occupation": null,
-    "priority": 30
-  },
-  {
-    "identity_key": "devi jha",
-    "name": "Devi Jha",
-    "aliases": [],
-    "source_ids": [
-      "yc-directory"
-    ],
-    "source_records": [
-      {
-        "source_id": "yc-directory",
-        "candidate_id": "leafpress",
-        "batch": "Summer 2023"
-      }
-    ],
-    "signals": [],
-    "field": "Founders / operators",
-    "state": "queued",
-    "batch": "Summer 2023",
-    "birth_year": null,
-    "country": null,
-    "occupation": null,
-    "priority": 30
-  },
-  {
-    "identity_key": "devin abbott",
-    "name": "Devin Abbott",
-    "aliases": [],
-    "source_ids": [
-      "yc-directory"
-    ],
-    "source_records": [
-      {
-        "source_id": "yc-directory",
-        "candidate_id": "noya-software",
-        "batch": "Winter 2023"
-      }
-    ],
-    "signals": [],
-    "field": "Founders / operators",
-    "state": "queued",
-    "batch": "Winter 2023",
-    "birth_year": null,
-    "country": null,
-    "occupation": null,
-    "priority": 30
-  },
-  {
-    "identity_key": "devon copeland",
-    "name": "Devon Copeland",
-    "aliases": [],
-    "source_ids": [
-      "yc-directory"
-    ],
-    "source_records": [
-      {
-        "source_id": "yc-directory",
-        "candidate_id": "serial",
-        "batch": "Winter 2023"
-      }
-    ],
-    "signals": [],
-    "field": "Founders / operators",
-    "state": "queued",
-    "batch": "Winter 2023",
-    "birth_year": null,
-    "country": null,
-    "occupation": null,
-    "priority": 30
-  },
-  {
-    "identity_key": "dhiren bhatia",
-    "name": "Dhiren Bhatia",
-    "aliases": [],
-    "source_ids": [
-      "yc-directory"
-    ],
-    "source_records": [
-      {
-        "source_id": "yc-directory",
-        "candidate_id": "inventive-ai",
-        "batch": "Summer 2023"
-      }
-    ],
-    "signals": [],
-    "field": "Founders / operators",
-    "state": "queued",
-    "batch": "Summer 2023",
     "birth_year": null,
     "country": null,
     "occupation": null,

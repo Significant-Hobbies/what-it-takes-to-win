@@ -1,16 +1,17 @@
 {
   "audit_date": "2026-08-08",
-  "total_people": 2770,
-  "total_urls": 10025,
-  "urls_reused": 9472,
-  "urls_checked_this_run": 553,
-  "urls_reachable": 8419,
-  "urls_unreachable": 1606,
-  "people_all_sources_reachable": 1520,
-  "people_partial_sources_reachable": 1241,
-  "people_no_sources_reachable": 9,
-  "url_reachability_rate": "84.0%",
-  "person_pass_rate": "54.9%",
+  "partial_refresh_date": "2026-10-27",
+  "total_people": 3580,
+  "total_urls": 9955,
+  "urls_reused": 9934,
+  "urls_checked_this_run": 21,
+  "urls_reachable": 8352,
+  "urls_unreachable": 1603,
+  "people_all_sources_reachable": 1496,
+  "people_partial_sources_reachable": 1238,
+  "people_no_sources_reachable": 8,
+  "url_reachability_rate": "83.9%",
+  "person_pass_rate": "41.8%",
   "results": {
     "bill-gates": [
       {
@@ -586,10 +587,46 @@
     ],
     "michael-truell": [
       {
-        "url": "https://www.ycombinator.com/library/MU-cursor-ceo-going-beyond-code-superintelligent-ai-agents-and-why-taste-still-matters",
+        "url": "https://cursor.com/blog/series-a",
         "status": 200,
         "reachable": true,
-        "checked": "2026-08-08"
+        "checked": "2026-10-27"
+      },
+      {
+        "url": "https://www.forbes.com/sites/rashishrivastava/2024/08/22/engineers-at-openai-and-midjourney-are-using-this-400-million-startups-ai-coding-software/",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-10-27"
+      },
+      {
+        "url": "https://www.forbes.com/sites/alexyork/2025/11/30/these-30-under-30-alums-are-now-billionaires-how-they-built-their-fortunes/",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-10-27"
+      },
+      {
+        "url": "https://cursor.com/blog/series-c",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-10-27"
+      },
+      {
+        "url": "https://cursor.com/blog/series-d",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-10-27"
+      },
+      {
+        "url": "https://mntruell.com/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-10-27"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Michael_Truell",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-10-27"
       }
     ],
     "sualeh-asif": [
@@ -598,14 +635,68 @@
         "status": 200,
         "reachable": true,
         "checked": "2026-08-08"
+      },
+      {
+        "url": "https://cursor.com/blog/series-a",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-10-27"
+      },
+      {
+        "url": "https://www.forbes.com/sites/rashishrivastava/2024/08/22/engineers-at-openai-and-midjourney-are-using-this-400-million-startups-ai-coding-software/",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-10-27"
+      },
+      {
+        "url": "https://cursor.com/blog/series-d",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-10-27"
       }
     ],
     "aman-sanger": [
       {
-        "url": "https://www.forbes.com/sites/sarahemerson/2024/12/03/30-under-30-ai-2025-the-young-entrepreneurs-coding-the-future/",
+        "url": "https://cursor.com/blog/series-a",
         "status": 200,
         "reachable": true,
-        "checked": "2026-08-08"
+        "checked": "2026-10-27"
+      },
+      {
+        "url": "https://www.forbes.com/sites/rashishrivastava/2024/08/22/engineers-at-openai-and-midjourney-are-using-this-400-million-startups-ai-coding-software/",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-10-27"
+      },
+      {
+        "url": "https://www.forbes.com/sites/alexyork/2025/11/30/these-30-under-30-alums-are-now-billionaires-how-they-built-their-fortunes/",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-10-27"
+      },
+      {
+        "url": "https://cursor.com/blog/series-c",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-10-27"
+      },
+      {
+        "url": "https://cursor.com/blog/series-d",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-10-27"
+      },
+      {
+        "url": "https://www.forbes.com/profile/aman-sanger/",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-10-27"
+      },
+      {
+        "url": "https://www.goodreturns.in/aman-sanger-net-worth-and-biography-blnr5324.html",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-10-27"
       }
     ],
     "arvid-lunnemark": [
@@ -614,6 +705,24 @@
         "status": 200,
         "reachable": true,
         "checked": "2026-08-08"
+      },
+      {
+        "url": "https://cursor.com/blog/series-a",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-10-27"
+      },
+      {
+        "url": "https://www.forbes.com/sites/rashishrivastava/2024/08/22/engineers-at-openai-and-midjourney-are-using-this-400-million-startups-ai-coding-software/",
+        "status": 403,
+        "reachable": false,
+        "checked": "2026-10-27"
+      },
+      {
+        "url": "https://cursor.com/blog/series-d",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-10-27"
       }
     ],
     "brendan-foody": [
@@ -51040,6 +51149,12 @@
         "status": 200,
         "reachable": true,
         "checked": "2026-08-08"
+      },
+      {
+        "url": "https://cognition.com/blog/windsurf",
+        "status": 200,
+        "reachable": true,
+        "checked": "2026-10-27"
       }
     ],
     "jim-fan": [
@@ -66210,5 +66325,17 @@
         "checked": "2026-08-08"
       }
     ]
+  },
+  "refresh_scope": {
+    "date": "2026-10-27",
+    "person_ids": [
+      "sualeh-asif",
+      "arvid-lunnemark",
+      "varun-mohan",
+      "michael-truell",
+      "aman-sanger"
+    ],
+    "new_url_pairs_checked": 21,
+    "method": "Existing audit_sources.mjs in a scratch workspace restricted to the five changed profiles. Other per-URL results retain their original checked dates; unreviewed profiles remain unreviewed."
   }
 }

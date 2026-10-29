@@ -3,7 +3,7 @@
 **Look sideways for information, never for a verdict.**
 
 <!-- dataset-summary:start -->
-A guided, evidence-led journey through 3,578 early-breakthrough paths: what
+A guided, evidence-led journey through 3,580 early-breakthrough paths: what
 people brought, were handed, and were surrounded by, with perseverance, luck,
 and the limits of comparison kept visible.
 <!-- dataset-summary:end -->
