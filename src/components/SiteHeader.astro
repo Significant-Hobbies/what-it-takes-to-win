@@ -1,24 +1,32 @@
 ---
-interface Props {
-  links: { href: string; label: string; active: boolean }[];
-}
-const { links } = Astro.props;
+import "../styles/paths-identity.css";
+
+const links = [
+  { href: "/", label: "Journey", related: ["/turning-points/"] },
+  { href: "/insights/", label: "Evidence", related: ["/coverage/", "/methodology/", "/first-proof/"] },
+  { href: "/essays/", label: "Articles", related: [] },
+  { href: "/explore/", label: "Explore", related: ["/person/", "/compare/", "/am-i-the-next/"] },
+];
+const path = Astro.url.pathname;
+const current = ({ href, related }: (typeof links)[number]) => {
+  if (path === href) return "page";
+  if ((href !== "/" && path.startsWith(href)) || related.some(prefix => path.startsWith(prefix))) return "location";
+};
 ---
 <header class="paths-masthead">
   <div class="paths-masthead-inner">
     <a class="paths-wordmark" href="/" aria-label="Paths home">Paths</a>
     <nav class="paths-navigation" aria-label="Primary navigation">
-      {links.map(link => <a href={link.href} aria-current={link.active ? "page" : undefined}>{link.label}</a>)}
+      {links.map(link => <a href={link.href} aria-current={current(link)}>{link.label}</a>)}
     </nav>
   </div>
 </header>
 <style>
   .paths-masthead {
-    --header-paper: #f3f0e7;
-    --header-ink: #253b30;
-    --header-muted: #596355;
-    background: var(--header-paper);
-    color: var(--header-ink);
+    background: var(--paths-masthead);
+    color: var(--paths-ink);
+    font-family: var(--paths-sans);
+    line-height: 1.5;
   }
   .paths-masthead-inner {
     width: min(1264px, 100%);
@@ -31,7 +39,7 @@ const { links } = Astro.props;
     gap: 32px;
   }
   .paths-wordmark {
-    color: var(--header-ink);
+    color: var(--paths-ink);
     font: italic 44px/1 "Iowan Old Style", "Palatino Linotype", Georgia, serif;
     letter-spacing: -.035em;
     text-decoration: none;
@@ -45,17 +53,16 @@ const { links } = Astro.props;
     min-height: 44px;
     display: inline-flex;
     align-items: center;
-    color: var(--header-muted);
+    color: var(--paths-muted);
     font-size: 14px;
     font-weight: 400;
     text-decoration: none;
     text-underline-offset: 8px;
     text-decoration-thickness: 1px;
   }
-  .paths-navigation a[aria-current="page"] { color: var(--header-ink); text-decoration-line: underline; }
-  .paths-navigation a:hover { color: var(--header-ink); text-decoration-line: underline; }
-  .paths-wordmark:hover { color: var(--header-muted); text-decoration: none; }
-  .paths-masthead a:focus-visible { outline: 2px solid var(--header-ink); outline-offset: 5px; border-radius: 2px; }
+  .paths-navigation a[aria-current], .paths-navigation a:hover { color: var(--paths-ink); text-decoration-line: underline; }
+  .paths-wordmark:hover { color: var(--paths-muted); text-decoration: none; }
+  .paths-masthead a:focus-visible { outline: 2px solid var(--paths-ink); outline-offset: 5px; border-radius: 2px; }
   @media (max-width: 1000px) {
     .paths-masthead-inner { padding-inline: 32px; min-height: 88px; }
     .paths-navigation { gap: 24px; }

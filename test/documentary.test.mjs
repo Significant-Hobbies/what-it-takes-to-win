@@ -103,7 +103,6 @@ test("the journey renders before JavaScript and never asks for a personal score"
 test("primary public navigation emits only named App Health CTA events", () => {
   const logger = readFileSync(new URL("../public/app-health-log.js", import.meta.url), "utf8");
   assert.equal(content.hero.primary.href, "#the-start");
-  assert.ok(content.nav.some(link => link.href === "/explore/"));
   assert.match(page, /"#the-start": "journey_continued"/);
   assert.match(page, /"\/explore\/": "archive_opened"/);
   assert.match(page, /link.setAttribute\("data-health-event", name\)/);

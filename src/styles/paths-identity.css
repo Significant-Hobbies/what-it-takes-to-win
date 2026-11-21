@@ -1,0 +1,8 @@
+:root {
+  --paths-paper: #eef0e7;
+  --paths-masthead: #f3f0e7;
+  --paths-ink: #153a30;
+  --paths-muted: #52675f;
+  --paths-rule: rgb(21 58 48 / 28%);
+  --paths-sans: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+}
