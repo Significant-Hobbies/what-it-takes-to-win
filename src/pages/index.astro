@@ -76,6 +76,8 @@ if (content.footer) content.footer = footerContent;
 
 <style>
   .paths-home :global(#main) {
+    --cover-ink: #14251f;
+    --cover-paper: #e9e6b9;
     --background: var(--paths-paper);
     --foreground: var(--paths-ink);
     --muted-foreground: var(--paths-muted);
@@ -90,11 +92,27 @@ if (content.footer) content.footer = footerContent;
     color: var(--foreground);
   }
 
-  .paths-home :global(#main > section:first-child) {
-    --brand: #e9e6b9;
-    --brand-foreground: #14251f;
+  .paths-home :global(#main > section:first-child),
+  .paths-home :global(#the-boundary) {
+    --brand: var(--cover-paper);
+    --brand-foreground: var(--cover-ink);
     --ring: var(--brand);
-    background: var(--brand-foreground);
+    background: var(--cover-ink);
+  }
+
+  .paths-home :global(#the-boundary) {
+    --background: var(--cover-ink);
+    --foreground: var(--cover-paper);
+    --brand-ink: var(--cover-paper);
+    --muted-foreground: #d2e2e5;
+    color: var(--foreground);
+  }
+
+  .paths-home :global(#the-boundary > div > p) {
+    max-inline-size: 55ch;
+    margin-inline: auto;
+    color: var(--muted-foreground);
+    font: 400 0.9375rem/1.5 var(--paths-sans);
   }
 
   @media (min-width: 48rem) {
