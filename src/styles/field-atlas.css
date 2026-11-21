@@ -7,10 +7,10 @@
   --bg: #eef0e7;
   --bg-elev: #e7eadf;
   --bg-card: transparent;
-  --border: rgba(21, 58, 48, 0.28);
+  --border: var(--paths-rule);
   --border-soft: rgba(21, 58, 48, 0.16);
-  --text: #153a30;
-  --text-dim: #52675f;
+  --text: var(--paths-ink);
+  --text-dim: var(--paths-muted);
   --text-faint: #566760;
   --accent: #15549a;
   --accent-2: #98aa66;
@@ -21,10 +21,10 @@
   --radius: 0;
   --radius-sm: 3px;
   --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  --sans: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
-  --sheet: #eef0e7;
+  --sans: var(--paths-sans);
+  --sheet: var(--paths-paper);
   --index-sheet: #e2e6da;
-  --survey-ink: #153a30;
+  --survey-ink: var(--paths-ink);
   --route-blue: #15549a;
   --route-red: #ad3826;
   --route-lichen: #98aa66;

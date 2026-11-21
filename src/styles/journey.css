@@ -15,10 +15,6 @@
 .journey :is(a,button,select,summary):focus-visible{outline:3px solid #3888bf;outline-offset:5px}
 .journey section[id]{scroll-margin-top:30px}
 .journey-width{width:min(1264px,100%);padding-inline:56px;margin:auto}
-.journey-shell .paths-masthead{--header-paper:#14251f;--header-ink:#f2f3e9;--header-muted:#d2dece}
-.journey-shell .paths-masthead-inner{min-height:84px}
-.journey-shell .paths-wordmark{font-size:37px}
-.journey-shell .paths-navigation a{font-size:14px}
 .journey-hero{display:grid;grid-template-columns:1.08fr .92fr;gap:80px;padding-block:55px 80px;align-items:center}
 .journey-kicker{font-size:13px;color:var(--j-muted);margin-bottom:25px!important}
 .hero-copy>p:not(.journey-kicker){font-size:17px;max-width:420px;color:#d2dece;margin-top:26px}

@@ -6,6 +6,7 @@ import { galleryContent } from "@saas-maker/templates/schema";
 import { footerContent } from "../lib/footer";
 import home from "../content/home.json";
 import Clarity from "../components/Clarity.astro";
+import SiteHeader from "../components/SiteHeader.astro";
 import people from "../data/people.json";
 import { identity } from "../lib/readability.mjs";
 
@@ -67,7 +68,38 @@ if (content.footer) content.footer = footerContent;
       }, { once: true });
     </script>
   </Fragment>
-  <div id="the-survivor">
-    <GalleryPage content={content} />
+  <SiteHeader />
+  <div id="the-survivor" class="paths-home">
+    <GalleryPage content={content} header={false} />
   </div>
 </Base>
+
+<style>
+  .paths-home :global(#main) {
+    --background: var(--paths-paper);
+    --foreground: var(--paths-ink);
+    --muted-foreground: var(--paths-muted);
+    --border: var(--paths-rule);
+    --brand: var(--paths-ink);
+    --brand-foreground: var(--paths-paper);
+    --brand-ink: var(--paths-ink);
+    --accent-ink: var(--paths-ink);
+    --ring: var(--paths-ink);
+    --font-text: var(--paths-sans);
+    background: var(--background);
+    color: var(--foreground);
+  }
+
+  .paths-home :global(#main > section:first-child) {
+    --brand: #e9e6b9;
+    --brand-foreground: #14251f;
+    --ring: var(--brand);
+    background: var(--brand-foreground);
+  }
+
+  @media (min-width: 48rem) {
+    .paths-home :global(#main > section:first-child) {
+      min-height: clamp(35rem, 76vh, 48rem);
+    }
+  }
+</style>

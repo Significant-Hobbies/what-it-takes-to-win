@@ -8,7 +8,7 @@ export function getStaticPaths() {
 const { point } = Astro.props;
 const related = turningPoints.filter(item => item.id !== point.id && item.categories.some(category => point.categories.includes(category))).slice(0,3);
 ---
-<Base title={`${point.name} — Paths`} description={point.caption} canonicalPath={`/turning-points/${point.id}/`} quietShell={true} mainClass="journey-main">
+<Base title={`${point.name} — Paths`} description={point.caption} canonicalPath={`/turning-points/${point.id}/`} mainClass="journey-main">
   <article class="journey event-reader">
     <div class="journey-width">
       <a class="reader-back" href="/#the-sequence">← Back to the turning points</a>

@@ -16,7 +16,6 @@ const {
   socialImage = "/og-image.png",
   structuredData,
   mainClass = "",
-  quietShell = false,
 } = Astro.props;
 // Older route titles remain valid inputs while the shared shell owns the current brand.
 const pageTitle = title.replaceAll("Look Sideways", identity.name);
@@ -25,16 +24,6 @@ const canonicalUrl = Astro.site
   : null;
 const socialImageUrl = Astro.site ? new URL(socialImage, Astro.site).toString() : socialImage;
 const currentPath = Astro.url.pathname;
-const navLinks = [
-  { href: "/", label: "Journey" },
-  { href: "/insights/", label: "Evidence", activePrefixes: ["/insights/", "/coverage/", "/methodology/", "/first-proof/"] },
-  { href: "/essays/", label: "Articles" },
-  { href: "/explore/", label: "Atlas", activePrefixes: ["/explore/", "/person/", "/compare/", "/am-i-the-next/"] },
-];
-const isActive = (link: (typeof navLinks)[number]) =>
-  link.href === "/"
-    ? currentPath === link.href
-    : (link.activePrefixes ?? [link.href]).some((prefix) => currentPath.startsWith(prefix));
 ---
 <!doctype html>
 <html lang="en">
@@ -77,9 +66,9 @@ const isActive = (link: (typeof navLinks)[number]) =>
     ></script>
     <script is:inline src="/app-health-log.js" defer></script>
   </head>
-  <body class:list={{ "journey-shell": quietShell }}>
+  <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
-    <SiteHeader links={quietShell ? [{ href: "/explore/", label: "Explore ↗", active: false }] : navLinks.map(link => ({ href: link.href, label: link.label, active: isActive(link) }))} />
+    <SiteHeader />
     <main id="main-content" class:list={["container", mainClass]} tabindex="-1">
       <slot />
     </main>
