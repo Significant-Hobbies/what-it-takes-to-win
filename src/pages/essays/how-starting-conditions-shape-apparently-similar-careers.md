@@ -3,7 +3,7 @@ layout: ../../layouts/Essay.astro
 title: "How starting conditions shape apparently similar careers"
 description: "Explore why comparing your career to others is futile without understanding what they brought, what they were handed, and what surrounded them."
 date: "2026-09-20"
-author: "Sarthak Agrawal"
+aiWritten: true
 readingMinutes: 5
 canonicalPath: "/essays/how-starting-conditions-shape-apparently-similar-careers/"
 ---

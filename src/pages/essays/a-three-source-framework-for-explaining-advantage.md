@@ -3,7 +3,7 @@ layout: ../../layouts/Essay.astro
 title: "A three-source framework for explaining advantage"
 description: "A structured, evidence-backed framework for explaining early career advantages using 3,578 documented paths. Learn why separating conditions into three sources beats a single score."
 date: "2026-09-20"
-author: "Sarthak Agrawal"
+aiWritten: true
 readingMinutes: 6
 canonicalPath: "/essays/a-three-source-framework-for-explaining-advantage/"
 ---

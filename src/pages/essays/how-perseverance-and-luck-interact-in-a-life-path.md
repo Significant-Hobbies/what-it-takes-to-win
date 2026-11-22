@@ -3,7 +3,7 @@ layout: ../../layouts/Essay.astro
 title: "How Perseverance and Luck Interact in a Life Path"
 description: "Explore how perseverance and luck interact in real life paths. Learn why comparison fails when we ignore starting conditions, sequence, and unseen advantage."
 date: "2026-09-20"
-author: "Sarthak Agrawal"
+aiWritten: true
 readingMinutes: 6
 canonicalPath: "/essays/how-perseverance-and-luck-interact-in-a-life-path/"
 ---

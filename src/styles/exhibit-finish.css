@@ -152,7 +152,6 @@
 
 .explore-contract dt,
 .filter-field > span,
-.essay-card-index,
 .essays-edition,
 .methodology-verdict span,
 .methodology-contract dt,
@@ -456,22 +455,18 @@
   margin-top: 8px;
 }
 
-.essays-index-heading {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 28px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid var(--border);
+.essays-index + .essays-index {
+  margin-top: clamp(44px, 6vw, 80px);
 }
 
-.essays-index-heading .eyebrow {
-  margin: 0;
+.essays-index-heading {
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--text);
 }
 
 .essays-index-heading h2 {
   margin: 0;
-  font-size: 18px;
+  font-size: clamp(21px, 2.2vw, 28px);
   font-weight: 600;
   letter-spacing: -0.015em;
 }
@@ -482,7 +477,7 @@
 
 .essay-card {
   display: grid;
-  grid-template-columns: 54px minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 28px;
   align-items: start;
   padding: 34px 0 36px;
@@ -490,11 +485,6 @@
   border-bottom: 1px solid var(--border);
   border-radius: 0;
   background: transparent;
-}
-
-.essay-card-index {
-  margin: 5px 0 0;
-  color: var(--accent-2);
 }
 
 .essay-card h3 {
@@ -516,7 +506,14 @@
 
 .essay-card-meta {
   margin: 0;
-  font-size: 10px;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  font-size: 12px;
+}
+
+.essay-credit {
+  color: var(--text);
+  font-weight: 650;
 }
 
 .essay-card-subtitle {
@@ -827,12 +824,11 @@
   }
 
   .essay-card {
-    grid-template-columns: 38px minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
     gap: 20px;
   }
 
   .essay-card-link {
-    grid-column: 2;
     justify-self: start;
   }
 
@@ -869,7 +865,6 @@
   .filter-field > span,
   .path-record-label,
   .path-record-meta,
-  .essay-card-index,
   .essays-edition,
   .methodology-verdict span,
   .methodology-contract dt,
@@ -970,20 +965,10 @@
     min-height: 0;
   }
 
-  .essays-index-heading {
-    display: grid;
-    gap: 6px;
-  }
-
   .essay-card {
     grid-template-columns: 1fr;
     gap: 12px;
     padding: 28px 0 30px;
-  }
-
-  .essay-card-index,
-  .essay-card-link {
-    grid-column: 1;
   }
 
   .essay-card h3 {

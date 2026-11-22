@@ -3,7 +3,7 @@ layout: ../../layouts/Essay.astro
 title: "Designing a Public Research Exhibit About Life Outcomes"
 description: "How to design a public research exhibit about life outcomes. Learn why 3,578 paths are presented through condition factors, luck, and evidence instead of comparative scores."
 date: "2026-09-20"
-author: "Sarthak Agrawal"
+aiWritten: true
 readingMinutes: 8
 canonicalPath: "/essays/designing-a-public-research-exhibit-about-life-outcomes/"
 ---

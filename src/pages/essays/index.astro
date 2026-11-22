@@ -7,6 +7,9 @@ interface EssayFrontmatter {
   description: string;
   date: string;
   readingMinutes: number;
+  author?: string;
+  aiWritten?: boolean;
+  featured?: boolean;
 }
 
 const essays = Object.entries(
@@ -16,15 +19,16 @@ const essays = Object.entries(
 )
   .map(([file, mod]) => ({
     href: `/essays/${file.replace(/^\.\//, "").replace(/\.md$/, "")}/`,
-    title: mod.frontmatter.title,
-    subtitle: mod.frontmatter.subtitle,
-    date: mod.frontmatter.date,
-    readingMinutes: mod.frontmatter.readingMinutes,
-    description: mod.frontmatter.description,
+    ...mod.frontmatter,
   }))
   .sort(
     (a, b) => b.date.localeCompare(a.date) || a.title.localeCompare(b.title),
   );
+
+const sections = [
+  { id: "featured-essays", title: "Featured essays", essays: essays.filter(essay => essay.featured) },
+  { id: "more-essays", title: "More essays", essays: essays.filter(essay => !essay.featured) },
+];
 
 const formatDate = (iso: string) =>
   new Date(`${iso}T00:00:00`).toLocaleDateString("en-US", {
@@ -47,40 +51,42 @@ const formatDate = (iso: string) =>
       Read these after the guided journey when you want the argument in full:
       comparison, privilege, luck, perseverance, and bounded agency.
     </p>
-    <p class="essays-edition">Edition 01 · {essays.length} published pieces</p>
+    <p class="essays-edition">{essays.length} published pieces</p>
   </section>
 
-  <section class="essays-index" aria-labelledby="essays-index-heading">
-    <header class="essays-index-heading">
-      <p class="eyebrow">Reading room</p>
-      <h2 id="essays-index-heading">Arguments behind the journey</h2>
-    </header>
-    <ol class="essay-list">
-    {
-      essays.map((essay, index) => (
-        <li>
-          <article class="essay-card">
-            <p class="essay-card-index">{String(index + 1).padStart(2, "0")}</p>
-            <div class="essay-card-copy">
-              <p class="essay-card-meta">
-                <time datetime={essay.date}>{formatDate(essay.date)}</time>
-                <span>·</span>
-                <span>{essay.readingMinutes} min read</span>
-              </p>
-              <h3>
-                <a href={essay.href}>{essay.title}</a>
-              </h3>
-              {essay.subtitle && <p class="essay-card-subtitle">{essay.subtitle}</p>}
-              <p class="essay-card-desc">{essay.description}</p>
-            </div>
-            <a class="essay-card-link" href={essay.href} aria-label={`Read ${essay.title}`}>
-              <span>Read essay</span>
-              <span aria-hidden="true">↗</span>
-            </a>
-          </article>
-        </li>
-      ))
-    }
-    </ol>
-  </section>
+  {sections.map(section => section.essays.length > 0 && (
+    <section class="essays-index" aria-labelledby={section.id}>
+      <header class="essays-index-heading">
+        <h2 id={section.id}>{section.title}</h2>
+      </header>
+      <ul class="essay-list">
+      {
+        section.essays.map(essay => (
+          <li>
+            <article class="essay-card">
+              <div class="essay-card-copy">
+                <p class="essay-card-meta">
+                  {essay.aiWritten
+                    ? <strong class="essay-credit">AI-written</strong>
+                    : essay.author && <span class="essay-credit">By {essay.author}</span>}
+                  <time datetime={essay.date}>{formatDate(essay.date)}</time>
+                  <span>{essay.readingMinutes} min read</span>
+                </p>
+                <h3>
+                  <a href={essay.href}>{essay.title}</a>
+                </h3>
+                {essay.subtitle && <p class="essay-card-subtitle">{essay.subtitle}</p>}
+                <p class="essay-card-desc">{essay.description}</p>
+              </div>
+              <a class="essay-card-link" href={essay.href} aria-label={`Read ${essay.title}`}>
+                <span>Read essay</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+          </li>
+        ))
+      }
+      </ul>
+    </section>
+  ))}
 </Base>

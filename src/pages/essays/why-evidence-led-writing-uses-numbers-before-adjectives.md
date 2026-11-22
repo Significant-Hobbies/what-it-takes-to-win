@@ -3,7 +3,7 @@ layout: ../../layouts/Essay.astro
 title: "Why evidence-led writing uses numbers before adjectives"
 description: "Examine the mechanics of evidence-led writing. See why placing numbers before adjectives builds trust and prevents deterministic claims."
 date: "2026-09-20"
-author: "Sarthak Agrawal"
+aiWritten: true
 readingMinutes: 6
 canonicalPath: "/essays/why-evidence-led-writing-uses-numbers-before-adjectives/"
 ---

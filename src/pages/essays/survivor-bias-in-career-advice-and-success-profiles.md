@@ -3,7 +3,7 @@ layout: ../../layouts/Essay.astro
 title: "Survivor bias in career advice and success profiles"
 description: "Learn how survivor bias distorts career advice by hiding the conditions, unobserved paths, and unscored luck behind 3,578 early-breakthrough paths."
 date: "2026-09-20"
-author: "Sarthak Agrawal"
+aiWritten: true
 readingMinutes: 6
 canonicalPath: "/essays/survivor-bias-in-career-advice-and-success-profiles/"
 ---

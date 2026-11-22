@@ -3,7 +3,7 @@ layout: ../../layouts/Essay.astro
 title: "Selection bias in founder and celebrity success stories"
 description: "An evidence-based look at how selection bias shapes founder and celebrity success narratives, deleting starting conditions, luck, and unobserved paths."
 date: "2026-09-20"
-author: "Sarthak Agrawal"
+aiWritten: true
 readingMinutes: 7
 canonicalPath: "/essays/selection-bias-in-founder-and-celebrity-success-stories/"
 ---

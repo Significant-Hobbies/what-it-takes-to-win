@@ -3,7 +3,7 @@ layout: ../../layouts/Essay.astro
 title: "The role of surrounding institutions and support in achievement"
 description: "Explore how institutions, peers, timing, and environments shape early-breakthrough paths. See the evidence behind what surrounds success."
 date: "2026-09-20"
-author: "Sarthak Agrawal"
+aiWritten: true
 readingMinutes: 9
 canonicalPath: "/essays/the-role-of-surrounding-institutions-and-support-in-achievement/"
 ---

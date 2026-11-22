@@ -3,7 +3,7 @@ layout: ../../layouts/Essay.astro
 title: "Why visible success paths are poor personal benchmarks"
 description: "An evidence-based look into 3,578 early-breakthrough paths to understand why comparing your progress to a visible survivor streak deletes conditions, sequence, and luck."
 date: "2026-09-20"
-author: "Sarthak Agrawal"
+aiWritten: true
 readingMinutes: 7
 canonicalPath: "/essays/why-visible-success-paths-are-poor-personal-benchmarks/"
 ---

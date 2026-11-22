@@ -3,7 +3,7 @@ layout: ../../layouts/Essay.astro
 title: "Why Outcome Visibility Hides the Paths That Disappeared"
 description: "An evidence-led explanation of why visible success hides disappeared paths. We examined 3,578 early-breakthrough outcomes to reveal the unobserved openings and starting conditions."
 date: "2026-09-20"
-author: "Sarthak Agrawal"
+aiWritten: true
 readingMinutes: 5
 canonicalPath: "/essays/why-outcome-visibility-hides-the-paths-that-disappeared/"
 ---
