@@ -47,7 +47,7 @@ test('public Astro source renderer follows data, essay metadata, components and 
     assert.match(essay.body, /## Authored body/);
     assert.match(essay.body, /\n {2}sample\n/);
     const generatedEssay = await renderer.render('src/layouts/Essay.astro', '/essays/a-three-source-framework-for-explaining-advantage/', { frontmatter: renderer.essayMetadata('a-three-source-framework-for-explaining-advantage.md') });
-    assert.match(generatedEssay.body, /AI-written/);
+    assert.match(generatedEssay.body, /September 20, 2026 AI-written 6 min read/);
     assert.doesNotMatch(generatedEssay.body, /By Sarthak Agrawal/);
     assert.equal(generatedEssay.structuredData.author, undefined);
   } finally { await renderer.close(); }
