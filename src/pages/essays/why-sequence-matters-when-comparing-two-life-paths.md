@@ -3,7 +3,7 @@ layout: ../../layouts/Essay.astro
 title: "Why sequence matters when comparing two life paths"
 description: "An evidence-based look at 3,578 early-breakthrough paths showing why direct comparison fails when we ignore starting conditions, sequence, and luck."
 date: "2026-09-20"
-author: "Sarthak Agrawal"
+aiWritten: true
 readingMinutes: 8
 canonicalPath: "/essays/why-sequence-matters-when-comparing-two-life-paths/"
 ---

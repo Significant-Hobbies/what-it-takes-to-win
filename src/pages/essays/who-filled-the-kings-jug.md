@@ -5,6 +5,7 @@ subtitle: "Privilege, abstraction, and the invisible work behind accomplishment"
 description: "Privilege is having more of life prepared for you in advance — a private, high-level interface to the world that lets some people begin near the final step."
 date: "2026-08-08"
 author: "Sarthak Agrawal"
+featured: true
 readingMinutes: 6
 canonicalPath: "/essays/who-filled-the-kings-jug/"
 ---

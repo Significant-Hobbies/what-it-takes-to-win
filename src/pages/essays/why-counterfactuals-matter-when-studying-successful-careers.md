@@ -3,7 +3,7 @@ layout: ../../layouts/Essay.astro
 title: "Why counterfactuals matter when studying successful careers"
 description: "Discover why studying only successful careers is incomplete. We must examine the counterfactuals—the unobserved paths and missing context—to avoid false comparisons."
 date: "2026-09-20"
-author: "Sarthak Agrawal"
+aiWritten: true
 readingMinutes: 7
 canonicalPath: "/essays/why-counterfactuals-matter-when-studying-successful-careers/"
 ---

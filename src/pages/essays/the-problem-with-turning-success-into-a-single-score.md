@@ -3,7 +3,7 @@ layout: ../../layouts/Essay.astro
 title: "The problem with turning success into a single score"
 description: "Why ranking human paths with a single success score fails. Explore evidence from 3,578 early-breakthrough paths that separates conditions, perseverance, and luck."
 date: "2026-09-20"
-author: "Sarthak Agrawal"
+aiWritten: true
 readingMinutes: 6
 canonicalPath: "/essays/the-problem-with-turning-success-into-a-single-score/"
 ---

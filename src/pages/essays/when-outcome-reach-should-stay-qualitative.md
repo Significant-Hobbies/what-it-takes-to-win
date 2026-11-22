@@ -3,7 +3,7 @@ layout: ../../layouts/Essay.astro
 title: "When outcome reach should stay qualitative"
 description: "Discover why human success and outcome reach resist numeric percentile scoring. Learn how evaluating what people brought, were handed, and were surrounded by provides a more accurate, qualitative understanding of trajectory."
 date: "2026-09-20"
-author: "Sarthak Agrawal"
+aiWritten: true
 readingMinutes: 6
 canonicalPath: "/essays/when-outcome-reach-should-stay-qualitative/"
 ---

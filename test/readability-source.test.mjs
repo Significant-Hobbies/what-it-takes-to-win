@@ -28,17 +28,28 @@ test('public Astro source renderer follows data, essay metadata, components and 
     const essays = await renderer.render('src/pages/essays/index.astro', '/essays/');
     assert.match(essays.body, /published pieces/);
     assert.match(essays.body, /a-three-source-framework/);
+    const [featuredEssays, moreEssays] = essays.body.split('## More essays');
+    assert.match(featuredEssays, /## Featured essays/);
+    assert.match(featuredEssays, /Everyone Has Lost Their Marbles/);
+    assert.match(featuredEssays, /Who Filled the King's Jug/);
+    assert.doesNotMatch(featuredEssays, /AI-written/);
+    assert.equal(moreEssays.match(/AI-written/g)?.length, 16);
     const point = turningPoints[0];
     const turning = await renderer.render('src/pages/turning-points/[id].astro', `/turning-points/${point.id}/`, { point });
     assert.ok(turning.body.includes(point.limit));
     assert.ok(turning.body.includes(point.url));
     const luck = await renderer.render('src/pages/luck/[id].astro', `/luck/${luckCases[0].id}/`);
     assert.ok(luck.body.includes(luckCases[0].title));
-    const essay = await renderer.render('src/layouts/Essay.astro', '/essays/fixture/', { frontmatter: { title: 'Fixture', description: 'Summary', subtitle: 'Subtitle', date: '2026-10-26', readingMinutes: 3 } }, '## Authored body\n\n```\n  sample\n```');
-    assert.match(essay.body, /Subtitle/);
+    const essay = await renderer.render('src/layouts/Essay.astro', '/essays/who-filled-the-kings-jug/', { frontmatter: renderer.essayMetadata('who-filled-the-kings-jug.md') }, '## Authored body\n\n```\n  sample\n```');
+    assert.match(essay.body, /Privilege, abstraction/);
     assert.match(essay.body, /By Sarthak Agrawal/);
+    assert.equal(essay.structuredData.author.name, 'Sarthak Agrawal');
     assert.match(essay.body, /## Authored body/);
     assert.match(essay.body, /\n {2}sample\n/);
+    const generatedEssay = await renderer.render('src/layouts/Essay.astro', '/essays/a-three-source-framework-for-explaining-advantage/', { frontmatter: renderer.essayMetadata('a-three-source-framework-for-explaining-advantage.md') });
+    assert.match(generatedEssay.body, /AI-written/);
+    assert.doesNotMatch(generatedEssay.body, /By Sarthak Agrawal/);
+    assert.equal(generatedEssay.structuredData.author, undefined);
   } finally { await renderer.close(); }
 });
 

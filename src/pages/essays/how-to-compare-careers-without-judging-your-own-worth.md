@@ -3,7 +3,7 @@ layout: ../../layouts/Essay.astro
 title: "How to compare careers without judging your own worth"
 description: "Learn how to deconstruct career comparisons by examining what people brought, were handed, and were surrounded by, instead of judging your own worth."
 date: "2026-09-20"
-author: "Sarthak Agrawal"
+aiWritten: true
 readingMinutes: 6
 canonicalPath: "/essays/how-to-compare-careers-without-judging-your-own-worth/"
 ---

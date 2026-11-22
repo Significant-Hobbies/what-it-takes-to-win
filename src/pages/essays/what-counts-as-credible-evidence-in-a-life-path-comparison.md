@@ -3,7 +3,7 @@ layout: ../../layouts/Essay.astro
 title: "What counts as credible evidence in a life-path comparison"
 description: "Why evaluating another person's trajectory requires separating what they brought, what they were handed, and what surrounded them."
 date: "2026-09-20"
-author: "Sarthak Agrawal"
+aiWritten: true
 readingMinutes: 7
 canonicalPath: "/essays/what-counts-as-credible-evidence-in-a-life-path-comparison/"
 ---

@@ -332,7 +332,7 @@ textarea::placeholder { color: #697a73; opacity: 1; }
 
 .explore-contract div + div { border-left-color: var(--border); }
 
-:is(.explore-contract dt, .filter-field > span, .essay-card-index, .essays-edition, .methodology-verdict span, .methodology-contract dt, .person-back) {
+:is(.explore-contract dt, .filter-field > span, .essays-edition, .methodology-verdict span, .methodology-contract dt, .person-back) {
   color: var(--text-faint);
   font-family: var(--sans);
   font-weight: 760;

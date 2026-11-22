@@ -5,6 +5,7 @@ subtitle: "Trajectories, comparison, and the bounded agency that actually runs a
 description: "Comparison as judgment is logically broken — it removes nearly every cause that produced the result, keeps only the visible score, and then pretends the score explains something. It does not."
 date: "2026-08-18"
 author: "Sarthak Agrawal"
+featured: true
 readingMinutes: 8
 canonicalPath: "/essays/everyone-has-lost-their-marbles/"
 ---
